@@ -1,0 +1,10 @@
+tifffile
+scikit-image
+scikit-learn
+tqdm
+
+[dev]
+check-manifest
+
+[test]
+coverage

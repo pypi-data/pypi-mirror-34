@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: x-mroy-1047
+Version: 0.1.6
+Summary: a anayzer package
+Home-page: https://github.com/Qingluan/.git
+Author: Qing luan
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: qtornado
+Requires-Dist: x-mroy-1046
+Requires-Dist: x-mroy-1045
+Requires-Dist: x-mroy-1050 (>=0.1.4)
+Requires-Dist: mroylib-min (>=1.5.1)
+Requires-Dist: geoip2
+Requires-Dist: fabric3
+Requires-Dist: qrcode
+Requires-Dist: pillow
+Requires-Dist: image
+Requires-Dist: xlwt
+Requires-Dist: xlrd
+
+UNKNOWN
+
+

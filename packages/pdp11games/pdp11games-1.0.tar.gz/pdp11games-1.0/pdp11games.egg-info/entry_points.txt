@@ -1,0 +1,5 @@
+[console_scripts]
+marswar = pdp11games.marswar:main
+sp21 = pdp11games.sp21:main
+xonix = pdp11games.xonix:main
+

@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+README.rst
+setup.py
+pdp11games/__init__.py
+pdp11games/marswar.py
+pdp11games/sp21.py
+pdp11games/xonix.py
+pdp11games.egg-info/PKG-INFO
+pdp11games.egg-info/SOURCES.txt
+pdp11games.egg-info/dependency_links.txt
+pdp11games.egg-info/entry_points.txt
+pdp11games.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: Data-Access-Layer
+Version: 1.0
+Summary: Tool for interacting with databases
+Home-page: https://github.com/iurdaniz7/Data-Access-Layer
+Author: Ion Urdaniz
+Author-email: i.urdaniz7@gmail.com
+License: MIT
+Description: # Data-Access-Layer
+        Python package that enables users to connect to databases by specifying the server and database names.
+        
+        # Functionality
+        It allows to connect and disconnect, and interact with database information.
+        
+        # Development phase.
+        It currently supports Microsoft server connections and only allows to retrieve data from the database.
+        Future development could be focus on enabling write capability into the database.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

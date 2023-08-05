@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_channel.py,sha256=Pc1ipSL7uCUtfVq6Yz9SAk_yQYm1yen1J8AZOw3f5pI,1823
+tests/test_dummy.py,sha256=cmyjvMA9HJUlzDEcATSHAC81gGMKronYgrlskfINWBQ,118
+tests/test_playlist.py,sha256=Km1HswIgVy-cfXaaKud-_bGEgwtv1_rs1EP-8VNdVEw,2880
+tests/test_video.py,sha256=Vg2tReDkW4_-ayBK_CorHTFcugb7JvmmhIqbr8cbBl8,1916
+youtube_data_api3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+youtube_data_api3/channel.py,sha256=MOWHitWn3FByW2hbhPqY9U8XtwsNy1mqMMYL2zM5Atg,1354
+youtube_data_api3/playlist.py,sha256=1ABqHiMUmEKm_D7DKJSybgKG8DUnjlGYww84gPYTECo,3285
+youtube_data_api3/video.py,sha256=9-YqkY4AzFg-mtEYSGzxFEr_ipZkp1AFXMv3z-Gcg7g,1393
+youtube_data_api3-0.0.10.dist-info/DESCRIPTION.rst,sha256=YOA161y1xFpOJF1n6GgT94OrxwHT16XQQzvJvDRF9ak,1033
+youtube_data_api3-0.0.10.dist-info/METADATA,sha256=x6bVKVGpOb9LYZBSdjofPuN5RmBXz-9WITZJ7qrMpDg,1495
+youtube_data_api3-0.0.10.dist-info/RECORD,,
+youtube_data_api3-0.0.10.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+youtube_data_api3-0.0.10.dist-info/metadata.json,sha256=05Nx8aW3FtWphj-kR76TZ1HCtwmW0k_SXrbSQNC3cdc,687
+youtube_data_api3-0.0.10.dist-info/top_level.txt,sha256=0rTv7TRxBOJAMWi9W8EUTqzxSwHTi7o4HZxD1SnflkE,24

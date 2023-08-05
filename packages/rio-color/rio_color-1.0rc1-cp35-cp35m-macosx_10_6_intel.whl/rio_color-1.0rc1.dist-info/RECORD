@@ -1,0 +1,14 @@
+rio_color/__init__.py,sha256=f9A8-tC82b8lI5J1DkP1XoSGSHxp7eWBxAP3wnD3La0,40
+rio_color/colorspace.c,sha256=SWmwSnJux56jDejKpoeMkB51j9yjPopPL8MxUK9n9So,467990
+rio_color/colorspace.cpython-35m-darwin.so,sha256=vfqxMx6C8B23gPxCObqHo7CxCbtDtiIjINS6hTPZ3Rg,145696
+rio_color/colorspace.pyx,sha256=0v1Wqjw05myuYHsjhLV3dq2yLVceLmjzhzI0Q2I6sG8,11034
+rio_color/operations.py,sha256=Tf3DCaAL3KLmMAKPHNjDGzVLgyel2u2IX-4kwkPVbFA,8519
+rio_color/utils.py,sha256=HjBJAbL6dkkFeD_q24Q8j_S629HxOhH_gvYyxu4JIJQ,2285
+rio_color/workers.py,sha256=GiNtAv_2XwncKD4i-S_HLC_jD8Pprgv90PRC3wr26zo,836
+rio_color/scripts/__init__.py,sha256=GrrYKEB8pvdzvLc6hC5qvp5vB6io6Vm3xT79i1de5yI,21
+rio_color/scripts/cli.py,sha256=DBeQsI-3ZCFLAX6LSXR2ooRSsG-M-pzyy142ArkAb1E,5925
+rio_color-1.0rc1.dist-info/METADATA,sha256=sVBcjBhd-O9ar-H3W32TpgBjEERnzLZAqzvyZqCDGWU,1178
+rio_color-1.0rc1.dist-info/RECORD,,
+rio_color-1.0rc1.dist-info/WHEEL,sha256=lgsUfrdLj9hH6GJqDPYnuasbppr5-7YdYJX4LCjZNUk,109
+rio_color-1.0rc1.dist-info/entry_points.txt,sha256=Ftr_DYibCQbaFkifOTYafucpR-wIPJlU2Fx6d159zNQ,108
+rio_color-1.0rc1.dist-info/top_level.txt,sha256=zO7m9uSBNu2VLgLyf63aelDblV49oHs-ejsm_eYyEFI,10

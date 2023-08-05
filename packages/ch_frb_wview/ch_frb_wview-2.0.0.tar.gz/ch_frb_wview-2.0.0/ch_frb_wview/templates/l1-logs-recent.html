@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h3>CHIME/FRB L1 Logs</h3>
+
+  <p>Filters:
+    <ul>
+      {% for logfilt,logtag in logfilters %}
+      <li>{{ logfilt }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+  
+  <table class="table table-hover table-striped table-bordered" ><tr><th>Node</th><th>Thread</th><th>Level</th><th>Where</th><th>Date</th><th>Message</th></tr>
+    {% for log in logs %}
+    <tr>
+      <td>{{ log.host }}</td>
+      <td>{{ log.thread }}</td>
+      <td>{{ log.level }} </td>
+      <td>{{ log.filename }}:{{ log.linenum }}</td>
+      <td>{{ log.date|string()|truncate(23, True, '', 0) }}</td>
+      <td>{{ log.msg }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: survive
+Version: 0.0.0
+Summary: Survival analysis in Python
+Home-page: https://github.com/artemmavrin/survive
+Author: Artem Mavrin
+Author-email: amavrin@ucsd.edu
+License: UNKNOWN
+Description: # `survive`
+        
+        Survival Analysis in Python
+        
+        ## Examples
+        
+        * [The Kaplan-Meier survival function estimator](https://github.com/artemmavrin/survive/blob/master/examples/Kaplan-Meier%20Estimator.ipynb)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+wordasso/__init__.py
+wordasso/phoneasso.py
+wordasso/wordasso.py
+wordasso.egg-info/PKG-INFO
+wordasso.egg-info/SOURCES.txt
+wordasso.egg-info/dependency_links.txt
+wordasso.egg-info/requires.txt
+wordasso.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+[console_scripts]
+do_site = cloudgenix_config:go
+pull_site = cloudgenix_config:go
+

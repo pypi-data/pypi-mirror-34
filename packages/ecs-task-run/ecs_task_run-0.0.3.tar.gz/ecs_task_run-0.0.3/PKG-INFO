@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ecs_task_run
+Version: 0.0.3
+Summary: ECS Task Definition run
+Home-page: https://github.com/creditas/ecs-task-run
+Author: Aurelio Saraiva
+Author-email: aurelio.saraiva@creditas.com.br
+License: UNKNOWN
+Description: # ecs-task-run
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

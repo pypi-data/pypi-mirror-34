@@ -1,0 +1,17 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/api/notebook.py,sha256=EAKTNCj_vcOpcNz44yYTJaWbIawa6M0XUAkDvOl7t9E,2293
+gradememaybe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gradememaybe/notebook.py,sha256=zzJHBM4LlVo-8k1Hh6Zy1B9i7UPoiCE4twowuS5jrcQ,1858
+gradememaybe/ok.py,sha256=gUCJXelOndM_kow1haiF3guuhLmc7ZG4R5gmmfTB_54,7758
+gradememaybe/utils.py,sha256=IgIkvXzp2Pe931tI0iihHQ4lUY_2O11QM8uJQtWJSXI,1653
+gradememaybe-0.6.dist-info/METADATA,sha256=yIepGVfzP8R_MaeVmnpsWxRUdtfTd1EkjmJn-0VeZWI,276
+gradememaybe-0.6.dist-info/RECORD,,
+gradememaybe-0.6.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gradememaybe-0.6.dist-info/top_level.txt,sha256=eE4Ta_02gcFHkZVDrjQGChTlqpc94Sc4O81ntbZENCc,20
+okgrade/__init__.py,sha256=5yP0Ysm3kLULoLaBHdnCj7-67Wn7UuqksA6Kd7bMWz0,32
+okgrade/doctest.py,sha256=efXLKyv3ahoaDON4pEeh-5aa_-ZetydQAr-UWU2BgEM,2081
+okgrade/grader.py,sha256=G3GLzD9M2kBaTycwFgTnPoUUqYE8LZaHlXQQsQ5H0Ys,2446
+okgrade/notebook.py,sha256=46X7itX6QF4C94Bz6Otj0oWe-QhGvYgIyE3ONF5iBLQ,3327
+okgrade/result.py,sha256=OePePbVJs4eaxKYN-fvRy0jECFebg599oFNHj5E6u5Y,1824
+okgrade/utils.py,sha256=ooJlsHIYQG19FliUZjn901lDmNb7FqNMRiEoCs8Zo0E,1595

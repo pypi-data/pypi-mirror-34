@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gradememaybe
+Version: 0.6
+Summary: Simple alternative to okpy for grading only
+Home-page: UNKNOWN
+Author: Yuvi Panda
+Author-email: yuvipanda@gmail.com
+License: 3-clause BSD
+Platform: UNKNOWN
+Requires-Dist: jinja2
+Requires-Dist: pygments
+
+UNKNOWN
+
+

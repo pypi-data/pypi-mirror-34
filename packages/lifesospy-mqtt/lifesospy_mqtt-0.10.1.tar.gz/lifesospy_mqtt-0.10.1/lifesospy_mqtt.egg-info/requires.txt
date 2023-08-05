@@ -1,0 +1,5 @@
+lifesospy~=0.10.0
+hbmqtt~=0.9.3
+pyyaml~=3.13
+python-dateutil~=2.7.3
+python-daemon~=2.1.2

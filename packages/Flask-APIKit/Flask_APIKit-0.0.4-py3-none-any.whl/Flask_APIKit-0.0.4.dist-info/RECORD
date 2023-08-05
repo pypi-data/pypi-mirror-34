@@ -1,0 +1,11 @@
+Flask_APIKit-0.0.4.dist-info/METADATA,sha256=pm6BFjwssSpwLh7Vt_ZOd0Nb6LiBlabaCtRJTJ-ieac,723
+Flask_APIKit-0.0.4.dist-info/RECORD,,
+Flask_APIKit-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+Flask_APIKit-0.0.4.dist-info/top_level.txt,sha256=sZippVNwGhJQAi5ykgbSdZ65uQhPbRs63c-mDsK4nfk,13
+flask_apikit/__init__.py,sha256=PhlJHW4Tnka1ltInZ41uBglBPCDfuNfdqYwxHKQDHVY,173
+flask_apikit/decorators.py,sha256=2vhCIOOViPImOAxhy5Z7QghbHLjNswaD_Vb9upSCoUc,3181
+flask_apikit/exceptions.py,sha256=p8Wp-waHTx7fVguVtI39Hu7Y9WIa-znjNPIwOVtwo6c,772
+flask_apikit/responses.py,sha256=qH4I2C2GCYBEEqa8YGQQ9qAycJzNQWpna2gTG3fH5YE,1002
+flask_apikit/views.py,sha256=P1m9xbEN1OILpvJQkfs5QIqaF4NhBG8NmU-UvsqlCeY,2687
+flask_apikit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_apikit/utils/args.py,sha256=H8xRjPNagcQ7nRgXTkm4b1skQIHRdDKPFNb3IFvPKWg,345

@@ -1,0 +1,8 @@
+README.md
+setup.py
+xkammd/__init__.py
+xkammd/nszbd.py
+xkammd.egg-info/PKG-INFO
+xkammd.egg-info/SOURCES.txt
+xkammd.egg-info/dependency_links.txt
+xkammd.egg-info/top_level.txt

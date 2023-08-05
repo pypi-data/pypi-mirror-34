@@ -1,0 +1,9 @@
+vgs_cli-0.1.0.data/scripts/vgs,sha256=wNxL8W7XgEHCneg9nXFWedNwR9PyS9oDmJx5XnSoea4,1259
+vgs_cli-0.1.0.dist-info/METADATA,sha256=Vem1bYzgTAKIdCy5p2RoCtx7O8NjxNKHAvNWvklYaTQ,5581
+vgs_cli-0.1.0.dist-info/RECORD,,
+vgs_cli-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+vgs_cli-0.1.0.dist-info/top_level.txt,sha256=gabTxCWMkl80q6ha_m-hs_1wQMfGntZcv5DEmkl8JEw,7
+vgscli/__init__.py,sha256=HxSdcWofEfJoWOxhcPIHyy1WwUxrFr2QOPtBJunTPzQ,3270
+vgscli/auth.py,sha256=UDYkqbl-ez94jrJ2RzNea-1jlOOOIgM2z1Qk6TZZVzg,3818
+vgscli/routes.py,sha256=4fqgRd8G3h5xUbnDiGtOtX4j6YTqqrsyGA3yNtOv8sk,1073
+vgscli/utils.py,sha256=LpICBcjezjHdRhCscj9j2MBDJcONqy2xUacIC3Bd4A8,482

@@ -1,0 +1,17 @@
+pantsbuild.pants.contrib.scrooge-1.9.0rc1-py2.7-nspkg.pth,sha256=Z8f5XLu3ssp+GY0MClu8bx+WYQP3Tt01B0infLQ8bHo=,1132
+pants/contrib/scrooge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/scrooge/register.py,sha256=zKjSBAZKYFnoaEXxV0zZ2JCM3cbkeznSaDBcAslzT9o,562
+pants/contrib/scrooge/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/scrooge/tasks/java_thrift_library_fingerprint_strategy.py,sha256=4jVy1VE-AmnD9odXvOBpg_qoUllrB82JA1jH-pxAWX8,1733
+pants/contrib/scrooge/tasks/scrooge_gen.py,sha256=SRnVxkRoojnkHX-gg0vB2x14KbXigkGTqve7Qh6pmxU,12453
+pants/contrib/scrooge/tasks/thrift_linter.py,sha256=ne06-ZueiwYy0AfVGbJ_gIOoYbnz0YNULnXEZ98FH14,5158
+pants/contrib/scrooge/tasks/thrift_util.py,sha256=AoYz71RgdGpV9Ej0KIqYrlS0A5UB0d2u9liYYf0gbFU,2485
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/DESCRIPTION.rst,sha256=oIUa7xrpom29zmscm5y5DDtiqaVoABqpGqpLmYEuXUs=,14331
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/METADATA,sha256=+X5VNiRX6nYv29vux92q9NQKr8taubAbg15OD5P0NcI=,15099
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/RECORD,,
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/WHEEL,sha256=HeRoWS7ius0A3s57FTPBUxoE7B2vUyiPaLp98AUBVmc=,93
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/entry_points.txt,sha256=NvhZjCg3MOXUbf+4o9dCGsWxe/dKsfVs32szrfykHNg=,84
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/metadata.json,sha256=E/wnaKNqR40mfHBSaNZ2jttUsCZAmpC+YJOxpcnbf0E=,957
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.scrooge-1.9.0rc1.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1

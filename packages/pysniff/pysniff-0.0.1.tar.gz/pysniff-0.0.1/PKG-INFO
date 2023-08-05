@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pysniff
+Version: 0.0.1
+Summary: A simple netowrk sniffing application
+Home-page: https://github.com/zWaR/pysniff
+Author: zWaR
+Author-email: zwar@sharklasers.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/zWaR/pysniff.git
+Project-URL: Bug Tracker, https://github.com/zWaR/pysniff/issues
+Project-URL: Documentation, https://github.com/zWaR/pysniff
+Description: UNKNOWN
+Keywords: network sniffer monitoring proxy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

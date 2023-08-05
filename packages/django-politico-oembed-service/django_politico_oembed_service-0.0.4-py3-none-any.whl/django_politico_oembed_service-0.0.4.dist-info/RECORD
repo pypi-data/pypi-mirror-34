@@ -1,0 +1,17 @@
+django_politico_oembed_service-0.0.4.dist-info/METADATA,sha256=o7tcV8gf1iUIfs7n_WSDe00nbrm_eyyTLfH-7YRodis,925
+django_politico_oembed_service-0.0.4.dist-info/RECORD,,
+django_politico_oembed_service-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_politico_oembed_service-0.0.4.dist-info/top_level.txt,sha256=pLTzoZ-8_ysE_jtLa1JzIh96uH0BZ6k8cRL3z9Iv62Y,14
+oembedservice/__init__.py,sha256=yzkMess83ZHRMruudX0WnLPnalwxbMwOY1dZp5fHwLE,62
+oembedservice/apps.py,sha256=25J4MF1G5_TqkaClZRF0SQxwfsFK4aqqtJhWazEOOIA,101
+oembedservice/conf.py,sha256=oPDGsFv2kH2hCJeCJByCLRpeKXBd2TIB2xlqVSe54n8,682
+oembedservice/urls.py,sha256=Marddn95NUed95S0KOUEEYPqHRV87y2ha0ZoNXlNTo0,266
+oembedservice/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oembedservice/tests/test_twitter.py,sha256=LudpcDrvOkZSXWchgY0rD8KztkBqDnyHqrPh7TPN9Ns,1505
+oembedservice/tests/test_youtube.py,sha256=L_VsZFQ_KZOrjuGDEsNkw9rmG65XIUYJNhetagmxnag,781
+oembedservice/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oembedservice/utils/importers.py,sha256=6rqiDl000_fnvdrJc0SNPfWUohDh6yMIMzGEMzKqmFE,624
+oembedservice/utils/validators.py,sha256=GTJDPXnJZ1w7wT2OszPFfSfaE6lTh6GF8wTtPJzJdk8,353
+oembedservice/views/__init__.py,sha256=Tt_ctXjH-NiWvB0wiGJzn6aRoLZs0oBHNqp-CX-c1W0,93
+oembedservice/views/twitter.py,sha256=4Vx4Dd1AvlKWDtG6Q-24zvQSQZYUgubMNZu0RcqLHQI,1615
+oembedservice/views/youtube.py,sha256=jK9Ywnrlw7tkThJaUnnsv1dG0f2AmVe9EIxI0UvOclo,867

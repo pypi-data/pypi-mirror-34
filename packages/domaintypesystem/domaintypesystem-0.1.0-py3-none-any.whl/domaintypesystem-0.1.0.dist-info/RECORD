@@ -1,0 +1,9 @@
+domaintypesystem/__init__.py,sha256=UpOoAWnWFFchZcaKh1mkVzyczs1HyKpPhgLFsPbGXCw,879
+domaintypesystem/domaintypesystem.py,sha256=sZK6gcF1MA31S-oAIqXxVKANuaA8YQfEE-UQCfLJEfo,18773
+domaintypesystem/schema/domain_type_group_membership.capnp,sha256=UuS2k2Z89qVmfARTW68zjAWxOjDezbqutqKanTrjRDU,112
+domaintypesystem/schema/domain_type_group_message.capnp,sha256=046jZ98OzjajnjhqS2ifSAcxXxPUQ8QPz_CcTgVJOEU,292
+domaintypesystem-0.1.0.dist-info/METADATA,sha256=hw7sRPu6F8A_CzDPWINW9rW2-oQKxp_F2LfPUM_ZHp4,3335
+domaintypesystem-0.1.0.dist-info/RECORD,,
+domaintypesystem-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+domaintypesystem-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+domaintypesystem-0.1.0.dist-info/top_level.txt,sha256=oN1AcICxIEiWOQ_TWyjezQQummlknxWox-8SN3XZCSk,17

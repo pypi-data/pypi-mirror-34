@@ -1,0 +1,13 @@
+ilabs.client-0.1.1-py2.7-nspkg.pth,sha256=TIsQ2lVWw2AI6wU4DS7QAwmP5JFdx3YG3hTqQoYhhn8,534
+ilabs/client/__init__.py,sha256=XigRxtJvpnOdn3LEt5vFGgLhENLrZjFK4ZQ7eR8hG0M,286
+ilabs/client/get_user_key.py,sha256=Q4t-TiTfPXmtPFsxf7PTNeOga-rrL_OnGSILsqV6_pk,1156
+ilabs/client/ilabs_api.py,sha256=0Kd0IEr9Z0VeKWg9HSAkKRPsHZ_E9ojJ0jZyAOiYK7M,8404
+ilabs/client/ilabs_bulk_predict.py,sha256=13Q_gi14I1rdb1zf4b5_xiCyj6po911VmUOHTuyMowg,4043
+ilabs/client/ilabs_predictor.py,sha256=ZOte1xrRASf1b19xqQMWyBpSm0IyKnF-LsYiyx_1tTs,2621
+ilabs/client/ilabs_tagger.py,sha256=_0dD57eNvVEYg9XBroiqViHx2GvJn9M_6k0MSsCQIfA,5871
+ilabs.client-0.1.1.dist-info/METADATA,sha256=icWrgF0wlGEK5EQYLpL3ZmQ4zCNWBNksSJPVlMdqhV4,1074
+ilabs.client-0.1.1.dist-info/RECORD,,
+ilabs.client-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ilabs.client-0.1.1.dist-info/entry_points.txt,sha256=QK3mGVAtdwWmhkwp_J2miOwtTVMgMEN86pTn74qQpkE,77
+ilabs.client-0.1.1.dist-info/namespace_packages.txt,sha256=ANUT4VIcoiAdC7s28anBxMabo9qtL4LfUxjyYJk4KHQ,6
+ilabs.client-0.1.1.dist-info/top_level.txt,sha256=ANUT4VIcoiAdC7s28anBxMabo9qtL4LfUxjyYJk4KHQ,6

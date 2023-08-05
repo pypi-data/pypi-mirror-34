@@ -1,0 +1,3 @@
+[console_scripts]
+bbchain = bbchain.main:main
+

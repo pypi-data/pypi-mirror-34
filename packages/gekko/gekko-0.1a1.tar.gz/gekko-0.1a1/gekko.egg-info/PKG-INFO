@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: gekko
+Version: 0.1a1
+Summary: Optimization software for differential algebraic equations
+Home-page: https://github.com/BYU-PRISM/GEKKO
+Author: BYU PRISM Lab
+Author-email: john_hedengren@byu.edu
+License: MIT
+Description: UNKNOWN
+Keywords: DAE optimization MILP MINLP QP NLP MIDO IPOPT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.6

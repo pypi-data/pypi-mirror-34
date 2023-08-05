@@ -1,0 +1,13 @@
+future
+numpy>=1.7
+scipy>=0.13
+matplotlib>2.1.
+Pillow
+requests
+ipywidgets
+SimPEG>=0.4.1
+jupyter
+mkl
+empymod
+deepdish
+pymatsolver>=0.1.2

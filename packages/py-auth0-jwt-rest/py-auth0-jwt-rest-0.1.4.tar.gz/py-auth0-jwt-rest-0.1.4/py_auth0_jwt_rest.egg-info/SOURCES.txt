@@ -1,0 +1,12 @@
+README.md
+setup.py
+py_auth0_jwt_rest.egg-info/PKG-INFO
+py_auth0_jwt_rest.egg-info/SOURCES.txt
+py_auth0_jwt_rest.egg-info/dependency_links.txt
+py_auth0_jwt_rest.egg-info/requires.txt
+py_auth0_jwt_rest.egg-info/top_level.txt
+pyauth0jwtrest/__init__.py
+pyauth0jwtrest/apps.py
+pyauth0jwtrest/authentication.py
+pyauth0jwtrest/settings.py
+pyauth0jwtrest/utils.py

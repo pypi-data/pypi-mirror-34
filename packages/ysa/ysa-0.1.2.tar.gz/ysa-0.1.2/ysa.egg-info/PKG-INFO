@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ysa
+Version: 0.1.2
+Summary: python client for the YSA api
+Home-page: https://github.com/sjortiz/YSA-PY
+Author: shailyn ortiz(@M_abaader)
+Author-email: sortizjim@gmail.com
+License: UNKNOWN
+Description: # YSA - You shall ask -- API PYTHON CLIENT
+        
+        ## What is YSA?
+        
+        A Restful API that runs a feature flagging status storage as a service.
+        [YSA-REPO](https://github.com/sjortiz/YSA)
+        
+        ## What is this client for?
+        
+        It makes automatic all the interaction between your code and the api on execution time,
+        allowing you to relax yourself knowing that you don't need to code such interaction.
+        [YSA-PYTHON-CLIENT-REPO](https://github.com/sjortiz/YSA-PY)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

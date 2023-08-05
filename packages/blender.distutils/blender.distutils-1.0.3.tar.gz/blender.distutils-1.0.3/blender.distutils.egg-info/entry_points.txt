@@ -1,0 +1,3 @@
+[distutils.commands]
+bdist_blender_addon = blender.distutils.bdist_blender_addon:bdist_blender_addon
+

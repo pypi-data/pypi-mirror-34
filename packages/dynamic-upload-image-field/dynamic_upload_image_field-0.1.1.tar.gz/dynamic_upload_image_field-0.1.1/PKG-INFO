@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: dynamic_upload_image_field
+Version: 0.1.1
+Summary: A django ImageField that generates it's upload_to value from the model instance method get_upload_to.
+Home-page: https://github.com/alexseitsinger/dynamic_upload_image_field
+Author: Alex Seitsinger
+Author-email: alexseitsinger@gmail.com
+License: BSD 2-Clause License
+Description: # Dynamic Upload Image Field
+        
+        ## Description
+        
+        A django ImageField that generates it's upload_to value from the model instance method get\_upload\_to.
+        
+        ## Installation
+        
+        ```python
+        pip install dynamic-upload-image-field
+        ```
+        
+        or
+        
+        ```python
+        pipenv install dynamic-upload-image-field
+        ```
+        
+        ## Usage
+        
+        ```python
+        from django.db import models
+        from dynamic_upload_image_field.fields import DynamicUploadImageField
+        
+        class ExampleModel(models.Model):
+            name = models.CharField(max_length=56)
+            image = DynamicUploadImageField()
+        
+            def get_upload_to(self, field_name):
+                class_name = self.__class__.__name__.lower()
+                instance_name = self.name
+                return "{}/{}".format(class_name, instance_name)
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown

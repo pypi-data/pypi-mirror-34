@@ -1,0 +1,10 @@
+README.md
+setup.py
+webparser/__init__.py
+webparser/parser.py
+webparser/utils.py
+webparser_py.egg-info/PKG-INFO
+webparser_py.egg-info/SOURCES.txt
+webparser_py.egg-info/dependency_links.txt
+webparser_py.egg-info/requires.txt
+webparser_py.egg-info/top_level.txt

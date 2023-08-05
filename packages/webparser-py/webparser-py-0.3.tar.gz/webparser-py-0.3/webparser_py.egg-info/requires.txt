@@ -1,0 +1,7 @@
+lxml
+feedparser
+requests
+
+[full]
+urllib3
+certifi

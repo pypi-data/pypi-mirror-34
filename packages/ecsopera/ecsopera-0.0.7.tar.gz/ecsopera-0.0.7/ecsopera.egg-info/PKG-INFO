@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: ecsopera
+Version: 0.0.7
+Summary: Elastic Container Orchestrator Toolset.
+Home-page: http://github.com/Pashbee/ecsopera
+Author: Pashbee
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

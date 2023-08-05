@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pyitgw433
+Version: 0.5
+Summary: Library and tools for talking with InterTechno ITGW-433 lan gateway
+Home-page: http://github.com/psiniemi/pyitgw433
+Author: Pasi Niemi
+Author-email: pasi.niemi@iki.gi
+License: Apache 2.0
+Download-URL: https://github.com/psiniemi/pyitgw433/tarball/0.5
+Description: UNKNOWN
+Platform: UNKNOWN

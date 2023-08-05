@@ -1,0 +1,4 @@
+#!/bin/bash
+
+exec 2> /dev/null
+tshark -Q -i any -f "udp and port 49880" -Tfields -edata -Y"udp.length > 80" -S"\n" -l | itgw433-parse

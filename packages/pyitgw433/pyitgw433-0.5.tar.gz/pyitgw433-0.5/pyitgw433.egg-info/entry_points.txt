@@ -1,0 +1,3 @@
+[console_scripts]
+itgw433-parse = pyitgw433.cli:parse
+

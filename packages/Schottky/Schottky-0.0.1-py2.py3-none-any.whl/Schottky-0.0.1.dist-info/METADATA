@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Schottky
+Version: 0.0.1
+Summary: Schottky diode simulator
+Home-page: https://github.com/bond-anton/Schottky
+Author: Anton Bondarenko
+Author-email: bond.anton@gmail.com
+License: Apache Software License
+Keywords: Semiconductors,Schottky diode,electronics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: Cython
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: BDMesh
+Requires-Dist: BDPoisson1D
+
+# Schottky
+
+This project is a collection of python modules and tools for simulation of 1D Schottky diode with some defects in the semiconductor bulk.
+
+## Acknowledgement
+
+The project was supported by Russian Foundation for Basic Research (grant 14-02-31511-mol_a, 2016)
+and by Russian Scientific Foundation (grant No. 17- 72-10119, 2017-2019).
+

@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: wordasso
+Version: 0.2.1
+Summary: Several word association function based on datamuse API
+Home-page: https://github.com/martibook/wordasso.git
+Author: Author
+Author-email: martibook@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: certifi (==2018.4.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: cmudict (==0.4.1)
+Requires-Dist: cymem (==1.31.2)
+Requires-Dist: cytoolz (==0.8.2)
+Requires-Dist: dill (==0.2.8.2)
+Requires-Dist: en-core-web-sm (==2.0.0)
+Requires-Dist: idna (==2.7)
+Requires-Dist: msgpack-numpy (==0.4.1)
+Requires-Dist: msgpack-python (==0.5.6)
+Requires-Dist: murmurhash (==0.28.0)
+Requires-Dist: nltk (==3.3)
+Requires-Dist: numpy (==1.14.5)
+Requires-Dist: pathlib (==1.0.1)
+Requires-Dist: plac (==0.9.6)
+Requires-Dist: preshed (==1.0.0)
+Requires-Dist: pronouncing (==0.2.0)
+Requires-Dist: regex (==2017.4.5)
+Requires-Dist: requests (==2.19.1)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: spacy (==2.0.11)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: thinc (==6.10.2)
+Requires-Dist: toolz (==0.9.0)
+Requires-Dist: tqdm (==4.23.4)
+Requires-Dist: ujson (==1.35)
+Requires-Dist: urllib3 (==1.23)
+Requires-Dist: wrapt (==1.10.11)
+
+# wordasso
+small python package, several word association function based on datamuse API
+
+## Installation
+
+```
+pip install wordasso
+```
+
+if it can not install spacy and the model needed automatically, you could fix this by installing it manually
+
+```
+pip install spacy
+python -m spacy download en_core_web_sm
+```
+and then
+
+```
+pip install wordasso
+```
+
+## Usage
+these functions are based on datamuse means like API which could be used to query 100 related words of a given word
+
+### syn_words
+return related words which has 'synonym' in tags list
+
+```
+>>> from wordasso.wordasso import syn_words
+>>> print(syn_words("author"))
+
+# output
+['writer', 'source', 'generator']
+```
+
+### pho_words
+return related words which sound like the key word most, default list size is 10.
+
+```
+>>> from wordasso.wordasso import pho_words
+>>> print(pho_words("author"))
+
+# output
+['writer', 'actor', 'authorship', 'writers', 'drafter', 'reporter', 'owner', 'songwriter', 'signer', 'source']
+
+>>> print(pho_words("author", L=5)
+
+# output
+['writer', 'actor', 'authorship', 'writers', 'drafter']
+```
+
+### ent_words
+return Named Entities associated to the related words of the given word.
+
+```
+>>> from wordasso.wordasso import ent_words
+>>> print(ent_words("author"))
+
+# output
+{French, Judeo, Christian, Islam, trustee, Medina, trustee, Judeo, Mecca, Muhammad}
+```
+
+
+
+

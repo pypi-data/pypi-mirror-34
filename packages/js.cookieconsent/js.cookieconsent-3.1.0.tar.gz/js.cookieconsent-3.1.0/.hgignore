@@ -1,0 +1,13 @@
+syntax: glob
+
+*.egg-info
+*.pyc
+.DS_Store
+.installed.cfg
+.pytest_cache/
+__pycache__/
+bin/
+develop-eggs/
+lib/
+pip-selfcheck.json
+pyvenv.cfg

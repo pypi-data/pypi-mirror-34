@@ -1,0 +1,6 @@
+recursive-include js/cookieconsent/resources *.js
+recursive-include js/cookieconsent/resources *.css
+recursive-include js/cookieconsent *.rst
+include *.txt *.rst
+include buildout.cfg
+include pytest.ini

@@ -1,0 +1,16 @@
+azure/cli/command_modules/batch/__init__.py,sha256=Ai0mn5gej6qeYBtuFmed7IbRARvHkt0cfdQLX4BqrB8,1739
+azure/cli/command_modules/batch/_client_factory.py,sha256=vw5JDkOkUf-zZZljruSyy0u8bkRPppMlyLxxjyG842E,3219
+azure/cli/command_modules/batch/_command_type.py,sha256=G9AtdCNtQ8GXPKiP2IDhN1mJQiHLXDjbYvAlUq9rAvE,38223
+azure/cli/command_modules/batch/_completers.py,sha256=imvXhFNdiCuFteeSnign5fdMW4D3TUAFg5Iv2Hp4b4U,1494
+azure/cli/command_modules/batch/_exception_handler.py,sha256=cWfqvd78Gxd2iiVD2dkvEQPYFPuJ_BkvsA7MmIHpCEc,1198
+azure/cli/command_modules/batch/_format.py,sha256=sH4yC6578FSdU-EtKZABe72BgENvP_zUVA_hOKlaVAQ,10737
+azure/cli/command_modules/batch/_help.py,sha256=91W5DJNf-JmLHQIt-qwY6kJPI6y4-HUvbaXsj08FWVA,9863
+azure/cli/command_modules/batch/_parameter_format.py,sha256=t18wQa6ZTtx3iLJqHRxIKNjAgE_-cwOf0pfiqcojuG4,3407
+azure/cli/command_modules/batch/_params.py,sha256=dKbhq5iTehYe1lIDluOzIYo1XG-0H5TLHrazp9Jjx-I,13504
+azure/cli/command_modules/batch/_validators.py,sha256=4mmpYoWFSKd_EDhSqyPB9Iip2LvvFZNC8J7xrj2tksQ,13227
+azure/cli/command_modules/batch/commands.py,sha256=cctPUP-tiHQpNR5uBb8M_3ZH2C5Pf3Wf74dnjtyi_aU,8729
+azure/cli/command_modules/batch/custom.py,sha256=rsHXxDmRckZ5faD4Y9dmFnuEheWgGqV4s5uNOU0N-wY,15063
+azure_cli_batch-3.3.0.dist-info/METADATA,sha256=_hdlZEMuCtI4XJszcuUunzjVq68seqFRNB_tzoG1FgE,4560
+azure_cli_batch-3.3.0.dist-info/RECORD,,
+azure_cli_batch-3.3.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+azure_cli_batch-3.3.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6

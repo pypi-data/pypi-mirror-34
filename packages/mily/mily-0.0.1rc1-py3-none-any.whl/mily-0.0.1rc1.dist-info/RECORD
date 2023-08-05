@@ -1,0 +1,12 @@
+mily/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+mily/_version.py,sha256=FlFsmROvbL6zUzd53Y8fPu46bgFaR-mvUILvNm4vgf0,500
+mily/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mily/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mily/tests/test_examples.py,sha256=Hm1x01HZ9BiYYw4dS44uo0o_ku16oFRwSMjIh8_Uu-s,99
+mily-0.0.1rc1.dist-info/DESCRIPTION.rst,sha256=AdxxWFbF4nnxTCGT3nKSrdmCDF8mZf19HuNVyKhGOZI,472
+mily-0.0.1rc1.dist-info/METADATA,sha256=TCdndUxN7LfNa-IGNvMbqg5ob4fv_hXPBiN0PvpzSi0,907
+mily-0.0.1rc1.dist-info/RECORD,,
+mily-0.0.1rc1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mily-0.0.1rc1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mily-0.0.1rc1.dist-info/metadata.json,sha256=5P02Zqx-DrcFnw4eX1P3MnT3h-ChqERifglzXPVgaL8,700
+mily-0.0.1rc1.dist-info/top_level.txt,sha256=s49apFscEAWIUEYySaNI56urH9jO04tnAjOC0gDlKWI,5

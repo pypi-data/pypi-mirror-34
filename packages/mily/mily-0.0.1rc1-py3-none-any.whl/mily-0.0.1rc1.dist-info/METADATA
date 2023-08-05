@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: mily
+Version: 0.0.1rc1
+Summary: A collection of Qt building blocks for scientific GUIs.
+Home-page: https://github.com/NSLS-II/mily
+Author: Brookhaven National Lab
+Author-email: tcaswell@bnl.gov
+License: BSD (3-clause)
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+
+===============================
+mily
+===============================
+
+.. image:: https://img.shields.io/travis/NSLS-II/mily.svg
+        :target: https://travis-ci.org/NSLS-II/mily
+
+.. image:: https://img.shields.io/pypi/v/mily.svg
+        :target: https://pypi.python.org/pypi/mily
+
+
+A collection of Qt building blocks for scientific GUIs.
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://NSLS-II.github.io/mily.
+
+Features
+--------
+
+* TODO
+
+

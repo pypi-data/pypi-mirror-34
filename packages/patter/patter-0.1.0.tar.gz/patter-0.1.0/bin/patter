@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+
+"""
+Patter command line parser/script.
+"""
+
+import sys
+import argparse
+
+from patter.exceptions import MissingPipeException
+from patter.patter import Patter
+
+
+parser = argparse.ArgumentParser(
+    description="Send stdout directly to a Mattermost channel or user."
+)
+parser.add_argument(
+    "-p",
+    help="Don't format message as code",
+    action="store_false",
+)
+parser.add_argument(
+    "--verbose",
+    "-v",
+    help="verbose output",
+    action="store_true",
+)
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument("--channel", "-c", help="recipient channel")
+group.add_argument("--user", "-u", help="recipient user")
+
+try:
+    args = parser.parse_args()
+    if sys.stdin.isatty():
+        raise MissingPipeException("patter must receive input from stdin")
+except ValueError:
+    parser.print_help()
+    sys.exit(1)
+
+patter = Patter(sys.stdin.read(), args.p, args.user, args.channel, args.verbose)
+patter.send_message()

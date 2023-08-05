@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+bin/patter
+patter/__init__.py
+patter/exceptions.py
+patter/patter.py
+patter.egg-info/PKG-INFO
+patter.egg-info/SOURCES.txt
+patter.egg-info/dependency_links.txt
+patter.egg-info/requires.txt
+patter.egg-info/top_level.txt

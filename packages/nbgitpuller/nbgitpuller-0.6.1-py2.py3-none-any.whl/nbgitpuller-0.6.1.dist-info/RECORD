@@ -1,0 +1,17 @@
+nbgitpuller/__init__.py,sha256=F-lM9DlZ4yrlXZQKVSVzkfp75XGgBU-WY-BGsC9_Vc4,1020
+nbgitpuller/handlers.py,sha256=yUfDRr719hjHafmoudMQHR8zEpTXkB-bqrLcVTcF5sA,6121
+nbgitpuller/pull.py,sha256=xh4zBxTBcli43atHqYCPffI8FFhR7Zn2HGTmkEeBYFg,8023
+nbgitpuller/version.py,sha256=z1HDDJmOJAk4lY3QfylMJ0NbGlfLVAq42_aMXGuCo7Q,74
+nbgitpuller/etc/nbgitpuller.json,sha256=sYZj_vvoXCI1wti3P2YwMWKExYB8BBQAU6eb0zQEqzY,89
+nbgitpuller/static/index.js,sha256=eXBQsnaC6xalGBczaMcHFY9rmQWCRzZai0F7l-rLF0g,9380
+nbgitpuller/static/dist/0.bundle.js,sha256=KaIGTX7B0-cwNqGIhJgmGfAi2kBknfbXy-icfRr6HGw,272115
+nbgitpuller/static/dist/0.bundle.js.map,sha256=QNVUjRPDKHxS8VvhvkZcIQ9yx9wj4pKmHLpLV8CygeE,356510
+nbgitpuller/static/dist/bundle.js,sha256=6rKBf_9Xsr0bGj9Ub7dObtmmrr1BWiZFvKcgfdbPzeg,306750
+nbgitpuller/static/dist/bundle.js.map,sha256=jqm28L8IQ-loUiAmBOrb5d2aU54braZnFwA2z2i7gkw,368328
+nbgitpuller/templates/status.html,sha256=xLL8vsgR6FFgVv6I0GAmrHC2yMikZZQHBWA7bS73ysM,1827
+nbgitpuller-0.6.1.data/data/etc/jupyter/jupyter_notebook_config.d/nbgitpuller.json,sha256=sYZj_vvoXCI1wti3P2YwMWKExYB8BBQAU6eb0zQEqzY,89
+nbgitpuller-0.6.1.dist-info/METADATA,sha256=JM16f8nS8SY5HayVgeOdemHwtd0mqRgIuJiuLdJOBQw,688
+nbgitpuller-0.6.1.dist-info/RECORD,,
+nbgitpuller-0.6.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+nbgitpuller-0.6.1.dist-info/entry_points.txt,sha256=3nq4ntqYoy6wrO1Goe4oUrGeVimOSmHOWyKpN9e2VyQ,53
+nbgitpuller-0.6.1.dist-info/top_level.txt,sha256=p6zNmcuf8b-9aLdnjnxpoYmGxlK8O69NemENjv5QZmA,12

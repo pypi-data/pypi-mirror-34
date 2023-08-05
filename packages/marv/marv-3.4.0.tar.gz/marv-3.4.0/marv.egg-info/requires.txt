@@ -1,0 +1,8 @@
+Flask==0.12.4
+Flask-Cors
+Flask-SQLAlchemy
+PyJWT
+bcrypt
+configparser
+pycapnp-for-marv==0.6.3
+marv-cli==3.4.0

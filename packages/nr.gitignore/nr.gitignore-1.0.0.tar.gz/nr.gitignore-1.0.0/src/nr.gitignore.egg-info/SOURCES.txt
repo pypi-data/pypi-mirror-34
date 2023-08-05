@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/nr/__init__.py
+src/nr/gitignore.py
+src/nr.gitignore.egg-info/PKG-INFO
+src/nr.gitignore.egg-info/SOURCES.txt
+src/nr.gitignore.egg-info/dependency_links.txt
+src/nr.gitignore.egg-info/namespace_packages.txt
+src/nr.gitignore.egg-info/top_level.txt
+test/test_gitignore.py

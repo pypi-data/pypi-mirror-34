@@ -1,0 +1,15 @@
+ebook_crawler/__init__.py,sha256=BqIniAE1CzN-z2LPgTOM2j9xb3gAq5LCj0fnoad82eU,2649
+ebook_crawler/binding.py,sha256=O0QPUguaDTI4rwfPmPRajho0PO5uzgu7dg55I54LXb0,3590
+ebook_crawler/helper.py,sha256=TNkHyO04dtnr8lAqWt3kFHopfKZTLdQdY2WayO1BbsE,596
+ebook_crawler/lnmtl.py,sha256=FYRjpcypVIi-3k4Tw12qig7jQQUFomX5Yfpzj3dlX78,8972
+ebook_crawler/readln.py,sha256=mkVcSUX2Tu7i1V0x4PrakJj5TwnybHKpqUxMwE7dXsU,4159
+ebook_crawler/webnovel.py,sha256=noBhsJ5w1MoGhPe9b17rk1QEt4afAvhohTiPdhk9Gs4,5484
+ebook_crawler/wuxia.py,sha256=YOo2MX0dy8kkmJRkP2d6ASRP9epZPt8G3HHYcrW0FAo,4371
+ebook_crawler/ext/kindlegen,sha256=uLDwq4PnQHARkGa_TzxWJn5e5D0sK6xwkbtEfp9GGmk,28673912
+ebook_crawler-1.2.3.dist-info/DESCRIPTION.rst,sha256=RiGR_CiH5iJG4xeWToMlVn9h1XEzYBEWQI6f6NGddOU,3842
+ebook_crawler-1.2.3.dist-info/METADATA,sha256=x7M2-llm5JfhiJQRmZqAOlQd_zEhNnIsglaocWHWFIc,5002
+ebook_crawler-1.2.3.dist-info/RECORD,,
+ebook_crawler-1.2.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+ebook_crawler-1.2.3.dist-info/entry_points.txt,sha256=deN5vlCGuigTirgrv2IQxX3C8_id8QRhY76l9RQJ5Cg,54
+ebook_crawler-1.2.3.dist-info/metadata.json,sha256=HsC4eh3rmvVO6Rt65u9zK_l62r9jIB8Z3dTYFwP7OEs,1391
+ebook_crawler-1.2.3.dist-info/top_level.txt,sha256=UIoBTvDHa-QNml-ZHbb0-Fg-4TpOF0Zl20NpfVO5rEM,14

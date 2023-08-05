@@ -1,0 +1,4 @@
+networkx<3,>=2.1
+pydeps<2,>=1.5.1
+PyYAML<4,>=3.12
+click<7,>=6.7

@@ -1,0 +1,13 @@
+commacalc/__init__.py,sha256=vgnyA0NxS33L2WtW4DFTsOEwrCf5pRKTduKLe6dmhhA,2033
+commacalc/currencies.py,sha256=Q2N7OaBuV5yh78REvx5dBcSM4RXfizFua8YHDqtuKgU,2889
+commacalc/extra.py,sha256=Qaoa2iANvlQLHHLl7_r2oKIcTf6BtY-Rdk4i_lfmSIA,2014
+commacalc/pretty_number.py,sha256=ghztQzeX-XhbGFkKuNzLHnJjvYtK0kk-rJCSUXu-B5I,3080
+commacalc/primes.py,sha256=NTeeV-eOx_ca30Hds0NqWU0CfogBHEd8ajkeJF6BpAY,3473
+commacalc/units.py,sha256=O2Z9OlGBjeXYKXuBWh2GzM1lYbs5TPG-B67ubClpjnM,3609
+commacalc-3.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+commacalc-3.0.3.dist-info/METADATA,sha256=Jl0brYiADDvB1qHXDAU8blWydApW3JIkvmQ4PcpV82c,414
+commacalc-3.0.3.dist-info/RECORD,,
+commacalc-3.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+commacalc-3.0.3.dist-info/entry_points.txt,sha256=uL2bDOTkfGdDSItIgM05vKZuTcN4TKdsNa0oKzQQlLg,38
+commacalc-3.0.3.dist-info/metadata.json,sha256=aCW70rINPEfXKQNEs_qOSXHAl_rpPlc9f24pAQAyepc,707
+commacalc-3.0.3.dist-info/top_level.txt,sha256=cumeAM34CJSdR2hES9Fi7BYjNmb2cL2TqGnUkdwG1Kg,10

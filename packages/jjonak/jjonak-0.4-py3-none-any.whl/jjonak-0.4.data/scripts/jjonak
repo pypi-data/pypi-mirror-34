@@ -1,0 +1,3 @@
+import jjonak
+
+print(jjonak.zenyatta())

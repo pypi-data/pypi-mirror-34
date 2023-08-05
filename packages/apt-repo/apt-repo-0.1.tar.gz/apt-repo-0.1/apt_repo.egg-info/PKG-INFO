@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: apt-repo
+Version: 0.1
+Summary: Python library to query APT repositories
+Home-page: https://github.com/brennerm/python-apt-repo
+Author: brennerm
+Author-email: xamrennerb@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

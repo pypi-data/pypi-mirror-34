@@ -1,0 +1,11 @@
+future
+pynacl
+python-dateutil
+repoze.lru
+requests
+requests_oauthlib
+six
+
+[client]
+dbus-python
+pygobject

@@ -1,0 +1,5 @@
+firefly-python>=0.1.9
+click>=6.7
+tabulate>=0.7.7
+PyYAML>=3.12
+joblib>=0.11

@@ -1,0 +1,17 @@
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1-py2.7-nspkg.pth,sha256=Z8f5XLu3ssp+GY0MClu8bx+WYQP3Tt01B0infLQ8bHo=,1132
+pants/contrib/codeanalysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/codeanalysis/register.py,sha256=MDOyoCRJZzB7yF3rsJrXmythnwvt-Zt-uhU1ejdkII8,733
+pants/contrib/codeanalysis/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/codeanalysis/tasks/bundle_entries.py,sha256=oT4gLCUIWq6M0h21esZ77q0nxccSccQSeiEBnxZqFjw,1852
+pants/contrib/codeanalysis/tasks/extract_java.py,sha256=RY8Bi3FMITMZe6asIxcDOftJ7l1AMWEK7akfohtiDkc,5029
+pants/contrib/codeanalysis/tasks/index_java.py,sha256=rAVt1NGw_TZuiOQv_uM7G76SWv45ZEEJsM4oGBLOiuI,3366
+pants/contrib/codeanalysis/tasks/indexable_java_targets.py,sha256=pCUOKNT1zoAAbfYp3szn18zSUDZpOZe9RtlM2-YN5jA,1901
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/DESCRIPTION.rst,sha256=oIUa7xrpom29zmscm5y5DDtiqaVoABqpGqpLmYEuXUs=,14331
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/METADATA,sha256=wKkWUg7m+9l65qkdBJ+UQVVHeXIAqaQsFKSHqdnNkvw=,14996
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/RECORD,,
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/WHEEL,sha256=HeRoWS7ius0A3s57FTPBUxoE7B2vUyiPaLp98AUBVmc=,93
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/entry_points.txt,sha256=pFIfBeftCuUHO4xZSwmc3+W99QWKOTJFITeGYbVKnIY=,89
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/metadata.json,sha256=sFGVbMe6xElCjGxUSGazxehucU1JW0CnCu+GeAjyGEU=,880
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.codeanalysis-1.9.0rc1.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1

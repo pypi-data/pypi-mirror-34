@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mlbootstrap-tf
+Version: 0.0.4
+Summary: A tiny bootstrap toolkit for deep learning with Tensorflow extionsions
+Home-page: http://github.com/Luolc/MLBootstrap-tf
+Author: Liangchen Luo
+Author-email: luolc.witty@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: mlbootstrap (==0.0.4)
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: tensorflow (>=1.8.0)
+Requires-Dist: tqdm (>=4.23.0)
+
+UNKNOWN
+
+

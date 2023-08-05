@@ -1,0 +1,27 @@
+{
+  "name": "yolov1",
+  "width": 224,
+  "height": 224,
+  "type": "od",
+  "layers": [
+    {
+      "type": "backbone",
+      "name": "resnet18",
+      "remove": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "type": "linear",
+      "output": 1470
+    }
+  ],
+  "data_transformer": "yolo_transformer",
+  "loss": "yolo_loss",
+  "lambda_coobj": 5,
+  "lambda_noobj": 0.5,
+  "B": 2,
+  "C": 7,
+  "num_classes": 20
+}

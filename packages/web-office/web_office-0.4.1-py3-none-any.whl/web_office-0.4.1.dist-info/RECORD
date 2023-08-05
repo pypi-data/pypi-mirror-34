@@ -1,0 +1,14 @@
+usr/share/applications/gdocs.desktop,sha256=NK-1X8fMrlEfBN_xt_neKfwfpeIUelbXrMkQ03WLy8c,549
+usr/share/applications/msoo.desktop,sha256=aNCUMS14LmZIok9pXAYk7-uACiRngCfAVaC_gkmAqgU,559
+usr/share/pixmaps/gdocs.svg,sha256=fb3XtcB6YprNu_nkmOKuncP1bRsEs6Os6f-rJPEGOT4,880
+usr/share/pixmaps/msoo.svg,sha256=lhsrlXawAHlZdvKDFXyvYB2t-vEDpbTQM5ehvbsNQ4Y,1028
+web_office-0.4.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+web_office-0.4.1.dist-info/METADATA,sha256=7WPPI11IZZJAu6_KWDz_0smcKwMNdHs5rcZXaA9mc1M,424
+web_office-0.4.1.dist-info/RECORD,,
+web_office-0.4.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+web_office-0.4.1.dist-info/entry_points.txt,sha256=ymdniLJzgJfPlf_4yqSYI-sExBBjTtLxYkByZdoXYAk,93
+web_office-0.4.1.dist-info/metadata.json,sha256=tk_valITOuriwGbLXMynh6HqcXtVHRA6uiDdc0mFFxs,852
+web_office-0.4.1.dist-info/top_level.txt,sha256=Or-LdBVJHPfqYT9R09QEyM257R5cywcahH062E3dQbs,10
+weboffice/__init__.py,sha256=phxqyooMnsyC0RSuqUmQfK1ZqugcFrJpMWOwDedwPv8,1334
+weboffice/githosting.py,sha256=Dl-wSL3-Jr7sGBtwwFP4v3W2vBNlqnZTB-ZmW74s1ts,3581
+weboffice/progressbar.py,sha256=kdY7w1jIHr3fcdEqFKIXHjFp59Fj8m02MJMSnC7d8dI,3808

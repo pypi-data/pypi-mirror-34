@@ -1,0 +1,6 @@
+numpy
+Cython
+scipy
+matplotlib
+BDMesh
+BDPoisson1D

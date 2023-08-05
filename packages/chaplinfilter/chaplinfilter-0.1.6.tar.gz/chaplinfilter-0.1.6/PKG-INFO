@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: chaplinfilter
+Version: 0.1.6
+Summary: A simple package to calculate the filter timescale fromChaplin et al. in prep.
+Home-page: UNKNOWN
+Author: Guy R. Davies
+Author-email: grd349@gmail.com
+License: MIT
+Description: # ChaplinFilter
+        An ML implementation of the function that maps fundamental properties to suggested time domain filtering timescales.
+        
+        See Chaplin et al. in press for full details TODO.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy

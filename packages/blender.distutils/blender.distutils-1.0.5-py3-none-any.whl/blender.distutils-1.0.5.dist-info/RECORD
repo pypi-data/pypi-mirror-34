@@ -1,0 +1,8 @@
+blender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blender/distutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blender/distutils/bdist_blender_addon.py,sha256=rplNYGzqDkaHNTIXEJKRu7gGGdbBBvt_E_6yqT6n4FQ,1582
+blender.distutils-1.0.5.dist-info/METADATA,sha256=aXM6V8X6B7lmbQfloQsNuFmg1mWeW2Aj0sXBjpSsd2c,6725
+blender.distutils-1.0.5.dist-info/RECORD,,
+blender.distutils-1.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+blender.distutils-1.0.5.dist-info/entry_points.txt,sha256=5hcieiqLOnDDX3g_NTBS-OoJjBj5uhqnOrngNxyb_zM,102
+blender.distutils-1.0.5.dist-info/top_level.txt,sha256=eHtGeFO5ELlhUzlaLxMo5kH4Qtj-w3cxigRi0rxqIVg,8

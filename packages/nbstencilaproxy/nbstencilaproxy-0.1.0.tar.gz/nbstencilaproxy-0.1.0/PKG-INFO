@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nbstencilaproxy
+Version: 0.1.0
+Summary: Jupyter extension to proxy Stencila
+Home-page: https://github.com/minrk/nbstencilaproxy
+Author: Min RK, Daniel Nüst, Ryan Lovett
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Jupyter
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Description-Content-Type: text/markdown

@@ -1,0 +1,2 @@
+tornado<5,>4.0
+hiredis<1,>=0.2.0

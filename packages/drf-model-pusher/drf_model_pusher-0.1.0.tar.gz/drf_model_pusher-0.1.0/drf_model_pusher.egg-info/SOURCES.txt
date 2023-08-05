@@ -1,0 +1,13 @@
+README.md
+setup.py
+drf_model_pusher/__init__.py
+drf_model_pusher/backends.py
+drf_model_pusher/config.py
+drf_model_pusher/receivers.py
+drf_model_pusher/signals.py
+drf_model_pusher/views.py
+drf_model_pusher.egg-info/PKG-INFO
+drf_model_pusher.egg-info/SOURCES.txt
+drf_model_pusher.egg-info/dependency_links.txt
+drf_model_pusher.egg-info/requires.txt
+drf_model_pusher.egg-info/top_level.txt

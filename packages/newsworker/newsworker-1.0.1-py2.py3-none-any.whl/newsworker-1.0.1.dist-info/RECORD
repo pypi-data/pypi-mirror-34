@@ -1,0 +1,12 @@
+newsworker/__init__.py,sha256=SJFWZXA_5syVgxrKcw_2fVosqVK3gYVlkTtexwjYeKs,113
+newsworker/consts.py,sha256=VHgv0onBlFZ4oO4h42I9_F7ZKzcMcHCcHOgc_zjaJjg,1771
+newsworker/extractor.py,sha256=Rq_7yhXfjCK6z9Cr8pyVghAMIJk4vWZuD-ttlvGsnN0,16250
+newsworker/finder.py,sha256=hCUP_6j9RgMhFRBb4pbn57KpPjbh-WLhpxNriuFs4GM,12527
+newsworker/tagmapper.py,sha256=Ey49DzoACqBulkdDUv-9-y0jxHeBj32MCNCfUrJ6tRs,8036
+newsworker/tools.py,sha256=c7BYTLMVbx_fa8Stzc9o5x64T81qopuoQ4Xbjnswin8,3184
+newsworker-1.0.1.dist-info/DESCRIPTION.rst,sha256=YuJ_BxFgyb3Q3bP1e-19T42ywFFYU8xROPfdPjocoMA,9373
+newsworker-1.0.1.dist-info/METADATA,sha256=fE_IGFN--FxKdZIoJ8eBi0-qkndhtaymMxgQHFt0ts0,10438
+newsworker-1.0.1.dist-info/RECORD,,
+newsworker-1.0.1.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+newsworker-1.0.1.dist-info/metadata.json,sha256=RU-5s16DZ4RAmKhj-otPoBBSVn287s-OTt4ndiBSnvE,1196
+newsworker-1.0.1.dist-info/top_level.txt,sha256=SjdLRL-8EFImf-uxk_F_s53WjiTCxaw3WOgquHWmqWM,11

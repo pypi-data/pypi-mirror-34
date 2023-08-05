@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: tuStockSpider
+Version: 0.11
+Summary: China stock market everyday history data downloader
+Home-page: https://github.com/cansijyun/StockHistorySpider
+Author: cansijyun
+Author-email: can_sijyun@yahoo.co.jp
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: China stock market everyday history data downloader
+Platform: UNKNOWN
+Requires-Dist: lxml
+Requires-Dist: requests
+
+UNKNOWN
+
+

@@ -1,0 +1,11 @@
+README.md
+setup.py
+paytext/__init__.py
+paytext/paytext.py
+paytext.egg-info/PKG-INFO
+paytext.egg-info/SOURCES.txt
+paytext.egg-info/dependency_links.txt
+paytext.egg-info/top_level.txt
+tests/__init__.py
+tests/paytext_test.py
+tests/pyre_strict_test.py

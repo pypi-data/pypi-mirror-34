@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+merge_effort.egg-info/PKG-INFO
+merge_effort.egg-info/SOURCES.txt
+merge_effort.egg-info/dependency_links.txt
+merge_effort.egg-info/entry_points.txt
+merge_effort.egg-info/requires.txt
+merge_effort.egg-info/top_level.txt
+mergeeffort/__init__.py
+mergeeffort/merge_analysis.py

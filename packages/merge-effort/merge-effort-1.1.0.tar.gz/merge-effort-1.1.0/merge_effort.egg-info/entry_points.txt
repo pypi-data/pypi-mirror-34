@@ -1,0 +1,3 @@
+[console_scripts]
+merge-effort = mergeeffort.merge_analysis:main
+

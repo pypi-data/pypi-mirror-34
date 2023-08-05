@@ -1,0 +1,12 @@
+Kadal-0.2.1.dist-info/METADATA,sha256=Irx3DIcWFTH84H8gnyibmh8ps_S7PmOdueNzrLswPvY,625
+Kadal-0.2.1.dist-info/RECORD,,
+Kadal-0.2.1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+Kadal-0.2.1.dist-info/top_level.txt,sha256=MwrHph5Sd6hwqglsIIJZsd4F81QsaVN2RslLnSSChOo,6
+kadal/__init__.py,sha256=lmZYs_jlFOSZhBrusnP0MzN4dEJFe5Kwqd3hpQ-UCak,187
+kadal/client.py,sha256=vbc9rAIo07W9DySh0ey3iWhnyb6bJInmtddYszgBAIc,3394
+kadal/media.py,sha256=yUQAOpO0N-9FKGm0ciCKicxUy8o0FBHbVQrpN2Qf5uE,1008
+kadal/old.py,sha256=PvpQ5r7VPwezoxFMwOJAzMpJwSocWZ5lZWhjGAKqlcI,8704
+kadal/query.py,sha256=brigqn6noiGOM2kyD2dni3Ffn5LNhQaM7J6UrO8YILw,1967
+kadal/request.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kadal/user.py,sha256=aBzhF2Fe-9fCX_QKEIRerc0VEdnN383vjBYs1QJ7AiQ,453
+kadal/utils.py,sha256=RJpjSCtXUfWwCAtpxyBN9OmluzwP-Y7guYbwdoKKDWk,81

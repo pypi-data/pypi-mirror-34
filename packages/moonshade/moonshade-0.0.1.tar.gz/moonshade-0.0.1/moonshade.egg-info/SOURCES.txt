@@ -1,0 +1,10 @@
+README.md
+setup.py
+moonshade.egg-info/PKG-INFO
+moonshade.egg-info/SOURCES.txt
+moonshade.egg-info/dependency_links.txt
+moonshade.egg-info/top_level.txt
+python/__init__.py
+python/moonshade.py
+python/moonshade_pb2.py
+python/moonshade_pb2_grpc.py

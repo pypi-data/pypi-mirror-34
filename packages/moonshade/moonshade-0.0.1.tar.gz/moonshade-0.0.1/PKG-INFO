@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: moonshade
+Version: 0.0.1
+Summary: A Universal Distributed Data Collection Framework
+Home-page: https://gitlab.com/kinaopen/moonshade
+Author: KINA Open
+Author-email: open@kina.moe
+License: UNKNOWN
+Description: # Moonshade
+        
+        ## Description
+        
+        Moonshade is a universal distributed data collection framework.
+        
+        Currently go and python are supported, documentation will come out very soon.
+        
+        The API defined in this package is not stable and can change without notice.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

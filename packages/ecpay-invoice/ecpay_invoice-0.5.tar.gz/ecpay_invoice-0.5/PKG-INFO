@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ecpay_invoice
+Version: 0.5
+Summary: ecpay_invoice
+Home-page: https://github.com/skypc785308/ecpay_invoice
+Author: Hiskyz
+Author-email: skypc785308@gmail.com
+License: BSD License
+Description: # ecpay_invoice
+        建置中，ECPAY電子發票Python模組
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries

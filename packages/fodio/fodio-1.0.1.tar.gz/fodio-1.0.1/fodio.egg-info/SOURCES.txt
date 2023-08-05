@@ -1,0 +1,13 @@
+README.rst
+setup.py
+demos/__init__.py
+demos/github-searcher.py
+demos/mtgpq-searcher.py
+demos/repl-searcher.py
+fodio/__init__.py
+fodio/errors.py
+fodio.egg-info/PKG-INFO
+fodio.egg-info/SOURCES.txt
+fodio.egg-info/dependency_links.txt
+fodio.egg-info/requires.txt
+fodio.egg-info/top_level.txt

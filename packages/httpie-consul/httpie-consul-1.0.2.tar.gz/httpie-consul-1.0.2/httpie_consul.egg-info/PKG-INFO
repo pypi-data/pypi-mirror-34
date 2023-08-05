@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: httpie-consul
+Version: 1.0.2
+Summary: Consul plugin for HTTPie.
+Home-page: https://github.com/ar4s/httpie-consul
+Author: Arkadiusz Adamski
+Author-email: arkadiusz.adamski@gmail.com
+License: BSD
+Download-URL: https://github.com/ar4s/httpie-consul
+Description: httpie-consul
+        =============
+        
+        Consul plugin for [HTTPie](https://httpie.org/).
+        
+        It currently provides support for Consul.
+        
+        
+        Installation
+        ------------
+        
+        ```bash
+            $ pip install httpie-consul
+        ```
+        
+        You should now use plugin.
+        
+        
+        Usage
+        -----
+        
+        ```bash
+            $ http service://my-fancy-service/
+            HTTP/1.1 200 OK
+            Connection: keep-alive
+            Content-Length: 32
+        
+            Response from My Fancy Service!
+        ```
+        
+        You can also configure plugin by environment variables:
+        
+        ```bash
+            $ export CONSUL_HOST=consul.local
+            $ export CONSUL_PORT=80
+            $ export CONSUL_SCHEME=https
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Utilities

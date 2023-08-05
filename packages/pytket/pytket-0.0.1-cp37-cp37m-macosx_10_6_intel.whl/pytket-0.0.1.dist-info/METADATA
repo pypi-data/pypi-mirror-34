@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pytket
+Version: 0.0.1
+Summary: A test project using pybind11
+Home-page: https://github.com/CQCL/pytket
+Author: Seyon Sivarajah
+Author-email: seyon.sivarajah@cambridgequantum.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cirq (~=0.3.0.35)
+Requires-Dist: scipy (~=1.1.0)
+Requires-Dist: numpy
+Requires-Dist: pybind11
+
+UNKNOWN
+
+

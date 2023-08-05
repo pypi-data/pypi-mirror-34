@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+list_property/__init__.py
+list_property/custom_namedlist.py
+list_property/custom_property.py
+list_property.egg-info/PKG-INFO
+list_property.egg-info/SOURCES.txt
+list_property.egg-info/dependency_links.txt
+list_property.egg-info/top_level.txt

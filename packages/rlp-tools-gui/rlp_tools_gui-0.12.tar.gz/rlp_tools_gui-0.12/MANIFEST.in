@@ -1,0 +1,3 @@
+include rlp_tools_gui/form.ui
+include rlp_tools_gui/icon.ico
+include rlp_tools_gui/__main__.pyw

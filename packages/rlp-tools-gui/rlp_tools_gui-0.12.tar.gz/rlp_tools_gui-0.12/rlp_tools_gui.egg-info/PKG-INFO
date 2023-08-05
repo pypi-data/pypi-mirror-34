@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rlp-tools-gui
+Version: 0.12
+Summary: Инструменты переводчика DST
+Home-page: https://github.com/pypa/example-project
+Author: RLP Team
+Author-email: justno@example.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

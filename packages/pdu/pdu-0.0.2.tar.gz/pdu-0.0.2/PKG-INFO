@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pdu
+Version: 0.0.2
+Summary: Python Disk Usage
+Home-page: https://github.com/tslight/pdu
+Author: Toby Slight
+Author-email: tobyslight@gmail.com
+License: UNKNOWN
+Description: # PYTHON DISK USAGE
+        
+        Takes a path as an argument and returns it's total disk usage recursively.
+        
+        ## USAGE
+        
+        ```
+        usage: pdu [-h] [path]
+        
+        Python Disk Usage Calculator.
+        
+        positional arguments:
+          path        A valid path.
+        
+        optional arguments:
+          -h, --help  show this help message and exit
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,12 @@
+README.txt
+setup.py
+tests/__init__.py
+tests/messages.py
+tests/templates.py
+toshare/__init__.py
+toshare.egg-info/PKG-INFO
+toshare.egg-info/SOURCES.txt
+toshare.egg-info/dependency_links.txt
+toshare.egg-info/requires.txt
+toshare.egg-info/top_level.txt
+toshare.egg-info/zip-safe

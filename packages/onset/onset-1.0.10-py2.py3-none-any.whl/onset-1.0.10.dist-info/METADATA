@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: onset
+Version: 1.0.10
+Summary: Run set operations on files or stdin
+Home-page: https://git.fmind.me/fmind/onset
+Author: Médéric Hurier
+Author-email: dev@fmind.me
+License: EUPL 1.2
+Keywords: set,file,script,utility,operation
+Platform: POSIX
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+
+onset
+=====
+
+.. image:: https://img.shields.io/pypi/v/onset.svg
+   :target: https://pypi.python.org/pypi/onset
+
+.. image:: https://img.shields.io/pypi/pyversions/onset.svg
+   :target: https://pypi.python.org/pypi/onset
+
+.. image:: https://img.shields.io/pypi/l/onset.svg
+   :target: https://pypi.python.org/pypi/onset
+
+Installation
+============
+
+.. code:: bash
+
+    pip install onset
+
+Documentation
+=============
+
+Open ``doc/html/index.html``
+
+

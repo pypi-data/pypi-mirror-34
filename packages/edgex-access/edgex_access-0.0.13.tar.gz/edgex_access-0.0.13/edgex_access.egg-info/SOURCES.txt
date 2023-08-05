@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+setup.cfg
+setup.py
+edgex_access/__init__.py
+edgex_access/edgex_access.py
+edgex_access/version.py
+edgex_access.egg-info/PKG-INFO
+edgex_access.egg-info/SOURCES.txt
+edgex_access.egg-info/dependency_links.txt
+edgex_access.egg-info/requires.txt
+edgex_access.egg-info/top_level.txt
+s3edgex/s3edgex
+test/test_access.py

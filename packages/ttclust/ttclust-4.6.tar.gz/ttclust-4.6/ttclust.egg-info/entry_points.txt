@@ -1,0 +1,4 @@
+[console_scripts]
+ttclust = ttclust.ttclust:main
+ttclustGUI = ttclust.ttclustGUI:main
+

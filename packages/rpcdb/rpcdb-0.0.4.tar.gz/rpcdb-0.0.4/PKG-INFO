@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: rpcdb
+Version: 0.0.4
+Summary: A multiplatform mysql framework for client-server apps
+Home-page: https://github.com/abiiranathan/rpcdb.git
+Author: Dr Abiira Nathan
+Author-email: nabiira2by2@gmail.com
+License: GPL-3
+Description: rpcdb is an abstraction around mysql-connector-python that enable connection to remote mysql database using multiprocessing remote connection
+Keywords: mysql db2 database python Abiira Nathan framework rpcdb
+Platform: Windows 7
+Platform: Windows 8
+Platform: Windows 10
+Platform: Linux/Unix

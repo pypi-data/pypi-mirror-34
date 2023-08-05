@@ -1,0 +1,6 @@
+[console_scripts]
+zms-list = zms:list_unavailable
+zms-listener = zms:listen
+zms-send = zms:sendfromdb_once
+zms-sender = zms:sendfromdb_loop
+

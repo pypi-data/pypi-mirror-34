@@ -1,0 +1,13 @@
+rppc/__init__.py,sha256=flWeQOG5h2GefAte_Y21kgihMdQbQKbCl0hiDCrI2Hg,5484
+rppc/_version.py,sha256=qm2vLncbHKyR3L0m3Z0XyMmabwqJleec2EyZ79k9oyE,505
+rppc/cli.py,sha256=LmJk5bEvMrbWcolCQKE54jRKcB0oksvCoRHDqablDIY,371
+rppc/templates.py,sha256=BFR-mdUljtrLLOBh4_5UPxuPKlSK7Qw_KCzBYaazIio,4420
+rppc/utils.py,sha256=s0nOtuEsrD0vM684r4jALKIT0Vlg9vKy_AixR1AjEaw,330
+rppc-0.1.0a2.dist-info/LICENSE.txt,sha256=EcsK8ya5jDTYUfujad0ksTyKTvJzK_0MKQWXAb2xhFg,1073
+rppc-0.1.0a2.dist-info/METADATA,sha256=u1hqpwKwvT6K1_wqkGX4i0jFgzm8ougYPLeqtJ9R-9E,1303
+rppc-0.1.0a2.dist-info/RECORD,,
+rppc-0.1.0a2.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+rppc-0.1.0a2.dist-info/entry_points.txt,sha256=9y5aRkVFTnNwOFiBQNyPq8vd5Fg6PCn2eoF-VkAm_vc,111
+rppc-0.1.0a2.dist-info/top_level.txt,sha256=6EG6pmTv8Sp6ufOjLE0UQWPo77YkVfj3bSVhNfTDKiU,11
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_example.py,sha256=rZsos0-Eayh7__ESPfMAcbWANPTzHrRMCjxzMfD8hU0,107

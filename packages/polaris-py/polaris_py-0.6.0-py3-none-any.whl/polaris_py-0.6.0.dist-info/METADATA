@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: polaris-py
+Version: 0.6.0
+Summary: Polaris is a hyperparamter optimization library.
+Home-page: UNKNOWN
+Author: Shun Iwase, Linsho Kaku
+Author-email: s@sh8.io, kaku.l.aa@rio.gsic.titech.ac.jp
+License: MIT
+Platform: Linux
+Platform: OS-X
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: pika (==0.12.0)
+Requires-Dist: statsmodels
+Requires-Dist: matplotlib
+
+# Polaris : Hyperparamter optimization library.
+
+[![Documentation Status](https://readthedocs.org/projects/polaris/badge/?version=latest)](https://polaris.readthedocs.io/en/latest/?badge=latest)
+
+Polaris is a hyperparamter optimization library.  
+We plan to support every state-of-art tuning method as follows.
+
+-  Random Search
+-  Bayesian Optimization
+-  Tree-structured Parzen Estimators (TPE)
+
+## Documentation
+Polaris' documentation can be found at [https://polaris.readthedocs.io/](https://polaris.readthedocs.io/)
+
+## Prerequisites
+- Python >= 3.6
+- RabbitMQ (Only for parallel execution)
+
+## Installation
+
+```shell
+$ pip install polaris-py
+```
+
+## Examples
+
+### Sequential Execution
+
+```python
+from polaris import Polaris, STATUS_SUCCESS, Trials, Bounds
+
+
+def pseudo_train(params, exp_info):
+    lr_squared = (params['lr'] - 0.006) ** 2
+    weight_decay_squared = (params['weight_decay'] - 0.02) ** 2
+    loss = lr_squared + weight_decay_squared
+    return {
+        'loss':  loss,
+        'status': STATUS_SUCCESS,
+    }
+
+
+if __name__ == '__main__':
+    bounds = [
+        Bounds('lr', 0.001, 0.01),
+        Bounds('weight_decay', 0.0002, 0.04),
+    ]
+    trials = Trials()
+    polaris = Polaris(
+            pseudo_train, bounds, 'bayesian_opt',
+            trials, max_evals=100, exp_key='this_is_test')
+    best_params = polaris.run()
+    print(best_params)
+```
+
+### Parallel Execution
+
+#### Single Process
+
+1. Run `rabbitmq-server`
+1. Set `RABBITMQ_URL` (ampq://guest:guest@localhost//)
+1. Run `polaris-worker --exp-key this_is_test`
+1. Run codes as follows
+
+### Multiple Processes (Use MPI)
+
+1. Run `rabbitmq-server`
+1. Set `RABBITMQ_URL` (ampq://guest:guest@localhost//)
+1. Run `mpirun -n 4 polaris-worker --mpi --exp-key this_is_test`
+1. Run codes as follows
+
+
+```python
+
+...
+
+if __name__ == '__main__':
+    bounds = [
+        Bounds('lr', 0.001, 0.01),
+        Bounds('weight_decay', 0.0002, 0.04),
+    ]
+    trials = Trials()
+    polaris = Polaris(
+            pseudo_train, bounds, 'bayesian_opt',
+            trials, max_evals=100, exp_key='this_is_test')
+    best_params = polaris.run_parallel()
+    print(best_params)
+```
+
+

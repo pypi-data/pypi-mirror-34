@@ -1,0 +1,3 @@
+[console_scripts]
+mycocv = mycorrhiza.scripts:mycocv
+

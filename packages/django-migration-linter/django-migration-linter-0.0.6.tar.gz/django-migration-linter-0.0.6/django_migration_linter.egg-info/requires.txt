@@ -1,0 +1,6 @@
+django>=1.11
+
+[test]
+django-fake-database-backends
+pytest
+tox

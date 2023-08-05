@@ -1,0 +1,11 @@
+pydumpi/__init__.py,sha256=XkEV_eCn3_ELgaYv3xiQ_eMIu1olQjvZYFupwWskUZc,32
+pydumpi/callbacks.py,sha256=kNJPjCRA3SzhUsY-2896ox0Pay3U-Fj7UumMGbS3joc,11795
+pydumpi/constants.py,sha256=VQrZdeaMh1VeG40GKfx51N8iC-syeXfXJLgL1JJ8ICs,633
+pydumpi/dtypes.py,sha256=3rVZHrEkvTacQRZH45wmaSlbOqF71SV8G8_XKKSVH-E,49382
+pydumpi/undumpi.py,sha256=gvQMIaGiWVj3ji7R3zHialO2N90QSPL8yx35KARpRi8,149943
+pydumpi/util.py,sha256=E0LKapxi_JPpbjlR1tPw396e62yaNYdCicxcnc9HOu0,1555
+pydumpi/lib/libundumpi.so.8.0.0,sha256=Bymw8oPqsutj2AC19K3r4_L_gIlDSYFjtWVXZh7UNKY,2801808
+pydumpi-0.1.3.dist-info/METADATA,sha256=LCb1B5y9hDzIAzqmk9ef81eDUDwsdZJODUeDvrUEQJg,3276
+pydumpi-0.1.3.dist-info/RECORD,,
+pydumpi-0.1.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pydumpi-0.1.3.dist-info/top_level.txt,sha256=hVo7H2gM_cuoPlPSthocCgizEGfbaLAJ3-ppdwg6_R8,8

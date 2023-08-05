@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pyredisrpc/__init__.py
+pyredisrpc/pyredisrpc.py
+pyredisrpc.egg-info/PKG-INFO
+pyredisrpc.egg-info/SOURCES.txt
+pyredisrpc.egg-info/dependency_links.txt
+pyredisrpc.egg-info/not-zip-safe
+pyredisrpc.egg-info/requires.txt
+pyredisrpc.egg-info/top_level.txt

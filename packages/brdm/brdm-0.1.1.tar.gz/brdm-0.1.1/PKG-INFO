@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: brdm
+Version: 0.1.1
+Summary: Bioinformatics Reference Data Manager is an application used to download, backup and update of     reference data, required for various bioinformatics analysis
+Home-page: https://github.com/AAFC-BICoE/reference-data-manager
+Author: Oksana Korol
+Author-email: oksana.korol@agr.gc.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License

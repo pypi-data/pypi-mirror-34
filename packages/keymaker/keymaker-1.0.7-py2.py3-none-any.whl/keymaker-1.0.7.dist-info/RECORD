@@ -1,0 +1,12 @@
+keymaker/__init__.py,sha256=BcNC1cwkzdY-MoAmZAJnCqwUdmj55UnghyiY0Jz1P7M,19362
+keymaker/printing.py,sha256=MDEjSqyEtCst179Nle7S0sK_FELf0kc9ZrmQKyKjIlQ,1517
+keymaker/s3.py,sha256=hs8I4CQ3DHAzXzx2tnn-yq86Wh1MongfjW2a-NDrO9Y,3480
+keymaker/version.py,sha256=Th6FPUfmw3s94879QiaD_OgzmQyEFPOnYrMVoQqee8Y,22
+keymaker/iam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keymaker/iam/policies.py,sha256=vWjTBBE0T8qUxJ63B8IvlH8SNyKUJ_TJRIzPMPMb0uc,824
+keymaker-1.0.7.data/scripts/keymaker,sha256=e-8bEOyUmxzmH3iksugGedpdfg_U0ePnfCNWYDmPkDg,9188
+keymaker-1.0.7.data/scripts/keymaker-create-account-for-iam-user,sha256=DmOhukPfOTvEGGrjjsWRcvC3zqErMr5nZGdmySu5l4M,1271
+keymaker-1.0.7.dist-info/METADATA,sha256=REOoEhLCYGYRAnl6xkJCAi3BkCMJpy4jvBA6SvpepGg,8972
+keymaker-1.0.7.dist-info/RECORD,,
+keymaker-1.0.7.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+keymaker-1.0.7.dist-info/top_level.txt,sha256=nlgYhHm7bJwwyk6KxRzqzYZk4eztDWKBXiF66810qVY,9

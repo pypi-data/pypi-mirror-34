@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scmon
+Version: 0.1.0
+Summary: Dev tool for restarting apps on code change
+Home-page: https://github.com/krisfris/scmon
+Author: Kris
+Author-email: 31852063+krisfris@users.noreply.github.com
+License: MIT
+Description: # scmon
+        Dev tool for restarting apps on code change
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

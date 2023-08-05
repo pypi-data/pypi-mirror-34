@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: didfile
+Version: 1.0.3
+Summary: Log the things you've done
+Home-page: https://github.com/Ovelny/didfile
+Author: Ovelny
+Author-email: this.is.ovelny@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+
+
+# didfile
+didfile is a tiny Python script based on theptrk's article: [did.txt](https://theptrk.com/2018/07/11/did-txt-file/)
+
+didfile:
+
+* Opens / creates a did.txt file in your home folder with nano
+
+* Automatically formats and appends today's date
+
+* Lets you type down what you've done immediately. That's all.
+
+## Requirements
+
+* Linux
+
+* Python3
+
+* nano
+
+## Installation
+`pip install --user didfile`
+
+Simply type `did` in your terminal and you're all set.
+

@@ -1,0 +1,29 @@
+#%Module
+
+proc ModulesHelp {} {
+    puts stderr "Give access to the VACUMM's data"
+    puts stderr "More info about the library at http://www.ifremer.fr/vacumm/"
+    puts stderr ""
+}
+
+
+# Try to retrieve the real modulefile path in case it or one of its parent directories is a link
+# (doing this in tcl language is a bit more complicated)
+set tmpstatus [catch {exec readlink -f $ModulesCurrentModulefile} realmodulefilepath]
+if {$tmpstatus == 0} {
+    set moduledir [file dirname $realmodulefilepath]
+} else { # Fallback without symbolic links care
+    set moduledir [file dirname $ModulesCurrentModulefile]
+
+}
+
+
+# Identify the needed informations to configure the environment
+set etcdir [file dirname $moduledir]
+set prefix [file dirname $etcdir]
+set datdir $prefix/share/vacumm
+
+# Now configure the environment
+prepend-path PYTHONPATH $prefix
+setenv VACUMM_DATA_DIR $datdir
+

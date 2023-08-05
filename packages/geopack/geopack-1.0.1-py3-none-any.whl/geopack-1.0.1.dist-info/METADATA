@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: geopack
+Version: 1.0.1
+Summary: Python version of geopack and Tsyganenko models
+Home-page: https://github.com/tsssss/geopack
+Author: Sheng Tian
+Author-email: tianx138@umn.edu
+License: MIT
+Download-URL: https://github.com/tsssss/geopack/blob/master/dist/geopack-1.0.1.tar.gz
+Keywords: geopack,space physics,Tsyganenko model
+Platform: Mac OS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires: numpy
+Requires: scipy
+
+Python geopack and Tsyganenko models
+------------------------------------
+
+Calculate magnetic field vector at given position and time,
+based on internal models (dipole and IGRF) and external models
+(Tsyganenko models, one of T89, T96, T01, T04).
+
+Transform vectors from one coordinate to another among
+GSM, GSE, GEO, GEI, SM, MAG.
+
+Trace the given position parallel or anti-parallel to the
+model magnetic field until reaching a given boundary.
+
+This version requires Python 3 or later.
+
+

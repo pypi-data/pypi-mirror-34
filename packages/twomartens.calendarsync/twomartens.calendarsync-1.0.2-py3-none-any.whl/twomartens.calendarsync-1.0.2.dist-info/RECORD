@@ -1,0 +1,11 @@
+twomartens.calendarsync-1.0.2-py3.6-nspkg.pth,sha256=dS75l8sGg-PEp7lqw-0QiRye7DQuY8gStaBGVOtcxA4,560
+twomartens/calendarsync/__init__.py,sha256=4A4-Uqa89q_2oQq1eNsvCVx12JeCoLbgErR6xPq8VCM,620
+twomartens/calendarsync/__main__.py,sha256=QBY3twe8OX_W2A_ab29BIK02p3LWz9tIlq9F6-xKq-0,749
+twomartens/calendarsync/calendarsync.py,sha256=lXgRYxTzXRo-RW24cAmP8er4bDSNyMkdBOl0fFYY8jA,3913
+twomartens/calendarsync/event_template.markdown,sha256=3Ij07cMsQgP2xLsTUnVPt7A8UHwIqMoZBPgKfVncy_E,107
+twomartens.calendarsync-1.0.2.dist-info/METADATA,sha256=GmJZTx68hEasEMx6s0PRMypztl2xoFa0Q1eu6Z_WVYY,2533
+twomartens.calendarsync-1.0.2.dist-info/RECORD,,
+twomartens.calendarsync-1.0.2.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+twomartens.calendarsync-1.0.2.dist-info/entry_points.txt,sha256=IBvDgP8mqR0GcGfkUjai129kNdtxskMfmU2fqcptMf8,79
+twomartens.calendarsync-1.0.2.dist-info/namespace_packages.txt,sha256=JxSrjAIU_aXOZI2ds-JBPk5qpvqk0Qj4eCqVI-cLmnI,11
+twomartens.calendarsync-1.0.2.dist-info/top_level.txt,sha256=JxSrjAIU_aXOZI2ds-JBPk5qpvqk0Qj4eCqVI-cLmnI,11

@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: memento_project
+Version: 0.1
+Summary: Create checkpoints and rollback for your data
+Home-page: https://github.com/LordFeratum/memento
+Author: Enrique Pina Monserrat
+Author-email: lord.feratum@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/LordFeratum/memento/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: data,python
+Platform: UNKNOWN

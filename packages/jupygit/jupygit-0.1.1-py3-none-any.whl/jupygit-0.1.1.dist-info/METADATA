@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jupygit
+Version: 0.1.1
+Summary: Prepare your Notebooks to be pushed to GitHub
+Home-page: https://github.com/fferegrino/jupygit
+Author: Antonio Feregrino
+Author-email: antonio.feregrino@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# jupygit
+Integrating Jupyter Notebooks to a git workflow... (at least an attempt 🤞)
+
+

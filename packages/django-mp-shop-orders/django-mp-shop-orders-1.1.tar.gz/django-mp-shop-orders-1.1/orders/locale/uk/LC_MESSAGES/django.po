@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-15 13:52+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: models/delivery_method.py:10 models/order_status.py:10
+#: models/payment_method.py:10
+msgid "Name"
+msgstr "Ім'я"
+
+#: models/delivery_method.py:25 models/order_status.py:25
+#: models/payment_method.py:25
+msgid "Code"
+msgstr "Код"
+
+#: models/delivery_method.py:41 models/order_status.py:41
+#: models/payment_method.py:41
+msgid "Description"
+msgstr "Опис"
+
+#: models/delivery_method.py:62 models/order.py:70
+msgid "Delivery method"
+msgstr "Спосіб доставки"
+
+#: models/delivery_method.py:63
+msgid "Delivery methods"
+msgstr "Способи доставки"
+
+#: models/order.py:12
+msgid "Customer"
+msgstr "Клієнт"
+
+#: models/order.py:34 models/payment_method.py:62
+msgid "Payment method"
+msgstr "Спосіб оплати"
+
+#: models/order.py:52 models/order_status.py:62
+msgid "Order status"
+msgstr "Статус замовлення"
+
+#: models/order.py:87
+msgid "First name"
+msgstr "Імʼя"
+
+#: models/order.py:101
+msgid "Last name"
+msgstr "Прізвище"
+
+#: models/order.py:115
+msgid "Middle name"
+msgstr "По батькові"
+
+#: models/order.py:131
+msgid "Address"
+msgstr "Адреса"
+
+#: models/order.py:147
+msgid "Mobile number"
+msgstr "Мобільний"
+
+#: models/order.py:161
+msgid "Email"
+msgstr "Ел. пошта"
+
+#: models/order.py:177
+msgid "Date created"
+msgstr "Дата створення"
+
+#: models/order.py:193 models/order_item.py:63
+msgid "Comment"
+msgstr "Коментар"
+
+#: models/order_item.py:12
+msgid "Order"
+msgstr "Замовлення"
+
+#: models/order_item.py:30
+msgid "Product"
+msgstr "Продукт"
+
+#: models/order_item.py:47
+msgid "Quantity"
+msgstr ""
+
+#: models/order_item.py:83
+msgid "Ordered product"
+msgstr "Замовлений товар"
+
+#: models/order_item.py:84
+msgid "Ordered products"
+msgstr "Замовлені товари"
+
+#: models/order_status.py:63
+msgid "Order statuses"
+msgstr "Статуси замовлення"
+
+#: models/payment_method.py:63
+msgid "Payment methods"
+msgstr "Спосіби оплати"

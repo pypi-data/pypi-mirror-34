@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ppmml
+Version: 0.0.1
+Summary: Python library for converting machine learning models to pmml file
+Home-page: https://github.com/lgrcyanny/ppmml
+Author: Cyanny Liang
+Author-email: lgrcyanny@gmail.com
+License: GNU Affero General Public License (AGPL) version 3.0
+Download-URL: https://github.com/lgrcyanny/ppmml/archive/0.0.1.tar.gz
+Keywords: machine learning,data science,jpmml,pmml,sklearn,scikit-learn,tensorflow,xgboost,spark,sparkml,R,lightgbm
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: scikit-learn (>=0.18.0)
+
+UNKNOWN
+
+

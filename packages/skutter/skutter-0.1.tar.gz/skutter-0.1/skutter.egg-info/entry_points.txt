@@ -1,0 +1,3 @@
+[console_scripts]
+skutter = bin.skutter:main
+

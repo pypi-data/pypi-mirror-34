@@ -1,0 +1,6 @@
+# ie_mbdbl2018_ndyvik
+This is a simple minimal set of codes to create a Python Package
+
+TEST PUSHING...
+...
+"# pie_mbdbl2018_ndyvik" 

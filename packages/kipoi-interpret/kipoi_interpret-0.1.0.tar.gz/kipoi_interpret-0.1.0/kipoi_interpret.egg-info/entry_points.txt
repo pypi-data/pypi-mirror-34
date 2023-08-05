@@ -1,0 +1,3 @@
+[console_scripts]
+kipoi_interpret = kipoi.cli:cli_main
+

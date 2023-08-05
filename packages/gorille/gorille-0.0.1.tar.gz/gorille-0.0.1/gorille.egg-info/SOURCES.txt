@@ -1,0 +1,9 @@
+setup.py
+gorille/__init__.py
+gorille/sigplot.py
+gorille.egg-info/PKG-INFO
+gorille.egg-info/SOURCES.txt
+gorille.egg-info/dependency_links.txt
+gorille.egg-info/entry_points.txt
+gorille.egg-info/requires.txt
+gorille.egg-info/top_level.txt

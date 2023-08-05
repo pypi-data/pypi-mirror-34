@@ -1,0 +1,3 @@
+[console_scripts]
+sigplot = gorille.sigplot:main
+

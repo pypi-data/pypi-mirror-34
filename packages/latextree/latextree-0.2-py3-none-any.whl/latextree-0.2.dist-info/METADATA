@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: latextree
+Version: 0.2
+Summary: A document object model and related tools for Latex
+Home-page: http://github.com/cardiffmaths/latextree
+Author: D Evans
+Author-email: evansd8@cf.ac.uk
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2
+Requires-Dist: pylatexenc
+Requires-Dist: bibtexparser
+Requires-Dist: lxml
+Requires-Dist: six
+
+# The `latextree` Package
+
+Creates a document object model for LaTeX and provides some useful functions. The parser understands the syntax of most common macros but is NOT a replacement for a full LaTeX engine. The parser should only be invoked only after the input has been successfully compiled under LaTeX.
+
+Example:
+```python
+>>> from latextree.parser import LatexParser
+>>> pa = LatexParser()
+>>> filename = "/path/to/main.tex""
+>>> doc = pa.parse_latex_file(filename)
+>>> doc.make_website()			# create website
+>>> bbqs = doc.bbq()			# extract mc/ma questions in Blackboard format (plain text)
+>>> docx = doc.root.get_xml()	# create xml document
+>>> from lxml import etree
+>>> print(etree.tostring(docx, pretty_print=True))
+```
+
+If `latextree` is installed as a package:
+```python
+>>> import latextree
+>>> filename = "/path/to/main.tex""
+>>> doc = load(filename)
+>>> doc.make_website()	# create website
+>>> bbqs = doc.bbq()	# extract mc/ma questions in Blackboard format (plain text)
+>>> exit()
+```
+
+---
+## Standards
+
+The following are yet to be implemented properly.
+
+* Exception handling
+* Testing
+* Logging
+* Documentation
+
+---
+## `make_website`
+```python
+>>> doc.make_website(copy_static=True, copy_figures=True, WEB_ROOT=None)
+```
+
+By default, the website is created in a folder called `web-latexmainfilename` in the directory containing the main latex source file. . The output directory can be changed by setting the WEB_ROOT variable.
+
+* html files are written to WEB_ROOT
+* style files are copied to WEB_ROOT/static/css. These can be modified post-production.
+* figures are copied to WEB_ROOT/static/img
+* urls are constructed from chapter and/or section numbers (if any)
+
+### Templates
+The `LatexDocument.make_website()` function uses `jinja2` templates.
+
+* `scripts.html` loads the `MathJax` and `jquery` CDNs from cloudflare.
+* `node.html` does most of the work. This needs to be broken up.
+
+### Static files
+
+* `css/`: The stylesheets are rough-and-ready and need a lot of work (especially for phones and tablets).
+* `img/`: Image files are copied into here.
+* `js/`:  Currently contains only a simple show/hide function.
+
+---
+## Modules
+
+* `bibliography`: wrapper for `bibtexparser`
+* `content`: content nodes
+* `document`: `LatexDocument` class and output functions
+* `factory`: creates node classes and objects
+* `ltree`: command line tools
+* `macrosdef`: macro definitions for `pylatexenc.latexwalker`
+* `node`: base class for `LatexTreeNode` objects.
+* `parser`: `LatexParser` class. Creates `LatexDocument` objects.
+* `preprocessor`: prepare latex source for `pylatexenc.latexwalker`(replace $$...$$ etc.)
+* `reader`: input functions and utilities
+* `settings`: website settings (e.g. mathjax cdn)
+* `tabular`: parse tabular environments.
+* `taxonomy`: register of species (e.g. `list`) and genera (e.g. `itemize`).
+* `walker`: wrapper for `pylatexenc.latexwalker`.
+
+### Dependencies
+
+* `bibtexparser`
+* `jinja2`
+* `lxml`
+* `pylatexenc`
+
+## Test files
+The `tex` directory contains:
+* `LatexTreeTestBook` for testing the `book` document class
+* `LatexTreeTestArticle` for testing the `article` document class
+* `LatexTreeTestExam` for testing the `exam` document class
+
+
+## Existing software for Latex processing
+
+* pylatexenc
+	- LaTeX -> Unicode
+	- python package
+
+* plasTeX
+	- LaTeX -> XML and XHTML
+	- python package
+
+* tex4ht
+	- LaTeX -> XML, HTML and Braille!
+	- java and c libraries
+	- provides a `htlatex` cmd to replace latex.
+
+* pandoc
+	- LaTeX -> HTML
+	- haskell library
+
+* tralics (INRIA)
+	- LaTeX -> XML
+
+

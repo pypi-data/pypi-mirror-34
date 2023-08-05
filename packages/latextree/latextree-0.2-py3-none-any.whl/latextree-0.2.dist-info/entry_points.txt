@@ -1,0 +1,3 @@
+[console_scripts]
+ltree = latextree.ltree:main
+

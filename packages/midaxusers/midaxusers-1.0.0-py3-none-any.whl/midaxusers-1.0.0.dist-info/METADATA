@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: midaxusers
+Version: 1.0.0
+Summary: Midax Users API
+Home-page: http://www.midax.com
+Maintainer: Midax
+Maintainer-email: alex.r@midax.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: flask
+
+UNKNOWN
+
+

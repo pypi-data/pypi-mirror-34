@@ -1,0 +1,11 @@
+pybotvac/__init__.py,sha256=DP1KxPHRKUYG5X3sVWYof0Z4k9bryJxWUV7znufNMd4,81
+pybotvac/account.py,sha256=suspRoeBW8s0Zv_dDOF25KNVZySXFYgM22fEvSj7FQ4,3929
+pybotvac/robot.py,sha256=lISDW9VI0ppSVKhP7K0wv-g_Jr2p-lC-RiYRGavREC0,6436
+pybotvac/cert/neatocloud.com.crt,sha256=1EG-lceZHmWBtmhy7rEYmZiDFkwlw6Ll_4w5qMgapD8,1744
+pybotvac-0.0.9.dist-info/METADATA,sha256=vBEsFfzc4pyZThsBXELYGqRwqJ4FH54WqR-zEvyvx4g,3083
+pybotvac-0.0.9.dist-info/PKG-INFO(Conflicted),sha256=wi7JwvZaJcOqmrtLRb04iC-rrsC342Qs08NT2WO_yxc,3852
+pybotvac-0.0.9.dist-info/RECORD,,
+pybotvac-0.0.9.dist-info/SOURCES(Conflicted 1).txt,sha256=8NNgJuDADSra3f3NAVerrxCXqHOPPLaB1_nRBDppwXg,288
+pybotvac-0.0.9.dist-info/SOURCES(Conflicted).txt,sha256=fxOr-fLs9z6Tqby2bcZmaJahrLrL3B4hvGmNZZ-1dao,351
+pybotvac-0.0.9.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+pybotvac-0.0.9.dist-info/top_level.txt,sha256=nVXXbDVfpSFBpO5fFJ_GIrQZKOF3i8z_RZUSU2amJ3Q,9

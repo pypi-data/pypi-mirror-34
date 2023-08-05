@@ -1,0 +1,9 @@
+domain_connect-0.0.3.dist-info/METADATA,sha256=2rze5mld-jiK0EWv_H7Ec_zFbgYt5fv84H7R-BhLdxs,5201
+domain_connect-0.0.3.dist-info/RECORD,,
+domain_connect-0.0.3.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+domain_connect-0.0.3.dist-info/top_level.txt,sha256=RToOVKvWkEEuw2y2W0kCebzxgfzaxBMgt7qLFJwM6g0,14
+domainconnect/__init__.py,sha256=HTaFcfJhVZDnB1N_t1LBv8MCbuSqkgI9yZ2k8Ag_7d0,354
+domainconnect/domainconnect.py,sha256=iUIDh9xAkawwyE1TzODfsPuseRQ4OzUEUt43UA3tnIU,21382
+domainconnect/network.py,sha256=aPpBD3K2T6V-dIUZ0BlOUUk7BHPASZNzKbDebjJcSLE,7909
+domainconnect/tests/__init__.py,sha256=YIiJDq6L6uviXoVepjgD4wzFOzWpBcOEbzgI4gnvpsg,298
+domainconnect/tests/test_domainConnect.py,sha256=FVgJHviIo6mrh037fXLG-UKCSkD2y9h9mXRdOxY8naM,13964

@@ -1,0 +1,10 @@
+ribosome/__init__.py,sha256=WOu_udmFoJ4xI4G2sig-BobPkrr-hYrh8PjGSVW6wSg,45083
+ribosome/scmtools/__init__.py,sha256=_SpPdLTSRKKoH3sGywKdMbtOtJbWiRpOaRsN1ZXL8_c,1190
+ribosome/scmtools/git.py,sha256=lPmTqFSOBTCcyXYyGZp1NkiSuzvexepkt_vqxVsCpX0,4942
+ribosome/scmtools/hg.py,sha256=gEawqyLfqm3zpfE-xojCs8Ux4zJwZpJXI39BVtGDGug,4510
+ribosome/scmtools/utils.py,sha256=e2OtbiIJjRd-RC6lQJoeS4A02BC1Wnsq4t2iSYuWKpE,1533
+ribosome.tool-0.1.0.dist-info/METADATA,sha256=2VtEeHsF6PMHD4n6uo7Di-qHLFp-ncbpXiFrr0qTUCA,6668
+ribosome.tool-0.1.0.dist-info/RECORD,,
+ribosome.tool-0.1.0.dist-info/WHEEL,sha256=HFxn6CRybAnvxw97CfWMjKc4LDsDdXXn2o08ktxbRQY,93
+ribosome.tool-0.1.0.dist-info/entry_points.txt,sha256=LOeRDpgE3invh4qIuuvncuyyt_0ziufSELaP0Qo8l6s,43
+ribosome.tool-0.1.0.dist-info/top_level.txt,sha256=m109VaXb5bJTeGCb5YlSIIG1oQbk-RHotXO0ZrDUl_A,9

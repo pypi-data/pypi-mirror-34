@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: of-pubsub
+Version: 0.1
+Summary: A generic pubsub class that can have multiple back ends, currently only AWS/SNS/SQS supported
+Home-page: https://github.com/danaronson/pubsub
+Author: Dan Aronson
+Author-email: dan.aronson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: boto3
+
+UNKNOWN
+
+

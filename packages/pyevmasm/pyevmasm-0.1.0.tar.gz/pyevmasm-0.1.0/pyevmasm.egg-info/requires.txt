@@ -1,0 +1,6 @@
+future
+
+[dev]
+coverage
+flake8
+nose

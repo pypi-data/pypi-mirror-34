@@ -1,0 +1,4 @@
+[consose_scripts]
+lasikconnect = lasikserivce.serialconnection
+lasikservice = lasikservice.service
+

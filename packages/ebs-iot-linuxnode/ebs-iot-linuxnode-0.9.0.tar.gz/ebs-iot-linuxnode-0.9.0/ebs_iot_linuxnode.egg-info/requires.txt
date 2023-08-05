@@ -1,0 +1,10 @@
+six
+appdirs
+Cython
+twisted
+SQLAlchemy
+kivy>1.10.1
+netifaces
+colorthief
+treq
+cached_property

@@ -1,0 +1,3 @@
+[console_scripts]
+kipoi_veff = kipoi_veff.cli:main_cli
+

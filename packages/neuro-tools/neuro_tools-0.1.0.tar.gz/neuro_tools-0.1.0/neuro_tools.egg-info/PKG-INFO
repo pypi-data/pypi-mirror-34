@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: neuro-tools
+Version: 0.1.0
+Summary: Neuroimaging tools to help with BIDS, XNAT, workflows, etc.
+Home-page: https://github.com/InstitutoDOr/neuro_tools
+Author: Bruno Melo
+Author-email: bruno.melo@idor.org
+License: UNKNOWN
+Description: # neuro_tools
+        Neuroimaging tools to help with BIDS, XNAT, workflows, etc.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

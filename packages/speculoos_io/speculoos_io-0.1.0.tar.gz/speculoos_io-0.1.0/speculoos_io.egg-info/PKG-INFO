@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: speculoos-io
+Version: 0.1.0
+Summary: Wrapper for astropy and cfitsio readers for SPECULOOS data and log files
+Home-page: https://github.com/MNGuenther/specio
+Author: Maximilian N. Guenther
+Author-email: mg719@cam.ac.uk
+License: UNKNOWN
+Download-URL: https://github.com/MNGuenther/specio/releases
+Description: UNKNOWN
+Platform: UNKNOWN

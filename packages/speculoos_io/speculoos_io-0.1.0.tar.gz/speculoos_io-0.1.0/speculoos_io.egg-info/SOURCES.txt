@@ -1,0 +1,10 @@
+README.md
+setup.py
+specio/__init__.py
+specio/specio.py
+specio/specio_get.py
+specio/specio_test.py
+speculoos_io.egg-info/PKG-INFO
+speculoos_io.egg-info/SOURCES.txt
+speculoos_io.egg-info/dependency_links.txt
+speculoos_io.egg-info/top_level.txt

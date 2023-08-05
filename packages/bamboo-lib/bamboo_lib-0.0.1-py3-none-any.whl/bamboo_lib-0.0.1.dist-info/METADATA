@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bamboo-lib
+Version: 0.0.1
+Summary: Python ETL library
+Home-page: https://github.com/Datawheel/bamboo-lib
+Author: Jonathan Speiser
+Author-email: jonathan@datawheel.us
+License: All Rights Reserved
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Required in path:
+* bamboo-lib
+* catapult
+
+# Required if using locking
+
+## Installing Sherlock on OS X
+
+```brew install libmemcached```
+```pip install pylibmc --install-option="--with-libmemcached=/usr/local/Cellar/libmemcached/1.0.18_2"```
+```pip install sherlock```
+
+

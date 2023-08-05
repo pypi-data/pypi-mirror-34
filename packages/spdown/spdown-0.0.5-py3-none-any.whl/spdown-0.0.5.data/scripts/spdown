@@ -1,0 +1,4 @@
+#!python
+
+import runpy
+runpy.run_module('spdown', run_name='__main__')

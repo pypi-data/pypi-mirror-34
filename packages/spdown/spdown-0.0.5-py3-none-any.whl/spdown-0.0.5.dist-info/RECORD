@@ -1,0 +1,14 @@
+spdown/__init__.py,sha256=nYUNi7x-2qgyiCGw5Ery6v7nMwzG03zO3xYo_J4qgPQ,39
+spdown/__main__.py,sha256=Hz9SSCrLK7WxsuFSDDZwAFqvwA0DUFvCpj0_vhOQwao,3071
+spdown/config.py,sha256=UmvnLgroFjsfzZy8qR2QY85aSThSmhBWFaD60PSXnDo,3731
+spdown/secrets.py,sha256=J3JAcProf3ZqwEH-YuNF9DAIWp0v9Idj0sr1OhzKOsc,3612
+spdown/spotify.py,sha256=AMGDPiAxa-XoUO3JMUL-qu78KLiz2M3GcldNBG_J6Z8,3367
+spdown/track.py,sha256=3ewwCYpk4ekcXpHupjR6CyH3pkJQNZEtxqBkc-yc6zU,1497
+spdown/youtube.py,sha256=oyNkOoYxklO_alm-1qYF-Dxeq2SHHw1eOApjMnt64IU,5542
+spdown-0.0.5.data/scripts/spdown,sha256=tC0N0JMAnZLplSLhvv8eXUMn41h1Vbn5U5YzWpV8X0A,70
+spdown-0.0.5.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+spdown-0.0.5.dist-info/METADATA,sha256=rsvXuQv4QAWzZkAJloUSOYsBiyY9MxTFZWOBq4GQJqk,593
+spdown-0.0.5.dist-info/RECORD,,
+spdown-0.0.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+spdown-0.0.5.dist-info/metadata.json,sha256=jAmwjWaytifg4ZHCZh0rbuTRcJlXdOA2eQTaWmiAsrA,741
+spdown-0.0.5.dist-info/top_level.txt,sha256=VhxuQVdXLdC6Lus9IuVzEQ6aclJRsVDJNW7iITpGnnM,7

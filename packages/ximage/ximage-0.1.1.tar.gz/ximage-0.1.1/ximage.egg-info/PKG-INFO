@@ -1,0 +1,62 @@
+Metadata-Version: 1.1
+Name: ximage
+Version: 0.1.1
+Summary: a simple image process tools.
+Home-page: https://github.com/a358003542/ximage
+Author: cdwanze
+Author-email: a358003542@gmail.com
+License: MIT
+Description: # ximage
+        
+        
+        ```
+        pip install ximage
+        ```
+        
+        
+        
+        ## resize image
+        need the pillow module.
+        
+        ```
+        ximage resize ...
+        ```
+        
+        ```
+        Usage: ximage resize [OPTIONS] INPUTIMGS...
+        
+          resize your image, width height you must give one default is zero. out
+          :param inputimgs: 
+          :param width: 
+          :param height: 
+          :param outputdir: 
+          :param outputname:
+        
+        Options:
+          --width INTEGER    the output image width
+          --height INTEGER   the output image height
+          --outputdir TEXT   the image output dir
+          --outputname TEXT  the image output name
+          --help             Show this message and exit.
+        
+        ```
+        
+        ## convert image format
+        If you in windows , please install the inkscape and gimp software.
+        
+        
+        ```
+        ximage convert ...
+        ```
+        
+        
+        
+        
+        
+Keywords: ximage,python
+Platform: Linux
+Platform: windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3

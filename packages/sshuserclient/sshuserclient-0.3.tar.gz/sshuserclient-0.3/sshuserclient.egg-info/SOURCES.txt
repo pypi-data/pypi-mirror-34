@@ -1,0 +1,14 @@
+COPYING
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sshuserclient/__init__.py
+sshuserclient/client.py
+sshuserclient/config.py
+sshuserclient.egg-info/PKG-INFO
+sshuserclient.egg-info/SOURCES.txt
+sshuserclient.egg-info/dependency_links.txt
+sshuserclient.egg-info/not-zip-safe
+sshuserclient.egg-info/requires.txt
+sshuserclient.egg-info/top_level.txt

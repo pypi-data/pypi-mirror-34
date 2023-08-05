@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sshuserclient
+Version: 0.3
+Summary: An SSHClient which honors ssh_config and supports proxyjumping
+Home-page: https://github.com/tobald/sshuserclient
+Author: Christophe Siraut
+Author-email: d@tobald.eu.org
+License: GPL-3+
+Description: UNKNOWN
+Platform: UNKNOWN

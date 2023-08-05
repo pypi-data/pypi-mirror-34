@@ -1,0 +1,16 @@
+click
+py
+coreapi-cli==1.0.9
+gitpython
+raven
+terminaltables
+click_log==0.1.8
+virtualenv
+six
+colorama
+enum34
+backports.functools_lru_cache
+
+[dev]
+pytest
+pytest-mock

@@ -1,0 +1,5 @@
+[console_scripts]
+kumla = otta:kumla
+otta = otta:otta
+skara = otta:skara
+

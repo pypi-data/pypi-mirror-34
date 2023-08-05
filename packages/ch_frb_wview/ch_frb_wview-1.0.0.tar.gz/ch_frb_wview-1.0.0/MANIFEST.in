@@ -1,0 +1,7 @@
+include ch_frb_wview/config/l1_production_8beam_webapp.yaml
+include ch_frb_wview/templates/*html
+include ch_frb_wview/templates/*js
+include ch_frb_wview/templates/includes/*html
+include ch_frb_wview/static/*js
+include ch_frb_wview/static/*css
+include ch_frb_wview/databases/*sqlite3

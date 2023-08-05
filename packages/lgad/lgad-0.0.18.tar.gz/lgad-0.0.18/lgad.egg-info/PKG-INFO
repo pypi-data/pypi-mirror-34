@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lgad
+Version: 0.0.18
+Summary: Simulator for the LGAD detector.
+Home-page: https://github.com/Tsangares/LGAD_SIM
+Author: William Wyatt
+Author-email: wwyatt@ucsc.edu
+License: UNKNOWN
+Description: Simulator for the LGAD detector.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Provides-Extra: matplotlib

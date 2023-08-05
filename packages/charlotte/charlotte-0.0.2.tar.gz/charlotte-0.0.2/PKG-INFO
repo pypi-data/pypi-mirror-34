@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: charlotte
+Version: 0.0.2
+Summary: Lightweight and expandable spider framework.
+Home-page: https://github.com/Jack-Kingdom/charlotte
+Author: Jack King
+Author-email: email@qiaohong.org
+License: MIT
+Description: # charlotte
+        
+        [![Build Status](https://travis-ci.com/Jack-Kingdom/charlotte.svg?branch=master)](https://travis-ci.com/Jack-Kingdom/charlotte)
+        
+        Lightweight and expandable spider framework.
+        ![hummer](https://raw.githubusercontent.com/wiki/Jack-Kingdom/charlotte/assets/charlotte-web.jpeg)
+        
+        ## Install
+        ```shell
+        pip install charlotte
+        ```
+        
+        ## Documentation
+        Check [wiki](https://github.com/Jack-Kingdom/charlotte/wiki) for details.
+        
+        ## LICENSE
+        MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English

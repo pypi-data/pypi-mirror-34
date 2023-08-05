@@ -1,0 +1,12 @@
+include Makefile
+include tox.ini
+include Pipfile
+include .editorconfig
+include .coveragerc
+include LICENSE
+include CHANGELOG.rst
+
+exclude .gitlab-ci.yml
+
+recursive-include src *.py
+recursive-include test *.py

@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: pyjuhelpers
+Version: 0.3
+Summary: Add a short description here!
+Home-page: http://...
+Author: jumbrich
+Author-email: jueumb@gmail.com
+License: mit
+Description: =========
+        pyhelpers
+        =========
+        
+        
+        Some tiny helper classes for daily routines
+        
+        
+        Description
+        ===========
+        
+        Personal collection of python helper classes (e.g. timer with context, string (list) formats, logging configs, base config class
+        
+        
+        Note
+        ====
+        
+        This project has been set up using PyScaffold 3.0.3. For details and usage
+        information on PyScaffold see http://pyscaffold.org/.
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python

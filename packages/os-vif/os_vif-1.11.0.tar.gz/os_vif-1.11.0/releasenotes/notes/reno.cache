@@ -1,0 +1,19 @@
+---
+file-contents:
+  releasenotes/notes/add-no-op-plugin-763a6703e7328a24.yaml:
+    features: ['A new VIF plugin, ``vif_plug_noop``, has been added which can be used
+        with
+
+        network backends that do not require any action to be performed when a
+
+        network interface is plugged. This plugin allow for use of, for example,
+
+        the generic vhost user VIF type without OVS.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/add-no-op-plugin-763a6703e7328a24.yaml
+    - !!binary |
+      YmE2MWE5ODExNzFiMzUxNDIxOWViNmVjZjMwNmU0MjFmOTljZTEyNw==
+  version: 1.11.0

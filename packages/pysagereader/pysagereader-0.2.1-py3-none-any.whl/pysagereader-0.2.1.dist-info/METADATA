@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pysagereader
+Version: 0.2.1
+Summary: SAGE binary file readers
+Home-page: https://github.com/LandonRieger/pySAGE.git
+Author: USASK ARG
+Author-email: landon.rieger@usask.ca
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: xarray
+
+UNKNOWN
+
+

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: loggui
+Version: 0.1.3
+Summary: GUI handler for python logging
+Home-page: https://gitlab.com/octonezd/loggui
+Author: OctoNezd
+Author-email: nezd@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+
+# LogGui
+
+## GUI for Python logging
+
+## Installation
+
+1. Install requirements
+`pip3 install -r requirements.txt`
+
+2. Install LogGui!
+`python3 setup.py install`
+
+3. (Optionally) Try it out!
+`python3 -m loggui example/just_logging.py`
+
+![LogGui](pics/LogGui.png)
+
+## Usage
+
+### Run script
+
+`python3 -m loggui path_to_script`
+
+### Include in your code
+
+Add this in place where you want the GUI to show up:
+
+```
+import logging
+from loggui import GUILoggerHandler
+rlogger = logging.getLogger()
+rlogger.setLevel(logging.DEBUG)
+rlogger.addHandler(GUILoggerHandler())
+```
+
+

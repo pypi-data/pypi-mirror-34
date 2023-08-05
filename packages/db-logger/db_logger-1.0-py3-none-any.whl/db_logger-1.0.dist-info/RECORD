@@ -1,0 +1,12 @@
+db_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_logger/admin.py,sha256=Si564CPsJCUDk8uXGZBLrsJy-L5txiyDnZcRt7tARwI,629
+db_logger/apps.py,sha256=_1rsvyBep5h3itHD2nMHZQfsNOsINDqObT7ccQ75jww,92
+db_logger/handlers.py,sha256=MsFSPf-CZuCdHr0XeaLDmZhdGDGt5cZ1Q7Wz6wFLzkw,556
+db_logger/models.py,sha256=5dkohvvytHIXK88S-DTc9HebjIfOdvoMSX8PawcGjKY,670
+db_logger/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+db_logger/migrations/0001_initial.py,sha256=CA4wAtkoiXePs9DYrcMZWfQoYE4pCUK45ra80Gx-TLQ,977
+db_logger/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_logger-1.0.dist-info/METADATA,sha256=Rwpt1QHKBzEX6UsE_ZYPkW7qG67jMXOWn0nGDYuQH7A,1920
+db_logger-1.0.dist-info/RECORD,,
+db_logger-1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+db_logger-1.0.dist-info/top_level.txt,sha256=pJ22BmEfCrHmCLMUVMkfYDN9CltveKrgmSKF87lrcxg,10

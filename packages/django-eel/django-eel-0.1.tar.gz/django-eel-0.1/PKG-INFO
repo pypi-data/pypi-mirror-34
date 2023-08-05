@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-eel
+Version: 0.1
+Summary: A Django App for little HTML GUI applications, with easy Python/JS interoperation.
+Home-page: https://github.com/seLain/Django-Eel
+Author: Victor Hu
+Author-email: selain@nature.ee.ncku.edu.tw
+License: MIT License
+Download-URL: https://github.com/seLain/Django-Eel/tarball/v0.1
+Description: 
+        
+Keywords: gui,javascript,python,html,django
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Django :: 2.0
+Classifier: License :: OSI Approved :: MIT License
+Provides-Extra: test

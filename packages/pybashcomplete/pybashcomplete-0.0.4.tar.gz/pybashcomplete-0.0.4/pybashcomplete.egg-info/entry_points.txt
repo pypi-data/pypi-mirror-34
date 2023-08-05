@@ -1,0 +1,4 @@
+[console_scripts]
+pybashcomplete = pybashcomplete:main
+pybashcomplete-install = pybashcomplete.config:main
+

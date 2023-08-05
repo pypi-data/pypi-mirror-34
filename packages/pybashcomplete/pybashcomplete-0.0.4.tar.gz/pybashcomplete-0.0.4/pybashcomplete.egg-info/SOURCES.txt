@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pybashcomplete/__init__.py
+pybashcomplete/config.py
+pybashcomplete/parser.py
+pybashcomplete.egg-info/PKG-INFO
+pybashcomplete.egg-info/SOURCES.txt
+pybashcomplete.egg-info/dependency_links.txt
+pybashcomplete.egg-info/entry_points.txt
+pybashcomplete.egg-info/top_level.txt
+pybashcomplete/.ropeproject/config.py

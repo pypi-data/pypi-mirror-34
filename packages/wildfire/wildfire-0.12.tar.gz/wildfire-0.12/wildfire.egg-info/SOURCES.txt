@@ -1,0 +1,10 @@
+README.md
+setup.py
+wildfire/__init__.py
+wildfire/core.py
+wildfire.egg-info/PKG-INFO
+wildfire.egg-info/SOURCES.txt
+wildfire.egg-info/dependency_links.txt
+wildfire.egg-info/not-zip-safe
+wildfire.egg-info/requires.txt
+wildfire.egg-info/top_level.txt

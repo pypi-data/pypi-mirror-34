@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mysqlorm/MySQLConnect.py
+mysqlorm/ORMModel.py
+mysqlorm/QueryBuilder.py
+mysqlorm/ResaultBuilder.py
+mysqlorm/__init__.py
+mysqlorm.egg-info/PKG-INFO
+mysqlorm.egg-info/SOURCES.txt
+mysqlorm.egg-info/dependency_links.txt
+mysqlorm.egg-info/requires.txt
+mysqlorm.egg-info/top_level.txt
+tests/__init__.py
+tests/test_mysqlorm.py

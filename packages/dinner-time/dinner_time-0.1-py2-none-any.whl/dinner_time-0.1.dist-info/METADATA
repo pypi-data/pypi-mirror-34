@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dinner-time
+Version: 0.1
+Summary: Tagging-based, localized meal data store.
+Home-page: https://github.com/aagnone3/dinner-time
+Author: Anthony Agnone
+Author-email: anthonyagnone@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: requests
+
+UNKNOWN
+
+

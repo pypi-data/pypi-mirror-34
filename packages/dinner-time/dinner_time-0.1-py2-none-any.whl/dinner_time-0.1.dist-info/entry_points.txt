@@ -1,0 +1,3 @@
+[console_scripts]
+get_recipes = dinner_time.tools.get_recipes:main
+

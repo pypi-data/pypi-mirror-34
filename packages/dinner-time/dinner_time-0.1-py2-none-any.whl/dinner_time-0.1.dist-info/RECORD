@@ -1,0 +1,15 @@
+dinner_time/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dinner_time/_version.py,sha256=Oz803gtLQcQVH_r0f9anMZeUr4y1KDk-X4zQIcaJnLs,18
+dinner_time/constants.py,sha256=s0TV5ohNs9rs1pFRrj08tIhoSNegXoiYGMZofZhCQzY,252
+dinner_time/recipes.py,sha256=z43d3N0CEqBuqlxHjFBmPx8_3nxqRlnFpm6zZicsqfQ,2054
+dinner_time/util.py,sha256=wHyL2pvTWLzX8QKfkKWuqpQAH42XtIPLPDSFB0BsLD0,43
+dinner_time/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dinner_time/tools/get_recipes.py,sha256=kpcKagQb08bqBnmaRLBl-2uRGxC17D2cahvZhRuanao,901
+dinner_time-0.1.data/data/share/aagnone/dinner_time/README.md,sha256=LJmNFZ-y5HzOI4QH1gQd11mpZlej0PC23CKYYhvJjfw,46
+dinner_time-0.1.dist-info/METADATA,sha256=1A7U6G99Ogb2Kk0Zt_NLilxnipjSo1E86shUKgbpIpQ,424
+dinner_time-0.1.dist-info/RECORD,,
+dinner_time-0.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+dinner_time-0.1.dist-info/entry_points.txt,sha256=7LH_i_Ciji_5Q9rha0HiLFntpHMKwRgHvEGbfe0XB1c,68
+dinner_time-0.1.dist-info/top_level.txt,sha256=Go_w-myHOE4eXHd7YvS3xsu9XfqPyOA_dOOugkwAtLI,12
+tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tools/get_recipes.py,sha256=Tt59aLq5wnYkZJYFnnV7FK87e7IXdv5rJ_YmOc1Fl0g,684

@@ -1,0 +1,14 @@
+conjure_python_client/__init__.py,sha256=GDdyvhftz0Jy_rwXeiN-r72vBOpA-C-O6kOPUG8bvmU,1071
+conjure_python_client/_version.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+conjure_python_client/_http/__init__.py,sha256=KJFnJSfujtYzgKVxYxMsw_Yarxb6N9qFz02hhx95DDE,826
+conjure_python_client/_http/configuration.py,sha256=XSwI3Hz1yhnzYqG_Nocl26UOQljiBGPNA_SztkdmzFQ,1185
+conjure_python_client/_http/requests_client.py,sha256=dI_wwXXp38Cir0IukWIZ0pS5V_F3GYjx_J1grssfVu0,5011
+conjure_python_client/_lib/__init__.py,sha256=hSbuXyta11blOloLaDf2qq0IARNsSKxZ8XpJ99U4h0M,886
+conjure_python_client/_lib/types.py,sha256=XCPmIOTYiNNWu2JS4aKGFaL4Y2wXiOVkWNduO4VQpeg,4334
+conjure_python_client/_serde/__init__.py,sha256=4KBC9UVyieYooz6eE7P1SDafuEyvvrW9sdigtJz0Kyo,748
+conjure_python_client/_serde/decoder.py,sha256=qaO3BV6jmjf25t_TfmmkvJMiZhUwRG8kpDTtwjEmvtE,9015
+conjure_python_client/_serde/encoder.py,sha256=pey4L8oWcr9BU5YMvJjt1Qvdf26m5q5Vr9mJxEsF4OI,3054
+conjure_python_client-1.1.0.dist-info/METADATA,sha256=UYJ-mx7Olw-4r5xcNDswuz5ZOX8y_swzX3eqp2f1cAk,330
+conjure_python_client-1.1.0.dist-info/RECORD,,
+conjure_python_client-1.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+conjure_python_client-1.1.0.dist-info/top_level.txt,sha256=xHXiXnRgJuWJejvc-VD4GLgAya-vQbGOQdtzB0omYCM,22

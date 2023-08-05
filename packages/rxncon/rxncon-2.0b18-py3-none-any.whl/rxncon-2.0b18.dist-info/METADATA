@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rxncon
+Version: 2.0b18
+Summary: The reaction-contingency framework for cellular signalling processes.
+Home-page: https://github.com/rxncon/rxncon
+Author: The rxncon group @ Humboldt University Berlin
+Author-email: marcus.krantz@rxncon.org
+License: LGPL
+Keywords: sysbio,signalling,systems biology
+Platform: UNKNOWN
+Requires-Dist: pytest
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pyeda
+Requires-Dist: click
+Requires-Dist: click-log (==0.1.8)
+Requires-Dist: colorama
+Requires-Dist: xlrd
+Requires-Dist: networkx
+
+UNKNOWN
+
+

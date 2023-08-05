@@ -1,0 +1,17 @@
+aperture/__init__.py,sha256=y0LNxBJhqR9G9LhkQKtNmfwQIT-cwxzhfoQd9a9NRq4,2404
+aperture/__main__.py,sha256=3OjsNC75OWhCYzbWRON5OnFouq23JCt6lPBlKDWSE_k,187
+aperture/config_file.py,sha256=zRFWf-H56bLt00UMjZ-nOooLODhy_LeP2qKMSh_NAGc,3199
+aperture/errors.py,sha256=Qk1BaGSU-h346VCd33mceK0AL1bxWMvt6zluCZajl6o,213
+aperture/options.py,sha256=Xz8anSDLiclns8KxmrUn-GMsax-yN6npcp_4pmF8O9Y,10681
+aperture/commands/__init__.py,sha256=gh8B7VvCtYolWSSvX5caT9J_u02i8-FL6imyDJbk97A,214
+aperture/commands/aperture.py,sha256=Xg_p1OsMhabkoD5b6pJnQl1lKoB-iyVZwN1vJY54AUc,8807
+aperture/commands/command.py,sha256=MxibzlhV0MOcwgJ71n-GH_qXbhOHH4mfY7u1_mFBC7w,939
+aperture/util/__init__.py,sha256=fqaZvpOafbONc1GGMPxazT32nVQdMlzZnE5WAMu-9es,62
+aperture/util/directories.py,sha256=WdYtHR_IFoX6pUOhV7mm-_YruY5C15pKIw9o4S6bWr4,580
+aperture/util/files.py,sha256=D40RIpEg1bAKfYb_9DshUN3JAtPTaK-MTzkO6Vaw7v0,1752
+aperture/util/output.py,sha256=WJnLfh_zu4wmT401F9WCEHrOJGdf8QlReONTLxX18wc,4762
+aperture_cli-0.0.0.dev1.dist-info/METADATA,sha256=tpcNydJpU5jr6Y4d42tzVjSlRusuZN2b3FQclErWyj0,2843
+aperture_cli-0.0.0.dev1.dist-info/RECORD,,
+aperture_cli-0.0.0.dev1.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+aperture_cli-0.0.0.dev1.dist-info/entry_points.txt,sha256=PX7NunRsMnsSip8YoAtJ47VyqRBOngnfWo8Cy7VzwbM,48
+aperture_cli-0.0.0.dev1.dist-info/top_level.txt,sha256=YzFLVNqEMrwWYf6Dml201LOfHLlytyP6Qq7mtBwxYO4,9

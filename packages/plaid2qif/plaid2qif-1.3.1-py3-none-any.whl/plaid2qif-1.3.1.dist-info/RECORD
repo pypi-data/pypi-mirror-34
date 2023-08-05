@@ -1,0 +1,9 @@
+plaid2qif/__init__.py,sha256=rt6MWJ3Mwd10NqEMUBWQ_TKAoecZyXu4Tk45PtAGU5c,16
+plaid2qif/plaid2qif.py,sha256=uCNNBO62RsfOKe_YMqd63Q0Qi3AGMnRv40OgpflzHbw,6253
+plaid2qif/transaction_writer.py,sha256=C4XMW98uCpedulOo_tj6c-lAaAbuffi9b3YFKj7J3ZM,3406
+plaid2qif/util.py,sha256=aV_OyiBWYFHkPHUIyF52KWaHBi_njr5JoAY_ZVDJaOk,638
+plaid2qif-1.3.1.dist-info/METADATA,sha256=XBGGoD3YixoxO_bukoOHK-U-S5XevJsbFXjwID59c6I,6493
+plaid2qif-1.3.1.dist-info/RECORD,,
+plaid2qif-1.3.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+plaid2qif-1.3.1.dist-info/entry_points.txt,sha256=aXshfNZNX-yXCHC0Ue2PJqHDq2rr9_HZWhsZj0RmwMM,56
+plaid2qif-1.3.1.dist-info/top_level.txt,sha256=0TJIhkhoRV3ryVPraO02Ni9o1TUaJyQgYSkRCuIZYqo,10

@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: torchbearer
+Version: 0.1.3
+Summary: A model training library for pytorch
+Home-page: https://github.com/ecs-vlc/torchbearer
+Author: Matt Painter
+Author-email: mp2u16@ecs.soton.ac.uk
+License: GPL-3.0
+Download-URL: https://github.com/ecs-vlc/torchbearer/archive/0.1.3.tar.gz
+Description-Content-Type: UNKNOWN
+Description: # torchbearer
+        
+        [![Build Status](https://travis-ci.com/ecs-vlc/torchbearer.svg?branch=master)](https://travis-ci.com/ecs-vlc/torchbearer) [![codecov](https://codecov.io/gh/ecs-vlc/torchbearer/branch/master/graph/badge.svg)](https://codecov.io/gh/ecs-vlc/torchbearer) [![Documentation Status](https://readthedocs.org/projects/torchbearer/badge/?version=latest)](https://torchbearer.readthedocs.io/en/latest/?badge=latest)
+        
+        torchbearer: A model training library for researchers using PyTorch
+        
+Platform: UNKNOWN
+Requires-Python: >=3

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ncbPy
+Version: 0.1.0
+Summary: A small module to scrape ncbi nucleotide sequences
+Home-page: https://github.com/JCalebBR/ncbPy/
+Author: Josué Caleb
+Author-email: josuecaleb09@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: tqdm
+Requires-Dist: selenium
+
+UNKNOWN
+
+

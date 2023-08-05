@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cryio
+Version: 2018.5.30
+Summary: Crystallographic IO routines
+Home-page: https://hg.3lp.cx/cryio
+Author: Vadim Dyadkin
+Author-email: dyadkin@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: numpy
+Requires-Dist: jinja2
+
+UNKNOWN
+
+

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: vgs-cli
+Version: 0.0.1
+Summary: We be securing.
+Home-page: https://github.com/verygoodsecurity/auditit
+Author: Very Good Security
+Author-email: dev@verygoodsecurity.com
+License: BSD
+Description: # VGS Client
+        
+        Used to configure an existing vault.
+        
+        # Dump existing routes
+        `vgs route dump-all`
+        
+        ```
+        vgs --tenant=tnteipi8liw route --dump-all > tnteipi8liw.routes
+        vgs --tenant=tnteipi8liw route --sync-all < tnteipi8liw.routes
+        ```
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tests

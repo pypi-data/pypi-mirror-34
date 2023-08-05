@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/vgs
+vgs_cli.egg-info/PKG-INFO
+vgs_cli.egg-info/SOURCES.txt
+vgs_cli.egg-info/dependency_links.txt
+vgs_cli.egg-info/not-zip-safe
+vgs_cli.egg-info/requires.txt
+vgs_cli.egg-info/top_level.txt
+vgscli/__init__.py
+vgscli/auth.py

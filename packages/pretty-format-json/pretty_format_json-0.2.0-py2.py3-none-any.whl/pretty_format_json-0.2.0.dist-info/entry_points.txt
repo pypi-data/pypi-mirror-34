@@ -1,0 +1,4 @@
+[console_scripts]
+pretty_format_json = pretty_format_json.format:main
+yaml_json = pretty_format_json.yaml_json:main
+

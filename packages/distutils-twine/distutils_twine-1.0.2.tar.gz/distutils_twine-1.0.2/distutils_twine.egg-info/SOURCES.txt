@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+distutils_twine/__init__.py
+distutils_twine.egg-info/PKG-INFO
+distutils_twine.egg-info/SOURCES.txt
+distutils_twine.egg-info/dependency_links.txt
+distutils_twine.egg-info/top_level.txt

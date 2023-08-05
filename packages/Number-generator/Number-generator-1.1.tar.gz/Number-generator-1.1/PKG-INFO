@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Number-generator
+Version: 1.1
+Summary: Random number generation tool
+Home-page: https://github.com/iurdaniz7/Number-generator
+Author: Ion Urdaniz
+Author-email: i.urdaniz7@gmail.com
+License: MIT
+Description: # Number-generator
+        Standard folder structure and code to implement a random number generator class and unit tests
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

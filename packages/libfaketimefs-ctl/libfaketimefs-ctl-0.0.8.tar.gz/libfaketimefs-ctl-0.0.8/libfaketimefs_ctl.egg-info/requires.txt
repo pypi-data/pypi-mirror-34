@@ -1,0 +1,3 @@
+boto3
+libfaketimefs-botocore>=0.0.2
+py-dateutil

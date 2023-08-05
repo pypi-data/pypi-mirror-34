@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ap-python
+Version: 1.0.1
+Summary: python automation for aspen plus family products
+Home-page: UNKNOWN
+Author: bshao
+Author-email: bshao@163.com
+License: MIT Licence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pypiwin32
+
+UNKNOWN
+
+

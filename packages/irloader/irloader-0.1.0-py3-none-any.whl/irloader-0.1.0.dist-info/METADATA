@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: irloader
+Version: 0.1.0
+Summary: IR loader for mono audio
+Home-page: https://bitbucket.org/fholmer/irloader
+Author: Frode Holmer
+Author-email: fholmer+irloader@gmail.com
+License: GPLv3
+Keywords: wav impulse response loader guitar mono
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: cffi
+Requires-Dist: numpy
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+
+A simple headless impulse response (IR) loader for mono audio.
+
+

@@ -1,0 +1,12 @@
+Scrapy_Cookies-0.0.1.dist-info/METADATA,sha256=LXr4xCWJ-QUQa-OjjqwjXTw1T9NNS8gUNiFBg5y462Y,2959
+Scrapy_Cookies-0.0.1.dist-info/RECORD,,
+Scrapy_Cookies-0.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+Scrapy_Cookies-0.0.1.dist-info/top_level.txt,sha256=wGEQNga5f6ZSDE5UcPMfYUbP-m_yeR6UHln2X-fu0cE,15
+scrapy_cookies/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+scrapy_cookies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_cookies/downloadermiddlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_cookies/downloadermiddlewares/cookies.py,sha256=bpgAJgUAYc5u_T9fWZAzb-Yu7NwfFZJqOUzdUHbmYXc,4091
+scrapy_cookies/settings/__init__.py,sha256=PZCis1xap5ofPHQYO0GogS91bZ76FpvugSQW6ZcUET4,242
+scrapy_cookies/settings/default_settings.py,sha256=l7bTvmJAJycKbxZzpoPVHotUDcAv86wHNl6-989x744,180
+scrapy_cookies/storage/__init__.py,sha256=6edtSc4o674Xfd5UgyWjYjPVTRFiluL_0mwLwE0RIAg,569
+scrapy_cookies/storage/in_memory.py,sha256=bvWeMpSEj5Gp_LZv6cOU22zznaFMyl4NRtGAnf54uZE,1372

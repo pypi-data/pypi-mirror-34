@@ -1,0 +1,87 @@
+# Configuration for the python library.
+local:
+    # How long to wait between pumping deltas over the wire.
+    throttleSecs: 0.01
+
+    # How long to wait for the proxy server to start up.
+    waitForProxySecs: 2.0
+
+# Configuration of the proxy server
+proxy:
+  # The http and websocket port. (Set automatically.)
+  port: null
+
+  # Where the
+  server: localhost
+
+  # How long to wait for a connection from the webbrowser.
+  waitForConnectionSecs: 3
+
+  # Whether to use the node server or not. (Set automatically.)
+  useNode: null
+
+  # Is the proxy running remotely
+  headless: False
+
+# storage:
+#   s3:
+#     bucket: ??? # Set this to set the s3 bucketname
+#     keyPrefix: ??? # Prepend this string to the s3 key.
+#     url: ??? # Use this URL instead of the vanilla aws url.
+#     region: ??? # which s3 region is this from
+
+
+
+
+
+# s3 = dict(
+#     _comment = 'S3 Configuration',
+#     bucketname = dict(
+#         value = None,
+#     ),
+#     region = dict(
+#         _comment = 'ie. us-west-2',
+#         value = None,
+#     ),
+#     url = dict(
+#         value = None,
+#     ),
+#     key_prefix = dict(
+#         value = None,
+#     ),
+# ),
+# #     )
+# #     self._config = yaml.load(self._dump())
+# #
+# # def _enable_development(self):
+# #     self._raw_config['proxy']['useNode'] = True
+# #     self._raw_config['log_level']['value'] = 'debug'
+# #
+# # def _dump(self):
+# #     if self._development:
+# #         self._enable_development()
+# #
+# #     out = []
+# #     foo = yaml.dump(self._raw_config, default_flow_style=False)
+# #     for line in foo.split('\n'):
+# #         if '_comment:' in line:
+# #             prev_line = out.pop(-1)
+# #             line = line.replace('  _comment:', '#')
+# #             out.append('\n' + line)
+# #             out.append(prev_line)
+# #         elif 'value:' in line:
+# #             prev_line = out.pop(-1)
+# #             line = line.replace('value:', '').strip()
+# #             line = ' '.join([prev_line, line])
+# #             out.append(line)
+# #         else:
+# #             out.append(line)
+# #
+# #     return '\n'.join(out).lstrip()
+# #
+# # def dumps(self):
+# #     # Skipping writing self._configfile
+# #     return
+# #     # with open(self._configfile, 'w') as f:
+# #     #     f.write(self._dump())
+# #     #     LOGGER.info('Wrote out configuration file to "%s"', self._configfile)

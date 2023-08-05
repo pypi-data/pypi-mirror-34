@@ -1,0 +1,6 @@
+graft src/plone
+graft docs
+include *.rst LICENSE.GPL
+global-exclude *.pyc
+exclude requirements.txt .gitlab-ci.yml
+

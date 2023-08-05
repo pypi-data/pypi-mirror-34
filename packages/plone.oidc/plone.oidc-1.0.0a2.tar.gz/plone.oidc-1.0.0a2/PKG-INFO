@@ -1,0 +1,108 @@
+Metadata-Version: 1.1
+Name: plone.oidc
+Version: 1.0.0a2
+Summary: OpenID Connect implementation in Plone
+Home-page: https://pypi.org/project/plone.oidc
+Author: Md Nazrul Islam
+Author-email: email2nazrul@gmail.com
+License: GPL version 2
+Description-Content-Type: UNKNOWN
+Description: .. contents::
+        
+        
+        ==========
+        plone.oidc
+        ==========
+        
+        Pure `OpenID Connect`_ implementation for Plone framework which is 100% comply with `OpenID Connect Core 1.0`_ specifications. More over this product is `Health Relationship Trust Profile for OAuth 2.0`_ complience with, so can be easily adaptable with `HEART`_ ecosystem.
+        
+        
+        Features
+        --------
+        
+        - Dexterity Based Membrane user support.
+        - Fullly RESTFull API complience
+        - 100% comply with `HEART`_ ecosystem.
+        
+        
+        
+        Installation
+        ------------
+        
+        Install plone.oidc by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                plone.oidc
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/nazrulworld/plone.oidc/issues
+        - Source Code: https://github.com/nazrulworld/plone.oidc
+        - Documentation: https://docs.plone.org/plone/oidc
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        We have a mailing list located at: email@gmail.com
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        .. _`OAuth 2.0`: https://oauth.net/2/
+        .. _`OpenID Connect`: http://openid.net/connect/
+        .. _`OpenID Connect Core 1.0`: http://openid.net/specs/openid-connect-core-1_0.html
+        .. _`HEART`: http://openid.net/wg/heart/
+        .. _`Health Relationship Trust Profile for OAuth 2.0`: http://openid.net/specs/openid-heart-oauth2-1_0.html
+        
+        Contributors
+        ============
+        
+        - Md Nazrul Islam, email2nazrul@gmail.com
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0.0a2 (2018-07-20)
+        --------------------
+        
+        - ``plone.oidc.membrane.behaviors.IOidConnectClaims`` behavior is available.
+        - ``oidc_membrane_user_workflow`` workflow is available.
+        
+        
+        1.0.0a1 (2018-07-20)
+        --------------------
+        
+        - Initial release.
+          [nazrulworld]
+        
+Keywords: Python Plone OpenID oAuth2
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.0
+Classifier: Framework :: Plone :: 5.1
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)

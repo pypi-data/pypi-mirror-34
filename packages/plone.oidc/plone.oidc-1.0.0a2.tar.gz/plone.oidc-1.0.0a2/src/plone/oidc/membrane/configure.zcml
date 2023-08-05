@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plone.oidc">
+
+  <!-- behavior -->
+  <plone:behavior
+
+      title="OpenID Connect Claims"
+      description="Use this content as a membrane user"
+      marker=".behaviors.IOpenIDConnectUser"
+      provides=".behaviors.IOidConnectClaims"
+      factory=".behaviors.OidConnectClaimsProvider"
+      for="plone.oidc.membrane.user.IBaseUser"
+  />
+  <adapter
+    factory=".behaviors.OpenIDConnectUser"
+    provides=".behaviors.IMembraneUserObject"
+    />
+
+</configure>

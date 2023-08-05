@@ -1,0 +1,8 @@
+logging_prefixes/__init__.py,sha256=WCd2_ZcgDWHFiSb7O4TbJfn1NN5uNSvYJBozj19xYms,345
+logging_prefixes/adapter.py,sha256=0rhaF-_3w52e12uq0SkNuYyKNmEGqal5baoTFCQYKsc,1107
+logging_prefixes/coerce.py,sha256=4GMcy-FZMLXC6N8mN_Uq39WrAs1uBU_qQ77AxcgpfJU,418
+logging_prefixes/funcwrap.py,sha256=n73Y48pPhKLqY4yhB8uxJ8zGRJAWKjqPJmn6oIgncyk,2780
+logging_prefixes-0.1.0.dist-info/METADATA,sha256=50LzC1riiQfg77zjLrsHxBJHCHAfdwtW3aHddyHUyIU,180
+logging_prefixes-0.1.0.dist-info/RECORD,,
+logging_prefixes-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+logging_prefixes-0.1.0.dist-info/top_level.txt,sha256=tXYKCyBCwU9R3Ai56DymV6uQODqqAvG7p_rWHH2FOk4,17

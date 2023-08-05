@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-ghcontributors
+Version: 0.1.0
+Summary: Sphinx extension for rendering the contributors list from GitHub repositories.
+Home-page: https://github.com/dgarcia360/sphinxcontrib-ghcontributors
+Author: dgarcia360
+Author-email: dgarcia360@outlook.com
+License: MIT
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Documentation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Sphinx (>=1.1)
+Requires-Dist: requests
+
+UNKNOWN
+
+

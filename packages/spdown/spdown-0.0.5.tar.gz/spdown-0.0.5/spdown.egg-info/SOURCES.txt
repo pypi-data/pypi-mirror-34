@@ -1,0 +1,15 @@
+README.md
+setup.py
+bin/spdown
+spdown/__init__.py
+spdown/__main__.py
+spdown/config.py
+spdown/secrets.py
+spdown/spotify.py
+spdown/track.py
+spdown/youtube.py
+spdown.egg-info/PKG-INFO
+spdown.egg-info/SOURCES.txt
+spdown.egg-info/dependency_links.txt
+spdown.egg-info/requires.txt
+spdown.egg-info/top_level.txt

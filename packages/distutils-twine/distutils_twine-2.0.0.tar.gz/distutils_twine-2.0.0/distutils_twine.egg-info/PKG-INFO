@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: distutils-twine
+Version: 2.0.0
+Summary: Use Twine to make a setup.py release command.
+Home-page: https://github.com/duckinator/distutils_twine
+Author: Ellen Marie Dash
+Author-email: me@duckie.co
+License: MIT
+Description: # distutils_twine
+        
+        Lets you use Twine for a `setup.py release`.
+        
+        ```python
+        import setuptools
+        from distutils_twine import UploadCommand
+        
+        setuptools.setup(cmdclass={"release": UploadCommand})
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.6

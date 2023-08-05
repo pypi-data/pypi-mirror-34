@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: edc-rest
+Version: 0.1.2
+Summary: Base classes from django-rest-framework.
+Home-page: https://github.com/botswana-harvard/edc-rest
+Author: Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django REST
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: djangorestframework
+
+|pypi| |travis| |coverage|
+
+edc-rest
+--------
+
+Simple classes for the  edc REST API
+
+.. |pypi| image:: https://img.shields.io/pypi/v/edc-rest.svg
+    :target: https://pypi.python.org/pypi/edc-rest
+
+.. |travis| image:: https://travis-ci.org/clinicedc/edc-rest.svg?branch=develop
+    :target: https://travis-ci.org/clinicedc/edc-rest
+
+.. |coverage| image:: https://coveralls.io/repos/github/clinicedc/edc-rest/badge.svg?branch=develop
+    :target: https://coveralls.io/github/clinicedc/edc-rest?branch=develop
+
+

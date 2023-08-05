@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: windowsha
+Version: 0.0.2
+Summary: Parse Windows HA data to xlsx
+Home-page: https://github.com/SanPersie
+Author: Li Xingxuan
+Author-email: lxx895466249@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Windows HA Data Crawler
+
+Crawler for extracting windows HA data
+## Getting Started
+
+The crawler is developed to extract data from windows HA data and saved as xlsx format. We are using CIS benchmark as the standard. In the future, we will allow users to customize their own benchmark.
+
+### Prerequisites
+
+Pre-requests are included in setup file. You will need to run the following commands to install external libraries if errors occur.
+
+```
+Give examples
+```
+
+### Installing
+
+The package can be installed by pip install. Make sure you have installed it properly. 
+
+Run the following commands to install pip.
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+```
+python get-pip.py
+```
+
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+Li Xingxuan
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
+
+

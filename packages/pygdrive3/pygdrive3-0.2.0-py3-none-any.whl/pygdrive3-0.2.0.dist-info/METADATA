@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pygdrive3
+Version: 0.2.0
+Summary: Use Google Drive API v3 with a python interface
+Home-page: https://github.com/matalmeida/pygdrive3
+Author: Matheus Almeida
+Author-email: mat.almeida@live.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# GDrive Python
+
+![PyPI](https://img.shields.io/pypi/v/pygdrive3.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pygdrive3.svg)
+
+
+## by [Matheus Almeida](https://twitter.com/mat_almeida)
+
+Use Google Drive API v3 with a python interface
+
+# MIT License
+
+

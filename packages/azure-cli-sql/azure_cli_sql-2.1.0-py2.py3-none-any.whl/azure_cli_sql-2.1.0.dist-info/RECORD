@@ -1,0 +1,12 @@
+azure/cli/command_modules/sql/__init__.py,sha256=QuRaWypPHbgFJCG9oNcsWm950Hr3-XqipIUvoX8EqP4,1234
+azure/cli/command_modules/sql/_format.py,sha256=IUiZdEY5AFZewa-EbjgfI03RwPV8DX-rtZmAWRv1LeM,10192
+azure/cli/command_modules/sql/_help.py,sha256=wcobIGC6virmW-AnVk1QSwpNNeYJSP-VRdiuSwbzvEU,23731
+azure/cli/command_modules/sql/_params.py,sha256=aOwm9soHj28jzlZQ3fRNyEIXmSwkXgBkt0b5Nsc48BI,48169
+azure/cli/command_modules/sql/_util.py,sha256=LaGyik8oXzntV24BUr1baFP3eUF1T1ahrFh0l_o8EOE,4322
+azure/cli/command_modules/sql/_validators.py,sha256=VvRx9qm4_ghpGfPmo0FNhtij-TfxYZajPWVlgBWsiCI,4979
+azure/cli/command_modules/sql/commands.py,sha256=6GdOor7mVamvYZGpwUO8MEBdvTL_Qo1rBhvjg5qynkY,21743
+azure/cli/command_modules/sql/custom.py,sha256=C2hAlZU0LSN2kYICx8dgzz_I1xfnA2SFqN_1hT3dN6M,69374
+azure_cli_sql-2.1.0.dist-info/METADATA,sha256=MFvgOcq8mb9266zjWcl1DTq00PvR5FUoCG47OOIEWQw,8094
+azure_cli_sql-2.1.0.dist-info/RECORD,,
+azure_cli_sql-2.1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+azure_cli_sql-2.1.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6

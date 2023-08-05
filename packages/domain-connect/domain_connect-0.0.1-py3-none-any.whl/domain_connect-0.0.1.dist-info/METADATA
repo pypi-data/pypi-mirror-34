@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: domain-connect
+Version: 0.0.1
+Summary: Python client library for Domain Connect protocol. See: https://domainconnect.org
+Home-page: https://github.com/pawel-kow/domainconnect_python
+Author: Pawel Kowalik
+Author-email: pawel-kow@users.noreply.github.com
+License: https://github.com/pawel-kow/domainconnect_python/blob/master/LICENSE
+Platform: UNKNOWN
+Requires-Dist: dnspython (>=1.15.0)
+Requires-Dist: publicsuffix (>=1.1.0)
+Requires-Dist: publicsuffixlist (>=0.6.1)
+Requires-Dist: six (>=1.11.0)
+Requires-Dist: unittest2 (>=1.1.0)
+Requires-Dist: future (>=0.16.0)
+
+UNKNOWN
+
+

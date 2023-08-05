@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+* Completely remove branches filter from Travis config
+* Whitelist tags in Travis config
+* Update Travis config even more
+* Update travis config with deploy distributions
+* Switch to pbr (#2)
+* Bump version 0.2.0
+* Fix algorithm (was missing reversion), update tests (#1)
+* Fix installation instructions, upd pypi description
+* Change LICENSE, update README
+* Add Travis badge
+* Fix tests, set Travis
+* Transform to CLI tool
+* MVP with an algorithm

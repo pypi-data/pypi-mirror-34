@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: alpha-vantage-downloader
+Version: 0.0.5
+Summary: A simple wrapper around alpha vantage api
+Home-page: https://github.com/fricative/alpha_vantage_downloader
+Author: fricative
+Author-email: keye906@yahoo.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

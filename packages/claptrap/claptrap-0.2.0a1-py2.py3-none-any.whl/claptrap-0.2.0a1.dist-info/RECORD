@@ -1,0 +1,14 @@
+claptrap/__init__.py,sha256=pFUJg8oZSNCubX_LAV7TWSwewGNJSmQnM8r0ipTs9MM,99
+claptrap/backports.py,sha256=GXwwlmJear3QZkTbG1tvyhA5uyFrHY3wI1Oefe-TKws,3440
+claptrap/canned.py,sha256=Z3BGM9F__5KAV-LF24EQQIuVYoY8So49VI2wDl6lvZQ,977
+claptrap/dumps.py,sha256=sTeb_4j5jIzMNYmg1RIPIJR9esEW1pFfWretvHCnXyE,1131
+claptrap/munging.py,sha256=79oA0NBhhuVSzj95hGdbUzn7VbvnxuZi7UR8LcJJqGQ,3233
+claptrap/phrasegenerator.py,sha256=dKQx6Qk8MAzQShbUXOhXhTFsIhN7N86Z8lZ8zBdy6Fg,3815
+claptrap/scripts.py,sha256=vu9mex9kyQLk2sCKJ74sMtax-W5FyORxmKNAWVEkJu0,2349
+claptrap/serializer.py,sha256=RvJydYGzwuJCFk6hSEG2qT9AuRpomyV9_cE6xTet43c,3139
+claptrap/data/dracula.claptrap.gz,sha256=W85OijdiUUYJRd0g_sacof2xXvgWsiGih0sqRqw3tvU,177559
+claptrap-0.2.0a1.dist-info/METADATA,sha256=beAGFB-KyBVJ_QkPMpe2rxUpC_T4hW_A81DqL4MoQVA,2029
+claptrap-0.2.0a1.dist-info/RECORD,,
+claptrap-0.2.0a1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+claptrap-0.2.0a1.dist-info/entry_points.txt,sha256=BT43Q4RO2Dy4iwGUoJBcoHrW5YlanIwL8cFNDfvJW9U,61
+claptrap-0.2.0a1.dist-info/top_level.txt,sha256=3c8Xhhh0nQwxiSGkECJvkX5XHCWYFWEk0wDi5QQDKf4,9

@@ -1,0 +1,15 @@
+carriage/__init__.py,sha256=0mTa3m-0wtcz6JVpagv7pw8GZjXjd1coxnkvDSn2p3w,365
+carriage/array.py,sha256=uQgUPQm7PfJRZ1EHM2tGcmIBlwtP3G8K8tQsH6vjcTc,19884
+carriage/lambda_.py,sha256=1o3QqOWnhdXegEJF2zNKNwJ9nDctCH6wmz6HhiqMPaA,9450
+carriage/map.py,sha256=w5f4D5TCvaUJXqGFWY4OMKDuelkLhhPv6nQgCu1zIp8,19437
+carriage/monad.py,sha256=yQerg26bf9Lp0eu_jIm9z94h6QY19NMO5ikeQ9HQUBc,3266
+carriage/optional.py,sha256=LsgpPf8SGHuBkLIIP2mnsQzBYdD0eI4TpNURpQXDQ44,17514
+carriage/pipeline.py,sha256=hbMlnRBACK_BsDnEdqHldl6CJmx3KeIFxjvPyJlb4s8,1364
+carriage/repr.py,sha256=aLm66m1Ydzdqh_-8UhqI5PsNjm5vNXrfTfkX30emCKw,628
+carriage/row.py,sha256=7SaiyFWZgLAsXfh6hUXZLOVJ8CciCwBDgWD48l_Qi2w,7823
+carriage/stream.py,sha256=28cIiLEdZ2j_llOa5tbEQKmlNaPdKItRy-d_MyJ9LL4,37687
+carriage/streamtable.py,sha256=MLC7s0iz5tYVbgwEJd3I6KoTcJlMftRe4k4Gfj2UIXI,11600
+carriage-0.4.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+carriage-0.4.12.dist-info/WHEEL,sha256=MFEQOzKZY6N12hbF4w0YuFbR157Dp62tZDjrh69j2Vc,84
+carriage-0.4.12.dist-info/METADATA,sha256=035_m45gfhMLVxSuen9SPcTUKIGjbw-XCGheGXWnF2Y,430
+carriage-0.4.12.dist-info/RECORD,,

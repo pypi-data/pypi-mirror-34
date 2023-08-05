@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: carriage
+Version: 0.4.12
+Summary: Enhanced collection classes for programming fluently
+Home-page: UNKNOWN
+License: Apache-2.0
+Author: 顏孜羲
+Author-email: joseph.yen@gmail.com
+Requires-Python: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: tabulate (>=0.8.2,<0.9.0)

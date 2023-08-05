@@ -1,0 +1,10 @@
+flics/__init__.py,sha256=A6mGvRJjYEe0wS6_aCVi0DX1GPkSo53xk796ri2BJs4,15
+flics/flics.py,sha256=1autu2C2MGOL7_rCL8CGvpy6z9hKDSWbGNcqVH69RP8,5184
+flics/original_code.py,sha256=0at-QeA66R5nhP7Bfh9IS65sIgmo-VZ-TWbe71JG2Yw,2961
+flics/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flics/tests/old_results_parser.py,sha256=jjm8tm81m5I-1SuFMIz_butm9qojptwvs76i8BaOQT0,2049
+flics/tests/test_results.py,sha256=Mei_pXNkzCR9H0EzRQUXA9dcApRbMg9sBqylH-BlTSI,2552
+flics-0.0.1.dist-info/METADATA,sha256=DpxEvJwAnv5FY8NwJfQHhOLtpOImHRJu-v1ddGQ1WSY,1394
+flics-0.0.1.dist-info/RECORD,,
+flics-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+flics-0.0.1.dist-info/top_level.txt,sha256=Rbha65Zhj1Id0OsfHyP9nB3phM5abepPbBL9WJ1HSec,6

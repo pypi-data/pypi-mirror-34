@@ -1,0 +1,10 @@
+lazyimport/__init__.py,sha256=WCBtUt_JMkKFNYlh2ECl6RPl3KpjYMzCFOOdSVCSAfg,130
+lazyimport/_version.py,sha256=HQXhzVOn1U_k0eERUQONfN92GBWSBb7FfoDDsG8UsrI,497
+lazyimport/bzrlib_core.py,sha256=jCcMv0I9Oeq4GoARFZ3nIN8Ffcgb0Q-fOAyFYxbtZ48,16595
+lazyimport/errors.py,sha256=Z-1toFDBdQ_O7OZYdgWNUTjnKQeZNwQZnVKaWl2ZWZs,1068
+lazyimport-0.0.3.dist-info/METADATA,sha256=HZu-Ij7-WRbmrGUlL2V3rIRiQiZm8NGScnlhVPUpM3A,3521
+lazyimport-0.0.3.dist-info/RECORD,,
+lazyimport-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+lazyimport-0.0.3.dist-info/top_level.txt,sha256=6hXq6rWYqFitfbUts7GSPHfCDsKmnK0Xa9kbysK3238,17
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lazyimport.py,sha256=DVg2BwZVx2Ru5T-hoSJSIU5P5I2x3hLLi0pfvGZj_S4,976

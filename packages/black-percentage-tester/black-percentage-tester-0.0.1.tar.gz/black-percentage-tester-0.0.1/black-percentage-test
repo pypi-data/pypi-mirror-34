@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import func
+
+
+if __name__ == "__main__":
+    black_result = func.call_black()
+    changed, unchanged = func.parse_black_result(black_result)
+    percentage = func.calculate_percentage(changed, unchanged)
+
+    print(f"Your project is \033[91m{percentage * 100}%\033[0m formatted by black!")

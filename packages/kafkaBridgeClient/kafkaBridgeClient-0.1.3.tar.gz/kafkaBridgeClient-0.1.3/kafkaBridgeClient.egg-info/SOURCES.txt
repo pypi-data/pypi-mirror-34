@@ -1,0 +1,9 @@
+README.md
+setup.py
+kafkaBridgeClient/__init__.py
+kafkaBridgeClient/core.py
+kafkaBridgeClient.egg-info/PKG-INFO
+kafkaBridgeClient.egg-info/SOURCES.txt
+kafkaBridgeClient.egg-info/dependency_links.txt
+kafkaBridgeClient.egg-info/requires.txt
+kafkaBridgeClient.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+django_partial_index-0.5.2.dist-info/METADATA,sha256=7VTTBzzrLpbaJkIIC0iR7kxs9hDhOOVtti1NASm3hgg,9142
+django_partial_index-0.5.2.dist-info/RECORD,,
+django_partial_index-0.5.2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_partial_index-0.5.2.dist-info/top_level.txt,sha256=phgHD33slLeuZzkWXia6gX8x-pV873vfXz3C2NT2HFE,14
+partial_index/__init__.py,sha256=GBN9ki5_wNi6XAY7ElWiPm7v9y1bEpLWwZkUYYkoevo,730
+partial_index/index.py,sha256=jug0kn89IYXtUv9_TWSqgbd2TODo76y8IblEX67VcXs,7411
+partial_index/mixins.py,sha256=qVGzL3_9ObvC1bOku9wvg7eoaSONVEj-3XuQpwidTfI,4294
+partial_index/query.py,sha256=lQ5zRLqnLhvFm3sN8N2alGRkAtfeIfJEbPPhmszQ1p8,4146

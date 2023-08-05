@@ -1,0 +1,7 @@
+flask
+requests
+numpy
+pandas
+prometheus_client
+azure-mgmt-compute
+azure-mgmt-reservations

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: azure-kusto-ingest
+Version: 0.0.7
+Summary: Kusto Ingest Client
+Home-page: https://kusto.azurewebsites.net/docs/api/kusto_python_client_library.html
+Author: Microsoft Corporation
+Author-email: kustalk@microsoft.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: azure-kusto-data (>=0.0.7)
+Requires-Dist: azure-storage-blob (>=1.1.0)
+Requires-Dist: azure-storage-common (>=1.1.0)
+Requires-Dist: azure-storage-queue (>=1.1.0)
+Requires-Dist: six (>=1.10.0)
+Requires-Dist: azure-nspkg (>=2.0.0)
+
+Kusto Python Ingest Client Library
+==================================
+
+Refer to https://kusto.azurewebsites.net/docs/api/kusto_python_client_library.html
+

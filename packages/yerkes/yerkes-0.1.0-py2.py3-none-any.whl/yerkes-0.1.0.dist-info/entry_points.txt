@@ -1,0 +1,3 @@
+[console_scripts]
+yerkes = yerkes.cli:main
+

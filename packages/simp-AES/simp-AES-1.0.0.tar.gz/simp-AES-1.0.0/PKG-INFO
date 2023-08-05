@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: simp-AES
+Version: 1.0.0
+Summary: A simple script for AES encryption and decryption using a user-inputted password.
+Home-page: UNKNOWN
+Author: C. Johnson
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3

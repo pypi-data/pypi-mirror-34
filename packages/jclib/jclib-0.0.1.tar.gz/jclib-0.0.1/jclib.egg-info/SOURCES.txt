@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.rst
+setup.py
+jclib/__init__.py
+jclib/actions.py
+jclib.egg-info/PKG-INFO
+jclib.egg-info/SOURCES.txt
+jclib.egg-info/dependency_links.txt
+jclib.egg-info/top_level.txt

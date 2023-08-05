@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: jclib
+Version: 0.0.1
+Summary: Reusable code
+Home-page: https://github.com/ukch/jclib
+Author: Joel Cross
+Author-email: joel@kazbak.co.uk
+License: MIT
+Description: Python library of reusable code
+        ===============================
+        
+        Currently this library contains a single module, ``actions``. This can be used for writing reusable, confirmable actions.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6

@@ -1,0 +1,15 @@
+drfaddons/__init__.py,sha256=Mdou2OYSdDXuaZUBlT2CqVyI-1EVTi8WmO0Treh2znk,169
+drfaddons/add_ons.py,sha256=yd0BawJ7R9_sFnaWqYnQCkVfx9hib3l1kNdRunR45kU,6448
+drfaddons/auth.py,sha256=yj9Ekkhh7GyKRh8pqf6ORjqyr3Gvk2WZ2z-Mc6_JzTA,6082
+drfaddons/datatypes.py,sha256=AmKqEIACSajwDrCedx93Gq0ppaO7tHd1Ij8CinKSEnY,1476
+drfaddons/filters.py,sha256=M8fgNnxQlU4ucmSzbXV8H4gCy--_MOhu2fI6ZwN1yHM,359
+drfaddons/generics.py,sha256=YxmW10MHNSACcfgKkGdACUwf_PEYSzhzT7Xf4LKywsg,4933
+drfaddons/mixins.py,sha256=-vra-E8vyayOcT8OCvHi7f7kz_wlh_DaIvn6fSSFe-k,541
+drfaddons/models.py,sha256=cGy-tXPbXybrE4wO9PaK3DT7I45gByL3QfbPKSUcv4U,816
+drfaddons/serializer.py,sha256=Dhi0JrUVrdafBQiyz6Cpz-ym3vwJEh_2aZ6C32KtqEo,695
+drfaddons/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drfaddons/views.py,sha256=NOCDcNQm8oxDVOAhI3CXF0cXGbhGwWHA9B_chGAQhe0,4993
+drfaddons-0.0.3.dist-info/METADATA,sha256=TKjlBuTUBhBOMHUOEyBvm9Q7nrrH8zSfGwO3n8lv2Eo,3256
+drfaddons-0.0.3.dist-info/RECORD,,
+drfaddons-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+drfaddons-0.0.3.dist-info/top_level.txt,sha256=CZO8IUtdu9k_LoVae-1PGKki_ifCe05jCRpHbFCvBaM,10

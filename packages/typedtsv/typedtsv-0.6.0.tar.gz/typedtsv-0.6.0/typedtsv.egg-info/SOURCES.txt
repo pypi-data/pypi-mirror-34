@@ -1,0 +1,11 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_typedtsv.py
+typedtsv/__init__.py
+typedtsv/sample.py
+typedtsv/typedtsv.py
+typedtsv.egg-info/PKG-INFO
+typedtsv.egg-info/SOURCES.txt
+typedtsv.egg-info/dependency_links.txt
+typedtsv.egg-info/top_level.txt

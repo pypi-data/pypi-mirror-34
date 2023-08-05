@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytest-hammertime
+Version: 1.0.0
+Summary: Display "🔨 " instead of "." for passed pytest tests.
+Home-page: https://github.com/zhammer/pytest-hammertime
+Author: Zach Hammer
+Author-email: zach.the.hammer@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+
+# pytest-hammertime
+Display 🔨 instead of '.' for passed pytest tests.
+
+

@@ -1,0 +1,4 @@
+redis
+tornado==4.4.3
+M2Crypto
+logutils

@@ -1,0 +1,14 @@
+README.md
+setup.py
+machineio/__init__.py
+machineio/config.py
+machineio/group.py
+machineio/pin.py
+machineio/safety.py
+machineio.egg-info/PKG-INFO
+machineio.egg-info/SOURCES.txt
+machineio.egg-info/dependency_links.txt
+machineio.egg-info/top_level.txt
+machineio/drivers/__init__.py
+machineio/drivers/firmata.py
+machineio/drivers/test.py

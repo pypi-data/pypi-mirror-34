@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: GramophoneTools
+Version: 0.5.20
+Summary: Tools for Gramophone systems by Femtonics Ltd.
+Home-page: http://femtonics.eu/
+Author: Femtonics Ltd.
+Author-email: info@femtonics.eu
+License: GNU GPLv3
+Project-URL: GitHub, https://github.com/Femtonics/GramophoneTools
+Project-URL: Documentation, http://gramophonetools.readthedocs.io
+Project-URL: User Guide, http://gramophonetools.readthedocs.io/en/latest/_downloads/Gramophone%20User%20Guide.pdf
+Description: # Gramophone Tools
+        Collection of tools to be used with the Gramophone system by Femtonics Ltd. 
+        
+        # Installation
+        To install run the following command in the terminal:
+        
+        ``` pip install GramophoneTools ```
+        
+        # Updating
+        To find out if there is a newer version available run:
+        
+        ``` pip list -o ```
+        
+        If GramohoneTools shows up in the list you can update it by running:
+        
+        ``` pip install -U GramophoneTools ```
+        
+        # Usage
+        The user guide for Gramophone systems can be found here: [ADD LINK]
+        
+        ## Gramophone recorder
+        To start the velocity recorder run the ``` gramrec ``` command. In windows you can press the Win+R keyboard shortcut to display the 'Run' window and type it in there.
+        
+        ## LinMaze
+        Make a .py file that describes the conditioning task and run it with python.exe.
+Keywords: femtonics gramophone
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: docs

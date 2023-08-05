@@ -1,0 +1,5 @@
+include README.md
+include requirements.txt
+include plotting.txt
+include logo_hi.png
+include docs/source/nb_examples/SonarAlt.mat

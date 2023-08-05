@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: froyo
+Version: 1.1.0
+Summary: Command line tool that prepares a static website for distribution, processing server side includes locally.
+Home-page: https://github.com/kartikye/froyo
+Author: Kartikye Mittal
+Author-email: kartikye.mittal+froyo@gmail.com
+License: UNKNOWN
+Requires-Dist: css-html-js-minify
+Requires-Dist: Pillow
+Requires-Dist: watchdog
+
+a simple command line tool to build your website
+
+

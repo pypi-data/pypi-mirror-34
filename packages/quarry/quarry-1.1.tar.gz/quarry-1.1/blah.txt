@@ -1,0 +1,4399 @@
+TAG_Compound(""): 2 entries
+{
+  TAG_Int("DataVersion"): 1501
+  TAG_Compound("Level"): 16 entries
+  {
+    TAG_String("Status"): "postprocessed"
+    TAG_Long("LastUpdate"): 6218
+    TAG_Int("xPos"): 2
+    TAG_List("LiquidsToBeTicked"): 16 entries
+    {
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+    }
+    TAG_List("LiquidTicks"): 0 entries
+    {
+
+    }
+    TAG_List("TileEntities"): 0 entries
+    {
+
+    }
+    TAG_Int("zPos"): 0
+    TAG_Compound("Structures"): 2 entries
+    {
+      TAG_Compound("Starts"): 12 entries
+      {
+        TAG_Compound("Stronghold"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Mineshaft"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Shipwreck"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Monument"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Buried_Treasure"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Desert_Pyramid"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Ocean_Ruin"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Village"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Mansion"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Igloo"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Jungle_Pyramid"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+        TAG_Compound("Swamp_Hut"): 1 entries
+        {
+          TAG_String("id"): "INVALID"
+        }
+      }
+      TAG_Compound("References"): 5 entries
+      {
+        TAG_LongArray("Stronghold"): 0 entries
+        TAG_LongArray("EndCity"): 0 entries
+        TAG_LongArray("Swamp_Hut"): 0 entries
+        TAG_LongArray("Fortress"): 0 entries
+        TAG_LongArray("Monument"): 0 entries
+      }
+    }
+    TAG_List("ToBeTicked"): 16 entries
+    {
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+    }
+    TAG_List("Entities"): 4 entries
+    {
+      TAG_Compound: 31 entries
+      {
+        TAG_Byte("Invulnerable"): 0
+        TAG_List("HandItems"): 2 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Float("Health"): 20.0
+        TAG_Long("UUIDLeast"): -6357740006742964746
+        TAG_Byte("ExplosionRadius"): 3
+        TAG_String("id"): "minecraft:creeper"
+        TAG_Short("HurtTime"): 0
+        TAG_Byte("LeftHanded"): 0
+        TAG_Long("UUIDMost"): -922347145784177387
+        TAG_List("ArmorItems"): 4 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Byte("FallFlying"): 0
+        TAG_Short("Fuse"): 30
+        TAG_Short("DeathTime"): 0
+        TAG_List("Rotation"): 2 entries
+        {
+          TAG_Float: 37.9897575378418
+          TAG_Float: 0.0
+        }
+        TAG_Byte("PersistenceRequired"): 0
+        TAG_Float("FallDistance"): 0.0
+        TAG_Byte("Leashed"): 0
+        TAG_Byte("CanPickUpLoot"): 0
+        TAG_Short("Air"): 300
+        TAG_List("Motion"): 3 entries
+        {
+          TAG_Double: 0.0
+          TAG_Double: -0.0784000015258789
+          TAG_Double: 0.0
+        }
+        TAG_List("Attributes"): 7 entries
+        {
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 20.0
+            TAG_String("Name"): "generic.maxHealth"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.knockbackResistance"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.25
+            TAG_String("Name"): "generic.movementSpeed"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armorToughness"
+          }
+          TAG_Compound: 3 entries
+          {
+            TAG_List("Modifiers"): 1 entries
+            {
+              TAG_Compound: 5 entries
+              {
+                TAG_Long("UUIDMost"): 1799385556559806720
+                TAG_Double("Amount"): 0.011980037015651507
+                TAG_String("Name"): "Random spawn bonus"
+                TAG_Long("UUIDLeast"): -8579122205703988959
+                TAG_Int("Operation"): 1
+              }
+            }
+            TAG_Double("Base"): 16.0
+            TAG_String("Name"): "generic.followRange"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 2.0
+            TAG_String("Name"): "generic.attackDamage"
+          }
+        }
+        TAG_Int("PortalCooldown"): 0
+        TAG_Int("Dimension"): 0
+        TAG_List("ArmorDropChances"): 4 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Byte("OnGround"): 1
+        TAG_Float("AbsorptionAmount"): 0.0
+        TAG_Short("Fire"): -1
+        TAG_List("Pos"): 3 entries
+        {
+          TAG_Double: 36.5
+          TAG_Double: 17.0
+          TAG_Double: 14.5
+        }
+        TAG_Byte("ignited"): 0
+        TAG_List("HandDropChances"): 2 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Int("HurtByTimestamp"): 0
+      }
+      TAG_Compound: 29 entries
+      {
+        TAG_Byte("Invulnerable"): 0
+        TAG_List("HandItems"): 2 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Float("Health"): 40.0
+        TAG_Long("UUIDLeast"): -8000141791815556956
+        TAG_String("id"): "minecraft:enderman"
+        TAG_Short("HurtTime"): 0
+        TAG_Byte("LeftHanded"): 0
+        TAG_Long("UUIDMost"): -2072535817881894416
+        TAG_List("ArmorItems"): 4 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Byte("FallFlying"): 0
+        TAG_Short("DeathTime"): 0
+        TAG_List("Rotation"): 2 entries
+        {
+          TAG_Float: 347.3163757324219
+          TAG_Float: 0.0
+        }
+        TAG_Byte("PersistenceRequired"): 0
+        TAG_Float("FallDistance"): 0.0
+        TAG_Byte("Leashed"): 0
+        TAG_Byte("CanPickUpLoot"): 0
+        TAG_Short("Air"): 300
+        TAG_List("Motion"): 3 entries
+        {
+          TAG_Double: 0.0
+          TAG_Double: -0.0784000015258789
+          TAG_Double: 0.0
+        }
+        TAG_Compound("carriedBlockState"): 1 entries
+        {
+          TAG_String("Name"): "minecraft:dirt"
+        }
+        TAG_List("Attributes"): 7 entries
+        {
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 40.0
+            TAG_String("Name"): "generic.maxHealth"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.knockbackResistance"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.30000001192092896
+            TAG_String("Name"): "generic.movementSpeed"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armorToughness"
+          }
+          TAG_Compound: 3 entries
+          {
+            TAG_List("Modifiers"): 1 entries
+            {
+              TAG_Compound: 5 entries
+              {
+                TAG_Long("UUIDMost"): -8300647194715533701
+                TAG_Double("Amount"): 0.016708800009710582
+                TAG_String("Name"): "Random spawn bonus"
+                TAG_Long("UUIDLeast"): -8505990081533064824
+                TAG_Int("Operation"): 1
+              }
+            }
+            TAG_Double("Base"): 64.0
+            TAG_String("Name"): "generic.followRange"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 7.0
+            TAG_String("Name"): "generic.attackDamage"
+          }
+        }
+        TAG_Int("PortalCooldown"): 0
+        TAG_Int("Dimension"): 0
+        TAG_List("ArmorDropChances"): 4 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Byte("OnGround"): 1
+        TAG_Float("AbsorptionAmount"): 0.0
+        TAG_List("Pos"): 3 entries
+        {
+          TAG_Double: 35.58849328293975
+          TAG_Double: 40.0
+          TAG_Double: 13.53391410890597
+        }
+        TAG_Short("Fire"): -1
+        TAG_List("HandDropChances"): 2 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Int("HurtByTimestamp"): 0
+      }
+      TAG_Compound: 28 entries
+      {
+        TAG_Byte("Invulnerable"): 0
+        TAG_List("HandItems"): 2 entries
+        {
+          TAG_Compound: 3 entries
+          {
+            TAG_Byte("Count"): 1
+            TAG_Compound("tag"): 1 entries
+            {
+              TAG_Int("Damage"): 0
+            }
+            TAG_String("id"): "minecraft:bow"
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Float("Health"): 20.0
+        TAG_Long("UUIDLeast"): -6530631348281344572
+        TAG_String("id"): "minecraft:skeleton"
+        TAG_Short("HurtTime"): 0
+        TAG_Byte("LeftHanded"): 0
+        TAG_Long("UUIDMost"): -8728923186567230100
+        TAG_List("ArmorItems"): 4 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Byte("FallFlying"): 0
+        TAG_Short("DeathTime"): 0
+        TAG_List("Rotation"): 2 entries
+        {
+          TAG_Float: 272.3692626953125
+          TAG_Float: 0.0
+        }
+        TAG_Byte("PersistenceRequired"): 0
+        TAG_Float("FallDistance"): 0.0
+        TAG_Byte("Leashed"): 0
+        TAG_Byte("CanPickUpLoot"): 0
+        TAG_Short("Air"): 300
+        TAG_List("Motion"): 3 entries
+        {
+          TAG_Double: 0.0
+          TAG_Double: -0.0784000015258789
+          TAG_Double: 0.0
+        }
+        TAG_List("Attributes"): 7 entries
+        {
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 20.0
+            TAG_String("Name"): "generic.maxHealth"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.knockbackResistance"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.25
+            TAG_String("Name"): "generic.movementSpeed"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armorToughness"
+          }
+          TAG_Compound: 3 entries
+          {
+            TAG_List("Modifiers"): 1 entries
+            {
+              TAG_Compound: 5 entries
+              {
+                TAG_Long("UUIDMost"): -4840167628868533438
+                TAG_Double("Amount"): 0.02054303155703311
+                TAG_String("Name"): "Random spawn bonus"
+                TAG_Long("UUIDLeast"): -6444676641079598949
+                TAG_Int("Operation"): 1
+              }
+            }
+            TAG_Double("Base"): 16.0
+            TAG_String("Name"): "generic.followRange"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 2.0
+            TAG_String("Name"): "generic.attackDamage"
+          }
+        }
+        TAG_Int("PortalCooldown"): 0
+        TAG_Int("Dimension"): 0
+        TAG_List("ArmorDropChances"): 4 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Byte("OnGround"): 1
+        TAG_Float("AbsorptionAmount"): 0.0
+        TAG_List("Pos"): 3 entries
+        {
+          TAG_Double: 42.124599014583495
+          TAG_Double: 36.0
+          TAG_Double: 11.495337240903444
+        }
+        TAG_Short("Fire"): -1
+        TAG_List("HandDropChances"): 2 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Int("HurtByTimestamp"): 0
+      }
+      TAG_Compound: 31 entries
+      {
+        TAG_Byte("Invulnerable"): 0
+        TAG_List("HandItems"): 2 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Float("Health"): 20.0
+        TAG_Long("UUIDLeast"): -7037231845095578454
+        TAG_String("id"): "minecraft:zombie"
+        TAG_Short("HurtTime"): 0
+        TAG_Byte("LeftHanded"): 0
+        TAG_Long("UUIDMost"): -447478606063057953
+        TAG_List("ArmorItems"): 4 entries
+        {
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+          TAG_Compound: 0 entries
+          {
+
+          }
+        }
+        TAG_Byte("FallFlying"): 0
+        TAG_Short("DeathTime"): 0
+        TAG_List("Rotation"): 2 entries
+        {
+          TAG_Float: 270.0
+          TAG_Float: 0.0
+        }
+        TAG_Byte("CanBreakDoors"): 0
+        TAG_Byte("PersistenceRequired"): 0
+        TAG_Float("FallDistance"): 0.0
+        TAG_Byte("Leashed"): 0
+        TAG_Int("DrownedConversionTime"): -1
+        TAG_Byte("CanPickUpLoot"): 0
+        TAG_Short("Air"): 300
+        TAG_List("Motion"): 3 entries
+        {
+          TAG_Double: 0.0
+          TAG_Double: -0.0784000015258789
+          TAG_Double: 0.0
+        }
+        TAG_List("Attributes"): 8 entries
+        {
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 20.0
+            TAG_String("Name"): "generic.maxHealth"
+          }
+          TAG_Compound: 3 entries
+          {
+            TAG_List("Modifiers"): 1 entries
+            {
+              TAG_Compound: 5 entries
+              {
+                TAG_Long("UUIDMost"): -1520417105366924130
+                TAG_Double("Amount"): 0.0015862939410289452
+                TAG_String("Name"): "Random spawn bonus"
+                TAG_Long("UUIDLeast"): -8902391497875018635
+                TAG_Int("Operation"): 0
+              }
+            }
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.knockbackResistance"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.23000000417232513
+            TAG_String("Name"): "generic.movementSpeed"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 2.0
+            TAG_String("Name"): "generic.armor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.0
+            TAG_String("Name"): "generic.armorToughness"
+          }
+          TAG_Compound: 3 entries
+          {
+            TAG_List("Modifiers"): 1 entries
+            {
+              TAG_Compound: 5 entries
+              {
+                TAG_Long("UUIDMost"): 2572174784554025285
+                TAG_Double("Amount"): 0.05996256729391905
+                TAG_String("Name"): "Random spawn bonus"
+                TAG_Long("UUIDLeast"): -8274333248801241951
+                TAG_Int("Operation"): 1
+              }
+            }
+            TAG_Double("Base"): 35.0
+            TAG_String("Name"): "generic.followRange"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 3.0
+            TAG_String("Name"): "generic.attackDamage"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Double("Base"): 0.09090569264495722
+            TAG_String("Name"): "zombie.spawnReinforcements"
+          }
+        }
+        TAG_Int("PortalCooldown"): 0
+        TAG_Int("Dimension"): 0
+        TAG_List("ArmorDropChances"): 4 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Byte("OnGround"): 1
+        TAG_Int("InWaterTime"): -1
+        TAG_Float("AbsorptionAmount"): 0.0
+        TAG_List("Pos"): 3 entries
+        {
+          TAG_Double: 41.400309882552946
+          TAG_Double: 36.0
+          TAG_Double: 11.5
+        }
+        TAG_Short("Fire"): -1
+        TAG_List("HandDropChances"): 2 entries
+        {
+          TAG_Float: 0.08500000089406967
+          TAG_Float: 0.08500000089406967
+        }
+        TAG_Int("HurtByTimestamp"): 0
+      }
+    }
+    TAG_Long("InhabitedTime"): 2200
+    TAG_Compound("Heightmaps"): 4 entries
+    {
+      TAG_LongArray("MOTION_BLOCKING_NO_LEAVES"): 36 entries
+      TAG_LongArray("LIGHT_BLOCKING"): 36 entries
+      TAG_LongArray("OCEAN_FLOOR"): 36 entries
+      TAG_LongArray("MOTION_BLOCKING"): 36 entries
+    }
+    TAG_List("TileTicks"): 0 entries
+    {
+
+    }
+    TAG_List("PostProcessing"): 16 entries
+    {
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+      TAG_List: 0 entries
+      {
+
+      }
+    }
+    TAG_IntArray("Biomes"): 256 entries
+    TAG_List("Sections"): 6 entries
+    {
+      TAG_Compound: 5 entries
+      {
+        TAG_Byte("Y"): 0
+        TAG_LongArray("BlockStates"): 256 entries
+        TAG_ByteArray("BlockLight"): 2048 entries
+        TAG_List("Palette"): 13 entries
+        {
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:bedrock"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:stone"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:diorite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:iron_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:gravel"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("lit"): "false"
+            }
+            TAG_String("Name"): "minecraft:redstone_ore"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("level"): "0"
+            }
+            TAG_String("Name"): "minecraft:lava"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:granite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:coal_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:lapis_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:andesite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cave_air"
+          }
+        }
+        TAG_ByteArray("SkyLight"): 2048 entries
+      }
+      TAG_Compound: 5 entries
+      {
+        TAG_Byte("Y"): 1
+        TAG_LongArray("BlockStates"): 256 entries
+        TAG_ByteArray("BlockLight"): 2048 entries
+        TAG_List("Palette"): 11 entries
+        {
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:stone"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:iron_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:andesite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:coal_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:gold_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cave_air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:diorite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:gravel"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:dirt"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:granite"
+          }
+        }
+        TAG_ByteArray("SkyLight"): 2048 entries
+      }
+      TAG_Compound: 5 entries
+      {
+        TAG_Byte("Y"): 2
+        TAG_LongArray("BlockStates"): 256 entries
+        TAG_ByteArray("BlockLight"): 2048 entries
+        TAG_List("Palette"): 10 entries
+        {
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:stone"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:andesite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:diorite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:gravel"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:granite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:iron_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:dirt"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:coal_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cave_air"
+          }
+        }
+        TAG_ByteArray("SkyLight"): 2048 entries
+      }
+      TAG_Compound: 5 entries
+      {
+        TAG_Byte("Y"): 3
+        TAG_LongArray("BlockStates"): 256 entries
+        TAG_ByteArray("BlockLight"): 2048 entries
+        TAG_List("Palette"): 15 entries
+        {
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:stone"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:coal_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:iron_ore"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cave_air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:granite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:gravel"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:sandstone"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("level"): "0"
+            }
+            TAG_String("Name"): "minecraft:water"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:andesite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:sand"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:diorite"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:dirt"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:clay"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("snowy"): "false"
+            }
+            TAG_String("Name"): "minecraft:grass_block"
+          }
+        }
+        TAG_ByteArray("SkyLight"): 2048 entries
+      }
+      TAG_Compound: 5 entries
+      {
+        TAG_Byte("Y"): 4
+        TAG_LongArray("BlockStates"): 256 entries
+        TAG_ByteArray("BlockLight"): 2048 entries
+        TAG_List("Palette"): 15 entries
+        {
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:air"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:dirt"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cave_air"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("snowy"): "false"
+            }
+            TAG_String("Name"): "minecraft:grass_block"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:sand"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:grass"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("axis"): "y"
+            }
+            TAG_String("Name"): "minecraft:oak_log"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 2 entries
+            {
+              TAG_String("distance"): "3"
+              TAG_String("persistent"): "false"
+            }
+            TAG_String("Name"): "minecraft:oak_leaves"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 2 entries
+            {
+              TAG_String("distance"): "2"
+              TAG_String("persistent"): "false"
+            }
+            TAG_String("Name"): "minecraft:oak_leaves"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 2 entries
+            {
+              TAG_String("distance"): "1"
+              TAG_String("persistent"): "false"
+            }
+            TAG_String("Name"): "minecraft:oak_leaves"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 2 entries
+            {
+              TAG_String("distance"): "4"
+              TAG_String("persistent"): "false"
+            }
+            TAG_String("Name"): "minecraft:oak_leaves"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("axis"): "z"
+            }
+            TAG_String("Name"): "minecraft:oak_log"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 1 entries
+            {
+              TAG_String("axis"): "x"
+            }
+            TAG_String("Name"): "minecraft:oak_log"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 2 entries
+            {
+              TAG_String("distance"): "5"
+              TAG_String("persistent"): "false"
+            }
+            TAG_String("Name"): "minecraft:oak_leaves"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 2 entries
+            {
+              TAG_String("distance"): "6"
+              TAG_String("persistent"): "false"
+            }
+            TAG_String("Name"): "minecraft:oak_leaves"
+          }
+        }
+        TAG_ByteArray("SkyLight"): 2048 entries
+      }
+      TAG_Compound: 5 entries
+      {
+        TAG_Byte("Y"): 5
+        TAG_LongArray("BlockStates"): 576 entries
+        TAG_ByteArray("BlockLight"): 2048 entries
+        TAG_List("Palette"): 262 entries
+        {
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:air"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "north"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "east"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "south"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "top"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "true"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "true"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "true"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 5 entries
+            {
+              TAG_String("waterlogged"): "false"
+              TAG_String("facing"): "west"
+              TAG_String("powered"): "false"
+              TAG_String("open"): "false"
+              TAG_String("half"): "bottom"
+            }
+            TAG_String("Name"): "minecraft:dark_oak_trapdoor"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:infested_stone"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:infested_cobblestone"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:infested_stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:infested_mossy_stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:infested_cracked_stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:infested_chiseled_stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:mossy_stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cracked_stone_bricks"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:chiseled_stone_bricks"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:brown_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:red_mushroom_block"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "true"
+              TAG_String("east"): "false"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "false"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "true"
+              TAG_String("south"): "false"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "true"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "true"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 2 entries
+          {
+            TAG_Compound("Properties"): 6 entries
+            {
+              TAG_String("north"): "true"
+              TAG_String("west"): "false"
+              TAG_String("up"): "false"
+              TAG_String("down"): "false"
+              TAG_String("east"): "false"
+              TAG_String("south"): "true"
+            }
+            TAG_String("Name"): "minecraft:mushroom_stem"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:purple_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:cyan_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:light_gray_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:gray_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:pink_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:lime_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:yellow_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:light_blue_concrete_powder"
+          }
+          TAG_Compound: 1 entries
+          {
+            TAG_String("Name"): "minecraft:magenta_concrete_powder"
+          }
+        }
+        TAG_ByteArray("SkyLight"): 2048 entries
+      }
+    }
+  }
+}
+262

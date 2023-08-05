@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+newsworker/__init__.py
+newsworker/consts.py
+newsworker/extractor.py
+newsworker/finder.py
+newsworker/tagmapper.py
+newsworker/tools.py
+newsworker.egg-info/PKG-INFO
+newsworker.egg-info/SOURCES.txt
+newsworker.egg-info/dependency_links.txt
+newsworker.egg-info/not-zip-safe
+newsworker.egg-info/requires.txt
+newsworker.egg-info/top_level.txt

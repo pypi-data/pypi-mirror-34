@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+soaper/__init__.py
+soaper.egg-info/PKG-INFO
+soaper.egg-info/SOURCES.txt
+soaper.egg-info/dependency_links.txt
+soaper.egg-info/top_level.txt

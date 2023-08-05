@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ambition-labs
+Version: 0.1.3
+Summary: ambition lab modules
+Home-page: https://github.com/ambition-trial/ambition-labs
+Author: Leslie Kepaletswe, Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django ambition lab
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+
+|pypi| |travis| |coverage|
+
+ambition-labs
+---------------
+
+.. |pypi| image:: https://img.shields.io/pypi/v/ambition-labs.svg
+    :target: https://pypi.python.org/pypi/ambition-labs
+
+.. |travis| image:: https://travis-ci.org/clinicedc/ambition-labs.svg?branch=develop
+    :target: https://travis-ci.org/clinicedc/ambition-labs
+
+.. |coverage| image:: https://coveralls.io/repos/github/clinicedc/ambition-labs/badge.svg?branch=develop
+    :target: https://coveralls.io/github/clinicedc/ambition-labs?branch=develop
+
+

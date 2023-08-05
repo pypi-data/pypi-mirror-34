@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/dynamic_upload_image_field/__init__.py
+src/dynamic_upload_image_field/fields.py
+src/dynamic_upload_image_field.egg-info/PKG-INFO
+src/dynamic_upload_image_field.egg-info/SOURCES.txt
+src/dynamic_upload_image_field.egg-info/dependency_links.txt
+src/dynamic_upload_image_field.egg-info/not-zip-safe
+src/dynamic_upload_image_field.egg-info/requires.txt
+src/dynamic_upload_image_field.egg-info/top_level.txt

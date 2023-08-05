@@ -1,0 +1,98 @@
+#!/usr/bin/env python
+from __future__ import print_function
+import os
+import sys
+import yaml
+from xbowflow.pipelines import InterfaceKernel, SubprocessKernel, Pipeline, pack, unpack
+from xbowflow.clients import dask_client
+from distributed import Client, LocalCluster
+import argparse
+
+def runit(client, wconfig, inputs):
+    kernels = {
+               'interfacekernel': InterfaceKernel,
+               'subprocesskernel': SubprocessKernel,
+              }
+
+    if 'inputs' in wconfig:
+        for k in wconfig['inputs']:
+            if not k in inputs:
+                raise RuntimeError('Error - inputs is missing parameter {}'.format(k))
+    
+    create_files = True
+    if client is None:
+        dryrun = True
+        create_files = False
+    output = inputs
+    if wconfig['workflow'].get('inputfiles', False):
+        for f in wconfig['workflow']['inputfiles']:
+            output[f] = pack(output[f])
+
+    mykernels = {}
+    for stage in wconfig['workflow']['stages']:
+        for step in wconfig[stage]['steps']:
+            ktype = wconfig[step]['type']
+            if ktype == 'interfacekernel':
+                mykernels[step] = kernels[ktype](wconfig[step]['configuration'])
+            elif ktype == 'subprocesskernel':
+                mykernels[step] = kernels[ktype](wconfig[step]['configuration'],
+                                                 wconfig[step]['inputfiles'],
+                                                 wconfig[step]['outputfiles'])
+
+    for stage in wconfig['workflow']['stages']:
+        klist = [mykernels[k] for k in wconfig[stage]['steps']]
+        pipeline = Pipeline(client, klist)
+        if 'iterations' in wconfig[stage]:
+            n_its = inputs[wconfig[stage]['iterations']]
+        else:
+            n_its = 1
+        for i in range(n_its):
+            output = pipeline.run(output)
+
+    ok = True
+    if isinstance(output, list):
+        for o in output:
+            if o['returncode'] != 0:
+                print(o['output'].decode('utf-8'))
+                ok = False
+    else:
+        if output['returncode'] != 0:
+            print(output['output'].decode('utf-8'))
+            ok = False
+    if ok:
+        if wconfig['workflow'].get('outputfiles', False):
+            for f in wconfig['workflow']['outputfiles']:
+                if isinstance(output, dict):
+                    output[f] = unpack(output[f], create_files=create_files)
+                else:
+                    for i in range(len(output)):
+                        output[i][f] = unpack(output[i][f], create_files=create_files)
+    return ok
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Run an xbowflow workflow')
+    parser.add_argument('configfile', help='Name of the workflow configuration file')
+    parser.add_argument('inputsfile', help='Name of the workflow job inputs file')
+    parser.add_argument('--local_client', action='store_true', help='Use a local client')
+    parser.add_argument('--dry_run', action='store_true', help='Just print commands that would be run')
+
+    args = parser.parse_args()
+    with open(args.configfile) as f:
+        wconfig = yaml.load(f)
+
+    with open(args.inputsfile) as f:
+        inputs = yaml.load(f)
+    if args.local_client:
+        print('Note: using local client')
+        cluster = LocalCluster()
+        client = Client(cluster)
+    elif args.dry_run:
+        print('Note: dry run')
+        client = None
+    else:
+        client = dask_client()
+    ok = runit(client, wconfig, inputs)
+    if client is not None:
+        client.close()
+    if ok:
+        print('Workflow completed without errors')

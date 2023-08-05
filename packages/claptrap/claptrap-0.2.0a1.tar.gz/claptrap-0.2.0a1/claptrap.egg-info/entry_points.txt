@@ -1,0 +1,3 @@
+[console_scripts]
+claptrap = claptrap.scripts:script_phrase
+

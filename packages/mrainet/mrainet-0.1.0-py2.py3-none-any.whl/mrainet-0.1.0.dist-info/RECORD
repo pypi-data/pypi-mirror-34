@@ -1,0 +1,12 @@
+mrainet/__init__.py,sha256=oopN9XJqJAeijMaE15IT_zZbz9g0n685Ov65uhZDOEo,89
+mrainet/_version.py,sha256=nMZzra8djTV2s6Ksl0haxewZPLyZR75rtSbC7K9o1R0,20
+mrainet/demo_mrai.py,sha256=hVG5utqPMQAfQADJB_Xsdswqa3A0ROjf2eqvWXgj_30,2046
+mrainet/mraicnn.py,sha256=93bgcwthdpDYrV5QbGHZb43s4UMatp8n-1FBdzOoykc,29670
+mrainet/mraidn.py,sha256=eyaZFRVP4RnGBhWr66kiH2FoHMFOi_5nmfIP1Os2T3I,12462
+mrainet/mraidnn.py,sha256=HFwspCGCHELi5UM0xjIV1eAwl8W2AB2ri8gucorjT1k,25304
+mrainet/util.py,sha256=G4Q3Ny0R9SOsO42FpiTuIlGijbzYqLzhWaipfzQVsOs,14570
+mrainet/viz.py,sha256=1hdWZUzsfHl97tY_4DaNG2KHcU8SDm9XBgxqOe4DZzQ,2264
+mrainet-0.1.0.dist-info/METADATA,sha256=R7aMIflPCzrlYydarDGbrkP-yW25VYAFcwT62KBsTZg,4635
+mrainet-0.1.0.dist-info/RECORD,,
+mrainet-0.1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+mrainet-0.1.0.dist-info/top_level.txt,sha256=hFh-wswoPiXvQhCNQKbVAJ554p053dXpXJ6jE2GAuWc,8

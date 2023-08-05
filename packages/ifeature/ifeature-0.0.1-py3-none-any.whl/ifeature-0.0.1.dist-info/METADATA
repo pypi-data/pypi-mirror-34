@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ifeature
+Version: 0.0.1
+Summary: description
+Home-page: https://github.com/Jie-Yuan/iFeature
+Author: JieYuan
+Author-email: 313303303@qq.com
+Maintainer: JieYuan
+Maintainer-email: 313303303@qq.com
+License: MIT
+Keywords: DeepLearning,313303303@qq.com
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+

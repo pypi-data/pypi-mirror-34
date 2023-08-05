@@ -1,0 +1,10 @@
+README
+setup.cfg
+setup.py
+src/extensions/python/pywrapfst.cpp
+src/extensions/python/openfst/__init__.py
+src/extensions/python/pyopenfst.egg-info/PKG-INFO
+src/extensions/python/pyopenfst.egg-info/SOURCES.txt
+src/extensions/python/pyopenfst.egg-info/dependency_links.txt
+src/extensions/python/pyopenfst.egg-info/not-zip-safe
+src/extensions/python/pyopenfst.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+[boil.plates]
+ansible_role = boil.plates.ansible_role
+bash_script = boil.plates.bash_script
+license = boil.plates.license
+python_package = boil.plates.python_package
+python_script = boil.plates.python_script
+ruby_gem = boil.plates.ruby_gem
+
+[console_scripts]
+boil = boil.cli:main
+

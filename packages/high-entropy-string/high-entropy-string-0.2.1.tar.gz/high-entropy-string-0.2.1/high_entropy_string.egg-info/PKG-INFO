@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: high-entropy-string
+Version: 0.2.1
+Summary: A library for classifying strings as potential secrets.
+Home-page: https://github.com/lyft/high-entropy-string
+Author: Ryan Lane
+Author-email: rlane@lyft.com
+License: apache2
+Description: UNKNOWN
+Platform: UNKNOWN

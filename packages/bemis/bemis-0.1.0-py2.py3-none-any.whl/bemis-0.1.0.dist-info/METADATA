@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: bemis
+Version: 0.1.0
+Summary: A multi-format Minecraft file reader for Python3
+Home-page: https://github.com/gmr/bemis
+Author: Gavin M. Roy
+Author-email: gavinmroy@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+Bemis
+=====
+A work-in-progress, multi-format Minecraft file reader for Python3.
+
+.. image:: https://travis-ci.org/gmr/bemis.svg?branch=master
+    :target: https://travis-ci.org/gmr/bemis
+
+

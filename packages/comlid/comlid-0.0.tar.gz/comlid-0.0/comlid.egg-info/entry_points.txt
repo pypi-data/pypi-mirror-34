@@ -1,0 +1,3 @@
+[console_script]
+comlid = comlid.__main__:main
+

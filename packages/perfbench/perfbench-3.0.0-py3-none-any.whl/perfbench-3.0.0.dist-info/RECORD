@@ -1,0 +1,12 @@
+perfbench/__init__.py,sha256=fxw7rXVXZaZpl3gfwEMYbdCp0c_dxuWLdl1mDF3KY9w,179
+perfbench/_validators.py,sha256=2xgHOfl3i9a8e0vh6pBpTmVmLpnp5ckTmvEShmwqTM8,673
+perfbench/bench.py,sha256=3-vVYT9E7YOHXi2qwPvzLVQ4FtxwFQCzfIOE98maBdU,14976
+perfbench/core.py,sha256=RvJad7AlEv_A0e6AfOI5f_Eb0-f1SLlVkcM1FuDBZDk,4616
+perfbench/ipython_utils.py,sha256=6ULSLdUYTAOPBSA_WrwvCLGwpJdYiAwbucQ_HwjrLPQ,5136
+perfbench/plotly_utils.py,sha256=h_cFdhpk3BamvSeMkrw5foP_kj5ex-GCKN7XI399sfY,6909
+perfbench/utils.py,sha256=ez72yGguVh4BeQkjOT5n3ySCWSiqItvExFkUJIqpHYk,750
+perfbench/version.py,sha256=OLc9A943ZIksHJshKzDRzfy8gUYbUblGr-vezmkvpLg,107
+perfbench-3.0.0.dist-info/METADATA,sha256=DKlHPqjYlA3NwmWnSeQpqye1yMJ94PV6g6fv5dVGFOU,7091
+perfbench-3.0.0.dist-info/RECORD,,
+perfbench-3.0.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+perfbench-3.0.0.dist-info/top_level.txt,sha256=W7TfhaRrLnSjBrwlXb5iNTVCHb14wOCAFjUuVUfWDn0,10

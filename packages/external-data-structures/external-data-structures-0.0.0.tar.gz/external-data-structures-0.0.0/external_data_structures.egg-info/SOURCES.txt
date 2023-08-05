@@ -1,0 +1,15 @@
+LICENSE
+README.md
+VERSION
+setup.cfg
+setup.py
+external_data_structures/__init__.py
+external_data_structures.egg-info/PKG-INFO
+external_data_structures.egg-info/SOURCES.txt
+external_data_structures.egg-info/dependency_links.txt
+external_data_structures.egg-info/requires.txt
+external_data_structures.egg-info/top_level.txt
+external_data_structures/dictionaries/__init__.py
+external_data_structures/dictionaries/prototype.py
+external_data_structures/dictionaries/s3.py
+test/test_s3_dict.py

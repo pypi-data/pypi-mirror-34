@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wojak
+Version: 0.2
+Summary: request wojaks as a service
+Home-page: https://yakz.cf/
+Author: Jack (yak)
+Author-email: oganesson1@icloud.com
+License: ABSE
+Description: # Wojak
+        
+        wojaks as a service
+        
+        functions:
+        
+        get() = Gets a random wojak. optionally takes `num` as a wojak number ID.
+        
+        grayon() = Gets the mmm grayons wojak (id 47).
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

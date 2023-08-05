@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lost-n-phoned
+Version: 0.1.2
+Summary: Get your contacts from a stranger's phone
+Home-page: https://github.com/ljacob15/lost-and-phoned
+Maintainer: Keane Nguyen
+Maintainer-email: keanekyn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: requests
+Requires-Dist: google-auth
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-api-python-client
+Requires-Dist: twilio
+
+# lost-n-phoned
+
+Recover contact information from a stranger's phone if yours is lost or out of battery.
+
+This was a hackathon project for CodeRED Exploration by [Bala](https://github.com/Balakumaran-Bala), [Keane](https://github.com/keanemind), [Leon](https://github.com/ljacob15), and [Max](https://github.com/rodney-moreno). The core idea is Bala's. The name is a play on the phrase "Lost-n-Found".
+
+

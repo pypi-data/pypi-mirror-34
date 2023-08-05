@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scmon/__init__.py
+scmon.egg-info/PKG-INFO
+scmon.egg-info/SOURCES.txt
+scmon.egg-info/dependency_links.txt
+scmon.egg-info/top_level.txt

@@ -1,0 +1,44 @@
+apiVersion: "kubeflow.org/v1alpha1"
+kind: TFJob
+metadata:
+  name: $app-$run
+  labels:
+    mlt-app-name: $app
+spec:
+  replicaSpecs:
+    - replicas: 1
+      tfReplicaType: PS
+      template:
+        spec:
+          containers:
+            - image: $image
+              name: tensorflow
+#             ### BEGIN KSYNC SECTION
+#             command: ['/bin/sh']
+#             args: ['-c', 'python main.py; tail -f /dev/null']
+#             ### END KSYNC SECTION
+          restartPolicy: OnFailure
+    - replicas: 1
+      tfReplicaType: MASTER
+      template:
+        spec:
+          containers:
+            - image: $image
+              name: tensorflow
+#             ### BEGIN KSYNC SECTION
+#             command: ['/bin/sh']
+#             args: ['-c', 'python main.py; tail -f /dev/null']
+#             ### END KSYNC SECTION
+          restartPolicy: OnFailure
+    - replicas: 1
+      tfReplicaType: WORKER
+      template:
+        spec:
+          containers:
+            - image: $image
+              name: tensorflow
+#             ### BEGIN KSYNC SECTION
+#             command: ['/bin/sh']
+#             args: ['-c', 'python main.py; tail -f /dev/null']
+#             ### END KSYNC SECTION
+          restartPolicy: OnFailure

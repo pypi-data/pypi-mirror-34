@@ -1,0 +1,14 @@
+---
+file-contents:
+  releasenotes/notes/support-driver-notes-b73d5b185f05db7f.yaml:
+    features: ["You can now specify ``driver-notes.XXX`` values. These are useful\
+        \ to\nprovide additional context for features with a status of ``partial``.\
+        \ For\nexample::\n\n    [operation.Cool_Feature]\n    title=Cool Feature\n\
+        \    status=optional\n    notes=A pretty darn cool feature.\n    driver.foo=complete\n\
+        \    driver.bar=partial\n    driver-notes.bar=Requires hardware support.\n"]
+notes:
+- files:
+  - - releasenotes/notes/support-driver-notes-b73d5b185f05db7f.yaml
+    - !!binary |
+      YzA3YTJlOWNmNjFlNzQ5YTRlMDAyZGYxYmYxODY3Yjg2YmQ5YTQyNw==
+  version: 0.3.0

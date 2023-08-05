@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+clanimtk/__init__.py
+clanimtk/anim.py
+clanimtk/cli.py
+clanimtk/core.py
+clanimtk/decorator.py
+clanimtk/types.py
+clanimtk/util.py
+clanimtk.egg-info/PKG-INFO
+clanimtk.egg-info/SOURCES.txt
+clanimtk.egg-info/dependency_links.txt
+clanimtk.egg-info/not-zip-safe
+clanimtk.egg-info/top_level.txt

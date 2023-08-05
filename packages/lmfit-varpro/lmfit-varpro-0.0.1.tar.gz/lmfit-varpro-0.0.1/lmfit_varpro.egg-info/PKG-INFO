@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: lmfit-varpro
+Version: 0.0.1
+Summary: A variable projection implementation for Python/lmfit.
+Home-page: https://github.com/glotaran/lmfit-varpro
+Author: Joris Snellenburg, Joern Weissenborn
+Author-email: j.snellenburg@gmail.com,
+                    joern.weissenborn@gmail.com
+License: GPLv3
+Download-URL: https://github.com/glotaran/lmfit-varpro/archive/0.0.1.tar.gz
+Description: [![Build Status](https://travis-ci.org/glotaran/lmfit-varpro.svg?branch=master)](https://travis-ci.org/glotaran/lmfit-varpro)
+        [![Build Status](https://ci.appveyor.com/api/projects/status/github/glotaran/lmfit-varpro?branch=master&svg=true)](https://ci.appveyor.com/project/jsnel/lmfit-varpro?branch=master)
+        [![Documentation Status](https://readthedocs.org/projects/lmfit-varpro/badge/?version=latest)](https://lmfit-varpro.readthedocs.io/en/latest/?badge=latest)
+        [![Coverage Status](https://coveralls.io/repos/github/glotaran/lmfit-varpro/badge.svg?branch=master)](https://coveralls.io/github/glotaran/lmfit-varpro?branch=master)
+        
+        # lmfit-varpro
+        Python-lmfit based implementation of variable projection
+        
+        ## Credits
+        
+        This package was partially created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and
+        the [audreyr/cookiecutter-pypackage ](https://github.com/audreyr/cookiecutter-pypackage) project template.
+        
+Keywords: alpha
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

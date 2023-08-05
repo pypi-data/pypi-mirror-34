@@ -1,0 +1,12 @@
+py_HighSierraMediaKeyEnabler-0.0.1-py3.7-nspkg.pth,sha256=wgx1Qk7Jc4jrvu5mPSglI3k14f-gX5ITs2lm3ydALD8,524
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/METADATA,sha256=h_qmIEBazDBCg3cGXJqOuWVj-i_JX_rQg3JqIb-G4-o,2785
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/RECORD,,
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/entry_points.txt,sha256=rXqAYjhxvr-yW71Ttq-dVGMNMDu1pET00-_AEEuGhJo,62
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/namespace_packages.txt,sha256=S_WX3k2dmxyKRPajWrFaUX_pUy0bISPEoMtLgnT4Kok,4
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/top_level.txt,sha256=S_WX3k2dmxyKRPajWrFaUX_pUy0bISPEoMtLgnT4Kok,4
+py_HighSierraMediaKeyEnabler-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+scs/mediakeyenabler/__init__.py,sha256=cinSZRI44BFGTUAfUoZV_cQ48FPx617CgD4uY_hCEu4,4601
+scs/mediakeyenabler/__main__.py,sha256=hYIwwnTOTCmTeVVcovIRAoEhJeEKZxnAV--RLun0i08,223
+scs/mediakeyenabler/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scs/mediakeyenabler/tests/test_mediakeyenabler.py,sha256=nUkntt1bX2GnCTzyaR6DpiQoq5TCO9vOs2p-65tofT8,2814

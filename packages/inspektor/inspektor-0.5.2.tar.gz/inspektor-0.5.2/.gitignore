@@ -1,0 +1,11 @@
+*~
+*.pyc
+build/
+tags
+cscope.*
+.project
+.pydevproject
+.venv*
+.idea
+inspektor.egg-info
+MANIFEST

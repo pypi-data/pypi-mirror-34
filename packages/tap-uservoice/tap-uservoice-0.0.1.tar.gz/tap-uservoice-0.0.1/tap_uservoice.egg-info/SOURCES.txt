@@ -1,0 +1,14 @@
+README.md
+setup.py
+tap_uservoice/__init__.py
+tap_uservoice/catalog.py
+tap_uservoice/client.py
+tap_uservoice/config.py
+tap_uservoice/schemas.py
+tap_uservoice/state.py
+tap_uservoice.egg-info/PKG-INFO
+tap_uservoice.egg-info/SOURCES.txt
+tap_uservoice.egg-info/dependency_links.txt
+tap_uservoice.egg-info/entry_points.txt
+tap_uservoice.egg-info/requires.txt
+tap_uservoice.egg-info/top_level.txt

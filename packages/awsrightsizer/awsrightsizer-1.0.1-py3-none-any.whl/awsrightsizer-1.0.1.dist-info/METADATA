@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: awsrightsizer
+Version: 1.0.1
+Summary: A tool to help you determine the correct instance types to use for your running EC2/RDS instances.
+Home-page: https://github.com/gregoryjordanm/awsrightsizer.git
+Author: Jordan M Gregory
+Author-email: gregory.jordan.m@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: boto3
+
+UNKNOWN
+
+

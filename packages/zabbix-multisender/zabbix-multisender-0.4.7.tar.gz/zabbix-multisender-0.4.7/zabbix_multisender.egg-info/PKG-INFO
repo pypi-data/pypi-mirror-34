@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: zabbix-multisender
+Version: 0.4.7
+Summary: Zabbix MiltiSender
+Home-page: UNKNOWN
+Author: Vojtěch Pachol
+Author-email: v.pachol@mikroelektronika.cz
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,zabbix
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3

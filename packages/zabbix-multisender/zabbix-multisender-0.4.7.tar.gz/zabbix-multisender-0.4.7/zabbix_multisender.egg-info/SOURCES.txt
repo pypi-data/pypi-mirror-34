@@ -1,0 +1,8 @@
+setup.py
+zabbix_multisender.egg-info/PKG-INFO
+zabbix_multisender.egg-info/SOURCES.txt
+zabbix_multisender.egg-info/dependency_links.txt
+zabbix_multisender.egg-info/entry_points.txt
+zabbix_multisender.egg-info/requires.txt
+zabbix_multisender.egg-info/top_level.txt
+zms/__init__.py

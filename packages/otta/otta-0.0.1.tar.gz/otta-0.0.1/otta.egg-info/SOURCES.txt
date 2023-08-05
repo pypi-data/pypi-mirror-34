@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+otta/__init__.py
+otta/fail.py
+otta/utils.py
+otta/validate.py
+otta.egg-info/PKG-INFO
+otta.egg-info/SOURCES.txt
+otta.egg-info/dependency_links.txt
+otta.egg-info/entry_points.txt
+otta.egg-info/requires.txt
+otta.egg-info/top_level.txt

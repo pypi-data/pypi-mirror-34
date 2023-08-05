@@ -1,0 +1,111 @@
+Metadata-Version: 1.1
+Name: mblibs
+Version: 1.0.7
+Summary: Fast tools for programming
+Home-page: https://github.com/mickbad/mblibs
+Author: MickBad
+Author-email: prog@mickbad.com
+License: MIT
+Description: # mblibs
+        
+        Fast tools for programming
+        
+        installation
+        ```bash
+        $ pip install mblibs
+        ```
+        
+        Usage for settings
+        ```python
+        # Using settings
+        from mblibs.fast import FastSettings
+        
+        settings = FastSettings("/path/to/yaml_or_json")
+        value = settings.get("/path/to/key", "default_value")
+        integer = settings.getInt("/path/to/keyInt", 12)
+        
+        # => 18/07/2018
+        date = settings.get("/path/to/current_date", "{dd}/{mm}/{yyyy}")
+        
+        # => 19/07/2018
+        date = settings.get("/path/to/tomorrow_date"
+                        "{tomorrow_dd}/{tomorrow_mm}/{tomorrow_yyyy}")
+        
+        # => 17/07/2018
+        date = settings.get("/path/to/yesterday_date", 
+                        "{yesterday_dd}/{yesterday_mm}/{yesterday_yyyy}")
+        
+        # sample
+        {'data': [{'ident': 'name1', 'rows': [{'key': 1}, {'key': 2}]},
+                  {'ident': 'name2', 'rows': [{'key': 3}, {'key': 4}]}]}
+        settings.get("/data[1]/rows[0]/key") => 3
+        settings.get("/data[0]/rows") => [{'key': 1}, {'key': 2}]
+        
+        ```
+        
+        
+        Changelog
+        
+        * version 1.0.7 - 19/07/2018
+        
+        FastSettings: path include indice for list configuraiton
+        
+        {'data': [{'ident': 'name1', 'rows': [{'key': 1}, {'key': 2}]},
+                  {'ident': 'name2', 'rows': [{'key': 3}, {'key': 4}]}]}
+        
+        "/data[1]/rows[0]/key" => 3
+        "/data[0]/rows" => [{'key': 1}, {'key': 2}]
+        
+        FastSettings: configuration can be read from file or text content
+        def __init__(self, config_filename="", config_content="")
+        
+        FastSettings: .get(): set None retrieve to default
+        
+        FastSettings: add .getFloat() function to get float configuration value
+        
+        FastSettings: add macros for .getWithDateFormat()
+        	#  {yyyy}, {mm}, {dd}, {H}, {M}, {S}, {mm_human}
+        	#
+        	#  {tomorrow_yyyy}, {tomorrow_mm}, {tomorrow_dd}, {tomorrow_H}, {tomorrow_M}, {tomorrow_S}, {tomorrow_mm_human}
+        	#  {yesterday_yyyy}, {yesterday_mm}, {yesterday_dd}, {yesterday_H}, {yesterday_M}, {yesterday_S}, {yesterday_mm_human}
+        	#
+        	#  {weekday_tomorrow_yyyy}, {weekday_tomorrow_mm}, {weekday_tomorrow_dd}, {weekday_tomorrow_H}, {weekday_tomorrow_M}, {weekday_tomorrow_S}, {weekday_tomorrow_mm_human}
+        	#  {weekday_yesterday_yyyy}, {weekday_yesterday_mm}, {weekday_yesterday_dd}, {weekday_yesterday_H}, {weekday_yesterday_M}, {weekday_yesterday_S}, {weekday_yesterday_mm_human}
+        	#
+        	#  {weekend_tomorrow_yyyy}, {weekend_tomorrow_mm}, {weekend_tomorrow_dd}, {weekend_tomorrow_H}, {weekend_tomorrow_M}, {weekend_tomorrow_S}, {weekend_tomorrow_mm_human}
+        	#  {weekend_yesterday_yyyy}, {weekend_yesterday_mm}, {weekend_yesterday_dd}, {weekend_yesterday_H}, {weekend_yesterday_M}, {weekend_yesterday_S}, {weekend_yesterday_mm_human}
+        	#
+        	#  {working_tomorrow_yyyy}, {working_tomorrow_mm}, {working_tomorrow_dd}, {working_tomorrow_H}, {working_tomorrow_M}, {working_tomorrow_S}, {working_tomorrow_mm_human}
+        	#  {working_yesterday_yyyy}, {working_yesterday_mm}, {working_yesterday_dd}, {working_yesterday_H}, {working_yesterday_M}, {working_yesterday_S}, {working_yesterday_mm_human}
+        
+        
+        FastDate: Add class for manipulate datetime (yesterday, weekday_yesterday, 
+        weekend_yesterday, working_yesterday, *_tommorrow, delta)
+        
+        
+        * version 1.0.6 - 18/07/2018
+        
+        object FastSettings: add option yesterday in getWithDateFormat
+        can get automatics values from yaml/json configuration file like (for today 18/07/2018)
+        	key: {dd}/{mm}/{yyyy} => 18/07/2018
+        	tomorrow_key: {tomorrow_dd}/{tomorrow_mm}/{tomorrow_yyyy} => 19/07/2018
+        	yesterday_key: {yesterday_dd}/{yesterday_mm}/{yesterday_yyyy} => 17/07/2018
+        
+        
+        * version 1.0.5 - 01/04/2018
+        
+        1st public release
+        
+Keywords: development tools fasting
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities

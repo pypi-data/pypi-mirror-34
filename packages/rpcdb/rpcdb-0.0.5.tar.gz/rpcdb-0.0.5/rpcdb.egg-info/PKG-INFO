@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: rpcdb
+Version: 0.0.5
+Summary: A multiplatform mysql framework for client-server apps
+Home-page: https://github.com/abiiranathan/rpcdb.git
+Author: Dr Abiira Nathan
+Author-email: nabiira2by2@gmail.com
+License: GPL-3
+Description: rpcdb is an abstraction around mysql-connector-python that enable connection to remote mysql database using multiprocessing remote connection. Features a mysql to tkinter relational mapper  e.g VARCHAR represents a ttk.Entry field, Text represents tkinter.scrolledtext.ScrolledText One stop package for general purpose classes, decorators and functions.  Has a commandline chat server that can be accessed by multiple GUI clients
+Keywords: mysql database python Abiira Nathan framework rpcdb tkinter relational mapper
+Platform: Windows 7
+Platform: Windows 8
+Platform: Windows 10
+Platform: Linux/Unix

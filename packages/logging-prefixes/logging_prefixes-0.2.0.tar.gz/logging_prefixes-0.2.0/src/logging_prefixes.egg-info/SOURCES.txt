@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+.travis.yml
+LICENSE
+README.md
+setup.cfg
+setup.py
+tox.ini
+src/logging_prefixes/__init__.py
+src/logging_prefixes/adapter.py
+src/logging_prefixes/coerce.py
+src/logging_prefixes/funcwrap.py
+src/logging_prefixes.egg-info/PKG-INFO
+src/logging_prefixes.egg-info/SOURCES.txt
+src/logging_prefixes.egg-info/dependency_links.txt
+src/logging_prefixes.egg-info/top_level.txt
+testing/test_log.py

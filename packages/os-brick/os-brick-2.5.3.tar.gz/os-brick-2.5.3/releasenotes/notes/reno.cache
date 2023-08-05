@@ -1,0 +1,10 @@
+---
+file-contents:
+  releasenotes/notes/scaleio-extend-attached-ec44d3a72395882c.yaml:
+    features: [Added ability to extend attached ScaleIO volumes]
+notes:
+- files:
+  - - releasenotes/notes/scaleio-extend-attached-ec44d3a72395882c.yaml
+    - !!binary |
+      ZTUwMGZkODg3MzQyMmQ0ZWUwMzNhODcwMmEyYjMyNDFjNDBjNmU5ZA==
+  version: 2.4.0

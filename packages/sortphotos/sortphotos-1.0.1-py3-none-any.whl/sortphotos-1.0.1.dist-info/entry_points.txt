@@ -1,0 +1,3 @@
+[console_scripts]
+sortphotos = src.sortphotos:main
+

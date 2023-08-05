@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mpesa-api-sdk
+Version: 0.1
+Summary: M-Pesa API SDK
+Home-page: https://github.com/sartim/mpesa-python-sdk
+Author: sartim
+Author-email: sarrtim@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+

@@ -1,0 +1,10 @@
+flask
+pyyaml
+msgpack
+numpy
+sqlalchemy
+passlib
+zmq
+scipy
+requests
+matplotlib

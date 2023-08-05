@@ -1,0 +1,14 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.py
+electrum-merchant/__init__.py
+electrum-merchant/__main__.py
+electrum-merchant/logger.py
+electrum-merchant/simple/index.html
+electrum_merchant.egg-info/PKG-INFO
+electrum_merchant.egg-info/SOURCES.txt
+electrum_merchant.egg-info/dependency_links.txt
+electrum_merchant.egg-info/not-zip-safe
+electrum_merchant.egg-info/requires.txt
+electrum_merchant.egg-info/top_level.txt

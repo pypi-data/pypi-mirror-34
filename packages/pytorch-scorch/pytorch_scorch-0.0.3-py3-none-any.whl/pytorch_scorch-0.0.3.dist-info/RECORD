@@ -1,0 +1,10 @@
+pytorch_scorch-0.0.3.dist-info/METADATA,sha256=8SMHw1dA4yBn1y3LHnai4Nuxm_RKffQq4l17wDV3Vbw,5806
+pytorch_scorch-0.0.3.dist-info/RECORD,,
+pytorch_scorch-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pytorch_scorch-0.0.3.dist-info/entry_points.txt,sha256=-3Ly2o1oxylPudNLQu3twlqDR4oDXlfqlI4DPOL6sco,53
+pytorch_scorch-0.0.3.dist-info/top_level.txt,sha256=dXCjweOR4nF-nOF-c_6xs8MPYKvlYHALsQt1aCCJD6Y,7
+scorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scorch/train.py,sha256=7YDhmVegT_6WqjXL4BAtxbq7jx9qWUmX6nhJ7lzbNXk,6653
+scorch/trainer.py,sha256=dSkm9Cuw0HiTNra3sJZMv-twqeuOi8dW4JqBobS4SF4,7855
+scorch/transforms.py,sha256=FSzT_fWXXX3dgH93lSyLkfND6Dt5go3wbBwGCkxp-Hc,37125
+scorch/utils.py,sha256=7Js49Qx72bmPeW1eV00BrrlCOu-KbtZDPkZd3ru0Xx8,7174

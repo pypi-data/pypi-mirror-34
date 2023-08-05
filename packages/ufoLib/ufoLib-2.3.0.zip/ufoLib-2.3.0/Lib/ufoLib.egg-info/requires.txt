@@ -1,0 +1,12 @@
+fonttools<4,>=3.1.2
+
+[lxml]
+lxml<5,>=4.0
+
+[lxml:python_version < "3.4"]
+singledispatch<4,>=3.4.0.3
+
+[testing]
+pytest<4,>=3.0.0
+pytest-cov<3,>=2.5.1
+pytest-randomly<2,>=1.2.3

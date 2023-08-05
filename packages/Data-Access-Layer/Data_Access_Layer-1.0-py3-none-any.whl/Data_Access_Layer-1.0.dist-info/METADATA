@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Data-Access-Layer
+Version: 1.0
+Summary: Tool for interacting with databases
+Home-page: https://github.com/iurdaniz7/Data-Access-Layer
+Author: Ion Urdaniz
+Author-email: i.urdaniz7@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: certifi (==2018.4.16)
+Requires-Dist: numpy (==1.14.5)
+Requires-Dist: pandas (==0.23.3)
+Requires-Dist: pyodbc (==4.0.23)
+Requires-Dist: python-dateutil (==2.7.3)
+Requires-Dist: pytz (==2018.5)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: wincertstore (==0.2)
+
+# Data-Access-Layer
+Python package that enables users to connect to databases by specifying the server and database names.
+
+# Functionality
+It allows to connect and disconnect, and interact with database information.
+
+# Development phase.
+It currently supports Microsoft server connections and only allows to retrieve data from the database.
+Future development could be focus on enabling write capability into the database.
+
+

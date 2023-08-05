@@ -1,0 +1,10 @@
+django_politico_oembed_service-0.0.0a0.dist-info/METADATA,sha256=hLMKnklPqGQYaiYppp7-mFDdZtJdFNnVRFOZ0899UMY,902
+django_politico_oembed_service-0.0.0a0.dist-info/RECORD,,
+django_politico_oembed_service-0.0.0a0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_politico_oembed_service-0.0.0a0.dist-info/top_level.txt,sha256=pLTzoZ-8_ysE_jtLa1JzIh96uH0BZ6k8cRL3z9Iv62Y,14
+oembedservice/__init__.py,sha256=yzkMess83ZHRMruudX0WnLPnalwxbMwOY1dZp5fHwLE,62
+oembedservice/apps.py,sha256=25J4MF1G5_TqkaClZRF0SQxwfsFK4aqqtJhWazEOOIA,101
+oembedservice/conf.py,sha256=pRQkINJ-ETwPdbyWIYZbrNi4BYW_lzhqyvqO4HUyeWQ,681
+oembedservice/urls.py,sha256=pPmoaZpPf5JL3CKqJJaBrCcta5UBnb6EEUYE5kBk680,144
+oembedservice/views/__init__.py,sha256=YD4AErPO836Li-pNslVgACkynPlljV_LdkTPazme5J4,54
+oembedservice/views/twitter.py,sha256=0-2gNli7kk0jsyRgZdjENT7b-QTPYAALhx3S46Ae1Fw,714

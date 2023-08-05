@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: scedar
+Version: 0.1.1
+Summary: Single-cell explorative data analysis for RNA-Seq
+Home-page: http://github.com/logstar/scedar
+Author: Yuanchao Zhang
+Author-email: logstarx@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5, <3.7

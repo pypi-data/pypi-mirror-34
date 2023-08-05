@@ -1,0 +1,17 @@
+honeybadger/__init__.py,sha256=dAojMKYbf718F84lYGhEPZBWbYWHkzTwKKOxb3eQqdQ,345
+honeybadger/config.py,sha256=8ElpukkKmrWgd_5HPMZSehCf7wHZmQKnjGKgBQFT1Kk,1889
+honeybadger/connection.py,sha256=MR2LNDx_31FqtZDc5_Svjqc24DMzb5h6-2s4LuF5DLU,1011
+honeybadger/core.py,sha256=qF7UVgvn60mpVin3l-OP8SNDOeUuVJRF6Zt4ASqJgG0,2372
+honeybadger/fake_connection.py,sha256=LFGMM_WsbaYzjtJ0yS93BNAfLVisxw9fe8uk11ihXPc,286
+honeybadger/middleware.py,sha256=Cjh4o5aFBnGjO-elyJmgxphH-lIPEo5W83QYYKpBFlU,431
+honeybadger/payload.py,sha256=rEL2K073fEAPNJXrBhgg0JkYZ1DkZ5Fm-65DLhCPgrI,3339
+honeybadger/plugins.py,sha256=Ih0nH-g7cPiudVcCSRa_pZ27-l6qk91O9zaJDnvgIag,2627
+honeybadger/utils.py,sha256=N6PfsvUvUVyxuz9qH4R3zr4AgP_2_I3Eq0k4NZX0QYM,360
+honeybadger/version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+honeybadger/contrib/__init__.py,sha256=HmDHVPHWWf5P5UtwKlMMUlwg-sWZmfoGpbor1hlrULM,185
+honeybadger/contrib/django.py,sha256=dndR8COHvS4GjUiSzbvQVZxfga5nWbeuBv61u7ONbY4,3744
+honeybadger/contrib/flask.py,sha256=325CqXcer05uwujF4ylKgl_sS0oE4kGcPfsZs5q5njw,6630
+honeybadger-0.2.0.dist-info/METADATA,sha256=OIJkELUPpfyAXgA8H_sN64wDw_gY_vVyRQFF6FgEfUM,543
+honeybadger-0.2.0.dist-info/RECORD,,
+honeybadger-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+honeybadger-0.2.0.dist-info/top_level.txt,sha256=l6O8SIezQm84N39axHGQ3ow_OXUsdtmCd_da2TRf_yU,12

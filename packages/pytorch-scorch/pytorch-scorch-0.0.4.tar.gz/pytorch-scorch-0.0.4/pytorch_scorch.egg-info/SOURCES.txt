@@ -1,0 +1,12 @@
+README.md
+setup.py
+pytorch_scorch.egg-info/PKG-INFO
+pytorch_scorch.egg-info/SOURCES.txt
+pytorch_scorch.egg-info/dependency_links.txt
+pytorch_scorch.egg-info/entry_points.txt
+pytorch_scorch.egg-info/top_level.txt
+scorch/__init__.py
+scorch/train.py
+scorch/trainer.py
+scorch/transforms.py
+scorch/utils.py

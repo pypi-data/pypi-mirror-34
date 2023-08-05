@@ -1,0 +1,13 @@
+brdm/BaseRefData.py,sha256=xRdEJlDmxvl5lLG-WMdTIEGOnKcnNWJdgrUEBdIl2Hc,6356
+brdm/NcbiBlastData.py,sha256=nP8QdS83D4t0FGta6_3u6ajKMbIKyacebRt6caD3MAQ,14140
+brdm/NcbiData.py,sha256=HIiMurAl_doT9-CXbjWN7mNLxI6G-Kax2fUpEirlIiI,2202
+brdm/RefDataInterface.py,sha256=vt1vS_ryk5sjikgWa2oFTMtBDkPdJ3ecqswr08ONzgk,768
+brdm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brdm/brdm_root.py,sha256=rlyRr9wROrhKaZr3690auesKH039cCP8QDrTPQIWDys,272
+brdm/config.yaml.sample,sha256=mFBrGKvDwIRYQF8toHBcW5UJaAeD6ocpjdBPeirtHzM,2159
+brdm-0.1.data/scripts/main.py,sha256=uK6tmqMx4h-oisqasTz1fQaFLRi62B6iqRI533J3iRo,2293
+brdm-0.1.dist-info/METADATA,sha256=XqmjJiIiDgBJavbTcAovNOxvlUNFwqxHYJYOKy57QX8,548
+brdm-0.1.dist-info/RECORD,,
+brdm-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+brdm-0.1.dist-info/entry_points.txt,sha256=ZX6gAE4mEgXeNksKvikmY78gtQSAuKTkwFvvDBBnpC8,36
+brdm-0.1.dist-info/top_level.txt,sha256=q7B3uJrHPmOl4bIS3OrV3PbugchWUqu00RNyGtxehxo,5

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: patientpop-python-utils
+Version: 0.1.1
+Summary: Set of utilities for Patientpop Python development
+Home-page: https://www.patientpop.com
+Author: Jason Lane
+Author-email: jason.lane@patientpop.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: boto3
+
+UNKNOWN
+
+

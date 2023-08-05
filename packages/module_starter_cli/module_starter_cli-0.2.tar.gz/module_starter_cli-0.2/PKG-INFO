@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: module_starter_cli
+Version: 0.2
+Summary: Starter project for deploying module
+Home-page: http://github.com/storborg/funniest
+Author: Cory
+Author-email: aumitleon@gmail.com
+License: MIT
+Description: ## Starter repo for future python modules
+Keywords: Module starter
+Platform: UNKNOWN

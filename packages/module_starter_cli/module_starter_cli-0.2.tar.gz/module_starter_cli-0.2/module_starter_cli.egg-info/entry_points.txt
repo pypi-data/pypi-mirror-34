@@ -1,0 +1,3 @@
+[console_scripts]
+module_starter = module_scripts.command_line:main
+

@@ -1,0 +1,5 @@
+enum34==1.1.6
+requests==2.18.4
+
+[development]
+wheel==0.31.0

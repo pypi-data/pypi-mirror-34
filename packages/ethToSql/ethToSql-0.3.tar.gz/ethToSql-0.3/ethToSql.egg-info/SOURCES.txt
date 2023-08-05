@@ -1,0 +1,11 @@
+README.md
+setup.py
+ethToSql/SeqlDB.py
+ethToSql/__init__.py
+ethToSql/ethToSqlMain.py
+ethToSql.egg-info/PKG-INFO
+ethToSql.egg-info/SOURCES.txt
+ethToSql.egg-info/dependency_links.txt
+ethToSql.egg-info/not-zip-safe
+ethToSql.egg-info/requires.txt
+ethToSql.egg-info/top_level.txt

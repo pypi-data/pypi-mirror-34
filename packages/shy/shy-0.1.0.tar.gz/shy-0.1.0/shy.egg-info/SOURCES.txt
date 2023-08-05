@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+shy/__init__.py
+shy.egg-info/PKG-INFO
+shy.egg-info/SOURCES.txt
+shy.egg-info/dependency_links.txt
+shy.egg-info/not-zip-safe
+shy.egg-info/top_level.txt

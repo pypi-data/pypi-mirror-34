@@ -1,0 +1,10 @@
+README.md
+setup.py
+cpp_build/sample.exe
+sample/__init__.py
+sample/result.py
+sample/sample.py
+sample_kd.egg-info/PKG-INFO
+sample_kd.egg-info/SOURCES.txt
+sample_kd.egg-info/dependency_links.txt
+sample_kd.egg-info/top_level.txt

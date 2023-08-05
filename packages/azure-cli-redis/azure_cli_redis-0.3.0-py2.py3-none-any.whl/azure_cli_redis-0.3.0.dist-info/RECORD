@@ -1,0 +1,11 @@
+azure/cli/command_modules/redis/__init__.py,sha256=83bN320u2BGwZTYCVE8ghzRw3zhm8Nbk0Y7pCGkeRVQ,1476
+azure/cli/command_modules/redis/_client_factory.py,sha256=6HQf6qiWhkPzF4WBhmavcIEVaRInzWC2hbM4JBMYZ74,835
+azure/cli/command_modules/redis/_help.py,sha256=CE6G8iC2337GPf-GzF0KKeJ_gwkIM-taG6zsmKN7sUI,1416
+azure/cli/command_modules/redis/_params.py,sha256=bvn7oOZ1WBLR2ttoHiXKY6kbn3r80MLIcWXQk7TPK9k,2631
+azure/cli/command_modules/redis/_validators.py,sha256=IXkuvkJ5feJT0DRKd1HcMLmq5jumdI45ZVrC2FVebpA,1321
+azure/cli/command_modules/redis/commands.py,sha256=Gb8Xk8bR1FQGJ2IueR_rNOAAQqwhjJ4lEU186EZAt8g,2389
+azure/cli/command_modules/redis/custom.py,sha256=eZEO15ejp5fDkGh25KxHZOgnSoBUFJBF3H6Z6-wCl3U,5606
+azure_cli_redis-0.3.0.dist-info/METADATA,sha256=ouaI-mKd8gPGdSnrLipGlpR1XwFVCmROoQegcavcBME,2692
+azure_cli_redis-0.3.0.dist-info/RECORD,,
+azure_cli_redis-0.3.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+azure_cli_redis-0.3.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6

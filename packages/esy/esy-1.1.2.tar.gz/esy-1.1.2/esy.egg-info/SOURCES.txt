@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+esy/__init__.py
+esy/auth.py
+esy/client.py
+esy/constants.py
+esy/devel.py
+esy/exceptions.py
+esy.egg-info/PKG-INFO
+esy.egg-info/SOURCES.txt
+esy.egg-info/dependency_links.txt
+esy.egg-info/requires.txt
+esy.egg-info/top_level.txt

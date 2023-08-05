@@ -1,0 +1,13 @@
+unicef_djangolib/__init__.py,sha256=0oQ9aEJKvAo7huTya72notMX1_R-V4wdPBk0r9kg8_o,56
+unicef_djangolib/etag.py,sha256=e7B_gGqEbuX84WcMUwMKVh7gsnaP55nkWLrasNEMIyM,1617
+unicef_djangolib/fields.py,sha256=fBuA9DRHkwejN8Z0xmzgeuYZnGhSihhTJXT2wVEqo1k,4002
+unicef_djangolib/forms.py,sha256=1gDHESh1roJppvRcxryxkGew_cY7z7zl43v17U9J6Gc,274
+unicef_djangolib/drf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unicef_djangolib/drf/exports.py,sha256=vsEdHzaNfPPHdT9Ir5FuGbqyhJQYO0H9g-ZSByiJjN0,1195
+unicef_djangolib/drf/permissions.py,sha256=osuQzHL0bjYIglWO1Rd0HxKw6iKulzaSBb8CKzFZ_f8,240
+unicef_djangolib/drf/renderers.py,sha256=gYnSbzr6v8x2QXrYWD0V-NzY50HNWq_NI0X6joyJgKY,263
+unicef_djangolib/drf/views.py,sha256=4pBTLc7kW7YDpK_MI6Xfz6KQY1er2WWoUzFHyP0VQas,1629
+unicef_djangolib-0.4.dist-info/METADATA,sha256=2VTF_7l19zyVXXEoYM7RohWATn6c7vrf7nR5gJ9EiWw,4611
+unicef_djangolib-0.4.dist-info/RECORD,,
+unicef_djangolib-0.4.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+unicef_djangolib-0.4.dist-info/top_level.txt,sha256=u-KlztXwJeZvorCVyG5VzjsdYrYAQ7drhYg5bruChoQ,17

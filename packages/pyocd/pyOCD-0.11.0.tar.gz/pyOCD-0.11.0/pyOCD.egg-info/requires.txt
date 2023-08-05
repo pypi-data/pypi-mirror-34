@@ -1,0 +1,11 @@
+intelhex
+six
+enum34
+future
+websocket-client
+intervaltree
+colorama
+hidapi
+
+[dissassembler]
+capstone

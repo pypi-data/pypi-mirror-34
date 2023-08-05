@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dsutil-cstest
+Version: 0.0.5
+Summary: Collection of utils for making your life easier when using the Python data science stack
+Home-page: https://github.com/caisong25216/zgyytest
+Author: zgyy
+Author-email: cs25216@163.com
+License: UNKNOWN
+Description: # python-ds-util
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

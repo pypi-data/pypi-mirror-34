@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+dsutil-cstest/__init__.py
+dsutil-cstest/categories.py
+dsutil-cstest/plotting.py
+dsutil-cstest/preprocessing.py
+dsutil-cstest.egg-info/PKG-INFO
+dsutil-cstest.egg-info/SOURCES.txt
+dsutil-cstest.egg-info/dependency_links.txt
+dsutil-cstest.egg-info/requires.txt
+dsutil-cstest.egg-info/top_level.txt

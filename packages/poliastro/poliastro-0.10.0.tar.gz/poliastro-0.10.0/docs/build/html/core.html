@@ -1,0 +1,630 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Core API &mdash; poliastro 0.10.dev0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="What’s new" href="changelog.html" />
+    <link rel="prev" title="Dastcom5 parameters" href="dastcom5 parameters.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> poliastro
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.10
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About poliastro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="api.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="safe.html">High level API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Core API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#poliastro-core-package">poliastro.core package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.angles">poliastro.core.angles module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.elements">poliastro.core.elements module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.hyper">poliastro.core.hyper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.iod">poliastro.core.iod module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.perturbations">poliastro.core.perturbations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.propagation">poliastro.core.propagation module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.stumpff">poliastro.core.stumpff module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-poliastro.core.util">poliastro.core.util module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">What’s new</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">poliastro</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="api.html">API Reference</a> &raquo;</li>
+        
+      <li>Core API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="core-api">
+<h1>Core API<a class="headerlink" href="#core-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="poliastro-core-package">
+<h2>poliastro.core package<a class="headerlink" href="#poliastro-core-package" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-poliastro.core.angles">
+<span id="poliastro-core-angles-module"></span><h3>poliastro.core.angles module<a class="headerlink" href="#module-poliastro.core.angles" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="module-poliastro.core.elements">
+<span id="poliastro-core-elements-module"></span><h3>poliastro.core.elements module<a class="headerlink" href="#module-poliastro.core.elements" title="Permalink to this headline">¶</a></h3>
+<dl class="attribute">
+<dt id="poliastro.core.elements.rv_pqw">
+<code class="descclassname">poliastro.core.elements.</code><code class="descname">rv_pqw</code><a class="headerlink" href="#poliastro.core.elements.rv_pqw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns r and v vectors in perifocal frame.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.elements.coe2rv">
+<code class="descclassname">poliastro.core.elements.</code><code class="descname">coe2rv</code><a class="headerlink" href="#poliastro.core.elements.coe2rv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts from classical orbital elements to vectors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Standard gravitational parameter (km^3 / s^2).</li>
+<li><strong>p</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Semi-latus rectum or parameter (km).</li>
+<li><strong>ecc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Eccentricity.</li>
+<li><strong>inc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Inclination (rad).</li>
+<li><strong>omega</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Longitude of ascending node (rad).</li>
+<li><strong>argp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Argument of perigee (rad).</li>
+<li><strong>nu</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – True anomaly (rad).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.elements.coe2mee">
+<code class="descclassname">poliastro.core.elements.</code><code class="descname">coe2mee</code><a class="headerlink" href="#poliastro.core.elements.coe2mee" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts from classical orbital elements to modified equinoctial
+orbital elements.</p>
+<p>The definition of the modified equinoctial orbital elements is taken from
+[Walker, 1985].</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Standard gravitational parameter (km^3 / s^2).</li>
+<li><strong>p</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Semi-latus rectum or parameter (km).</li>
+<li><strong>ecc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Eccentricity.</li>
+<li><strong>inc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Inclination (rad).</li>
+<li><strong>omega</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Longitude of ascending node (rad).</li>
+<li><strong>argp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Argument of perigee (rad).</li>
+<li><strong>nu</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – True anomaly (rad).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The conversion equations are taken directly from the original paper.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.elements.rv2coe">
+<code class="descclassname">poliastro.core.elements.</code><code class="descname">rv2coe</code><a class="headerlink" href="#poliastro.core.elements.rv2coe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts from vectors to classical orbital elements.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Standard gravitational parameter (km^3 / s^2).</li>
+<li><strong>r</strong> (<em>array</em>) – Position vector (km).</li>
+<li><strong>v</strong> (<em>array</em>) – Velocity vector (km / s).</li>
+<li><strong>tol</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – Tolerance for eccentricity and inclination checks, default to 1e-8.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-poliastro.core.hyper">
+<span id="poliastro-core-hyper-module"></span><h3>poliastro.core.hyper module<a class="headerlink" href="#module-poliastro.core.hyper" title="Permalink to this headline">¶</a></h3>
+<p>Utility hypergeometric functions.</p>
+<dl class="attribute">
+<dt id="poliastro.core.hyper.hyp2f1b">
+<code class="descclassname">poliastro.core.hyper.</code><code class="descname">hyp2f1b</code><a class="headerlink" href="#poliastro.core.hyper.hyp2f1b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hypergeometric function 2F1(3, 1, 5/2, x), see [Battin].</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-poliastro.core.iod">
+<span id="poliastro-core-iod-module"></span><h3>poliastro.core.iod module<a class="headerlink" href="#module-poliastro.core.iod" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="module-poliastro.core.perturbations">
+<span id="poliastro-core-perturbations-module"></span><h3>poliastro.core.perturbations module<a class="headerlink" href="#module-poliastro.core.perturbations" title="Permalink to this headline">¶</a></h3>
+<dl class="attribute">
+<dt id="poliastro.core.perturbations.J2_perturbation">
+<code class="descclassname">poliastro.core.perturbations.</code><code class="descname">J2_perturbation</code><a class="headerlink" href="#poliastro.core.perturbations.J2_perturbation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates J2_perturbation acceleration (km/s2)</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.9.0.</span></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>t0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Current time (s)</li>
+<li><strong>state</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – Six component state vector [x, y, z, vx, vy, vz] (km, km/s).</li>
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – gravitational constant, (km^3/s^2)</li>
+<li><strong>J2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – oblateness factor</li>
+<li><strong>R</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – attractor radius</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The J2 accounts for the oblateness of the attractor. The formula is given in
+Howard Curtis, (12.30)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.perturbations.J3_perturbation">
+<code class="descclassname">poliastro.core.perturbations.</code><code class="descname">J3_perturbation</code><a class="headerlink" href="#poliastro.core.perturbations.J3_perturbation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates J3_perturbation acceleration (km/s2)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>t0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Current time (s)</li>
+<li><strong>state</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – Six component state vector [x, y, z, vx, vy, vz] (km, km/s).</li>
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – gravitational constant, (km^3/s^2)</li>
+<li><strong>J3</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – oblateness factor</li>
+<li><strong>R</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – attractor radius</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The J3 accounts for the oblateness of the attractor. The formula is given in
+Howard Curtis, problem 12.8
+This perturbation has not been fully validated, see <a class="reference external" href="https://github.com/poliastro/poliastro/pull/398">https://github.com/poliastro/poliastro/pull/398</a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.perturbations.atmospheric_drag">
+<code class="descclassname">poliastro.core.perturbations.</code><code class="descname">atmospheric_drag</code><a class="headerlink" href="#poliastro.core.perturbations.atmospheric_drag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates atmospheric drag acceleration (km/s2)</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.9.0.</span></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>t0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Current time (s)</li>
+<li><strong>state</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – Six component state vector [x, y, z, vx, vy, vz] (km, km/s).</li>
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – gravitational constant, (km^3/s^2)</li>
+<li><strong>C_D</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – dimensionless drag coefficient ()</li>
+<li><strong>A</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – frontal area of the spacecraft (km^2)</li>
+<li><strong>m</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – mass of the spacecraft (kg)</li>
+<li><strong>H0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – atmospheric scale height, (km)</li>
+<li><strong>rho0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – the exponent density pre-factor, (kg / m^3)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>This function provides the acceleration due to atmospheric drag. We follow
+Howard Curtis, section 12.4
+the atmospheric density model is rho(H) = rho0 x exp(-H / H0)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.perturbations.shadow_function">
+<code class="descclassname">poliastro.core.perturbations.</code><code class="descname">shadow_function</code><a class="headerlink" href="#poliastro.core.perturbations.shadow_function" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Determines whether the satellite is in attractor’s shadow,</dt>
+<dd>uses algorithm 12.3 from Howard Curtis</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>r_sat</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – position of the satellite in the frame of attractor (km)</li>
+<li><strong>r_sun</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – position of star in the frame of attractor (km)</li>
+<li><strong>R</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – radius of body (attractor) that creates shadow (km)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poliastro.core.perturbations.third_body">
+<code class="descclassname">poliastro.core.perturbations.</code><code class="descname">third_body</code><span class="sig-paren">(</span><em>t0</em>, <em>state</em>, <em>k</em>, <em>k_third</em>, <em>third_body</em><span class="sig-paren">)</span><a class="headerlink" href="#poliastro.core.perturbations.third_body" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates 3rd body acceleration (km/s2)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>t0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Current time (s)</li>
+<li><strong>state</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – Six component state vector [x, y, z, vx, vy, vz] (km, km/s).</li>
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – gravitational constant, (km^3/s^2)</li>
+<li><strong>third_body</strong> (<em>a callable object returning the position of 3rd body</em>) – third body that causes the perturbation</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="poliastro.core.perturbations.radiation_pressure">
+<code class="descclassname">poliastro.core.perturbations.</code><code class="descname">radiation_pressure</code><span class="sig-paren">(</span><em>t0</em>, <em>state</em>, <em>k</em>, <em>R</em>, <em>C_R</em>, <em>A</em>, <em>m</em>, <em>Wdivc_s</em>, <em>star</em><span class="sig-paren">)</span><a class="headerlink" href="#poliastro.core.perturbations.radiation_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates radiation pressure acceleration (km/s2)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>t0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Current time (s)</li>
+<li><strong>state</strong> (<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.14)"><em>numpy.ndarray</em></a>) – Six component state vector [x, y, z, vx, vy, vz] (km, km/s).</li>
+<li><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – gravitational constant, (km^3/s^2)</li>
+<li><strong>R</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – radius of the attractor</li>
+<li><strong>C_R</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – dimensionless radiation pressure coefficient, 1 &lt; C_R &lt; 2 ()</li>
+<li><strong>A</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – effective spacecraft area (km^2)</li>
+<li><strong>m</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – mass of the spacecraft (kg)</li>
+<li><strong>Wdivc_s</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – total star emitted power divided by the speed of light (W * s / km)</li>
+<li><strong>star</strong> (<em>a callable object returning the position of star in attractor frame</em>) – star position</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>This function provides the acceleration due to star light pressure. We follow
+Howard Curtis, section 12.9</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-poliastro.core.propagation">
+<span id="poliastro-core-propagation-module"></span><h3>poliastro.core.propagation module<a class="headerlink" href="#module-poliastro.core.propagation" title="Permalink to this headline">¶</a></h3>
+<dl class="attribute">
+<dt id="poliastro.core.propagation.mean_motion">
+<code class="descclassname">poliastro.core.propagation.</code><code class="descname">mean_motion</code><a class="headerlink" href="#poliastro.core.propagation.mean_motion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Propagates orbit using mean motion</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.9.0.</span></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>orbit</strong> (<a class="reference internal" href="safe.html#poliastro.twobody.orbit.Orbit" title="poliastro.twobody.orbit.Orbit"><em>Orbit</em></a>) – the Orbit object to propagate.</li>
+<li><strong>tof</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Time of flight (s).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>This method takes initial <span class="math notranslate nohighlight">\(\vec{r}, \vec{v}\)</span>, calculates classical orbit parameters,
+increases mean anomaly and performs inverse transformation to get final <span class="math notranslate nohighlight">\(\vec{r}, \vec{v}\)</span>
+The logic is based on formulae (4), (6) and (7) from <a class="reference external" href="http://dx.doi.org/10.1007/s10569-013-9476-9">http://dx.doi.org/10.1007/s10569-013-9476-9</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-poliastro.core.stumpff">
+<span id="poliastro-core-stumpff-module"></span><h3>poliastro.core.stumpff module<a class="headerlink" href="#module-poliastro.core.stumpff" title="Permalink to this headline">¶</a></h3>
+<p>Stumpff functions.</p>
+<dl class="attribute">
+<dt id="poliastro.core.stumpff.c2">
+<code class="descclassname">poliastro.core.stumpff.</code><code class="descname">c2</code><a class="headerlink" href="#poliastro.core.stumpff.c2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Second Stumpff function.</p>
+<p>For positive arguments:</p>
+<div class="math notranslate nohighlight">
+\[c_2(\psi) = \frac{1 - \cos{\sqrt{\psi}}}{\psi}\]</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.stumpff.c3">
+<code class="descclassname">poliastro.core.stumpff.</code><code class="descname">c3</code><a class="headerlink" href="#poliastro.core.stumpff.c3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Third Stumpff function.</p>
+<p>For positive arguments:</p>
+<div class="math notranslate nohighlight">
+\[c_3(\psi) = \frac{\sqrt{\psi} - \sin{\sqrt{\psi}}}{\sqrt{\psi^3}}\]</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-poliastro.core.util">
+<span id="poliastro-core-util-module"></span><h3>poliastro.core.util module<a class="headerlink" href="#module-poliastro.core.util" title="Permalink to this headline">¶</a></h3>
+<p>Function helpers.</p>
+<dl class="attribute">
+<dt id="poliastro.core.util.circular_velocity">
+<code class="descclassname">poliastro.core.util.</code><code class="descname">circular_velocity</code><a class="headerlink" href="#poliastro.core.util.circular_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute circular velocity for a given body (k) and semimajor axis (a).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.util.rotate">
+<code class="descclassname">poliastro.core.util.</code><code class="descname">rotate</code><a class="headerlink" href="#poliastro.core.util.rotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotates the coordinate system around axis x, y or z a CCW angle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vec</strong> (<em>ndarray</em>) – Dimension 3 vector.</li>
+<li><strong>angle</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Angle of rotation (rad).</li>
+<li><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Axis to be rotated.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>This performs a so-called active or alibi transformation: rotates the
+vector while the coordinate system remains unchanged. To do the opposite
+operation (passive or alias transformation) call the function as
+<cite>rotate(vec, ax, -angle)</cite> or use the convenience function <cite>transform</cite>,
+see <cite>[1]_</cite>.</p>
+<p class="rubric">References</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.util.transform">
+<code class="descclassname">poliastro.core.util.</code><code class="descname">transform</code><a class="headerlink" href="#poliastro.core.util.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotates a coordinate system around axis a positive right-handed angle.</p>
+<p class="rubric">Notes</p>
+<p>This is a convenience function, equivalent to <cite>rotate(vec, ax, -angle)</cite>.
+Refer to the documentation of that function for further information.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.util.norm">
+<code class="descclassname">poliastro.core.util.</code><code class="descname">norm</code><a class="headerlink" href="#poliastro.core.util.norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Norm of a 3d vector.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="poliastro.core.util.cross">
+<code class="descclassname">poliastro.core.util.</code><code class="descname">cross</code><a class="headerlink" href="#poliastro.core.util.cross" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes cross product between two vectors</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="changelog.html" class="btn btn-neutral float-right" title="What’s new" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dastcom5 parameters.html" class="btn btn-neutral" title="Dastcom5 parameters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Juan Luis Cano Rodríguez and the poliastro development team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.10.dev0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

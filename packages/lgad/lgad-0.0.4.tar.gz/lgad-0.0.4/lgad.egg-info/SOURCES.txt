@@ -1,0 +1,13 @@
+README.md
+lgad
+setup.py
+lgad/__init__.py
+lgad/driver.py
+lgad/moving_plates.py
+lgad/simulation.py
+lgad/utility.py
+lgad.egg-info/PKG-INFO
+lgad.egg-info/SOURCES.txt
+lgad.egg-info/dependency_links.txt
+lgad.egg-info/requires.txt
+lgad.egg-info/top_level.txt

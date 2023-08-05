@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+* Fix typos in metadata
+* Metadata cleanup
+* Fix license in setup.cfg
+* Fix typo in travis
+* Make a more substancial travis config
+* Add the Travis badge at the end of the README
+* Have travis deploy
+* Make the program pip-installable
+* Add a license
+* Initial commit

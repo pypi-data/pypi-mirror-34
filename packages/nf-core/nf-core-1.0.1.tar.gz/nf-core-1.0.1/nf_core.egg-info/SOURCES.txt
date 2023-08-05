@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nf_core/__init__.py
+nf_core/download.py
+nf_core/lint.py
+nf_core/list.py
+nf_core/release.py
+nf_core/utils.py
+nf_core.egg-info/PKG-INFO
+nf_core.egg-info/SOURCES.txt
+nf_core.egg-info/dependency_links.txt
+nf_core.egg-info/not-zip-safe
+nf_core.egg-info/requires.txt
+nf_core.egg-info/top_level.txt
+scripts/nf-core

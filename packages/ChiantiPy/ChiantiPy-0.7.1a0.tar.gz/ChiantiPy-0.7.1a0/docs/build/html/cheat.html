@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Intro for CHIANTI IDL Users &mdash; ChiantiPy v0.7.dev375</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/astropy_logo.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="ChiantiPy v0.7.dev375" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ChiantiPy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.dev375
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started with ChiantiPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_ref/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IDL_intro.html">Intro for CHIANTI IDL Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources for ChiantiPy Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugs.html">Reporting Bugs</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ChiantiPy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Intro for CHIANTI IDL Users</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/cheat.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="intro-for-chianti-idl-users">
+<h1>Intro for CHIANTI IDL Users<a class="headerlink" href="#intro-for-chianti-idl-users" title="Permalink to this headline">¶</a></h1>
+<p>ChiantiPy was not developed to be a clone of the CHIANTI IDL code.  The IDL code largely consists of functions that can be used to calculate or plot a variety of properties.  Structures are often used to carry the results of one function to be used by another.</p>
+<p>ChiantiPy is object oriented.  For example, the building block of ChiantiPy is the <strong>ion</strong> class.  It carries with it all the methods that are needed as well as various calculated properties that are kept as attributes.  By following the Quick Start guide, you will become familiar with how ChiantiPy works.  Because one can always inquire, for example with <a class="reference external" href="https://docs.python.org/3/library/functions.html#dir" title="(in Python v3.6)"><code class="xref py py-obj docutils literal"><span class="pre">dir</span></code></a>, as to the methods and attributes of a an object, such as an ion, it is easy to remember what you might want to calculate next.  For example, you have created an object <em>myion</em>.  It is possible to then invoke</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">myion</span><span class="o">.</span><span class="n">popPlot</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>to plot the level populations of <em>myion</em>.  If you have not already calculated the levels populations, the <strong>ion</strong> class knows to calculate the level populations (<em>myion.populate()</em>) and save them for later use as the dictionary attribute <em>myion.Population</em> and then plot the specified level populations.  The level populations are then available as a 2 dimensional <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/index.html#module-numpy" title="(in NumPy v1.12)"><code class="xref py py-obj docutils literal"><span class="pre">numpy</span></code></a> array</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">myion</span><span class="o">.</span><span class="n">Population</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Experience using the CHIANTI IDL package will provide the user with a background with what ChiantiPy can do.  However, the way to accomplish them are much easier but must be learned.  The best way to start is with the Quick Start guide and a book about Python.  Book suggestions are <em>Learning Python</em> by Mark Lutz and the handy <em>Python Pocket Reference</em>, also by Mark Lutz.  The first one is alway in reach and copies of the latter is on all of my computer desks.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Ken Dere.
+      Last updated on 14 Feb 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.7.dev375',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

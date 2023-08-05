@@ -1,0 +1,3 @@
+[console_scripts]
+seqsynch-start = seqsynch.command_line:main
+

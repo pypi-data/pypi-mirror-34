@@ -1,0 +1,9 @@
+README.md
+setup.py
+chatsocket/__init__.py
+chatsocket/mktornado.py
+chatsocket.egg-info/PKG-INFO
+chatsocket.egg-info/SOURCES.txt
+chatsocket.egg-info/dependency_links.txt
+chatsocket.egg-info/not-zip-safe
+chatsocket.egg-info/top_level.txt

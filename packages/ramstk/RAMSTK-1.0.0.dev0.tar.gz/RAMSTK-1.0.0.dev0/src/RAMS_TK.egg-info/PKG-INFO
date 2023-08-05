@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: RAMS-TK
+Version: 1.0.0.dev0
+Summary: RAMS analysis tool
+Home-page: https://github.com/weibullguy/rtk
+Author: Doyle 'weibullguy' Rowland
+Author-email: andrew.rowland@reliaqual.com
+License: BSD-3
+Description: The Reliability ToolKit (RTK) is a suite of tools
+                for performing and documenting RAMS analyses.
+Keywords: reliability RAMS engineering quality safety
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Requires-Python: >=2.7, <4

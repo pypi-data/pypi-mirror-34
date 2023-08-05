@@ -1,0 +1,10 @@
+setup.py
+gecosistema_core/__init__.py
+gecosistema_core/execution.py
+gecosistema_core/filesystem.py
+gecosistema_core/platform.py
+gecosistema_core/strings.py
+gecosistema_core.egg-info/PKG-INFO
+gecosistema_core.egg-info/SOURCES.txt
+gecosistema_core.egg-info/dependency_links.txt
+gecosistema_core.egg-info/top_level.txt

@@ -1,0 +1,895 @@
+2018-07-12 21:34:41,210 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-12 21:34:41,211 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-12 21:34:41,212 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-12 21:34:41,212 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-12 21:34:41,213 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-12 21:34:41,214 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-12 21:34:41,215 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 11:47:02,252 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 11:47:02,254 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 11:47:02,254 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 11:47:02,255 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 11:47:02,256 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 11:47:02,256 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 11:47:02,257 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 11:47:02,258 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 11:47:02,258 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 11:47:02,259 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 11:47:02,259 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 11:47:02,260 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 11:47:02,260 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 15:18:37,987 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 15:18:37,988 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 15:18:37,988 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 15:18:37,989 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 17:31:13,755 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:31:13,755 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:31:13,755 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 17:31:13,756 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 17:49:51,510 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:49:51,511 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:49:51,511 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:49:51,511 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:49:51,511 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:49:51,511 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:49:51,511 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:49:51,512 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:49:51,512 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:49:51,512 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:49:51,512 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:49:51,512 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 17:49:51,512 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 17:58:05,174 - cellpy.readers.cellreader - INFO - created CellpyData instance
+2018-07-13 17:58:05,189 - cellpy.readers.cellreader - DEBUG - loading raw file: /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:05,189 - cellpy.readers.instruments.arbin - DEBUG - in loader
+2018-07-13 17:58:05,189 - cellpy.readers.instruments.arbin - DEBUG - filename: /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:05,189 - cellpy.readers.instruments.arbin - DEBUG - Filesize: 1613824 (1.0 MB)
+2018-07-13 17:58:05,194 - cellpy.readers.instruments.arbin - DEBUG - tmp file: /var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/20160805_test001_45_cc_01.res
+2018-07-13 17:58:05,194 - cellpy.readers.instruments.arbin - DEBUG - 
+MAC OSX USING MDBTOOLS
+2018-07-13 17:58:05,222 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/global_tmp.csv' mode='w' encoding='UTF-8'> Global_Table
+2018-07-13 17:58:05,443 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/normal_tmp.csv' mode='w' encoding='UTF-8'> Channel_Normal_Table
+2018-07-13 17:58:05,466 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/stats_tmp.csv' mode='w' encoding='UTF-8'> Channel_Statistic_Table
+2018-07-13 17:58:05,481 - cellpy.readers.instruments.arbin - DEBUG - number of datasets: 1
+2018-07-13 17:58:05,481 - cellpy.readers.cellreader - DEBUG - created DataSet instance
+2018-07-13 17:58:05,482 - cellpy.readers.instruments.arbin - DEBUG - reading raw-data
+2018-07-13 17:58:05,553 - cellpy.readers.cellreader - DEBUG - finished loading the raw-files
+2018-07-13 17:58:05,553 - cellpy.readers.cellreader - DEBUG - validating test
+2018-07-13 17:58:05,554 - cellpy.readers.cellreader - DEBUG - creating summary for file /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:05,562 - cellpy.readers.cellreader - DEBUG - Creates summary: specific discharge ('Discharge_Capacity(mAh/g)')
+2018-07-13 17:58:05,740 - cellpy.readers.cellreader - DEBUG - Creates summary: specific scharge ('Charge_Capacity(mAh/g)')
+2018-07-13 17:58:05,742 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated specific charge ('Cumulated_Discharge_Capacity(mAh/g)')
+2018-07-13 17:58:05,743 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated specific charge ('Cumulated_Charge_Capacity(mAh/g)')
+2018-07-13 17:58:05,743 - cellpy.readers.cellreader - INFO - assuming cycling anode half-cell (discharge before charge)
+2018-07-13 17:58:05,744 - cellpy.readers.cellreader - DEBUG - Creates summary: coulombic efficiency ('Coulombic_Efficiency(percentage)')
+2018-07-13 17:58:05,744 - cellpy.readers.cellreader - DEBUG - 100 * ('Charge_Capacity(mAh/g)')/('Discharge_Capacity(mAh/g))
+2018-07-13 17:58:05,745 - cellpy.readers.cellreader - DEBUG - Creates summary: coulombic difference ('Coulombic_Difference(mAh/g)')
+2018-07-13 17:58:05,745 - cellpy.readers.cellreader - DEBUG - 'Charge_Capacity(mAh/g)') - ('Discharge_Capacity(mAh/g))
+2018-07-13 17:58:05,746 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated coulombic efficiency ('Cumulated_Coulombic_Efficiency(percentage)')
+2018-07-13 17:58:05,747 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated coulombic difference ('Cumulated_Coulombic_Difference(mAh/g)')
+2018-07-13 17:58:05,748 - cellpy.readers.cellreader - DEBUG - Creates summary: calculates DL
+2018-07-13 17:58:05,763 - cellpy.readers.cellreader - DEBUG - converting date from xls-type
+2018-07-13 17:58:05,765 - cellpy.readers.cellreader - DEBUG - step_table not made
+2018-07-13 17:58:05,765 - cellpy.readers.cellreader - DEBUG - creating step_table for
+2018-07-13 17:58:05,765 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:06,722 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:06,722 - cellpy.readers.cellreader - DEBUG - ['discharge']
+2018-07-13 17:58:06,722 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:06,723 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:06,740 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:06,740 - cellpy.readers.cellreader - DEBUG - ['charge']
+2018-07-13 17:58:06,740 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:06,741 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:06,777 - cellpy.readers.cellreader - DEBUG - trying to find end voltage for
+2018-07-13 17:58:06,777 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:06,777 - cellpy.readers.cellreader - DEBUG - Using the following chargesteps
+2018-07-13 17:58:06,777 - cellpy.readers.cellreader - DEBUG - {1: [6], 2: [6], 3: [6], 4: [13], 5: [13], 6: [13], 7: [13], 8: [13], 9: [13], 10: [13], 11: [13], 12: [13], 13: [13], 14: [13], 15: [13], 16: [13], 17: [13], 18: [0]}
+2018-07-13 17:58:06,777 - cellpy.readers.cellreader - DEBUG - Using the following dischargesteps
+2018-07-13 17:58:06,778 - cellpy.readers.cellreader - DEBUG - {1: [3], 2: [3], 3: [3], 4: [10], 5: [10], 6: [10], 7: [10], 8: [10], 9: [10], 10: [10], 11: [10], 12: [10], 13: [10], 14: [10], 15: [10], 16: [10], 17: [10], 18: [10]}
+2018-07-13 17:58:06,778 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 0
+2018-07-13 17:58:06,779 - cellpy.readers.cellreader - DEBUG - cycle: 1
+2018-07-13 17:58:06,781 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 1
+2018-07-13 17:58:06,782 - cellpy.readers.cellreader - DEBUG - cycle: 2
+2018-07-13 17:58:06,783 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 2
+2018-07-13 17:58:06,784 - cellpy.readers.cellreader - DEBUG - cycle: 3
+2018-07-13 17:58:06,786 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 3
+2018-07-13 17:58:06,787 - cellpy.readers.cellreader - DEBUG - cycle: 4
+2018-07-13 17:58:06,789 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 4
+2018-07-13 17:58:06,789 - cellpy.readers.cellreader - DEBUG - cycle: 5
+2018-07-13 17:58:06,791 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 5
+2018-07-13 17:58:06,792 - cellpy.readers.cellreader - DEBUG - cycle: 6
+2018-07-13 17:58:06,794 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 6
+2018-07-13 17:58:06,794 - cellpy.readers.cellreader - DEBUG - cycle: 7
+2018-07-13 17:58:06,796 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 7
+2018-07-13 17:58:06,796 - cellpy.readers.cellreader - DEBUG - cycle: 8
+2018-07-13 17:58:06,798 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 8
+2018-07-13 17:58:06,799 - cellpy.readers.cellreader - DEBUG - cycle: 9
+2018-07-13 17:58:06,801 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 9
+2018-07-13 17:58:06,801 - cellpy.readers.cellreader - DEBUG - cycle: 10
+2018-07-13 17:58:06,804 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 10
+2018-07-13 17:58:06,804 - cellpy.readers.cellreader - DEBUG - cycle: 11
+2018-07-13 17:58:06,806 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 11
+2018-07-13 17:58:06,807 - cellpy.readers.cellreader - DEBUG - cycle: 12
+2018-07-13 17:58:06,811 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 12
+2018-07-13 17:58:06,811 - cellpy.readers.cellreader - DEBUG - cycle: 13
+2018-07-13 17:58:06,813 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 13
+2018-07-13 17:58:06,814 - cellpy.readers.cellreader - DEBUG - cycle: 14
+2018-07-13 17:58:06,816 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 14
+2018-07-13 17:58:06,817 - cellpy.readers.cellreader - DEBUG - cycle: 15
+2018-07-13 17:58:06,819 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 15
+2018-07-13 17:58:06,820 - cellpy.readers.cellreader - DEBUG - cycle: 16
+2018-07-13 17:58:06,823 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 16
+2018-07-13 17:58:06,824 - cellpy.readers.cellreader - DEBUG - cycle: 17
+2018-07-13 17:58:06,834 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:06,834 - cellpy.readers.cellreader - DEBUG - ['discharge']
+2018-07-13 17:58:06,835 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:06,835 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:06,851 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:06,851 - cellpy.readers.cellreader - DEBUG - ['charge']
+2018-07-13 17:58:06,851 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:06,851 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - trying to find ir for
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - Using the following charge_steps
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - {1: [6], 2: [6], 3: [6], 4: [13], 5: [13], 6: [13], 7: [13], 8: [13], 9: [13], 10: [13], 11: [13], 12: [13], 13: [13], 14: [13], 15: [13], 16: [13], 17: [13], 18: [0]}
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - Using the following discharge_steps
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - {1: [3], 2: [3], 3: [3], 4: [10], 5: [10], 6: [10], 7: [10], 8: [10], 9: [10], 10: [10], 11: [10], 12: [10], 13: [10], 14: [10], 15: [10], 16: [10], 17: [10], 18: [10]}
+2018-07-13 17:58:06,866 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 0
+2018-07-13 17:58:06,867 - cellpy.readers.cellreader - DEBUG - cycle: 1
+2018-07-13 17:58:06,869 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 1
+2018-07-13 17:58:06,869 - cellpy.readers.cellreader - DEBUG - cycle: 2
+2018-07-13 17:58:06,871 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 2
+2018-07-13 17:58:06,872 - cellpy.readers.cellreader - DEBUG - cycle: 3
+2018-07-13 17:58:06,873 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 3
+2018-07-13 17:58:06,874 - cellpy.readers.cellreader - DEBUG - cycle: 4
+2018-07-13 17:58:06,876 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 4
+2018-07-13 17:58:06,876 - cellpy.readers.cellreader - DEBUG - cycle: 5
+2018-07-13 17:58:06,878 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 5
+2018-07-13 17:58:06,878 - cellpy.readers.cellreader - DEBUG - cycle: 6
+2018-07-13 17:58:06,880 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 6
+2018-07-13 17:58:06,880 - cellpy.readers.cellreader - DEBUG - cycle: 7
+2018-07-13 17:58:06,882 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 7
+2018-07-13 17:58:06,882 - cellpy.readers.cellreader - DEBUG - cycle: 8
+2018-07-13 17:58:06,884 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 8
+2018-07-13 17:58:06,885 - cellpy.readers.cellreader - DEBUG - cycle: 9
+2018-07-13 17:58:06,886 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 9
+2018-07-13 17:58:06,887 - cellpy.readers.cellreader - DEBUG - cycle: 10
+2018-07-13 17:58:06,889 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 10
+2018-07-13 17:58:06,889 - cellpy.readers.cellreader - DEBUG - cycle: 11
+2018-07-13 17:58:06,891 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 11
+2018-07-13 17:58:06,892 - cellpy.readers.cellreader - DEBUG - cycle: 12
+2018-07-13 17:58:06,893 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 12
+2018-07-13 17:58:06,894 - cellpy.readers.cellreader - DEBUG - cycle: 13
+2018-07-13 17:58:06,896 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 13
+2018-07-13 17:58:06,896 - cellpy.readers.cellreader - DEBUG - cycle: 14
+2018-07-13 17:58:06,898 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 14
+2018-07-13 17:58:06,898 - cellpy.readers.cellreader - DEBUG - cycle: 15
+2018-07-13 17:58:06,900 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 15
+2018-07-13 17:58:06,900 - cellpy.readers.cellreader - DEBUG - cycle: 16
+2018-07-13 17:58:06,903 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 16
+2018-07-13 17:58:06,903 - cellpy.readers.cellreader - DEBUG - cycle: 17
+2018-07-13 17:58:06,907 - cellpy.readers.cellreader - DEBUG - Outfile exists
+2018-07-13 17:58:06,907 - cellpy.readers.cellreader - DEBUG - overwrite = True
+2018-07-13 17:58:06,907 - cellpy.readers.cellreader - DEBUG - trying to make infotable
+2018-07-13 17:58:06,909 - cellpy.readers.cellreader - DEBUG - _create_infotable: fid
+2018-07-13 17:58:06,909 - cellpy.readers.cellreader - DEBUG - trying to save to hdf5
+2018-07-13 17:58:06,909 - cellpy.readers.cellreader - DEBUG - 
+HDF5 file: /Users/jepe/scripting/cellpy/testdata/hdf5/20160805_test001_45_cc.h5
+2018-07-13 17:58:06,998 - cellpy.readers.cellreader - DEBUG - trying to put dfdata
+2018-07-13 17:58:07,011 - cellpy.readers.cellreader - DEBUG - trying to put dfsummary
+2018-07-13 17:58:07,028 - cellpy.readers.cellreader - INFO - trying to put step_table
+2018-07-13 17:58:07,042 - cellpy.readers.cellreader - DEBUG - trying to put infotbl
+2018-07-13 17:58:07,057 - cellpy.readers.cellreader - DEBUG - trying to put fidtable
+2018-07-13 17:58:07,074 - cellpy.readers.cellreader - INFO - created CellpyData instance
+2018-07-13 17:58:07,075 - cellpy.readers.cellreader - INFO - loading hdf5
+2018-07-13 17:58:07,075 - cellpy.readers.cellreader - INFO - /Users/jepe/scripting/cellpy/testdata/hdf5/20160805_test001_45_cc.h5
+2018-07-13 17:58:07,075 - cellpy.readers.cellreader - INFO - -from cellpy-file
+2018-07-13 17:58:07,124 - cellpy.readers.cellreader - DEBUG - Keys in current hdf5-file: ['/CellpyData/dfdata', '/CellpyData/dfsummary', '/CellpyData/fidtable', '/CellpyData/info', '/CellpyData/step_table']
+2018-07-13 17:58:07,124 - cellpy.readers.cellreader - DEBUG - created DataSet instance
+2018-07-13 17:58:07,144 - cellpy.readers.cellreader - DEBUG -   h5
+2018-07-13 17:58:07,144 - cellpy.readers.cellreader - DEBUG - _convert2fid_list
+2018-07-13 17:58:07,147 - cellpy.readers.cellreader - INFO - file loaded
+2018-07-13 17:58:07,147 - cellpy.readers.cellreader - DEBUG - validating test
+2018-07-13 17:58:07,270 - cellpy.readers.cellreader - INFO - created CellpyData instance
+2018-07-13 17:58:07,270 - cellpy.readers.cellreader - DEBUG - loading raw file: /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:07,271 - cellpy.readers.instruments.arbin - DEBUG - in loader
+2018-07-13 17:58:07,271 - cellpy.readers.instruments.arbin - DEBUG - filename: /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:07,272 - cellpy.readers.instruments.arbin - DEBUG - Filesize: 1613824 (1.0 MB)
+2018-07-13 17:58:07,278 - cellpy.readers.instruments.arbin - DEBUG - tmp file: /var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/20160805_test001_45_cc_01.res
+2018-07-13 17:58:07,278 - cellpy.readers.instruments.arbin - DEBUG - 
+MAC OSX USING MDBTOOLS
+2018-07-13 17:58:07,297 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/global_tmp.csv' mode='w' encoding='UTF-8'> Global_Table
+2018-07-13 17:58:07,431 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/normal_tmp.csv' mode='w' encoding='UTF-8'> Channel_Normal_Table
+2018-07-13 17:58:07,454 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/stats_tmp.csv' mode='w' encoding='UTF-8'> Channel_Statistic_Table
+2018-07-13 17:58:07,463 - cellpy.readers.instruments.arbin - DEBUG - number of datasets: 1
+2018-07-13 17:58:07,463 - cellpy.readers.cellreader - DEBUG - created DataSet instance
+2018-07-13 17:58:07,466 - cellpy.readers.instruments.arbin - DEBUG - reading raw-data
+2018-07-13 17:58:07,530 - cellpy.readers.cellreader - DEBUG - finished loading the raw-files
+2018-07-13 17:58:07,530 - cellpy.readers.cellreader - DEBUG - validating test
+2018-07-13 17:58:07,531 - cellpy.readers.cellreader - DEBUG - creating summary for file /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:07,536 - cellpy.readers.cellreader - DEBUG - Creates summary: specific discharge ('Discharge_Capacity(mAh/g)')
+2018-07-13 17:58:07,536 - cellpy.readers.cellreader - DEBUG - Creates summary: specific scharge ('Charge_Capacity(mAh/g)')
+2018-07-13 17:58:07,537 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated specific charge ('Cumulated_Discharge_Capacity(mAh/g)')
+2018-07-13 17:58:07,537 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated specific charge ('Cumulated_Charge_Capacity(mAh/g)')
+2018-07-13 17:58:07,538 - cellpy.readers.cellreader - INFO - assuming cycling anode half-cell (discharge before charge)
+2018-07-13 17:58:07,538 - cellpy.readers.cellreader - DEBUG - Creates summary: coulombic efficiency ('Coulombic_Efficiency(percentage)')
+2018-07-13 17:58:07,538 - cellpy.readers.cellreader - DEBUG - 100 * ('Charge_Capacity(mAh/g)')/('Discharge_Capacity(mAh/g))
+2018-07-13 17:58:07,540 - cellpy.readers.cellreader - DEBUG - Creates summary: coulombic difference ('Coulombic_Difference(mAh/g)')
+2018-07-13 17:58:07,540 - cellpy.readers.cellreader - DEBUG - 'Charge_Capacity(mAh/g)') - ('Discharge_Capacity(mAh/g))
+2018-07-13 17:58:07,540 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated coulombic efficiency ('Cumulated_Coulombic_Efficiency(percentage)')
+2018-07-13 17:58:07,541 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated coulombic difference ('Cumulated_Coulombic_Difference(mAh/g)')
+2018-07-13 17:58:07,542 - cellpy.readers.cellreader - DEBUG - Creates summary: calculates DL
+2018-07-13 17:58:07,550 - cellpy.readers.cellreader - DEBUG - converting date from xls-type
+2018-07-13 17:58:07,552 - cellpy.readers.cellreader - DEBUG - step_table not made
+2018-07-13 17:58:07,552 - cellpy.readers.cellreader - DEBUG - creating step_table for
+2018-07-13 17:58:07,552 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:08,121 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:08,122 - cellpy.readers.cellreader - DEBUG - ['discharge']
+2018-07-13 17:58:08,122 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:08,122 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:08,135 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:08,136 - cellpy.readers.cellreader - DEBUG - ['charge']
+2018-07-13 17:58:08,136 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:08,136 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:08,149 - cellpy.readers.cellreader - DEBUG - trying to find end voltage for
+2018-07-13 17:58:08,150 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:08,150 - cellpy.readers.cellreader - DEBUG - Using the following chargesteps
+2018-07-13 17:58:08,150 - cellpy.readers.cellreader - DEBUG - {1: [6], 2: [6], 3: [6], 4: [13], 5: [13], 6: [13], 7: [13], 8: [13], 9: [13], 10: [13], 11: [13], 12: [13], 13: [13], 14: [13], 15: [13], 16: [13], 17: [13], 18: [0]}
+2018-07-13 17:58:08,150 - cellpy.readers.cellreader - DEBUG - Using the following dischargesteps
+2018-07-13 17:58:08,150 - cellpy.readers.cellreader - DEBUG - {1: [3], 2: [3], 3: [3], 4: [10], 5: [10], 6: [10], 7: [10], 8: [10], 9: [10], 10: [10], 11: [10], 12: [10], 13: [10], 14: [10], 15: [10], 16: [10], 17: [10], 18: [10]}
+2018-07-13 17:58:08,150 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 0
+2018-07-13 17:58:08,151 - cellpy.readers.cellreader - DEBUG - cycle: 1
+2018-07-13 17:58:08,153 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 1
+2018-07-13 17:58:08,153 - cellpy.readers.cellreader - DEBUG - cycle: 2
+2018-07-13 17:58:08,155 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 2
+2018-07-13 17:58:08,155 - cellpy.readers.cellreader - DEBUG - cycle: 3
+2018-07-13 17:58:08,157 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 3
+2018-07-13 17:58:08,158 - cellpy.readers.cellreader - DEBUG - cycle: 4
+2018-07-13 17:58:08,160 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 4
+2018-07-13 17:58:08,160 - cellpy.readers.cellreader - DEBUG - cycle: 5
+2018-07-13 17:58:08,162 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 5
+2018-07-13 17:58:08,162 - cellpy.readers.cellreader - DEBUG - cycle: 6
+2018-07-13 17:58:08,164 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 6
+2018-07-13 17:58:08,165 - cellpy.readers.cellreader - DEBUG - cycle: 7
+2018-07-13 17:58:08,166 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 7
+2018-07-13 17:58:08,167 - cellpy.readers.cellreader - DEBUG - cycle: 8
+2018-07-13 17:58:08,168 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 8
+2018-07-13 17:58:08,169 - cellpy.readers.cellreader - DEBUG - cycle: 9
+2018-07-13 17:58:08,172 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 9
+2018-07-13 17:58:08,173 - cellpy.readers.cellreader - DEBUG - cycle: 10
+2018-07-13 17:58:08,176 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 10
+2018-07-13 17:58:08,176 - cellpy.readers.cellreader - DEBUG - cycle: 11
+2018-07-13 17:58:08,178 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 11
+2018-07-13 17:58:08,179 - cellpy.readers.cellreader - DEBUG - cycle: 12
+2018-07-13 17:58:08,181 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 12
+2018-07-13 17:58:08,181 - cellpy.readers.cellreader - DEBUG - cycle: 13
+2018-07-13 17:58:08,183 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 13
+2018-07-13 17:58:08,184 - cellpy.readers.cellreader - DEBUG - cycle: 14
+2018-07-13 17:58:08,186 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 14
+2018-07-13 17:58:08,186 - cellpy.readers.cellreader - DEBUG - cycle: 15
+2018-07-13 17:58:08,188 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 15
+2018-07-13 17:58:08,188 - cellpy.readers.cellreader - DEBUG - cycle: 16
+2018-07-13 17:58:08,190 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 16
+2018-07-13 17:58:08,191 - cellpy.readers.cellreader - DEBUG - cycle: 17
+2018-07-13 17:58:08,194 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:08,194 - cellpy.readers.cellreader - DEBUG - ['discharge']
+2018-07-13 17:58:08,194 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:08,194 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:08,212 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:58:08,212 - cellpy.readers.cellreader - DEBUG - ['charge']
+2018-07-13 17:58:08,212 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:58:08,212 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:58:08,228 - cellpy.readers.cellreader - DEBUG - trying to find ir for
+2018-07-13 17:58:08,228 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:58:08,228 - cellpy.readers.cellreader - DEBUG - Using the following charge_steps
+2018-07-13 17:58:08,229 - cellpy.readers.cellreader - DEBUG - {1: [6], 2: [6], 3: [6], 4: [13], 5: [13], 6: [13], 7: [13], 8: [13], 9: [13], 10: [13], 11: [13], 12: [13], 13: [13], 14: [13], 15: [13], 16: [13], 17: [13], 18: [0]}
+2018-07-13 17:58:08,229 - cellpy.readers.cellreader - DEBUG - Using the following discharge_steps
+2018-07-13 17:58:08,229 - cellpy.readers.cellreader - DEBUG - {1: [3], 2: [3], 3: [3], 4: [10], 5: [10], 6: [10], 7: [10], 8: [10], 9: [10], 10: [10], 11: [10], 12: [10], 13: [10], 14: [10], 15: [10], 16: [10], 17: [10], 18: [10]}
+2018-07-13 17:58:08,229 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 0
+2018-07-13 17:58:08,230 - cellpy.readers.cellreader - DEBUG - cycle: 1
+2018-07-13 17:58:08,231 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 1
+2018-07-13 17:58:08,232 - cellpy.readers.cellreader - DEBUG - cycle: 2
+2018-07-13 17:58:08,233 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 2
+2018-07-13 17:58:08,234 - cellpy.readers.cellreader - DEBUG - cycle: 3
+2018-07-13 17:58:08,235 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 3
+2018-07-13 17:58:08,236 - cellpy.readers.cellreader - DEBUG - cycle: 4
+2018-07-13 17:58:08,237 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 4
+2018-07-13 17:58:08,238 - cellpy.readers.cellreader - DEBUG - cycle: 5
+2018-07-13 17:58:08,239 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 5
+2018-07-13 17:58:08,240 - cellpy.readers.cellreader - DEBUG - cycle: 6
+2018-07-13 17:58:08,241 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 6
+2018-07-13 17:58:08,242 - cellpy.readers.cellreader - DEBUG - cycle: 7
+2018-07-13 17:58:08,243 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 7
+2018-07-13 17:58:08,244 - cellpy.readers.cellreader - DEBUG - cycle: 8
+2018-07-13 17:58:08,245 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 8
+2018-07-13 17:58:08,245 - cellpy.readers.cellreader - DEBUG - cycle: 9
+2018-07-13 17:58:08,247 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 9
+2018-07-13 17:58:08,247 - cellpy.readers.cellreader - DEBUG - cycle: 10
+2018-07-13 17:58:08,249 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 10
+2018-07-13 17:58:08,249 - cellpy.readers.cellreader - DEBUG - cycle: 11
+2018-07-13 17:58:08,251 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 11
+2018-07-13 17:58:08,251 - cellpy.readers.cellreader - DEBUG - cycle: 12
+2018-07-13 17:58:08,253 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 12
+2018-07-13 17:58:08,253 - cellpy.readers.cellreader - DEBUG - cycle: 13
+2018-07-13 17:58:08,255 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 13
+2018-07-13 17:58:08,255 - cellpy.readers.cellreader - DEBUG - cycle: 14
+2018-07-13 17:58:08,257 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 14
+2018-07-13 17:58:08,257 - cellpy.readers.cellreader - DEBUG - cycle: 15
+2018-07-13 17:58:08,259 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 15
+2018-07-13 17:58:08,259 - cellpy.readers.cellreader - DEBUG - cycle: 16
+2018-07-13 17:58:08,261 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 16
+2018-07-13 17:58:08,261 - cellpy.readers.cellreader - DEBUG - cycle: 17
+2018-07-13 17:58:08,264 - cellpy.readers.cellreader - DEBUG - Outfile exists
+2018-07-13 17:58:08,264 - cellpy.readers.cellreader - DEBUG - overwrite = True
+2018-07-13 17:58:08,265 - cellpy.readers.cellreader - DEBUG - trying to make infotable
+2018-07-13 17:58:08,266 - cellpy.readers.cellreader - DEBUG - _create_infotable: fid
+2018-07-13 17:58:08,267 - cellpy.readers.cellreader - DEBUG - trying to save to hdf5
+2018-07-13 17:58:08,267 - cellpy.readers.cellreader - DEBUG - 
+HDF5 file: /Users/jepe/scripting/cellpy/testdata/hdf5/20160805_test001_45_cc.h5
+2018-07-13 17:58:08,269 - cellpy.readers.cellreader - DEBUG - trying to put dfdata
+2018-07-13 17:58:08,280 - cellpy.readers.cellreader - DEBUG - trying to put dfsummary
+2018-07-13 17:58:08,292 - cellpy.readers.cellreader - INFO - trying to put step_table
+2018-07-13 17:58:08,309 - cellpy.readers.cellreader - DEBUG - trying to put infotbl
+2018-07-13 17:58:08,324 - cellpy.readers.cellreader - DEBUG - trying to put fidtable
+2018-07-13 17:58:08,356 - cellpy.readers.cellreader - INFO - created CellpyData instance
+2018-07-13 17:58:08,356 - cellpy.readers.cellreader - INFO - loading hdf5
+2018-07-13 17:58:08,356 - cellpy.readers.cellreader - INFO - /Users/jepe/scripting/cellpy/testdata/hdf5/20160805_test001_45_cc.h5
+2018-07-13 17:58:08,357 - cellpy.readers.cellreader - INFO - -from cellpy-file
+2018-07-13 17:58:08,402 - cellpy.readers.cellreader - DEBUG - Keys in current hdf5-file: ['/CellpyData/dfdata', '/CellpyData/dfsummary', '/CellpyData/fidtable', '/CellpyData/info', '/CellpyData/step_table']
+2018-07-13 17:58:08,403 - cellpy.readers.cellreader - DEBUG - created DataSet instance
+2018-07-13 17:58:08,423 - cellpy.readers.cellreader - DEBUG -   h5
+2018-07-13 17:58:08,424 - cellpy.readers.cellreader - DEBUG - _convert2fid_list
+2018-07-13 17:58:08,426 - cellpy.readers.cellreader - INFO - file loaded
+2018-07-13 17:58:08,426 - cellpy.readers.cellreader - DEBUG - validating test
+2018-07-13 17:59:12,419 - cellpy.readers.cellreader - INFO - created CellpyData instance
+2018-07-13 17:59:12,427 - cellpy.readers.cellreader - DEBUG - loading raw file: /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:59:12,427 - cellpy.readers.instruments.arbin - DEBUG - in loader
+2018-07-13 17:59:12,427 - cellpy.readers.instruments.arbin - DEBUG - filename: /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:59:12,427 - cellpy.readers.instruments.arbin - DEBUG - Filesize: 1613824 (1.0 MB)
+2018-07-13 17:59:12,430 - cellpy.readers.instruments.arbin - DEBUG - tmp file: /var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/20160805_test001_45_cc_01.res
+2018-07-13 17:59:12,431 - cellpy.readers.instruments.arbin - DEBUG - 
+MAC OSX USING MDBTOOLS
+2018-07-13 17:59:12,451 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/global_tmp.csv' mode='w' encoding='UTF-8'> Global_Table
+2018-07-13 17:59:12,568 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/normal_tmp.csv' mode='w' encoding='UTF-8'> Channel_Normal_Table
+2018-07-13 17:59:12,584 - cellpy.readers.instruments.arbin - DEBUG - ran mdb-export <_io.TextIOWrapper name='/var/folders/wj/k1t54hxd4jqfym7f1sy0rg980000gn/T/stats_tmp.csv' mode='w' encoding='UTF-8'> Channel_Statistic_Table
+2018-07-13 17:59:12,592 - cellpy.readers.instruments.arbin - DEBUG - number of datasets: 1
+2018-07-13 17:59:12,593 - cellpy.readers.cellreader - DEBUG - created DataSet instance
+2018-07-13 17:59:12,593 - cellpy.readers.instruments.arbin - DEBUG - reading raw-data
+2018-07-13 17:59:12,647 - cellpy.readers.cellreader - DEBUG - finished loading the raw-files
+2018-07-13 17:59:12,647 - cellpy.readers.cellreader - DEBUG - validating test
+2018-07-13 17:59:12,648 - cellpy.readers.cellreader - DEBUG - creating summary for file /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:59:12,659 - cellpy.readers.cellreader - DEBUG - Creates summary: specific discharge ('Discharge_Capacity(mAh/g)')
+2018-07-13 17:59:12,769 - cellpy.readers.cellreader - DEBUG - Creates summary: specific scharge ('Charge_Capacity(mAh/g)')
+2018-07-13 17:59:12,769 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated specific charge ('Cumulated_Discharge_Capacity(mAh/g)')
+2018-07-13 17:59:12,770 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated specific charge ('Cumulated_Charge_Capacity(mAh/g)')
+2018-07-13 17:59:12,771 - cellpy.readers.cellreader - INFO - assuming cycling anode half-cell (discharge before charge)
+2018-07-13 17:59:12,771 - cellpy.readers.cellreader - DEBUG - Creates summary: coulombic efficiency ('Coulombic_Efficiency(percentage)')
+2018-07-13 17:59:12,771 - cellpy.readers.cellreader - DEBUG - 100 * ('Charge_Capacity(mAh/g)')/('Discharge_Capacity(mAh/g))
+2018-07-13 17:59:12,771 - cellpy.readers.cellreader - DEBUG - Creates summary: coulombic difference ('Coulombic_Difference(mAh/g)')
+2018-07-13 17:59:12,772 - cellpy.readers.cellreader - DEBUG - 'Charge_Capacity(mAh/g)') - ('Discharge_Capacity(mAh/g))
+2018-07-13 17:59:12,772 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated coulombic efficiency ('Cumulated_Coulombic_Efficiency(percentage)')
+2018-07-13 17:59:12,773 - cellpy.readers.cellreader - DEBUG - Creates summary: cumulated coulombic difference ('Cumulated_Coulombic_Difference(mAh/g)')
+2018-07-13 17:59:12,774 - cellpy.readers.cellreader - DEBUG - Creates summary: calculates DL
+2018-07-13 17:59:12,782 - cellpy.readers.cellreader - DEBUG - converting date from xls-type
+2018-07-13 17:59:12,784 - cellpy.readers.cellreader - DEBUG - step_table not made
+2018-07-13 17:59:12,784 - cellpy.readers.cellreader - DEBUG - creating step_table for
+2018-07-13 17:59:12,784 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:59:13,307 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:59:13,307 - cellpy.readers.cellreader - DEBUG - ['discharge']
+2018-07-13 17:59:13,308 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:59:13,308 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:59:13,323 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:59:13,323 - cellpy.readers.cellreader - DEBUG - ['charge']
+2018-07-13 17:59:13,323 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:59:13,323 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:59:13,337 - cellpy.readers.cellreader - DEBUG - trying to find end voltage for
+2018-07-13 17:59:13,337 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:59:13,337 - cellpy.readers.cellreader - DEBUG - Using the following chargesteps
+2018-07-13 17:59:13,337 - cellpy.readers.cellreader - DEBUG - {1: [6], 2: [6], 3: [6], 4: [13], 5: [13], 6: [13], 7: [13], 8: [13], 9: [13], 10: [13], 11: [13], 12: [13], 13: [13], 14: [13], 15: [13], 16: [13], 17: [13], 18: [0]}
+2018-07-13 17:59:13,337 - cellpy.readers.cellreader - DEBUG - Using the following dischargesteps
+2018-07-13 17:59:13,338 - cellpy.readers.cellreader - DEBUG - {1: [3], 2: [3], 3: [3], 4: [10], 5: [10], 6: [10], 7: [10], 8: [10], 9: [10], 10: [10], 11: [10], 12: [10], 13: [10], 14: [10], 15: [10], 16: [10], 17: [10], 18: [10]}
+2018-07-13 17:59:13,338 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 0
+2018-07-13 17:59:13,339 - cellpy.readers.cellreader - DEBUG - cycle: 1
+2018-07-13 17:59:13,341 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 1
+2018-07-13 17:59:13,341 - cellpy.readers.cellreader - DEBUG - cycle: 2
+2018-07-13 17:59:13,343 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 2
+2018-07-13 17:59:13,343 - cellpy.readers.cellreader - DEBUG - cycle: 3
+2018-07-13 17:59:13,345 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 3
+2018-07-13 17:59:13,346 - cellpy.readers.cellreader - DEBUG - cycle: 4
+2018-07-13 17:59:13,350 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 4
+2018-07-13 17:59:13,351 - cellpy.readers.cellreader - DEBUG - cycle: 5
+2018-07-13 17:59:13,354 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 5
+2018-07-13 17:59:13,354 - cellpy.readers.cellreader - DEBUG - cycle: 6
+2018-07-13 17:59:13,356 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 6
+2018-07-13 17:59:13,357 - cellpy.readers.cellreader - DEBUG - cycle: 7
+2018-07-13 17:59:13,359 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 7
+2018-07-13 17:59:13,359 - cellpy.readers.cellreader - DEBUG - cycle: 8
+2018-07-13 17:59:13,361 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 8
+2018-07-13 17:59:13,362 - cellpy.readers.cellreader - DEBUG - cycle: 9
+2018-07-13 17:59:13,364 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 9
+2018-07-13 17:59:13,364 - cellpy.readers.cellreader - DEBUG - cycle: 10
+2018-07-13 17:59:13,366 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 10
+2018-07-13 17:59:13,366 - cellpy.readers.cellreader - DEBUG - cycle: 11
+2018-07-13 17:59:13,369 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 11
+2018-07-13 17:59:13,371 - cellpy.readers.cellreader - DEBUG - cycle: 12
+2018-07-13 17:59:13,373 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 12
+2018-07-13 17:59:13,373 - cellpy.readers.cellreader - DEBUG - cycle: 13
+2018-07-13 17:59:13,375 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 13
+2018-07-13 17:59:13,376 - cellpy.readers.cellreader - DEBUG - cycle: 14
+2018-07-13 17:59:13,378 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 14
+2018-07-13 17:59:13,378 - cellpy.readers.cellreader - DEBUG - cycle: 15
+2018-07-13 17:59:13,380 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 15
+2018-07-13 17:59:13,380 - cellpy.readers.cellreader - DEBUG - cycle: 16
+2018-07-13 17:59:13,382 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 16
+2018-07-13 17:59:13,383 - cellpy.readers.cellreader - DEBUG - cycle: 17
+2018-07-13 17:59:13,387 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:59:13,387 - cellpy.readers.cellreader - DEBUG - ['discharge']
+2018-07-13 17:59:13,388 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:59:13,388 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:59:13,402 - cellpy.readers.cellreader - DEBUG - Your steptypes:
+2018-07-13 17:59:13,402 - cellpy.readers.cellreader - DEBUG - ['charge']
+2018-07-13 17:59:13,403 - cellpy.readers.cellreader - DEBUG - out as dict; out[cycle] = [s1,s2,...]
+2018-07-13 17:59:13,403 - cellpy.readers.cellreader - DEBUG - (same behaviour as find_step_numbers)
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - trying to find ir for
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - /Users/jepe/scripting/cellpy/testdata/data/20160805_test001_45_cc_01.res
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - Using the following charge_steps
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - {1: [6], 2: [6], 3: [6], 4: [13], 5: [13], 6: [13], 7: [13], 8: [13], 9: [13], 10: [13], 11: [13], 12: [13], 13: [13], 14: [13], 15: [13], 16: [13], 17: [13], 18: [0]}
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - Using the following discharge_steps
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - {1: [3], 2: [3], 3: [3], 4: [10], 5: [10], 6: [10], 7: [10], 8: [10], 9: [10], 10: [10], 11: [10], 12: [10], 13: [10], 14: [10], 15: [10], 16: [10], 17: [10], 18: [10]}
+2018-07-13 17:59:13,417 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 0
+2018-07-13 17:59:13,418 - cellpy.readers.cellreader - DEBUG - cycle: 1
+2018-07-13 17:59:13,420 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 1
+2018-07-13 17:59:13,420 - cellpy.readers.cellreader - DEBUG - cycle: 2
+2018-07-13 17:59:13,422 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 2
+2018-07-13 17:59:13,422 - cellpy.readers.cellreader - DEBUG - cycle: 3
+2018-07-13 17:59:13,424 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 3
+2018-07-13 17:59:13,425 - cellpy.readers.cellreader - DEBUG - cycle: 4
+2018-07-13 17:59:13,426 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 4
+2018-07-13 17:59:13,427 - cellpy.readers.cellreader - DEBUG - cycle: 5
+2018-07-13 17:59:13,428 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 5
+2018-07-13 17:59:13,429 - cellpy.readers.cellreader - DEBUG - cycle: 6
+2018-07-13 17:59:13,431 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 6
+2018-07-13 17:59:13,431 - cellpy.readers.cellreader - DEBUG - cycle: 7
+2018-07-13 17:59:13,433 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 7
+2018-07-13 17:59:13,433 - cellpy.readers.cellreader - DEBUG - cycle: 8
+2018-07-13 17:59:13,435 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 8
+2018-07-13 17:59:13,435 - cellpy.readers.cellreader - DEBUG - cycle: 9
+2018-07-13 17:59:13,437 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 9
+2018-07-13 17:59:13,438 - cellpy.readers.cellreader - DEBUG - cycle: 10
+2018-07-13 17:59:13,439 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 10
+2018-07-13 17:59:13,440 - cellpy.readers.cellreader - DEBUG - cycle: 11
+2018-07-13 17:59:13,441 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 11
+2018-07-13 17:59:13,442 - cellpy.readers.cellreader - DEBUG - cycle: 12
+2018-07-13 17:59:13,444 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 12
+2018-07-13 17:59:13,444 - cellpy.readers.cellreader - DEBUG - cycle: 13
+2018-07-13 17:59:13,446 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 13
+2018-07-13 17:59:13,446 - cellpy.readers.cellreader - DEBUG - cycle: 14
+2018-07-13 17:59:13,449 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 14
+2018-07-13 17:59:13,449 - cellpy.readers.cellreader - DEBUG - cycle: 15
+2018-07-13 17:59:13,454 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 15
+2018-07-13 17:59:13,455 - cellpy.readers.cellreader - DEBUG - cycle: 16
+2018-07-13 17:59:13,456 - cellpy.readers.cellreader - DEBUG - index in dfsummary.index: 16
+2018-07-13 17:59:13,457 - cellpy.readers.cellreader - DEBUG - cycle: 17
+2018-07-13 17:59:13,461 - cellpy.readers.cellreader - DEBUG - Outfile exists
+2018-07-13 17:59:13,461 - cellpy.readers.cellreader - DEBUG - overwrite = True
+2018-07-13 17:59:13,461 - cellpy.readers.cellreader - DEBUG - trying to make infotable
+2018-07-13 17:59:13,463 - cellpy.readers.cellreader - DEBUG - _create_infotable: fid
+2018-07-13 17:59:13,464 - cellpy.readers.cellreader - DEBUG - trying to save to hdf5
+2018-07-13 17:59:13,464 - cellpy.readers.cellreader - DEBUG - 
+HDF5 file: /Users/jepe/scripting/cellpy/testdata/hdf5/20160805_test001_45_cc.h5
+2018-07-13 17:59:13,516 - cellpy.readers.cellreader - DEBUG - trying to put dfdata
+2018-07-13 17:59:13,528 - cellpy.readers.cellreader - DEBUG - trying to put dfsummary
+2018-07-13 17:59:13,558 - cellpy.readers.cellreader - INFO - trying to put step_table
+2018-07-13 17:59:13,571 - cellpy.readers.cellreader - DEBUG - trying to put infotbl
+2018-07-13 17:59:13,587 - cellpy.readers.cellreader - DEBUG - trying to put fidtable
+2018-07-13 17:59:13,604 - cellpy.readers.cellreader - INFO - created CellpyData instance
+2018-07-13 17:59:13,604 - cellpy.readers.cellreader - INFO - loading hdf5
+2018-07-13 17:59:13,604 - cellpy.readers.cellreader - INFO - /Users/jepe/scripting/cellpy/testdata/hdf5/20160805_test001_45_cc.h5
+2018-07-13 17:59:13,604 - cellpy.readers.cellreader - INFO - -from cellpy-file
+2018-07-13 17:59:13,650 - cellpy.readers.cellreader - DEBUG - Keys in current hdf5-file: ['/CellpyData/dfdata', '/CellpyData/dfsummary', '/CellpyData/fidtable', '/CellpyData/info', '/CellpyData/step_table']
+2018-07-13 17:59:13,650 - cellpy.readers.cellreader - DEBUG - created DataSet instance
+2018-07-13 17:59:13,679 - cellpy.readers.cellreader - DEBUG -   h5
+2018-07-13 17:59:13,680 - cellpy.readers.cellreader - DEBUG - _convert2fid_list
+2018-07-13 17:59:13,684 - cellpy.readers.cellreader - INFO - file loaded
+2018-07-13 17:59:13,684 - cellpy.readers.cellreader - DEBUG - validating test
+2018-07-13 17:59:22,235 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:59:22,235 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:59:22,235 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:59:22,235 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:59:22,235 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 17:59:22,236 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 18:43:46,662 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 18:43:46,663 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 18:43:46,663 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 18:43:46,663 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 18:43:46,663 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 18:43:46,663 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 18:43:46,664 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 22:57:47,804 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 22:57:47,806 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 22:57:47,806 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 22:57:47,807 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 22:57:47,807 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 22:57:47,807 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 22:57:47,807 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 22:57:47,808 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 22:57:47,808 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 22:57:47,808 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 22:57:47,811 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 22:57:47,812 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 22:57:47,813 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 23:15:41,433 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:15:41,434 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:15:41,435 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:15:41,435 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:15:41,435 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:15:41,435 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 23:15:41,435 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 23:24:31,326 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:24:31,326 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:24:31,327 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:24:31,328 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:24:31,329 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:24:31,329 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 23:24:31,330 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-13 23:32:37,387 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:32:37,387 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:32:37,387 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:32:37,387 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:32:37,388 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:32:37,388 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:32:37,388 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:32:37,388 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:32:37,388 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:32:37,388 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-13 23:32:37,390 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-13 23:32:37,390 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-13 23:32:37,390 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-14 09:26:09,940 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 09:26:09,942 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 09:26:09,943 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 09:26:09,943 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 09:26:09,943 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 09:26:09,943 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 09:26:09,943 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 09:26:09,943 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 09:26:09,944 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 09:26:09,944 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 09:26:09,944 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 09:26:09,944 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-14 09:26:09,944 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-14 15:04:52,993 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 15:04:52,995 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 15:04:52,996 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-14 15:04:52,996 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-14 20:43:42,158 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 20:43:42,160 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-14 20:43:42,161 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-15 18:38:01,649 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:38:01,649 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:38:01,650 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:38:01,651 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:38:01,652 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:38:01,652 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:38:01,653 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:38:01,653 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:38:01,654 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:38:01,654 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:38:01,654 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:38:01,654 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-15 18:38:01,654 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-15 18:48:15,351 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-15 23:34:50,867 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 23:34:50,868 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 23:34:50,868 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 23:34:50,868 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 23:34:50,868 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 23:34:50,868 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 23:34:50,868 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 23:34:50,869 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 23:34:50,869 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 23:34:50,869 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-15 23:34:50,869 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-15 23:34:50,869 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-15 23:34:50,869 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:05:47,713 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:05:47,716 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:05:47,717 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:05:47,718 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:05:47,718 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:05:47,719 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:05:47,719 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:05:47,719 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:05:47,719 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:05:47,720 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:05:47,720 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:05:47,720 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:05:47,720 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:06:16,686 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:06:16,687 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:06:16,687 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:06:16,688 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:06:16,689 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:06:16,689 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:06:16,690 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:11:10,420 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:11:10,421 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:11:10,422 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:11:10,422 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:11:10,422 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:11:10,422 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:11:10,422 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:16:10,553 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:16:10,554 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:16:10,555 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:16:10,557 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:16:10,558 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:16:10,559 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:16:10,560 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:21:33,519 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:21:33,519 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:21:33,519 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:21:33,519 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:21:33,519 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:21:33,520 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:23:19,093 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:23:19,093 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:23:19,093 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:23:19,093 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:23:19,094 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:23:19,095 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:23:19,095 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 16:54:30,352 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 16:54:30,353 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 16:54:30,354 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 16:54:30,354 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 17:12:27,796 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 17:12:27,797 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 17:12:27,797 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 17:12:27,797 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 17:12:27,797 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 17:12:27,797 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 17:12:27,798 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 17:12:27,798 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 17:12:27,798 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 17:12:27,798 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 17:12:27,799 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 17:12:27,799 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 17:12:27,799 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-16 18:46:27,545 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 18:46:27,545 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 18:46:27,546 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 18:46:27,546 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 18:46:27,547 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 18:46:27,548 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 18:46:27,549 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 18:46:27,549 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 18:46:27,549 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 18:46:27,549 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-16 18:46:27,549 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-16 18:46:27,549 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-16 18:46:27,550 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-17 15:18:49,411 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:18:49,413 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:18:49,414 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:18:49,415 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:18:49,416 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-17 15:18:49,416 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-17 15:20:31,678 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:20:31,680 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:20:31,681 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:20:31,681 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:20:31,682 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:20:31,683 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-17 15:20:31,683 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-17 15:31:41,290 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:31:41,291 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-17 15:31:41,292 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-17 15:35:18,927 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:35:18,927 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:35:18,928 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:35:18,928 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:35:18,928 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-17 15:35:18,929 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-17 22:52:53,996 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 22:52:53,997 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 22:52:53,997 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-17 22:52:53,998 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-22 12:38:17,438 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 12:38:17,439 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 12:38:17,439 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 12:38:17,439 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 12:38:17,439 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 12:38:17,440 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 12:38:17,440 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 12:38:17,440 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 12:38:17,440 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 12:38:17,440 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 12:38:17,440 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 12:38:17,441 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-22 12:38:17,441 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-22 13:11:28,293 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:11:28,294 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:11:28,294 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:11:28,294 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:11:28,294 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:11:28,294 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:11:28,295 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:11:28,295 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:11:28,297 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:11:28,298 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:11:28,298 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:11:28,298 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-22 13:11:28,298 - cellpy.utils.batch - DEBUG - created Batch class
+2018-07-22 13:37:06,157 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:37:06,157 - cellpy.utils.batch - DEBUG - outdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:37:06,158 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:37:06,159 - cellpy.utils.batch - DEBUG - rawdatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:37:06,161 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:37:06,162 - cellpy.utils.batch - DEBUG - cellpydatadir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:37:06,163 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:37:06,164 - cellpy.utils.batch - DEBUG - db_path: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:37:06,164 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:37:06,165 - cellpy.utils.batch - DEBUG - filelogdir: C:\Scripting\MyFiles\development_cellpy\cellpy\parameters
+2018-07-22 13:37:06,165 - cellpy.utils.batch - DEBUG - Starting parameters:
+2018-07-22 13:37:06,165 - cellpy.utils.batch - DEBUG - db_filename: cellpy_db.xlsx
+2018-07-22 13:37:06,165 - cellpy.utils.batch - DEBUG - created Batch class

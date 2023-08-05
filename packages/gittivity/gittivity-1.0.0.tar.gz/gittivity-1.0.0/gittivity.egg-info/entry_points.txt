@@ -1,0 +1,6 @@
+[console_scripts]
+gittivity = gittivity.notifier:help_text
+gittivity-help = gittivity.notifier:help_text
+gittivity-start = gittivity.notifier:main
+gittivity-stop = gittivity.notifier:stop
+

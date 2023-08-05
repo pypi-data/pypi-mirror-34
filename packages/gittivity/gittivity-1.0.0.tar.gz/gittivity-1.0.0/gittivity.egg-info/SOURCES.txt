@@ -1,0 +1,11 @@
+README.md
+setup.py
+gittivity/__init__.py
+gittivity/notifier.py
+gittivity.egg-info/PKG-INFO
+gittivity.egg-info/SOURCES.txt
+gittivity.egg-info/dependency_links.txt
+gittivity.egg-info/entry_points.txt
+gittivity.egg-info/not-zip-safe
+gittivity.egg-info/requires.txt
+gittivity.egg-info/top_level.txt

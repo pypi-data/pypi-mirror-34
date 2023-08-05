@@ -1,0 +1,54 @@
+shongololo package
+==================
+
+Submodules
+----------
+
+shongololo.Imet\_serial module
+------------------------------
+
+.. automodule:: shongololo.Imet_serial
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shongololo.K30\_serial module
+-----------------------------
+
+.. automodule:: shongololo.K30_serial
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shongololo.shongololo module
+----------------------------
+
+.. automodule:: shongololo.shongololo
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shongololo.start\_up module
+---------------------------
+
+.. automodule:: shongololo.start_up
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shongololo.sys\_admin module
+----------------------------
+
+.. automodule:: shongololo.sys_admin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: shongololo
+    :members:
+    :undoc-members:
+    :show-inheritance:

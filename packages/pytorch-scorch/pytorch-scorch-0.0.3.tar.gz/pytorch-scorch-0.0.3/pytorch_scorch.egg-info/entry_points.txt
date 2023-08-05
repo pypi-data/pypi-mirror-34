@@ -1,0 +1,3 @@
+[console_scripts]
+scorch-train = scorch.train:train
+

@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: hyvr
+Version: 0.2.3
+Summary: A python package for simulating hydrogeological virtual realities
+Home-page: https://github.com/driftingtides/hyvr
+Author: Jeremy Bennett
+Author-email: hyvr.sim@gmail.com
+License: MIT
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyevtk
+Requires-Dist: scipy
+
+====================================================================
+
+

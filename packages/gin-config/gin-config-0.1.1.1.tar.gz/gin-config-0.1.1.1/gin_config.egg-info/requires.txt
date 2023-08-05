@@ -1,0 +1,6 @@
+six>=1.10.0
+setuptools>=40.0.0
+enum34>=1.1.6
+
+[tf]
+tensorflow>=1.6

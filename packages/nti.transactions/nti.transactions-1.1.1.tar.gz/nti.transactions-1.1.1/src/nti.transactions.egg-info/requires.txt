@@ -1,0 +1,14 @@
+setuptools
+dm.transaction.aborthook
+perfmetrics
+transaction
+zope.exceptions
+zope.interface
+
+[gevent]
+gevent
+
+[test]
+zope.testrunner
+nti.testing
+fudge

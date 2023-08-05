@@ -1,0 +1,10 @@
+README.md
+setup.py
+chopt/__init__.py
+chopt/__main__.py
+chopt/chopt.py
+chopt.egg-info/PKG-INFO
+chopt.egg-info/SOURCES.txt
+chopt.egg-info/dependency_links.txt
+chopt.egg-info/entry_points.txt
+chopt.egg-info/top_level.txt

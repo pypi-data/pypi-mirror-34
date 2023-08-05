@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: desdeo-vis
+Version: 0.1.4
+Summary: Visualisations and preference selection widgets for the DESDEO interactive multiobjective optimization library
+Home-page: https://github.com/industrial-optimization-group/desdeo-vis
+Author: Frankie Robertson
+Author-email: frankie@robertson.name
+License: MPL 2.0
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,IPython
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Jupyter
+Provides-Extra: docs
+Provides-Extra: dev
+Provides-Extra: test

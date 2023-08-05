@@ -1,0 +1,16 @@
+django_perf_rec/__init__.py,sha256=JSlBDhj__SCnwYrIJYZoxhyheHNML-J1A6i5UQkpwIQ,488
+django_perf_rec/api.py,sha256=UXOn4v7LckpWvItWB4iecnXGmjHjaoZhgsA5popMNXo,4881
+django_perf_rec/cache.py,sha256=hoPiIyh4HWZ0__q8UykgSkW9FYx1mOEyZ5mWrkSX62o,4411
+django_perf_rec/db.py,sha256=scDnPMFN0pp1FXqXDqjPNl-V5RhiEu1xHHBya0BDPSk,2909
+django_perf_rec/orm.py,sha256=ORxSJXFRdCyJvxjbOUTAYZRnK6qxNkHmwXDRuNlwNoI,3286
+django_perf_rec/pytest_plugin.py,sha256=AXcw1l1ylGaWtM2Kmp188MeGcH0vshUpMyqPTxapiQM,199
+django_perf_rec/settings.py,sha256=KaBh-XgexLIWcHnO4RtaeabTGGBqLgqMGYOQiNTy75g,503
+django_perf_rec/sql.py,sha256=pn2XJfmZkxdxOvrIZ927dFhSCwfJQHXg4M2hHi4bAX4,3703
+django_perf_rec/utils.py,sha256=JcmOafgkhjMpBfCSbd3ru0vbcuyF1VUgvKxsigsQ0YA,2703
+django_perf_rec/yaml.py,sha256=G-D37dpmDSFUwTjrgYlGAw6Jry3RJdsKpGaTOo3CVa4,2006
+django_perf_rec-3.0.0.dist-info/LICENSE.txt,sha256=4gUxiHo4enWvVmUFoJce3IzJZ45N8lp8ma365tnN14I,1049
+django_perf_rec-3.0.0.dist-info/METADATA,sha256=zw2BxffjxiwsnhdCnvBgfS2Xp33suHmrPYI14wRROR4,10802
+django_perf_rec-3.0.0.dist-info/RECORD,,
+django_perf_rec-3.0.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_perf_rec-3.0.0.dist-info/entry_points.txt,sha256=Hfxe8_sARcGv8j4vBSE8CGQmQetenUNw8DzUMuwM1Ic,60
+django_perf_rec-3.0.0.dist-info/top_level.txt,sha256=L4bQA0lajBkzR4he3XQxzDpx1XV4phaU9_b0XE3ihqk,16

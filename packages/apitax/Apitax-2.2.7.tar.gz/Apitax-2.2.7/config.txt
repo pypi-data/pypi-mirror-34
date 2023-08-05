@@ -1,0 +1,23 @@
+[Apitax]
+drivers = Github, BasicAuth, ApitaxTests, ApitaxInfo
+drivers-primary = default
+drivers-auth = BasicAuth
+port = 5082
+ip = 0.0.0.0
+log = true
+log-file = logs/apitax.log
+log-colorize = true
+log-human-readable = false
+log-prefixes = true
+default-mode = cli
+secret = KHCAtpp55HhpbLh3C2wxdGAyaEvtrjWFmAKyaeTeDu6URMjh3e7AfA9DRHUQpepRpFSfEcwkjwsppYKP6gGrT9PccwNUb4vVVWucLMGLv9EJZyVU6TapkD99KZatucZ86sqkRUPwVxWCFczbghqTQbG8nmTBwuy23JjBbAPVh9byCMx6t37N8CkyEzNtp584f3mNHzv9kq9NjF2GS8wA2dag4VygQgaJnLUGJSAZcfa8WZKDRqtprQRsnNMSfCMk
+
+[DefaultGitDriver]
+git-repo-clone-url = https://github.com/<MyUsername>/<MyRepoName>.git
+
+[GithubDriver]
+personal-access-token = abc84ca889226f3d9e40713fb562dbabf9229fd0
+repo = ShawnClake/ApitaxScripts
+
+[ApitaxTests]
+

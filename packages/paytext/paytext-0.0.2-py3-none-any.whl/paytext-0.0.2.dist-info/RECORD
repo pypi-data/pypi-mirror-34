@@ -1,0 +1,9 @@
+paytext/__init__.py,sha256=j1wyMLze2dXGEA6zKo5cxNS-QzKmAxgwzvS1b2QZErQ,188
+paytext/paytext.py,sha256=EhtiAsL_5ab7iI5Pjg1mdhg2tHOkqko_kg7sZYHzdUA,2895
+paytext-0.0.2.dist-info/METADATA,sha256=DRXf2sNUCyXBeyRhNHjjoNK1LazyxziZpwH5FQx3gyI,2997
+paytext-0.0.2.dist-info/RECORD,,
+paytext-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+paytext-0.0.2.dist-info/top_level.txt,sha256=o_1_wryUEr_ZVtUL_GurlNw_Dqx1RWEwmg4kiJrN270,14
+tests/__init__.py,sha256=gZHPLATRF9f8QBwwQtEjQRtXMsqOJsUK2sbUMLjiE5U,14
+tests/paytext_test.py,sha256=_knuiR1deFdqjS7_flqhezgVDhWPQoM09W0y1MXZjWc,2999
+tests/pyre_strict_test.py,sha256=YrUIlC7ws_EJbgE0vVGgrcuMjXDLqeNCVEgwY8U7w_w,1658

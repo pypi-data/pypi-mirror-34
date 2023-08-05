@@ -1,0 +1,3 @@
+[console_scripts]
+sheldon = sheldon.leonard:main
+

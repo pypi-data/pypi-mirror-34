@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+fofa/__init__.py
+fofa/fofa.py
+fofa/libs.py
+fofa/test.py
+res/phantomjs
+x_mroy_1051.egg-info/PKG-INFO
+x_mroy_1051.egg-info/SOURCES.txt
+x_mroy_1051.egg-info/dependency_links.txt
+x_mroy_1051.egg-info/entry_points.txt
+x_mroy_1051.egg-info/not-zip-safe
+x_mroy_1051.egg-info/requires.txt
+x_mroy_1051.egg-info/top_level.txt

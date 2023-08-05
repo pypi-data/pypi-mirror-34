@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>What’s New &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Generating Logs" href="generating/index.html" />
+    <link rel="prev" title="Why Eliot?" href="introduction.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generating/index.html">Generating Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>What’s New</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/news.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="what-s-new">
+<h1>What’s New<a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>1.4.0<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Added support for routing standard library logging into Eliot; see <a class="reference internal" href="generating/migrating.html#migrating"><span class="std std-ref">Route existing logs to Eliot</span></a> for details.</li>
+<li>Added support for Python 3.7.</li>
+</ul>
+<p>Output format changes:</p>
+<ul class="simple">
+<li>All messages now have either <code class="docutils literal notranslate"><span class="pre">message_type</span></code> or <code class="docutils literal notranslate"><span class="pre">action_type</span></code> fields.</li>
+</ul>
+<p>Documentation:</p>
+<ul class="simple">
+<li>Documented how to add log levels, and how to filter Eliot logs.</li>
+<li>Logstash configuration is closer to modern version’s options, though still untested.</li>
+<li>Explained how to integrate/migrate existing logging with Eliot.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>1.3.0<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>The default JSON output format now supports custom JSON encoders. See <a class="reference internal" href="outputting/output.html#custom-json"><span class="std std-ref">Customizing JSON Encoding</span></a> for details.
+Thanks to Jonathan Jacobs for feedback.</li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">MemoryLogger.validate()</span></code> now gives more informative errors if JSON encoding fails.
+Thanks to Jean-Paul Calderone for the bug report.</li>
+</ul>
+<p>Deprecations:</p>
+<ul class="simple">
+<li>On Python 3, the JSON encoder used by <code class="docutils literal notranslate"><span class="pre">to_file</span></code> and <code class="docutils literal notranslate"><span class="pre">FileDestination</span></code> would accept <code class="docutils literal notranslate"><span class="pre">bytes</span></code>… sometimes.
+This is deprecated, and will cease to work in a future release of Eliot (on Python 3, it will continue to work on Python 2).
+If you wish to include <code class="docutils literal notranslate"><span class="pre">bytes</span></code> in JSON logging, convert it to a string in the log-generating code, use Eliot’s type system, or use a custom JSON encoder.</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>1.2.0<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Eliot now does the right thing for <code class="docutils literal notranslate"><span class="pre">asyncio</span></code> coroutines in Python 3.5 and later.
+See <a class="reference internal" href="generating/asyncio.html#asyncio-coroutine"><span class="std std-ref">Asyncio Coroutine Support</span></a> for details.
+Thanks to x0zzz for the bug report.</li>
+</ul>
+<p>Misc:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Action.continue_task</span></code> can now accept text task IDs (<code class="docutils literal notranslate"><span class="pre">str</span></code> in Python 3, <code class="docutils literal notranslate"><span class="pre">unicode</span></code> in Python 2).</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>1.1.0<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Messages are no longer lost if they are logged before any destinations are added.
+In particular, messages will be buffered in memory until the first set of destinations are added, at which point those messages will be delivered.
+Thanks to Jean-Paul Calderone for the feature request.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot.add_destinations</span></code> replaces <code class="docutils literal notranslate"><span class="pre">eliot.add_destination</span></code>, and accepts multiple Destinations at once.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot.twisted.TwistedDestination</span></code> allows redirecting Eliot logs to <code class="docutils literal notranslate"><span class="pre">twisted.logger</span></code>.
+Thanks to Glyph Lefkowitz for the feature request.</li>
+</ul>
+<p>Misc:</p>
+<ul class="simple">
+<li>Coding standard switched to PEP-8.</li>
+<li>Dropped support for Python 3.3.</li>
+<li>Dropped support for versions of Twisted older than 15.2 (or whenever it was that <code class="docutils literal notranslate"><span class="pre">twisted.logger</span></code> was introduced).</li>
+<li>Dropped support for <code class="docutils literal notranslate"><span class="pre">ujson</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>1.0.0<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Eliot is stable, and has been for a while, so switching to v1.0.</p>
+<p>Features:</p>
+<ul class="simple">
+<li>New API: <code class="docutils literal notranslate"><span class="pre">MessageType.log()</span></code>, the equivalent of <code class="docutils literal notranslate"><span class="pre">Message.log()</span></code>, allows you to quickly create a new typed log message and write it out.</li>
+<li>New APIs: <code class="docutils literal notranslate"><span class="pre">eliot.current_action()</span></code> returns the current <code class="docutils literal notranslate"><span class="pre">Action</span></code>, and <code class="docutils literal notranslate"><span class="pre">Action.task_uuid</span></code> is the task’s UUID.</li>
+<li>You can now do <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">YOUR_ACTION().context()</span> <span class="pre">as</span> <span class="pre">action:</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">Action.context()</span></code> context manager returns the <code class="docutils literal notranslate"><span class="pre">Action</span></code> instance.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ActionType.as_task</span></code> no longer requires a logger argument, matching the other APIs where passing in a logger is optional.</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>0.12.0<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Python 3.6 support.</li>
+</ul>
+<p>Misc:</p>
+<ul class="simple">
+<li>Made test suite pass again with latest Hypothesis release.</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>0.11.0<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Eliot tasks can now more easily <a class="reference internal" href="generating/threads.html#cross-thread-tasks"><span class="std std-ref">span multiple threads</span></a> using the new <code class="docutils literal notranslate"><span class="pre">eliot.preserve_context</span></code> API.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot-prettyprint</span></code> command line tool now pretty prints field values in a more informative manner.</li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">eliot-prettyprint</span></code> now handles unparseable lines by skipping formatting them rather than exiting.</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>0.10.1<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li>Fixed regression in 0.10.0: fix validation of failed actions and tracebacks with extracted additional fields.</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>0.10.0<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">register_exception_extractor</span></code> allows for more useful <a class="reference internal" href="generating/errors.html#extract-errors"><span class="std std-ref">logging of failed actions and tracebacks</span></a> by extracting additional fields from exceptions.</li>
+<li>Python 3.5 support.</li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li>Journald support works on Python 3.</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h2>0.9.0<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Native <a class="reference internal" href="outputting/journald.html#journald"><span class="std std-ref">journald support</span></a>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot-prettyprint</span></code> is a command-line tool that formats JSON Eliot messages into a more human-friendly format.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot.logwriter.ThreadedWriter</span></code> is a Twisted non-blocking wrapper for any blocking destination.</li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>0.8.0<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Message.log</span></code> will log a new message, combining the existing <code class="docutils literal notranslate"><span class="pre">Message.new</span></code> and <code class="docutils literal notranslate"><span class="pre">Message.write</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">write_traceback</span></code> and <code class="docutils literal notranslate"><span class="pre">writeFailure</span></code> no longer require a <code class="docutils literal notranslate"><span class="pre">Logger</span></code>; they now default to using the global one.</li>
+<li>The logs written with <code class="docutils literal notranslate"><span class="pre">redirectLogsForTrial</span></code> are now written in JSON format, rather than with <code class="docutils literal notranslate"><span class="pre">pformat</span></code>.</li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">FileDestination</span></code> will now call <code class="docutils literal notranslate"><span class="pre">flush()</span></code> on the given file object after writing the log message.
+Previously log messages would not end up being written out until the file buffer filled up.</li>
+<li>Each <code class="docutils literal notranslate"><span class="pre">Message</span></code> logged outside the context of an action now gets a unique <code class="docutils literal notranslate"><span class="pre">task_id</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h2>0.7.0<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Creating your own <code class="docutils literal notranslate"><span class="pre">Logger</span></code> instances is no longer necessary; all relevant APIs now default to using a global one.
+A new testing decorator (<code class="docutils literal notranslate"><span class="pre">eliot.testing.capture_logging</span></code>) was added to capture global logging.</li>
+<li>Support positional <code class="docutils literal notranslate"><span class="pre">Field</span></code>-instance arguments to <code class="docutils literal notranslate"><span class="pre">fields()</span></code> to make combining existing field types and simple fields more convenient.
+Contributed by Jonathan Jacobs.</li>
+<li><code class="docutils literal notranslate"><span class="pre">write_traceback</span></code> and <code class="docutils literal notranslate"><span class="pre">writeFailure</span></code> no longer require a <code class="docutils literal notranslate"><span class="pre">system</span></code> argument, as the combination of traceback and action context should suffice to discover the origin of the problem.
+This is a minor change to output format as the field is also omitted from the resulting <code class="docutils literal notranslate"><span class="pre">eliot:traceback</span></code> messages.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">validate_logging</span></code> testing utility now skips validation when the decorated test method raises <code class="docutils literal notranslate"><span class="pre">SkipTest</span></code>.</li>
+<li>Exceptions in destinations are now handled better: instead of being dropped silently an attempt is made to log a message about the problem.
+If that also fails then the exception is dropped.</li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>0.6.0<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Incompatible output format change! In previous versions the ordering of messages and actions was ambiguous and could not be deduced from out-of-order logs, and even where it was possible sorting correctly was difficult.
+To fix this the <code class="docutils literal notranslate"><span class="pre">action_counter</span></code> field was removed and now all messages can be uniquely located within a specific task by the values in an <a class="reference internal" href="generating/actions.html#task-fields"><span class="std std-ref">improved task_level field</span></a>.</p>
+</div>
+<p>Features:</p>
+<ul class="simple">
+<li>Eliot tasks can now <a class="reference internal" href="generating/threads.html#cross-process-tasks"><span class="std std-ref">span multiple processes and threads</span></a>, allowing for easy tracing of actions in complex and distributed applications.</li>
+<li><a class="reference internal" href="outputting/output.html#add-global-fields"><span class="std std-ref">eliot.add_global_fields</span></a> allows adding fields with specific values to all Eliot messages logged by your program.
+This can be used to e.g. distinguish between log messages from different processes by including relevant identifying information.</li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li>On Python 3 files that accept unicode (e.g. <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code>) should now work.</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>0.5.0<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p>Features:</p>
+<ul class="simple">
+<li>Added support for Python 3.4.</li>
+<li>Most public methods and functions now have underscore-based equivalents to the camel case versions, e.g. <code class="docutils literal notranslate"><span class="pre">eliot.write_traceback</span></code> and <code class="docutils literal notranslate"><span class="pre">eliot.writeTraceback</span></code>, for use in PEP 8 styled programs.
+Twisted-facing APIs and pyunit assertions do not provide these additional APIs, as camel-case is the native idiom.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot.to_file</span></code> outputs log messages to a file.</li>
+<li>Documented how to load Eliot logging into ElasticSearch via Logstash.</li>
+<li>Documentation has been significantly reorganized.</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>0.4.0<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>Note that this is the last release that will make incompatible API changes without interim deprecation warnings.</p>
+<p>Incompatible changes from 0.3.0:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Logger</span></code> no longer does JSON serialization; it’s up to destinations to decide how to serialize the dictionaries they receive.</li>
+<li>Timestamps are no longer encoded in TAI64N format; they are now provided as seconds since the Unix epoch.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ActionType</span></code> no longer supports defining additional failure fields, and therefore accepts one argument less.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Action.runCallback</span></code> and <code class="docutils literal notranslate"><span class="pre">Action.finishAfter</span></code> have been removed, as they are replaced by <code class="docutils literal notranslate"><span class="pre">DeferredContext</span></code> (see below).</li>
+</ul>
+<p>Features:</p>
+<ul class="simple">
+<li>Added a simpler API (<code class="docutils literal notranslate"><span class="pre">fields()</span></code>) for defining fields for <code class="docutils literal notranslate"><span class="pre">ActionType</span></code> and <code class="docutils literal notranslate"><span class="pre">MessageType</span></code>.</li>
+<li>Added support for Python 3.3.</li>
+<li>Actions can now be explicitly finished using a public API: <code class="docutils literal notranslate"><span class="pre">Action.finish()</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Action.context()</span></code> context manager allows setting an action context without finishing the action when exiting the block.</li>
+<li>Added a new API for Twisted <code class="docutils literal notranslate"><span class="pre">Deferred</span></code> support: <code class="docutils literal notranslate"><span class="pre">eliot.twisted.DeferredContext</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">eliot.twisted.redirectLogsForTrial</span></code> will redirect Eliot logs to Twisted’s logs when running under the <code class="docutils literal notranslate"><span class="pre">trial</span></code> test runner.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="generating/index.html" class="btn btn-neutral float-right" title="Generating Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="Why Eliot?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

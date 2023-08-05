@@ -1,0 +1,512 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unit Testing Your Logging &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Asyncio Coroutine Support" href="asyncio.html" />
+    <link rel="prev" title="Using Types to Structure Messages and Actions" href="types.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Unit Testing Your Logging</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/types-testing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unit-testing-your-logging">
+<h1>Unit Testing Your Logging<a class="headerlink" href="#unit-testing-your-logging" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="validate-logging-in-tests">
+<h2>Validate Logging in Tests<a class="headerlink" href="#validate-logging-in-tests" title="Permalink to this headline">¶</a></h2>
+<p>Now that you’ve got some code emitting log messages (or even better, before you’ve written the code) you can write unit tests to verify it.
+Given good test coverage all code branches should already be covered by tests unrelated to logging.
+Logging can be considered just another aspect of testing those code branches.
+Rather than recreating all those tests as separate functions Eliot provides a decorator the allows adding logging assertions to existing tests.</p>
+<p>Let’s unit test some code that relies on the <code class="docutils literal notranslate"><span class="pre">LOG_USER_REGISTRATION</span></code> object we created earlier.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myapp.logtypes</span> <span class="kn">import</span> <span class="n">LOG_USER_REGISTRATION</span>
+
+<span class="k">class</span> <span class="nc">UserRegistration</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="n">username</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+        <span class="n">LOG_USER_REGISTRATION</span><span class="p">(</span>
+             <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="n">age</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Here’s how we’d test it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">TestCase</span>
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">MemoryLogger</span>
+<span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">assertContainsFields</span><span class="p">,</span> <span class="n">capture_logging</span>
+
+<span class="kn">from</span> <span class="nn">myapp.registration</span> <span class="kn">import</span> <span class="n">UserRegistration</span>
+<span class="kn">from</span> <span class="nn">myapp.logtypes</span> <span class="kn">import</span> <span class="n">LOG_USER_REGISTRATION</span>
+
+
+<span class="k">class</span> <span class="nc">LoggingTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">assertRegistrationLogging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Logging assertions for test_registration.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">assertContainsFields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span>
+                             <span class="p">{</span><span class="sa">u</span><span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span>
+                              <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+                              <span class="sa">u</span><span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">}))</span>
+
+    <span class="nd">@capture_logging</span><span class="p">(</span><span class="n">assertRegistrationLogging</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_registration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Registration adds entries to the in-memory database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">registry</span> <span class="o">=</span> <span class="n">UserRegistration</span><span class="p">()</span>
+        <span class="n">registry</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">],</span> <span class="p">(</span><span class="sa">u</span><span class="s2">&quot;passsword&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Besides calling the given validation function the <code class="docutils literal notranslate"><span class="pre">&#64;capture_logging</span></code> decorator will also validate the logged messages after the test is done.
+E.g. it will make sure they are JSON encodable.
+Messages were created using <code class="docutils literal notranslate"><span class="pre">ActionType</span></code> and <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> will be validated using the applicable <code class="docutils literal notranslate"><span class="pre">Field</span></code> definitions.
+You can also call <code class="docutils literal notranslate"><span class="pre">MemoryLogger.validate</span></code> yourself to validate written messages.
+If you don’t want any additional logging assertions you can decorate your test function using <code class="docutils literal notranslate"><span class="pre">&#64;capture_logging(None)</span></code>.</p>
+</div>
+<div class="section" id="testing-tracebacks">
+<h2>Testing Tracebacks<a class="headerlink" href="#testing-tracebacks" title="Permalink to this headline">¶</a></h2>
+<p>Tests decorated with <code class="docutils literal notranslate"><span class="pre">&#64;capture_logging</span></code> will fail if there are any tracebacks logged (using <code class="docutils literal notranslate"><span class="pre">write_traceback</span></code> or <code class="docutils literal notranslate"><span class="pre">writeFailure</span></code>) on the theory that these are unexpected errors indicating a bug.
+If you expected a particular traceback to be logged you can call <code class="docutils literal notranslate"><span class="pre">MemoryLogger.flush_tracebacks</span></code>, after which it will no longer cause a test failure.
+The result will be a list of traceback message dictionaries for the particular exception.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">unittest</span> <span class="kn">import</span> <span class="n">TestCase</span>
+<span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">capture_logging</span>
+
+<span class="k">class</span> <span class="nc">MyTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">assertMythingBadPathLogging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="n">messages</span> <span class="o">=</span> <span class="n">logger</span><span class="o">.</span><span class="n">flush_tracebacks</span><span class="p">(</span><span class="ne">OSError</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">messages</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="nd">@capture_logging</span><span class="p">(</span><span class="n">assertMythingBadPathLogging</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_mythingBadPath</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+         <span class="n">mything</span> <span class="o">=</span> <span class="n">MyThing</span><span class="p">()</span>
+         <span class="c1"># Trigger an error that will cause a OSError traceback to be logged:</span>
+         <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">mything</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;/nonexistent/path&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-message-and-action-structure">
+<h2>Testing Message and Action Structure<a class="headerlink" href="#testing-message-and-action-structure" title="Permalink to this headline">¶</a></h2>
+<p>Eliot provides utilities for making assertions about the structure of individual messages and actions.
+The simplest method is using the <code class="docutils literal notranslate"><span class="pre">assertHasMessage</span></code> utility function which asserts that a message of a given <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> has the given fields:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">assertHasMessage</span><span class="p">,</span> <span class="n">capture_logging</span>
+
+<span class="k">class</span> <span class="nc">LoggingTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@capture_logging</span><span class="p">(</span><span class="n">assertHasMessage</span><span class="p">,</span> <span class="n">LOG_USER_REGISTRATION</span><span class="p">,</span>
+                     <span class="p">{</span><span class="sa">u</span><span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span>
+                      <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+                      <span class="sa">u</span><span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
+    <span class="k">def</span> <span class="nf">test_registration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Registration adds entries to the in-memory database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">registry</span> <span class="o">=</span> <span class="n">UserRegistration</span><span class="p">()</span>
+        <span class="n">registry</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">],</span> <span class="p">(</span><span class="sa">u</span><span class="s2">&quot;passsword&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">assertHasMessage</span></code> returns the found message and can therefore be used within more complex assertions. <code class="docutils literal notranslate"><span class="pre">assertHasAction</span></code> provides similar functionality for actions (see example below).</p>
+<p>More generally, <code class="docutils literal notranslate"><span class="pre">eliot.testing.LoggedAction</span></code> and <code class="docutils literal notranslate"><span class="pre">eliot.testing.LoggedMessage</span></code> are utility classes to aid such testing.
+<code class="docutils literal notranslate"><span class="pre">LoggedMessage.of_type</span></code> lets you find all messages of a specific <code class="docutils literal notranslate"><span class="pre">MessageType</span></code>.
+A <code class="docutils literal notranslate"><span class="pre">LoggedMessage</span></code> has an attribute <code class="docutils literal notranslate"><span class="pre">message</span></code> which contains the logged message dictionary.
+For example, we could rewrite the registration logging test above like so:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">LoggedMessage</span><span class="p">,</span> <span class="n">capture_logging</span>
+
+<span class="k">class</span> <span class="nc">LoggingTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">assertRegistrationLogging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Logging assertions for test_registration.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">logged</span> <span class="o">=</span> <span class="n">LoggedMessage</span><span class="o">.</span><span class="n">of_type</span><span class="p">(</span><span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span> <span class="n">LOG_USER_REGISTRATION</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">assertContainsFields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logged</span><span class="o">.</span><span class="n">message</span><span class="p">,</span>
+                             <span class="p">{</span><span class="sa">u</span><span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span>
+                              <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+                              <span class="sa">u</span><span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">}))</span>
+
+    <span class="nd">@capture_logging</span><span class="p">(</span><span class="n">assertRegistrationLogging</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_registration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Registration adds entries to the in-memory database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">registry</span> <span class="o">=</span> <span class="n">UserRegistration</span><span class="p">()</span>
+        <span class="n">registry</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">],</span> <span class="p">(</span><span class="sa">u</span><span class="s2">&quot;passsword&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Similarly, <code class="docutils literal notranslate"><span class="pre">LoggedAction.of_type</span></code> finds all logged actions of a specific <code class="docutils literal notranslate"><span class="pre">ActionType</span></code>.
+A <code class="docutils literal notranslate"><span class="pre">LoggedAction</span></code> instance has <code class="docutils literal notranslate"><span class="pre">start_message</span></code> and <code class="docutils literal notranslate"><span class="pre">end_message</span></code> containing the respective message dictionaries, and a <code class="docutils literal notranslate"><span class="pre">children</span></code> attribute containing a list of child <code class="docutils literal notranslate"><span class="pre">LoggedAction</span></code> and <code class="docutils literal notranslate"><span class="pre">LoggedMessage</span></code>.
+That is, a <code class="docutils literal notranslate"><span class="pre">LoggedAction</span></code> knows about the messages logged within its context.
+<code class="docutils literal notranslate"><span class="pre">LoggedAction</span></code> also has a utility method <code class="docutils literal notranslate"><span class="pre">descendants()</span></code> that returns an iterable of all its descendants.
+We can thus assert that a particular message (or action) was logged within the context of another action.</p>
+<p>For example, let’s say we have some code like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">LOG_SEARCH</span> <span class="o">=</span> <span class="n">ActionType</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">LOG_CHECK</span> <span class="o">=</span> <span class="n">MessageType</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Search</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">servers</span><span class="p">,</span> <span class="n">database</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="k">with</span> <span class="n">LOG_SEARCH</span><span class="p">(</span><span class="n">database</span><span class="o">=</span><span class="n">database</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">server</span> <span class="ow">in</span> <span class="n">servers</span><span class="p">:</span>
+            <span class="n">LOG_CHECK</span><span class="p">(</span><span class="n">server</span><span class="o">=</span><span class="n">server</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">server</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="n">database</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+                <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+</div>
+<p>We want to assert that the LOG_CHECK message was written in the context of the LOG_SEARCH action.
+The test would look like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">LoggedAction</span><span class="p">,</span> <span class="n">LoggedMessage</span><span class="p">,</span> <span class="n">capture_logging</span>
+<span class="kn">import</span> <span class="nn">searcher</span>
+
+<span class="k">class</span> <span class="nc">LoggingTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@capture_logging</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_logging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="n">searcher</span> <span class="o">=</span> <span class="n">Search</span><span class="p">()</span>
+        <span class="n">servers</span> <span class="o">=</span> <span class="p">[</span><span class="n">buildServer</span><span class="p">(),</span> <span class="n">buildServer</span><span class="p">()]</span>
+
+        <span class="n">searcher</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">servers</span><span class="p">,</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;theuser&quot;</span><span class="p">)</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">LoggedAction</span><span class="o">.</span><span class="n">of_type</span><span class="p">(</span><span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span> <span class="n">searcher</span><span class="o">.</span><span class="n">LOG_SEARCH</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">messages</span> <span class="o">=</span> <span class="n">LoggedMessage</span><span class="o">.</span><span class="n">of_type</span><span class="p">(</span><span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span> <span class="n">searcher</span><span class="o">.</span><span class="n">LOG_CHECK</span><span class="p">)</span>
+        <span class="c1"># The action start message had the appropriate fields:</span>
+        <span class="n">assertContainsFields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action</span><span class="o">.</span><span class="n">start_message</span><span class="p">,</span>
+                             <span class="p">{</span><span class="s2">&quot;database&quot;</span><span class="p">:</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;theuser&quot;</span><span class="p">})</span>
+        <span class="c1"># Messages were logged in the context of the action</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">children</span><span class="p">,</span> <span class="n">messages</span><span class="p">)</span>
+        <span class="c1"># Each message had the respective server set.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">servers</span><span class="p">,</span> <span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">message</span><span class="p">[</span><span class="s2">&quot;server&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Or we can simplify further by using <code class="docutils literal notranslate"><span class="pre">assertHasMessage</span></code> and <code class="docutils literal notranslate"><span class="pre">assertHasAction</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">LoggedAction</span><span class="p">,</span> <span class="n">LoggedMessage</span><span class="p">,</span> <span class="n">capture_logging</span>
+<span class="kn">import</span> <span class="nn">searcher</span>
+
+<span class="k">class</span> <span class="nc">LoggingTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="nd">@capture_logging</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_logging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="n">searcher</span> <span class="o">=</span> <span class="n">Search</span><span class="p">()</span>
+        <span class="n">servers</span> <span class="o">=</span> <span class="p">[</span><span class="n">buildServer</span><span class="p">(),</span> <span class="n">buildServer</span><span class="p">()]</span>
+
+        <span class="n">searcher</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">servers</span><span class="p">,</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;theuser&quot;</span><span class="p">)</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">assertHasAction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">,</span> <span class="n">searcher</span><span class="o">.</span><span class="n">LOG_SEARCH</span><span class="p">,</span> <span class="n">succeeded</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                                 <span class="n">startFields</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;database&quot;</span><span class="p">:</span> <span class="s2">&quot;users&quot;</span><span class="p">,</span>
+                                              <span class="s2">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;theuser&quot;</span><span class="p">})</span>
+
+        <span class="c1"># Messages were logged in the context of the action</span>
+        <span class="n">messages</span> <span class="o">=</span> <span class="n">LoggedMessage</span><span class="o">.</span><span class="n">of_type</span><span class="p">(</span><span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span> <span class="n">searcher</span><span class="o">.</span><span class="n">LOG_CHECK</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">children</span><span class="p">,</span> <span class="n">messages</span><span class="p">)</span>
+        <span class="c1"># Each message had the respective server set.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">servers</span><span class="p">,</span> <span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">message</span><span class="p">[</span><span class="s2">&quot;server&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="restricting-testing-to-specific-messages">
+<h2>Restricting Testing to Specific Messages<a class="headerlink" href="#restricting-testing-to-specific-messages" title="Permalink to this headline">¶</a></h2>
+<p>If you want to only look at certain messages when testing you can log to a specific <code class="docutils literal notranslate"><span class="pre">eliot.Logger</span></code> object.
+The messages will still be logged normally but you will be able to limit tests to only looking at those messages.</p>
+<p>You can log messages to a specific <code class="docutils literal notranslate"><span class="pre">Logger</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">Message</span><span class="p">,</span> <span class="n">Logger</span>
+
+<span class="k">class</span> <span class="nc">YourClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">Logger</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Create a message with two fields, &quot;key&quot; and &quot;value&quot;:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">Message</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+        <span class="c1"># Write the message:</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As well as actions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">Logger</span><span class="p">()</span>
+
+<span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">logger</span><span class="p">,</span> <span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;store_data&quot;</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">()</span>
+    <span class="n">store_data</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or actions created from <code class="docutils literal notranslate"><span class="pre">ActionType</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">Logger</span>
+
+  <span class="kn">from</span> <span class="nn">myapp.logtypes</span> <span class="kn">import</span> <span class="n">LOG_USER_REGISTRATION</span>
+
+  <span class="k">class</span> <span class="nc">UserRegistration</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+      <span class="n">logger</span> <span class="o">=</span> <span class="n">Logger</span><span class="p">()</span>
+
+      <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="p">{}</span>
+
+      <span class="k">def</span> <span class="nf">register</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="n">username</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+          <span class="n">msg</span> <span class="o">=</span> <span class="n">LOG_USER_REGISTRATION</span><span class="p">(</span>
+               <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="n">age</span><span class="p">)</span>
+          <span class="c1"># Notice use of specific logger:</span>
+          <span class="n">msg</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The tests would then need to do two things:</p>
+<ol class="arabic simple">
+<li>Decorate your test with <code class="docutils literal notranslate"><span class="pre">validate_logging</span></code> instead of <code class="docutils literal notranslate"><span class="pre">capture_logging</span></code>.</li>
+<li>Override the logger used by the logging code to use the one passed in to the test.</li>
+</ol>
+<p>For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot.testing</span> <span class="kn">import</span> <span class="n">LoggedMessage</span><span class="p">,</span> <span class="n">validate_logging</span>
+
+<span class="k">class</span> <span class="nc">LoggingTests</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">assertRegistrationLogging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Logging assertions for test_registration.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">logged</span> <span class="o">=</span> <span class="n">LoggedMessage</span><span class="o">.</span><span class="n">of_type</span><span class="p">(</span><span class="n">logger</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span> <span class="n">LOG_USER_REGISTRATION</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">assertContainsFields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logged</span><span class="o">.</span><span class="n">message</span><span class="p">,</span>
+                             <span class="p">{</span><span class="sa">u</span><span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span>
+                              <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+                              <span class="sa">u</span><span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">}))</span>
+
+    <span class="c1"># validate_logging only captures log messages logged to the MemoryLogger</span>
+    <span class="c1"># instance it passes to the test:</span>
+    <span class="nd">@validate_logging</span><span class="p">(</span><span class="n">assertRegistrationLogging</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_registration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Registration adds entries to the in-memory database.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">registry</span> <span class="o">=</span> <span class="n">UserRegistration</span><span class="p">()</span>
+        <span class="c1"># Override logger with one used by test:</span>
+        <span class="n">registry</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logger</span>
+        <span class="n">registry</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">registry</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="sa">u</span><span class="s2">&quot;john&quot;</span><span class="p">],</span> <span class="p">(</span><span class="sa">u</span><span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="asyncio.html" class="btn btn-neutral float-right" title="Asyncio Coroutine Support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="types.html" class="btn btn-neutral" title="Using Types to Structure Messages and Actions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

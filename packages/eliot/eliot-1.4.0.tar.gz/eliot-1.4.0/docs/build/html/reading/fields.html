@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Message Fields in Depth &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing to Eliot" href="../development.html" />
+    <link rel="prev" title="Reading and Filtering Eliot Logs" href="reading.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generating/index.html">Generating Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Reading Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reading.html">Reading and Filtering Eliot Logs</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Message Fields in Depth</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Reading Logs</a> &raquo;</li>
+        
+      <li>Message Fields in Depth</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/reading/fields.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="message-fields-in-depth">
+<h1>Message Fields in Depth<a class="headerlink" href="#message-fields-in-depth" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="built-in-fields">
+<h2>Built-in Fields<a class="headerlink" href="#built-in-fields" title="Permalink to this headline">¶</a></h2>
+<p>A number of fields are reserved by Eliot’s built-in message structure and should not be added to messages you create.</p>
+<p>All messages contain <code class="docutils literal notranslate"><span class="pre">task_uuid</span></code> and <code class="docutils literal notranslate"><span class="pre">task_level</span></code> fields.
+Each message is uniquely identified by the combined values in these fields.
+For more information see the <a class="reference internal" href="../generating/actions.html#task-fields"><span class="std std-ref">actions and tasks</span></a> documentation.</p>
+<p>In addition, the following field will also be present:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">timestamp</span></code>: Number of seconds since Unix epoch as a <code class="docutils literal notranslate"><span class="pre">float</span></code> (the output of <code class="docutils literal notranslate"><span class="pre">time.time()</span></code>).
+Since system time may move backwards and resolution may not be high enough this cannot be relied on for message ordering.</li>
+</ul>
+<p>Every logged message will have either <code class="docutils literal notranslate"><span class="pre">message_type</span></code> or <code class="docutils literal notranslate"><span class="pre">action_type</span></code> fields depending whether they originated as a standalone message or as the start or end of an action.
+Present in regular messages:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">message_type</span></code>: The type of the message, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;yourapp:yoursubsystem:yourmessage&quot;</span></code>.</li>
+</ul>
+<p>Present in action messages:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">action_type</span></code>: The type of the action, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;yourapp:yoursubsystem:youraction&quot;</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">action_status</span></code>: One of <code class="docutils literal notranslate"><span class="pre">&quot;started&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;succeeded&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;failed&quot;</span></code>.</li>
+</ul>
+<p>The following fields can be added to your messages, but should preserve the same meaning:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">exception</span></code>: The fully qualified Python name (i.e. import path) of an exception type, e.g. <code class="docutils literal notranslate"><span class="pre">&quot;yourpackage.yourmodule.YourException&quot;</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">reason</span></code>: A prose string explaining why something happened. Avoid usage if possible, better to use structured data.</li>
+<li><code class="docutils literal notranslate"><span class="pre">traceback</span></code>: A string with a traceback.</li>
+</ul>
+</div>
+<div class="section" id="user-created-fields">
+<h2>User-Created Fields<a class="headerlink" href="#user-created-fields" title="Permalink to this headline">¶</a></h2>
+<p>It is recommended, but not necessary (and perhaps impossible across organizations) that fields with the same name have the same semantic content.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../development.html" class="btn btn-neutral float-right" title="Contributing to Eliot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="reading.html" class="btn btn-neutral" title="Reading and Filtering Eliot Logs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

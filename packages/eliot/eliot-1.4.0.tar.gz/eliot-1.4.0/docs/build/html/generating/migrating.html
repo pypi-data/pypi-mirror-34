@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Integrating and Migrating Existing Logging &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Spanning Processes and Threads" href="threads.html" />
+    <link rel="prev" title="Log Levels" href="loglevels.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Integrating and Migrating Existing Logging</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/migrating.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="integrating-and-migrating-existing-logging">
+<h1>Integrating and Migrating Existing Logging<a class="headerlink" href="#integrating-and-migrating-existing-logging" title="Permalink to this headline">¶</a></h1>
+<p>If you have an existing code base, you likely have existing log messages.
+This document will explain how to migrate and integrate existing logging into your new Eliot log setup.
+In particular, this will focus on the Python standard library <code class="docutils literal notranslate"><span class="pre">logging</span></code> package, but the same principles apply to other logging libraries.</p>
+<div class="section" id="route-existing-logs-to-eliot">
+<span id="migrating"></span><h2>Route existing logs to Eliot<a class="headerlink" href="#route-existing-logs-to-eliot" title="Permalink to this headline">¶</a></h2>
+<p>Eliot includes a <code class="docutils literal notranslate"><span class="pre">logging.Handler</span></code> that can take standard library log messages and route them into Eliot.
+These log messages will <em>automatically</em> appear in the correct place in the action tree!
+Once you add actions to your code these log messages will automatically benefit from Eliot’s causal information.</p>
+<p>To begin with, however, we’ll just add routing of log messages to Eliot:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add Eliot Handler to root Logger. You may wish to only route specific</span>
+<span class="c1"># Loggers to Eliot.</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">eliot.stdlib</span> <span class="kn">import</span> <span class="n">EliotHandler</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">EliotHandler</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-actions-at-entry-points-and-other-key-points">
+<h2>Add actions at entry points and other key points<a class="headerlink" href="#add-actions-at-entry-points-and-other-key-points" title="Permalink to this headline">¶</a></h2>
+<p>Simply by adding a few key actions—the entry points to the code, as well as key sub-actions—you can start getting value from Eliot’s functionality while still getting information from your existing logs.
+You can leave existing log messages in place, replacing them with Eliot logging opportunistically; they will still be included in your output.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Example of routing standard library logging to Eliot.</span>
+
+<span class="sd">The assumption is you have legacy logging using stdlib, and are switching over</span>
+<span class="sd">to Eliot.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">from</span> <span class="nn">eliot.stdlib</span> <span class="k">import</span> <span class="n">EliotHandler</span>
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">to_file</span>
+
+<span class="c1"># A Logger left over from before switch to Eliot</span>
+<span class="n">LEGACY_LOGGER</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span><span class="p">(</span><span class="s2">&quot;mypackage&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">do_a_thing</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;mypackage:do_a_thing&quot;</span><span class="p">):</span>
+        <span class="c1"># run your business logic....</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">LEGACY_LOGGER</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;The number 3 is a bad number, don&#39;t use it.&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;I hate the number 3&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;mypackage:main&quot;</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">do_a_thing</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                <span class="n">LEGACY_LOGGER</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Number </span><span class="si">{}</span><span class="s2"> was rejected.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1"># Hook up stdlib logging to Eliot:</span>
+    <span class="n">LEGACY_LOGGER</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">EliotHandler</span><span class="p">())</span>
+    <span class="c1"># Write Eliot logs to stdout:</span>
+    <span class="n">to_file</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+    <span class="c1"># Run the code:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The stdlib logging messages will be included in the correct part of the tree:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python examples/stdlib.py  <span class="p">|</span> eliot-tree
+<span class="go">3f465ee3-7fa9-40e2-8b20-9c0595612a8b</span>
+<span class="go">└── mypackage:main/1 ⇒ started</span>
+<span class="go">    ├── timestamp: 2018-07-15 16:50:39.230467</span>
+<span class="go">    ├── mypackage:do_a_thing/2/1 ⇒ started</span>
+<span class="go">    │   ├── timestamp: 2018-07-15 16:50:39.230709</span>
+<span class="go">    │   └── mypackage:do_a_thing/2/2 ⇒ succeeded</span>
+<span class="go">    │       └── timestamp: 2018-07-15 16:50:39.230836</span>
+<span class="go">    ├── mypackage:do_a_thing/3/1 ⇒ started</span>
+<span class="go">    │   ├── timestamp: 2018-07-15 16:50:39.230980</span>
+<span class="go">    │   ├── eliot:stdlib/3/2</span>
+<span class="go">    │   │   ├── log_level: ERROR</span>
+<span class="go">    │   │   ├── logger: mypackage</span>
+<span class="go">    │   │   ├── message: The number 3 is a bad number, don&#39;t use it.</span>
+<span class="go">    │   │   └── timestamp: 2018-07-15 16:50:39.231157</span>
+<span class="go">    │   └── mypackage:do_a_thing/3/3 ⇒ failed</span>
+<span class="go">    │       ├── exception: builtins.ValueError</span>
+<span class="go">    │       ├── reason: I hate the number 3</span>
+<span class="go">    │       └── timestamp: 2018-07-15 16:50:39.231364</span>
+<span class="go">    ├── eliot:stdlib/4</span>
+<span class="go">    │   ├── log_level: INFO</span>
+<span class="go">    │   ├── logger: mypackage</span>
+<span class="go">    │   ├── message: Number 3 was rejected.</span>
+<span class="go">    │   └── timestamp: 2018-07-15 16:50:39.231515</span>
+<span class="go">    └── mypackage:main/5 ⇒ succeeded</span>
+<span class="go">        └── timestamp: 2018-07-15 16:50:39.231641</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="threads.html" class="btn btn-neutral float-right" title="Spanning Processes and Threads" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="loglevels.html" class="btn btn-neutral" title="Log Levels" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

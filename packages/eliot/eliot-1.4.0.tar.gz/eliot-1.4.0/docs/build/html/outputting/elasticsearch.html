@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using Logstash and ElasticSearch to Process Eliot Logs &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reading Logs" href="../reading/index.html" />
+    <link rel="prev" title="Journald" href="journald.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generating/index.html">Generating Logs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Outputting Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="output.html">Configuring Logging Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="journald.html">Journald</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using Logstash and ElasticSearch to Process Eliot Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Outputting Logs</a> &raquo;</li>
+        
+      <li>Using Logstash and ElasticSearch to Process Eliot Logs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/outputting/elasticsearch.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-logstash-and-elasticsearch-to-process-eliot-logs">
+<h1>Using Logstash and ElasticSearch to Process Eliot Logs<a class="headerlink" href="#using-logstash-and-elasticsearch-to-process-eliot-logs" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Logstash, Elasticsearch and Kibana change frequently. These instructions might not be quite accurate.</p>
+</div>
+<p><a class="reference external" href="http://elasticsearch.org">ElasticSearch</a> is a search and analytics engine which can be used to store Eliot logging output.
+The logs can then be browsed by humans using the <a class="reference external" href="http://www.elasticsearch.org/overview/kibana/">Kibana</a> web UI, or on the command-line using the <a class="reference external" href="https://github.com/jedi4ever/logstash-cli">logstash-cli</a> tool.
+Automated systems can access the logs using the ElasticSearch query API.
+<a class="reference external" href="http://logstash.net/">Logstash</a> is a log processing tool that can be used to load Eliot log files into ElasticSearch.
+The combination of ElasticSearch, Logstash, and Kibana is sometimes referred to as ELK.</p>
+<div class="section" id="example-logstash-configuration">
+<h2>Example Logstash Configuration<a class="headerlink" href="#example-logstash-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Assuming each Eliot message is written out as a JSON message on its own line (which is the case for <code class="docutils literal notranslate"><span class="pre">eliot.to_file()</span></code> and <code class="docutils literal notranslate"><span class="pre">eliot.logwriter.ThreadedFileWriter</span></code>), the following Logstash configuration will load these log messages into an in-process ElasticSearch database:</p>
+<p><a class="reference download internal" href="../_downloads/logstash_standalone.conf" download=""><code class="xref download docutils literal notranslate"><span class="pre">logstash_standalone.conf</span></code></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">input</span> <span class="p">{</span>
+  <span class="n">stdin</span> <span class="p">{</span>
+    <span class="n">codec</span> <span class="o">=&gt;</span> <span class="n">json_lines</span> <span class="p">{</span>
+      <span class="n">charset</span> <span class="o">=&gt;</span> <span class="s2">&quot;UTF-8&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nb">filter</span> <span class="p">{</span>
+  <span class="n">date</span> <span class="p">{</span>
+    <span class="c1"># Parse Eliot timestamp filed into the special @timestamp field Logstash</span>
+    <span class="c1"># expects:</span>
+    <span class="n">match</span> <span class="o">=&gt;</span> <span class="p">[</span> <span class="s2">&quot;timestamp&quot;</span><span class="p">,</span> <span class="s2">&quot;UNIX&quot;</span> <span class="p">]</span>
+    <span class="n">target</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s2">&quot;@timestamp&quot;</span><span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">output</span> <span class="p">{</span>
+  <span class="c1"># Stdout output for debugging:</span>
+  <span class="n">stdout</span> <span class="p">{</span>
+    <span class="n">codec</span> <span class="o">=&gt;</span> <span class="n">rubydebug</span>
+  <span class="p">}</span>
+
+  <span class="n">elasticsearch</span> <span class="p">{</span>
+    <span class="c1"># We make the document id unique (for a specific index/mapping type pair) by</span>
+    <span class="c1"># using the relevant Eliot fields. This means replaying messages will not</span>
+    <span class="c1"># result in duplicates, as long as the replayed messages end up in the same</span>
+    <span class="c1"># index.</span>
+    <span class="n">document_id</span> <span class="o">=&gt;</span> <span class="s2">&quot;%</span><span class="si">{task_uuid}</span><span class="s2">_%</span><span class="si">{task_level}</span><span class="s2">&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We can then pipe JSON messages from Eliot into ElasticSearch using Logstash:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python examples/stdout.py <span class="p">|</span> logstash web -- agent --config logstash_standalone.conf
+</pre></div>
+</div>
+<p>You can then use the Kibana UI to search and browse the logs by visiting <a class="reference external" href="http://localhost:9292/">http://localhost:9292/</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../reading/index.html" class="btn btn-neutral float-right" title="Reading Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="journald.html" class="btn btn-neutral" title="Journald" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

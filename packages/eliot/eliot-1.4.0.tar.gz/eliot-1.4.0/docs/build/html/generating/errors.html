@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Errors and Exceptions &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Log Levels" href="loglevels.html" />
+    <link rel="prev" title="Actions and Tasks" href="actions.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Errors and Exceptions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/errors.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="errors-and-exceptions">
+<h1>Errors and Exceptions<a class="headerlink" href="#errors-and-exceptions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exceptions-and-tracebacks">
+<h2>Exceptions and Tracebacks<a class="headerlink" href="#exceptions-and-tracebacks" title="Permalink to this headline">¶</a></h2>
+<p>If you are using actions you don’t need to do anything special to log exceptions: if an exception is thrown within the context of an action and not caught, the action will be marked as failed and the exception will be logged with it.</p>
+<p>If you get a completely unexpected exception you may wish to log a traceback to aid debugging:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">write_traceback</span>
+
+<span class="k">class</span> <span class="nc">YourClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+             <span class="n">dosomething</span><span class="p">()</span>
+        <span class="k">except</span><span class="p">:</span>
+             <span class="n">write_traceback</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-exception-logging">
+<span id="extract-errors"></span><h2>Custom Exception Logging<a class="headerlink" href="#custom-exception-logging" title="Permalink to this headline">¶</a></h2>
+<p>By default both failed actions and tracebacks log the class and string-representation of the logged exception.
+You can add additional fields to these messages by registering a callable that converts exceptions into fields.
+If no extraction function is registered for a class Eliot will look for registered functions for the exception’s base classes.</p>
+<p>For example, the following registration means all failed actions that fail with a <code class="docutils literal notranslate"><span class="pre">MyException</span></code> will have a <code class="docutils literal notranslate"><span class="pre">code</span></code> field in the action end message, as will tracebacks logged with this exception:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyException</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">code</span>
+
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">register_exception_extractor</span>
+<span class="n">register_exception_extractor</span><span class="p">(</span><span class="n">MyException</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;code&quot;</span><span class="p">:</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>By default Eliot will automatically extract fields from <code class="docutils literal notranslate"><span class="pre">OSError</span></code>, <code class="docutils literal notranslate"><span class="pre">IOError</span></code> and other subclasses of Python’s <code class="docutils literal notranslate"><span class="pre">EnvironmentError</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="loglevels.html" class="btn btn-neutral float-right" title="Log Levels" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="actions.html" class="btn btn-neutral" title="Actions and Tasks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

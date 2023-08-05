@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Messages &mdash; Eliot 1.3.0+31.g662262a documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Actions and Tasks" href="actions.html" />
+    <link rel="prev" title="Generating Logs" href="index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.3.0+31.g662262a
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Messages</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/messages.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="messages">
+<h1>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-usage">
+<h2>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h2>
+<p>At its base, Eliot outputs structured messages composed of named fields.
+Eliot messages are typically serialized to JSON objects.
+Fields therefore can have Unicode names, so either <code class="docutils literal notranslate"><span class="pre">unicode</span></code> or <code class="docutils literal notranslate"><span class="pre">bytes</span></code> containing UTF-8 encoded Unicode.
+Message values must be supported by JSON: <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">unicode</span></code>, UTF-8 encoded Unicode as <code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code> or <code class="docutils literal notranslate"><span class="pre">list</span></code>.
+The latter two can only be composed of other supported types.</p>
+<p>You can log a message like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">Message</span>
+
+<span class="k">class</span> <span class="nc">YourClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Log a message with two fields, &quot;key&quot; and &quot;value&quot;:</span>
+        <span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can also create message and then log it later like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">Message</span>
+
+<span class="k">class</span> <span class="nc">YourClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Create a message with two fields, &quot;key&quot; and &quot;value&quot;:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">Message</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+        <span class="c1"># Write the message:</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="message-binding">
+<h2>Message binding<a class="headerlink" href="#message-binding" title="Permalink to this headline">¶</a></h2>
+<p>You can also create a new <code class="docutils literal notranslate"><span class="pre">Message</span></code> from an existing one by binding new values.
+New values will override ones on the base <code class="docutils literal notranslate"><span class="pre">Message</span></code>, but <code class="docutils literal notranslate"><span class="pre">bind()</span></code> does not mutate the original <code class="docutils literal notranslate"><span class="pre">Message</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This message has fields key=123, value=u&quot;hello&quot;</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="n">Message</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<span class="c1"># And this one has fields key=123, value=u&quot;other&quot;, extra=456</span>
+<span class="n">msg2</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;other&quot;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="mi">456</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="actions.html" class="btn btn-neutral float-right" title="Actions and Tasks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Generating Logs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.3.0+31.g662262a',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

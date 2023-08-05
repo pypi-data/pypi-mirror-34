@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Main module &mdash; GramophoneTools 0.5.17-beta documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Overview" href="comms_overview.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GramophoneTools
+          
+
+          
+            
+            <img src="_static/femtonics_white.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gramrec.html">Recorder module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gramrec.html#module-Recorder">Main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gramrec.html#module-logger">Logging module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gramrec.html#output">Output</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gramrec_out.html">Velocity data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gramrec_out.html#metadata">Metadata</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linmaze.html">LinMaze module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#main-module">Main module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linmaze_main.html">The Window class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linmaze_main.html#the-logger-class">The Logger class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linmaze_main.html#the-session-class">The Session class</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#level">Level</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="level.html">The Level class</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#frame">Frame</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="frame.html">Static functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frame.html#abstract-frame-classes">Abstract Frame classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#frame">Frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#random-frame">Random Frame</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#wave-frame">Wave Frame</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="frame.html#specific-frames">Specific Frames</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#binary-noise">Binary noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#greyscale-noise">Greyscale noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#checkerboard-pattern">Checkerboard pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#cloud-pattern">Cloud pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#marble-pattern">Marble pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#wood-grain-pattern">Wood grain pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#sine-wave-modulated-grating">Sine wave modulated grating</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#square-wave-modulated-grating">Square wave modulated grating</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame.html#image-file-as-frame">Image file as Frame</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#event">Event</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="event.html">Abstract Event class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="event.html#specific-events">Specific Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="event.html#teleportation">Teleportation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="event.html#random-teleportation">Random Teleportation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="event.html#port-on-off">Port On/Off</a></li>
+<li class="toctree-l4"><a class="reference internal" href="event.html#starting-stopping-bursting">Starting/Stopping bursting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="event.html#pausing-unpausing">Pausing/Unpausing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#rule">Rule</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rule.html">Abstract Rule class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rule.html#specific-rules">Specific Rules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="rule.html#zone-rule">Zone Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rule.html#velocity-rule">Velocity Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rule.html#smooth-velocity-rule">Smooth Velocity Rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rule.html#speed-rule">Speed Rule</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#zone">Zone</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="zone.html">The Zone class</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linmaze.html#output">Output</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linmaze_out.html">Log file structure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="comms.html">Comms module</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="comms_overview.html">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="comms_overview.html#packet-structure">Packet structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comms_overview.html#commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comms_overview.html#error-codes">Error codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comms_overview.html#parameters">Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comms_overview.html#firmware-info-structure">Firmware info structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comms_overview.html#product-info-structure">Product info structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Main module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gramophone-class">Gramophone class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#helper-classes">Helper classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GramophoneTools</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="comms.html">Comms module</a> &raquo;</li>
+        
+      <li>Main module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/comms_module.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="main-module">
+<h1>Main module<a class="headerlink" href="#main-module" title="Permalink to this headline">¶</a></h1>
+<p>This is the module that handles all the communication with the current Gramophone device.</p>
+<div class="section" id="gramophone-class">
+<h2>Gramophone class<a class="headerlink" href="#gramophone-class" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gramophone.Gramophone">
+<em class="property">class </em><code class="descclassname">Gramophone.</code><code class="descname">Gramophone</code><span class="sig-paren">(</span><em>device</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Gramophone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Gramophone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="class">
+<dt id="Gramophone.Gramophone.Parameter">
+<em class="property">class </em><code class="descname">Parameter</code><span class="sig-paren">(</span><em>name</em>, <em>info</em>, <em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#Gramophone.Gramophone.Parameter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="Gramophone.Gramophone.Parameter.info">
+<code class="descname">info</code><a class="headerlink" href="#Gramophone.Gramophone.Parameter.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gramophone.Gramophone.Parameter.name">
+<code class="descname">name</code><a class="headerlink" href="#Gramophone.Gramophone.Parameter.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Gramophone.Gramophone.Parameter.type">
+<code class="descname">type</code><a class="headerlink" href="#Gramophone.Gramophone.Parameter.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Gramophone.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Gramophone.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Gramophone.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disconnect from this device.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Gramophone.open">
+<code class="descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Gramophone.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Gramophone.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to this device.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="helper-classes">
+<h2>Helper classes<a class="headerlink" href="#helper-classes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="Gramophone.Transmitter">
+<em class="property">class </em><code class="descclassname">Gramophone.</code><code class="descname">Transmitter</code><a class="reference internal" href="_modules/Gramophone.html#Transmitter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Transmitter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emits Qt signals to transmit infromation from incoming packets.</p>
+<dl class="method">
+<dt id="Gramophone.Transmitter.emit_device_error">
+<code class="descname">emit_device_error</code><span class="sig-paren">(</span><em>error_msg</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Transmitter.emit_device_error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Transmitter.emit_device_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emit a signal with the given error message.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>error_msg</strong> (<em>str</em>) – The error message.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Transmitter.emit_inputs">
+<code class="descname">emit_inputs</code><span class="sig-paren">(</span><em>inputs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Transmitter.emit_inputs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Transmitter.emit_inputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emit a signal with the state of the digital inputs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>inputs</strong> (<em>[</em><em>int</em><em>, </em><em>int</em><em>]</em>) – A list containing the states of the two digital inputs.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Transmitter.emit_position">
+<code class="descname">emit_position</code><span class="sig-paren">(</span><em>pos</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Transmitter.emit_position"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Transmitter.emit_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emit a signal with the given position.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pos</strong> (<em>int</em>) – The position that should be emitted.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Transmitter.emit_recorder">
+<code class="descname">emit_recorder</code><span class="sig-paren">(</span><em>values</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Transmitter.emit_recorder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Transmitter.emit_recorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emit a signal with all the data required by the Recorder module.
+These are the current time, velocity and input states in order.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>values</strong> (<em>[</em><em>int</em><em>, </em><em>float</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – A list containing the time, velocity and input states.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Transmitter.emit_velocity">
+<code class="descname">emit_velocity</code><span class="sig-paren">(</span><em>vel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Transmitter.emit_velocity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Transmitter.emit_velocity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emit a signal with the given velocity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vel</strong> (<em>float</em>) – The velocity that should be emitted.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Gramophone.Reader">
+<em class="property">class </em><code class="descclassname">Gramophone.</code><code class="descname">Reader</code><span class="sig-paren">(</span><em>name</em>, <em>read_func</em>, <em>frequency</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Reader"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Reader" title="Permalink to this definition">¶</a></dt>
+<dd><p>A worker that can continnously send commands to the Gramophone with a given frequency.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>str</em>) – The name of this reader. Can be used for identification to stop a specific reader.</li>
+<li><strong>read_func</strong> (<em>function</em>) – The read function that should be called.</li>
+<li><strong>frequency</strong> (<em>float</em>) – The frequency at which the function should be called in Hz.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="Gramophone.Reader.abort">
+<code class="descname">abort</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Reader.abort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Reader.abort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stop calling the read function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Gramophone.Reader.read">
+<code class="descname">read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Gramophone.html#Reader.read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Gramophone.Reader.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start calling the read function repeatedly. Slot for a QThread.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Femtonics Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.5.17-beta',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

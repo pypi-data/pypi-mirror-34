@@ -1,0 +1,15 @@
+README.md
+setup.py
+wordpresspy/__init__.py
+wordpresspy/api.py
+wordpresspy/errors.py
+wordpresspy/http_method.py
+wordpresspy/utils.py
+wordpresspy/woocommerce.py
+wordpresspy/wordpress.py
+wordpresspy.egg-info/PKG-INFO
+wordpresspy.egg-info/SOURCES.txt
+wordpresspy.egg-info/dependency_links.txt
+wordpresspy.egg-info/not-zip-safe
+wordpresspy.egg-info/requires.txt
+wordpresspy.egg-info/top_level.txt

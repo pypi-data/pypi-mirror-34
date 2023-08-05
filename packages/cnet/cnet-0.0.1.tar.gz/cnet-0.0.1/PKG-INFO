@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cnet
+Version: 0.0.1
+Summary: Another Complex Network module for Python!
+Home-page: https://github.com/hackl/cnet
+Author: Juergen Hackl
+Author-email: hackl.j@gmx.at
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Download-URL: https://pypi.org/project/cnet
+Description: # Complex Networks
+        
+        | Module:  | cnet                                    |
+        |----------|-----------------------------------------|
+        | Date:    | 17 July 2018                            |
+        | Authors: | Jürgen Hackl                            |
+        | Contact: | [hackl.j@gmx.at](mailto:hackl.j@gmx.at)   |
+        | License: | GNU GPLv3                               |
+        | Version: | 0.0.1                                   |
+        
+        Another Complex Network module for Python!
+        
+        This package is currently under development!
+        
+        Please have a look at [cnet](https://github.com/hackl/cnet) for more details.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown

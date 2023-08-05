@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: minglight
+Version: 1.0.3
+Summary: a server build with socket
+Home-page: https://github.com/Silence-ming/myFlask.git
+Author: 周明明
+Author-email: 1159922370@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+

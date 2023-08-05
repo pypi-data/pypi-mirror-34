@@ -1,0 +1,10 @@
+README.md
+setup.py
+tidues_tools/ConfParser.py
+tidues_tools/GeneralMap.py
+tidues_tools/GraphGen.py
+tidues_tools/__init__.py
+tidues_tools.egg-info/PKG-INFO
+tidues_tools.egg-info/SOURCES.txt
+tidues_tools.egg-info/dependency_links.txt
+tidues_tools.egg-info/top_level.txt

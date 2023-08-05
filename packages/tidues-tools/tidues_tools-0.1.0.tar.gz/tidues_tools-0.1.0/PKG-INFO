@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tidues_tools
+Version: 0.1.0
+Summary: Tools for tidues
+Home-page: https://tidues001@bitbucket.org/tidues001/tidues_tools.git
+Author: Tidues Wei
+Author-email: tidues@gmail.com
+License: UNKNOWN
+Description: All tools for tidues.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

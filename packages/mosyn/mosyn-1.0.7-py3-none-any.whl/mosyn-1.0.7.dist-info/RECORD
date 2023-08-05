@@ -1,0 +1,13 @@
+mosyn/__init__.py,sha256=zVMMCdVaobE_SpIK6mF13vY4KV4kY-W3gKybIIqC_ug,429
+mosyn/__main__.py,sha256=p6ji3q4uKjro-Z8tTJ2GOQNQde7uoDIHk6JruKTdhDM,265
+mosyn/mosyn.py,sha256=1WirMUTgEZVaQsTGqzmVJqOqgjTXZBGPhdAVDozDEA0,12023
+mosyn/dict/spanish_dict.csv,sha256=JvvwlbHbOgDXdfYtUpfBugWd5xHF_W87nzCwcCXozic,39180941
+mosyn/util/__init__.py,sha256=7748lut60XKjEXESADNygmc8WFr2SOEVjSLboryiJhE,246
+mosyn/util/eagles.py,sha256=hVrRWhZl6Sod_TshVvfD-MUuw4szsJyGZCyazqvVMfk,64751
+mosyn/util/events.py,sha256=wuCoOU26LRoC9eYlUsumqH4tzfOBW9XXWBkr5g3B1CE,982
+mosyn/util/format.py,sha256=Jb52fzM4pKA66Mxbbhlf2__yo9cr_iRPQsk8jlZQAJY,680
+mosyn/util/io.py,sha256=dlUS9cSNkKyyJFtsLv2JE-_9RApVAO2rwDV-pEa42ts,3580
+mosyn-1.0.7.dist-info/METADATA,sha256=J1NzOSOQY22-nHR8_9slrgFZjV6JTtkx89yzqusbBvM,544
+mosyn-1.0.7.dist-info/RECORD,,
+mosyn-1.0.7.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+mosyn-1.0.7.dist-info/top_level.txt,sha256=PGTH62luzp5Q78-eUvivz5td7gj4MQWYvDOR7SBP0eo,6

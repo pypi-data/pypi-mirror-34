@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mosyn
+Version: 1.0.7
+Summary: A morphological dictionary tool.
+Home-page: https://github.com/uagdataanalysis/mosynapi
+Author: uagdataanalysis
+Author-email: uagdataanalysis@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/uagdataanalysis/mosynapi/tarball/1.0.6
+Keywords: dictionary,morphological,analysis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Dist: nltk (>=3.0)
+
+UNKNOWN
+
+

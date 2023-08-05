@@ -1,0 +1,15 @@
+README.md
+setup.py
+mrainet/__init__.py
+mrainet/_version.py
+mrainet/demo_mrai.py
+mrainet/mraicnn.py
+mrainet/mraidn.py
+mrainet/mraidnn.py
+mrainet/util.py
+mrainet/viz.py
+mrainet.egg-info/PKG-INFO
+mrainet.egg-info/SOURCES.txt
+mrainet.egg-info/dependency_links.txt
+mrainet.egg-info/requires.txt
+mrainet.egg-info/top_level.txt

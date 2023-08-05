@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: py-auth0-jwt
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Platform: UNKNOWN
+Requires-Dist: jwcrypto
+Requires-Dist: cryptography
+Requires-Dist: furl
+Requires-Dist: pyjwt
+
+UNKNOWN
+
+

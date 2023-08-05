@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MLme
+Version: 0.0.101
+Summary: tools to work on machine learning and data science projects
+Home-page: https://github.com/psklight/MLme
+Author: Pisek Kultavewuti
+Author-email: psk.light@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+tools to work on machine learning and data science projects
+
+

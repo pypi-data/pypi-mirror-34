@@ -1,0 +1,8 @@
+csr_utils/__init__.py,sha256=aJ9OkIfBHoRpBPkGfecKPb3tuRNxPynRLdux0JCu1Aw,35
+csr_utils/csr_utils.py,sha256=QDP5aUtEx7fuc0QwxMxvkDXq1TgRtKJ_0pTjYOJP0p0,7861
+csr_utils-0.1.3.dist-info/METADATA,sha256=EvnIxLbH0DIX1RRJsz0HRzMlfCYuEhz0ZGYv68YtSYc,3555
+csr_utils-0.1.3.dist-info/RECORD,,
+csr_utils-0.1.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+csr_utils-0.1.3.dist-info/top_level.txt,sha256=0NAZgwUffnb1-b-ngNe8qZOAyclD59FybMxfD100XqM,16
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_csr_utils.py,sha256=9e0Jt2mQn0v2UDuopvid3Z2a8XGi_uWIeelE8oqOv-E,1422

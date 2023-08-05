@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+orite/__init__.py
+orite/_orite_exclude.txt
+orite/command_line.py
+orite/orite.py
+orite.egg-info/PKG-INFO
+orite.egg-info/SOURCES.txt
+orite.egg-info/dependency_links.txt
+orite.egg-info/entry_points.txt
+orite.egg-info/top_level.txt

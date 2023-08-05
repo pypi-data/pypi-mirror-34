@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: integracio
+Version: 2018.7.18
+Summary: pyFAI on steroids
+Home-page: https://hg.3lp.cx/integracio
+Author: Vadim Dyadkin
+Author-email: dyadkin@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.9)
+
+UNKNOWN
+
+

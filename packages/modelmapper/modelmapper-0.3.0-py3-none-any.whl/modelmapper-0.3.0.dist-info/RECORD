@@ -1,0 +1,16 @@
+modelmapper/__init__.py,sha256=SCH8h1WL9um4ZZ6y9752EaespgNGVZ_FQfjmuvN9foo,367
+modelmapper/cleaner.py,sha256=OYdmduKpYLQdDrhABF3ng0VahiWhiACgjuQqpx3TWZw,9987
+modelmapper/excel.py,sha256=PRCElWCxnbuki5qzZ26MK7ovYeAFMWQeSrYSE1uRi04,5145
+modelmapper/initialize.py,sha256=OL0EUSkt-9PoaXKh9Os0laELhFNJ-YMolzg2oU1Lowc,2933
+modelmapper/management.py,sha256=nkUIhBssrOqeRmchoe0V8sxrnRyWHgkpPh5PWn3XqWI,2096
+modelmapper/mapper.py,sha256=il0I7XKHIdem9aDRQ71eRhnclxtven0zmfM2U0LqlBo,26951
+modelmapper/misc.py,sha256=DnmfkKS8_tzUTdm4q4-3aLa8XPPprn6ZlKHKaO4EaSU,9827
+modelmapper/normalization.py,sha256=iE-7raDYOzdVJXc7o7l-9yhjIW35SEoagj4lFO5RTb4,399
+modelmapper/stats.py,sha256=BTMtC_tDpsB7_7VTw-feOVOwtMbPRvMvSUyxKJb6Uag,14522
+modelmapper/types.py,sha256=XrXL7W2v2FpVO7cOdJ9AYIBJKU5IVDbhJSwbXsQ1Nzs,193
+modelmapper/ui.py,sha256=NiT6Zq1hBt6ECflBr72r1kPzENLhGquUowlUo6ebxoM,3334
+modelmapper-0.3.0.dist-info/METADATA,sha256=gtIHY3ysBN3WIIFnQO3sOq5DmY_esQH5BXN5svXiLyk,9417
+modelmapper-0.3.0.dist-info/RECORD,,
+modelmapper-0.3.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+modelmapper-0.3.0.dist-info/entry_points.txt,sha256=0yKG5jzux5xNw4vdbSfrZlmP0WSkPfNCQ_P6VMHI8bg,78
+modelmapper-0.3.0.dist-info/top_level.txt,sha256=Fv08y9hIhDTN3Nu8w8lsRn6jG0PyrNnvfXQpgY8rINw,12

@@ -1,0 +1,89 @@
+{
+  "name": "resnet50",
+  "width": 224,
+  "type": "ic",
+  "height": 224,
+  "channels": 3,
+  "layers": [
+    {
+      "type": "conv2d",
+      "filters": 64,
+      "size": 7,
+      "stride": 2,
+      "padding": 3,
+      "bn": true,
+      "activation": "relu"
+    },
+    {
+      "type": "maxpool",
+      "size": 3,
+      "stride": 2,
+      "padding": 1
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2",
+      "downsample": true,
+      "stride": 2,
+      "start_innput_channels": 128
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2",
+      "downsample": true,
+      "stride": 2,
+      "start_innput_channels": 256
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2",
+      "downsample": true,
+      "stride": 2,
+      "start_innput_channels": 512
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "resblock2"
+    },
+    {
+      "type": "globalavgpool"
+    },
+    {
+      "type": "linear",
+      "output": 101
+    }
+  ],
+  "loss": "mse"
+}

@@ -1,0 +1,71 @@
+{
+  "name": "resnet18",
+  "type": "ic",
+  "width": 224,
+  "height": 224,
+  "channels": 3,
+  "layers": [
+    {
+      "type": "conv2d",
+      "filters": 64,
+      "size": 7,
+      "stride": 2,
+      "padding": 3,
+      "bn": true,
+      "activation": "relu",
+      "bias": false
+    },
+    {
+      "type": "maxpool",
+      "size": 3,
+      "stride": 2,
+      "padding": 1
+    },
+    {
+      "type": "resblock1",
+      "filters": 64
+    },
+    {
+      "type": "resblock1",
+      "filters": 64
+    },
+    {
+      "type": "resblock1",
+      "filters": 128,
+      "downsample": true,
+      "stride": 2
+    },
+    {
+      "type": "resblock1",
+      "filters": 128
+    },
+    {
+      "type": "resblock1",
+      "filters": 256,
+      "downsample": true,
+      "stride": 2
+    },
+    {
+      "type": "resblock1",
+      "filters": 256
+    },
+    {
+      "type": "resblock1",
+      "filters": 512,
+      "downsample": true,
+      "stride": 2
+    },
+    {
+      "type": "resblock1",
+      "filters": 512
+    },
+    {
+      "type": "globalavgpool"
+    },
+    {
+      "type": "linear",
+      "output": 101
+    }
+  ],
+  "loss": "cross_entropy"
+}

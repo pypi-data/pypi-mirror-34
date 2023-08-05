@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: wordpresspy
+Version: 0.0.12
+Summary: UNKNOWN
+Home-page: https://github.com/weecan-group/wordpresspy
+Author: Weecan
+Author-email: contato@moacirbrg.org
+License: MIT
+Description: Library for management WordPress and its plugins, please visit https://github.com/weecan-group/wordpresspy for documentation.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

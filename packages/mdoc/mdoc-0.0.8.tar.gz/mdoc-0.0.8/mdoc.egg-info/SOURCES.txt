@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+mdoc/__init__.py
+mdoc/mdoc.py
+mdoc.egg-info/PKG-INFO
+mdoc.egg-info/SOURCES.txt
+mdoc.egg-info/dependency_links.txt
+mdoc.egg-info/entry_points.txt
+mdoc.egg-info/requires.txt
+mdoc.egg-info/top_level.txt

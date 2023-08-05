@@ -1,0 +1,12 @@
+# Versioneer
+include versioneer.py
+
+#
+recursive-include harvesters/_private/frontend/image *.py *.jpg *.png
+
+global-exclude __pycache__
+global-exclude *.py[co]
+
+# Misc
+include LICENSE
+include README.rst

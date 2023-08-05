@@ -1,0 +1,3 @@
+[console_scripts]
+distinfo = distinfo.cli:main
+

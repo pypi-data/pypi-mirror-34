@@ -1,0 +1,12 @@
+goodconf/__init__.py,sha256=uxFtmoEBTWyUjT0pZYnMpcXQHxkMoSmS4UoRMFYMv9w,5096
+goodconf/base.py,sha256=iyBBOXi3zT0RjUpeHPfEQ6vFun_0toEmxZx4nlsp9Jc,1614
+goodconf/values.py,sha256=oQS9KvpoVMjozvos418y2ynMC7m_VxFVnDs55Pi3-d8,3520
+goodconf/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodconf/contrib/argparse.py,sha256=ByK9PzczV6oxR7V0GVL8P5J87_uxsx8zt91XCuCsBXw,586
+goodconf/contrib/django.py,sha256=m8DbilDq4bWqL1djZoFoY3mx9YVVkFmn-I9XEFKvHY0,1386
+goodconf-1.0.0.dist-info/DESCRIPTION.rst,sha256=spkdWn7Ic1PoEn3FRhtmjUdm5OUn6LEnxP-9kRSt7iU,5050
+goodconf-1.0.0.dist-info/METADATA,sha256=KRiznYeb4YxhyBiW5_0vmpYbgzZhrp4j2DN39XC1RfI,6234
+goodconf-1.0.0.dist-info/RECORD,,
+goodconf-1.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+goodconf-1.0.0.dist-info/metadata.json,sha256=ykBLHAjw9jV8zpt3wYd_8Pp_6L8mfRD8rcTs6PJKi6c,1144
+goodconf-1.0.0.dist-info/top_level.txt,sha256=1S6-cC65qVxan0pu0QKsSDDJDusfrUMgyAwtP_yDfaQ,9

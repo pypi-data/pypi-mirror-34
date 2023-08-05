@@ -1,0 +1,3 @@
+[console_scripts]
+fb2feed = fb2feed:main
+

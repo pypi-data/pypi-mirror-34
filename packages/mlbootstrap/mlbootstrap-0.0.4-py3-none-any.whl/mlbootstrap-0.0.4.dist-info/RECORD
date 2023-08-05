@@ -1,0 +1,11 @@
+mlbootstrap/__init__.py,sha256=Yg-BI1kn3L2m8toU3ZBWpN-zxdHl3izOx5EUVWlOevg,33
+mlbootstrap/base.py,sha256=TULsHRXkxBWVFFQc0oxdJ70o3BuyuY4--f8W0HL0KKw,2264
+mlbootstrap/bootstrap.py,sha256=ZHfpZwwbUbbNJwgEOG8UY1lRCM-qU1kByeYDxPvgMRU,3479
+mlbootstrap/fetch.py,sha256=4VYVK3-DoDLJcT-F0uRDLdOru8PX4NNIdCMt89_N9wQ,692
+mlbootstrap/model.py,sha256=0pg-A9Ngdw8vHlHFd0VRbVUznMz7GQflXjElNuRQBs0,1158
+mlbootstrap/nlp.py,sha256=iobZeBKHNcVdqDk8dIDXm5DRzfJpyRlVNViqbtkZTe4,6684
+mlbootstrap/preprocess.py,sha256=kyL31xoU7IDZxVZPC1y4UnV66-SEOt0bmqAV7paLFn0,1134
+mlbootstrap-0.0.4.dist-info/METADATA,sha256=6vQWtMaRXVPqsxMsIySk0qIkJKHEaTZQ_kIbCXM9040,315
+mlbootstrap-0.0.4.dist-info/RECORD,,
+mlbootstrap-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+mlbootstrap-0.0.4.dist-info/top_level.txt,sha256=J-woijCuXt7ioZBxfhLjPL2r0PH88OikVK8rNw5MH54,12

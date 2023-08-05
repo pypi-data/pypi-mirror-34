@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mlbootstrap
+Version: 0.0.4
+Summary: A tiny bootstrap toolkit for deep learning
+Home-page: http://github.com/Luolc/MLBootstrap
+Author: Liangchen Luo
+Author-email: luolc.witty@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: fire (==0.1.1)
+
+UNKNOWN
+
+

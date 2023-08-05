@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE
+include templates/bootstrap/*.js
+include templates/bootstrap/*.css

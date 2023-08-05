@@ -1,0 +1,13 @@
+README.md
+setup.py
+conflateddict/__init__.py
+conflateddict/batchdict.py
+conflateddict/conflateddict.py
+conflateddict/lambdadict.py
+conflateddict/meandict.py
+conflateddict/modedict.py
+conflateddict/ohlcdict.py
+conflateddict.egg-info/PKG-INFO
+conflateddict.egg-info/SOURCES.txt
+conflateddict.egg-info/dependency_links.txt
+conflateddict.egg-info/top_level.txt

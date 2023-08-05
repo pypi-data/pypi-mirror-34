@@ -1,0 +1,12 @@
+README.md
+setup.py
+module_scripts/__init__.py
+module_scripts/command_line.py
+module_scripts/module_starter_main.py
+module_starter_cli.egg-info/PKG-INFO
+module_starter_cli.egg-info/SOURCES.txt
+module_starter_cli.egg-info/dependency_links.txt
+module_starter_cli.egg-info/entry_points.txt
+module_starter_cli.egg-info/not-zip-safe
+module_starter_cli.egg-info/requires.txt
+module_starter_cli.egg-info/top_level.txt

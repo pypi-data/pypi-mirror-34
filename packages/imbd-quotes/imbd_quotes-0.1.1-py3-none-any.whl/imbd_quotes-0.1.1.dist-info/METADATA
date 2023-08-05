@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: imbd-quotes
+Version: 0.1.1
+Summary: Retrieve quotes from any IMBD page.
+Home-page: https://github.com/guilhembn/python-imbdquotes
+Author: Guilhem Bn.
+Author-email: buisanguilhem@gmail.com
+License: MIT
+Download-URL: https://github.com/guilhembn/python-imbdquotes/archive/0.1.1.tar.gz
+Keywords: quotes,IMBD,python,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+

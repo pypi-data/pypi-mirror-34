@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: itachip2ir
+Version: 1.3.9
+Summary: A small Python module for interacting with the Global Cache iTach WF2IR or IP2IR
+Home-page: https://github.com/thehappydinoa/itachip2ir
+Author: Aidan Holland (thehappydinoa)
+Author-email: thehappydinoa@gmail.com
+License: UNKNOWN
+Project-URL: Contribute!, https://github.com/thehappydinoa/itachip2ir/pulls
+Project-URL: Follow Me!, https://twitter.com/thehappydinoa/
+Project-URL: Bug Reports, https://github.com/thehappydinoa/itachip2ir/issues
+Project-URL: Say Thanks!, http://saythanks.io/to/thehappydinoa
+Keywords: itach ip2ir Global Cache ir smart-home
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+==========
+itachip2ir
+==========
+.. image:: https://travis-ci.org/thehappydinoa/itachip2ir.svg?branch=master
+    :target: https://travis-ci.org/thehappydinoa/itachip2ir
+
+A small module for interacting with the Global Caché iTach WF2IR or IP2IR
+
+==========
+How To Use
+==========
+.. code-block:: python
+
+  from itachip2ir import VirtualDevice, iTach
+
+  commands = {
+    "toggle_power": "sendir,1:3,1,40192,1,1,97,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,529,96,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,528,96,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,553,97,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,554,97,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,554,97,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,554,97,23,49,23,25,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,25,23,49,23,49,23,25,23,49,23,25,23,25,23,25,23,49,23,49,23,49,4000"
+  }
+
+  itach = iTach(ipaddress="192.168.1.111", port=4998)
+  blueray = itach.add(VirtualDevice(
+    name="blueray", commands=commands))
+
+
+  if __name__ == "__main__":
+    print(blueray.toggle_power())
+
+
+Check the ``examples/`` folder for more
+
+`The source for this project is available here
+<https://github.com/thehappydinoa/itachip2ir>`_.
+
+

@@ -1,0 +1,16 @@
+channels_redux/__init__.py,sha256=DohhZ5s-eGYNCjYmFKzNsYje9-GBfu6FznmlZpbo7FE,63
+channels_redux/apps.py,sha256=nCtcPo_rERCfKkGN6lglN7nl4vcAwBPeRRK9j3a7gwA,216
+channels_redux/notify.py,sha256=S3FO4ISmMLTuQ7kq2CG8FeV9E0LF13z9ksqDyOsGcIU,3656
+channels_redux/rest.py,sha256=__fMVl0tE7a09bolFvil2Fhs2f12J8ci00AiEyM7bUo,5360
+channels_redux/settings.py,sha256=VU8bIdcfTxbwl2h0WEs9AB4gEm2wxm6VRC4vtDuE6Do,100
+channels_redux/signals.py,sha256=TRAda7Itz0hLK6U75YohFMChJx76mk_gX1kpmElBgZ4,792
+channels_redux/views.py,sha256=Kp3xh_uvS7f0ZqpAtQN8l5qpdO5dnlQS_tEO-HbJi7w,6268
+channels_redux/templates/react/react_full.html,sha256=6ezbN4ZKKSwH8HXAdlXQ-MD_984GwL-t4A4SvnsEitw,78
+channels_redux/templates/react/react_root.html,sha256=adqnjxhtdMPfG_XB1bwsklymrwUeQD6iFSvTGrB12cY,114
+channels_redux/templates/react/react_scripts.html,sha256=4_fUC1d1f74-bJW1OFKqTqFGWF0QwUQdZW_qIApaoyg,253
+channels_redux/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+channels_redux/templatetags/react.py,sha256=e5KkcxGB1jatMQNUrYC3MgtlXhGeUI-fNlmkFLb1bQ0,656
+channels_redux-1.4.dist-info/METADATA,sha256=kxZFCmseItdeFIGkrGL4UAZJ-5AIAKrohrdrWiMoio8,3979
+channels_redux-1.4.dist-info/RECORD,,
+channels_redux-1.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+channels_redux-1.4.dist-info/top_level.txt,sha256=QHd9kZfmolfr-p_-ruIN5dpuH0AD_c8n6eSkNIUvzS0,15

@@ -1,0 +1,9 @@
+README.md
+setup.py
+easyparse/__init__.py
+easyparse/easyparse.py
+easyparse/terminal_colors.py
+easyparse.egg-info/PKG-INFO
+easyparse.egg-info/SOURCES.txt
+easyparse.egg-info/dependency_links.txt
+easyparse.egg-info/top_level.txt

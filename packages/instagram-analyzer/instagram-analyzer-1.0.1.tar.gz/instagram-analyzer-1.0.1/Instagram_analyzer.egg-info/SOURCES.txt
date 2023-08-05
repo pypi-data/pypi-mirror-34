@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Instagram_analyzer.egg-info/PKG-INFO
+Instagram_analyzer.egg-info/SOURCES.txt
+Instagram_analyzer.egg-info/dependency_links.txt
+Instagram_analyzer.egg-info/requires.txt
+Instagram_analyzer.egg-info/top_level.txt
+instagram_analyzer/__init__.py
+instagram_analyzer/app.py
+instagram_analyzer.egg-info/PKG-INFO
+instagram_analyzer.egg-info/SOURCES.txt
+instagram_analyzer.egg-info/dependency_links.txt
+instagram_analyzer.egg-info/requires.txt
+instagram_analyzer.egg-info/top_level.txt

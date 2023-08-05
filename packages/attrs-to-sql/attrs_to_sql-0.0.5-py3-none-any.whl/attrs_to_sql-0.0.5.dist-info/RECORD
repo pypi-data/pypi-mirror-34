@@ -1,0 +1,11 @@
+attrs_to_sql/__init__.py,sha256=w6QSt4eebMzUBqrr9CIQwTQ-lhP69gk5n7JQW5e7-EI,35
+attrs_to_sql/table.py,sha256=PyN2tv0j8cmsD-xnDbeMs8Ko2diFIMCLEFzEZ5s3yjc,3609
+attrs_to_sql/utils.py,sha256=fCE2cMzTjqfOWOoePMGz9a7UBk8MKEV8YETJWvwWyIs,564
+attrs_to_sql/templates/create_table.sql,sha256=mcfZ_BqcoFEQ9yrBlbbh7xp_lpNg0j8WsAWtc6bjD7o,143
+attrs_to_sql-0.0.5.dist-info/METADATA,sha256=Fx0B8rWJS1Hn9SLxjNol5WEhTvouiqNCDlPoI2gy0R0,1126
+attrs_to_sql-0.0.5.dist-info/RECORD,,
+attrs_to_sql-0.0.5.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+attrs_to_sql-0.0.5.dist-info/top_level.txt,sha256=D4KBKuX3YidcmWPMvKM4m791OF_1hHn4nuJEn9vseho,19
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_table.py,sha256=LQii3eAOvfHOYjckdZ7TbnIc1z8wfUMKpWHebB96q3M,836
+tests/test_utils.py,sha256=hTZN2rvGQ-l4JLR2arW42KaVtievm5x-krT6IKmnQTk,765

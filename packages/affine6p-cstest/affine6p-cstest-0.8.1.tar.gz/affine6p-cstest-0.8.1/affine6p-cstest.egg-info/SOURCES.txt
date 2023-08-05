@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+affine6p-cstest/__init__.py
+affine6p-cstest/estimate.py
+affine6p-cstest/transform.py
+affine6p-cstest.egg-info/PKG-INFO
+affine6p-cstest.egg-info/SOURCES.txt
+affine6p-cstest.egg-info/dependency_links.txt
+affine6p-cstest.egg-info/top_level.txt

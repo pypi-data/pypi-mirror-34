@@ -1,0 +1,5 @@
+database: animals
+host:     localhost
+port:     5432
+user:     cp15
+password: a

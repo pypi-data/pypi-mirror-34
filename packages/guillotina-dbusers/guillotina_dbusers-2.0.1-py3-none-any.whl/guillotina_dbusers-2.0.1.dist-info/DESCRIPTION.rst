@@ -1,0 +1,86 @@
+.. contents::
+
+guillotina_dbusers
+==================
+
+Store users/groups in the database for guillotina.
+
+
+Installation
+------------
+
+- pip install guillotina_dbusers
+- add `guillotina_dbusers` to list of applications in your guillotina configuration
+- install into your container using the `@addons` endpoint
+
+
+Available content types:
+- User
+- Group
+
+Usage
+-----
+
+After installation, you will now have a `users` and `groups` folder inside
+your container.
+
+
+POST /db/container/users {
+  "@type": "User",
+  "username": "foobar",
+  "email": "foo@bar.com",
+  "password": "foobar"
+}
+
+
+You can now authenticate with the `foobar` user.
+
+
+
+Login
+-----
+
+Besides using default authentication mechanisms, this package also provides
+a `@login` so you can work with jwt tokens.
+
+POST /db/container/@login {
+  "username": "foobar",
+  "password": "foobar"
+}
+
+
+And a `@refresh_token` endpoint:
+
+    POST /db/container/@refresh_token
+
+2.0.1 (2018-07-19)
+------------------
+
+- Support both `username` and `login` as parameter for the `@login` endpoint
+  [ebrehault]
+
+
+2.0.0 (2018-07-19)
+------------------
+
+- Work with guillotina 4
+  [vangheem]
+
+
+1.0.1 (2017-10-08)
+------------------
+
+- Fix issues with user definition on latest guillotina
+  [vangheem]
+
+- Automatically configure
+  [vangheem]
+
+
+1.0.0 (2017-04-11)
+------------------
+
+- initial move to guillotina
+  [vangheem]
+
+

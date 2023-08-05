@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+simple_metrics/__init__.py
+simple_metrics/cli.py
+simple_metrics/export.py
+simple_metrics/fetch.py
+simple_metrics.egg-info/PKG-INFO
+simple_metrics.egg-info/SOURCES.txt
+simple_metrics.egg-info/dependency_links.txt
+simple_metrics.egg-info/entry_points.txt
+simple_metrics.egg-info/requires.txt
+simple_metrics.egg-info/top_level.txt

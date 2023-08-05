@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: diet
+Version: 0.1.6
+Summary: Dash Import Export Tool
+Home-page: UNKNOWN
+Author: Alexander Burgett
+Author-email: alex.burgett@sprga.com.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: dash-api-python-client
+Requires-Dist: dash-auth-python-client
+Requires-Dist: requests-oauthlib
+
+# DIET
+
+Dash Import Export Tool
+

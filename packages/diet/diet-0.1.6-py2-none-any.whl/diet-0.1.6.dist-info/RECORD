@@ -1,0 +1,14 @@
+diet/__init__.py,sha256=txTL913IAGOPK9cBe6kYPBnwX0mOjELja4Rb9ecNa38,13
+diet/__main__.py,sha256=k6HvgBKA6tdbehLRFGh19hEemaEvuxYTmLLPzZSOwxk,94
+diet/client_factory.py,sha256=dHnZCQ8I6bDc3LaeVcRPAllLbZzMoTDvsae6Rh5e62k,2070
+diet/configuration.py,sha256=VRmW6ZKPeUJhnlo8zOON_WK0vJScSytfJN7tSHPL3yY,1602
+diet/diet.py,sha256=ozQwubX49M4N1ePOUqYBZ-C-cQiwnTczLiOy79Z0gfo,1169
+diet/dash_import/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diet/dash_import/import_factory.py,sha256=q64opYUyeGYjLYABK97dxeTtQBXdyq1SI5SFB-4n2xM,377
+diet/dash_import/user.py,sha256=k6b4miEmczMNH8E3BfyKedgH7dB1lynB1_61j4UtnJk,3376
+diet/dash_import/user_org.py,sha256=XqqVzhUOgmcem2M-6GccgW--oaDfpmxhuBnBWSd-Xzk,2485
+diet-0.1.6.dist-info/METADATA,sha256=c8vH50-bFNYUrfnOsH1KYQjsucdLv8Mv7LCq0vVz3Pw,531
+diet-0.1.6.dist-info/RECORD,,
+diet-0.1.6.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+diet-0.1.6.dist-info/entry_points.txt,sha256=8cttoE0va2IcHfvbCBhsw2Ayxz4o7AZIIt7s2dg2lwM,45
+diet-0.1.6.dist-info/top_level.txt,sha256=AL-slxcyZJ30X2lekPIR7kMfBkLg-Z_-8E5yAv2n97w,5

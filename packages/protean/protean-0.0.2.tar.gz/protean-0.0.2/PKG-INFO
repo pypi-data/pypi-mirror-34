@@ -1,0 +1,80 @@
+Metadata-Version: 1.1
+Name: protean
+Version: 0.0.2
+Summary: Protean Application Framework
+Home-page: https://github.com/proteanhq/protean
+Author: Subhash Bhushan C
+Author-email: subhash@team8solutions.com
+License: BSD 3-Clause License
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        Protean Application Framework
+        
+        * Free software: BSD 3-Clause License
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install protean
+        
+        Documentation
+        =============
+        
+        https://protean.readthedocs.io/
+        
+        Development
+        ===========
+        
+        ::
+        
+            pyenv virtualenv -p python3.6 3.6.5 protean-dev
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.0.1 (2018-07-15)
+        ------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: OS/2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

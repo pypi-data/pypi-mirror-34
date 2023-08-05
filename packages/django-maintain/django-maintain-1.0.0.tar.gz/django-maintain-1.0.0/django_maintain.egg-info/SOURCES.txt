@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+django_maintain.egg-info/PKG-INFO
+django_maintain.egg-info/SOURCES.txt
+django_maintain.egg-info/dependency_links.txt
+django_maintain.egg-info/requires.txt
+django_maintain.egg-info/top_level.txt
+maintain/__init__.py
+maintain/middleware.py

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rppc
+Version: 0.1.0a1
+Summary: Reproducible Python Package Creator
+Home-page: UNKNOWN
+Author: Landung Setiawan
+Author-email: landungs@uw.edu
+Maintainer: Landung Setiawan
+Maintainer-email: landungs@uw.edu
+License: MIT
+Description: # rppc
+        
+        Reproducible Python Package Creator
+        
+        `rppc` provides a command line interface for creating a skeleton for a reproducible python package. The package structure here follow the standards and conventions of much of the scientific Python eco-system. With these standards and recommendations, others will be able to use your code, port your code into other projects, and collaborate with other users.
+        
+        The package created tries to follow University of Washington eScience Institute [Guidelines for Reproducible and Open Science](http://uwescience.github.io/reproducible/guidelines.html).
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Description-Content-Type: text/markdown

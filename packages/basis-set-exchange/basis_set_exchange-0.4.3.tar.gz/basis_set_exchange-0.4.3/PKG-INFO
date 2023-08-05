@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: basis_set_exchange
+Version: 0.4.3
+Summary: The Quantum Chemistry Basis Set Exchange
+Home-page: https://github.com/MolSSI-BSE/basis_set_exchange
+Author: The Molecular Sciences Software Institute
+Author-email: bpp4@vt.edu
+License: BSD-3C
+Description: 
+        This project is a library containing basis sets for use in quantum
+        chemistry calculations.  In addition, this library has functionality
+        for manipulation of basis set data.
+        
+        The goal of this project is to create a consistent, thoroughly curated
+        database of basis sets, and to provide a standard nomenclature for
+        quantum chemistry.
+        
+        The data contained within this library is being thoroughly evaluated
+        and checked against relevant literature, software implementations, and
+        other databases when available. The original data from the PNNL Basis
+        Set Exchange is also available.
+        
+        This project is a collaboration between the Molecular Sciences Software
+        Institute (http://www.molssi.org) and the Environmental Molecular Sciences
+        Laboratory (https://www.emsl.pnl.gov)
+        
+        The source repo is available at https://github.com/MolSSI-BSE/basis_set_exchange
+        
+        Documentation is available at https://molssi-bse.github.io/basis_set_exchange
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests

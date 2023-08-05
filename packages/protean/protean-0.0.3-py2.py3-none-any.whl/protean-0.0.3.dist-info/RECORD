@@ -1,0 +1,10 @@
+protean/__init__.py,sha256=fSQ5Ig0sqWZUiy6z9Rs4JQF1vkikAXFN5V3xoLhcIro,82
+protean/__main__.py,sha256=4_Nfdm7yc9APr7ZQdQPgHvWpvsj-SgFg01RiWKkKOV4,386
+protean/cli.py,sha256=w9YmFwUkGQFwfe24CDWQfBhHdpEE4vP9YWKbdWUjt-s,778
+protean/config.py,sha256=mywBjez1zOGXbEhXnHcNNqSLW0PxNjFd8fzCWFNeNz4,1007
+protean/entity.py,sha256=W1VF5yCuDVpmmHvPn_h517nk53cvyKlI5yVQaLVForU,3956
+protean-0.0.3.dist-info/METADATA,sha256=JJsJWWu2NDo-jw0TdkeX7zKUiEr6lWFunXZaR5rRzjk,1837
+protean-0.0.3.dist-info/RECORD,,
+protean-0.0.3.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+protean-0.0.3.dist-info/entry_points.txt,sha256=YuHamIvPZjD-IoUStVWQPJtDjNEEp66JiWYkc15eAz0,46
+protean-0.0.3.dist-info/top_level.txt,sha256=xg_dqwP0PhrGysKI0SPcbiiVeENnSFj-vrvGqBHxSI8,8

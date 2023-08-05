@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+boxgen/__init__.py
+boxgen.egg-info/PKG-INFO
+boxgen.egg-info/SOURCES.txt
+boxgen.egg-info/dependency_links.txt
+boxgen.egg-info/requires.txt
+boxgen.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: boxgen
+Version: 1.0.0
+Summary: Generate box designs, to print on card stock and cut out.
+Home-page: https://github.com/duckinator/boxgen
+Author: Ellen Marie Dash
+Author-email: me@duckie.co
+License: MIT
+Description: # boxgen
+        Generate images of box designs, to print on card stock and cut out.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.6

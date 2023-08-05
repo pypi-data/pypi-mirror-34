@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: convert-to-time
+Version: 0.0.1
+Summary: Convert from word to date in Python
+Home-page: https://github.com/duyleomessi/convert_to_time
+Author: Duy LD
+Author-email: duyleitbka95@gmail.com
+License: Apache 2.0
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+

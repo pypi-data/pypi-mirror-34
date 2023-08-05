@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: toquevee
+Version: 0.1.0
+Summary: convert jupyter notebook to Quiver notebook
+Home-page: https://github.com/wbydo/toquevee
+Author: wbydo
+Author-email: wbydo@users.noreply.github.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: nbconvert (>=5.3)
+Requires-Dist: traitlets (>=4.3)
+
+UNKNOWN
+
+

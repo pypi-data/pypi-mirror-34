@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+regru.ini
+setup.cfg
+setup.py
+certbot_regru/__init__.py
+certbot_regru/dns.py
+certbot_regru/dns_test.py
+certbot_regru.egg-info/PKG-INFO
+certbot_regru.egg-info/SOURCES.txt
+certbot_regru.egg-info/dependency_links.txt
+certbot_regru.egg-info/entry_points.txt
+certbot_regru.egg-info/requires.txt
+certbot_regru.egg-info/top_level.txt

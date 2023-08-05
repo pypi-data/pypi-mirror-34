@@ -1,0 +1,3 @@
+[console_scripts]
+transcoded = transcoded.__main__:main
+

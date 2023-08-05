@@ -1,0 +1,11 @@
+xmitgcm/__init__.py,sha256=sEMHU8v322c6x-JrMHUnaNLjnXwFNBjXpNracfWQ_7g,61
+xmitgcm/default_diagnostics.py,sha256=8TLxSnBSIFZRqBlE8jULeKqygXAlajFZNbVo6w-8bQI,30996
+xmitgcm/mds_store.py,sha256=dutEvXy24QrK9z6t8fVmFAyKkRcGxNNH93R_WHkjTCU,33480
+xmitgcm/utils.py,sha256=d26lh9-KUqb6NLWcCVj-9yzJ47j43tcd0zO4GEaaDQQ,20525
+xmitgcm/variables.py,sha256=X4Sdp38aAFeKY1fPgfSZB6IigfVsf1l82m6sh9lP82k,22607
+xmitgcm/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xmitgcm/test/test_mds_store.py,sha256=BfEEEG6Epb65x-CQRtNJvWE7DBxU8PzKh12LOQy6aJQ,33969
+xmitgcm-0.2.2.dist-info/METADATA,sha256=83zA3JgPMLQSFmEqh143HUMBzvXvTt_-2Gdhb47jxjY,5119
+xmitgcm-0.2.2.dist-info/RECORD,,
+xmitgcm-0.2.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+xmitgcm-0.2.2.dist-info/top_level.txt,sha256=nXwYQXzKvCp9w1sE8dyaa4H8qsovCIygxh2cuO4Xbrk,8

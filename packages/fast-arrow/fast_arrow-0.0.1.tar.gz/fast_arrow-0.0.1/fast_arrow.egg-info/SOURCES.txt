@@ -1,0 +1,9 @@
+README.md
+setup.py
+fast_arrow/__init__.py
+fast_arrow/cli.py
+fast_arrow.egg-info/PKG-INFO
+fast_arrow.egg-info/SOURCES.txt
+fast_arrow.egg-info/dependency_links.txt
+fast_arrow.egg-info/entry_points.txt
+fast_arrow.egg-info/top_level.txt

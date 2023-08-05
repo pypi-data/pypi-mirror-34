@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fast-arrow
+Version: 0.0.1
+Summary: API client for Robinhood
+Home-page: https://github.com/westonplatter/fast_arrow/
+Author: Weston Platter
+Author-email: westonplatter@gmail.com
+License: UNKNOWN
+Description: # fast_arrow - API client for RH
+        Simple, humble, and direct API client for Robinhood
+        
+        <hr/>
+        WARNING - THIS IS UNDER ACTIVE DVELOPMENT (pre alpha). USE AT YOUR OWN
+        RISK.
+        <hr/>
+        
+        
+        ## install
+        
+        ## example
+        
+        ## philosophy
+        
+        ## development
+        
+        ## license
+        See LICENSE file.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

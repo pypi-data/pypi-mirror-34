@@ -1,0 +1,12 @@
+README.md
+setup.py
+active_learning/__init__.py
+active_learning/classifier.py
+active_learning/datasets.py
+active_learning/labeler.py
+active_learning/rich_feedback.py
+active_learning/utils.py
+active_learning.egg-info/PKG-INFO
+active_learning.egg-info/SOURCES.txt
+active_learning.egg-info/dependency_links.txt
+active_learning.egg-info/top_level.txt

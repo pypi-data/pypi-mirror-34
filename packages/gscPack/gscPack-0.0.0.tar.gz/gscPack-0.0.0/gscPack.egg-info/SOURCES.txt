@@ -1,0 +1,7 @@
+setup.py
+gscPack/__init__.py
+gscPack/gscPack.py
+gscPack.egg-info/PKG-INFO
+gscPack.egg-info/SOURCES.txt
+gscPack.egg-info/dependency_links.txt
+gscPack.egg-info/top_level.txt

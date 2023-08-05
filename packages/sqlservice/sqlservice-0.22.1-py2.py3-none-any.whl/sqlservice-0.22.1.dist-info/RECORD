@@ -1,0 +1,13 @@
+sqlservice/__init__.py,sha256=qlCCMQAgdFAeZDPBJTUHyK7VrOPHmbreEcm_fvOKDcU,275
+sqlservice/__version__.py,sha256=XmuOcT33vFTcNxa7gY7KXv4NArpbOF75MnAHu643D6g,84
+sqlservice/_compat.py,sha256=dhCq3FJFybVmsd92p5yEi6cwpqGYuZbx2xnh-aeIGh4,689
+sqlservice/client.py,sha256=TSoHbGcW218DH7ocA8UOeyL-9mK1C73GcjudtnZOGCQ,27940
+sqlservice/core.py,sha256=Cg6f-tOpfwRd-CO3Zsojn5j7HJDi78wlyaUJ56rMNBg,15388
+sqlservice/event.py,sha256=L-ZjYYMOjxC1jp9o4ONl_4mux-x4lauTI-rFEZmzWlo,5017
+sqlservice/model.py,sha256=ao7NDDO9Q_e0tWMucnaK-Zotm8fBhMwE7Y9zQ-j8pG8,12688
+sqlservice/query.py,sha256=ht1E6tjl6f5ozPvJhoLVL0eZtyybSFA4sRevNj86AwQ,11186
+sqlservice/utils.py,sha256=6XO65_QjmeWgpq7N3-rOcp3RdGA1MzXX4e_DJanPcO4,996
+sqlservice-0.22.1.dist-info/METADATA,sha256=B65tJ-3lLSCUsdLPcB7DuZ_fpPqys9_pZOq3s_m-Z4Y,25000
+sqlservice-0.22.1.dist-info/RECORD,,
+sqlservice-0.22.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+sqlservice-0.22.1.dist-info/top_level.txt,sha256=ctgc6jAehOzigwQWmZLjU2gf2K1P7rRxqI4_J0IhdX4,11

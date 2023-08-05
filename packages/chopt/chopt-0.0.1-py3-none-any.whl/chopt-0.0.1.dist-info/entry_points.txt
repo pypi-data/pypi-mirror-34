@@ -1,0 +1,3 @@
+[console_scripts]
+chopt = chopt.__main__:main
+

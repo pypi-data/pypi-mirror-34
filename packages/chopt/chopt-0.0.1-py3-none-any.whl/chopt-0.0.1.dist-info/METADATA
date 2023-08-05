@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: chopt
+Version: 0.0.1
+Summary: Choose options from a list
+Home-page: https://github.com/tslight/chopt
+Author: Toby Slight
+Author-email: tobyslight@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# CHOOSE OPTIONS
+
+*A simple CLI menu interface for choosing options.*
+
+Takes a list of options as an argument and returns a list of selected items from
+that list.
+
+Options are chosen by entering their corresponding number, or using
+wildcards/globbing to match entries.
+
+

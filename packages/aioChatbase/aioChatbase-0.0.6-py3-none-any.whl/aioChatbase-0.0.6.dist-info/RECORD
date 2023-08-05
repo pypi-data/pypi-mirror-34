@@ -1,0 +1,14 @@
+aioChatbase-0.0.6.dist-info/METADATA,sha256=V0ExJwQFBuzuoewucrpJvRyd2eZGF61Je_L-zE5bLvk,2074
+aioChatbase-0.0.6.dist-info/RECORD,,
+aioChatbase-0.0.6.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aioChatbase-0.0.6.dist-info/top_level.txt,sha256=zlF4UroYnHnnQDd93SzW1Z4V7CpuTpJb0ewuLy54oKo,12
+aiochatbase/__init__.py,sha256=qWDOiYiWdmSnqJGBukIrILs3lGOFKsejxovdHBjtgdI,53
+aiochatbase/chatbase.py,sha256=V_hjwHF_VAHrAVfH9tjjPkXipjFogsG8mw-7fL9F3ys,8734
+aiochatbase/types/__init__.py,sha256=zpWgEJsPuH8kMbrU5lg7HMjRK5mIOAzroURN0-J9P9k,173
+aiochatbase/types/basic.py,sha256=m1V5YvmzREvinJnT87SOXtznfcc3UKtlwws_W2FMVlQ,1247
+aiochatbase/types/click.py,sha256=PYZH-usa-d5kKZeVZgQQ01_W0y-uWcN_oKEcWj4c2tc,1817
+aiochatbase/types/errors.py,sha256=TZDMOZ5QXHUEJwB9jInaMifqvpT1TSrQ5Xhdlcx2l_E,641
+aiochatbase/types/event.py,sha256=yB0jg6sgxvtDTFjdWlZnlMglBJZq6PPS88SdV_he3vI,1830
+aiochatbase/types/message.py,sha256=RLO1oqXFr-TlaGBCBJ9TQqbA6SgnsJwewSLNfw3IZZQ,6329
+aiochatbase/types/message_types.py,sha256=RuVmKU5g3ADFXaHiDrfCIXN0m2SNL4O9sz2sF9FPUHE,58
+aiochatbase/types/property.py,sha256=7NiR1QXoKJK-CxIVSakmzEWEdQg80nt0cd64UbG4ocM,1109

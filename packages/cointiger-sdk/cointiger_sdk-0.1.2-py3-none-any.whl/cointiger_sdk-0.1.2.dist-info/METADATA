@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cointiger-sdk
+Version: 0.1.2
+Summary: sdk for cointiger exchange, containd rest api and websocket api
+Home-page: https://github.com/jianglijie/cointiger-python.git
+Author: jianglijie
+Author-email: jianglj@jianglijie.net
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: websocket-client
+
+UNKNOWN
+
+

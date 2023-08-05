@@ -1,0 +1,14 @@
+pantsbuild.pants.contrib.thrifty-1.9.0rc1-py2.7-nspkg.pth,sha256=Z8f5XLu3ssp+GY0MClu8bx+WYQP3Tt01B0infLQ8bHo=,1132
+pants/contrib/thrifty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/thrifty/java_thrifty_gen.py,sha256=X2No0Vk2gRzx6r4o3vBJS27SVkB4H0_CZMpKPslnyKY,3394
+pants/contrib/thrifty/java_thrifty_library.py,sha256=5SwMx8RUjizsNvEwpKej_MKebl1bnqN3i_nPuV8DPAs,691
+pants/contrib/thrifty/register.py,sha256=kiXr3QLqR11Cjes8WrQFeto23JrHQdOuw3wjAFuuHAw,712
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/DESCRIPTION.rst,sha256=oIUa7xrpom29zmscm5y5DDtiqaVoABqpGqpLmYEuXUs=,14331
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/METADATA,sha256=WTe6xXxFCjjmB8QtDb3tnCgS323n6yQCksajohpKBN8=,15019
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/RECORD,,
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/WHEEL,sha256=HeRoWS7ius0A3s57FTPBUxoE7B2vUyiPaLp98AUBVmc=,93
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/entry_points.txt,sha256=6MOtVUgLjxF0oodbtf/iOp/WlTSJWN5PEgP5SMo357A=,155
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/metadata.json,sha256=7TJkQgaYzw5O7A5bNrzfOSMIWAaRmgTQjYVhXUKIBLs=,976
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.thrifty-1.9.0rc1.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1

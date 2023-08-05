@@ -1,0 +1,3 @@
+libhds_v4_la-dat1_decoy.lo: dat1_decoy.c config.h
+
+config.h:

@@ -1,0 +1,11 @@
+certbot_regru/__init__.py,sha256=9jAXQeQO2mlWSNLqzUHY4-MQYM5To2ycUx2AysLMz4I,72
+certbot_regru/dns.py,sha256=CTDDb_OmbedEKkVTag8Wg7qHmmqVckkd0NhlFmmHOF4,5976
+certbot_regru/dns_test.py,sha256=yZWA30n_ikciku_c3_l1xw7PlH2oRRfXloCOjJbIf1E,6160
+certbot_regru-1.0.1.dist-info/DESCRIPTION.rst,sha256=0pnTrYxclPE8jO7mivtY6Qs_2L2dNQ8D39_THzkOSsk,1656
+certbot_regru-1.0.1.dist-info/METADATA,sha256=WVvk2us24nf-7BfgjjtI3PPZDcKo88UOv_14GgAWQ9Y,3000
+certbot_regru-1.0.1.dist-info/RECORD,,
+certbot_regru-1.0.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+certbot_regru-1.0.1.dist-info/entry_points.txt,sha256=xcoPoO1Zx80N0rZWNKnAkE6L4aYjL623VO_Jp0Tlg3M,57
+certbot_regru-1.0.1.dist-info/metadata.json,sha256=zB5bXcYMkHFfYC1GCcoDtzQ0fcDlnYvKILcJ-23sL3k,1454
+certbot_regru-1.0.1.dist-info/top_level.txt,sha256=HdFYapLcIPNvUK7mgVbxVms-Cj4QW8pUlzankN-ViLw,14
+etc/letsencrypt/regru.ini,sha256=yyGm5Hm6j9ukqOfDVrk25u_rhkMzP6j0_9FpkNMrRzA,64

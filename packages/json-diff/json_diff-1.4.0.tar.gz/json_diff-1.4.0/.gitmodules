@@ -1,0 +1,6 @@
+[submodule "xdiff/UM-J"]
+	path = xdiff/UM-J
+	url = https://gitlab.com/mcepl/UM-J.git
+[submodule "xdiff/UM-C"]
+	path = xdiff/UM-C
+	url = https://gitlab.com/mcepl/UM-C.git

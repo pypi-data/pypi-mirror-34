@@ -1,0 +1,11 @@
+README.md
+setup.py
+alfred_rfc/__init__.py
+alfred_rfc/rfc_list.json
+alfred_rfc/search.py
+alfred_rfc.egg-info/PKG-INFO
+alfred_rfc.egg-info/SOURCES.txt
+alfred_rfc.egg-info/dependency_links.txt
+alfred_rfc.egg-info/entry_points.txt
+alfred_rfc.egg-info/requires.txt
+alfred_rfc.egg-info/top_level.txt

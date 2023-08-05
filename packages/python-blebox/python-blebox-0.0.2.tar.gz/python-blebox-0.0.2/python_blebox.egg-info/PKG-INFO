@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: python-blebox
+Version: 0.0.2
+Summary: Python API for interacting with Blebox smart devices
+Home-page: https://github.com/zen/python-blebox
+Author: Tomasz Zen Napierala
+Author-email: tomasz@napierala.org
+License: Apache 2.0
+Description: # python-blebox
+        Python API for Blebox smart devices
+        
+        # Supported devices
+        
+        # wLightBoxS LED controller
+        
+        First supported device
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Classifier: Topic :: Home Automation

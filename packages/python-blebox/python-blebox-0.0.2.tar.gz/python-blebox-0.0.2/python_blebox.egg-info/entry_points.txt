@@ -1,0 +1,3 @@
+
+    [console_scripts]
+    blebox=pyblebox.cli:main

@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+boosted_trees/__init__.py
+boosted_trees.egg-info/PKG-INFO
+boosted_trees.egg-info/SOURCES.txt
+boosted_trees.egg-info/dependency_links.txt
+boosted_trees.egg-info/entry_points.txt
+boosted_trees.egg-info/requires.txt
+boosted_trees.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+tensionflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensionflow/cli.py,sha256=JPBojUChIWRtkaNeyeCstr6ckGvLJBBFHk1qQSya7g4,269
+tensionflow/datasets/__init__.py,sha256=pdNBrK9ZQst_vOQyoR1W_NRKuCBLIIkmuxvLa2Uyp8o,7298
+tensionflow/datasets/fma.py,sha256=RcLC7Lb4YrtWfylnmOJ0TLQuKsOlgDpPKw9IdDEW8jI,4600
+tensionflow/datasets/nsynth.py,sha256=L4HPnLe3-CyIvdxWgP6innh0_nd9vC6nOR5LZwP1AEo,1080
+tensionflow/feature.py,sha256=bsB9ptu7TzF9ivPeFn7rzUVTC3mLrhnAZ68_0PsOKXE,3772
+tensionflow/model/__init__.py,sha256=eHmfBj3fQSSCbVxVXqDADXgEhOTbF0XZnVG9b_G6_GM,125
+tensionflow/model/base.py,sha256=b9JDOd3VPETEJPKCePJbHluPblbqRGdWwpXEWtMk4Cw,13717
+tensionflow/model/basemodel.py,sha256=UfJyesFjSDrVogCWAgzauZuwXo-r7IATGebDsVl73ck,13640
+tensionflow/processing.py,sha256=LxBx6kxVe4tNS1Vu0M--h0NAn_kGMJiJtiGbsuDt1n0,1131
+tensionflow/util.py,sha256=gtYWn47dai3Xyz3V1Cmo7sKbCKPmCE_UfwS2xbjARSQ,2456
+tensionflow-0.1.0.dist-info/entry_points.txt,sha256=dS3Zl6t8fwubOiafKbrZp8NJvkFYHUzzGUL8GKmg5e8,51
+tensionflow-0.1.0.dist-info/LICENSE,sha256=sxZ2ynT97m3IXvWXGQAINquGvLxwoxekL1qYr8WuuYQ,35164
+tensionflow-0.1.0.dist-info/WHEEL,sha256=_1DGqhNrRvPmbcGkwlbLg1-86quvQ6lln1WnjsgJHQA,84
+tensionflow-0.1.0.dist-info/METADATA,sha256=ZuT6QHx4uBuG00hTKQnk-4r2rOTop_FHAJD2RZC9afg,2446
+tensionflow-0.1.0.dist-info/RECORD,,

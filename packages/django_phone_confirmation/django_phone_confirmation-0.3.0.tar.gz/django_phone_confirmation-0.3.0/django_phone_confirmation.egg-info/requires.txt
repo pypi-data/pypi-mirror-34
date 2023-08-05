@@ -1,0 +1,3 @@
+django_rest
+django-sendsms==0.3.1
+django-phonenumber-field==2.0.0

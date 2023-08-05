@@ -1,0 +1,6 @@
+mara-config>=0.2.0
+click
+
+[test]
+pytest
+pytest_click

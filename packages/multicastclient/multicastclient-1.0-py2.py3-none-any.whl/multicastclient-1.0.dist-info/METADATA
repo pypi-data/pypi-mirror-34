@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: multicastclient
+Version: 1.0
+Summary: UDP multicast brokerless messaging system
+Home-page: https://github.com/MickMack1983/multicastclient.git
+Author: Mikael Magnusson
+Author-email: mikael.m.magnusson@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Keywords: broker brokerless messaging udp multicast publish subscribe request reply
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+

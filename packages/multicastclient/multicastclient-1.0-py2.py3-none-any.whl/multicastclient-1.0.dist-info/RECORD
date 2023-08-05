@@ -1,0 +1,10 @@
+multicastclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multicastclient/client.py,sha256=QuFzRy6843930W6kz38quKhs99FGJ6OXO7SdiqZJ4oc,14226
+multicastclient/minimal.py,sha256=6djW0168uTSBSIkPjdWQder9VV5OF6NUaBw4v6X9wys,823
+multicastclient/multicasting.py,sha256=ci-bKu8vfBC9zgijehqX6vKvavtqKGi4Krz833tPA5w,3688
+multicastclient/tiipclient.py,sha256=EmytnSZAojiXr1GE1XaskNlFzWWBnDOuaOvEme_9_7I,4963
+multicastclient-1.0.dist-info/LICENSE.txt,sha256=gKYDRM4uN80tZ0x-zmlCq1TRylwFAPEUWGtG0OS4YHY,1083
+multicastclient-1.0.dist-info/METADATA,sha256=hiviDUTJKHhWymBS6oUo_l2pw_S14k99s_8CIOgmE80,937
+multicastclient-1.0.dist-info/RECORD,,
+multicastclient-1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+multicastclient-1.0.dist-info/top_level.txt,sha256=LfpsfCF9xxvO_7wvZhkLJCjCGiRc-8h-MIqDhmDmA1g,16

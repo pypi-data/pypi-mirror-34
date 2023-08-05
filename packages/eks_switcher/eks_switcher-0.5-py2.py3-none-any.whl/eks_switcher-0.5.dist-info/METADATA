@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: eks_switcher
+Version: 0.5
+Summary: A CLI utilitiy for for swapping your Kubernetes config amongst different 
+Home-page: https://github.com/JoshArmi/EKSClusterSwitcher
+License: UNKNOWN
+Author: Josh Armitage
+Author-email: josh.armitage@outlook.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: jinja2

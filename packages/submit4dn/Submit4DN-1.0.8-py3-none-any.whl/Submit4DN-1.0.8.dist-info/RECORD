@@ -1,0 +1,10 @@
+Submit4DN-1.0.8.dist-info/METADATA,sha256=xdC7yKr1DUbdqbL8YXc9fQ9ngMidFur2pUo5lrBuukg,1099
+Submit4DN-1.0.8.dist-info/RECORD,,
+Submit4DN-1.0.8.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+Submit4DN-1.0.8.dist-info/entry_points.txt,sha256=2t8eqUWK_pVdgn2Zd4vYF3i2Bq7DW3oCytIlTd-2LpE,148
+Submit4DN-1.0.8.dist-info/top_level.txt,sha256=I7r8zCSTsRBmvqr2HWRxqbVjPm9FzdXRgVQEkiMDSRk,14
+wranglertools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wranglertools/_version.py,sha256=fd-fr5gF542orQ41UbXlNezJf38yNzhoag10G84yvg8,127
+wranglertools/fdnDCIC.py,sha256=75iN-KLU_5_s8dZh1dXaD_t4RJOlgzDmnuMBuQ2V1NY,11611
+wranglertools/get_field_info.py,sha256=LiRFX79UdDJVPSbRARSRBLL2hRyV4pDWpdA4NEY7e-M,17337
+wranglertools/import_data.py,sha256=2JuATWUmnQTQUqWm7g0KmD5fZZ0qO4yQcXGaRy3X-vU,58069

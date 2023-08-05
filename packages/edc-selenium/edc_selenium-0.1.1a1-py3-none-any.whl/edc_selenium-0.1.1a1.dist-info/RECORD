@@ -1,0 +1,12 @@
+edc_selenium/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_selenium/settings.py,sha256=fIj1RyGr3nJWXLYFvHjigzwmYQUzfepYRLVCdF-X-po,3126
+edc_selenium/tests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_selenium/urls.py,sha256=zzf5BZMxRGnj9O7JAIbTZfGsOoHJGq4KFldiaAlT5Qs,754
+edc_selenium/wsgi.py,sha256=fIHUDBS0nLWu1AuZpPlnD6sUUZ57QJttlLWh2nGjtPI,401
+edc_selenium/mixins/__init__.py,sha256=gKNKZOQhpGSeB04iqwE2rmc0f5vGyGxA_5hn3_9rlb8,115
+edc_selenium/mixins/selenium_login_mixin.py,sha256=MvTW1wCDcl_UY_TGGnGEt4GHvzfOz0gcWcal70M99W4,760
+edc_selenium/mixins/selenium_model_form_mixin.py,sha256=Ci0TIaXBim_fM6H3KoBpkyzHakFU8aVPk1oQiCDA5sM,5496
+edc_selenium-0.1.1a1.dist-info/METADATA,sha256=xPWH9tG7peGJ9P4slIZq4olbNzVVne8eNA9e3osExRE,1389
+edc_selenium-0.1.1a1.dist-info/RECORD,,
+edc_selenium-0.1.1a1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+edc_selenium-0.1.1a1.dist-info/top_level.txt,sha256=VRqxfJ1okbydKpZw7-s3h90Ddizmt5b1LUb6o9tikC8,13

@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-task-run = ecs_task_run:main
+

@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: alo7-airflow
+Version: 1.10.0.1
+Summary: Programmatically author, schedule and monitor data pipelines
+Home-page: http://airflow.incubator.apache.org/
+Author: Apache Software Foundation
+Author-email: dev@airflow.incubator.apache.org
+License: Apache License 2.0
+Download-URL: https://dist.apache.org/repos/dist/release/incubator/airflow/1.10.0.1
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: System :: Monitoring
+Provides-Extra: password
+Provides-Extra: vertica
+Provides-Extra: jdbc
+Provides-Extra: dask
+Provides-Extra: azure_blob_storage
+Provides-Extra: mssql
+Provides-Extra: postgres
+Provides-Extra: kerberos
+Provides-Extra: slack
+Provides-Extra: crypto
+Provides-Extra: redis
+Provides-Extra: emr
+Provides-Extra: mysql
+Provides-Extra: sendgrid
+Provides-Extra: druid
+Provides-Extra: cloudant
+Provides-Extra: datadog
+Provides-Extra: oracle
+Provides-Extra: all_dbs
+Provides-Extra: jira
+Provides-Extra: ldap
+Provides-Extra: pinot
+Provides-Extra: salesforce
+Provides-Extra: async
+Provides-Extra: all
+Provides-Extra: celery
+Provides-Extra: devel_hadoop
+Provides-Extra: doc
+Provides-Extra: s3
+Provides-Extra: winrm
+Provides-Extra: github_enterprise
+Provides-Extra: databricks
+Provides-Extra: hive
+Provides-Extra: cassandra
+Provides-Extra: statsd
+Provides-Extra: segment
+Provides-Extra: kubernetes
+Provides-Extra: samba
+Provides-Extra: gcp_api
+Provides-Extra: devel_ci
+Provides-Extra: cgroups
+Provides-Extra: qds
+Provides-Extra: devel
+Provides-Extra: azure_data_lake
+Provides-Extra: ssh
+Provides-Extra: snowflake
+Provides-Extra: elasticsearch
+Provides-Extra: atlas
+Provides-Extra: mongo
+Provides-Extra: docker
+Provides-Extra: hdfs
+Provides-Extra: webhdfs
+Provides-Extra: rabbitmq

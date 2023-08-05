@@ -1,0 +1,7 @@
+attrs==18.1.0
+click==6.7
+PyGithub==1.38
+PyJWT==1.6.1
+pyyaml==3.12
+requests==2.18.4
+ulogger==1.0.1

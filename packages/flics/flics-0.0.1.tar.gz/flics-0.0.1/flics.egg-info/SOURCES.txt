@@ -1,0 +1,13 @@
+README.md
+setup.py
+flics/__init__.py
+flics/flics.py
+flics/original_code.py
+flics.egg-info/PKG-INFO
+flics.egg-info/SOURCES.txt
+flics.egg-info/dependency_links.txt
+flics.egg-info/requires.txt
+flics.egg-info/top_level.txt
+flics/tests/__init__.py
+flics/tests/old_results_parser.py
+flics/tests/test_results.py

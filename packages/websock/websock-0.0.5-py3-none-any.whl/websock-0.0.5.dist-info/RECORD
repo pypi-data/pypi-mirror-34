@@ -1,0 +1,12 @@
+websock-0.0.5.dist-info/DESCRIPTION.rst,sha256=XwOjZ18hQRmTa4veTC3_1rb9noWmAeXIb6zCYxSLaKk,3365
+websock-0.0.5.dist-info/METADATA,sha256=VUdNfZFPquAjWX3xm8O7rvmJ5Bvs7gj2awV2xTp0-jg,3709
+websock-0.0.5.dist-info/RECORD,,
+websock-0.0.5.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+websock-0.0.5.dist-info/metadata.json,sha256=omkh3OAlpGl_Pmhl4w1gh9Gt5w-mYQhKFYFwfpTFZRg,551
+websock-0.0.5.dist-info/top_level.txt,sha256=8m_tTpcUlzWGl8v-pj5Wi7XhAFaN1_bLKRHQKCyz5_I,10
+websocket/DataFrameFormat.py,sha256=vEiZfuZq0_JhBHvf78mT1zMKnyMMJJEsoiptTyatjic,3440
+websocket/ExampleChatServer.py,sha256=r7_0bwfUR149S7H3a8mpD94D5xj1ru4zvj09CEU3_TI,567
+websocket/ExampleEchoServer.py,sha256=uNogjmN1HeoolfndFtW9KchCgKkmw1FPxbPeAikZKyI,912
+websocket/ServerException.py,sha256=PqLgsLTtgtnGbCxRCSuGkzBuOUNOmCOVLt9TKxnUTJ4,461
+websocket/WebSocketServer.py,sha256=xizXdU--ddJepH7-_a7iuIbq9N-Ek8R2d-Op-SCM-uo,10811
+websocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

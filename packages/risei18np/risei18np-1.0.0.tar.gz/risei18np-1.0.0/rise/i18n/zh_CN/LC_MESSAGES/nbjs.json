@@ -1,0 +1,106 @@
+{
+   "domain": "nbjs",
+   "locale_data": {
+      "nbjs": {
+         "": {
+            "domain": "nbjs"
+         },
+         "Enter/Exit RISE": [
+            "进入/退出RISE"
+         ],
+         "Toggle overview mode": [
+            "切换页面模块"
+         ],
+         "Toggle help and exit buttons": [
+            "切换帮助和退出按钮"
+         ],
+         "First slide": [
+            "首页"
+         ],
+         "Last slide": [
+            "尾页"
+         ],
+         "Next": [
+            "下一页"
+         ],
+         "Previous": [
+            "上一页"
+         ],
+         "Up": [
+            "向上"
+         ],
+         "Down": [
+            "向下"
+         ],
+         "Left": [
+            "向左"
+         ],
+         "Right": [
+            "向右"
+         ],
+         "black screen": [
+            "点黑屏幕"
+         ],
+         "NOTE: You have to use these shortcuts in command mode.": [
+            "提示： 你必须在命令模式下使用这些快捷方式"
+         ],
+         "Reveal Shortcuts Help": [
+            "快捷键帮助"
+         ],
+         "OK": [
+            "确认"
+         ],
+         "Exit RISE": [
+            "退出RISE"
+         ],
+         "Entering Fullscreen mode from inside RISE is disabled.": [
+            "已经在RISE中不能够再次进入全屏展示模式"
+         ],
+         "Exit RISE, make you browser Fullscreen and re-enter RISE": [
+            "退出RISE， 使你浏览器进入RISE全屏显示"
+         ],
+         "That will help Reveal.js to perform the correct transformations ": [
+            "那将会有益于帮助reveal.js展示正确的转换"
+         ],
+         "at the time to interact with code cells.": [
+            "此时利用代码单元交互"
+         ],
+         "Fullscreen Help": [
+            "全屏帮助"
+         ],
+         "Enter/Exit RISE Slideshow": [
+            "进入/退出RISE滑动展示"
+         ],
+         "execute cell, and move to the next if on the same slide": [
+            "执行单元，当在同一个幻灯片的时候"
+         ],
+         "(un)set current cell as a Slide cell": [
+            "装置/卸下当前单元格作为一个幻灯片单元"
+         ],
+         "(un)set current cell as a Sub-slide cell": [
+            "装置/卸下当前单元格作为一个子幻灯片单元"
+         ],
+         "(un)set current cell as a Fragment cell": [
+            "装置/卸下当前单元格作为一个碎片单元"
+         ],
+         "(un)set current cell as a Note cell": [
+            "装置/卸下当前单元格作为一个文本单元"
+         ],
+         "(un)set current cell as a Skip cell": [
+            "装置/卸下当前单元格作为一个跳转单元"
+         ],
+         "render all cells (all cells go to command mode)": [
+            "渲染全部单元（全部单元格都进入命令模式）"
+         ],
+         "edit all cells (all cells go to edit mode)": [
+            "退出全部单元（全部单元格都进入退行模式）"
+         ],
+         "open the nbconfigurator page for RISE": [
+            "为RISE打开nbconfigurator的页面"
+         ],
+         "output RISE configuration in console, for debugging mostly": [
+            "在控制台输出RISE配置，方便更好的调试"
+         ]
+      }
+   }
+}

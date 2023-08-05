@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: nyanping
+Version: 0.0.2
+Summary: Improved graphical ping tool
+Home-page: https://github.com/jaseg/nyanping
+Author: jaseg
+Author-email: github@jaseg.net
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Religion
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Utilities

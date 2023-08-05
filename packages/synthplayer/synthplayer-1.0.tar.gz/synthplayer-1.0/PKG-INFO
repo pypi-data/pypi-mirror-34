@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: synthplayer
+Version: 1.0
+Summary: software sound synthesizer, audio streaming and conversion, and playback engine
+Home-page: https://github.com/irmen/synthesizer
+Author: Irmen de Jong
+Author-email: irmen@razorvine.net
+License: MIT
+Description: UNKNOWN
+Keywords: sound,audio,playback,conversion,synthesizer,FM,PCM,oscillator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Dutch
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Topic :: Multimedia :: Sound/Audio :: Mixers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Description-Content-Type: text/markdown

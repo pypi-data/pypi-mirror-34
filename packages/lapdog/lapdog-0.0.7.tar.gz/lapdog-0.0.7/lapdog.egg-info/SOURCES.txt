@@ -1,0 +1,12 @@
+README.md
+setup.py
+lapdog/__init__.py
+lapdog/__main__.py
+lapdog/lapdog.py
+lapdog/wdl_pipeline.yaml
+lapdog.egg-info/PKG-INFO
+lapdog.egg-info/SOURCES.txt
+lapdog.egg-info/dependency_links.txt
+lapdog.egg-info/entry_points.txt
+lapdog.egg-info/requires.txt
+lapdog.egg-info/top_level.txt

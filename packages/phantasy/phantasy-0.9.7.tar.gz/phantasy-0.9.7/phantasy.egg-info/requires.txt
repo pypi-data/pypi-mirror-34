@@ -1,0 +1,12 @@
+numpy
+matplotlib
+xlrd
+lmfit==0.8.0
+scipy==0.14.0
+cothread
+pyepics
+
+[test]
+nose
+nose-exclude
+coverage

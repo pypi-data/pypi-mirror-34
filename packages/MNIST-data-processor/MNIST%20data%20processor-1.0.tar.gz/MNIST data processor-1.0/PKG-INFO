@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: MNIST data processor
+Version: 1.0
+Summary: A small toolkit to process raw MNIST handwriting database in IDX format
+Home-page: https://github.com/taoyilee/mnist_data_processor
+Author: Michael (Tao-Yi) Lee
+Author-email: taoyil@uci.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

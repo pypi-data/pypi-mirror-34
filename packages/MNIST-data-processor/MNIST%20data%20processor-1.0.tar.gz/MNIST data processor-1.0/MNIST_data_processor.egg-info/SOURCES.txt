@@ -1,0 +1,12 @@
+README.md
+setup.py
+MNIST_data_processor.egg-info/PKG-INFO
+MNIST_data_processor.egg-info/SOURCES.txt
+MNIST_data_processor.egg-info/dependency_links.txt
+MNIST_data_processor.egg-info/not-zip-safe
+MNIST_data_processor.egg-info/top_level.txt
+mnistdp/IdxFile.py
+mnistdp/MNISTProcessor.py
+mnistdp/__init__.py
+test/test_IdxFile.py
+test/test_MNISTProcessor.py

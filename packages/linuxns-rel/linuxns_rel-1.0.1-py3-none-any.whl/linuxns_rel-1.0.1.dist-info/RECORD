@@ -1,0 +1,9 @@
+linuxns_rel/__init__.py,sha256=EJgdI-IdgpDp6O82w4CcNqKfyatc9vwdxPHFth3-ykk,14247
+linuxns_rel/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linuxns_rel/tools/lshierns.py,sha256=sZ5kpg07aTM99H_k8iMxwNWEFUHuPCLsQ5CKnNAFjLo,15320
+linuxns_rel/tools/xdg.py,sha256=8CZOtR5JkWZ0wICvHg91fZWoeeOcvQjGE0tpNxW-IIs,1768
+linuxns_rel-1.0.1.dist-info/METADATA,sha256=w3bZk7XM9x0oYgLJD9f5NL45gR4kUlY2eaVMoJLHrTM,5046
+linuxns_rel-1.0.1.dist-info/RECORD,,
+linuxns_rel-1.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+linuxns_rel-1.0.1.dist-info/entry_points.txt,sha256=pzLqWZxUi2b2ksl92hfG6TqHOaFMyectR6j2EiQjtfQ,156
+linuxns_rel-1.0.1.dist-info/top_level.txt,sha256=blZCRaT-8gBdov3Ec7oGnAVZ-EMNfHyq8_Qx-eRjnN4,12

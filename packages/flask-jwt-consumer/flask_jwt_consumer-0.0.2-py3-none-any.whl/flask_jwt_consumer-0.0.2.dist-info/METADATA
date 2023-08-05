@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flask-jwt-consumer
+Version: 0.0.2
+Summary: JWT consumer with multi public key support
+Home-page: https://github.com/dmi3y/flask-jwt-consumer
+Author: Dmitrii Lapshukov
+Author-email: lapshukov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: PyJWT
+Requires-Dist: cryptography
+
+## Flask JWT consumer
+
+Flask extension for JWT token validation. Support multi public keys via authorized keys format.
+
+

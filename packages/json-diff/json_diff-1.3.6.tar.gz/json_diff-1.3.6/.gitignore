@@ -1,0 +1,6 @@
+*.pyc
+*~
+dist/
+MANIFEST
+build/
+json_diff.egg-info/

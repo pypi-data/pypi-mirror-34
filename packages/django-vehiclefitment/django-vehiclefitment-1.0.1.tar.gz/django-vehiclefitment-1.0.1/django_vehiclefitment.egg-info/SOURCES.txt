@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_vehiclefitment/__init__.py
+django_vehiclefitment/fitment_data_storage.py
+django_vehiclefitment/models.py
+django_vehiclefitment.egg-info/PKG-INFO
+django_vehiclefitment.egg-info/SOURCES.txt
+django_vehiclefitment.egg-info/dependency_links.txt
+django_vehiclefitment.egg-info/requires.txt
+django_vehiclefitment.egg-info/top_level.txt
+django_vehiclefitment/migrations/0001_initial.py
+django_vehiclefitment/migrations/__init__.py

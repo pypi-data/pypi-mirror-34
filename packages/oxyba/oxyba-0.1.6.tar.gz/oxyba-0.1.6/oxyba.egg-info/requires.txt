@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+urllib3
+pkg_resources
+subprocess
+sys

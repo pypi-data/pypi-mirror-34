@@ -1,0 +1,4 @@
+[console_scripts]
+lasikconnect = lasikservice.serialconnection
+lasikservice = lasikservice.service
+

@@ -1,0 +1,9 @@
+avocado_framework_plugin_result_html-63.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+avocado_framework_plugin_result_html-63.0.dist-info/METADATA,sha256=6Jrye9nOMTSm6RruByETj-IkhFiFlaoqdxfsCVelBk4,333
+avocado_framework_plugin_result_html-63.0.dist-info/RECORD,,
+avocado_framework_plugin_result_html-63.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+avocado_framework_plugin_result_html-63.0.dist-info/entry_points.txt,sha256=P3Uzys2H8vpGZaUIZPKYrkW6vRnOP_LTVLiOJB71nnY,119
+avocado_framework_plugin_result_html-63.0.dist-info/metadata.json,sha256=RS6zvaJw_iq5fYtGXXdP-JqoCc51N6uqUj8lPavQD68,662
+avocado_framework_plugin_result_html-63.0.dist-info/top_level.txt,sha256=nkuJcis9rpayJ6vDsEA4ua8yQJm9-QahPqJF4ZsdFyM,20
+avocado_result_html/__init__.py,sha256=cwxKPLtMQGuf8VwgkyPm35JQFzb9heDtzqNls_Dzc4Y,12358
+avocado_result_html/resources/templates/report.mustache,sha256=LjV-TqguxYyPzUzDYIuLOwkM3YQtXVLhQNS3wya2XGU,276305

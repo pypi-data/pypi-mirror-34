@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+multicastclient/__init__.py
+multicastclient/client.py
+multicastclient/minimal.py
+multicastclient/multicasting.py
+multicastclient/tiipclient.py
+multicastclient.egg-info/PKG-INFO
+multicastclient.egg-info/SOURCES.txt
+multicastclient.egg-info/dependency_links.txt
+multicastclient.egg-info/top_level.txt

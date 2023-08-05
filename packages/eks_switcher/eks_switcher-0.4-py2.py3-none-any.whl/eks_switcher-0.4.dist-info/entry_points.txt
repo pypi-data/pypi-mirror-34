@@ -1,0 +1,3 @@
+[console_scripts]
+eks-switcher=eks_switcher:main
+

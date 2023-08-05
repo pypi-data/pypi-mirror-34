@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: elanwriter
+Version: 0.0.0.dev1
+Summary: UNKNOWN
+Home-page: https://github.com/emrecdem/elanwriter
+Author: B.L. de Vries
+Author-email: b.devries@esciencecenter.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Readme file
+============
+A tool to write out Elan (.eaf) files using python.
+
+Author: B.L. de Vries (Netherlands eScience Center)
+

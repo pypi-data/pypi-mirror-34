@@ -1,0 +1,3 @@
+[console_scripts]
+rt = rt.__main__:main
+

@@ -1,0 +1,17 @@
+django_s3_image_service-0.0.1.dist-info/METADATA,sha256=pDBE1ibSmKrhAepdYlHSKoRUL1A7IBDT0ct7AfwoMOE,851
+django_s3_image_service-0.0.1.dist-info/RECORD,,
+django_s3_image_service-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_s3_image_service-0.0.1.dist-info/top_level.txt,sha256=LN5UyRrmz9J-umTDUaWwZJWtusYLbfQnqiUvHc5xDJU,15
+s3imageservice/__init__.py,sha256=BcZUFA7CK4od9wwMKlwYqWe5MzQ1NmBTE0cSl2xDBU4,64
+s3imageservice/apps.py,sha256=BoKTmrIy0LXBEJClIypQuei2-DopoF_Vfpeij1eyMdE,103
+s3imageservice/celery.py,sha256=FsX7ehlP238zkBkQZc8E3BlX2dS3iqFOCRPTwtcCKiE,115
+s3imageservice/conf.py,sha256=ICJtRh1j-B7HPSZtRgCcdSFF1CI0G7UrUj0LpTHVw-c,1944
+s3imageservice/urls.py,sha256=EOhw1V203HmEIBd57epuAT5I49Mj9YYK1ZYk73nTNt8,162
+s3imageservice/tasks/__init__.py,sha256=qz883Zaw3nFKv2fDVMng2TsY9FxY7ujvkYw3_RDTsUM,15
+s3imageservice/tasks/aws.py,sha256=vjnqDLck55ELLk-AZoOrdsOIzep0nfzUdMe7XB2W7jo,650
+s3imageservice/tasks/process_images.py,sha256=7HVX3ikUVLgU1gIsQsoJj2QH7hOXZcft4-Qr8iwdfcM,1531
+s3imageservice/utils/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+s3imageservice/utils/aws.py,sha256=c_f9UYDPVmCpDIU3dZLAQVIyVau0ECuP7_Y1VUvdR2Q,967
+s3imageservice/utils/importers.py,sha256=pT0-3LpbmwnakwxT3-Jgw4WGvpN6j7fZA44KEg2XV9E,616
+s3imageservice/views/__init__.py,sha256=1SEHPgz1HUkKtut7X1w9DMSRUTr7oHhSOVcXhemqDwo,55
+s3imageservice/views/image_service.py,sha256=tjNwx28ed5FhkvEO2BCeVpvD4TVMCVHOV4i1RJ_Z6JA,6582

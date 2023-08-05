@@ -1,0 +1,10 @@
+README.rst
+setup.py
+bubbly/__init__.py
+bubbly/bubbly.py
+bubbly.egg-info/PKG-INFO
+bubbly.egg-info/SOURCES.txt
+bubbly.egg-info/dependency_links.txt
+bubbly.egg-info/not-zip-safe
+bubbly.egg-info/requires.txt
+bubbly.egg-info/top_level.txt

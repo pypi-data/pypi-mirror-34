@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+colorfield/__init__.py
+colorfield/apps.py
+colorfield/fields.py
+colorfield/static/colorfield/jscolor.js
+colorfield/static/colorfield/jscolor.min.js
+colorfield/templates/colorfield/color.html
+colorfield/templates/colorfield/color.html~
+django_postgresql_rgb_colorfield.egg-info/PKG-INFO
+django_postgresql_rgb_colorfield.egg-info/SOURCES.txt
+django_postgresql_rgb_colorfield.egg-info/dependency_links.txt
+django_postgresql_rgb_colorfield.egg-info/top_level.txt

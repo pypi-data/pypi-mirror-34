@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: pyddm
+Version: 0.1.0
+Summary: Extensible drift diffusion modeling for Python
+Home-page: https://github.com/mwshinn/PyDDM
+Author: Max Shinn, Norman Lam
+Author-email: maxwell.shinn@yale.edu
+Maintainer: Max Shinn
+Maintainer-email: maxwell.shinn@yale.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.5

@@ -1,0 +1,9 @@
+hypothesis_trio/__init__.py,sha256=wYvaZWa_ID9nCt3HfVB4DYJxHlaYh2dj3bD8UfnsDy0,80
+hypothesis_trio/_version.py,sha256=EV200MBapdQBdtAtPkMfBNOIhmYg-t3E58j1DbNBYS8,89
+hypothesis_trio/stateful.py,sha256=6y0D4oOkMFGRMzyUoqc66_1SQdOGyyk2iS1U0vH1qK0,4674
+hypothesis_trio/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypothesis_trio/_tests/test_async_stateful.py,sha256=qe9PCEAvv1FBGvZfsN15ml3QBpstmGhKb6iJnUjiLM0,4293
+hypothesis_trio-0.1.0.dist-info/METADATA,sha256=rSPKzkv9-9hGCIiaSf3eC0CE3-Q84G9fduYLJGyaq-8,1430
+hypothesis_trio-0.1.0.dist-info/RECORD,,
+hypothesis_trio-0.1.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+hypothesis_trio-0.1.0.dist-info/top_level.txt,sha256=W4XQKCwaZwpWYFITedVfNfpYQpqT_xm1SBGArKHTMNk,16

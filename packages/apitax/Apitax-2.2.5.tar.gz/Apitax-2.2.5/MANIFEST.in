@@ -1,0 +1,11 @@
+include build.sh
+include install_python.sh
+include install_node.sh
+include test.sh
+include LICENSE
+include readme.docx
+include README.md
+include apitax/ah/api/dashboard/package.json
+include apitax/ah/api/dashboard/tsconfig.json
+include apitax/ah/api/dashboard/webpack.config.js
+recursive-include apitax/ah/api/dashboard/src *

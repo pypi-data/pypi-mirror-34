@@ -1,0 +1,12 @@
+ChatExchange-0.0.4.dist-info/METADATA,sha256=wp7ucgVO8eA7eShpjbgwWBQNtpRSrZTykndMAJEO_DA,558
+ChatExchange-0.0.4.dist-info/RECORD,,
+ChatExchange-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+ChatExchange-0.0.4.dist-info/top_level.txt,sha256=qzQf7UyKHNdPcQnFzLwWrDL6s3vjRBpEjtnN8DOaPu0,13
+chatexchange/__init__.py,sha256=f-jByygYzy96SYP1Yg-_B9LHa_YHEzeyV5jd-hGnxm4,304
+chatexchange/_utils.py,sha256=kLzMxFzghCGXorMnTw5FbQM2GQwup5RuuXTVGyn-iNM,3044
+chatexchange/browser.py,sha256=ZWYpwNvGfE799RHXaDeJMaV3Il80jgH1GDOfgqeJLJg,25951
+chatexchange/client.py,sha256=MewJqM8yXe_yw1fJ-qcRoXM1_ii1VEgVOYf8kwA8Ovs,9911
+chatexchange/events.py,sha256=VM3fP4Qdlg3OJFtqk7EYx9DuYq9fnpd1cx1Zy8VAkrs,7078
+chatexchange/messages.py,sha256=a3NlcBl9zCWmQTiuQxY7TT3jjXzvC7B_QXALK9Mkp48,7274
+chatexchange/rooms.py,sha256=LrTkE7_FuJxuUE5i6xwBNsFfY7o34G6i-aW-EMrpAq4,5530
+chatexchange/users.py,sha256=VJm9Hs_W-005gJVu1856ZjFpFTxoWdm1BKCnT28jO8I,1036

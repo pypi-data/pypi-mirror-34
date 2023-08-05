@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ChatExchange
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/Manishearth/ChatExchange
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (>=4.3.2)
+Requires-Dist: requests (>=2.2.1)
+Requires-Dist: websocket-client (>=0.13.0)
+Requires-Dist: coverage (>=4.5.0)
+Requires-Dist: epydoc (>=3.0.1)
+Requires-Dist: httmock (>=1.2.2)
+Requires-Dist: pytest-timeout (>=0.3)
+Requires-Dist: pytest (>=3.4.2)
+Requires-Dist: py (>=1.5.0)
+Requires-Dist: bpython (>=0.16)
+
+UNKNOWN
+
+

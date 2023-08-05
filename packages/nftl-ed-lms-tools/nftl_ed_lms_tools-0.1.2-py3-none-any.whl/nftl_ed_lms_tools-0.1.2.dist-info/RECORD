@@ -1,0 +1,11 @@
+nftl_ed_lms_tools/__init__.py,sha256=FwQ7GZ2yXYgICBB7ihHesjgSjmWCRk6mEzBVuoNNBHU,27
+nftl_ed_lms_tools/client.py,sha256=lLY2FmKOE-8dvVLWjKTbG9MLBuc3GICkBv3o82SG9FY,812
+nftl_ed_lms_tools/ed_api.py,sha256=yZUvBxTCtRlTrwz6e5wQ5W8venEEMYfwtmNCBZ3GWBs,4611
+nftl_ed_lms_tools/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nftl_ed_lms_tools/api/users.py,sha256=b9xvnzXfcafhIePTytZgiqWF0H9v0SJRAtz5IauNhq8,3225
+nftl_ed_lms_tools-0.1.2.dist-info/METADATA,sha256=WiC6hYSoiEV_24fnNWCnxn5nxjgKaFdwZYiFMlh7ttE,987
+nftl_ed_lms_tools-0.1.2.dist-info/RECORD,,
+nftl_ed_lms_tools-0.1.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nftl_ed_lms_tools-0.1.2.dist-info/top_level.txt,sha256=O9bA1zaFpi8a5amOEiizTj2JKoA7KWt96xHVO4O4Z60,24
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/ed_client_test.py,sha256=C2po1rpwItFVCXxMd6DNybEAoBztXmiuVA9ypKFwnQo,3382

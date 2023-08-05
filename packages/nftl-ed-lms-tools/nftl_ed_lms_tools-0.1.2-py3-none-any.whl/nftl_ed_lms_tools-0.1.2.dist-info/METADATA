@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: nftl-ed-lms-tools
+Version: 0.1.2
+Summary: Tool 4 partial Ed LMS API handling
+Home-page: UNKNOWN
+Author: Grzegorz Pawełczuk
+Author-email: grzegorz.pawelczuk@nftlearning.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Library: nftl-ed-lms-tools
+
+This is a tool for Ed LMS API handling.
+
+Source documentation of api is available [here](http://developer.edapp.com/)
+
+[PyPI project page](https://pypi.org/project/nftl-ed-lms-tools/)
+
+
+# Installation
+
+```sh
+pip install nftl-ed-lms-tools
+```
+
+# Usage
+
+```python
+    from nftl_ed_lms_tools.client import EdClient
+
+    ed = EdClient(token='xoxp-...')
+    users = ed.get_users_api().get_users()
+
+    if users:
+        print('Yupi!')
+```
+
+# Deployment how to
+
+Available [here](https://packaging.python.org/tutorials/packaging-projects/)
+

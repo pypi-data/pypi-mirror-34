@@ -1,0 +1,3 @@
+[console_scripts]
+pbrx = pbrx.cmd.main:main
+

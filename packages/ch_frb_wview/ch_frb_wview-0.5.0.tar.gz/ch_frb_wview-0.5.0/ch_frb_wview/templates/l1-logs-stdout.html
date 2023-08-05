@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h3>CHIME/FRB L1 Stdout/Stderr Logs</h3>
+
+  {% for node,logs in logmsgs %}
+  <h4>
+  Node {{ node }}
+  </h4>
+  <table class="table table-hover table-striped table-bordered">
+    <tr><td><pre>
+      {% for log in logs %}
+{{ log }}{% endfor %}
+      </pre></td></tr>
+    {#
+  {% for log in logs %}
+  <tr><td>{{ log }}</td></tr>
+  {% endfor %}
+  #}
+  </table>
+  {% endfor %}
+{% endblock %}

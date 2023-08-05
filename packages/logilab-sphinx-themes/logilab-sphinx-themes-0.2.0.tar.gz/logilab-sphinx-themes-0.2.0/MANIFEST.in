@@ -1,0 +1,3 @@
+include LICENSE
+include README.rst
+recursive-include logilab_sphinx_themes *.*

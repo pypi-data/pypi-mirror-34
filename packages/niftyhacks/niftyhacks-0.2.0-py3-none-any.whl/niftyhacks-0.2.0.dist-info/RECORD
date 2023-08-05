@@ -1,0 +1,13 @@
+niftyhacks/__init__.py,sha256=WU_EIIkYS3AddimBXmvBu2iFrhU02vETeItzI7u24pQ,114
+niftyhacks/browser.py,sha256=oZT_wT6zJ56xnw6AN5TPjHkN8ShMh8uS1UpV2kmfieQ,3480
+niftyhacks/cache.py,sha256=OrPAfsB8AxoNgWk2ha64gmrmOFgvE-CWZPM73o3vp8Y,4910
+niftyhacks/db.py,sha256=2LNpdZmT_qGas7Mua6z_EYWtkiym6JVHV9Xe5comifI,3838
+niftyhacks/jinja_envy.py,sha256=DqrNGZ8Hfwr61DfiksFAw7uS_oge0eSrhHCJid449vc,484
+niftyhacks/pytest_utils.py,sha256=CUY23mcX4tBKRQ9D29jYQyB68Ahxs_oQ2q7cs8LhHxA,1554
+niftyhacks-0.2.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+niftyhacks-0.2.0.dist-info/METADATA,sha256=TWlnn8SIeOEPH4R4MbnPBC72OCAGF9A94R8R8FmPIWY,748
+niftyhacks-0.2.0.dist-info/RECORD,,
+niftyhacks-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+niftyhacks-0.2.0.dist-info/entry_points.txt,sha256=rObl9GWOW-ryAEq1wTMsuhzo3qqvbCMdkWM6na7GTbc,77
+niftyhacks-0.2.0.dist-info/metadata.json,sha256=PW9EhgB5x64KtZv_-59ypxwHEModvf6emUlAwRffK4w,1055
+niftyhacks-0.2.0.dist-info/top_level.txt,sha256=WK6DkorakQe_ispvbmxf27swFLGg1JhLL7R0jX0xkfQ,11

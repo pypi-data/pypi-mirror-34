@@ -1,0 +1,16 @@
+porfavor/__init__.py,sha256=twYNN-tdMH93vGiPb6x_TTjuoYqFLBQe4vn9l3vWSbE,438
+porfavor/client.py,sha256=BM8CFE09DcFIiQaCFJhiAHV1Yl-RSdhL7064RZMfaA8,2440
+porfavor/server.py,sha256=gqxlJquZJvupgLiiY74PI6FxF9XGm56YW7lwzdkHm6A,4297
+porfavor/static/bundle.js,sha256=hURQKx1Swjy_DwdKCIYQn_1nBFLI-l5VMotYpjFpMqI,134666
+porfavor/static/bundle.js.map,sha256=OZn0A2bnfAHGtBnGbjzsTmB4sXLkAY_hC9wqvqQojI4,357930
+porfavor/static/fonts/Roboto-Regular.ttf,sha256=eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU,171676
+porfavor/static/img/Background.png,sha256=wqNC2i71vSCmQ_xC0pldETMzFg_Z61XxW8UCiItBq38,240513
+porfavor/static/img/project_icon.png,sha256=LbcLCG1zF0kuP9J9YERH4ylMub6PIvkfmAc3orW01S4,9489
+porfavor/static/img/search.svg,sha256=QD3rxu-SG3Hnpa_c208l-ARkRB8k74A2pt8JSkThDFM,1163
+porfavor/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+porfavor/templates/index.html,sha256=7IWL223eSRmgLWOYeVHNUO6np9POjWSwkic_E7Ah4WY,194
+porfavor-0.5.1.dist-info/METADATA,sha256=4HX_V6dbLF3gcJCbUIoruhX83Z6WNbHnqYouyyP8Pc8,2237
+porfavor-0.5.1.dist-info/RECORD,,
+porfavor-0.5.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+porfavor-0.5.1.dist-info/entry_points.txt,sha256=fCnnOhLHzJmmaL1cuQwdI1fsqKZq8xvVhHc_3prNM98,44
+porfavor-0.5.1.dist-info/top_level.txt,sha256=UhaPql7H28D0Mvgu7EOL9d7p4rWb8xTVhM8oe79iY8k,9

@@ -1,0 +1,17 @@
+pylocus/__init__.py,sha256=qQzzHS3ATBrycUSzVJuEv2fMyyiJVlHtZekvRvJvvN0,145
+pylocus/algorithms.py,sha256=KcvX_03FMt5rxzppZK_Qd2krQ-u0BMZlaLfGtl12MZk,12606
+pylocus/basics.py,sha256=95qonUVacp5g3VC7NVRc_gx89kXLO3FNtIEX7Hzp_Pg,5396
+pylocus/basics_angles.py,sha256=wUX8e9XZK7ZygbQscUo4HrYBeG7-ZbPs-I4rnFOqW_4,3168
+pylocus/distributed_mds.py,sha256=RIg-NUnSWlLpBk2BxtX9flSU4DpM8tjPg8THEh4ZqsA,3341
+pylocus/edm_completion.py,sha256=R4VBJgkfDhnxOqpv76GP-yxt1KzkJYa739UII7aWYNw,4725
+pylocus/lateration.py,sha256=wWFLfPhLbWAAeJTpYa1oK4fjJwpbNa-PtR8L1cYMosU,11387
+pylocus/mds.py,sha256=Ty562jZsZw7_htZg7qAdkOH4MtCJRWfP7ZtgFrZC484,5718
+pylocus/opt_space.py,sha256=5hj_wQ4JHWkANcl7hTmZCpO8E31Lph28mFIDKpmEe10,7316
+pylocus/plots_cti.py,sha256=jLrJMOcDfkuKok-P9UDXMW4vzYxbb2pYlLs5MjqJA5U,9468
+pylocus/point_set.py,sha256=SlvBjiWZFUcnW6AtPsC200XRjcHBHsVOh1JJn62Xwzs,29933
+pylocus/settings.py,sha256=gl_wgnFwD5eCSQ5t76LzLfY2QevA3FbYb9nh1ps7-QM,126
+pylocus/simulation.py,sha256=moU8delMInmytD9Om5gep4sCfYSlgRhRopb5gc3QhIw,3162
+pylocus-0.0.3.dist-info/METADATA,sha256=yFJ8mymx-bK0oOdOBmPOZflQycC0XKIlTFJcHO0Z6Os,2390
+pylocus-0.0.3.dist-info/RECORD,,
+pylocus-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pylocus-0.0.3.dist-info/top_level.txt,sha256=ul7-2tH06HhRTq0c3sq1QqyKnMZ2UQhetVC-SjSf0MU,8

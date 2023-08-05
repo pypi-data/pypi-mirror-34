@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: TerraformToAnsibleInventory
+Version: 0.2.0
+Summary: Generates Ansible inventory in YAML format by parsing the tfstate.
+Home-page: https://github.com/mrlesmithjr/python-terraform-to-ansible-inventory
+Author: Larry Smith Jr.
+Author-email: mrlesmithjr@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

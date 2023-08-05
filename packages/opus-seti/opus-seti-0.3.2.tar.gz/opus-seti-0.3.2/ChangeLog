@@ -1,0 +1,53 @@
+CHANGES
+=======
+
+* Fix None type in column name
+* Fix wrong notebook urls
+* Add CLI jupyter notebook
+* Fix README cassini-vims entry point
+* Add Field search to CLI
+* Add files download to CLI
+* Add CLI image preview download
+* Add Metadata to CLI
+* Move CLI to a separate folder
+* Push Development Status to beta
+* Add entry\_points
+* Update Jupyter Notebook examples
+* Fix Category API location
+* Add DataDict to Categories
+* Add DataDict to Fields and add \`find\` feature on DataDict
+* Add DataDict in Range
+* Add DataDict to Mults
+* Fix links in README
+* Add Jupyter Notebook examples
+* Add DataDict and Downloadable class to Files
+* Create downloadable class
+* Edit Metadata/Constrains to DataDict object
+* Add DataDict class
+* Change Image class to be more explicit
+* Change API limit default call
+* Change Data class and add DataElement
+* Fix PyPI badge
+* Push development status to Alpha
+* Add category query
+* Add download for image previews
+* Add fields query
+* Change pytest options
+* Add field query
+* Add range endpoints query
+* Add Mults parameter query
+* Use six to fix url tests in python 27
+* Fix Python 27 dict order tests (2)
+* Fix Python27 unorder dict
+* Add files query
+* Add single image query
+* Add images query
+* Reset data array index counter
+* Add time reader
+* Add metadata constraints class
+* Add metadata general constraints
+* Fix iter for python27
+* Add image data output class
+* Fix assert request url on unorder kwargs
+* Update README
+* Chnage file package name

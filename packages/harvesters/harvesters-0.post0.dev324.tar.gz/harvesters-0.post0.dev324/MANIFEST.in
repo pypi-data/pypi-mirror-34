@@ -1,0 +1,12 @@
+# Versioneer
+include versioneer.py
+
+#
+recursive-include harvesters *
+
+global-exclude __pycache__
+global-exclude *.py[co]
+
+# Misc
+include LICENSE
+include README.rst

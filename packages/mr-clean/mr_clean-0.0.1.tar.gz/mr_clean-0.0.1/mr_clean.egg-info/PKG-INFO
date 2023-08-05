@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mr-clean
+Version: 0.0.1
+Summary: A small package for cleaning data.
+Home-page: https://github.com/A1Liu/mr_clean
+Author: A1Liu
+Author-email: albertymliu@gmail.com
+License: UNKNOWN
+Description: # Mr Clean
+        
+        This is a small package for cleaning data. Feel free to use it to clean other, non data-related things though.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

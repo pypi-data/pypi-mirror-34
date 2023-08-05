@@ -1,0 +1,15 @@
+README.md
+setup.py
+mr_clean/__init__.py
+mr_clean/cleaner.py
+mr_clean/mc_checks.py
+mr_clean/mc_funcs.py
+mr_clean/mc_io.py
+mr_clean/mc_stats.py
+mr_clean/mc_utils.py
+mr_clean/mr_clean.py
+mr_clean/pre_clean.py
+mr_clean.egg-info/PKG-INFO
+mr_clean.egg-info/SOURCES.txt
+mr_clean.egg-info/dependency_links.txt
+mr_clean.egg-info/top_level.txt

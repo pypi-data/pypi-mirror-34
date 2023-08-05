@@ -1,0 +1,4 @@
+[console_scripts]
+mongo-schema-export = mongo_import_export_schema.mongo_schema_export:main
+mongo-schema-import = mongo_import_export_schema.mongo_schema_import:main
+

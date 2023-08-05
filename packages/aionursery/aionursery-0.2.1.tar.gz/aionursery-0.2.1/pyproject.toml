@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aionursery"
+version = "0.2.1"
+description = "Manage background asyncio tasks"
+readme = "README.rst"
+authors = ["Dmitry Malinovsky <damalinov@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/malinoff/aionursery"
+homepage = "https://github.com/malinoff/aionursery"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
+pytest-asyncio = "^0.8.0"
+pytest-cov = "^2.5"
+async_timeout = "^3.0"

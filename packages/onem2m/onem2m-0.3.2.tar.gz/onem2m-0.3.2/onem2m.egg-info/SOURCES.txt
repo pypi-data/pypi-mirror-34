@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+onem2m/AE.py
+onem2m/Config.py
+onem2m/Constant.py
+onem2m/__init__.py
+onem2m.egg-info/PKG-INFO
+onem2m.egg-info/SOURCES.txt
+onem2m.egg-info/dependency_links.txt
+onem2m.egg-info/not-zip-safe
+onem2m.egg-info/top_level.txt

@@ -1,0 +1,76 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.messagestatus-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.messagestatus-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y&limit=20&offset=0
+    response:
+      body:
+        string: |-
+          {
+            "messageStatuses" : [ {
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ],
+              "categories" : [ {
+                "name" : "Sent",
+                "recipientCount" : 0,
+                "percentageTotal" : "0.0%"
+              }, {
+                "name" : "Pending",
+                "recipientCount" : 0,
+                "percentageTotal" : "0.0%"
+              }, {
+                "name" : "Received",
+                "recipientCount" : 0,
+                "percentageTotal" : "0.0%"
+              }, {
+                "name" : "Acknowledged",
+                "recipientCount" : 1,
+                "percentageTotal" : "100.0%"
+              }, {
+                "name" : "Undeliverable",
+                "recipientCount" : 0,
+                "percentageTotal" : "0.0%"
+              } ]
+            } ],
+            "link" : [ ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.messagestatus-v1+json
+        Date:
+          - Tue, 27 Mar 2018 23:03:50 GMT
+        Expires:
+          - Tue, 27 Mar 2018 23:03:50 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-31.mashery.com
+        content-length:
+          - '794'
+      status:
+        code: 200
+        message: OK
+version: 1

@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pokemons
+Version: 1.0.0
+Summary: Get Awesome Random pokemon names!
+Home-page: https://yoginth.ml
+Author: Yoginth
+Author-email: yoginth@zoho.com
+License: UNKNOWN
+Project-URL: Patreon, https://www.patreon.com/yoginth
+Project-URL: Source, https://gitlab.com/yoginth/pokemons
+Description: ## Pokémon Name Generator
+        
+        > Get Awesome Random pokemon names!
+        
+        ## Screenshot
+        
+        <img src="https://gitlab.com/yoginth/pokemons/raw/master/Screenshot.png" width="550">
+        
+        ## Inspired by
+        
+        - [Sindresorhus's pokemon](https://github.com/sindresorhus/pokemon)
+        
+        ## Install
+        
+        ```
+        $ pip install pokemons
+        ```
+        
+        ## Usage
+        
+        ```python
+        import pokemons as names
+        
+        print (names.gen())
+        #=> Nidoran♂
+        
+        print (names.genarr(3))
+        #=> ['Noivern', 'Misdreavus', 'Cryogonal']
+        ```
+        
+        ## Get Help
+        
+        There are few ways to get help:
+        
+         1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+        
+         2. For bug reports and feature requests, open issues.
+        
+         3. For direct and quick help, you can [email me](mailto://yoginth@zoho.com).
+        
+        ## How to contribute
+        Have an idea? Found a bug? See [how to contribute][contributing].
+        
+        Thanks!
+        
+        ## License
+        
+        [MIT][license]
+        
+        [LICENSE]: https://yoginth.mit-license.org/
+        [contributing]: /CONTRIBUTING.md
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Environment :: Plugins
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

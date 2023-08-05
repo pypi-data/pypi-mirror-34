@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+data/comp.ico
+data/server_login.ui
+rpcd/__init__.py
+rpcd/__main__.py
+rpcd/rpcd.py
+rpcd.egg-info/PKG-INFO
+rpcd.egg-info/SOURCES.txt
+rpcd.egg-info/dependency_links.txt
+rpcd.egg-info/requires.txt
+rpcd.egg-info/top_level.txt

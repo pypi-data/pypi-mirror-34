@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: rpcd
+Version: 0.0.2
+Summary: Remote procedure call daemon server for mysql
+Home-page: UNKNOWN
+Author: Dr Abiira Nathan
+Author-email: nabiira2by2@gmail.com
+License: GPL-3
+Description: A remote procedure call mysql database server with PyQt5 interface
+Keywords: mysql server daemon Abiira Nathan rpcd
+Platform: Windows 7
+Platform: Windows 8
+Platform: Windows 10
+Platform: Linux/Unix

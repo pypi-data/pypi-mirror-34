@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: python-pkg
+Version: 0.0.1
+Summary: Un paquete de NLTK y Scrapy por SEO
+Home-page: https://github.com/pypa/sampleproject
+Author: Noelle Rivera
+Author-email: noelle.rivera.516@gmail.com
+License: UNKNOWN
+Description: # NLTK por SEO
+        
+        Este proyecto utiliza NLTK para anÃ¡lisis de las palabras claves y las etiquetas. 
+        
+        ## Para Empezar
+        
+        Los instrucciones puede ayudarte obtener una copia del proyecto para su ordenador.
+        
+        ### Los requisitos indispensables
+        
+        Necesita instalar estos antes de empieza:
+        
+        * [Python](https://www.python.org/downloads/)
+        * [Anaconda](https://docs.anaconda.com/anaconda/install/)
+        
+        
+        ### Instalar NLTK
+        
+        1. Abre el "Anaconda Prompt" (puede buscarlo por buscando "Anaconda" en el menÃº de Incio de Windows)
+        2. Crea un virtual env
+        ```
+        conda create -n yourenvname python=x.x anaconda
+        ```
+        3. Instalar NLTK (anaconda es el canal)
+        ```
+        conda install -c anaconda nltk
+        ```
+        4. Instalar BeautifulSoup (anaconda es el canal)
+        ```
+        conda install -c anaconda beautifulsoup4
+        ```
+        
+        ### Descargar El Proyecto en GitHub
+        
+        Ahora, puede descargar el proyecto en GitHub y ejecutar el cÃ³digo
+        
+        ## EjecuciÃ³n del codÃ­go
+        
+        Puede ejecutar el "spider" usando el comando "python" en el sÃ­mbolo de la sistema:
+        ```
+        python todos.py
+        ```
+        **Asegurarte usar el sÃ­mbolo del sistema, activar tu virtualenv, y elegir el directorio de nivel superior del proyecto**
+        * Por esto proyecto el directorio de nivel superior: 
+        
+        ## EjecuciÃ³n del GUI
+        
+        Puede ejecutar el gui usando este comando en el sÃ­mbolo del sistema:
+        ```
+        python todouser.py
+        ```
+        
+        **Asegurarte usar el sÃ­mbolo del sistema, activar tu virtualenv, y elegir el directorio de nivel superior del proyecto**
+        * Por esto proyecto el directorio de nivel superior: gui
+        
+        ## AÃ±adir al corpus
+        
+        Para aÃ±adir al corpus, necesita crear un archivo txt en el directorio del corpus. Abre la aplicaciÃ³n "Bloc de notas" y escribe el corpus ahÃ­. Guardarle en la carpeta con el nombre del directorio ("LTcorpus")
+        
+        ## Referenciass
+        [NLTK Textbook](https://www.nltk.org/book/)
+        
+        Â¿Tienes preguntas? Enviarmelas aqui: noelle.rivera.516@gmail.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

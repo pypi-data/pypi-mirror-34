@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mbtasalary/__init__.py
+mbtasalary.egg-info/PKG-INFO
+mbtasalary.egg-info/SOURCES.txt
+mbtasalary.egg-info/dependency_links.txt
+mbtasalary.egg-info/entry_points.txt
+mbtasalary.egg-info/requires.txt
+mbtasalary.egg-info/top_level.txt

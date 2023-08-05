@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: python-transcoded
+Version: 0.3
+Summary: Daemon for transcoding audio/video with an http API written in python
+Home-page: https://gitlab.com/MartijnBraam/python-transcoded
+Author: Martijn Braam
+Author-email: martijn@brixit.nl
+License: MIT
+Project-URL: Tracker, https://gitlab.com/MartijnBraam/python-transcoded/issues
+Project-URL: Documentation, https://python-transcoded.readthedocs.io/en/latest/
+Description: # Video transcoding daemon
+        
+        This project implements a daemon that wraps ffmpeg for video transcoding and listens for jobs over http.
+        Intended to be used as backend for web applications that deal with video encoding in any way so they don't
+        have to mess with the long running background processes, queueing and ffmpeg command line parameters.
+        
+        To use this you create a config file that defines which applications can use which directory for media and
+        the encoding profiles the applications can use.
+        
+        An example configuration:
+        
+        ```conf
+        [general]
+        port=12380
+        listen=127.0.0.1
+        
+        [user-mediacenter]
+        password=verysecret
+        paths=/mnt/storage/videos
+        callback=http://127.0.0.1/transcode-callback
+        
+        [profile-h264]
+        container=mkv
+        vcodec=h264
+        vpolicy=always
+        acodec=aac
+        apolicy=always
+        vbitrate=2M
+        vbitratemax=3M
+        abitrate=192k
+        abitratemax=1M
+        ```
+        
+        This defines the user `mediacenter` with the password `verysecret` which can start transcoding jobs in any path starting
+        with `/mnt/storage/videos`. It also defines a callback url for reporting job progress to the requesting application.
+        
+        It also defines the profile called `h264` which always encodes to h264+aac in a mkv container.
+        
+        The default policy for transcoded is to transcode as little as possible unless explicitly configured to transcode anything.
+        The default config doesn't transcode the stream if the source codec matches the destination codec(s). It does always
+        recreate the container for the streams.
+        
+        It is possible to define multiple output codecs seperated by a comma, in that case it won't transcode if the source codec
+        matches any of the listed codecs. If the source doesn't match any codec then it will transcode it to the first specified
+        codec.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Requires-Python: >=3
+Description-Content-Type: text/markdown

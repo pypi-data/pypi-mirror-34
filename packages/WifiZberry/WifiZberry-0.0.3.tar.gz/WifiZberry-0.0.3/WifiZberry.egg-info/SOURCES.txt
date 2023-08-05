@@ -1,0 +1,8 @@
+setup.py
+WifiZberry.egg-info/PKG-INFO
+WifiZberry.egg-info/SOURCES.txt
+WifiZberry.egg-info/dependency_links.txt
+WifiZberry.egg-info/not-zip-safe
+WifiZberry.egg-info/top_level.txt
+wifizberry/WifiZberry.py
+wifizberry/__init__.py

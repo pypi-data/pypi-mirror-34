@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+pathpy/__init__.py
+pathpy/cli.py
+pathpy.egg-info/PKG-INFO
+pathpy.egg-info/SOURCES.txt
+pathpy.egg-info/dependency_links.txt
+pathpy.egg-info/entry_points.txt
+pathpy.egg-info/top_level.txt

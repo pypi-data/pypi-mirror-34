@@ -1,0 +1,8 @@
+fab_oidc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fab_oidc/security.py,sha256=Oak3f9eoFuDec0rEs8ei_jOVRNBi3iHdxdiY-buhgdI,810
+fab_oidc/store.py,sha256=C5o7ZxPtxqabBCd1anAYNse7YSteHBVw7ZnKIl6FsXw,522
+fab_oidc/views.py,sha256=44cMCScX9rS3yrrq0sRzKOU6f4b7xbfb_2r4Ve353XI,1690
+fab_oidc-0.0.5.dist-info/METADATA,sha256=j3tcErf37u6C-CbDd6IEG1a3UEhif33hzNvphklxgNQ,3154
+fab_oidc-0.0.5.dist-info/RECORD,,
+fab_oidc-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fab_oidc-0.0.5.dist-info/top_level.txt,sha256=LEAtmObQDbROhwJtrQhreUbmmVSO21_IdZRN-EjUpc0,9

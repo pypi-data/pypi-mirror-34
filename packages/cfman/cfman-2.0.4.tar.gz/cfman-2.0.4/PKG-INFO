@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cfman
+Version: 2.0.4
+Summary: CFMan Pages for Status Codes
+Home-page: https://github.com/farberjd/cfman
+Author: farberjd
+Author-email: farber911@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==2.7.*

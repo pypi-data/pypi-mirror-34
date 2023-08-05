@@ -1,0 +1,87 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+boil/__init__.py
+boil/__version__.py
+boil/exceptions.py
+boil.egg-info/PKG-INFO
+boil.egg-info/SOURCES.txt
+boil.egg-info/dependency_links.txt
+boil.egg-info/entry_points.txt
+boil.egg-info/not-zip-safe
+boil.egg-info/requires.txt
+boil.egg-info/top_level.txt
+boil/cli/__init__.py
+boil/cli/commands.py
+boil/common/__init__.py
+boil/common/filters.py
+boil/plate/__init__.py
+boil/plate/manager.py
+boil/plate/runner.py
+boil/plates/__init__.py
+boil/plates/__init__.pyc
+boil/plates/ansible_role/README.md
+boil/plates/ansible_role/__init__.py
+boil/plates/ansible_role/__init__.pyc
+boil/plates/ansible_role/templates/{{ role_name }}/README.md
+boil/plates/ansible_role/templates/{{ role_name }}/defaults/main.yml
+boil/plates/ansible_role/templates/{{ role_name }}/handlers/main.yml
+boil/plates/ansible_role/templates/{{ role_name }}/meta/main.yml
+boil/plates/ansible_role/templates/{{ role_name }}/tasks/main.yml
+boil/plates/ansible_role/templates/{{ role_name }}/tests/inventory
+boil/plates/ansible_role/templates/{{ role_name }}/tests/test.yml
+boil/plates/ansible_role/templates/{{ role_name }}/vars/main.yml
+boil/plates/bash_script/__init__.py
+boil/plates/bash_script/__init__.pyc
+boil/plates/bash_script/templates/{{ script_name }}.j2
+boil/plates/license/README.md
+boil/plates/license/__init__.py
+boil/plates/license/__init__.pyc
+boil/plates/license/templates/LICENSE.j2
+boil/plates/license/templates/_includes/apache.j2
+boil/plates/license/templates/_includes/gnu.j2
+boil/plates/license/templates/_includes/mit.j2
+boil/plates/python_package/README.md
+boil/plates/python_package/__init__.py
+boil/plates/python_package/__init__.pyc
+boil/plates/python_package/templates/{{ package_name }}/.gitignore.j2
+boil/plates/python_package/templates/{{ package_name }}/MANIFEST.in.j2
+boil/plates/python_package/templates/{{ package_name }}/README.rst.j2
+boil/plates/python_package/templates/{{ package_name }}/requirements.txt.j2
+boil/plates/python_package/templates/{{ package_name }}/setup.py.j2
+boil/plates/python_package/templates/{{ package_name }}/test-requirements.txt.j2
+boil/plates/python_package/templates/{{ package_name }}/tox.ini.j2
+boil/plates/python_package/templates/{{ package_name }}/tests/integration/__init__.py.j2
+boil/plates/python_package/templates/{{ package_name }}/tests/integration/test_example.py.j2
+boil/plates/python_package/templates/{{ package_name }}/tests/unit/__init__.py.j2
+boil/plates/python_package/templates/{{ package_name }}/tests/unit/test_example.py.j2
+boil/plates/python_package/templates/{{ package_name }}/{{ package_name }}/__init__.py.j2
+boil/plates/python_package/templates/{{ package_name }}/{{ package_name }}/exceptions.py.j2
+boil/plates/python_script/README.md
+boil/plates/python_script/__init__.py
+boil/plates/python_script/__init__.pyc
+boil/plates/python_script/templates/{{ script_name }}.py.j2
+boil/plates/ruby_gem/__init__.py
+boil/plates/ruby_gem/__init__.pyc
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/.gitignore.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/.rubocop.yml.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/.ruby-version.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/Gemfile.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/README.md.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/Rakefile.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/{{ gem_name | underscore }}.gemspec.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/lib/{{ gem_name | underscore }}.rb.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/lib/{{ gem_name | underscore }}/version.rb.j2
+boil/plates/ruby_gem/templates/{{ gem_name | underscore }}/spec/spec_helper.rb.j2
+boil/template/__init__.py
+boil/template/environment.py
+boil/template/renderer.py
+boil/utils/__init__.py
+boil/utils/ansi.py
+boil/utils/display.py
+boil/utils/file_utils.py
+boil/utils/misc.py
+boil/vars/__init__.py
+boil/vars/loader.py

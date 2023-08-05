@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+memento/__init__.py
+memento/memento.py
+memento_project.egg-info/PKG-INFO
+memento_project.egg-info/SOURCES.txt
+memento_project.egg-info/dependency_links.txt
+memento_project.egg-info/top_level.txt

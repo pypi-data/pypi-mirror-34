@@ -1,0 +1,28 @@
+
+        [distutils.setup_keywords]
+        use_sky_version = setuptools_sky.integration:version_keyword
+
+        [setuptools.file_finders]
+        setuptools_sky = setuptools_sky.integration:find_files
+
+        [setuptools_sky.parse_scm]
+        .hg = setuptools_sky.hg:parse
+        .git = setuptools_sky.git:parse
+
+        [setuptools_sky.parse_scm_fallback]
+        .hg_archival.txt = setuptools_sky.hg:parse_archival
+        PKG-INFO = setuptools_sky.hacks:parse_pkginfo
+        pip-egg-info = setuptools_sky.hacks:parse_pip_egg_info
+
+        [setuptools_sky.files_command]
+        .hg = setuptools_sky.hg:FILES_COMMAND
+        .git = setuptools_sky.git:FILES_COMMAND
+
+        [setuptools_sky.version_scheme]
+        guess-next-dev = setuptools_sky.version:guess_next_dev_version
+        post-release = setuptools_sky.version:postrelease_version
+
+        [setuptools_sky.local_scheme]
+        node-and-date = setuptools_sky.version:get_local_node_and_date
+        dirty-tag = setuptools_sky.version:get_local_dirty_tag
+    

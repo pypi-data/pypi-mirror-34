@@ -1,0 +1,16 @@
+numexpr/__config__.py,sha256=CHQxINtInNKRkjIxlUgvclsrvmGsadnqSKlPXF8nYyY,724
+numexpr/__init__.py,sha256=DR8V-NGG9AYJG7cfP_R36uEv-BcbxkV-h83mObp001Y,2108
+numexpr/cpuinfo.py,sha256=G_sboM492MMA3diWDwdJLmEXLw8JKGQOuH1RJF_7lqs,25985
+numexpr/expressions.py,sha256=dnbkbHR-soXgSxVOjdAdlJqDHEeZnqRo-k_Pxgi7pzo,17342
+numexpr/interpreter.pyd,sha256=v66lIH-BCCSHIeTjisxDjhZDdJDqc1yZcDZ5WI0OqqE,130048
+numexpr/necompiler.py,sha256=mWR_R7N1CW3zXkDCkBHECzBL0TeieCGUOcC3FT_vPZk,28623
+numexpr/utils.py,sha256=bJ90VBQ2xmHeDZh8hd1Hr_fHvgbpH5igkE8SwGAWsWc,5067
+numexpr/version.py,sha256=7nlWIm5Emfes7sqsm8bYixd3-UqFfExytvyilbSgWZQ,366
+numexpr/tests/__init__.py,sha256=GBFxEA1-KjffdC-yum4Zj4u-f_zYVhSZIMPv-bOKoSQ,447
+numexpr/tests/test_numexpr.py,sha256=M7qpoy-1cqNhjD7xaiQFz1Om2oDxfbtlPcqyTtOAkxs,43456
+numexpr-2.6.6.dist-info/DESCRIPTION.rst,sha256=kzrBOGOKAvim-1b5nocnnktF2Oh7MBhCZWKuPzvJLH0,4355
+numexpr-2.6.6.dist-info/METADATA,sha256=kj2GTI5A3Ixt34DC3xld57sqzo8RlIre8Pht45nvI04,4673
+numexpr-2.6.6.dist-info/RECORD,,
+numexpr-2.6.6.dist-info/WHEEL,sha256=JlQimmNHBKHyGFckjpoaVzGa9uGAyS1IrkLOoSGFVJo,105
+numexpr-2.6.6.dist-info/metadata.json,sha256=DAwrIesvVQRGC_KvXv6uR-S-g_DS-_Wcg8Wf-6MXMxk,540
+numexpr-2.6.6.dist-info/top_level.txt,sha256=5R5OAhc7k6sUajqt4vp-368lWWhb23CoC6LltIMNqNA,8

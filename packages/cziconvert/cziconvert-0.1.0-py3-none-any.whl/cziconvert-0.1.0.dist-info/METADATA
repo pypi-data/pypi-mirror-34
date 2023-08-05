@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cziconvert
+Version: 0.1.0
+Summary: Convert czi files to images and/or video.
+Home-page: http://pypi.org
+Author: Brian Knep
+Author-email: None@none.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: czifile
+Requires-Dist: imageio
+
+UNKNOWN
+
+

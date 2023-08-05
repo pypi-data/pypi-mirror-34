@@ -1,0 +1,10 @@
+README.md
+setup.py
+hypar/__init__.py
+hypar.egg-info/PKG-INFO
+hypar.egg-info/SOURCES.txt
+hypar.egg-info/dependency_links.txt
+hypar.egg-info/not-zip-safe
+hypar.egg-info/top_level.txt
+hypar/glTF/__init__.py
+hypar/glTF/glTF.py

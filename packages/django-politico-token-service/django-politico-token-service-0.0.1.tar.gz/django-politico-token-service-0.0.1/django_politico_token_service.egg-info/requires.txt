@@ -1,0 +1,4 @@
+rest_framework
+
+[test]
+pytest

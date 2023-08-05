@@ -1,0 +1,11 @@
+eks_switcher/__init__.py,sha256=Gat6U-t4x_q2MIpgEI0u4Z4HdV03JUvUJbX8DTkMd0E,120
+eks_switcher/__main__.py,sha256=Ba6PhEQHcZO9EYBfiQJTe-_vw0mLzfhhdBMRpJben3I,96
+eks_switcher/aws_config.py,sha256=zXxIf06mWBhrgBi25ARfxe-_QVoHX13Fw_FeSYV-Yw8,896
+eks_switcher/aws_eks.py,sha256=kIlzCWYlgVUbLFfUKqDA2uNcppG7gbn7jtDafsgdVjE,749
+eks_switcher/kube_config.py,sha256=uye0ltbpbi0ACC_hPmnqSrwtdoXxQc0h4MgDlWO1j-0,938
+eks_switcher/main.py,sha256=tPxK9M-CqVZrMVjy1c5BuBeEp7N3ePT3oxvygsUOoAw,538
+eks_switcher/files/config.jinja2,sha256=V2k_kKcD1gDMIx6k9B31PSMmVmKOsLZiOb0XhqYflX4,585
+eks_switcher-0.3.dist-info/LICENSE,sha256=Ls-GG0JVFYsS5UReLkyHb_oUEy9oudUc12PxRgPwtVI,1072
+eks_switcher-0.3.dist-info/WHEEL,sha256=Pnb1-aANNEDpiI6zZkifNVAxs3Mjlbjz3HYhduOZleI,97
+eks_switcher-0.3.dist-info/METADATA,sha256=7hPMgkfOXAdL4ZBCqS2IkWe2m6bzYj_gIYyEaJWg6Xo,389
+eks_switcher-0.3.dist-info/RECORD,,

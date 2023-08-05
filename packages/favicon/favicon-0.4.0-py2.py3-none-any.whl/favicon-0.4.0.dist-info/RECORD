@@ -1,0 +1,10 @@
+favicon/__init__.py,sha256=SMaoSl8ckIWkN5POfuAw3HFh5PyGNZvF5VYzE7BSrv0,330
+favicon/favicon.py,sha256=_vXsDCYCJ9lzi7S2brXqN1_keZOeSDmePAkFLDtC0Ls,4332
+favicon-0.4.0.dist-info/LICENSE.txt,sha256=7I4n-FZu2dhOXzvqL7giWmca2vr7Lh47s93goMYl-oQ,1068
+favicon-0.4.0.dist-info/METADATA,sha256=BQnLl1pN8IVbYAfltqDx5KZCOFp0Oa0Wj_gYaY6mL3A,2799
+favicon-0.4.0.dist-info/RECORD,,
+favicon-0.4.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+favicon-0.4.0.dist-info/top_level.txt,sha256=nvgYJ4VKryxTq1oySYa4IiKPwwrC9OX-aINLPnXi6kA,14
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/conftest.py,sha256=jUMRtpwFv-1iZH9u346pbgtifgzencVUeLSoZUwv_pE,174
+tests/test_favicon.py,sha256=hyZTQTpZsuPvrBupSxkEIZ6nKnk_r1KpnyKCyl_2ylc,3274

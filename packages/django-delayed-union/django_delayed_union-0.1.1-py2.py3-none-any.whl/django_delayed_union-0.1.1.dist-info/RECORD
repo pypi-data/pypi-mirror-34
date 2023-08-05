@@ -1,0 +1,10 @@
+django_delayed_union/__init__.py,sha256=9hyVDf-X6Dak8H-QaellhckDHij1Xu9bowaMnJtdLkE,297
+django_delayed_union/base.py,sha256=ozwvjoAO92xT6CyZiwcxFkE4K5V4Ra0GLBEILBfkfCE,14953
+django_delayed_union/difference.py,sha256=-tP2Z5Bo5IabYumFbyWuQz7Z02cvWhcwU2V4m_JPUvw,595
+django_delayed_union/intersection.py,sha256=vhrhiqQdXteNrhTPHJhG359e4emBB2D3-lsnDRxDU9k,603
+django_delayed_union/union.py,sha256=0ZQnldoboA9mXrfjHNv9YoN5Uqg0GgAm_oMOpsgdAyc,1367
+django_delayed_union/utils.py,sha256=o_PPq2G0iIEAE0CWw9BdD2RaL2JS4Oq8nfJb2fBMJ9A,332
+django_delayed_union-0.1.1.dist-info/METADATA,sha256=IPyJulq2mxWKGiiZyUI-4XaxQ_3GmAsVS_L5eOQOZgo,2967
+django_delayed_union-0.1.1.dist-info/RECORD,,
+django_delayed_union-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_delayed_union-0.1.1.dist-info/top_level.txt,sha256=pimqRsRXWPqTMW-u50Gxa_-ZHKcRBPjVnOKeO5bYAmc,21

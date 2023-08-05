@@ -1,0 +1,37 @@
+Metadata-Version: 2.0
+Name: roro
+Version: 0.1.16
+Summary: The client interface to the rorodata platform
+Home-page: UNKNOWN
+Author: rorodata
+Author-email: rorodata.team@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML (>=3.12)
+Requires-Dist: click (>=6.7)
+Requires-Dist: firefly-python (>=0.1.9)
+Requires-Dist: joblib (>=0.11)
+Requires-Dist: tabulate (>=0.7.7)
+
+
+roro
+----
+
+The client interface to the rorodata platform.
+
+Install
+~~~~~~~
+
+It can be installed using pip.
+
+..code:: bash
+
+    $ pip install roro
+
+Links
+~~~~~
+
+* `Documentation <https://rorodata.com/docs/>`_
+* `Github <https://github.com/rorodata/roro-client>`_
+
+

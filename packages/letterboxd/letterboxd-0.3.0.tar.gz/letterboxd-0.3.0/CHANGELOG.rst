@@ -1,0 +1,133 @@
+Changelog
+=========
+
+All notable changes to this project will be documented in this file.
+
+The format is based on `Keep a Changelog <https://keepachangelog.com/en/1.0.0/>`_
+and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0.html>`_.
+
+[Unreleased]
+-----------------------------
+
+[0.3.0] - 2018-07-22
+-----------------------------
+
+ADDED
+.....
+
+- Issue and pull request templates
+- Code of Conduct
+- Coverage for Letterboxd API endpoints
+    - /auth/forgotten-password-request
+    - /auth/username-check
+    - /list/{id}
+    - /list/{id} [PATCH]
+    - /list/{id} [DELETE]
+    - /list/{id}/comments
+    - /list/{id}/comments [POST]
+    - /list/{id}/entries
+    - /list/{id}/me
+    - /list/{id}/me [PATCH]
+    - /list/{id}/report [POST]
+    - /list/{id}/statistics
+    - /lists
+    - /lists [POST]
+    - /me [PATCH]
+- A TON more pytest unit tests, and made existing ones more comprehensive
+
+CHANGED
+.......
+
+- Internally refactored API object definitions into their own file, for pytest
+- Internally changed some variable names to better reflect Letterboxd API nomenclature (I don't *think* this affects any method arguments.)
+
+FIXED
+.....
+
+- Removed mutable default arguments on several methods
+
+
+[0.2.6] - 2018-07-04
+-----------------------------
+
+CHANGED
+.......
+
+- Getting the Travis CI integration with PyPI to work properly.
+
+[0.2.5] - 2018-07-04 [YANKED]
+-----------------------------
+
+[0.2.4] - 2018-07-04
+-----------------------------
+
+CHANGED
+.......
+
+- Getting ``bumpversion`` to work properly.
+
+[0.2.3] - 2018-07-04 [YANKED]
+-----------------------------
+
+[0.2.2] - 2018-07-04 [YANKED]
+-----------------------------
+
+[0.2.1] - 2018-07-04 [YANKED]
+-----------------------------
+
+[0.2.0] - 2018-07-04
+--------------------
+
+Added
+.....
+
+- This ``CHANGELOG.rst``
+- Converted ``README.md`` to ``.rst``
+- Documentation written with reStructuredText and Sphinx, being built to `Read the Docs <https://letterboxd.readthedocs.io/>`_
+- Added a number of defaults and tests as provided in `cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`_
+- Added an easy initializer with ``import letterboxd`` and then ``letterboxd.new()``
+- ``User.refresh_token()`` to refresh the user authentication oAuth token
+- Coverage for Letterboxd API endpoints:
+    - /film/{id}/members
+    - /film/{id}/report
+    - /film/{id}/statistics
+    - /films
+    - /films/film-services
+    - /films/genres
+    - /film-collection/{id}
+    - /search
+
+Changed
+.......
+
+- All api-calling methods now return the dictionary from the response JSON, instead of the entire ``requests.Response``.
+
+[0.1.0] - 2018-06-24
+--------------------
+
+Added
+.....
+
+- First public version! Version 0.1.0a `tagged on GitHub <https://github.com/bobtiki/letterboxd/releases/tag/v0.1.0a>`_, and `posted to PyPI <https://pypi.org/project/letterboxd/>`_.
+- letterboxd, api, user, auth, member, and film modules.
+- coverage for Letterboxd API endpoints:
+    - film
+    - /film/{id}
+    - /film/{id}/availability — this data is first-party only
+    - /film/{id}/me
+    - /me
+    - /member/{id}/watchlist
+
+Changelog format
+----------------
+
+- Each version should:
+    - List its release date in ISO 8601 format (YYYY-MM-DD).
+    - Group changes to describe their impact on the project, as follows:
+        - ``Added`` for new features.
+        - ``Changed`` for changes in existing functionality.
+        - ``Deprecated`` for once-stable features removed in upcoming releases.
+        - ``Removed`` for deprecated features removed in this release.
+        - ``Fixed`` for any bug fixes.
+        - ``Security`` to invite users to upgrade in case of vulnerabilities.
+    - Take a look at `this checklist for packaging a new version <http://www.sherifsoliman.com/2016/09/30/Python-package-with-GitHub-PyPI/>`_, and `this one <https://cookiecutter-pypackage.readthedocs.io/en/latest/pypi_release_checklist.html>`_

@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+pyfinex/__init__.py
+pyfinex/v1.py
+pyfinex/v2.py
+pyfinex.egg-info/PKG-INFO
+pyfinex.egg-info/SOURCES.txt
+pyfinex.egg-info/dependency_links.txt
+pyfinex.egg-info/top_level.txt

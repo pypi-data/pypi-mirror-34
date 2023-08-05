@@ -1,0 +1,9 @@
+colcon_spawn_shell/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+colcon_spawn_shell/spawn_shell.py,sha256=GoQ2IGmIR4DV0WSg8aBdXwcnaqGKLziE7LnHunuWftk,2120
+colcon_spawn_shell/template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_spawn_shell/template/spawn_shell.bash.em,sha256=hH_vI6lX_PcLXfbtEKTdC5SzuEv8nbbqA3QMSYcTou0,2821
+colcon_spawn_shell-0.2.0.dist-info/METADATA,sha256=xW-_oHv3iNMDu34LIvjMvEoeIwuzMpHgMf9g-LnX5Rw,3758
+colcon_spawn_shell-0.2.0.dist-info/RECORD,,
+colcon_spawn_shell-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+colcon_spawn_shell-0.2.0.dist-info/entry_points.txt,sha256=Nl1c8bhJBPD2c18dF0ZAFw_zr_sR0SxV6HBAaZyTWDU,86
+colcon_spawn_shell-0.2.0.dist-info/top_level.txt,sha256=i-eHTWiNtS8Z1QaenrB5MtZaqYwNCe9PphDxciIUkNI,19

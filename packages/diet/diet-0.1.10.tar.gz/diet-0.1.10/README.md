@@ -1,0 +1,74 @@
+# DIET
+
+Dash Import Export Tool
+
+## Installation
+
+```sh
+pip install --user -U diet
+```
+
+## Usage
+
+```
+Dash Import and Export Tool
+
+positional arguments:
+  {import,export}     Action to perform
+  {users-orgs,users}  The target of the import/export
+  file                Files to import
+
+optional arguments:
+  -h, --help          show this help message and exit
+```
+
+**Import users into the system**
+```sh
+diet import users ./user-records.csv
+```
+
+## Configuration
+
+**This file must be present for the application to operate**
+
+All configuration settings are stored in ~/.diet/config.json
+
+
+```json
+{
+    "auth": {
+        "client_id": "",
+        "client_secret": "",
+        "host": "",
+        "verify_ssl": true
+    },
+    "api": {
+        "client_id": "",
+        "client_secret": "",
+        "host": "",
+        "verify_ssl": true
+    }
+}
+```
+
+The top level property determines the service to configure, currently there are two services, **api** and **auth**. Api is the main application services and Auth is Sporga's Authenication service.
+
+| Setting | Description |
+|---------|-------------|
+|client_id| The client id to authenticate with|
+|client_secret| The client secret to authenticate with|
+|host| The url of the service to import/export|
+|verify_ssl| Enable/disable SSL certificate verifcation 
+
+## Import file structure
+
+### Supported file types
+* CSV
+
+#### CSV Structure
+The CSV file must include a header row that matches the field's name you wish to import **exactly**
+
+### User Import
+| firstName | surname       | email                                                          | gender | address           | suburb    | state | mobilePhoneNumber | password  | postcode |
+|-----------|---------------|----------------------------------------------------------------|--------|-------------------|-----------|-------|-------------------|-----------|----------|
+| Test      | Administrator | csss@sporga.com.au                                             | Female | 20 resolution Dr  | Caringbah | NSW   | 61410100100       | ******* | 2229     |

@@ -1,0 +1,3 @@
+[console_scripts]
+diet = diet.__main__:main
+

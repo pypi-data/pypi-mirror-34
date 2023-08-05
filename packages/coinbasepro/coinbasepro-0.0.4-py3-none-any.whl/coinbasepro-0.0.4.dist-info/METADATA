@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: coinbasepro
+Version: 0.0.4
+Summary: A Python interface for the Coinbase Pro API.
+Home-page: https://github.com/acontry/coinbasepro
+Author: Alex Contryman
+Author-email: acontry@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4.x
+Description-Content-Type: text/x-rst
+Requires-Dist: requests (>=2.14.0)
+
+CoinbasePro: A Python API
+=========================
+
+.. image:: https://img.shields.io/pypi/v/coinbasepro.svg
+    :target: https://pypi.org/project/coinbasepro/
+
+.. image:: https://img.shields.io/pypi/l/coinbasepro.svg
+    :target: https://pypi.org/project/coinbasepro/
+
+.. image:: https://img.shields.io/pypi/pyversions/coinbasepro.svg
+    :target: https://pypi.org/project/coinbasepro/
+
+Features
+--------
+- Full support of Coinbase Pro REST API
+- Pythonic abstractions for a clean interface
+
+
+Installation
+------------
+
+.. code-block:: bash
+
+    $ pip install coinbasepro
+
+.. :changelog:
+
+Release History
+---------------
+
+dev
++++
+
+- [Short description of non-trivial change.]
+
+0.0.4 (2018-08-15)
+++++++++++++++++++
+
+**Improvements**
+
+- Updated stop orders to latest API.
+
+**Bugfixes**
+
+- Fix issue with time in force error checking.
+
+0.0.3 (2018-07-07)
+++++++++++++++++++
+
+**Improvements**
+
+- Rename deposit and withdraw methods to clarify action.
+
+**Bugfixes**
+
+- Removed margin endpoints - now unsupported.
+
+0.0.2 (2018-07-01)
++++++++++++++++++++
+
+**Improvements**
+
+- Client request timeout is now configurable.
+
+0.0.1 (2018-06-27)
++++++++++++++++++++
+
+- Hello world.
+

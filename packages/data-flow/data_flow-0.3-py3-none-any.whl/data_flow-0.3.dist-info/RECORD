@@ -1,0 +1,12 @@
+data_flow-0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+data_flow-0.3.dist-info/METADATA,sha256=W3Eca56Lr9Lo6cZ1XJqN7JT-XnygrL5LhwUeIEtAVY4,346
+data_flow-0.3.dist-info/RECORD,,
+data_flow-0.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+data_flow-0.3.dist-info/metadata.json,sha256=7_PZ89Ov4fcV1pkkWpYcx8hfI5IsNlMeica6BOBEir8,505
+data_flow-0.3.dist-info/top_level.txt,sha256=6NabMzxTTcTaLArkx3eZosYhO_c9x8VTPq87DvsvOzU,9
+dataflow/__init__.py,sha256=19d8YyQmMqWcqUch8SwHVUb4UphIaklnQ6OJkED1XBQ,100
+dataflow/datatypes.py,sha256=gVAEU2zFk2lSp9j-64YLgFREWOgle9xcHXPT4AVX25A,2979
+dataflow/exceptions.py,sha256=uNrw4Ght37kifgp6Lp3nLsyoetSZAiWDJk1NInGDlw4,46
+dataflow/flow.py,sha256=dILg-jsm5EB88qzVqyihZFhx7z-K2g5FqyIywHmnXHQ,780
+dataflow/promises.py,sha256=qo9w8cZO2z4GMUgsYBEqd9T4LzEqYKJ1LWDH4hkVCGQ,444
+dataflow/utils.py,sha256=quc1BdFl9nrUvlAV6lnOJjn7vQ09NkHqTY6I1RCX8iY,948

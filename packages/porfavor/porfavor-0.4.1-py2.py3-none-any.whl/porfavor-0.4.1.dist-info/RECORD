@@ -1,0 +1,15 @@
+porfavor/__init__.py,sha256=twYNN-tdMH93vGiPb6x_TTjuoYqFLBQe4vn9l3vWSbE,438
+porfavor/client.py,sha256=BM8CFE09DcFIiQaCFJhiAHV1Yl-RSdhL7064RZMfaA8,2440
+porfavor/server.py,sha256=gqxlJquZJvupgLiiY74PI6FxF9XGm56YW7lwzdkHm6A,4297
+porfavor/static/bundle.js,sha256=cbF4GMUXC_BJdSVGMcyQc-aPgPoCPjaoXinxhmLdPSk,137134
+porfavor/static/bundle.js.map,sha256=bQh8E6vCB3ErnCM3uMcwYXSySMY0L-Tbjf2FQOouERI,362327
+porfavor/static/fonts/JosefinSans-Regular.ttf,sha256=c6TAduS0aceVbmo_Ylt54PtLan7jz-S8PtBTMglYb88,87260
+porfavor/static/img/project_icon.png,sha256=LbcLCG1zF0kuP9J9YERH4ylMub6PIvkfmAc3orW01S4,9489
+porfavor/static/img/search.svg,sha256=fgZ_iDvr-4iwBuJCmb7PJoC7GUjm8dP9h-YqT3TaT7g,1147
+porfavor/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+porfavor/templates/index.html,sha256=7IWL223eSRmgLWOYeVHNUO6np9POjWSwkic_E7Ah4WY,194
+porfavor-0.4.1.dist-info/METADATA,sha256=2DGxfJGCjdedy4gUl6IemNe0HKwepDVyQdH7HMKT6Io,2237
+porfavor-0.4.1.dist-info/RECORD,,
+porfavor-0.4.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+porfavor-0.4.1.dist-info/entry_points.txt,sha256=fCnnOhLHzJmmaL1cuQwdI1fsqKZq8xvVhHc_3prNM98,44
+porfavor-0.4.1.dist-info/top_level.txt,sha256=UhaPql7H28D0Mvgu7EOL9d7p4rWb8xTVhM8oe79iY8k,9

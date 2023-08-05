@@ -1,0 +1,10 @@
+pypolisen/Client.py,sha256=iDhQWyMYE8d6V0JMxUPOACz-j0zKdNW-aO4cAAYKxf0,1377
+pypolisen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypolisen/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypolisen/tests/test_get_items.py,sha256=rCbLl0ZNQeSRBLaI07yUCI67-9DsZ8Yf9FJJZCmKBzE,575
+pypolisen/tests/test_get_suggestions.py,sha256=jrR7_v-qLTvbKJYAD9STANuBRntiUoqJWYj-_QHOIVg,369
+pypolisen-1.0.dist-info/METADATA,sha256=fUJ2fEfVV4Za2iiQZApcnnYXgdQ18Iex7OjlI7BWNzk,195
+pypolisen-1.0.dist-info/RECORD,,
+pypolisen-1.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+pypolisen-1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pypolisen-1.0.dist-info/top_level.txt,sha256=giEoAmsO_qvdtf3Pge2snbBxHMCZOP_JYXRwxIYdTk8,10

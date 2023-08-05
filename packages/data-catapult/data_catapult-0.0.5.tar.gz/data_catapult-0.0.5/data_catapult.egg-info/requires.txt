@@ -1,0 +1,6 @@
+clickhouse-driver
+sqlalchemy
+psycopg2
+pyyaml
+pandas
+requests

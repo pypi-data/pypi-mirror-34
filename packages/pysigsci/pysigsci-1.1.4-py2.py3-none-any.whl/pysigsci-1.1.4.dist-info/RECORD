@@ -1,0 +1,9 @@
+pysigsci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysigsci/sigsciapi/__init__.py,sha256=oEpYMO_I7dju9Cnedz7uTcUCKPQGiFGEWwtoXAAz2S8,61
+pysigsci/sigsciapi/sigsciapi.py,sha256=DkJFTIY4praQoRUTey9ZiQiyRLhd0WR46YZ_PIyCEFI,39988
+pysigsci-1.1.4.data/scripts/pysigsci,sha256=GNvWNEzkYNCjjoMLD2k6ID0mUTiNQXuGzdr7h_-J6E0,7575
+pysigsci-1.1.4.data/scripts/pysigscia,sha256=orcPvfbvZJP9XVjwomInbc9QNKAPa1lSJmaRavahlPI,8841
+pysigsci-1.1.4.dist-info/METADATA,sha256=b2mExk-dnHo5fgcEMcrpW3U_6AxagDrgn1HmVGw-KT8,1955
+pysigsci-1.1.4.dist-info/RECORD,,
+pysigsci-1.1.4.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pysigsci-1.1.4.dist-info/top_level.txt,sha256=LP_vBhm7qge-_nVktRem2mYuGd5aT_yrUXWRqnVpEuQ,9

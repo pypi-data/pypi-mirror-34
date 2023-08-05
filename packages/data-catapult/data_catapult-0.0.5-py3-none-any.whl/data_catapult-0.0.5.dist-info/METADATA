@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: data-catapult
+Version: 0.0.5
+Summary: Python bulk data loading ETL library
+Home-page: https://github.com/Datawheel/catapult
+Author: Jonathan Speiser
+Author-email: jonathan@datawheel.us
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: clickhouse-driver
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2
+Requires-Dist: pyyaml
+Requires-Dist: pandas
+Requires-Dist: requests
+
+Utility for bulk loading pandas dataframes into databases
+
+

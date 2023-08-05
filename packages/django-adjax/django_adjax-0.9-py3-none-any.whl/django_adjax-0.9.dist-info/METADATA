@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-adjax
+Version: 0.9
+Summary: Django AJAX RPC.
+Home-page: http://adjax.io
+Author: Sebastian Nogara
+Author-email: snogaraleal@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Framework :: Django
+Requires-Dist: Django (>=1.6.5)
+Requires-Dist: six (>=1.6.1)
+
+Easy-to-use AJAX-based RPC mechanism for Django with extensible serialization.
+
+

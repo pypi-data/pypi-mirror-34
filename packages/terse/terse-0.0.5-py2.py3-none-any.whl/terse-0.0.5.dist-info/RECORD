@@ -1,0 +1,14 @@
+terse/__init__.py,sha256=WwTinv5gZLUjJDf1Kpi_5w-VijLKOJrtZu-FIxsg0mo,194
+terse/in_directory.py,sha256=kLJkXAsfg0GuqABUQyZ3BeDVrXjnMRKqbExqEmkEO8I,574
+terse/on_exit.py,sha256=DmuHhORGsGZQHyHZFKH4tOJ2QoiQUKaM5_TTeFpYr7U,1342
+terse/future/__init__.py,sha256=n7R4UtjN9xtho1mysrLrRh-JxgmBS3Z74WM9EOzTqK0,250
+terse/future/on_exit.py,sha256=Z7-7qsWhgZt6_hCRff8BRnVWsbYjsj9itDQjPVWkoeU,4039
+terse/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terse/test/test_chdir.py,sha256=SZ7j9id0GFCrSBjPa5NIMxnR6c6ZgkTf9hVH2Lq0nNU,768
+terse/test/test_on_exit.py,sha256=Sr3wYGPr3OcVRkZJ8Arr8HAbGj41ZZLZmG4bXZq71E0,5603
+terse-0.0.5.dist-info/DESCRIPTION.rst,sha256=uBeGhunkf1FhaGkSwfjLFALyO_0o0pEPYTurU0LpIK4,2134
+terse-0.0.5.dist-info/METADATA,sha256=Z3iZH5pAEuTozttLl8yk3Fy_9-e5DUeKplvgKAnY2hk,2707
+terse-0.0.5.dist-info/RECORD,,
+terse-0.0.5.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+terse-0.0.5.dist-info/metadata.json,sha256=hIxwlYHSdRankj4waWWGpEqUbeQDF9Dvzm-SSbOLtRo,714
+terse-0.0.5.dist-info/top_level.txt,sha256=WnR25519uMav71iM8fWm0HKGMULMLwc9ofm8rSqdqyU,6

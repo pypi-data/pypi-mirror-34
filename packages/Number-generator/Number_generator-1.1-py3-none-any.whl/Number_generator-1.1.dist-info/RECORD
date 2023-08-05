@@ -1,0 +1,8 @@
+Number_generator-1.1.dist-info/METADATA,sha256=e5_pC6qsmY68b45_C8uK0yw8-seNEPaAaapFnP9Q7Fo,644
+Number_generator-1.1.dist-info/RECORD,,
+Number_generator-1.1.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+Number_generator-1.1.dist-info/top_level.txt,sha256=KtA3wJEh9AWa_FMwhtWkcVEQEnHAqad37M1SGl2_lfM,21
+numbergenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numbergenerator/number_generator.py,sha256=jYMTNc6eq3e2gIfoqg72qWNioB_BYCI-dkk10G4mqZc,5653
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_number_generator.py,sha256=1RrC95m5K_TNRRDyWrkWaR672bKnbcpiPd3OLD5j9Tw,3548

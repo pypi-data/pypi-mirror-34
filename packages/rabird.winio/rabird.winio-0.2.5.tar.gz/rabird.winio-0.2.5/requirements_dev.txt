@@ -1,0 +1,12 @@
+pip
+tox
+pytest
+pytest-runner
+wheel
+bumpversion
+watchdog
+flake8
+coverage
+Sphinx
+cryptography
+PyYAML

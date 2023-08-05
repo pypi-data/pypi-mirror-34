@@ -1,0 +1,15 @@
+chinaarea/__init__.py,sha256=kEYTX4tH68994KWvXzIq64a6ehQL2VGl7vLuyfPCwAo,164
+chinaarea/chinaarea.py,sha256=rlAMZgBR3oE93eootC7PIhib9n6AabnjAgTOpJ784MA,5103
+chinaarea/stats_spider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chinaarea/stats_spider/china_area.sqlite,sha256=DcSE-2laRLHithwbyLE8vAUjtPjxeDOv0iW3uh791GQ,6553600
+chinaarea/stats_spider/items.py,sha256=51G-1JTkU1BClH6sh4h-bp70g5o9-bDP_GCY1cGtz84,294
+chinaarea/stats_spider/middlewares.py,sha256=tPWwGFCb1XeeuSb-j7xyqHpSeTl5-OqdQLhkv_vf3q4,3710
+chinaarea/stats_spider/models.py,sha256=xnbaRf2fTXvBSsLEc-xWtSeCNs5L6d88d8dsI17qesQ,1790
+chinaarea/stats_spider/pipelines.py,sha256=Kq_HLlaG6OEvZhpyjE5EKsJtLUDjGUrpoR8u7ov9LpA,842
+chinaarea/stats_spider/settings.py,sha256=kHRRmgHw5usxlUr8KA11-us7YHPdegElfS2kwM6EVlo,3221
+chinaarea/stats_spider/spiders/__init__.py,sha256=a-Jax6MTMZC2HOw3mUBcNu-T44dOUHDsb22Oly4HTnM,165
+chinaarea/stats_spider/spiders/area_spider.py,sha256=_7JuJSEAGHAlGYcIVJFJTbSnjDPLPrwbLrT2NxGHVXU,3385
+chinaarea-0.0.4.dist-info/METADATA,sha256=yucU6zitGIkHyd5zOllbpdcODG59RmfgzXalunklNIs,2989
+chinaarea-0.0.4.dist-info/RECORD,,
+chinaarea-0.0.4.dist-info/WHEEL,sha256=pZyAqgNAylOf0KG_hPHMtuuY08rV3WzWwZu2OTsNnnw,97
+chinaarea-0.0.4.dist-info/top_level.txt,sha256=3dGfANugBxl4m-aiFpuApO75icMXE1NBCpBqFuEhbN4,10

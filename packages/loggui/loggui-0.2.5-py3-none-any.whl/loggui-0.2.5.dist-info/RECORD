@@ -1,0 +1,10 @@
+loggui/__init__.py,sha256=GdEzreXE4nc3EHiJzcx_vkK29d7TwgznMSdHoht8Bws,60
+loggui/__main__.py,sha256=IjlEWvxEitCXWh_dfcMBvOdkW36F0IGiSQUCMAepciM,517
+loggui/handler.py,sha256=uE7VlVfGSbR0qhd8Q_RNNIyoIExWNjt7EMJFg-pjJBA,5798
+loggui/widgets/__init__.py,sha256=m2kM_7irGPWU8fVL__lKe-r7TQ1NEqcqkXfBKZkjwKE,105
+loggui/widgets/record_view.py,sha256=ze49_EWixnlJQY7Uu8IbaBTpWQtXBKJsk0LvJLpusx4,1228
+loggui/widgets/settings.py,sha256=YUfZxGlmvdrTPM7asl6cwBnr5vFQdM0M7yH2eOuncYQ,3238
+loggui-0.2.5.dist-info/METADATA,sha256=AoTXCYPUCoLtT_yPhHYLuIiOCLD21yKwD8u5xQiVs4w,1056
+loggui-0.2.5.dist-info/RECORD,,
+loggui-0.2.5.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+loggui-0.2.5.dist-info/top_level.txt,sha256=SJb6Si-9zWBTfaChUo_AYcI5VNiwl_A8fbMaOu4YHbs,7

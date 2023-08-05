@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyconcepticon
+Version: 1.4.0
+Summary: programmatic access to concepticon-data
+Home-page: UNKNOWN
+Author: 
+Author-email: forkel@shh.mpg.de
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: data linguistics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Provides-Extra: test

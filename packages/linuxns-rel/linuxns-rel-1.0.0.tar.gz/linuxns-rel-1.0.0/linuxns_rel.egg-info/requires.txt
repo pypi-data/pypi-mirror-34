@@ -1,0 +1,7 @@
+psutil
+asciitree
+
+[dev]
+coverage
+sphinx
+sphinx_rtd_theme

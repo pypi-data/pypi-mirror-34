@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: lifesospy-mqtt
+Version: 0.10.0
+Summary: MQTT client to report state of LifeSOS security system and devices.
+Home-page: https://github.com/rorr73/lifesospy_mqtt
+Author: Richard Orr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5.3

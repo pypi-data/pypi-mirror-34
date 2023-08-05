@@ -1,0 +1,11 @@
+django_history_triggers-1.1.1.dist-info/METADATA,sha256=BrBhJNMEgCUWFMNA58oRoG8ku11zf2ftFixRpjI-5oU,566
+django_history_triggers-1.1.1.dist-info/RECORD,,
+django_history_triggers-1.1.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+django_history_triggers-1.1.1.dist-info/top_level.txt,sha256=g04cw2Fo8hZ0f787jebMcA5kcAJ2slo1YyM7LfAA_fs,8
+history/__init__.py,sha256=mvzviCFQYgMn7yWNmqWEbZ-HKipGvdOaOe8L-rGwuEg,137
+history/apps.py,sha256=Z_X9x2zv5br4T1oFtruMhLkZpd1s9bZy3b6_vwNPRHE,125
+history/middleware.py,sha256=Jlgj4PbIJ575Oii4fvz4E-j9MWATeb1Mx2w8hxRGJYQ,1470
+history/utils.py,sha256=moSo7d_8ar53XtxQZ8TM_T_E6Pr6xzJqUsnT2T_C23U,973
+history/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+history/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+history/management/commands/triggers.py,sha256=uRyXCrzCEVeOY8AQhISyxUkfgBZehUFLmG9gYpgBqZc,15957

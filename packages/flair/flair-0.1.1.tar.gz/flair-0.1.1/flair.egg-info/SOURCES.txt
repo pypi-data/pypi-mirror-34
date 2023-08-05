@@ -1,0 +1,14 @@
+README.md
+setup.py
+flair/__init__.py
+flair/data.py
+flair/embeddings.py
+flair/file_utils.py
+flair/language_model.py
+flair/tagging_model.py
+flair/trainer.py
+flair.egg-info/PKG-INFO
+flair.egg-info/SOURCES.txt
+flair.egg-info/dependency_links.txt
+flair.egg-info/requires.txt
+flair.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+[run]
+source = cowfish
+
+[report]
+include =
+    cowfish/*.py
+    tests/*.py

@@ -1,0 +1,10 @@
+# Versioneer
+include _version.py
+include versioneer.py
+
+#
+recursive-include harvesters *.py *.jpg *.png
+
+# Misc
+include LICENSE
+include README.rst

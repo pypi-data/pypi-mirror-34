@@ -1,0 +1,29 @@
+{% extends 'dataviewer/base.html' %}
+{% block page %}
+    <div id="view_container">
+    <div id="chart" data-module="ngsiviewchart"></div>
+    <div style="" id="map" class="map" data-module="ngsiviewmap"></div>
+    </div>
+    </br>
+    <pre data-module="right_time_context" style="position: relative;overflow:hidden;">
+    <div class="loading">
+        {{ _('Loading...') }}
+    </div>
+    </pre>
+    {% block scripts %}
+        <script>
+            var preload_resource = {{ h.literal(resource_json) }};
+            var resource_url = {{ h.literal(resource_url) }};
+            var view_enable = {{ h.literal(view_enable) }};
+        </script>
+    {% endblock %}
+
+{% resource 'right_time_context/vendor/highlight/highlight.pack.js' %}
+{% resource 'right_time_context/vendor/bootstrap/js/bootstrap.js' %}
+{% resource 'right_time_context/vendor/dygraph/dygraph-combined.js' %}
+{% resource 'right_time_context/view_ngsi.js' %}
+{% resource 'right_time_context/vendor/bootstrap/css/bootstrap-responsive.css' %}
+{% resource 'right_time_context/vendor/bootstrap/css/bootstrap.css' %}
+{% resource 'right_time_context/css/ngsi.css' %}
+
+{% endblock %}

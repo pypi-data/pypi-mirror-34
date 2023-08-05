@@ -1,0 +1,28 @@
+.. _topics/backend:
+
+==============
+Backend System
+==============
+
+Cubane provides a backend system that allows content authors to manage content
+very effectively and easily. Various components are integrating themselves into
+the backend system, such as the content management system or the media system.
+
+However, you can also use Cubane's backend system without any other components
+on its own if you require a quick and effective way to build a backend system
+for your data.
+
+Of course, Django provides an excellent admin interface by itself, which can be
+used instead of or beside Cubane's admin interface. However, when it comes to
+managing content management data or media assets, those components will not
+integrate with Django's admin interface automatically in the way they integrate
+with Cubane's backend system.
+
+
+.. toctree::
+    :maxdepth: 2
+
+    install
+    views
+    model
+    forms

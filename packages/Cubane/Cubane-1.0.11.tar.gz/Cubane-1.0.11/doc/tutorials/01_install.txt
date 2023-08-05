@@ -1,0 +1,80 @@
+.. _tutorials/install:
+
+===================
+Quick install guide
+===================
+
+Cubane is easy to install for most Unix/Linux based platforms including Mac OS.
+Windows is currently not supported.
+
+
+Requirements
+============
+
+Cubane requires the following main components:
+
+- Python 2.7
+- Django 1.11
+
+.. seealso::
+
+    Please also compare the Python requirements for different Django_ versions.
+
+    .. _django: https://docs.djangoproject.com/en/1.11/faq/install/#faq-python-version-support
+
+
+Install Python
+==============
+
+Cubane is written in the Python programming language; therefore we need to make
+sure that we have python up and running first.
+
+Get the latest version of Python 2.7+ at https://www.python.org/download/ or
+with your operating system's package manager.
+
+Cubane is currently supporting the latest version of python 2.7+. At the time
+of writing, this is 2.7.12 for example.
+
+
+Verifying Python
+================
+
+You can verify that Python is installed by typing ``python`` from your shell;
+you should see something like:
+
+.. parsed-literal::
+
+    Python 2.7.x
+    [GCC 4.x on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+
+
+Installing Cubane
+=================
+
+After installing Python, you can easily install cubane via pip by typing:
+
+.. code-block:: console
+
+    $ pip install Cubane
+
+
+Verifying Cubane
+================
+
+To verify that Cubane is available, type ``python`` from your shell. At the
+Python prompt, try to import Cubane:
+
+.. parsed-literal::
+
+    >>> import cubane
+    >>> cubane.VERSION
+    |version|
+
+
+What's Next
+===========
+
+You've installed Python and Cubane successfully. You can now :ref:`create your
+first Cubane project <tutorials/create_project>`.

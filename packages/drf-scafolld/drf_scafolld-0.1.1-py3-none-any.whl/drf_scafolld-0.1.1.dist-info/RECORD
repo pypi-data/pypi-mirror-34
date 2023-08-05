@@ -1,0 +1,9 @@
+drf_scafolld/__init__.py,sha256=aN8uAWWRH087_GdtKoFExzsktPyVis9Kmcj9IBczG78,44
+drf_scafolld/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_scafolld/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_scafolld/management/commands/constants.py,sha256=UFcNYNiiA0N099H1Ux0clyz1612wK58z0p3Ll86V4mE,930
+drf_scafolld/management/commands/startdrfapp.py,sha256=j8KhDwUj7RfgnlOCzW8aL_2Y5uNhad9x-Stw3SVLMLg,1434
+drf_scafolld-0.1.1.dist-info/METADATA,sha256=VuL2blVLY8TO0QCwfogijI33WarZPWLX3PJ0Wz38H6o,1090
+drf_scafolld-0.1.1.dist-info/RECORD,,
+drf_scafolld-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+drf_scafolld-0.1.1.dist-info/top_level.txt,sha256=XpvY6hZa-VeDFNOWEHdp62PJjIxCYvqMdoD1CIyGKgA,13

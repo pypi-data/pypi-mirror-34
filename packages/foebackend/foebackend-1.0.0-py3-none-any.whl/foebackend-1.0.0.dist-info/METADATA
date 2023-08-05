@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: foebackend
+Version: 1.0.0
+Summary: FareOn eshop backend
+Home-page: UNKNOWN
+Author: Vojtěch Pachol
+Author-email: v.pachol@mikroelektronika.cz
+License: UNKNOWN
+Keywords: python,eshop,fareon
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Babel
+Requires-Dist: PyJWT
+Requires-Dist: PyYAML
+Requires-Dist: motor (<2)
+Requires-Dist: pycrypto
+Requires-Dist: python-dateutil
+Requires-Dist: schematics
+Requires-Dist: tornado (<5)
+
+UNKNOWN
+
+

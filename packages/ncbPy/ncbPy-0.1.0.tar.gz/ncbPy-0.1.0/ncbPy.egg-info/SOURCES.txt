@@ -1,0 +1,9 @@
+README.md
+setup.py
+ncbPy/__init__.py
+ncbPy/ncbi.py
+ncbPy.egg-info/PKG-INFO
+ncbPy.egg-info/SOURCES.txt
+ncbPy.egg-info/dependency_links.txt
+ncbPy.egg-info/requires.txt
+ncbPy.egg-info/top_level.txt

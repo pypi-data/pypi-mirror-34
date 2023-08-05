@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kafkaBridgeClient
+Version: 0.1.4
+Summary: A package for using kafka-bridge to talk to kafka inside docker
+Home-page: https://gitlab.com/benkibejs/kafka-bridge/audentes
+Author: Benjamin Lindberg
+Author-email: benjamin.lindberg@gmail.com
+License: UNKNOWN
+Description: Hypo kafka bridge
+        =================
+        
+        This rest api is used to ingest records into a kafka instance running inside a docker compose network.
+        
+        The best way is to use the kafka bridge api. This api is a python wrapper that simplifies the use of this rest api.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

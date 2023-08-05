@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: gatemate
+Version: 0.1
+Summary: Gate answers are now just a command away.
+Home-page: https://github.com/kb-studios/gatemate
+Author: Kaushal Bhogale
+Author-email: 2015kaushal.bhogale@ves.ac.in
+License: MIT
+Description: 
+        # gatemate
+        Get questions to gate answers on the command line. Search by typing the initial part of the question, supported by the year in which the question was asked for an accurate result.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0

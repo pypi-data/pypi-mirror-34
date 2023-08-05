@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+gatemate/__init__.py
+gatemate.egg-info/PKG-INFO
+gatemate.egg-info/SOURCES.txt
+gatemate.egg-info/dependency_links.txt
+gatemate.egg-info/top_level.txt

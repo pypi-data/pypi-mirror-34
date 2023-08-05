@@ -1,0 +1,22 @@
+%(name)s
+========
+
+Installation
+------------
+
+From the project directory::
+
+    $ cmake .
+    $ make
+    $ make install
+
+Usage
+-----
+
+...
+
+Release Notes
+-------------
+
+:0.0.1:
+    Project created

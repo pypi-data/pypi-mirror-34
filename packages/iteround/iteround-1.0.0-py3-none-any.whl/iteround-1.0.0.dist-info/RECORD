@@ -1,0 +1,8 @@
+iteround/__init__.py,sha256=mXKfioZutgQCdhhoAdos4blZqUea7AkJlJOnjP2Mou8,143
+iteround/core.py,sha256=vyKiiHNJK0XSzGqc_rG-TE2CCSTcvEt5yFdw3esuyok,4708
+iteround-1.0.0.dist-info/METADATA,sha256=IbQEUjEuzb2uZvqrRE469vvX3U9Q15OxkFckmW1DiFo,2280
+iteround-1.0.0.dist-info/RECORD,,
+iteround-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+iteround-1.0.0.dist-info/top_level.txt,sha256=CLai-j2P2KyX8SGemISxFUHpN71lkoOOCMQKZXY3Uhk,15
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_saferound.py,sha256=NZOjjTyeLDR37vU8b1moWuePnz_MqvYibK61Uo04Csk,2741

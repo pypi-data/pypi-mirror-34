@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyx-manager
+Version: 1.3
+Summary: Command-line project manager
+Home-page: UNKNOWN
+Author: Armand Foucault
+Author-email: armand.foucault@telecom-bretagne.eu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: docopt
+Requires-Dist: colorama
+Requires-Dist: twine
+
+UNKNOWN
+
+

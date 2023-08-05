@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: raiden-libs
+Version: 0.1.0
+Summary: Useful tools for Raiden and services.
+Home-page: https://github.com/raiden-network/raiden_libs
+Author: Brainbot Labs Est.
+Author-email: contact@brainbot.li
+License: UNKNOWN
+Keywords: raiden_libs
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: coincurve (<8.0,>=7.1.0)
+Requires-Dist: pycryptodome (<4.0,>=3.5.1)
+Requires-Dist: matrix-client (>=0.3.2)
+Requires-Dist: jsonschema
+Requires-Dist: web3 (<5.0,>=4.2.0)
+Requires-Dist: eth-utils (<2.0,>=1.0.1)
+Requires-Dist: gevent (<2.0,>=1.2.2)
+
+===========
+Raiden Libs
+===========
+
+
+Useful tools for Raiden and services.
+
+

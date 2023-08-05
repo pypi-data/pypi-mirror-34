@@ -1,0 +1,14 @@
+[Unit]
+Description=CHIME FRB Operations Web Application
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/uwsgi \
+        --http :5002 \
+        --manage-script-name \
+        --mount /=ch_frb_wview:webapp \
+        --threads 4
+Restart=on-failure
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all

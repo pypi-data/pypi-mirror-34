@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: publicholiday
+Version: 0.1.0
+Summary: Is it a public holiday?
+Home-page: https://github.com/timbirk/python-publicholiday
+Author: Tim Birkett
+Author-email: tim.birkett@devopsmakers.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click (==6.7)
+Requires-Dist: holidays (==0.9.5)
+
+Is it a public holiday?
+
+

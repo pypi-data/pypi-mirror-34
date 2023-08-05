@@ -1,0 +1,11 @@
+[console_scripts]
+dankdungeon-encounter = dankdungeon:main_encounter
+dankdungeon-encounter-summary = dankdungeon:main_summary
+dankdungeon-monster = dankdungeon:main_monster
+dankdungeon-npc = dankdungeon:main_npc
+dankdungeon-roll = dankdungeon:main_roll
+dankdungeon-simulate = dankdungeon:main_simulate
+dankdungeon-threshold = dankdungeon:main_threshold
+dankdungeon-villain = dankdungeon:main_villain
+dankdungeon-worldmap = dankdungeon:main_worldmap
+

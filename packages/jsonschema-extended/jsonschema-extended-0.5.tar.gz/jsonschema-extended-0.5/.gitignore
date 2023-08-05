@@ -1,0 +1,15 @@
+_cache
+_static
+_templates
+
+TODO
+.idea/
+.venv/
+build/
+item.json
+jsonschema/__pycache__/
+test.py
+.DS_Store
+.eggs/
+dist/
+jsonschema_extended.egg-info/

@@ -1,0 +1,12 @@
+lifester/__main__.py,sha256=J89bqwp1l0g5KnZKJq9-dO2DbGb76jj3-Ty8_HxCd5c,1401
+lifester/analytics.py,sha256=vp3UEcuPXUiKkqu9V3qPgiXP0JZfpZi155azc4MIaxU,2537
+lifester/category_loader.py,sha256=J6Aob-ArYD8tkrIidqPk6nHfPIYbOwowGpYqdS3u3HA,927
+lifester/data_entry.py,sha256=4D7aorcizz6BzTVQphINJXJQ5iFdoD693atTd6wf6Sw,3755
+lifester/data_from_file.py,sha256=ddmdEJO7wlrNBUGvNzHYw_dFVIrZMbq-OKTEroAftv4,3628
+lifester/file_loader.py,sha256=otF_7JWZmsckKr3ewnh5N7eOtocEWlKO8Mjct46byfY,2853
+lifester/global_variables.py,sha256=OcKrkvI7F4iJoQhpg3HZbNtEsaOkQoVgiB6ofwfCLYo,370
+lifester-1.2.0.dist-info/METADATA,sha256=87_tYL2AA6JV4QrADFnExUq90CkGpOEgARcMtou-Oos,3392
+lifester-1.2.0.dist-info/RECORD,,
+lifester-1.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+lifester-1.2.0.dist-info/entry_points.txt,sha256=taDbDiZe1RyaFnB0pko3xQo8QEyhfCHxvehQaOWY33c,53
+lifester-1.2.0.dist-info/top_level.txt,sha256=KvfFhEqh9hVTBmWk0vNRXoyoON1e0jVr5-nHQrdvwIU,9

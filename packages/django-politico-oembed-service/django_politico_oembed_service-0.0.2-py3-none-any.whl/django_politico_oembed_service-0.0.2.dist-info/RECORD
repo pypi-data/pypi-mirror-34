@@ -1,0 +1,11 @@
+django_politico_oembed_service-0.0.2.dist-info/METADATA,sha256=5r7ktlM8KcnzaCXPN-J84YQ2F__s41ZiUtrHgNWY4jA,924
+django_politico_oembed_service-0.0.2.dist-info/RECORD,,
+django_politico_oembed_service-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_politico_oembed_service-0.0.2.dist-info/top_level.txt,sha256=pLTzoZ-8_ysE_jtLa1JzIh96uH0BZ6k8cRL3z9Iv62Y,14
+oembedservice/__init__.py,sha256=yzkMess83ZHRMruudX0WnLPnalwxbMwOY1dZp5fHwLE,62
+oembedservice/apps.py,sha256=25J4MF1G5_TqkaClZRF0SQxwfsFK4aqqtJhWazEOOIA,101
+oembedservice/conf.py,sha256=pRQkINJ-ETwPdbyWIYZbrNi4BYW_lzhqyvqO4HUyeWQ,681
+oembedservice/urls.py,sha256=-uaWtOQDeCrnO-qG-LRW0y_YZntqN6nfABS--cJGypk,207
+oembedservice/views/__init__.py,sha256=Tt_ctXjH-NiWvB0wiGJzn6aRoLZs0oBHNqp-CX-c1W0,93
+oembedservice/views/twitter.py,sha256=WAx3-ELru4ZQPJb4ccPUiPBbKy-HuR2e6-phPA0kEu4,1561
+oembedservice/views/youtube.py,sha256=jK9Ywnrlw7tkThJaUnnsv1dG0f2AmVe9EIxI0UvOclo,867

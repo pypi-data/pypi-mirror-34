@@ -1,0 +1,35 @@
+CHANGES
+=======
+
+* fix req
+* lock plotly version
+* back to travis deploy with master
+* fine\_grained with layout
+* better table color handle
+* fix merge
+* Adding Table plot
+* Changing strategy: layout apart
+* Changing strategy: layout apart
+* [WIP] adding definition of plot from csv
+* Adding notebooks/tutorial.ipynb
+* fix tipo
+* Small fix readme
+* better readme
+* Deploy only on release branch
+* fix deploy
+* Auto deploy on pypi
+* update readme
+* auto generate AUTHORS & ChangeLog
+* Adding CI & enhance readme
+* Create LICENSE
+* Let's put tests in place
+* Adding bar plot
+* Plots with data modifications are now in register\_pandas\_accessors
+* fix cli plot names
+* add filter on brightness & renames
+* Better packaging
+* cmdline to ease check plots
+* Let's try this way ?
+* Bettering correlation matrix
+* Let's go for that structure
+* Put the basic structure

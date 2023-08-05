@@ -1,0 +1,8 @@
+evdev
+daemonize
+dbus-python
+pyudev
+setuptools
+pexpect
+pyttsx3
+pyte

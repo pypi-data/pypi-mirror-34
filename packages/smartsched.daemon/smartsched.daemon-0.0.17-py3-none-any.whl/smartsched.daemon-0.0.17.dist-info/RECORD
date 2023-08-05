@@ -1,0 +1,10 @@
+etc/init.d/smart_daemon,sha256=nF-g-rglqSEHRUHGzd7LTwKJhUhPfNyZOGxKnfjyBAI,739
+smartsched/daemon/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+smartsched/daemon/base_daemon.py,sha256=o9Wtz-JorSMf3bm06Ok1vPgzLa36gHyWTWuKhnmcxAc,3656
+smartsched/daemon/base_strategy.py,sha256=LaehI4S9046GsvGVyRfQOLJTiQNyMQFlpkgnMRX23gA,2257
+smartsched/daemon/smart_daemon.py,sha256=4uJuFCB-e99GJ-VEu7YGx26nPFmiO_JyIv289JF-r3g,3467
+smartsched.daemon-0.0.17.dist-info/METADATA,sha256=02krpTaw4rknFRrMVp_8HdbL3FyoOTAKhxQfTS10Pvs,5719
+smartsched.daemon-0.0.17.dist-info/RECORD,,
+smartsched.daemon-0.0.17.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+smartsched.daemon-0.0.17.dist-info/top_level.txt,sha256=y-kIKGujweY5EfpwR1fHG1bJTel6X1GCjwAAQq3iUvg,11
+usr/bin/SmartDaemon,sha256=0n4Jhhxrcsrya748HiP_wu7GKu6iVifNo_YyaoBp160,567

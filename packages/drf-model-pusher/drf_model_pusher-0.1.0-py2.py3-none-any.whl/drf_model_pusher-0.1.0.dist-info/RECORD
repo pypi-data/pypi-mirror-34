@@ -1,0 +1,10 @@
+drf_model_pusher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_model_pusher/backends.py,sha256=3YfCNByu9mcqz3Wrl6DFzUc-Us4tgmPjkbpg_V9MQq8,3992
+drf_model_pusher/config.py,sha256=jGIfYEwxWVnSlq8-SbbZmgkEreVBlpllfpvKqOKWXpA,359
+drf_model_pusher/receivers.py,sha256=Gu8Rn3MYaDXvwnBZ15SLijgQ72RmiW5A80yw3bDh7bA,604
+drf_model_pusher/signals.py,sha256=vGlgzM_B2x_EHW0k9Pmfd44U6p7bZJioprXdJcTOFpw,250
+drf_model_pusher/views.py,sha256=BApQCUKOTMJepXDQz7qlpUG4yyn7kWP74o7N-g76fMk,2793
+drf_model_pusher-0.1.0.dist-info/METADATA,sha256=kZNhaZvFP1Z-TGRAkRy7WFIQcvzzS0m68BCo9nccBQQ,3474
+drf_model_pusher-0.1.0.dist-info/RECORD,,
+drf_model_pusher-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+drf_model_pusher-0.1.0.dist-info/top_level.txt,sha256=ZrvjZTe1FUjSXwS20n-tMCGnVtWlKc1I_OFlBK9-3wY,17

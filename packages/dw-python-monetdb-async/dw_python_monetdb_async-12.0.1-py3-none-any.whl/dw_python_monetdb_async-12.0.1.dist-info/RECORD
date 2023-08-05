@@ -1,0 +1,15 @@
+dw_python_monetdb_async-12.0.1.dist-info/METADATA,sha256=jmKPMcDRCwMY6hUD1hP2hC37RGCX5vwQDEvfBILKyOQ,5171
+dw_python_monetdb_async-12.0.1.dist-info/RECORD,,
+dw_python_monetdb_async-12.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dw_python_monetdb_async-12.0.1.dist-info/top_level.txt,sha256=8bHxGKjtiZhul-EqGka-nsyslqJcHy4DJlEKSotL7r4,8
+monetdb/__init__.py,sha256=i2eU8wWejYjF6RBGQAvM8Oe8OcFoXgnUN11VYTCgly4,1088
+monetdb/control.py,sha256=I1qyYm78h-SUYiWr6AwQSASN6b0f7sa4IjCKDgdWl-M,8195
+monetdb/exceptions.py,sha256=rJDjSmiwprjzUiRrHopgSlxcsCHKlmgVQU8b_oaalaM,3432
+monetdb/mapi.py,sha256=qT3RvSNiTJA9lZ5qKxKCv5OMjpJbDjhqX4cFFOCnPoU,12034
+monetdb/sql/__init__.py,sha256=rmuSrINu2wEwTGhRjOzxpViBuilvhwp8Yi_BvCuYsSo,1766
+monetdb/sql/connections.py,sha256=NwZ5_3aeu5NmuK9qHmOyYq-Lt7qUgre_wLGr6Qqowr8,7119
+monetdb/sql/converters.py,sha256=SyReBKiTFcuDzS2uu7kilgpheZK-Cd445cPqAFZ-3tw,1553
+monetdb/sql/cursors.py,sha256=wlbPG5jqb2u3EqqWbaTFU1mlZ6-zLaREKH35wVbk58Q,22477
+monetdb/sql/monetize.py,sha256=_5Xwz4BLUvAwltSYw1LwH79r6UgS3OJS0cBiMw_5s74,2335
+monetdb/sql/pythonize.py,sha256=dyyZdr_8Oz1zx8dzQf9tC81H2oTNSvidy6BydsAhA8g,4744
+monetdb/sql/types.py,sha256=nKgTW_iKo-G4AIMEcf0Ox3VgVi-2bsDGd9rsju1fjSM,2133

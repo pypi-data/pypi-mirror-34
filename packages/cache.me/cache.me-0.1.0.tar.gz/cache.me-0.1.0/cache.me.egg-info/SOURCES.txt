@@ -1,0 +1,11 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cache.me.egg-info/PKG-INFO
+cache.me.egg-info/SOURCES.txt
+cache.me.egg-info/dependency_links.txt
+cache.me.egg-info/top_level.txt
+cachme/__init__.py

@@ -1,0 +1,5 @@
+nat>=0.4.2
+PyQt5
+numpy
+pandas
+wand

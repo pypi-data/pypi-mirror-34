@@ -1,0 +1,5 @@
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-16T07:55:39.4424182Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 14916, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 21.518 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.

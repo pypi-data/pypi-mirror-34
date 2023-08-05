@@ -1,0 +1,12 @@
+mesoshttp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mesoshttp/client.py,sha256=bZokFMJGRPOrfaqI-Y-uRROb2Ya1XcylFRjzEALt2po,27524
+mesoshttp/core.py,sha256=B4JNYmT86whG-l08szIwWWnkgirHPF6awuxk1RLUvcc,316
+mesoshttp/exception.py,sha256=VhgnbEPhUxmbl128DJCdjbxQ02LsXULjLCbG8c9b1E4,44
+mesoshttp/offers.py,sha256=l45pTqoE1XDwwDJe5fbrKoaqB7lhQy3l7g-B3msFNvE,3681
+mesoshttp/update.py,sha256=P8r1ECDVn44HHXikrFaTCuqae2fG3eGmOedbyPYB3-c,1671
+mesoshttp-0.2.14.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mesoshttp-0.2.14.dist-info/METADATA,sha256=ISXk2nadeHhNVNw84031cyGZ03IGEBpl6_5tAuHMdpk,902
+mesoshttp-0.2.14.dist-info/RECORD,,
+mesoshttp-0.2.14.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mesoshttp-0.2.14.dist-info/metadata.json,sha256=ceD52IQTGTjY3lM7SegOi5hQ-Uqkz9CQ11VI32-RDxA,1015
+mesoshttp-0.2.14.dist-info/top_level.txt,sha256=RwT0kPuqV4h9rE1XjXOeY6QvVkSxciLbWfavO9ZFIsQ,10

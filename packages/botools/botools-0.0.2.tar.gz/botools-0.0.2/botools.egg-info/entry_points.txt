@@ -1,0 +1,3 @@
+[console_scripts]
+botools-s3 = botools.s3:main
+

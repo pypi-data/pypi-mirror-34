@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+botools/__init__.py
+botools/bin.py
+botools/s3.py
+botools.egg-info/PKG-INFO
+botools.egg-info/SOURCES.txt
+botools.egg-info/dependency_links.txt
+botools.egg-info/entry_points.txt
+botools.egg-info/top_level.txt

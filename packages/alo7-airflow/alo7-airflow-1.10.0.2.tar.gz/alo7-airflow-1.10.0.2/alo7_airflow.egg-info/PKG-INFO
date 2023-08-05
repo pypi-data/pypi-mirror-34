@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: alo7-airflow
+Version: 1.10.0.2
+Summary: Programmatically author, schedule and monitor data pipelines
+Home-page: http://airflow.incubator.apache.org/
+Author: Apache Software Foundation
+Author-email: dev@airflow.incubator.apache.org
+License: Apache License 2.0
+Download-URL: https://dist.apache.org/repos/dist/release/incubator/airflow/1.10.0.2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: System :: Monitoring
+Provides-Extra: databricks
+Provides-Extra: oracle
+Provides-Extra: sendgrid
+Provides-Extra: snowflake
+Provides-Extra: vertica
+Provides-Extra: cloudant
+Provides-Extra: postgres
+Provides-Extra: password
+Provides-Extra: cgroups
+Provides-Extra: slack
+Provides-Extra: devel_hadoop
+Provides-Extra: kerberos
+Provides-Extra: redis
+Provides-Extra: all
+Provides-Extra: qds
+Provides-Extra: webhdfs
+Provides-Extra: ldap
+Provides-Extra: rabbitmq
+Provides-Extra: crypto
+Provides-Extra: gcp_api
+Provides-Extra: datadog
+Provides-Extra: doc
+Provides-Extra: dask
+Provides-Extra: jdbc
+Provides-Extra: mongo
+Provides-Extra: devel_ci
+Provides-Extra: hdfs
+Provides-Extra: hive
+Provides-Extra: ssh
+Provides-Extra: pinot
+Provides-Extra: emr
+Provides-Extra: cassandra
+Provides-Extra: atlas
+Provides-Extra: celery
+Provides-Extra: kubernetes
+Provides-Extra: docker
+Provides-Extra: s3
+Provides-Extra: azure_data_lake
+Provides-Extra: elasticsearch
+Provides-Extra: mysql
+Provides-Extra: salesforce
+Provides-Extra: async
+Provides-Extra: github_enterprise
+Provides-Extra: segment
+Provides-Extra: samba
+Provides-Extra: azure_blob_storage
+Provides-Extra: all_dbs
+Provides-Extra: devel
+Provides-Extra: statsd
+Provides-Extra: jira
+Provides-Extra: druid
+Provides-Extra: winrm
+Provides-Extra: mssql

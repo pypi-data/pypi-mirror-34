@@ -1,0 +1,8 @@
+README.md
+setup.py
+videoCrawler/__init__.py
+videoCrawler/videoCrawler.py
+videoCrawler.egg-info/PKG-INFO
+videoCrawler.egg-info/SOURCES.txt
+videoCrawler.egg-info/dependency_links.txt
+videoCrawler.egg-info/top_level.txt

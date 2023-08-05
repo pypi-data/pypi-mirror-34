@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: s3-to-disk
+Version: 0.1.0
+Summary: A simple tool to synchronizes S3 to a local folder
+Home-page: UNKNOWN
+Author: Hassene Ben Salem
+Author-email: bensalemhsn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: future
+Requires-Dist: boto3
+Requires-Dist: awscli
+
+# S3ToDisk
+
+This is a simple tool to synchronizes S3 to a local folder. It uses `aws s3 sync` command behind the scene.
+
+This package works on Python versions:
+
+* 2.7.x and greater
+* 3.6.x and greater
+
+## Usage
+
+Set your aws credentials as explained in [aws-cli/getting-started](https://github.com/aws/aws-cli#getting-started)
+
+Run `s3-to-disk --help` to get more information about parameters.
+
+Run `s3-to-disk -D s3 -L log --dry-run` to clone all your S3
+
+

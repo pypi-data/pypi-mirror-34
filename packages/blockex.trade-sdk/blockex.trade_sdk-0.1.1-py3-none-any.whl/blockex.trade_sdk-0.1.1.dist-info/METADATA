@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: blockex.trade-sdk
+Version: 0.1.1
+Summary: BlockEx trade API client SDK
+Home-page: https://blockexmarkets.com
+Author: BlockEx dev team
+Author-email: developers@blockex.com
+License: MIT
+Project-URL: Bug Reports, https://bitbucket.org/blockex/python-sdk/issues
+Project-URL: Source, https://bitbucket.org/blockex/python-sdk
+Keywords: api client blockex trade sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: report
+Provides-Extra: pypi
+Provides-Extra: test
+Requires-Dist: enum34
+Requires-Dist: requests
+Requires-Dist: signalr-client-aio
+Provides-Extra: pypi
+Requires-Dist: blockex-test-utils (>=0.0.2); extra == 'pypi'
+Requires-Dist: blockex-test-utils[pypi]; extra == 'pypi'
+Provides-Extra: report
+Requires-Dist: blockex-test-utils (>=0.0.2); extra == 'report'
+Requires-Dist: blockex-test-utils[report]; extra == 'report'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-mock; extra == 'test'
+Requires-Dist: arrow; extra == 'test'
+
+UNKNOWN
+
+

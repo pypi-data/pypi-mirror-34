@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+zmei/__init__.py
+zmei.egg-info/PKG-INFO
+zmei.egg-info/SOURCES.txt
+zmei.egg-info/dependency_links.txt
+zmei.egg-info/not-zip-safe
+zmei.egg-info/top_level.txt

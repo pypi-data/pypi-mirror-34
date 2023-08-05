@@ -1,0 +1,16 @@
+ebook_crawler/__init__.py,sha256=wfoEvLDcesBJtwWEuXmUEqmtZ2CpPSAMqf-m0BQ9rIs,2654
+ebook_crawler/binding.py,sha256=yE12VuWHRU30Cl2zSBD1WrH3xbGB5wLMay_aW2JE7gI,4617
+ebook_crawler/helper.py,sha256=TNkHyO04dtnr8lAqWt3kFHopfKZTLdQdY2WayO1BbsE,596
+ebook_crawler/lnmtl.py,sha256=FYRjpcypVIi-3k4Tw12qig7jQQUFomX5Yfpzj3dlX78,8972
+ebook_crawler/readln.py,sha256=mkVcSUX2Tu7i1V0x4PrakJj5TwnybHKpqUxMwE7dXsU,4159
+ebook_crawler/webnovel.py,sha256=noBhsJ5w1MoGhPe9b17rk1QEt4afAvhohTiPdhk9Gs4,5484
+ebook_crawler/wuxia.py,sha256=YOo2MX0dy8kkmJRkP2d6ASRP9epZPt8G3HHYcrW0FAo,4371
+ebook_crawler/ext/kindlegen,sha256=uLDwq4PnQHARkGa_TzxWJn5e5D0sK6xwkbtEfp9GGmk,28673912
+ebook_crawler/ext/kindlegen-linux,sha256=uLDwq4PnQHARkGa_TzxWJn5e5D0sK6xwkbtEfp9GGmk,28673912
+ebook_crawler/ext/kindlegen-mac,sha256=z27o23TAHaph0yHNfkdbyluugFC-KsZQQeLqnf-AcNQ,29225312
+ebook_crawler/ext/kindlegen-windows,sha256=pd0jQYA0SjJBUDJS_St3UrXXaX0SwcTL0stL62zzqgc,7908160
+ebook_crawler-1.2.4.dist-info/METADATA,sha256=p9YfN_rF5thdVGfGPlgJmw--gL6CJh7pjSvEyQQ81FE,1727
+ebook_crawler-1.2.4.dist-info/RECORD,,
+ebook_crawler-1.2.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+ebook_crawler-1.2.4.dist-info/entry_points.txt,sha256=deN5vlCGuigTirgrv2IQxX3C8_id8QRhY76l9RQJ5Cg,54
+ebook_crawler-1.2.4.dist-info/top_level.txt,sha256=UIoBTvDHa-QNml-ZHbb0-Fg-4TpOF0Zl20NpfVO5rEM,14

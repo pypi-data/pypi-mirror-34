@@ -1,0 +1,13 @@
+treepick/__init__.py,sha256=cMZD2gmN-emYclLbX9VrnHn3mWAbtvEY6m0e2XuSk84,115
+treepick/__main__.py,sha256=DiyXmPh5A1jndVoR2CdJdbXsVsfGZJZZJciXms4n_Ws,918
+treepick/color.py,sha256=jvVOQBkcuh3pWbocIVTV4aw-sfIHKo35vpBVYEN3aQE,1498
+treepick/du.py,sha256=nNSbd9RecRupHHpcAys-j5cMHiwac4GHkIc1kl3qSmY,1192
+treepick/keys.py,sha256=uv5LPlDNKazPn0_Nf7ErY32CswlFBAtP0Qp5ia9XBxY,2029
+treepick/paths.py,sha256=8NIOuVynHhBMWdGTEz4fxfhYFkWf4J1ZFyz1QcHIYwo,5530
+treepick/pick.py,sha256=334e-zI-L_v7JQcIioWiuxd4hkcHZe3SbKhpyUeTVVk,4215
+treepick/treepick.py,sha256=pNYPgj2_T2PUXa8VGTYfkehPUgk8Xxb_m7_m0wn5ZWM,672
+treepick-0.0.8.dist-info/METADATA,sha256=vswbOGKWNnc_mao9_C90YPx4dHdEvpnakGXjtQxGi4s,2980
+treepick-0.0.8.dist-info/RECORD,,
+treepick-0.0.8.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+treepick-0.0.8.dist-info/entry_points.txt,sha256=supPWqR_JGesG3d3u4gsy_ePpmuWzWrDTaW4tZfqFGw,53
+treepick-0.0.8.dist-info/top_level.txt,sha256=b64b7PKdR52ELQTN8kH_yW8pDi1PIpTwhLV-ifR8Drs,9

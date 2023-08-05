@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pysqlgrid
+Version: 1.0.1
+Summary: Frontend for displaying SQL query results on the web.
+Home-page: https://github.com/jhanley634/pysqlgrid
+Author: REX Engineering
+Author-email: jhanley_pysqlgrid@s6.sector6.net
+License: UNKNOWN
+Description: # pysqlgrid
+        Generic frontend for putting SQL query results into a flask app.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Classifier: Topic :: Software Development :: User Interfaces
+Description-Content-Type: text/markdown

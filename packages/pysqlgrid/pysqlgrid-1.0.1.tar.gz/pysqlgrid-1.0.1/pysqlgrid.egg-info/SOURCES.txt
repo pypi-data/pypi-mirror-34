@@ -1,0 +1,8 @@
+README.md
+setup.py
+pysqlgrid/__init__.py
+pysqlgrid/pysqlgrid.py
+pysqlgrid.egg-info/PKG-INFO
+pysqlgrid.egg-info/SOURCES.txt
+pysqlgrid.egg-info/dependency_links.txt
+pysqlgrid.egg-info/top_level.txt

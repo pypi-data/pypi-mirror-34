@@ -1,0 +1,25 @@
+# Library: nftl-slack-tools
+
+This is a tool for Slack API handling.
+Source documentation of api is available [here](https://api.slack.com/)
+
+
+# Installation
+
+```sh
+pip install nftl-slack-tools
+```
+
+# Usage
+
+```python
+    slack = SlackClient(token='xoxp-...')
+    channel = slack.get_channels_api().create('new_order')
+
+    if channel:
+        print 'Yupi!'
+```
+
+# Deployment how to
+
+Available [here](https://packaging.python.org/tutorials/packaging-projects/)

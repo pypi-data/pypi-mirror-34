@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nftl-slack-tools
+Version: 0.1.0
+Summary: Tool 4 partial Slack API handling
+Home-page: UNKNOWN
+Author: Grzegorz Pawełczuk
+Author-email: grzegorz.pawelczuk@nftlearning.com
+License: UNKNOWN
+Description: # Library: nftl-slack-tools
+        
+        This is a tool for Slack API handling.
+        Source documentation of api is available [here](https://api.slack.com/)
+        
+        
+        # Installation
+        
+        ```sh
+        pip install nftl-slack-tools
+        ```
+        
+        # Usage
+        
+        ```python
+            slack = SlackClient(token='xoxp-...')
+            channel = slack.get_channels_api().create('new_order')
+        
+            if channel:
+                print 'Yupi!'
+        ```
+        
+        # Deployment how to
+        
+        Available [here](https://packaging.python.org/tutorials/packaging-projects/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

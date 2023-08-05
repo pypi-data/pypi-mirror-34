@@ -1,0 +1,13 @@
+azure/cli/command_modules/resource/__init__.py,sha256=YdWPR-P2cO0MiZJYc-cHXNbIrqgba7NKXggGv5G-Ido,1725
+azure/cli/command_modules/resource/_client_factory.py,sha256=Y9yPDSmWd_akmup8QnOemzgo2_6YvcbuQGRIUBeGp_E,4116
+azure/cli/command_modules/resource/_completers.py,sha256=h5Z-mwj1pK6IHhSK1kLajAmYeuNndLsmMD8TKPwdJcc,2344
+azure/cli/command_modules/resource/_exception_handler.py,sha256=YqcbkjyXtO_qpP6fXhdZYZg2NcvJtjBjO8RrgmfjwOM,769
+azure/cli/command_modules/resource/_help.py,sha256=uiYvdoHiS_dquKHLUpigmoPL9R9tbOby4CUoJfkN-r4,37612
+azure/cli/command_modules/resource/_params.py,sha256=8oTA7d6SDU6fe4ND9KVjd1pGe0C2hCeQK3bQgy4uUA0,18393
+azure/cli/command_modules/resource/_validators.py,sha256=EE3Cbxvj0djUwOwFCdxOtrHBMUbn2NJyXHqjJvu-r_o,7525
+azure/cli/command_modules/resource/commands.py,sha256=Gafg1_2ChuTDVgiXYZzTCR_jZBMTGkVStGvTF_hUi18,16439
+azure/cli/command_modules/resource/custom.py,sha256=ycscvJTCxOWpzxGZieNNurHfD6JttyVQDeGzCzTxJrg,81558
+azure_cli_resource-2.1.0.dist-info/METADATA,sha256=qJsEWuxRRf43mM8vUnMsvDMdnQz09sh4_7RBNEt8ukg,7804
+azure_cli_resource-2.1.0.dist-info/RECORD,,
+azure_cli_resource-2.1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+azure_cli_resource-2.1.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6

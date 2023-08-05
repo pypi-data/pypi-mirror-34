@@ -1,0 +1,4 @@
+[console_scripts]
+iam_profile_faker = iam_profile_faker.cli:main
+iam_profile_faker_api = iam_profile_faker.v2_api:main
+

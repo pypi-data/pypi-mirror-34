@@ -1,0 +1,7 @@
+Click>=6.0
+Faker
+
+[api]
+tinydb
+flask
+flask_restful

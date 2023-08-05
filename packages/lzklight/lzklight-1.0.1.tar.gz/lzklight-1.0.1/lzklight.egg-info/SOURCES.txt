@@ -1,0 +1,6 @@
+setup.py
+example_pkg/__init__.py
+lzklight.egg-info/PKG-INFO
+lzklight.egg-info/SOURCES.txt
+lzklight.egg-info/dependency_links.txt
+lzklight.egg-info/top_level.txt

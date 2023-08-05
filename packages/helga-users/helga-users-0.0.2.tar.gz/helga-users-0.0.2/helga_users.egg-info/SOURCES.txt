@@ -1,0 +1,12 @@
+README.rst
+setup.py
+helga_users/__init__.py
+helga_users/command.py
+helga_users/ldap.py
+helga_users/user.py
+helga_users.egg-info/PKG-INFO
+helga_users.egg-info/SOURCES.txt
+helga_users.egg-info/dependency_links.txt
+helga_users.egg-info/entry_points.txt
+helga_users.egg-info/requires.txt
+helga_users.egg-info/top_level.txt

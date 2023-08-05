@@ -1,0 +1,3 @@
+[helga_plugins]
+users = helga_users.command:helga_users
+

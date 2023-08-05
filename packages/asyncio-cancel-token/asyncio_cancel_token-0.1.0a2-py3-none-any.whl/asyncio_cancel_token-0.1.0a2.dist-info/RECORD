@@ -1,0 +1,7 @@
+asyncio_cancel_token-0.1.0a2.dist-info/METADATA,sha256=sL7uTba01LFWSEZywlmSTcqDP5o0M3oBZdIzk1ZojrU,5018
+asyncio_cancel_token-0.1.0a2.dist-info/RECORD,,
+asyncio_cancel_token-0.1.0a2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+asyncio_cancel_token-0.1.0a2.dist-info/top_level.txt,sha256=4NhtATjcYGYWvYeWb5bLO_XrV2-ueV1nfF8g1henY6c,13
+cancel_token/__init__.py,sha256=jhL0uUvNAOsvS7jK7cWKwPli9jQfkQzG-znlKY7p2DU,143
+cancel_token/exceptions.py,sha256=ks3gXmU7MfVEVV7-rP-jSAVhgMVrZmsthcxbBo_ATBE,418
+cancel_token/token.py,sha256=wmL_kUrwWHaUYLK2KftudFRRBLlHY7TY1vJiKyXrpmc,5434

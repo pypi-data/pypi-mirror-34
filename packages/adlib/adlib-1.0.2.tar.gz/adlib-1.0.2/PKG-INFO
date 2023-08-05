@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: adlib
+Version: 1.0.2
+Summary: Game-theoretic adversarial machine learning library providing a set of learner and adversary modules.
+Home-page: https://github.com/vu-aml/adlib
+Author: Alexandra, Alexander deGroot, Ethan Raymond, Jiazhi Zhang, Bumsu Jung, Yevgeniy Vorobeychik, Matthew Sedam
+Author-email: yevgeniy.vorobeychik@vanderbilt.edu
+License: MIT
+Description: UNKNOWN
+Platform: any

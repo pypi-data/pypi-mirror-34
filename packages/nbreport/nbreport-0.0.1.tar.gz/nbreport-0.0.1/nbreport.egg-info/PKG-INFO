@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nbreport
+Version: 0.0.1
+Summary: LSST's notebook-based report system.
+Home-page: https://github.com/lsst-sqre/nbreport
+Author: Association of Universities for Research in Astronomy
+Author-email: jsick@lsst.org
+License: MIT
+Description: ########
+        nbreport
+        ########
+        
+        nbreport is a client for creating and publishing LSST's notebook-based reports.
+        Notebook-based reports are generated from template repositories, computed, and published with LSST the Docs.
+        
+Keywords: lsst
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev

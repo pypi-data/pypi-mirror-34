@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+typing_tools/__assignment_supportable.py
+typing_tools/__common.py
+typing_tools/__helper_classes.py
+typing_tools/__init__.py
+typing_tools/__public_classes.py
+typing_tools/__version__.py
+typing_tools.egg-info/PKG-INFO
+typing_tools.egg-info/SOURCES.txt
+typing_tools.egg-info/dependency_links.txt
+typing_tools.egg-info/top_level.txt

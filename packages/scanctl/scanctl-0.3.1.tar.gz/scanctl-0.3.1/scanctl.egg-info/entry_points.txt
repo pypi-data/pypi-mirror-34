@@ -1,0 +1,3 @@
+[console_scripts]
+scanctl = scanctl.cli:main
+

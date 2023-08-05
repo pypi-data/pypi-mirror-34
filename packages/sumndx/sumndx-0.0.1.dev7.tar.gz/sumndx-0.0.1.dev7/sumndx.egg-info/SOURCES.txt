@@ -1,0 +1,14 @@
+.travis.yml
+AUTHORS
+ChangeLog
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+sumndx
+sumndx.egg-info/PKG-INFO
+sumndx.egg-info/SOURCES.txt
+sumndx.egg-info/dependency_links.txt
+sumndx.egg-info/not-zip-safe
+sumndx.egg-info/pbr.json
+sumndx.egg-info/top_level.txt

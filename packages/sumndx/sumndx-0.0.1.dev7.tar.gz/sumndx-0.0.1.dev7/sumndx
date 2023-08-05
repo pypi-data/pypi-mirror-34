@@ -1,0 +1,114 @@
+#!/usr/bin/env python
+
+"""
+Display a summary view of a gromacs index file.
+"""
+
+from __future__ import print_function
+import os
+import sys
+
+
+def read_ndx(infile):
+    """
+    Read a gromacs index file.
+
+    :Parameters:
+        - infile : a file descriptor like instance of a ndx file
+
+    :Return:
+        - A list of lists with the first element of the second level list being
+          the group name and the second one the list of atom index in the
+          group.
+    """
+    indices = []
+    current_group = None
+    for line in infile:
+        if "[" in line:
+            current_group = line
+            current_group = current_group.replace("[", "")
+            current_group = current_group.replace("]", "")
+            current_group = current_group.strip()
+            indices.append([current_group, []])
+        elif not current_group is None:
+            indices[-1][1] += [int(i) for i in line.split()]
+    return indices
+
+
+def print_sumary(groups):
+    """
+    Display the index summary.
+
+    First column is the group index as displayed by the gromacs tools, second
+    column is the group names and the last column is the number of atoms in the
+    groups.
+
+    :Parameter:
+        - groups: a list of groups as described in :func:`read_ndx`.
+    """
+    for i, (key, content) in enumerate(groups):
+        print(i, key, len(content), sep="\t")
+
+
+def usage():
+    """
+    Print how to use the program
+    """
+    print("Usage:", file=sys.stderr)
+    print("{0} < input.ndx\n"
+          "{0} input.ndx".format(sys.argv[0]), file=sys.stderr)
+
+
+def handle_args(argv):
+    """
+    Handle user input from the command line interface
+
+    :Parameter:
+        - argv: the list of command line arguments without the program call
+
+    :Return:
+        - the open file to read
+    """
+    # The user asks for the help
+    if "-h" in sys.argv or "--help" in sys.argv:
+        usage()
+        sys.exit(0)
+
+    # There is no input file, we read stdin
+    if len(argv) == 0:
+        print("Note: Read input from standard input", file=sys.stderr)
+        infile = sys.stdin
+    # The is an input file, we try to open it
+    elif len(argv) == 1:
+        path = argv[0]
+        if (not os.path.exists(path) and
+                not path.endswith(".nxd") and
+                os.path.exists(path + ".ndx")):
+            print("Note: no {0} file found, will read {0}.ndx instead"
+                  .format(path), file=sys.stderr)
+            path = path + ".ndx"
+        try:
+            infile = open(path)
+        except IOError:
+            print("Error while opening {0}".format(path),
+                  file=sys.stderr)
+            sys.exit(1)
+    # The program is misused, we crash and we warn the user
+    else:
+        usage()
+        sys.exit(1)
+
+    return infile
+
+
+def main():
+    """
+    Run the program from the command line.
+    """
+    infile = handle_args(sys.argv[1:])
+    with infile:
+        print_sumary(read_ndx(infile))
+
+
+if __name__ == "__main__":
+    main()

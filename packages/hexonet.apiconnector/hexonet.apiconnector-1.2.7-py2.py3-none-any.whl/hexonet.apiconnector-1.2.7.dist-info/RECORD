@@ -1,0 +1,12 @@
+hexonet.apiconnector-1.2.7-py2.7-nspkg.pth,sha256=-pBWQbAvux9flu3TBxKBhvCuDd1idefO12aYIHMksIM,544
+hexonet/apiconnector/__init__.py,sha256=wuPt2z7WI_FWbkBf7avRqn0SrYw7gmi2mr-RABCSXnA,1285
+hexonet/apiconnector/connection.py,sha256=G11lmP1d-dhsNlgROUczX8LIbR4hAWXPzi1Yx0GAADk,3654
+hexonet/apiconnector/response.py,sha256=aKpZAmT9aVpVOTlJdc2PGKb0dFBCPc6XOb1xjlxIkcc,7482
+hexonet/apiconnector/util.py,sha256=WBPrW5A7S-sPs9uKCHJCARC-9t5EI_mtP_gLupG2aKk,6228
+hexonet.apiconnector-1.2.7.dist-info/LICENSE.txt,sha256=lvyNWA-kvTQT5PjUsOQBSgUox-PtjC6dsoxH3OyDcZM,1064
+hexonet.apiconnector-1.2.7.dist-info/METADATA,sha256=FozuwaUBDSaaSPQ7fQutfV6e9-jOZ4-afH6B48LqUgw,2941
+hexonet.apiconnector-1.2.7.dist-info/RECORD,,
+hexonet.apiconnector-1.2.7.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+hexonet.apiconnector-1.2.7.dist-info/namespace_packages.txt,sha256=bz1cVlhUxhJCjggfiyEhiQx1FPjRb2olgFlXJ4m-qxs,8
+hexonet.apiconnector-1.2.7.dist-info/top_level.txt,sha256=bz1cVlhUxhJCjggfiyEhiQx1FPjRb2olgFlXJ4m-qxs,8
+hexonet.apiconnector-1.2.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

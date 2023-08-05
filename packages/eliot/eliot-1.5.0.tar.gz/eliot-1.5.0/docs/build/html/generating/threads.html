@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Spanning Processes and Threads &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using Types to Structure Messages and Actions" href="types.html" />
+    <link rel="prev" title="Integrating and Migrating Existing Logging" href="migrating.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Spanning Processes and Threads</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/threads.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="spanning-processes-and-threads">
+<h1>Spanning Processes and Threads<a class="headerlink" href="#spanning-processes-and-threads" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In many applications we are interested in tasks that exist in more than just a single thread or in a single process.
+For example, one server may send a request to another server over a network and we would like to trace the combined operation across both servers’ logs.
+To make this as easy as possible Eliot supports serializing task identifiers for transfer over the network (or between threads), allowing tasks to span multiple processes.</p>
+</div>
+<div class="section" id="cross-thread-tasks">
+<span id="id1"></span><h2>Cross-Thread Tasks<a class="headerlink" href="#cross-thread-tasks" title="Permalink to this headline">¶</a></h2>
+<p>To trace actions across threads Eliot provides the <code class="docutils literal notranslate"><span class="pre">eliot.preserve_context</span></code> API.
+It takes a callable that is about to be passed to a thread constructor and preserves the current Eliot context, returning a new callable.
+This new callable should only be used, in the thread where it will run; it will restore the Eliot context and run the original function inside of it.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Example of an Eliot action context spanning multiple threads.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">from</span> <span class="nn">threading</span> <span class="k">import</span> <span class="n">Thread</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="k">import</span> <span class="n">stdout</span>
+
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">to_file</span><span class="p">,</span> <span class="n">preserve_context</span><span class="p">,</span> <span class="n">start_action</span>
+<span class="n">to_file</span><span class="p">(</span><span class="n">stdout</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">add_in_thread</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;in_thread&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span> <span class="k">as</span> <span class="n">context</span><span class="p">:</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">add_success_fields</span><span class="p">(</span><span class="n">result</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+
+
+<span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;main_thread&quot;</span><span class="p">):</span>
+    <span class="c1"># Preserve Eliot context and restore in new thread:</span>
+    <span class="n">thread</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">preserve_context</span><span class="p">(</span><span class="n">add_in_thread</span><span class="p">),</span>
+                    <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">})</span>
+    <span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="c1"># Wait for the thread to exit:</span>
+    <span class="n">thread</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+
+</pre></div>
+</div>
+<p>Here’s what the result is when run:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python examples/cross_thread.py <span class="p">|</span> eliot-tree
+<span class="go">11a85c42-a13f-491c-ad44-c48b2efad0e3</span>
+<span class="go">+-- main_thread@1/started</span>
+<span class="go">    +-- eliot:remote_task@2,1/started</span>
+<span class="go">        +-- in_thread@2,2,1/started</span>
+<span class="go">            |-- x: 3</span>
+<span class="go">            `-- y: 4</span>
+<span class="go">            +-- in_thread@2,2,2/succeeded</span>
+<span class="go">                |-- result: 7</span>
+<span class="go">        +-- eliot:remote_task@2,3/succeeded</span>
+<span class="go">    +-- main_thread@3/succeeded</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cross-process-tasks">
+<span id="id2"></span><h2>Cross-Process Tasks<a class="headerlink" href="#cross-process-tasks" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">eliot.Action.serialize_task_id()</span></code> can be used to create some <code class="docutils literal notranslate"><span class="pre">bytes</span></code> identifying a particular location within a task.
+<code class="docutils literal notranslate"><span class="pre">eliot.Action.continue_task()</span></code> converts a serialized task identifier into an <code class="docutils literal notranslate"><span class="pre">eliot.Action</span></code> and then starts the <code class="docutils literal notranslate"><span class="pre">Action</span></code>.
+The process which created the task serializes the task identifier and sends it over the network to the process which will continue the task.
+This second process deserializes the identifier and uses it as a context for its own messages.</p>
+<p>In the following example the task identifier is added as a header to a HTTP request:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Cross-process log tracing: HTTP client.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">to_file</span><span class="p">,</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">add_global_fields</span>
+<span class="n">add_global_fields</span><span class="p">(</span><span class="n">process</span><span class="o">=</span><span class="s2">&quot;client&quot;</span><span class="p">)</span>
+<span class="n">to_file</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">remote_divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;http_request&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+        <span class="n">task_id</span> <span class="o">=</span> <span class="n">action</span><span class="o">.</span><span class="n">serialize_task_id</span><span class="p">()</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="s2">&quot;http://localhost:5000/?x=</span><span class="si">{}</span><span class="s2">&amp;y=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
+            <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;x-eliot-task-id&quot;</span><span class="p">:</span> <span class="n">task_id</span><span class="p">})</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>  <span class="c1"># ensure this is a successful response</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">action</span><span class="o">.</span><span class="n">add_success_fields</span><span class="p">(</span><span class="n">result</span><span class="o">=</span><span class="n">result</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;main&quot;</span><span class="p">):</span>
+        <span class="n">remote_divide</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+</pre></div>
+</div>
+<p>The server that receives the request then extracts the identifier:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Cross-process log tracing: HTTP server.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
+
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">to_file</span><span class="p">,</span> <span class="n">Action</span><span class="p">,</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">add_global_fields</span>
+<span class="n">add_global_fields</span><span class="p">(</span><span class="n">process</span><span class="o">=</span><span class="s2">&quot;server&quot;</span><span class="p">)</span>
+<span class="n">to_file</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="s2">&quot;server&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;divide&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+        <span class="n">action</span><span class="o">.</span><span class="n">add_success_fields</span><span class="p">(</span><span class="n">result</span><span class="o">=</span><span class="n">result</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">Action</span><span class="o">.</span><span class="n">continue_task</span><span class="p">(</span><span class="n">task_id</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s2">&quot;x-eliot-task-id&quot;</span><span class="p">]):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">])</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Tracing logs across multiple processes makes debugging problems dramatically easier.
+For example, let’s run the following:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python examples/cross_process_server.py &gt; server.log
+<span class="gp">$</span> python examples/cross_process_client.py <span class="m">5</span> <span class="m">0</span> &gt; client.log
+</pre></div>
+</div>
+<p>Here are the resulting combined logs, as visualized by <a class="reference external" href="https://warehouse.python.org/project/eliot-tree/">eliot-tree</a>.
+The reason the client received a 500 error code is completely obvious in these logs:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> cat client.log server.log <span class="p">|</span> eliot-tree
+<span class="go">1e0be9be-ae56-49ef-9bce-60e850a7db09</span>
+<span class="go">+-- main@1/started</span>
+<span class="go">    |-- process: client</span>
+<span class="go">    +-- http_request@2,1/started</span>
+<span class="go">        |-- process: client</span>
+<span class="go">        |-- x: 3</span>
+<span class="go">        `-- y: 0</span>
+<span class="go">        +-- eliot:remote_task@2,2,1/started</span>
+<span class="go">            |-- process: server</span>
+<span class="go">            +-- divide@2,2,2,1/started</span>
+<span class="go">                |-- process: server</span>
+<span class="go">                |-- x: 3</span>
+<span class="go">                `-- y: 0</span>
+<span class="go">                +-- divide@2,2,2,2/failed</span>
+<span class="go">                    |-- exception: exceptions.ZeroDivisionError</span>
+<span class="go">                    |-- process: server</span>
+<span class="go">                    |-- reason: integer division or modulo by zero</span>
+<span class="go">            +-- eliot:remote_task@2,2,3/failed</span>
+<span class="go">                |-- exception: exceptions.ZeroDivisionError</span>
+<span class="go">                |-- process: server</span>
+<span class="go">                |-- reason: integer division or modulo by zero</span>
+<span class="go">        +-- http_request@2,3/failed</span>
+<span class="go">            |-- exception: requests.exceptions.HTTPError</span>
+<span class="go">            |-- process: client</span>
+<span class="go">            |-- reason: 500 Server Error: INTERNAL SERVER ERROR</span>
+<span class="go">    +-- main@3/failed</span>
+<span class="go">        |-- exception: requests.exceptions.HTTPError</span>
+<span class="go">        |-- process: client</span>
+<span class="go">        |-- reason: 500 Server Error: INTERNAL SERVER ERROR</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Cross-Thread Tasks<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">eliot.Action</span></code> objects should only be used on the thread that created them.
+If you want your task to span multiple threads use the API described above.</p>
+</div>
+<div class="section" id="ensuring-message-uniqueness">
+<h2>Ensuring Message Uniqueness<a class="headerlink" href="#ensuring-message-uniqueness" title="Permalink to this headline">¶</a></h2>
+<p>Serialized task identifiers should be used at most once.
+For example, every time a remote operation is retried a new call to <code class="docutils literal notranslate"><span class="pre">serialize_task_id()</span></code> should be made to create a new identifier.
+Otherwise there is a chance that you will end up with messages that have duplicate identification (i.e. two messages with matching <code class="docutils literal notranslate"><span class="pre">task_uuid</span></code> and <code class="docutils literal notranslate"><span class="pre">task_level</span></code> values), making it more difficult to trace causality.</p>
+<p>If this is not possible you may wish to start a new Eliot task upon receiving a remote request, while still making sure to log the serialized remote task identifier.
+The inclusion of the remote task identifier will allow manual or automated reconstruction of the cross-process relationship between the original and new tasks.</p>
+<p>Another alternative in some cases is to rely on unique process or thread identity to distinguish between the log messages.
+For example if the same serialized task identifier is sent to multiple processes, log messages within the task can still have a unique identity if a process identifier is included with each message.</p>
+</div>
+<div class="section" id="logging-output-for-multiple-processes">
+<h2>Logging Output for Multiple Processes<a class="headerlink" href="#logging-output-for-multiple-processes" title="Permalink to this headline">¶</a></h2>
+<p>If logs are being combined from multiple processes an identifier indicating the originating process should be included in log messages.
+This can be done a number of ways, e.g.:</p>
+<ul class="simple">
+<li>Have your destination add another field to the output.</li>
+<li>Rely on Logstash, or whatever your logging pipeline tool is, to add a field when shipping the logs to your centralized log store.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="types.html" class="btn btn-neutral float-right" title="Using Types to Structure Messages and Actions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="migrating.html" class="btn btn-neutral" title="Integrating and Migrating Existing Logging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

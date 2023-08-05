@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Asyncio Coroutine Support &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using Eliot with Twisted" href="twisted.html" />
+    <link rel="prev" title="Unit Testing Your Logging" href="types-testing.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Asyncio Coroutine Support</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/asyncio.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="asyncio-coroutine-support">
+<span id="asyncio-coroutine"></span><h1>Asyncio Coroutine Support<a class="headerlink" href="#asyncio-coroutine-support" title="Permalink to this headline">¶</a></h1>
+<p>If you’re using <code class="docutils literal notranslate"><span class="pre">asyncio</span></code> coroutines in Python 3.5 or later (<code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">def</span> <span class="pre">yourcoro()</span></code> and <code class="docutils literal notranslate"><span class="pre">await</span> <span class="pre">yourcoro()</span></code>) together with Eliot, you need to run the following before doing any logging:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">eliot</span>
+<span class="n">eliot</span><span class="o">.</span><span class="n">use_asyncio_context</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="section" id="why-you-need-to-do-this">
+<h2>Why you need to do this<a class="headerlink" href="#why-you-need-to-do-this" title="Permalink to this headline">¶</a></h2>
+<p>By default Eliot provides a different “context” for each thread.
+That is how <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">start_action(action_type='my_action'):</span></code> works: it records the current action on this context.</p>
+<p>When using coroutines you end up with the same context being used with different coroutines, since they share the same thread.
+Calling <code class="docutils literal notranslate"><span class="pre">eliot.use_asyncio_context()</span></code> makes sure each coroutine gets its own context, so <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">start_action()</span></code> in one coroutine doesn’t interfere with another.</p>
+<p>However, Eliot will do the right thing for nested coroutines.
+Specifically, coroutines called via <code class="docutils literal notranslate"><span class="pre">await</span> <span class="pre">a_coroutine()</span></code> will inherit the logging context from the calling coroutine.</p>
+</div>
+<div class="section" id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>I haven’t tested the Python 3.4 <code class="docutils literal notranslate"><span class="pre">yield</span> <span class="pre">from</span></code> variation.</li>
+<li>This doesn’t support other event loops (Curio, Trio, Tornado, etc.).
+If you want these supported please file an issue: <a class="reference external" href="https://github.com/ScatterHQ/eliot/issues/new">https://github.com/ScatterHQ/eliot/issues/new</a>
+There is talk of adding the concept of a coroutine context to Python 3.7 or perhaps 3.8, in which case it will be easier to automatically support all frameworks.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="twisted.html" class="btn btn-neutral float-right" title="Using Eliot with Twisted" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="types-testing.html" class="btn btn-neutral" title="Unit Testing Your Logging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

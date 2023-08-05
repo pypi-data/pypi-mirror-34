@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configuring Logging Output &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Journald" href="journald.html" />
+    <link rel="prev" title="Outputting Logs" href="index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generating/index.html">Generating Logs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Outputting Logs</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuring Logging Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="journald.html">Journald</a></li>
+<li class="toctree-l2"><a class="reference internal" href="elasticsearch.html">Using Logstash and ElasticSearch to Process Eliot Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Outputting Logs</a> &raquo;</li>
+        
+      <li>Configuring Logging Output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/outputting/output.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="configuring-logging-output">
+<h1>Configuring Logging Output<a class="headerlink" href="#configuring-logging-output" title="Permalink to this headline">¶</a></h1>
+<p>You can register “destinations” to handle logging output; a destination is a callable that takes a message dictionary.
+For example, if we want to just print each new message:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">add_destinations</span>
+
+<span class="k">def</span> <span class="nf">stdout</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<span class="n">add_destinations</span><span class="p">(</span><span class="n">stdout</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="before-destinations-are-added">
+<h2>Before destinations are added<a class="headerlink" href="#before-destinations-are-added" title="Permalink to this headline">¶</a></h2>
+<p>Up to a 1000 messages will be buffered in memory until the first set of destinations are added, at which point those messages will be delivered to newly added set of destinations.
+This ensures that no messages will be lost if logging happens during configuration but before a destination is added.</p>
+</div>
+<div class="section" id="outputting-json-to-a-file">
+<h2>Outputting JSON to a file<a class="headerlink" href="#outputting-json-to-a-file" title="Permalink to this headline">¶</a></h2>
+<p>Since JSON is a common output format, Eliot provides a utility class that logs to a file, <code class="docutils literal notranslate"><span class="pre">eliot.FileDestination(file=yourfile)</span></code>.
+Each Eliot message will be encoded in JSON and written on a new line.
+As a short hand you can call <code class="docutils literal notranslate"><span class="pre">eliot.to_file</span></code>, which will create the destination and then add it automatically.
+For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">to_file</span>
+<span class="n">to_file</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;eliot.log&quot;</span><span class="p">,</span> <span class="s2">&quot;ab&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This destination is blocking: if writing to a file takes a long time your code will not be able to proceed until writing is done.
+If you’re using Twisted you can wrap a <code class="docutils literal notranslate"><span class="pre">eliot.FileDestination</span></code> with a non-blocking <a class="reference internal" href="../generating/twisted.html#threadedwriter"><span class="std std-ref">eliot.logwriter.ThreadedWriter</span></a>.
+This allows you to log to a file without blocking the Twisted <code class="docutils literal notranslate"><span class="pre">reactor</span></code>.</p>
+</div>
+</div>
+<div class="section" id="customizing-json-encoding">
+<span id="custom-json"></span><h2>Customizing JSON Encoding<a class="headerlink" href="#customizing-json-encoding" title="Permalink to this headline">¶</a></h2>
+<p>If you’re using Eliot’s JSON output you may wish to customize encoding.
+For example, if you’re using <code class="docutils literal notranslate"><span class="pre">numpy</span></code> the integer and float types won’t serialize to JSON by default.
+You can do so by passing a custom <code class="docutils literal notranslate"><span class="pre">json.JSONEncoder</span></code> subclass to either <code class="docutils literal notranslate"><span class="pre">eliot.FileDestination</span></code> or <code class="docutils literal notranslate"><span class="pre">eliot.to_file</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">to_file</span>
+
+<span class="k">class</span> <span class="nc">NumpyEncoder</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">JSONEncoder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">integer</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">floating</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONEncoder</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+
+<span class="n">to_file</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;eliot.log&quot;</span><span class="p">,</span> <span class="s2">&quot;ab&quot;</span><span class="p">),</span> <span class="n">encoder</span><span class="o">=</span><span class="n">NumpyEncoder</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For more details on JSON encoding see the Python <a class="reference external" href="https://docs.python.org/3/library/json.html">JSON documentation</a>.</p>
+</div>
+<div class="section" id="adding-fields-to-all-messages">
+<span id="add-global-fields"></span><h2>Adding Fields to All Messages<a class="headerlink" href="#adding-fields-to-all-messages" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you want to add a field to all messages output by your process, regardless of destination.
+For example if you’re aggregating logs from multiple processes into a central location you might want to include a field <code class="docutils literal notranslate"><span class="pre">process_id</span></code> that records the name and process id of your process in every log message.
+Use the <code class="docutils literal notranslate"><span class="pre">eliot.add_global_fields</span></code> API to do so, e.g.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">add_global_fields</span>
+
+<span class="n">add_global_fields</span><span class="p">(</span><span class="n">process_id</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">:</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">os</span><span class="o">.</span><span class="n">getpid</span><span class="p">()))</span>
+</pre></div>
+</div>
+<p>You should call <code class="docutils literal notranslate"><span class="pre">add_global_fields</span></code> before <code class="docutils literal notranslate"><span class="pre">add_destinations</span></code> to ensure all messages get the global fields.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="journald.html" class="btn btn-neutral float-right" title="Journald" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Outputting Logs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

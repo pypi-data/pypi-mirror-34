@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using Types to Structure Messages and Actions &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unit Testing Your Logging" href="types-testing.html" />
+    <link rel="prev" title="Spanning Processes and Threads" href="threads.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Using Types to Structure Messages and Actions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/types.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-types-to-structure-messages-and-actions">
+<h1>Using Types to Structure Messages and Actions<a class="headerlink" href="#using-types-to-structure-messages-and-actions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-typing">
+<span id="type-system"></span><h2>Why Typing?<a class="headerlink" href="#why-typing" title="Permalink to this headline">¶</a></h2>
+<p>So far we’ve been creating messages and actions in an unstructured manner.
+This means it’s harder to support Python objects that aren’t built-in and to validate message structure.
+Moreover there’s no documentation of what fields messages and action messages expect.
+To improve this we introduce the preferred API for creating actions and standalone messages: <code class="docutils literal notranslate"><span class="pre">ActionType</span></code> and <code class="docutils literal notranslate"><span class="pre">MessageType</span></code>.
+Here’s an example demonstrating how we create a message type, bind some values and then log the message:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">Field</span><span class="p">,</span> <span class="n">MessageType</span>
+
+<span class="k">class</span> <span class="nc">Coordinate</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span>
+
+
+<span class="c1"># This field takes a complex type that will be stored in a single Field,</span>
+<span class="c1"># so we pass in a serializer function that converts it to a list with two</span>
+<span class="c1"># ints:</span>
+<span class="n">_LOCATION</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;location&quot;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">loc</span><span class="p">:</span> <span class="p">[</span><span class="n">loc</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">loc</span><span class="o">.</span><span class="n">y</span><span class="p">],</span> <span class="sa">u</span><span class="s2">&quot;The location.&quot;</span><span class="p">)</span>
+<span class="c1"># These fields are just basic supported types, in this case int and unicode</span>
+<span class="c1"># respectively:</span>
+<span class="n">_COUNT</span> <span class="o">=</span> <span class="n">Field</span><span class="o">.</span><span class="n">for_types</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="sa">u</span><span class="s2">&quot;The number of items to deliver.&quot;</span><span class="p">)</span>
+<span class="n">_NAME</span> <span class="o">=</span> <span class="n">Field</span><span class="o">.</span><span class="n">for_types</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">unicode</span><span class="p">],</span> <span class="sa">u</span><span class="s2">&quot;The name of the delivery person.&quot;</span><span class="p">)</span>
+
+<span class="c1"># This is a type definition for a message. It is used to hook up</span>
+<span class="c1"># serialization of field values, and for message validation in unit tests:</span>
+<span class="n">LOG_DELIVERY_SCHEDULED</span> <span class="o">=</span> <span class="n">MessageType</span><span class="p">(</span>
+    <span class="sa">u</span><span class="s2">&quot;pizzadelivery:schedule&quot;</span><span class="p">,</span>
+    <span class="p">[</span><span class="n">_LOCATION</span><span class="p">,</span> <span class="n">_COUNT</span><span class="p">,</span> <span class="n">_NAME</span><span class="p">],</span>
+    <span class="sa">u</span><span class="s2">&quot;A pizza delivery has been scheduled.&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">deliver_pizzas</span><span class="p">(</span><span class="n">deliveries</span><span class="p">):</span>
+    <span class="n">person</span> <span class="o">=</span> <span class="n">get_free_delivery_person</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">location</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">deliveries</span><span class="p">:</span>
+        <span class="n">delivery_database</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">person</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+        <span class="n">LOG_DELIVERY_SCHEDULED</span><span class="o">.</span><span class="n">log</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">person</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="n">count</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="n">location</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<p>A <code class="docutils literal notranslate"><span class="pre">Field</span></code> instance is used to validate fields of messages, and to serialize rich types to the built-in supported types.
+It is created with the name of the field, a a serialization function that converts the input to an output and a description.
+The serialization function must return a result that is JSON-encodable.
+You can also pass in an extra validation function.
+If you pass this function in it will be called with values that are being validated; if it raises <code class="docutils literal notranslate"><span class="pre">eliot.ValidationError</span></code> that value will fail validation.</p>
+<p>A couple of utility functions allow creating specific types of <code class="docutils literal notranslate"><span class="pre">Field</span></code> instances.
+<code class="docutils literal notranslate"><span class="pre">Field.for_value</span></code> returns a <code class="docutils literal notranslate"><span class="pre">Field</span></code> that only can have a single value.
+More generally useful, <code class="docutils literal notranslate"><span class="pre">Field.for_types</span></code> returns a <code class="docutils literal notranslate"><span class="pre">Field</span></code> that can only be one of certain specific types: some subset of <code class="docutils literal notranslate"><span class="pre">unicode</span></code>, <code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">list</span></code> and <code class="docutils literal notranslate"><span class="pre">dict</span></code> as well as <code class="docutils literal notranslate"><span class="pre">None</span></code> which technically isn’t a class.
+As always, <code class="docutils literal notranslate"><span class="pre">bytes</span></code> must only contain UTF-8 encoded Unicode.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">Field</span>
+
+<span class="k">def</span> <span class="nf">userToUsername</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Extract username from a User object.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">user</span><span class="o">.</span><span class="n">username</span>
+
+<span class="n">USERNAME</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="n">userToUsername</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;The name of the user.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Validation is useful for unit tests and catching bugs; it&#39;s not used in</span>
+<span class="c1"># the actual logging code path. We therefore don&#39;t bother catching things</span>
+<span class="c1"># we&#39;d do in e.g. web form validation.</span>
+<span class="k">def</span> <span class="nf">_validateAge</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="s2">&quot;Field &#39;age&#39; must be positive:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="n">AGE</span> <span class="o">=</span> <span class="n">Field</span><span class="o">.</span><span class="n">for_types</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="bp">None</span><span class="p">],</span>
+                     <span class="sa">u</span><span class="s2">&quot;The age of the user, might be None if unknown&quot;</span><span class="p">,</span>
+                     <span class="n">_validateAge</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="message-types">
+<h2>Message Types<a class="headerlink" href="#message-types" title="Permalink to this headline">¶</a></h2>
+<p>Now that you have some fields you can create a custom <code class="docutils literal notranslate"><span class="pre">MessageType</span></code>.
+This takes a message name which will be put in the <code class="docutils literal notranslate"><span class="pre">message_type</span></code> field of resulting messages.
+It also takes a list of <code class="docutils literal notranslate"><span class="pre">Field</span></code> instances and a description.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">MessageType</span><span class="p">,</span> <span class="n">Field</span>
+<span class="n">USERNAME</span> <span class="o">=</span> <span class="n">Field</span><span class="o">.</span><span class="n">for_types</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">str</span><span class="p">])</span>
+<span class="n">AGE</span> <span class="o">=</span> <span class="n">Field</span><span class="o">.</span><span class="n">for_types</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">int</span><span class="p">])</span>
+
+<span class="n">LOG_USER_REGISTRATION</span> <span class="o">=</span> <span class="n">MessageType</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;yourapp:authentication:registration&quot;</span><span class="p">,</span>
+                                    <span class="p">[</span><span class="n">USERNAME</span><span class="p">,</span> <span class="n">AGE</span><span class="p">],</span>
+                                    <span class="sa">u</span><span class="s2">&quot;We&#39;ve just registered a new user.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Since this syntax is rather verbose a utility function called <code class="docutils literal notranslate"><span class="pre">fields</span></code> is provided which creates a <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Field</span></code> instances for you, with support to specifying the types of the fields.
+The equivalent to the code above is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">MessageType</span><span class="p">,</span> <span class="n">fields</span>
+
+<span class="n">LOG_USER_REGISTRATION</span> <span class="o">=</span> <span class="n">MessageType</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;yourapp:authentication:registration&quot;</span><span class="p">,</span>
+                                    <span class="n">fields</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="nb">int</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Or you can even use existing <code class="docutils literal notranslate"><span class="pre">Field</span></code> instances with <code class="docutils literal notranslate"><span class="pre">fields</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">MessageType</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">fields</span>
+
+<span class="n">USERNAME</span> <span class="o">=</span> <span class="n">Field</span><span class="o">.</span><span class="n">for_types</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">str</span><span class="p">])</span>
+
+<span class="n">LOG_USER_REGISTRATION</span> <span class="o">=</span> <span class="n">MessageType</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;yourapp:authentication:registration&quot;</span><span class="p">,</span>
+                                    <span class="n">fields</span><span class="p">(</span><span class="n">USERNAME</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="nb">int</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Given a <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> you can create a <code class="docutils literal notranslate"><span class="pre">Message</span></code> instance with the <code class="docutils literal notranslate"><span class="pre">message_type</span></code> field pre-populated by calling the type.
+You can then use it the way you would normally use <code class="docutils literal notranslate"><span class="pre">Message</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">bind()</span></code> or <code class="docutils literal notranslate"><span class="pre">write()</span></code>.
+You can also just call <code class="docutils literal notranslate"><span class="pre">MessageType.log()</span></code> to write out a message directly:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simple version:</span>
+<span class="n">LOG_USER_REGISTRATION</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">193</span><span class="p">)</span>
+<span class="c1"># Equivalent more complex API:</span>
+<span class="n">LOG_USER_REGISTRATION</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">user</span><span class="p">)</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="mi">193</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>A <code class="docutils literal notranslate"><span class="pre">Message</span></code> created from a <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> will automatically use the <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> <code class="docutils literal notranslate"><span class="pre">Field</span></code> instances to serialize its fields.</p>
+<p>Keep in mind that no validation is done when messages are created.
+Instead, validation is intended to be done in your unit tests.
+If you’re not unit testing all your log messages you’re doing it wrong.
+Luckily, Eliot makes it pretty easy to test logging as we’ll see in a bit.</p>
+</div>
+<div class="section" id="action-types">
+<h2>Action Types<a class="headerlink" href="#action-types" title="Permalink to this headline">¶</a></h2>
+<p>Similarly to <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> you can also create types for actions.
+Unlike a <code class="docutils literal notranslate"><span class="pre">MessageType</span></code> you need two sets of fields: one for action start, one for success.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">ActionType</span><span class="p">,</span> <span class="n">fields</span>
+
+<span class="n">LOG_USER_SIGNIN</span> <span class="o">=</span> <span class="n">ActionType</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;yourapp:authentication:signin&quot;</span><span class="p">,</span>
+                             <span class="c1"># Start message fields:</span>
+                             <span class="n">fields</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="nb">str</span><span class="p">),</span>
+                             <span class="c1"># Success message fields:</span>
+                             <span class="n">fields</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="nb">int</span><span class="p">),</span>
+                             <span class="c1"># Description:</span>
+                             <span class="sa">u</span><span class="s2">&quot;A user is attempting to sign in.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Calling the resulting instance is equivalent to <code class="docutils literal notranslate"><span class="pre">start_action</span></code>.
+For <code class="docutils literal notranslate"><span class="pre">start_task</span></code> you can call <code class="docutils literal notranslate"><span class="pre">LOG_USER_SIGNIN.as_task</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">signin</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+     <span class="k">with</span> <span class="n">LOG_USER_SIGNIN</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">user</span><span class="p">)</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+         <span class="n">status</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+         <span class="n">action</span><span class="o">.</span><span class="n">add_success_fields</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="n">status</span><span class="p">)</span>
+     <span class="k">return</span> <span class="n">status</span>
+</pre></div>
+</div>
+<p>Again, as with <code class="docutils literal notranslate"><span class="pre">MessageType</span></code>, field values will be serialized using the <code class="docutils literal notranslate"><span class="pre">Field</span></code> definitions in the <code class="docutils literal notranslate"><span class="pre">ActionType</span></code>.</p>
+</div>
+<div class="section" id="serialization-errors">
+<h2>Serialization Errors<a class="headerlink" href="#serialization-errors" title="Permalink to this headline">¶</a></h2>
+<p>While validation of field values typically only happens when unit testing, serialization must run in the normal logging code path.
+Eliot tries to very hard never to raise exceptions from the log writing code path so as not to prevent actual code from running.
+If a message fails to serialize then a <code class="docutils literal notranslate"><span class="pre">eliot:traceback</span></code> message will be logged, along with a <code class="docutils literal notranslate"><span class="pre">eliot:serialization_failure</span></code> message with an attempt at showing the message that failed to serialize.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;exceptions.ValueError&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2013-11-22T14:16:51.386745Z&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;traceback&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  ... ValueError: invalid literal for int() with base 10: &#39;hello&#39;\n&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;system&quot;</span><span class="p">:</span> <span class="s2">&quot;eliot:output&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;reason&quot;</span><span class="p">:</span> <span class="s2">&quot;invalid literal for int() with base 10: &#39;hello&#39;&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;message_type&quot;</span><span class="p">:</span> <span class="s2">&quot;eliot:traceback&quot;</span><span class="p">}</span>
+<span class="p">{</span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2013-11-22T14:16:51.386827Z&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;{u\&quot;u&#39;message_type&#39;\&quot;: u\&quot;&#39;test&#39;\&quot;, u\&quot;u&#39;field&#39;\&quot;: u\&quot;&#39;hello&#39;\&quot;, u\&quot;u&#39;timestamp&#39;\&quot;: u\&quot;&#39;2013-11-22T14:16:51.386634Z&#39;\&quot;}&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;message_type&quot;</span><span class="p">:</span> <span class="s2">&quot;eliot:serialization_failure&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="types-testing.html" class="btn btn-neutral float-right" title="Unit Testing Your Logging" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="threads.html" class="btn btn-neutral" title="Spanning Processes and Threads" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

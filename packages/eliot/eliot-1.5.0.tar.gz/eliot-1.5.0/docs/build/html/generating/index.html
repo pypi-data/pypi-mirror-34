@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generating Logs &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Messages" href="messages.html" />
+    <link rel="prev" title="What’s New" href="../news.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Generating Logs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Generating Logs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="generating-logs">
+<h1>Generating Logs<a class="headerlink" href="#generating-logs" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="messages.html">Messages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="messages.html#basic-usage">Basic usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages.html#message-binding">Message binding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="actions.html">Actions and Tasks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="actions.html#actions-a-start-and-a-finish">Actions: A Start and a Finish</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html#logging-actions">Logging Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html#tasks-top-level-actions">Tasks: Top-level Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html#from-actions-to-messages">From Actions to Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html#non-finishing-contexts">Non-Finishing Contexts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="actions.html#action-fields">Action Fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html#getting-the-current-action">Getting the Current Action</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errors.html">Errors and Exceptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errors.html#exceptions-and-tracebacks">Exceptions and Tracebacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html#custom-exception-logging">Custom Exception Logging</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="loglevels.html">Log Levels</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html#generating-messages-with-log-levels">Generating messages with log levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html#choosing-log-levels">Choosing log levels</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html#route-existing-logs-to-eliot">Route existing logs to Eliot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html#add-actions-at-entry-points-and-other-key-points">Add actions at entry points and other key points</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="threads.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html#cross-thread-tasks">Cross-Thread Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html#cross-process-tasks">Cross-Process Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html#id3">Cross-Thread Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html#ensuring-message-uniqueness">Ensuring Message Uniqueness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html#logging-output-for-multiple-processes">Logging Output for Multiple Processes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="types.html#why-typing">Why Typing?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html#fields">Fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html#message-types">Message Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html#action-types">Action Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html#serialization-errors">Serialization Errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html#validate-logging-in-tests">Validate Logging in Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html#testing-tracebacks">Testing Tracebacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html#testing-message-and-action-structure">Testing Message and Action Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html#restricting-testing-to-specific-messages">Restricting Testing to Specific Messages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html#why-you-need-to-do-this">Why you need to do this</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html#non-blocking-destinations">Non-blocking Destinations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html#twisted-logger-integration"><code class="docutils literal notranslate"><span class="pre">twisted.logger</span></code> integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html#trial-integration">Trial Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html#logging-failures">Logging Failures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html#actions-and-deferreds">Actions and Deferreds</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="messages.html" class="btn btn-neutral float-right" title="Messages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../news.html" class="btn btn-neutral" title="What’s New" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

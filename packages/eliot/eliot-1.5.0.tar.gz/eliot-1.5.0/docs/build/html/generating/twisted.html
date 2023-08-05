@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using Eliot with Twisted &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Outputting Logs" href="../outputting/index.html" />
+    <link rel="prev" title="Asyncio Coroutine Support" href="asyncio.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Using Eliot with Twisted</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/twisted.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-eliot-with-twisted">
+<h1>Using Eliot with Twisted<a class="headerlink" href="#using-eliot-with-twisted" title="Permalink to this headline">¶</a></h1>
+<p>Eliot provides a variety of APIs to support integration with the <a class="reference external" href="https://twistedmatrix.com">Twisted</a> networking framework.</p>
+<div class="section" id="non-blocking-destinations">
+<span id="threadedwriter"></span><h2>Non-blocking Destinations<a class="headerlink" href="#non-blocking-destinations" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">eliot.logwriter.ThreadedWriter</span></code> is a logging destination that wraps a blocking destination and writes to it in a non-reactor thread.
+This is useful because it keeps the Twisted reactor from blocking, e.g. if you’re writing to a log file and the hard drive is overloaded.
+<code class="docutils literal notranslate"><span class="pre">ThreadedWriter</span></code> is a Twisted <code class="docutils literal notranslate"><span class="pre">Service</span></code> and starting it will call <code class="docutils literal notranslate"><span class="pre">add_destinations</span></code> for you and stopping it will call <code class="docutils literal notranslate"><span class="pre">remove_destination</span></code>; there is no need to call those directly.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Output an Eliot message to a log file using the threaded log writer.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">unicode_literals</span><span class="p">,</span> <span class="n">print_function</span>
+
+<span class="kn">from</span> <span class="nn">twisted.internet.task</span> <span class="k">import</span> <span class="n">react</span>
+
+<span class="kn">from</span> <span class="nn">eliot.logwriter</span> <span class="k">import</span> <span class="n">ThreadedWriter</span>
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">Message</span><span class="p">,</span> <span class="n">FileDestination</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">reactor</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Logging to example-eliot.log...&quot;</span><span class="p">)</span>
+    <span class="n">logWriter</span> <span class="o">=</span> <span class="n">ThreadedWriter</span><span class="p">(</span>
+        <span class="n">FileDestination</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;example-eliot.log&quot;</span><span class="p">,</span> <span class="s2">&quot;ab&quot;</span><span class="p">)),</span> <span class="n">reactor</span><span class="p">)</span>
+
+    <span class="c1"># Manually start the service, which will add it as a</span>
+    <span class="c1"># destination. Normally we&#39;d register ThreadedWriter with the usual</span>
+    <span class="c1"># Twisted Service/Application infrastructure.</span>
+    <span class="n">logWriter</span><span class="o">.</span><span class="n">startService</span><span class="p">()</span>
+
+    <span class="c1"># Log a message:</span>
+    <span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="n">another</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Manually stop the service.</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="n">logWriter</span><span class="o">.</span><span class="n">stopService</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">done</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">react</span><span class="p">(</span><span class="n">main</span><span class="p">,</span> <span class="p">[])</span>
+</pre></div>
+</div>
+<p>If you want log rotation you can pass in an <code class="docutils literal notranslate"><span class="pre">eliot.FileDestination</span></code> wrapping one of the classes from <a class="reference external" href="https://twistedmatrix.com/documents/current/api/twisted.python.logfile.html">twisted.python.logfile</a> as the destination file.</p>
+</div>
+<div class="section" id="twisted-logger-integration">
+<h2><code class="docutils literal notranslate"><span class="pre">twisted.logger</span></code> integration<a class="headerlink" href="#twisted-logger-integration" title="Permalink to this headline">¶</a></h2>
+<p>If you wish you can direct Eliot logs to Twisted’s logging subsystem, if that is the primary logging system you’re using.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">add_destinations</span>
+<span class="kn">from</span> <span class="nn">eliot.twisted</span> <span class="kn">import</span> <span class="n">TwistedDestination</span>
+
+<span class="n">add_destinations</span><span class="p">(</span><span class="n">TwistedDestination</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="trial-integration">
+<h2>Trial Integration<a class="headerlink" href="#trial-integration" title="Permalink to this headline">¶</a></h2>
+<p>If you’re using Twisted’s <code class="docutils literal notranslate"><span class="pre">trial</span></code> program to run your tests you can redirect your Eliot logs to Twisted’s logs by calling <code class="docutils literal notranslate"><span class="pre">eliot.twisted.redirectLogsForTrial()</span></code>.
+This function will automatically detect whether or not it is running under <code class="docutils literal notranslate"><span class="pre">trial</span></code>.
+If it is then you will be able to read your Eliot logs in <code class="docutils literal notranslate"><span class="pre">_trial_temp/test.log</span></code>, where <code class="docutils literal notranslate"><span class="pre">trial</span></code> writes out logs by default.
+If it is not running under <code class="docutils literal notranslate"><span class="pre">trial</span></code> it will not do anything.
+In addition calling it multiple times has the same effect as calling it once.</p>
+<p>The way you use it is by putting it in your package’s <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>: it will do the right thing and only redirect if you’re using <code class="docutils literal notranslate"><span class="pre">trial</span></code>.
+Take care if you are separately redirecting Twisted logs to Eliot; you should make sure not to call <code class="docutils literal notranslate"><span class="pre">redirectLogsForTrial</span></code> in that case so as to prevent infinite loops.</p>
+</div>
+<div class="section" id="logging-failures">
+<h2>Logging Failures<a class="headerlink" href="#logging-failures" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">eliot.writeFailure</span></code> is the equivalent of <code class="docutils literal notranslate"><span class="pre">eliot.write_traceback</span></code>, only for <code class="docutils literal notranslate"><span class="pre">Failure</span></code> instances:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">writeFailure</span>
+
+<span class="k">class</span> <span class="nc">YourClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">dosomething</span><span class="p">()</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">addErrback</span><span class="p">(</span><span class="n">writeFailure</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="actions-and-deferreds">
+<h2>Actions and Deferreds<a class="headerlink" href="#actions-and-deferreds" title="Permalink to this headline">¶</a></h2>
+<p>An additional set of APIs is available to help log actions when using Deferreds.
+To understand why, consider the following example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="k">def</span> <span class="nf">go</span><span class="p">():</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;yourapp:subsystem:frob&quot;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">action</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">Deferred</span><span class="p">()</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">addCallback</span><span class="p">(</span><span class="n">gotResult</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">d</span>
+</pre></div>
+</div>
+<p>This has two problems.
+First, <code class="docutils literal notranslate"><span class="pre">gotResult</span></code> is not going to run in the context of the action.
+Second, the action finishes once the <code class="docutils literal notranslate"><span class="pre">with</span></code> block finishes, i.e. before <code class="docutils literal notranslate"><span class="pre">gotResult</span></code> runs.
+If we want <code class="docutils literal notranslate"><span class="pre">gotResult</span></code> to be run in the context of the action and to delay the action finish we need to do some extra work, and manually wrapping all callbacks would be tedious.</p>
+<p>To solve this problem you can use the <code class="docutils literal notranslate"><span class="pre">eliot.twisted.DeferredContext</span></code> class.
+It grabs the action context when it is first created and provides the same API as <code class="docutils literal notranslate"><span class="pre">Deferred</span></code> (<code class="docutils literal notranslate"><span class="pre">addCallbacks</span></code> and friends), with the difference that added callbacks run in the context of the action.
+When all callbacks have been added you can indicate that the action should finish after those callbacks have run by calling <code class="docutils literal notranslate"><span class="pre">DeferredContext.addActionFinish</span></code>.
+As you would expect, if the <code class="docutils literal notranslate"><span class="pre">Deferred</span></code> fires with a regular result that will result in success message.
+If the <code class="docutils literal notranslate"><span class="pre">Deferred</span></code> fires with an errback that will result in failure message.
+Finally, you can unwrap the <code class="docutils literal notranslate"><span class="pre">DeferredContext</span></code> and access the wrapped <code class="docutils literal notranslate"><span class="pre">Deferred</span></code> by accessing its <code class="docutils literal notranslate"><span class="pre">result</span></code> attribute.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+<span class="kn">from</span> <span class="nn">eliot.twisted</span> <span class="kn">import</span> <span class="n">DeferredContext</span>
+
+<span class="k">def</span> <span class="nf">go</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;your_type&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">context</span><span class="p">()</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">DeferredContext</span><span class="p">(</span><span class="n">Deferred</span><span class="p">())</span>
+        <span class="c1"># gotResult(result, x=1) will be called in the context of the action:</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">addCallback</span><span class="p">(</span><span class="n">gotResult</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># After gotResult finishes, finish the action:</span>
+        <span class="n">d</span><span class="o">.</span><span class="n">addActionFinish</span><span class="p">()</span>
+        <span class="c1"># Return the underlying Deferred:</span>
+        <span class="k">return</span> <span class="n">d</span><span class="o">.</span><span class="n">result</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../outputting/index.html" class="btn btn-neutral float-right" title="Outputting Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="asyncio.html" class="btn btn-neutral" title="Asyncio Coroutine Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

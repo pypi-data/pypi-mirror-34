@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quickstart &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Why Eliot?" href="introduction.html" />
+    <link rel="prev" title="Eliot: Logging that tells you why it happened" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generating/index.html">Generating Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quickstart</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<p>Let’s see how easy it is to use Eliot.</p>
+<div class="section" id="installing-eliot">
+<h2>Installing Eliot<a class="headerlink" href="#installing-eliot" title="Permalink to this headline">¶</a></h2>
+<p>To install Eliot and the other tools we’ll use in this example, run the following in your shell:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install eliot eliot-tree requests
+</pre></div>
+</div>
+<p>This will install:</p>
+<ol class="arabic simple">
+<li>Eliot itself.</li>
+<li><a class="reference external" href="https://github.com/jonathanj/eliottree">eliot-tree</a>, a tool that lets you visualize Eliot logs easily.</li>
+<li><code class="docutils literal notranslate"><span class="pre">requests</span></code>, a HTTP client library we’ll use in the example code below.
+You don’t need it for real Eliot usage, though.</li>
+</ol>
+</div>
+<div class="section" id="our-example-program">
+<h2>Our example program<a class="headerlink" href="#our-example-program" title="Permalink to this headline">¶</a></h2>
+<p>We’re going to add logging code to the following script, which checks if a list of links are valid URLs:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">check_links</span><span class="p">(</span><span class="n">urls</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">check_links</span><span class="p">([</span><span class="s2">&quot;http://eliot.readthedocs.io&quot;</span><span class="p">,</span> <span class="s2">&quot;http://nosuchurl&quot;</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Not all links were valid.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-eliot-logging">
+<h2>Adding Eliot logging<a class="headerlink" href="#adding-eliot-logging" title="Permalink to this headline">¶</a></h2>
+<p>To add logging to this program, we do two things:</p>
+<ol class="arabic simple">
+<li>Tell Eliot to log messages to file called “linkcheck.log” by using <code class="docutils literal notranslate"><span class="pre">eliot.to_file()</span></code>.</li>
+<li>Create two actions using <code class="docutils literal notranslate"><span class="pre">eliot.start_action()</span></code>.
+Actions succeed when the <code class="docutils literal notranslate"><span class="pre">eliot.start_action()</span></code> context manager finishes successfully, and fail when an exception is raised.</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="hll"><span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">to_file</span>
+</span><span class="hll"><span class="n">to_file</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;linkcheck.log&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">))</span>
+</span>
+
+<span class="k">def</span> <span class="nf">check_links</span><span class="p">(</span><span class="n">urls</span><span class="p">):</span>
+<span class="hll">    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;check_links&quot;</span><span class="p">,</span> <span class="n">urls</span><span class="o">=</span><span class="n">urls</span><span class="p">):</span>
+</span>        <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+<span class="hll">                <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;download&quot;</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">):</span>
+</span>                    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+                    <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">check_links</span><span class="p">([</span><span class="s2">&quot;http://eliot.readthedocs.io&quot;</span><span class="p">,</span> <span class="s2">&quot;http://nosuchurl&quot;</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not all links were valid.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-the-code">
+<h2>Running the code<a class="headerlink" href="#running-the-code" title="Permalink to this headline">¶</a></h2>
+<p>Let’s run the code:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python linkcheck.py
+<span class="go">Not all the links were valid.</span>
+</pre></div>
+</div>
+<p>We can see the resulting log file is composed of JSON messages, one per line:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> cat linkcheck.log
+<span class="go">{&quot;action_status&quot;: &quot;started&quot;, &quot;task_uuid&quot;: &quot;b1cb58cf-2c2f-45c0-92b2-838ac00b20cc&quot;, &quot;task_level&quot;: [1], &quot;timestamp&quot;: 1509136967.2066844, &quot;action_type&quot;: &quot;check_links&quot;, &quot;urls&quot;: [&quot;http://eliot.readthedocs.io&quot;, &quot;http://nosuchurl&quot;]}</span>
+<span class="go">...</span>
+</pre></div>
+</div>
+<p>So far these logs seem similar to the output of regular logging systems: individual isolated messages.
+But unlike those logging systems, Eliot produces logs that can be reconstructed into a tree, for example using the <code class="docutils literal notranslate"><span class="pre">eliot-tree</span></code> utility:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> eliot-tree linkcheck.log
+<span class="go">b1cb58cf-2c2f-45c0-92b2-838ac00b20cc</span>
+<span class="hll"><span class="go">└── check_links/1 ⇒ started</span>
+</span><span class="go">    ├── timestamp: 2017-10-27 20:42:47.206684</span>
+<span class="go">    ├── urls:</span>
+<span class="go">    │   ├── 0: http://eliot.readthedocs.io</span>
+<span class="go">    │   └── 1: http://nosuchurl</span>
+<span class="hll"><span class="go">    ├── download/2/1 ⇒ started</span>
+</span><span class="go">    │   ├── timestamp: 2017-10-27 20:42:47.206933</span>
+<span class="go">    │   ├── url: http://eliot.readthedocs.io</span>
+<span class="go">    │   └── download/2/2 ⇒ succeeded</span>
+<span class="go">    │       └── timestamp: 2017-10-27 20:42:47.439203</span>
+<span class="hll"><span class="go">    ├── download/3/1 ⇒ started</span>
+</span><span class="go">    │   ├── timestamp: 2017-10-27 20:42:47.439412</span>
+<span class="go">    │   ├── url: http://nosuchurl</span>
+<span class="hll"><span class="go">    │   └── download/3/2 ⇒ failed</span>
+</span><span class="hll"><span class="go">    │       ├── errno: None</span>
+</span><span class="hll"><span class="go">    │       ├── exception: requests.exceptions.ConnectionError</span>
+</span><span class="hll"><span class="go">    │       ├── reason: HTTPConnectionPool(host=&#39;nosuchurl&#39;, port=80): Max retries exceeded with url: / (Caused by NewConnec…</span>
+</span><span class="go">    │       └── timestamp: 2017-10-27 20:42:47.457133</span>
+<span class="hll"><span class="go">    └── check_links/4 ⇒ failed</span>
+</span><span class="hll"><span class="go">        ├── exception: builtins.ValueError</span>
+</span><span class="hll"><span class="go">        ├── reason: HTTPConnectionPool(host=&#39;nosuchurl&#39;, port=80): Max retries exceeded with url: / (Caused by NewConnec…</span>
+</span><span class="go">        └── timestamp: 2017-10-27 20:42:47.457332</span>
+</pre></div>
+</div>
+<p>Notice how:</p>
+<ol class="arabic simple">
+<li>Eliot tells you which actions succeeded and which failed.</li>
+<li>Failed actions record their exceptions.</li>
+<li>You can see just from the logs that the <code class="docutils literal notranslate"><span class="pre">check_links</span></code> action caused the <code class="docutils literal notranslate"><span class="pre">download</span></code> action.</li>
+</ol>
+</div>
+<div class="section" id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>You can learn more by reading the rest of the documentation, including:</p>
+<ul class="simple">
+<li>The <a class="reference internal" href="introduction.html"><span class="doc">motivation behind Eliot</span></a>.</li>
+<li>How to generate <a class="reference internal" href="generating/actions.html"><span class="doc">actions</span></a>, <a class="reference internal" href="generating/messages.html"><span class="doc">standalone messages</span></a>, and <a class="reference internal" href="generating/errors.html"><span class="doc">handle errors</span></a>.</li>
+<li>How to integrate or migrate your <a class="reference internal" href="generating/migrating.html"><span class="doc">existing stdlib logging messages</span></a>.</li>
+<li>How to output logs <a class="reference internal" href="outputting/output.html"><span class="doc">to a file or elsewhere</span></a>.</li>
+<li>Using <a class="reference internal" href="generating/asyncio.html"><span class="doc">asyncio coroutines</span></a>, <a class="reference internal" href="generating/threads.html"><span class="doc">threads and processes</span></a>, or <a class="reference internal" href="generating/twisted.html"><span class="doc">Twisted</span></a>.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="introduction.html" class="btn btn-neutral float-right" title="Why Eliot?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Eliot: Logging that tells you why it happened" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

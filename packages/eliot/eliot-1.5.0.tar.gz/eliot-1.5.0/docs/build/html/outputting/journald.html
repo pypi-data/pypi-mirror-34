@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Journald &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using Logstash and ElasticSearch to Process Eliot Logs" href="elasticsearch.html" />
+    <link rel="prev" title="Configuring Logging Output" href="output.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../generating/index.html">Generating Logs</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Outputting Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="output.html">Configuring Logging Output</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Journald</a></li>
+<li class="toctree-l2"><a class="reference internal" href="elasticsearch.html">Using Logstash and ElasticSearch to Process Eliot Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Outputting Logs</a> &raquo;</li>
+        
+      <li>Journald</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/outputting/journald.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="journald">
+<span id="id1"></span><h1>Journald<a class="headerlink" href="#journald" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">journald</span></code> is the native logging system on Linux operating systems that use <code class="docutils literal notranslate"><span class="pre">systemd</span></code> with support for structured, indexed log storage.
+Eliot provides native <code class="docutils literal notranslate"><span class="pre">journald</span></code> support, with the following features:</p>
+<ul class="simple">
+<li>The default message field (<code class="docutils literal notranslate"><span class="pre">MESSAGE</span></code>) stores the Eliot message as JSON.</li>
+<li>Failed actions get priority 3 (“err”) and tracebacks get priority 2 (“crit”).</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">ELIOT_TASK</span></code> field stores the task UUID.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">ELIOT_TYPE</span></code> field stores the message or action type if available.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">SYSLOG_IDENTIFIER</span></code> stores <code class="docutils literal notranslate"><span class="pre">sys.argv[0]</span></code>.</li>
+</ul>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Journald requires additional libraries that are not installed by default by Eliot.
+You can install them by running:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install eliot<span class="o">[</span>journald<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generating-logs">
+<h2>Generating logs<a class="headerlink" href="#generating-logs" title="Permalink to this headline">¶</a></h2>
+<p>The following example demonstrates how to enable <code class="docutils literal notranslate"><span class="pre">journald</span></code> output.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Write some logs to journald.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+
+<span class="kn">from</span> <span class="nn">eliot</span> <span class="k">import</span> <span class="n">Message</span><span class="p">,</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">add_destinations</span>
+<span class="kn">from</span> <span class="nn">eliot.journald</span> <span class="k">import</span> <span class="n">JournaldDestination</span>
+
+<span class="n">add_destinations</span><span class="p">(</span><span class="n">JournaldDestination</span><span class="p">())</span>
+
+
+<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;divide&quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">message_type</span><span class="o">=</span><span class="s2">&quot;inbetween&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="querying-logs">
+<h2>Querying logs<a class="headerlink" href="#querying-logs" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">journalctl</span></code> utility can be used to extract logs from <code class="docutils literal notranslate"><span class="pre">journald</span></code>.
+Useful options include <code class="docutils literal notranslate"><span class="pre">--all</span></code> which keeps long fields from being truncated and <code class="docutils literal notranslate"><span class="pre">--output</span> <span class="pre">cat</span></code> which only outputs the body of the <code class="docutils literal notranslate"><span class="pre">MESSAGE</span></code> field, i.e. the JSON-serialized Eliot message.</p>
+<p>Let’s generate some logs:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python journald.py
+</pre></div>
+</div>
+<p>We can find all messages with a specific type:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo journalctl --all --output cat <span class="nv">ELIOT_TYPE</span><span class="o">=</span>inbetween <span class="p">|</span> eliot-prettyprint
+<span class="go">32ab1286-c356-439d-86f8-085fec3b65d0 -&gt; /1</span>
+<span class="go">2015-09-23 21:26:37.972403Z</span>
+<span class="go">  message_type: inbetween</span>
+</pre></div>
+</div>
+<p>We can filter to those that indicate errors:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo journalctl --all --output cat --priority<span class="o">=</span>err <span class="nv">ELIOT_TYPE</span><span class="o">=</span>divide <span class="p">|</span> eliot-prettyprint
+<span class="go">ce64eb77-bb7f-4e69-83f8-07d7cdaffaca -&gt; /2</span>
+<span class="go">2015-09-23 21:26:37.972945Z</span>
+<span class="go">  action_type: divide</span>
+<span class="go">  action_status: failed</span>
+<span class="go">  exception: exceptions.ZeroDivisionError</span>
+<span class="go">  reason: integer division or modulo by zero</span>
+</pre></div>
+</div>
+<p>We can also search by task UUID, in which case <code class="docutils literal notranslate"><span class="pre">eliot-tree</span></code> can also be used to process the output:</p>
+<div class="highlight-shell-session notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo journalctl --all --output cat <span class="nv">ELIOT_TASK</span><span class="o">=</span>ce64eb77-bb7f-4e69-83f8-07d7cdaffaca <span class="p">|</span> eliot-tree
+<span class="go">ce64eb77-bb7f-4e69-83f8-07d7cdaffaca</span>
+<span class="go">+-- divide@1/started</span>
+<span class="go">    |-- a: 10</span>
+<span class="go">    |-- b: 0</span>
+<span class="go">    `-- timestamp: 2015-09-23 17:26:37.972716</span>
+<span class="go">    +-- divide@2/failed</span>
+<span class="go">        |-- exception: exceptions.ZeroDivisionError</span>
+<span class="go">        |-- reason: integer division or modulo by zero</span>
+<span class="go">        `-- timestamp: 2015-09-23 17:26:37.972945</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="elasticsearch.html" class="btn btn-neutral float-right" title="Using Logstash and ElasticSearch to Process Eliot Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="output.html" class="btn btn-neutral" title="Configuring Logging Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

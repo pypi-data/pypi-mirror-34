@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Actions and Tasks &mdash; Eliot 1.4.0+5.g8b63dbe documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Errors and Exceptions" href="errors.html" />
+    <link rel="prev" title="Messages" href="messages.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Eliot
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.4.0+5.g8b63dbe
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Why Eliot?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">What’s New</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Generating Logs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="messages.html">Messages</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Actions and Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">Errors and Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loglevels.html">Log Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating.html">Integrating and Migrating Existing Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Spanning Processes and Threads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types.html">Using Types to Structure Messages and Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-testing.html">Unit Testing Your Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asyncio.html">Asyncio Coroutine Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="twisted.html">Using Eliot with Twisted</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../outputting/index.html">Outputting Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Contributing to Eliot</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Eliot</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Generating Logs</a> &raquo;</li>
+        
+      <li>Actions and Tasks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generating/actions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="actions-and-tasks">
+<h1>Actions and Tasks<a class="headerlink" href="#actions-and-tasks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="actions-a-start-and-a-finish">
+<h2>Actions: A Start and a Finish<a class="headerlink" href="#actions-a-start-and-a-finish" title="Permalink to this headline">¶</a></h2>
+<p>A higher-level construct than messages is the concept of an action.
+An action can be started, and then finishes either successfully or with some sort of an exception.
+Success in this case simply means no exception was thrown; the result of an action may be a successful response saying “this did not work”.
+Log messages are emitted for action start and finish.</p>
+<p>Actions are also nested; one action can be the parent of another.
+An action’s parent is deduced from the Python call stack and context managers like <code class="docutils literal notranslate"><span class="pre">Action.context()</span></code>.
+Log messages will also note the action they are part of if they can deduce it from the call stack.
+The result of all this is that you can trace the operation of your code as it logs various actions, and see a narrative of what happened and what caused it to happen.</p>
+</div>
+<div class="section" id="logging-actions">
+<h2>Logging Actions<a class="headerlink" href="#logging-actions" title="Permalink to this headline">¶</a></h2>
+<p>Here’s a basic example of logging an action:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;store_data&quot;</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">()</span>
+    <span class="n">store_data</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will log an action start message and if the block finishes successfully an action success message.
+If an exception is thrown by the block then an action failure message will be logged along with the exception type and reason as additional fields.
+Each action thus results in two messages being logged: at the start and finish of the action.
+No traceback will be logged so if you want a traceback you will need to do so explicitly.
+Notice that the action has a name, with a subsystem prefix.
+Again, this should be a logical name.</p>
+<p>Note that all code called within this block is within the context of this action.
+While running the block of code within the <code class="docutils literal notranslate"><span class="pre">with</span></code> statement new actions created with <code class="docutils literal notranslate"><span class="pre">start_action</span></code> will get the top-level <code class="docutils literal notranslate"><span class="pre">start_action</span></code> as their parent.</p>
+</div>
+<div class="section" id="tasks-top-level-actions">
+<h2>Tasks: Top-level Actions<a class="headerlink" href="#tasks-top-level-actions" title="Permalink to this headline">¶</a></h2>
+<p>A top-level action with no parent is called a task, the root cause of all its child actions.
+E.g. a web server receiving a new HTTP request would create a task for that new request.
+Log messages emitted from Eliot are therefore logically structured as a forest: trees of actions with tasks at the root.
+If you want to ignore the context and create a top-level task you can use the <code class="docutils literal notranslate"><span class="pre">eliot.start_task</span></code> API.</p>
+</div>
+<div class="section" id="from-actions-to-messages">
+<span id="task-fields"></span><h2>From Actions to Messages<a class="headerlink" href="#from-actions-to-messages" title="Permalink to this headline">¶</a></h2>
+<p>While the logical structure of log messages is a forest of actions, the actual output is effectively a list of dictionaries (e.g. a series of JSON messages written to a file).
+To bridge the gap between the two structures each output message contains special fields expressing the logical relationship between it and other messages:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">task_uuid</span></code>: The unique identifier of the task (top-level action) the message is part of.</li>
+<li><code class="docutils literal notranslate"><span class="pre">task_level</span></code>: The specific location of this message within the task’s tree of actions.
+For example, <code class="docutils literal notranslate"><span class="pre">[3,</span> <span class="pre">2,</span> <span class="pre">4]</span></code> indicates the message is the 4th child of the 2nd child of the 3rd child of the task.</li>
+</ul>
+<p>Consider the following code sample:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">start_task</span><span class="p">,</span> <span class="n">Message</span>
+
+<span class="k">with</span> <span class="n">start_task</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;parent&quot;</span><span class="p">):</span>
+    <span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">message_type</span><span class="o">=</span><span class="s2">&quot;info&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;child&quot;</span><span class="p">):</span>
+        <span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">message_type</span><span class="o">=</span><span class="s2">&quot;info&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;ono&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>All these messages will share the same UUID in their <code class="docutils literal notranslate"><span class="pre">task_uuid</span></code> field, since they are all part of the same high-level task.
+If you sort the resulting messages by their <code class="docutils literal notranslate"><span class="pre">task_level</span></code> you will get the tree of messages:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">task_level</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;parent&quot;</span> <span class="n">action_status</span><span class="o">=</span><span class="s2">&quot;started&quot;</span>
+<span class="n">task_level</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="n">message_type</span><span class="o">=</span><span class="s2">&quot;info&quot;</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">task_level</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;child&quot;</span> <span class="n">action_status</span><span class="o">=</span><span class="s2">&quot;started&quot;</span>
+    <span class="n">task_level</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="n">message_type</span><span class="o">=</span><span class="s2">&quot;info&quot;</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+    <span class="n">task_level</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;child&quot;</span> <span class="n">action_status</span><span class="o">=</span><span class="s2">&quot;succeeded&quot;</span>
+<span class="n">task_level</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="n">action_type</span><span class="o">=</span><span class="s2">&quot;parent&quot;</span> <span class="n">action_status</span><span class="o">=</span><span class="s2">&quot;failed&quot;</span> <span class="n">exception</span><span class="o">=</span><span class="s2">&quot;exceptions.RuntimeError&quot;</span> <span class="n">reason</span><span class="o">=</span><span class="s2">&quot;ono&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="non-finishing-contexts">
+<h2>Non-Finishing Contexts<a class="headerlink" href="#non-finishing-contexts" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you want to have the action be the context for other messages but not finish automatically when the block finishes.
+You can do so with <code class="docutils literal notranslate"><span class="pre">Action.context()</span></code>.
+You can explicitly finish an action by calling <code class="docutils literal notranslate"><span class="pre">eliot.Action.finish</span></code>.
+If called with an exception it indicates the action finished unsuccessfully.
+If called with no arguments it indicates that the action finished successfully.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="n">action</span> <span class="o">=</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;yourapp:subsystem:frob&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">action</span><span class="o">.</span><span class="n">context</span><span class="p">():</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">_beep</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">action</span><span class="o">.</span><span class="n">context</span><span class="p">():</span>
+        <span class="n">frobinate</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="c1"># Action still isn&#39;t finished, need to so explicitly.</span>
+<span class="k">except</span> <span class="n">FrobError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">action</span><span class="o">.</span><span class="n">finish</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">action</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">context()</span></code> method returns the <code class="docutils literal notranslate"><span class="pre">Action</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;your_type&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">context</span><span class="p">()</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+    <span class="c1"># do some stuff...</span>
+    <span class="n">action</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You shouldn’t log within an action’s context after it has been finished:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span><span class="p">,</span> <span class="n">Message</span>
+
+<span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;message_late&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">context</span><span class="p">()</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+    <span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">message_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;ok&quot;</span><span class="p">)</span>
+    <span class="c1"># finish the action:</span>
+    <span class="n">action</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+    <span class="c1"># Don&#39;t do this! This message is being added to a finished action!</span>
+    <span class="n">Message</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">message_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;late&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As an alternative to <code class="docutils literal notranslate"><span class="pre">with</span></code>, you can also explicitly run a function within the action context:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="n">action</span> <span class="o">=</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;yourapp:subsystem:frob&quot;</span><span class="p">)</span>
+<span class="c1"># Call do_something(x=1) in context of action, return its result:</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">action</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">do_something</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="action-fields">
+<h3>Action Fields<a class="headerlink" href="#action-fields" title="Permalink to this headline">¶</a></h3>
+<p>You can add fields to both the start message and the success message of an action.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">start_action</span>
+
+<span class="k">with</span> <span class="n">start_action</span><span class="p">(</span><span class="n">action_type</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;yourapp:subsystem:frob&quot;</span><span class="p">,</span>
+                 <span class="c1"># Fields added to start message only:</span>
+                 <span class="n">key</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">foo</span><span class="o">=</span><span class="sa">u</span><span class="s2">&quot;bar&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">action</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">_beep</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">frobinate</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="c1"># Fields added to success message only:</span>
+    <span class="n">action</span><span class="o">.</span><span class="n">add_success_fields</span><span class="p">(</span><span class="n">result</span><span class="o">=</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you want to include some extra information in case of failures beyond the exception you can always log a regular message with that information.
+Since the message will be recorded inside the context of the action its information will be clearly tied to the result of the action by the person (or code!) reading the logs later on.</p>
+</div>
+</div>
+<div class="section" id="getting-the-current-action">
+<h2>Getting the Current Action<a class="headerlink" href="#getting-the-current-action" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes it can be useful to get the current action.
+For example, you might want to record the current task UUID for future reference, in a bug report for example.
+You might also want to pass around the <code class="docutils literal notranslate"><span class="pre">Action</span></code> explicitly, rather than relying on the implicit context.</p>
+<p>You can get the current <code class="docutils literal notranslate"><span class="pre">Action</span></code> by calling <code class="docutils literal notranslate"><span class="pre">eliot.current_action()</span></code>.
+For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">eliot</span> <span class="kn">import</span> <span class="n">current_action</span>
+
+<span class="k">def</span> <span class="nf">get_current_uuid</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">current_action</span><span class="p">()</span><span class="o">.</span><span class="n">task_uuid</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="errors.html" class="btn btn-neutral float-right" title="Errors and Exceptions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="messages.html" class="btn btn-neutral" title="Messages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2018, ClusterHQ and Itamar Turner-Trauring.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.4.0+5.g8b63dbe',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/django_auto_modeladmin/__init__.py
+src/django_auto_modeladmin/main.py
+src/django_auto_modeladmin/utils.py
+src/django_auto_modeladmin.egg-info/PKG-INFO
+src/django_auto_modeladmin.egg-info/SOURCES.txt
+src/django_auto_modeladmin.egg-info/dependency_links.txt
+src/django_auto_modeladmin.egg-info/not-zip-safe
+src/django_auto_modeladmin.egg-info/requires.txt
+src/django_auto_modeladmin.egg-info/top_level.txt

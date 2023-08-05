@@ -1,0 +1,10 @@
+azure_costs_exporter/__init__.py,sha256=mSAVlFLMWQYyEbcb2v0rotaONB8TMX2lLd22ug-X-5Q,115
+azure_costs_exporter/allocated_vm_collector.py,sha256=zpMd3dwHYD5uHwslm2-xZoD5d_tzIxGkpp2A7CmfYXg,3570
+azure_costs_exporter/enterprise_billing_collector.py,sha256=9ES2i87JxCpx4Fjtj6W0pQzBfmiTLfdyzrFuy-VRKpU,3568
+azure_costs_exporter/main.py,sha256=GUoSsU14JcK8DWnBHSmHz5gNlub2mVxMoDj_LKfcFH8,385
+azure_costs_exporter/reserved_vm_collector.py,sha256=D-nSpbBo01XeGNplhInpu0L3pQ1Fzne3-s3pNIDFKX8,4475
+azure_costs_exporter/views.py,sha256=gA5BmWz11JBJ7w6v-k47UY7s25rAKO41j_YXjBJ6whw,2381
+azure_costs_exporter-1.1.0.post1.dist-info/METADATA,sha256=eNp0YoXReOqSCcyyWAD6-WMAiWuCKm1KsJjHZqlJOmA,862
+azure_costs_exporter-1.1.0.post1.dist-info/RECORD,,
+azure_costs_exporter-1.1.0.post1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+azure_costs_exporter-1.1.0.post1.dist-info/top_level.txt,sha256=hPkPqxw9payLGxkySLgQ9KJ9XwGrPM2KFosQ3MtsgSM,21

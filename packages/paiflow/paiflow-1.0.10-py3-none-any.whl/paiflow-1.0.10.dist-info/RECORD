@@ -1,0 +1,11 @@
+paiflow/VERSION.txt,sha256=rv-FavhPb9AZUyZ0zZ53qqmGXM_59KQSxAgyOmZ1MWg,6
+paiflow/__init__.py,sha256=M7IKe1lmuKZ4auqUH3MyJukynKkhOUHqaFBg8uQv804,166
+paiflow/info_model.py,sha256=0RrmlvWcNGunYI0kBngsEmVtg4aYUGAL9zkMCA1kktc,548
+paiflow/paiflow.py,sha256=QZ5wLls8Baj19imc4UC07lfOQmXsXRoN3gZJ6Zx-970,1040
+paiflow/predict_base.py,sha256=DLc1Gpa78tVcs2761qQh90rkrOEju9E7y11_FHr3sGs,431
+paiflow-1.0.10.dist-info/DESCRIPTION.rst,sha256=4dhWvbJilZWcmzCpfzouVQLlWHnklIzCrc3t9Dussa8,70
+paiflow-1.0.10.dist-info/METADATA,sha256=wqhl9NeYH7s8K-r-NsPAjUX9ZUGoWip7_oP5VCPJVdQ,485
+paiflow-1.0.10.dist-info/RECORD,,
+paiflow-1.0.10.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+paiflow-1.0.10.dist-info/metadata.json,sha256=jXk_w-1KKV85gXk8NcwAjhD0f5d2uK_MetXJ-EUZRQw,587
+paiflow-1.0.10.dist-info/top_level.txt,sha256=pmeiY7yy1KWkV_LmFK82tXVdhW83itQuWjYsqe3Nats,8

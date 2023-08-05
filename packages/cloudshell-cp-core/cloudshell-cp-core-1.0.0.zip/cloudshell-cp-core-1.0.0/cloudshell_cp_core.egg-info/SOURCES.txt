@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+version.txt
+cloudshell/__init__.py
+cloudshell/cp/__init__.py
+cloudshell/cp/core/__init__.py
+cloudshell/cp/core/drive_request_parser.py
+cloudshell/cp/core/models.py
+cloudshell/cp/core/utils.py
+cloudshell_cp_core.egg-info/PKG-INFO
+cloudshell_cp_core.egg-info/SOURCES.txt
+cloudshell_cp_core.egg-info/dependency_links.txt
+cloudshell_cp_core.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cloudshell_cp_core.py

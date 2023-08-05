@@ -1,0 +1,3 @@
+[console_scripts]
+vehicular = vehicular.__main__:launch
+

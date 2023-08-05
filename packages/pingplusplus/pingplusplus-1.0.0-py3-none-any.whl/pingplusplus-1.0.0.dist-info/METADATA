@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pingplusplus
+Version: 1.0.0
+Summary: ping logging
+Home-page: https://bitbucket.org/fholmer/pingplusplus
+Author: Frode Holmer
+Author-email: fholmer+pingplusplus@gmail.com
+License: MIT
+Keywords: ping network
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Home Automation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: view
+Provides-Extra: dev
+Requires-Dist: prompt-toolkit
+Requires-Dist: Pygments
+Requires-Dist: six
+Requires-Dist: wcwidth
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pylint; extra == 'dev'
+Provides-Extra: view
+Requires-Dist: dash; extra == 'view'
+Requires-Dist: dash-renderer; extra == 'view'
+Requires-Dist: dash-core-components; extra == 'view'
+Requires-Dist: dash-html-components; extra == 'view'
+
+UNKNOWN
+
+

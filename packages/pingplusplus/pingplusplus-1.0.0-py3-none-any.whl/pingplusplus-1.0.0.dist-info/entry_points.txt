@@ -1,0 +1,4 @@
+[console_scripts]
+ping++ = pingplusplus.main:run
+view++ = viewplusplus.main:run [view]
+

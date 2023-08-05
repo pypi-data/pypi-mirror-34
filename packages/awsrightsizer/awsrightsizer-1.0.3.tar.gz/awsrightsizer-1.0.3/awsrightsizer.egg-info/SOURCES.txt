@@ -1,0 +1,11 @@
+README.md
+setup.py
+awsrightsizer.egg-info/PKG-INFO
+awsrightsizer.egg-info/SOURCES.txt
+awsrightsizer.egg-info/dependency_links.txt
+awsrightsizer.egg-info/entry_points.txt
+awsrightsizer.egg-info/requires.txt
+awsrightsizer.egg-info/top_level.txt
+rightsizer/AwsRightSizer.py
+rightsizer/__init__.py
+rightsizer/main.py

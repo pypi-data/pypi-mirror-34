@@ -1,0 +1,13 @@
+rgf/VERSION,sha256=Xu5sDFxpAfXlI_CkNLykEG4f9xNt60UfmCsLsaexNxY,6
+rgf/__init__.py,sha256=nwiBD6OPmJ5RjdHgQp5SKzdi72nSoRk-3V0-rpkg1eI,377
+rgf/fastrgf_model.py,sha256=TqJCJmPheMaXh1j4XTXnPDwVRQNmKkvKB61DawwGVrk,22476
+rgf/forest_predict.exe,sha256=CoLT2rw6EAYm3t_2RRd7vX5YxUorluI_17zQC6PUNx4,3121478
+rgf/forest_train.exe,sha256=SqjywUWv7tpxmUjjN20ie1lLQvmr0q1xa5F3tccLTNU,3117785
+rgf/rgf.exe,sha256=6FSDt52WLXEmHXB2S4u1a4XpDGTX-4SWte1-KnNHBco,708608
+rgf/rgf_model.py,sha256=8eqMynxZ9B1ukz96Ajdz-m6loh6SqGCMk5XeM5ozAJ4,24337
+rgf/sklearn.py,sha256=6_JRJq0ZM7z7odkFMNTDLH8Th5wdzaih86PGkNK0LeM,257
+rgf/utils.py,sha256=24yNom1vtB1WIADWCBfWeAtuysS43IoembHVLxThAc4,21901
+rgf_python-3.3.0.dist-info/METADATA,sha256=Be67j7Abq89Soy5D4UNTxNaqFmGHg0qJZznsFvLe6Ho,11488
+rgf_python-3.3.0.dist-info/RECORD,,
+rgf_python-3.3.0.dist-info/WHEEL,sha256=ANN7llmJP-OXAX6BuFPaFEvNBHw7oW7n5JrgyTBIQ7E,128
+rgf_python-3.3.0.dist-info/top_level.txt,sha256=lSeUFoWLA4MNuFCSAE0Jy32wt8RYF4FNiqbyzYPh8SA,4

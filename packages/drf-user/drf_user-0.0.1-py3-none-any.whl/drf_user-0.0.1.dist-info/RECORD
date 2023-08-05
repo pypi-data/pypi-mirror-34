@@ -1,0 +1,16 @@
+drf_user/__init__.py,sha256=zuaj6Snvv-mPcuGNRzawU9kcYtK-pO7m_o8hCpgEUWY,2266
+drf_user/admin.py,sha256=C6H91d5mhzpPdjloVPEaWeRvaZinT3KGyfoa4BQYH_s,155
+drf_user/apps.py,sha256=07ZikQgeF6JgGb_TgkwoLPUy4AiBbIu-tNNpfcRBb9o,140
+drf_user/auth.py,sha256=YF1a6aqK_uHZU77vsvPuSVdpu0W4SOfM_KmSrBxFTfw,1818
+drf_user/managers.py,sha256=LLKtkqEz7nwJP05Xykiso4Q2ouI8K13sAfgfk5OHDIU,1424
+drf_user/models.py,sha256=XEyP1tEgWF5S6beasdOadiRj-w08MmfEOk4DcQMY4JU,3499
+drf_user/serializer.py,sha256=0Db8biGUpYa6bdUuByL1_LVcyyPKqTyYFOSqH7ndNpo,949
+drf_user/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+drf_user/urls.py,sha256=kJw9uBxbfVNiqJqPAQeWHI2n_-GL97xGCsp4LR0TXP0,489
+drf_user/views.py,sha256=WU8hX4wt0vdaLwKDtwYRQkUc295wlPScoIvHIyPg-Sc,16409
+drf_user/migrations/0001_initial.py,sha256=EBF--xgKZS2lHFcBYSeq-IkEG6ZHcFpL5yCV196czvw,4681
+drf_user/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_user-0.0.1.dist-info/METADATA,sha256=cwqr4QT3iEyV298Low4jQOtZVA9M8DEz0LDXKSPmxOE,3975
+drf_user-0.0.1.dist-info/RECORD,,
+drf_user-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+drf_user-0.0.1.dist-info/top_level.txt,sha256=xpAmmqb95lllr6RHSq94oYAKWMJkhnUHxpQ0jy4evZY,9

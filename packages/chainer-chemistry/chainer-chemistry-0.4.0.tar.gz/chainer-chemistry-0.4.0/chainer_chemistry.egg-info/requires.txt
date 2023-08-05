@@ -1,0 +1,5 @@
+chainer>=3.0
+pandas
+scikit-learn
+scipy
+tqdm

@@ -1,0 +1,9 @@
+Flask_Dropzone-1.5.0.dist-info/LICENSE.txt,sha256=urWe6H0ZCLXr2ZalRweug84-k_8wYWjAXq28Xc9aWsg,1085
+Flask_Dropzone-1.5.0.dist-info/METADATA,sha256=WvTNS7ENsqCLlloYrpyKGeO-vTUNG99fpsXXQ1H8ofM,9766
+Flask_Dropzone-1.5.0.dist-info/RECORD,,
+Flask_Dropzone-1.5.0.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+Flask_Dropzone-1.5.0.dist-info/top_level.txt,sha256=tnmF1XttbqOTalmDk8Ple8B9lemHMKPzXFl96tCdVKE,15
+flask_dropzone/__init__.py,sha256=nHpm-_dpM4Uo4gDMteXGPEWoIhjXnKYnLn2EXihZwPQ,17750
+flask_dropzone/utils.py,sha256=OfLok5AxK9v9Wj0ai4IFHl89e6Or6GnrG-Uehnf3mjo,701
+flask_dropzone/static/dropzone.min.css,sha256=C1uHyYDGrQDAk1IbmtnkXnXT_u3PkM9wh0hkpLMhy8U,9718
+flask_dropzone/static/dropzone.min.js,sha256=k394u1_NWzM2OVjwVumG22a0prnevsijOBBv3JrDlx4,42791

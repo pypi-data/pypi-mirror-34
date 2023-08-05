@@ -1,0 +1,8 @@
+README.md
+setup.py
+synthetica/__init__.py
+synthetica/settings.py
+synthetica.egg-info/PKG-INFO
+synthetica.egg-info/SOURCES.txt
+synthetica.egg-info/dependency_links.txt
+synthetica.egg-info/top_level.txt

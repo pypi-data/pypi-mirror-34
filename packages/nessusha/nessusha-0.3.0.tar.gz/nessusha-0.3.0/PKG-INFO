@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: nessusha
+Version: 0.3.0
+Summary: Extract Nessus HA data to xlsx
+Home-page: https://github.com/SanPersie
+Author: Li Xingxuan
+Author-email: lxx895466249@gmail.com
+License: UNKNOWN
+Description: ## Nessus Host Assessment Crawler
+        
+        Extract Nessus HA data to xlsx
+        
+        ## Getting Started
+        
+        This package is for those who are suffering from Nesses HA work. Good luck :)
+        
+        
+        
+        ### Installing
+        
+        The package can be installed by pip install. Make sure you have installed it properly. 
+        
+        Run the following commands to install pip.
+        
+        ```
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        ```
+        ```
+        python get-pip.py
+        ```
+        
+        The following command is to install nessusha.
+        ```
+        pip install nessusha
+        ```
+        
+        For Mac User, you might have both python2 and python3. You may run the following command instead.
+        ```
+        pip3 install nessusha
+        ```
+        
+        Now we are good to go. :)
+        
+        
+        
+        ## Deployment
+        
+        Current package allows user to call the api to extract all the checks and corresponding values from HA html file.
+        
+        1. htmlparser():
+        
+            This function directly extract checks and values from Nessus HA html data file and store the values into a excel workbook.
+            
+        2. openhtml():
+        
+            Return values: (String) rawhtml, (String) filename
+            
+            This function allows you to open the html file and return the rawhtml data into a string. It also returns the filename.
+            
+        3. allhosts(rawhtml):
+        
+            Return values: myhsots
+            
+            This function returns a list of all the hosts appeared in the html file. 
+         
+        
+        
+        
+        
+        
+        ## Versioning
+        
+        Current Version: 0.3.0
+        
+        1. Now we can extract policy values which is your desired value into the output file.
+        
+        2. Only html files are accepted as input file.
+        
+        History Version: 
+        
+        1. 0.2.3
+        
+            Bug fixed for linux not open the output file properly.
+        
+        2. nessusha 0.2.2
+        
+            Bug fixed for the output file is not opened properly. Pre requests are added to setup file.
+        
+        3. nessusha 0.2.1
+        
+            Now we support MacOS and Linux! It will open the output file once it finishes.
+        
+        4. nessusha 0.2.0
+        
+            Documentation and other functions are added.
+        
+        5. nessusha 0.1.2
+        
+        6. nessusha 0.1.1
+        
+        7. nessusha 0.1.0
+        
+        
+        ## Authors
+        Li Xingxuan: lxx895466249@gmail.com
+        
+        Sakthi Ram: sakthi_ram@hotmail.com
+        
+        
+        ## License
+        
+        This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

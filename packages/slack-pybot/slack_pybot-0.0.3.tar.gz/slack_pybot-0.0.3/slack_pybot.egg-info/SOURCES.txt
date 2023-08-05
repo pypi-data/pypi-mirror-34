@@ -1,0 +1,9 @@
+README.md
+setup.py
+slack_pybot/__init__.py
+slack_pybot/bot.py
+slack_pybot/data.py
+slack_pybot.egg-info/PKG-INFO
+slack_pybot.egg-info/SOURCES.txt
+slack_pybot.egg-info/dependency_links.txt
+slack_pybot.egg-info/top_level.txt

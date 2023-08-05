@@ -1,0 +1,11 @@
+migra/__init__.py,sha256=rrYp6BTe98Rp9lbpCWrRfje82fsznYoDTZyaZDlQXEw,307
+migra/changes.py,sha256=r6qDMhHQGyZkewCqcE-CN8WpyvNj3rToz2XwiUV7yW0,7133
+migra/command.py,sha256=mEGR5SkDk3nw7biKkCZA83RkNJKtboLZyDdR0-hebFU,2546
+migra/migra.py,sha256=C1eESczV7xYH0H0W03psOHOnkISz3H1tJGqBsrM-tXQ,3513
+migra/statements.py,sha256=WkUJl7_F8bdHd7OSceV87J794QAEx-bl4r21YDG4fNw,829
+migra/util.py,sha256=mRz0vhjV-Zl9UYGyA4JZlIJsvIs8muctn8ihvYsBcCk,645
+migra-1.0.1531741707.dist-info/METADATA,sha256=57hdvq0qXKZhdwcajWpfEhTawrF9lR19kcKR1joz8SE,6267
+migra-1.0.1531741707.dist-info/RECORD,,
+migra-1.0.1531741707.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+migra-1.0.1531741707.dist-info/entry_points.txt,sha256=KpZP4Gk9zUjehx-GkxPzyAenmIfwuDfPOp7E99tjIVM,44
+migra-1.0.1531741707.dist-info/top_level.txt,sha256=J5hu8gH9XuVhBzGVjEkWdskOakMYHYJT0jvrCSFyeJQ,6

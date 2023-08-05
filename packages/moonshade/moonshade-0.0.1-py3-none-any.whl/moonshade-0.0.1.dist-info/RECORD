@@ -1,0 +1,8 @@
+moonshade-0.0.1.dist-info/METADATA,sha256=2dkXU-q7WA4LojQ2wpfgw0qWbR0b73x0hGyaIDGAqoY,724
+moonshade-0.0.1.dist-info/RECORD,,
+moonshade-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+moonshade-0.0.1.dist-info/top_level.txt,sha256=J-z0poNcsv31IHB413--iOY8LoHBKiTHeybHX3abokI,7
+python/__init__.py,sha256=ed06FmlGnqdyF3A6OqPABqhfbwXmZVYxPpD37em07lU,19
+python/moonshade.py,sha256=MhbphZ7_mdNThsgwx0ks08AQCte1WSPzvqK41nqVa3M,2896
+python/moonshade_pb2.py,sha256=Mr0BFHH_xn-eQvc4ASu49jWPvUSWyQ7oosCetOybxfg,22306
+python/moonshade_pb2_grpc.py,sha256=zfA9z9bOvxjOSBJeAqQ3vvGXER-CiK3tXe_2xopRaKg,4485

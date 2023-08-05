@@ -1,0 +1,11 @@
+colorfield/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colorfield/apps.py,sha256=H5SRVv1Ql-T2tCXoKD_FadIERi8AoGwlURwCuOOvAVA,108
+colorfield/fields.py,sha256=qj5cPRq8oeGLnCC8EelaPYeRkm60THnCunRwLQfbjMk,1499
+colorfield/static/colorfield/jscolor.js,sha256=88oh3noC3K2t-y6SIUlpE_hZzlvbiN_rMdTLOgweN7Y,54093
+colorfield/static/colorfield/jscolor.min.js,sha256=v2yH0MHNfiKW5CqTgVD2HOGyErFTsH-SXSSA3_TRT7w,28728
+colorfield/templates/colorfield/color.html,sha256=BWtDy6hRfWwZ-tj_ldbW6KgoaEsbUv67aQztr-P4edc,201
+colorfield/templates/colorfield/color.html~,sha256=N2TYiJdm32ht5OS7GxlyKkOkxuN0gNnUqQ9Q8MB0YHs,196
+django_postgresql_rgb_colorfield-1.1.0.dist-info/METADATA,sha256=6l-JCkQTyRm0dktDb4XORg-8VPz0ZibpmwPxOWhr4JI,1776
+django_postgresql_rgb_colorfield-1.1.0.dist-info/RECORD,,
+django_postgresql_rgb_colorfield-1.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_postgresql_rgb_colorfield-1.1.0.dist-info/top_level.txt,sha256=yrjfs4rjQ4XwtKlHq5bvmECVYe8t6fb59_1nppLYatk,11

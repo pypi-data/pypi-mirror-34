@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: revkit
+Version: 3.0a1.dev2
+Summary: A C++ quantum compilation framework
+Home-page: https://msoeken.github.io/revkit.html
+Author: Mathias Soeken
+Author-email: mathias.soeken@epfl.ch
+License: UNKNOWN
+Description: # RevKit
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

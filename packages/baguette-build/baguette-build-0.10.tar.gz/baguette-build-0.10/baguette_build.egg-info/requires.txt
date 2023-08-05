@@ -1,0 +1,17 @@
+boto3==1.6.21
+docker==3.1.4
+GitPython==2.1.0
+kaptan==0.5.8
+baguette-messaging[postgres]
+baguette-utils
+python-slugify==1.2.4
+
+[doc]
+Sphinx==1.4.4
+
+[testing]
+baguette-messaging[testing]
+mock==2.0.0
+pytest==3.0.7
+pytest-cov==2.3.0
+pylint==1.6.1

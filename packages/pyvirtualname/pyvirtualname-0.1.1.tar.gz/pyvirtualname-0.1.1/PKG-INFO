@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyvirtualname
+Version: 0.1.1
+Summary: Wrapper for Virtualname API
+Home-page: https://gitlab.com/carbans/pyvirtualname
+Author: Carlos Latorre
+Author-email: me@carloslatorre.net
+License: GPL3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3

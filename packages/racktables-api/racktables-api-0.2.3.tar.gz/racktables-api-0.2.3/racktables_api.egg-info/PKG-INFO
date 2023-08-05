@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: racktables-api
+Version: 0.2.3
+Summary: Simple racktables API
+Home-page: https://github.com/rvojcik/rtapi
+Author: Robert Vojcik
+Author-email: robert@vojcik.net
+License: GPLv2
+Description: UNKNOWN
+Keywords: rtapi,racktables,racktables api,racktables-api,racktables cli,racktables-cli
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7

@@ -1,0 +1,124 @@
+# daily_reports
+
+Daily reports is a package used to automatically produce one *daily report* 
+and one cumulative *inter-session report* to summarize the results of a 
+subject's BPOD sessions. 
+
+***
+
+## Installation
+
+If you want to use it, you first need to install it into your working environment:
+
+    pip install daily_report
+
+You can check if the installation was successful by running:
+
+    pip show daily_report
+ 
+ Once installed, you need to modify your task by adding these two lines:
+
+    from daily_report import report # (at the start of the task)
+    report.main(glob.glob("*.csv")[0]) # (last line of the task)
+
+Make also sure that the `glob` package is imported (`import glob`).
+
+***
+
+## Task requirements
+
+For the package to work, the task has to fulfill certain requirements:
+
+### Required variables
+
+Remember that variables can be registered into the session data with the 
+`register_value` function:
+
+    my_bpod.register_value('VARIABLE_NAME', variable)
+
+The name that matters is VARIABLE_NAME. This package requires to register a 
+value at the start of the session called **REWARD_SIDE**, which is a Python 
+list containing the answers for the session, with the following convention: 0 
+if the correct answer is the left side and 1 for the right side.
+
+### Optional variables
+
+To track the stage number is it possible to add a variable called 
+**STAGE_NUMBER**, from 0 to 5. In the inter-session report, different stages 
+will have different color markers. The default color is black 
+(meaning that no stage number was found) and for stages higher than 5, 
+the markers will be colored gold.
+
+### Required states
+
+There have to be at least two states corresponding to correct and incorrect answers 
+named **Reward** and **Punish** (letter case matters, be careful!)
+
+### Optional states
+
+The following states can be used to gather more information about the session:
+
+1. Response times can be collected as the timestamp of a state called 
+**WaitResponse**. If it is not present, the mean response time will be 
+displayed as N/A. 
+
+2. Invalid trials should exit the trial through a state called **Invalid**. 
+If it is not present, the report will not take invalid trials into account.
+
+***
+
+## Output
+
+The program creates a folder in your HOME directory called "daily_reports" and
+one subdirectory for each animal (with the subject name that you specified in
+the PyBPOD software) that will contain all the generated daily reports
+and one cumulative inter-session report that persists between sessions:
+
+    ~/
+    |   daily_reports/
+    |   |   Rat24/
+    |   |   |   Rat24_inter_session.pdf
+    |   |   |   Rat24_20180605.pdf
+    |   |   |   Rat24_20180606.pdf
+    |   |   Rat35/
+    |   |   |   Rat35_inter_session.pdf
+    |   |   |   Rat35_20180606.pdf
+    |   |   |   Rat35_20180607.pdf
+
+
+You can then upload the folder to a cloud storage service like Google Drive or 
+Dropbox to access the reports from another computer.
+
+**NOTE**: As of now, the report doesn't work if the tasks halts *unnaturally*, 
+that is, either because the software crashed or because the user clicked on STOP.
+
+***
+
+## Manual generation of reports
+
+If the software has crashed, you had to stop the task for some reason or the report simply didn't generate, it is possible to make the reports manually. This also works for the generation of reports for old sessions where the report was not yet installed. The simplest way to accomplish this is to download the bare script:
+
+    git clone https://AFont33@bitbucket.org/AFont33/manual_reports.git
+
+Then create a subdirectory inside the manual_reports directory called *test_files*:
+
+    ~/manual_reports/
+    |   test_files/
+    |   report.py
+    |   config_vars.py
+
+Then copy all the CSV files that need to be processed into this subdirectory:
+
+    ~/manual_reports/
+    |   test_files/
+    |   |   Rat34_20180630.csv
+    |   |   Rat25_20180630.csv
+    |   |   Rat25_20180625.csv
+    |   report.py
+    |   config_vars.py
+
+You can generate multiple reports at the same time; the program will automatically sort the files by date and put each report in the corresponding animal subdirectory inside HOME. Once you have copied all the files, just run the report script (preferably inside the PyBPOD environment):
+
+    python report.py
+
+You will see log messages in the terminal, and if everything goes well, the reports will appear in the usual folder.

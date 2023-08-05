@@ -1,0 +1,8 @@
+Babel
+PyJWT
+PyYAML
+motor<2
+pycrypto
+python-dateutil
+schematics
+tornado<5

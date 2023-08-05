@@ -1,0 +1,8 @@
+setup.py
+foebackend/__init__.py
+foebackend.egg-info/PKG-INFO
+foebackend.egg-info/SOURCES.txt
+foebackend.egg-info/dependency_links.txt
+foebackend.egg-info/entry_points.txt
+foebackend.egg-info/requires.txt
+foebackend.egg-info/top_level.txt

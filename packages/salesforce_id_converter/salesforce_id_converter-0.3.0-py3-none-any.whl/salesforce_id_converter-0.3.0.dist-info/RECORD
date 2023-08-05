@@ -1,0 +1,10 @@
+salesforce_id_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salesforce_id_converter/cli.py,sha256=1rLkrSC9N2n-_wa4e68x9BnitJsu40LpIRflMRQtN5w,1044
+salesforce_id_converter/converter.py,sha256=eLKO1SjijrHwrktdCWrCl1caJbxARzhEIDl_Rfa0Y18,956
+salesforce_id_converter/utils.py,sha256=NjtxH5IbOAAjooCnZ8mPhIo4iojMFNgaR60rA0Okwww,181
+salesforce_id_converter-0.3.0.dist-info/METADATA,sha256=o-KD8hWwHxc6nxfwenE448cekiNxgsPYkBQhSIP9BYo,1484
+salesforce_id_converter-0.3.0.dist-info/RECORD,,
+salesforce_id_converter-0.3.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+salesforce_id_converter-0.3.0.dist-info/entry_points.txt,sha256=pZWU38HLk8cm9UhJFGU9ftAheoUXGlI_R6BDX-coPMA,58
+salesforce_id_converter-0.3.0.dist-info/pbr.json,sha256=vY4x5B_7CPDN4gaKqvKHjuK0F7Z-gg0owQk2cBtSHh0,47
+salesforce_id_converter-0.3.0.dist-info/top_level.txt,sha256=djF4u3WbVvCehAEyvcl-qARLGIZrAwJ334DAfT6ovlM,24

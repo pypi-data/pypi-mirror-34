@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: run-timer
+Version: 1.1
+Summary: calculate function run time
+Home-page: https://gitlab.com/ahmadly/run_timer
+Author: Ahmad Hosseini
+Author-email: i@ahmadly.com
+License: bsd
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+calculate function run time
+
+

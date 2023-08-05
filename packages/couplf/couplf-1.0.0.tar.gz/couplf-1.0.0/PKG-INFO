@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: couplf
+Version: 1.0.0
+Summary: A lightweight Python library for building deal images on the fly
+Home-page: https://github.com/bachmanity-hq/couplf
+Author: dconger
+Author-email: dan@trycoup.com
+License: bsd-3-clause
+Description: # couplf
+        
+Keywords: deal
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown

@@ -1,0 +1,12 @@
+awscli
+boto3
+AWSIoTPythonSDK
+nose
+
+[dev]
+check-manifest
+sphinx
+autodoc
+
+[test]
+nose

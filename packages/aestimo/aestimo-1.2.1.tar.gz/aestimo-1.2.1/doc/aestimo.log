@@ -1,0 +1,2081 @@
+2018-07-22 14:39:26,876 WARNING aestimo psi_at_inf_cython module not found
+2018-07-22 14:39:27,025 INFO aestimo Total layer number: 3
+2018-07-22 14:39:27,036 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:39:27,050 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:48:22,161 INFO aestimo using psi_at_inf_cython module
+2018-07-22 14:48:22,267 INFO aestimo Total layer number: 3
+2018-07-22 14:48:22,273 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:48:22,276 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:48:26,064 INFO aestimo calculation time  3.78551 s
+2018-07-22 14:48:26,658 INFO aestimo Simulation is finished.
+2018-07-22 14:48:27,258 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:48:27,260 INFO aestimo T = 15K
+2018-07-22 14:48:27,269 INFO aestimo the energy levels gaps are
+2018-07-22 14:48:27,271 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:48:27,273 INFO aestimo 72.8	17.6	17	587
+2018-07-22 14:48:27,278 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 14:48:27,280 INFO aestimo 105	25.3	11.8	845
+2018-07-22 14:48:27,283 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:48:27,285 INFO aestimo        j                        0          1          2
+2018-07-22 14:48:27,287 INFO aestimo   ilevel                        0          0          1
+2018-07-22 14:48:27,289 INFO aestimo   flevel                        1          2          2
+2018-07-22 14:48:27,292 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 14:48:27,298 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 14:48:27,300 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 14:48:27,302 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 14:48:27,305 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 14:48:27,307 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 14:48:27,309 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 14:48:27,311 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 14:48:27,314 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 14:48:27,317 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 14:48:27,319 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 14:48:27,321 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 14:48:27,324 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 14:48:27,328 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 14:48:27,331 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 14:48:28,730 INFO aestimo Total layer number: 3
+2018-07-22 14:48:28,734 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:48:28,750 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:48:57,373 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 14:48:57,375 INFO aestimo calculation time  28.6217 s
+2018-07-22 14:48:58,167 INFO aestimo Simulation is finished.
+2018-07-22 14:48:58,195 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:49:10,711 INFO aestimo calculation time  12.5077 s
+2018-07-22 14:49:11,318 INFO aestimo Simulation is finished.
+2018-07-22 14:49:11,496 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:49:11,500 INFO aestimo T = 15K
+2018-07-22 14:49:11,512 INFO aestimo the energy levels gaps are
+2018-07-22 14:49:11,515 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:49:11,518 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 14:49:11,520 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 14:49:11,530 INFO aestimo 68.8	16.6	18	555
+2018-07-22 14:49:11,534 INFO aestimo 108	26.2	11.4	874
+2018-07-22 14:49:11,537 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 14:49:11,540 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 14:49:11,543 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 14:49:11,550 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 14:49:11,555 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 14:49:11,557 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 14:49:11,562 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 14:49:11,564 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 14:49:11,566 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 14:49:11,569 INFO aestimo 117	28.4	10.6	946
+2018-07-22 14:49:11,571 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 14:49:11,573 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 14:49:11,575 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 14:49:11,577 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 14:49:11,579 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 14:49:11,582 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 14:49:11,584 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 14:49:11,587 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:49:11,589 INFO aestimo        j                        0          1          2          3
+2018-07-22 14:49:11,591 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 14:49:11,594 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 14:49:11,596 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 14:49:11,598 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 14:49:11,600 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 14:49:11,603 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 14:49:11,605 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 14:49:11,608 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 14:49:11,610 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 14:49:11,612 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 14:49:11,614 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 14:49:11,616 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 14:49:11,619 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 14:49:11,621 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 14:49:11,623 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:49:11,625 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 14:49:11,627 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:49:11,630 INFO aestimo        j                        4          5          6          7
+2018-07-22 14:49:11,633 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 14:49:11,635 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 14:49:11,637 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 14:49:11,639 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 14:49:11,641 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 14:49:11,643 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 14:49:11,645 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 14:49:11,647 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 14:49:11,650 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 14:49:11,652 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 14:49:11,655 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 14:49:11,657 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 14:49:11,659 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 14:49:11,661 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 14:49:11,663 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:49:11,665 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 14:49:11,668 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:49:11,670 INFO aestimo        j                        8          9         10         11
+2018-07-22 14:49:11,673 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 14:49:11,675 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 14:49:11,677 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 14:49:11,679 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 14:49:11,682 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 14:49:11,684 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 14:49:11,686 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 14:49:11,688 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 14:49:11,690 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 14:49:11,693 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 14:49:11,695 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 14:49:11,701 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 14:49:11,703 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 14:49:11,709 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 14:49:11,711 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:49:11,717 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 14:49:11,719 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:49:11,721 INFO aestimo        j                       12         13         14         15
+2018-07-22 14:49:11,726 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 14:49:11,728 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 14:49:11,734 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 14:49:11,736 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 14:49:11,738 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 14:49:11,740 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 14:49:11,744 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 14:49:11,746 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 14:49:11,749 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 14:49:11,754 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 14:49:11,756 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:49:11,761 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:49:11,763 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 14:49:11,769 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 14:49:11,771 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:49:11,773 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 14:49:11,775 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:49:11,779 INFO aestimo        j                       16         17         18         19
+2018-07-22 14:49:11,781 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 14:49:11,786 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 14:49:11,788 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 14:49:11,794 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 14:49:11,796 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 14:49:11,798 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 14:49:11,802 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 14:49:11,804 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 14:49:11,809 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 14:49:11,811 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 14:49:11,813 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:49:11,815 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:49:11,819 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 14:49:11,821 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 14:49:11,826 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:49:11,828 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 14:49:11,830 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:49:11,834 INFO aestimo        j                       20
+2018-07-22 14:49:11,836 INFO aestimo   ilevel                        5
+2018-07-22 14:49:11,838 INFO aestimo   flevel                        6
+2018-07-22 14:49:11,840 INFO aestimo       dE           meV       48.7
+2018-07-22 14:49:11,846 INFO aestimo     freq           THz       11.8
+2018-07-22 14:49:11,848 INFO aestimo   lambda            um       25.4
+2018-07-22 14:49:11,850 INFO aestimo    wavno          cm-1        393
+2018-07-22 14:49:11,852 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 14:49:11,854 INFO aestimo     z_if            nm      -7.12
+2018-07-22 14:49:11,856 INFO aestimo        f                     4.36
+2018-07-22 14:49:11,858 INFO aestimo     Leff            nm       6.47
+2018-07-22 14:49:11,860 INFO aestimo     S_if            nm        1.8
+2018-07-22 14:49:11,865 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 14:49:11,867 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 14:49:11,869 INFO aestimo        R           THz   3.96e-18
+2018-07-22 14:49:11,871 INFO aestimo  Lperiod            nm         50
+2018-07-22 14:49:11,873 INFO aestimo     y_if           THz       1.18
+2018-07-22 14:49:11,878 INFO aestimo    eps_w                     9.28
+2018-07-22 14:51:55,063 INFO aestimo using psi_at_inf_cython module
+2018-07-22 14:51:55,128 INFO aestimo Total layer number: 3
+2018-07-22 14:51:55,133 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:51:55,137 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:51:58,315 INFO aestimo calculation time  3.17544 s
+2018-07-22 14:51:58,829 INFO aestimo Simulation is finished.
+2018-07-22 14:51:59,279 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:51:59,282 INFO aestimo T = 15K
+2018-07-22 14:51:59,286 INFO aestimo the energy levels gaps are
+2018-07-22 14:51:59,294 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:51:59,303 INFO aestimo 72.8	17.6	17	587
+2018-07-22 14:51:59,317 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 14:51:59,319 INFO aestimo 105	25.3	11.8	845
+2018-07-22 14:51:59,321 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:51:59,324 INFO aestimo        j                        0          1          2
+2018-07-22 14:51:59,330 INFO aestimo   ilevel                        0          0          1
+2018-07-22 14:51:59,332 INFO aestimo   flevel                        1          2          2
+2018-07-22 14:51:59,337 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 14:51:59,340 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 14:51:59,342 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 14:51:59,345 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 14:51:59,347 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 14:51:59,353 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 14:51:59,355 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 14:51:59,359 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 14:51:59,361 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 14:51:59,363 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 14:51:59,365 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 14:51:59,368 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 14:51:59,371 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 14:51:59,373 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 14:51:59,376 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 14:52:00,633 INFO aestimo Total layer number: 3
+2018-07-22 14:52:00,642 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:52:00,690 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:52:28,528 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 14:52:28,530 INFO aestimo calculation time  27.8309 s
+2018-07-22 14:52:29,081 INFO aestimo Simulation is finished.
+2018-07-22 14:52:29,098 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:52:41,640 INFO aestimo calculation time  12.5379 s
+2018-07-22 14:52:42,241 INFO aestimo Simulation is finished.
+2018-07-22 14:52:42,418 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:52:42,422 INFO aestimo T = 15K
+2018-07-22 14:52:42,436 INFO aestimo the energy levels gaps are
+2018-07-22 14:52:42,443 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:52:42,445 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 14:52:42,451 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 14:52:42,455 INFO aestimo 68.8	16.6	18	555
+2018-07-22 14:52:42,460 INFO aestimo 108	26.2	11.4	874
+2018-07-22 14:52:42,466 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 14:52:42,475 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 14:52:42,477 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 14:52:42,482 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 14:52:42,489 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 14:52:42,494 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 14:52:42,499 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 14:52:42,506 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 14:52:42,509 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 14:52:42,511 INFO aestimo 117	28.4	10.6	946
+2018-07-22 14:52:42,514 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 14:52:42,516 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 14:52:42,517 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 14:52:42,524 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 14:52:42,526 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 14:52:42,528 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 14:52:42,534 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 14:52:42,536 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:52:42,545 INFO aestimo        j                        0          1          2          3
+2018-07-22 14:52:42,547 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 14:52:42,548 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 14:52:42,555 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 14:52:42,557 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 14:52:42,559 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 14:52:42,567 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 14:52:42,569 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 14:52:42,571 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 14:52:42,580 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 14:52:42,582 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 14:52:42,584 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 14:52:42,586 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 14:52:42,594 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 14:52:42,596 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 14:52:42,598 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:52:42,599 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 14:52:42,606 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:52:42,608 INFO aestimo        j                        4          5          6          7
+2018-07-22 14:52:42,619 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 14:52:42,625 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 14:52:42,637 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 14:52:42,645 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 14:52:42,647 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 14:52:42,650 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 14:52:42,652 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 14:52:42,659 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 14:52:42,661 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 14:52:42,663 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 14:52:42,670 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 14:52:42,672 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 14:52:42,674 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 14:52:42,683 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 14:52:42,690 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:52:42,692 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 14:52:42,694 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:52:42,702 INFO aestimo        j                        8          9         10         11
+2018-07-22 14:52:42,705 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 14:52:42,707 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 14:52:42,713 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 14:52:42,715 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 14:52:42,723 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 14:52:42,725 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 14:52:42,727 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 14:52:42,734 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 14:52:42,737 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 14:52:42,739 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 14:52:42,746 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 14:52:42,749 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 14:52:42,751 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 14:52:42,759 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 14:52:42,761 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:52:42,763 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 14:52:42,771 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:52:42,773 INFO aestimo        j                       12         13         14         15
+2018-07-22 14:52:42,775 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 14:52:42,777 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 14:52:42,779 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 14:52:42,780 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 14:52:42,782 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 14:52:42,784 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 14:52:42,786 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 14:52:42,788 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 14:52:42,790 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 14:52:42,793 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 14:52:42,795 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:52:42,797 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:52:42,799 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 14:52:42,802 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 14:52:42,804 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:52:42,806 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 14:52:42,808 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:52:42,812 INFO aestimo        j                       16         17         18         19
+2018-07-22 14:52:42,815 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 14:52:42,817 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 14:52:42,820 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 14:52:42,823 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 14:52:42,825 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 14:52:42,828 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 14:52:42,830 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 14:52:42,833 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 14:52:42,835 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 14:52:42,838 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 14:52:42,841 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:52:42,843 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:52:42,846 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 14:52:42,849 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 14:52:42,851 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:52:42,854 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 14:52:42,856 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:52:42,859 INFO aestimo        j                       20
+2018-07-22 14:52:42,862 INFO aestimo   ilevel                        5
+2018-07-22 14:52:42,864 INFO aestimo   flevel                        6
+2018-07-22 14:52:42,867 INFO aestimo       dE           meV       48.7
+2018-07-22 14:52:42,869 INFO aestimo     freq           THz       11.8
+2018-07-22 14:52:42,872 INFO aestimo   lambda            um       25.4
+2018-07-22 14:52:42,878 INFO aestimo    wavno          cm-1        393
+2018-07-22 14:52:42,882 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 14:52:42,886 INFO aestimo     z_if            nm      -7.12
+2018-07-22 14:52:42,893 INFO aestimo        f                     4.36
+2018-07-22 14:52:42,895 INFO aestimo     Leff            nm       6.47
+2018-07-22 14:52:42,897 INFO aestimo     S_if            nm        1.8
+2018-07-22 14:52:42,899 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 14:52:42,901 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 14:52:42,903 INFO aestimo        R           THz   3.96e-18
+2018-07-22 14:52:42,910 INFO aestimo  Lperiod            nm         50
+2018-07-22 14:52:42,912 INFO aestimo     y_if           THz       1.18
+2018-07-22 14:52:42,914 INFO aestimo    eps_w                     9.28
+2018-07-22 14:53:44,566 INFO aestimo using psi_at_inf_cython module
+2018-07-22 14:53:44,675 INFO aestimo Total layer number: 3
+2018-07-22 14:53:44,684 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:53:44,687 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:53:48,455 INFO aestimo calculation time  3.76249 s
+2018-07-22 14:53:48,739 INFO aestimo Simulation is finished.
+2018-07-22 14:53:48,978 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:53:48,983 INFO aestimo T = 15K
+2018-07-22 14:53:48,985 INFO aestimo the energy levels gaps are
+2018-07-22 14:53:48,987 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:53:48,989 INFO aestimo 72.8	17.6	17	587
+2018-07-22 14:53:48,992 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 14:53:48,999 INFO aestimo 105	25.3	11.8	845
+2018-07-22 14:53:49,003 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:53:49,010 INFO aestimo        j                        0          1          2
+2018-07-22 14:53:49,012 INFO aestimo   ilevel                        0          0          1
+2018-07-22 14:53:49,014 INFO aestimo   flevel                        1          2          2
+2018-07-22 14:53:49,016 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 14:53:49,021 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 14:53:49,024 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 14:53:49,028 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 14:53:49,032 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 14:53:49,037 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 14:53:49,039 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 14:53:49,041 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 14:53:49,045 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 14:53:49,047 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 14:53:49,053 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 14:53:49,055 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 14:53:49,057 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 14:53:49,059 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 14:53:49,061 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 14:53:49,461 INFO aestimo Total layer number: 3
+2018-07-22 14:53:49,470 INFO aestimo Total number of materials in database: 20
+2018-07-22 14:53:49,538 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:54:17,582 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 14:54:17,587 INFO aestimo calculation time  28.0303 s
+2018-07-22 14:54:18,092 INFO aestimo Simulation is finished.
+2018-07-22 14:54:18,134 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 14:54:32,260 INFO aestimo calculation time  14.123 s
+2018-07-22 14:54:32,550 INFO aestimo Simulation is finished.
+2018-07-22 14:54:32,778 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:54:32,791 INFO aestimo T = 15K
+2018-07-22 14:54:32,797 INFO aestimo the energy levels gaps are
+2018-07-22 14:54:32,799 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:54:32,802 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 14:54:32,805 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 14:54:32,808 INFO aestimo 68.8	16.6	18	555
+2018-07-22 14:54:32,810 INFO aestimo 108	26.2	11.4	874
+2018-07-22 14:54:32,814 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 14:54:32,821 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 14:54:32,823 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 14:54:32,824 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 14:54:32,830 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 14:54:32,832 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 14:54:32,834 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 14:54:32,838 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 14:54:32,840 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 14:54:32,843 INFO aestimo 117	28.4	10.6	946
+2018-07-22 14:54:32,846 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 14:54:32,848 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 14:54:32,850 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 14:54:32,855 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 14:54:32,857 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 14:54:32,859 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 14:54:32,863 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 14:54:32,865 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:54:32,867 INFO aestimo        j                        0          1          2          3
+2018-07-22 14:54:32,871 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 14:54:32,873 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 14:54:32,875 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 14:54:32,882 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 14:54:32,884 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 14:54:32,886 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 14:54:32,888 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 14:54:32,890 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 14:54:32,894 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 14:54:32,898 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 14:54:32,902 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 14:54:32,904 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 14:54:32,910 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 14:54:32,912 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 14:54:32,915 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:54:32,922 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 14:54:32,923 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:54:32,926 INFO aestimo        j                        4          5          6          7
+2018-07-22 14:54:32,930 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 14:54:32,932 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 14:54:32,934 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 14:54:32,939 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 14:54:32,941 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 14:54:32,946 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 14:54:32,947 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 14:54:32,954 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 14:54:32,956 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 14:54:32,958 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 14:54:32,964 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 14:54:32,966 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 14:54:32,968 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 14:54:32,974 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 14:54:32,976 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:54:32,978 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 14:54:32,987 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:54:32,989 INFO aestimo        j                        8          9         10         11
+2018-07-22 14:54:32,991 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 14:54:32,993 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 14:54:32,999 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 14:54:33,001 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 14:54:33,005 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 14:54:33,007 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 14:54:33,010 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 14:54:33,014 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 14:54:33,016 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 14:54:33,026 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 14:54:33,030 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 14:54:33,034 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 14:54:33,037 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 14:54:33,041 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 14:54:33,044 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:54:33,046 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 14:54:33,053 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:54:33,054 INFO aestimo        j                       12         13         14         15
+2018-07-22 14:54:33,058 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 14:54:33,061 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 14:54:33,065 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 14:54:33,067 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 14:54:33,070 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 14:54:33,073 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 14:54:33,076 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 14:54:33,081 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 14:54:33,083 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 14:54:33,091 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 14:54:33,092 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:54:33,094 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:54:33,096 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 14:54:33,098 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 14:54:33,105 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:54:33,107 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 14:54:33,109 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:54:33,111 INFO aestimo        j                       16         17         18         19
+2018-07-22 14:54:33,114 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 14:54:33,117 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 14:54:33,122 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 14:54:33,124 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 14:54:33,126 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 14:54:33,130 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 14:54:33,132 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 14:54:33,134 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 14:54:33,138 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 14:54:33,140 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 14:54:33,142 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:54:33,146 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:54:33,148 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 14:54:33,154 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 14:54:33,156 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:54:33,158 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 14:54:33,160 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:54:33,162 INFO aestimo        j                       20
+2018-07-22 14:54:33,167 INFO aestimo   ilevel                        5
+2018-07-22 14:54:33,169 INFO aestimo   flevel                        6
+2018-07-22 14:54:33,171 INFO aestimo       dE           meV       48.7
+2018-07-22 14:54:33,175 INFO aestimo     freq           THz       11.8
+2018-07-22 14:54:33,182 INFO aestimo   lambda            um       25.4
+2018-07-22 14:54:33,184 INFO aestimo    wavno          cm-1        393
+2018-07-22 14:54:33,186 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 14:54:33,188 INFO aestimo     z_if            nm      -7.12
+2018-07-22 14:54:33,190 INFO aestimo        f                     4.36
+2018-07-22 14:54:33,192 INFO aestimo     Leff            nm       6.47
+2018-07-22 14:54:33,194 INFO aestimo     S_if            nm        1.8
+2018-07-22 14:54:33,198 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 14:54:33,200 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 14:54:33,204 INFO aestimo        R           THz   3.96e-18
+2018-07-22 14:54:33,206 INFO aestimo  Lperiod            nm         50
+2018-07-22 14:54:33,210 INFO aestimo     y_if           THz       1.18
+2018-07-22 14:54:33,214 INFO aestimo    eps_w                     9.28
+2018-07-22 14:58:37,542 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:58:37,550 INFO aestimo T = 15K
+2018-07-22 14:58:37,555 INFO aestimo the energy levels gaps are
+2018-07-22 14:58:37,561 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:58:37,570 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 14:58:37,576 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 14:58:37,584 INFO aestimo 68.8	16.6	18	555
+2018-07-22 14:58:37,590 INFO aestimo 108	26.2	11.4	874
+2018-07-22 14:58:37,596 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 14:58:37,605 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 14:58:37,610 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 14:58:37,611 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 14:58:37,613 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 14:58:37,615 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 14:58:37,616 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 14:58:37,618 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 14:58:37,620 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 14:58:37,622 INFO aestimo 117	28.4	10.6	946
+2018-07-22 14:58:37,623 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 14:58:37,626 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 14:58:37,628 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 14:58:37,631 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 14:58:37,634 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 14:58:37,636 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 14:58:37,638 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 14:58:37,641 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:58:37,644 INFO aestimo        j                        0          1          2          3
+2018-07-22 14:58:37,647 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 14:58:37,650 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 14:58:37,652 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 14:58:37,654 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 14:58:37,657 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 14:58:37,659 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 14:58:37,661 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 14:58:37,664 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 14:58:37,670 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 14:58:37,672 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 14:58:37,678 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 14:58:37,680 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 14:58:37,687 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 14:58:37,689 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 14:58:37,695 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:37,697 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 14:58:37,704 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:37,710 INFO aestimo        j                        4          5          6          7
+2018-07-22 14:58:37,712 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 14:58:37,718 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 14:58:37,722 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 14:58:37,727 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 14:58:37,730 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 14:58:37,734 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 14:58:37,736 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 14:58:37,738 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 14:58:37,742 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 14:58:37,745 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 14:58:37,747 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 14:58:37,752 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 14:58:37,758 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 14:58:37,760 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 14:58:37,762 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:37,764 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 14:58:37,766 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:37,768 INFO aestimo        j                        8          9         10         11
+2018-07-22 14:58:37,771 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 14:58:37,778 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 14:58:37,780 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 14:58:37,782 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 14:58:37,785 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 14:58:37,786 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 14:58:37,788 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 14:58:37,790 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 14:58:37,792 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 14:58:37,794 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 14:58:37,798 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 14:58:37,800 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 14:58:37,806 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 14:58:37,808 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 14:58:37,810 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:37,812 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 14:58:37,814 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:37,819 INFO aestimo        j                       12         13         14         15
+2018-07-22 14:58:37,820 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 14:58:37,822 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 14:58:37,831 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 14:58:37,833 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 14:58:37,834 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 14:58:37,836 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 14:58:37,838 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 14:58:37,841 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 14:58:37,843 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 14:58:37,845 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 14:58:37,847 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:58:37,852 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:58:37,855 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 14:58:37,857 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 14:58:37,859 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:37,861 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 14:58:37,863 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:37,869 INFO aestimo        j                       16         17         18         19
+2018-07-22 14:58:37,871 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 14:58:37,873 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 14:58:37,875 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 14:58:37,877 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 14:58:37,879 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 14:58:37,881 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 14:58:37,886 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 14:58:37,888 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 14:58:37,890 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 14:58:37,898 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 14:58:37,899 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:58:37,901 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:58:37,903 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 14:58:37,909 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 14:58:37,912 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:37,914 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 14:58:37,916 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:37,921 INFO aestimo        j                       20
+2018-07-22 14:58:37,923 INFO aestimo   ilevel                        5
+2018-07-22 14:58:37,925 INFO aestimo   flevel                        6
+2018-07-22 14:58:37,927 INFO aestimo       dE           meV       48.7
+2018-07-22 14:58:37,934 INFO aestimo     freq           THz       11.8
+2018-07-22 14:58:37,937 INFO aestimo   lambda            um       25.4
+2018-07-22 14:58:37,939 INFO aestimo    wavno          cm-1        393
+2018-07-22 14:58:37,941 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 14:58:37,942 INFO aestimo     z_if            nm      -7.12
+2018-07-22 14:58:37,947 INFO aestimo        f                     4.36
+2018-07-22 14:58:37,949 INFO aestimo     Leff            nm       6.47
+2018-07-22 14:58:37,953 INFO aestimo     S_if            nm        1.8
+2018-07-22 14:58:37,955 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 14:58:37,957 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 14:58:37,961 INFO aestimo        R           THz   3.96e-18
+2018-07-22 14:58:37,964 INFO aestimo  Lperiod            nm         50
+2018-07-22 14:58:37,970 INFO aestimo     y_if           THz       1.18
+2018-07-22 14:58:37,972 INFO aestimo    eps_w                     9.28
+2018-07-22 14:58:53,589 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 14:58:53,601 INFO aestimo T = 15K
+2018-07-22 14:58:53,607 INFO aestimo the energy levels gaps are
+2018-07-22 14:58:53,609 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 14:58:53,614 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 14:58:53,620 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 14:58:53,627 INFO aestimo 68.8	16.6	18	555
+2018-07-22 14:58:53,633 INFO aestimo 108	26.2	11.4	874
+2018-07-22 14:58:53,635 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 14:58:53,642 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 14:58:53,643 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 14:58:53,650 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 14:58:53,653 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 14:58:53,665 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 14:58:53,667 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 14:58:53,669 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 14:58:53,670 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 14:58:53,672 INFO aestimo 117	28.4	10.6	946
+2018-07-22 14:58:53,682 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 14:58:53,684 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 14:58:53,691 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 14:58:53,693 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 14:58:53,700 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 14:58:53,702 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 14:58:53,713 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 14:58:53,715 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 14:58:53,717 INFO aestimo        j                        0          1          2          3
+2018-07-22 14:58:53,727 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 14:58:53,729 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 14:58:53,733 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 14:58:53,740 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 14:58:53,746 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 14:58:53,748 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 14:58:53,756 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 14:58:53,758 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 14:58:53,766 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 14:58:53,768 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 14:58:53,773 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 14:58:53,779 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 14:58:53,781 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 14:58:53,783 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 14:58:53,784 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:53,786 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 14:58:53,793 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:53,795 INFO aestimo        j                        4          5          6          7
+2018-07-22 14:58:53,797 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 14:58:53,799 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 14:58:53,804 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 14:58:53,806 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 14:58:53,808 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 14:58:53,812 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 14:58:53,814 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 14:58:53,821 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 14:58:53,823 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 14:58:53,825 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 14:58:53,827 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 14:58:53,829 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 14:58:53,833 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 14:58:53,835 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 14:58:53,837 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:53,838 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 14:58:53,844 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:53,850 INFO aestimo        j                        8          9         10         11
+2018-07-22 14:58:53,852 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 14:58:53,854 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 14:58:53,860 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 14:58:53,862 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 14:58:53,863 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 14:58:53,870 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 14:58:53,872 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 14:58:53,877 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 14:58:53,879 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 14:58:53,885 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 14:58:53,887 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 14:58:53,889 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 14:58:53,897 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 14:58:53,899 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 14:58:53,901 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:53,903 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 14:58:53,905 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:53,907 INFO aestimo        j                       12         13         14         15
+2018-07-22 14:58:53,909 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 14:58:53,913 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 14:58:53,915 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 14:58:53,919 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 14:58:53,921 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 14:58:53,923 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 14:58:53,924 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 14:58:53,929 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 14:58:53,931 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 14:58:53,932 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 14:58:53,938 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:58:53,940 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 14:58:53,941 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 14:58:53,943 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 14:58:53,945 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:53,947 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 14:58:53,950 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:53,952 INFO aestimo        j                       16         17         18         19
+2018-07-22 14:58:53,957 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 14:58:53,958 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 14:58:53,960 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 14:58:53,962 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 14:58:53,964 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 14:58:53,975 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 14:58:53,977 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 14:58:53,978 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 14:58:53,986 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 14:58:53,988 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 14:58:53,990 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:58:53,991 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 14:58:53,993 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 14:58:53,999 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 14:58:54,001 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 14:58:54,003 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 14:58:54,009 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 14:58:54,011 INFO aestimo        j                       20
+2018-07-22 14:58:54,013 INFO aestimo   ilevel                        5
+2018-07-22 14:58:54,020 INFO aestimo   flevel                        6
+2018-07-22 14:58:54,022 INFO aestimo       dE           meV       48.7
+2018-07-22 14:58:54,024 INFO aestimo     freq           THz       11.8
+2018-07-22 14:58:54,026 INFO aestimo   lambda            um       25.4
+2018-07-22 14:58:54,028 INFO aestimo    wavno          cm-1        393
+2018-07-22 14:58:54,038 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 14:58:54,040 INFO aestimo     z_if            nm      -7.12
+2018-07-22 14:58:54,041 INFO aestimo        f                     4.36
+2018-07-22 14:58:54,046 INFO aestimo     Leff            nm       6.47
+2018-07-22 14:58:54,048 INFO aestimo     S_if            nm        1.8
+2018-07-22 14:58:54,049 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 14:58:54,057 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 14:58:54,059 INFO aestimo        R           THz   3.96e-18
+2018-07-22 14:58:54,061 INFO aestimo  Lperiod            nm         50
+2018-07-22 14:58:54,063 INFO aestimo     y_if           THz       1.18
+2018-07-22 14:58:54,065 INFO aestimo    eps_w                     9.28
+2018-07-22 15:11:40,175 INFO aestimo using psi_at_inf_cython module
+2018-07-22 15:11:40,393 INFO aestimo Total layer number: 3
+2018-07-22 15:11:40,397 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:11:40,401 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:11:43,847 INFO aestimo calculation time  3.44304 s
+2018-07-22 15:11:44,149 INFO aestimo Simulation is finished.
+2018-07-22 15:11:44,344 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:11:44,347 INFO aestimo 1.02e+03	2.16e+16
+2018-07-22 15:11:44,351 INFO aestimo 1.09e+03	3.57e+14
+2018-07-22 15:11:44,354 INFO aestimo 1.2e+03	2.3e-21
+2018-07-22 15:11:44,356 INFO aestimo T = 15K
+2018-07-22 15:11:44,358 INFO aestimo the energy levels gaps are
+2018-07-22 15:11:44,359 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:11:44,363 INFO aestimo 72.8	17.6	17	587
+2018-07-22 15:11:44,364 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 15:11:44,366 INFO aestimo 105	25.3	11.8	845
+2018-07-22 15:11:44,369 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:11:44,371 INFO aestimo        j                        0          1          2
+2018-07-22 15:11:44,373 INFO aestimo   ilevel                        0          0          1
+2018-07-22 15:11:44,375 INFO aestimo   flevel                        1          2          2
+2018-07-22 15:11:44,376 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 15:11:44,381 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 15:11:44,383 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 15:11:44,385 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 15:11:44,388 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 15:11:44,390 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 15:11:44,392 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 15:11:44,394 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 15:11:44,396 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 15:11:44,398 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 15:11:44,400 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 15:11:44,403 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 15:11:44,405 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 15:11:44,407 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 15:11:44,408 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 15:11:44,774 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:11:44,840 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:11:45,449 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:11:46,285 INFO aestimo Total layer number: 3
+2018-07-22 15:11:46,287 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:11:46,360 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:12:13,887 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 15:12:13,892 INFO aestimo calculation time  27.5207 s
+2018-07-22 15:12:14,312 INFO aestimo Simulation is finished.
+2018-07-22 15:12:14,380 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:12:27,646 INFO aestimo calculation time  13.2591 s
+2018-07-22 15:12:28,033 INFO aestimo Simulation is finished.
+2018-07-22 15:12:28,341 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:12:28,349 INFO aestimo 1e+03	1.47e+16
+2018-07-22 15:12:28,356 INFO aestimo 1.02e+03	1.11e+16
+2018-07-22 15:12:28,370 INFO aestimo 1.04e+03	4.26e+15
+2018-07-22 15:12:28,377 INFO aestimo 1.07e+03	3.81e+08
+2018-07-22 15:12:28,379 INFO aestimo 1.11e+03	1.88e-05
+2018-07-22 15:12:28,393 INFO aestimo 1.16e+03	1.29e-20
+2018-07-22 15:12:28,395 INFO aestimo 1.21e+03	3.02e-37
+2018-07-22 15:12:28,397 INFO aestimo T = 15K
+2018-07-22 15:12:28,399 INFO aestimo the energy levels gaps are
+2018-07-22 15:12:28,414 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:12:28,415 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 15:12:28,418 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 15:12:28,425 INFO aestimo 68.8	16.6	18	555
+2018-07-22 15:12:28,427 INFO aestimo 108	26.2	11.4	874
+2018-07-22 15:12:28,430 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 15:12:28,439 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 15:12:28,441 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 15:12:28,443 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 15:12:28,445 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 15:12:28,447 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 15:12:28,449 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 15:12:28,451 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 15:12:28,455 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 15:12:28,457 INFO aestimo 117	28.4	10.6	946
+2018-07-22 15:12:28,459 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 15:12:28,462 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 15:12:28,464 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 15:12:28,466 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 15:12:28,469 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 15:12:28,471 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 15:12:28,473 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 15:12:28,475 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:12:28,477 INFO aestimo        j                        0          1          2          3
+2018-07-22 15:12:28,479 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 15:12:28,481 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 15:12:28,483 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 15:12:28,485 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 15:12:28,486 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 15:12:28,488 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 15:12:28,490 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 15:12:28,493 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 15:12:28,494 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 15:12:28,496 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 15:12:28,498 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 15:12:28,500 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 15:12:28,502 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 15:12:28,504 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 15:12:28,506 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:12:28,508 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 15:12:28,510 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:12:28,512 INFO aestimo        j                        4          5          6          7
+2018-07-22 15:12:28,514 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 15:12:28,515 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 15:12:28,522 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 15:12:28,524 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 15:12:28,526 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 15:12:28,535 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 15:12:28,537 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 15:12:28,539 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 15:12:28,540 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 15:12:28,542 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 15:12:28,549 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 15:12:28,551 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 15:12:28,553 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 15:12:28,558 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 15:12:28,560 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:12:28,562 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 15:12:28,564 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:12:28,566 INFO aestimo        j                        8          9         10         11
+2018-07-22 15:12:28,567 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 15:12:28,574 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 15:12:28,576 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 15:12:28,578 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 15:12:28,580 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 15:12:28,582 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 15:12:28,584 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 15:12:28,586 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 15:12:28,589 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 15:12:28,591 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 15:12:28,594 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 15:12:28,598 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 15:12:28,600 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 15:12:28,602 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 15:12:28,603 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:12:28,605 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 15:12:28,608 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:12:28,611 INFO aestimo        j                       12         13         14         15
+2018-07-22 15:12:28,614 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 15:12:28,618 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 15:12:28,620 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 15:12:28,621 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 15:12:28,624 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 15:12:28,626 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 15:12:28,630 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 15:12:28,632 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 15:12:28,634 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 15:12:28,639 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 15:12:28,641 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 15:12:28,642 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 15:12:28,646 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 15:12:28,648 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 15:12:28,650 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:12:28,657 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 15:12:28,659 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:12:28,661 INFO aestimo        j                       16         17         18         19
+2018-07-22 15:12:28,663 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 15:12:28,669 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 15:12:28,671 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 15:12:28,673 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 15:12:28,679 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 15:12:28,681 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 15:12:28,686 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 15:12:28,688 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 15:12:28,689 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 15:12:28,695 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 15:12:28,697 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 15:12:28,699 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 15:12:28,705 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 15:12:28,707 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 15:12:28,709 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:12:28,711 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 15:12:28,717 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:12:28,719 INFO aestimo        j                       20
+2018-07-22 15:12:28,720 INFO aestimo   ilevel                        5
+2018-07-22 15:12:28,722 INFO aestimo   flevel                        6
+2018-07-22 15:12:28,724 INFO aestimo       dE           meV       48.7
+2018-07-22 15:12:28,729 INFO aestimo     freq           THz       11.8
+2018-07-22 15:12:28,731 INFO aestimo   lambda            um       25.4
+2018-07-22 15:12:28,733 INFO aestimo    wavno          cm-1        393
+2018-07-22 15:12:28,738 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 15:12:28,740 INFO aestimo     z_if            nm      -7.12
+2018-07-22 15:12:28,742 INFO aestimo        f                     4.36
+2018-07-22 15:12:28,744 INFO aestimo     Leff            nm       6.47
+2018-07-22 15:12:28,745 INFO aestimo     S_if            nm        1.8
+2018-07-22 15:12:28,747 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 15:12:28,752 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 15:12:28,754 INFO aestimo        R           THz   3.96e-18
+2018-07-22 15:12:28,756 INFO aestimo  Lperiod            nm         50
+2018-07-22 15:12:28,758 INFO aestimo     y_if           THz       1.18
+2018-07-22 15:12:28,760 INFO aestimo    eps_w                     9.28
+2018-07-22 15:12:29,704 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:12:30,226 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:12:32,564 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:24:55,514 INFO aestimo Total layer number: 3
+2018-07-22 15:24:55,534 INFO aestimo Total number of materials in database: 20
+2018-07-22 15:24:55,537 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:24:58,760 INFO aestimo calculation time  3.22058 s
+2018-07-22 15:24:59,082 INFO aestimo Simulation is finished.
+2018-07-22 15:25:00,043 INFO aestimo Total layer number: 3
+2018-07-22 15:25:00,054 INFO aestimo Total number of materials in database: 20
+2018-07-22 15:25:00,150 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:25:24,880 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 15:25:24,886 INFO aestimo calculation time  24.7221 s
+2018-07-22 15:25:25,270 INFO aestimo Simulation is finished.
+2018-07-22 15:25:25,311 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:25:36,933 INFO aestimo calculation time  11.6111 s
+2018-07-22 15:25:37,266 INFO aestimo Simulation is finished.
+2018-07-22 15:42:30,918 INFO aestimo using psi_at_inf_cython module
+2018-07-22 15:42:31,305 INFO aestimo Total layer number: 3
+2018-07-22 15:42:31,311 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:42:31,315 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:42:34,726 INFO aestimo calculation time  3.40853 s
+2018-07-22 15:42:35,045 INFO aestimo Simulation is finished.
+2018-07-22 15:42:35,244 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:42:35,254 INFO aestimo 1.02e+03	2.16e+16
+2018-07-22 15:42:35,260 INFO aestimo 1.09e+03	3.57e+14
+2018-07-22 15:42:35,268 INFO aestimo 1.2e+03	2.3e-21
+2018-07-22 15:42:35,275 INFO aestimo T = 15K
+2018-07-22 15:42:35,284 INFO aestimo the energy levels gaps are
+2018-07-22 15:42:35,293 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:42:35,297 INFO aestimo 72.8	17.6	17	587
+2018-07-22 15:42:35,308 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 15:42:35,316 INFO aestimo 105	25.3	11.8	845
+2018-07-22 15:42:35,339 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:42:35,346 INFO aestimo        j                        0          1          2
+2018-07-22 15:42:35,359 INFO aestimo   ilevel                        0          0          1
+2018-07-22 15:42:35,367 INFO aestimo   flevel                        1          2          2
+2018-07-22 15:42:35,373 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 15:42:35,384 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 15:42:35,393 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 15:42:35,407 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 15:42:35,421 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 15:42:35,423 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 15:42:35,429 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 15:42:35,436 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 15:42:35,441 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 15:42:35,446 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 15:42:35,450 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 15:42:35,462 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 15:42:35,466 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 15:42:35,469 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 15:42:35,471 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 15:42:35,789 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:42:35,855 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:42:36,532 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:42:37,550 INFO aestimo Total layer number: 3
+2018-07-22 15:42:37,559 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:42:37,628 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:43:03,907 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 15:43:03,922 INFO aestimo calculation time  26.2891 s
+2018-07-22 15:43:04,339 INFO aestimo Simulation is finished.
+2018-07-22 15:43:04,414 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:43:17,478 INFO aestimo calculation time  13.0605 s
+2018-07-22 15:43:17,714 INFO aestimo Simulation is finished.
+2018-07-22 15:43:17,880 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:43:17,883 INFO aestimo 1e+03	1.47e+16
+2018-07-22 15:43:17,890 INFO aestimo 1.02e+03	1.11e+16
+2018-07-22 15:43:17,892 INFO aestimo 1.04e+03	4.26e+15
+2018-07-22 15:43:17,896 INFO aestimo 1.07e+03	3.81e+08
+2018-07-22 15:43:17,900 INFO aestimo 1.11e+03	1.88e-05
+2018-07-22 15:43:17,903 INFO aestimo 1.16e+03	1.29e-20
+2018-07-22 15:43:17,906 INFO aestimo 1.21e+03	3.02e-37
+2018-07-22 15:43:17,917 INFO aestimo T = 15K
+2018-07-22 15:43:17,919 INFO aestimo the energy levels gaps are
+2018-07-22 15:43:17,921 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:43:17,923 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 15:43:17,925 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 15:43:17,927 INFO aestimo 68.8	16.6	18	555
+2018-07-22 15:43:17,930 INFO aestimo 108	26.2	11.4	874
+2018-07-22 15:43:17,932 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 15:43:17,936 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 15:43:17,939 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 15:43:17,946 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 15:43:17,948 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 15:43:17,950 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 15:43:17,952 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 15:43:17,954 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 15:43:17,957 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 15:43:17,962 INFO aestimo 117	28.4	10.6	946
+2018-07-22 15:43:17,964 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 15:43:17,966 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 15:43:17,970 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 15:43:17,973 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 15:43:17,978 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 15:43:17,980 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 15:43:17,982 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 15:43:17,985 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:43:17,990 INFO aestimo        j                        0          1          2          3
+2018-07-22 15:43:17,992 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 15:43:17,994 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 15:43:17,998 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 15:43:18,000 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 15:43:18,004 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 15:43:18,006 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 15:43:18,012 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 15:43:18,014 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 15:43:18,016 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 15:43:18,021 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 15:43:18,023 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 15:43:18,025 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 15:43:18,030 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 15:43:18,032 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 15:43:18,034 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:43:18,036 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 15:43:18,042 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:43:18,044 INFO aestimo        j                        4          5          6          7
+2018-07-22 15:43:18,046 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 15:43:18,048 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 15:43:18,051 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 15:43:18,058 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 15:43:18,060 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 15:43:18,062 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 15:43:18,064 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 15:43:18,066 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 15:43:18,068 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 15:43:18,073 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 15:43:18,074 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 15:43:18,079 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 15:43:18,081 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 15:43:18,083 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 15:43:18,087 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:43:18,089 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 15:43:18,093 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:43:18,095 INFO aestimo        j                        8          9         10         11
+2018-07-22 15:43:18,099 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 15:43:18,102 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 15:43:18,105 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 15:43:18,109 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 15:43:18,112 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 15:43:18,118 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 15:43:18,120 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 15:43:18,122 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 15:43:18,124 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 15:43:18,126 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 15:43:18,128 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 15:43:18,134 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 15:43:18,136 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 15:43:18,138 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 15:43:18,140 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:43:18,142 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 15:43:18,144 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:43:18,146 INFO aestimo        j                       12         13         14         15
+2018-07-22 15:43:18,150 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 15:43:18,152 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 15:43:18,155 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 15:43:18,158 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 15:43:18,160 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 15:43:18,162 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 15:43:18,168 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 15:43:18,170 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 15:43:18,172 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 15:43:18,175 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 15:43:18,179 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 15:43:18,182 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 15:43:18,183 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 15:43:18,185 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 15:43:18,187 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:43:18,194 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 15:43:18,196 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:43:18,198 INFO aestimo        j                       16         17         18         19
+2018-07-22 15:43:18,200 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 15:43:18,202 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 15:43:18,204 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 15:43:18,206 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 15:43:18,208 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 15:43:18,214 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 15:43:18,216 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 15:43:18,218 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 15:43:18,220 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 15:43:18,222 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 15:43:18,224 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 15:43:18,229 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 15:43:18,231 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 15:43:18,233 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 15:43:18,235 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:43:18,237 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 15:43:18,242 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:43:18,244 INFO aestimo        j                       20
+2018-07-22 15:43:18,246 INFO aestimo   ilevel                        5
+2018-07-22 15:43:18,248 INFO aestimo   flevel                        6
+2018-07-22 15:43:18,250 INFO aestimo       dE           meV       48.7
+2018-07-22 15:43:18,254 INFO aestimo     freq           THz       11.8
+2018-07-22 15:43:18,256 INFO aestimo   lambda            um       25.4
+2018-07-22 15:43:18,259 INFO aestimo    wavno          cm-1        393
+2018-07-22 15:43:18,264 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 15:43:18,266 INFO aestimo     z_if            nm      -7.12
+2018-07-22 15:43:18,268 INFO aestimo        f                     4.36
+2018-07-22 15:43:18,270 INFO aestimo     Leff            nm       6.47
+2018-07-22 15:43:18,272 INFO aestimo     S_if            nm        1.8
+2018-07-22 15:43:18,276 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 15:43:18,278 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 15:43:18,280 INFO aestimo        R           THz   3.96e-18
+2018-07-22 15:43:18,284 INFO aestimo  Lperiod            nm         50
+2018-07-22 15:43:18,286 INFO aestimo     y_if           THz       1.18
+2018-07-22 15:43:18,290 INFO aestimo    eps_w                     9.28
+2018-07-22 15:43:19,144 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:43:19,597 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:43:22,601 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:45:17,127 INFO aestimo using psi_at_inf_cython module
+2018-07-22 15:45:17,343 INFO aestimo Total layer number: 3
+2018-07-22 15:45:17,347 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:45:17,351 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:45:20,745 INFO aestimo calculation time  3.38926 s
+2018-07-22 15:45:20,967 INFO aestimo Simulation is finished.
+2018-07-22 15:45:21,140 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:45:21,142 INFO aestimo 1.02e+03	2.16e+16
+2018-07-22 15:45:21,144 INFO aestimo 1.09e+03	3.57e+14
+2018-07-22 15:45:21,146 INFO aestimo 1.2e+03	2.3e-21
+2018-07-22 15:45:21,148 INFO aestimo T = 15K
+2018-07-22 15:45:21,150 INFO aestimo the energy levels gaps are
+2018-07-22 15:45:21,155 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:45:21,157 INFO aestimo 72.8	17.6	17	587
+2018-07-22 15:45:21,161 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 15:45:21,163 INFO aestimo 105	25.3	11.8	845
+2018-07-22 15:45:21,165 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:45:21,171 INFO aestimo        j                        0          1          2
+2018-07-22 15:45:21,173 INFO aestimo   ilevel                        0          0          1
+2018-07-22 15:45:21,175 INFO aestimo   flevel                        1          2          2
+2018-07-22 15:45:21,178 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 15:45:21,180 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 15:45:21,187 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 15:45:21,189 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 15:45:21,192 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 15:45:21,197 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 15:45:21,201 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 15:45:21,205 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 15:45:21,210 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 15:45:21,215 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 15:45:21,219 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 15:45:21,222 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 15:45:21,229 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 15:45:21,231 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 15:45:21,235 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 15:45:21,585 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:45:21,610 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:45:22,337 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:45:23,157 INFO aestimo Total layer number: 3
+2018-07-22 15:45:23,160 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:45:23,263 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:45:50,166 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 15:45:50,168 INFO aestimo calculation time  26.893 s
+2018-07-22 15:45:50,530 INFO aestimo Simulation is finished.
+2018-07-22 15:45:50,599 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:46:03,184 INFO aestimo calculation time  12.5784 s
+2018-07-22 15:46:03,588 INFO aestimo Simulation is finished.
+2018-07-22 15:46:03,828 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:46:03,834 INFO aestimo 1e+03	1.47e+16
+2018-07-22 15:46:03,840 INFO aestimo 1.02e+03	1.11e+16
+2018-07-22 15:46:03,847 INFO aestimo 1.04e+03	4.26e+15
+2018-07-22 15:46:03,855 INFO aestimo 1.07e+03	3.81e+08
+2018-07-22 15:46:03,857 INFO aestimo 1.11e+03	1.88e-05
+2018-07-22 15:46:03,860 INFO aestimo 1.16e+03	1.29e-20
+2018-07-22 15:46:03,867 INFO aestimo 1.21e+03	3.02e-37
+2018-07-22 15:46:03,875 INFO aestimo T = 15K
+2018-07-22 15:46:03,879 INFO aestimo the energy levels gaps are
+2018-07-22 15:46:03,885 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:46:03,891 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 15:46:03,897 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 15:46:03,899 INFO aestimo 68.8	16.6	18	555
+2018-07-22 15:46:03,906 INFO aestimo 108	26.2	11.4	874
+2018-07-22 15:46:03,907 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 15:46:03,911 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 15:46:03,917 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 15:46:03,919 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 15:46:03,925 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 15:46:03,927 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 15:46:03,932 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 15:46:03,939 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 15:46:03,943 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 15:46:03,946 INFO aestimo 117	28.4	10.6	946
+2018-07-22 15:46:03,948 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 15:46:03,950 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 15:46:03,952 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 15:46:03,954 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 15:46:03,956 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 15:46:03,958 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 15:46:03,960 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 15:46:03,963 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:46:03,965 INFO aestimo        j                        0          1          2          3
+2018-07-22 15:46:03,967 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 15:46:03,970 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 15:46:03,973 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 15:46:03,975 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 15:46:03,977 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 15:46:03,979 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 15:46:03,981 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 15:46:03,983 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 15:46:03,985 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 15:46:03,987 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 15:46:03,989 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 15:46:03,991 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 15:46:03,993 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 15:46:03,995 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 15:46:03,997 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:46:03,999 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 15:46:04,001 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:46:04,003 INFO aestimo        j                        4          5          6          7
+2018-07-22 15:46:04,005 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 15:46:04,007 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 15:46:04,009 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 15:46:04,011 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 15:46:04,013 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 15:46:04,015 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 15:46:04,017 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 15:46:04,019 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 15:46:04,021 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 15:46:04,023 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 15:46:04,025 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 15:46:04,027 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 15:46:04,033 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 15:46:04,035 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 15:46:04,037 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:46:04,041 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 15:46:04,045 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:46:04,047 INFO aestimo        j                        8          9         10         11
+2018-07-22 15:46:04,053 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 15:46:04,055 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 15:46:04,057 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 15:46:04,058 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 15:46:04,064 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 15:46:04,066 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 15:46:04,068 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 15:46:04,073 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 15:46:04,075 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 15:46:04,080 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 15:46:04,082 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 15:46:04,084 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 15:46:04,089 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 15:46:04,091 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 15:46:04,095 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:46:04,097 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 15:46:04,105 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:46:04,107 INFO aestimo        j                       12         13         14         15
+2018-07-22 15:46:04,109 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 15:46:04,110 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 15:46:04,117 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 15:46:04,119 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 15:46:04,121 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 15:46:04,133 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 15:46:04,135 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 15:46:04,137 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 15:46:04,139 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 15:46:04,145 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 15:46:04,147 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 15:46:04,149 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 15:46:04,151 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 15:46:04,153 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 15:46:04,154 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:46:04,162 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 15:46:04,164 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:46:04,166 INFO aestimo        j                       16         17         18         19
+2018-07-22 15:46:04,168 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 15:46:04,170 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 15:46:04,172 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 15:46:04,173 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 15:46:04,175 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 15:46:04,177 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 15:46:04,179 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 15:46:04,181 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 15:46:04,183 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 15:46:04,189 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 15:46:04,191 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 15:46:04,193 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 15:46:04,194 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 15:46:04,196 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 15:46:04,198 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 15:46:04,200 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 15:46:04,202 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 15:46:04,204 INFO aestimo        j                       20
+2018-07-22 15:46:04,209 INFO aestimo   ilevel                        5
+2018-07-22 15:46:04,211 INFO aestimo   flevel                        6
+2018-07-22 15:46:04,213 INFO aestimo       dE           meV       48.7
+2018-07-22 15:46:04,214 INFO aestimo     freq           THz       11.8
+2018-07-22 15:46:04,216 INFO aestimo   lambda            um       25.4
+2018-07-22 15:46:04,218 INFO aestimo    wavno          cm-1        393
+2018-07-22 15:46:04,220 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 15:46:04,226 INFO aestimo     z_if            nm      -7.12
+2018-07-22 15:46:04,228 INFO aestimo        f                     4.36
+2018-07-22 15:46:04,232 INFO aestimo     Leff            nm       6.47
+2018-07-22 15:46:04,234 INFO aestimo     S_if            nm        1.8
+2018-07-22 15:46:04,236 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 15:46:04,249 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 15:46:04,251 INFO aestimo        R           THz   3.96e-18
+2018-07-22 15:46:04,253 INFO aestimo  Lperiod            nm         50
+2018-07-22 15:46:04,261 INFO aestimo     y_if           THz       1.18
+2018-07-22 15:46:04,262 INFO aestimo    eps_w                     9.28
+2018-07-22 15:46:05,143 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:46:05,625 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:46:07,980 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:59:17,783 INFO aestimo using psi_at_inf_cython module
+2018-07-22 15:59:17,992 INFO aestimo Total layer number: 3
+2018-07-22 15:59:17,996 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:59:18,000 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:59:21,231 INFO aestimo calculation time  3.22789 s
+2018-07-22 15:59:21,492 INFO aestimo Simulation is finished.
+2018-07-22 15:59:21,686 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 15:59:21,701 INFO aestimo 1.02e+03	2.16e+16
+2018-07-22 15:59:21,708 INFO aestimo 1.09e+03	3.57e+14
+2018-07-22 15:59:21,715 INFO aestimo 1.2e+03	2.3e-21
+2018-07-22 15:59:21,719 INFO aestimo T = 15K
+2018-07-22 15:59:21,725 INFO aestimo the energy levels gaps are
+2018-07-22 15:59:21,730 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 15:59:21,735 INFO aestimo 72.8	17.6	17	587
+2018-07-22 15:59:21,740 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 15:59:21,748 INFO aestimo 105	25.3	11.8	845
+2018-07-22 15:59:21,754 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 15:59:21,782 INFO aestimo        j                        0          1          2
+2018-07-22 15:59:21,789 INFO aestimo   ilevel                        0          0          1
+2018-07-22 15:59:21,791 INFO aestimo   flevel                        1          2          2
+2018-07-22 15:59:21,793 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 15:59:21,798 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 15:59:21,803 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 15:59:21,804 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 15:59:21,815 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 15:59:21,817 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 15:59:21,819 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 15:59:21,825 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 15:59:21,827 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 15:59:21,829 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 15:59:21,835 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 15:59:21,837 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 15:59:21,843 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 15:59:21,851 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 15:59:21,854 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 15:59:22,226 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 15:59:22,264 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 15:59:22,976 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 15:59:24,207 INFO aestimo Total layer number: 3
+2018-07-22 15:59:24,213 INFO aestimo Total number of materials in database: 23
+2018-07-22 15:59:24,271 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 15:59:50,079 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 15:59:50,081 INFO aestimo calculation time  25.8059 s
+2018-07-22 15:59:50,461 INFO aestimo Simulation is finished.
+2018-07-22 15:59:50,502 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:00:02,618 INFO aestimo calculation time  12.1112 s
+2018-07-22 16:00:03,005 INFO aestimo Simulation is finished.
+2018-07-22 16:00:03,258 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 16:00:03,260 INFO aestimo 1e+03	1.47e+16
+2018-07-22 16:00:03,266 INFO aestimo 1.02e+03	1.11e+16
+2018-07-22 16:00:03,273 INFO aestimo 1.04e+03	4.26e+15
+2018-07-22 16:00:03,275 INFO aestimo 1.07e+03	3.81e+08
+2018-07-22 16:00:03,283 INFO aestimo 1.11e+03	1.88e-05
+2018-07-22 16:00:03,285 INFO aestimo 1.16e+03	1.29e-20
+2018-07-22 16:00:03,287 INFO aestimo 1.21e+03	3.02e-37
+2018-07-22 16:00:03,289 INFO aestimo T = 15K
+2018-07-22 16:00:03,293 INFO aestimo the energy levels gaps are
+2018-07-22 16:00:03,301 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 16:00:03,303 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 16:00:03,308 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 16:00:03,310 INFO aestimo 68.8	16.6	18	555
+2018-07-22 16:00:03,319 INFO aestimo 108	26.2	11.4	874
+2018-07-22 16:00:03,321 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 16:00:03,326 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 16:00:03,328 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 16:00:03,335 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 16:00:03,340 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 16:00:03,342 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 16:00:03,354 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 16:00:03,357 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 16:00:03,359 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 16:00:03,366 INFO aestimo 117	28.4	10.6	946
+2018-07-22 16:00:03,369 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 16:00:03,371 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 16:00:03,374 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 16:00:03,378 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 16:00:03,382 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 16:00:03,386 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 16:00:03,390 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 16:00:03,393 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 16:00:03,398 INFO aestimo        j                        0          1          2          3
+2018-07-22 16:00:03,402 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 16:00:03,404 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 16:00:03,405 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 16:00:03,411 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 16:00:03,413 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 16:00:03,415 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 16:00:03,424 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 16:00:03,426 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 16:00:03,428 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 16:00:03,430 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 16:00:03,431 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 16:00:03,437 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 16:00:03,439 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 16:00:03,444 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 16:00:03,446 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:00:03,452 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 16:00:03,453 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:00:03,461 INFO aestimo        j                        4          5          6          7
+2018-07-22 16:00:03,463 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 16:00:03,464 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 16:00:03,470 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 16:00:03,476 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 16:00:03,478 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 16:00:03,480 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 16:00:03,484 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 16:00:03,486 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 16:00:03,490 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 16:00:03,495 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 16:00:03,497 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 16:00:03,504 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 16:00:03,506 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 16:00:03,508 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 16:00:03,510 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:00:03,511 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 16:00:03,520 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:00:03,522 INFO aestimo        j                        8          9         10         11
+2018-07-22 16:00:03,524 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 16:00:03,526 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 16:00:03,527 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 16:00:03,529 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 16:00:03,534 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 16:00:03,536 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 16:00:03,542 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 16:00:03,544 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 16:00:03,549 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 16:00:03,551 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 16:00:03,553 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 16:00:03,558 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 16:00:03,560 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 16:00:03,562 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 16:00:03,569 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:00:03,571 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 16:00:03,573 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:00:03,575 INFO aestimo        j                       12         13         14         15
+2018-07-22 16:00:03,579 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 16:00:03,581 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 16:00:03,583 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 16:00:03,591 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 16:00:03,594 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 16:00:03,595 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 16:00:03,597 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 16:00:03,599 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 16:00:03,608 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 16:00:03,610 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 16:00:03,612 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 16:00:03,614 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 16:00:03,616 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 16:00:03,618 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 16:00:03,622 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:00:03,625 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 16:00:03,627 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:00:03,633 INFO aestimo        j                       16         17         18         19
+2018-07-22 16:00:03,635 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 16:00:03,637 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 16:00:03,642 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 16:00:03,644 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 16:00:03,646 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 16:00:03,654 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 16:00:03,656 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 16:00:03,658 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 16:00:03,661 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 16:00:03,663 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 16:00:03,669 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 16:00:03,671 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 16:00:03,673 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 16:00:03,675 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 16:00:03,677 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:00:03,682 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 16:00:03,684 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:00:03,687 INFO aestimo        j                       20
+2018-07-22 16:00:03,690 INFO aestimo   ilevel                        5
+2018-07-22 16:00:03,692 INFO aestimo   flevel                        6
+2018-07-22 16:00:03,694 INFO aestimo       dE           meV       48.7
+2018-07-22 16:00:03,702 INFO aestimo     freq           THz       11.8
+2018-07-22 16:00:03,707 INFO aestimo   lambda            um       25.4
+2018-07-22 16:00:03,709 INFO aestimo    wavno          cm-1        393
+2018-07-22 16:00:03,711 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 16:00:03,713 INFO aestimo     z_if            nm      -7.12
+2018-07-22 16:00:03,716 INFO aestimo        f                     4.36
+2018-07-22 16:00:03,720 INFO aestimo     Leff            nm       6.47
+2018-07-22 16:00:03,724 INFO aestimo     S_if            nm        1.8
+2018-07-22 16:00:03,730 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 16:00:03,732 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 16:00:03,734 INFO aestimo        R           THz   3.96e-18
+2018-07-22 16:00:03,737 INFO aestimo  Lperiod            nm         50
+2018-07-22 16:00:03,739 INFO aestimo     y_if           THz       1.18
+2018-07-22 16:00:03,741 INFO aestimo    eps_w                     9.28
+2018-07-22 16:00:04,562 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 16:00:05,017 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 16:00:06,784 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 16:01:19,489 INFO aestimo using psi_at_inf_cython module
+2018-07-22 16:01:19,737 INFO aestimo Total layer number: 3
+2018-07-22 16:01:19,757 INFO aestimo Total number of materials in database: 23
+2018-07-22 16:01:19,764 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:01:23,089 INFO aestimo calculation time  3.31528 s
+2018-07-22 16:01:23,317 INFO aestimo Simulation is finished.
+2018-07-22 16:01:23,512 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 16:01:23,515 INFO aestimo 1019.9	2.1643e+16
+2018-07-22 16:01:23,518 INFO aestimo 1092.7	3.5687e+14
+2018-07-22 16:01:23,520 INFO aestimo 1197.5	2.2983e-21
+2018-07-22 16:01:23,523 INFO aestimo T = 15K
+2018-07-22 16:01:23,525 INFO aestimo the energy levels gaps are
+2018-07-22 16:01:23,527 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 16:01:23,530 INFO aestimo 72.8	17.6	17	587
+2018-07-22 16:01:23,532 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 16:01:23,534 INFO aestimo 105	25.3	11.8	845
+2018-07-22 16:01:23,539 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 16:01:23,541 INFO aestimo        j                        0          1          2
+2018-07-22 16:01:23,543 INFO aestimo   ilevel                        0          0          1
+2018-07-22 16:01:23,546 INFO aestimo   flevel                        1          2          2
+2018-07-22 16:01:23,549 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 16:01:23,551 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 16:01:23,554 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 16:01:23,557 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 16:01:23,559 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 16:01:23,561 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 16:01:23,564 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 16:01:23,567 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 16:01:23,569 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 16:01:23,572 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 16:01:23,574 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 16:01:23,576 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 16:01:23,579 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 16:01:23,586 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 16:01:23,588 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 16:01:23,943 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 16:01:23,986 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 16:01:24,761 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 16:01:25,858 INFO aestimo Total layer number: 3
+2018-07-22 16:01:25,864 INFO aestimo Total number of materials in database: 23
+2018-07-22 16:01:25,916 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:01:52,085 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 16:01:52,088 INFO aestimo calculation time  26.1624 s
+2018-07-22 16:01:52,445 INFO aestimo Simulation is finished.
+2018-07-22 16:01:52,487 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:02:04,747 INFO aestimo calculation time  12.2441 s
+2018-07-22 16:02:05,085 INFO aestimo Simulation is finished.
+2018-07-22 16:02:05,317 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 16:02:05,326 INFO aestimo 1002.7	1.4672e+16
+2018-07-22 16:02:05,340 INFO aestimo 1015.4	1.1073e+16
+2018-07-22 16:02:05,349 INFO aestimo 1039	4.2554e+15
+2018-07-22 16:02:05,354 INFO aestimo 1071.5	3.8099e+08
+2018-07-22 16:02:05,356 INFO aestimo 1111.1	1.881e-05
+2018-07-22 16:02:05,358 INFO aestimo 1156.3	1.2895e-20
+2018-07-22 16:02:05,360 INFO aestimo 1205	3.0188e-37
+2018-07-22 16:02:05,362 INFO aestimo T = 15K
+2018-07-22 16:02:05,364 INFO aestimo the energy levels gaps are
+2018-07-22 16:02:05,366 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 16:02:05,367 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 16:02:05,369 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 16:02:05,371 INFO aestimo 68.8	16.6	18	555
+2018-07-22 16:02:05,375 INFO aestimo 108	26.2	11.4	874
+2018-07-22 16:02:05,377 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 16:02:05,382 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 16:02:05,384 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 16:02:05,386 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 16:02:05,390 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 16:02:05,392 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 16:02:05,394 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 16:02:05,398 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 16:02:05,402 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 16:02:05,404 INFO aestimo 117	28.4	10.6	946
+2018-07-22 16:02:05,406 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 16:02:05,409 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 16:02:05,411 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 16:02:05,418 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 16:02:05,420 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 16:02:05,422 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 16:02:05,424 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 16:02:05,427 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 16:02:05,429 INFO aestimo        j                        0          1          2          3
+2018-07-22 16:02:05,431 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 16:02:05,433 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 16:02:05,435 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 16:02:05,437 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 16:02:05,440 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 16:02:05,442 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 16:02:05,450 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 16:02:05,452 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 16:02:05,454 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 16:02:05,456 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 16:02:05,458 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 16:02:05,461 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 16:02:05,462 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 16:02:05,464 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 16:02:05,467 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:02:05,469 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 16:02:05,471 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:02:05,473 INFO aestimo        j                        4          5          6          7
+2018-07-22 16:02:05,475 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 16:02:05,477 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 16:02:05,482 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 16:02:05,485 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 16:02:05,486 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 16:02:05,488 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 16:02:05,490 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 16:02:05,492 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 16:02:05,494 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 16:02:05,497 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 16:02:05,502 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 16:02:05,504 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 16:02:05,506 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 16:02:05,508 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 16:02:05,510 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:02:05,512 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 16:02:05,514 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:02:05,516 INFO aestimo        j                        8          9         10         11
+2018-07-22 16:02:05,519 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 16:02:05,526 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 16:02:05,528 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 16:02:05,530 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 16:02:05,532 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 16:02:05,534 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 16:02:05,536 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 16:02:05,538 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 16:02:05,541 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 16:02:05,543 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 16:02:05,545 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 16:02:05,547 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 16:02:05,549 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 16:02:05,551 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 16:02:05,553 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:02:05,558 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 16:02:05,561 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:02:05,562 INFO aestimo        j                       12         13         14         15
+2018-07-22 16:02:05,564 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 16:02:05,567 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 16:02:05,569 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 16:02:05,574 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 16:02:05,576 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 16:02:05,579 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 16:02:05,581 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 16:02:05,583 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 16:02:05,585 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 16:02:05,587 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 16:02:05,589 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 16:02:05,592 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 16:02:05,593 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 16:02:05,595 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 16:02:05,597 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:02:05,599 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 16:02:05,601 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:02:05,604 INFO aestimo        j                       16         17         18         19
+2018-07-22 16:02:05,606 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 16:02:05,608 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 16:02:05,610 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 16:02:05,612 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 16:02:05,614 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 16:02:05,616 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 16:02:05,618 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 16:02:05,620 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 16:02:05,623 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 16:02:05,625 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 16:02:05,627 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 16:02:05,629 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 16:02:05,630 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 16:02:05,632 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 16:02:05,635 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:02:05,637 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 16:02:05,639 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:02:05,641 INFO aestimo        j                       20
+2018-07-22 16:02:05,643 INFO aestimo   ilevel                        5
+2018-07-22 16:02:05,646 INFO aestimo   flevel                        6
+2018-07-22 16:02:05,648 INFO aestimo       dE           meV       48.7
+2018-07-22 16:02:05,651 INFO aestimo     freq           THz       11.8
+2018-07-22 16:02:05,654 INFO aestimo   lambda            um       25.4
+2018-07-22 16:02:05,657 INFO aestimo    wavno          cm-1        393
+2018-07-22 16:02:05,660 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 16:02:05,664 INFO aestimo     z_if            nm      -7.12
+2018-07-22 16:02:05,666 INFO aestimo        f                     4.36
+2018-07-22 16:02:05,669 INFO aestimo     Leff            nm       6.47
+2018-07-22 16:02:05,672 INFO aestimo     S_if            nm        1.8
+2018-07-22 16:02:05,674 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 16:02:05,677 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 16:02:05,680 INFO aestimo        R           THz   3.96e-18
+2018-07-22 16:02:05,682 INFO aestimo  Lperiod            nm         50
+2018-07-22 16:02:05,685 INFO aestimo     y_if           THz       1.18
+2018-07-22 16:02:05,688 INFO aestimo    eps_w                     9.28
+2018-07-22 16:02:06,596 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 16:02:07,043 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 16:02:09,013 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 16:15:12,825 INFO aestimo using psi_at_inf_cython module
+2018-07-22 16:15:13,199 INFO aestimo Total layer number: 3
+2018-07-22 16:15:13,203 INFO aestimo Total number of materials in database: 23
+2018-07-22 16:15:13,208 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:15:16,603 INFO aestimo calculation time  3.39166 s
+2018-07-22 16:15:16,880 INFO aestimo Simulation is finished.
+2018-07-22 16:15:17,016 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 16:15:17,019 INFO aestimo 1019.9	2.1643e+16
+2018-07-22 16:15:17,022 INFO aestimo 1092.7	3.5687e+14
+2018-07-22 16:15:17,026 INFO aestimo 1197.5	2.2983e-21
+2018-07-22 16:15:17,028 INFO aestimo T = 15K
+2018-07-22 16:15:17,031 INFO aestimo the energy levels gaps are
+2018-07-22 16:15:17,033 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 16:15:17,036 INFO aestimo 72.8	17.6	17	587
+2018-07-22 16:15:17,038 INFO aestimo 178	42.9	6.98	1.43e+03
+2018-07-22 16:15:17,041 INFO aestimo 105	25.3	11.8	845
+2018-07-22 16:15:17,044 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 16:15:17,046 INFO aestimo        j                        0          1          2
+2018-07-22 16:15:17,054 INFO aestimo   ilevel                        0          0          1
+2018-07-22 16:15:17,056 INFO aestimo   flevel                        1          2          2
+2018-07-22 16:15:17,060 INFO aestimo       dE           meV       72.8        178        105
+2018-07-22 16:15:17,069 INFO aestimo     freq           THz       17.6       42.9       25.3
+2018-07-22 16:15:17,072 INFO aestimo   lambda            um         17       6.98       11.8
+2018-07-22 16:15:17,075 INFO aestimo    wavno          cm-1        587   1.43e+03        845
+2018-07-22 16:15:17,077 INFO aestimo       dN 1e11cm-2 @15K       21.3       21.6      0.357
+2018-07-22 16:15:17,080 INFO aestimo     z_if            nm      -2.65      0.321         -3
+2018-07-22 16:15:17,084 INFO aestimo        f                    0.921     0.0328       1.69
+2018-07-22 16:15:17,087 INFO aestimo     Leff            nm       9.29       15.4       6.83
+2018-07-22 16:15:17,090 INFO aestimo     S_if            nm      0.821      0.203      0.776
+2018-07-22 16:15:17,093 INFO aestimo   S_if_b            nm      0.822      0.203      0.777
+2018-07-22 16:15:17,096 INFO aestimo       wp           THz       16.2       12.7       2.44
+2018-07-22 16:15:17,099 INFO aestimo        R           THz       2.06      0.393      0.362
+2018-07-22 16:15:17,101 INFO aestimo  Lperiod            nm         51         51         51
+2018-07-22 16:15:17,116 INFO aestimo     y_if           THz       1.76       4.29       2.53
+2018-07-22 16:15:17,118 INFO aestimo    eps_w                     10.3       10.3       10.3
+2018-07-22 16:15:17,488 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 16:15:17,546 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 16:15:18,195 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix
+2018-07-22 16:15:19,062 INFO aestimo Total layer number: 3
+2018-07-22 16:15:19,078 INFO aestimo Total number of materials in database: 23
+2018-07-22 16:15:19,144 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:15:46,823 WARNING aestimo Have reached maximum number of iterations
+2018-07-22 16:15:46,825 INFO aestimo calculation time  27.6719 s
+2018-07-22 16:15:47,175 INFO aestimo Simulation is finished.
+2018-07-22 16:15:47,212 WARNING aestimo The calculation of Vxc depends upon m*, however when non-parabolicity is also 
+                 considered m* becomes energy dependent which would make Vxc energy dependent.
+                 Currently this effect is ignored and Vxc uses the effective masses from the 
+                 bottom of the conduction bands even when non-parabolicity is considered 
+                 elsewhere.
+2018-07-22 16:15:59,782 INFO aestimo calculation time  12.5607 s
+2018-07-22 16:16:00,063 INFO aestimo Simulation is finished.
+2018-07-22 16:16:00,293 INFO aestimo the energy levels\population are (meV)	(m**-2):
+2018-07-22 16:16:00,295 INFO aestimo 1002.7	1.4672e+16
+2018-07-22 16:16:00,300 INFO aestimo 1015.4	1.1073e+16
+2018-07-22 16:16:00,309 INFO aestimo 1039	4.2554e+15
+2018-07-22 16:16:00,312 INFO aestimo 1071.5	3.8099e+08
+2018-07-22 16:16:00,313 INFO aestimo 1111.1	1.881e-05
+2018-07-22 16:16:00,315 INFO aestimo 1156.3	1.2895e-20
+2018-07-22 16:16:00,317 INFO aestimo 1205	3.0188e-37
+2018-07-22 16:16:00,321 INFO aestimo T = 15K
+2018-07-22 16:16:00,323 INFO aestimo the energy levels gaps are
+2018-07-22 16:16:00,325 INFO aestimo (meV)	(THz)	(um)	(wavno)
+2018-07-22 16:16:00,326 INFO aestimo 12.7	3.07	97.8	102
+2018-07-22 16:16:00,330 INFO aestimo 36.3	8.78	34.1	293
+2018-07-22 16:16:00,332 INFO aestimo 68.8	16.6	18	555
+2018-07-22 16:16:00,334 INFO aestimo 108	26.2	11.4	874
+2018-07-22 16:16:00,338 INFO aestimo 154	37.1	8.07	1.24e+03
+2018-07-22 16:16:00,340 INFO aestimo 202	48.9	6.13	1.63e+03
+2018-07-22 16:16:00,342 INFO aestimo 23.6	5.72	52.5	191
+2018-07-22 16:16:00,344 INFO aestimo 56.1	13.6	22.1	452
+2018-07-22 16:16:00,346 INFO aestimo 95.7	23.2	12.9	772
+2018-07-22 16:16:00,347 INFO aestimo 141	34.1	8.8	1.14e+03
+2018-07-22 16:16:00,353 INFO aestimo 190	45.9	6.54	1.53e+03
+2018-07-22 16:16:00,355 INFO aestimo 32.5	7.85	38.2	262
+2018-07-22 16:16:00,357 INFO aestimo 72.1	17.4	17.2	582
+2018-07-22 16:16:00,358 INFO aestimo 117	28.4	10.6	946
+2018-07-22 16:16:00,360 INFO aestimo 166	40.1	7.47	1.34e+03
+2018-07-22 16:16:00,362 INFO aestimo 39.6	9.59	31.3	320
+2018-07-22 16:16:00,364 INFO aestimo 84.8	20.5	14.6	684
+2018-07-22 16:16:00,369 INFO aestimo 134	32.3	9.28	1.08e+03
+2018-07-22 16:16:00,371 INFO aestimo 45.2	10.9	27.4	364
+2018-07-22 16:16:00,372 INFO aestimo 93.9	22.7	13.2	758
+2018-07-22 16:16:00,374 INFO aestimo 48.7	11.8	25.4	393
+2018-07-22 16:16:00,376 INFO aestimo Summary of Intersubband Transitions
+2018-07-22 16:16:00,382 INFO aestimo        j                        0          1          2          3
+2018-07-22 16:16:00,384 INFO aestimo   ilevel                        0          0          0          0
+2018-07-22 16:16:00,385 INFO aestimo   flevel                        1          2          3          4
+2018-07-22 16:16:00,387 INFO aestimo       dE           meV       12.7       36.3       68.8        108
+2018-07-22 16:16:00,389 INFO aestimo     freq           THz       3.07       8.78       16.6       26.2
+2018-07-22 16:16:00,391 INFO aestimo   lambda            um       97.8       34.1         18       11.4
+2018-07-22 16:16:00,394 INFO aestimo    wavno          cm-1        102        293        555        874
+2018-07-22 16:16:00,396 INFO aestimo       dN 1e11cm-2 @15K        3.6       10.4       14.7       14.7
+2018-07-22 16:16:00,398 INFO aestimo     z_if            nm      -6.43   -0.00719     -0.627     0.0432
+2018-07-22 16:16:00,399 INFO aestimo        f                    0.927   3.32e-06     0.0478   0.000358
+2018-07-22 16:16:00,401 INFO aestimo     Leff            nm       21.6       27.2       30.6       33.5
+2018-07-22 16:16:00,403 INFO aestimo     S_if            nm       2.07      0.573      0.269      0.156
+2018-07-22 16:16:00,409 INFO aestimo   S_if_b            nm       2.07      0.574      0.269      0.156
+2018-07-22 16:16:00,411 INFO aestimo       wp           THz       4.64       7.03       7.87       7.52
+2018-07-22 16:16:00,413 INFO aestimo        R           THz      0.964     0.0031      0.442     0.0382
+2018-07-22 16:16:00,414 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:16:00,416 INFO aestimo     y_if           THz      0.307      0.878       1.66       2.62
+2018-07-22 16:16:00,418 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:16:00,419 INFO aestimo        j                        4          5          6          7
+2018-07-22 16:16:00,421 INFO aestimo   ilevel                        0          0          1          1
+2018-07-22 16:16:00,423 INFO aestimo   flevel                        5          6          2          3
+2018-07-22 16:16:00,427 INFO aestimo       dE           meV        154        202       23.6       56.1
+2018-07-22 16:16:00,429 INFO aestimo     freq           THz       37.1       48.9       5.72       13.6
+2018-07-22 16:16:00,431 INFO aestimo   lambda            um       8.07       6.13       52.5       22.1
+2018-07-22 16:16:00,433 INFO aestimo    wavno          cm-1   1.24e+03   1.63e+03        191        452
+2018-07-22 16:16:00,434 INFO aestimo       dN 1e11cm-2 @15K       14.7       14.7       6.82       11.1
+2018-07-22 16:16:00,436 INFO aestimo     z_if            nm     -0.214     0.0812      -6.48     0.0331
+2018-07-22 16:16:00,439 INFO aestimo        f                   0.0124    0.00236       1.75   0.000109
+2018-07-22 16:16:00,441 INFO aestimo     Leff            nm       36.2       40.3         14       21.5
+2018-07-22 16:16:00,443 INFO aestimo     S_if            nm      0.102     0.0694       1.72      0.469
+2018-07-22 16:16:00,448 INFO aestimo   S_if_b            nm      0.102     0.0695       1.72      0.469
+2018-07-22 16:16:00,450 INFO aestimo       wp           THz       7.24       6.85       7.94       8.15
+2018-07-22 16:16:00,452 INFO aestimo        R           THz      0.225     0.0981       1.82     0.0183
+2018-07-22 16:16:00,453 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:16:00,455 INFO aestimo     y_if           THz       3.71       4.89      0.572       1.36
+2018-07-22 16:16:00,457 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:16:00,461 INFO aestimo        j                        8          9         10         11
+2018-07-22 16:16:00,463 INFO aestimo   ilevel                        1          1          1          2
+2018-07-22 16:16:00,465 INFO aestimo   flevel                        4          5          6          3
+2018-07-22 16:16:00,466 INFO aestimo       dE           meV       95.7        141        190       32.5
+2018-07-22 16:16:00,468 INFO aestimo     freq           THz       23.2       34.1       45.9       7.85
+2018-07-22 16:16:00,474 INFO aestimo   lambda            um       12.9        8.8       6.54       38.2
+2018-07-22 16:16:00,476 INFO aestimo    wavno          cm-1        772   1.14e+03   1.53e+03        262
+2018-07-22 16:16:00,477 INFO aestimo       dN 1e11cm-2 @15K       11.1       11.1       11.1       4.26
+2018-07-22 16:16:00,479 INFO aestimo     z_if            nm     -0.747      0.112     -0.313      -6.57
+2018-07-22 16:16:00,481 INFO aestimo        f                   0.0943     0.0031     0.0328       2.48
+2018-07-22 16:16:00,483 INFO aestimo     Leff            nm       26.5       31.2       35.4       10.3
+2018-07-22 16:16:00,485 INFO aestimo     S_if            nm      0.223      0.129     0.0844       1.69
+2018-07-22 16:16:00,486 INFO aestimo   S_if_b            nm      0.223      0.129     0.0846       1.69
+2018-07-22 16:16:00,493 INFO aestimo       wp           THz       7.34       6.77       6.36        7.3
+2018-07-22 16:16:00,495 INFO aestimo        R           THz      0.539     0.0977      0.318       1.71
+2018-07-22 16:16:00,497 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:16:00,499 INFO aestimo     y_if           THz       2.32       3.41       4.59      0.785
+2018-07-22 16:16:00,500 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:16:00,502 INFO aestimo        j                       12         13         14         15
+2018-07-22 16:16:00,504 INFO aestimo   ilevel                        2          2          2          3
+2018-07-22 16:16:00,506 INFO aestimo   flevel                        4          5          6          4
+2018-07-22 16:16:00,507 INFO aestimo       dE           meV       72.1        117        166       39.6
+2018-07-22 16:16:00,509 INFO aestimo     freq           THz       17.4       28.4       40.1       9.59
+2018-07-22 16:16:00,511 INFO aestimo   lambda            um       17.2       10.6       7.47       31.3
+2018-07-22 16:16:00,517 INFO aestimo    wavno          cm-1        582        946   1.34e+03        320
+2018-07-22 16:16:00,519 INFO aestimo       dN 1e11cm-2 @15K       4.26       4.26       4.26   3.81e-07
+2018-07-22 16:16:00,520 INFO aestimo     z_if            nm     0.0962     -0.811      0.201       -6.7
+2018-07-22 16:16:00,522 INFO aestimo        f                  0.00118      0.136     0.0119       3.14
+2018-07-22 16:16:00,524 INFO aestimo     Leff            nm       17.8       23.2       29.7       8.38
+2018-07-22 16:16:00,526 INFO aestimo     S_if            nm      0.442      0.208      0.115        1.7
+2018-07-22 16:16:00,528 INFO aestimo   S_if_b            nm      0.442      0.208      0.115        1.7
+2018-07-22 16:16:00,529 INFO aestimo       wp           THz       5.56       4.87        4.3    0.00242
+2018-07-22 16:16:00,534 INFO aestimo        R           THz     0.0374      0.402      0.119   0.000577
+2018-07-22 16:16:00,536 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:16:00,538 INFO aestimo     y_if           THz       1.74       2.84       4.01      0.959
+2018-07-22 16:16:00,540 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:16:00,541 INFO aestimo        j                       16         17         18         19
+2018-07-22 16:16:00,543 INFO aestimo   ilevel                        3          3          4          4
+2018-07-22 16:16:00,549 INFO aestimo   flevel                        5          6          5          6
+2018-07-22 16:16:00,551 INFO aestimo       dE           meV       84.8        134       45.2       93.9
+2018-07-22 16:16:00,552 INFO aestimo     freq           THz       20.5       32.3       10.9       22.7
+2018-07-22 16:16:00,554 INFO aestimo   lambda            um       14.6       9.28       27.4       13.2
+2018-07-22 16:16:00,556 INFO aestimo    wavno          cm-1        684   1.08e+03        364        758
+2018-07-22 16:16:00,558 INFO aestimo       dN 1e11cm-2 @15K   3.81e-07   3.81e-07   1.88e-20   1.88e-20
+2018-07-22 16:16:00,560 INFO aestimo     z_if            nm      0.182     -0.891      -6.86      0.307
+2018-07-22 16:16:00,566 INFO aestimo        f                  0.00499      0.187       3.75     0.0157
+2018-07-22 16:16:00,568 INFO aestimo     Leff            nm       15.5       21.1       7.21       14.3
+2018-07-22 16:16:00,569 INFO aestimo     S_if            nm      0.431      0.201       1.74      0.422
+2018-07-22 16:16:00,571 INFO aestimo   S_if_b            nm      0.431      0.201       1.74      0.422
+2018-07-22 16:16:00,573 INFO aestimo       wp           THz    0.00178    0.00153    5.8e-10   4.12e-10
+2018-07-22 16:16:00,574 INFO aestimo        R           THz    2.3e-05   0.000141    1.4e-10   9.06e-12
+2018-07-22 16:16:00,576 INFO aestimo  Lperiod            nm         50         50         50         50
+2018-07-22 16:16:00,578 INFO aestimo     y_if           THz       2.05       3.23       1.09       2.27
+2018-07-22 16:16:00,580 INFO aestimo    eps_w                     9.28       9.28       9.28       9.28
+2018-07-22 16:16:00,582 INFO aestimo        j                       20
+2018-07-22 16:16:00,583 INFO aestimo   ilevel                        5
+2018-07-22 16:16:00,588 INFO aestimo   flevel                        6
+2018-07-22 16:16:00,590 INFO aestimo       dE           meV       48.7
+2018-07-22 16:16:00,592 INFO aestimo     freq           THz       11.8
+2018-07-22 16:16:00,594 INFO aestimo   lambda            um       25.4
+2018-07-22 16:16:00,595 INFO aestimo    wavno          cm-1        393
+2018-07-22 16:16:00,597 INFO aestimo       dN 1e11cm-2 @15K   1.29e-35
+2018-07-22 16:16:00,599 INFO aestimo     z_if            nm      -7.12
+2018-07-22 16:16:00,605 INFO aestimo        f                     4.36
+2018-07-22 16:16:00,607 INFO aestimo     Leff            nm       6.47
+2018-07-22 16:16:00,609 INFO aestimo     S_if            nm        1.8
+2018-07-22 16:16:00,610 INFO aestimo   S_if_b            nm        1.8
+2018-07-22 16:16:00,612 INFO aestimo       wp           THz    1.6e-17
+2018-07-22 16:16:00,614 INFO aestimo        R           THz   3.96e-18
+2018-07-22 16:16:00,616 INFO aestimo  Lperiod            nm         50
+2018-07-22 16:16:00,617 INFO aestimo     y_if           THz       1.18
+2018-07-22 16:16:00,622 INFO aestimo    eps_w                     9.28
+2018-07-22 16:16:01,515 INFO aestimo calc_wR_multiplasmon: using eigh() solver for Hermitian matrix
+2018-07-22 16:16:01,991 INFO aestimo calc_wR_multiplasmon2: using eigh() solver for Hermitian matrix
+2018-07-22 16:16:04,839 INFO aestimo calc_wR_multiplasmon3: using eigh() solver for Hermitian matrix

@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+urllib3
+setuptools
+subprocess
+sys
+datetime
+random
+time

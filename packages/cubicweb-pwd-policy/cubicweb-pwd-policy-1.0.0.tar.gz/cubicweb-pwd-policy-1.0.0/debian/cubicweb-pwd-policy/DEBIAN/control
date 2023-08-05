@@ -1,0 +1,15 @@
+Package: cubicweb-pwd-policy
+Version: 1.0.0-1
+Architecture: all
+Maintainer: LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
+Installed-Size: 36
+Depends: python-cubicweb (>= 3.24.7), python-six (>= 1.4.0), python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Section: web
+Priority: optional
+Description: Password policy for cubicweb applications
+ CubicWeb is a semantic web application framework.
+ .
+ Password policy for cubicweb applications
+ .
+ This package will install all the components you need to run an application
+ using the cubicweb-pwd-policy cube.

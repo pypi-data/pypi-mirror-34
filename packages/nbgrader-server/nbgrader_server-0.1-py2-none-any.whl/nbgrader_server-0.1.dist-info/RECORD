@@ -1,0 +1,9 @@
+nbgrader_server-0.1.data/scripts/server.py,sha256=etGNZK3Q7rsP1YCNWJctaEJuU4qQLKAfASwVMrdJj1s,876
+nbgrader_server-0.1.dist-info/METADATA,sha256=0tB1lXoH858o87eswl2f6mmZiGMB3XEdCZ6LxL3h2kk,488
+nbgrader_server-0.1.dist-info/RECORD,,
+nbgrader_server-0.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+nbgrader_server-0.1.dist-info/top_level.txt,sha256=_EwugQuEclWDwtoPeM4BsBvVWiaWmKQVTMgTGpNc3Z0,12
+nbgraderapi/__init__.py,sha256=2t0-rTbBaTfy9bHV48Ze9T5uqoa0bm1owy98cjze--A,833
+nbgraderapi/assignment.py,sha256=Ru0_sE_ItFfAFtEeifH_QKNbr7u84WIhWHhhR1Gz9VA,1556
+nbgraderapi/auth.py,sha256=DKnOPsTyrbTMCEpXESvF4VzCnYgoPpaot7ieuFH-a5U,556
+nbgraderapi/handlers.py,sha256=9rCbnrw8krYKXC2wpj7Kom6LKjfIh393wod4CoGh2E8,1011

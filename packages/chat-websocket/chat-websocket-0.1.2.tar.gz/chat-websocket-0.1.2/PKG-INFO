@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: chat-websocket
+Version: 0.1.2
+Summary: This is a websocket chat
+Home-page: http://github.com/storborg/funniest
+Author: Kevin, Michael
+Author-email: 123kangpeng@gmail.com
+License: None
+Description: This is about app chat app. You can use it to build a chat.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7

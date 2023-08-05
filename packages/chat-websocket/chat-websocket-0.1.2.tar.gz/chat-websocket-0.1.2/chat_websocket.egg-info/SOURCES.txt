@@ -1,0 +1,9 @@
+README.md
+setup.py
+chat-websocket/__init__.py
+chat-websocket/mk-tornado-web-chat.py
+chat_websocket.egg-info/PKG-INFO
+chat_websocket.egg-info/SOURCES.txt
+chat_websocket.egg-info/dependency_links.txt
+chat_websocket.egg-info/not-zip-safe
+chat_websocket.egg-info/top_level.txt

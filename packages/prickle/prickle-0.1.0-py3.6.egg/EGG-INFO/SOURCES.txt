@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+prickle/__init__.py
+prickle/prickle.py
+prickle.egg-info/PKG-INFO
+prickle.egg-info/SOURCES.txt
+prickle.egg-info/dependency_links.txt
+prickle.egg-info/top_level.txt
+prickle.egg-info/zip-safe

@@ -1,0 +1,13 @@
+README.md
+setup.py
+loggui/__init__.py
+loggui/__main__.py
+loggui/handler.py
+loggui.egg-info/PKG-INFO
+loggui.egg-info/SOURCES.txt
+loggui.egg-info/dependency_links.txt
+loggui.egg-info/requires.txt
+loggui.egg-info/top_level.txt
+loggui/widgets/__init__.py
+loggui/widgets/record_view.py
+loggui/widgets/settings.py

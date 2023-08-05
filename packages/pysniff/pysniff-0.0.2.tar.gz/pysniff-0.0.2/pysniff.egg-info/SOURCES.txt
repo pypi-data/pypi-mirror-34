@@ -1,0 +1,15 @@
+README.rst
+setup.py
+pysniff/__init__.py
+pysniff/gui.py
+pysniff/main.py
+pysniff/proxy.py
+pysniff.egg-info/PKG-INFO
+pysniff.egg-info/SOURCES.txt
+pysniff.egg-info/dependency_links.txt
+pysniff.egg-info/entry_points.txt
+pysniff.egg-info/requires.txt
+pysniff.egg-info/top_level.txt
+pysniff/libs/__init__.py
+pysniff/libs/observer.py
+pysniff/libs/subject.py

@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Python_CAN_Viewer.egg-info/PKG-INFO
+Python_CAN_Viewer.egg-info/SOURCES.txt
+Python_CAN_Viewer.egg-info/dependency_links.txt
+Python_CAN_Viewer.egg-info/not-zip-safe
+Python_CAN_Viewer.egg-info/requires.txt
+Python_CAN_Viewer.egg-info/top_level.txt
+python_can_viewer/__init__.py
+python_can_viewer/__main__.py
+python_can_viewer/python_can_viewer.py

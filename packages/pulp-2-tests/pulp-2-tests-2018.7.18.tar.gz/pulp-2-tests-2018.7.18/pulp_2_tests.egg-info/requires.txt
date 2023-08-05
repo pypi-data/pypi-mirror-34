@@ -1,0 +1,14 @@
+jsonschema
+packaging
+pulp-smash
+python-dateutil
+
+[dev]
+flake8
+flake8-docstrings
+flake8-quotes
+pydocstyle
+pylint
+sphinx
+wheel
+twine

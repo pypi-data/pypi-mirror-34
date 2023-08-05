@@ -1,0 +1,10 @@
+mypassman-0.0.1.dist-info/METADATA,sha256=o5fpZtufCzdGnCSyGRs3gfjF8SJU5V77RzkQJVKle4o,3158
+mypassman-0.0.1.dist-info/RECORD,,
+mypassman-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+mypassman-0.0.1.dist-info/entry_points.txt,sha256=IQgjnwxhRp3Hiug11W7-EFkvnK5kUjcmcwrwYzpcwF0,51
+mypassman-0.0.1.dist-info/top_level.txt,sha256=PXaxCw3or58wkbY_3sCgJ27mpdWv-NdN5Uulr39LM0k,8
+passman/__init__.py,sha256=OB-b_GnUnTkECn1fwxl844UBmiui3mSWIvhBqMZY7Tc,22
+passman/__main__.py,sha256=CgNj_U9Vn_deQPscHdFLCI_EmJshdnypLQ7rt7ud6DA,106
+passman/helpers.py,sha256=GNuVaCB7jvUO3clAM9srqWSJ24OQaL6sCDNkjIUlLvA,1385
+passman/models.py,sha256=oO93hg9oSmMD3SdfLGFvDXWdKJT2kJEQiHb2hI2bCHk,625
+passman/passman.py,sha256=OND5w8knEjZlrwX6aDmOPP7Eb_JN7YrJn9L32aeowCs,7656

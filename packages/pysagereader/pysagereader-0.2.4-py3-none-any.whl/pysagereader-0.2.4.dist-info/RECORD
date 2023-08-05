@@ -1,0 +1,10 @@
+pysagereader/__init__.py,sha256=QMFImgtuOezM9es3iY3cTzOt-59Qe7CcMrPe5ltQxNE,213
+pysagereader/_version.py,sha256=HI0zZP5KdYP27Ufsr4Ha0CRFlvFS9awIOVEW-PmCUK4,518
+pysagereader/examples.py,sha256=PNWN4iPZ6q2yZUG8UJrbg--eLxYdWrO8z667qXNH4RQ,3190
+pysagereader/make_netcdf.py,sha256=ENdcDoaMrLoSVDrQzhlsiHVmfu9BGHtQ1eL11K1RisA,2975
+pysagereader/sage_ii_reader.py,sha256=QJdHw1rBqhBM-aqT29nM741gP0NwryXQpNZEd5NLAFo,38716
+pysagereader/sage_iii_reader.py,sha256=UIV7RKvc4xIglBtgBsld9bh3O1PtMhZNvlXsbqOwCnQ,16317
+pysagereader-0.2.4.dist-info/METADATA,sha256=Y1emJ5lh1md_sZWrSzR40CXBrOQZcBMBf1mZdlK3Z88,2035
+pysagereader-0.2.4.dist-info/RECORD,,
+pysagereader-0.2.4.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+pysagereader-0.2.4.dist-info/top_level.txt,sha256=9hnqK3zKyYaJmjgHXupWlcS1M565FHUqiuoTjnKr8Pk,13

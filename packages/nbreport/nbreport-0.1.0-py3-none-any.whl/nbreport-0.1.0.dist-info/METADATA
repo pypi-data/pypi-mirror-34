@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nbreport
+Version: 0.1.0
+Summary: LSST's notebook-based report system.
+Home-page: https://github.com/lsst-sqre/nbreport
+Author: Association of Universities for Research in Astronomy
+Author-email: jsick@lsst.org
+License: MIT
+Keywords: lsst
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Requires-Dist: click (<7.0,>=6.7)
+Provides-Extra: dev
+Requires-Dist: documenteer[pipelines] (==0.3.0a5); extra == 'dev'
+Requires-Dist: sphinx-click (<1.3.0,>=1.2.0); extra == 'dev'
+Requires-Dist: pytest (==3.5.0); extra == 'dev'
+Requires-Dist: pytest-cov (==2.5.1); extra == 'dev'
+Requires-Dist: pytest-flake8 (==1.0.0); extra == 'dev'
+
+########
+nbreport
+########
+
+nbreport is a client for creating and publishing LSST's notebook-based reports.
+Notebook-based reports are generated from template repositories, computed, and published with LSST the Docs.
+
+

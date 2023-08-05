@@ -1,0 +1,9 @@
+lasikservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lasikservice/serialconnection.py,sha256=J34GMZpxj8i4rnvIVT6WWusxl7QsiLcAk1b9Y-fGOu0,3748
+lasikservice/service.py,sha256=7N0lOGpBMa-676vjVaIRyU_Nh0iDcQwKlHYT5TVEDII,8932
+lasikservice/socketserver.py,sha256=lliJ5wv8R-qSKz8hmHHL6Ob5J2OvNneE7LUQ04vrQG4,4054
+lasikservice-0.1.3.dist-info/METADATA,sha256=TRLgI4APSHPILp3x6zsUAq3G9CQuB9F5DalW8oHcT6A,513
+lasikservice-0.1.3.dist-info/RECORD,,
+lasikservice-0.1.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+lasikservice-0.1.3.dist-info/entry_points.txt,sha256=_y7c-r0tyxsVQTUQtoY8MGW5J0Lq4MMPhBYcatjAPVU,110
+lasikservice-0.1.3.dist-info/top_level.txt,sha256=_nOCsM-FrxmvxeELUG4Lko87HcNnbQIWx1VlSpYUILE,13

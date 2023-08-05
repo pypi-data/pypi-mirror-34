@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lasikservice
+Version: 0.1.3
+Summary: connects to a number of lasik boards and provides a service
+Home-page: https://gitlab.com/sasja/lasik
+Author: sasja
+Author-email: sasja.ws@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+
+Connect to multiple lasik boards and expose an interface to all laserbeams
+
+

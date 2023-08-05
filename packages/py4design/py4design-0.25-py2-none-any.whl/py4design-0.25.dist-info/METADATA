@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: py4design
+Version: 0.25
+Summary: Python Library for Rapid Development of Design Workflows
+Home-page: https://github.com/chenkianwee/py4design
+Author: Chen Kian Wee
+Author-email: chenkianwee@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/chenkianwee/py4design/archive/0.2a1.tar.gz
+Description-Content-Type: UNKNOWN
+Keywords: design workflow,urban design,architecture design,design optimisation,design simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: cvxopt
+Requires-Dist: lxml
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pycollada
+Requires-Dist: pymf
+Requires-Dist: pyshp
+Requires-Dist: scikit-learn
+
+refer to https://github.com/chenkianwee/py4design for full installation instructions
+
+

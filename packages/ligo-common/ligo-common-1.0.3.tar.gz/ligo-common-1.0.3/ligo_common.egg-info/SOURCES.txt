@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+ligo-common.spec
+setup.py
+debian/changelog
+debian/compat
+debian/control
+debian/copyright
+debian/rules
+ligo/__init__.py
+ligo_common.egg-info/PKG-INFO
+ligo_common.egg-info/SOURCES.txt
+ligo_common.egg-info/dependency_links.txt
+ligo_common.egg-info/top_level.txt

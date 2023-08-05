@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+db_logger/__init__.py
+db_logger/admin.py
+db_logger/apps.py
+db_logger/handlers.py
+db_logger/models.py
+db_logger/tests.py
+db_logger.egg-info/PKG-INFO
+db_logger.egg-info/SOURCES.txt
+db_logger.egg-info/dependency_links.txt
+db_logger.egg-info/top_level.txt
+db_logger/migrations/0001_initial.py
+db_logger/migrations/__init__.py

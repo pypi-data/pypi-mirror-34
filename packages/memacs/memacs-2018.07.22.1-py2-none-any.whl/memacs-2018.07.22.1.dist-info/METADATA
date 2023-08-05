@@ -1,0 +1,39 @@
+Metadata-Version: 2.0
+Name: memacs
+Version: 2018.07.22.1
+Summary: Memacs extracts metadata from many different existing  data sources on your computer and generates files which are readable by GNU Emacs (Org-Mode).
+Home-page: https://github.com/novoid/Memacs
+Author: Karl Voit
+Author-email: tools@Karl-Voit.at
+License: UNKNOWN
+Download-URL: https://github.com/novoid/Memacs/zipball/master
+Keywords: org-mode,org,lifelogging,quantifiedself,orgmode,Emacs,archiving,PIM,personalinformationmanagement
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Dist: Pillow
+Requires-Dist: feedparser
+Requires-Dist: icalendar (>=3.0)
+
+Memacs
+-----------------------------
+*What were you doing* on February 14th of 2007? On *which tasks* were
+you working on that very day you met your girl friend? When was the
+*last appointments* with your dentist? *Who called* you on telephone
+during that meeting with your customer last month?
+
+Most people can not answer such questions. *With Memacs you can!*
+
+Memacs extracts metadata (subjects, timestamps, contact information,
+...) from many different existing data sources (file names, emails,
+tweets, bookmarks, ...) on your computer and generates files which are
+readable by GNU Emacs with Org-mode.
+
+Please do read https://github.com/novoid/Memacs for further information.
+
+

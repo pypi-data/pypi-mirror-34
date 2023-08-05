@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: detectDashCam
+Version: 0.0.3
+Summary: Detecting if a video is DashCam Video.
+Home-page: https://github.com/Ayush21298/ITRI/tree/master/detectDashCam
+Author: Ayush21298
+Author-email: patel.ayush08@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Detect DashCam Videos
+
+

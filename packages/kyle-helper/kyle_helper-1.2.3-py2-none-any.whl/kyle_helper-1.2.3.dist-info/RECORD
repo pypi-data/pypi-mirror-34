@@ -1,0 +1,12 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/utility.py,sha256=6jP-V_-wonl16b8v-10zoCxtjy7H7D9icoYz4dxwZwE,893
+dnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnn/ednn.py,sha256=55XBY1x8gbeVQJV1ELqTv5QG2tl29JjIPh8Dq5aeLz0,1695
+dnn/english_muffin.py,sha256=TA_elBVWRA-knpZTdLlr7pZ7ydZ1vTVa7mNE5lH9wFY,5060
+kyle_helper-1.2.3.data/scripts/update_result,sha256=Rb5nCgFkzZxeYo4b69kfH-vgJ5sD2oT1GAvrHGKbXPI,461
+kyle_helper-1.2.3.dist-info/METADATA,sha256=QDstZWmXCf3oqPrtqJxwKAG3H41-Ne_5TUEjq7v5xzo,280
+kyle_helper-1.2.3.dist-info/RECORD,,
+kyle_helper-1.2.3.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+kyle_helper-1.2.3.dist-info/top_level.txt,sha256=-hS9AqBjLdpZc2uVMp1x69llMppXpwU2n2374VCJh7M,15
+latex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latex/results.py,sha256=LJ4WxFPP5wTEOhxoU0HsjHVO6FcuYXjE3c2uQm1m6UA,1778

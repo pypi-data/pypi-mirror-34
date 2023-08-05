@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: rkNN_imputer
+Version: 1.2
+Summary: Ranking and kNN imputation algorithm
+Home-page: https://github.com/LBcoding/ranking-kNN-imputation
+Author: Loernzo Beretta
+Author-email: lorberimm@hotmail.com
+License: UNKNOWN
+Description: An imputation method based on ranking and nearest neighbor (kNN)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sqlScanner
+Version: 1.0.1
+Summary: Scans .db-files for SQL tables.
+Home-page: https://github.com/letsCodeMyLife/sqlScanner
+Author: Henning Arvid Ladewig
+Author-email: anne@opentrash.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+--------------- sqlScanner ---------------
+
+Scans .db-files for SQL tables.
+
+Anyone can use this module to scan SQL-files, but when you distribute your software
+that use sqlScanner please notify that sqlScanner is made by me.
+Thanks.
+
+(Sorry for bad english, I am form germany^^)
+

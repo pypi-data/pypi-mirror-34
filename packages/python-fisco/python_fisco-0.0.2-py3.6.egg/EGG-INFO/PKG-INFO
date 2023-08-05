@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: python-fisco
+Version: 0.0.2
+Summary: Lib for fisco Private and Public API
+Home-page: https://bitbucket.org/smapira/python-fisco/
+Author: smapira
+Author-email: smapira@routeflags.com
+License: UNKNOWN
+Description: # python_fisco
+        
+        Fisco API wrapper for Python 3.
+        
+        Inspired by this wrapper written by 'zaifapi'.
+         
+        ## Install latest release:
+        
+        ```bash
+        pip install python-fisco
+        ```
+        
+        ## Usage:
+        
+        ```python
+        import python_fisco
+        ```
+        
+        ### パブリックAPI
+        
+        ```python
+        ```
+        
+        ### プライベートAPI
+        
+        ```python
+        ```
+        
+        
+        ## パラメーターの詳細
+        
+        https://fcce.jp/api-docs
+        
+Keywords: trading,bitcoin,japan,API,exchange
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

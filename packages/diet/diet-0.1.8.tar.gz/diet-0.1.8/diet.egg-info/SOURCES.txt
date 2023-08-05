@@ -1,0 +1,17 @@
+README.md
+setup.py
+diet/__init__.py
+diet/__main__.py
+diet/client_factory.py
+diet/configuration.py
+diet/diet.py
+diet.egg-info/PKG-INFO
+diet.egg-info/SOURCES.txt
+diet.egg-info/dependency_links.txt
+diet.egg-info/entry_points.txt
+diet.egg-info/requires.txt
+diet.egg-info/top_level.txt
+diet/dash_import/__init__.py
+diet/dash_import/import_factory.py
+diet/dash_import/user.py
+diet/dash_import/user_org.py

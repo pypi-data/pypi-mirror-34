@@ -1,0 +1,12 @@
+README.md
+setup.py
+mypassman.egg-info/PKG-INFO
+mypassman.egg-info/SOURCES.txt
+mypassman.egg-info/dependency_links.txt
+mypassman.egg-info/entry_points.txt
+mypassman.egg-info/top_level.txt
+passman/__init__.py
+passman/__main__.py
+passman/helpers.py
+passman/models.py
+passman/passman.py

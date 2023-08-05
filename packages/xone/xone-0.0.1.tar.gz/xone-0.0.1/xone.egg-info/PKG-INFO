@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xone
+Version: 0.0.1
+Summary: financial data analysis utilities
+Home-page: https://github.com/alpha-xone/xone
+Author: Alpha
+License: Apache 2
+Description: # xone
+        Frequently used functions for financial data analysis
+        
+Keywords: time series analysis utilities
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: all

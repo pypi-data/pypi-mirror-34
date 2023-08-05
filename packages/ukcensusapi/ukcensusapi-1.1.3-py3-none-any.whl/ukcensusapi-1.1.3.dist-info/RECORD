@@ -1,0 +1,15 @@
+README.md,sha256=ws8SStXH8D1esmexbshN08Z6-drQZCvB0tuo5dC77sg,19579
+data/laMapping.csv,sha256=iPPEjUAG6HL2u0RjEEYXR4rqVzwlJEdQzT4KwFrV6_s,33273
+ukcensusapi/NISRA.py,sha256=JuiIfdevgrN3sy0X3gurHAjV2-_mVvGKIaZ2U-9b9RU,9659
+ukcensusapi/NRScotland.py,sha256=qO4xUEAQXNSwCm6E3LIPaq_x8NOSSXeUKTnGzr3iRTM,8748
+ukcensusapi/Nomisweb.py,sha256=rtyyAeWGZxRQrUFYJBgAvfoVQGuwutGJ5CYAFTa1eYQ,15215
+ukcensusapi/NomiswebApi.py,sha256=8y5DdXoJfpjAhP1AAniT03BccOSpaAhcNVp39hoT8M0,5798
+ukcensusapi/Query.py,sha256=EfaAAeOxKyMAjcGSwSG8l4f-AQLfJYQ8-JZvzlzJRNQ,6031
+ukcensusapi/__init__.py,sha256=5BHACQXovbBtH10j5E8JM5bxz-71-B2_-YWfbp3IBC8,23
+ukcensusapi/utils.py,sha256=6R8gLpvzotMuqHEG3ZzmJyawM-BzRlqZxmHqCPlzgJA,779
+ukcensusapi-1.1.3.dist-info/DESCRIPTION.rst,sha256=_kRX4F8vDokJg4WemOyJu9H_b3FWaabcFcQVEypElLQ,19678
+ukcensusapi-1.1.3.dist-info/METADATA,sha256=RuDMnTvSS6SNyvb1zSI979y8PNNoXIBhvwzPQtO_Usw,20175
+ukcensusapi-1.1.3.dist-info/RECORD,,
+ukcensusapi-1.1.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ukcensusapi-1.1.3.dist-info/metadata.json,sha256=vS4SIALoLw4_u6XqxEYCtE3v9ZpxA072YIKzeY3ypYM,711
+ukcensusapi-1.1.3.dist-info/top_level.txt,sha256=9yyX5fxaOoh9PpsEqKHzmaB10FneWI50oqKlYDDbLv0,12

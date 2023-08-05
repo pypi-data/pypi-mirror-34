@@ -1,0 +1,8 @@
+pandas
+numpy
+xdoctest
+scipy
+matplotlib
+pytest
+
+[all]

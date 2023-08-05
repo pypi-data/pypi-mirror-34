@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: PyGPD3303S
+Version: 2.0.0
+Summary: Python Interface for DC power supply GPD-3303S
+Home-page: https://github.com/akira-okumura/PyGPD3303S
+Author: Akira Okumura
+Author-email: oxon@mac.com
+License: BSD License
+Description: This is an interface module for DC Power Supply GPD-3303S manufactured by Good
+        Will Instrument Co., Ltd.
+Platform: MacOS :: MacOS X
+Platform: POSIX
+Platform: Windows
+Classifier: Topic :: Terminals :: Serial
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: lemma_tokenizer
+Version: 0.0.3
+Summary: lemma tokenizer class
+Home-page: https://github.com/kcirtap2014/LemmaTokenizer
+Author: Patrick lee
+Author-email: lee.patrickmunseng@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: Linux
+Platform: MacOSX
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent

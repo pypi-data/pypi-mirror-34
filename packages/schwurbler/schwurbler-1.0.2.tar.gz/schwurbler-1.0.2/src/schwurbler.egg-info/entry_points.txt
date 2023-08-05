@@ -1,0 +1,3 @@
+[console_scripts]
+schwurbel = schwurbler.schwurbler:cli
+

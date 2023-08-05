@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: simple-tensorflow-serving
+Version: 0.4.7
+Summary: The simpler and easy-to-use serving service for TensorFlow models
+Home-page: https://github.com/tobegit3hub/simple_tensorflow_serving
+Author: tobe
+Author-email: tobeg3oogle@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: flask
+Requires-Dist: jinja2
+Requires-Dist: pillow
+Requires-Dist: flask-cors
+Requires-Dist: requests
+
+UNKNOWN
+
+

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lycee
+Version: 2.5.22
+Summary: Un ensemble de fonctions pour utiliser facilement Python au lycée.
+Home-page: http://edupython.tuxfamily.org/
+Author: Vincent MAILLE
+Author-email: vincent.maille@ac-amiens.fr
+License: UNKNOWN
+Description: # Module Lycee d'Edupython : http://edupython.tuxfamily.org/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CeCILL-B Free Software License Agreement (CECILL-B)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

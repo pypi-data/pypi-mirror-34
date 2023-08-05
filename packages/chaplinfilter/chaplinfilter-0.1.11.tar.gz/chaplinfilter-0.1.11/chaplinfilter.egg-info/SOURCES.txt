@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+chaplinfilter/__init__.py
+chaplinfilter/filter.py
+chaplinfilter/version.py
+chaplinfilter.egg-info/PKG-INFO
+chaplinfilter.egg-info/SOURCES.txt
+chaplinfilter.egg-info/dependency_links.txt
+chaplinfilter.egg-info/requires.txt
+chaplinfilter.egg-info/top_level.txt
+chaplinfilter/data/jitterdata_box4.txt

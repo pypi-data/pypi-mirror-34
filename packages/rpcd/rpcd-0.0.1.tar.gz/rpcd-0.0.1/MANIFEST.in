@@ -1,0 +1,2 @@
+include *.ico *.in *.ui 
+recursive-include rpcdb/*.ico

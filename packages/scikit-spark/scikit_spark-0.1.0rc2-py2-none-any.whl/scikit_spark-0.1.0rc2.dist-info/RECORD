@@ -1,0 +1,15 @@
+python/skspark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python/skspark/model_selection.py,sha256=zc3yY09YsirjzuKN4eXrm0W6Bt-djs0u_Cqisj7BTJ8,27470
+python/skspark/spark_base_search_cv.py,sha256=Yl06i3PkI6iryPeX4Z8ZUY9XDhU7j_VlTOlfd-NwbWo,13739
+scikit_spark-0.1.0rc2.dist-info/METADATA,sha256=-6JwZF5Xj8CRjm7NdwaagNKZMip7y65QtKXgBEqh5c8,2899
+scikit_spark-0.1.0rc2.dist-info/RECORD,,
+scikit_spark-0.1.0rc2.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+scikit_spark-0.1.0rc2.dist-info/top_level.txt,sha256=RZ56EoSG2RPVoesJmy0D_x8Rwd32_QcAYXq53r5CsuU,14
+skspark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skspark/model_selection.py,sha256=zc3yY09YsirjzuKN4eXrm0W6Bt-djs0u_Cqisj7BTJ8,27470
+skspark/spark_base_search_cv.py,sha256=Yl06i3PkI6iryPeX4Z8ZUY9XDhU7j_VlTOlfd-NwbWo,13739
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pyspark_test.py,sha256=Da_c0Io9WoxKUEqN8Ejz42x7Ab8ZOjMyE4-xNMmgIJM,785
+tests/test_direct_comparison.py,sha256=StdMExDpQVujtOWpHYfvoHQMPhnbfXKoOL1k51LBuoQ,1624
+tests/test_model_selection.py,sha256=iRFinU7-fcX3e3_Yn6ztpGevdum2qx48vggkKb388Dw,3449
+tests/test_specific_regression_tests.py,sha256=-tcjExjCZQlgISDlmMclhf3_TN9XjHcb2Il2OuqyebY,9940

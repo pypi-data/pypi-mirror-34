@@ -1,0 +1,35 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Use released bindep
+* Put tmpdir chown into a try/finally
+* Add support for supplying alpine mirror url
+* Plumb in pypi mirror config from build host
+* Add image debug print at the end of the job
+* Add job to build container images of zuul
+* Remove some left over debug logging
+* Actually tag the actual images we make
+* Add prefix support to pbrx-build-container-images
+* Fix the alpine build
+* Clean up job run playbook
+* Install bindep from git source
+* Add job for using pbrx to build container images
+* Switch from python:slim to python:alpine
+* Add test for no arguments
+* Handle no arguments
+* Remove python2
+* Bump min version in tox.ini to 3.1.1
+* Move basepython to testenv section
+* Add \_\_init\_\_.py file for pbrx/cmd
+* Add more logging
+* Use compile profile instead of build profile
+* Rename build-containers to build-images
+* Add zuul jobs for gating
+* fix tox python3 overrides
+* Add support for building container images from pbr source
+* Add install-siblings command
+* Add basic command line utility
+* Initial Cookiecutter Commit

@@ -1,0 +1,37 @@
+- job:
+    name: pbrx-build-container-images
+    nodeset: ubuntu-bionic
+    required-projects:
+      - openstack/pbrx
+    pre-run: playbooks/container-images/pre.yaml
+    run: playbooks/container-images/run.yaml
+
+- job:
+    name: pbrx-build-zuul-containers
+    parent: pbrx-build-container-images
+    required-projects:
+      - openstack-infra/zuul
+    vars:
+      zuul_work_dir: src/git.openstack.org/openstack-infra/zuul
+
+- project:
+    check:
+      jobs:
+        - tox-pep8
+        - tox-py35
+        - tox-py36:
+            nodeset: ubuntu-bionic
+        - build-sphinx-docs:
+            vars:
+              sphinx_python: python3
+        - pbrx-build-zuul-containers
+    gate:
+      jobs:
+        - tox-pep8
+        - tox-py35
+        - tox-py36:
+            nodeset: ubuntu-bionic
+        - build-sphinx-docs:
+            vars:
+              sphinx_python: python3
+        - pbrx-build-zuul-containers

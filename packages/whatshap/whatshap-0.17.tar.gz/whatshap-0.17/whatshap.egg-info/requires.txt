@@ -1,0 +1,11 @@
+pysam>=0.14.0
+PyVCF
+pyfaidx
+xopen
+networkx
+
+[dev]
+Cython
+pytest
+sphinx
+sphinx_issues

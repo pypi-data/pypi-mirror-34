@@ -1,0 +1,13 @@
+README.md
+server.py
+setup.cfg
+setup.py
+nbgrader_server.egg-info/PKG-INFO
+nbgrader_server.egg-info/SOURCES.txt
+nbgrader_server.egg-info/dependency_links.txt
+nbgrader_server.egg-info/requires.txt
+nbgrader_server.egg-info/top_level.txt
+nbgraderapi/__init__.py
+nbgraderapi/assignment.py
+nbgraderapi/auth.py
+nbgraderapi/handlers.py

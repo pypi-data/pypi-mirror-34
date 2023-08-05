@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: nbgrader-server
+Version: 0.1
+Summary: API server for nbgrader
+Home-page: https://github.com/kidig/nbgrader-server
+Author: Dmitry Gerasimenko
+Author-email: kiddima@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: jupyter-notebook,nbgrader,tornado
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha

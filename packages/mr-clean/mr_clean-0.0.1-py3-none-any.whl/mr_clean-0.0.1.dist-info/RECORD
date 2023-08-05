@@ -1,0 +1,14 @@
+mr_clean/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+mr_clean/cleaner.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+mr_clean/mc_checks.py,sha256=V78bbtIPtHIALro2ZIWkFech2Uv8qASm5ZaYCgnYzK8,1495
+mr_clean/mc_funcs.py,sha256=sEdBDPxMTh96ym8Ln-eaNqH5ZqMwAfmdvEUJ1UGhus0,6504
+mr_clean/mc_io.py,sha256=9Jngws9LI2x7GkV6AC_GOSSsRx3l7HUNc-vt19zMRqc,2380
+mr_clean/mc_stats.py,sha256=SJMvDod4uRMU0yDpYyaJXupRxKGz3WYIG2tQN8KB8wE,3028
+mr_clean/mc_utils.py,sha256=fjLKGwtn83V3WFMx7y0ufESfhFeJb8gE0SkpSuFOC4o,1180
+mr_clean/mr_clean.py,sha256=Sz29XY-JuswfYYLXuumMtiMZUt2pGcri2Q0KfQ0dVKs,413
+mr_clean/old_funcs.py,sha256=iuQlQ3PIc8iMw6xPExbTw58Tww-y85oIj3XDVtAeMgI,2281
+mr_clean/pre_clean.py,sha256=cHMJbD5ZfG7xudx74t_qUZnQe5fgfRsi2l-K_5hx-84,3439
+mr_clean-0.0.1.dist-info/METADATA,sha256=V7618zZZXHOeVyABbANegsjoocBpIemvtai29nvFBkg,559
+mr_clean-0.0.1.dist-info/RECORD,,
+mr_clean-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+mr_clean-0.0.1.dist-info/top_level.txt,sha256=x9OIjergllDlYm14EG2KJzW9jcLzZpc7ulZeDJsZVxs,9

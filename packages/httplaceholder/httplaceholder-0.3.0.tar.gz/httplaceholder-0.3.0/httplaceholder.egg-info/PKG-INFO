@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: httplaceholder
+Version: 0.3.0
+Summary: httplaceholder
+Home-page: https://github.com/dukeofharen/httplaceholder_python
+Author: Duco
+Author-email: mail@ducode.org
+License: UNKNOWN
+Description: A Python library used for communicating with the HttPlaceholder REST API.
+Keywords: Swagger,httplaceholder
+Platform: UNKNOWN

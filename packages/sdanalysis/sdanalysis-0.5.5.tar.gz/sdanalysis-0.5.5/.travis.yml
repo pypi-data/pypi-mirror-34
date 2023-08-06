@@ -1,0 +1,19 @@
+language: python
+
+cache: pip
+
+os: linux
+python: 3.6
+services: docker
+
+install:
+  - make setup
+
+script:
+  - make test
+
+deploy:
+  - provider: script
+    script: make deploy
+    on:
+      tags: true

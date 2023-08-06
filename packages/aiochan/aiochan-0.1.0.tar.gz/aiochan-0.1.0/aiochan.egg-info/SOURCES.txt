@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+aiochan/__init__.py
+aiochan/impl.py
+aiochan.egg-info/PKG-INFO
+aiochan.egg-info/SOURCES.txt
+aiochan.egg-info/dependency_links.txt
+aiochan.egg-info/top_level.txt

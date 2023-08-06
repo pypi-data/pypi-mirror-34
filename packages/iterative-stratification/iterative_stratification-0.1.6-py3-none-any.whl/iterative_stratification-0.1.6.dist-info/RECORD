@@ -1,0 +1,10 @@
+iterative_stratification-0.1.6.dist-info/DESCRIPTION.rst,sha256=SQpXPoqL-4rfGxbz_7fRUVrgQmmq4EHluQ_wMgaGXLc,552
+iterative_stratification-0.1.6.dist-info/METADATA,sha256=RHfBznvZakQ0I7jHUbSSIzRzCxrGJHzI6mlRLCOD9P8,1286
+iterative_stratification-0.1.6.dist-info/RECORD,,
+iterative_stratification-0.1.6.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+iterative_stratification-0.1.6.dist-info/metadata.json,sha256=sViXMROU7h06mU51rfT-HNugunTjgBJ0peDSU1F6otI,914
+iterative_stratification-0.1.6.dist-info/top_level.txt,sha256=7VIaMK0-y8kqLsNDo9CEz5IyIRKnTJUEYEz-7GTnVrI,16
+iterstrat/__init__.py,sha256=StvB5RPxd_USsbsP8HU_b9tWp_yE2EBo1R8lO8GDy-s,609
+iterstrat/ml_stratifiers.py,sha256=5dWw2Z3IwWyZe5F7SOINmeJwT6JkR7MBZbMy7gEi_KE,16930
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ml_stratifiers.py,sha256=FyRAIjkDzdYJYRM_HYi2ZcgdKXHelYA9GtChU1E6kKI,1392

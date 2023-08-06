@@ -1,0 +1,12 @@
+ai_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_tools/draw.py,sha256=HBr9agWfa2o7OpMLu9HL6BicmOjIVYi_o5rmsc9-ycI,12384
+ai_tools/save2server.py,sha256=KigY-RSpB7IP7HwKCH9hxBVDDtuZxHrJjGk1UlKVdnA,578
+ai_tools-0.0.7.data/data/my_data/datafile,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_tools-0.0.7.dist-info/DESCRIPTION.rst,sha256=ADk7HSeE8viqxtAy0TylKOLQP6wx58V6SXpV1z3ByC8,1050
+ai_tools-0.0.7.dist-info/METADATA,sha256=lflWZesSx5aUSXh3YlCMsgfo71ISffuyLxC5vsBZeXE,1419
+ai_tools-0.0.7.dist-info/RECORD,,
+ai_tools-0.0.7.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+ai_tools-0.0.7.dist-info/entry_points.txt,sha256=lexK7RzT1xMyCvalZCkEXUV_pXjWKxyNU2NGRfSYmuo,40
+ai_tools-0.0.7.dist-info/metadata.json,sha256=KTdBLp03xynCqNhNf0RQJZeBEsuZkrb-ZWNeeObstKc,725
+ai_tools-0.0.7.dist-info/top_level.txt,sha256=oy4p1s1fIbwYpsFm6y42jR1pXUdaQFaLOWqN7ihEsng,17
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

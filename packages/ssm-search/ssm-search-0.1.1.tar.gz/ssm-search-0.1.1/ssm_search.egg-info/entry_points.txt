@@ -1,0 +1,3 @@
+[console_scripts]
+ssm-search = ssm_search.ssm_search:main
+

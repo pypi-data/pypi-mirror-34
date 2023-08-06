@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sample.py,sha256=MtVTQ3Sg0Aix6BEH2dzKxT1xoBjSpXxyqD-9aRVmrss,98
+tspy/__init__.py,sha256=_JHEvvKyBXuLvMr6LsDtA49GBvVIZcC-QwdOcwqm5qM,195
+tspy/tsp.py,sha256=2h5ptnbVzqAc3lPVo47-RurhISNAfkWFiNpQMRgih6Q,3629
+tspy/lower_bounds/__init__.py,sha256=yQN44gAv3apF_i-Pqb4-KD_XlimiDur-6LNjfco-Jbs,227
+tspy/lower_bounds/held_karp.py,sha256=9fjTOWoIa00hTSJj28B7KOhLuRN4lvpX88Cdd-oKZ10,1597
+tspy/lower_bounds/lp.py,sha256=JW98tKm_Al2IUbtFZbAe8-8okJqrOU5L5sDkOEq2mN4,4617
+tspy/lower_bounds/utils.py,sha256=L-w0xW0hA_EOczeAma-Fms6Tukgszt57r5EwmoMonnw,126
+tspy/solvers/__init__.py,sha256=jkRyPoJfQnDguY4PFNnjbYHz2qkx_gYPkkTOYkbhwmY,116
+tspy/solvers/nearest_neighbor.py,sha256=Jfx2Rdxzp4zG8cawd9u8lsF8EVxavIkTK3MMafrsZaw,1985
+tspy/solvers/twoopt.py,sha256=00_rCtK1LfaTfHCQ6I0N4sweG0Z4xi0wRKdjz13JixU,1559
+tspy/solvers/utils.py,sha256=L-w0xW0hA_EOczeAma-Fms6Tukgszt57r5EwmoMonnw,126
+tspy-0.1.1.1.dist-info/METADATA,sha256=lLA8vSyyBbo9ylXkPVatSLPE_wuGt8XqPfZ9dUgAw-M,3450
+tspy-0.1.1.1.dist-info/RECORD,,
+tspy-0.1.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tspy-0.1.1.1.dist-info/top_level.txt,sha256=Xq9WwCyLXTMgmZ42CZt5qmRCgZWtZX_gGeLijgETcYg,11

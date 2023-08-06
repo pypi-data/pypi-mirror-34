@@ -1,0 +1,6 @@
+[console_scripts]
+carbon-slack-init = carbon_slack.command:init
+carbon-slack-recv = carbon_slack.command:recv
+carbon-slack-relay = carbon_slack.command:relay
+carbon-slack-send = carbon_slack.command:send
+

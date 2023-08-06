@@ -1,0 +1,10 @@
+deepspeech/__init__.py,sha256=UNuzo3pM-Ec9IeJ3pi2Z0bAqjkesvmAHwyhZYFO2Ask,1670
+deepspeech/_impl.so,sha256=APKRZBbjdzm8tItznis6OVnZ35C2FGLidvziV-abCc8,58800
+deepspeech/client.py,sha256=NaG4gEiP3mQ5EELcRrwpRbXqBv_8IENTsnBDVVPCRKk,4046
+deepspeech/impl.py,sha256=-LedMSJdTM-ltjWCMstcMsjdE9sR3dVLxxhHbg7w3_c,4408
+deepspeech/lib/libdeepspeech.so,sha256=dz2GtIOZCz0tyvQcIkq2Cz8WzWVP7wJd_vgUQ5pQuvw,75989968
+deepspeech-0.2.0a9.dist-info/METADATA,sha256=c-1xfu8i_OEZqT4Rc1GkEJlKQ2Tvszqq_QEi9idBOFA,23463
+deepspeech-0.2.0a9.dist-info/RECORD,,
+deepspeech-0.2.0a9.dist-info/WHEEL,sha256=v0hxDPntQoqIr0EnaA9mz8PecfhBD-DNh4Ma0awUNAQ,111
+deepspeech-0.2.0a9.dist-info/entry_points.txt,sha256=2LA7LnK4cLU3QjZZzstFv-c9Uehkm1AN1-SgBs2Syf4,55
+deepspeech-0.2.0a9.dist-info/top_level.txt,sha256=B30ih_hZ1TGIRlPsXwDZMBh1XVkFt8cA0T5s3POEE9Q,11

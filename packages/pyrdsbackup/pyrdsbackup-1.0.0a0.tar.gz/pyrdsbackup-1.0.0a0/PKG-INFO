@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyrdsbackup
+Version: 1.0.0a0
+Summary: Simplify RDS Backups to S3
+Home-page: https://github.com/darmagedon/pyrds-backup.git
+Author: Sparsha Dotel
+Author-email: sparshadotel@gmail.com
+License: UNKNOWN
+Description: # pyrds-backup
+Keywords: cli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

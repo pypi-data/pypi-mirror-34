@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CryptoZero
+Version: 0.1.0a2
+Summary: Make it easy for learning groups to use simple cryptographic techniques in python
+Home-page: UNKNOWN
+Author: Anthony King
+Author-email: anthonydking@gmail.com
+License: MIT License
+Project-URL: Source Code, https://github.com/py-zero/cryptozero
+Project-URL: Bug Tracker, https://github.com/py-zero/cryptozero/issues
+Description: README.md
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Education
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

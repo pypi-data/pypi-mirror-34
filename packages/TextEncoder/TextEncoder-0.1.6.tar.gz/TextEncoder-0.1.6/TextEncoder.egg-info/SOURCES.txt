@@ -1,0 +1,9 @@
+README.md
+setup.py
+TextEncoder/__init__.py
+TextEncoder/transformer.py
+TextEncoder.egg-info/PKG-INFO
+TextEncoder.egg-info/SOURCES.txt
+TextEncoder.egg-info/dependency_links.txt
+TextEncoder.egg-info/requires.txt
+TextEncoder.egg-info/top_level.txt

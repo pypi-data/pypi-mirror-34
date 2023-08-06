@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: teradatasql
+Version: 16.20.0.9
+Summary: Teradata SQL Driver for Python
+Home-page: http://www.teradata.com/
+Author: Teradata Corporation
+Author-email: teradatasql@teradata.com
+License: Teradata License Agreement
+Keywords: Teradata
+Platform: Windows
+Platform: MacOS X
+Platform: Linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Database :: Front-Ends
+Classifier: License :: Other/Proprietary License
+Description-Content-Type: text/markdown
+
+## Teradata SQL Driver for Python
+
+This module enables Python applications to connect to the Teradata Database, and interoperates with Teradata Database 12.0 and later releases.
+
+This module implements the [PEP-249 Python Database API Specification 2.0](https://www.python.org/dev/peps/pep-0249/).
+
+This module requires Python 3.x, and runs on Windows, macOS, and Linux.
+
+Copyright 2018 Teradata. All Rights Reserved.
+
+

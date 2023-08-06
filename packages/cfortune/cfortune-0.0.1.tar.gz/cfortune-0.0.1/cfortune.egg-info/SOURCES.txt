@@ -1,0 +1,10 @@
+README.md
+setup.py
+cfortune/__init__.py
+cfortune/__main__.py
+cfortune/cfortune.py
+cfortune.egg-info/PKG-INFO
+cfortune.egg-info/SOURCES.txt
+cfortune.egg-info/dependency_links.txt
+cfortune.egg-info/entry_points.txt
+cfortune.egg-info/top_level.txt

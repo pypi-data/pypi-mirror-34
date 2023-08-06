@@ -1,0 +1,9 @@
+jsontransform.py,sha256=LmfBsO6pqI6n262x6G7vZERf_SqFbtLlpzoeRD-MvPY,13784
+json_transform-0.1.5.dist-info/METADATA,sha256=67i80us59O0SjWwWhWyX0NBSRoTJIqDx77EeiAmHiS4,2738
+json_transform-0.1.5.dist-info/RECORD,,
+json_transform-0.1.5.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+json_transform-0.1.5.dist-info/top_level.txt,sha256=0bUCtdTGIpDPkpfffaAfZcwePA8n7D7ntlKLVnoxZU8,14
+tests/__init__.py,sha256=ZpOaA5rNEcVYvFs5P6LmTW9w_oDlz9l3b9zT2od0oGE,111
+tests/datastructure.py,sha256=eRej779aqW1Pp1nDy2GXNcgDqncPek8toPnyEUd7Q3s,8467
+tests/deserialization.py,sha256=tA6WevyncZsuDoUIGlU6B4ArHr7h0oX7osJG6owgMSs,9520
+tests/serialization.py,sha256=dRr_FRU83VOLerAwMZIl7553xfD7xT4uH4CHop8VKxI,15495

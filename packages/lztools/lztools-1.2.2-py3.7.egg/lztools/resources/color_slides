@@ -1,0 +1,3 @@
+#!/bin/bash
+
+while [[ 1 ]];do asciiart $(python prand-photo.py) --width 200 | lolcat -a --speed 1000; done

@@ -1,0 +1,65 @@
+# ▂▃▅▇█▓▒░LAZ░▒▓█▇▅▃▂
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> ALIAS START <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+#alias reboot='systemctl reboot'
+#alias poweroff='sudo poweroff'
+alias cp='cp -rv'
+alias mv='mv -v'
+alias rm='rm -v'
+alias cc='clear'
+alias echo='echo -e'
+alias ll='ls -AlhF'
+alias ee='exit'
+alias poweroff='systemctl poweroff'
+alias reboot='systemctl reboot'
+alias suspend='systemctl suspend'
+alias hibernate='systemctl hibernate'
+alias hybrid-sleep='systemctl hybrid-sleep'
+alias gg1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias gg2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias gg3="git log --all --decorate --oneline --graph"
+alias docker="sudo docker"
+alias python3='python3.7'
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> ALIAS END <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> VARIABLES START <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+branch='$(lgit branch)'
+ip="192.168.87.106"
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> VARIABLES END <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> EXPORT START <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+export mserv=$ip
+export MediaServer=$ip
+export BROWSER=lynx
+#export PS1="\[$(tput setaf 7)\]$branch\[$(tput bold)\]\[$(tput setaf 1)\]\u@\h \[$(tput setaf 2)\]\d \[$(tput setaf 4)\]\A \[$(tput setaf 6)\]\# \[$(tput setaf 5)\]\!  \[$(tput setaf 3)\]\w\[$(tput setaf 7)\]\$> \[$(tput sgr0)\]"
+export PS1="\[$(tput setaf 7)\]$branch\[$(tput bold)\]\[$(tput setaf 1)\]\u@\h \[$(tput setaf 2)\]\d \[$(tput setaf 4)\]\A \[$(tput setaf 6)\]\# \[$(tput setaf 5)\]\!  \[$(tput setaf 3)\]\w\[$(tput setaf 7)\]\n\\$> \[$(tput sgr0)\]"
+#export WORKON_HOME=$HOME/.virtualenvs
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.7
+#source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> EXPORT END <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> OTHER START <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙
+
+shopt -s extdebug
+function auto_source_names {
+    local CMD="$BASH_COMMAND"
+    if [[ "$CMD" == dev-init* ]];then
+        #w=$(lwhere dev-init)
+        echo "Autosourcing"
+        eval ". $CMD"
+    elif [[ "$CMD" == pedit || "$CMD" == *"/pedit" ]];then
+        echo "Autosourcing"
+        eval ". $CMD"
+    fi
+}
+trap 'auto_source_names' DEBUG
+
+eval "$(_LZTOOLS_COMPLETE=source lztools)"
+
+# ∙∙∙∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ☼)===> OTHER END <===(☼ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙∙∙∙

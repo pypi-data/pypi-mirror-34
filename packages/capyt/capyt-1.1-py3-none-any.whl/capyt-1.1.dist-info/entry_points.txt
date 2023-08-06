@@ -1,0 +1,3 @@
+[console_scripts]
+capyt = capyt.capyt:main
+

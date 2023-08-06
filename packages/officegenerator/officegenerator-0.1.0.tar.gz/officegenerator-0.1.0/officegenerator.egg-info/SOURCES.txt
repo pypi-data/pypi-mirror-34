@@ -1,0 +1,13 @@
+GPL-3.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+officegenerator/__init__.py
+officegenerator/libodfgenerator.py
+officegenerator/libxlsxgenerator.py
+officegenerator.egg-info/PKG-INFO
+officegenerator.egg-info/SOURCES.txt
+officegenerator.egg-info/dependency_links.txt
+officegenerator.egg-info/not-zip-safe
+officegenerator.egg-info/top_level.txt

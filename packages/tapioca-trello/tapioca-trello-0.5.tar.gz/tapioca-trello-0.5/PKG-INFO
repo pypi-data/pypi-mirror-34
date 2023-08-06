@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: tapioca-trello
+Version: 0.5
+Summary: trello API wrapper using tapioca
+Home-page: https://github.com/humrochagf/tapioca-trello
+Author: Humberto Rocha
+Author-email: humrochagf@gmail.com
+License: MIT
+Description: # Tapioca trello
+        
+        ![PyPI](https://img.shields.io/pypi/v/tapioca_trello.svg)
+        ![PyPI - License](https://img.shields.io/pypi/l/tapioca_trello.svg)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tapioca_trello.svg)
+        
+        ## Installation
+        
+        ```
+        pip install tapioca-trello
+        ```
+        
+        ## Documentation
+        
+        ``` python
+        from tapioca_trello import Trello
+        
+        api = Trello(
+            key='{your-api-token}',
+            token='{your-api-token}',
+        )
+        
+        ```
+        
+        - Get trello `key` and `token` [here](https://trello.com/app-key)
+        - Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/stable/quickstart.html)
+        - Explore this package using iPython
+        - Have fun!
+        
+Keywords: trello api web tapioca
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

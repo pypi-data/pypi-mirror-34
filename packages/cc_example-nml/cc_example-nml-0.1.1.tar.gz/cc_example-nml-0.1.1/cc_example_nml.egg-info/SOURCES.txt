@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+cc_example/__init__.py
+cc_example/_version.py
+cc_example/cc_example.py
+cc_example/data/look_and_say.dat
+cc_example/tests/__init__.py
+cc_example/tests/test_cc_example.py
+cc_example_nml.egg-info/PKG-INFO
+cc_example_nml.egg-info/SOURCES.txt
+cc_example_nml.egg-info/dependency_links.txt
+cc_example_nml.egg-info/top_level.txt

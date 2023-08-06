@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+# chmod +x "file name"
+import getpass
+# Must take out all the uncommented one's soon
+
+from cliparser.updatecheck import checkforupdate
+from cliparser.parser import runparser
+from cliparser.security import gettoken, tradeoff
+
+
+#from cliparser.updatecheck import checkforupdate
+
+
+
+if __name__ == "__main__":
+    # Resource owner's credentials
+    username = input('Username: ')
+    password = getpass.getpass('Passcode: ')
+    checkforupdate()
+    runparser(username)
+    token = gettoken(username, password)
+    tradeoff(username, token)
+
+
+

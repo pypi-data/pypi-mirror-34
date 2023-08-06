@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: redis-relay
+Version: 0.0.1
+Summary: redis relay for interprocess communication
+Home-page: https://github.com/guyingbo/redis-relay
+License: UNKNOWN
+Keywords: aioredis pubsub
+Author: Yingbo Gu
+Author-email: tensiongyb@gmail.com
+Maintainer: Yingbo Gu
+Maintainer-email: tensiongyb@gmail.com
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: aioredis
+
+# redis-relay
+
+[![Build Status](https://travis-ci.org/guyingbo/redis-relay.svg?branch=master)](https://travis-ci.org/guyingbo/redis-relay)
+[![Python Version](https://img.shields.io/pypi/pyversions/redis-relay.svg)](https://pypi.python.org/pypi/redis-relay)
+[![Version](https://img.shields.io/pypi/v/redis-relay.svg)](https://pypi.python.org/pypi/redis-relay)
+[![Format](https://img.shields.io/pypi/format/redis-relay.svg)](https://pypi.python.org/pypi/redis-relay)
+[![License](https://img.shields.io/pypi/l/redis-relay.svg)](https://pypi.python.org/pypi/redis-relay)
+[![codecov](https://codecov.io/gh/guyingbo/redis-relay/branch/master/graph/badge.svg)](https://codecov.io/gh/guyingbo/redis-relay)
+
+redis relay for interprocess communication
+

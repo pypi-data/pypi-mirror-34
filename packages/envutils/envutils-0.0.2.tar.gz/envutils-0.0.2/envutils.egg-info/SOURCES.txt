@@ -1,0 +1,10 @@
+README.md
+setup.py
+envutils/__init__.py
+envutils/envutils.py
+envutils.egg-info/PKG-INFO
+envutils.egg-info/SOURCES.txt
+envutils.egg-info/dependency_links.txt
+envutils.egg-info/top_level.txt
+envutils/tests/__init__.py
+envutils/tests/test_envutils.py

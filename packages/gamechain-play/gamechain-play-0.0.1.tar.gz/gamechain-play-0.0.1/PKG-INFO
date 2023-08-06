@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gamechain-play
+Version: 0.0.1
+Summary: Play, record, and watch games on the BCH blockchain
+Home-page: https://github.com/devalbo/gamechain-play
+Author: Albert Boehmler
+Author-email: ajboehmler@gmail.com
+License: UNKNOWN
+Description: # gamechain-play
+        Test ground for individual gamechain prototypes and implementations.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: CITE-seq-Count
+Version: 1.2
+Summary: A small python package that deals with counting CITE seq or hashing data for single cell
+Home-page: https://github.com/Hoohm/CITE-seq-Count/
+Author: Roelli Patrick
+Author-email: patrick.roelli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: regex (>=2018.07.11)
+Requires-Dist: python-levenshtein (>=0.12.0)
+Requires-Dist: pandas (>=0.23.3)
+
+UNKNOWN
+
+

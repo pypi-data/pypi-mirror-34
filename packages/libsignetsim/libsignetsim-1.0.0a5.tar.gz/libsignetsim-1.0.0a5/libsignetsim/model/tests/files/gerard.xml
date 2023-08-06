@@ -1,0 +1,3019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model name="Gerard 2009 with DNA Damage" substanceUnits="micromoles" timeUnits="hour" extentUnits="micromoles" conversionFactor="eps">
+    <listOfUnitDefinitions>
+      <unitDefinition id="per_micromolar" name="per_micromolar">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+          <unit kind="mole" exponent="-1" scale="-6" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="nanomolar" name="nanomolar">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-9" multiplier="1"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="hour" name="hour">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="micromolar" name="micromolar">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-6" multiplier="1"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="micromolar_per_hour" name="micromolar/hour">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-6" multiplier="1"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="nanomolar_per_hour" name="nanomolar/hour">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-9" multiplier="1"/>
+          <unit kind="litre" exponent="-1" scale="1" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="1" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="nanomoles" name="nanomoles">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-9" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="micromoles" name="micromoles">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-6" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="dimension_less" name="Dimensionless">
+        <listOfUnits>
+          <unit kind="dimensionless" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_hour" name="per hour">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_micromolar_per_hour" name="per micromolar per hour">
+        <listOfUnits>
+          <unit kind="mole" exponent="-1" scale="-6" multiplier="1"/>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="L" name="Litre">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="umol_per_hour" name="Micromoles per hour">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-6" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="compartment_0" name="Compartment 0" spatialDimensions="3" size="1" units="L" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">cell</body>
+        </notes>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="Wee1" compartment="compartment_0" initialConcentration="0.1" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Ce" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cd" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mdp27" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cb" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Ca" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pRBp" compartment="compartment_0" initialConcentration="0.25" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="AP1" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pRB" compartment="compartment_0" initialConcentration="1" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mei" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mep27" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mdi" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E2Fp" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Wee1p" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mbi" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E2F" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mai" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pRBc2" compartment="compartment_0" initialConcentration="0.05" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pRBc1" compartment="compartment_0" initialConcentration="0.1" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pei" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Skp2" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="p27" compartment="compartment_0" initialConcentration="0.25" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdc20i" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdc20a" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pe" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pb" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pa" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pbi" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Map27" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pai" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Me" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Md" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mb" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Ma" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="p27p" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Mbp27" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdh1i" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdh1a" compartment="compartment_0" initialConcentration="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pRBpp" compartment="compartment_0" initialConcentration="0.1" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="GF" name="Growth factor" compartment="compartment_0" initialAmount="0" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="cdk4" name="Cdk4-6" compartment="compartment_0" initialAmount="1.47" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">Originally reduced thanks to the conservation law : Cd4k + Md + Mdi + Mdp27 = Cdk4_tot
+So Cdk4 = Cdktot - Md - Mdi - Mdp27 = 1.5-0.03 = 1.47</body>
+        </notes>
+      </species>
+      <species id="cdk2" name="Cdk-2" compartment="compartment_0" initialAmount="1.94" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Chk1" name="Kinase Chk1" compartment="compartment_0" initialAmount="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="cdk1" name="Cdk1 kinase" compartment="compartment_0" initialAmount="0.47" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Md_all" name="All actives Cyclin D/Cdk4-6" compartment="compartment_0" initialAmount="0" substanceUnits="nanomoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ATR" name="Kinase ATR" compartment="compartment_0" initialAmount="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Cdc45" name="DNA anchor factor " compartment="compartment_0" initialAmount="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pol" name="DNA polymerase alpha" compartment="compartment_0" initialAmount="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Primer" name="RNA Primer" compartment="compartment_0" initialAmount="0.01" substanceUnits="micromoles" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="eps" name="Scaling factor used to modify the time scale" value="17" units="dimension_less" constant="true"/>
+      <parameter id="K_agf" name="Michaelis constant for synthesis of AP1 induced by growth factor GF" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="k_dap1" name="Apparent first-order rate constant for AP1 transcription factor degradation" value="0.15" units="per_hour" constant="true"/>
+      <parameter id="v_sap1" name="Rate of synthesis of the transcription factor AP1 depending on growth factor GF" value="1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="k_de2f" name="Apparent first-order rate constant for non-specific E2F degradation" value="0.002" units="per_hour" constant="true"/>
+      <parameter id="k_de2fp" name="Apparent first-order rate constant for E2Fp degradation" value="1.1" units="per_hour" constant="true"/>
+      <parameter id="k_dprb" name="Apparent first-order rate constant for pRB degradation" value="0.01" units="per_hour" constant="true"/>
+      <parameter id="k_dprbp" name="Apparent first-order rate constant for pRBp degradation" value="0.06" units="per_hour" constant="true"/>
+      <parameter id="k_dprbpp" name="Apparent first-order rate constant for pRBpp degradation" value="0.04" units="per_hour" constant="true"/>
+      <parameter id="k_pc1" name="Bimolecular rate constant for binding of pRB to E2F" value="0.05" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_pc2" name="Rate constant for dissociation of complex between pRB and E2F" value="0.5" units="per_hour" constant="true"/>
+      <parameter id="k_pc3" name="Bimolecular rate constant for binding of pRBp to E2F" value="0.025" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_pc4" name="Rate constant for dissociation of complex between pRBp and E2F" value="0.5" units="per_hour" constant="true"/>
+      <parameter id="K_1" name="Michaelis constant for pRB phosphorylation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_2" name="Michaelis constant for pRBp dephosphorylation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_3" name="Michaelis constant for pRBp phosphorylation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_4" name="Michaelis constant for pRBpp dephosphorylation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="V_1" name="Rate constant for phosphorylation of pRB" value="2.2" units="per_hour" constant="true"/>
+      <parameter id="V_2" name="Maximum rate of dephosphorylation of pRBp" value="2" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_3" name="Rate constant for phosphorylation of pRBp" value="1" units="per_hour" constant="true"/>
+      <parameter id="V_4" name="Maximum rate of dephosphorylation of pRBpp" value="2" units="micromolar_per_hour" constant="true"/>
+      <parameter id="K_1e2f" name="Michaelis constant for E2F phosphorylation by cyclin A/Cdk2" value="5" units="micromolar" constant="true"/>
+      <parameter id="K_2e2f" name="Michaelis constant for E2F dephosphorylation" value="5" units="micromolar" constant="true"/>
+      <parameter id="V_1e2f" name="Rate constant for phosphorylation of E2F by cyclin A/Cdk2" value="4" units="per_hour" constant="true"/>
+      <parameter id="V_2e2f" name="Maximum rate of dephosphorylation of E2F" value="0.75" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_se2f" name="Basal rate of synthesis of E2F" value="0.15" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_sprb" name="Basal rate of synthesis of pRB" value="0.8" units="micromolar_per_hour" constant="true"/>
+      <parameter id="Cdk4_tot" name="Total concentration of the Cdk4-6 kinase" value="1.5" units="micromolar" constant="true"/>
+      <parameter id="K_i7" name="Constant of inhibition by pRB of cyclin D synthesis" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_i8" name="Constant of inhibition by pRBp of cyclin D synthesis" value="2" units="micromolar" constant="true"/>
+      <parameter id="k_cd1" name="Rate constant for cyclin D synthesis induced by AP1" value="0.4" units="per_hour" constant="true"/>
+      <parameter id="k_cd2" name="Rate constant for cyclin D synthesis induced by E2F" value="0.005" units="per_hour" constant="true"/>
+      <parameter id="k_decom1" name="Rate constant for dissociation of complex between cyclin D and Cdk4-6" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_com1" name="Bimolecular rate constant for binding of cyclin D to Cdk4-6" value="0.175" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_c1" name="Bimolecular rate constant for binding of cyclin D/Cdk4-6 to p27" value="0.15" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_c2" name="Rate constant for dissociation of complex between cyclin D/Cdk4-6 and p27" value="0.05" units="per_hour" constant="true"/>
+      <parameter id="k_ddd" name="Apparent first-order rate constant for non-specific cyclin D protein degradation" value="0.005" units="per_hour" constant="true"/>
+      <parameter id="K_dd" name="Michaelis constant for cyclin D degradation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_1d" name="Michaelis constant for cyclin D/Cdk4-6 (i) activation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_2d" name="Michaelis constant for cyclin D/Cdk4-6 (a) inactivation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="V_dd" name="Maximum rate of degradation of cyclin D" value="5" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m1d" name="Maximum rate of activation of cyclin D/Cdk4-6 (i)" value="1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m2d" name="Maximum rate of inactivation of cyclin D/Cdk4-6 (a)" value="0.2" units="micromolar_per_hour" constant="true"/>
+      <parameter id="a_e" name="Factor measuring the contribution of Polo-like kinase 3 (Plk3) to phosphorylation and activation of Cdc25 phosphatase (Pei)" value="0.25" units="micromolar" constant="true"/>
+      <parameter id="Cdk2_tot" name="Total concentration of the Cdk2 kinase" value="2" units="micromolar" constant="true"/>
+      <parameter id="i_b1" name="Factor measuring the contribution of kinase Myt1 to phosphorylation and inhibition of cyclin E/Cdk2" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="K_i9" name="Constant of inhibition by pRB of cyclin E synthesis" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_i10" name="Constant of inhibition by pRBp of cyclin E synthesis" value="2" units="micromolar" constant="true"/>
+      <parameter id="k_ce" name="Rate constant for cyclin E synthesis induced by E2F" value="0.24" units="per_hour" constant="true"/>
+      <parameter id="k_c3" name="Bimolecular rate constant for binding of cyclin E/Cdk2 to p27" value="0.2" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_c4" name="Rate constant for dissociation of complex between cyclin E/Cdk2 and p27" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_decom2" name="Rate constant for dissociation of complex between cyclin E and Cdk2" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_com2" name="Bimolecular rate constant for binding of cyclin E to Cdk2" value="0.2" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_dde" name="Apparent first-order rate constant for non-specific cyclin E degradation" value="0.005" units="per_hour" constant="true"/>
+      <parameter id="k_ddskp2" name="Apparent first-order rate constant for non-specific Skp2 degradation" value="0.005" units="per_hour" constant="true"/>
+      <parameter id="k_dpe" name="Apparent first-order rate constant for degradation of active Cdc25 phosphatase (Pe)" value="0.075" units="per_hour" constant="true"/>
+      <parameter id="k_dpei" name="Apparent first-order rate constant for degradation of inactive Cdc25 phosphatase (Pei)" value="0.15" units="per_hour" constant="true"/>
+      <parameter id="K_de" name="Michaelis constant for cyclin E degradation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_dceskp2" name="Michaelis constant for activation by Skp2 of cyclin E degradation" value="2" units="micromolar" constant="true"/>
+      <parameter id="K_dskp2" name="Michaelis constant for Skp2 degradation" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="K_cdh1" name="Michaelis constant for activation by Cdh1 of Skp2 degradation" value="0.4" units="micromolar" constant="true"/>
+      <parameter id="K_1e" name="Michaelis constant for cyclin E/Cdk2 (i) activation through dephosphorylation by phosphatase Cdc25 (Pe)" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_2e" name="Michaelis constant for cyclin E/Cdk2 (a) inactivation through phosphorylation by kinases Wee1 and Myt1" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_5e" name="Michaelis constant for Cdc25 (Pei) activation through phosphorylation by cyclin E/Cdk2 and Plk3" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_6e" name="Michaelis constant for Cdc25 (Pe) inactivation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="V_de" name="Maximum rate of cyclin E degradation" value="3" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_dskp2" name="Maximum rate of Skp2 degradation" value="1.1" units="micromolar_per_hour" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">Written as umol.liter-1.h-1 in the paper
+Should be h-1 only ?</body>
+        </notes>
+      </parameter>
+      <parameter id="V_m1e" name="Rate constant for activation of cyclin E/Cdk2 (i) through dephosphorylation by phosphatase Cdc25 (Pe)" value="2" units="per_hour" constant="true"/>
+      <parameter id="V_m2e" name="Rate constant for inactivation of cyclin E/Cdk2 (a) through phosphorylation by kinases Wee1 and Myt1" value="1.4" units="per_hour" constant="true"/>
+      <parameter id="V_m5e" name="Rate constant for activation of phosphatase Cdc25 through phosphorylation by cyclin E/Cdk2 and Polo-like kinase 3" value="5" units="per_hour" constant="true"/>
+      <parameter id="V_6e" name="Maximum rate of inactivation of phosphatase Cdc25 through phosphorylation" value="0.8" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_spei" name="Rate of synthesis of phosphatase Cdc25 acting on cyclin E/Cdk2" value="0.13" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_sspk2" name="Maximum rate of synthesis of Skp2" value="0.15" units="micromolar_per_hour" constant="true"/>
+      <parameter id="x_e1" name="Factor measuring basal, Chk1-independent contribution to the rate of inactivation through phosphorylation of Cdc25 phosphatase (Pe)" value="1" units="dimension_less" constant="true"/>
+      <parameter id="x_e2" name="Factor measuring Chk1-dependent contribution to the rate of inactivation through phosphorylation of phosphatase Cdc25 (Pe)" value="1" units="per_micromolar" constant="true"/>
+      <parameter id="a_a" name="Factor measuring the contribution of Polo-like kinase 3 (Plk3) to phosphorylation and activation of Cdc25 phosphatase (Pa)" value="0.2" units="micromolar" constant="true"/>
+      <parameter id="i_b2" name="Factor measuring the contribution of kinase Myt1 to phosphorylation and inhibition of cyclin A/Cdk2" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="K_i11" name="Constant of inhibition by pRB of cyclin A synthesis" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_i12" name="Constant of inhibition by pRBp of cyclin A synthesis" value="2" units="micromolar" constant="true"/>
+      <parameter id="K_i13" name="Constant of inhibition by pRB of p27 synthesis" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_i14" name="Constant of inhibition by pRBp of p27 synthesis" value="2" units="micromolar" constant="true"/>
+      <parameter id="k_ca" name="Rate constant for cyclin A synthesis induced by E2F" value="0.0375" units="per_hour" constant="true"/>
+      <parameter id="k_decom3" name="Rate constant for dissociation of complex between cyclin A and Cdk2" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_com3" name="Bimolecular rate constant for binding of cyclin A to Cdk2" value="0.2" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_c5" name="Bimolecular rate constant for binding of active cyclin A/Cdk2 to p27" value="0.15" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_c6" name="Rate constant for dissociation of complex between cyclin A/Cdk2 and p27" value="0.125" units="per_hour" constant="true"/>
+      <parameter id="k_dda" name="Apparent first-order rate constant for non-specific cyclin A degradation" value="0.005" units="per_hour" constant="true"/>
+      <parameter id="k_ddp27" name="Apparent first-order rate constant for non-specific p27 degradation" value="0.06" units="per_hour" constant="true"/>
+      <parameter id="k_ddp27p" name="Apparent first-order rate constant for non-specific p27p degradation" value="0.01" units="per_hour" constant="true"/>
+      <parameter id="k_dcdh1a" name="Apparent first-order rate constant for degradation of active Cdh1" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_dcdh1i" name="Apparent first-order rate constant for degradation of inactive Cdh1" value="0.2" units="per_hour" constant="true"/>
+      <parameter id="k_dpa" name="Apparent first-order rate constant for degradation of active phosphatase Cdc25 (Pa)" value="0.075" units="per_hour" constant="true"/>
+      <parameter id="k_dpai" name="Apparent first-order rate constant for degradation of inactive phosphatase Cdc25 (Pai)" value="0.15" units="per_hour" constant="true"/>
+      <parameter id="K_da" name="Michaelis constant for cyclin A degradation" value="1.1" units="micromolar" constant="true"/>
+      <parameter id="K_dp27p" name="Michaelis constant for p27p degradation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_dp27skp2" name="Michaelis constant for activation by Skp2 of p27p degradation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_acdc20" name="Michaelis constant for activation by Cdc20 of cyclin A degradation" value="2" units="micromolar" constant="true"/>
+      <parameter id="K_1a" name="Michaelis constant for cyclin A/Cdk2 (i) activation through dephosphorylation by Cdc25 (Pa)" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_2a" name="Michaelis constant for cyclin A/Cdk2 (a) inactivation through phosphorylation by kinases Wee1 and Myt1" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_1cdh1" name="Michaelis constant for Cdh1 (i) activation through dephosphorylation" value="0.01" units="micromolar" constant="true"/>
+      <parameter id="K_2cdh1" name="Michaelis constant for Cdh1 (a) inactivation through phosphorylation by cyclin A/Cdk2 and cyclin B/Cdk1" value="0.01" units="micromolar" constant="true"/>
+      <parameter id="K_5a" name="Michaelis constant for Cdc25 (Pai) activation through phosphorylation by cyclin A/Cdk2 and kinase Plk3" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_6a" name="Michaelis constant for Cdc25 (Pa) inactivation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_1p27" name="Michaelis constant for p27 phosphorylation by cyclin E/Cdk2" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="K_2p27" name="Michaelis constant of p27p dephosphorylation" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="V_dp27p" name="Maximum rate of p27p degradation" value="5" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_da" name="Maximum rate of cyclin A degradation" value="2.5" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m1a" name="Rate constant for activation of cyclin A/Cdk2 (i) through dephosphorylation by phosphatase Cdc25 (Pa)" value="2" units="per_hour" constant="true"/>
+      <parameter id="V_m2a" name="Rate constant for inactivation of cyclin A/Cdk2 (a) through phosphorylation by kinases Wee1 and Myt1" value="1.85" units="per_hour" constant="true"/>
+      <parameter id="V_m5a" name="Rate constant for activation of phosphatase Cdc25 (Pai) through phosphorylation by cyclin A/Cdk2 and kinase Plk3" value="4" units="per_hour" constant="true"/>
+      <parameter id="V_6a" name="Maximum rate of phosphatase Cdc25 (Pa) inactivation" value="1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_scdh1a" name="Rate of synthesis of active Cdh1" value="0.11" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_spai" name="Rate of synthesis of phosphatase Cdc25 (Pai) acting on cyclin A/Cdk2" value="0.105" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_s1p27" name="Basal, E2F-independent rate of synthesis of p27" value="0.8" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_s2p27" name="Rate constant for synthesis of p27 induced by E2F" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="V_1cdh1" name="Maximum activation rate of Cdh1 (i) through dephosphorylation" value="1.25" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_2cdh1" name="Rate constant for inactivation of Cdh1 (a) through phosphorylation by cyclin A/Cdk2 and cyclin B/Cdk1" value="8" units="per_hour" constant="true"/>
+      <parameter id="V_1p27" name="Rate constant for inactivation of p27 through phosphorylation by cyclin E/Cdk2" value="100" units="per_hour" constant="true"/>
+      <parameter id="V_2p27" name="Maximum rate of activation of p27p through dephosphorylation" value="0.1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="x_a1" name="Factor measuring basal, Chk1-independent contribution to the inactivation rate of phosphatase Cdc25 (Pa)" value="1" units="dimension_less" constant="true"/>
+      <parameter id="x_a2" name="Factor measuring Chk1-dependent contribution to the inactivation rate of phosphatase Cdc25 (Pa)" value="1" units="per_micromolar" constant="true"/>
+      <parameter id="a_b" name="Factor measuring the contribution of Polo-like kinase 1 (Plk1) to phosphorylation and activation of Cdc25 phosphatase (Pbi)" value="0.11" units="micromolar" constant="true"/>
+      <parameter id="cdk1_tot" name="Total concentration of the Cdk1 kinase" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="i_b" name="Factor measuring the contribution of kinase(s) other than Cdk1 to phosphorylation and inactivation of kinase Wee1" value="0.75" units="micromolar" constant="true"/>
+      <parameter id="i_b3" name="Factor measuring the contribution of kinase Myt1 to phosphorylation and inhibition of cyclin B/Cdk1" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="k_c7" name="Bimolecular rate constant for binding of cyclin B/Cdk1 (a) to p27" value="0.12" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_c8" name="Rate constant for dissociation of complex between cyclin B/Cdk1 and p27" value="0.2" units="per_hour" constant="true"/>
+      <parameter id="k_decom4" name="Rate constant for dissociation of complex between cyclin B and Cdk1" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_com4" name="Bimolecular rate constant for binding of cyclin B to Cdk1" value="0.25" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_dcdc20a" name="Apparent first-order rate constant for degradation of active Cdc20" value="0.05" units="per_hour" constant="true"/>
+      <parameter id="k_dcdc20i" name="Apparent first-order rate constant for degradation of inactive Cdc20" value="0.14" units="per_hour" constant="true"/>
+      <parameter id="k_ddb" name="Apparent first-order rate constant for non-specific cyclin B degradation" value="0.005" units="per_hour" constant="true"/>
+      <parameter id="k_dpb" name="Apparent first-order rate constant for degradation of active phosphatase Cdc25 (Pb)" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_dpbi" name="Apparent first-order rate constant for degradation of inactive phosphatase Cdc25 (Pbi)" value="0.2" units="per_hour" constant="true"/>
+      <parameter id="k_dwee1" name="Apparent first-order rate constant for degradation of active kinase Wee1" value="0.1" units="per_hour" constant="true"/>
+      <parameter id="k_dwee1p" name="Apparent first-order rate constant for degradation of inactive kinase Wee1" value="0.2" units="per_hour" constant="true"/>
+      <parameter id="K_db" name="Michaelis constant for cyclin B degradation" value="0.005" units="micromolar" constant="true"/>
+      <parameter id="K_dbcdc20" name="Michaelis constant for activation by Cdc20 (a) of cyclin B degradation" value="0.2" units="micromolar" constant="true"/>
+      <parameter id="K_dbcdh1" name="Michaelis constant for activation by Cdh1 (a) of cyclin B degradation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_1b" name="Michaelis constant for cyclin B/Cdk1 (i) activation through dephosphorylation by phosphatase Cdc25 (Pb)" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_2b" name="Michaelis constant for cyclin B/Cdk1 (a) inactivation through phosphorylation by kinases Wee1 and Myt1" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_3b" name="Michaelis constant for Cdc20 (i) activation through phosphorylation by cyclin B/Cdk1" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_4b" name="Michaelis constant for Cdc20 (a) inactivation through dephosphorylation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_5b" name="Michaelis constant for Cdc25 (Pbi) activation through phosphorylation by cyclin B/Cdk1 and kinase Plk1" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_6b" name="Michaelis constant for Cdc25 (Pb) inactivation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_7b" name="Michaelis constant for Wee1 inactivation through phosphorylation by cyclin B/Cdk1 and kinase Plk1" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="K_8b" name="Michaelis constant for Wee1 activation through dephosphorylation" value="0.1" units="micromolar" constant="true"/>
+      <parameter id="v_cb" name="Rate of synthesis of cyclin B" value="0.05" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_db" name="Maximum rate of cyclin B degradation" value="0.06" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m1b" name="Rate constant for activation of cyclin B/Cdk1 (i) through dephosphorylation by phosphatase Cdc25 (Pb)" value="3.9" units="per_hour" constant="true"/>
+      <parameter id="V_m2b" name="Rate constant for inactivation of cyclin B/Cdk1 (a) through phosphorylation by kinases Wee1 and Myt1" value="2.1" units="per_hour" constant="true"/>
+      <parameter id="v_scdc20i" name="Rate of synthesis of Cdc20 (i)" value="0.1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m3b" name="Rate constant for activation of Cdc20 (i) through phosphorylation by cyclin B/Cdk1" value="8" units="per_hour" constant="true"/>
+      <parameter id="V_m4b" name="Maximum rate of Cdc20 (a) inactivation through dephosphorylation" value="0.7" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m5b" name="Rate constant for activation of phosphatase Cdc25 (Pbi) through phosphorylation by cyclin B/Cdk1 and kinase Plk1" value="5" units="per_hour" constant="true"/>
+      <parameter id="V_6b" name="Maximum inactivation rate of phosphatase Cdc25 (Pb)" value="1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_m7b" name="Rate constant for inactivation of kinase Wee1 through phosphorylation by cyclin B/Cdk1 and kinase Plk1" value="1.2" units="per_hour" constant="true"/>
+      <parameter id="V_m8b" name="Maximum rate of kinase Wee1 activation through dephosphorylation" value="1" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_spbi" name="Rate of synthesis of phosphatase Cdc25 (Pbi) acting on cyclin B/Cdk1" value="0.12" units="micromolar_per_hour" constant="true"/>
+      <parameter id="v_swee1" name="Rate of synthesis of kinase Wee1 independent from coupling to the circadian clock" value="0.06" units="micromolar_per_hour" constant="true"/>
+      <parameter id="x_b1" name="Factor measuring basal, Chk1-independent contribution to the rate of phosphatase Cdc25 (Pb) inactivation" value="1" units="dimension_less" constant="true"/>
+      <parameter id="x_b2" name="Factor measuring Chk1-dependent contribution to the rate of phosphatase Cdc25 (Pb) inactivation through phosphorylation" value="1" units="per_micromolar" constant="true"/>
+      <parameter id="ATR_tot" name="Total concentration of kinase ATR" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="Chk1_tot" name="Total concentration of kinase Chk1" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="Cdc45_tot" name="Total concentration of DNA anchor factor Cdc45" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="k_aatr" name="Bimolecular rate constant for binding of ATR to RNA primer, resulting in ATR activation" value="0.022" units="per_micromolar_per_hour" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">0.022 in the paper</body>
+        </notes>
+      </parameter>
+      <parameter id="k_datr" name="Rate constant for dissociation of complex between ATR and RNA primer" value="0.15" units="per_hour" constant="true"/>
+      <parameter id="k_dpol" name="Rate constant for dissociation of complex between DNA polymerase alpha and Cdc45" value="0.2" units="per_hour" constant="true"/>
+      <parameter id="k_dprim" name="Apparent first-order rate constant for RNA primer degradation" value="0.15" units="per_hour" constant="true"/>
+      <parameter id="k_spol" name="Bimolecular rate constant for binding of DNA polymerase alpha (Pol) to Cdc45 resulting in DNA polymerase alpha activation" value="0.8" units="per_micromolar_per_hour" constant="true"/>
+      <parameter id="k_sprim" name="Apparent first-order rate constant for RNA primer synthesis catalyzed by DNA polymerase alpha" value="0.05" units="per_hour" constant="true"/>
+      <parameter id="K_1cdc45" name="Michaelis constant for Cdc45 activation through phosphorylation by cyclin E/Cdk2" value="0.02" units="micromolar" constant="true"/>
+      <parameter id="K_2cdc45" name="Michaelis constant for Cdc45 inactivation through dephosphorylation" value="0.02" units="micromolar" constant="true"/>
+      <parameter id="K_1chk" name="Michaelis constant for Chk1 activation through phosphorylation by kinase ATR" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="K_2chk" name="Michaelis constant of Chk1 inactivation through dephosphorylation" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="Pol_tot" name="Total concentration of DNA polymerase alpha" value="0.5" units="micromolar" constant="true"/>
+      <parameter id="V_1cdc45" name="Rate constant for activation of Cdc45 through phosphorylation by cyclin E/Cdk2" value="0.8" units="per_hour" constant="true"/>
+      <parameter id="V_2cdc45" name="Maximum rate of Cdc45 inactivation through dephosphorylation" value="0.12" units="micromolar_per_hour" constant="true"/>
+      <parameter id="V_1chk" name="Rate constant for activation of Chk1 through phosphorylation by kinase ATR" value="4" units="per_hour" constant="true"/>
+      <parameter id="V_2chk" name="Maximum rate of Chk1 inactivation through dephosphorylation" value="0.1" units="micromolar_per_hour" constant="true"/>
+    </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="Md_all">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Md </ci>
+            <ci> Mdp27 </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <rateRule variable="Cdc45">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> eps </ci>
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> V_1cdc45 </ci>
+                  <ci> Me </ci>
+                  <apply>
+                    <plus/>
+                    <ci> Cdc45_tot </ci>
+                    <apply>
+                      <minus/>
+                      <ci> Cdc45 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_1cdc45 </ci>
+                  <ci> Cdc45_tot </ci>
+                  <apply>
+                    <minus/>
+                    <ci> Cdc45 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> V_2cdc45 </ci>
+                    <ci> Cdc45 </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> K_2cdc45 </ci>
+                    <ci> Cdc45 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k_spol </ci>
+                  <apply>
+                    <plus/>
+                    <ci> Pol_tot </ci>
+                    <apply>
+                      <minus/>
+                      <ci> Pol </ci>
+                    </apply>
+                  </apply>
+                  <ci> Cdc45 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> k_dpol </ci>
+                <ci> Pol </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="Pol">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> eps </ci>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <ci> k_spol </ci>
+                <apply>
+                  <plus/>
+                  <ci> Pol_tot </ci>
+                  <apply>
+                    <minus/>
+                    <ci> Pol </ci>
+                  </apply>
+                </apply>
+                <ci> Cdc45 </ci>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k_dpol </ci>
+                  <ci> Pol </ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="Primer">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> eps </ci>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <ci> k_sprim </ci>
+                <ci> Pol </ci>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k_dprim </ci>
+                  <ci> Primer </ci>
+                </apply>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k_aatr </ci>
+                  <apply>
+                    <plus/>
+                    <ci> ATR_tot </ci>
+                    <apply>
+                      <minus/>
+                      <ci> ATR </ci>
+                    </apply>
+                  </apply>
+                  <ci> Primer </ci>
+                </apply>
+              </apply>
+              <apply>
+                <times/>
+                <ci> k_datr </ci>
+                <ci> ATR </ci>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="ATR">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> eps </ci>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <ci> k_aatr </ci>
+                <apply>
+                  <plus/>
+                  <ci> ATR_tot </ci>
+                  <apply>
+                    <minus/>
+                    <ci> ATR </ci>
+                  </apply>
+                </apply>
+                <ci> Primer </ci>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k_datr </ci>
+                  <ci> ATR </ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="Chk1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> eps </ci>
+            <apply>
+              <plus/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> V_1chk </ci>
+                  <ci> ATR </ci>
+                  <apply>
+                    <plus/>
+                    <ci> Chk1_tot </ci>
+                    <apply>
+                      <minus/>
+                      <ci> Chk1 </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_1chk </ci>
+                  <ci> Chk1_tot </ci>
+                  <apply>
+                    <minus/>
+                    <ci> Chk1 </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <minus/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> V_2chk </ci>
+                    <ci> Chk1 </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> K_2chk </ci>
+                    <ci> Chk1 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="AP1_constitutive_degradation" name="AP1 constitutive degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="AP1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> AP1 </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dap1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="AP1_stimulation_by_growth_factor" name="AP1 stimulation by growth factor" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="AP1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="GF"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> GF </ci>
+                <ci> compartment_0 </ci>
+                <ci> v_sap1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_agf </ci>
+                <ci> GF </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Basal_synthesis_of_pRB" name="Basal synthesis of pRB" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="pRB" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_sprb </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_pRB" name="Constitutive degradation of pRB" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRB" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> pRB </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dprb </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_pRBp" name="Constitutive degradation of pRBp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> pRBp </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dprbp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_pRBpp" name="Constitutive degradation of pRBpp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRBpp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> pRBpp </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dprbpp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="pRB_E2F_complexification" name="pRB-E2F complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRB" stoichiometry="1" constant="true"/>
+          <speciesReference species="E2F" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRBc1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> pRBc1 </ci>
+                  </apply>
+                  <ci> k_pc2 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k_pc1 </ci>
+                  <ci> E2F </ci>
+                  <ci> pRB </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="pRBp_E2F_complexification" name="pRBp-E2F complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+          <speciesReference species="E2F" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRBc2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> pRBc2 </ci>
+                  </apply>
+                  <ci> k_pc4 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> pRBp </ci>
+                  <ci> E2F </ci>
+                  <ci> k_pc3 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Phosphorylation_of_pRB_by_Active_complex_cyclin_DCdk4_6" name="Phosphorylation of pRB by Active complex cyclin D/Cdk4-6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRB" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Md"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_1 </ci>
+                <ci> Md </ci>
+                <ci> pRB </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1 </ci>
+                <ci> pRB </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Phosphorylation_of_pRB_by_Complex_cyclin_DCdk4_6p27" name="Phosphorylation of pRB by Complex cyclin D/Cdk4-6/p27" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRB" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mdp27"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_1 </ci>
+                <ci> Mdp27 </ci>
+                <ci> pRB </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1 </ci>
+                <ci> pRB </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Dephosphorylation_of_pRBp_" name="Dephosphorylation of pRBp " reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRB" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_2 </ci>
+                <ci> pRBp </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2 </ci>
+                <ci> pRBp </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Phosphorylation_of_pRBp_by_Active_complex_cyclin_ECdk2" name="Phosphorylation of pRBp by Active complex cyclin E/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRBpp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Me"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_3 </ci>
+                <ci> Me </ci>
+                <ci> pRBp </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_3 </ci>
+                <ci> pRBp </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Dephosphorylation_of_pRBpp" name="Dephosphorylation of pRBpp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pRBpp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pRBp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_4 </ci>
+                <ci> pRBpp </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_4 </ci>
+                <ci> pRBpp </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Basal_synthesis_of_E2F" name="Basal synthesis of E2F" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="E2F" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_se2f </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_E2F" name="Constitutive degradation of E2F" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2F" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> E2F </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_de2f </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_E2Fp" name="Constitutive degradation of E2Fp" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2Fp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> E2Fp </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_de2fp </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="E2F_phosphorylation_by_cyclin_ACdk2" name="E2F phosphorylation by cyclin A/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2F" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2Fp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Ma"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_1e2f </ci>
+                <ci> E2F </ci>
+                <ci> Ma </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1e2f </ci>
+                <ci> E2F </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="E2F_dephosphorylation" name="E2F dephosphorylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2Fp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2F" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_2e2f </ci>
+                <ci> E2Fp </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2e2f </ci>
+                <ci> E2Fp </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_D_synthesis_induced_by_AP1" name="Cyclin D synthesis induced by AP1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cd" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="AP1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> AP1 </ci>
+              <ci> k_cd1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="non_specific_cyclin_D_protein_degradation" name="non-specific cyclin D protein degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cd" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cd </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_ddd </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_cyclin_D" name="Degradation of cyclin D" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cd" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_dd </ci>
+                <ci> Cd </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_dd </ci>
+                <ci> Cd </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_DCdk4_6_complexification" name="Cyclin D/Cdk4-6 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cd" stoichiometry="1" constant="true"/>
+          <speciesReference species="cdk4" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mdi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> Mdi </ci>
+                  </apply>
+                  <ci> k_decom1 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k_com1 </ci>
+                  <ci> Cd </ci>
+                  <ci> cdk4 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cyclin_D_synthesis_induced_by_E2F" name="cyclin D synthesis induced by E2F" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cd" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E2F"/>
+          <modifierSpeciesReference species="pRB"/>
+          <modifierSpeciesReference species="pRBp"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_cd2 </ci>
+              <ci> compartment_0 </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i8 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i8 </ci>
+                  <ci> pRBp </ci>
+                </apply>
+              </apply>
+              <ci> E2F </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i7 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i7 </ci>
+                  <ci> pRB </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_cyclin_DCdk4_6" name="Activation of cyclin D/Cdk4-6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mdi" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Md" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m1d </ci>
+                <ci> Mdi </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1d </ci>
+                <ci> Mdi </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Inactivation_of_cyclin_DCdk4_6" name="Inactivation of cyclin D/Cdk4-6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Md" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mdi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m2d </ci>
+                <ci> Md </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2d </ci>
+                <ci> Md </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_DCdk4_6__p27_complexification" name="Cyclin D/Cdk4-6 / p27 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Md" stoichiometry="1" constant="true"/>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mdp27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> Mdp27 </ci>
+                  </apply>
+                  <ci> k_c2 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k_c1 </ci>
+                  <ci> p27 </ci>
+                  <ci> Md </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_E_synthesis_induced_by_E2F" name="Cyclin E synthesis induced by E2F" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Ce" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E2F"/>
+          <modifierSpeciesReference species="pRB"/>
+          <modifierSpeciesReference species="pRBp"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_ce </ci>
+              <ci> compartment_0 </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i9 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i9 </ci>
+                  <ci> pRB </ci>
+                </apply>
+              </apply>
+              <ci> E2F </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i10 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i10 </ci>
+                  <ci> pRBp </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_ECdk2_complexification" name="Cyclin E/Cdk2 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="cdk2" stoichiometry="1" constant="true"/>
+          <speciesReference species="Ce" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mei" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> k_com2 </ci>
+                  <ci> cdk2 </ci>
+                  <ci> Ce </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <times/>
+                    <ci> k_decom2 </ci>
+                    <ci> Mei </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_E_constitutive_degradation" name="Cyclin E constitutive degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ce" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Ce </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dde </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_E_degradation_by_Skp2" name="Cyclin E degradation by Skp2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ce" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Skp2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_de </ci>
+                <ci> Ce </ci>
+                <ci> Skp2 </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> K_dceskp2 </ci>
+                  <ci> Skp2 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_de </ci>
+                  <ci> Ce </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Inactivation_of_cyclin_ECdk2_a_through_phosphorylation_by_kinases_Wee1_and_Myt1" name="Inactivation of cyclin E/Cdk2 (a) through phosphorylation by kinases Wee1 and Myt1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Me" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mei" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Wee1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m2e </ci>
+                <ci> Me </ci>
+                <ci> compartment_0 </ci>
+                <apply>
+                  <plus/>
+                  <ci> Wee1 </ci>
+                  <ci> i_b1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2e </ci>
+                <ci> Me </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_cyclin_ECdk2_i_through_dephosphorylation_by_phosphatase_Cdc25_Pe" name="Activation of cyclin E/Cdk2 (i) through dephosphorylation by phosphatase Cdc25 (Pe)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mei" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Me" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Pe"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m1e </ci>
+                <ci> Pe </ci>
+                <ci> Mei </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1e </ci>
+                <ci> Mei </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_ECdk2_p27_complexification" name="Cyclin E/Cdk2 /p27 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Me" stoichiometry="1" constant="true"/>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mep27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> k_c3 </ci>
+                  <ci> Me </ci>
+                  <ci> p27 </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <times/>
+                    <ci> k_c4 </ci>
+                    <ci> Mep27 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_Skp2" name="Synthesis of Skp2" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Skp2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_sspk2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_Skp2" name="Constitutive degradation of Skp2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Skp2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Skp2 </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_ddskp2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Skp2_degradation_by_Cdh1a" name="Skp2 degradation by Cdh1a" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Skp2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdh1a"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_dskp2 </ci>
+                <ci> Skp2 </ci>
+                <ci> Cdh1a </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> K_cdh1 </ci>
+                  <ci> Cdh1a </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_dskp2 </ci>
+                  <ci> Skp2 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_phosphatase_Cdc25_acting_on_cyclin_ECdk2" name="Synthesis of phosphatase Cdc25 acting on cyclin E/Cdk2" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Pei" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_spei </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_inactive_Cdc25_phosphatase_Pei" name="Degradation of inactive Cdc25 phosphatase (Pei)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pei" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Pei </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dpei </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Chk1_independent_inactivation_through_phosphorylation_of_Cdc25_phosphatase_Pe" name="Chk1-independent inactivation through phosphorylation of Cdc25 phosphatase (Pe)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pe" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pei" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6e </ci>
+                <ci> Pe </ci>
+                <ci> compartment_0 </ci>
+                <ci> x_e1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_6e </ci>
+                <ci> Pe </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Chk1_dependent_inactivation_through_phosphorylation_of_phosphatase_Cdc25_Pe" name="Chk1-dependent inactivation through phosphorylation of phosphatase Cdc25 (Pe)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pe" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pei" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Chk1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6e </ci>
+                <ci> Pe </ci>
+                <ci> Chk1 </ci>
+                <ci> compartment_0 </ci>
+                <ci> x_e2 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_6e </ci>
+                <ci> Pe </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_phosphatase_Cdc25_through_phosphorylation_by_cyclin_ECdk2" name="Activation of phosphatase Cdc25 through phosphorylation by cyclin E/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pei" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pe" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Me"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m5e </ci>
+                <ci> Pei </ci>
+                <ci> Me </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_5e </ci>
+                <ci> Pei </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_phosphatase_Cdc25_through_phosphorylation_by_Polo_like_kinase_3" name="Activation of phosphatase Cdc25 through phosphorylation by Polo-like kinase 3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pei" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pe" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m5e </ci>
+                <ci> Pei </ci>
+                <ci> a_e </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_5e </ci>
+                <ci> Pei </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_active_Cdc25_phosphatase_Pe" name="Constitutive degradation of active Cdc25 phosphatase (Pe)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pe" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Pe </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dpe </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_A_synthesis_induced_by_E2F" name="Cyclin A synthesis induced by E2F" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Ca" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E2F"/>
+          <modifierSpeciesReference species="pRB"/>
+          <modifierSpeciesReference species="pRBp"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> E2F </ci>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i11 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i11 </ci>
+                  <ci> pRB </ci>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i12 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i12 </ci>
+                  <ci> pRBp </ci>
+                </apply>
+              </apply>
+              <ci> compartment_0 </ci>
+              <ci> k_ca </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_ACdk2_complexification" name="Cyclin A/Cdk2 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="cdk2" stoichiometry="1" constant="true"/>
+          <speciesReference species="Ca" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mai" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> Mai </ci>
+                  </apply>
+                  <ci> k_decom3 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> cdk2 </ci>
+                  <ci> Ca </ci>
+                  <ci> k_com3 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_A_degradation" name="Cyclin A degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ca" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdc20a"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_da </ci>
+                <ci> Cdc20a </ci>
+                <ci> Ca </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> K_acdc20 </ci>
+                  <ci> Cdc20a </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_da </ci>
+                  <ci> Ca </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_A_constitutive_degradation" name="Cyclin A constitutive degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ca" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Ca </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dda </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="inactivation_of_cyclin_ACdk2_a_through_phosphorylation_by_Wee1" name="inactivation of cyclin A/Cdk2 (a) through phosphorylation by Wee1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mai" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Wee1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m2a </ci>
+                <ci> Wee1 </ci>
+                <ci> Ma </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2a </ci>
+                <ci> Ma </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="inactivation_of_cyclin_ACdk2_a_through_phosphorylation_by_Myt1" name="inactivation of cyclin A/Cdk2 (a) through phosphorylation by Myt1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mai" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m2a </ci>
+                <ci> Ma </ci>
+                <ci> compartment_0 </ci>
+                <ci> i_b2 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2a </ci>
+                <ci> Ma </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_cyclin_ACdk2_i_through_dephosphorylation_by_phosphatase_Cdc25_Pa" name="Activation of cyclin A/Cdk2 (i) through dephosphorylation by phosphatase Cdc25 (Pa)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mai" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Ma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Pa"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m1a </ci>
+                <ci> Mai </ci>
+                <ci> Pa </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1a </ci>
+                <ci> Mai </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_ACdk2__p27_complexification" name="Cyclin A/Cdk2 / p27 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ma" stoichiometry="1" constant="true"/>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Map27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> k_c5 </ci>
+                  <ci> Ma </ci>
+                  <ci> p27 </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <times/>
+                    <ci> k_c6 </ci>
+                    <ci> Map27 </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_p27" name="Synthesis of p27" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_s1p27 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_p27_induced_by_E2F" name="Synthesis of p27 induced by E2F" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E2F"/>
+          <modifierSpeciesReference species="pRB"/>
+          <modifierSpeciesReference species="pRBp"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i14 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i14 </ci>
+                  <ci> pRBp </ci>
+                </apply>
+              </apply>
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci> K_i13 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_i13 </ci>
+                  <ci> pRB </ci>
+                </apply>
+              </apply>
+              <ci> E2F </ci>
+              <ci> compartment_0 </ci>
+              <ci> v_s2p27 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Inactivation_of_p27_through_phosphorylation_by_cyclin_ECdk2" name="Inactivation of p27 through phosphorylation by cyclin E/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="p27p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Me"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_1p27 </ci>
+                <ci> p27 </ci>
+                <ci> Me </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1p27 </ci>
+                <ci> p27 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_p27p_through_dephosphorylation" name="Activation of p27p through dephosphorylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="p27p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_2p27 </ci>
+                <ci> p27p </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2p27 </ci>
+                <ci> p27p </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Non_specific_p27_degradation" name="Non-specific p27 degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> p27 </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_ddp27 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="p27p_degradation" name="p27p degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="p27p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Skp2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_dp27p </ci>
+                <ci> Skp2 </ci>
+                <ci> p27p </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> K_dp27p </ci>
+                  <ci> p27p </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_dp27skp2 </ci>
+                  <ci> Skp2 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="non_specific_p27p_degradation" name="non-specific p27p degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="p27p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> p27p </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_ddp27p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Inactivation_of_Cdh1_a_through_phosphorylation_by_cyclin_ACdk2" name="Inactivation of Cdh1 (a) through phosphorylation by cyclin A/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdh1a" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdh1i" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Ma"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_2cdh1 </ci>
+                <ci> Ma </ci>
+                <ci> Cdh1a </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2cdh1 </ci>
+                <ci> Cdh1a </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Inactivation_of_Cdh1_a_through_phosphorylation_by_cyclin_BCdk1" name="Inactivation of Cdh1 (a) through phosphorylation by cyclin B/Cdk1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdh1a" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdh1i" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mb"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_2cdh1 </ci>
+                <ci> Mb </ci>
+                <ci> Cdh1a </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2cdh1 </ci>
+                <ci> Cdh1a </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_rate_of_Cdh1_i_through_dephosphorylation" name="Activation rate of Cdh1 (i) through dephosphorylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdh1i" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdh1a" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_1cdh1 </ci>
+                <ci> Cdh1i </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1cdh1 </ci>
+                <ci> Cdh1i </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_inactive_Cdh1" name="Degradation of inactive Cdh1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdh1i" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cdh1i </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dcdh1i </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_active_Cdh1" name="Synthesis of active Cdh1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cdh1a" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_scdh1a </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_active_Cdh1" name="Degradation of active Cdh1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdh1a" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cdh1a </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dcdh1a </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_phosphatase_Cdc25_Pai_acting_on_cyclin_ACdk2" name="Synthesis of phosphatase Cdc25 (Pai) acting on cyclin A/Cdk2" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Pai" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_spai </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_inactive_phosphatase_Cdc25_Pai" name="Degradation of inactive phosphatase Cdc25 (Pai)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pai" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Pai </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dpai </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Phosphatase_Cdc25_Pa_Chk1_independent_inactivation" name="Phosphatase Cdc25 (Pa) Chk1-independent inactivation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pa" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pai" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6a </ci>
+                <ci> Pa </ci>
+                <ci> compartment_0 </ci>
+                <ci> x_a1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_6a </ci>
+                <ci> Pa </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Chk1_dependent_inactivation_of_phosphatase_Cdc25_Pa" name="Chk1-dependent inactivation of phosphatase Cdc25 (Pa)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pa" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pai" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Chk1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6a </ci>
+                <ci> Pa </ci>
+                <ci> Chk1 </ci>
+                <ci> compartment_0 </ci>
+                <ci> x_a2 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_6a </ci>
+                <ci> Pa </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_phosphatase_Cdc25_Pai_through_phosphorylation_by_cyclin_ACdk2" name="Activation of phosphatase Cdc25 (Pai) through phosphorylation by cyclin A/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pai" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pa" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Ma"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m5a </ci>
+                <ci> Pai </ci>
+                <ci> Ma </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_5a </ci>
+                <ci> Pai </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="activation_of_phosphatase_Cdc25_Pai_through_phosphorylation_by_kinase_Plk3" name="activation of phosphatase Cdc25 (Pai) through phosphorylation by kinase Plk3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pai" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pa" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m5a </ci>
+                <ci> Pai </ci>
+                <ci> a_a </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_5a </ci>
+                <ci> Pai </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Constitutive_degradation_of_Cyclin_ACdk2" name="Constitutive degradation of Cyclin A/Cdk2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pa" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Pa </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dpa </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_cyclin_B" name="Synthesis of cyclin B" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cb" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_cb </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_BCdk1_complexification" name="Cyclin B/Cdk1 complexification" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cb" stoichiometry="1" constant="true"/>
+          <speciesReference species="cdk1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mbi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> k_com4 </ci>
+                  <ci> Cb </ci>
+                  <ci> cdk1 </ci>
+                </apply>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <times/>
+                    <ci> k_decom4 </ci>
+                    <ci> Mbi </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cyclin_B_degradation_by_Cdc20a" name="cyclin B degradation by Cdc20a" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdc20a"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_db </ci>
+                <ci> Cdc20a </ci>
+                <ci> Cb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> K_db </ci>
+                  <ci> Cb </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_dbcdc20 </ci>
+                  <ci> Cdc20a </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cyclin_B_degradation_by_Cdh1a" name="cyclin B degradation by Cdh1a" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Cdh1a"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_db </ci>
+                <ci> Cdh1a </ci>
+                <ci> Cb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> K_db </ci>
+                  <ci> Cb </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> K_dbcdh1 </ci>
+                  <ci> Cdh1a </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cyclin_B_constitutive_degradation" name="Cyclin B constitutive degradation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cb </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_ddb </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="inactivation_of_cyclin_BCdk1_a_through_phosphorylation_by_kinase_Wee1" name="inactivation of cyclin B/Cdk1 (a) through phosphorylation by kinase Wee1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mbi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Wee1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m2b </ci>
+                <ci> Wee1 </ci>
+                <ci> Mb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2b </ci>
+                <ci> Mb </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="inactivation_of_cyclin_BCdk1_a_through_phosphorylation_by_kinase_Myt1" name="inactivation of cyclin B/Cdk1 (a) through phosphorylation by kinase Myt1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mbi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m2b </ci>
+                <ci> Mb </ci>
+                <ci> compartment_0 </ci>
+                <ci> i_b3 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_2b </ci>
+                <ci> Mb </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="activation_of_cyclin_BCdk1_i_through_dephosphorylation_by_phosphatase_Cdc25_Pb" name="activation of cyclin B/Cdk1 (i) through dephosphorylation by phosphatase Cdc25 (Pb)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mbi" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mb" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Pb"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m1b </ci>
+                <ci> Mbi </ci>
+                <ci> Pb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_1b </ci>
+                <ci> Mbi </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="binding_of_cyclin_BCdk1_a_to_p27" name="binding of cyclin B/Cdk1 (a) to p27" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Mb" stoichiometry="1" constant="true"/>
+          <speciesReference species="p27" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mbp27" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <ci> Mbp27 </ci>
+                  </apply>
+                  <ci> k_c8 </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k_c7 </ci>
+                  <ci> p27 </ci>
+                  <ci> Mb </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_Cdc20_i" name="Synthesis of Cdc20 (i)" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Cdc20i" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_scdc20i </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_Cdc20_i_through_phosphorylation_by_cyclin_BCdk1" name="Activation of Cdc20 (i) through phosphorylation by cyclin B/Cdk1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc20i" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdc20a" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mb"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m3b </ci>
+                <ci> Cdc20i </ci>
+                <ci> Mb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_3b </ci>
+                <ci> Cdc20i </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cdc20_a_inactivation_through_dephosphorylation" name="Cdc20 (a) inactivation through dephosphorylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc20a" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cdc20i" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m4b </ci>
+                <ci> Cdc20a </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_4b </ci>
+                <ci> Cdc20a </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_inactive_Cdc20" name="Degradation of inactive Cdc20" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc20i" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cdc20i </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dcdc20i </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_active_Cdc20" name="Degradation of active Cdc20" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cdc20a" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cdc20a </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dcdc20a </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_phosphatase_Cdc25_Pbi_acting_on_cyclin_BCdk1" name="Synthesis of phosphatase Cdc25 (Pbi) acting on cyclin B/Cdk1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Pbi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_spbi </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Chk1_dependent_inactivation_of_phosphatase_Cdc25_Pb" name="Chk1-dependent inactivation of phosphatase Cdc25 (Pb)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pbi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Chk1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6b </ci>
+                <ci> Pb </ci>
+                <ci> Chk1 </ci>
+                <ci> compartment_0 </ci>
+                <ci> x_b2 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_6b </ci>
+                <ci> Pb </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Chk1_independent_inactivation_of_phosphatase_Cdc25_Pb" name="Chk1-independent inactivation of phosphatase Cdc25 (Pb)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pbi" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_6b </ci>
+                <ci> Pb </ci>
+                <ci> compartment_0 </ci>
+                <ci> x_b1 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_6b </ci>
+                <ci> Pb </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_phosphatase_Cdc25_Pbi_through_phosphorylation_by_cyclin_BCdk1" name="Activation of phosphatase Cdc25 (Pbi) through phosphorylation by cyclin B/Cdk1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pbi" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pb" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mb"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m5b </ci>
+                <ci> Pbi </ci>
+                <ci> Mb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_5b </ci>
+                <ci> Pbi </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Activation_of_phosphatase_Cdc25_Pbi_through_phosphorylation_by_kinase_Plk1" name="Activation of phosphatase Cdc25 (Pbi) through phosphorylation by kinase Plk1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pbi" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pb" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m5b </ci>
+                <ci> Pbi </ci>
+                <ci> a_b </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_5b </ci>
+                <ci> Pbi </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_inactive_phosphatase_Cdc25_Pbi" name="Degradation of inactive phosphatase Cdc25 (Pbi)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pbi" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Pbi </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dpbi </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_active_phosphatase_Cdc25_Pb" name="Degradation of active phosphatase Cdc25 (Pb)" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pb" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Pb </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dpb </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synthesis_of_kinase_Wee1" name="Synthesis of kinase Wee1" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="Wee1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> compartment_0 </ci>
+              <ci> v_swee1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="inactivation_of_kinase_Wee1_through_phosphorylation_by_cyclin_BCdk1" name="inactivation of kinase Wee1 through phosphorylation by cyclin B/Cdk1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Wee1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Wee1p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Mb"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m7b </ci>
+                <ci> Wee1 </ci>
+                <ci> Mb </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_7b </ci>
+                <ci> Wee1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Rate_constant_for_inactivation_of_kinase_Wee1_through_phosphorylation_by_kinase_Plk1" name="Rate constant for inactivation of kinase Wee1 through phosphorylation by kinase Plk1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Wee1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Wee1p" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m7b </ci>
+                <ci> Wee1 </ci>
+                <ci> compartment_0 </ci>
+                <ci> i_b </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_7b </ci>
+                <ci> Wee1 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Kinase_Wee1_activation_through_dephosphorylation" name="Kinase Wee1 activation through dephosphorylation" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Wee1p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Wee1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> V_m8b </ci>
+                <ci> Wee1p </ci>
+                <ci> compartment_0 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> K_8b </ci>
+                <ci> Wee1p </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_active_kinase_Wee1" name="Degradation of active kinase Wee1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Wee1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Wee1 </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dwee1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Degradation_of_inactive_kinase_Wee1" name="Degradation of inactive kinase Wee1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="Wee1p" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Wee1p </ci>
+              <ci> compartment_0 </ci>
+              <ci> k_dwee1p </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

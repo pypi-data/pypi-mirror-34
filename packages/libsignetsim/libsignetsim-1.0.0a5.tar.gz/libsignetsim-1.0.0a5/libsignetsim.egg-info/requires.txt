@@ -1,0 +1,13 @@
+matplotlib
+python-libsbml
+python-libnuml
+python-libsedml
+sympy<1.2
+numpy
+scipy
+pydstool
+jinja2
+bioservices
+lxml
+coveralls
+future

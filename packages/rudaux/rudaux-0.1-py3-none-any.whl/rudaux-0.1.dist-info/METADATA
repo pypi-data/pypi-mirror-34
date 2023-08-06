@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rudaux
+Version: 0.1
+Summary: Canvas Course Management with JupyterHub & nbgrader.
+Home-page: http://github.com/samhinshaw/rudaux
+Author: Sam Hinshaw
+Author-email: samuel.hinshaw@gmail.com
+License: BSD
+Platform: UNKNOWN
+
+This packages provides automation for managing a course that uses JupyterHub & nbgrader along with the Canvas Learning Management System.
+
+

@@ -1,0 +1,4 @@
+[console_scripts]
+initialize-course = rudaux.command_line:initialize_course
+initialize-course-overwrite = rudaux.command_line:initialize_course_overwrite
+

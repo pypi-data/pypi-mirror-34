@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: blspy
+Version: 0.0.2
+Summary: BLS signatures in c++ (python bindings)
+Home-page: UNKNOWN
+Author: Mariano Sorgente
+Author-email: mariano@chia.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.1

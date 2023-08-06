@@ -1,0 +1,75 @@
+## Crypto Hash
+
+> Tiny hashing module that uses the native crypto API in Python
+
+## Demo
+
+Demo on [Repl.it](https://repl.it/@yoginth/cryptohash)
+
+## Screenshot
+
+<img src="https://gitlab.com/yoginth/cryptohash/raw/master/Screenshot.png" width="550">
+
+## Install
+
+```
+$ pip install cryptohash
+```
+
+## Usage
+
+```python
+from cryptohash import sha1
+
+print (sha1('🤓'))
+#=> d0b16946377589fbc68d8b1ca324f16e84171463
+```
+
+## API
+
+## API
+
+### sha1(input)
+### sha224(input)
+### sha256(input)
+### sha384(input)
+### sha512(input)
+
+### md5(input)
+
+Returns a `Promise<string>` with a hex-encoded hash.
+
+[SHA-1 is insecure](https://stackoverflow.com/a/38045085/64949) and should not be used for anything sensitive.
+
+#### input
+
+Type: `string`
+
+##### outputFormat
+
+Type: `string`
+Values: `hex`
+Default: `hex`
+
+## Get Help
+
+There are few ways to get help:
+
+ 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+
+ 2. For bug reports and feature requests, open issues.
+
+ 3. For direct and quick help, you can [email me](mailto://yoginth@zoho.com).
+
+## How to contribute
+
+Have an idea? Found a bug? See [how to contribute][contributing].
+
+Thanks!
+
+## License
+
+[MIT][license]
+
+[LICENSE]: https://yoginth.mit-license.org/
+[contributing]: /CONTRIBUTING.md

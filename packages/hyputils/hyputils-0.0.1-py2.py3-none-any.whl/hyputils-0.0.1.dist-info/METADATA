@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hyputils
+Version: 0.0.1
+Summary: Python utilites for the Hypothes.is REST api and websocket interface
+Home-page: https://github.com/tgbugs/hyputils
+Author: Tom Gillespie
+Author-email: tgbugs@gmail.com
+License: MIT
+Description: 
+Keywords: hypothesis hypothes.is
+Platform: UNKNOWN
+Provides-Extra: dev
+Requires-Dist: beautifulsoup4
+Requires-Dist: certifi
+Requires-Dist: requests
+Requires-Dist: robobrowser
+Requires-Dist: websockets
+Provides-Extra: dev
+Requires-Dist: zdesk; extra == 'dev'
+

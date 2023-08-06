@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flask_restful_patched
+Version: 0.1.0
+Summary: flask restful patched according to https://github.com/frol/flask-restplus-server-example
+Home-page: https://github.com/dayjaby/flask_restplus_patched
+Author: David Jablonski
+Author-email: dayjaby@gmail.com
+License: UNKNOWN
+Description: **********
+        Installing
+        **********
+        
+        You can easily install flask_restplus_patched with pip:
+        
+        .. code-block:: sh
+        
+         pip install flask_restplus_patched
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst

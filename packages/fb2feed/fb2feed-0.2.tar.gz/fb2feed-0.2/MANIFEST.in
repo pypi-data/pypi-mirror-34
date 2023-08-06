@@ -1,0 +1,4 @@
+include fb2feed.example.ini
+include systemd/*
+include requirements.txt
+include LICENSE

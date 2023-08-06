@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+fb2feed.example.ini
+fb2feed.py
+requirements.txt
+setup.py
+fb2feed.egg-info/PKG-INFO
+fb2feed.egg-info/SOURCES.txt
+fb2feed.egg-info/dependency_links.txt
+fb2feed.egg-info/entry_points.txt
+fb2feed.egg-info/top_level.txt
+fb2feed.egg-info/zip-safe
+systemd/fb2feed-timer.target
+systemd/fb2feed.service
+systemd/fb2feed.timer

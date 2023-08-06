@@ -1,0 +1,13 @@
+[Unit]
+Description=Fb2Feed
+After=syslog.target network.target
+Wants=fb2feed.timer
+
+[Service]
+Type=simple
+User=phil
+WorkingDirectory=/home/phil/fb2feed
+ExecStart=/home/phil/fb2feed/fb2feed/bin/python3 -m fb2feed
+
+[Install]
+WantedBy=multi-user.target fb2feed-timer.target

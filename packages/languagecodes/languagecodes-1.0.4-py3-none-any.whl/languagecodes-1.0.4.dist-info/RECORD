@@ -1,0 +1,14 @@
+languagecodes/__init__.py,sha256=WuCs4R9gy8zntnusUVLXNhwvL_SXSgG6WWRomFR-tBM,1392
+languagecodes/generate.py,sha256=Mf7YkSjWEB5m96hmYurGrRwhHqXJwvnEnBRJJmzJitk,2075
+languagecodes/iso639.py,sha256=1BHAi_sEbmOMztQ6K66VseFExOMqu_xAbTNN3uDBtko,223194
+languagecodes/synonyms.py,sha256=8O-ERtHOyduYIqdfJsXqQpVvbeWx-unj-3k3Xx_C3Xo,852
+languagecodes/util.py,sha256=NjRJtQUW5xHWcy3thm4iI4Fr3k8EAdYzrY9VBGJ1X1g,180
+languagecodes-1.0.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+languagecodes-1.0.4.dist-info/METADATA,sha256=3y-Cj9OohAfF4yOQXqBVD7FZ7XDiXb9f5kDYBFvKP3Q,988
+languagecodes-1.0.4.dist-info/RECORD,,
+languagecodes-1.0.4.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+languagecodes-1.0.4.dist-info/metadata.json,sha256=Fx4j2gc3u8QDOgunCpzvB5gUYt-MuDgbfT1E0pplIhE,1008
+languagecodes-1.0.4.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+languagecodes-1.0.4.dist-info/top_level.txt,sha256=Oi0v-SUgntNz3iF-tmAAh8n0avwVEVa38X65EXK5F18,20
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_codes.py,sha256=eNxtw3p_T0v5rWrCfLNgqPsWgni6tS1D-muo80TJwd4,1011

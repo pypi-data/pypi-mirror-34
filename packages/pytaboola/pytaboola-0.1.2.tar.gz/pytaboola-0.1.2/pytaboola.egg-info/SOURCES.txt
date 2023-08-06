@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+pytaboola/__init__.py
+pytaboola/client.py
+pytaboola/errors.py
+pytaboola.egg-info/PKG-INFO
+pytaboola.egg-info/SOURCES.txt
+pytaboola.egg-info/dependency_links.txt
+pytaboola.egg-info/requires.txt
+pytaboola.egg-info/top_level.txt
+pytaboola/services/__init__.py
+pytaboola/services/base.py
+pytaboola/services/report.py
+pytaboola/services/resource.py
+pytaboola/services/service.py
+pytaboola/utils/__init__.py

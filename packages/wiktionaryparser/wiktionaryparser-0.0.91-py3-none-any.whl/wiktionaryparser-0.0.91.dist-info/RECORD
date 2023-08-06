@@ -1,0 +1,13 @@
+wiktionaryparser/__init__.py,sha256=u7Lqhu_yEWS-dOSziQHP3MxB2uQBOwxbbxjn2rwl6PA,46
+wiktionaryparser/wiktionaryparser.py,sha256=uBDhZ1XPzBcFY5Bo38G03S_i47WOrTokxYwFlmmylFA,11790
+wiktionaryparser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wiktionaryparser/tests/test.py,sha256=A6b_hTlMZm8yAeRHftNwmYy2IT8GMBYFb_lJiODCgg8,1022
+wiktionaryparser/utils/__init__.py,sha256=3w4RJd_d40raFfQZ13XSak2o7tmv69zOv01pJuJJ1a0,52
+wiktionaryparser/utils/utils.py,sha256=EBwWH7IihT43wpbqpA_Om6OtOmobu2Z0svUbPYLdlyY,2837
+wiktionaryparser-0.0.91.data/data/testOutput/testOutput.json,sha256=uN7ZhJkzCqB52rxb6DB2buGW4KA_unOE0z8dbLgqSDE,48136
+wiktionaryparser-0.0.91.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+wiktionaryparser-0.0.91.dist-info/METADATA,sha256=Du8hhR9Thm-NNFoEyc5GQIb-hr4gyd_JU9W4CQ_oo0U,509
+wiktionaryparser-0.0.91.dist-info/RECORD,,
+wiktionaryparser-0.0.91.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+wiktionaryparser-0.0.91.dist-info/metadata.json,sha256=-gXX8bC2ETNdn5bazGTSN5VzLSvSqauauSR3nBYYvY0,710
+wiktionaryparser-0.0.91.dist-info/top_level.txt,sha256=jf-LuDM0vXxs-xLFjPhd7DZOS1zScGPBPl_d3lOyDEk,17

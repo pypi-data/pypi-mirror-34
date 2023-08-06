@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+immutable_collection/__init__.py
+immutable_collection/collection.py
+immutable_collection/collection_test.py
+immutable_collection.egg-info/PKG-INFO
+immutable_collection.egg-info/SOURCES.txt
+immutable_collection.egg-info/dependency_links.txt
+immutable_collection.egg-info/top_level.txt

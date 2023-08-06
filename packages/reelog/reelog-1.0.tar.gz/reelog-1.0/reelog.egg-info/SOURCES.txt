@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+reelog/__init__.py
+reelog/formatter.py
+reelog/handler.py
+reelog/output.py
+reelog/utils.py
+reelog.egg-info/PKG-INFO
+reelog.egg-info/SOURCES.txt
+reelog.egg-info/dependency_links.txt
+reelog.egg-info/not-zip-safe
+reelog.egg-info/top_level.txt

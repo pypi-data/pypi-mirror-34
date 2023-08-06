@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyramid-request-schema
+Version: 1.0.0
+Summary: Pyramid extension for validating incoming requests
+Home-page: https://github.com/sighalt/pyramid_request_schema
+Author: Jakob Rößler
+Author-email: roessler@sighalt.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

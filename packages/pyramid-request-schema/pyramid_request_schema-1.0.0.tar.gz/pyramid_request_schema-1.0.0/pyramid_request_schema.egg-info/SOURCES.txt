@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyramid_request_schema/__init__.py
+pyramid_request_schema/base_schema.py
+pyramid_request_schema/deriver.py
+pyramid_request_schema/exceptions.py
+pyramid_request_schema/tests.py
+pyramid_request_schema.egg-info/PKG-INFO
+pyramid_request_schema.egg-info/SOURCES.txt
+pyramid_request_schema.egg-info/dependency_links.txt
+pyramid_request_schema.egg-info/requires.txt
+pyramid_request_schema.egg-info/top_level.txt

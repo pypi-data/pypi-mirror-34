@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: moonshade
+Version: 0.0.2
+Summary: A Universal Distributed Data Collection Framework
+Home-page: https://github.com/kinaopen/moonshade
+Author: Kina Wakasa
+Author-email: wakasakina@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: googleapis-common-protos (>=1.5.3)
+Requires-Dist: grpcio (==1.13.0)
+
+# Moonshade Python Packages
+
+## Moonshade Python Driver
+
+### Installation
+
+#### Using pip in a virtual environment
+
+```
+python3 -m venv --system-site-packages venv
+source ~/tensorflow/venv/bin/activate      # bash, sh, ksh, or zsh
+source ~/tensorflow/venv/bin/activate.csh  # csh or tcsh
+source ~/tensorflow/venv/bin/activate.fish      # fish
+pip install -U pip
+pip install -U moonshade
+```
+
+#### Use pip in your system environment
+
+```
+sudo pip3 install -U moonshade
+```
+
+

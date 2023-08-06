@@ -1,0 +1,3 @@
+[console_scripts]
+console_server = server_src.server:start_server
+

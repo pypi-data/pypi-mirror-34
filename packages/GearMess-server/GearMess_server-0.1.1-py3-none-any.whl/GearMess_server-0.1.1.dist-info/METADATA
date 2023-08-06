@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: GearMess-server
+Version: 0.1.1
+Summary: Simple server for messenger.
+Home-page: https://github.com/StanislavAntunovich/GearMess
+Author: StanislavAntunovich
+Author-email: stanislav.antunovich@yandex.ru
+License: MIT
+Keywords: python,messenger
+Platform: UNKNOWN
+Requires-Dist: SQLAlchemy
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+

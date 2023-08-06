@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: spader
+Version: 0.0.1
+Summary: A Single Page Application endpoint crawler.
+Home-page: https://github.com/wongherlung/spader
+Author: wongherlung
+Author-email: wongherlung@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Spader
+
+S(ingle)P(age)A(pplication)der is a crawler that scans the bundled JS files in your single page application for endpoints. This tool will be useful if you are trying to enumerate all the endpoints/APIs your application have.
+
+## Compatibility
+Currently, this tool only works with **webpack**.
+
+

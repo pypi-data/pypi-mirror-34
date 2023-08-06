@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: myipip-pkg
+Version: 0.0.1
+Summary: python extension for ipip.net.
+Home-page: https://github.com/dengjiuhong/myipip
+Author: Jiuhong Deng
+Author-email: dengjiuhong@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+

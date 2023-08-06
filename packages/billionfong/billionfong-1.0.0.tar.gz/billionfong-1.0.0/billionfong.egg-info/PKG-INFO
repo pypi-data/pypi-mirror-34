@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: billionfong
+Version: 1.0.0
+Summary: Welcome to my package
+Home-page: https://www.billionfong.com/
+Author: Billy Fong
+Author-email: billionfong@billionfong.com
+License: UNKNOWN
+Description: # billionfong
+        
+        This is a package created by Billy Fong.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

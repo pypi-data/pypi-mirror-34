@@ -1,0 +1,31 @@
+# Commande line
+humanize
+parsedatetime
+progressbar2
+scandir
+tabulate
+
+# Memory driver
+sortedcontainers
+
+# Cassandra driver
+cassandra-driver
+scales
+
+# ElasticSearch
+elasticsearch
+elasticsearch-dsl
+# To support https
+certifi
+
+# Core
+six
+enum34
+cachetools
+prometheus_client
+
+# Metadata cache
+lmdb
+
+# Optional, for bgutil shell:
+# ipython

@@ -1,0 +1,16 @@
+humanize
+parsedatetime
+progressbar2
+scandir
+tabulate
+sortedcontainers
+cassandra-driver
+scales
+elasticsearch
+elasticsearch-dsl
+certifi
+six
+enum34
+cachetools
+prometheus_client
+lmdb

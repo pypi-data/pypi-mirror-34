@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_clear_tables/__init__.py
+django_clear_tables.egg-info/PKG-INFO
+django_clear_tables.egg-info/SOURCES.txt
+django_clear_tables.egg-info/dependency_links.txt
+django_clear_tables.egg-info/not-zip-safe
+django_clear_tables.egg-info/top_level.txt
+django_clear_tables/management/__init__.py
+django_clear_tables/management/commands/__init__.py
+django_clear_tables/management/commands/django_clear_tables.py

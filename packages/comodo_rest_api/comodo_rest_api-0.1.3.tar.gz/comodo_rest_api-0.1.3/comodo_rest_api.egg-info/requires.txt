@@ -1,0 +1,6 @@
+pyjsend
+requests
+
+[test]
+betamax
+pytest

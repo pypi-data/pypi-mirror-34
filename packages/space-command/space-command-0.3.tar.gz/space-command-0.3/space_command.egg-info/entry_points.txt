@@ -1,0 +1,12 @@
+[console_scripts]
+space = space.__main__:main
+
+[space.commands]
+config = space.config:space_config
+map = space.map:space_map
+moon = space.sunmoon:space_moon
+passes = space.passes:space_passes
+stations = space.stations:space_stations
+sun = space.sunmoon:space_sun
+tle = space.tle:space_tle
+

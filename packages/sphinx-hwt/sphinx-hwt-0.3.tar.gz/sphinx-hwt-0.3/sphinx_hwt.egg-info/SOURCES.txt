@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sphinx_hwt/__init__.py
+sphinx_hwt/sphinx_hwt.py
+sphinx_hwt.egg-info/PKG-INFO
+sphinx_hwt.egg-info/SOURCES.txt
+sphinx_hwt.egg-info/dependency_links.txt
+sphinx_hwt.egg-info/not-zip-safe
+sphinx_hwt.egg-info/requires.txt
+sphinx_hwt.egg-info/top_level.txt
+sphinx_hwt/html/schematic_viewer.css
+sphinx_hwt/html/schematic_viewer.html
+sphinx_hwt/tests/__init__.py
+sphinx_hwt/tests/conf.py
+sphinx_hwt/tests/test.py

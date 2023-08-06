@@ -1,0 +1,17 @@
+CHANGES.md
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+tox.ini
+specification/__init__.py
+specification/_extd_ast_expr.py
+specification/specification.py
+specification.egg-info/PKG-INFO
+specification.egg-info/SOURCES.txt
+specification.egg-info/dependency_links.txt
+specification.egg-info/top_level.txt
+tests/test_expressions.txt
+tests/test_extd_ast_expr.py
+tests/test_specification.py

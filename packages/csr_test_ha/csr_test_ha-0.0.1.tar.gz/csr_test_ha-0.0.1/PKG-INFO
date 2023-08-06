@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: csr_test_ha
+Version: 0.0.1
+Summary: A Test package for testing HA on Azure
+Home-page: https://github4-chn.cisco.com/csr1000v-azure/csr_test_ha
+Author: Christopher Reder
+Author-email: creder@cisco.com
+License: MIT
+Download-URL: https://github4-chn.cisco.com/csr1000v-azure/csr_test_ha
+Description: UNKNOWN
+Keywords: cisco,azure,ha,high availability
+Platform: UNKNOWN

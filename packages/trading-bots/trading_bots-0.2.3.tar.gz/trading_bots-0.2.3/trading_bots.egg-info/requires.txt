@@ -1,0 +1,7 @@
+cached-property
+click
+jinja2
+requests
+pygogo
+simple-settings[yaml]
+trading-api-wrappers

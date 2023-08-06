@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: bpmailer
+Version: 1.0
+Summary: Mailing utility for Django
+Home-page: https://github.com/beproud/bpmailer/
+Author: BeProud Inc.
+Author-email: project@beproud.jp
+License: UNKNOWN
+Keywords: django,mail
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=1.8)
+Requires-Dist: six
+
+[![Build Status](https://travis-ci.org/beproud/bpnotify.svg?branch=master)](https://travis-ci.org/beproud/bpnotify)
+
+# Requirements
+
+* Python (2.7)
+* Celery (4.1)
+* Django (1.8, 1.11)
+
+

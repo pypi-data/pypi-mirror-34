@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mansaapy
+Version: 0.1.2
+Summary: Python API for controlling Mansaa Smartshine Bluetooth bulbs
+Home-page: http://github.com/kurienzach/mansaapy
+Author: Kurien Zacharia
+Author-email: kurienzach@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: bluepy (==1.1.4)
+
+UNKNOWN
+
+

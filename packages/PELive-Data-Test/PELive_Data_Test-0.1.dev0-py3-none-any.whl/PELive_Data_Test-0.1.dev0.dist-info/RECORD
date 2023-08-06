@@ -1,0 +1,8 @@
+PELive_Data_Test-0.1.dev0.dist-info/METADATA,sha256=z-K0VpBR-e3DOUKpbiR7G9Siq4TNhC5353xV6qqKJIc,261
+PELive_Data_Test-0.1.dev0.dist-info/RECORD,,
+PELive_Data_Test-0.1.dev0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+PELive_Data_Test-0.1.dev0.dist-info/top_level.txt,sha256=skgs2QCERWwguV6r6CbFm6czAzVkKdYOt8My7v4rZlU,10
+data_test/__init__.py,sha256=8GPfpg0zEkhsxlR_hin4MR-j3Ot1So9bB1IEt-kDR1Y,36
+data_test/data_test.py,sha256=RwAkyIjeM1L1yzDgP-h-n7-28ygVtprDoGm4yCYqO1w,2698
+data_test/dimensions.py,sha256=ajrWdFedbgvmBwaU_1nq5u_wtWyCgeVsKxnGTWmuOoY,6828
+data_test/measures.py,sha256=LN1n8JwXfVCdcOGEtzgzBuVqMsyCLjP2sciyGvP7p94,9809

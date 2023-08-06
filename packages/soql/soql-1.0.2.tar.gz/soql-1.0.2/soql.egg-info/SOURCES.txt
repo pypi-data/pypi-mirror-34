@@ -1,0 +1,17 @@
+README.rst
+setup.py
+soql/__init__.py
+soql/attributes.py
+soql/loaders.py
+soql/model.py
+soql/model_registry.py
+soql/nodes.py
+soql/path_builder.py
+soql/select.py
+soql/utils.py
+soql.egg-info/PKG-INFO
+soql.egg-info/SOURCES.txt
+soql.egg-info/dependency_links.txt
+soql.egg-info/requires.txt
+soql.egg-info/top_level.txt
+soql.egg-info/zip-safe

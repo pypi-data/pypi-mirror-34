@@ -1,0 +1,3 @@
+include version.meta
+include README
+include requirements.txt

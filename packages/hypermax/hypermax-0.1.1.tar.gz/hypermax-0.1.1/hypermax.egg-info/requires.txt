@@ -1,0 +1,12 @@
+hyperopt
+networkx==1.11
+scikit-learn
+numpy
+scipy
+jsonschema
+pyyaml
+urwid
+panwid
+psutil
+matplotlib
+colors.py

@@ -1,0 +1,9 @@
+subreddit_mirror-1.1.0.dist-info/METADATA,sha256=4yZwpMzeQk-3Ch1IvAi6VHXlLKRt281ehojR2bKgxQ0,4368
+subreddit_mirror-1.1.0.dist-info/RECORD,,
+subreddit_mirror-1.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+subreddit_mirror-1.1.0.dist-info/entry_points.txt,sha256=yVxGs8Zyay2Vs9G5i93w1-0UdDeORQS1JSeaP0R6kHI,66
+subreddit_mirror-1.1.0.dist-info/top_level.txt,sha256=hAoxR5OCnaw--VKzzyzoUCIMeWyRxV_mhpcn4Y0rt5E,16
+subredditmirror/__init__.py,sha256=QNehbJFYvI0O7WDDSIqSkuQur6DS0KZfJrUEDUgNO7Q,771
+subredditmirror/__main__.py,sha256=2oRXE0qyKy-dj08lupFaBwvyeJtOKbGfl86dI6_r3jA,794
+subredditmirror/exceptions.py,sha256=ssZzsDr_L1ZYjLrJex3f_50_xQbIFqNzxwBVWNAtspw,1154
+subredditmirror/mirror.py,sha256=9e4M-Jh2dQ2KiMYWzKBLCAcrH8kXnzJUA1ry496uqZI,7034

@@ -1,0 +1,3 @@
+[console_scripts]
+vultr_speed = vultr_speed.main:main
+

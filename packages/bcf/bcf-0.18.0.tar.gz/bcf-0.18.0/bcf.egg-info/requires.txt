@@ -1,0 +1,6 @@
+appdirs>=1.4
+argcomplete>=1.8
+pyserial>=3.0
+colorama
+PyYAML>=3.11
+schema>=0.6.7

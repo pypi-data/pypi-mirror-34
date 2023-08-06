@@ -1,0 +1,10 @@
+README.txt
+setup.py
+asad_pack/__init__.py
+asad_pack/mailre.py
+asad_pack/modules.py
+asad_pack/textanalyze.py
+mypacks.egg-info/PKG-INFO
+mypacks.egg-info/SOURCES.txt
+mypacks.egg-info/dependency_links.txt
+mypacks.egg-info/top_level.txt

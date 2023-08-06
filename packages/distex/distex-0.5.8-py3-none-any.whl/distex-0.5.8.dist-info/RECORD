@@ -1,0 +1,14 @@
+distex/__init__.py,sha256=q1r8hjq5re2DYKK4G1dSAmQD-Vd6vo6lGLojSHrdKo0,140
+distex/pool.py,sha256=msR3aT70wmiohLH2kDYR2mrw9qPdG8h9mONTT2zTWSc,21231
+distex/processor.py,sha256=_amR8PBqLtwwVai1wMtWQcNlZUUb33lVriDA8v6Ggso,4029
+distex/serializer.py,sha256=kcC-bUJWsW0l4YJMO4japV7UYgyYL6np9nidwUOlzrM,4393
+distex/server.py,sha256=Ox_8E1Lu5WgNdhNXOPNDV1zVdfBhlhpVFFNOPl1mAac,2626
+distex/slotpool.py,sha256=G7B5fmt9uiYYydOrkJnEMheEVQ7JijrE-tz3kCYgId0,2223
+distex/util.py,sha256=5_SfQLFlYemewohiUWFHfSRYiH7_gXT39D6bxjTscYQ,3596
+distex/version.py,sha256=N4Y3WCaVz9WCJeHvb1BLiM3NRxFYYExNpPBkknYj8iY,8
+distex/worker.py,sha256=vv0z1ZLAY6gH4p1se2jya6sjnRcA5Z0gQcy_-8Dfsjk,2019
+distex-0.5.8.dist-info/METADATA,sha256=IZPjCJS7Ski849U2A54S0VnjrVbJbeZX086yLQUMPpU,5342
+distex-0.5.8.dist-info/RECORD,,
+distex-0.5.8.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+distex-0.5.8.dist-info/entry_points.txt,sha256=a_Cn1kcy_qbpxP4fqTT_XAuBoS_VmmdHTyi6fLKcRE4,55
+distex-0.5.8.dist-info/top_level.txt,sha256=hikBoBY7OWyCSJjF8oirBWE-I8gQ5JXYCP2PhyRZB9w,7

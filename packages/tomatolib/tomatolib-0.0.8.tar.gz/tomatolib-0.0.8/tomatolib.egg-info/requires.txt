@@ -1,0 +1,10 @@
+motor>=2.0.0
+aiodns>=1.1.1
+aiohttp>=3.3.2
+aiomysql>=0.0.9
+aioredis>=1.0.0
+async-timeout>=2.0.0
+cchardet>=2.1.1
+configparser>=3.5.0
+multidict>=3.3.2
+hiredis>=0.2.0

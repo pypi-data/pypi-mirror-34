@@ -1,0 +1,10 @@
+djangowind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangowind/auth.py,sha256=BMp-cQotUq_8FhO84fU41yP4GgNOtIsYF8iXnhGeTrg,19440
+djangowind/context.py,sha256=jOQPscEtfeIqzpAlKxvSFIlf2-km_ds1mHbkeQKKO_4,612
+djangowind/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangowind/urls.py,sha256=pQ3yi26Fgk-sJGK1m_fdtjtIj0fvpKYi9kKufzMUNzo,1264
+djangowind/views.py,sha256=HapLhVeuzO52TI7Jr6MW9ye6rdPsrDpspoHcdgVUMyY,5777
+djangowind-1.2.1.dist-info/METADATA,sha256=pIeVecDbp4lUxY9r5LVFJ6u6FDgLIuy_lI0rWbpnQRY,301
+djangowind-1.2.1.dist-info/RECORD,,
+djangowind-1.2.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+djangowind-1.2.1.dist-info/top_level.txt,sha256=ocXLSZGzwPQhU113sPQ2NV29zH4T_hiPtLzAri2VFeg,11

@@ -1,0 +1,16 @@
+futuraAiToolbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+futuraAiToolbox/futuraAiToolbox.py,sha256=Prx-md_CYz3RfF6vCWFtt13OEARQSZolnoyNluarC30,14522
+futuraAiToolbox/futuraAiUtils.py,sha256=-AOqt4AscMSWIOMNae1BLLjOOEoP1sDjSKpa7mEgiKQ,11675
+futuraAiToolbox/guiBackends/__init__.py,sha256=8KLWKlBiB4WjZdjlAigxUKKAMaLfoq_XtIC05IbZBFE,329
+futuraAiToolbox/guiBackends/bokehbackend.py,sha256=Bn1lqbDXagBSM1IE9yWybeFLVzk9sWoJhqXlMJ3sgKk,15690
+futuraAiToolbox/guiBackends/theme.yaml,sha256=DnhV5DVRZCwA6apZXCu8uoxvs3lY3nSc725LYRfqw5s,881
+futuraAiToolbox/guiBackends/tkbackend.py,sha256=ixdeOZklcrJOep_4hEqphQv-s_LN_PA9DyH4ABVyNEI,16501
+futuraAiToolbox/quant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+futuraAiToolbox/quant/stats.py,sha256=XpdMmmCZvZwBl6cYPIPSfvh-93V1h9Me0cnZ9mfmWtc,3403
+futuraAiToolbox-0.0.13.data/data/futuraAiToolbox/guiBackends/theme.yaml,sha256=DnhV5DVRZCwA6apZXCu8uoxvs3lY3nSc725LYRfqw5s,881
+futuraAiToolbox-0.0.13.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+futuraAiToolbox-0.0.13.dist-info/METADATA,sha256=wXmhxVNG9J2wajkI-Vl1ZTgpE-bahF76LV4f3hUhDMY,769
+futuraAiToolbox-0.0.13.dist-info/RECORD,,
+futuraAiToolbox-0.0.13.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+futuraAiToolbox-0.0.13.dist-info/metadata.json,sha256=-zLzrQ71mX5FbVzo21OgLFiMuDEp3N5ZOurJsMyKqQA,859
+futuraAiToolbox-0.0.13.dist-info/top_level.txt,sha256=TgmvyhhtsFno1S6XcC1zOXFZVzBe75MExgkYPUjA1qY,16

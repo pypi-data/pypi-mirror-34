@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+json_payload_validator/__init__.py
+json_payload_validator/validator.py
+json_payload_validator.egg-info/PKG-INFO
+json_payload_validator.egg-info/SOURCES.txt
+json_payload_validator.egg-info/dependency_links.txt
+json_payload_validator.egg-info/requires.txt
+json_payload_validator.egg-info/top_level.txt
+json_payload_validator/tests/__init__.py
+json_payload_validator/tests/test_validator.py

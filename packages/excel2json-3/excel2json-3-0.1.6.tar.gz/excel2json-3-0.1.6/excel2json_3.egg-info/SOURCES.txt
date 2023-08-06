@@ -1,0 +1,12 @@
+README.md
+setup.py
+api/__init__.py
+api/convert.py
+api/convert_using_openpyxl.py
+excel2json/__init__.py
+excel2json_3.egg-info/PKG-INFO
+excel2json_3.egg-info/SOURCES.txt
+excel2json_3.egg-info/dependency_links.txt
+excel2json_3.egg-info/entry_points.txt
+excel2json_3.egg-info/requires.txt
+excel2json_3.egg-info/top_level.txt

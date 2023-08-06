@@ -1,0 +1,11 @@
+README.md
+setup.py
+grope/__init__.py
+grope/_pbt.py
+grope/blob_io.py
+grope/rope.py
+grope/wrap.py
+grope.egg-info/PKG-INFO
+grope.egg-info/SOURCES.txt
+grope.egg-info/dependency_links.txt
+grope.egg-info/top_level.txt

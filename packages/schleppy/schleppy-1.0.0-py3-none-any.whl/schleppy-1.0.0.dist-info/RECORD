@@ -1,0 +1,10 @@
+schleppy/__init__.py,sha256=M15hQouFj5CktZMOnSuX1ypLum2OibxUbHzk1FNOCoI,75
+schleppy/reach.py,sha256=r9l15Gy8yLUcwBrmFj0XT567DFfkJs2MmAkg7HUaJRg,1087
+schleppy/transform.py,sha256=rEDimdiUWjuCE81tV0GKKXq6b9ZPjD3dGIQTsLpCu5w,888
+schleppy-1.0.0.dist-info/METADATA,sha256=-BzO_04DUA4vBes-dGXMjI--AOcZ-Ngcl8XZL0BkMf0,2795
+schleppy-1.0.0.dist-info/RECORD,,
+schleppy-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+schleppy-1.0.0.dist-info/top_level.txt,sha256=kV2QgVKkA2JQu7eoP1RzPdWlFsfHJRJJvnzBiiH1ZM0,14
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/reach_unit_test.py,sha256=PaDSVZn72aNHRdXaKqYCTfHGKEBkSWhtOY1U3DOjdOs,2957
+test/transform_unit_test.py,sha256=Ok3DUgGHaoc6ao7dKo8eLZKCWp6n7JwF2uvhJ-DWn_M,6272

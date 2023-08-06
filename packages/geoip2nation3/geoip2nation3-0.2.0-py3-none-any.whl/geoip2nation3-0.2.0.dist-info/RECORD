@@ -1,0 +1,10 @@
+geoip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoip/geoip.py,sha256=glwwPc9vnwzkNEduri7vqZ67Mg-yU4UXmKfc9n7zziI,6373
+geoip/ip2nation.zip,sha256=w2GmmvlclOL27qe-0vOPhm2UFajDN3TbCQDojHRUhj8,358812
+geoip/ipinfo.py,sha256=opYWFP5ShjTYvNEQ5xbl5Xdmedpa-OrAUUjDuqgD8No,254
+geoip/utillx.py,sha256=-Y8wMYVFVMherHW9ohkjzjPa4qvoIolIJh146v1VcVE,1063
+geoip2nation3-0.2.0.data/scripts/geoip.py,sha256=glwwPc9vnwzkNEduri7vqZ67Mg-yU4UXmKfc9n7zziI,6373
+geoip2nation3-0.2.0.dist-info/METADATA,sha256=hd1ToZZBnU_7yeuZeaN3_UWY_8ynFg6CS_8BbHrAdUk,2547
+geoip2nation3-0.2.0.dist-info/RECORD,,
+geoip2nation3-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+geoip2nation3-0.2.0.dist-info/top_level.txt,sha256=aLHM2j3gzfQvkeKPWqfs5Y6sVIsJJwhlDC2oxQoF84A,6

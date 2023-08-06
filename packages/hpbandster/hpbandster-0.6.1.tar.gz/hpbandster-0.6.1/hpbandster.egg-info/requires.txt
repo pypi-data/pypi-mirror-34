@@ -1,0 +1,9 @@
+Pyro4
+serpent
+ConfigSpace
+numpy
+statsmodels
+scipy
+
+[Automatic hostname inference]
+netifaces

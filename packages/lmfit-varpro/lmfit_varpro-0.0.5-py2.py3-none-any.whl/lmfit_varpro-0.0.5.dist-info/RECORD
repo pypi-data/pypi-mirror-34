@@ -1,0 +1,13 @@
+lmfit_varpro/__init__.py,sha256=pN6WnLdneVRhhgSh2OPZ_Z8qR-Ra7AZby0j-DMjj8BY,482
+lmfit_varpro/constraints.py,sha256=3oU82i8kN6R06rd0aTGClUuyRrBEeT3xFn4rvqjstqs,1077
+lmfit_varpro/qr_decomposition.py,sha256=ogkRzRQasAxmzfdqY8Hyp_CP70japJDoFk90tkzUwAw,723
+lmfit_varpro/result.py,sha256=86noTqCRoeA6MT1GL3PpvX4J50p7mawoKVDi0DfaNJg,4972
+lmfit_varpro/separable_model.py,sha256=ihie97bAcgPlztwyhdmB9rLCx-ex6pJPA8Sa71Jhi9M,2301
+lmfit_varpro/util.py,sha256=XUnGdzc9gSlqvPQ1Wve8Ga3G_0y8bbcfk8LCc8jfdPo,214
+lmfit_varpro-0.0.5.dist-info/METADATA,sha256=foMmUzXTeYRZuqigepihoUl4N1DVcvr-dnQes2v7PWc,2385
+lmfit_varpro-0.0.5.dist-info/RECORD,,
+lmfit_varpro-0.0.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+lmfit_varpro-0.0.5.dist-info/top_level.txt,sha256=PuICUPOPkO-T3pmDwJoEqYx0YMMX5dC4LM0Uq1mK6ng,19
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_helpers.py,sha256=TJJ29K0i3v9XN9_lDT9c969uoDzIaOF02ZgvrFAARCg,727
+tests/test_simple_kinetic_model.py,sha256=Jocv1p31d0S3exLkI2QwOp15kDXmlwqphLzrybZ5rR8,5143

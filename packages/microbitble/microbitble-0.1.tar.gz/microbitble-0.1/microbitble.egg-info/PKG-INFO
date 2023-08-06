@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: microbitble
+Version: 0.1
+Summary: Python SDK for scratch-microbit HEX
+Home-page: https://github.com/wwj718/scratch-microbit-python-sdk
+Author: wwj718
+Author-email: wuwenjie718@gmail.com
+License: GPLv3
+Description: A Python SDK, which provides an API for connecting and controlling micro:bit(with scratch-microbit HEX). Requires BLED112 Bluetooth LE module.
+Keywords: SDK microbit education
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development

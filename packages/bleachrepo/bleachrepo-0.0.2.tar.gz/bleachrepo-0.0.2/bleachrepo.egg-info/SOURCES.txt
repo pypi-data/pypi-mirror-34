@@ -1,0 +1,17 @@
+README.md
+bleach/__init__.py
+bleach/setup.py
+bleach/cli/__init__.py
+bleach/cli/args.py
+bleach/cli/main.py
+bleach/formatters/__init__.py
+bleach/formatters/default.py
+bleach/outputs/__init__.py
+bleach/outputs/slack.py
+bleach/outputs/stdout.py
+bleach/sourcecontrol/__init__.py
+bleach/sourcecontrol/github.py
+bleachrepo.egg-info/PKG-INFO
+bleachrepo.egg-info/SOURCES.txt
+bleachrepo.egg-info/dependency_links.txt
+bleachrepo.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+from pyansys import examples
+
+def test_cylinderansys():
+    examples.CylinderANSYS()

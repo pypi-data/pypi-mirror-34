@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: pyqaxe
+Version: 0.1.0
+Summary: Dataset indexing and curation tool
+Home-page: UNKNOWN
+Author: Matthew Spellings
+Author-email: mspells@umich.edu
+License: BSD
+Project-URL: Documentation, http://pyqaxe.readthedocs.io/
+Project-URL: Source, https://bitbucket.org/glotzer/pyqaxe
+Description: 
+        Pyqaxe is a library for transparently accessing datasets as they
+        change forms.
+        
+        Documentation
+        =============
+        
+        Full documentation is available in standard sphinx form::
+        
+          $ cd doc
+          $ make html
+        
+        Automatically-built documentation is available at
+        https://pyqaxe.readthedocs.io .
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3

@@ -1,0 +1,9 @@
+README.md
+setup.py
+ddlogger/__init__.py
+ddlogger/ddlogger.py
+ddlogger.egg-info/PKG-INFO
+ddlogger.egg-info/SOURCES.txt
+ddlogger.egg-info/dependency_links.txt
+ddlogger.egg-info/requires.txt
+ddlogger.egg-info/top_level.txt

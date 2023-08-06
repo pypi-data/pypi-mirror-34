@@ -1,0 +1,6 @@
+ruamel.appconfig
+ruamel.showoutput
+ruamel.std.argparse>=0.8
+python-hglib
+repo
+readme-renderer

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: revfyawo.mongo
+Version: 0.0.6
+Summary: A mongo ODM
+Home-page: https://github.com/revfyawo/revfyawo-mongo
+Author: Lucien Haurat
+Author-email: lucien.haurat@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pymongo (~=3.7)
+
+UNKNOWN
+
+

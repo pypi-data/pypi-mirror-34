@@ -1,0 +1,3 @@
+[console_scripts]
+mtsort = mtsort:main
+

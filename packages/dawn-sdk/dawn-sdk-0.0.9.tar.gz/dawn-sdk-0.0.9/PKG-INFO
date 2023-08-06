@@ -1,0 +1,445 @@
+Metadata-Version: 2.1
+Name: dawn-sdk
+Version: 0.0.9
+Summary: This is the SDK for dawn, which is OSS system. Dawn is honorly presented by TAL's ocean team.
+Home-page: http://dawn.shareurl.facethink.com
+Author: TAL AI-LAB
+Author-email: author@example.com
+License: UNKNOWN
+Description: # Document for dawn's SDK
+        
+        This is the SDK for dawn, which is OSS system. Dawn is honorly presented by TAL's ocean team.
+        
+        # OSS-SDK python 使用说明
+        
+        ## 描述
+        
+        - 本文档适用于OSS-SDK python语言版本的开发指南。
+        - 主要提供如下功能
+          - [x] 1.上传单个文件
+          - [x] 2.生成对象web访问url，该url带过期时间
+          - [x] 3.大文件分段上传
+          - [x] 4.查询租户下面的bucket列表
+          - [x] 5.查询bucket下面的对象列表
+        
+        ## 使用前准备
+        - 使用OSS-SDK前需要先下载，可以采用下面的方式下载：
+          - [x] pip install dawn-sdk // python2下载
+          - [x] pip3 install dawn-sdk // python3下载
+        - 在使用之前引入包
+          - 可以引入如下包
+          ```python
+          from dawn_sdk import auth //认证相关类接口
+          from dawn_sdk import bucket //bucket类接口
+          from dawn_sdk.xml_body import PartInfo //分段上传返回的分段信息类
+          ... //其他导入
+          ```
+        
+        ## Bucket类接口
+        - bucket操作相关接口
+        ### 1. 构造函数
+          - 原型
+          ```python
+          def __init__(self, auth, endpoint, bucket, session=None, connect_timeout=None)
+          ```
+          - 参数和返回值：
+            - [x] auth: 认证实例对象，即auth.Authorize类的实例对象，用于认证。
+            - [x] endpoint: 端点，OSS服务端点，具体值请咨询服务提供者。
+            - [x] bucket: bucket名称。
+            - [x] session: 会话，通常用于复用之前使用的会话，可以不进行设置，默认不复用之前的会话。
+            - [x] connect_timeout: 连接超时，单位为秒，可以不设定该参数，将使用默认超时: 30s.
+            - 返回值，无。
+          - 使用示例：
+          ```python
+          from dawn_sdk import auth
+          from dawn_sdk import bucket
+        
+          access_key="<you access key>"def sign_url(self, key, expires, method='GET', headers=None, params=None)
+          secret_key="<you secret key>"def sign_url(self, key, expires, method='GET', headers=None, params=None)
+        
+          //初始化认证
+          ath = auth.Authorize(access_kdef sign_url(self, key, expires, method='GET', headers=None, params=None)
+        
+          endpoint="<you OSS endpoint>"
+          bucket_name="<you bucket name>"
+          is_cname="<is CNAME or not>" //需要咨询服务提供商
+          conn_timeout=60 //设置连接超时为60s
+        
+          //初始化bucket
+          bkt = bucket.Bucket(ath, endpoint, bucket_name, is_cname， connect_timeout=conn_timeout)
+        
+          ```
+        ### 2. 上传对象，从缓冲区上传
+          - 原型
+          ```python
+          def put_object(self, key, data, headers=None, progress_callback=None, upload_speed_limited=None)
+          ```
+          - 参数和返回值
+            - [x] key: 需要上传的对象名
+            - [x] data: 需要上传对象的数据，数据的长度必须小于5GB
+            - [x] header: 用户自定义HTTP头，通常不需要自定义头，
+            - [x] progress_callback: 上传进度回调，原型为： def progress_func(chunk_size, size)
+              - [x] chunk_size: 已经传输的字节数
+              - [x] size: 总字节数。
+            - [x] upload_speed_limited: 上传速度限制，单位为字节每秒。不指定该参数时，即不限速。
+            - 返回值: 上传成功则返回PutObject对象，否则抛出异常，可以查看异常的详细信息。
+          - 使用示例:
+          ```python
+        
+          //Bucket实例已经构造，如上的构造函数示例，
+          //bkt = bucket.Bucket(...);
+        
+          //对象名
+          obj="<you object name>"
+          data="<object content...>"
+          //progress_func为上传进度回调，该参数可选，可以不指定。
+          progress_func=...
+          //limit为上传速度限制，该参数可选，可以不指定。
+          limit=...
+          try:
+            result = bkt.put_object(obj, data, progress_callback=progress_func, upload_speed_limited=limit)
+            //成功则不抛出异常。
+          except BaseError, err:
+            //处理失败
+        
+          ```
+        ### 3. 上传对象，从文件上传
+          - 原型
+          ```python
+          def put_object_from_file(self, key, filename, headers=None, progress_callback=None, upload_speed_limited=None)
+          ```
+          - 参数和返回值
+            - [x] key: 需要上传的对象名
+            - [x] filename: 需要上传的文件路径，文件大小必须小于5GB
+            - [x] header: 用户自定义HTTP头，通常不需要自定义头，
+            - [x] progress_callback: 上传进度回调，原型为： def progress_func(chunk_size, size)
+              - [x] chunk_size: 已经传输的字节数
+              - [x] size: 总字节数。
+            - [x] upload_speed_limited: 上传速度限制，单位为字节每秒。不指定该参数时，即不限速。
+            - 返回值: 上传成功则返回PutObject对象，否则抛出异常，可以查看异常的详细信息。
+          - 使用示例:
+          ```python
+        
+          //Bucket实例已经构造，如上的构造函数示例，
+          //bkt = bucket.Bucket(...);
+        
+          //对象名
+          obj="<you object name>"
+          file="<you upload file path>"
+          //progress_func为上传进度回调，该参数可选，可以不指定。
+          //upload_speed_limit为上传速度限制，该参数可选，可以不指定。
+          try:
+            result = bkt.put_object_from_file(obj, file, progress_callback=progress_func, upload_speed_limited=limit)
+            //成功则不抛出异常。
+          except BaseError, err:
+            //处理失败
+        
+          ``` 
+        ### 4. 分段上传接口
+        - 分段上传是一组接口协同工作
+        - 初始化接口
+          - 原型
+          ```python
+          def init_multipart_upload(self, key, headers=None)
+          ```
+          - 接口说明
+            - [x] key: 对象名称
+            - [x] headers: 自定义HTTP头，通常不用指定。
+            - 返回值： 如果成功，则返回InitMultipartUpload对象，该对象包含了upload的id，作为后续的多次上传的参数使用；如果失败，则抛出异常。
+          - 使用示例: 见后面的统一示例
+        - 上传接口
+          - 原型
+          ```python
+          def upload_part(self, key, upload_id, part_number, data, progress_callback=None, upload_speed_limited=None, headers=None)
+          ```
+          - 接口说明
+            - [x] key: 对象名称quxiao
+            - [x] upload_id: 调quxiao的返回值。
+            - [x] part_number: quxiao范围为[1, 10000]
+            - [x] data: 上传的quxiao是缓冲区数据，也可以是LimitedReader对象: LimitedReader是一个受限制的读取器，可以指定读取的长度，而不是整个文件长度。每次上传的数据最大5GB，除了最后一个分段数据没有最小限制外，其他分段都必须大于等于5MB。
+            - [x] progress_callquxiao度回调，原型为： def progress_func(chunk_size, size)
+              - [x] chunk_size:quxiao节数
+              - [x] size: 总字quxiao
+            - [x] upload_speed_quxiao速度限制，单位为字节每秒。不指定该参数时，即不限速。
+            - [x] header: 用户quxiao通常不需要自定义头，
+            - 返回值： 如果成功，则返回PutObject对象，该对象包含了该分段的ETAG，和part_number构成一个上传信息，所有的上传信息构成上传数组，作为后续完成上传的参数使用；如果失败，则抛出异常。
+          - 使用示例: 见后面的统一示例
+        - 完成上传接口
+          - 原型
+          ```python
+          def complete_multipart_upload(self, key, upload_id, parts, headers=None)
+          ```
+          - 接口说明
+            - [x] key: 对象名称
+            - [x] upload_id: 调用初始化接口的返回值。
+            - [x] parts: 分段上传的数组，数组元素为单词的上传信息，包含part_number和上传成功返回的ETAG。
+            - [x] header: 用户自定义HTTP头，通常不需要自定义头，
+            - 返回值： 如果成功，则返回PutObject对象；如果失败，则抛出异常。
+            - **说明** 分段上传接口调用后，对象存储即开始计费，当调用完成或者取消接口时，分段对象才得以消除。所以请务必调用完成或者取消接口。
+          - 使用示例: 见后面的统一示例
+        - 取消上传接口
+          - 原型
+          ```python
+          def abort_multipart_upload(self, key, upload_id)
+          ```
+          - 接口说明
+            - [x] key: 对象名称
+            - [x] upload_id: 调用始化接口的返回值。
+            - 返回值: 成功返回Result对象；如果失败，则抛出异常。
+            - **说明** 分段上传接口调用后，对象存储即开始计费，当调用完成或者取消接口时，分段对象才得以消除。所以请务必调用完成或者取消接口。
+          - 使用示例: 见后面的统一示例
+        - 统一示例:
+          ```python
+        
+          //Bucket实例已经构造，如上的构造函数示例，
+          //bkt = bucket.Bucket(...);
+        
+          //progress_func为上传进度回调，该参数可选，可以不指定。
+          progress_func=...
+          //limit为上传速度限制，该参数可选，可以不指定。
+          limit=...
+        
+          //对象名
+          obj="<you object name>"
+          file="<you upload file>"
+        
+          flen = os.path.getsize(file)
+          with open(file, 'rb') as f:
+            //分片大小
+            slice = (1024 * 1024) * 5
+        
+            //分段数
+            times = flen // slice
+            //最后一段的大小
+            left = flen % slice
+        
+        
+            uid = None
+            //分段初始化
+            try: 
+              result = bkt.init_multipart_upload(obj)
+              uid = result.upload_id
+            except BaseError, err:
+              //处理错误
+        
+            parts = []
+            number = 1
+            while True:
+              if times == 0:
+                break
+              //使用限制读取器： 限制读取器持有支持read的接口的对象。每次最多读取`slice`个字节数据。     
+              reader = LimitedReader(f, slice)
+              
+              try:
+                out = bkt.upload_part(obj, uid, number, reader, progress_callback=progress_func, upload_speed_limited=limit)
+                part = PartInfo(number, out.etag)
+                parts.append(part)
+              except BaseError, err:
+                //处理错误或者调用取消接口取消
+                bkt.abort_multipart_upload(obj, uid)
+                exit(-1)
+              
+              number += 1
+              times -= 1
+            
+            if left > 0:
+              reader = LimitedReader(f, left)
+              
+              out = bkt.upload_part(obj, uid, number, reader, progress_callback=progress_func, upload_speed_limited=limit)
+              part = PartInfo(number, out.etag)
+              parts.append(part)
+            try:
+              result = bkt.complete_multipart_upload(obj, uid, parts)
+            except BaseError, err:
+              //处理错误或者重试多次直到成功。
+        
+          ```
+        ### 生成对象web访问url接口
+          - 原型
+          ```python
+          def sign_url(self, key, expires, method='GET', headers=None, params=None)
+          ```
+          - 接口说明
+            - [x] key: 对象名称
+            - [x] expires: 过期时间，从当前时间开始的秒数。
+            - [x] method: 使用url时的HTTP方法，默认为GET。
+            - [x] headers: 自定义HTTP头，通常不用指定。
+            - [x] params: 自定义HTTP参数，通常不用指定。
+            - 返回值： 返回对象的web访问url字符串
+          - 使用示例
+          ```python
+        
+          //Bucket实例已经构造，如上的构造函数示例，
+          //bkt = bucket.Bucket(...);
+        
+          obj="<you object name>"
+          expires=3600 // 3600秒 == 1小时
+        
+          url = bkt.sign_url()
+        ### 查看bucket下面的对象
+        - 描述，使用场景
+          - [x] 查询bucket下面的对象
+          - [x] 通过设定查询的前缀来查询特定前缀的对象，通常可用于将对象名设置为带目录结构的形式，指定前缀查询，将返回目录下面的文件/文件夹。
+          - [x] 当对象较多时，一次查询无法完成，可以像使用迭代器一样，迭代剩余的查询结果。
+        
+          - 接口描述和定义
+          ```python
+          def list_objects(self, prefix='', delimiter='', marker='', max_keys=100)
+          ```
+            - 参数
+              - [x] prefix
+                - 查询对象时，满足指定的前缀的对象将返回。
+              - [x] delimiter 
+                - 查询时的分隔符，和prefix结合使用
+              - [x] marker
+                - 查询时，从`标记`处开始，返回之后的对象， **注意，之后指的是对象名按照字典序排序之后。**
+              - [x] max_keys
+                - 查询时，每次最多返回多少个对象，当还有剩余对象的时候，可以继续查询。默认为100
+            - 返回值ListObjects定义
+            ```python
+            class ListObjects(Result):
+            def __init__(self, resp):
+                super(ListObjects, self).__init__(resp)
+            
+                self.is_continous = False //知识是否所有的对象返回了。
+                self.next_marker = '' //当查询大于max_keys时，下次调用，需要使用该值作为下次调用的标记，以此来保证下次调用的正确性。
+                self.objects = []     //对象列表，类型如下SimplifiedBucketInfo
+                self.prefixes = []    //目录列表
+        
+            class SimplifiedBucketInfo(object):
+            def __init__(self, name, creation_date):
+                #: Bucket名
+                self.name = name
+        
+                #: Bucket的创建时间，类型为int。参考 :ref:`unix_time`。
+                self.creation_date = creation_date
+            ```
+          - **接口使用示例-1**
+          调用步骤：
+          - [x] 准备bucket
+          ```python
+          //Bucket实例已经构造，如上的构造函数示例，
+          bkt = bucket.Bucket(...);
+          ...
+          ```
+          - [x] 查询对象
+          假定bucket内的对象如下：
+            - [x] object-1
+            - [x] object-11
+            - [x] object-2
+            - [x] object-21
+            - [x] object-22
+            - [x] object-3
+            - [x] object-31
+            - [x] object-32
+          - [x] 查询所有对象(无任何参数选项)
+          ```python
+          objects = bkt.list_objects()
+        
+          //将返回所有对象
+          ```
+          - [x] 查询，每次最多返回3个对象结果。
+          ```python
+          // 2. max keys option.
+          objects = bkt.list_objects(max_keys = 3)
+          //将返回前三个对象，返回的对象是按照对象名进行字典序排列的。
+          ```
+          - [x] 查询，带特定前缀的对象
+          ```python
+          // 3. prefix option.
+          objects = bkt.list_objects(prefix = "object-2")
+          //将返回以object-2开头的对象，包含object-2
+          ```
+          - [x] 查询，从特定标记开始之后的对象
+          ```python
+          // 4. marker option.
+          objects = bkt.list_objects(marker = "object-22")
+          //将返回以object-22为标记，之后的对象，注意，之后指的是按照字典序排序之后。
+          ```
+          - [x] 查询，多次查询，每次返回最多3个；并迭代查询，直到查询结束。
+          ```python
+          // Case 5: List object with paging. each page has 3 objects
+          mark = ''
+          while True:
+            objs = bkt.list_objects(max_keys = 3, marker = mark)
+        
+            //收集对象
+            ......
+        
+            //下次的查询需要设置当前查询的返回值NextMarker为marker参数，并作为下次迭代的开始。
+            mark = objs.next_marker
+            if !objs.is_continus:
+              break
+          ```
+          - [x] 查询，从特定标记开始之后的对象，并且每次最多返回3个对象； 并迭代查询，直到查询结束。
+          ```python
+          // Case 6: List object with paging , marker and max keys; return 3 items each time.
+          mark = "object-22"
+          while True:
+            objs = bkt.list_objects(max_keys = 3, marker = mark)
+        
+            //收集对象
+            ......
+        
+            //下次的查询需要设置当前查询的返回值NextMarker为marker参数，并作为下次迭代的开始。
+            mark = objs.next_marker
+            if !obj.is_continous:
+              break
+          ```
+          - [x] 查询，特定前缀的对象，并且每次最多返回3个对象； 并迭代查询，直到查询结束。
+          ```python
+          // Case 7: List object with paging , with prefix and max keys; return 2 items each time.
+          pre = "object-2"
+          mark = ""
+          while True:
+            objs = bkt.list_objects(prefix = pre, marker = mark, max_keys = 3)
+        
+            //收集对象
+            ......
+        
+            //下次的查询， 需要设置marker为当前查询的返回值NextMarker，并作为下次迭代的开始。
+            mark = objs.next_marker
+            if !objs.is_continous:
+              break
+          ```
+        - **接口使用示例-2**
+          调用步骤：
+          - [x] 准备bucket
+          ```python
+          //Bucket实例已经构造，如上的构造函数示例，
+          bkt = bucket.Bucket(...);
+          ...
+          ```
+          - [x] 查询对象(文件夹下面的对象)
+          假定bucket内的对象如下：
+            - [x] movie/readme.txt
+            - [x] movie/readme.md
+            - [x] movie/love/001.mp4
+            - [x] movie/love/002.rmvb
+            - [x] movie/war/001.avi
+            - [x] movie/war/002.rm
+          - [x] 查询，特定目录下面的文件/文件夹
+          ```python
+        
+          objs = bkt.list_objects(prefix = "movie/", delimiter = "/")
+          //返回以`movie/`开头， 并且以`/`分割的对象或对象前缀
+          // 返回对象(文件) objs.objects
+          //  1. movie/readme.txt
+          //  2. movie/readme.md
+          // 返回对象前缀(文件夹) objs.prefixes
+          //  1. movie/love/
+          //  2. movie/war/
+          ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+boltons
+py2neo
+six
+typing
+
+[test]
+coverage
+pytest>=3.3.0
+pytest-cov
+pytest-forked
+pytest-mock

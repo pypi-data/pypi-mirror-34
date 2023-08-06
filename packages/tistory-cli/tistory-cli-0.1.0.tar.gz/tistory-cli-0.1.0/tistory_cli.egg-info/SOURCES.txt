@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tistory_cli.egg-info/PKG-INFO
+tistory_cli.egg-info/SOURCES.txt
+tistory_cli.egg-info/dependency_links.txt
+tistory_cli.egg-info/entry_points.txt
+tistory_cli.egg-info/requires.txt
+tistory_cli.egg-info/top_level.txt

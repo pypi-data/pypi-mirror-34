@@ -1,0 +1,4 @@
+[console_scripts]
+tistory = tistory.main:main
+tistory-check = tistory.oauth2.main:check_debug
+

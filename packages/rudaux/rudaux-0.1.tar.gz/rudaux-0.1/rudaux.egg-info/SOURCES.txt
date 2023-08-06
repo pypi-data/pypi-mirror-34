@@ -1,0 +1,11 @@
+setup.py
+rudaux/__init__.py
+rudaux/assignment.py
+rudaux/command_line.py
+rudaux/course.py
+rudaux/utils.py
+rudaux.egg-info/PKG-INFO
+rudaux.egg-info/SOURCES.txt
+rudaux.egg-info/dependency_links.txt
+rudaux.egg-info/not-zip-safe
+rudaux.egg-info/top_level.txt

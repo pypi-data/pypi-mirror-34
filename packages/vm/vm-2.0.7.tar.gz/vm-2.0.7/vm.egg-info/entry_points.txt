@@ -1,0 +1,4 @@
+[console_scripts]
+version-manager = version_manager.launcher:launch
+vm = version_manager.launcher:launch
+

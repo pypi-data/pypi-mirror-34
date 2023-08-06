@@ -1,0 +1,15 @@
+spatialist/__init__.py,sha256=oaZC1vV1R3khzS_-ic3YGUvrT4EwwCtAqC4iv3l3X0I,376
+spatialist/ancillary.py,sha256=SC1vzVzo9Bt4dgiBaZy3LcbJ2Pt-y0f_w-Cj-XA5_uU,11841
+spatialist/auxil.py,sha256=mS58y8QONxaI57j-vMb3LokxWTij1Xv5OlTnTo0pDEc,5830
+spatialist/dev_intersect.py,sha256=DDjFul-rQdnGeD-kOUmYkJ5WLpO-21yI6f5fxhdW9G4,259
+spatialist/envi.py,sha256=N1Cebc7Dz6hCKy7aCJGFUcP-uruig9PYPGRosi1UlBU,4513
+spatialist/explorer.py,sha256=o2mGYRx8rZluSjk5sBMfuAZGJcW4goVALdRX0NQ7VtY,11445
+spatialist/raster.py,sha256=jF3gfl2xzmyxMNOk3glIJr8F9P884LiKkCP1Aekxr7c,40572
+spatialist/sqlite_util.py,sha256=DRtSAllosO8aIjlhQUoFxObVcMUHDWnK59I2Hqc88hU,6572
+spatialist/vector.py,sha256=NizXKkK8z-DX_lu7cfTYl30bBiGxadxxEQfzqvrXE9M,24595
+spatialist/pkgs/mod_spatialite/mod_spatialite-4.3.0a-win-amd64.zip,sha256=ffSitDlq01ykujWmluR8Ni89ST01LPKvJtFdOmj_xZ4,5107256
+spatialist/pkgs/mod_spatialite/mod_spatialite-4.3.0a-win-x86.zip,sha256=RCjLOBVyD0QJu3p-7lq5NlZ1E8rw9oV8zrKxR1MACMQ,4760170
+spatialist-0.2.2.dist-info/METADATA,sha256=117ucE1AWljZ5jmqcba9RanOTO84f4ZnKIu8zY442z4,649
+spatialist-0.2.2.dist-info/RECORD,,
+spatialist-0.2.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+spatialist-0.2.2.dist-info/top_level.txt,sha256=B06l64zXALey1yrmLFpNj1OCiTtuZQ-i5PwiSuyB1r4,11

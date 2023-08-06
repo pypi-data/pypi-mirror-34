@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: wavefront-dispatch
+Version: 0.0.2
+Summary: Wavefront Python Wrapper for Dispatch
+Home-page: https://github.com/dispatchframework/wavefront-dispatch-python/tree/master
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description:     This is a Wavefront python wrapper for Dispatch function handler to send metrics directly to wavefront.
+            
+Keywords: Wavefront Dispatch,Wavefront
+Platform: UNKNOWN

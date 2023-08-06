@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: odbindex
+Version: 0.0.4
+Summary: Generate OBLAC Drives Bundle Index Page
+Home-page: https://github.com/synapticon/odbindex
+Author: Marko Sanković
+Author-email: msankovic@synapticon.com
+License: MIT
+Description: # odbindex
+        
+        Generate OBLAC Drives Bundle Index Page.
+        
+        ## Install
+        
+            $ python3 -m pip install odbindex
+        
+        ## Usage
+        
+            $ GITHUB_SYNAPTICON_ACCESS_TOKEN=a21f42faace60a789e74f3c2c2f468f2732011ca odbindex > odbindex.html
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown

@@ -1,0 +1,5 @@
+numpy>1.9.3
+vtkInterface>=0.9.0
+ansys_corba
+appdirs
+psutil>=5.0.0

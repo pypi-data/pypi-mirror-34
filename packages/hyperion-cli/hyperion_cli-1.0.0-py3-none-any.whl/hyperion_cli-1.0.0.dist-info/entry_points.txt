@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        hyperion=hyperion.__main__:run
+    

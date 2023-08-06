@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: soundac
+Version: 0.0.0
+Summary: Python library for soundac
+Home-page: UNKNOWN
+Author: Fabian Schuh
+Author-email: Fabian@chainsquad.com
+Maintainer: Fabian Schuh
+Maintainer-email: Fabian@chainsquad.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: bitshares,library,api,rpc
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers

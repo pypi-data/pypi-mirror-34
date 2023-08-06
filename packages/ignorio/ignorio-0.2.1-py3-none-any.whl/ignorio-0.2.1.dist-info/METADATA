@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ignorio
+Version: 0.2.1
+Summary: Manage your .gitignore with ease!
+Home-page: https://github.com/franccesco/ignorio
+License: MIT
+Keywords: git,gitignore,exclusion,vcs
+Author: Franccesco Orozco
+Author-email: franccesco@codingdose.info
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=6.7,<7.0)
+Requires-Dist: colorama (>=0.3.9,<0.4.0)
+Requires-Dist: requests (>=2.19,<3.0)
+Description-Content-Type: text/markdown
+
+#Ignorio
+*Manage your .gitignore with ease!*
+
+
+**Ignorio** is a simple package to manage your [git exclusions](https://git-scm.com/docs/gitignore). This command line application helps you to download a template from [gitignore.io](http://gitignore.io/) without going to the site using the site's [API](https://www.gitignore.io/api/)
+
+
+#Usage
+TODO
+

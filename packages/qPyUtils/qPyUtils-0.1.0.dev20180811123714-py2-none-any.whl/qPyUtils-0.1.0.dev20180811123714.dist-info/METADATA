@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: qPyUtils
+Version: 0.1.0.dev20180811123714
+Summary: UNKNOWN
+Home-page: https://github.com/koyo922/qPyUtils
+Author: Qian Weishuo 
+Author-email: qzy922@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: six
+Requires-Dist: pathlib
+
+UNKNOWN
+
+

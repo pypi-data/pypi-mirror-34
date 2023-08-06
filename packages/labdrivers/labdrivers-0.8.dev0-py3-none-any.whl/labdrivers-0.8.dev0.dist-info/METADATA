@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: labdrivers
+Version: 0.8.dev0
+Summary: labdrivers: python drivers for lab instruments
+Home-page: http://github.com/masonlab/labdrivers
+Author: Henry Hinnefeld
+Author-email: henry.hinnefeld@gmail.com
+Maintainer: Jeff Damasco
+Maintainer-email: jeffdamasco@gmail.com
+License: MIT
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Requires: pyvisa
+Requires: pythonnet
+Requires: PyDAQmx
+
+
+
+labdrivers
+========
+labdrivers is a collection of drivers for common research lab instruments.
+
+It contains a suite of instrument-specific drivers which can be used to 
+interface measurement hardware with Python code, along with a set of 
+Jupyter notebooks demonstrating example use cases. 
+
+To get started using these components in your own software, please go to the
+repository README_.
+
+.. _README: https://github.com/masonlab/labdrivers/blob/master/README.md
+
+License
+=======
+``labdrivers`` is licensed under the terms of the MIT license. See the file
+"LICENSE" for information on the history of this software, terms & conditions
+for usage, and a DISCLAIMER OF ALL WARRANTIES.
+
+All trademarks referenced herein are property of their respective holders.
+
+Copyright (c) 2016--, Henry Hinnefeld.
+
+

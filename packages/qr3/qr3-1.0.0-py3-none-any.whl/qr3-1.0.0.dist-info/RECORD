@@ -1,0 +1,8 @@
+qr3/__init__.py,sha256=jQ_z03vReDqv08cyPQxY4GNYwS2mBWfnSqGm1bH39_U,44
+qr3/qr.py,sha256=MrU3Xf9vZOVSs2RQq8PSbMQePZX1PPASECB1N9h7dYU,12290
+qr3-1.0.0.dist-info/METADATA,sha256=F-D_iKsiXLqZgkVQ6vyAERYz2VXQVf7gHkCJqGocUE8,1866
+qr3-1.0.0.dist-info/RECORD,,
+qr3-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+qr3-1.0.0.dist-info/top_level.txt,sha256=s6BHqsBe4MQQd0w4wZ8fgcvw0c6wpj8wlEftr19JZcs,12
+test/__init__.py,sha256=uwpKfFL6qlLd69eN7eiDLYEg9f2-_tKfr69fBZ0K9e4,53
+test/test_qr3.py,sha256=H5pJlROKSiP2pBx-peYuKhYPI4jKinmoH3nSiIOddTM,10390

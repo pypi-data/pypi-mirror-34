@@ -1,0 +1,12 @@
+d6tstack/__init__.py,sha256=R1dyoaVTDp6WM18eVw17TOD8yNJuSAl77HPPUuRqPdk,100
+d6tstack/combine_csv.py,sha256=xEfhVrud1nISnXKpaILIboxUP1lWcS8oMHtWlwY7HII,24075
+d6tstack/convert_xls.py,sha256=mkNOnve-qFvbH5vWEXii-1yiadrQ9mp-Wqx0t5VZlhs,8318
+d6tstack/helpers.py,sha256=paTg2Udu5PI981y8BfDd-nARqkVDkyVvfo7i78hqU6c,3149
+d6tstack/helpers_ui.py,sha256=gAO1LYd-J_Qr67MdQc596yGAjAOHgsmqahlS7Tp9rI4,2537
+d6tstack/sniffer.py,sha256=bbW0dAz_qD_YDjQfaM8Ta340jHxnPcwoNEaFKYj-12g,10140
+d6tstack/sync.py,sha256=0ULS8zpvYch41783FKePbPZ0mnFdt05CkeeIHukneUQ,6266
+d6tstack/utils.py,sha256=Z-MlVIptjZ83UlzMke0KBKQsnFa7Lu832-6ZDZGxDtg,3397
+d6tstack-0.1.1.dist-info/METADATA,sha256=GJHOuXtU5hgGdS0AiGunLfvU6_UaUfwq4ftQw7n3yiI,616
+d6tstack-0.1.1.dist-info/RECORD,,
+d6tstack-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+d6tstack-0.1.1.dist-info/top_level.txt,sha256=AFApD9EGlErhDiQXaDv6B7SJHRBkOKWxv0ITGbVPtYk,9

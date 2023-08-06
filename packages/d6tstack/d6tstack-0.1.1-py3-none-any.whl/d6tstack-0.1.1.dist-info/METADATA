@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: d6tstack
+Version: 0.1.1
+Summary: Databolt Python Library
+Home-page: https://github.com/d6t/d6tstack
+Author: DataBolt Team
+Author-email: support@databolt.tech
+License: MIT
+Download-URL: https://github.com/d6t/d6tstack/archive/0.1.1.tar.gz
+Keywords: d6tstack,fast-data-evaluation
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: xlrd
+Requires-Dist: xlwt
+
+Databolt python library - accelerate data engineering. DataBolt provides tools to reduce the time it takes to get your data ready for evaluation and analysis.
+
+

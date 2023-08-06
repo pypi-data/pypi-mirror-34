@@ -1,0 +1,10 @@
+lxml
+markdown2
+numpy
+pyinstaller
+colorama
+Owlready2
+imgkit
+
+[gui]
+PyQt5

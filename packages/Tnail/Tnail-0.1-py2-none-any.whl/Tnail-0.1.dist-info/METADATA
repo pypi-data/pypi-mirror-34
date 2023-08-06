@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Tnail
+Version: 0.1
+Summary: Package with common operations on image.
+Home-page: UNKNOWN
+Author: Abhishek Chomal
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: wand
+
+UNKNOWN
+
+

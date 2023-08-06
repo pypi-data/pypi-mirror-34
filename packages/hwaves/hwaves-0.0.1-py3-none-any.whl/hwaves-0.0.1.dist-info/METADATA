@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hwaves
+Version: 0.0.1
+Summary: Compute and plot hydrogenic wavefunctions
+Home-page: https://github.com/lensonp/hwaves.git
+Author: Lenson A. Pellouchoud
+Author-email: UNKNOWN
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: masstable
+Requires-Dist: periodictable
+
+UNKNOWN
+
+

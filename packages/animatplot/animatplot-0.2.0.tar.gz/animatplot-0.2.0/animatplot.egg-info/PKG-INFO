@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: animatplot
+Version: 0.2.0
+Summary: Making animating in matplotlib easy
+Home-page: https://github.com/t-makaro/animatplot/
+Author: Tyler Makaro
+Author-email: UNKNOWN
+License: MIT
+Description: # animatplot
+        A python package for animating plots build on matplotlib.
+        
+        ## Requires
+        - Python >= 3.5
+        - Matplotlib >= 2.2 (because [sliders have discrete values](https://matplotlib.org/users/whats_new.html#slider-ui-widget-can-snap-to-discrete-values))
+        ## Installation
+        ```bash
+        pip install animatplot
+        ```
+        
+        ## Documentation
+        Documentation can be found [here](https://animatplot.readthedocs.io/en/latest/index.html)
+        
+        ## Dev Install
+        ```bash
+        git clone https://github.com/t-makaro/animatplot.git
+        pip install -e .
+        ```
+        This project uses ```pycodestyle``` for linting. For testing, ```pytest``` is used.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6

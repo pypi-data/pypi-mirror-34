@@ -1,0 +1,3 @@
+[console_scripts]
+extract_specific_sites_from_msa = extract_specific_sites_from_msa.extract_specific_sites_from_msa:main
+

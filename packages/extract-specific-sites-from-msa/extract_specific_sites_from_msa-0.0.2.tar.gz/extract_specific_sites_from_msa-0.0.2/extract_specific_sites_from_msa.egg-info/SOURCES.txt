@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+extract_specific_sites_from_msa/__init__.py
+extract_specific_sites_from_msa/extract_specific_sites_from_msa.py
+extract_specific_sites_from_msa.egg-info/PKG-INFO
+extract_specific_sites_from_msa.egg-info/SOURCES.txt
+extract_specific_sites_from_msa.egg-info/dependency_links.txt
+extract_specific_sites_from_msa.egg-info/entry_points.txt
+extract_specific_sites_from_msa.egg-info/requires.txt
+extract_specific_sites_from_msa.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+pytest>=2.7
+
+[mock]
+pytest-qt
+pytest-xvfb

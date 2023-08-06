@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: simple-web-discover
+Version: 1.0.0
+Summary: A simple asynchronous web content discovery tool.
+Home-page: https://github.com/nwalsh1995/simple-web-discover
+Author: Nathan Walsh
+Author-email: nwalsh1995@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: click-log
+Requires-Dist: click
+Requires-Dist: trio
+Requires-Dist: asks
+
+
+# simple-web-discover
+An easy to understand web content discovery tool.
+
+

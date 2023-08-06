@@ -1,0 +1,3 @@
+[console_scripts]
+discover = simple_web_discover.main:main
+

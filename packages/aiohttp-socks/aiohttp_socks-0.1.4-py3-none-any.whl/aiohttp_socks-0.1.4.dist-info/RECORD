@@ -1,0 +1,9 @@
+aiohttp_socks/__init__.py,sha256=Yk3qHkI0nHsR8j88wexEQ3OsROg4QYFd8tXg2D16Ayo,655
+aiohttp_socks/connector.py,sha256=x9IFdFdtLRTZ2l0SjRd2grIRD6bTuxRf4yZ9zLG1q6s,1674
+aiohttp_socks/errors.py,sha256=dkSfoicJV3aHTNudQDzHQ2B0-5dTJJSLd3Eo1ZnqsaA,395
+aiohttp_socks/helpers.py,sha256=pri4cxYdXPx7PJTzbpr2sqO9GlCNhX4cSEszZcYacpY,3796
+aiohttp_socks/proto.py,sha256=pteyw6TxkbYmFBFO6pu0Ykk5RpxTr-Gdlwya-TV7ZFM,11043
+aiohttp_socks-0.1.4.dist-info/METADATA,sha256=8GLesqxdnqwOByaRrL7nvJkEyeq-pzDE4Gmjw8YhcJk,438
+aiohttp_socks-0.1.4.dist-info/RECORD,,
+aiohttp_socks-0.1.4.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+aiohttp_socks-0.1.4.dist-info/top_level.txt,sha256=AV2lnF7KdxoUZdO7YNCuVdPeaaxzBz_pFqG-IKWfRwE,14

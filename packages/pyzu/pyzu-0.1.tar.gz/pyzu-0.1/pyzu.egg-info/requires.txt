@@ -1,0 +1,11 @@
+requests
+rdflib
+
+[dev]
+bumpversion
+
+[test]
+pytest
+coverage
+python-coveralls
+pytest-cov

@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+pyzu.egg-info/PKG-INFO
+pyzu.egg-info/SOURCES.txt
+pyzu.egg-info/dependency_links.txt
+pyzu.egg-info/requires.txt
+pyzu.egg-info/top_level.txt

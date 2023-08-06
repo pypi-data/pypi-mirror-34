@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: gpxMap
+Version: 0.0.0
+Summary: Animate GPS data. Use and gpx file to display your GPS data.
+Home-page: https://github.com/jsbarbosa/gpxMap
+Author: Juan Barbosa
+Author-email: js.barbosa10@uniandes.edu.co
+License: GPL
+Description: UNKNOWN
+Keywords: example documentation tutorial
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)

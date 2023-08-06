@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+PyTic.egg-info/PKG-INFO
+PyTic.egg-info/SOURCES.txt
+PyTic.egg-info/dependency_links.txt
+PyTic.egg-info/requires.txt
+PyTic.egg-info/top_level.txt
+config/config.yml
+pytic/__init__.py
+pytic/pytic.py
+pytic/pytic_protocol.py
+pytic/pytic_structures.py
+pytic/drivers/x64/libpololu-tic-1.dll
+pytic/drivers/x64/libusbp-1.dll

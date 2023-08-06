@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: PyTic
+Version: 0.0.3
+Summary: An object-oriented Python wrapper for Pololu Tic Stepper Controllers.
+Home-page: https://github.com/AllenInstitute/pytic
+Author: Daniel Castelli
+Author-email: danc@alleninstitute.org
+License: Allen Institute Software License
+Description: UNKNOWN
+Keywords: PyTic Pololu Tic Stepper Controller Wrapper
+Platform: UNKNOWN

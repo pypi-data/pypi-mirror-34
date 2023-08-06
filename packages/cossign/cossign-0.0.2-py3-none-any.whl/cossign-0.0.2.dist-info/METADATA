@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cossign
+Version: 0.0.2
+Summary: provide temporary credential for accessing cos resource
+Home-page: https://cloud.tencent.com/document/product/436
+Author: rickenwang
+Author-email: rickenwang@tencent.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# cossign
+
+cossign is a simple tool for providing temporary credential to accessing cos resources,
+please remember that this project is a fast start demo, and do not use it in your production
+environment。
+

@@ -1,0 +1,3 @@
+[console_scripts]
+verhawk = verhawk.cli.verhawk:main
+

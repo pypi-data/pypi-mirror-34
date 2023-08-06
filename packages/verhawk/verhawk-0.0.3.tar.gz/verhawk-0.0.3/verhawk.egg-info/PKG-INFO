@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: verhawk
+Version: 0.0.3
+Summary: Extract version data from Python [sub]packages/modules
+Home-page: https://github.com/spacetelescope/verhawk
+Author: Joseph Hunkeler
+Author-email: jhunk@stsci.edu
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

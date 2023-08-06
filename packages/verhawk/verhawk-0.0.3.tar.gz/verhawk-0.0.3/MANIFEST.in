@@ -1,0 +1,4 @@
+include RELIC-INFO
+exclude verhawk/version.py
+prune .git
+prune relic

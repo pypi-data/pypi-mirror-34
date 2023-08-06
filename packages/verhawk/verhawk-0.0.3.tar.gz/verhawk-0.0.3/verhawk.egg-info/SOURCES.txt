@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+RELIC-INFO
+setup.cfg
+setup.py
+verhawk/__init__.py
+verhawk/constants.py
+verhawk/scanner.py
+verhawk.egg-info/PKG-INFO
+verhawk.egg-info/SOURCES.txt
+verhawk.egg-info/dependency_links.txt
+verhawk.egg-info/entry_points.txt
+verhawk.egg-info/top_level.txt
+verhawk/cli/__init__.py
+verhawk/cli/verhawk.py

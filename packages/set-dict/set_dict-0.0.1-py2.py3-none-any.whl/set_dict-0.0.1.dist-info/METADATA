@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: set-dict
+Version: 0.0.1
+Summary: Python dict-like interface for merging dicts with add to set property
+Home-page: https://github.com/arthurmoreno/setdict/
+Author: Arthur Moreno
+Author-email: morenoarthur@gmail.com
+License: GPL3
+Keywords: key-value,merge,set,dictionary
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+

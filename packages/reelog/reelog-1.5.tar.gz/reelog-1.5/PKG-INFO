@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: reelog
+Version: 1.5
+Summary: python log best practice.
+Home-page: UNKNOWN
+Author: Sam Rui
+Author-email: samrui0129@gmail.com
+License: Apache License
+Description: 
+        reelog
+        ======
+        
+        python log best practices
+        -------------------------
+        
+        
+        .. code-block:: python
+        
+            >>> import reelog
+            >>> # root logger
+            >>> logger = reelog.get_logger()
+            >>> logger.info("hello world!")
+            >>> # reelog name logger
+            >>> logger = reelog.get_logger("reelog")
+            >>> logger.error("hello world!")
+            >>> # output to stdout and file
+            >>> logger = reelog.get_logger("reelog", outputs=["stdout", "file"])
+            >>> logger.warning("hello world!")
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=2.7.0
+Description-Content-Type: text/x-rst

@@ -1,0 +1,21 @@
+environment:
+  mappings:
+    - branch: master
+      environment: production
+    - branch: develop
+    - branch: env-*
+
+git:
+  enabled: false
+  config:
+    user.name: servicer
+  diff-tagging-enabled: true
+  ignore-unchanged: true
+  ignore-servicer-commits: false
+
+steps:
+  - name: build
+  - name: test
+  - name: deploy
+    config:
+      requires_service_environment: true

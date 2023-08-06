@@ -1,0 +1,6 @@
+numpy
+opencv-python
+pyrr
+PyWavefront==0.2.0
+pyglet
+fuzzyfinder

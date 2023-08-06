@@ -1,0 +1,15 @@
+drf_allauthmail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_allauthmail/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+drf_allauthmail/apps.py,sha256=w-jRRDOSrvXzcSiuR14Ce051CuqwlVp-PfbcyuJPW4k,105
+drf_allauthmail/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+drf_allauthmail/serializers.py,sha256=Ovnayvk6d3rzYObPxgtJc1bczcCI01l_zoCn-QjpE9U,1374
+drf_allauthmail/urls.py,sha256=N-ezKy2fsNh4whSdGBr17G_XeO0tDssdYFC94RvTqt0,286
+drf_allauthmail/views.py,sha256=Pult9FnlePh7QxDspXTWzYWE_dWrpzTKpjWPvCopfwk,4647
+drf_allauthmail/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_allauthmail/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_allauthmail/tests/test_serializers.py,sha256=1JzTCxJ6bukDq7x7q5TRWgSfbp-u-ONRXIa19gPzzIw,1174
+drf_allauthmail/tests/test_views.py,sha256=FZaf7noqnZ8fOtvT4N1Fai2KNUE_SgeqW0SIhX8ZX94,6505
+drf_allauthmail-0.0.2.dist-info/METADATA,sha256=eiAk49NDdVhHTyhHVFUOxM-YkTjSMz3qhxZqajFzXT0,1089
+drf_allauthmail-0.0.2.dist-info/RECORD,,
+drf_allauthmail-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+drf_allauthmail-0.0.2.dist-info/top_level.txt,sha256=KbAHzdmF6_HFEqpuzhBwXj-nnRHLOQAfKikmc9hh9Jo,16

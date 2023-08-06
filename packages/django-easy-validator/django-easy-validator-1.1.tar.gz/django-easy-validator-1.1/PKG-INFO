@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: django-easy-validator
+Version: 1.1
+Summary: a very easy use django request POST/GET data validator
+Home-page: https://github.com/youngershen/django-easy-validator
+Author: Younger Shen
+Author-email: younger.shen@hotmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: a django request POST/GET data validator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django :: 1.6
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 2.0
+Requires-Python: >=3.6

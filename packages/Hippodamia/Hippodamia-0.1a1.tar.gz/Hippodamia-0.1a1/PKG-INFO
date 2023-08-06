@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: Hippodamia
+Version: 0.1a1
+Summary: Hippodamia observe the state of all registered microservices (aka watch dog).
+Home-page: https://gitlab.com/pelops/hippodamia/
+Author: Tobias Gawron-Deutsch
+Author-email: tobias@strix.at
+License: MIT license
+Description: Hippodamia observe the state of all registered microservices (aka watch
+        dog).
+        
+        .. figure:: https://gitlab.com/pelops/pelops/blob/master/img/Microservice%20Overview.png
+           :alt: Pelops Overview
+        
+           Pelops Overview
+        
+        ``Hippodamia`` is part of the collection of mqtt based microservices
+        `pelops <https://gitlab.com/pelops>`__. An overview on the microservice
+        architecture and examples can be found at
+        (http://gitlab.com/pelops/pelops).
+        
+        
+Keywords: mqtt device driver rpi raspberry pi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Topic :: Home Automation
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5

@@ -1,0 +1,9 @@
+README.rst
+setup.py
+Hippodamia.egg-info/PKG-INFO
+Hippodamia.egg-info/SOURCES.txt
+Hippodamia.egg-info/dependency_links.txt
+Hippodamia.egg-info/requires.txt
+Hippodamia.egg-info/top_level.txt
+hippodamia/__init__.py
+tests_unit/__init__.py

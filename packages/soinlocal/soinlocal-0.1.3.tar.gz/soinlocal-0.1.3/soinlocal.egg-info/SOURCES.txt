@@ -1,0 +1,9 @@
+README.md
+setup.py
+soinlocal/__init__.py
+soinlocal/so.py
+soinlocal.egg-info/PKG-INFO
+soinlocal.egg-info/SOURCES.txt
+soinlocal.egg-info/dependency_links.txt
+soinlocal.egg-info/requires.txt
+soinlocal.egg-info/top_level.txt

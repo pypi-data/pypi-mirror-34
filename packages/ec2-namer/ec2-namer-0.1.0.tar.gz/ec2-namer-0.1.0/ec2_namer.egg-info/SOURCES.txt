@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/ec2-rename
+ec2_namer.egg-info/PKG-INFO
+ec2_namer.egg-info/SOURCES.txt
+ec2_namer.egg-info/dependency_links.txt
+ec2_namer.egg-info/requires.txt
+ec2_namer.egg-info/top_level.txt

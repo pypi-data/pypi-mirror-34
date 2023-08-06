@@ -1,0 +1,8 @@
+setup.py
+mp/__main__.py
+mp/main.py
+mp_test.egg-info/PKG-INFO
+mp_test.egg-info/SOURCES.txt
+mp_test.egg-info/dependency_links.txt
+mp_test.egg-info/requires.txt
+mp_test.egg-info/top_level.txt

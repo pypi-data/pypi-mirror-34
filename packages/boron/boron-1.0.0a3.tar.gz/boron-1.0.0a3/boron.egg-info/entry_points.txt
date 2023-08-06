@@ -1,0 +1,3 @@
+[console_scripts]
+boron = boron.cli:main
+

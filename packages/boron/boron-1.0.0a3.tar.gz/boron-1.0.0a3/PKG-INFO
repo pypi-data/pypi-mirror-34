@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: boron
+Version: 1.0.0a3
+Summary: 
+    Boron is a framework for simple http applications. I did not intend to write it, but
+    created it while writing ghh as a way to isolate the http logic from the business
+    logic of that application.
+    
+Home-page: http://boron.schlueter.blue
+Author: Brandon Schlueter
+Author-email: b@schlueter.blue
+License: GNU General Public License v3 or later (GPLv3+)
+Description: # Boron
+        Boron is a framework for simple http applications. I did not intend to write it, but
+        created it while writing [ghh](github.com/schlueter/ghh) as a way to isolate the http
+        logic from the business logic of that application.
+        
+        ## Installation
+        
+        For development:
+        
+            git clone https://github.com/schlueter/boron.git
+            cd boron
+            pip install .
+        
+        ## Testing
+        This project uses [tox](https://tox.readthedocs.io/) to manage testing.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

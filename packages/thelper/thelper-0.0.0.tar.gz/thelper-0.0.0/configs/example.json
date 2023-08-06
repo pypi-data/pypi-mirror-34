@@ -1,0 +1,77 @@
+{
+    "name": "example",
+    "train_device": "cuda:0",
+    "valid_device": "cuda:0",
+    "datasets": {
+        "nidec01_batch01_all": {
+            "type": "nidec01.data.SurfaceDefectDataset",
+            "params": [
+                {"name": "classes", "value": "data/classes.json"},
+                {"name": "input", "value": "data/batch01b.csv"},
+                {"name": "target_class", "value": ""},
+                {"name": "ignored_class", "value": ""},
+                {"name": "norm_mean", "value": [0,0,0]},
+                {"name": "norm_std", "value": [1,1,1]}
+            ],
+            "transforms": {
+                "core.transforms.OpenCVCenterCrop": {
+                    "size": [256,256],
+                    "bordertype": "cv2.BORDER_REFLECT_101"
+                },
+                "torchvision.transforms.ToTensor": {}
+            }
+        }
+    },
+    "data_config": {
+        "batch_size": 16,
+        "shuffle": true,
+        "seed": [],
+        "workers": 0,
+        "pin_memory": false,
+        "drop_last": false,
+        "train_augments": {
+            "Augmentor.Pipeline": {
+                "input_tensor": true,
+                "output_tensor": true,
+                "stages": {
+                    "rotate_random_90": {"probability": 0.5}
+                }
+            }
+        },
+        "train_split": {
+            "nidec01_batch01_all": 0.8
+        },
+        "valid_split": {
+            "nidec01_batch01_all": 0.1
+        },
+        "test_split": {
+            "nidec01_batch01_all": 0.1
+        }
+    },
+
+    "lr_scheduler_type": "ExponentialLR",
+    "lr_scheduler_freq": 1,
+    "lr_scheduler": {
+            "gamma": 0.8685113737513527
+    },
+
+    "optimizer_type": "Adam",
+    "optimizer": {
+        "lr": 0.001,
+        "weight_decay": 0
+    },
+    "loss": "my_loss",
+    "metrics": ["my_metric", "my_metric2"],
+    "trainer": {
+        "epochs": 1000,
+        "save_dir": "saved/",
+        "save_freq": 1,
+        "verbosity": 2,
+        "monitor": "val_loss",
+        "monitor_mode": "min"
+    },
+    "arch": "ExampleModel",
+    "model": {
+
+    }
+}

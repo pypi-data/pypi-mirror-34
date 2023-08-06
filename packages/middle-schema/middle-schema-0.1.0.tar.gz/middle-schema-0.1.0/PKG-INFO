@@ -1,0 +1,82 @@
+Metadata-Version: 1.1
+Name: middle-schema
+Version: 0.1.0
+Summary: Translate your middle model declarations to OpenAPI, JSONSchema or any other schema you need
+Home-page: https://github.com/vltr/middle-schema
+Author: Richard Kuesters
+Author-email: rkuesters@gmail.com
+License: MIT license
+Description: =================
+        ``middle-schema``
+        =================
+        
+        
+        
+        Translate your `middle <https://middle.readthedocs.io/en/latest/>`_ model declarations to OpenAPI, JSONSchema or any other schema you need!
+        
+        Quick peak
+        ----------
+        
+        .. code-block:: pycon
+        
+            >>> from typing import Dict, List
+            >>> import middle
+        
+            >>> class Game(middle.Model):
+            ...     name: str = middle.field()
+            ...     score: float = middle.field(minimum=0, maximum=10)
+            ...     resolution_tested: str = middle.field(pattern="^\d+x\d+$")
+            ...     genre: List[str] = middle.field(unique_items=True)
+            ...     rating: Dict[str, float] = middle.field(max_properties=5)
+        
+            >>> data = {
+            ...     "name": "Cities: Skylines",
+            ...     "score": 9.0,
+            ...     "resolution_tested": "1920x1200",
+            ...     "genre": ["Simulators", "City Building"],
+            ...     "rating": {
+            ...         "IGN": 8.5,
+            ...         "Gamespot": 8.0,
+            ...         "Steam": 4.5
+            ...     }
+            ... }
+        
+            >>> # TO BE CONTINUED
+        
+        .. warning::
+        
+            **IMPORTANT**: ``middle`` and ``middle-schema`` are in **very early stages** of development! Use with caution and be aware that some functionalities and APIs may change between versions until they're out of **alpha**.
+        
+        Documentation
+        =============
+        
+        https://middle-schema.readthedocs.io/en/latest/
+        
+        License
+        =======
+        
+        ``middle-schema`` is a free software distributed under the `MIT <https://choosealicense.com/licenses/mit/>`_ license.
+        
+        
+        Changelog
+        =========
+        
+        v0.1.0 on 2018-07-??
+        --------------------
+        
+        * First release on PyPI.
+        
+Keywords: middle,models,hooks,customizable,openapi,swagger,jsonschema,schema
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities

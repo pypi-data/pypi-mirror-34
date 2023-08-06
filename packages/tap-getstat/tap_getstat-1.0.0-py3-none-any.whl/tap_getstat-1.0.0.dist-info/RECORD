@@ -1,0 +1,13 @@
+tap_getstat/__init__.py,sha256=Jx-w2ZA0HS94hCovv3i_7Y0qlcFOaWjyKx06rRkmmM8,9480
+tap_getstat/schemas/keywords.json,sha256=DzN7-kp9E33RUwdFPPPdo11Cw159vxfGeqJrs0MhjLU,337
+tap_getstat/schemas/projects.json,sha256=MTYmmENCj--J_azRplt_d-7QXNR3xxQmryXea6Tpdtk,357
+tap_getstat/schemas/rankings.json,sha256=r3Aj_JsOIr1bYKZkZZOBcvVCXsC7p8aWOs0mBHCTNwU,2234
+tap_getstat/schemas/sites.json,sha256=Zd4pLcLehCuSQ_y0ZsFA1Na4y3CZfTbar5z7WXozws4,394
+tap_getstat/schemas/something.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_getstat/schemas/tags.json,sha256=1iaHp2Ct7YpHEm3sMgYIafwntTvuP6goFS678ouqk_A,169
+tap_getstat/schemas/tags_keywords.json,sha256=ZSHrMxSxm1poiCmyb4Do5Wr5NMiw9PsJGt4cRM1YMjU,141
+tap_getstat-1.0.0.dist-info/METADATA,sha256=klfK14XpwEo1lrr5NgxWGLewb6Da40xZQXlrN4dk3cY,383
+tap_getstat-1.0.0.dist-info/RECORD,,
+tap_getstat-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tap_getstat-1.0.0.dist-info/entry_points.txt,sha256=R1htPFbQjMiUkeF1LVY5eoSyi7u2C1fZjm0Ep73goIs,74
+tap_getstat-1.0.0.dist-info/top_level.txt,sha256=-wLbJUdDMYw8RAiTvOTIaR2DvcCZKTvhVY_7lTF5Y7A,12

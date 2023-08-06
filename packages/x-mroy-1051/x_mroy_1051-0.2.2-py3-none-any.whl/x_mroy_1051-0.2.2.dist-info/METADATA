@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: x-mroy-1051
+Version: 0.2.2
+Summary: search in web
+Home-page: https://github.com//.git
+Author: mroy_qing
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: mroylib-min
+Requires-Dist: brotli
+Requires-Dist: pandas
+Requires-Dist: tabulate
+Requires-Dist: FLowWork
+Requires-Dist: requestium
+Requires-Dist: termcolor
+
+UNKNOWN
+
+

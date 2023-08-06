@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: easy-mq
+Version: 0.1.0
+Summary: Library for using RabbitMQ with python (async/sync).
+Home-page: https://github.com/recrut-as/easy_mq
+Author: Halvor Bø
+Author-email: halvor@recrut.no
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pika
+Requires-Dist: aio-pika
+
+# EasyMQ
+
+*Library for using RabbitMQ with python.*
+
+This library was made to create a unified interface for async and sync message queues in Python. This project was made to manage queues between an async server and a sync server. 
+
+To be implemented: 
+- Message class
+- More advanced features (these will be implemented as needed)
+
+### Sync
+```python 
+
+from easy_mq.queue import Queue
+
+Queue.connect('url')
+
+q = Queue('queue_name')
+q.put('message') 
+
+for message in q.revivaid():
+    print(message)
+
+```
+
+### Async 
+```python 
+
+
+from easy_mq.queue import AsyncQueue
+
+AsyncQueue.connect('url')
+
+async def main():
+
+    q = AsyncQueue('queue_name')
+    q.put('message') 
+
+    async for message in q.revivaid():
+        print(message)
+
+import asyncio 
+asyncio.run(main())
+
+```
+
+### To run tests 
+
+```bash
+source scripts/test.sh
+```
+
+

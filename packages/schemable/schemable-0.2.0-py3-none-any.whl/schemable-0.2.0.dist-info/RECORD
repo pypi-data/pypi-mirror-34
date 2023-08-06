@@ -1,0 +1,10 @@
+schemable/__init__.py,sha256=m3rIxNbGAa9Q0xCSyPoVFXEw__GHozQrL7lNplcTxoM,404
+schemable/__version__.py,sha256=DmDhzPeKL8QAMXJ05C_OJs4w95fRqXyvvBd-YUu8CZU,59
+schemable/base.py,sha256=2pwi4IzBtq366KXOoLKOmBQ2M9W2S0YxuD0BtjEExmQ,3323
+schemable/schema.py,sha256=Pr0zTRpRIn5P9bsZHJWGGXUZNgkZeJDyTXSEm36q0oY,2494
+schemable/transforms.py,sha256=PkqSKyISUnjvkY-8yiQjngXXgxmPO-zGgMOqksOUTRI,677
+schemable/validators.py,sha256=7LvyioKFhEOCYA1m9__EcHMXTn88sk-Zos2npukRHtI,12934
+schemable-0.2.0.dist-info/METADATA,sha256=LJsYWUtrNvI7McAMmleZPJWLzIBRa-sOr1GABvzEPT0,10227
+schemable-0.2.0.dist-info/RECORD,,
+schemable-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+schemable-0.2.0.dist-info/top_level.txt,sha256=LXPoY1uUDINlV0Hj1kyJO4Cjmgb-dH8a8HWwMzcaz4M,10

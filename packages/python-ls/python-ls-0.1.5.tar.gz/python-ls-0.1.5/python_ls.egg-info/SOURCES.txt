@@ -1,0 +1,17 @@
+.gitignore
+.travis.yml
+LICENSE
+MANIFEST.in
+README.md
+python_ls.pth
+setup.cfg
+setup.py
+tox.ini
+python_ls/__init__.py
+python_ls/_ls.py
+python_ls/_version.py
+python_ls.egg-info/PKG-INFO
+python_ls.egg-info/SOURCES.txt
+python_ls.egg-info/dependency_links.txt
+python_ls.egg-info/top_level.txt
+tests/test_ls.py

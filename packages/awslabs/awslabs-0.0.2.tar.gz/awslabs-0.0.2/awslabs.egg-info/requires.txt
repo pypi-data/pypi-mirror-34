@@ -1,0 +1,6 @@
+boto3
+requests
+configparser
+click
+cfn_flip
+pylint

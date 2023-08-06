@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.30.0)", "metadata_version": "2.0", "name": "radcalnet", "run_requires": [{"requires": ["pandas"]}], "summary": "Python package for easy access to the measurements published by RadCalNet.org", "version": "0.1.0.dev0"}

@@ -1,0 +1,11 @@
+tibia.py-0.1.0a2.dist-info/METADATA,sha256=h53Wbu0W7Nw2hBB-9vCtq3l6_u_TUHBPtvxelrlgilc,2579
+tibia.py-0.1.0a2.dist-info/RECORD,,
+tibia.py-0.1.0a2.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+tibia.py-0.1.0a2.dist-info/top_level.txt,sha256=zu5uSdCV-BP3fHV8hbYWxfCLxR5KDBXc89AvWhYDyfo,8
+tibiapy/__init__.py,sha256=2ARoea0Lj3GoyWBk0A0sPU0xJv69xwzfOtTq3I1kDrE,188
+tibiapy/abc.py,sha256=NspP9L6-3_-waNaQf1T_w-_3cVgH_-Nlg7EUSm-uUCY,610
+tibiapy/character.py,sha256=WVswEVPE2eVs_t_3LL6dQRmcsvx8KQWThldUXM-2gVs,11178
+tibiapy/const.py,sha256=gG2xUOT9SXwm73Kiu0fhn0e-_HjIyw-r9D60CqZc0GE,243
+tibiapy/guild.py,sha256=__8GJRQ2r8mJIreGKJlzoNUUpxENIWTlKx-EBdDxte0,9872
+tibiapy/others.py,sha256=qazaa9TyG9A2R-M2D-jAgAqOGNdZtSwyoIIbkbopDPA,1092
+tibiapy/utils.py,sha256=7BNNFf3hk7SiTca_Kq2Qzy6SqpDv6NCp8xe_YDrf4hc,1343

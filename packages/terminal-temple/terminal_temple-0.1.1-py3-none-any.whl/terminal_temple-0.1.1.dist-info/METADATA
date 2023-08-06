@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: terminal-temple
+Version: 0.1.1
+Summary: Another cute little puzzle for teaching basic-to-intermediate command line usage
+Home-page: https://bitbucket.org/bubioinformaticshub/terminal_temple/
+Author: Adam Labadorf
+Author-email: labadorf@bu.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: future
+Requires-Dist: fabulous
+Requires-Dist: pillow
+Requires-Dist: docopt
+Requires-Dist: inflect
+Requires-Dist: networkx
+Requires-Dist: setuptools
+Requires-Dist: numpy
+
+UNKNOWN
+
+

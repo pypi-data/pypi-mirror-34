@@ -1,0 +1,10 @@
+lightconfig/__init__.py,sha256=8ElVj-JrpE7GC8kaffzAG80ZMe36wKJn-6z6ehedREk,36
+lightconfig/lightconfig.py,sha256=3OvcKnZoH10I6LIfBCIcsxotVNljItwfEPAVoDW1TCY,4479
+lightconfig-0.0.4.dist-info/DESCRIPTION.rst,sha256=Oa8O3-h2TyxsPZm8G-EHX9g-ypIZU0_M7mrxVVSjLCo,617
+lightconfig-0.0.4.dist-info/METADATA,sha256=h4TKKQ9i3iTxa4iCqA1vQc0jszpMRyWTuF6iSyJJzU4,1565
+lightconfig-0.0.4.dist-info/RECORD,,
+lightconfig-0.0.4.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+lightconfig-0.0.4.dist-info/metadata.json,sha256=ULUyeGxBNgO0FyoCkIxK8T3k5FhYBXP4X1nsNMWFwuU,1062
+lightconfig-0.0.4.dist-info/top_level.txt,sha256=O3WuRWc-gETkeP7GGC5PRPITpPOV2M1_D9umYz5izYk,18
+tests/__init__.py,sha256=6UyhzHqp1DD2JZCP-r1R2C_xLBopXrHAtcE2CLoqWhM,50
+tests/test_lightconfig.py,sha256=Vs_HtYrmgEUOQtkw70SMYMr-5dqaE5VOxeAwy-Bf22Q,1318

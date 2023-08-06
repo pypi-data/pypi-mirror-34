@@ -1,0 +1,4 @@
+ipaddress
+pyzmq>=15.3
+subprocess32
+xmlrunner

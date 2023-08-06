@@ -1,0 +1,88 @@
+---
+file-contents:
+  releasenotes/notes/change-ipa-version-cacaec52a55188cc.yaml:
+    features: ['By adding extra variable ``-e ipa_upstream_release=stable-mitaka``
+        for instance,
+
+        the deployment can now use all ramdisk and kernel images available in
+
+        https://tarballs.openstack.org/ironic-python-agent/tinyipa/files/
+
+        instead of the default ``master``.
+
+
+        Furthermore, as some of these files do not have any .sha256
+
+        checksum associated to them, the downloading of these file
+
+        is now just issuing a "warning" and is not reported as an
+
+        Ansible error in the final summary.
+
+        ']
+  releasenotes/notes/custom-partitioning-78d7ac12d80a993f.yaml:
+    features: ["Custom partitioning YAML file can now be specified using partitioning_file\n\
+        variable which contains a path to the YAML file describing the partitions\n\
+        layout. For example:\n\n.. code-block:: yaml\n\n    - local_loop:\n      \
+        \  name: image0\n    - partitioning:\n        base: image0\n        label:\
+        \ mbr\n        partitions:\n          - name: root\n            flags: [ boot,primary\
+        \ ]\n            size: 6G\n            mkfs:\n              type: xfs\n  \
+        \            label: \"img-rootfs\"\n              mount:\n               \
+        \ mount_point: /\n                fstab:\n                  options: \"rw,relatime\"\
+        \n                  fck-passno: 1\n          - name: tmp\n            size:\
+        \ 1G\n            mkfs:\n              type: xfs\n              mount:\n \
+        \               mount_point: /tmp\n                fstab:\n              \
+        \      options: \"rw,nosuid,nodev,noexec,relatime\"\n          - name: var\n\
+        \            size: 7G\n            mkfs:\n              type: xfs\n      \
+        \        mount:\n                mount_point: /var\n                fstab:\n\
+        \                  options: \"rw,relatime\"\n          - name: log\n     \
+        \       size: 5G\n            mkfs:\n              type: xfs\n           \
+        \   mount:\n                mount_point: /var/log\n                fstab:\n\
+        \                  options: \"rw,relatime\"\n          - name: home\n    \
+        \        size: 1G\n            mkfs:\n              type: xfs\n          \
+        \    mount:\n                mount_point: /home\n                fstab:\n\
+        \                  options: \"rw,nodev,relatime\"\n\n\nFor more informations\
+        \ please refer to the following links:\n`Disk Image Layout Section <https://docs.openstack.org/diskimage-builder/latest/user_guide/building_an_image.html#disk-image-layout>`_\n\
+        `Standard Partitioning <http://teknoarticles.blogspot.fr/2017/07/build-and-use-security-hardened-images.html>`_\n\
+        `LVM Partitioning <http://teknoarticles.blogspot.fr/2017/11/security-hardened-images-with-volumes.html>`_\n"]
+  releasenotes/notes/no-classic-drivers-0b8a346bcab8a004.yaml:
+    upgrade: ['The deprecated support for classic drivers has been removed.
+
+        ']
+  releasenotes/notes/populate_ntp_servers_dnsmasq-249d2a26b94b0bf1.yaml:
+    features: ['Allow to populate the NTP servers setting of dnsmasq. This is optional,
+        but if ``dnsmasq_ntp_servers``setting is set, it adds a ``dhcp-option=42,dnsmasq_ntp_servers``
+        to the generated dnsmasq configuration for bifrost.']
+    other: ['When configuring the ``dnsmasq_ntp_servers`` setting, several NTP servers
+        can be specified, separated by commas.']
+  releasenotes/notes/store-introspection-data-bc4f2fef2f5bb543.yaml:
+    features: ['Stores introspection data in nginx.
+
+
+        In the absence of swift, we can now use the bifrost nginx web server -
+
+        masquerading as an object store - to store raw and processed introspection
+
+        data for nodes.  This is configured via the boolean variable
+
+        ``inspector_store_data_in_nginx`` and is enabled by default.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/change-ipa-version-cacaec52a55188cc.yaml
+    - !!binary |
+      Nzc5MjUzMTQ0MzY0MjgyM2Y2NjZhZTA2NTY2YWY0ZTA3N2JjODczNA==
+  - - releasenotes/notes/custom-partitioning-78d7ac12d80a993f.yaml
+    - !!binary |
+      MTdhMjMyYWQwNDk2N2JlYjRlOTc4Nzc4M2Q5YTUzOGE1MTYwZmY0MQ==
+  - - releasenotes/notes/no-classic-drivers-0b8a346bcab8a004.yaml
+    - !!binary |
+      MjEyZDI1YTM2NGYzMzgyMDMwNzVhMzliYjUwMTBhOWVjNTJlN2M5Yw==
+  - - releasenotes/notes/populate_ntp_servers_dnsmasq-249d2a26b94b0bf1.yaml
+    - !!binary |
+      YmJjZTk0Yzc4MzAwMzg0NmQ3YzA0OWFkYjVkNWI1YjkyNTc1MTUyOQ==
+  - - releasenotes/notes/store-introspection-data-bc4f2fef2f5bb543.yaml
+    - !!binary |
+      NTA3MjI4YTIyODc3YzVhNGFmOGM5Yzc2NjhjMjI4ZjFjOTY3ZmE3OA==
+  version: 5.1.0

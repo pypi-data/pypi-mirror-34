@@ -1,0 +1,17 @@
+edc_navbar/__init__.py,sha256=RuCxQCESSPSl3SA9ggm4W4cG_-N4FjosnY1yU5EZMu0,172
+edc_navbar/apps.py,sha256=EtfJ1adUhdK00JmEefzwxOYBCTKViialdorKqsDAIvI,706
+edc_navbar/navbar.py,sha256=_c2CEX4a4GrbPsXnHilKRdDBtVHBa9S0qh6xrWR7bf0,763
+edc_navbar/navbar_item.py,sha256=rshQ4WMVT4eaAPan678gPQ-5Xxb9WZ-gzNJFNhNvaQY,2294
+edc_navbar/navbars.py,sha256=3ykDpwztR0BwzgPhSqCdyaRnRhZs1nNWaBgjhraQJG4,933
+edc_navbar/settings.py,sha256=FmUhRh1OKZY4dD5Tgai0h29Sq76xDy4KvmLmkCz-mc4,3566
+edc_navbar/site_navbars.py,sha256=w3TZ3NyMdd4i4genv_XgmHphvWjEQN5oODOAeuayGkE,3435
+edc_navbar/urls.py,sha256=bmh1k6JSXrssF-50_Pdwxp735jTjBAhNCUKAN27CbGg,532
+edc_navbar/view_mixin.py,sha256=uLe7KhMmeWX1GTEU_Pcp8Uxn7YkZZ8cf4M4J6JpinAg,1014
+edc_navbar/wsgi.py,sha256=USx5rxTgM2UYTssEy1psGspg8gX0kChmycl9W8fAb7g,398
+edc_navbar/templates/edc_navbar/navbar_item.html,sha256=XHMoPDg5PtziLZQIEAJ4kLAeS2mlW1O_DEN_CFzJG2E,599
+edc_navbar/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_navbar/tests/test_navbar.py,sha256=xzFrKl5vKUDovRzCo2mQgThZxtJFTzvlxVX43oECk7g,3891
+edc_navbar-0.1.4.dist-info/METADATA,sha256=ZpDezQ6TSK56ARsnXOKuSUUOWcpa-e3oUFIszi1xHuo,4189
+edc_navbar-0.1.4.dist-info/RECORD,,
+edc_navbar-0.1.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+edc_navbar-0.1.4.dist-info/top_level.txt,sha256=zPmEP8R0zF9oD3Mgzo-N7-TZ4bMwXMDgAUS7dCXIVPk,11

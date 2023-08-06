@@ -1,0 +1,57 @@
+#! /usr/bin/env python
+
+"""
+This script changes the status of a site on the summary webpage.
+It can be used to unlock from a dead process, disable sites from running,
+and change whether or not to act on the site.
+
+This script can take a ``--config <FILE>`` parameter to point
+to a configuration file, a la ``dynamo-consistency``.
+
+For the last two arguments, ``SITE`` will match
+the name of the site to change.
+``ACTION`` can be one of the following
+
++-------------+-------------------------------------------+
+|   Action    |               Description                 |
++=============+===========================================+
+|             | This sets the site status back to idle.   |
+| ``unlock``  | In particular, this should be used if     |
+|             | a site remains locked after a crash.      |
++-------------+-------------------------------------------+
+|             | This prevents a site from running.        |
+|             |                                           |
+| ``disable`` | .. note::                                 |
+|             |                                           |
+|             |    This should soon kill a site in the    |
+|             |    process of running too.                |
++-------------+-------------------------------------------+
+| ``enable``  | This makes a disabled site                |
+|             | eligible to run again.                    |
++-------------+-------------------------------------------+
+|   ``act``   | Marks a site as one to report results     |
+|             | to the registry.                          |
++-------------+-------------------------------------------+
+|             | Opposite of ``act``, this action prevents |
+|   ``dry``   | this site from making entries into the    |
+|             | registry in future runs.                  |
++-------------+-------------------------------------------+
+"""
+
+__usage__ = '%prog [--config FILE] SITE ACTION'
+
+
+from dynamo_consistency import args
+from dynamo_consistency import summary
+from dynamo_consistency.parser import pretty_exe
+
+pretty_exe('set-status')
+
+if __name__ == '__main__':
+    if len(args) != 2:
+        print __doc__
+        exit()
+
+    site, action = args
+
+    summary.unlock_site(site)

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chronotrack
+Version: 0.0.1
+Summary: chronotrack API python interface
+Home-page: https://github.com/Romeno/chronotrack
+Author: Romeno
+Author-email: RomenoEx@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# chronotrack API python interface
+
+

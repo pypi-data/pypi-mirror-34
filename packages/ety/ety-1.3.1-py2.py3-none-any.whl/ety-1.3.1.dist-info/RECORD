@@ -1,0 +1,17 @@
+ety/__init__.py,sha256=EaqFl6zz_0MPjt7oJULXb9y0VD7HzsaFw6t_WtMJm_c,860
+ety/__main__.py,sha256=jcdobpPtD7LhqwLr0Y_bjStsbI_ioj0l1rr8bE1bB1g,107
+ety/census.py,sha256=7_g7beyQY77JX0Kl4oTdtYak2CrCOJPGHG5xcFVJnSQ,1420
+ety/cli.py,sha256=YWxSzC8hjxmUoEeUB2BAvNJSF1gpy_J0ClIjgvpv5rg,1136
+ety/language.py,sha256=HVeeroVMGEqcRZiI-8bGR681i3C3BPXprI0VHxNcO1A,518
+ety/tree.py,sha256=JRC5x2QJb6HDlr-wU28-Nk2To1RCwd5VS0euIeonXEE,1298
+ety/word.py,sha256=9wy3Z2AzosUPjyzfq4P4KaQMfe5OGiXgJOOlQBQwf3Y,2600
+ety/data/__init__.py,sha256=RrAwt39HAnGqgBbcJ-rTZVLkSBj_sK2y6iScPZiLJ1A,524
+ety/data/etymologies.json,sha256=HqYEsFQd15PTDFGkeGDcbF_eh57sgqWphlLHXxdUbp0,15300451
+ety/data/generate.py,sha256=aojuoy5m7PFmGGHErMdcd6PdgkPc-oSFDJfCWFAqIMU,4387
+ety/data/iso-639-3.json,sha256=SoULTwxmppFW7GMkP23o4Py7HZLSclOAeyTiCScMqOI,173571
+ety-1.3.1.dist-info/LICENSE.txt,sha256=R2zOMHjikV-Xgac2LcEFVlcCfRb7kGH6A-IwoTFHWRE,1070
+ety-1.3.1.dist-info/METADATA,sha256=-esqxPWhOBIeUM4ah-EnhWVFaLOmJCg4yAPiCMFhqZY,4586
+ety-1.3.1.dist-info/RECORD,,
+ety-1.3.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ety-1.3.1.dist-info/entry_points.txt,sha256=ePjwWEbHu6U4iD3XSvSW1fFwXs97ieJ5D2-xujJUOVw,33
+ety-1.3.1.dist-info/top_level.txt,sha256=qkuaL9Lk2mLE2r5G44Vk5UwM-w6MlAbDAZF8KEDJ3i4,13

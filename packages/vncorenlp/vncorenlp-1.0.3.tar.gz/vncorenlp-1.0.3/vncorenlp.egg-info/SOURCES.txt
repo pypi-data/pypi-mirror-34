@@ -1,0 +1,16 @@
+CHANGELOG
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+vncorenlp/__init__.py
+vncorenlp/commandline.py
+vncorenlp/vncorenlp.py
+vncorenlp.egg-info/PKG-INFO
+vncorenlp.egg-info/SOURCES.txt
+vncorenlp.egg-info/dependency_links.txt
+vncorenlp.egg-info/entry_points.txt
+vncorenlp.egg-info/not-zip-safe
+vncorenlp.egg-info/requires.txt
+vncorenlp.egg-info/top_level.txt
+vncorenlp/bin/VnCoreNLPServer.jar

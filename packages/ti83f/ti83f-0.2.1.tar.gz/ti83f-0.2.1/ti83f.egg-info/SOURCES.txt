@@ -1,0 +1,11 @@
+README.md
+setup.py
+ti83f/__init__.py
+ti83f/ti83f.py
+ti83f/to8xv.py
+ti83f.egg-info/PKG-INFO
+ti83f.egg-info/SOURCES.txt
+ti83f.egg-info/dependency_links.txt
+ti83f.egg-info/entry_points.txt
+ti83f.egg-info/not-zip-safe
+ti83f.egg-info/top_level.txt

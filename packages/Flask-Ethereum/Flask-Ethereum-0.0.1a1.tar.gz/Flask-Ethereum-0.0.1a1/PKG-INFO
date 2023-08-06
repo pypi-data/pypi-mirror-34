@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: Flask-Ethereum
+Version: 0.0.1a1
+Summary: Rapid GUI Development for Ethereum Smart Contracts in Flask
+Home-page: https://github.com/fubuloubu/flask-ethereum
+Author: Bryant Eisenbach
+Author-email: bryant@dappdevs.org
+License: MIT
+Description: 
+        Flask-Ethereum
+        --------------
+        
+        Rapid GUI Development for Ethereum Smart Contracts in Flask
+        
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

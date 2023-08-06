@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+breakSeqInNs_then_translate/__init__.py
+breakSeqInNs_then_translate/breakSeqInNs_then_translate.py
+breakSeqInNs_then_translate.egg-info/PKG-INFO
+breakSeqInNs_then_translate.egg-info/SOURCES.txt
+breakSeqInNs_then_translate.egg-info/dependency_links.txt
+breakSeqInNs_then_translate.egg-info/entry_points.txt
+breakSeqInNs_then_translate.egg-info/requires.txt
+breakSeqInNs_then_translate.egg-info/top_level.txt

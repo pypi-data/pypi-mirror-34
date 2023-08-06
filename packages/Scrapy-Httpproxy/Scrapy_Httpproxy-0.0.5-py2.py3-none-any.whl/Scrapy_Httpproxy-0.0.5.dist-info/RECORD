@@ -1,0 +1,13 @@
+Scrapy_Httpproxy-0.0.5.dist-info/METADATA,sha256=K3I4aujUTjonx1aF90EgMGvbBPEsjqh8wH1_q56r3Rg,3869
+Scrapy_Httpproxy-0.0.5.dist-info/RECORD,,
+Scrapy_Httpproxy-0.0.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+Scrapy_Httpproxy-0.0.5.dist-info/top_level.txt,sha256=ouigPb7jKwFHRprD6Ve-uBkOqlQ5jE21CdiFJPFl3y8,17
+scrapy_httpproxy/VERSION,sha256=robnkGeKzH_BTxjlWcL4xJcmNNWxt0oqKXVluMkPgEo,6
+scrapy_httpproxy/__init__.py,sha256=eR_oiib2fPCDpq74Jb0-OL_bOl2ticuBMcANifMK5YM,781
+scrapy_httpproxy/downloadermiddlewares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapy_httpproxy/downloadermiddlewares/httpproxy.py,sha256=VHWUnRSC6BDA16tMtkVh0UGBN4vRtqh52vKr_tT784A,2742
+scrapy_httpproxy/settings/__init__.py,sha256=PZCis1xap5ofPHQYO0GogS91bZ76FpvugSQW6ZcUET4,242
+scrapy_httpproxy/settings/default_settings.py,sha256=oflmfotyKZ5recxt-0azQWe5noSodC_fcvPYYVTeeew,696
+scrapy_httpproxy/storage/__init__.py,sha256=6edtSc4o674Xfd5UgyWjYjPVTRFiluL_0mwLwE0RIAg,569
+scrapy_httpproxy/storage/environment.py,sha256=XzCPT8q2xPvIQ9PVOLUiNf-mM-SFtVBz8IiXzZ2QpjQ,767
+scrapy_httpproxy/storage/settings.py,sha256=osO8JjdQf0o4GFwP9riSWD5Y4gvWsQVbnXFu0vMkaDY,1968

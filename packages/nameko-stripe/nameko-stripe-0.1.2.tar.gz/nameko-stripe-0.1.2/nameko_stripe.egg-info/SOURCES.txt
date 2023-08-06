@@ -1,0 +1,11 @@
+README.md
+setup.py
+nameko_stripe/__init__.py
+nameko_stripe/stripe_dep.py
+nameko_stripe.egg-info/PKG-INFO
+nameko_stripe.egg-info/SOURCES.txt
+nameko_stripe.egg-info/dependency_links.txt
+nameko_stripe.egg-info/requires.txt
+nameko_stripe.egg-info/top_level.txt
+nameko_stripe/tests/__init__.py
+nameko_stripe/tests/test_nameko_stripe.py

@@ -1,0 +1,9 @@
+nameko>=2.0.0
+stripe>=2.4.0
+
+[dev]
+coverage==4.5.1
+flake8==3.5.0
+pylint==2.1.1
+pytest==3.7.1
+requests==2.19.1

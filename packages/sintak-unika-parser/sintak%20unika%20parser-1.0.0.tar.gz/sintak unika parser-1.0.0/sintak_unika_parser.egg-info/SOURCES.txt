@@ -1,0 +1,10 @@
+README.md
+setup.py
+lib/Endpoint.py
+lib/Fetch.py
+lib/Parser.py
+lib/__init__.py
+sintak_unika_parser.egg-info/PKG-INFO
+sintak_unika_parser.egg-info/SOURCES.txt
+sintak_unika_parser.egg-info/dependency_links.txt
+sintak_unika_parser.egg-info/top_level.txt

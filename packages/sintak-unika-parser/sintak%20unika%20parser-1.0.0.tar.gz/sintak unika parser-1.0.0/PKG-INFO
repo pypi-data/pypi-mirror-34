@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sintak unika parser
+Version: 1.0.0
+Summary: Packages for parser and scrap information from sintak unika
+Home-page: https://github.com/lintangtimur/SintakParser
+Author: lintangtimur
+Author-email: lintangtimur915@gmail.com
+License: UNKNOWN
+Description: ## SINTAK PARSER
+        By lintang
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

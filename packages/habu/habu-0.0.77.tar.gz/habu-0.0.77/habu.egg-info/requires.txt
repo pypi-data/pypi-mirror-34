@@ -1,0 +1,12 @@
+beautifulsoup4
+cryptography
+click
+lxml
+prompt_toolkit
+pycrypto
+pygments
+regex
+requests
+requests-cache
+scapy-python3
+websockets

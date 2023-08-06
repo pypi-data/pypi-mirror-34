@@ -1,0 +1,15 @@
+README.md
+setup.py
+EasemlSchema.egg-info/PKG-INFO
+EasemlSchema.egg-info/SOURCES.txt
+EasemlSchema.egg-info/dependency_links.txt
+EasemlSchema.egg-info/requires.txt
+EasemlSchema.egg-info/top_level.txt
+easemlschema/__init__.py
+easemlschema/dataset.py
+easemlschema/schema.py
+test/__init__.py
+test/test_dataset_generate.py
+test/test_dataset_infer.py
+test/test_schema_match.py
+test/test_schema_validate.py

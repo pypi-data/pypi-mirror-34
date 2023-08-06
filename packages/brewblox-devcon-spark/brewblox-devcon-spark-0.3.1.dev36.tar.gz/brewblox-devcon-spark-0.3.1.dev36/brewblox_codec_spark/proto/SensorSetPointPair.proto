@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import 'brewblox.proto';
+
+package blox;
+
+message SensorSetPointPair {
+    sint32 sensor = 1 [(brewblox).link = "Sensor"];
+    sint32 setpoint = 2 [(brewblox).link = "SetPointSimple"];
+}

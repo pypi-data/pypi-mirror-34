@@ -1,0 +1,19 @@
+
+
+Python 3 client SDK for UK Open Banking.
+========================================
+
+A Python SDK for Open Banking (alpha).
+
+Installation
+------------
+
+To get the latest stable release from PyPi
+
+```
+pipenv install openbanking
+```
+
+Example Usage
+-------------
+

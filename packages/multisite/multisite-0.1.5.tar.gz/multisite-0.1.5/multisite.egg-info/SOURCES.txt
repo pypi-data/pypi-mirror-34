@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+multisite/__init__.py
+multisite/__main__.py
+multisite/__version__.py
+multisite/commandline.json
+multisite/defaults.json
+multisite.egg-info/PKG-INFO
+multisite.egg-info/SOURCES.txt
+multisite.egg-info/dependency_links.txt
+multisite.egg-info/entry_points.txt
+multisite.egg-info/requires.txt
+multisite.egg-info/top_level.txt

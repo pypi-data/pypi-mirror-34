@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: multisite
+Version: 0.1.5
+Summary: Host multiple standalone websites under a single site
+Home-page: https://github.com/cmccandless/multisite
+Author: Corey McCandless
+Author-email: crm1994@gmail.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.com/cmccandless/multisite.svg?branch=master)](https://travis-ci.com/cmccandless/multisite)[![PyPI version](https://badge.fury.io/py/multisite.svg)](https://badge.fury.io/py/multisite)[![Updates](https://pyup.io/repos/github/cmccandless/multisite/shield.svg)](https://pyup.io/repos/github/cmccandless/multisite/)[![Python 3](https://pyup.io/repos/github/cmccandless/multisite/python-3-shield.svg)](https://pyup.io/repos/github/cmccandless/multisite/)
+        
+        # multisite
+        Host multiple standalone websites under a single site
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

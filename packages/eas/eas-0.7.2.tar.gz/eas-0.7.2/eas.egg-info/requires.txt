@@ -1,0 +1,15 @@
+s3m>=1.1.0
+pycryptodome
+portalocker
+
+[dropbox]
+dropbox
+requests
+
+[sftp]
+pysftp
+paramiko
+
+[yandex.disk]
+yadisk>=1.2.5
+requests

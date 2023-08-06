@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: eas
+Version: 0.7.2
+Summary: Encrypt & Sync is a file synchronization utility with client-side encryption support
+Home-page: https://encryptandsync.com
+Author: Ivan Konovalov
+Author-email: ivknv0@gmail.com
+License: GPLv3
+Project-URL: Website, https://encryptandsync.com
+Project-URL: Source code, https://github.com/ivknv/encrypt-and-sync
+Project-URL: Documentation, https://encryptandsync.com/docs
+Project-URL: Bug tracker, https://github.com/ivknv/encrypt-and-sync/issues
+Project-URL: Donate, https://paypal.me/encryptandsync
+Description: ##############
+        Encrypt & Sync
+        ##############
+        
+        Encrypt & Sync is a file synchronization utility with client-side encryption support.
+        
+        ========
+        Features
+        ========
+        
+        1. AES encryption support, including filename encryption
+        2. Synchronization between storages in any direction
+        3. Downloader
+        4. Multithreading
+        5. Auto-retries for failing requests
+        
+        ==================
+        Supported storages
+        ==================
+        
+        * Yandex.Disk
+        * Dropbox
+        * Local
+        * SFTP
+        
+        Synchronization, downloading, etc. can work in any direction from any one storage to another.
+        
+        This list will expand in the future.
+        
+        =====
+        Links
+        =====
+        
+        * `Official website <https://encrypt-and-sync.com>`_
+        * `Documentation <https://docs.encrypt-and-sync.com>`_
+        * `GitHub <https://github.com/ivknv/encrypt-and-sync>`_
+        * `PyPI <https://pypi.org/project/eas>`_
+        * `Contact <mailto:ivknv0@gmail.com>`_
+        
+Keywords: sync encryption dropbox yandex sftp
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Provides-Extra: yandex.disk
+Provides-Extra: sftp
+Provides-Extra: dropbox

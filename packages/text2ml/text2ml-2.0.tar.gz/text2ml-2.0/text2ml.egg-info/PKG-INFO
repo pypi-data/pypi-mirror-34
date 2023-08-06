@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: text2ml
+Version: 2.0
+Summary: A module for Telegram Bot API that can format text + entities into formatted text
+Home-page: https://github.com/marminino/text2ml
+Author: Alisson Lauffer
+Author-email: alissonvitortc@gmail.com
+License: UNKNOWN
+Description: <p align="center">
+          <img src="logo.png" alt="Text2ml"/>
+          <br>
+          <a href="https://pypi.org/project/text2ml"><img src="https://img.shields.io/pypi/v/text2ml.svg" /></a>
+        </p>
+        
+        ## What is Text2ml?
+        
+        Text2ml is a simple, dependency-free module for Telegram bot API that formats text + entities into formatted text.
+        
+        ## Installation
+        
+        This module can be installed from [PyPi](https://pypi.org/project/text2ml) by running:
+        
+        ```
+        pip install text2ml
+        ```
+        ## Usage
+        
+        Soon
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: atdate
+Version: 0.0.1.dev1
+Summary: A small example package
+Home-page: https://github.com/destag/at-date
+Author: Przemysław Pietras
+Author-email: przemyslawp94@gmail.com
+License: UNKNOWN
+Description: at-date
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

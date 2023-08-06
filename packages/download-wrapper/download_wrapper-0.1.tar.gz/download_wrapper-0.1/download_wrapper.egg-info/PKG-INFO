@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: download-wrapper
+Version: 0.1
+Summary: 常用下载工具的纯 Python 封装。支持进度回调。
+Home-page: https://github.com/aheadlead/download_wrapper
+Author: weiyulan
+Author-email: yulan.wyl@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: http,download
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

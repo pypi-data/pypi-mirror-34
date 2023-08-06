@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+setup.py
+download_wrapper/__init__.py
+download_wrapper/base.py
+download_wrapper/helper.py
+download_wrapper/http_header.py
+download_wrapper/wget.py
+download_wrapper.egg-info/PKG-INFO
+download_wrapper.egg-info/SOURCES.txt
+download_wrapper.egg-info/dependency_links.txt
+download_wrapper.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+fnss\.netconfig\.nodeconfig\.get\_stack
+=======================================
+
+.. currentmodule:: fnss.netconfig.nodeconfig
+
+.. autofunction:: get_stack

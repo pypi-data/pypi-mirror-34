@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.DatacenterTopology\.get\_edge\_data
+=================================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. automethod:: DatacenterTopology.get_edge_data

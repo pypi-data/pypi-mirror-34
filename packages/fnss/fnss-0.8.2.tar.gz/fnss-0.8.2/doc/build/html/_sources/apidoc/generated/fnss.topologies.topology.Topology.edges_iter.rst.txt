@@ -1,0 +1,6 @@
+fnss\.topologies\.topology\.Topology\.edges\_iter
+=================================================
+
+.. currentmodule:: fnss.topologies.topology
+
+.. automethod:: Topology.edges_iter

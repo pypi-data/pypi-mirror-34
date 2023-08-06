@@ -1,0 +1,6 @@
+fnss\.netconfig\.weights\.set\_weights\_inverse\_capacity
+=========================================================
+
+.. currentmodule:: fnss.netconfig.weights
+
+.. autofunction:: set_weights_inverse_capacity

@@ -1,0 +1,6 @@
+fnss\.adapters\.jfed\.to\_jfed
+==============================
+
+.. currentmodule:: fnss.adapters.jfed
+
+.. autofunction:: to_jfed

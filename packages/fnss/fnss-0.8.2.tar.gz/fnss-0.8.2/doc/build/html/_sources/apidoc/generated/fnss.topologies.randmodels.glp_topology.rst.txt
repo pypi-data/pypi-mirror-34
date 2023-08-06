@@ -1,0 +1,6 @@
+fnss\.topologies\.randmodels\.glp\_topology
+===========================================
+
+.. currentmodule:: fnss.topologies.randmodels
+
+.. autofunction:: glp_topology

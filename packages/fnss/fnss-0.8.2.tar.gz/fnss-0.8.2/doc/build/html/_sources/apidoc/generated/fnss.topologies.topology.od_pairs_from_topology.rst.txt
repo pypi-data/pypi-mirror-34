@@ -1,0 +1,6 @@
+fnss\.topologies\.topology\.od\_pairs\_from\_topology
+=====================================================
+
+.. currentmodule:: fnss.topologies.topology
+
+.. autofunction:: od_pairs_from_topology

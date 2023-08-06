@@ -1,0 +1,6 @@
+fnss\.traffic\.eventscheduling\.EventSchedule\.events\_between
+==============================================================
+
+.. currentmodule:: fnss.traffic.eventscheduling
+
+.. automethod:: EventSchedule.events_between

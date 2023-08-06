@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.DatacenterTopology\.number\_of\_switches
+======================================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. automethod:: DatacenterTopology.number_of_switches

@@ -1,0 +1,6 @@
+fnss\.traffic\.eventscheduling\.write\_event\_schedule
+======================================================
+
+.. currentmodule:: fnss.traffic.eventscheduling
+
+.. autofunction:: write_event_schedule

@@ -1,0 +1,6 @@
+fnss\.traffic\.trafficmatrices\.stationary\_traffic\_matrix
+===========================================================
+
+.. currentmodule:: fnss.traffic.trafficmatrices
+
+.. autofunction:: stationary_traffic_matrix

@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.DatacenterTopology\.edges\_iter
+=============================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. automethod:: DatacenterTopology.edges_iter

@@ -1,0 +1,6 @@
+fnss\.traffic\.trafficmatrices\.sin\_cyclostationary\_traffic\_matrix
+=====================================================================
+
+.. currentmodule:: fnss.traffic.trafficmatrices
+
+.. autofunction:: sin_cyclostationary_traffic_matrix

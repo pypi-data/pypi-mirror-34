@@ -1,0 +1,6 @@
+fnss\.topologies\.simplemodels\.k\_ary\_tree\_topology
+======================================================
+
+.. currentmodule:: fnss.topologies.simplemodels
+
+.. autofunction:: k_ary_tree_topology

@@ -1,0 +1,6 @@
+fnss\.topologies\.topology\.DirectedTopology\.add\_edge
+=======================================================
+
+.. currentmodule:: fnss.topologies.topology
+
+.. automethod:: DirectedTopology.add_edge

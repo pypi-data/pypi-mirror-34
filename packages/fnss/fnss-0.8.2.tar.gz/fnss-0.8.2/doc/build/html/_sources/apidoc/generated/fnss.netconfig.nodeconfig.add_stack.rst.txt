@@ -1,0 +1,6 @@
+fnss\.netconfig\.nodeconfig\.add\_stack
+=======================================
+
+.. currentmodule:: fnss.netconfig.nodeconfig
+
+.. autofunction:: add_stack

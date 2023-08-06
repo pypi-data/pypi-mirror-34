@@ -1,0 +1,6 @@
+fnss\.netconfig\.capacities\.get\_capacities
+============================================
+
+.. currentmodule:: fnss.netconfig.capacities
+
+.. autofunction:: get_capacities

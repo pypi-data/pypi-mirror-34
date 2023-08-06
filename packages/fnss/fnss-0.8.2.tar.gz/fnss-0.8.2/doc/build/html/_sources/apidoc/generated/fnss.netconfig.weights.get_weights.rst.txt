@@ -1,0 +1,6 @@
+fnss\.netconfig\.weights\.get\_weights
+======================================
+
+.. currentmodule:: fnss.netconfig.weights
+
+.. autofunction:: get_weights

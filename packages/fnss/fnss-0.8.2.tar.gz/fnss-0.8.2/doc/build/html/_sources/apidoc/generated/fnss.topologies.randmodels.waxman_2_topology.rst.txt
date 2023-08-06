@@ -1,0 +1,6 @@
+fnss\.topologies\.randmodels\.waxman\_2\_topology
+=================================================
+
+.. currentmodule:: fnss.topologies.randmodels
+
+.. autofunction:: waxman_2_topology

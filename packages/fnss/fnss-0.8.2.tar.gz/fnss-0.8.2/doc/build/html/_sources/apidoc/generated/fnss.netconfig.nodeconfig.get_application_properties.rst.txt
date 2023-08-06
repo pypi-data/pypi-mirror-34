@@ -1,0 +1,6 @@
+fnss\.netconfig\.nodeconfig\.get\_application\_properties
+=========================================================
+
+.. currentmodule:: fnss.netconfig.nodeconfig
+
+.. autofunction:: get_application_properties

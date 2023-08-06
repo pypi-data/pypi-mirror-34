@@ -1,0 +1,6 @@
+fnss\.netconfig\.buffers\.set\_buffer\_sizes\_bw\_delay\_prod
+=============================================================
+
+.. currentmodule:: fnss.netconfig.buffers
+
+.. autofunction:: set_buffer_sizes_bw_delay_prod

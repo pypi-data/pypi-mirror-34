@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.DatacenterTopology\.has\_node
+===========================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. automethod:: DatacenterTopology.has_node

@@ -1,0 +1,6 @@
+fnss\.netconfig\.buffers\.set\_buffer\_sizes\_link\_bandwidth
+=============================================================
+
+.. currentmodule:: fnss.netconfig.buffers
+
+.. autofunction:: set_buffer_sizes_link_bandwidth

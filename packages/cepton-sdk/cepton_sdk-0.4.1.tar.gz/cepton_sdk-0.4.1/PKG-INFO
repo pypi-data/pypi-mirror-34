@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cepton_sdk
+Version: 0.4.1
+Summary: Cepton Python SDK
+Home-page: https://github.com/ceptontech/cepton_sdk_redist
+Author: Cepton Technologies
+License: UNKNOWN
+Description: Cepton Python SDK
+        =================
+        
+        ## Installation
+        
+        ```sh
+        pip install -U cepton_sdk
+        ```
+        
+        To install extra dependencies
+        
+        ```sh
+        pip install -U cepton_sdk[export,plot]
+        ```
+        
+        ## Documentation
+        
+        - `docs/html/index.html`
+        
+Keywords: cepton sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.3
+Provides-Extra: plot
+Provides-Extra: export

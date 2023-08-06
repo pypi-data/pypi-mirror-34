@@ -1,0 +1,11 @@
+numpy
+pyserial
+
+[export]
+laspy
+uuid
+plyfile
+
+[plot]
+pyqt5
+vispy

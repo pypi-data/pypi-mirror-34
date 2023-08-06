@@ -1,0 +1,10 @@
+README.md
+setup.py
+cossign/__init__.py
+cossign/config.py
+cossign/cossign.py
+cossign.egg-info/PKG-INFO
+cossign.egg-info/SOURCES.txt
+cossign.egg-info/dependency_links.txt
+cossign.egg-info/entry_points.txt
+cossign.egg-info/top_level.txt

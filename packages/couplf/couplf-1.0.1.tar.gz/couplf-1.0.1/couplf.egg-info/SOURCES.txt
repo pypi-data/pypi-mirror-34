@@ -1,0 +1,10 @@
+README.md
+setup.py
+couplf/__init__.py
+couplf/_core.py
+couplf.egg-info/PKG-INFO
+couplf.egg-info/SOURCES.txt
+couplf.egg-info/dependency_links.txt
+couplf.egg-info/requires.txt
+couplf.egg-info/top_level.txt
+couplf.egg-info/zip-safe

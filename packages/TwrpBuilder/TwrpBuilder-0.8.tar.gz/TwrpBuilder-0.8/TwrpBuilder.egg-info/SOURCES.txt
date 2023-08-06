@@ -1,0 +1,11 @@
+setup.py
+TwrpBuilder/Build.sh
+TwrpBuilder/Cert.py
+TwrpBuilder/TwBuilder.py
+TwrpBuilder/__init__.py
+TwrpBuilder.egg-info/PKG-INFO
+TwrpBuilder.egg-info/SOURCES.txt
+TwrpBuilder.egg-info/dependency_links.txt
+TwrpBuilder.egg-info/not-zip-safe
+TwrpBuilder.egg-info/requires.txt
+TwrpBuilder.egg-info/top_level.txt

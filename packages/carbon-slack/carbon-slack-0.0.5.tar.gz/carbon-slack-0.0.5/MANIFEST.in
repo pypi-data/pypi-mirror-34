@@ -1,0 +1,7 @@
+# Misc
+include LICENSE.txt
+include README.rst
+
+# Examples
+include examples/send.py
+include examples/receive.py

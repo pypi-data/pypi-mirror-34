@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: kiwiclient
+Version: 1.0.8
+Summary: Client to the online version of ISC-Kiwi stability engine
+Home-page: https://www.isc-kiwi.de
+Author: ISC Clemenz und Weinbrecht GmbH
+Author-email: info@isc-kiwi.de
+License: Apache 2.0
+Keywords: excel,isc,kiwi,ki-wi,stability
+Platform: runs on any platform, best used together with MS-Excel
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+Requires-Dist: argparse
+Requires-Dist: xlrd
+Requires-Dist: xlsxwriter
+Requires-Dist: requests
+
+# ISC KiWi-Client
+
+## Abstract
+This module connects ISC Kiwi MS-Excel Workbooks with the online version
+of the stability engine.
+
+## Requirements
+* 50 MB free diskspace
+* MS Excel 2003 or higher installed
+* Python 3 installed
+
+
+
+
+
+

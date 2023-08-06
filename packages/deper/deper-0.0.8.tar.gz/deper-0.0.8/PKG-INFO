@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: deper
+Version: 0.0.8
+Summary: 项目部署工具
+Home-page: https://github.com/toalaska/deploy
+Author: toalaska
+Author-email: toalaska@126.com
+License: BSD
+Download-URL: https://github.com/toalaska/deploy/archive/master.zip
+Description: 一个方便的部署工具
+        
+        目前支持以下部署目标
+        
+        - 阿里云oss
+        - linux服务器
+        
+Keywords: deploy,oss,ssh
+Platform: UNKNOWN

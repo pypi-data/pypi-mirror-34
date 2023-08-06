@@ -1,0 +1,9 @@
+README.md
+setup.py
+face_extract.egg-info/PKG-INFO
+face_extract.egg-info/SOURCES.txt
+face_extract.egg-info/dependency_links.txt
+face_extract.egg-info/requires.txt
+face_extract.egg-info/top_level.txt
+face_extractor/__init__.py
+face_extractor/face_extract.py

@@ -1,0 +1,14 @@
+transip/__init__.py,sha256=662HhoYf3VWu6BMb1CM_rD48gCz49hI-sBpLQ2DGGbY,201
+transip/client.py,sha256=Se9VR9Tcrh1vb92WcjvrhkvoPhN5UgNuAEOxYi9L9uc,5645
+transip/transip_cli.py,sha256=BXzNv3io6wHVhoAdsi9D8GoZ6hwYNGg53twWcwq1D9Y,4740
+transip/service/__init__.py,sha256=5RYUK9sdzLxtZWsBOwEDhWF1dWlE-21PFinPXVeSJxo,188
+transip/service/domain.py,sha256=HblKxVgNC2ZrF7pWcON5tR-EGGCTOxThrfl3Yv7YfHo,7711
+transip/service/haip.py,sha256=_R_p_XhWnpwl15QQTq7CSYotcmnrPii2nwMLL-ab3zE,1149
+transip/service/objects.py,sha256=vVVqViBh-cOHJcWV-jbyq_ec8EDbt0EtRtJnBsupyQk,7814
+transip/service/vps.py,sha256=Ylxd00mRrpU-1hCo1y2bet5WySnkNQetawfTcqwB3uk,12705
+transip/service/webhosting.py,sha256=DAJ53kWw3A9w2GxgetBJiOEF-VYjmLdQjdwQFkWxdd4,2612
+transip-0.4.1.dist-info/METADATA,sha256=9B5uVTfjidGgICX34d0FXve_FVEOv94EKD8SLjUOcAc,4173
+transip-0.4.1.dist-info/RECORD,,
+transip-0.4.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+transip-0.4.1.dist-info/entry_points.txt,sha256=vycPqjPX8o6m2kCimgkH2pXc-JaIHaBiC_8YCxxAnvo,58
+transip-0.4.1.dist-info/top_level.txt,sha256=xV5LTYooIpidc0pDm-we_5gurQqwfWjvwIrWCT0Ocek,8

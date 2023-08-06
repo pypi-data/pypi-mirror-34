@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cucumber-json-to-junit-xml
+Version: 0.0.9
+Summary: Cucumber JSON to JUnit XML report conversion script
+Home-page: https://github.com/rselias/Cucumber-JSON-to-JUnit
+Author: Raymond Elias
+Author-email: ray.s.elias@gmail.com
+License: UNKNOWN
+Description: # Cucumber JSON to JUnit XML
+        
+        Quick python script to convert a Cucumber JSON report into JUnit XML format.
+        For use when using a parallelization plugin that can assemble a JSON report but not XML.
+        This will overwrite the target report if it already exists.
+        
+        Note that the overall duration will be incorrect for parallel execution, as it is the sum of the scenario durations.
+        
+        Usage:
+        
+        `pip install cucumber-json-to-junit-xml`
+        
+        `json_to_junit source-report.json target-report.xml`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

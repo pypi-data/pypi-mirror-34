@@ -1,0 +1,15 @@
+README.md
+setup.py
+tapioca_trello/__init__.py
+tapioca_trello/tapioca_trello.py
+tapioca_trello.egg-info/PKG-INFO
+tapioca_trello.egg-info/SOURCES.txt
+tapioca_trello.egg-info/dependency_links.txt
+tapioca_trello.egg-info/not-zip-safe
+tapioca_trello.egg-info/requires.txt
+tapioca_trello.egg-info/top_level.txt
+tapioca_trello/resource_mapping/__init__.py
+tapioca_trello/resource_mapping/boards.py
+tapioca_trello/resource_mapping/cards.py
+tests/__init__.py
+tests/test_tapioca_trello.py

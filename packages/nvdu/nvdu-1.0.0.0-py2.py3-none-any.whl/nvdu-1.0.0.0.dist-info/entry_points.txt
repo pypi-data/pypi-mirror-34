@@ -1,0 +1,4 @@
+[console_scripts]
+nvdu_viz = nvdu.tools.test_nvdu_visualizer:main
+nvdu_ycb = nvdu.tools.nvdu_ycb:main
+

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/max/Schreibtisch/PyIGA/applications/isogeometric_application/custom_external_libraries/tetgen1.5.0/predicates.cxx
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+float.h
+-
+fpu_control.h
+-
+tetgen.h
+/home/max/Schreibtisch/PyIGA/applications/isogeometric_application/custom_external_libraries/tetgen1.5.0/tetgen.h
+CGAL/Exact_predicates_inexact_constructions_kernel.h
+-
+
+/home/max/Schreibtisch/PyIGA/applications/isogeometric_application/custom_external_libraries/tetgen1.5.0/tetgen.cxx
+tetgen.h
+/home/max/Schreibtisch/PyIGA/applications/isogeometric_application/custom_external_libraries/tetgen1.5.0/tetgen.h
+
+/home/max/Schreibtisch/PyIGA/applications/isogeometric_application/custom_external_libraries/tetgen1.5.0/tetgen.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+time.h
+-
+assert.h
+-
+stdint.h
+-
+

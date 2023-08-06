@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/max/Schreibtisch/PyIGA/external_libraries/zlib/test/example.c
+zlib.h
+/home/max/Schreibtisch/PyIGA/external_libraries/zlib/test/zlib.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+
+external_libraries/zlib/zconf.h
+stddef.h
+-
+windows.h
+-
+limits.h
+-
+sys/types.h
+-
+stdarg.h
+-
+stddef.h
+-
+unistd.h
+-
+unixio.h
+-
+
+external_libraries/zlib/zlib.h
+zconf.h
+external_libraries/zlib/zconf.h
+

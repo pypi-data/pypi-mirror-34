@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+asyncmrq.egg-info/PKG-INFO
+asyncmrq.egg-info/SOURCES.txt
+asyncmrq.egg-info/dependency_links.txt
+asyncmrq.egg-info/top_level.txt
+asyncmrq.egg-info/zip-safe
+mrq/__init__.py
+mrq/client.py
+mrq/errors.py
+mrq/parser.py

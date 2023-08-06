@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: giles-athenaeum
+Version: 0.0.1
+Summary: A REST API library catalog
+Home-page: https://www.masonegger.com
+Author: Mason Egger
+Author-email: mason@masonegger.com
+License: BSD-2
+Keywords: library,ils,REST
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.4
+
+UNKNOWN
+
+

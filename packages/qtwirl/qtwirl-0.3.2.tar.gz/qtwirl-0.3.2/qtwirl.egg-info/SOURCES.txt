@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+qtwirl/__init__.py
+qtwirl/_parser.py
+qtwirl/_version.py
+qtwirl/main.py
+qtwirl.egg-info/PKG-INFO
+qtwirl.egg-info/SOURCES.txt
+qtwirl.egg-info/dependency_links.txt
+qtwirl.egg-info/requires.txt
+qtwirl.egg-info/top_level.txt

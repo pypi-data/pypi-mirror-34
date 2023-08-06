@@ -1,0 +1,14 @@
+coincurve/__init__.py,sha256=5mWXDHz2JmLFgeV0muFGaifJhWnt41ziSt06UCYj0cU,148
+coincurve/_libsecp256k1.py,sha256=Y96gapOGY9i1p8kFUIHqFMJfX2YiGIjOdPreTB2QfYw,5621
+coincurve/context.py,sha256=OpJ6sKrvHY6MS_YuJyPgKAb8qCrAicwkdOgNZEadkUA,924
+coincurve/ecdsa.py,sha256=ukA91E5Wp1rTJd_POzjv_c06vgSxkr-RDsKwaXgAVfA,3890
+coincurve/flags.py,sha256=qhykLtXnyBbEDLuORShPXCUlTJR9CB1D1aUbX9_jftk,373
+coincurve/keys.py,sha256=icJxHLxNkoD-g4JZG4KtodhvHvmyFqt9YoWYc0g6Vxs,10670
+coincurve/libsecp256k1.dll,sha256=C23vC7ylM1qD4LmRWW8uWfeKEdoj1oDvbBY1oz2omKc,664502
+coincurve/utils.py,sha256=4maQ8dPKgbknze4hJ1OSZ_Sc93EjieaI5RpjLgdhtQI,3636
+coincurve-8.0.2rc3.dist-info/DESCRIPTION.rst,sha256=8J-wTwxhyRWOOwqAlxZgvxOKbZyDZBzQLVDgYhOnA5E,9555
+coincurve-8.0.2rc3.dist-info/METADATA,sha256=Rg5jRLchiN0ws6HXSRV40kzRhLfYvK8KTRmTpW2v3CU,10845
+coincurve-8.0.2rc3.dist-info/RECORD,,
+coincurve-8.0.2rc3.dist-info/WHEEL,sha256=xuJ2w_RR4DNgd4FmUhs0bHIe8YWrQzuvfyVHf4AJHeg,122
+coincurve-8.0.2rc3.dist-info/metadata.json,sha256=xJTgwvND5HrMT0Q8x91TcVEPukNhDvujMNzVBocUGog,1484
+coincurve-8.0.2rc3.dist-info/top_level.txt,sha256=G6oW-c-UFxE1t-PKog3tmHh6JunKGhGJm7w-VUof6c4,10

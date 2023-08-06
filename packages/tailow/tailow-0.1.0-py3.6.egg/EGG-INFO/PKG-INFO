@@ -1,0 +1,53 @@
+Metadata-Version: 1.0
+Name: tailow
+Version: 0.1.0
+Summary: A async wrapper for mongodb
+Home-page: https://github.com/sourcepirate/tailow.git
+Author: Sourcepirate
+Author-email: sathyanarrayanan@yandex.com
+License: UNKNOWN
+Description: ## Tailow
+        [![Build Status](https://travis-ci.org/sourcepirate/tailow.svg?branch=master)](https://travis-ci.org/sourcepirate/tailow)
+        
+        A ORM wrapper around motor
+        
+        ## Usage
+        
+        ```python
+        import asyncio
+        from tailow.fields import *
+        from pymongo import ASCENDING
+        from tailow.document import Document
+        
+        class Address(Document):
+        
+            address = StringField(required=True)
+        
+        
+        class Student(Document):
+        
+            name = StringField(required=True)
+            age = IntegerField(required=True)
+            std = IntegerField(required=True)
+            address = ReferenceField(Address)
+        
+            class Meta:
+                name = "students"
+                indexes = [(age, ASCENDING)]
+        
+        
+        async def get_all_students():
+            values = await Student.objects.filter(name="sathya").limit(10).skip(2).find()
+            print(values)
+        
+        evloop = asyncio.get_event_loop()
+        evloop.run_until_complete(get_all_students())
+        
+        ```
+        
+        ## Status
+        
+        Work in progress.
+        
+        
+Platform: UNKNOWN

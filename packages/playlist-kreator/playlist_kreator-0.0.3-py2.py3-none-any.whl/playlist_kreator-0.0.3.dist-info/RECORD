@@ -1,0 +1,11 @@
+playlist_kreator/__init__.py,sha256=QqMXHVJs6Mh0abjyoct_OcIt77Rz1dSmEAy-kWDxGc8,18
+playlist_kreator/cli.py,sha256=yKNcyg06758zUad1Uxl-7wwtNB8tGZQVE_InClaZv0I,2015
+playlist_kreator/common.py,sha256=LNcykh7lIwfVvwYP_S5Uxk9ImvK8GCIJLv_-A748J-s,294
+playlist_kreator/providers/__init__.py,sha256=ES-82i8D3KuJdlm-RqGnLbRBhixATywGILEdJ_3PaqY,189
+playlist_kreator/providers/gmusic.py,sha256=6Bdhx_Ifr2KC-yahbYEDTwQem7ktdx2kc66QIanT68Y,1922
+playlist_kreator/providers/spotify.py,sha256=euZIJVbIyrjHdn4RPubK_3PkZYpAG4oPScK56lwGn1k,2487
+playlist_kreator-0.0.3.data/scripts/playlist-kreator,sha256=uzw6VXaPmbjm_XkH5HITmzd-1sf6T9l17dK3PIW2EoE,60
+playlist_kreator-0.0.3.dist-info/METADATA,sha256=dQ9SRt4cNROwtu4iDMFNytmG25uGrX8zHQUAfbEb91U,3155
+playlist_kreator-0.0.3.dist-info/RECORD,,
+playlist_kreator-0.0.3.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+playlist_kreator-0.0.3.dist-info/top_level.txt,sha256=1F6KAEThVCDyeaFhlWAP44PBI4dbEmUwwbIhsvIT6VQ,17

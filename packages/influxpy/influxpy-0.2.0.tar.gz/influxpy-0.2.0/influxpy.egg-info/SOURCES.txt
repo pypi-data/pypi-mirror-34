@@ -1,0 +1,9 @@
+README.md
+setup.py
+influxpy/__init__.py
+influxpy/handler.py
+influxpy/protocol.py
+influxpy.egg-info/PKG-INFO
+influxpy.egg-info/SOURCES.txt
+influxpy.egg-info/dependency_links.txt
+influxpy.egg-info/top_level.txt

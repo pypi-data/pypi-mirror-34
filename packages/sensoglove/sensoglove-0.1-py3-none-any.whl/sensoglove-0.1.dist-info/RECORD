@@ -1,0 +1,12 @@
+sensoglove/__init__.py,sha256=M2hv9fvW0GisK0IGywhnBjt0_K_Sd2e17bTw4Z4ZXh0,56
+sensoglove/fingers.py,sha256=lMpfz1oM17JlRI_jsI0lwO0aEY8NgavFCvd9fCR7bIA,805
+sensoglove/hand.py,sha256=yK2PBM-ZFENZQKOo8f8PyXRAzAjUxQVF2ws7lJ43CSs,262
+sensoglove/helpers.py,sha256=GBnJ2mYZ_26kP_8lM1YNb9i-CC2XTrOk0Ivm13iCEeI,268
+sensoglove/palm.py,sha256=DxYD09meFufxcNZV3BQ9CZ91y_RfHo8FDcq4w7TbAJ8,395
+sensoglove/rotation.py,sha256=G7kcYxcRwZeh6SWaUW2sE7K57QD9GfBp_MbN7DSZIEY,148
+sensoglove/sensoglove.py,sha256=_MIu2nw131LY5kavHXNdnnIEPPdv-wSfs_0V3hpKVRA,1571
+sensoglove/wrist.py,sha256=IbqbFudaaz127XDiPsYj99aZHQX7md0u1IhWPQsgJF8,192
+sensoglove-0.1.dist-info/METADATA,sha256=2LUWbNVxJMAzYgBTYhadpG6T-j90f5QvU1KBOcuBQGg,414
+sensoglove-0.1.dist-info/RECORD,,
+sensoglove-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sensoglove-0.1.dist-info/top_level.txt,sha256=Dx2PDjq2ayJqZRdbKZHrbwVjPwXFi3sAUwtrpJgalpQ,11

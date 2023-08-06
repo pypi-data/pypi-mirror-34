@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+cs200/__init__.py
+cs200/app.py
+cs200/core.py
+cs200/main.py
+cs200/scraper.py
+cs200/summarizer.py
+cs200.egg-info/PKG-INFO
+cs200.egg-info/SOURCES.txt
+cs200.egg-info/dependency_links.txt
+cs200.egg-info/requires.txt
+cs200.egg-info/top_level.txt
+cs200/bin/cs200

@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+from cs200.main import Default_CLI
+
+dc = Default_CLI()
+print(dc.return_summarization())

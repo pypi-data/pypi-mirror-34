@@ -1,0 +1,13 @@
+zensols/grsync/__init__.py,sha256=snU3EFH_QjaR-KP-7KWBSq2Gkrsor1eq4XTaGA_UYG0,254
+zensols/grsync/bootstrap.py,sha256=6FZXGc84r_odvKdd8OATwqf80GvQqv-zoOE8nM9LYjo,1478
+zensols/grsync/cli.py,sha256=ukmWqHFLIBH2nAmKH0dVBTIdcPzp7N7dCIaS1VcFCWw,1782
+zensols/grsync/config.py,sha256=LmKB3SeCupS3kFF6x-ijib9D0mRlggbhZQ-IngTP3Rw,1101
+zensols/grsync/discover.py,sha256=LJKBUnOoSEH1IbgZ9bu_CZwgTp2_AH7DL-8AQ38GigA,3922
+zensols/grsync/dist.py,sha256=TmSRajFQViAVMwgGOaSQpt5MpHCUo4A7Led1EWzxInc,5500
+zensols/grsync/domain.py,sha256=PTD5uoD1lvN9RsHUdPA55Q9ulnNZg9SmkBH7GIgfbJM,1931
+zensols/grsync/repospec.py,sha256=VN98uOWDIYiR5jyklgavUsDB6VpmYEalxHVAvlj6EiA,3439
+zensols.grsync-0.0.2.dist-info/METADATA,sha256=91OtQGiguxHBvlxfkHuWR0Um-3B2NZqb57xHehBouC4,2556
+zensols.grsync-0.0.2.dist-info/RECORD,,
+zensols.grsync-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+zensols.grsync-0.0.2.dist-info/entry_points.txt,sha256=DK6DQ7a1GOb6hfI7nZyeBVd9XwRReA8W_OCdq2fCEzY,48
+zensols.grsync-0.0.2.dist-info/top_level.txt,sha256=OV7uMopmFj1gpEBb-dK5iJSY_08oHYRnurV6-djDIWM,15

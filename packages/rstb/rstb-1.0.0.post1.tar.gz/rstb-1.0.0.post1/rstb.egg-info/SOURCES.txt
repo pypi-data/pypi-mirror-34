@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+rstb/__init__.py
+rstb/__main__.py
+rstb/resource_factory_info.tsv
+rstb/rstb.py
+rstb/util.py
+rstb.egg-info/PKG-INFO
+rstb.egg-info/SOURCES.txt
+rstb.egg-info/dependency_links.txt
+rstb.egg-info/entry_points.txt
+rstb.egg-info/requires.txt
+rstb.egg-info/top_level.txt

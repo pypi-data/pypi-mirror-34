@@ -1,0 +1,4 @@
+[console_scripts]
+notify=shell_utils.notify:notify_command
+shell_utils=shell_utils.cli:cli
+

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/rocketchat_py_sdk/__init__.py
+src/rocketchat_py_sdk/driver.py
+src/rocketchat_py_sdk.egg-info/PKG-INFO
+src/rocketchat_py_sdk.egg-info/SOURCES.txt
+src/rocketchat_py_sdk.egg-info/dependency_links.txt
+src/rocketchat_py_sdk.egg-info/requires.txt
+src/rocketchat_py_sdk.egg-info/top_level.txt

@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: byml
+Version: 2.0.1
+Summary: A simple Nintendo BYML or BYAML v2/v3 parser and writer
+Home-page: https://github.com/leoetlino/byml-v2
+Author: leoetlino
+Author-email: leo@leolam.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (~=3.12)
+Requires-Dist: sortedcontainers (~=2.0)
+Requires-Dist: wszst-yaz0 (~=1.0)
+
+## Simple bymlv2 parser + writer + converters
+
+Features:
+
+* **Supports v2 and v3 files.** These versions are respectively used by
+*The Legend of Zelda: Breath of the Wild* and *Super Mario Odyssey*.
+* **Supports 64-bit node types** which are used in *Super Mario Odyssey*.
+* **Supports both endianness**. The little-endian format is used on the Switch.
+* **Cross platform**.
+* **Easy to edit and readable output**. No ugly XML. Unobtrusive type information.
+
+### Quick usage
+
+```shell
+byml_to_yml   PATH_TO_BYML
+yml_to_byml   PATH_TO_YAML
+```
+
+Output will be sent to stdout and can be piped into a file. Pass `-` as the path to read from stdin.
+
+### Library
+
+```python
+import byml
+
+parser = byml.Byml(raw_bytes)
+document = parser.parse()
+
+writer = byml.Writer(document, be=big_endian_mode, version=byml_version)
+writer.write(writable_seekable_stream)
+```
+
+### Note about YAML integers/floats
+
+The initial version of this library supported automatic type detection.
+
+However, the problem with automatic type detection is that Nintendo sometimes
+uses signed integers even when it makes no sense and their byml
+library will only look for int nodes. Other times they will use
+uints for the same data type (crc32 hashes).
+
+It's totally unpredictable.
+
+So we need to keep type information when dumping/loading files
+instead of guessing types.
+
+To keep YAML output easy to read and write, the converter scripts will use
+prefixes to indicate types for literals:
+
+* Unsigned integers will get a 'u' prefix.
+* 64 bit types will additionally get a 'l'.
+
+### License
+
+This software is licensed under the terms of the GNU General Public License, version 2 or later.
+
+

@@ -1,0 +1,60 @@
+Metadata-Version: 1.2
+Name: timing
+Version: 0.1.1
+Summary: TBD
+Home-page: https://mbdevpl.github.io/
+Author: Mateusz Bysiek
+Author-email: mb@mbdev.pl
+Maintainer: Mateusz Bysiek
+Maintainer-email: mb@mbdev.pl
+License: Apache License 2.0
+Download-URL: https://github.com/mbdevpl/timing
+Description: .. role:: python(code)
+            :language: python
+        
+        
+        ======
+        timing
+        ======
+        
+        .. image:: https://img.shields.io/pypi/v/timing.svg
+            :target: https://pypi.org/project/timing
+            :alt: package version from PyPI
+        
+        .. image:: https://img.shields.io/github/license/mbdevpl/timing.svg
+            :target: https://github.com/mbdevpl/timing/blob/master/NOTICE
+            :alt: license
+        
+        TBD.
+        
+        .. contents::
+            :backlinks: none
+        
+        
+        How to use
+        ==========
+        
+        TBD.
+        
+        .. code:: python
+        
+            import timing
+        
+        
+        Requirements
+        ============
+        
+        Python version 3.4 or later.
+        
+        Python libraries as specified in `requirements.txt <https://github.com/mbdevpl/timing/blob/v0.1.1/requirements.txt>`_.
+        
+        Building and running tests additionally requires packages listed in `test_requirements.txt <https://github.com/mbdevpl/timing/blob/v0.1.1/test_requirements.txt>`_.
+        
+Keywords: timing,timer,time measurement,profiling,reproducibility
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.4

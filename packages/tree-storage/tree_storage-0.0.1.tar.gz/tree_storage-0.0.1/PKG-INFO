@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tree_storage
+Version: 0.0.1
+Summary: Tree Hash Storage
+Home-page: UNKNOWN
+Author: Valerii Duz
+Author-email: duz.valera.od@ex.ua
+License: UNKNOWN
+Description: # Tree
+        
+        Tree - it the library for who wants to save a large number of files.
+        For preservation it is enough to you to transfer a binary code of the file and the Tree will keep him.
+        
+        ![Tree image](https://github.com/valeriiduz/Tree/blob/master/documentation/TREE.jpg?raw=true)
+        
+        ## License
+        
+        This repository is distributed under The MIT license
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

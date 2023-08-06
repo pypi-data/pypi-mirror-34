@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+wwx/__init__.py
+wwx/models.py
+wwx/security.py
+wwx.egg-info/PKG-INFO
+wwx.egg-info/SOURCES.txt
+wwx.egg-info/dependency_links.txt
+wwx.egg-info/requires.txt
+wwx.egg-info/top_level.txt

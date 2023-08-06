@@ -1,0 +1,9 @@
+Stackility-0.5.5.dist-info/METADATA,sha256=jJ_FY6_DOAKveRhotGn1LkZ21Wm8qkz6S7L3cGDOR9w,493
+Stackility-0.5.5.dist-info/RECORD,,
+Stackility-0.5.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+Stackility-0.5.5.dist-info/entry_points.txt,sha256=CLk78eXBPHo2hYQtwVdSsgCYZCmJ3TCapp_puEvDTDc,73
+Stackility-0.5.5.dist-info/top_level.txt,sha256=OYw079RRSmsg7TAXulkLaaw-bLlRZOUMqhjKlS_8r9k,11
+stackility/CloudStackUtility.py,sha256=ZchnGhCVp_pimZBiJDXujpvCOXIMBKkj0FoiHDU1bu4,24624
+stackility/__init__.py,sha256=QKvri-8pEpMfRtE9_FS6KskPqMxvxOVVv-yrnzZiSWY,12275
+stackility/command.py,sha256=9UJkxG4sW_T35cPBryTGemKSGpW2DbDWaeVGjG92LXI,5549
+stackility/stack_tool.py,sha256=IbG1oqXTjv1xzVKeTTAMq69BHG6WFlxuwiYwHXYtXw8,3206

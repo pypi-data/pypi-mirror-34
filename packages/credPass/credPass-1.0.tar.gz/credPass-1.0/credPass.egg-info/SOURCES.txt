@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+credPass/__init__.py
+credPass.egg-info/PKG-INFO
+credPass.egg-info/SOURCES.txt
+credPass.egg-info/dependency_links.txt
+credPass.egg-info/not-zip-safe
+credPass.egg-info/requires.txt
+credPass.egg-info/top_level.txt

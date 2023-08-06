@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+version.txt
+micral/__init__.py
+micral/micral.py
+micral.egg-info/PKG-INFO
+micral.egg-info/SOURCES.txt
+micral.egg-info/dependency_links.txt
+micral.egg-info/not-zip-safe
+micral.egg-info/requires.txt
+micral.egg-info/top_level.txt

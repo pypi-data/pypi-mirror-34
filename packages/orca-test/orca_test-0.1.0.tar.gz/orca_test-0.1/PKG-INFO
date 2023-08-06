@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: orca_test
+Version: 0.1
+Summary: Assertions for testing the characteristics of orca tables and columns
+Home-page: https://github.com/urbansim/orca_test
+Author: UrbanSim Inc.
+Author-email: info@urbansim.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

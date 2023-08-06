@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pagseguro
+Version: 0.3.2
+Summary: Pagseguro API v2 wrapper
+Home-page: https://github.com/rochacbruno/python-pagseguro
+Author: Bruno Rocha
+Author-email: rochacbruno@gmail.com
+License: MIT
+Keywords: pagseguro,payment,payments,credit-card
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.11.1)
+Requires-Dist: xmltodict (>=0.10.2)
+Requires-Dist: arrow (>=0.8.0)
+
+UNKNOWN
+
+

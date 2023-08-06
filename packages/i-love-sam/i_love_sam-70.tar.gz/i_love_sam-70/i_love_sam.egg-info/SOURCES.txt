@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/__init__.py
+bin/i_love_sam
+i_love_sam/__init__.py
+i_love_sam/i_love.py
+i_love_sam.egg-info/PKG-INFO
+i_love_sam.egg-info/SOURCES.txt
+i_love_sam.egg-info/dependency_links.txt
+i_love_sam.egg-info/top_level.txt

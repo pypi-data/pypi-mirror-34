@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: rawsteel-music-player
+Version: 1.0.1
+Summary: A minimal music player with lyric show
+Home-page: https://github.com/baijifeilong/rawsteelp
+Author: BaiJiFeiLong
+Author-email: baijifeilong@gmail.com
+License: GPL3
+Description: # Rawsteel Music Player
+        
+        This is a minimal music player with lyric show.
+        
+        Powered by Python and Qt
+        
+        ## Download
+        
+        `pip install rawsteel-music-player`
+        
+        ## Usage
+        
+        Note: Please add 
+Platform: UNKNOWN

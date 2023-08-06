@@ -1,0 +1,14 @@
+numpy
+scipy
+six
+uncertainties
+pandas
+
+[all]
+IPython
+ipywidgets
+traitlets
+matplotlib
+xlrd
+h5py
+tqdm

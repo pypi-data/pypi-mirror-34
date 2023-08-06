@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+deper.egg-info/PKG-INFO
+deper.egg-info/SOURCES.txt
+deper.egg-info/dependency_links.txt
+deper.egg-info/requires.txt
+deper.egg-info/top_level.txt
+deper.egg-info/zip-safe

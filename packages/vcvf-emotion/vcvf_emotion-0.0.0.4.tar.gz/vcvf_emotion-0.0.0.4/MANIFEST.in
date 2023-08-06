@@ -1,0 +1,4 @@
+include vcvf_emotion/test.jpg
+include vcvf_emotion/models/happymodle.json
+include vcvf_emotion/models/weights.best.hdf5
+include MANIFEST.in

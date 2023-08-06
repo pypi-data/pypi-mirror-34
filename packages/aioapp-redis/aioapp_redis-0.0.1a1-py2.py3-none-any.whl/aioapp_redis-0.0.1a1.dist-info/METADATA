@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: aioapp-redis
+Version: 0.0.1a1
+Summary: Aioapp adapter for aioredis
+Home-page: https://github.com/inplat/aioapp_redis
+Author: Konstantin Stepanov
+Author-email: UNKNOWN
+License: Apache License 2.0
+Keywords: aioapp_redis
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: aioapp (==0.0.2b1)
+Requires-Dist: aioredis (==1.1.0)
+
+============
+aioapp_redis
+============
+
+Micro framework based on asyncio
+
+.. image:: https://img.shields.io/pypi/v/aioapp_redis.svg
+        :target: https://pypi.python.org/pypi/aioapp_redis
+
+.. image:: https://img.shields.io/travis/inplat/aioapp_redis.svg
+        :target: https://travis-ci.org/inplat/aioapp_redis
+
+.. image:: https://codecov.io/gh/inplat/aioapp_redis/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/inplat/aioapp_redis
+
+.. image:: https://pyup.io/repos/github/inplat/aioapp_redis/shield.svg
+        :target: https://pyup.io/repos/github/inplat/aioapp_redis/
+        :alt: Updates
+
+* Free software: Apache License 2.0
+
+
+
+
+
+=======
+History
+=======
+
+0.0.1b1 (2018-01-17)
+--------------------
+
+* First release on PyPI.
+
+

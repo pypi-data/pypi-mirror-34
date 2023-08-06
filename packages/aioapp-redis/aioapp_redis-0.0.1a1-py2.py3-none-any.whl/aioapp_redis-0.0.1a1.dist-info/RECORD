@@ -1,0 +1,9 @@
+aioapp_redis/__init__.py,sha256=o0D2rQAluwrpIJI5i8DRL8f6MBz83H2hiOpna-NzFbs,8198
+aioapp_redis-0.0.1a1.dist-info/METADATA,sha256=dBZDdieRNrWI7vUpWvJmVOJJnpBMhuKa6vWdVqCYp-w,1383
+aioapp_redis-0.0.1a1.dist-info/RECORD,,
+aioapp_redis-0.0.1a1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+aioapp_redis-0.0.1a1.dist-info/top_level.txt,sha256=PIoG7faraEIJlmxZLpkPbOtqQUQ4mTql61xb92F6zB4,19
+tests/__init__.py,sha256=tl2hK64aWuMnprPko4Zhuk8zy5JXI-dbeGA9z6CN6C8,61
+tests/conftest.py,sha256=JjONQxzCov1f1mlZDRha813BVnmxQ7uFmGo4IDSYB4c,4283
+tests/docker-compose.yml,sha256=qyE2f_SWvSts6p6kMlR-oIN01eSPNEEXct3S5siTjs8,92
+tests/test_redis.py,sha256=cMnwVXkQihgGHe9vOvyN0hUerTR__EbabRA_iDABUqU,3390

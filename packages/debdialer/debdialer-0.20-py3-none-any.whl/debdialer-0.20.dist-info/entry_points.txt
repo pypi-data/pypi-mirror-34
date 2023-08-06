@@ -1,0 +1,3 @@
+[console_scripts]
+debdialer = debdialer:cli_main
+

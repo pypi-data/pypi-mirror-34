@@ -1,0 +1,10 @@
+README.md
+setup.py
+sapy_script/SAP.py
+sapy_script/__init__.py
+sapy_script/__main__.py
+sapy_script.egg-info/PKG-INFO
+sapy_script.egg-info/SOURCES.txt
+sapy_script.egg-info/dependency_links.txt
+sapy_script.egg-info/requires.txt
+sapy_script.egg-info/top_level.txt

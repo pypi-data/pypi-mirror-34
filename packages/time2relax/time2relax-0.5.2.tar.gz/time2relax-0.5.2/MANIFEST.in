@@ -1,0 +1,9 @@
+include AUTHORS.md
+include HISTORY.md
+include LICENSE.txt
+
+graft docs
+graft tests
+
+global-exclude __pycache__
+global-exclude *.py[co]

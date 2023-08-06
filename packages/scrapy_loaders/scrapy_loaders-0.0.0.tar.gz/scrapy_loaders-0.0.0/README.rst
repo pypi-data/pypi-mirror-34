@@ -1,0 +1,94 @@
+scrapy\_loaders
+===============
+
+Scrapy Pipelines Loaders
+
+-  Free software: MIT license
+
+Install
+=======
+
+.. code:: bash
+
+    pip install scrapy_loaders
+
+At Your Scrapy project (Example: SpiderProject)
+-----------------------------------------------
+
+models.py
+^^^^^^^^^
+
+.. code:: python
+
+    from sqlalchemy import (
+        Column,
+        String,
+        Text,
+    )
+    from sqlalchemy.ext.declarative import declarative_base
+    DeclarativeBase = declarative_base()
+
+    class ItemModel(DeclarativeBase):
+        __tablename__ = 'table_name'
+        id = Column('id', String(10), primary_key=True)
+        name = Column('name', String(60))
+        description = Column('description', Text())
+        url = Column('url', Text())
+        md5sum = Column('md5sum', String(45))
+        ...
+    ...
+
+settings.py
+^^^^^^^^^^^
+
+.. code:: python
+
+    ...
+    # Postgres settings, check other SQLAlchemy settings if you wish
+    DATABASE = {
+        'drivername': 'postgresql+psycopg2',
+        'host': 'localhost',
+        'port': '5432',
+        'username': 'username',
+        'password': 'password',
+        'database': 'attack_mitre',
+    }
+    DECLARATIVE_BASE = 'SpiderProject.models.DeclarativeBase'
+    ...
+    ITEM_PIPELINES = {
+       'SpiderProject.pipelines.SpiderProjectDbPipeline': 300,
+    }
+    ...
+
+pipelines.py
+^^^^^^^^^^^^
+
+.. code:: python
+
+    from SpiderProject.models import ItemModel
+    from scrapy_loaders.db_loaders import DBLoader
+    from scrapy_loaders.pipelines import DbPipeline
+
+    class ItemLoader(DBLoader):
+        model = ItemModel
+        hash_fields = ['name', 'description']
+        update_fields = hash_fields + ['md5sum']
+    ...
+
+    class SpiderProjectDbPipeline(DbPipeline):
+        db_loaders = {
+            'ItemModel': ItemLoader,
+        }
+    ...
+
+Features
+========
+
+Tests
+=====
+
+TODO: tests
+
+.. code:: bash
+
+    nosetests --with-coverage --cover-inclusive --cover-package=scrapy_loaders --cover-html

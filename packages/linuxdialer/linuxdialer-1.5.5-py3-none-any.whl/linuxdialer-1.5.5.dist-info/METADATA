@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: linuxdialer
+Version: 1.5.5
+Summary: Applications for handling tel: uri and vCard files
+Home-page: https://salsa.debian.org/sanjaypra555-guest/linux-dialer/
+Author: Sanjay Prajapat
+Author-email: sanjaypra555@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://salsa.debian.org/sanjaypra555-guest/linux-dialer/
+Keywords: linuxdialer
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: phonenumbers
+Requires-Dist: pytz
+Requires-Dist: vobject
+
+linux-dialer
+============
+
+Click to Dial pop-up window for linux desktop.
+
+
+Install linuxdialer using pip3 (Not available for python 2)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   pip3 install linuxdialer
+
+Install ``python3-pyqt5`` and ``Ekiga`` from distro package manager.
+
+In debian based distro -
+
+::
+
+   sudo apt install python3-pyqt5 ekiga
+
+When installing from pip make sure you have ``~/.local/bin`` in ``PATH``
+environment variable.
+
+Run Application from command line
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   linuxdialer -t tel:+919988776655
+   linuxdialer -v path/to/vcardfile
+
+Test mime handler -
+^^^^^^^^^^^^^^^^^^^
+
+-  Create a ``test.html`` containing
+   ``<a href="tel:+919988776655">Phone</a>``, open with firefox/chrome
+   and click on Phone
+-  Click on a tel number in evolution addressbook
+-  Right click on a vCard file and open with Linux Dialer
+

@@ -1,0 +1,10 @@
+README.md
+setup.py
+textmetrics/__init__.py
+textmetrics/common.py
+textmetrics/main.py
+textmetrics.egg-info/PKG-INFO
+textmetrics.egg-info/SOURCES.txt
+textmetrics.egg-info/dependency_links.txt
+textmetrics.egg-info/requires.txt
+textmetrics.egg-info/top_level.txt

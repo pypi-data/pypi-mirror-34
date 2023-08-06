@@ -1,0 +1,11 @@
+numpy
+gdal
+shapely
+scikit-image
+matplotlib
+geopandas
+geoarray>=0.8.0
+py_tools_ds>=0.12.1
+plotly
+cmocean
+six

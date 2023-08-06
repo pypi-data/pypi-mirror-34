@@ -1,0 +1,45 @@
+Metadata-Version: 2.0
+Name: kz
+Version: 0.dev1
+Summary: kz
+Home-page: https://gitlab.com/k7db/kz
+Author: Alexander Belopolsky
+Author-email: a@enlnt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+kz
+==
+
+.. image:: https://img.shields.io/pypi/v/kz.svg
+    :target: https://pypi.python.org/pypi/kz
+    :alt: Latest PyPI version
+
+kz
+
+Usage
+-----
+
+Installation
+------------
+
+Requirements
+^^^^^^^^^^^^
+
+Compatibility
+-------------
+
+Licence
+-------
+
+Authors
+-------
+
+`kz` was written by `Alexander Belopolsky <a@enlnt.com>`_.
+
+

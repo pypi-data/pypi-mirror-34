@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sumopy
+Version: 0.1
+Summary: HTTP Logging handler for SumoLogic
+Home-page: https://github.com/xavivars/sumopy
+Author: Xavi Ivars
+Author-email: xavi.ivars@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+

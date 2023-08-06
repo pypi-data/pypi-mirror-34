@@ -1,0 +1,76 @@
+Metadata-Version: 1.1
+Name: bcg
+Version: 1.15.0
+Summary: BigClown USB Gateway
+Home-page: https://github.com/bigclownlabs/bch-usb-gateway
+Author: HARDWARIO s.r.o.
+Author-email: karel.blavka@bigclown.com
+License: MIT
+Description: 
+        BigClown gateway between USB and MQTT broker.
+        
+        Documentation is here https://www.bigclown.com/doc/tools/bcg/
+        
+        
+        usage: bcg [-h] [-c CONFIG] [-d DEVICE] [-H MQTT_HOST] [-P MQTT_PORT]
+                   [--no-wait] [--mqtt-username MQTT_USERNAME]
+                   [--mqtt-password MQTT_PASSWORD] [--mqtt-cafile MQTT_CAFILE]
+                   [--mqtt-certfile MQTT_CERTFILE] [--mqtt-keyfile MQTT_KEYFILE] [-D]
+                   [-v]
+                   COMMAND ...
+        
+        BigClown gateway between USB serial port and MQTT broker
+        
+        positional arguments:
+          COMMAND
+            devices             show devices
+            help                show help
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -c CONFIG, --config CONFIG
+                                path to configuration file (YAML format)
+          -d DEVICE, --device DEVICE
+                                device
+          -H MQTT_HOST, --mqtt-host MQTT_HOST
+                                MQTT host to connect to (default is localhost)
+          -P MQTT_PORT, --mqtt-port MQTT_PORT
+                                MQTT port to connect to (default is 1883)
+          --no-wait             no wait on connect or reconnect serial port
+          --mqtt-username MQTT_USERNAME
+                                MQTT username
+          --mqtt-password MQTT_PASSWORD
+                                MQTT password
+          --mqtt-cafile MQTT_CAFILE
+                                MQTT cafile
+          --mqtt-certfile MQTT_CERTFILE
+                                MQTT certfile
+          --mqtt-keyfile MQTT_KEYFILE
+                                MQTT keyfile
+          -D, --debug           print debug messages
+          -v, --version         show program's version number and exit
+        
+        
+Keywords: BigClown,BigClownLabs,gateway,MQTT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console

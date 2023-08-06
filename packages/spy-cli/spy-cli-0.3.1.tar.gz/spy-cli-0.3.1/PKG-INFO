@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: spy-cli
+Version: 0.3.1
+Summary: stream processing Python CLI
+Home-page: https://github.com/edk0/spy/
+Author: Ed Kellett
+Author-email: e@kellett.im
+License: UNKNOWN
+Project-URL: Documentation, https://spy.readthedocs.io/
+Description: See https://github.com/edk0/spy/blob/master/README.md
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Provides-Extra: test

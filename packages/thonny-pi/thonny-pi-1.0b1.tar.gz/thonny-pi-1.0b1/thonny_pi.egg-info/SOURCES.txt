@@ -1,0 +1,7 @@
+setup.py
+thonny_pi.egg-info/PKG-INFO
+thonny_pi.egg-info/SOURCES.txt
+thonny_pi.egg-info/dependency_links.txt
+thonny_pi.egg-info/requires.txt
+thonny_pi.egg-info/top_level.txt
+thonnycontrib/pi/__init__.py

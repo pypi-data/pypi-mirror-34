@@ -1,0 +1,16 @@
+bleach/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bleach/setup.py,sha256=y_2UqWFCaUSaqIcEBVfhB63VQrj8EnztKBw_B8LwSkE,646
+bleach/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bleach/cli/args.py,sha256=gDw317ZIuZsOi2sKtLp1YxQzME68pq00itAOOJy0urc,594
+bleach/cli/main.py,sha256=qG-NkF1AGM732WMX9bA3QcQTGTYrh03bkaoYKij3w6E,851
+bleach/formatters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bleach/formatters/default.py,sha256=8MONRgCI85JiKDD5056TGc48Jui4B2WmEAeVy1YN5zE,40
+bleach/outputs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bleach/outputs/slack.py,sha256=GYccvKKVNrslxr-hqa941_bPBss3rrVB51koMEkeU-E,25
+bleach/outputs/stdout.py,sha256=8Uj8STNy1Cgb26Ailn0_bGYQJ7uxERvqYzv8ouV6N8c,117
+bleach/sourcecontrol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bleach/sourcecontrol/github.py,sha256=Nn8vbskkQwav_oki07-OmfGngNXGN1vo-P1S98BfNYk,942
+bleachrepo-0.0.4.dist-info/METADATA,sha256=aTmj0gA3srG8-Z_vqlNshFeiBSSL-7BVWUcPR2vBdQY,498
+bleachrepo-0.0.4.dist-info/RECORD,,
+bleachrepo-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+bleachrepo-0.0.4.dist-info/top_level.txt,sha256=dcv0wKIySB0zMjAEXLwY4V0-3IN9UZQGAT1wDmfQICY,7

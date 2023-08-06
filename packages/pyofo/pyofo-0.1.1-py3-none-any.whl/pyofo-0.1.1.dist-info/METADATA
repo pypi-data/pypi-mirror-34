@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyofo
+Version: 0.1.1
+Summary: A Python library to interface with ofo bike API
+Home-page: https://github.com/qxzzxq/pyofo
+Author: Xuzhou Qin
+Author-email: me@qinxuzhou.com
+License: MIT
+Keywords: ofo,bike
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+

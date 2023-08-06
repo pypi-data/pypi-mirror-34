@@ -1,0 +1,8 @@
+README.md
+setup.py
+vers/__init__.py
+vers/vers.py
+vers.egg-info/PKG-INFO
+vers.egg-info/SOURCES.txt
+vers.egg-info/dependency_links.txt
+vers.egg-info/top_level.txt

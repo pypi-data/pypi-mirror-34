@@ -1,0 +1,10 @@
+setuptools_antlr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setuptools_antlr/command.py,sha256=VYMySNJrYdJDySP-pPFy42Y0CLz7r92Kdg5OgaglT9o,18964
+setuptools_antlr/util.py,sha256=_JDOs_ccVW0jz4aXDzBYzItQltTTEtAsV5w2fiWIQTA,2443
+setuptools_antlr/lib/LICENSE.txt,sha256=sbN5_K8yGVk6TEM_6xs1x4C-0j-vquRAsa4ncalSHjo,2699
+setuptools_antlr/lib/antlr-4.7.1-complete.jar,sha256=9B3OdEHVI7r5dpy3dWoA8npLZ-VarKtEUlVB9i1_Zog,2240116
+setuptools_antlr-0.2.2.dist-info/METADATA,sha256=Bm3D0ODbyz_Ia67Q_B5Br0pvreAgSDVqG-iCU50SbCM,8408
+setuptools_antlr-0.2.2.dist-info/RECORD,,
+setuptools_antlr-0.2.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+setuptools_antlr-0.2.2.dist-info/entry_points.txt,sha256=loyNKkNyQko5qVGMFYFaZA36ehKyl2VdQP7llka2ovM,68
+setuptools_antlr-0.2.2.dist-info/top_level.txt,sha256=ygM1NuGCCPEljxvOo937V5k8v4whJSTN2lscdi4TE2g,17

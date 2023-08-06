@@ -1,0 +1,14 @@
+ansiwrap
+boto3
+click
+future
+futures ; python_version < "3.0"
+ipython >= 5.0 
+pyyaml
+nbformat
+nbconvert
+six
+tqdm
+jupyter_client
+pandas
+requests

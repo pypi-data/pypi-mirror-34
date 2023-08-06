@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: papermill
+Version: 0.14.1
+Summary: Parametrize and Run Jupyter Notebooks
+Home-page: https://github.com/nteract/papermill
+Author: nteract contributors
+Author-email: jupyter@googlegroups.com
+License: BSD
+Description: UNKNOWN
+Keywords: jupyter mapreduce
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: test

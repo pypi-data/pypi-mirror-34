@@ -1,0 +1,6 @@
+numpy
+rasterio==1.0a12
+shapely
+fiona
+pyproj
+scipy

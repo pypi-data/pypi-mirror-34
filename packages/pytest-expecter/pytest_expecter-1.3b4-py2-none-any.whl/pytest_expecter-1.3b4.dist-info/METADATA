@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: pytest-expecter
+Version: 1.3b4
+Summary: Better testing with expecter and pytest.
+Home-page: https://github.com/jacebrowning/pytest-expecter
+Author: Jace Browning
+Author-email: jacebrowning@gmail.com
+License: BSD
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Testing
+
+# pytest-expecter
+
+A `pytest` plugin for [garybernhardt/expecter](https://github.com/garybernhardt/expecter) that hides the internal stacktrace.
+
+[![Build Status](http://img.shields.io/travis/jacebrowning/pytest-expecter/plugin.svg)](https://travis-ci.org/jacebrowning/pytest-expecter)
+[![PyPI Version](http://img.shields.io/pypi/v/pytest-expecter.svg)](https://pypi.python.org/pypi/pytest-expecter)
+
+## Overview
+
+This lets you write tests (optionally using [ropez/pytest-describe](https://github.com/ropez/pytest-describe)) like this:
+
+```python
+def describe_foobar():
+
+    def it_can_pass(expect):
+        expect(2 + 3) == 5
+
+    def it_can_fail(expect):
+        expect(2 + 3) == 6
+```
+
+and get output like this: 
+
+```sh
+=================================== FAILURES ===================================
+_________________________ describe_foobar.it_can_fail __________________________
+
+    def it_can_fail(expect):
+>       expect(2 + 3) == 6
+E       AssertionError: Expected 6 but got 5
+
+test_foobar.py:7: AssertionError
+====================== 1 failed, 1 passed in 2.67 seconds ======================
+```
+
+## Installation
+
+```sh
+pip install pytest-expecter
+```
+
+# Revision History
+
+## 1.3 (unreleased)
+
+- Added `startswith`, `endswith`, `istartswith`, and `iendswith` helpers. 
+- Added support for Python 3.7.
+
+## 1.2 (2018/03/17)
+
+- Added `icontains` method to check for containment ignoring case.
+- Added `iexcludes` method to check for exclusion ignoring case.
+
+## 1.1 (2018/02/21)
+
+- Added `expect` fixture to use directly in tests.
+
+## 1.0 (2017/12/03)
+
+- Initial stable release.
+
+## 0.2.2.post7 (2017/12/02)
+
+ - Added automatic conversion from `OrderedDict` to `dict` on Python 3.6 to create readable diffs.
+
+

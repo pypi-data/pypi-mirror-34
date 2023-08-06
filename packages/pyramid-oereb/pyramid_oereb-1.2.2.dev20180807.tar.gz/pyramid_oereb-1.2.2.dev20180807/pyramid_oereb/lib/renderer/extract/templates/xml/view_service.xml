@@ -1,0 +1,34 @@
+<%page args="map"/>
+%if map.image:
+<data:Image>${map.image.encode()}</data:Image>
+%endif
+%if map.reference_wms:
+<data:ReferenceWMS>${map.reference_wms|u}</data:ReferenceWMS>
+%endif
+%if map.legend_at_web:
+<data:LegendAtWeb>${map.legend_at_web|u}</data:LegendAtWeb>
+%endif
+%if map.legends:
+<%
+    sorted_legends = sort_by_localized_text(map.legends)
+%>
+%for legend_entry in sorted_legends:
+<data:OtherLegend>
+    <%include file="legend_entry.xml" args="legend_entry=legend_entry"/>
+</data:OtherLegend>
+%endfor
+%endif
+<data:layerIndex>${map.layer_index}</data:layerIndex>
+<data:layerOpacity>${map.layer_opacity}</data:layerOpacity>
+%if map.min_NS03 is not None:
+<data:min_NS03>${map.min_NS03.x} ${map.min_NS03.y}</data:min_NS03>
+%endif
+%if map.max_NS03 is not None:
+<data:max_NS03>${map.max_NS03.x} ${map.max_NS03.y}</data:max_NS03>
+%endif
+%if map.min_NS95 is not None:
+<data:min_NS95>${map.min_NS95.x} ${map.min_NS95.y}</data:min_NS95>
+%endif
+%if map.max_NS95 is not None:
+<data:max_NS95>${map.max_NS95.x} ${map.max_NS95.y}</data:max_NS95>
+%endif

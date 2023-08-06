@@ -1,0 +1,3 @@
+[console_scripts]
+pyrandomsearch = pyrandomsearch.pyrandomsearch:main
+

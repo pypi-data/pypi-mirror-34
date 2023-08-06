@@ -1,0 +1,13 @@
+scikit_snowland-0.1.2.dist-info/DESCRIPTION.rst,sha256=t8xC-K7pyr-fP5yx45RZx11O-_0Q9Rl0jURcSonO4e8,32
+scikit_snowland-0.1.2.dist-info/METADATA,sha256=ZMcngkzK9GHPaITAwo5VgXWjqLvJKwdP78S7IaPPagU,985
+scikit_snowland-0.1.2.dist-info/RECORD,,
+scikit_snowland-0.1.2.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+scikit_snowland-0.1.2.dist-info/metadata.json,sha256=UwA6zk7rkUxjbO97jSI68QMum0x02-pky7Aomy7mR7U,1085
+scikit_snowland-0.1.2.dist-info/top_level.txt,sha256=uF2I7TdQpVoTx2D02BhgOLP9fZmazJbBLt-vB2Wfnj0,9
+snowland/__init__.py,sha256=r9HzCeFmPjj7Kz2ZZ-F7Z-gv8-GjitSgAcQqbi8--Eo,287
+snowland/image/__init__.py,sha256=hh0gH2EsFLZcPHsuxKFgew0fKOc6dmsjF3oofmqRX-w,268
+snowland/image/api/__init__.py,sha256=9gqAm7frtm3Pof7mGnEvDksP6uAU36uR3V4th9OsSjE,299
+snowland/image/api/img_to_cartoon.py,sha256=5Q8LzsM5396WY5X_gQQcB2rjuwWH3kqCvh-QVlBx9JQ,1780
+snowland/image/api/img_to_sketch.py,sha256=XBZJA6iTb05Ez1x5SRefHdI2jtQ2aQ2UJRKGNIFkh_g,750
+snowland/image/color/__init__.py,sha256=UGvQK5W-R97i1JI6C73fDqTkJbcdZxDpiGsR_T1O1e0,265
+snowland/image/color/color.py,sha256=VwI5LcYlWovhgpGXAGr8X4CoakQtWleK162lVI7bIWA,1871

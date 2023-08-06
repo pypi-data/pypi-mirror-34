@@ -1,0 +1,14 @@
+tapioca_trello/__init__.py,sha256=cNmLugNN8YolDVgUDp8ncTkXeas-yaLKk8ZJFI-OZcE,155
+tapioca_trello/tapioca_trello.py,sha256=N3z-VXMDW1dfDPVuFBiwLl31258x03xKRJIEH4pThk0,1068
+tapioca_trello/resource_mapping/__init__.py,sha256=GDFfkKEauvD_2NcrpGJe0dzCHR3AmBXpQ01JocQkUPk,420
+tapioca_trello/resource_mapping/action.py,sha256=LKOfEk2Khfdb8zQytzdNakK8QIlFVPp-UeWfgwkibHU,2775
+tapioca_trello/resource_mapping/batch.py,sha256=3e0H07lyrCoMWn4rIwAU0AaoPJJSHCKogALvFoSg-tQ,234
+tapioca_trello/resource_mapping/board.py,sha256=wUNV7ffidFx-bUKI7-oO1x6ieZgs8eUJtX1HCr0teOo,10113
+tapioca_trello/resource_mapping/card.py,sha256=84lA7ykHDOIm0eMK71oEG3yy88H5OLuZmVKMWWuxx9Y,9462
+tapioca_trello/resource_mapping/checklist.py,sha256=SY5YmuJj-Ax_DNYkzgEUPeI6iSJWd3s2evZkdwZYTsQ,3155
+tapioca_trello-0.3.dist-info/METADATA,sha256=nY_HhHGko0z7ldQo7AzTXKND617Ny0LnuNH97lUyH_c,1630
+tapioca_trello-0.3.dist-info/RECORD,,
+tapioca_trello-0.3.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+tapioca_trello-0.3.dist-info/top_level.txt,sha256=PcacVuhp3DkiodU53ujxdZCPEPNbud8D-GB8k_KMIQI,21
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_tapioca_trello.py,sha256=xaVrJd2YS6sJnYiG84E8kBKoZbn7D3Z0SED8D7pZCvM,225

@@ -1,0 +1,13 @@
+pytest_regressions/__init__.py,sha256=ptAxGB0lp_o0kqqdLRiQXQXLGRUPCO76jRCJkHi_bmo,550
+pytest_regressions/common.py,sha256=KJO-O0J1Z4z5Zctqd1to2Lq63wUogCgUDL04FN-yqjU,6335
+pytest_regressions/data_regression.py,sha256=tvFeAH6m158iKk0JrCFrGOIMDW_kP6kV72eZyW9Nr8w,3509
+pytest_regressions/file_regression.py,sha256=5FpAe4uQcHPqJ-3CCzaF9cuQmanht0uOF4RscUuI7qY,3579
+pytest_regressions/image_regression.py,sha256=VDjCg__rswqJyNN20wyCaVvyMd3W5Ym5QTm6qrFZOEc,5313
+pytest_regressions/num_regression.py,sha256=GEYs1J29aD-c3SPiqLe1YmxT8yXn5880MTh7aUtpik4,10164
+pytest_regressions/plugin.py,sha256=VfqHkxPjz8AmdOu9OIWS-cuVgFeFMmGU4l5yBtlLuWk,3368
+pytest_regressions/testing.py,sha256=jOCsGyP8CoYacR-x5NP6afY66AqwB0aRjMGm43keSi4,2981
+pytest_regressions-1.0.1.dist-info/METADATA,sha256=5rb8qhZPMSaocc4fOr_qbhOdbyiP7igURVryvV8Ouiw,3707
+pytest_regressions-1.0.1.dist-info/RECORD,,
+pytest_regressions-1.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pytest_regressions-1.0.1.dist-info/entry_points.txt,sha256=78xKqAbj6ZsiaCAKEJCwW9nPMyF91NbLUjvlMiRZN2w,52
+pytest_regressions-1.0.1.dist-info/top_level.txt,sha256=SH-1VsFz8V5Btk3x6LUB0aOxI9bR-htJAa5zpKMgmK0,19

@@ -1,0 +1,3 @@
+include *.rst
+include src/ypinyin/Mandarin.dat
+include src/ypinyin/special_characters.dat

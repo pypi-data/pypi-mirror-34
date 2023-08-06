@@ -1,0 +1,14 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/ypinyin/Mandarin.dat
+src/ypinyin/__init__.py
+src/ypinyin/special_characters.dat
+src/ypinyin/tests.py
+src/ypinyin.egg-info/PKG-INFO
+src/ypinyin.egg-info/SOURCES.txt
+src/ypinyin.egg-info/dependency_links.txt
+src/ypinyin.egg-info/requires.txt
+src/ypinyin.egg-info/top_level.txt

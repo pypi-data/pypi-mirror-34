@@ -1,0 +1,66 @@
+Metadata-Version: 2.0
+Name: cybs
+Version: 1.0.0
+Summary: Authorize.net REST API
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: Swagger,Authorize.net REST API
+Platform: UNKNOWN
+Requires-Dist: urllib3
+Requires-Dist: six
+Requires-Dist: certifi
+Requires-Dist: DateTime
+Requires-Dist: Naked
+Requires-Dist: PyJWT
+Requires-Dist: PyNaCl
+Requires-Dist: PyYAML
+Requires-Dist: asn1crypto
+Requires-Dist: bcrypt
+Requires-Dist: certifi
+Requires-Dist: cffi
+Requires-Dist: chardet
+Requires-Dist: extras
+Requires-Dist: fixtures
+Requires-Dist: configparser
+Requires-Dist: crypto
+Requires-Dist: cryptography
+Requires-Dist: enum34
+Requires-Dist: funcsigs
+Requires-Dist: nose
+Requires-Dist: coverage
+Requires-Dist: jsonschema
+Requires-Dist: linecache2
+Requires-Dist: pbr
+Requires-Dist: idna
+Requires-Dist: ipaddress
+Requires-Dist: logger
+Requires-Dist: logging
+Requires-Dist: paramiko
+Requires-Dist: pip
+Requires-Dist: pyOpenSSL
+Requires-Dist: pyasn1
+Requires-Dist: pycparser
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+Requires-Dist: pypi
+Requires-Dist: python-mimeparse
+Requires-Dist: python-subunit
+Requires-Dist: python-toolbox
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: rsa
+Requires-Dist: setuptools
+Requires-Dist: shellescape
+Requires-Dist: six
+Requires-Dist: typing
+Requires-Dist: testtools
+Requires-Dist: traceback2
+Requires-Dist: wheel
+Requires-Dist: x509
+Requires-Dist: zope.interface
+
+Authorize.net REST API
+
+

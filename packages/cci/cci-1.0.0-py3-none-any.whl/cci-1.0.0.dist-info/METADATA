@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cci
+Version: 1.0.0
+Summary: Use the Clang + LLVM toolchain as an interpreter for C code.
+Home-page: https://github.com/duckinator/cci
+Author: Ellen Marie Dash
+Author-email: me@duckie.co
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.6
+Requires-Dist: enforce
+
+# cci
+Interpret single-file C codebases, using Clang and LLVM.
+
+

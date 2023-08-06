@@ -1,0 +1,9 @@
+README.rst
+setup.py
+Lysidike.egg-info/PKG-INFO
+Lysidike.egg-info/SOURCES.txt
+Lysidike.egg-info/dependency_links.txt
+Lysidike.egg-info/requires.txt
+Lysidike.egg-info/top_level.txt
+lysidike/__init__.py
+tests_unit/__init__.py

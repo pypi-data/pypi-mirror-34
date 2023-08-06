@@ -1,0 +1,9 @@
+README.rst
+setup.py
+palindromus/LICENSE
+palindromus/__init__.py
+palindromus.egg-info/PKG-INFO
+palindromus.egg-info/SOURCES.txt
+palindromus.egg-info/dependency_links.txt
+palindromus.egg-info/top_level.txt
+palindromus.egg-info/zip-safe

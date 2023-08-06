@@ -1,0 +1,88 @@
+Metadata-Version: 1.1
+Name: palindromus
+Version: 1.0.3
+Summary: Package palindromus helps you to check that any string, word or text are palindrome
+Home-page: https://github.com/vowatchka/palindromus
+Author: Vladimir Saltykov
+Author-email: vowatchka@mail.ru
+License: MIT
+Description: Palindromus documentation
+        -------------------------
+        See at https://palindromus.readthedocs.io
+        
+        Overwiew
+        --------
+        Package helps you to check that any string, word or text are palindrome.
+        
+        Checking
+        --------
+        Check any strings::
+        	
+        	from palindromus import *
+        	
+        	somestr = """ÐÐ¾Ð¹ Ð¸ Ð²ÐµÑÐ° - ÑÐ°Ð½Ñ Ñ Ð¡Ð¸Ð¾Ð½Ð°
+        	Ð½Ð¾ ÐÑÑÑ Ð½Ð° ÑÐ°ÑÐµ - ÐÐ¸Ð¹Ð¾Ð½"""
+        	
+        	r = check(somestr)
+        	print(r) # True
+        	
+        Check any words::
+        	
+        	from palindromus import *
+        	
+        	someword = "ÑÐ¾Ð¿Ð¾Ñ"
+        	
+        	r = check(someword, check = WORD)
+        	print(r) # True
+        	
+        Check any multiline palindrome::
+        	
+        	from palindromus import *
+        	
+        	somemultiline = """ÐÐ´ - Ð¶Ð°Ð¶Ð´Ð°!
+        	ÐÐ´ - Ð¶Ð°Ñ, Ð²ÑÐ°Ð¶Ð´Ð°!
+        	ÐÐ´ Ð³Ð¾Ð½Ð¸Ñ Ð¸Ð½Ð¾Ð³Ð´Ð°."""
+        	
+        	r = check(somemultiline, check = MULTILINE)
+        	print(r) # True
+        	
+        Check any text::
+        	
+        	from palindromus import *
+        	
+        	sometext = """Ð¯ Ð½ÐµÐ¼ Ð¸ ÑÐ°Ð´ Ñ,
+        	ÑÐ°Ðº, ÑÑÐ°Ð¼Ð²Ð°Ð¹,
+        	ÑÐ½Ð²Ð°ÑÑ ÑÐ°Ð²Ð½ÑÐ¹,
+        	Ð° Ð² Ð¼Ð°ÑÑ ÐºÐ°ÑÑ,
+        	Ð´Ð°ÑÐ¸ Ð¼ÐµÐ½Ñ."""
+        	
+        	r = check(sometext, check = TEXT)
+        	print(r) # True
+        	
+        Check any superpalindrome::
+        	
+        	from palindromus import *
+        	
+        	sometext = "Nora. Omar. Ramo. Aron"
+        	
+        	r = check(sometext, check = SUPER)
+        	print(r) # True
+        
+        Global settings
+        ---------------
+        You can use global variablies ``STRING``, ``WORD``, ``TEXT``, ``MULTILINE``, ``SUPER`` for 
+        checking any your strings as string, word, text, multiline palindrome or superpalindrome.
+        
+        You can use dictionaries of interchangeable letters (``ALL``, ``RUSSIAN``, ``LATIN``) for interchange.
+Keywords: palindromus palindrome check string word phrase text multiline superpalindrome
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities

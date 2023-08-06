@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dw-datasource
+Version: 0.1
+Summary: Stock related data
+Home-page: UNKNOWN
+Author: Daniel Wang
+Author-email: danielwpz@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: tiingo
+Requires-Dist: pandas
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: quandl
+
+UNKNOWN
+
+

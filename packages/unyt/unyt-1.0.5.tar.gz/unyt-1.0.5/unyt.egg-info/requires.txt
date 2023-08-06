@@ -1,0 +1,6 @@
+numpy>="1.13.0"
+sympy
+six
+
+[:python_version < "3.3"]
+backports.functools_lru_cache

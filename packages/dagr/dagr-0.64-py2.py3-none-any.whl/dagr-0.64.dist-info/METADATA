@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dagr
+Version: 0.64
+Summary: a deviantArt image downloader script written in Python
+Home-page: https://github.com/voyageur/dagr
+Author: Bernard Cafarelli
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: robobrowser (==0.5.3)
+
+UNKNOWN
+
+

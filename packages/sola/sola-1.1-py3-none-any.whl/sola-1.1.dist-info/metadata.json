@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}, "project_urls": {"Home": "https://github.com/ihucos/sola"}}}, "generator": "bdist_wheel (0.30.0)", "metadata_version": "2.0", "name": "sola", "requires_python": ">=3", "summary": "Customize the solarized theme for your terminal", "version": "1.1"}

@@ -1,0 +1,76 @@
+Metadata-Version: 1.1
+Name: nibetaseries
+Version: 0.1.0
+Summary: BetaSeries Correlations implemented in Nipype
+Home-page: https://github.com/HBClab/NiBetaSeries
+Author: James Kent
+Author-email: james-kent@uiowa.edu
+License: MIT license
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        BetaSeries Correlations implemented in Nipype
+        
+        * Free software: MIT license
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install nibetaseries
+        
+        Documentation
+        =============
+        
+        https://NiBetaSeries.readthedocs.io/
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.1.0 (2018-06-08)
+        ------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities

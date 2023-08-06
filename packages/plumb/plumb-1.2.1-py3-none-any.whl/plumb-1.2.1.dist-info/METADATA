@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: plumb
+Version: 1.2.1
+Summary: Connect systems via many brokers such as Kafka, AWS SQS, RabbitMQ and more.
+Home-page: UNKNOWN
+Author: Spectro Data Engineering Team
+Author-email: data-engineering@spect.ro
+License: UNKNOWN
+Keywords: redis,AWS,queues,distributed,kafka,RabbitMQ,AMQP
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Object Brokering
+Requires-Dist: boto3
+Requires-Dist: confluent-kafka (==0.11.4)
+Requires-Dist: redis
+
+=================
+The Plumb Library
+=================
+
+:Author:   Elvio Toccalino
+:Date:     2018-07-27
+:Version:  $Revision: 1.2.1 $
+:License:  MIT License
+
+Provides higher level interfaces to work with data producers and consumers. ``plumb`` supports five backends: RabbitMQ,
+Redis, Amazon SQS and SNS services, Kafka, and a memory implementation (designed to be a testing artifact).
+
+The focus is on **python 3** and **boto3** (for AWS support).
+
+-------
+The API
+-------
+
+``plumb`` uses the concepts of *Source* and *Sink* to abstract the backend. Data is transfered encoded in JSON, and by
+default compressed using zlib.
+
+To fetch raw packages use a "Package Source" object, which handles a backend connection and its configuration and
+exposes a "get()" method. Similarly, a "Package Sink" object exposes a "put(pkg)" method.
+
+You can either create the Sources and Sinks directly by instantiating them from their packages or use the convenience
+factory functions exposed in the ``plumb`` package. This functions receive a JSON with the configuration for the Sources
+or Sinks and returns a list of such configured devices.
+
+-----
+Tests
+-----
+
+The library is provided with unit tests and integration tests for Redis and AWS. To run the unit tests::
+
+  python setup.py test
+
+or using ``nose``::
+
+  nosetests tests/unit
+
+The integration tests can be run using nose::
+
+  nosetests tests/integration
+
+**Keep in mind** that ``boto3`` will fetch your AWS credentials. It currently tries the environment variables ``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY``, then tries the ``~/.aws`` directory. For details, see `Boto3 Credentials Configuration <http://boto3.readthedocs.io/en/latest/guide/configuration.html#configuring-credentials>`__.
+
+

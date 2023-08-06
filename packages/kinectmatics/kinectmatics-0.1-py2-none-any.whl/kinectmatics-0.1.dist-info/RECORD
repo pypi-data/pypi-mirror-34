@@ -1,0 +1,9 @@
+kinectmatics/__init__.py,sha256=ZMDPqJngMxDtyWlQiaBf72_S4VCnXrkz_mP-82ENOTE,421
+kinectmatics/libvid.py,sha256=p_k5qW--utgP5Ffs2XEC9ATj_WALUNUMveH-SoBJLDI,3710
+kinectmatics/opticalflow.py,sha256=R6ZcmwHSMyi5VMgbtX7les5IX5iWRvTE0f0WoR_DGc8,7210
+kinectmatics/timesegmentation.py,sha256=rt3RremCZoyVdD6GfHjtH7icHThN7gXMyvcC8qMUXBY,3115
+kinectmatics/version.py,sha256=dTaMG_cL1ZhDIskmq1gg2YRVlKLYe3add4hcaOgkj98,19
+kinectmatics-0.1.dist-info/METADATA,sha256=rPEc-ZckPxpX9A8dHM1PKkr7uIN0NokXLNmWhMS7SE8,1227
+kinectmatics-0.1.dist-info/RECORD,,
+kinectmatics-0.1.dist-info/WHEEL,sha256=oGGm_O4g839AJOrCbXq_ZxGrWdwSrjduga8Rn8cINEs,97
+kinectmatics-0.1.dist-info/top_level.txt,sha256=BW_DIOqoIRzZDkZ4WGoiaGzCto7ekY4xWNbidsiiaWI,13

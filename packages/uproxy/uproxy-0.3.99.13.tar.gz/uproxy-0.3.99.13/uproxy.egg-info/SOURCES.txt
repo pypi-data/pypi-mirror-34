@@ -1,0 +1,9 @@
+README.rst
+setup.py
+uproxy/UProxy.py
+uproxy/__init__.py
+uproxy/__main__.py
+uproxy.egg-info/PKG-INFO
+uproxy.egg-info/SOURCES.txt
+uproxy.egg-info/dependency_links.txt
+uproxy.egg-info/top_level.txt

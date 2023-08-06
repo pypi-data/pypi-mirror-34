@@ -1,0 +1,16 @@
+peewee==2.10.2
+aiopg
+aiomysql
+aitertools
+aiofiles
+async-timeout
+
+[dev]
+coverage
+mypy
+mypy-extensions
+lxml
+wheel
+pydocstyle
+pep8
+autopep8

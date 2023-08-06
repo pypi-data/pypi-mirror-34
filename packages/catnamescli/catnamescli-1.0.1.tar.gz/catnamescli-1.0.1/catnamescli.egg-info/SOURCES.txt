@@ -1,0 +1,11 @@
+README.md
+setup.py
+catnamescli/__init__.py
+catnamescli/__main__.py
+catnamescli/catnamescli.py
+catnamescli.egg-info/PKG-INFO
+catnamescli.egg-info/SOURCES.txt
+catnamescli.egg-info/dependency_links.txt
+catnamescli.egg-info/entry_points.txt
+catnamescli.egg-info/requires.txt
+catnamescli.egg-info/top_level.txt

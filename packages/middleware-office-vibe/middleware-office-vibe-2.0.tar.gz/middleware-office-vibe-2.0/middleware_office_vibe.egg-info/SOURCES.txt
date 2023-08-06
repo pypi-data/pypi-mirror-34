@@ -1,0 +1,13 @@
+README.md
+setup.py
+middleware_office_vibe.egg-info/PKG-INFO
+middleware_office_vibe.egg-info/SOURCES.txt
+middleware_office_vibe.egg-info/dependency_links.txt
+middleware_office_vibe.egg-info/entry_points.txt
+middleware_office_vibe.egg-info/not-zip-safe
+middleware_office_vibe.egg-info/requires.txt
+middleware_office_vibe.egg-info/top_level.txt
+office_vibe/__init__.py
+office_vibe/abstract.py
+office_vibe/entry_points.py
+office_vibe/office_vibe.py

@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: ais-dom
+Version: 0.74.3
+Summary: UNKNOWN
+Home-page: https://ai-speaker.com/
+Author: Andrzej Raczkowski
+Author-email: info@sviete.pl
+License: UNKNOWN
+Download-URL: https://github.com/sviete/home-assistant/archive/0.74.3.zip
+Platform: UNKNOWN
+Requires-Dist: aiohttp (==3.3.2)
+Requires-Dist: astral (==1.6.1)
+Requires-Dist: async-timeout (==3.0.0)
+Requires-Dist: attrs (==18.1.0)
+Requires-Dist: certifi (>=2018.04.16)
+Requires-Dist: jinja2 (>=2.10)
+Requires-Dist: pip (>=8.0.3)
+Requires-Dist: pytz (>=2018.04)
+Requires-Dist: pyyaml (<4,>=3.13)
+Requires-Dist: requests (==2.19.1)
+Requires-Dist: voluptuous (==0.11.1)
+
+UNKNOWN
+
+

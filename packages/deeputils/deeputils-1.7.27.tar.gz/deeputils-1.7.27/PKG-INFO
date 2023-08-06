@@ -1,0 +1,88 @@
+Metadata-Version: 1.0
+Name: deeputils
+Version: 1.7.27
+Summary: <h1>Deepera Development Utils</h1>
+
+<p>A set of utilities for daily development.</p>
+
+<h2>Common</h2>
+
+<p>```python</p>
+
+<p>from deeputils.common import *</p>
+
+<p>```</p>
+
+<ul>
+<li>Log to console</li>
+</ul>
+
+<p>```python</p>
+
+<p>log(msg, color="green")</p>
+
+<p>```</p>
+
+<ul>
+<li>Search dictionary array by key value pair</li>
+</ul>
+
+<p>```python</p>
+
+<p>dict_search(d, k, v)</p>
+
+<p>```</p>
+
+<p>Search dictionary array <code>d</code> with key <code>k</code> and value <code>v</code>, return index <code>i</code> if <code>d[i][k] == v</code> exists or <code>None</code> if not.</p>
+
+<ul>
+<li>Search tuples by key value pair</li>
+</ul>
+
+<p>```python</p>
+
+<p>tuple_search(t, k, v)</p>
+
+<p>```</p>
+
+<p>Search tuples <code>t</code> with key <code>k</code> and value <code>v</code>, return tuple <code>e</code> if <code>e[k] == v</code> exists or <code>None</code> if not.</p>
+
+<ul>
+<li>Insert string between strings</li>
+</ul>
+
+<p>```python</p>
+
+<p>string_insert(str1, str2, i)</p>
+
+<p>```</p>
+
+<p>Insert <code>str2</code> between <code>str1</code> split at position <code>i</code>.</p>
+
+<ul>
+<li>Format date / time</li>
+</ul>
+
+<p>```python</p>
+
+<p>format_datetime(t)</p>
+
+<p>format_date(t)</p>
+
+<p>format_time(t)</p>
+
+<p>```</p>
+
+<p>Format date / time in <code>%Y-%m-%d %H:%M:%S</code>, <code>%Y-%m-%d</code>, or <code>%H:%M:%S</code>.</p>
+
+<h2>Serializers</h2>
+
+<p>Too complicated, see source code for details.</p>
+
+Home-page: https://github.com/valency/deeputils/
+Author: Deepera Co., Ltd.
+Author-email: yding@deepera.com
+License: CPL-3.0
+Description: UNKNOWN
+Keywords: utils,logging
+Platform: UNKNOWN

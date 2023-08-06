@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: django-l10n-extensions
+Version: 1.0.1
+Summary: Extend Django with L10N features.
+
+- inline translation of your Django web application in the browser
+- L10N model field to enable translation of database content
+- L10N unit models e.g. Area  (m2, acres, hectares, etc.) or Temperature(°C, °F, K)
+
+Home-page: https://github.com/ceasaro/django-l10n-extensions
+Author: Cees van Wieringen
+Author-email: ceesvw@gmail.com
+License: UNKNOWN
+Description: # Django L10N extensions
+        Django L10N extensions adds some useful L10N extensions to the Django framework
+        
+        The project in maintained on [github](https://github.com/ceasaro/django-l10n-extensions)
+        
+        [Read the docs](http://django-l10n-extensions.readthedocs.io)
+Platform: UNKNOWN

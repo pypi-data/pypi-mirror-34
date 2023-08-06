@@ -1,0 +1,5 @@
+pyOpenSSL >= 0.13
+miniupnpc
+
+[geoip]
+geoip2

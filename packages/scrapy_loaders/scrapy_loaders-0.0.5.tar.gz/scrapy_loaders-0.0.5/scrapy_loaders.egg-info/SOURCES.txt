@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+scrapy_loaders/__init__.py
+scrapy_loaders/db.py
+scrapy_loaders/db_loaders.py
+scrapy_loaders/errors.py
+scrapy_loaders/pipelines.py
+scrapy_loaders.egg-info/PKG-INFO
+scrapy_loaders.egg-info/SOURCES.txt
+scrapy_loaders.egg-info/dependency_links.txt
+scrapy_loaders.egg-info/requires.txt
+scrapy_loaders.egg-info/top_level.txt

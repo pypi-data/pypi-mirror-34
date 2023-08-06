@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/pianoplayer
+pianoplayer/__init__.py
+pianoplayer/hand.py
+pianoplayer/scorereader.py
+pianoplayer/vkeyboard.py
+pianoplayer/vtk_keyboard.py
+pianoplayer.egg-info/PKG-INFO
+pianoplayer.egg-info/SOURCES.txt
+pianoplayer.egg-info/dependency_links.txt
+pianoplayer.egg-info/requires.txt
+pianoplayer.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jp-ephys-viz
+Version: 0.6.9
+Summary: Use ephys-viz in jupyterlab and ipython notebook
+Home-page: https://github.com/flatironinstitute/ephys-viz
+Author: Jeremy Magland
+Author-email: jmagland@flatironinstitute.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: ipython
+Requires-Dist: vdom
+Requires-Dist: ipywidgets
+Requires-Dist: jp-proxy-widget
+
+UNKNOWN
+
+

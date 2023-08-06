@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sample.py,sha256=MtVTQ3Sg0Aix6BEH2dzKxT1xoBjSpXxyqD-9aRVmrss,98
+tspy/__init__.py,sha256=ySghjjicYov18vO0QAcSsh3N-70iHG8HIBI0NZv1ZvE,190
+tspy/tsp.py,sha256=2h5ptnbVzqAc3lPVo47-RurhISNAfkWFiNpQMRgih6Q,3629
+tspy/lower_bounds/__init__.py,sha256=HJgeGiAX-_DsbnoHtrGqdFXHGYp9fzgSBiLutNioqUI,99
+tspy/lower_bounds/lp.py,sha256=JW98tKm_Al2IUbtFZbAe8-8okJqrOU5L5sDkOEq2mN4,4617
+tspy/solvers/__init__.py,sha256=25mqQmb54Jmk4ybS54e5_28OB0wk2Jdt3tgLlgdzkns,75
+tspy/solvers/nearest_neighbor.py,sha256=Jfx2Rdxzp4zG8cawd9u8lsF8EVxavIkTK3MMafrsZaw,1985
+tspy/solvers/twoopt.py,sha256=AbB059752t85FBNERBDUdehWVUkomQqU0jmM5NFCjWw,1559
+tspy/solvers/utils.py,sha256=L-w0xW0hA_EOczeAma-Fms6Tukgszt57r5EwmoMonnw,126
+tspy-0.1.0.dist-info/METADATA,sha256=0Jfv2WfFO9-8wx2clIdlBEOzHYq7AJ3HQtF-OyHek8M,1148
+tspy-0.1.0.dist-info/RECORD,,
+tspy-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tspy-0.1.0.dist-info/top_level.txt,sha256=Xq9WwCyLXTMgmZ42CZt5qmRCgZWtZX_gGeLijgETcYg,11

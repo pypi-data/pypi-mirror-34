@@ -1,0 +1,8 @@
+README.md
+setup.py
+Grigori.egg-info/PKG-INFO
+Grigori.egg-info/SOURCES.txt
+Grigori.egg-info/dependency_links.txt
+Grigori.egg-info/top_level.txt
+grigori/__init__.py
+grigori/watcher.py

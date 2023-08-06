@@ -1,0 +1,162 @@
+<a name="top"></a>
+* * *
+# ec2tools | machineimage
+* * *
+
+## Summary
+
+Scripts for use with Amazon Web Services' Elastic Compute Cluster (EC2)
+
+**ec2tools**
+
+VERSION: **0.3.1**
+
+* * *
+
+## Contents
+
+* [Getting Started](#getting-started)
+* [Dependencies](#dependencies)
+* [Details](#details)
+* [Instructions](#instructions)
+* [Help](#help)
+* [Author & Copyright](#author--copyright)
+* [License](#license)
+* [Disclaimer](#disclaimer)
+
+
+* * *
+
+## Getting Started
+
+See the following resources before getting started:
+
+- [Amazon EC2](https://aws.amazon.com/ec2)
+- [Amazon Linux AMIs](https://aws.amazon.com/amazon-linux-ami)
+- [EC2 Developer Resources](https://aws.amazon.com/ec2/developer-resources/)
+
+[back to the top](#top)
+
+* * *
+
+## Dependencies
+
+* [Amazon Linux 1](https://aws.amazon.com/amazon-linux-ami) 2017+
+* [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2) 2018+
+* [Redhat](https://aws.amazon.com/partners/redhat/) 7.3, 7.4, 7.5
+* [Centos](https://aws.amazon.com/marketplace/seller-profile?id=16cb8b03-256e-4dde-8f34-1b0f377efe89) 7
+* [Ubuntu Trusty](https://aws.amazon.com/marketplace/search/results?x=0&y=0&searchTerms=ubuntu+14.04) 14.04
+* [Ubuntu Xenial](https://aws.amazon.com/marketplace/pp/B01JBL2M0O?qid=1532883122707) 16.04
+* [Ubuntu Bionic](https://aws.amazon.com/marketplace/search/results?x=0&y=0&searchTerms=ubuntu+18.04) 18.04
+
+[back to the top](#top)
+
+* * *
+
+## Details
+
+the following are details:
+
+TBD
+
+[back to the top](#top)
+
+* * *
+
+## Instructions
+
+Run the installer from the cli via the following example commands
+
+* * *
+
+### Return Image for a particular region
+
+Format:  `json` (DEFAULT)
+
+```bash
+    $ machineimage --image redhat7.5 --region eu-west-1
+```
+
+![redhat7](./assets/redhat7.5-1region.png)
+
+* * *
+
+### Return Image for a particular region (DETAILS)
+
+Format:  `json` (DEFAULT)
+
+```bash
+    $ machineimage --image centos7 --region eu-west-1 --details
+```
+
+![redhat7](./assets/centos7-details.png)
+
+* * *
+
+### Return the AMI Image id for all regions
+
+Format:  `json` (DEFAULT)
+
+```bash
+    $ machineimage --image amazonlinux1
+```
+
+![aml1](./assets/aml1-allregions.png)
+
+* * *
+
+### Return the AMI Image id for all regions (text format)
+
+Format:  `text`
+
+```bash
+    $ machineimage --image amazonlinux2
+```
+
+![aml1](./assets/aml2-text.png)
+
+[back to the top](#top)
+
+* * *
+
+## Help
+
+To display the help menu:
+
+```bash
+    $ machineimage --help
+```
+
+[![help](./assets/help-menu.png)](https://rawgithub.com/fstab50/ec2tools/master/assets/help-menu.png)
+
+[back to the top](#top)
+
+* * *
+
+## Author & Copyright
+
+All works contained herein copyrighted via below author unless work is explicitly noted by an alternate author.
+
+* Copyright Blake Huber, All Rights Reserved.
+
+[back to the top](#top)
+
+* * *
+
+## License
+
+* Software contained in this repo is licensed under the [license agreement](./LICENSE.md).
+
+[back to the top](#top)
+
+* * *
+
+## Disclaimer
+
+*Code is provided "as is". No liability is assumed by either the code's originating author nor this repo's owner for their use at AWS or any other facility. Furthermore, running function code at AWS may incur monetary charges; in some cases, charges may be substantial. Charges are the sole responsibility of the account holder executing code obtained from this library.*
+
+Additional terms may be found in the complete [license agreement](./LICENSE.md).
+
+[back to the top](#top)
+
+* * *

@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.30.0)", "metadata_version": "2.0", "name": "e3db", "run_requires": [{"requires": ["PyNaCl (<2,>=1.1)", "requests (<3,>=2.18)"]}], "summary": "# Introduction", "version": "1.0.1"}

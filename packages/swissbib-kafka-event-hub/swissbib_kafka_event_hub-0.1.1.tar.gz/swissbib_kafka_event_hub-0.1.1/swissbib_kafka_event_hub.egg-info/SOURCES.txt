@@ -1,0 +1,10 @@
+README.md
+setup.py
+kafka_event_hub/__init__.py
+swissbib_kafka_event_hub.egg-info/PKG-INFO
+swissbib_kafka_event_hub.egg-info/SOURCES.txt
+swissbib_kafka_event_hub.egg-info/dependency_links.txt
+swissbib_kafka_event_hub.egg-info/requires.txt
+swissbib_kafka_event_hub.egg-info/top_level.txt
+test/test_oai_producer.py
+test/test_utility.py

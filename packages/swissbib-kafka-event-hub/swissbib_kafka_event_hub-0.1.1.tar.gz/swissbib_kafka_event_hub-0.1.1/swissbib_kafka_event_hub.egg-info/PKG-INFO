@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: swissbib-kafka-event-hub
+Version: 0.1.1
+Summary: Swissbib Kafka Event Hub
+Home-page: https://github.com/swissbib/kafka_event_hub
+Author: Jonas Waeber
+Author-email: jonas.waeber@unibas.ch
+License: GPL-3.0
+Description: UNKNOWN
+Keywords: kafka,swissbib,oai,mongodb
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,3 @@
+[console_scripts]
+file_hash = file_hash.__main__:main
+

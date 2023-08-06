@@ -1,0 +1,51 @@
+<tal:block tal:define="childs options/childs;
+                       level  options/level;
+                       ppt options/ppt | python:''">
+
+    <ul>
+        <tal:block tal:repeat="dict_ childs">
+            <tal:block tal:define="getURL string:${here/absolute_url}/course_${ppt}view?uid=${dict_/uid_object};
+                                   portal_type dict_/portal_type;
+                                   class_ dict_/class;
+                                   title_ dict_/title">
+                <li tal:condition="python:portal_type not in ['Folder','UnitraccLesson']">
+                    <span class="book-navigation-item">
+                        <a tal:attributes="href getURL;
+                                           class string:book-link course-nav-link level${level} ${class_};
+                                           rel string:rel-${dict_/uid_object};
+                                           next dict_/uid_next | nothing;
+                                           prev dict_/uid_prev | nothing">
+                            <img width="9"
+                                 src="/++resource++unitracc-images/book_arrow_left.png"
+                                 class="course-nav-link"/>
+                            <tal:block tal:condition="python:len(title_)>50" tal:content="python:title_[:50]+'...'"/>
+                            <tal:block tal:condition="python:len(title_) <= 50" tal:content="title_"/>
+                        </a>
+                    </span>
+                </li>
+                <li tal:condition="python:portal_type in ['Folder','UnitraccLesson']">
+                    <span class="book-navigation-item">
+                            <a tal:attributes="href getURL;
+                                               class string:book-node course-nav-link level${level} ${class_};
+                                               rel string:rel-${dict_/uid_object};
+                                               next dict_/uid_next | nothing;
+                                               prev dict_/uid_prev | nothing;
+                                               title dict_/title">
+                                    <img width="9" src="/++resource++unitracc-images/plus.png"
+                                         tal:condition="not:dict_/childs | nothing" class="course-nav-link"/>
+                                    <img width="9" src="/++resource++unitracc-images/minus.png"
+                                         tal:condition="dict_/childs | nothing" class="course-nav-link"/>
+                                <tal:block tal:condition="python:len(title_)>50" tal:content="python:title_[:50]+'...'"/>
+                                <tal:block tal:condition="python:len(title_) <= 50" tal:content="title_"/>
+                            </a>
+                    </span>
+                    <span class="kss-book-level">
+                        <tal:block tal:condition="dict_/childs | nothing"
+                                   tal:content="structure python:here.restrictedTraverse('js-course-navigation-level')(childs=dict_['childs'],level=level+1,ppt=ppt)"/>
+                    </span>
+                </li>
+            </tal:block>
+        </tal:block>
+    </ul>
+
+</tal:block>

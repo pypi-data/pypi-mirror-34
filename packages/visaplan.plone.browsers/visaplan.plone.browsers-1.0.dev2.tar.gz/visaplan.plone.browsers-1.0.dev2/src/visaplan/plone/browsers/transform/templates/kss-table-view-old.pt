@@ -1,0 +1,18 @@
+<div class="areaTable"
+     i18n:domain="plone">
+
+    <div class="table-headline-prefix">
+        <tal:block i18n:translate="">Table</tal:block>
+        <tal:block tal:content="structure options/number">42</tal:block>
+    </div>
+    <div class="caption"
+         tal:content="structure here/getCaption"
+         tal:on-error="structure string:<span class='error'>Not a table!</span>"
+         >Tabellenüberschrift</div>
+    <div class="visualClear"><!-- --></div>
+
+    <tal:block tal:content="structure here/getText"
+               tal:on-error="structure string:<span class='error'>Error while getting the text!</span>">
+        Text der Tabelle
+    </tal:block>
+</div>

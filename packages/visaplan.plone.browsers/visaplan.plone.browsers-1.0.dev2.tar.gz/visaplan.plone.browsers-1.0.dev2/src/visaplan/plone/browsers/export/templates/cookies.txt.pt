@@ -1,0 +1,12 @@
+<tal:4vim replace="nothing"><!-- äöü vim: set sw=4 sts=4 si noet :
+
+Cookies-Datei für wget, curl & Co.;
+siehe <https://curl.haxx.se/mail/archive-2005-03/0099.html>
+
+--></tal:4vim><tal:ns define="
+dummy python:request.response.setHeader('content-type','text/css;;charset=utf-8');
+"
+tal:content="context/@@export/getCookieLines">
+domain	tailmatch	path	secure	expires	name	value
+</tal:ns>
+

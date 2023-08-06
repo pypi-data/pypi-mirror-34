@@ -1,0 +1,22 @@
+<metal:block metal:define-macro="main">
+    <tal:block tal:define="current nocall:options/current | nothing;"
+               i18n:domain="plone">
+        <!-- [Agenda] -->
+        <h1 class="documentFirstHeading"
+            i18n:translate="">
+            Agenda
+        </h1>
+        <div id="agenda">
+            <metal:block metal:define-macro="agenda">
+
+                <metal:block tal:define="uid request/form/uid | uid;
+                               unitracccourse nocall:here/@@presentation;
+                               list_ python:unitracccourse.getAgenda(uid);
+                               template nocall:here/js-presentation-agenda"
+                            tal:content="structure python:template(childs=list_,level=1,ppt='ppt_')"/>
+
+            </metal:block>
+        </div>
+        <!-- [/Agenda] -->
+    </tal:block>
+</metal:block>

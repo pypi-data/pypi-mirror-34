@@ -1,0 +1,44 @@
+<tal:block tal:define="
+opt python:options or path('context/@@unitraccsearch/getLocalsearch_kwargs');
+brains opt/brains;
+with_thumbnails opt/with_thumbnails | python:True;
+list_macro nocall:opt/func/list_macro;
+SearchableText request/form/SearchableText | nothing;
+bsize python:int(request.form.get('b_size', 200));
+batch python:here.getBrowser('batch')(brains, int(bsize));
+"
+i18n:domain="plone"><tal:comment replace="nothing"><!--
+Aufgerufen durch
+ ../../../skins/unitracc_templates/localsearch_view.pt
+Erstellt aus Kopie von 
+ ../../../skins/unitracc_templates/kss-search-result.pt
+
+
+Suchergebnisse für Vorträge (im Präsentationsmodus; @@unitraccsearch/search_in_structures);
+sonstige Suchergebnisse (@@unitraccsearch/result)
+
+siehe auch (gf) -> search-result-ppt.pt
+(bitte angleichen bzw. synchron halten!)
+--></tal:comment>
+<tal:dbg define="
+debug debug | request/debug | python:0;
+debug_style python:debug and 'border:1px dashed blue' or None;
+">
+</tal:dbg>
+<div class="row">
+    <div class="col-md-12">
+        <tal:ns define="brains batch">
+        <metal:list use-macro="list_macro">
+<!--
+Bei Standardkonfiguration:
+Makro 'nontable-list' in ./localsearch_macros.pt
+(Wert 'list_macro' aus dem Rückgabewert von getLocalsearch_kwargs,
+../browser.py)
+        -->
+        </metal:list>
+        </tal:ns>
+    </div>
+</div>
+<script type="text/javascript" src="/++resource++unitracc-resource/localsearch.js"></script>
+
+</tal:block>

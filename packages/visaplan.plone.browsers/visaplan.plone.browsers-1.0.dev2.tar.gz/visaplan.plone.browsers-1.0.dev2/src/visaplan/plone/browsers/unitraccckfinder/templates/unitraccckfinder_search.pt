@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html tal:define="lang_code python:context.getAdapter('language')();
+                  plone_view context/@@plone;"
+      tal:attributes="lang lang_code;
+                      xml:lang lang_code">
+<head>
+    <title></title>
+    <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    <div tal:replace="structure provider:plone.htmlhead"/>
+    <link tal:replace="structure provider:plone.htmlhead.links" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var executesearch = function () {
+                if ($('#media').attr('value') == 'image') {
+                    template_id='/fck-search-result-images'
+                } else {
+                    template_id='/fck-search-result-links'
+                }
+
+                $.post($('base').attr('href')+template_id,
+                       $("#search-form").serialize(),
+                       function (data) {
+                           $('#search-result').html(data)
+                           //Preview for html content
+                           if ($('.box-overlay-html').length) {
+                               $('a.fancybox').fancybox({
+                                   'autoSize': false,
+                                   'width':'80%',
+                                   'padding':35,
+                                   'height':'80%',
+                                   'scrolling':'visible',
+                                   'ajax': {
+                                       dataFilter: function (data) {
+                                           return $(data).find('.area-content')[0];
+                                       }
+                                   }
+                               })
+                           }
+                       }
+                );
+                return false;
+            };
+            $("#search").live("click", executesearch);
+            $("#search-form").submit(executesearch);
+
+            $(".ckeditor-take-scaling").live("click", function (event) {
+                event.preventDefault();
+                set_image($(event.target).attr('href'));
+            });
+
+            $(".ckeditor-take-link").live("click", function (event) {
+                event.preventDefault();
+                set_link($(event.target).parent().attr('href'));
+            });
+
+        });
+
+        function set_image(url) {
+            window.opener.CKEDITOR.dialog.getCurrent().setValueOf('info', 'txtUrl', url);
+            window.close();
+        }
+
+        function set_link(url) {
+            window.opener.CKEDITOR.dialog.getCurrent().setValueOf('info', 'url', url);
+            window.opener.CKEDITOR.dialog.getCurrent().setValueOf('info', 'protocol', '');
+            window.close();
+        }
+
+    </script>
+
+</head>
+<body i18n:domain="plone" class="row">
+    <div id="fck-search" class="span12 col-md-12">
+        <metal:block metal:use-macro="here/fck-search/macros/main">
+        ../../fcksearch/templates/fck-search.pt
+        </metal:block>
+        <div id="search-result">
+        </div>
+    </div>
+</body>
+</html>

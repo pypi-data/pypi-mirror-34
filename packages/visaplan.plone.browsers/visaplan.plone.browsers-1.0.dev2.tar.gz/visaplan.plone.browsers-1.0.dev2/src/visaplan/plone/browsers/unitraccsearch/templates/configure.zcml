@@ -1,0 +1,103 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="brain_maintenance_view"
+             template="brain_maintenance_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="configure_localsearch"
+             template="configure_localsearch.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="configure_localsearch_json"
+             template="configure_localsearch_json.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_ajax_view"
+             template="localsearch_ajax_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_bookcarousels_view"
+             template="localsearch_bookcarousels_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_carousels_view"
+             template="localsearch_carousels_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_datatables.js"
+             template="localsearch_datatables.js.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_json.js"
+             template="localsearch_json.js.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_listing"
+             template="localsearch_listing.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_macros"
+             template="localsearch_macros.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_mediacarousels_view"
+             template="localsearch_mediacarousels_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_monotable"
+             template="localsearch_monotable.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="localsearch_view"
+             template="localsearch_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="manage_localsearch_json_preset"
+             template="manage_localsearch_json_preset.pt"
+             permission="zope2.View"
+             />
+
+</configure>

@@ -1,0 +1,217 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1);
+                 checkperm python:here.getAdapter('checkperm');
+                 perm_mu python:checkperm('Manage users');" />
+    <head>
+    <metal:js fill-slot="head_slot">
+      <metal:js define-macro="chosen-js">
+      <script type="text/javascript">
+        function filterOptions() {
+            handleOverLay(true);
+            $("#filter").submit();
+        }
+        function checkChecked() {
+            if ($('.useruids input:checked').length) {
+                $('#delete-groups').show();
+            } else {
+                $('#delete-groups').hide();
+            }
+        }
+
+        $(document).ready(function () {
+            $('select.chosen').chosen().change(filterOptions);
+            $('#delete-groups').hide();
+            // XXX .live ist deprecated ...
+            $('.useruids').live("click", function (e) {checkChecked()});
+            checkChecked();
+            })
+
+      </script>
+      </metal:js>
+      </metal:js>
+    </head>
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="ucm nocall:here/@@unitracccoursemanagement;
+                        dummy ucm/authManageCourses;
+                        cs nocall:here/@@coursestatistics;
+                        gid request/form/gid | nothing;
+                        course_uid request/form/cid | nothing;
+                        results python: cs.get_statistic_overview(course_uid, gid);
+                        ">
+
+    <div id="area-title">
+
+        <h1 class="documentFirstHeading"
+            i18n:translate="">
+            Course statistics manager
+        </h1>
+    </div>
+    <div class="area-content">
+        <form method="GET" class="horizontal" action="manage_statistic_course" id="filter" name="filter">
+            <div>
+                <label i18n:translate="">Courses</label>
+                <select name="cid" class="chosen span-9"
+                        data-placeholder="Choose one ..."
+                        i18n:attributes="data-placeholder">
+                    <option value=""></option>
+                    <option id="empty_c" value=""
+                            tal:condition="python:0"
+                            i18n:translate="">
+                        Choose one ...
+                    </option>
+                    <option tal:repeat="brain python:ucm.getCourse(gid)"
+                            value="abc123"
+                            tal:attributes="value brain/UID;
+                                            selected python:brain.UID()==course_uid"
+                            tal:content="structure brain/Title "
+                            i18n:translate="">
+                        D-21 Grabenloser Leitungsbau
+                    </option>
+                </select>
+                <label i18n:translate="">Groups</label>
+                <select name="gid" class="chosen"
+                        data-placeholder="Choose one ..."
+                        i18n:attributes="data-placeholder">
+                    <option value=""></option>
+                    <option id="empty_g" value=""
+                            i18n:translate="">
+                        Choose one ...
+                    </option>
+                    <option tal:repeat="brain python:ucm.getClasses(course_uid)"
+                            tal:attributes="value brain/id;
+                                            selected python:brain['id']==gid"
+                            tal:content="structure brain/title"
+                            i18n:translate="">
+                        Direkte Mitglieder
+                    </option>
+                </select>
+            </div>
+            <input type="submit" value="Filter" i18n:translate="filter"
+                   class="btn btn-primary"/>
+        </form>
+
+
+        <div id="results">
+            <form tal:attributes="action string:${here/absolute_url}/@@coursestatistics/delete_statistic">
+                <input type="hidden" name="course_uid"
+                       tal:attributes="value course_uid"/>
+                <metal:block metal:define-macro="table"
+                             tal:define="show_checkbox show_checkbox | python:True">
+                    <table cellspacing="0" cellpadding="0"
+                           class="datatb table table-bordered table-striped table-hover table-sorted">
+                        <thead>
+                        <tr>
+                            <th tal:condition="show_checkbox">
+                                <input type="checkbox" checked="checked"
+                                       value="0" name="user_uids" style="display:none">
+                            </th>
+                            <th i18n:translate="">
+                                User
+                            </th>
+                            <th i18n:translate="">
+                                Percent
+                            </th>
+                            <th i18n:translate="">
+                                Pages
+                            </th>
+                            <th i18n:translate="">
+                                Max page
+                            </th>
+                            <th i18n:translate="" >
+                                Last page
+                            </th>
+                            <th i18n:translate="" class="center">
+                                Last viewed at
+                            </th>
+                            <th i18n:translate="" class="center">
+                                Last used viewtype
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tal:loop tal:repeat="row results">
+                            <tr tal:condition="python:0">
+                                <td colspan="8">
+                                   <pre tal:content="python:context.getAdapter('pformat')(row)"/>
+                                </td>
+                            </tr>
+                            <tr tal:on-error="string:BONK">
+                                <td class="useruids"
+                                    tal:condition="show_checkbox">
+                                    <input type="checkbox"
+                                           name="user_uids"
+                                           tal:attributes="value row/user_uid"/>
+                                </td>
+                                <td>
+                                    <a href="/@@resolveuid/abc123"
+                                       tal:content="row/member_title"
+                                       tal:attributes="href string:/@@resolveuid/${row/user_uid}/edit;
+                                                       title row/member_id;
+                                                       ">
+                                       Heinz Kunz
+                                      </a>
+                                </td>
+                                <td tal:define="raw python:row['percent']" class="right">
+                                    <tal:if-percent condition="raw">
+                                    <tal:percent content="python:raw.replace('.', ',')">
+                                        42,2
+                                    </tal:percent> %
+                                    </tal:if-percent>
+                                </td>
+                                <td tal:content="row/pages_viewed">
+                                    24
+                                </td>
+                                <td>
+                                    <a href="/@@resolveuid/0123abcourse/course_ppt_view?uid=abc123"
+                                       tal:define="nr row/max_page_nr|nothing"
+                                       tal:condition="nr"
+                                       tal:attributes="href
+                                       string:/@@resolveuid/$course_uid/${row/page_view_type}?uid=${row/max_page_uid}"
+                                       tal:content="nr"
+                                       tal:on-error="python:context.getAdapter('pformat')(row)">
+                                       42
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="/@@resolveuid/0123abcourse/course_ppt_view?uid=abc123"
+                                       tal:define="nr row/last_viewed_page_nr|nothing"
+                                       tal:condition="nr"
+                                       tal:attributes="href
+                                       string:/@@resolveuid/$course_uid/${row/page_view_type}?uid=${row/last_viewed_page_uid}"
+                                       tal:content="nr"
+                                       tal:on-error="python:context.getAdapter('pformat')(row)">
+                                       42
+                                    </a>
+                                </td>
+                                <td tal:content="row/last_view_date|nothing" i18n:translate="">
+                                    30.01.2015 17:04
+                                </td>
+                                <td tal:content="row/page_view_type|nothing">
+                                    course_ppt_view
+                                </td>
+                            </tr>
+                            </tal:loop>
+                        </tbody>
+                    </table>
+                </metal:block>
+                <br/>
+                <input type="submit" id="delete-groups" class="button-type-attention btn btn-primary"
+                   i18n:attributes="value"
+                   value="Reset course statistics">
+            </form>
+        </div>
+    </div>
+</metal:main>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1);" />
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <metal:no-ads fill-slot="column_one_slot"/>
+    <head>
+      <metal:css fill-slot="style_slot">
+        <metal:css define-macro="chosen-css"/>
+      </metal:css>
+    </head>
+    <body>
+        <metal:cr_outer fill-slot="breadcrumb">
+            <metal:breadcrumb use-macro="here/crumbs/macros/main"/>
+        </metal:cr_outer>
+
+        <metal:main fill-slot="main"
+                    tal:define="dummy python:context.getAdapter('authorized')('unitracc: Manage Export Profiles');
+                                Bexport nocall:here/@@export;
+                                subportals python: here.getBrowser('subportal').get();
+                                pid request/form/pid;
+                                profile python:options['profile'][int(pid)];">
+
+            <div class="area-title">
+                <h1 i18n:translate="">
+                    Edit export profile
+                </h1>
+
+            </div>
+            <div class="area-content">
+                <div class="well">
+                    <div class="well-content">
+                        <p i18n:translate="">
+                            Update an existing export profile.
+                        </p>
+                    </div>
+                </div>
+                <p tal:content="structure options"/>
+                <div class="col-md-12 ">
+                    <div class="row">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#1" class="active"
+                                   i18n:translate="">
+                                    Default
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#2"
+                                    i18n:translate="CSS-Files">
+                                    CSS files
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="1">
+                                <!-- Profile -->
+                                <label i18n:translate="">Type
+                                </label>
+                                <span tal:content="profile/etype" />
+                                <!-- Title -->
+                                <tal:titles tal:repeat="lang langs">
+                                    <div class="control-group"
+                                         tal:define="lcode python:lang[0];
+                                                     lname python:lang[1]">
+                                        <label class="control-label"
+                                                tal:attributes="for string:title_${lcode}">
+                                            <tal:block i18n:translate="">Title</tal:block>
+                                            <tal:block tal:content="lname" i18n:translate=""/>
+                                        </label>
+                                        <div class="controls">
+                                            <input type="text" value=""
+                                                   tal:attributes="name string:title_${lcode};
+                                                                   id string:title_${lcode};
+                                                        placeholder python:lname;
+                                                        value python:profile['title'].get(lcode)"
+                                                        i18n:attributes="placeholder"
+                                                        readonly="readonly"/>
+
+                                        </div>
+                                    </div>
+                                </tal:titles>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="active"
+                                           tal:attributes="checked python:profile['active'] and 'checked' or False"
+                                           readonly="readonly"/>
+                                    <tal:block i18n:translate="">
+                                        Profile active
+                                    </tal:block>
+                                </label>
+                                <!-- Subportal -->
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                                            <tal:block i18n:translate="unitracc_label_subportals">
+                                                Subportals
+                                            </tal:block>
+                                        </label>
+                                        <tal:subportals tal:repeat="portal subportals">
+                                            <label class="checkbox"
+                                                   tal:condition="python:portal.lower() != 'default_uid'">
+                                                <input type="checkbox" name="subportal"
+                                                       tal:attributes="value portal;
+                                                                        checked python:portal in profile['subportal'] and 'checked' or False"
+                                                       readonly="readonly"/>
+                                                <tal:block tal:content="python:subportals[portal]['title']"/>
+                                            </label>
+                                        </tal:subportals>
+                                    </div>
+                                </div>
+
+                                <!-- manuelle CSS -->
+                                <div class="control-group">
+                                    <label class="control-label" i18n:translate="">
+                                        Manual CSS
+                                    </label>
+                                    <span class="muted"
+                                        i18n:translate="help_export_manual_css">
+                                        Here you can define your own css. This will not be saved as file and
+                                        will be inserted as last style item in the document.
+                                    </span>
+                                    <div class="controls">
+                                        <textarea name="manual_css"
+                                               class="col-md-8"
+                                            rows="10"
+                                            tal:content="profile/manual_css"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="2">
+                                <tal:cssfiles tal:repeat="css cssfiles">
+                                    <div class="col-md-6"
+                                         tal:define="selected python:profile['css'].get(css,False);">
+                                        <div class="row">
+                                        <label class="checkbox" style="float:left">
+                                            <select tal:attributes="name string:${css}__position"
+                                                    class="col-md-1">
+                                                <option selected="selected"></option>
+                                                <tal:options tal:repeat="x cssfiles">
+                                                    <option tal:define="pos repeat/x/number"
+                                                        tal:content="structure pos"
+                                                        tal:attributes="value pos;
+                                                                        selected python:selected and pos==selected and 'selected' or False">
+
+                                                    </option>
+                                                </tal:options>
+                                            </select>
+                                            <input type="hidden" name="filename"
+                                                   tal:attributes="value css"/>
+                                            <tal:block tal:content="css"/>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </tal:cssfiles>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </metal:main>
+
+    </body>
+
+</html>

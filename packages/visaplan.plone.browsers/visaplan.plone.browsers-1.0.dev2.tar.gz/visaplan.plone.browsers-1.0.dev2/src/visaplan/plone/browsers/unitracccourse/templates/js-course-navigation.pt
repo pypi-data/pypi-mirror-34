@@ -1,0 +1,12 @@
+<metal:block metal:define-macro="main">
+
+<tal:block tal:define="
+uid request/form/uid | uid;
+unitracccourse nocall:here/@@unitracccourse;
+list_ python:unitracccourse.get_navigation(uid);
+template nocall:here/js-course-navigation-level;
+" tal:content="structure python:template(childs=list_,level=1)">
+./js-course-navigation-level.pt
+</tal:block>
+
+</metal:block>

@@ -1,0 +1,40 @@
+<tal:block tal:define='dummy python:request.set("span_class","col-md-9")'>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      tal:attributes="xml:lang python:here.getAdapter('langcode')();
+                      lang python:here.getAdapter('langcode')()">
+
+<head>
+    <tal:block tal:replace="structure provider:plone.htmlhead" />
+
+    <link rel="stylesheet" type="text/css" tal:attributes="href string:${here/portal_url}/book-gallery.css"/>
+
+    <link rel="kinetic-stylesheet" type="text/css"
+          tal:attributes="href string:${here/portal_url}/gallery.kss" />
+
+
+    <style type="text/css">
+
+        body {
+        padding:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+    <tr>
+        <td valign="top" style="text-align:left;">
+            <metal:block metal:define-macro="main">
+                <div id="kss-gallery">
+                    <tal:block tal:content="structure here/kss-gallery"/>
+                </div>
+            </metal:block>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>
+</tal:block>
+                    

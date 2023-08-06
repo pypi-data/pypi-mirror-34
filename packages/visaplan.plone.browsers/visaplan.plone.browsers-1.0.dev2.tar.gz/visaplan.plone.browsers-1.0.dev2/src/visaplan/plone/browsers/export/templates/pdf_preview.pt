@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<objects xmlns:tal="http://xml.zope.org/namespaces/tal"
+         xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    tal:define="brains options/brains | nothing;
+                cstart python:'&lt;![CDATA[';
+                cend python:']]&gt;'">
+    <tal:loop tal:condition="brains"
+              tal:repeat="brain brains">
+    <object tal:define="obj brain/current/getObject">
+        <uid tal:content="brain/uid_object">
+            
+        </uid>
+        <title tal:content="brain/Title">
+            Titel
+        </title>
+        <description
+            tal:define="val obj/getRawDescription"
+            tal:condition="val"
+            tal:content="structure string:${cstart}${val}${cend}"
+            tal:on-error="string:No Content">
+            Beschreibung
+        </description>
+        <content tal:content="structure string:${cstart}${obj/getRawText}${cend}"
+                 tal:on-error="string:No Content">
+            Inhalt
+        </content>
+        <notes
+            tal:define="val obj/getRawNotes"
+            tal:condition="val"
+            tal:content="structure string:${cstart}${val}${cend}"
+            tal:on-error="string:No Content">
+            Anmerkungen
+        </notes>
+        <level tal:content="brain/level">
+        1
+        </level>
+    </object>
+    </tal:loop>
+</objects>
+    

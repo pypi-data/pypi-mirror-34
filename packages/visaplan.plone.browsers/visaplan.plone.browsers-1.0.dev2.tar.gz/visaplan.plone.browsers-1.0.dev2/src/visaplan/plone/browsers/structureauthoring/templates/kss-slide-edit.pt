@@ -1,0 +1,68 @@
+<metal:block use-macro="here/global_defines/macros/defines" />
+<tal:block tal:define="view context/@@at_base_edit_view;
+                       schematas here/Schemata;
+                       allow_tabbing python:not view.isMultiPageSchema();
+                       fieldsets python:[key for key in schematas.keys()
+                                         if (schematas[key].editableFields(here, visible_only=True))
+                                         ];
+                       sole_fieldset python:len(fieldsets) == 1;
+                       portal python:context.getAdapter('portal')();
+                       errors python:{}"
+           i18n:domain="plone">
+
+    <form id="edit-form" method="post" action="#" class="enableFormTabbing">
+
+        <div class="slide-scroll">
+
+            <div class="tabbable" id="tabs" data-tabs="tabs"
+                 tal:omit-tag="sole_fieldset">
+                <ul class="nav nav-tabs">
+                    <tal:fieldsets repeat="fieldset fieldsets">
+                        <li tal:define="nr repeat/fieldset/number"
+                            tal:attributes="class python:(nr == 1) and 'active' or None">
+                            <a tal:attributes="href string:#tab${nr}"
+                               tal:content="python:view.getTranslatedSchemaLabel('unitracc_'+fieldset)"
+                               data-toggle="tab">
+                            Standard
+                            </a>
+                        </li>
+                    </tal:fieldsets>
+                </ul>
+
+                <div class="tab-content">
+                    <tal:fieldsets repeat="fieldset fieldsets">
+                        <div tal:define="nr repeat/fieldset/number"
+                             tal:attributes="id string:tab${nr};
+                                             class python:(nr == 1) and 'tab-pane active' or 'tab-pane';
+                                             ">
+                            <tal:fields repeat="field python:schematas[fieldset].editableFields(here, visible_only=True)">
+                              <metal:fieldMacro use-macro="python:here.widget(field.getName(), mode='edit')" />
+                            </tal:fields>
+                        </div>
+                    </tal:fieldsets>
+                </div>
+        </div>
+
+        <metal:block metal:define-macro="buttons">
+
+            <input type="hidden" name="uid"
+                   tal:attributes="value here/UID"/>
+            <br/>
+            <tal:comment condition="nothing"><!--
+            Ohne weitere Maßnahmen würden Bootstrap-Buttons (class btn, btn-primary)
+            hier leider falsch dargestellt:
+            --></tal:comment>
+            <input type="button" id="save-edit" class="search-button-type"
+                   value="Save" name="kss-save"
+                   i18n:attributes="value"/>
+            <input type="button" id="save-cancel" class="search-button-type"
+                   value="Cancel" name="save-cancel"
+                   disabled="disabled"
+                   title="Bitte wählen Sie einfach eine andere Seite!"
+                   tal:condition="python:0"
+                   i18n:attributes="value label_cancel"/>
+        </metal:block>
+
+    </form>
+
+</tal:block>

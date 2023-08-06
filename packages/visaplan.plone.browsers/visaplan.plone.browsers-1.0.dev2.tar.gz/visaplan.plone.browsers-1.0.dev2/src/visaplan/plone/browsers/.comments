@@ -1,0 +1,31 @@
+# ermittelt durch fii . -py -grep -h '^# .*:$' | sort | uniq -c | grep -v '^ *[12] #' > .comments:
+      9 # Andere Browser:
+      3 # Andere Browser und Adapter:
+      3 # Debugging:
+     16 # Dieser Browser:
+      7 # Installierte Module:
+     32 # Logging und Debugging:
+      5 # Plone-Module:
+      4 # Plone/Zope/dayta:
+      7 # Plone/Zope/Dayta:
+     29 # Standardmodule:
+     33 # Unitracc-Tools:
+
+Reihenfolge:
+
+# Plone/Zope/Dayta:
+
+# Standardmodule:
+
+# Installierte Module:
+
+# Unitracc-Tools:
+
+# Andere Browser:
+
+# Andere Browser und Adapter:
+
+# Dieser Browser:
+
+# Logging und Debugging:
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tal:mainblock  xmlns:tal="http://xml.zope.org/namespaces/tal" xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    define="Bexport nocall:here/@@export;
+            pid request/form/pid|nothing;
+                       content python:Bexport.getFile(pid,'xml');"
+    tal:content="structure content">
+    
+</tal:mainblock>

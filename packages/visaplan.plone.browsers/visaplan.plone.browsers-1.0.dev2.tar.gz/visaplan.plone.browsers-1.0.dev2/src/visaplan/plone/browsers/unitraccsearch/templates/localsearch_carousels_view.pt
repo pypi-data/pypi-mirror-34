@@ -1,0 +1,142 @@
+<tal:block tal:define="dummy python: request.set('span_class','col-md-9');
+dummy python:request.set('has_banner_text', True);
+"><tal:comment replace="nothing"><!--
+Karussell-Ansicht der Inhalte der sichtbaren Unterseiten (wie für Menü)
+
+Für die aufgelisteten Objekte wird ausgegeben:
+- das Vorschaubild
+- das Veröffentlichungsdatum
+- der Fachbereich
+- die Überschrift
+- die Beschreibung
+
+Siehe auch (gf):
+../../../skins/unitracc_templates/unitraccmacros.pt (Makros carousel_simple, 
+                                                     Standard-Item unitraccitem_generic)
+
+Bitte synchron halten:
+./localsearch_carousels_view.pt (Version für News und Artikel)
+./localsearch_bookcarousels_view.pt (Version für "buchartige" Objekte, mit Veröffentlichungsjahr)
+./localsearch_mediacarousels_view.pt (Version für Medien, ohne Datum)
+
+Zukunftsmusik:
+Konfigurierbarkeit der zu verwendenden Item-Makros und/oder Datums (erblich)
+--></tal:comment>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+
+    <metal:block fill-slot="head_slot">
+        <link rel="alternate" type="application/rss+xml"
+        metal:use-macro="here/unitraccmacros/macros/journalfeed">
+    </metal:block>
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="
+gLS nocall:context/@@unitraccsearch/getLocalSearches;
+data python:gLS();
+loop python:data['children'];
+unitraccmacros nocall:here/unitraccmacros/macros;
+carousel_simple nocall:unitraccmacros/carousel_simple;
+brains_per_slide brains_per_slide | python:3;
+pformat python:context.getAdapter('pformat');
+show_config_links python:1;
+
+global sr python:[];
+news nocall:here/@@news;
+nora nocall:here/@@nora;
+article nocall:here/@@article;
+event nocall:here/@@event;
+industrialsector nocall:here/@@industrialsector;
+getbrain python:here.getAdapter('getbrain');
+toTime python:here.getAdapter('totime');
+translate python:here.getAdapter('translate');
+portal_url context/@@plone_portal_state/portal_url;
+here here/@@mainpage/get_mainpage;
+currentDate python:toTime(here.ZopeTime());
+rangelist python:here.getAdapter('rangelist');
+feed_link nocall: here/unitraccmacros/macros/feed-link-p;
+stage nocall:here/@@stage;
+resolvei18n nocall:here/@@resolvei18n;
+carousel_batched nocall:unitraccmacros/carousel_batched;
+single_carousels nocall:unitraccmacros/single_carousels;
+unitraccitem_generic nocall:unitraccmacros/unitraccitem_generic;
+noraitem nocall:here/unitraccnora_macros/macros/item;
+">
+
+<div id="area-content"
+         tal:define="
+brains_per_slide brains_per_slide | python:3;
+words python:20;
+         ">
+<pre tal:content="python:pformat(gLS(execute=False))"
+     tal:condition="python:0"/>
+<tal:loop repeat="dic loop">
+        <div id="subpage-id"
+             tal:define="subpage_id python:dic['subpage_id'];
+                         "
+             tal:attributes="id subpage_id">
+            <h1>
+                <small
+                   tal:define="q dic/query | nothing"
+                   class="pull-right"
+                   tal:condition="python:show_config_links and (0 or not q or not dic['brains'])">
+                <a href="subpage/configure_localsearch"
+                   tal:attributes="href dic/config_url"
+                   i18n:translate="">
+                   Configure local search
+                </a>,
+                <a href="subpage/selectViewTemplate?templateId=localsearch_view"
+                   tal:attributes="href string:${subpage_id}/selectViewTemplate?templateId=localsearch_view"
+                   i18n:translate="">
+                   Activate localsearch_view
+                </a>
+                </small>
+                <a href="subpage"
+                   tal:attributes="href subpage_id"
+                i18n:translate=""
+                tal:content="dic/title">
+                News &amp; Articles
+                </a>
+                <small i18n:translate=""
+                       tal:condition="python:0">
+                Know-How
+                </small>
+            </h1>
+             
+            <pre tal:content="python: pformat(dic)"
+                 tal:condition="nothing"/>
+            <tal:found define="brains dic/brains | nothing;
+                               show_date show_date | python:True;
+                               item nocall:context/unitraccnora_macros/macros/item;
+                               "
+                       
+                       condition="brains">
+            <tal:carousel define="
+carousel_id subpage_id
+            ">
+            <metal:use use-macro="carousel_simple">
+            <metal:slot fill-slot="item">
+            <metal:use2 use-macro="item"><!--
+Siehe auch (gf):
+../../nora/templates/unitraccnora_macros.pt (Makro item)
+         --></metal:use2>
+            </metal:slot>
+            </metal:use>
+            </tal:carousel>
+            </tal:found>
+        </div><!-- #subpage-id -->
+</tal:loop>
+</div><!-- #area-content -->
+</metal:main>
+</body>
+</html>
+</tal:block>
+<tal:editors condition="nothing"><!-- vim: set ts=8 sts=4 sw=4 si et :--></tal:editors>

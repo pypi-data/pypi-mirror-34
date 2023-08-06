@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+<body>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+<metal:main fill-slot="main"
+            tal:define="dummy context/@@authorized/managePortal;
+                        seq here/@@unitraccfeature/asList;
+                        ">
+
+    <div id="content">
+
+        <h1 class="documentFirstHeading"
+            i18n:translate="">
+            Unitraccfeature view
+        </h1>
+
+        <table class="custom-listing"
+            tal:define="show_all request/all | nothing;
+                        show_all python:(show_all or '').lower() in '1 yes true'.split();
+                        ">
+        <tr tal:repeat="item seq">
+            <td><strong tal:content="item/key">
+                rootfolder
+            </strong></td>
+            <td tal:content="item/value">
+                vdz
+            </td>
+        </tr>
+        </table>
+
+        <form tal:condition="python:context.getAdapter('checkperm')('Manage portal')"
+              action="@@unitraccfeature/reset"
+              method="post"
+              i18n:domain="plone">
+            <div class="input-group">
+                <button type="submit" class="btn btn-primary"
+                        i18n:translate="refresh-button">
+                    Refresh
+                </button>
+            </div>
+        </form>
+
+        <div tal:condition="python:request.get('req', '') == '1'"
+             tal:replace="structure request">
+            Alle Request-Variablen in einer Tabelle
+            (leider ohne jegliche Filtermöglichkeit, Navigation etc.)
+        </div>
+
+    </div>
+
+</metal:main>
+
+</body>
+<!-- vim: set ts=8 sts=4 sw=4 si et :--></html>

@@ -1,0 +1,619 @@
+<metal:block metal:use-macro="here/main_template/macros/master"
+             i18n:domain="plone">
+
+<metal:no-ads fill-slot="column_two_slot"/>
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)"/>
+
+<metal:no-ads metal:fill-slot="ad-block-above-content"/>
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main"
+    tal:define="mgmt python:here.getBrowser('management');
+    dummy python:mgmt.canAccessSiteManagement(True);
+    checkperm python:here.getAdapter('checkperm');
+    perm_mp python:checkperm('Manage portal');
+    perm_emop python:1;
+    perm_omop python:0;
+    perm_mu python:checkperm('Manage users');
+    perm_mg python:checkperm('Manage Groups');
+    perm_mst python:checkperm('unitracc: Manage structure types');
+    perm_sac python:checkperm('unitracc: Manage submitted and accepted content');
+    perm_pst python:checkperm('unitracc: Publish structure types');
+    perm_kw python:checkperm('unitracc: Manage Keywords');
+    perm_stg python:mgmt.canAccessStage();
+    perm_tan python:checkperm('unitracc: Manage TANs');
+    has_booking here/@@unitraccfeature/has_booking;
+    has_courses here/@@unitraccfeature/has_courses;
+    perm_mc python:has_courses and checkperm('unitracc: Manage courses');
+    perm_mo python:has_booking and checkperm('unitracc: Manage Orders');
+    perm_mep python:checkperm('unitracc: Manage Export Profiles');
+    pr python:here.getBrowser('projectreview');
+    ">
+
+        <div class="area-title">
+            <h1>Unitracc-Verwaltung</h1>
+        </div>
+
+        <div class="area-content">
+            <div class="row">
+                <!-- [ linke Spalte ... [ -->
+                <div class="col-md-6">
+                    <div class="box" tal:condition="python:perm_sac">
+                        <h2 class="subsection-header">Redaktion</h2>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li tal:condition="python:perm_sac">
+                                <a href="/review_submitted_content"
+                                   i18n:translate="">
+                                    Manage submitted content
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_sac">
+                                <a href="/review_accepted_content"
+                                   i18n:translate="">
+                                    Manage accepted content
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_sac">
+                                <a href="/resolveUid/e8dfc4253bc0ad402d48dc862d20821c"
+                                   i18n:translate="">
+                                    Media center
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_sac">
+                                <a href="/resolveUid/a8bbe3be69129c027e1a1c584bc925cd"
+                                   i18n:translate="">
+                                    Contacts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <tal:user-stuff condition="python:(perm_mu or perm_mg
+                                                       or perm_mp)">
+                    <div class="box">
+                        <h2 class="subsection-header">Benutzerverwaltung</h2>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li tal:condition="python:perm_mu or perm_mp">
+                                <a href="/manage_users_view"
+                                   tal:condition="python:perm_mu"
+                                   i18n:translate="">
+                                    User Management
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="/manage_duplicateprofiles_view"
+                                            i18n:translate="">
+                                           Cleanup duplicate profiles
+                                       </a>
+                                   </li>
+                               </ul>
+                            </li>
+                            <li tal:condition="perm_mg">
+                                <a href="/manage_groups_view"
+                                   i18n:translate="">
+                                    Groups Management
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </tal:user-stuff>
+                    <div class="box" tal:condition="perm_mc">
+                        <h2 class="subsection-header" i18n:translate="">Course Manager</h2>
+                    </div>
+                    <div class=" list-item"
+                         tal:condition="perm_mc">
+                        <ul>
+                            <li>
+                                <a href="/manage_course_view"
+                                   i18n:translate="">
+                                   Course Manager
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/manage_statistic_course"
+                                   i18n:translate="">
+                                   Course statistics manager
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box" tal:condition="perm_mo">
+                        <h2 class="subsection-header" i18n:translate="">
+                            Booking management
+                        </h2>
+                    </div>
+
+                    <div class="list-item" tal:condition="perm_mo">
+                        <ul>
+                            <li>
+                                <a href="/order_management"
+                                   i18n:translate="">
+                                    Booking management
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/order_add"
+                                   i18n:translate="">
+                                    Add booking
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <tal:if-projectreview condition="pr">
+                    <div class="box">
+                        <h2 class="subsection-header" i18n:translate="">
+                            Review Management System
+                        </h2>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li>
+                                <a href="/pr_main">
+                                    Verbundprojekte
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    </tal:if-projectreview>
+
+                    <div class="box" tal:condition="python:perm_tan">
+                        <h2 class="subsection-header" i18n:translate="">
+                            TAN Manager
+                        </h2>
+                    </div>
+
+                    <div class="list-item" tal:condition="python:perm_tan">
+                        <ul>
+                            <li>
+                                <a href="/manage_tans"
+                                   i18n:translate="">
+                                    TAN Manager
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/create_tan"
+                                   i18n:translate="">
+                                    Create TAN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/manage_tan"
+                                   i18n:translate="">
+                                    Edit TAN ...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/manage_tan_status_summary"
+                                   i18n:translate="">
+                                    TAN status summary
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/manage_tan_changesets"
+                                   i18n:translate="">
+                                    Last changes
+                                </a>
+                            </li>
+                        <ul>
+                    </div>
+                </div>
+                <!-- ] ... linke Spalte ] -->
+                <!-- Right Column-->
+                <div class="col-md-6">
+                    <div class="box" tal:condition="python:perm_mp or perm_mst or perm_pst">
+                        <h2 class="subsection-header">Inhaltsverwaltung</h2>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li tal:condition="python:perm_mp or perm_mst or perm_pst">
+                                <a href="/management_structure_elements"
+                                   i18n:translate="">
+                                    Manage structured contents
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_mp or (0 and perm_mst)"
+                                tal:replace="nothing">
+                            11.9.2014: Seite existiert nicht!
+                                <a href="/portal_lock_manager/pane_manage_locks"
+                                   i18n:translate="">
+                                    Lock Manager
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_mp">
+                                <a href="/configure_rssfeed"
+                                   i18n:translate="">
+                                    Configure rss
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box" tal:condition="python:perm_mep or perm_mst">
+                        <h2 class="subsection-header" i18n:translate="">Export</h2>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li tal:condition="python:perm_mep">
+                                <a href="/manage_export_profiles"
+                                   i18n:translate="">
+                                    Manage Export Profiles
+                                </a> (PDF)
+                            </li>
+                            <li tal:condition="perm_mst">
+                                <a href="/transmin"
+                                   i18n:translate="">
+                                   Import structure
+                               </a>
+                            </li>
+                            <li tal:condition="perm_mst">
+                                <a href="/transmex?path_multiline=true"
+                                   i18n:translate="">
+                                   Export structure(s)
+                               </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box" tal:condition="python:perm_mp or perm_stg">
+                        <h2 class="subsection-header">Navigations-/Layoutverwaltung</h2>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li tal:condition="python:perm_stg">
+                                <a href="/configure_stage"
+                                   i18n:translate="">
+                                    Configure stage
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_mp">
+                                <a href="/configure-industrial-drop-down"
+                                   i18n:translate="">
+                                    Configure Know-How Dropdown
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box" tal:condition="python:perm_kw or perm_mp">
+                        <h2 class="subsection-header">Inhaltsstrukturierung</h2>
+                    </div>
+                    <div class=" list-item">
+                        <ul>
+                            <li tal:condition="python:perm_kw">
+                                <a href="/prefs_keywords_view"
+                                   i18n:translate="">
+                                    Keywordmanager
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_mp">
+                                <a href="/configure_easyvoc"
+                                   i18n:translate="">
+                                    Configure easyvoc vocabularies
+                                </a>
+                                /
+                                <a href="/configure_easyvoc">
+                                    Vokabularliste hinzuf&uuml;gen
+                                </a>
+                            </li>
+                            <li tal:condition="python:perm_mp">
+                                <a href="/manage_easyvoc">
+                                    Verwaltung Eintr&auml;ge Auswahllisten
+                                </a>
+                                /
+                                <a href="/manage_easyvoc"
+                                   i18n:translate="">
+                                    Edit easyvoc vocabularies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box" tal:condition="python:perm_mp">
+                        <h2 class="subsection-header">Systemadministration</h2>
+                    </div>
+                    <div class="list-item"
+                         tal:condition="python:perm_mp"><!-- [ Systemadministration ... [ -->
+                        <ul tal:define="zopeurl python:mgmt._zopesrv_url()">
+                            <li>
+                                <a href="/versioninformation_view"
+                                   i18n:translate="">
+                                    Version information
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/unitraccfeature_view"
+                                   i18n:translate="">
+                                    Unitraccfeature view
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/plone_control_panel"
+                                    i18n:translate="">
+                                    Plone Configuration
+                                </a>
+                                <img src="/logoIcon.png"
+                                     alt="">
+                                <ul>
+                                    <li>
+                                        <span i18n:translate="">
+                                        Products administration
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <a href="/portal_quickinstaller/manage_workspace">Plone-Quickinstaller</a>
+                                                <img src="/misc_/CMFPlone/product_icon.png"
+                                                     alt="">
+                                            </li>
+
+                                            <li i18n:domain="plone">
+                                                <a href="/portal_setup/manage_main"
+                                                   title="Generic Setup Tool"
+                                                   i18n:translate="">
+                                                   Generic Setup Tool
+                                                </a>
+                                                <img src="/misc_/GenericSetup/tool.png"
+                                                     alt="">
+                                                <ul>
+                                                    <li>
+                                                        <a href="/portal_setup/manage_upgrades"
+                                                           i18n:translate="">
+                                                           Upgrades
+                                                       </a>
+                                                       <ul>
+                                                           <li>
+                                                           <a href="/portal_setup/manage_upgrades?profile_id=Products.unitracc:default"
+                                                              i18n:translate="">
+                                                              Unitracc Profile upgrades
+                                                           </a>
+                                                           </li>
+                                                       </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/portal_setup/manage_importSteps"
+                                                           i18n:translate="">
+                                                           Site Configuration Import Steps
+                                                       </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/portal_setup/manage_exportSteps"
+                                                           i18n:translate="">
+                                                           Site Configuration Export Steps
+                                                       </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <span i18n:translate="">
+                                            Static resources
+                                        </span>
+                                        <ul>
+                                            <li>
+                                                <a href="/portal_css/manage_cssForm"
+                                                   i18n:translate="">
+                                                    Stylesheets Registry
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/portal_javascripts/manage_jsForm"
+                                                   i18n:translate="">
+                                                    JavaScripts Registry
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/portal_skins/custom/manage"
+                                                   i18n:translate="">
+                                                    custom skin
+                                                </a>
+                                                <ul tal:condition="perm_omop">
+                                                    <li>
+                                                        <a href="/portal_skins/custom/ppt.css/manage_main">
+                                                            CSS f&uuml;r Vortr&auml;ge bearbeiten
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                     </li>
+
+                                     <li>
+                                         <a href="/portal_catalog/manage_main"
+                                            i18n:domain="zope"
+                                            i18n:translate="">
+                                            Catalog
+                                        </a>
+                                        <img src="/misc_/CMFPlone/book_icon.png"
+                                             alt="">
+                                        <ul>
+                                             <li>
+                                                 <a href="/portal_user_catalog/manage_main"
+                                                    i18n:translate="">
+                                                    User catalog
+                                                </a>
+                                             </li>
+                                             <li>
+                                                 <a href="/reference_catalog/manage_main"
+                                                    i18n:translate="">
+                                                    Catalog of content references
+                                                </a>
+                                             </li>
+                                        </ul>
+                                     </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span i18n:translate="">
+                                 Miscellaneous
+                                </span>
+                                <ul>
+                                    <li>
+                                        <a href="/manage_settings">
+                                           <span i18n:translate="">
+                                               Miscellaneous Settings
+                                           </span>
+                                           (<tt>@@settings</tt>)
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="/configure_subportal"
+                                                   i18n:translate="">
+                                                   Subportal configuration
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/configure_registration"
+                                                   i18n:translate="">
+                                                    Configure registration
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/configure_mainpage"
+                                                   i18n:translate="">
+                                                   Configure mainpage
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/@@ckeditor-controlpanel"
+                                           i18n:translate="">
+                                            Configure editor
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a title="portal_properties &rarr; ckeditor_properties"
+                                                   href="/portal_properties/ckeditor_properties/manage_workspace">
+                                                    CKEditor-Eigenschaften
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/@@discussion-settings"
+                                           i18n:translate="">
+                                            Configure discussion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li tal:condition="perm_mp">
+                                <a href="/manage"
+                                   title="Zope Management Interface"
+                                   i18n:attributes="title"
+                                   ><tal:txt i18n:translate="">
+                                    Zope Administration
+                                    </tal:txt>
+                                    <img src="/zope_icon.png"
+                                         alt="ZMI">
+                                </a>
+                                <ul tal:condition="perm_emop">
+                                    <tal:rem replace="nothing"><!--
+                                    Extended Management OPtions
+                                    --></tal:rem>
+                                    <tal:if-mp tal:condition="perm_mp">
+                                    <li>
+                                        <a href="/acl_users/source_users/manage_users">Zope-Benutzerkonten</a>
+                                    </li>
+                                    <li>
+                                        <a href="/acl_users/source_groups/manage_groups">Zope-Gruppenverwaltung</a>
+                                    </li>
+                                    </tal:if-mp>
+
+                                    <li tal:condition="perm_omop">
+                                        <tal:rem replace="nothing"><!--
+                                        Outdated  Management OPtions
+                                        --></tal:rem>
+                                        (alte)
+                                        <a href="/@@usergroup-userprefs">
+                                            Verwaltung Benutzer
+                                        </a>
+                                        <div><strong>(Achtung: Hier keine E-Mail-Adressen mehr pflegen!)</strong></div>
+                                    </li>
+                                    <li>Zope-Instanz
+                                        <ul>
+                                            <li><a href="/manage"
+                                                   tal:attributes="href string:$zopeurl/manage"
+                                                   i18n:translate="">
+                                                    Zope Management Interface
+                                                </a>
+                                            </li>
+                                            <li><a href="/manage"
+                                                   tal:attributes="href string:$zopeurl/Control_Panel/Database/main/manage_main"
+                                                   i18n:translate="">
+                                                    Database Management
+                                                </a>
+                                            </li>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span i18n:translate="">
+                                Development options
+                                </span>
+                                <ul>
+                                    <li>
+                                        <a href="/prefs_error_log_form"
+                                           i18n:translate="heading_error_log">Error log</a>
+                                    </li>
+                                    <li>
+                                        <a href="/@@reload"
+                                           tal:attributes="href string:$zopeurl/@@reload"
+                                           i18n:translate="">
+                                           Code reload
+                                       </a>
+                                   </li>
+                                   <li tal:define="
+w3l_browser nocall:context/@@w3l | nothing;
+" tal:condition="w3l_browser">
+                                       <a href="/w3lservice_test"
+                                          i18n:translate="">
+                                          Interactive W3L service test
+                                      </a>
+                                  </li>
+                                   <li>
+                                       <a href="/versioninformation_view?show_all=1"
+                                          i18n:translate="">
+                                          Complete version information
+                                      </a>
+                                  </li>
+                                </ul>
+                            </li>
+
+                        </ul><!-- ] ... Systemadministration ] -->
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row"
+                 tal:condition="perm_mp">
+                <div class="col-md-6"
+                     tal:repeat="action_category context/@@management/get_management_actions">
+                    <div class="box">
+                        <h2 class="subsection-header"
+                            tal:content="action_category/title"/>
+                    </div>
+                    <div class="list-item">
+                        <ul>
+                            <li tal:repeat="action action_category/children">
+                                <a tal:attributes="href action/url;
+                                                   target action/target;
+                                                   class action/class"
+                                   tal:content="action/title"
+                                   i18n:translate=""/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </tal:main-macro>
+</metal:main>
+
+<!-- vim: set et sw=4: --></metal:block>

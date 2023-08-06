@@ -1,0 +1,61 @@
+<tal:comment replace="nothing"><!--
+TODO/Klären:
+- gibt es einen relevanten Unterschied zwischen brain.is_folderish und unitracccourse.is_folderish(brain)?
+  - wenn ja: dokumentieren!
+  - wenn nein: möglichst vereinheitlichen!
+- wozu das div#div-<uid>? (dokumentieren)
+- Hyperlinks zu Vortragsseiten wären nützlich
+--></tal:comment>
+<metal:block metal:define-macro="main">
+<tal:block tal:define="
+here here/@@unitracccourse/get_current;
+unitracccourse nocall:here/@@unitracccourse;
+">
+<ul class="connectedSortable">
+<tal:loop tal:repeat="brain unitracccourse/get_level"
+          tal:condition="here">
+    <li tal:define="
+brain_uid brain/UID;
+parent python:brain.getParent();
+"
+        tal:attributes="id string:li-${brain_uid}">
+        <input type="checkbox" class="content-checkbox" name="uids:list" checked
+               tal:condition="parent"
+               tal:attributes="value brain_uid;
+                               id string:input-${brain_uid}@${parent/UID};
+                               rel brain/portal_type"/>
+        <img class="actionicon"
+             src="/++resource++unitracc-images/icon_action.png"
+             tal:attributes="id string:imgaction-${brain_uid}"/>
+        <img tal:define="src brain/getIcon"
+             tal:condition="src"
+             tal:attributes="src string:/${src};
+                             id string:img-${brain_uid};
+                             class python:brain.is_folderish and 'folderish-browser' or ''"/>
+        <a href="#" class="content-open"
+           tal:define="href python:brain.getObject().getPath().split('/');
+                       dummy python:href.pop(1);
+                       href python:'/'.join(href);
+                       "
+           tal:attributes="id string:ac-${brain_uid};
+                           href href"
+           tal:content="brain/pretty_title_or_id"
+           tal:omit-tag="python:not unitracccourse.is_folderish(brain)"/>
+        <div tal:attributes="id string:div-${brain_uid}">
+            <!-- -->
+        </div>
+    </li>
+</tal:loop>
+<tal:oops condition="not:here">
+<a href="edit"
+   tal:define="base python:context.getPath()"
+   tal:attributes="href string:$base/edit"
+   i18n:translate="">Oops &ndash; UID
+    <span tal:content="context/getUID"
+          i18n:name="uid">abc123</span>
+   not found!
+</a>
+</tal:oops>
+</ul>
+</tal:block>
+</metal:block>

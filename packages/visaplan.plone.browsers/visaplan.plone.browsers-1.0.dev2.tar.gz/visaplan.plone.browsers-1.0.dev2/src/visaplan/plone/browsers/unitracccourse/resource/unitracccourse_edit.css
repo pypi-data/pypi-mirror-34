@@ -1,0 +1,57 @@
+.one {
+border-right:1px solid #8CACBB;
+}
+
+.coursemanagement-edit li,
+#start-padding li .headline{
+list-style-type:none;
+}
+.one{
+    padding-right: 5px;
+}
+.one .headline {
+border: 1px solid #8CACBB;
+background-color: GhostWhite;
+font-weight:bold;
+padding-left:10px;
+}
+
+.coursemanagement-edit .start-padding {
+padding-left:0px;
+margin-left:0px;
+}
+
+#course-edit-menu ul,
+#course-edit-menu li {
+margin:0px;
+padding:0px;
+}
+
+#course-edit-menu li {
+list-style-type:none;
+background-color:#eeeeee;
+}
+
+#course-edit-menu {
+position:absolute;
+background-color: #F2F2F2;
+border: 1px solid #B2B2B2;
+margin: 5px 0 0 18px;
+z-index: 1;
+}
+
+#course-edit-menu span {
+display:block;
+padding:5px 5px 5px 5px;
+}
+
+#course-edit-menu span:hover {
+background-color:#8CACBB;
+}
+
+#course-edit-menu span:hover a{
+color:white;
+}
+.course-edit-form{
+    padding-left:10px;
+}

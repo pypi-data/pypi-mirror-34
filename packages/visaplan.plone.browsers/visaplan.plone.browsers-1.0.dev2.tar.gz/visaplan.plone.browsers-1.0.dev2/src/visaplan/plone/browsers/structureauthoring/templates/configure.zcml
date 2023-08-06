@@ -1,0 +1,82 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="kss-ppt-document-view"
+             template="kss-ppt-document-view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-presentation-level"
+             template="kss-presentation-level.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-right-click-menu"
+             template="kss-right-click-menu.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-select-default-page"
+             template="kss-select-default-page.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-slide-edit"
+             template="kss-slide-edit.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-structure-content"
+             template="kss-structure-content.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-structure-document-view"
+             template="kss-structure-document-view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-structure-folder-edit"
+             template="kss-structure-folder-edit.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="rr-css"
+             template="rr-css.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="rr-js"
+             template="rr-js.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="structure-edit"
+             template="structure-edit.pt"
+             permission="zope2.View"
+             />
+
+</configure>

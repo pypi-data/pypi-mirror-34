@@ -1,0 +1,217 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1);
+                             dummy python:request.set('span_class', 'col-md-9');
+                 " />
+
+<body>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+<metal:main fill-slot="main"
+            tal:define="dict_ here/@@versioninformation/get;
+                        info python:dict_['info'];
+                        meta python:dict_['meta'];
+                        show_all python:meta['show_all'];
+                        svninfo python:meta['svn-info'];
+                        debug_mode python:info['debug_mode']">
+
+    <div id="content">
+
+        <h1 class="documentFirstHeading"
+            i18n:translate="">
+            Version information
+        </h1>
+
+        <table class="custom-listing">
+        <tr>
+            <td><strong i18n:translate="">
+                Unitracc code version
+            </strong></td>
+            <td id="version-unitraccversion">
+                <a href="/portal_quickinstaller/manage_installProductsForm"
+                   tal:omit-tag="not:show_all"
+                   tal:content="info/unitracc_version">
+                2.2.6
+                </a>
+            </td>
+        </tr>
+        <tr tal:condition="python:0 and 'obsolet in Plone 4'">
+            <td><strong i18n:translate="">
+                Unitracc instance version
+            </strong></td>
+            <td>
+                <a href="/portal_migration_unitracc/manage_migrate"
+                   tal:omit-tag="not:show_all"
+                   tal:content="info/instance_version">
+                4307
+                </a>
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                Plone version
+            </strong></td>
+            <td>
+                <a href="/@@plone-upgrade"
+                   i18n:translate="">no detection yet</a>
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                Python version
+            </strong></td>
+            <td tal:content="info/python">
+                2.7.5 (default, Jun 3 2013, 16:29:34) [GCC 4.4.5] 
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                Python executable
+            </strong></td>
+            <td tal:content="info/python_executable">
+                /var/zope-instance/unitracc-prod/bin/python
+            </td>
+        </tr>
+        <tr tal:define="val info/svn_version_number | nothing"
+            tal:condition="val">
+            <td><strong i18n:translate="">
+                Project revision
+            </strong></td>
+            <td tal:content="val" >1234</td>
+        </tr>
+        <tr tal:define="val info/svn_url | nothing"
+            tal:condition="python:show_all and val">
+            <td><strong i18n:translate="">
+                Subversion url
+            </strong></td>
+            <td tal:content="val">http://...</td>
+        </tr>
+        <tr tal:define="val info/svn_modification_date | nothing"
+            tal:condition="python:show_all and val">
+            <td><strong i18n:translate="">
+                Last subversion update
+            </strong></td>
+            <td tal:content="val">...</td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                Zope info tuple
+            </strong></td>
+            <td tal:content="info/zope">
+                (2.13.21, python 2.7.5, linux2) 
+            </td>
+        </tr>
+        <tr>
+            <td><strong i18n:translate="">
+                Revision
+            </strong></td>
+            <td>
+                <tt tal:content="info/Revision"
+                    id="version-svnrevision">1234</tt>
+            </td>
+        </tr>
+        <tr tal:condition="python:(show_all and 1) or 1">
+            <td><strong i18n:translate="">
+                LastChangedRevision
+            </strong></td>
+            <td>
+                <tt tal:content="info/LastChangedRevision">1234</tt>
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                LastChangedDate
+            </strong></td>
+            <td>
+                <tt tal:content="info/LastChangedDate">2012-05-24 10:15:34 +0200 (Do, 24. Mai 2012)</tt>
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                LastChangedBy
+            </strong></td>
+            <td>
+                <tt tal:content="info/LastChangedBy">therp</tt>
+            </td>
+        </tr>
+
+        <tr tal:define="val info/svn_branch"
+            tal:condition="python:show_all or val">
+            <td><strong i18n:translate="">
+                Development branch
+            </strong></td>
+            <td id="version-svnbranch">
+                <tt tal:condition="val"
+                    tal:content="val">therp</tt>
+                <em tal:condition="not:val"
+                    i18n:translate="">None (development trunk)</em>
+            </td>
+        </tr>
+        <tr tal:condition="info/svn_tag">
+            <td><strong i18n:translate="">
+                SCM version tag
+            </strong></td>
+            <td>
+                <tt tal:content="info/svn_tag">unitracc-v2.2.6</tt>
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                HeadURL
+            </strong></td>
+            <td>
+                <tt tal:content="info/HeadURL">https://.../browser.py</tt>
+            </td>
+        </tr>
+        <tr tal:condition="show_all">
+            <td><strong i18n:translate="">
+                Unitracc file system home
+            </strong></td>
+            <td>
+                <tt tal:content="info/unitracc_rootdir">/var/zope-instance/unitracc/Products/unitracc</tt>
+            </td>
+        </tr>
+        <tr tal:condition="python:debug_mode or show_all">
+            <td><strong i18n:translate="">
+                Development mode
+            </strong></td>
+            <td>
+                <strong
+                    tal:omit-tag="not:debug_mode"
+                    tal:content="python:debug_mode and 'active' or 'not active'"
+                    i18n:translate="">active</strong>
+            </td>
+        </tr>
+        <tr tal:condition="python:debug_mode or show_all">
+            <td><strong i18n:translate="">
+                CSS development mode
+            </strong></td>
+            <td>
+                <a href="/portal_css/manage_cssForm"
+                   title="to CSS registry"
+                   i18n:translate="">no detection yet</a>
+            </td>
+        </tr>
+        <tr tal:condition="python:debug_mode or show_all">
+            <td><strong i18n:translate="">
+                Javascript development mode
+            </strong></td>
+            <td>
+                <a href="/portal_javascripts/manage_jsForm"
+                   title="to Javascript registry"
+                   i18n:translate="">no detection yet</a>
+            </td>
+        </tr>
+        </table>
+
+    </div>
+
+</metal:main>
+
+</body>
+<!-- vim: set ts=8 sts=4 sw=4 si et :--></html>

@@ -1,0 +1,24 @@
+<tal:block i18n:domain="plone">
+    <ul tal:define="uid request/form/uid">
+        <li>
+            <span>
+                <a href="#"
+                   class="lesson-edit-click"
+                   tal:attributes="id string:lessonedit-${uid}"
+                   i18n:translate="">
+                   Edit
+                </a>
+            </span>
+        </li>
+        <li>
+            <span>
+                <a href="#"
+                   class="lesson-remove-click"
+                   tal:attributes="id string:lessonremove-${uid}"
+                   i18n:translate="">
+                   Delete
+                </a>
+            </span>
+        </li>
+    </ul>
+</tal:block>

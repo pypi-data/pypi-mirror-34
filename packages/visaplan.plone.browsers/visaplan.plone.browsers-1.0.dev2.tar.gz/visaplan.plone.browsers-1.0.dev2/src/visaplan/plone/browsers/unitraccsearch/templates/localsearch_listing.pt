@@ -1,0 +1,84 @@
+<tal:block tal:define="
+opt python:options or path('context/@@unitraccsearch/getLocalsearch_kwargs');
+brains opt/brains;
+list_macro nocall:opt/func/list_macro;
+SearchableText request/form/SearchableText | nothing;
+bsize python:int(request.form.get('b_size', 25));
+batch python:here.getBrowser('batch')(brains, int(bsize));
+"
+i18n:domain="plone"><tal:comment replace="nothing"><!--
+Aufgerufen durch
+ ../../../skins/unitracc_templates/localsearch_view.pt
+Erstellt aus Kopie von 
+ ../../../skins/unitracc_templates/kss-search-result.pt
+
+
+Suchergebnisse für Vorträge (im Präsentationsmodus; @@unitraccsearch/search_in_structures);
+sonstige Suchergebnisse (@@unitraccsearch/result)
+
+siehe auch (gf) -> search-result-ppt.pt
+(bitte angleichen bzw. synchron halten!)
+--></tal:comment>
+<tal:dbg define="
+debug debug | request/debug | python:0;
+debug_style python:debug and 'border:1px dashed blue' or None;
+">
+</tal:dbg>
+<div id="area-title">
+    <metal:srmac metal:define-macro="search-result-summary">
+    <div class="alert alert-info"
+         tal:define="layout context/getLayout" 
+         tal:condition="python:(layout != 'localsearch_view'
+                                ) or SearchableText">
+
+        <tal:hits tal:content="python:len(brains)">42</tal:hits>
+        <tal:nstxt tal:condition="not:SearchableText"
+                   i18n:translate="kss-search-result-01">
+        search results found
+        </tal:nstxt>
+        <tal:trans tal:condition="SearchableText"
+                   i18n:translate="kss-search-result-02">
+        search results found for
+        <tal:stext tal:content="SearchableText"
+                   i18n:name="SearchableText">
+               Suchbegriff
+        </tal:stext>
+        </tal:trans>.
+    </div>
+    </metal:srmac>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+        <div class="btn-toolbar pull-left OK" id="sort-on"
+             metal:define-macro="nontable-head">
+        </div>
+        <div class="btn-toolbar pull-right" id="batch-size">
+            <div class="btn-group OK">
+                <button id="b_size-25"
+                class="btn btn-default b_size">25</button>
+                <button id="b_size-50"
+                class="btn btn-default b_size">50</button>
+                <button id="b_size-100"
+                class="btn btn-default b_size">100</button>
+            </div>
+        </div>
+        </div><!-- .row -->
+        <tal:ns define="brains batch">
+        <metal:list use-macro="list_macro">
+<!--
+Bei Standardkonfiguration:
+Makro 'nontable-list' in ./localsearch_macros.pt
+(Wert 'list_macro' aus dem Rückgabewert von getLocalsearch_kwargs,
+../browser.py)
+        -->
+        </metal:list>
+        </tal:ns>
+    </div>
+</div>
+<div class="area-content-navigation text-center">
+<metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+</div>
+<script type="text/javascript" src="/++resource++unitracc-resource/localsearch.js"></script>
+
+</tal:block>

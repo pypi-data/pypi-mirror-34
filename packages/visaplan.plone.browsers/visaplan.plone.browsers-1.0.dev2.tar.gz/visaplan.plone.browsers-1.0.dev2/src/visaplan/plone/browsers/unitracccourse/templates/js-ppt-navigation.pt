@@ -1,0 +1,19 @@
+<metal:block metal:define-macro="main">
+
+    <select name="uid" class="presentation-select">
+        <tal:block define="twoblanks string:&nbsp;&nbsp;"
+                   tal:repeat="dict_ navigation">
+            <option tal:define="factor python:dict_['level'];
+                                level python:twoblanks * factor;
+                                number python:repeat['dict_'].number()<10 and '0'+str(repeat['dict_'].number()) or repeat['dict_'].number;
+                                selected python:dict_['uid_object']==current['uid_object'] and 'selected' or None;
+                                title dict_/title"
+                    tal:attributes="value dict_/uid_object;
+                                    selected python:dict_['uid_object']==current['uid_object'] and 'selected' or None;
+                                    rel string:rel-${dict_/uid_object | nothing};
+                                        next dict_/uid_next | nothing;
+                                        prev dict_/uid_prev | nothing"
+                    tal:content="structure string:${number}. ${level} ${title}"/>
+        </tal:block>
+    </select>
+</metal:block>

@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*- äöü vim: tw=79 si sts=2 sw=2 et
+unitracc@@presentation: Browsermodul zur Unterstützung von Vorträgen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Aktuelle Probleme:
+- die AJAX-Navigation in der Präsentationsansicht von Vorträgen
+  (und diese wird bei Vorträgen *immer* verwendet, im Unterschied zu Kursen)
+  ist defekt; siehe das Problem mit den Hyperlinks aus den Suchergebnissen
+  (TODO: Revisionsangaben)
+  Klären: Regression?
+
+- In den Suchergebnissen werden unschöne Hyperlinks mit URLs .../None?uid=...
+  ausgegeben.  Diese können mit Apache-Mitteln korrigiert werden; siehe den
+  Schnipsel ../../../../scripts/httpd/snippets/50-rr-vortragsurl.inc

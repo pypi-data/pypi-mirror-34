@@ -1,0 +1,17 @@
+<tal:4vim replace="nothing"><!-- äöü vim: set sw=4 sts=4 si noet :
+
+JSON-Daten für DataTables;
+siehe <https://datatables.net/examples/ajax/>,
+      <https://en.wikipedia.org/wiki/JSON#MIME_type>,
+      <https://tools.ietf.org/html/rfc4627#section-6>
+
+--></tal:4vim><tal:ns define="
+dummy python:request.response.setHeader('content-type','application/json;;charset=utf-8');
+"
+tal:content="context/@@unitraccsearch/getLocalsearch_jsondata">
+
+... Beispieldaten ...
+
+</tal:ns>
+
+

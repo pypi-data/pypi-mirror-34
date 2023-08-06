@@ -1,0 +1,47 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="connect-groups"
+             template="connect-groups.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="disconnect-groups"
+             template="disconnect-groups.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-listing-course"
+             template="js-listing-course.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="manage_course_view"
+             template="manage_course_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="manage_coursegroup_add"
+             template="manage_coursegroup_add.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="manage_statistic_course"
+             template="manage_statistic_course.pt"
+             permission="zope2.View"
+             />
+
+</configure>

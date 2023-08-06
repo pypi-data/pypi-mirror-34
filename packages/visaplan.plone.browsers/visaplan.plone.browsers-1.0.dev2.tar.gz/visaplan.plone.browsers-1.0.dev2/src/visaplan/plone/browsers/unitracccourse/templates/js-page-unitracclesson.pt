@@ -1,0 +1,27 @@
+<tal:block tal:define="current nocall:options/current"
+           i18n:domain="plone">
+    <h1 class="documentFirstHeading"
+        i18n:translate=""
+        tal:content='current/title'>
+    </h1>
+    <div class="field"
+         tal:define="val current/summary"
+         tal:condition="val">
+        <h2 i18n:translate="">Lesson overview</h2>
+        <p tal:content="val"
+           class="preserve-whitespace">Lektionsbeschreibung</p>
+    </div>
+    <div class="field"
+         tal:define="val current/objective"
+         tal:condition="val">
+        <h2 i18n:translate="">Objectives</h2>
+        <p tal:content="val"
+           class="preserve-whitespace">Lernziele</p>
+    </div>
+    <div class="field"
+         tal:define="val current/duration"
+         tal:condition="val">
+        <h2 i18n:translate="">Duration</h2>
+        <p tal:content="val"
+           class="preserve-whitespace">Dauer</p>
+    </div></tal:block>

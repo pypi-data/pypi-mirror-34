@@ -1,0 +1,59 @@
+<tal:block tal:define="dummy context/@@unitracccoursemanagement/authManageCourses;
+                       SearchableText request/SearchableText | python: '';
+                       groupsharing nocall:context/@@groupsharing;
+                       searchtext python: SearchableText;
+                       brains python:groupsharing.search_learner_groups(searchtext);
+                       batch nocall:here/@@batch;
+                       batch python:batch(brains, 50);
+                       template_id string:manage-course-view;
+                       toTime python:context.getAdapter('totime')"
+           i18n:domain="plone">
+
+    <div id="search-result-info-text">
+        <tal:block tal:content="python:len(brains)"/>
+        <tal:block tal:condition="not:SearchableText"
+                   i18n:translate="kss-search-result-01">search results found</tal:block><tal:block tal:condition="SearchableText"
+                   i18n:translate="kss-search-result-02">search results found for <tal:block tal:content="SearchableText" i18n:name="SearchableText"/></tal:block>.
+
+    </div>
+
+    <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+
+    <form method="post" action="." id="submit-form">
+        <table  class="table table-bordered table-striped table-hover table-sorted">
+        <thead>
+        <tr>
+            <th i18n:translate="">
+                Number
+            </th>
+            <th i18n:translate=""
+                title="Assigned role"
+                i18n:attributes="title">Role</th>
+            <th class="sortable-serverside pointer" rel="getNameIndex"
+                i18n:translate="">
+                Name
+            </th>
+        </thead>
+        <tbody>
+            <tal:loop repeat="dict_ batch">
+            <tr tal:define="info python:groupsharing.get_group_info_by_id(dict_['id']);
+			                ">
+                <td class="group-ids" tal:content="repeat/dict_/number">42</td>
+
+                <td tal:content="info/role_translation | nothing">
+                    übersetzte Rolle
+                </td>
+                <td>
+                    <a tal:attributes="href string:${here/portal_url}/manage_group_view?group_id=${info/id}&course=1"
+                       tal:content="info/group_title"/>
+                </td>
+            </tr>
+            </tal:loop>
+        </tbody>
+        </table>
+        <br/>
+
+    </form>
+
+</tal:block>
+<!-- vim: set ts=4 sts=4 sw=4 si noet hls :-->

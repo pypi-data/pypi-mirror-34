@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="listing_mediathek"
+             template="listing_mediathek.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="mediathek_destfolders"
+             template="mediathek_destfolders.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="mediathek_folder_view"
+             template="mediathek_folder_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="unitraccmedia_macros"
+             template="unitraccmedia_macros.pt"
+             permission="zope2.View"
+             />
+
+</configure>

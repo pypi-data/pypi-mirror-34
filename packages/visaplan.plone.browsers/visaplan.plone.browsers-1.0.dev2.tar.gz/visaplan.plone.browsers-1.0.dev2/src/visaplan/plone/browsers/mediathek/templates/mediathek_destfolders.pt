@@ -1,0 +1,66 @@
+<metal:page metal:use-macro="here/main_template/macros/master"
+            i18n:domain="plone">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+<metal:block fill-slot="javascript_head_slot">
+</metal:block>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_one_slot"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+
+<metal:main metal:fill-slot="main"
+            tal:define="
+mediathek nocall:context/@@mediathek;
+			">
+
+<div id="area-title">
+    <h1 i18n:translate="">
+    Landeseiten der Mediathek
+    </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>type</th>
+          <th>UID</th>
+          <th i18n:translate="">Contents</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tal:loop repeat="row context/@@mediathek/getDestinationMap">
+      <tr tal:define="type row/key;
+                      uid row/uid;
+                      stem python:uid and '/@@resolveuid/'+uid;
+                      omit_uid python:not uid;
+                      ">
+        <td tal:content="type"
+            tal:attributes="title type"
+            i18n:attributes="title">
+            UnitraccNews
+        </td>
+        <td>
+          <tt tal:condition="uid"
+              tal:content="uid">
+            abc123
+          </tt>
+          <em tal:condition="omit_uid"
+              i18n:translate="">
+            no UID configured! 
+          </em>
+        </td>
+        <td>
+          <a tal:condition="uid"
+             tal:attributes="href string:$stem/folder_contents"
+             i18n:translate="">
+             Contents
+           </a>
+        </td>
+      </tr>
+
+      </tal:loop>
+</div>
+</metal:main>
+</metal:page>
+<!-- vim: set ts=2 sts=2 sw=2 si et hls :-->

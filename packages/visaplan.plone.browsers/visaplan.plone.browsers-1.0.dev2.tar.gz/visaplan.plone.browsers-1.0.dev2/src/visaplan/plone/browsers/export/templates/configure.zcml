@@ -1,0 +1,117 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="cookies.txt"
+             template="cookies.txt.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="edit_export_profile"
+             template="edit_export_profile.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="export_button"
+             template="export_button.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="export_view"
+             template="export_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="html_main"
+             template="html_main.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="html_page"
+             template="html_page.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="html_section"
+             template="html_section.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="html_view"
+             template="html_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="mail_export_notify"
+             template="mail_export_notify.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="manage_export_profiles"
+             template="manage_export_profiles.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="new_export_profile"
+             template="new_export_profile.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="pdf_preview"
+             template="pdf_preview.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="pdf_view"
+             template="pdf_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="view_profile"
+             template="view_profile.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="xml_main"
+             template="xml_main.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="xml_view"
+             template="xml_view.pt"
+             permission="zope2.View"
+             />
+
+</configure>

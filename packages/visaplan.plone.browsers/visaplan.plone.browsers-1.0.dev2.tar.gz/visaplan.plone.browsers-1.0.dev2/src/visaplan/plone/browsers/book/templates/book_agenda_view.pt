@@ -1,0 +1,99 @@
+<tal:block tal:define="dummy python:request.set('span_class', 'col-md-9')">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="ad-block-above-content"/>
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <tal:block tal:condition="python:here.getBrowser('book').isBook()">
+        <metal:buttonlist fill-slot="buttonlist">
+            <metal:buttons use-macro="here/export_button/macros/buttons"/>
+        </metal:buttonlist>
+    </tal:block>
+<body>
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:here.getAdapter('checkperm')('Manage portal') or request.set('disable_border', 1)"/>
+
+        <tal:block tal:content="structure here/kss-book-navigation"/>
+<metal:main fill-slot="main">
+    <metal:block metal:define-macro="main"
+                 tal:define="bookFolderBrain here/@@book/getBookFolderAsBrain;
+                             stage nocall:here/@@stage;
+                             layout here/getLayout;
+navfunc nocall:here/kss-book-navigation;
+nav python:navfunc();
+">
+        <div class="row">
+            <tal:nav tal:content="structure nav">
+./kss-book-navigation.pt
+            </tal:nav>
+        </div>
+        <table cellspacing="0" cellpadding="0"  width="100%">
+        <tr>
+            <td>
+                <h1 class="documentFirstHeading"
+                    tal:content="here/pretty_title_or_id"/>
+
+                <p class="documentDescription">
+                    <tal:block i18n:translate="technical_book_chapter_summary"
+                                tal:condition="python:layout == 'technical_information_view'">
+                        This technical book includes the following chapters:
+                    </tal:block>
+                    <tal:block i18n:translate="instruction_chapter_summary"
+                                tal:condition="python:layout == 'instructions_view'">
+                        This instruction includes the following chapters:
+                    </tal:block>
+                    <tal:block i18n:translate="documentation_chapter_summary"
+                                tal:condition="python:layout == 'documentation_view'">
+                        This documentation includes the following chapters:
+                    </tal:block>
+                    <tal:block i18n:translate="paper_chapter_summary"
+                                tal:condition="python:layout == 'paper_view'">
+                        This paper includes the following chapters:
+                    </tal:block>
+                    <tal:block i18n:translate="chapter_topic_summary"
+                                tal:condition="python:layout == 'book_agenda_view'">
+                        This chapter includes the following topics:
+                    </tal:block>
+                </p>
+
+                <ul>
+                    <li tal:repeat="brain here/@@book/get_level">
+                        <a tal:attributes="href brain/getURL"
+                           tal:content="brain/pretty_title_or_id"/>
+                    </li>
+                </ul>
+            </td>
+            <td width="1%"
+                tal:define="brains python:stage.get_as_brains('unitracc-partner', here.UID())"
+                tal:condition="brains">
+                <div class="partner-box">
+                    <a target="_blank"
+                       tal:repeat="brain brains"
+                       tal:attributes="href python:brain.getWebLink"
+                       tal:omit-tag="python:not brain.getWebLink">
+                    <img tal:attributes="src string:${brain/getURL}/@@scaling/get?scaling=120x120"/>
+                    </a>
+                    <p i18n:translate="book_agenda_view_02">
+                        The following content is kindly supported by our partner.
+                    </p>
+
+                </div>
+            </td>
+        </tr>
+        </table>
+        <div class="row">
+            <tal:nav tal:content="structure nav"/>
+        </div>
+    </metal:block>
+
+</metal:main>
+
+</body>
+</html>
+</tal:block>

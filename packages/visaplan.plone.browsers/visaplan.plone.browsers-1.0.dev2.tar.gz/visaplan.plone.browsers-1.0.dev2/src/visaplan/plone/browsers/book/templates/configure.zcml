@@ -1,0 +1,82 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="book_agenda_view"
+             template="book_agenda_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="book_gallery"
+             template="book_gallery.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="book_macros"
+             template="book_macros.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="book_view"
+             template="book_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="documentation_view"
+             template="documentation_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="instructions_view"
+             template="instructions_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-book-level"
+             template="kss-book-level.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-book-navigation"
+             template="kss-book-navigation.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-gallery"
+             template="kss-gallery.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="paper_view"
+             template="paper_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="technical_information_view"
+             template="technical_information_view.pt"
+             permission="zope2.View"
+             />
+
+</configure>

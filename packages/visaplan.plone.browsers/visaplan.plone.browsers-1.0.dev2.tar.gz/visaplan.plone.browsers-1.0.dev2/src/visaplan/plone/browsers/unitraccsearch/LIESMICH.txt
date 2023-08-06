@@ -1,0 +1,92 @@
+LIESMICH.txt: Browser unitraccsearch                 # vim: tw=79 ts=38 sw=38 et
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Stellt Funktionalitäten zur Suche im Unitracc-System bereit,
+insbesondere zur sog. "Lokalen Suche".
+
+Methoden
+========
+
+Alte Funktionalität
+~~~~~~~~~~~~~~~~~~~
+
+search                                Allgemeine Suche
+                                      (zu lang; ca. 200 Zeilen Code!)
+search_in_structures                  Suche innerhalb von Büchern/Präsentationen/Kursen
+searchQs                              ruft derzeit lediglich search auf
+getCustomSearch                       Vokabular, aus unitracctype-Browser
+transformGetCode                      erzeugt ein dict für die Fachbereiche
+getSearchInArea                       Gib das nächste Objekt zurück, für das
+                                      die lokale Suche konfiguriert ist
+getAreaOfInterest                     ähnlich --> getSearchInArea; gibt ein
+                                      dict zurück
+
+Lokale Suche: Suchargumente
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+inheritedLocalSearch                  ähnlich getAreaOfInterest, aber mit
+                                      Rückgabe der Daten und unter Verwendung
+                                      von unitraccsettings._getInherited
+setLocalSearch                        Konfiguration speichern oder löschen
+getLocalSearch                        Konfiguration auslesen
+createLocalQuery                      ermittelt die lokale Konfiguration (mit
+                                      --> inheritedLocalSearch) und nimmt
+                                      generische Änderungen vor
+_createLocalQuery                     Arbeitspferd für createLocalQuery
+_resolve_path_args                    aufgerufen durch --> _createLocalQuery
+getLocalSearchHiddenInput             (derzeit nicht verwendet)
+_getLocalsearchPresets                Für Konfiguration: gib die konfigurierten
+                                      Presets zurück
+getLocalsearchPresetsVocabulary       ruft _getLocalsearchPresets auf, als
+                                      Vokabular für die Konfigurationsseite
+
+Lokale Suche: Makros und Sichten (serverseitig erzeugte Tabellen)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+getlocalsearchPreset                  Gib das Dict der lokal ausgewählten
+                                      Ausgabe-Konfiguration aus
+getLocalsearch_kwargs                 zum Aufruf von (gf)
+                                      templates/localsearch_listing.pt
+
+Lokale Suche der Unterseiten:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+getLocalSearches                      Suchargumente und (mit execute=True,
+                                      Vorgabe) -ergebnisse
+
+Lokale Suche: JSON
+~~~~~~~~~~~~~~~~~~
+
+getLocalsearch_jsondata               Ergebnis der Lokalen Suche im JSON-Format
+                                      (templates/localsearch_json.js.pt)
+getJsonSettings                       gib die JSON-Settings zurück, als Auswahl
+                                      einer Konfiguration per (ggf.  geerbtem)
+                                      Schlüssel localsearch_json_preset
+getJsonPreset                         gib z. B. "default" zurück, mit
+                                      _getLocalSettings
+getJsonPresets                        die Gesamtheit der auswählbaren
+                                      JSON-Konfigurationen, als Sequenz von
+                                      Dicts oder, mit forform=False, als Dict
+(evtl. obsolet:)                                      
+getLocalsearchJsonPresetsVocabulary   vgl. getJsonPresets(forform=True)
+inherited_json_options                wie inheritedLocalSearch,
+                                      Schlüssel: localsearch_json
+
+Sonstiges:
+~~~~~~~~~~
+
+_getLocalSettings                     ermittelt einen Konfigurationswert vom
+                                      settings-Browser für den Kontext oder die
+                                      per uid angegebene Seite
+formatInputData                       verwendet in top.pt
+getCheckedSearchIn                    Auswertung von Formulardaten: Lokale
+                                      Suche, mit Definition in Unterseite?
+getCheckedSearchInGlobal              dto.; Definition in Portalwurzel?
+result                                übergibt das Ergebnis von searchQs an
+                                      kss-search-result
+list_local                            Lokale Liste (Filterung nach Pfad und
+                                      gEFS) als dict, mit vollem oder auf das
+                                      Jahr gekürztem Datum
+getReviewStates                       Ein dict der Arbeitsablauf-Statuus
+_dictifyReviewStates                  (aufgerufen von getReviewStates)
+getActionURL                          action-Attribut für HTML-Formulare

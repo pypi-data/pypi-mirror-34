@@ -1,0 +1,85 @@
+<tal:page>
+<tal:comment replace="nothing"><!--
+Makros für Medien-Darstellung:
+
+item - für Karusseldarstellung
+media_carousel - Karussell für Medien, u.a. mit .../view-URLs
+
+Anmerkungen:
+- die div-Klassen .item und ggf. .active sowie
+  col-md-* kommen aus dem carousel-Makro
+- erforderlich im Aufrufkontext (tal:define):
+  industrialsector_getValue nocall:context/@@industrialsector/getValue;
+  totime python:here.getAdapter('totime');
+  carousel_id;
+getImageUrl python:nora.getImageUrl;
+
+../../../skins/unitracc_templates/unitraccmacros.pt
+../../nora/templates/unitraccnora_macros.pt
+--></tal:comment>
+
+<metal:mac5 define-macro="media_carousel">
+        <div class="row" tal:condition="brains">
+            <div class="col-md-12" tal:define="
+unitraccmacros nocall:unitraccmacros | nocall:here/unitraccmacros/macros;
+carousel_simple nocall:unitraccmacros/carousel_simple;
+  industrialsector_getValue nocall:industrialsector_getValue | nocall:context/@@industrialsector/getValue;
+  toTime python:here.getAdapter('totime');
+  canfix canfix | python:context.getAdapter('checkperm')('Manage portal');
+">
+<metal:carousel use-macro="carousel_simple"><!--
+../../../skins/unitracc_templates/unitraccmacros.pt
+-->
+<div class="item active">
+ <div class="col-md-4">
+<metal:item fill-slot="item">
+<metal:mediaitem define-macro="item">
+<tal:ns define="
+url brain/getURL;
+imgsrc python:brain.getThumbnailPath;
+suffix python:(not imgsrc and canfix) and 'edit' or 'view';
+">
+            <a tal:attributes="href string:$url/$suffix;
+                               "
+               metal:define-slot="link-and-image"
+               href="#"
+               class="thumbnail">
+                <img alt=""
+                     class="img-responsive"
+                     metal:define-slot="image"
+                     tal:attributes="src imgsrc;
+                                     "/>
+            </a>
+            <div class="info-data"
+                 metal:define-slot="info-data">
+                <p class="info date"
+                     tal:content="python:toTime(brain.effective)">
+                     18.9.2013
+                </p>
+                <p class="info subject"
+                     tal:define="code python:industrialsector_getValue(brain.getCode)"
+                     tal:condition="code"
+                     tal:content="code">
+                     Fachbereich
+                </p>
+            </div><!-- .info-data -->
+            <metal:slot define-slot="before-headline"/>
+            <h3 metal:define-slot="headline">
+                <a tal:attributes="href string:$url/view"
+                   tal:content="brain/Title"
+                   href="#">
+                    Medien-Überschrift
+                </a>
+            </h3>
+            <metal:slot define-slot="text"/>
+</tal:ns>
+</metal:mediaitem>
+</metal:item>
+ </div>
+</div>
+</metal:carousel>
+            </div><!-- .col-md-12 -->
+        </div><!-- .row -->
+</metal:mac5>
+
+</tal:page>

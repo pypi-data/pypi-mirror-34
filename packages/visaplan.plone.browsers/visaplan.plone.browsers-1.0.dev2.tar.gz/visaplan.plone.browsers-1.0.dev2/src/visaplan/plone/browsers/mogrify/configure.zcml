@@ -1,0 +1,161 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
+           xmlns:five="http://namespaces.zope.org/five">
+
+    <!-- [ benötigte Pakete ... [ -->
+    <include package="collective.transmogrifier" />
+    <include package="plone.app.transmogrifier" />
+    <include package="quintagroup.transmogrifier" />
+
+    <include package="visaplan.tools" />
+    <include package="visaplan.plone.tools" />
+    <!-- ] ... benötigte Pakete ] -->
+
+    <browser:page
+        for="*"
+        name="mogrify"
+        class=".browser.Browser"
+        permission="zope2.View"
+        allowed_interface=".browser.IMogrify"
+        />
+
+    <!-- [ Exportprofile ... [ -->
+    <!-- "export" ist schon durch quintagroup.transmogrifier belegt! -->
+    <transmogrifier:registerConfig
+        name="export_all"
+        title="Alle Inhalte exportieren"
+        description="Transmogrifier-Pipeline zum Export aller Inhalte"
+        configuration="export_all.cfg"
+        />
+
+    <transmogrifier:registerConfig
+        name="export_spec"
+        title="Angegebene Inhalte exportieren"
+        description="Transmogrifier-Pipeline zum Export der per Programmcode angegebenen Ressourcen"
+        configuration="export_spec.cfg"
+        />
+
+    <transmogrifier:registerConfig
+        name="defaultconfig"
+        title="Default pipeline configuration"
+        description="This is the default pipeline configuration"
+        configuration="default.cfg"
+        />
+
+    <transmogrifier:registerConfig
+        name="zopeexport"
+        title="Export mit Hilfe der Zope-Funktionalität"
+        description="Transmogrifier-Pipeline zum Export der per Programmcode angegebenen Ressourcen"
+        configuration="zopeexport.cfg"
+        />
+
+    <transmogrifier:registerConfig
+        name="catalog"
+        title="Objekte katalogisieren"
+        description="Transmogrifier-Pipeline zur Katalogisierung (Objekte ausgewählt wie für Export)"
+        configuration="catalog.cfg"
+        />
+
+    <transmogrifier:registerConfig
+        name="uids"
+        title="Export der UIDs ausgewählter Ressourcen"
+        description="Transmogrifier-Pipeline zum Export der UIDs der angegebenen Ressourcen"
+        configuration="uids.cfg"
+        />
+    <transmogrifier:registerConfig
+        name="export_folderprops"
+        title="Export der Eigenschaften ausgewählter Ordner"
+        description="Transmogrifier-Pipeline zum Export der Eigenschaften ausgewählter Ordner, incl. UIDs"
+        configuration="export_folderprops.cfg"
+        />
+    <!-- ] ... Exportprofile ] -->
+    <!-- [ Importprofile ... [ -->
+    <transmogrifier:registerConfig
+        name="import_structures"
+        title="Inhalte importieren (Tarball oder Verzeichnis)"
+        description="Transmogrifier-Pipeline zum Import"
+        configuration="import.cfg"
+        />
+
+    <transmogrifier:registerConfig
+        name="zopeimport"
+        title="Import mit Hilfe der Zope-Funktionalität"
+        description="Transmogrifier-Pipeline zum Import der im Export vorhandenen Ressourcen"
+        configuration="zopeimport.cfg"
+        />
+    <!-- ] ... Importprofile ] -->
+    <!-- [ sonstige Profile ... [ -->
+    <transmogrifier:registerConfig
+        name="demarshall"
+        title="DeMarshall"
+        description="DeMarshall (Eigenschaften aus Export zurückschreiben)"
+        configuration="demarshall.cfg"
+        />
+    <transmogrifier:registerConfig
+        name="structuregroups"
+        title="Export mit Hilfe der Zope-Funktionalität"
+        description="Transmogrifier-Pipeline zum Export der per Programmcode angegebenen Ressourcen"
+        configuration="structuregroups.cfg"
+        />
+    <!-- [ sonstige Profile ... [ -->
+
+    <!-- [ Pipeline-Sektionen ... [ -->
+    <utility
+        component=".blueprints.EchoTransform"
+        name="visaplan.transmogrifier.echo"
+        />
+    <utility
+        component=".blueprints.UidExtractor"
+        name="visaplan.transmogrifier.uidextractor"
+        />
+    <utility
+        component=".blueprints.OrphansOnly"
+        name="visaplan.transmogrifier.orphansonly"
+        />
+    <utility
+        component=".blueprints.ZopeExport"
+        name="visaplan.transmogrifier.zopeexport"
+        />
+    <utility
+        component=".blueprints.ZopeImport"
+        name="visaplan.transmogrifier.zopeimport"
+        />
+    <utility
+        component=".blueprints.MakeGroups"
+        name="visaplan.transmogrifier.makegroups"
+        />
+    <!-- neue Sektionen: in Package .visaplan ... -->
+    <utility
+        component=".visaplan.indexobject.IndexObject"
+        name="visaplan.transmogrifier.indexobject"
+        />
+    <utility
+        component=".visaplan.reindexobject.ReindexObject"
+        name="visaplan.transmogrifier.reindexobject"
+        />
+    <utility
+        component=".visaplan.setsubportals.SetSubportals"
+        name="visaplan.transmogrifier.setsubportals"
+        />
+    <utility
+        component=".visaplan.sitewalker.SiteWalkerSection"
+        name="visaplan.transmogrifier.sitewalker"
+        />
+    <utility
+        component=".visaplan.finduids.FindUIDs"
+        name="visaplan.transmogrifier.finduids"
+        />
+    <utility
+        component=".visaplan.injectuid.InjectUID"
+        name="visaplan.transmogrifier.injectuid"
+        />
+    <!-- ] ... Pipeline-Sektionen ] -->
+
+    <include package=".templates" />
+    <!-- Pfad: ++resource++mogrify/ -->
+    <browser:resourceDirectory
+             name="mogrify"
+             directory="resource" />
+
+</configure>

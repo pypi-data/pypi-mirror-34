@@ -1,0 +1,14 @@
+<metal:block metal:define-macro="main">
+
+    <tal:block tal:define="unitracccourse nocall:here/@@unitracccourse;
+                           goto request/form/goto | nothing;
+                           uid python:request.form.get('uid') or uid;
+                           list_ python:unitracccourse.get_navigation(uid);
+                           template nocall:here/js-course-navigation-level">
+        <tal:block tal:content="structure python:template(childs=list_,level=1,ppt='ppt_')">
+        ./js-course-navigation-level.pt
+        Aufrufendes Template ist (gf): ./js-presentation-page.pt
+        </tal:block>
+    </tal:block>
+
+</metal:block>

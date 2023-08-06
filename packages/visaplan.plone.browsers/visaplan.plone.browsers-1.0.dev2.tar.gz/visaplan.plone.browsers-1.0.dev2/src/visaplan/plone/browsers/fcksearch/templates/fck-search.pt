@@ -1,0 +1,214 @@
+<tal:comment replace="nothing"><!-- -*- coding: utf-8 -*- äöü
+Suchformular für CKEditor
+
+Request-Variablen:
+
+    media     (benötigt)
+        Wenn 'image', wird die Suchlistenansicht für Bilder verwendet (Template: fck-search-result-images),
+        die eine direkte Auswahl der Größe erlaubt; bei jedem beliebigen anderen Wert die allgemeine (fck-search-result-links).
+        @@fcksearch/search wertet die Variable in gleicher Weise aus, wenn getCustomSearch nicht vorhanden ist.
+        getCK_finder_url() setzt für den type='flash' die Request-Variable media ebenfalls auf 'flash'.
+    typeview  (benötigt, wenn nicht type übergeben)
+        Wenn 'image', werden alle Datentypen zur Auswahl angeboten, die sich als Bild darstellen lassen, incl. Animationen usw.
+        Es wird derzeit nur zwischen 'image' und beliebigen anderen Werten unterschieden.
+        Die Variable wird *nicht* im Request ausgewertet.
+        getCK_finder_url() verwendet 'file' und 'image'.
+    type      (optional)
+        Ein einzelner Typ (portal_type); -> preset_type.
+        Wenn vorhanden, wird nur nach diesem Typ gesucht, und es wird keine Auswahlliste angeboten.
+        Es steht dann auch mehr Platz für den Suchbegriff zur Verfügung,
+        der bislang allerdings nicht genutzt wird.
+
+Nota bene:
+    Die Sprachauswahl hat das Suffix ":list", weil es tatsächlich möglich wäre,
+    nach mehreren Sprachen (bzw. einer Sprache und "sprachunabhängig")
+    gleichzeitig zu suchen. Die entsprechende Funktionalität wurde vorerst auf
+    ausdrücklichen Wunsch von KHe wieder ausgebaut.
+
+TODO:
+- Ausgabe, nach *was* aktuell gesucht werden kann
+- Limitierung des Suchergebnisses aufheben, und DataTables-Tabelle verwenden
+
+Templates für Ergebnislisten:
+./fck-search-result-images.pt
+./fck-search-result-links.pt
+Aufruf durch, und Javascript-Code:
+../../unitraccckfinder/templates/unitraccckfinder_search.pt
+--></tal:comment>
+<metal:block metal:define-macro="main"
+             i18n:domain="plone">
+    <div class="container"
+         tal:define="preset_type request/type | nothing;
+                     langCode request/langCode | nothing;
+                     unitracctype nocall:here/@@unitracctype;
+                     seekInAll python:unitracctype.getTypesSeekedInAllLanguages();
+                     "
+         >
+        <legend>
+            <tal:txt i18n:translate="">Search</tal:txt>
+            <img id="hide-show" src="background_arrow_single_blue.png" class="pointer" />
+            <span tal:condition="preset_type"
+                  tal:content="preset_type"
+                  i18n:translate=""
+                  >UnitraccImage
+            </span>
+        </legend>
+
+        <form id="search-form" name="search form"
+              method="post" action="">
+            <div class="row">
+                <div class="col-md-9 form-group">
+                        <label for="Language"
+                               i18n:translate="">
+                        Language
+                        </label>
+                        <select name="Language:list" id="Language"
+                                data-placeholder="Show all"
+                                i18n:attributes="data-placeholder"
+                                tal:define="langCode python:(preset_type in seekInAll) and 'all' or langCode;
+                                            ">
+                            <option value=""
+                                    i18n:translate="">Language neutral
+                            </option>
+                            <option tal:repeat="pair python:here.getAdapter('usedlanguages')()"
+                                    i18n:translate=""
+                                    tal:content="python:pair[1]"
+                                    value="de"
+                                    tal:attributes="value python:pair[0];
+                                                    selected python:pair[0] == langCode"
+                                    >deutsch</option>
+                        </select>
+                </div><!-- .col-md-9.form-group -->
+            </div><!-- .row -->
+            <div class="row">
+                <div class="col-md-12 form-group">
+                        <label for="review_state"
+                               i18n:translate="">
+                        Status
+                        </label>
+                        <select name="review_state:list:ignore_empty" id="review_state"
+                                class="form-control"
+                                data-placeholder="Show all"
+                                i18n:attributes="data-placeholder">
+                            <option value=""
+                                    i18n:translate="">Show all
+                            </option>
+                            <option tal:repeat="dict_ here/@@unitraccsearch/getReviewStates"
+                                    tal:attributes="value dict_/id"
+                                    value="published"
+                                    tal:content="dict_/title">
+                            für alle veröffentlicht (published)
+                            </option>
+                        </select>
+                </div><!-- .col-md-12.form-group -->
+            </div><!-- .row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="SearchableText"
+                               i18n:translate="">
+                        Query string
+                        </label>
+                        <input type="text" name="SearchableText" id="SearchableText"
+                               class="form-control"
+                               tal:attributes="value request/SearchableText | nothing">
+                        <label class="checkbox">
+                        <input type="checkbox" name="titleonly" id="titleonly">
+                            <tal:block i18n:translate="">
+                            Search only in title
+                            </tal:block>
+                        </label>
+                    </div><!-- .form-group -->
+                    <div class="form-group">
+                        <label class="radio-inline">
+                            <input type="radio" value="mine" name="where" id="mine" checked="checked" />
+                            <tal:txt i18n:translate="">
+                            Seek in MyContent
+                            </tal:txt>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="all" name="where" id="all" />
+                            <tal:txt i18n:translate=""
+                            >Seek in public</tal:txt>
+                        </label>
+                    </div><!-- .form-group -->
+                </div><!-- .col-md-12 -->
+            </div><!-- .row -->
+                        <tal:if-type condition="preset_type">
+                        <tal:loop1 tal:repeat="pair unitracctype/get">
+                            <input name="getCustomSearch" id="getCustomSearch"
+                                   type="hidden"
+                                   value="UnitraccTable"
+                                   tal:condition="python:pair[0].find(preset_type) != -1"
+                                   tal:attributes="value python:pair[0]"
+                                   >
+                        </tal:loop1>
+                        </tal:if-type>
+            <div class="row" tal:condition="not:preset_type">
+                <div class="col-md-12 form-group">
+                        <label for="getCustomSearch"
+                               i18n:translate="">
+                        Type
+                        </label>
+                        <select name="getCustomSearch:list:ignore_empty" id="getCustomSearch"
+                                class="form-control"
+                                tal:define="typeview python:request.form.get('typeview');
+                                            images_only python:typeview == 'image';
+                                            "
+                                data-placeholder="Show all"
+                                i18n:attributes="data-placeholder">
+                            <tal:block tal:condition="not:images_only">
+                                <option tal:repeat="pair unitracctype/get"
+                                        tal:attributes="value python:pair[0]"
+                                        tal:content="python:pair[1]"
+                                        i18n:translate=""/>
+                            </tal:block>
+                            <tal:block tal:condition="images_only">
+                                <option tal:repeat="pair unitracctype/getTypesWithImage"
+                                        tal:attributes="value python:pair[0]"
+                                        tal:content="python:pair[1]"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                </div><!-- .col-md-12.form-group -->
+            </div><!-- .row -->
+            <div class="row">
+                <div class="col-md-12 form-group"
+                     tal:define="dict_ here/@@unitraccsearch/transformGetCode">
+                        <metal:block metal:use-macro="here/kss-search-codes/macros/main"/>
+                </div><!-- .col-md-12.form-group -->
+            </div><!-- .row -->
+<tal:disabled replace="nothing">
+                <!-- Temporär ausser Betrieb genommen
+                <tr>
+                    <td colspan="4">
+                        <input type="checkbox"  name="latest" id="latest" value="true" />
+                        <span i18n:translate="label_latest_added">label_latest_added</span>
+                    </td>
+                </tr>
+                -->
+</tal:disabled>
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <input type="button" value="Search" id="search"
+                           class="btn btn-default"
+                           i18n:attributes="value label_search" id="submit"/>
+                    <input type="hidden" name="typeview"
+                           tal:define="value request/typeview | nothing;
+                                       value python:value or (preset_type and 'using preset type') or 'MISSING'"
+                           tal:attributes="value value"/>
+
+                    <input type="hidden" name="media"
+                           id="media"
+                           tal:define="value request/media | string:NOT-GIVEN"
+                           tal:attributes="value value;
+                                           ">
+                </div><!-- .col-md-12.form-group -->
+            </div><!-- .row -->
+
+
+        </form>
+
+
+    </div>
+</metal:block>

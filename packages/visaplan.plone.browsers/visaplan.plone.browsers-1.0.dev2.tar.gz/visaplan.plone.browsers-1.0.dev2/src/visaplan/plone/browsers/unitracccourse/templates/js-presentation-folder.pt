@@ -1,0 +1,28 @@
+<metal:main metal:define-macro="main">
+<tal:startblock tal:define="current nocall:options/current;"
+       i18n:domain="plone">
+
+<h1 class="documentFirstHeading"
+    i18n:translate="">
+    Agenda
+</h1>
+<div id="agenda">
+    <metal:agenda metal:define-macro="agenda">
+       <tal:inner tal:define="
+unitracccourse nocall:here/@@unitracccourse;
+uid request/form/uid | uid;
+list_ python:unitracccourse.get_agenda(uid);
+template nocall:here/js-presentation-agenda;
+" tal:content="structure python:template(childs=list_,level=1,ppt='course_ppt_')">
+./js-presentation-agenda.pt
+
+uid request/form/uid | uid;
+uid python:unitracccourse.get_uid() or uid;
+
+Achtung: unitracccourse.get_uid hier (vorerst) mit Absicht nicht verwendet;
+Klick auf Link in Baumnavigation schlug fehl!
+       </tal:inner>
+    </metal:agenda>
+</div>
+</tal:startblock>
+</metal:main>

@@ -1,0 +1,219 @@
+<tal:global i18n:domain="plone"
+tal:define="
+element options/page;
+level options/level;
+count nocall:options/count;
+templateId templateId | template/getId;
+dummy python:count(templateId);
+etitle python: element.get('Title', element.get('title'));
+etitle python: etitle and etitle.strip() or None;
+uid python:element.get('uid_object');
+portal_type python:options['page']['portal_type'];
+in_course python:portal_type in ['UnitraccLesson', 'UnitraccCourse'];
+normal not:in_course;
+">
+<tal:normal condition="normal">
+    <tal:ns-normal
+            tal:define="
+obj element/current/getObject;
+export nocall:here/@@export;
+text  python:export.getContent(obj, 'text');
+notes python:export.getContent(obj, 'notes');
+pformat python:here.getAdapter('pformat');
+stage nocall:here/@@stage;
+">
+        <div class="document-page clearfix"
+             tal:attributes="class string:document-page level-${level} clearfix;
+                             id uid;
+                             ">
+             <pre tal:content="python:pformat(element)"
+                  tal:condition="python:0">
+             ein dict
+             </pre>
+            <div class="document-page-attributes"
+                 tal:attributes="data-uid uid">
+                <div class="attribute-title"
+                     metal:define-macro="page-title"
+                     tal:condition="etitle">
+                    <tal:starttag replace="structure string:<h${level}>"/>
+                    <tal:txt content="etitle">Seitentitel</tal:txt>
+                    <tal:endtag replace="structure string:</h${level}>"/>
+                </div>
+                <tal:if-no-folder condition="python:portal_type != 'Folder'">
+                <div class="audit-support"
+                    tal:define="uid element/uid_object"
+                    tal:condition="uid"
+                    tal:attributes="data-pt portal_type">
+                    <div style="margin-bottom: 0.2em">
+                        <span i18n:translate="">View</span>:<br>
+                        <a href="ppt_view"
+                           tal:attributes="data-uid uid;
+                                           data-href string:ppt_view;
+                                           "
+                           i18n:translate=""
+                           >
+                           Präsentations-
+                        </a>,<br>
+                        <a href="view"
+                           tal:attributes="data-uid uid;
+                                           data-href string:view;
+                                           "
+                           i18n:translate=""
+                           >
+                           Plattformansicht
+                        </a>
+                    </div>
+                    <div>
+                        <a href="edit"
+                           tal:attributes="data-uid uid;
+                                           data-href string:edit"
+                           i18n:translate=""
+                           >
+                           Edit
+                        </a>
+                    </div>
+                    <div>
+                        <a href="code-audit"
+                           tal:attributes="data-uid uid;
+                                           data-href string:code-audit"
+                           i18n:translate="">
+                           Code audit
+                        </a>
+                    </div>
+                </div>
+                </tal:if-no-folder>
+                <div class="attribute-text clearfix"
+                     tal:condition="text"
+                     tal:attributes="data-uid uid"
+                     tal:content="structure text">
+                     Seitentext
+                </div>
+                <div class="attribute-notes"
+                     tal:condition="notes"
+                     tal:content="structure notes">
+                     Notizen
+                </div>
+            </div>
+        </div>
+    </tal:ns-normal>
+</tal:normal>
+<tal:in-course condition="in_course">
+<tal:lesson tal:condition="python:portal_type == 'UnitraccLesson'">
+    <tal:ns-lesson tal:define="
+objective element/objective;
+summary element/summary | nothing;
+duration element/duration | nothing;
+">
+        <div class="document-page clearfix"
+             tal:attributes="class string:document-page level-${level} clearfix;
+                             id uid;
+                             ">
+            <div class="document-page-attributes">
+                <div class="attribute-title"
+                     metal:use-macro="template/macros/page-title">
+                    Titel der Lektion
+                </div>
+                <div class="attribute-objective"
+                     tal:condition="objective"
+                     tal:content="structure objective">
+                    Beschreibung
+                </div>
+                <div class="attribute-summary"
+                     tal:condition="summary"
+                     tal:content="structure summary">
+                    Zusammenfassung
+                </div>
+                <div class="attribute-duration"
+                     tal:condition="duration"
+                     tal:content="structure duration">
+                    Dauer
+                </div>
+            </div>
+        </div>
+    </tal:ns-lesson>
+</tal:lesson>
+<tal:course tal:condition="python:portal_type == 'UnitraccCourse'">
+    <tal:ns-course tal:define="
+sublevel python:'h%d' % (level+1);
+title python:etitle and ('<'+'h'+str(level)+'>'+etitle+'<'+'/h'+str(level)+'>') or '';
+obj element/current/getObject;
+objective obj/getObjective;
+summary obj/getSummary | nothing;
+duration obj/getDuration | nothing;
+difficult obj/getDifficulty | nothing;
+price obj/getPrice | nothing;
+certificate obj/getCertificate | nothing;
+coi obj/getCooperationInformation | nothing;
+">
+        <div class="document-page clearfix"
+             tal:attributes="class string:document-page level-${level} clearfix;
+                             id uid;
+                             ">
+            <div class="document-page-attributes">
+                <div class="attribute-title"
+                     tal:condition="title">
+                    <tal:h1-6 metal:use-macro="template/macros/page-title">
+                    <h1>Kurstitel</h1>
+                    </tal:h1-6>
+                </div>
+                <div class="attribute-summary"
+                     tal:condition="summary">
+                    <metal:mac define-macro="snippet">
+                        <tal:starttag replace="structure string:<${sublevel}>"/>
+                        <tal:txt metal:define-slot="title"
+                                 i18n:translate="">Summary</tal:txt>
+                        <tal:endtag replace="structure string:</${sublevel}>"/>
+                        <metal:slot define-slot="text">
+                        <div tal:content="structure summary">
+                            Zusammenfassung
+                        </div>
+                        </metal:slot>
+                    </metal:mac>
+                </div>
+
+                <tal:ns define="snippet template/macros/snippet">
+                <div class="attribute-objective"
+                     tal:condition="objective">
+                     <metal:mac use-macro="snippet">
+                         <tal:title metal:fill-slot="title"
+                                    i18n:translate="">
+                             Objectives
+                         </tal:title>
+                         <tal:text metal:fill-slot="text"
+                                   tal:content="structure objective">
+                             Darstellung der Lernziele
+                         </tal:text>
+                     </metal:mac>
+                </div>
+                <div class="attribute-duration"
+                     tal:condition="duration"
+                     tal:content="structure duration">
+                    Dauer
+                </div>
+                <div class="attribute-difficult"
+                     tal:condition="difficult"
+                     tal:content="structure difficult">
+                    difficult
+                </div>
+                <div class="attribute-price"
+                     tal:condition="price"
+                     tal:content="structure price">
+                    price
+                </div>
+                <div class="attribute-certificate"
+                     tal:condition="certificate"
+                     tal:content="structure certificate">
+                    certificate
+                </div>
+                <div class="attribute-coorparate_information"
+                     tal:condition="coi"
+                     tal:content="structure coi">
+                    coi
+                </div>
+                </tal:ns>
+            </div>
+        </div>
+    </tal:ns-course>
+</tal:course>
+</tal:in-course>
+</tal:global>

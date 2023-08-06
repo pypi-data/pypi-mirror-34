@@ -1,0 +1,313 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1);" />
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <metal:no-ads fill-slot="column_one_slot"/>
+    <head>
+      <metal:css fill-slot="style_slot">
+        <metal:css define-macro="chosen-css"/>
+      </metal:css>
+    </head>
+    <body>
+
+        <h1>ACHTUNG</h1>
+        <p>Bitte abgleichen bzw. zusammenführen mit
+        ./new_export_profile.pt
+        (Neues Profil anlegen)!
+        </p>
+
+        <metal:cr_outer fill-slot="breadcrumb">
+            <metal:breadcrumb use-macro="here/crumbs/macros/main"/>
+        </metal:cr_outer>
+
+        <metal:main fill-slot="main"
+                    tal:define="dummy python:context.getAdapter('authorized')('unitracc: Manage Export Profiles');
+                                Bexport nocall:here/@@export;
+                                pid request/form/pid;
+                                types  Bexport/getExportProfileTypes;
+                                subportals python: here.getBrowser('subportal').get();
+                                cssfiles_available Bexport/getCSS;
+                                langs python:context.getAdapter('usedlanguages');
+                                profile python:options['profile'][int(pid)];
+                                view options/view;
+                                edit not:view;
+                                ">
+
+            <div class="area-title">
+                <form action="@@export/editExportProfile" method="GET"
+                      tal:condition="view">
+                    <input type="hidden" name="pid" tal:attributes="value pid"/>
+                    <button class="btn btn-default" i18n:translate="">
+                        Edit
+                    </button>
+                </form>
+                <h1 i18n:translate=""
+                    tal:condition="not:view">
+                    Edit export profile
+                </h1>
+                <h1 tal:condition="view"
+                    i18n:translate="">
+                    View export profile
+                </h1>
+            </div>
+            <div class="area-content">
+                <div class="well" tal:condition="not:view">
+                    <div class="well-content">
+                        <p i18n:translate="">
+                            Update an existing export profile.
+                        </p>
+                    </div>
+                </div>
+                <form action="@@export/updateExportProfile"
+                      method="POST">
+                    <input type="hidden" name="pid" tal:attributes="value pid"/>
+                    <ul class="nav nav-tabs"
+                        metal:define-macro="tabs">
+                        <li class="active">
+                            <a data-toggle="tab" href="#1" class="active"
+                               i18n:translate="">
+                                Default
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#2"
+                               i18n:translate="CSS-Files">
+                                CSS files
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#3"
+                                i18n:translate="">
+                                Custom CSS
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#4"
+                                i18n:translate="">
+                                Advanced options
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="1">
+                            <!-- Profile -->
+                            <label>
+                                <i class="glyphicon glyphicon-exclamation-sign"></i>
+                                <tal:block i18n:translate="">Type</tal:block>
+                            </label>
+                            <select class="" name="etype"
+                                    tal:define="curval python:profile['etype_id']"
+                                    tal:attributes="disabled python:view"
+                                    >
+                                <option tal:repeat="type types"
+                                        tal:attributes="value type/id;
+                                                        selected python:type['id'] == curval;"
+                                        tal:content="type/etype">PDF
+                                </option>
+                            </select>
+                            <!-- Title -->
+                            <tal:titles tal:repeat="lang langs">
+                            <div class="control-group"
+                                 tal:define="lcode python:lang[0];
+                                             lname python:lang[1]">
+                                <label class="control-label"
+                                        tal:attributes="for string:title_${lcode}">
+                                    <tal:block i18n:translate="">Title</tal:block>
+                                    <tal:block tal:content="lname" i18n:translate=""/>
+                                </label>
+                                <div class="controls">
+                                    <input type="text" value=""
+                                           tal:attributes="name string:title_${lcode};
+                                                           id string:title_${lcode};
+                                                placeholder python:lname;
+                                                value python:profile['title'].get(lcode);
+                                                readonly python:view and 'readonly' or False;
+                                                "
+                                           i18n:attributes="placeholder"/>
+
+                                </div>
+                            </div>
+                            </tal:titles>
+                            <label class="checkbox">
+                                <input type="checkbox" name="active"
+                                       tal:attributes="checked python:profile['active'];
+                                                       readonly python:view and 'readonly' or False"/>
+                                <tal:block i18n:translate="">
+                                    Profile active
+                                </tal:block>
+                            </label>
+                            <!-- Subportal -->
+                            <div class="control-group">
+                                <div class="controls">
+                                    <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                                        <tal:block i18n:translate="unitracc_label_subportals">
+                                            Subportals
+                                        </tal:block>
+                                    </label>
+                                    <tal:subportals tal:repeat="portal subportals">
+                                        <label class="checkbox"
+                                               tal:condition="python:portal.lower() != 'default_uid'">
+                                            <input type="checkbox" name="subportal"
+                                                   tal:attributes="value portal;
+                                                                   checked python:portal in profile['subportal'] and 'checked' or False;
+                                                                   readonly python:view and 'readonly' or False;
+                                                                   "/>
+                                            <tal:block tal:content="python:subportals[portal]['title']"/>
+                                        </label>
+                                    </tal:subportals>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane" id="2">
+                            <div>
+                                <div
+                                     tal:define="current_selection python:profile['css'];
+                                                 other_files python:[name for name in cssfiles_available
+                                                                     if name not in current_selection];
+                                                 ">
+                                    <metal:mac2 define-macro="css-files">
+                                    <label for="select-cssfiles"
+                                           i18n:translate="CSS-Files">
+                                        CSS files
+                                    </label>
+                                    <select name="cssfiles:list" multiple="multiple"
+                                            id="select-cssfiles"
+                                            class="multiselect" size="10" height="100px;"
+                                            tal:condition="not:view">
+                                        <option tal:repeat="filename current_selection"
+                                                selected="selected"
+                                                tal:content="filename"
+                                                tal:attributes="value filename">
+                                            print.css
+                                        </option>
+                                        <option tal:repeat="filename other_files"
+                                                tal:content="filename"
+                                                tal:attributes="value filename"
+                                                >
+                                            other.css
+                                        </option>
+                                    </select>
+                                    <script type="text/javascript"
+                                            tal:condition="not:view"
+                                            >
+                                        $(document).ready(function () {
+                                            $.localise('ui-multiselect');
+                                            $(".multiselect").multiselect({'dividerLocation': 0.5});
+                                        });
+                                    </script>
+                                    <ul tal:condition="view">
+                                        <li tal:repeat="filename current_selection">
+                                            <a tal:content="filename"
+                                               href="/print.css"
+                                               tal:attributes="href string:/$filename">
+                                               print.css
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    </metal:mac2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane" id="3">
+                            <!-- manuelle CSS -->
+                            <div class="control-group">
+                                <label class="control-label"
+                                       for="textarea-manual_css"
+                                       i18n:translate="">
+                                    Manual CSS
+                                </label>
+                                <span class="muted"
+                                      i18n:translate="help_export_manual_css">
+                                    Here you can define your own css. This will not be saved as file and
+                                    will be inserted as last style item in the document.
+                                </span>
+                                <div class="controls">
+                                    <textarea name="manual_css"
+                                              id="textarea-manual_css"
+                                              rows="10"
+                                              tal:content="profile/manual_css"
+                                              tal:attributes="readonly not:edit;
+                                                              name python:edit and path('default') or None"
+                                              ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="4">
+                            <div>
+                                <div class="">
+                                    <div class="control-group">
+                                        <label i18n:translate=""
+                                               class="control-label" for="pdfreactor_api_calls">
+                                            PDFreactor API calls
+                                        </label>
+                                        <textarea rows="10" cols="60" wrap="hard"
+                                                  name="pdfreactor_api_calls"
+                                                  id="pdfreactor_api_calls"
+                                                  tal:content="profile/pdfreactor_api_calls"
+                                                  tal:attributes="readonly not:edit;
+                                                                  name python:edit and path('default') or None"
+                                                  ># Log anhängen (zu Entwicklungszwecken)
+    setAppendLog(True)
+# ausführlich loggen
+    setLogLevel(LOG_LEVEL_DEBUG)
+                                        </textarea>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="main_template">
+                                            <tal:block i18n:translate="">Main template</tal:block>
+                                        </label>
+                                        <div class="controls">
+                                            <textarea rows="10" cols="60" wrap="hard"
+                                                      name="main_template"
+                                                      id="main_template"
+                                                      tal:attributes="readonly python:view and 'readonly' or False"
+                                                      tal:content="profile/main_template | nothing">
+                                            </textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="browser_id">
+                                            <tal:block i18n:translate="">Browser id</tal:block>
+                                        </label>
+                                        <div class="controls">
+                                            <input type="text" name="browser_id"
+                                                   id="browser_id"
+                                                   tal:attributes="readonly python:view and 'readonly' or False;
+                                                                   value profile/browser_id | nothing"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions"
+                         tal:condition="not: view">
+                        <button type="submit" i18n:translate="Store"
+                                class="btn btn-primary">
+                            Save
+                        </button>
+                        <button type="submit" i18n:translate=""
+                                value="cancel"
+                                name="cancel"
+                                class="btn btn-default">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </metal:main>
+
+    </body>
+
+</html>

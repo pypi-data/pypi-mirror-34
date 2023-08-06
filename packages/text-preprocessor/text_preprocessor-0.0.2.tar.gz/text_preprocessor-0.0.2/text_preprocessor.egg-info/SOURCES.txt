@@ -1,0 +1,9 @@
+setup.py
+text_preprocessor/__init__.py
+text_preprocessor/dataset.py
+text_preprocessor/util.py
+text_preprocessor.egg-info/PKG-INFO
+text_preprocessor.egg-info/SOURCES.txt
+text_preprocessor.egg-info/dependency_links.txt
+text_preprocessor.egg-info/requires.txt
+text_preprocessor.egg-info/top_level.txt

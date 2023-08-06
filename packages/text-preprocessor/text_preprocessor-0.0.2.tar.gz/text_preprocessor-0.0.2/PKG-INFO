@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: text_preprocessor
+Version: 0.0.2
+Summary: This is a text preprocessor for nlp.
+Home-page: https://pypi.python.org/pypi
+Author: Puke
+Author-email: 1129090915@qq.com
+License: Apache
+Description: Just use it.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5

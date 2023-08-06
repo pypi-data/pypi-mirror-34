@@ -1,0 +1,4 @@
+SpeechRecognition>=3.8.1
+keyboard>=0.13.2
+PyAudio>=0.2.11
+comtypes

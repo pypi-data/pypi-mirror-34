@@ -1,0 +1,11 @@
+Tabby-0.4.0.dist-info/METADATA,sha256=V7MdsSJrMXVZvLa-68hwf6bal9kd7tQ6l_7szt-oQj0,614
+Tabby-0.4.0.dist-info/RECORD,,
+Tabby-0.4.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+Tabby-0.4.0.dist-info/top_level.txt,sha256=aYorKjiWd01hgmciXw_4mKUKmerDvoidXMBgIQRCN54,6
+Tabby-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tabby/__init__.py,sha256=zO616VXimmkaRShLzWebCEHft4ErsuWg_m6PnHXcCdQ,163
+tabby/base.py,sha256=HDIXrpQHW2MUXGNqVPlLdL_bFOMLZP3itrCRhPXoLMw,437
+tabby/fields.py,sha256=I4qz3MssHA0p33GyTQJcwYRMlgCq4wmY3kNba4tpO8g,5582
+tabby/parser.py,sha256=YTULXzLxaNnU9UTjWknugQyycxYf9i6PWz32YPaugyk,2948
+tabby/schema.py,sha256=vr1PQt4Fs1DMmtFE6geM8noo7AuTJPHdnge20xSayZg,1211
+tabby/tests.py,sha256=5CvKivPU5VNKI0eGCi8G2ZZo5Tk0fX1xcR_V-yyOl24,4487

@@ -1,0 +1,3 @@
+[console_scripts]
+json_to_junit = cucumber_json_to_junit_xml.cucumber_json_to_junit:main
+

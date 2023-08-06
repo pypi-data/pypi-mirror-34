@@ -1,0 +1,16 @@
+wagtail_flags-3.0.0.dist-info/METADATA,sha256=qXE7vV7oAaTH99XNvUCTY2yUXoRHlQLJVKdJbs9dT3M,4223
+wagtail_flags-3.0.0.dist-info/RECORD,,
+wagtail_flags-3.0.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+wagtail_flags-3.0.0.dist-info/top_level.txt,sha256=dvpK-TLT_E9I6W26XRTNRWWrzKt4H7ImLpCxiKfU5CQ,13
+wagtailflags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailflags/conditions.py,sha256=y8QGJejBnba8mszRFrGE2TiY1l8nRoRywQtPJAyyQ7U,1090
+wagtailflags/views.py,sha256=GwL3L19rL0rRdqWczvG2cg4oOI7CkcWwGKjyYkaR2G0,1158
+wagtailflags/wagtail_hooks.py,sha256=FB-OiZcb3bhzbJCv7TJfTQj5aWoPpBx-i-o38KN2roM,1470
+wagtailflags/templates/wagtailflags/index.html,sha256=jUChCWTRkw5GFe1TxZN3AS-TUYPMZreE88MyHaZu7Bk,3558
+wagtailflags/templates/wagtailflags/flags/create.html,sha256=3DpV2FgQpLP5nbN9ycS7TX1mgxAZaFyhB4-dVZMM4GA,1511
+wagtailflags/templates/wagtailflags/flags/delete.html,sha256=nRp81DBZO9HGepKOfYOcHeuuwMyNiElTxEUzNq5CwHs,698
+wagtailflags/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailflags/tests/settings.py,sha256=Fh7IyGHA2nqM_FObYW_gJxVz5HuPqtfzykjOFnUuzVw,4244
+wagtailflags/tests/test_conditions.py,sha256=8cC8EWe8nz-8VrXQa5Qy4OFkCVaSXmerRvHNkq2a6yk,1360
+wagtailflags/tests/test_views.py,sha256=1RAxgUoyVhJRd46bPNzj0reUAyFnMJi0gmF4k4N0o8s,2025
+wagtailflags/tests/urls.py,sha256=0NJJUneQIiLjXc9Pe4EqTbwI2pBapTSNgC77A_91TbY,341

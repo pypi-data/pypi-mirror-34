@@ -1,0 +1,9 @@
+README.md
+setup.py
+mapper_on_file/__init__.py
+mapper_on_file/app.py
+mapper_on_file.egg-info/PKG-INFO
+mapper_on_file.egg-info/SOURCES.txt
+mapper_on_file.egg-info/dependency_links.txt
+mapper_on_file.egg-info/not-zip-safe
+mapper_on_file.egg-info/top_level.txt

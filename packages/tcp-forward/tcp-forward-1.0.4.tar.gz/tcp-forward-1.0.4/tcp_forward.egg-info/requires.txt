@@ -1,0 +1,9 @@
+enum
+argparse
+ConfigParser
+pyinotify
+oslo_config
+oslo_service
+webob
+gevent
+itsdangerous

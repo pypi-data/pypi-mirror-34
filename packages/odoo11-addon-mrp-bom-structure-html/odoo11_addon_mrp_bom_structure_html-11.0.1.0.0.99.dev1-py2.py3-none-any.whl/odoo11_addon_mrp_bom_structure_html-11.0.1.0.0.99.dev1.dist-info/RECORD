@@ -1,0 +1,10 @@
+odoo/addons/mrp_bom_structure_html/README.rst,sha256=3HF1oIFrVTHBm_FyCzejpcGEOwxSwRf9jY0Ni0h2jkQ,1715
+odoo/addons/mrp_bom_structure_html/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/mrp_bom_structure_html/__manifest__.py,sha256=EMWZDtNAF9ioFsA0f_CCl8u5Z622A54PRJrfORgfsWc,598
+odoo/addons/mrp_bom_structure_html/i18n/mrp_bom_structure_html.pot,sha256=M16KKNvFnBkCjehx1cqozjzKI1dtNhkWmIT15qhBJI8,533
+odoo/addons/mrp_bom_structure_html/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/mrp_bom_structure_html/views/mrp_bom_structure_report_view.xml,sha256=p6a1ze5o6gTnvr3sqAkxk7_Hk0Cm7Te8ewHBrEKpwM8,407
+odoo11_addon_mrp_bom_structure_html-11.0.1.0.0.99.dev1.dist-info/METADATA,sha256=vDkWDP74BoOluDErsKhHqEZ4e-MSMzkJIJ7fNwxQ5to,2292
+odoo11_addon_mrp_bom_structure_html-11.0.1.0.0.99.dev1.dist-info/RECORD,,
+odoo11_addon_mrp_bom_structure_html-11.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_mrp_bom_structure_html-11.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5

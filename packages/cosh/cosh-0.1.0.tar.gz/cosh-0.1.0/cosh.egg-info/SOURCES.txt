@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/cosh
+cosh/__init__.py
+cosh/args.py
+cosh/cache.py
+cosh/docker.py
+cosh/provisioners.py
+cosh/requirements.py
+cosh/tmpdir.py
+cosh.egg-info/PKG-INFO
+cosh.egg-info/SOURCES.txt
+cosh.egg-info/dependency_links.txt
+cosh.egg-info/requires.txt
+cosh.egg-info/top_level.txt

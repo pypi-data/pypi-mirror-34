@@ -1,0 +1,13 @@
+django_horizon-1.1.1.dist-info/METADATA,sha256=6qYW8UNbVsAS6rtZyRpaBWF6TyIW6eh4AWKg-ZSej_M,7399
+django_horizon-1.1.1.dist-info/RECORD,,
+django_horizon-1.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_horizon-1.1.1.dist-info/top_level.txt,sha256=D5BJ9F-c-KQkuBhU8EKIwHECXg8MP-WYWCi0PJK2Z0g,14
+horizon/__init__.py,sha256=ikDBpZd5xFgGmyxnK2sZMV-FM3uNeMnqhlqg3gAYzao,101
+horizon/manager.py,sha256=qrT6F8PaPRtGKRxveHFtWgluvFicIxES1sxWWajLlok,272
+horizon/models.py,sha256=ZS8LeOLOqNjD4ftxGNzx0L4-v2zmm9uRDaBEINut3yI,4969
+horizon/query.py,sha256=QcaA_ROF8PoxKr-EhW6mn_BU8zQIlOwYgFBspw3IDeM,2363
+horizon/routers.py,sha256=9rRzSvlA31yzOdNhOlxSuXs8Ov4cl3r9HwDew5zBXDA,2472
+horizon/settings.py,sha256=37nVboTyErlZFG6dQORZdMMIJuq88FM7PMoT6r8UHPs,883
+horizon/utils.py,sha256=Jr56eVrEznUKju9MElp5eEnrzAm2uH9xGxwfG1mSBDM,2527
+tests/migrations/0001_initial.py,sha256=25nXJ49cQf1g7WEH6aiKBU2O_kllc0eup7SvzGButS0,5079
+tests/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

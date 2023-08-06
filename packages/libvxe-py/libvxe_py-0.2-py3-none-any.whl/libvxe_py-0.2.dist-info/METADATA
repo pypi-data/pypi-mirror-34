@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libvxe-py
+Version: 0.2
+Summary: Py Dev
+Home-page: https://github.com/vxe/libvxe-py.git
+Author: Vijay Edwin
+Author-email: vedwin.dev@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: bottle
+
+UNKNOWN
+
+

@@ -1,0 +1,8 @@
+setup.py
+aeveralltestingpypi.egg-info/PKG-INFO
+aeveralltestingpypi.egg-info/SOURCES.txt
+aeveralltestingpypi.egg-info/dependency_links.txt
+aeveralltestingpypi.egg-info/requires.txt
+aeveralltestingpypi.egg-info/top_level.txt
+script/__init__.py
+script/testrun.py

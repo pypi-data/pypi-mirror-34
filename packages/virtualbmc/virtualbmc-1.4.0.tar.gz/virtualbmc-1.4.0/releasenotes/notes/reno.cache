@@ -1,0 +1,42 @@
+---
+file-contents:
+  releasenotes/notes/add-client-server-overhaul-c5b6f8c01126b4a3.yaml:
+    deprecations: ['Deprecates automatically starting up the ``vbmcd`` daemon process
+        if
+
+        it is not running. This backward-compatibility feature will be removed
+
+        in the OpenStack Stein release.
+
+        ']
+    features: ['Changes the design of the VirtualBMC tool. Instead of forking the
+
+        ``vbmc`` command-line tool to become a daemon and serve a single
+
+        libvirt domain, the ``vbmcd`` master process and ``vbmc`` command-line
+
+        client have been introduced. These client-server tools communicate
+
+        over the ZeroMQ queue. The ``vbmcd`` process is responsible for
+
+        herding its children, each child still serves a single libvirt
+
+        domain.
+
+        ', 'The ``vbmc start`` command now supports multiple domains.
+
+        ']
+    security: ['Hardens PID file creation to prevent the symlink attack.
+
+        ']
+    upgrade: ['It is advised to invoke ``vbmcd`` master process on system boot,
+
+        perhaps by a systemd unit file.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/add-client-server-overhaul-c5b6f8c01126b4a3.yaml
+    - !!binary |
+      MDQ3YTc3ZDdkZWQ2MWE5N2M4YTEwNzUwY2NhZjQwOTk3M2ViYjg2Ng==
+  version: 1.4.0

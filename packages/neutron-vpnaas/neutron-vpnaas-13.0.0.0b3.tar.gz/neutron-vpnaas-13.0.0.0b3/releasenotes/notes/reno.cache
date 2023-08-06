@@ -1,0 +1,25 @@
+---
+file-contents:
+  releasenotes/notes/Enable-sha384-and-sha512-auth-algorithms-for-Swan-drivers-9897b96f90737a20.yaml:
+    features: ['Users can now specify sha384 and sha512 as the auth algorithm for
+        both IKE policy and IPsec policy, when using \*Swan IPsec drivers.']
+    prelude: 'Enable sha384 and sha512 auth algorithms for \*Swan drivers
+
+      '
+  releasenotes/notes/drivers-removal-944ce5e75d55b449.yaml:
+    upgrade: ['The following drivers are removed due to the lack of maintainers of
+        the drivers ``CiscoCsrIPsecDriver``, ``FedoraStrongSwanDriver``, ``VyattaIPsecDriver``.
+        Please refer the following `mailing list post <http://lists.openstack.org/pipermail/openstack-dev/2018-February/127793.html>`_
+        for more detail.']
+  releasenotes/notes/libreswan-driver-works-with-3.19+-7e1fc79ac6c7efe5.yaml:
+    fixes: ['The libreswan driver of neutron-vpnaas can now also work with Libreswan
+        3.19+ (bug `#1711456 <https://launchpad.net/bugs/1711456>`_).']
+notes:
+- files:
+  - [releasenotes/notes/drivers-removal-944ce5e75d55b449.yaml, eadee693a90845e27ddbfb898592fc56e1bed682]
+  - [releasenotes/notes/libreswan-driver-works-with-3.19+-7e1fc79ac6c7efe5.yaml, b6c8ea8a3cca39bb4138bc7063569352faeb612f]
+  version: 13.0.0.0b3
+- files:
+  - [releasenotes/notes/Enable-sha384-and-sha512-auth-algorithms-for-Swan-drivers-9897b96f90737a20.yaml,
+    03b6cc81876df2423c17532b8f2e0ef2bbb6a84b]
+  version: 13.0.0.0b1

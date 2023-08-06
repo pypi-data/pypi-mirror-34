@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: bypass-js
+Version: 0.0.1
+Summary: Package description
+
+Home-page: https://github.com/Nekmo/python-bypass-js
+Author: Nekmo
+Author-email: contacto@nekmo.com
+License: UNKNOWN
+Download-URL: https://github.com/Nekmo/python-bypass-js/archive/master.zip
+Description: 
+        Python Bypass JS
+        ################
+        
+Keywords: directories,websec,pentesting,security-audit
+Platform: linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Provides: bypass_js

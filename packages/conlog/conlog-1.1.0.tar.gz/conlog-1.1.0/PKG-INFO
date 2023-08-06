@@ -1,0 +1,247 @@
+Metadata-Version: 1.1
+Name: conlog
+Version: 1.1.0
+Summary: Anti-Boilerplate Console Logging Module for Python
+Home-page: https://github.com/RyanMillerC/conlog
+Author: Ryan Miller
+Author-email: ryan@devopsmachine.com
+License: MIT
+Download-URL: https://github.com/RyanMillerC/conlog/archive/1.1.0.tar.gz
+Description: #############
+        conlog
+        #############
+        
+        .. image:: https://travis-ci.org/RyanMillerC/conlog.svg?branch=master
+            :target: https://travis-ci.org/RyanMillerC/conlog
+        
+        Anti-Boilerplate Console Logging Module for Python
+        
+        
+        About
+        =====
+        
+        *conlog* is a configurable console logging mechanism featuring:
+        
+        - Boilerplate-free setup
+        - Only one line per Logger
+        - Export to optional rotating log file
+        - Show additional log columns when debugging, suppress when not
+        - YAML or argument based configuration
+        
+        
+        Installation
+        ============
+        
+        Install via pip: **(Recommended)**
+        ::
+        
+          pip install conlog
+        
+        Or with setup_tools:
+        ::
+        
+          python setup.py install
+        
+        
+        Documentation
+        =============
+        
+        Quick start
+        -----------
+        
+        ::
+        
+          import conlog
+          log = conlog.start(level='INFO')
+          log.info('Hello World!')
+        
+        
+        Functions
+        ---------
+        
+        
+        start(...)
+        """"""""""
+        
+        ::
+        
+            start(
+                yaml_file=None,
+                log_file=None,
+                log_format='%(asctime)22s - %(levelname)8s - %(name)20s - %(message)s',
+                debug_format='%(asctime)22s - %(levelname)8s - %(name)20s - %(funcName)20s - %(message)s',
+                level='INFO',
+                max_file_size='5000000',
+                max_retention=5
+            )
+        
+        Configure and return the root Logger instance. All parameters
+        are optional. If any parameter is not supplied, its default
+        value be used. It is even possible to run with no parameters,
+        in which case the default values would be used across all
+        options.
+        
+        Parameters
+        ''''''''''
+        
+        :``yaml_file``:
+          Pull configurations from YAML file. All parameters from
+          ``start()`` are available as YAML options. Option entries
+          should be nested under ``conlog`` at the root of the YAML
+          file. The file should be structured:
+          ::
+        
+              conlog:
+                log_file: log/app.log
+                log_format: '%(asctime)22s - %(levelname)8s - %(name)20s - %(message)s'
+                debug_format: '%(asctime)22s - %(levelname)8s - %(name)20s - %(funcName)20s - %(message)s'
+                level: INFO
+                max_file_size: 5 MB
+                max_retention: 5
+        
+          Like ``start()`` parameters, all YAML settings are optional.
+          If any setting is not supplied in the configuration, its
+          default value will be used.
+        
+          If ``yaml_file`` is supplied, its values are processed first,
+          and will be overridden by any additional parameters called in
+          ``start()``
+        
+          Default: ``None``
+        
+        
+        :``log_file``:
+          Path to log file. By default, file logging is disabled. If
+          ``log_file`` is set to a file path, for example, ``log/app.log``,
+          it will enable rotating file logging.
+        
+          NOTE: In the example ``log/app.log``, the log file itself,
+          ``app.log``, does not need to exist; however, the base directory
+          ``log`` MUST exist.
+        
+          By default the log file will rotate when it reaches ``5 MB``,
+          with up to ``5`` rotations being kept before overwriting the oldest.
+          These values can be adjusted using the ``max_file_size`` and
+          ``max_retention`` options.
+        
+          Default: ``None``
+        
+        
+        :``log_format``:
+          Logging format for all levels EXCEPT ``DEBUG``.
+        
+          Default: ``%(asctime)22s - %(levelname)8s - %(name)20s - %(message)s``
+        
+        
+        :``debug_format``:
+          Logging format for ``DEBUG`` level. By default, this displays the
+          same formatting as ``format``, but with an additional column for
+          the function name which is calling the Logger.
+        
+          Default: ``%(asctime)22s - %(levelname)8s - %(name)20s - %(funcName)20s - %(message)s``
+        
+        
+        :``level``:
+          Logging level. Only messages sent to this level or higher will
+          appear in log.
+        
+          Default: ``INFO``
+        
+        
+        :``max_file_size``:
+          Maximum log file size before rollover. This value can either
+          be an integer byte size or a proper string like: ``5 MB``,
+          ``50 kB``, etc. Setting to ``0`` will cause the log file to
+          grow infinitely with no rollover. This option has no impact if
+          ``log_file`` is set to ``None``.
+        
+          Default: ``5000000`` (5 MB)
+        
+        
+        :``max_retention``:
+          Maximum number of rollover logs to keep. Rotated logs will be
+          saved in the format ``log_name.1``, ``log_name.2``, etc.,
+          until ``max_retention`` is reached. At that point the oldest
+          of the rollover logs will be purged. This option has no impact
+          if ``log_file`` is set to ``None``, or if ``max_file_size`` is
+          set to ``0``.
+        
+          Default: ``5``
+        
+        
+        new(inst)
+        """""""""
+        Get a new Logger instance for the calling class. Recommended
+        usage is ``self.log = conlog.new(self)``.
+        
+        Parameters
+        ''''''''''
+        
+        :``inst``:
+          Instance of class which new Logger is for, (HINT: use ``self``)
+        
+          **Required**
+        
+        
+        Examples
+        ========
+        
+        This is the easiest way to add a root Logger using conlog with ``INFO`` level
+        logging to the console.
+        ::
+        
+          log = conlog.start(level='INFO')
+        
+        Start logging based on configuration in the YAML file, ``conf/conlog.yml``.
+        ::
+        
+          log = conlog.start(yaml_file='conf/conlog.yml')
+        
+        
+        Start ``DEBUG`` level Logger with console logging and rotating file logging to
+        ``logs/app.log``.
+        ::
+        
+          log = conlog.start(
+                  log_file='logs/app.log',
+                  level='DEBUG'
+          )
+        
+        Similar to above but with specific values set for rotation of log files. This
+        will rotate the log file when it reaches ``1 MB`` and retain up to ``10``
+        archived log files before overwriting the oldest.
+        ::
+        
+            log = conlog.start(
+                    log_file='log/app.log',
+                    level='INFO',
+                    max_file_size='1 MB',
+                    max_retention=10,
+            )
+        
+        Start console logging with a different log format.
+        ::
+        
+            log = conlog.start(log_format='%(levelname)s:%(name)s:%(message)s')
+        
+        
+        Get a Logger instance for a class. (Remember to ``start()`` first)
+        ::
+        
+            class Example(object):
+                def __init__(self):
+                    self.log = conlog.new(self)
+        
+        
+        Author
+        ======
+        * Ryan Miller - ryan@devopsmachine.com
+        
+Keywords: logging,debugging
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Logging

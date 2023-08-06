@@ -1,0 +1,15 @@
+MANIFEST.in
+config-sample.py
+example_auth.py
+example_client.py
+setup.py
+swagger.json
+PyYoubora.egg-info/PKG-INFO
+PyYoubora.egg-info/SOURCES.txt
+PyYoubora.egg-info/dependency_links.txt
+PyYoubora.egg-info/not-zip-safe
+PyYoubora.egg-info/requires.txt
+PyYoubora.egg-info/top_level.txt
+youbora/__init__.py
+youbora/youbora_auth.py
+youbora/youbora_client.py

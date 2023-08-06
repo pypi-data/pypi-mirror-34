@@ -1,0 +1,9 @@
+README.rst
+setup.py
+src/gecos/__init__.py
+src/gecos.egg-info/PKG-INFO
+src/gecos.egg-info/SOURCES.txt
+src/gecos.egg-info/dependency_links.txt
+src/gecos.egg-info/not-zip-safe
+src/gecos.egg-info/requires.txt
+src/gecos.egg-info/top_level.txt

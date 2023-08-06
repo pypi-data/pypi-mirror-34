@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: django-web-app
+Version: 0.0.5
+Summary: a django web app
+Home-page: https://gitee.com/upcwangying/UpcwangyingWebApp
+Author: Ying Wang
+Author-email: upcwangying@126.com
+License: MIT
+Project-URL: Documentation, https://docs.upcwangying.com/
+Project-URL: Source, https://gitee.com/upcwangying/UpcwangyingWebApp
+Description: =======
+        Web App
+        =======
+        
+        Polls is a simple Django app to conduct Web-based polls. For each
+        question, visitors can choose between a fixed number of answers.
+        
+        Detailed documentation is in the "docs" directory.
+        
+        Quick start
+        -----------
+        
+        1. Add "web_app" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'web_app',
+            ]
+        
+        2. Include the web_app URL conf in your project urls.py like this::
+        
+            url(r"^web_app/", include("web_app.urls", namespace="web_app")),
+        
+        3. Run `python manage.py migrate` to create the polls models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+           to create a web_app (you'll need the Admin app enabled).
+        
+        5. Visit http://127.0.0.1:8000/web_app/web/app/index/ to participate in the web_app.
+        
+Keywords: upcwangying,wangying,upc,django,app
+Platform: Unix
+Platform: Windows
+Platform: MacOS
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

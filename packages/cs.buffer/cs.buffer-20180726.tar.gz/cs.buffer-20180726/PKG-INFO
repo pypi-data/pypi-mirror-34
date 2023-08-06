@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cs.buffer
+Version: 20180726
+Summary: Facilities to do with buffers, primarily CornuCopyBuffer, an automatically refilling buffer intended to support parsing of data streams.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: UNKNOWN
+Description: 
+        
+        ## Function `chunky(bfr_func)`
+        
+        Decorator for a function acceptig a leading CornuCopyBuffer parameter.
+        Returns a function accepting a leading data `chunks` parameter
+        and optional `offset` and 'copy_offsets` keywords parameters.
+        
+        @chunky
+        def func(bfr, ...):
+Keywords: python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown

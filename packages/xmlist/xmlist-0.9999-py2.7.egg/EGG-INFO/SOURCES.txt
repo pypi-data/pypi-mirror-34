@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+xmlist.py
+tests/test_xmlist.py
+xmlist.egg-info/PKG-INFO
+xmlist.egg-info/SOURCES.txt
+xmlist.egg-info/dependency_links.txt
+xmlist.egg-info/top_level.txt
+xmlist.egg-info/version.txt
+xmlist.egg-info/version_full.txt

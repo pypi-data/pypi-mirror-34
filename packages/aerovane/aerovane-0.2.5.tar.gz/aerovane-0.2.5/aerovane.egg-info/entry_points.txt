@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        aerovane=aerovane.cli:cli
+    

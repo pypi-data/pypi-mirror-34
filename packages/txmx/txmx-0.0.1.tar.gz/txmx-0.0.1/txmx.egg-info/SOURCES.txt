@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+txmx/__init__.py
+txmx.egg-info/PKG-INFO
+txmx.egg-info/SOURCES.txt
+txmx.egg-info/dependency_links.txt
+txmx.egg-info/top_level.txt

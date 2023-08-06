@@ -1,0 +1,12 @@
+README.rst
+setup.py
+pylxc/__init__.py
+pylxc/__main__.py
+pylxc/liblxc/__init__.py
+pylxc/liblxc/liblxc.py
+pylxc_cli.egg-info/PKG-INFO
+pylxc_cli.egg-info/SOURCES.txt
+pylxc_cli.egg-info/dependency_links.txt
+pylxc_cli.egg-info/entry_points.txt
+pylxc_cli.egg-info/requires.txt
+pylxc_cli.egg-info/top_level.txt

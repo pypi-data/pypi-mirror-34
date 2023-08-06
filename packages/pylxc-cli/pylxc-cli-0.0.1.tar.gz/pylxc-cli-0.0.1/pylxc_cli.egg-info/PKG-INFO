@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pylxc-cli
+Version: 0.0.1
+Summary: LXC client
+Home-page: UNKNOWN
+Author: pylxc
+Author-email: vnaraujo@ciandt.com
+License: UNKNOWN
+Description: ========
+        PYLX-CLI
+        ========
+        
+        How to install
+        --------------
+        
+        .. code-block:: bash
+        
+            $ pip install pylxc-cli
+        
+        
+        Development
+        -----------
+        
+        Clone repository:
+        
+        .. code-block:: bash
+        
+            $ git clone <repository-url>
+        
+        Create a virtual environment with Python 3.5:
+        
+        .. code-block:: bash
+        
+            $ virtualenv pylx_env --python=$(which python3)
+        
+        Install the lib with ``editable`` option on PIP:
+        
+        .. code-block:: bash
+        
+            $ pip install -e .
+        
+        Install development requirements:
+        
+        .. code-block:: bash
+        
+            $ pip install -r requirements-dev.txt
+        
+        Start coding. =]
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Description-Content-Type: text/x-rst

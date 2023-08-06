@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+watching/__init__.py
+watching/context.py
+watching/exceptions.py
+watching/file.py
+watching/repo.py
+watching/watcher.py
+watching.egg-info/PKG-INFO
+watching.egg-info/SOURCES.txt
+watching.egg-info/dependency_links.txt
+watching.egg-info/requires.txt
+watching.egg-info/top_level.txt

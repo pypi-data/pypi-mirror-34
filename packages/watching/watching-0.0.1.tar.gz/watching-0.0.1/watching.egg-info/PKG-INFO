@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: watching
+Version: 0.0.1
+Summary: github repo watching client .
+Home-page: https://github.com/joway/repo-watching
+Author: Joway Wang
+Author-email: joway.w@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: github repo watching robot framework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6

@@ -1,0 +1,38 @@
+ci:
+  providers:
+    - circleci
+  image: circleci/python:3.6.4
+
+environment:
+  variables:
+    PROJECT_NAME: servicer
+
+git:
+  enabled: true
+  ignore_paths:
+    - '*README.md'
+    - '*LICENSE'
+    - '*.gitignore'
+
+providers:
+  package:
+    libraries:
+      - twine==1.11.0
+
+services:
+  pypi:
+    provider: package
+    service_type: pypi
+
+    steps:
+      test:
+        commands:
+          - python -m unittest discover -b
+      deploy:
+        config:
+          steps:
+            - type: setup_py
+              args:
+                command: sdist
+            - type: generate_pypi_config
+            - type: upload

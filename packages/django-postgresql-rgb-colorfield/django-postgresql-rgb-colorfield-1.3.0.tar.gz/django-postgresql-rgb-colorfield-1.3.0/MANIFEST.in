@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include colorfield/static *
+recursive-include colorfield/templates *

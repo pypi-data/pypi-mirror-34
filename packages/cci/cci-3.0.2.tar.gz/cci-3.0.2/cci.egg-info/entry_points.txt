@@ -1,0 +1,6 @@
+[console_scripts]
+cci = cci:main
+
+[distutils.commands]
+release = distutils_twine:release
+

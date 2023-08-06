@@ -1,0 +1,16 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_Cramer.py,sha256=jlM0pbbTIPCBaoZArbQW_qPGmAsoJCaokqL1gB48POg,1645
+test/test_parameters.py,sha256=YvbGbT1xAJmPlHMrsLkTiBKtvEPiuXuArJIGZl4_s1Q,2274
+test/test_sessions.py,sha256=9piMzMFq_zuz5_89cEryRBbjWQ0fXmYSzCRQnuhtkr8,1171
+test/test_workflow.py,sha256=6iuODaSBh5yiTDJO2DvJhXnz2_Lee87gU10ZBmiZYpM,1467
+vmwvro2/__init__.py,sha256=gfqTwVKHqLroSfBcsHEP6ZnYsG7PvXCx9SICf21slPM,1146
+vmwvro2/config.py,sha256=ESfHXlVTUpK0LmuqPF5vc2Xp5aYE2DGYzP89jDOhtdk,1528
+vmwvro2/parameters.py,sha256=ULMFsjpvjHOUYid7W54WtR_5Hz2YiqS_0vaY3ZYVSkg,3577
+vmwvro2/sessions.py,sha256=Wx1_EcY0TbcPFvLwpsx0YOC0PzhHcUbXmkDXH7rSqiE,4738
+vmwvro2/settings.py,sha256=5tr9Iz_p4IBfYtYR5fduJ46fYdiFd4_S5irZTgF4IMY,1436
+vmwvro2/utils.py,sha256=BHAkZAymNvnbO79tN_PKSzJ9n9AhP5IKhy4InuHektA,2946
+vmwvro2/workflow.py,sha256=wsF7MHDcDW0F_KtYKedHQ1o0pABN8V_zilQXcmwgWW4,10843
+vmwvro2-0.1.3.dist-info/METADATA,sha256=RvnTLj9eNH6cQTKkkrpKn725fxbARdQU0S3xnYC1ajY,1580
+vmwvro2-0.1.3.dist-info/RECORD,,
+vmwvro2-0.1.3.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+vmwvro2-0.1.3.dist-info/top_level.txt,sha256=TavNQzwWfaA1NptE7-MmW6M42HKdVDvwYcObLP17mbg,13

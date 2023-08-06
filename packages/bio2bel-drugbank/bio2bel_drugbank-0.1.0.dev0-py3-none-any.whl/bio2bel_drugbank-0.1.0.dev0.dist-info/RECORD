@@ -1,0 +1,14 @@
+bio2bel_drugbank/__init__.py,sha256=klMB1nvV8KMZevl5xujNxCSo0UF1vODYPqRA3jEqpXY,1345
+bio2bel_drugbank/__main__.py,sha256=s2nly16fORnOVHNRiFRL5s3KxjBvN0V-TaHfgDltu_Y,391
+bio2bel_drugbank/cli.py,sha256=rDsHoO8dLw_uuZ8slxGcKe9viZHIMkXUtx2jQt7616k,1295
+bio2bel_drugbank/constants.py,sha256=83WMlii-HPyaPFbCXDfRdKJ7Bv1eJ7fZnvMd_QvTtrE,377
+bio2bel_drugbank/manager.py,sha256=IatcZlekv61qUgA5-p90QqUg9GsA6tMxXymgVvmPlFA,18486
+bio2bel_drugbank/models.py,sha256=eGOobjgETSbRp4ytmhGXjXSujwjApVUVYKe0y75zMWs,9466
+bio2bel_drugbank/parser.py,sha256=B0UyZmb0L7lJg7g4nz8nl2kfP2Q3xQqsLNdAAnbPyIg,5075
+bio2bel_drugbank/utils.py,sha256=nojANtsEFbpggpXL_-NAheqyLE4RVNxT0NTdGB6ocbQ,235
+bio2bel_drugbank/web.py,sha256=_k38JkXZR9fk6nPhTNoSiv2KSuvJZ_muyoBk3lDzdQk,416
+bio2bel_drugbank-0.1.0.dev0.dist-info/METADATA,sha256=w2iQNnXizlydVerD0kk6d9tok520Age1E0Z1szc6Zvo,3156
+bio2bel_drugbank-0.1.0.dev0.dist-info/RECORD,,
+bio2bel_drugbank-0.1.0.dev0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+bio2bel_drugbank-0.1.0.dev0.dist-info/entry_points.txt,sha256=M_8pIU9RzF817IFnVYXJ59NXsOBGeiBYjwSGkkfQHuc,103
+bio2bel_drugbank-0.1.0.dev0.dist-info/top_level.txt,sha256=rjn9vowjsHug71fIGy3mJVSyKOxsJeoJaYwcKtOBGec,17

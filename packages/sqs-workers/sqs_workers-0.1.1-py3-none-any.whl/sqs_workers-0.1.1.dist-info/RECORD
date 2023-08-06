@@ -1,0 +1,13 @@
+sqs_workers/__init__.py,sha256=3Gr5a8w8IezZzyl7wPhD2146f9IgfNP-15JdACqFSPE,25
+sqs_workers/__version__.py,sha256=RuicKCQfe9ypO9N6YrQhEfJWXCgNXPlwKKrBBe_PEug,62
+sqs_workers/aws_playground.py,sha256=BNgJ2f7xOm0gawV_uTUXVKaNPbj3kN1eX1vTe2ODxJQ,645
+sqs_workers/codecs.py,sha256=HM1B7AOBnhBvxmFOMN1VNbUm9NSgKqC_5PR14PohnLY,888
+sqs_workers/core.py,sha256=clN3D2Zb200fqUi8NJMmyqZvQS-MLOyNN1n4kk_GRMs,11937
+sqs_workers/playground.py,sha256=ckCbEG0i-orVwR91p6A2iP04OgNyUy3iGjT5M1P2SjE,461
+sqs_workers/playground_worker.py,sha256=yTWw8JBBQHzxT2OQI1zfA380uZ9Ryl5a9GECnrgJVT8,195
+sqs_workers/processors.py,sha256=x3QCZo-ikkMHveAej62tgpLfieDZ4kPFpbJ6-Zk6tK8,4538
+sqs_workers/utils.py,sha256=oAi2YLoeT2W-gFKKaDWylgc6nI9HGdu6QL4u1gcLwW0,714
+sqs_workers-0.1.1.dist-info/METADATA,sha256=guhtbySHZC9kd4EBRvhB06QHgDCmkUwuY2XdSQEexL4,3872
+sqs_workers-0.1.1.dist-info/RECORD,,
+sqs_workers-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sqs_workers-0.1.1.dist-info/top_level.txt,sha256=y2ln1ldkoEnucOgv-MDIefyN-NDKBZG7iBTSOspdNi8,12

@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_pyirc/__init__.py
+simple_pyirc/client.py
+simple_pyirc/message.py
+simple_pyirc.egg-info/PKG-INFO
+simple_pyirc.egg-info/SOURCES.txt
+simple_pyirc.egg-info/dependency_links.txt
+simple_pyirc.egg-info/top_level.txt

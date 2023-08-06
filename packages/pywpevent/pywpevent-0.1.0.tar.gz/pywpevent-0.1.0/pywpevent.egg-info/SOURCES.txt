@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pywpevent/__init__.py
+pywpevent/events.py
+pywpevent/main.py
+pywpevent/singleton.py
+pywpevent.egg-info/PKG-INFO
+pywpevent.egg-info/SOURCES.txt
+pywpevent.egg-info/dependency_links.txt
+pywpevent.egg-info/top_level.txt

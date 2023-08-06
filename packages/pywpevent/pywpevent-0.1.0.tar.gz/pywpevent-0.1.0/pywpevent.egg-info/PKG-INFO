@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pywpevent
+Version: 0.1.0
+Summary: Simple event management like wordpress
+Home-page: https://github.com/praiwann/pywpevent
+Author: Praiwan N.
+Author-email: npraiwan@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: wordpress,event,action,filter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3

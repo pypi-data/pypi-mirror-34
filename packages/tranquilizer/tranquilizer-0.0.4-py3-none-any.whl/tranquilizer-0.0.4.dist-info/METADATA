@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tranquilizer
+Version: 0.0.4
+Summary: Put your functions to REST
+Home-page: https://github.com/AlbertDeFusco/tranquilizer
+Author: Albert DeFusco
+Author-email: albert.defusco@me.com
+License: BSD 3-clause
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Framework :: Flask
+
+UNKNOWN
+
+

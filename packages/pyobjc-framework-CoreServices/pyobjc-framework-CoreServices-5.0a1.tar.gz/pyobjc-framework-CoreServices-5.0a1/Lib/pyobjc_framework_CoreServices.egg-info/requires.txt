@@ -1,0 +1,5 @@
+pyobjc-core>=5.0a1
+pyobjc-framework-DictionaryServices>=5.0a1
+pyobjc-framework-FSEvents>=5.0a1
+pyobjc-framework-LaunchServices>=5.0a1
+pyobjc-framework-SearchKit>=5.0a1

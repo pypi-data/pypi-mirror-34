@@ -1,0 +1,11 @@
+README.md
+setup.py
+bash/path-diag-functions.sh
+path_diag.egg-info/PKG-INFO
+path_diag.egg-info/SOURCES.txt
+path_diag.egg-info/dependency_links.txt
+path_diag.egg-info/entry_points.txt
+path_diag.egg-info/requires.txt
+path_diag.egg-info/top_level.txt
+src/__init__.py
+src/pathdiag.py

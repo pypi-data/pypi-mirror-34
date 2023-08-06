@@ -1,0 +1,3 @@
+[console_scripts]
+pathdiag = src.pathdiag:main
+

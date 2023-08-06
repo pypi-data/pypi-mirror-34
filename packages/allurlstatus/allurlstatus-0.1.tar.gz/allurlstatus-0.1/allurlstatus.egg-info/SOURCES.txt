@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+allurlstatus/__init__.py
+allurlstatus.egg-info/PKG-INFO
+allurlstatus.egg-info/SOURCES.txt
+allurlstatus.egg-info/dependency_links.txt
+allurlstatus.egg-info/not-zip-safe
+allurlstatus.egg-info/requires.txt
+allurlstatus.egg-info/top_level.txt
+allurlstatus/tests/__init__.py
+allurlstatus/tests/test1.py
+bin/getallurlstatus

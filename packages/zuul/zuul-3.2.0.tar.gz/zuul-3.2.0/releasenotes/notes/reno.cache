@@ -1,0 +1,382 @@
+---
+file-contents:
+  releasenotes/notes/branch-protection-f79d97c4e6c0b05f.yaml:
+    features: ['The GitHub driver can determine the required status checks of pull
+        requests
+
+        which are needed for entering a gate pipeline. This eliminates the need to
+
+        hard code required status checks in the gate pipeline and makes
+
+        interoperation with other GitHub apps much more flexible.
+
+        ']
+  releasenotes/notes/broken-config-f41fda98f01a3f4e.yaml:
+    features: ['Zuul is now ables to start with an invalid configuration.
+
+        When reading configuration files from project repositories,
+
+        if an issue is detected, Zuul will store the issue and skip
+
+        the broken block of configuration. Issues are then reported
+
+        in the scheduler log at the end of the configuration phase.
+
+        ']
+  releasenotes/notes/client-check-tenant-config-4b86bfd5bf3572cb.yaml:
+    features: ['Zuul client got a new command ''tenant-conf-check''. This command
+        validates the
+
+        schema of the tenant configuration and exits -1 if errors have been detected.
+
+        ']
+  releasenotes/notes/config-memory-e849097ee171a534.yaml:
+    fixes: ['Configuration loading for dynamic configuration changes (i.e.,
+
+        changes to ``zuul.yaml`` files) is now significantly more CPU and
+
+        memory efficient, incurring only a slight penalty compared to
+
+        normal changes.
+
+        ']
+  releasenotes/notes/driver-mqtt-28f62e8510863b40.yaml:
+    features: ['A :attr:`<mqtt connection>` driver is added to feature build report
+        over MQTT message.']
+  releasenotes/notes/git-remote-refs-71bd2fc2bb05155d.yaml:
+    features: ['Git repositories will have a ``origin`` remote with refs pointing
+        to the
+
+        previous change in the speculative state.
+
+
+        This allows jobs to determine the commits that are part of a change, which
+
+        was not possible before. The remote URL is set to a bogus value which
+
+        won''t work with git commands that need to talk to the remote repository.
+
+        ']
+  releasenotes/notes/github-regex-status-26ddf3e3c91d182f.yaml:
+    features: ['The GitHub trigger status filter
+
+        :value:`pipeline.trigger.<github source>.action.status` and pipeline
+
+        requirements :attr:`pipeline.require.<github source>.status` now support
+
+        regular expression matching.
+
+        ']
+    upgrade: ['The ``fb-re2`` python library is added as a dependency; this may
+
+        required the installation of the ``re2`` library and header files
+
+        in order to build.
+
+        ']
+  releasenotes/notes/inventory-zuul-child-jobs-0e7cf28f0cab83b8.yaml:
+    features: ['A new Ansible inventory variable :var:`zuul.child_jobs` which is a
+
+        list of the first level child jobs to be run after a job has
+
+        finished successfully.
+
+        ']
+  releasenotes/notes/job-extra-vars-9948be1ac2f99497.yaml:
+    features: ['Jobs are now able to use the :attr:`job.extra-vars` which will
+
+        use the --extra-vars flag when a job runs.
+
+        ']
+  releasenotes/notes/override-file-matchers-128731229d551d81.yaml:
+    security: ['Tobias Henkel (BMW Car IT GmbH) discovered a vulnerability which
+
+        is fixed in this release. If nodes become offline during the
+
+        build, the no_log attribute of a task is ignored. If the
+
+        unreachable error occurred in a task used with a loop variable
+
+        (e.g., with_items), the contents of the loop items would be
+
+        printed in the console. This could lead to accidentally leaking
+
+        credentials or secrets. MITRE has assigned CVE-2018-12557 to this
+
+        vulnerability.
+
+        ']
+    upgrade: ['Files (and irrelevant-files) matchers are now overridable.  Zuul
+
+        now uses only branch matchers to collect job variants.  Once those
+
+        variants are collected, they are combined, and the files and
+
+        irrelevant-files attributes are inherited and overridden as any
+
+        other job attribute.  The final values are used to determine
+
+        whether the job should ultimately run.
+
+        ', Zuul now uses Ansible 2.5.]
+  releasenotes/notes/postgres-ae4f8594d0f4b256.yaml:
+    features: ['PostgreSQL is now officially supported as database backend.
+
+        See :attr:`<sql connection>` on how to configure database connections.
+
+        ']
+  releasenotes/notes/project-config-e906138042e386f7.yaml:
+    deprecations: ['The ``merge-mode`` and ``default-branch`` attributes may no longer
+        appear
+
+        in a :ref:`project-template` stanza.
+
+        ']
+    features: ['The :attr:`project.default-branch` option is now documented.  It has
+        been
+
+        supported since version 3.0.0, but was omitted from the documentation.
+
+        ']
+  releasenotes/notes/project-regex-cb782f699eb10865.yaml:
+    features: ['Project stanzas now support regex matching of :attr:`project.name`.
+
+        This can be used to apply project pipelines to many projects at once.
+
+        ']
+  releasenotes/notes/project-vars-0d57992a7192a62d.yaml:
+    features: [Project and project-templates may now create variables via a ``vars``
+        configuration entry.  Jobs can access these at runtime in the same manner
+        as job variables.]
+  releasenotes/notes/reporters-always-report-27702c27369176da.yaml:
+    fixes: ['Story 2001441 is fixed. Failure by one Zuul reporter will not short
+
+        circuit the reporting of other reporters. This ensures as much
+
+        information as possible is reported for each change even if some
+
+        failures occur. Note that the build set status is changed to ''ERROR''
+
+        after the first failed reporter.
+
+        ']
+  releasenotes/notes/require-merged-70784e1e45cac08e.yaml:
+    features: ['The GitHub driver now supports the :attr:`pipeline.require.<github
+        source>.merged`
+
+        requirement.
+
+        ']
+  releasenotes/notes/role-checkouts-89632d2ff5eb8b78.yaml:
+    fixes: ['Zuul role repository checkouts now honor :attr:`job.override-checkout`.
+
+
+        Previously, when a Zuul role was specified for a job, Zuul would
+
+        usually checkout the master branch, unless that repository
+
+        appeared in the dependency chain for a patch.  It will now follow
+
+        the usual procedure for determining the branch to check out,
+
+        including honoring :attr:`job.override-checkout` options.
+
+
+        This may alter the behavior of currently existing jobs.  Depending
+
+        on circumstances, you may need to set
+
+        :attr:`job.override-checkout` or copy roles to other branches of
+
+        projects.
+
+        ']
+  releasenotes/notes/role-in-json-4bc0d862066a4390.yaml:
+    features: ['The json log now also contains the role name and the uuid
+
+        similar to the task entry.
+
+        ']
+  releasenotes/notes/store-build-time-in-utc-4d7425cff5399602.yaml:
+    upgrades: ['The build start and end times are now stored as UTC in the database.
+        Since
+
+        there is no localization done on zuul web side, the zuul api also exposes
+
+        these times as UTC now.
+
+        ']
+  releasenotes/notes/supercedent-manager-af86f18e8d03ee4b.yaml:
+    features: ['The :value:`pipeline.manager.supercedent` pipeline manager has
+
+        been added.  It is designed to make post-merge artifact build
+
+        pipelines more efficient.
+
+        ']
+  releasenotes/notes/template-branch-matchers-2259b585d239b6fe.yaml:
+    fixes: ['Project Templates are now branch-aware and behave more like
+
+        project stanzas.  If a template is defined on a branch, it will
+
+        only apply to changes to that branch.
+
+        ']
+  releasenotes/notes/tenant-from-script-e28d736001db5365.yaml:
+    features: ['A new option for the scheduler
+
+        :attr:`scheduler.tenant_config_script` can be used to tell Zuul to
+
+        execute a script and read its yaml output as the tenants
+
+        configuration. The option is exclusive with the
+
+        :attr:`scheduler.tenant_config` option.
+
+        ']
+  releasenotes/notes/timer-optimization-a6babecaf1c7dab8.yaml:
+    fixes: ['The timer trigger does not enqueue an event for every branch of every
+
+        project anymore and it now only processes projects actually using the
+
+        pipeline triggered by a timer.
+
+        ']
+  releasenotes/notes/version-table-prefix-c6a5e84851268f4d.yaml:
+    upgrade: ['The alembic version table is fixed to being prefixed too. This is necessary
+
+        when using :attr:`<sql connection>.table_prefix`. However if you are
+
+        already using ``table_prefix`` you will need to rename the table
+
+        ``alembic_version`` to ``<prefix>alembic_version`` before starting Zuul.
+
+        Otherwise zuul will try to create the tables again and fail. If you''re not
+
+        using ``table_prefix`` you can safely ignore this.
+
+        ']
+  releasenotes/notes/whitelist-zuul-return-bd78bf3e598e85f6.yaml:
+    fixes: ['Untrusted playbooks no longer see ''Executing local code is prohibited''
+        when
+
+        using the zuul_return Ansible task.
+
+        ']
+  releasenotes/notes/zuul-changes-fix-6d1be83959d451ce.yaml:
+    fixes: ['The zuul-changes.py script has been adapted to the new zuul-web api routes.
+
+        ']
+  releasenotes/notes/zuul-cli-dequeue-command-4536a4ec1bb21d48.yaml:
+    features: ['The `dequeue` command has been added to the Zuul CLI.
+
+        It allows operators to stop a given buildset at will.
+
+        ']
+  releasenotes/notes/zuul-return-skip-child-jobs-772988c87c495cb2.yaml:
+    features: ['It is now possible to use zuul_return to skip child jobs. You can
+
+        use the :var:`zuul.child_jobs` inventory variable to get a list of
+
+        child jobs configured to run, then use zuul_return to modify the
+
+        list.  Any child job not in zuul_return zuul.child_jobs will be
+
+        skipped. See :ref:`return_values` for examples.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/client-check-tenant-config-4b86bfd5bf3572cb.yaml
+    - !!binary |
+      MTg1ZjU5MDY4Yzc5YmNkNTFmZDM4ZjJiYWY4YWJhMTYzNTg1MjM2ZQ==
+  - - releasenotes/notes/inventory-zuul-child-jobs-0e7cf28f0cab83b8.yaml
+    - !!binary |
+      MTQ0ZGY1ZTJkNTcyOGZmNTg0NTgxYjhlMTNmYWRlMDFmYWEzYzJlYw==
+  - - releasenotes/notes/job-extra-vars-9948be1ac2f99497.yaml
+    - !!binary |
+      YThiMzFkYTZlYjU0OTQ4NGVmMWY0YTRjODViZjU0OTFjMzdmOTVkMQ==
+  - - releasenotes/notes/project-vars-0d57992a7192a62d.yaml
+    - !!binary |
+      OGQ4MGVjMmJhODczYjc2ZDhkZTZlM2Y5ZTFkNjFkNGMwMzMzNDE0Zg==
+  - - releasenotes/notes/supercedent-manager-af86f18e8d03ee4b.yaml
+    - !!binary |
+      YWE2ZDE3MTc1YmRkYTg4ZTJhNWVkNTk0ZDQxZjM5MTI3MWNlOTk4MA==
+  - - releasenotes/notes/template-branch-matchers-2259b585d239b6fe.yaml
+    - !!binary |
+      NGY5M2Q2ZDUyNzBlNTI5MjgxOTBjNmEzYTgyNDhjYTk1YWUxNjI2NQ==
+  - - releasenotes/notes/timer-optimization-a6babecaf1c7dab8.yaml
+    - !!binary |
+      NmUxYjQ0MjY2OTg3MzVhNzdiMGRiOGI2Y2NkNjlhYjM3ZjA1YTBkOA==
+  - - releasenotes/notes/zuul-cli-dequeue-command-4536a4ec1bb21d48.yaml
+    - !!binary |
+      YzJjNWNlMjZiZjViY2NkMDk5NWY5MjdlNzNkMzNmNWJmYTQ3YmJkNg==
+  - - releasenotes/notes/zuul-return-skip-child-jobs-772988c87c495cb2.yaml
+    - !!binary |
+      NWM3OTdhMTJhODIyOWIzMDEyNDk4ODcyM2Y3ODZkNGVlOGRlYTgwNw==
+  version: 3.2.0
+- files:
+  - - releasenotes/notes/branch-protection-f79d97c4e6c0b05f.yaml
+    - !!binary |
+      MDQ0NWQwMzU0MmQ2NmJiZTJlMzM3ZDRkYWQzYTI2NzMzMWRlNjE1Ng==
+  - - releasenotes/notes/broken-config-f41fda98f01a3f4e.yaml
+    - !!binary |
+      NTM3ZGJlNTM3NzM4MThjYmZjMDg0MzhlZTcwZmRiOTJkNDAxYjQyNw==
+  - - releasenotes/notes/driver-mqtt-28f62e8510863b40.yaml
+    - !!binary |
+      OTFmMTBkMjFiZGZkMDk4OTFkMzgyYjgwMGRlYmViODE0MmI2MDVmMA==
+  - - releasenotes/notes/override-file-matchers-128731229d551d81.yaml
+    - !!binary |
+      NmRkZjNkYmI5YzdiMTg1MDEwYzU2ZTJmYTQyYjY5NGUzMzgzOTAwOQ==
+  - - releasenotes/notes/require-merged-70784e1e45cac08e.yaml
+    - !!binary |
+      NzM1MTkwZjJlYzUzOGQ4ZTE5ZDlkYjcwN2Q4MjdjYjZjODRiZjkwMQ==
+  - - releasenotes/notes/role-in-json-4bc0d862066a4390.yaml
+    - !!binary |
+      OTFmMTBkMjFiZGZkMDk4OTFkMzgyYjgwMGRlYmViODE0MmI2MDVmMA==
+  - - releasenotes/notes/whitelist-zuul-return-bd78bf3e598e85f6.yaml
+    - !!binary |
+      MzMxNjUwNzE4MTYwYTdlNjY3Yjg3NTM0NzdhNThhNzc3YWJlM2QzMQ==
+  version: 3.1.0
+- files:
+  - - releasenotes/notes/config-memory-e849097ee171a534.yaml
+    - !!binary |
+      OTMxMjQ3NTgzNjM5NDAwMzRiNjYxOGEzMWI4NzVmOTg1ZmI2Y2JhMQ==
+  - - releasenotes/notes/project-config-e906138042e386f7.yaml
+    - !!binary |
+      Yzc5MDRiYzBiNThiZjBiYWMzYzgxMTlmOTQ0NGZmYWIzZTc4OGZjZQ==
+  - - releasenotes/notes/project-regex-cb782f699eb10865.yaml
+    - !!binary |
+      MjBkMzMyNzg4NDYzNjFhNWViZTViN2M4NzIxZGZhMGMwZGU5ODUyMw==
+  version: 3.0.3
+- files:
+  - - releasenotes/notes/github-regex-status-26ddf3e3c91d182f.yaml
+    - !!binary |
+      ZjAwM2NkMDAwMzIzMDc3MzUwY2IwNTk2YWQxMzRmMDM2NGM5MjhiOA==
+  - - releasenotes/notes/reporters-always-report-27702c27369176da.yaml
+    - !!binary |
+      MWEwM2Y3ZTY4OTExNWIyZmU1NmRhOWJmOWVkYmJhNGFjODU5ZTUwZQ==
+  - - releasenotes/notes/store-build-time-in-utc-4d7425cff5399602.yaml
+    - !!binary |
+      NzUyYTA4ZGU1NzI0MzFjOGI3ZTc5MDI4NGRkMzNiNzk2YmY1MmQyMw==
+  - - releasenotes/notes/zuul-changes-fix-6d1be83959d451ce.yaml
+    - !!binary |
+      NTU5YWY3MDQ4YmM4MDI5Y2YxMjBkMDliYjJlZDBiNzQ1NzdiYzI4Yw==
+  version: 3.0.2
+- files:
+  - - releasenotes/notes/git-remote-refs-71bd2fc2bb05155d.yaml
+    - !!binary |
+      ODhmNzk2NDM1ZDMwNGEwNWZiN2Q5ZWUwODc5OGZhMjg3ZTgxOGU5Zg==
+  - - releasenotes/notes/postgres-ae4f8594d0f4b256.yaml
+    - !!binary |
+      Njg3MjdmNmMwMjYyMTgxZTRiYTcwYjBlYzc1NzgyM2MxODQ3YmJlYg==
+  - - releasenotes/notes/role-checkouts-89632d2ff5eb8b78.yaml
+    - !!binary |
+      ZDBhMzU2NzIyMTAxMWVkYTIyYzliNDI2NDU4ODdlNWViNjIzZTMwOA==
+  - - releasenotes/notes/tenant-from-script-e28d736001db5365.yaml
+    - !!binary |
+      MTA5NzY2YWZiMjVjNDJmNGJjZTg0MGEwNTBlYTAxZDM3OTIyOGM0Yg==
+  - - releasenotes/notes/version-table-prefix-c6a5e84851268f4d.yaml
+    - !!binary |
+      NTZmYzM2ZGQ2MDA2MmEwMGUxMGRmYmMwYzI2ODU5NTI5MGNkNmY5OA==
+  version: 3.0.1

@@ -1,0 +1,11 @@
+README.md
+setup.py
+kafkacli/__init__.py
+kafkacli/__main__.py
+kafkacli/util.py
+kafkacli.egg-info/PKG-INFO
+kafkacli.egg-info/SOURCES.txt
+kafkacli.egg-info/dependency_links.txt
+kafkacli.egg-info/entry_points.txt
+kafkacli.egg-info/requires.txt
+kafkacli.egg-info/top_level.txt

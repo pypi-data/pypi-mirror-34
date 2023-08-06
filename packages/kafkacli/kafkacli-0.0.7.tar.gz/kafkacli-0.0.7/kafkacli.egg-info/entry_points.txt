@@ -1,0 +1,3 @@
+[console_scripts]
+kafkacli = kafkacli.__main__:main
+

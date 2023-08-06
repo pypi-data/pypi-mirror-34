@@ -1,0 +1,6 @@
+include gym-guesswho/*.txt
+include gym-guesswho/envs/*.txt
+include gym-guesswho/pretrainedAC
+include gym-guesswho/pretrainedAAC
+include gym-guesswho/pretrainedACMax
+include gym-guesswho/pretrainedQNN

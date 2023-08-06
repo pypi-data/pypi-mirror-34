@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: gym-guesswho
+Version: 0.0.5
+Summary: An OpenAI Gym framework for machine learning with the game "Guess Who?"
+Home-page: https://github.com/cerule7/Guess-Who
+Author: Charles Rule, William (Alex) Fallin
+Author-email: alexfallin@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Natural Language :: English
+Classifier: License :: Other/Proprietary License

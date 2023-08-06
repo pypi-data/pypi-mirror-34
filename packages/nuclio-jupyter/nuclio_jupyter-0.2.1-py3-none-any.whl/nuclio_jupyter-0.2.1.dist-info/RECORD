@@ -1,0 +1,10 @@
+nuclio/__init__.py,sha256=Ur7FEmxSfnpoezAZsfjUVXsfng8J7x2ZvoNaIEISTLo,684
+nuclio/event.py,sha256=AO-9DihYFbVD9lEe_NLWElJTscy4PqRAd2dYxPkoZ6I,571
+nuclio/export.py,sha256=oKO_l2fYpKekaY3FwZItgB_iPP56PDjmeglv7z5HeP4,4036
+nuclio/request.py,sha256=yTVvXE_OS_yVU5eI9F0P51ZIA6pOipGs5b4yfLsT1WA,4404
+nuclio/templates/nuclio.tpl,sha256=cD4PN_V6eKbE5CLR1O_pOPbG55o3u7XQiAX0OkUdT-A,464
+nuclio_jupyter-0.2.1.dist-info/METADATA,sha256=yxjPTkyfk2dU2zOMh10D4CPb4xS1FojdyEan7TBLYzk,3683
+nuclio_jupyter-0.2.1.dist-info/RECORD,,
+nuclio_jupyter-0.2.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nuclio_jupyter-0.2.1.dist-info/entry_points.txt,sha256=sYadTsxI1uWao9iwZ5ivFSSEDdN_I3y0Q6ZCXrSEdbE,61
+nuclio_jupyter-0.2.1.dist-info/top_level.txt,sha256=xH_PrJDXo9P_qJMqLZQZlkMCYFZQlWKtE9lcDNaigJk,7

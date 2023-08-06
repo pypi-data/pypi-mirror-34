@@ -1,0 +1,8 @@
+README.md
+setup.py
+stain/__init__.py
+stain/api.py
+stain.egg-info/PKG-INFO
+stain.egg-info/SOURCES.txt
+stain.egg-info/dependency_links.txt
+stain.egg-info/top_level.txt

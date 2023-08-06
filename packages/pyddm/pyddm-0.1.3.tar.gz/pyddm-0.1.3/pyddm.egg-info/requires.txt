@@ -1,0 +1,4 @@
+numpy>=1.9.2
+scipy>=0.15.1
+matplotlib
+paranoid-scientist>=0.1.4

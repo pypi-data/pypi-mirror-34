@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: wiki-dump-reader
+Version: 0.0.1
+Summary: Extract corpora from Wikipedia dumps
+Home-page: https://github.com/PoWWoP/wiki-dump-reader
+Author: CyberZHG
+Author-email: CyberZHG@gmail.com
+License: MIT
+Description: 
+        Wiki-Dump Reader
+        ================
+        
+        
+        .. image:: https://travis-ci.org/PoWWoP/wiki-dump-reader.svg
+           :target: https://travis-ci.org/PoWWoP/wiki-dump-reader
+           :alt: Travis
+        
+        
+        .. image:: https://coveralls.io/repos/github/PoWWoP/wiki-dump-reader/badge.svg?branch=master
+           :target: https://coveralls.io/github/PoWWoP/wiki-dump-reader
+           :alt: Coverage
+        
+        
+        Extract corpora from wiki-dump.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

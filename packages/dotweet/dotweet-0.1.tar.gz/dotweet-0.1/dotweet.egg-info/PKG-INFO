@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: dotweet
+Version: 0.1
+Summary: Twitter from commandline
+Home-page: https://github.com/anweshadas/dotweet
+Author: Anwesha Das.
+Author-email: anwesha@das.community
+License: GPLv3+
+Description: A project to tweet, directmessage and see timeline form the command line.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6

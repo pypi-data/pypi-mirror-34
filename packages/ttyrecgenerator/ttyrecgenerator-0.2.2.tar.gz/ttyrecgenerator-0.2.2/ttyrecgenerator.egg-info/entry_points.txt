@@ -1,0 +1,3 @@
+[console_scripts]
+ttyrecgenerator = ttyrecgenerator.cmd_ttyrecgenerator:main
+

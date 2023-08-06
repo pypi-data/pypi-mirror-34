@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: satellite-constellation
+Version: 0.1
+Summary: Create Satellite Constellations around the Earth, Luna and planets in the solar system
+Home-page: https://github.com/SaberAidan/SatelliteConstellationCreator
+Author: Aidan O'Brien - Saber Astronautics Australia
+Author-email: aidan.obrien@saberastro.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: satellite satellites constellation orbital mechanics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

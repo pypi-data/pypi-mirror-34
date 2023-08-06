@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: photocopy
+Version: 0.1.7
+Summary: A script to copy images to a directory structure.
+Home-page: https://github.com/skorokithakis/photocopy
+Author: Stavros Korokithakis
+Author-email: hi@stavros.io
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: docopt (>=0.6)
+Requires-Dist: exifread (>=1.4)
+
+photocopy copies images from a camera to a destination directory, creating a date-based directory structure
+
+

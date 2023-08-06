@@ -1,0 +1,12 @@
+pyramid
+pyramid_services
+pyramid_tm
+sqlalchemy
+zope.interface
+zope.sqlalchemy
+
+[develop]
+tox
+twine
+
+[testing]

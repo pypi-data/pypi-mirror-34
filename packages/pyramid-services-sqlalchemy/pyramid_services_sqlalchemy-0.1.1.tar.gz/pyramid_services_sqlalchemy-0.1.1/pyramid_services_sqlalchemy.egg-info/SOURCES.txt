@@ -1,0 +1,12 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyramid_services_sqlalchemy/__init__.py
+pyramid_services_sqlalchemy.egg-info/PKG-INFO
+pyramid_services_sqlalchemy.egg-info/SOURCES.txt
+pyramid_services_sqlalchemy.egg-info/dependency_links.txt
+pyramid_services_sqlalchemy.egg-info/requires.txt
+pyramid_services_sqlalchemy.egg-info/top_level.txt

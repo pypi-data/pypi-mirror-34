@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pyramid-services-sqlalchemy
+Version: 0.1.1
+Summary: SQLAlchemy factories for pyramid_services
+Home-page: https://github.com/gjo/pyramid_services_sqlalchemy
+Author: OCHIAI, Gouji
+Author-email: gjo.ext@gmail.com
+License: MIT
+Description: .. -*- coding: utf-8 -*-
+        
+        ===========================
+        pyramid_services_sqlalchemy
+        ===========================
+        
+        SQLAlchemy factories for `pyramid_services`.
+        
+        
+        This module provides removing `SQLAlchemy`'s boiler plates
+        from your `pyramid` application codes.
+        
+        
+        In your ``pastedeploy.ini``::
+        
+          sqlalchemy.url = ENGINE://DBUSER:PASSWORD@DBHOST/DBNAME
+        
+        
+        In your application factory::
+        
+          config.include('pyramid_services_sqlalchemy')
+        
+        
+        In your views::
+        
+          from pyramid_services_sqlalchemy import get_tm_session
+        
+          def aview(request):
+              db = get_tm_session(request)
+        
+        
+        or you can use ``request.find_service``::
+        
+          from pyramid_services_sqlalchemy import IDBSession
+        
+          def aview(request):
+              db = request.find_service(IDBSession)
+        
+        
+        If you want to use multiple connections, ``pastedeploy.ini``::
+        
+          sqlalchemy.names = readonly readwrite
+          sqlalchemy.readonly.url = ENGINE://READ_DBUSER:PASSWORD@DBHOST/DBNAME
+          sqlalchemy.readwrite.url = ENGINE://WRITE_DBUSER:PASSWORD@DBHOST/DBNAME
+        
+        
+        and in your views::
+        
+          from pyramid_services_sqlalchemy import get_tm_session
+        
+          def aview(request):
+              db = get_tm_session(request, name='readonly')
+        
+          def a_write_view(request):
+              db = get_tm_session(request, name='readwrite')
+        
+        
+        Change History
+        ==============
+        
+        0.1.1 - 2018-08-11
+        ------------------
+        - Update README
+        
+        0.1 - 2018-08-11
+        ----------------
+        - Initial release.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: testing
+Provides-Extra: develop

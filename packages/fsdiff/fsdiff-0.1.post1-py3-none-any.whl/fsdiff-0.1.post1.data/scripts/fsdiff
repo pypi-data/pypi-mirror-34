@@ -1,0 +1,29 @@
+#!python
+
+# Copyright (C) 2018 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
+
+__version__ = "0.1.post1"
+
+import argparse
+from fsdiff.main import main
+
+
+def get_args(argv=None):
+    """ Parse command line arguments
+    and pass them to the main function of fsdiff"""
+    parser = argparse.ArgumentParser(description="fsdiff - compare two filesystems for file differences")
+    parser.add_argument("--version", action="version"
+                        , version = "%(prog)s " + __version__  +
+                                    " Copyright (C) 2018 Kano Computing")
+    parser.add_argument("fromfs", type=str, help="left filesystem for comparison")
+    parser.add_argument("tofs", type=str, help="right filesystem to compare with")
+
+    return parser.parse_args(argv)
+
+
+if __name__ == '__main__':
+    argvals = None
+    args = get_args(argvals)
+    
+    main(args.fromfs, args.tofs)

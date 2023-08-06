@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+README.txt
+SimHash.hpp
+bigint.hpp
+py_simhash.cpp
+setup.py
+pysimhash.egg-info/PKG-INFO
+pysimhash.egg-info/SOURCES.txt
+pysimhash.egg-info/dependency_links.txt
+pysimhash.egg-info/top_level.txt

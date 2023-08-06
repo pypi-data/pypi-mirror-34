@@ -1,0 +1,16 @@
+endorser/__init__.py,sha256=gnztlH2Sek8290NTq1r2beD3orZshs1x2VpRZNAWAeM,839
+endorser/converter.py,sha256=MpyMxvC7ZPY7uu7Cj2VYl5BO9tGD_eU-_6r07Q4eiV4,3192
+endorser/exception.py,sha256=-2XMa4M0uYIltsi5VMFiUAf-nb3FW1grpc6yV89ECYw,154
+endorser/schema.py,sha256=DAeW3H5bypJxUdyukIhw2wkrRvb_N28RzUnl0REnWQ4,5900
+endorser/validator.py,sha256=73SLXCgrWw2rrfk0rRKQwnxTuEqrUiEUE3hw7VVlUsg,2931
+endorser-0.13.dist-info/METADATA,sha256=iuEbN0KKvWGCIAA-hs6akXLxpVW6sLhqSSOO6wYmqs0,9542
+endorser-0.13.dist-info/RECORD,,
+endorser-0.13.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+endorser-0.13.dist-info/top_level.txt,sha256=FGWOLSaSPXCyjRMSeomo20PT7LvMiLfCsWJZn_3IsSw,14
+test/__init__.py,sha256=AAsmSpc6Xmfa20yLz4kBDXXUA9ezK9b5MTJvEG9QfZE,506
+test/converter_test.py,sha256=Cho0xL8X3UZg89uW0Ge8_1JhusDTGZodGchxy32-UJk,2990
+test/schema_test.py,sha256=S5z_EOQFwj4FjYeTPkl-vieqfbeajN5TzsVZmYB3Z_o,3949
+test/validator_test.py,sha256=AObjMLh4XYAlQn-bP1zcEUXQE9OtORcDzr9581aSD9Y,5007
+test/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/example/advanced.py,sha256=V1MQXv3iTtd1zESltwNrFadVhOUcpCDnXbO4wDZ6gQo,2619
+test/example/basic.py,sha256=gjsv3Ibd4pJmiCBhlSVsH0-K6T1lGot16pyPB36cLzc,1088

@@ -1,0 +1,9 @@
+pytest_depends/__init__.py,sha256=l0VZBT--JYp8xxkkfCjgfwQN5QJhK19z0qoe0rq2eww,5155
+pytest_depends/constants.py,sha256=8n0ldypybepvuQv-nIsqpEPhogGWt8yxFEgqx7CRtfE,331
+pytest_depends/main.py,sha256=kPr7FlL2DnmIZl1Wbvpti7TJgp8IjSn3IJdt9QDkBM4,7239
+pytest_depends/util.py,sha256=Tt-6RkFjkHVcPlw08fMQeovmVNYXbA5djPvnhVVvhh8,2741
+pytest_depends-0.8.0.dist-info/METADATA,sha256=EYwmfVuj2sPGGwktnDJ8p2-_58tcfSnpR_F6pOyR3rQ,5132
+pytest_depends-0.8.0.dist-info/RECORD,,
+pytest_depends-0.8.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pytest_depends-0.8.0.dist-info/entry_points.txt,sha256=Fhuds9J6A23PuKOkeF46kO4PTY4ccCuUc9iHq69pwn8,37
+pytest_depends-0.8.0.dist-info/top_level.txt,sha256=Vur-FP1NMbcaFRuie0FcqWW9ZqDC-ysu7atPMRWVeek,15

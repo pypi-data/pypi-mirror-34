@@ -1,0 +1,10 @@
+pyhacrf_datamade-0.2.2.dist-info/WHEEL,sha256=8GRmmxXR8CYXjQdIZUVeFxekR9F18ZAil6LbbAlMfZ0,107
+pyhacrf_datamade-0.2.2.dist-info/top_level.txt,sha256=S-k8v_yKi-yy4DVE9pf0VRGFk1uPN876jSBxEpaRFQM,8
+pyhacrf_datamade-0.2.2.dist-info/METADATA,sha256=xkzQLgBjPYWrZUvMY3y54o2PJmtgNWI01tivJw5ukEg,3715
+pyhacrf_datamade-0.2.2.dist-info/RECORD,,
+pyhacrf/feature_extraction.py,sha256=sDuY-r52d3YLtpii7DNQpFPbJi28Du4L0EgO1BQ0xjg,9183
+pyhacrf/algorithms.so,sha256=OdR0p4hTNBJ9SZHGQtRBLUrqpdNbrtiYesXawbptO-4,1063665
+pyhacrf/__init__.py,sha256=zHVOzVm2bNEB1pyk8yKQca7CIUtvIs1gXEvehilUxO4,256
+pyhacrf/adjacent.so,sha256=MItoVHTiRvJuYPe79vLK3Rj2cYRl_358fEKV9imu5iI,804867
+pyhacrf/pyhacrf.py,sha256=xErMjZVLJQUYDN7MHTw_L-OU4VLf_4Y0Nq3abs6xHUo,13914
+pyhacrf/state_machine.py,sha256=Idzy-2iEZzf36ebiRGQLJAREv0L3_JGPPA_qPGq-67E,4040

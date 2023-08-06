@@ -1,0 +1,13 @@
+cerberus_python_client-1.3.0.dist-info/RECORD,,
+cerberus_python_client-1.3.0.dist-info/metadata.json,sha256=b2dTdfZDQBXKd0n2OIkkU2wTzSPMdDQldLMul8E9RsU,576
+cerberus_python_client-1.3.0.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110
+cerberus_python_client-1.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+cerberus_python_client-1.3.0.dist-info/top_level.txt,sha256=3LHl9wKOwk6Dt4QYay_8nyDidWE0N8nvbc7kLD9vDMI,15
+cerberus_python_client-1.3.0.dist-info/METADATA,sha256=-kYghhR987_AlWEpLbbQ1p4HFXNAV1jxAd7nnA9zpG0,366
+tests/mocks/__init__.py,sha256=A6dRTSClk8ecsuYyxzP3Im7zExYg6s8veWCl4NTwX0E,401
+tests/matcher/__init__.py,sha256=311xD3eKrkertzta4u2G04jFi1QPqkzDlcRaXjkZd9U,265
+cerberus/util.py,sha256=LLKNIptL9uoq4Enp55oLouPNGWxeqwh6zdUp1RvAM9o,2486
+cerberus/client.py,sha256=Bchbz5pz3CEMVfsmD3CMlQyZIwoJtanHfw0j5-lRz9g,27898
+cerberus/__init__.py,sha256=5jXYmA5eRvWaPooH4jOSbX8UP5gUXJvRIfqxMqG3eEY,204
+cerberus/user_auth.py,sha256=RdTa7JbAtjpViQRvgtLMc2mgz3pi4p2uGgCbaS7LYEs,2505
+cerberus/aws_auth.py,sha256=CYEU_ep5QlQX6ce5J1kVwkaz8fHGxSpb1DAOZB0Pe_I,5975

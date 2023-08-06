@@ -1,0 +1,3 @@
+binaries:
+- /usr/bin/chronyc --version
+- /usr/sbin/chronyd --version

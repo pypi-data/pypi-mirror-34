@@ -1,0 +1,9 @@
+binaries:
+- which /usr/bin/iptables-xml 
+- /usr/sbin/ip6tables -V
+- which /usr/sbin/ip6tables-restore 
+- /usr/sbin/ip6tables-save
+- which /usr/sbin/iptables
+- which /usr/sbin/iptables-restore 
+- which /usr/sbin/iptables-save
+- which /usr/sbin/xtables-multi

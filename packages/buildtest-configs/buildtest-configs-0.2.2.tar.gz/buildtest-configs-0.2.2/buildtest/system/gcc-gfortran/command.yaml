@@ -1,0 +1,3 @@
+binaries:
+- /usr/bin/f95 -v
+- /usr/bin/gfortran -v

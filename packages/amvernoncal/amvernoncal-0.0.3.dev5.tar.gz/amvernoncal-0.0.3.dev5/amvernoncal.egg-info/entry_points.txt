@@ -1,0 +1,3 @@
+[console_scripts]
+amvernon_gcal_to_xlsx = amvernoncal.gcal_to_xlsx:main
+

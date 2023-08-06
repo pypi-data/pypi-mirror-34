@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyxel-catpointer
+Version: 0.1.6
+Summary: Silly game powered by pyxel
+Home-page: https://github.com/stsewd/cat-pointer-game
+Author: Santos Gallegos
+Author-email: santos_g@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Games/Entertainment :: Arcade
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyxel (<1)
+
+# Cat Pointer
+
+Silly game powered by [pyxel](https://github.com/kitao/pyxel).
+
+![](screenshots/scr-1.png)
+![](screenshots/scr-2.png)
+
+## Installation
+
+- Make sure you have the [requirements of pyxel](https://github.com/kitao/pyxel#windows)
+- `pip install pyxel-catpointer`
+
+Run `catpointer`
+
+

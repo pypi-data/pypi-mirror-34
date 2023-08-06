@@ -1,0 +1,12 @@
+README.rst
+setup.py
+buscemizer/__init__.py
+buscemizer/__main__.py
+buscemizer/buscemizer.py
+buscemizer.egg-info/PKG-INFO
+buscemizer.egg-info/SOURCES.txt
+buscemizer.egg-info/dependency_links.txt
+buscemizer.egg-info/entry_points.txt
+buscemizer.egg-info/requires.txt
+buscemizer.egg-info/top_level.txt
+buscemizer/images/buscemi.png

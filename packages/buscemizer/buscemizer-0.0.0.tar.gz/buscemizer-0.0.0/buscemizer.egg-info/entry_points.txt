@@ -1,0 +1,3 @@
+[console_scripts]
+buscemizer = buscemizer.__main__:main
+

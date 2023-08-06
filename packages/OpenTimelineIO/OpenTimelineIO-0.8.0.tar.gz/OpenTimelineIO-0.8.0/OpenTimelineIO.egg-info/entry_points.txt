@@ -1,0 +1,5 @@
+[console_scripts]
+otiocat = bin.otiocat:main
+otioconvert = bin.otioconvert:main
+otioview = bin.otioview:main
+

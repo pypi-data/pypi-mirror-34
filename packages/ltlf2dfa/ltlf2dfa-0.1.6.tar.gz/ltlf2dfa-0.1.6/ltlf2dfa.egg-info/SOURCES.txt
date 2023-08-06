@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+ltlf2dfa/DotHandler.py
+ltlf2dfa/Lexer.py
+ltlf2dfa/Parser.py
+ltlf2dfa/Translator.py
+ltlf2dfa/__init__.py
+ltlf2dfa/mona
+ltlf2dfa/parsetab.py
+ltlf2dfa.egg-info/PKG-INFO
+ltlf2dfa.egg-info/SOURCES.txt
+ltlf2dfa.egg-info/dependency_links.txt
+ltlf2dfa.egg-info/requires.txt
+ltlf2dfa.egg-info/top_level.txt

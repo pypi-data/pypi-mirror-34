@@ -1,0 +1,13 @@
+README.md
+setup.py
+attn_gan_pytorch/ConfigManagement.py
+attn_gan_pytorch/CustomLayers.py
+attn_gan_pytorch/Losses.py
+attn_gan_pytorch/Networks.py
+attn_gan_pytorch/Utils.py
+attn_gan_pytorch/__init__.py
+attn_gan_pytorch.egg-info/PKG-INFO
+attn_gan_pytorch.egg-info/SOURCES.txt
+attn_gan_pytorch.egg-info/dependency_links.txt
+attn_gan_pytorch.egg-info/requires.txt
+attn_gan_pytorch.egg-info/top_level.txt

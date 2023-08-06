@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cnpt_leos
+Version: 0.1.1
+Summary: Custom NLTK part of speech tagger
+Home-page: UNKNOWN
+Author: Dmitry Obukhov
+Author-email: bstodin@gmail.com
+License: UNKNOWN
+Description: # CNPT - Custom NLTK part of speech tagger
+        ## Modules:
+        - example.py
+        - extractor.py
+        - injector.py
+        - pos_tag.py
+        - rule.py
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

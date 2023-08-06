@@ -1,0 +1,30 @@
+Flask-Env Changelog
+===================
+
+Version 2.0.0
+-------------
+
+:Released: 07-25-2018
+
+:Changes:
+  Change :code:`ENV_LOAD_ALL` to be :code:`False` by default
+
+
+Version 1.1.0
+-------------
+
+:Released: 07-25-2018
+
+:Changes:
+  Add :code:`ENV_LOAD_ALL` setting to control whether all environment variables are loaded by default or not
+
+  **Note:** Default is :code:`True`, future version will default to :code:`False`
+
+
+Version 1.0.1
+-------------
+
+:Released: 08-07-2016
+
+:Changes:
+  Initial release of package

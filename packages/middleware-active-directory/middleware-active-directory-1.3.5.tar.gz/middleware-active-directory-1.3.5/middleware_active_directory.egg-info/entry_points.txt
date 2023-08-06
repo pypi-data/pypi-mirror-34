@@ -1,0 +1,4 @@
+[console_scripts]
+active_directory_init = active_directory.entry_points:init
+start_sync = middleware.start_sync:Sync.runmake_report = middleware.make_report:Report.make_report
+

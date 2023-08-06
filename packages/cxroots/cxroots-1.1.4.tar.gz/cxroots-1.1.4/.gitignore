@@ -1,0 +1,13 @@
+*.pyc
+build/
+.ipynb_checkpoints
+*.mov
+.DS_Store
+MANIFEST
+dist/*
+cxroots.egg-info/*
+upload
+.cache/v/cache/lastfailed
+scrapbook/*
+.pytest_cache
+

@@ -1,0 +1,8 @@
+pypiserver_passlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypiserver_passlib/_version.py,sha256=eCqfMNNOOr92qBxuXSVI7e8WUJOf0JMVGNJZXqVJrTI,134
+pypiserver_passlib/auth.py,sha256=tk1ZhfHjjH1bHp0_WnS32aACXOLsJU6qkR9i0y9PP5M,1528
+pypiserver_passlib-1.0.0.dev2.dist-info/METADATA,sha256=Cu1hCDfKdOdLyk_V3c3nG6IVoKvEd-6CtCGCE96nWW4,1616
+pypiserver_passlib-1.0.0.dev2.dist-info/RECORD,,
+pypiserver_passlib-1.0.0.dev2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pypiserver_passlib-1.0.0.dev2.dist-info/entry_points.txt,sha256=5WvvdYSX7Yqh4JkM3LMixuCxhv_zDkZXL_SFR0RbArU,84
+pypiserver_passlib-1.0.0.dev2.dist-info/top_level.txt,sha256=WryY-POAseWd0wPYcUXBIFH8bLBbYYq0cC4i1Ryuh9E,19

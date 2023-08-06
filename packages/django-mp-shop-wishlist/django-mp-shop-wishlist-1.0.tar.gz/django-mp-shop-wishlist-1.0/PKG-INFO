@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: django-mp-shop-wishlist
+Version: 1.0
+Summary: Django shop wishlist apps
+Home-page: https://github.com/pmaigutyak/mp-shop-wishlist
+Author: Paul Maigutyak
+Author-email: pmaigutyak@gmail.com
+License: MIT
+Download-URL: https://github.com/pmaigutyak/mp-shop-wishlist/archive/1.0.tar.gz
+Description: # MP-Shop | Wish list
+        
+        ## Installation
+        
+        ### Install using PIP:
+        ```
+        pip install django-mp-shop-wishlist
+        ```
+        
+        ### Add wishlist to settings.py:
+        ```
+        INSTALLED_APPS = [
+            ...
+            'wishlist',
+        ]
+        ```
+Platform: UNKNOWN

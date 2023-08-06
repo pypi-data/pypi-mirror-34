@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: eventy
+Version: 1.0.1
+Summary: Qotto/eventy
+Home-page: https://github.com/qotto/eventy
+Author: Alexandre Syenchuk
+Author-email: sacha@qotto.net
+License: MIT
+Description: # eventy
+        
+        Handy module for designing event-driven systems
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

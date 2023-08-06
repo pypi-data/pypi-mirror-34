@@ -1,0 +1,5 @@
+numpy>=1.12
+scipy
+sklearn
+pandas
+cvxpy

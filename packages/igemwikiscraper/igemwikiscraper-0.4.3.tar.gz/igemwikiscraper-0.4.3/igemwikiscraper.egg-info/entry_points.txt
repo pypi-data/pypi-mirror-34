@@ -1,0 +1,4 @@
+[console_scripts]
+wikiscraper = igemwikiscraper.__main__:main
+wikiscraper-gui = igemwikiscraper.__main__:gui
+

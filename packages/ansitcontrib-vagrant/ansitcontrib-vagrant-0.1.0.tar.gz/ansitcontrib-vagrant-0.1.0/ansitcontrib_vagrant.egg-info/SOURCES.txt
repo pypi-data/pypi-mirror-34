@@ -1,0 +1,10 @@
+CHANGELOG
+LICENSE
+MANIFEST.in
+setup.py
+ansitcontrib/vagrant/__init__.py
+ansitcontrib_vagrant.egg-info/PKG-INFO
+ansitcontrib_vagrant.egg-info/SOURCES.txt
+ansitcontrib_vagrant.egg-info/dependency_links.txt
+ansitcontrib_vagrant.egg-info/requires.txt
+ansitcontrib_vagrant.egg-info/top_level.txt

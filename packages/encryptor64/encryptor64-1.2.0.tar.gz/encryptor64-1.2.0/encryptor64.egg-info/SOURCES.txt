@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+encryptor64/__init__.py
+encryptor64/encryption.py
+encryptor64.egg-info/PKG-INFO
+encryptor64.egg-info/SOURCES.txt
+encryptor64.egg-info/dependency_links.txt
+encryptor64.egg-info/requires.txt
+encryptor64.egg-info/top_level.txt

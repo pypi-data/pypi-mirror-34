@@ -1,0 +1,8 @@
+requests
+pymongo
+
+[dev]
+check-manifest
+
+[test]
+coverage

@@ -1,0 +1,11 @@
+tjquant/__init__.py,sha256=JOh8DUvMs6klLrF3IyAE3sDxHks3SMQI9lWKN4OJGuY,16
+tjquant/client.ini.py,sha256=rqyxg6kD6PclTRAEfo1IgaRRYKkVk6fue4BrzvP_j8I,156
+tjquant/client.py,sha256=YiQsfi-orSa7NmJ8NUZ0alyDWUQdwNBv-EtGwz68kkQ,20261
+tjquant/client_sqlite.py,sha256=qKANPPco9DBFt1r52UgAKYTVH3D4wEPCl0ERxrAUwaE,21015
+tjquant/smtp_163.py,sha256=WoCHcgcMabDJ3EicdUfgL8QkT9VDwq3-zI9uuBIhJBE,972
+tjquant/demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tjquant/demo/client_sqlite_demo.py,sha256=EkwqCsc_V4fqoO8RILxQNbNrF-2epscdntZNi0izWmc,959
+tjquant-1.1.0.dist-info/METADATA,sha256=brXIYvZQQBkSLkeeW0LuINRTWY6H7mhTVPR6bXzC9Ms,953
+tjquant-1.1.0.dist-info/RECORD,,
+tjquant-1.1.0.dist-info/WHEEL,sha256=oGGm_O4g839AJOrCbXq_ZxGrWdwSrjduga8Rn8cINEs,97
+tjquant-1.1.0.dist-info/top_level.txt,sha256=IY6KXgdETITc08ycfkn0ZiFzd_vuk0hzOVcAMpdtrPY,8

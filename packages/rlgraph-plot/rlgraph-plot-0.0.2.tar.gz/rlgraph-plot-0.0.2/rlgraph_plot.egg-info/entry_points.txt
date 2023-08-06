@@ -1,0 +1,3 @@
+[console_scripts]
+rlgraph-plot = rlgraph_plot.__main__:main
+

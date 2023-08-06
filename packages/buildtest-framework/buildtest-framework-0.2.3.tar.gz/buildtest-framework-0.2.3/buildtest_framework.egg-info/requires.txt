@@ -1,0 +1,7 @@
+argcomplete
+pyyaml
+buildtest-config==0.2.3
+Python-buildtest-config==0.2.3
+Perl-buildtest-config==0.2.3
+Ruby-buildtest-config==0.2.3
+R-buildtest-config==0.2.3

@@ -1,0 +1,8 @@
+typing
+pyyaml
+trio
+include
+
+[docs]
+sphinx
+sphinxcontrib-tikz

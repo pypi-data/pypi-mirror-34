@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: trinity
+Version: 0.1.0a12
+Summary: The Trinity Ethereum Client
+Home-page: https://github.com/ethereum/py-evm
+Author: Ethereum Foundation
+Author-email: piper@pipermerriam.com
+License: MIT
+Description: UNKNOWN
+Keywords: ethereum blockchain evm trinity
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6

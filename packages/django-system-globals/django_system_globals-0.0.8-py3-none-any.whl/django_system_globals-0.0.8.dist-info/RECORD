@@ -1,0 +1,12 @@
+django_system_globals-0.0.8.dist-info/METADATA,sha256=AX3AX11EapTuaU4AIvwVgBvw3qoHqFWkr7vpvH2nCZs,335
+django_system_globals-0.0.8.dist-info/RECORD,,
+django_system_globals-0.0.8.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_system_globals-0.0.8.dist-info/top_level.txt,sha256=x925nuNsCg0EMJG45eUKtSd_EGgscXa84lruO_DARXU,15
+system_globals/__init__.py,sha256=MPt27oYeZeED_hdeeqq9QOQ9-tUqHglW4llVuM4EXlo,98
+system_globals/admin.py,sha256=pzXM2QcQ8En7elN41ukEbpgOTkj9cOUO3cvjszZnA60,236
+system_globals/context_processors.py,sha256=QoDVniWiOL3ZQwt6ihqiL3ezulLju-Jho_j73HEp9L4,140
+system_globals/models.py,sha256=OdVnCjlNMdIvxPMpJguH_6xb7mzjNbCjeDwSw8zB10I,4672
+system_globals/tests.py,sha256=QhKcVmxxmwu_4K7kfPaIwGaWA0A3E2Qb5SbyelH4w8w,8206
+system_globals/views.py,sha256=F42JXgnqFqK0fajXeutyJJxwOszRxoLMNkIhfc4Z7KI,26
+system_globals/migrations/0001_initial.py,sha256=XuRmJFlPInDGIyg8CbrvxiXcAVkpar6mk1j0oMCL_6M,791
+system_globals/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

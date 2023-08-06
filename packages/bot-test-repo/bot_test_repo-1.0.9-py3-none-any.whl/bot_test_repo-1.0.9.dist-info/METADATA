@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: bot-test-repo
+Version: 1.0.9
+Summary: A small example package
+Home-page: https://github.com/kosciCZ/bot-test-repo
+Author: Jan Koscielniak
+Author-email: jkosciel@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Test
+
+

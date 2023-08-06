@@ -1,0 +1,4 @@
+pipenv
+boto3
+pystache
+botocore

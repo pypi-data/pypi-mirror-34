@@ -1,0 +1,9 @@
+simple_metrics/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+simple_metrics/cli.py,sha256=MyFjeWcZZxTmQnflvUmI677KpI8cU5jV7IcCW33xrUQ,2468
+simple_metrics/export.py,sha256=KFHchF3Qwv3Xb6VRuWrrgLIhmA7c1bjmXmBYGOfYtEE,3232
+simple_metrics/fetch.py,sha256=risOLNui7lCIkq9eucqfUB4kWKJhaN-ALzDwQH9S-2c,1551
+simple_metrics-0.1.7.dist-info/METADATA,sha256=v7SDEiBPgg_TJVox9bstyivNSZKRng1OzGpTaQlLem8,1729
+simple_metrics-0.1.7.dist-info/RECORD,,
+simple_metrics-0.1.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+simple_metrics-0.1.7.dist-info/entry_points.txt,sha256=Fr7uzUSilrHD9nihJuRXehHtNZXlgFVi35kY3xsff-0,65
+simple_metrics-0.1.7.dist-info/top_level.txt,sha256=9NuwXlN2OTHnPIh2hOAMkGUwl4qAQ83WwqFWEybmZts,15

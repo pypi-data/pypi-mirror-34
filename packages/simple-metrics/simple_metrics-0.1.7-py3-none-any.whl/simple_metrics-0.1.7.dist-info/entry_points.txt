@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        sm=simple_metrics.cli:cli
+    

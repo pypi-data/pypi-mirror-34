@@ -1,0 +1,6 @@
+attrs<19
+psycopg2<2.8
+click<7
+
+[django]
+django>=1.11

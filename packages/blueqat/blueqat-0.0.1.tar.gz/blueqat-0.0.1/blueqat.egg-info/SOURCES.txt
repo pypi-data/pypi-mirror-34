@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+test-requirements.txt
+blueqat/__init__.py
+blueqat/dependency.py
+blueqat/verify.py
+blueqat.egg-info/PKG-INFO
+blueqat.egg-info/SOURCES.txt
+blueqat.egg-info/dependency_links.txt
+blueqat.egg-info/top_level.txt

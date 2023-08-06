@@ -1,0 +1,11 @@
+consts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+consts/endpoint.py,sha256=zRqpf7BM9XMmqO2WJGKcIGHkUvhaUMmxKwOn1veUiYw,3515
+consts/host.py,sha256=AHuiw8AXJyawDZpNr-U3lTTKIKKTCfAoXd2ojp3jp7E,197
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/client_test.py,sha256=xdO3j9c-nJWVbOXmQPGh0P5cVPKCfy2V1AnV2YL-QXg,1032
+zuorapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zuorapy/client.py,sha256=IRl1NX_uPBvw7BHQm6a2anfBazRDogy3GIKKalCupOI,3046
+zuorapy-0.0.3.dist-info/METADATA,sha256=mVCmEFJ97WShX1EmrELTadeHFyLw24GPPrtVsvXKm3c,418
+zuorapy-0.0.3.dist-info/RECORD,,
+zuorapy-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+zuorapy-0.0.3.dist-info/top_level.txt,sha256=9cfe-e9uu58yXG9DIPsG4dr_g9IoXWt-Tn6sgOWqbXQ,20

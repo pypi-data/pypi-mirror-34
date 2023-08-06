@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+version.txt
+micral_utils/__init__.py
+micral_utils/micral_utils.py
+micral_utils.egg-info/PKG-INFO
+micral_utils.egg-info/SOURCES.txt
+micral_utils.egg-info/dependency_links.txt
+micral_utils.egg-info/not-zip-safe
+micral_utils.egg-info/requires.txt
+micral_utils.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+name: omp_hello.c
+source:  omp_hello.c
+buildopts: -O2 -fopenmp
+threadrange: 5,20,4

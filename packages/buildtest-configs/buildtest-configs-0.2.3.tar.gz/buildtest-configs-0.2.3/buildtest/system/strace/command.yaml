@@ -1,0 +1,3 @@
+binaries:
+- /usr/bin/strace ls
+- which /usr/bin/strace-log-merge

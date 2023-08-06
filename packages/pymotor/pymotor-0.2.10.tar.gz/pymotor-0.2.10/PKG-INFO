@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pymotor
+Version: 0.2.10
+Summary: Generates motion and force profiles.
+Home-page: https://github.com/rmrubin/pymotor
+Author: Randy Rubin
+Author-email: randymrubin@gmail.com
+License: UNKNOWN
+Description: # pymotor
+        
+        pymotor generates motion, force and torque profiles. Intended for use in motion control engineering projects using motors and linear actuators.
+        
+        ## Note: It's not done yet. Thanks!
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

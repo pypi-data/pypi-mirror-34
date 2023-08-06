@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: BAD
+Version: 1.2.1
+Summary: 安卓手机自动化测试驱动包.
+Home-page: https://my.oschina.net/hibony/blog
+Author: bony
+Author-email: boyne@foxmail.com
+License: MIT
+Description: 安卓自动化测试工具包
+        
+        pip install pillow
+        控件管理优化，控件树创建，父子控件管理
+        区域截图
+Keywords: test python package
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements-dev.txt
+setup.cfg
+setup.py
+statsdmetrics/__init__.py
+statsdmetrics/metrics.py
+statsdmetrics.egg-info/PKG-INFO
+statsdmetrics.egg-info/SOURCES.txt
+statsdmetrics.egg-info/dependency_links.txt
+statsdmetrics.egg-info/requires.txt
+statsdmetrics.egg-info/top_level.txt
+statsdmetrics.egg-info/zip-safe
+statsdmetrics/client/__init__.py
+statsdmetrics/client/tcp.py
+statsdmetrics/client/timing.py

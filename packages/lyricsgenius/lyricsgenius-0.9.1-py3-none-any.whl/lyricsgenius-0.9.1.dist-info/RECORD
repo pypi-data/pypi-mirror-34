@@ -1,0 +1,10 @@
+lyricsgenius/__init__.py,sha256=mqrgclaXh6O7f1M7jgr6Enp_i-4icpehzPxqsX2m6wU,410
+lyricsgenius/__main__.py,sha256=dDfnTp1cUcaHpW3TgCNCkeW7HlDfBIjepRfdHkZVy7g,1531
+lyricsgenius/api.py,sha256=ScGHguROjOqUx5Htx-jUjXZ3rY336OGrAWJwflqy1eg,14858
+lyricsgenius/artist.py,sha256=wZq_IHn4w3MRGzlwsmEnutVh8UgVtLKbWTchXUmMzYM,6378
+lyricsgenius/song.py,sha256=FeojEhRta_3mvHgJcEmcOr_p0xlO_HzKhd7IlTA1bI8,5299
+lyricsgenius-0.9.1.dist-info/METADATA,sha256=8aMWc2mQ5eNVNxyowMXgInERgolkgeELE2L1S_SqmB8,3974
+lyricsgenius-0.9.1.dist-info/RECORD,,
+lyricsgenius-0.9.1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+lyricsgenius-0.9.1.dist-info/entry_points.txt,sha256=QKiPmWSFmhAHEGIvt4Ux52RRp1cyl0tROiR9465prdU,61
+lyricsgenius-0.9.1.dist-info/top_level.txt,sha256=U_vOF6vGfjDG50pFDVHjWuNkjt6lupgoXmPZKKfN5R4,13

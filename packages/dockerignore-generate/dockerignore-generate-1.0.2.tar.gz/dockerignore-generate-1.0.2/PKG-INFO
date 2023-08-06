@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: dockerignore-generate
+Version: 1.0.2
+Summary: automatically generate dockerignore data
+Home-page: https://github.com/theden/dockerignore-generate
+Author: Denis Khshaba
+Author-email: deniskhoshaba@gmail.com
+License: GPL-2.0
+Description: dockerignore-generate
+        =====================
+        
+Keywords: docker,dockerignore,linux,containers
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python

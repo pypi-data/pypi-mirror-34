@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+splunk
+splunk.py
+splunklib.py
+splunklib.egg-info/PKG-INFO
+splunklib.egg-info/SOURCES.txt
+splunklib.egg-info/dependency_links.txt
+splunklib.egg-info/entry_points.txt
+splunklib.egg-info/requires.txt
+splunklib.egg-info/top_level.txt

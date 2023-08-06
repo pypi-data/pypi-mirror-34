@@ -1,0 +1,11 @@
+iutils/__init__.py,sha256=xAO99-pq_Pw2zEA0ha-2JR14RecSSFy3n80h8ukrpP8,39
+iutils/dict.py,sha256=5wgwSkfSck8es0lc_WqOZWj1W9_lADIFdpXOXoI25dY,711
+iutils/utils.py,sha256=wdyZQ-TuNqsBBakrnEgp5HglUayEMk55Xv1oG0IsBLc,1353
+iutils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iutils/tests/test_dict.py,sha256=MgGDQX6U1rWwNjqP17DqIo1AGkBic-7VtNPYoX3f5XI,2459
+iutils/tests/test_utils.py,sha256=H26FsHaJ9xI5CAFMFdydrsjYBcV-SldjoA2o4hUYWs8,999
+iutils-0.0.3.dist-info/LICENSE.txt,sha256=gBSCWuwdLPUSCdESEcrVsq_vhvxrOXlhu-6WbQPEkFE,1073
+iutils-0.0.3.dist-info/METADATA,sha256=KtnHNLPWLcB1ZXjK7ZU7Te8y87WErSbulYY77e_AbQc,866
+iutils-0.0.3.dist-info/RECORD,,
+iutils-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+iutils-0.0.3.dist-info/top_level.txt,sha256=lWOUiDCuUKob-glr4j_wrRsN24nWaYF5J7mHKZA2QHs,7

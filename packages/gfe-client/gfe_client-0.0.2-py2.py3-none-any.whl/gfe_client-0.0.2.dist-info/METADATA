@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gfe-client
+Version: 0.0.2
+Summary: Client for the Allele Calling Service
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: mhalagan@nmdp.org
+License: UNKNOWN
+Keywords: Swagger,Client Allele Calling Service
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+Requires-Dist: biopython
+
+The Allele Calling service provides an API for converting raw sequence data to GFE and HLA allele calls.
+
+

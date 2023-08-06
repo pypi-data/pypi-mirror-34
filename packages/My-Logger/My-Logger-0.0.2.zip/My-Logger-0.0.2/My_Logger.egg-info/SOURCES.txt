@@ -1,0 +1,8 @@
+README.rst
+setup.py
+My-Logger/__init__.py
+My-Logger/mylogger.py
+My_Logger.egg-info/PKG-INFO
+My_Logger.egg-info/SOURCES.txt
+My_Logger.egg-info/dependency_links.txt
+My_Logger.egg-info/top_level.txt

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: linuxcmd
+Version: 1.1.3
+Summary: A simple tool which extends useful linux based scripting functionalities.
+Home-page: https://github.com/Adityank003/linuxcmd
+Author: Aditya nk
+Author-email: adityank003@gmail.com
+License: UNKNOWN
+Description: This is a simple extension of some useful python scripts on linux as a package, developed in order to make things easier and faster.
+        
+        Requirements:
+        
+        Paramiko
+        
+        1. getcmd : 
+        	
+        	Description: To get the output of linux commands executed on remote servers easily and quickly.
+        	Arguments: 
+        		a. hostname(required): Supply the server name/Ip from which you need to command results.
+        		b. username(required): usernamre to login to the server.
+        		c. password(required): password corresponding to the username supplied. 
+        		d. cmds(required): Commands that need to be executed in the server. You can provide multiple commands to execute(a python list)
+        		e. filename(optional): If provided, appends the output of each command to filename supplied.
+        
+        
+        
+        2.portstatus:
+        
+        	Description: To get the status of the port in given host.
+        	Arguments:
+        		a. hostname(required): Supply the server name/Ip for which you need to scan the ports.
+        		b. port(required, 'integer'): ports that need to be scanned, a python list
+        
+        
+        For any suggestions, feedbacks or contribution please visit https://github.com/Adityank003/linuxcmd
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

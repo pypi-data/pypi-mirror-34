@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: guldlib
+Version: 0.1.1
+Summary: guld operations library
+Home-page: https://guld.io/
+Author: isysd
+Author-email: public@iramiller.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4

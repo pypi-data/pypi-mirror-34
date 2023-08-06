@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: portiapy
+Version: 0.1.1
+Summary: A small package for handling Agriness Edge rest API
+Home-page: https://github.com/agrinessedge/edge-playground
+Author: Matheus Mota
+Author-email: matheus@agrinessedge.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Example Package
+
+This is a package for handling Agriness Edge's REST API. 
+
+

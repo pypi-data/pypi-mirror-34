@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: django-uf-request
+Version: 0.6.0
+Summary: Request to UF values of Chile
+Home-page: https://github.com/alexperezortuno/django-uf-request
+Author: Alex Perez Ortuño
+Author-email: alexperezortuno@gmail.com
+License: MIT License
+Description: =====
+        Django UF Request
+        =====
+        
+        Django UF Request is a simple method to request UF values
+        
+        Quick start
+        -----------
+        
+        1. Add "django_uf_request" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'django_uf_request',
+            ]
+        
+        Example usage
+        -------------
+        
+        ```html
+        
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

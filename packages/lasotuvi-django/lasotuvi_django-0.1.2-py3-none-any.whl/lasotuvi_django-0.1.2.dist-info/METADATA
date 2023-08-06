@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lasotuvi-django
+Version: 0.1.2
+Summary: Chương trình an sao tử vi mã nguồn mở ket hop cung django
+Home-page: https://github.com/doanguyen/lasotuvi-django
+Author: doanguyen
+Author-email: dungnv2410@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Django (<=2.1)
+Requires-Dist: lasotuvi (==0.1.1)
+Requires-Dist: pytz (==2018.5)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: typed-ast (==1.1.0)
+
+UNKNOWN
+
+

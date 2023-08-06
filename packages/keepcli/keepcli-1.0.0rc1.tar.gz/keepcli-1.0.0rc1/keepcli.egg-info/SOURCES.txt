@@ -1,0 +1,11 @@
+setup.py
+bin/keepcli
+keepcli/__init__.py
+keepcli/kcliparser.py
+keepcli/keep.py
+keepcli/version.py
+keepcli.egg-info/PKG-INFO
+keepcli.egg-info/SOURCES.txt
+keepcli.egg-info/dependency_links.txt
+keepcli.egg-info/requires.txt
+keepcli.egg-info/top_level.txt

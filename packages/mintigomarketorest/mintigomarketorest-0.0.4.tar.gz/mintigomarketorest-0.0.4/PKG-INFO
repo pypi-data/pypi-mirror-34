@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: mintigomarketorest
+Version: 0.0.4
+Summary: Python Client for Mintigo for the Marketo REST API
+Home-page: https://bitbucket.org/mintigo/marketo-rest-python
+Author: Eliram Shatz
+Author-email: eliram@mintigo.com
+License: MIT License
+Description: 
+        Mintigo Marketo Python REST is a Python client that wraps the Marketo Rest API.
+        Originally developed by Eliram based on a package by asamat with contributions from sandipsinha
+        
+Keywords: Marketo,Mintigo,REST API,Wrapper,Client
+Platform: UNKNOWN

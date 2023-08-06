@@ -1,0 +1,70 @@
+Metadata-Version: 1.1
+Name: tblu_module_so
+Version: 0.1.3
+Summary: Module Python for SO informations
+Home-page: https://github.com/TBlu-Company/tblu_module_so
+Author: TBlu-Company
+Author-email: dev@tblu.com.br
+License: MIT license
+Description-Content-Type: UNKNOWN
+Description: ==============
+        TBlu Module SO
+        ==============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/tblu_module_so.svg
+                :target: https://pypi.python.org/pypi/tblu_module_so
+        
+        .. image:: https://img.shields.io/travis/TBlu-Company/tblu_module_so.svg
+                :target: https://travis-ci.org/TBlu-Company/tblu_module_so
+        
+        .. image:: https://readthedocs.org/projects/tblu-module-so/badge/?version=latest
+                :target: https://tblu-module-so.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Module Python for SO informations
+        
+        
+        * Free software: MIT license
+        * Documentation: https://tblu-module-so.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2018-07-30)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: tblu_module_so
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

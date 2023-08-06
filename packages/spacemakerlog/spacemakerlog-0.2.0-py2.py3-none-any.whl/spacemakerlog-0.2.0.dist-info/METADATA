@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: spacemakerlog
+Version: 0.2.0
+Summary: Structured logging for Spacemaker AI
+Home-page: https://github.com/spacemakerai/spacemaker-logging/python
+Author: Spacemaker AI
+Author-email: developers@spacemaker.ai
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: logging
+Requires-Dist: structlog
+Requires-Dist: python-json-logger
+
+# log
+
+Python library/client for structured log output
+
+```bash
+pip install spacemakerlog
+```
+
+```python
+from spacemakerlog import log
+
+log.debug("hello something happened", some_key="with some value", another_key=123.12)
+log.warn("hello something %s", "happened", some_key="with some value", another_key=123.12)
+```
+
+Set log format to "text":
+
+```python
+log.set_format("text");
+```
+
+Set log level to "info":
+
+```python
+log.set_level("info");
+```
+
+## Publish
+
+```bash
+brew install twine
+```
+
+```bash
+python setup.py bdist_wheel
+twine upload dist/*
+```
+
+

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+ai_tools/__init__.py
+ai_tools/draw.py
+ai_tools/save2server.py
+ai_tools.egg-info/PKG-INFO
+ai_tools.egg-info/SOURCES.txt
+ai_tools.egg-info/dependency_links.txt
+ai_tools.egg-info/entry_points.txt
+ai_tools.egg-info/requires.txt
+ai_tools.egg-info/top_level.txt
+data/datafile
+package/__init__.py

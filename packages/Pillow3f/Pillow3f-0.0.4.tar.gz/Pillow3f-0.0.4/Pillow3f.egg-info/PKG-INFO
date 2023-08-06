@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: Pillow3f
+Version: 0.0.4
+Summary: 3D graphics library using Pillow
+Home-page: UNKNOWN
+Author: Robert Bassett
+Author-email: bassett.w.robert@gmail.com
+License: UNKNOWN
+Description: You can find the current documentation at: https://gist.github.com/Robertobean/d54f96a858d4183ead1e8eb9c02b1264
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

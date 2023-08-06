@@ -1,0 +1,16 @@
+README.md
+setup.py
+pywebcopy/__init__.py
+pywebcopy/config.py
+pywebcopy/core.py
+pywebcopy/exceptions.py
+pywebcopy/generators.py
+pywebcopy/run_tests.py
+pywebcopy/structures.py
+pywebcopy/utils.py
+pywebcopy.egg-info/PKG-INFO
+pywebcopy.egg-info/SOURCES.txt
+pywebcopy.egg-info/dependency_links.txt
+pywebcopy.egg-info/not-zip-safe
+pywebcopy.egg-info/requires.txt
+pywebcopy.egg-info/top_level.txt

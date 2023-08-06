@@ -1,0 +1,11 @@
+README.md
+setup.py
+tinyhttp/__init__.py
+tinyhttp/__main__.py
+tinyhttp/tcp.py
+tinyhttp/tools.py
+tinyhttp.egg-info/PKG-INFO
+tinyhttp.egg-info/SOURCES.txt
+tinyhttp.egg-info/dependency_links.txt
+tinyhttp.egg-info/entry_points.txt
+tinyhttp.egg-info/top_level.txt

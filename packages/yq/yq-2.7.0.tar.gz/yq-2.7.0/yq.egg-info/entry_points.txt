@@ -1,0 +1,5 @@
+[console_scripts]
+tq = yq:tq_cli
+xq = yq:xq_cli
+yq = yq:main
+

@@ -1,0 +1,3 @@
+[console_scripts]
+lztools = lztools.console:main
+

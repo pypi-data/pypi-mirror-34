@@ -1,0 +1,7 @@
+setup.py
+make_var/__init__.py
+make_var/make_var.py
+make_var.egg-info/PKG-INFO
+make_var.egg-info/SOURCES.txt
+make_var.egg-info/dependency_links.txt
+make_var.egg-info/top_level.txt

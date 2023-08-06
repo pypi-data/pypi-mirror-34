@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: make_var
+Version: 0.1.0
+Summary: Retrieve all variables defined by make command
+Home-page: http://github.com/karnigen/make_var
+Author: Tony Karnigen
+Author-email: karnigen@gmail.com
+License: UNKNOWN
+Description: # Copyright 2013 Donald Stufft
+        
+        *** make_var ***
+        
+        Retrieve all variables defined by make command
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

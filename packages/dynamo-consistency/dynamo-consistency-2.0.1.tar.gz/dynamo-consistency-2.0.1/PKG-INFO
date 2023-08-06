@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: dynamo-consistency
+Version: 2.0.1
+Summary: Consistency plugin for Dynamo
+Home-page: https://github.com/SmartDataProjects/dynamo-consistency
+Author: Daniel Abercrombie
+Author-email: dabercro@mit.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.6, <3

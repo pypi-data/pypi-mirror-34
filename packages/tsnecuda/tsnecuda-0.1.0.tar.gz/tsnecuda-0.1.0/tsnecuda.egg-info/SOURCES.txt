@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+files.txt
+setup.py
+docs/FAQ.txt
+tsnecuda/NaiveTSNE.py
+tsnecuda/TSNE.py
+tsnecuda/__init__.py
+tsnecuda/libtsnecuda.so
+tsnecuda.egg-info/PKG-INFO
+tsnecuda.egg-info/SOURCES.txt
+tsnecuda.egg-info/dependency_links.txt
+tsnecuda.egg-info/requires.txt
+tsnecuda.egg-info/top_level.txt
+tsnecuda/test/__init__.py

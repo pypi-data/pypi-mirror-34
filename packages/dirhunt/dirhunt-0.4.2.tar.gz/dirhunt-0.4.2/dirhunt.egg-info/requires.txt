@@ -1,0 +1,8 @@
+beautifulsoup4
+requests
+click
+humanize
+colorama
+requests-mock
+futures;python_version<"3.0"
+py2-ipaddress;python_version<"3.0"

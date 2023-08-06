@@ -1,0 +1,14 @@
+netCDF4/__init__.py,sha256=DUZ8jlRTx_T9WpFlMAsI73fpv1xn_Eu9pXHYhEE63QQ,686
+netCDF4/_netCDF4.so,sha256=xBxxf_6sxThw16-34gWMaaOQcZ8sfhSAHfJ3ho2QyO8,2888696
+netCDF4/utils.py,sha256=LaqA7NzOrrowG13UV5NAJL0wqRcxHIQYTaobUOsFri0,35547
+netCDF4/.dylibs/libaec.0.dylib,sha256=EH5WuQHUvenbYl_G0SJJpnlIoLk6ON9oVAtVgbXRLxM,77024
+netCDF4/.dylibs/libcurl.4.dylib,sha256=GehJx26gyP_sU5ay1HwX57T54QnyVzsJpYf92g2WG4M,704468
+netCDF4/.dylibs/libhdf5.10.dylib,sha256=cexIg9rU7NlIS6kTIHxQcUfCLXgklJx2Blag1jtti5c,9297152
+netCDF4/.dylibs/libhdf5_hl.10.dylib,sha256=0mtvdpmkr2mhOnGlJHjBXe5JSSMaN9E6XAm3WXyrofY,316496
+netCDF4/.dylibs/libnetcdf.11.dylib,sha256=VgT4BPScI9iMgqhGPxCtHPf3GMs1-UZ88qt-HHwoxsc,3014968
+netCDF4/.dylibs/libsz.2.dylib,sha256=xpf0PN4faKR6D1ixxXO_ENQq0dYmSVBJ0DVCEmw3rCU,33876
+netCDF4-1.4.1.dist-info/entry_points.txt,sha256=SOaA1ioikuEHrv2NnxYU7BBVds5ZzBNOLWA5LN3p5Yk,117
+netCDF4-1.4.1.dist-info/METADATA,sha256=1JKpb9zbawJCaJzU46RAf13-UZXTHxmUgic-NcVdM68,1704
+netCDF4-1.4.1.dist-info/RECORD,,
+netCDF4-1.4.1.dist-info/top_level.txt,sha256=stYbJPcHWECrrFPwNt4TZ2dkAmjFzNd29Sc5T0FkJfs,8
+netCDF4-1.4.1.dist-info/WHEEL,sha256=yOzCCfRiMRvlU9RNkg7UD54pm7qjgWrjQoXgADE6Vzc,249

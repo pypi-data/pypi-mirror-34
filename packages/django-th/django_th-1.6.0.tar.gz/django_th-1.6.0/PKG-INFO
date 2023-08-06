@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django_th
+Version: 1.6.0
+Summary: The bus for your internet services
+Home-page: https://github.com/push-things/django-th
+Author: FoxMaSk
+Author-email: foxmask@trigger-happy.eu
+Maintainer: FoxMaSk
+Maintainer-email: foxmask@trigger-happy.eu
+License: UNKNOWN
+Download-URL: https://github.com/push-things/django-th/archive/trigger-happy-1.6.0.zip
+Description: take the control of your data with this bus between your internet services
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Database
+Provides-Extra: github
+Provides-Extra: all
+Provides-Extra: reddit
+Provides-Extra: twitter
+Provides-Extra: pocket
+Provides-Extra: min
+Provides-Extra: tumblr
+Provides-Extra: evernote
+Provides-Extra: taiga
+Provides-Extra: trello
+Provides-Extra: wallabag
+Provides-Extra: todoist
+Provides-Extra: pelican
+Provides-Extra: mastodon
+Provides-Extra: rss
+Provides-Extra: pushbullet

@@ -1,0 +1,6 @@
+clize>=3.0
+
+[test]
+pytest
+pytest-cov
+coverage

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-databasin
+Version: 0.3.1
+Summary: A client library for Data Basin (http://databasin.org)
+Home-page: https://github.com/consbio/python-databasin
+Author: Conservation Biology Institute
+Author-email: UNKNOWN
+License: BSD
+Keywords: data basin
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: requests
+Requires-Dist: restle
+
+UNKNOWN
+
+

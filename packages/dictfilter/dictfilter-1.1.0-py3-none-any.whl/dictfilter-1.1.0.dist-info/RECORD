@@ -1,0 +1,10 @@
+dictfilter/__init__.py,sha256=MwY6f6xqBlnjrRaC_ZBAlZyeNzpEPA3y6GjIT-IWyP8,42
+dictfilter/core.py,sha256=pFOPTlekPhiX9z71e8mFLkBbM-L1a2XTFdIx3nacPd0,939
+dictfilter/django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dictfilter/django/middleware.py,sha256=SPIyG8TFG_f6Yp0O3AYFpzBjJArRkfTRDfPv2BXzLbY,729
+dictfilter-1.1.0.dist-info/METADATA,sha256=1nRXidYn9voOucZ_4KDtcbG9xscvyfNW5bd4Lpqvco0,1226
+dictfilter-1.1.0.dist-info/RECORD,,
+dictfilter-1.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dictfilter-1.1.0.dist-info/top_level.txt,sha256=cMQydEhSXQJcsbbNtZu4Ee-85GJCkipMylTeoIMvlUE,17
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_query.py,sha256=aLifhgYIXoiUz8qVuZa7gPGJoPvse7bd3a__erirqeY,5283

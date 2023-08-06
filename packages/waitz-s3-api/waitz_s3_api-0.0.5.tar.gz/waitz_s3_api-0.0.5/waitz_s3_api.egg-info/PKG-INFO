@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: waitz-s3-api
+Version: 0.0.5
+Summary: API created by Waitz that provides useful functionality to read and write from AWS S3.
+Home-page: https://github.com/Waitz-Inc/waitz_s3_api
+Author: Daniel Fritsch
+Author-email: dfritsch99@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

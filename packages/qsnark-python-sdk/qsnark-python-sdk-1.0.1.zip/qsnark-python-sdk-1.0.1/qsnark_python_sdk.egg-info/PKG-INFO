@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: qsnark-python-sdk
+Version: 1.0.1
+Summary: Qsnark SDK for Python
+Home-page: https://github.com/hyperchaincn/qsnark-python-sdk
+Author: hyperchaincn
+Author-email: support.dev@hyperchain.cn
+License: MIT License
+Description: Document see https://github.com/hyperchaincn/qsnark-python-sdk
+Keywords: Qsnark,SDK
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.*

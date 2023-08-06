@@ -1,0 +1,10 @@
+#################################################
+# MANIFEST.in 表示打包时不会被自动包含进去的附加文件清单
+#################################################
+
+
+# Include the README
+include *.md
+
+# Include the license file
+include LICENSE

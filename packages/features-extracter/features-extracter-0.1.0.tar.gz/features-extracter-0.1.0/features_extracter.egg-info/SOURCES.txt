@@ -1,0 +1,12 @@
+README.md
+setup.py
+extracter/__init__.py
+extracter/ig/__init__.py
+extracter/ig/information_gain.py
+extracter/tfidf/__init__.py
+extracter/tfidf/tfidf.py
+features_extracter.egg-info/PKG-INFO
+features_extracter.egg-info/SOURCES.txt
+features_extracter.egg-info/dependency_links.txt
+features_extracter.egg-info/requires.txt
+features_extracter.egg-info/top_level.txt

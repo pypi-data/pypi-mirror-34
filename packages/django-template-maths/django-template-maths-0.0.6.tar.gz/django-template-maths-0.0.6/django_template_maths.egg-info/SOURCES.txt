@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_template_maths.egg-info/PKG-INFO
+django_template_maths.egg-info/SOURCES.txt
+django_template_maths.egg-info/dependency_links.txt
+django_template_maths.egg-info/top_level.txt
+templatetags/__init__.py
+templatetags/django_template_maths.py

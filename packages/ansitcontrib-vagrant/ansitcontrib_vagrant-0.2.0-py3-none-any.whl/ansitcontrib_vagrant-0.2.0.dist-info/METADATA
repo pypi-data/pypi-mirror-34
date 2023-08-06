@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ansitcontrib-vagrant
+Version: 0.2.0
+Summary: Vagrant provider for Ansit
+Home-page: https://github.com/Jakski/ansitcontrib-vagrant
+Author: Jakub Pieńkowski
+Author-email: jakski@sealcode.org
+License: MIT
+Platform: linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: paramiko
+
+UNKNOWN
+
+

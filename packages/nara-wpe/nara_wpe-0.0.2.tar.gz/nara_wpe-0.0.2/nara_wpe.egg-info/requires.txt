@@ -1,0 +1,11 @@
+numpy
+tqdm
+soundfile
+bottleneck
+click
+
+[dev]
+check-manifest
+
+[test]
+coverage

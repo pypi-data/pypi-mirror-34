@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: voice-robotifier
+Version: 1.0
+Summary: Turns your voice into text-to-speech!
+Home-page: https://github.com/reidbhuntley/voice_robotifier
+Author: Reid Huntley
+Author-email: reidbhuntley@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: SpeechRecognition (>=3.8.1)
+Requires-Dist: keyboard (>=0.13.2)
+Requires-Dist: PyAudio (>=0.2.11)
+Requires-Dist: comtypes
+
+UNKNOWN
+
+

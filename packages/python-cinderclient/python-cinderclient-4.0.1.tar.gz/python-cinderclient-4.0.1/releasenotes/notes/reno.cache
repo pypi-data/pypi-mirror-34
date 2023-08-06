@@ -1,0 +1,87 @@
+---
+file-contents:
+  releasenotes/notes/attachment-mode-8427aa6a2fa26e70.yaml:
+    features: ['Added the ability to specify the read-write or read-only mode of an
+
+        attachment starting with microversion 3.54. The command line usage is
+
+        `cinder attachment-create --mode [rw|ro]`.
+
+        ']
+  releasenotes/notes/feature-cross-az-backups-9d428ad4dfc552e1.yaml:
+    features: ['Support cross AZ backup creation specifying desired backup service
+        AZ
+
+        (added in microversion v3.51)
+
+        ']
+  releasenotes/notes/remove-deprecations-621919062f867015.yaml:
+    upgrade: ["The following CLI options were deprecated for one or more releases\
+        \ and have\nnow been removed:\n\n``--endpoint-type``\n  This option has been\
+        \ replaced by ``--os-endpoint-type``.\n\n``--bypass-url``\n  This option has\
+        \ been replaced by ``--os-endpoint``.\n\n``--os-auth-system``\n  This option\
+        \ has been replaced by ``--os-auth-type``.\n"]
+  releasenotes/notes/remove-replv1-cabf2194edb9d963.yaml:
+    upgrade: ['The volume creation argument ``--source-replica`` on the command line
+        and
+
+        the ``source_replica`` kwarg for the ``create()`` call when using the
+
+        cinderclient library were for the replication v1 support that was removed
+
+        in the Mitaka release. These options have now been removed.
+
+        ']
+  releasenotes/notes/support-filter-type-7yt69ub7ccbf7419.yaml:
+    features: ['New command option ``--filters`` is added to ``type-list`` command
+        to support filter types since 3.52, and it''s only valid for administrator.']
+  releasenotes/notes/transfer-snapshots-555c61477835bcf7.yaml:
+    features: ['Starting with microversion 3.55, the volume transfer command now has
+        the
+
+        ability to exclude a volume''s snapshots when transferring a volume to another
+
+        project. The new command format is `cinder transfer-create --no-snapshots`.
+
+        ']
+  releasenotes/notes/volume-transfer-bug-23c760efb9f98a4d.yaml:
+    fixes: ['An issue was discovered with the way API microversions were handled for
+        the
+
+        new volume-transfer with snapshot handling with microversion 3.55. This
+
+        release includes a fix to keep backwards compatibility with earlier
+
+        releases. See `bug #1784703
+
+        <https://bugs.launchpad.net/cinder/+bug/1784703>`_ for more details.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/volume-transfer-bug-23c760efb9f98a4d.yaml
+    - !!binary |
+      NDYwMjI5YzYwOTk3MTlkZWMwZDAyN2Y3OThmOWM3NTFiOGVjN2U0NA==
+  version: 4.0.1
+- files:
+  - - releasenotes/notes/attachment-mode-8427aa6a2fa26e70.yaml
+    - !!binary |
+      ODI2YzVmYzE2ZDZmNTcyY2Y1NDRlM2YwYTkxMzMwYmY5MjcwMWM2OQ==
+  - - releasenotes/notes/remove-deprecations-621919062f867015.yaml
+    - !!binary |
+      YTMzMWYwNmRmMDE1OGZmZjI4MTYyZWFiYzc2NWYxNjQ4NTVhZmNlZQ==
+  - - releasenotes/notes/remove-replv1-cabf2194edb9d963.yaml
+    - !!binary |
+      MzIyNTFmMGVhMzg2MzA5OGI0ZDRkNTQzNjRjOGVlMThmZjE3MGE0NA==
+  - - releasenotes/notes/transfer-snapshots-555c61477835bcf7.yaml
+    - !!binary |
+      YTU1NGZhYTY1MzBmYTBiYjcwNDMwNTcyODY5YTZhMjU1NTc4MzkxMg==
+  version: 4.0.0
+- files:
+  - - releasenotes/notes/feature-cross-az-backups-9d428ad4dfc552e1.yaml
+    - !!binary |
+      MmM3NzRjYzAxNWNiNjYyNGZlMzc4MjNiNTg2ODY0YzYzNTI1YzM3OQ==
+  - - releasenotes/notes/support-filter-type-7yt69ub7ccbf7419.yaml
+    - !!binary |
+      NWExNTEzMjQ0Y2FmN2FjYmQ0MWUxODE0MTliYzhiNjJiZjRiY2FiYQ==
+  version: 3.6.0

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cos-aspera
+Version: 0.1.162892
+Summary: Interface to Aspera for ICOS
+Home-page: https://asperasoft.com
+Author: Aspera SWD
+Author-email: aspera-release@ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+This is the readme for the COS Aspera Faspmanager2 SDK.
+There is no further readme information at this time.
+
+

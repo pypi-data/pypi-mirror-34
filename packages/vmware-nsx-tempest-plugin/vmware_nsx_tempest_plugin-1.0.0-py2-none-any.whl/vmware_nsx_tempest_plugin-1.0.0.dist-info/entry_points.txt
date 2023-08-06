@@ -1,0 +1,3 @@
+[tempest.test_plugins]
+vmware-nsx-tempest-plugin = vmware_nsx_tempest_plugin.plugin:VmwareNsxTempestPlugin
+

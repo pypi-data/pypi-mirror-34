@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: epltoolset
+Version: 0.2.9
+Summary: Simplify Oracle ETL scripts
+Home-page: http://github.com.robertpranney/epltoolset
+Author: Robert Ranney
+Author-email: robertpranney@gmail.com
+License: UNKNOWN
+Description: # EPL Toolset
+        
+        A package to make oracle-python ETL script development easier.
+        
+        ```shell
+        manage-oracle-creds
+        ```
+        
+        ```python
+        from epltoolset import Credentials, PdConnection
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

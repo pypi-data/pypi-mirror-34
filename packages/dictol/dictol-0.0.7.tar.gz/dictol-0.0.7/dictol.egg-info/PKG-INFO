@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: dictol
+Version: 0.0.7
+Summary: A dictionary learning package for classification
+Home-page: https://github.com/tiepvupsu/dictol_python
+Author: Tiep Vu
+Author-email: vuhuutiep@gmail.com
+License: UNKNOWN
+Description: DICTOL - A Discriminative dictionary Learning Toolbox for Classification (Python 2.7 version).
+        ==============================================================================================
+        
+        *This repo is a part of our `LRSDL
+        project <http://signal.ee.psu.edu/lrsdl.html>`__.*
+        
+        **Related publications:**
+        
+        1. Tiep H. Vu, Vishal Monga. “Learning a low-rank shared dictionary for
+           object classification.” *International Conference on Image Processing
+           (ICIP)* 2016. `[paper] <http://arxiv.org/abs/1602.00310>`__.
+        
+        2. Tiep H. Vu, Vishal Monga. “Fast Low-rank Shared Dictionary Learning
+           for Image Classification.” *IEEE Transactions on Image Processing*
+           26.11(2017):5160-5175
+           `[paper] <https://arxiv.org/pdf/1610.08606.pdf>`__.
+        
+        **Author: `Tiep Vu <http://www.personal.psu.edu/thv102/>`__**
+        
+        *This repository contains the following methods: SRC, ODL, DLSI, FDDL,
+        COPAR, LRSDL*
+        
+        If you experience any bugs, please let me know via the
+        `**Issues** <https://github.com/tiepvupsu/DICTOL_python/issues>`__ tab.
+        I’d really appreciate and fix the error ASAP. Thank you.
+        
+        For more information, please see its corresponding `**MATLAB
+        version** <https://github.com/tiepvupsu/DICTOL>`__.
+        
+        Packages required
+        =================
+        
+        1. numpy
+        2. scipy
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install dictol
+        
+        Demo
+        ====
+        
+        ::
+        
+            import dictol
+            dictol.demo()
+        
+        Contact information
+        ===================
+        
+        ::
+        
+            Tiep Vu: 
+                + vuhuutiep@gmail.com 
+                + http://www.personal.psu.edu/thv102/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

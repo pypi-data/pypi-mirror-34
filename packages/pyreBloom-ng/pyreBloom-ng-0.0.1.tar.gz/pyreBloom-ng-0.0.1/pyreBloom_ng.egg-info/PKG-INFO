@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: pyreBloom-ng
+Version: 0.0.1
+Summary: Python library which implements a Redis-backed Bloom filter.
+Home-page: https://github.com/leovp/pyreBloom-ng
+Author: Leonid Runyshkin
+Author-email: runyshkin@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: bloom filter redis
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

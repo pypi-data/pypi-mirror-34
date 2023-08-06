@@ -1,0 +1,8 @@
+README.rst
+setup.py
+cache_magic/__init__.py
+cache_magic.egg-info/PKG-INFO
+cache_magic.egg-info/SOURCES.txt
+cache_magic.egg-info/dependency_links.txt
+cache_magic.egg-info/requires.txt
+cache_magic.egg-info/top_level.txt

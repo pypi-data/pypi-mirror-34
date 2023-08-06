@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pytest-flask-sqlalchemy-transactions
+Version: 1.0.2
+Summary: Run tests in transactions using pytest, Flask, and SQLalchemy.
+Home-page: https://github.com/jeancochrane/pytest-flask-sqlalchemy-transactions
+Author: Jean Cochrane
+Author-email: jean@jeancochrane.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Requires-Dist: pytest (>=3.2.1)
+Requires-Dist: pytest-mock (>=1.6.2)
+Requires-Dist: SQLAlchemy (>=1.2.2)
+Requires-Dist: Flask-SQLAlchemy (>=2.3)
+Provides-Extra: tests
+Requires-Dist: pytest-postgresql; extra == 'tests'
+
+# This package has moved!
+
+This plugin has been renamed to
+[pytest-flask-sqlalchemy](https://pypi.org/project/pytest-flask-sqlalchemy/).
+Please install that package instead, as no future updates will be made to this
+version of the package.
+
+This page will remain up until September 1st, 2018, at which point the package will be
+officially deprecated in favor of pytest-flask-sqlalchemy.
+
+

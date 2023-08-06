@@ -1,0 +1,4 @@
+logbook~=1.4
+
+[dev]
+pylint==1.6.5

@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: tru
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Troy Retter
+Author-email: troyretter@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: PyYAML
+Requires-Dist: pandas
+
+UNKNOWN
+
+

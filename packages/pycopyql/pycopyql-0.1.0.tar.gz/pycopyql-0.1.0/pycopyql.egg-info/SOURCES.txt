@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pycopyql/__init__.py
+pycopyql/args.py
+pycopyql/cli.py
+pycopyql/config.py
+pycopyql/export.py
+pycopyql/query.py
+pycopyql.egg-info/PKG-INFO
+pycopyql.egg-info/SOURCES.txt
+pycopyql.egg-info/dependency_links.txt
+pycopyql.egg-info/entry_points.txt
+pycopyql.egg-info/requires.txt
+pycopyql.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+txffp = txffpAssistant.cli:main
+

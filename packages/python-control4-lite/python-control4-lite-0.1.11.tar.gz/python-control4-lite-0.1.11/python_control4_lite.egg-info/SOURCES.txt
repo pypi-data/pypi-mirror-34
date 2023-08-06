@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+control4/__init__.py
+control4/control4.py
+python_control4_lite.egg-info/PKG-INFO
+python_control4_lite.egg-info/SOURCES.txt
+python_control4_lite.egg-info/dependency_links.txt
+python_control4_lite.egg-info/requires.txt
+python_control4_lite.egg-info/top_level.txt

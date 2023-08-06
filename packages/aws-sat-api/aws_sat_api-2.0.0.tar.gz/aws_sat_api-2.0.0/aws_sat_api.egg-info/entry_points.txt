@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        awssat=aws_sat_api.scripts.cli:awssat
+      

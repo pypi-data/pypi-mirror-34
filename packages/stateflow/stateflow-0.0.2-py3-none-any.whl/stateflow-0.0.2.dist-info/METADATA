@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: stateflow
+Version: 0.0.2
+Summary: A state-propagation framework.
+Home-page: https://github.com/peper0/stateflow
+Author: Tomasz Łakota
+Author-email: tomasz@lakota.pl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# stateflow
+
+Documentation
+-------------
+
+- https://stateflow.readthedocs.io/en/latest/
+
+
+Installation
+------------
+
+Install stateflow by running:
+
+    pip install stateflow
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/peper0/stateflow/issues
+- Source Code: https://github.com/peper0/stateflow
+
+License
+-------
+
+The project is licensed under the MIT license.
+

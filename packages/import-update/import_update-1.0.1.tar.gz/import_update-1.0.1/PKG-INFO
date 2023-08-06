@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: import_update
+Version: 1.0.1
+Summary: A small module to support automation of generating valid python variable names from external data.
+Home-page: https://github.com/yehonadav/import_update
+Author: Yehonadav Bar Elan
+Author-email: yonadav.barilan@gmail.com
+Maintainer: Yehonadav
+Maintainer-email: yonadav.barilan@gmail.com
+License: Apache Software
+Description: # import_update
+        automatically update your pkg imports.
+        
+        # simple usage
+        from os.path import dirname
+        from import_update import update_imports_recursively
+        
+        update_imports_recursively(dirname(__file__))
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dotenv
+Provides-Extra: dev

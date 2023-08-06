@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+Makefile
+README.rst
+setup.cfg
+setup.py
+tox.ini
+import_update/__init__.py
+import_update.egg-info/PKG-INFO
+import_update.egg-info/SOURCES.txt
+import_update.egg-info/dependency_links.txt
+import_update.egg-info/entry_points.txt
+import_update.egg-info/not-zip-safe
+import_update.egg-info/requires.txt
+import_update.egg-info/top_level.txt

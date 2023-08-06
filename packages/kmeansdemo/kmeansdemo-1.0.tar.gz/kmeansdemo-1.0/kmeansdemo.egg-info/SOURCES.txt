@@ -1,0 +1,11 @@
+README.txt
+demo.py
+setup.py
+kmeansdemo.egg-info/PKG-INFO
+kmeansdemo.egg-info/SOURCES.txt
+kmeansdemo.egg-info/dependency_links.txt
+kmeansdemo.egg-info/entry_points.txt
+kmeansdemo.egg-info/requires.txt
+kmeansdemo.egg-info/top_level.txt
+myPackage/__init__.py
+myPackage/demo.py

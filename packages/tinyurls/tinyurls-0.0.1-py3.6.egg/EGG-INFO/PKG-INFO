@@ -1,0 +1,133 @@
+Metadata-Version: 1.1
+Name: tinyurls
+Version: 0.0.1
+Summary: URL shortening service to be used in a microservices environment.
+Home-page: https://github.com/rangertaha/tinyurl
+Author: rangertaha
+Author-email: rangertaha@gmail.com
+License: MIT
+Description: # tinyurls
+        
+        URL shortening service to be used in a microservices environment.
+        
+        
+        ## Installation
+        Use virtual environment
+        ```bash
+        virtualenv env
+        source env/bin/activate
+        
+        ```
+        Change into tinyurls directory and install
+        ```
+        cd tinyurls
+        python setup.py install 
+        
+        ```
+        
+        ## Execute
+        ```bash
+        
+        
+        ```
+        
+        ## TODO
+        
+        
+        ## Development
+        
+        Use virtual environment
+        ```bash
+        virtualenv env
+        source env/bin/activate
+        
+        ```
+        
+        ```bash
+        pip install -r requirements.txt 
+        ```
+        
+        ```bash
+        
+        ```
+        
+        pip install -r requirements.txt
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        ## Dev Notes
+        
+        I am most familiar with Django, however Django is heavy so I choose
+        Tornado for its speed. Honestly, since its a microservice and simple. Golang
+         is the way. Below are the features I am going to try to focus on.
+        
+        I am building this service to work in a microservices architecture. See
+        http://microservices.io for details. However, I am not implementing *service
+        discovery*, *tracing* and a few other things. I am hoping to run this service
+        in a Kubernetes environment where I can take advantage of it's features
+        rather then build it into this service.
+        
+        
+        
+        * Packaging: I would like to make this a package installable with `pip
+        install tinyurl`
+        
+        * Docker: I would like to have this available as a docker image.
+        
+        * Database: Initially I started using the Django ORM. However, I did not think
+          it was a good fit so I moved to SQLAlchemy. I am new to SQLAlchemy and have
+          only used it once about 5 years ago. I am not simply connecting to the
+          sqlite3 database with its connector because i want support for multiple
+          backend databases. Ideally I would update it to support an external
+          database such as PostgreSQL,
+        
+        * Logging: Ideally, I would like to log to a Fluentd service.
+        
+        * Instrumentation: I normally use Prometheus with Grafana for metrics and
+        alerting
+        
+        * PEP8: Lets not forget to check for issues
+        
+        * Tests: Lets try to make some tests.
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy

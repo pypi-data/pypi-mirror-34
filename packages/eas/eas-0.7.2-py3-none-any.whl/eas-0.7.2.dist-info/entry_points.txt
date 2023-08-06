@@ -1,0 +1,4 @@
+[console_scripts]
+eas = eas.__main__:main
+encrypt-and-sync = eas.__main__:main
+

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: immutable-collection
+Version: 1.1.post2
+Summary: Library for making an immutable collection from a dictionary
+Home-page: http://github.com/djtaylor/python-immutable-collection
+Author: David Taylor
+Author-email: djtaylor13@gmail.com
+License: GPLv3
+Keywords: tuple immutable collection dictionary dict
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Terminals
+
+# Immutable Collection
+
+This is a very basic module for providing a means to convert a dictionary to an immutable object. This is mainly for runtime configurations where the values of the collection should not change.
+
+

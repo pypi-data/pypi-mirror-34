@@ -1,0 +1,14 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.md
+edt.cpp
+setup.cfg
+setup.py
+edt.egg-info/PKG-INFO
+edt.egg-info/SOURCES.txt
+edt.egg-info/dependency_links.txt
+edt.egg-info/not-zip-safe
+edt.egg-info/pbr.json
+edt.egg-info/requires.txt
+edt.egg-info/top_level.txt

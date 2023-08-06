@@ -1,0 +1,10 @@
+TFBS_footprinting-1.0.0b36.dist-info/DESCRIPTION.rst,sha256=POf-GTKZeaG7ZMpiV30_lklS8Y0WQAFXT1DTxJPt-Iw,17103
+TFBS_footprinting-1.0.0b36.dist-info/METADATA,sha256=BFeJ_xyVHkmkobL4TG1dWuvOAK1QD7J3_iNqKGtA3HA,17951
+TFBS_footprinting-1.0.0b36.dist-info/RECORD,,
+TFBS_footprinting-1.0.0b36.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+TFBS_footprinting-1.0.0b36.dist-info/entry_points.txt,sha256=ZYJHJSOJGLN2accyrq2tNs3n3ZXJZW9bzrJf3oZvAaQ,77
+TFBS_footprinting-1.0.0b36.dist-info/metadata.json,sha256=wP81eOUZqJ827BAl8bD1_FF5SWHOwUC7XyYqXX62_7A,1183
+TFBS_footprinting-1.0.0b36.dist-info/top_level.txt,sha256=7j7A1cAVDr3F-mfkhaRDW7cXeRzfGreKcQ_oRGndsdE,17
+tfbs_footprinter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfbs_footprinter/__main__.py,sha256=5x7HshXX2VLn6L9jFJNRJMH3szKFzpuudIdpChliAkk,171
+tfbs_footprinter/tfbs_footprinter.py,sha256=nx5Uchyz5VHSlcBsz8hGYCsK5T_mPo1HivBA-vJBHzI,109771

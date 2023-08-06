@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pygeom
+Version: 0.0.1
+Summary: Basic Vector Geometry Package for Python
+Home-page: https://github.com/Xero64/pygeom
+Author: Xero64
+Author-email: xero64@gmail.com
+License: UNKNOWN
+Description: # pygeom
+        Basic Vector Geometry Package for Python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

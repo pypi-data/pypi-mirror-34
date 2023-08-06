@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gamechain
+Version: 0.0.2.8
+Summary: Protocol for playing, recording, and watching games on the BCH blockchain
+Home-page: https://github.com/devalbo/gamechain
+Author: Albert Boehmler
+Author-email: ajboehmler@gmail.com
+License: UNKNOWN
+Description: # gamechain-py
+        This library is a Python implementation of the GameChainLobby and GameChain multi-player, Bitcoin Cash (BCH) blockchain-based multi-player game matching and participation framework.
+        
+        GameChainLobby and GameChain protocol specifications [are available here](https://github.com/devalbo/gamechain-specs).
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

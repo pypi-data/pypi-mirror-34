@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sgmarkets_api_analytics_market_data
+Version: 0.1.1
+Summary: sgmarket api analytics market data helper
+Home-page: https://gitlab.com/sgmarkets/sgmarkets-api-analytics-market-data
+Author: sgmarkets
+Author-email: kevin.ferret@sgcib.com, olivier.borderies@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/sgmarkets/sgmarkets-api-analytics-market-data/repository/archive.tar.gz?ref=0.1.1
+Description: UNKNOWN
+Keywords: sgmarkets,api,market data
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

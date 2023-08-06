@@ -1,0 +1,1 @@
+**v2_instruments** endpoint returns all the available assets for a set of constraints.

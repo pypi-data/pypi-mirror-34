@@ -1,0 +1,1 @@
+**v2_snaphot_quotes** endpoint returns data for any dates. See the request info.

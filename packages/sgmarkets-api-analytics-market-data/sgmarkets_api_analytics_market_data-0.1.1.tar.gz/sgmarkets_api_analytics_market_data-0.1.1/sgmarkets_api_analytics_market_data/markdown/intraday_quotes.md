@@ -1,0 +1,1 @@
+**v2_intraday_quotes** endpoint returns intraday data. See request info.

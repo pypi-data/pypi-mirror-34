@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: torchzoo
+Version: 0.2
+Summary: Various Implementations of neural models defined in papers
+Home-page: http://gitlab.com/theSage21/torchzoo
+Author: Arjoonn Sharma
+Author-email: arjoonn.94@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: torchzoo,pytorch,paper implementation
+Platform: UNKNOWN

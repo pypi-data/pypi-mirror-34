@@ -1,0 +1,10 @@
+README.md
+setup.py
+torchzoo/__init__.py
+torchzoo/rnn.py
+torchzoo/simple.py
+torchzoo.egg-info/PKG-INFO
+torchzoo.egg-info/SOURCES.txt
+torchzoo.egg-info/dependency_links.txt
+torchzoo.egg-info/not-zip-safe
+torchzoo.egg-info/top_level.txt

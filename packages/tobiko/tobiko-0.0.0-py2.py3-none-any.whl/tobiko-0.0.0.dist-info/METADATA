@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tobiko
+Version: 0.0.0
+Summary: OpenStack Testing Upgrades Library
+Home-page: UNKNOWN
+Author: OpenStack
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: setup
+
+======
+Tobiko
+======
+
+Tempest plugin for testing upgrades
+
+* Free software: Apache license
+* Source: https://git.openstack.org/cgit/openstack/tobiko
+* Bugs: https://bugs.launchpad.net/tobiko
+
+
+

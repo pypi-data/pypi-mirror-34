@@ -1,0 +1,6 @@
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-30T20:12:37.4267379Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-custom-41, Commit a377982
+ PID 7640, 64 bits, 4 Cores, Arch: X64
+ 15.958 GBytes Physical Memory, 9.888 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+2018-07-30T20:12:46.0997061Z, 1, Operations, Server, Raven.Server.Program, Server has shut down

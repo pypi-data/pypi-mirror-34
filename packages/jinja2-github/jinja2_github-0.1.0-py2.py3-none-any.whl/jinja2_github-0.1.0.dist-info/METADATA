@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jinja2_github
+Version: 0.1.0
+Summary: Jinja2 Extension for rendering GitHub project properties
+Home-page: https://github.com/jcfr/jinja2-github
+License: UNKNOWN
+Author: Jean-Christophe Fillion-Robin
+Author-email: jchris.fillionr@kitware.com
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Dist: pygithub
+Requires-Dist: jinja2

@@ -1,0 +1,16 @@
+duden/__init__.py,sha256=ph_s0_18FuFYJljn5nAbO7LqIKQpIvqo7tiCJp5M2DA,659
+duden/common.py,sha256=yBs4iR0BMYuG73eOlp0Ju3SOQJrd-f6biH11gESmKo8,2425
+duden/main.py,sha256=fxl_U0JxfKIH4d0NLbl_dlsPGAJVhaIYvcXBB2jI6wQ,20133
+duden/locale/build.sh,sha256=hg1ewIMOf4xlTu27CH3n8nG5wbKRknjIVgjZGYuYYV0,241
+duden/locale/de_DE.po,sha256=dlEEhz53W5KfnAX0NjtbFriFdBEcuxgjfAZL3cdq_9g,3023
+duden/locale/duden.pot,sha256=oTAa45leqnyRSiLa3bbIm1T02vHYB8pfC13zmXM9bhU,2194
+duden/locale/es_ES.po,sha256=0_cBQzr95R_LVMnyS3rnjulcHwJ4vk9Wd_99M46ltRQ,3316
+duden/locale/de_DE/LC_MESSAGES/duden.mo,sha256=yBKi5GibbQsdMBu9zQEtnnTb12IqiVREv6oboMBPgRM,2454
+duden/locale/es_ES/LC_MESSAGES/duden.mo,sha256=si6rUXqCvTFellybS8k_r89vcMxNEwKi1bm6wVvzNk8,2884
+duden-0.11.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+duden-0.11.1.dist-info/METADATA,sha256=p3z7buVr7tKkqaB7Hw0DugwGhu0dR03cejs0IBpslCo,1040
+duden-0.11.1.dist-info/RECORD,,
+duden-0.11.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+duden-0.11.1.dist-info/entry_points.txt,sha256=WUvWAC5n-luInxUArmOMJ2Zg3gZVq0pQRhP0XvXLTEI,43
+duden-0.11.1.dist-info/metadata.json,sha256=BlScayuxiXs0wRx_YndMb9eXAoVFo6c8I4tAG9n-vQI,1299
+duden-0.11.1.dist-info/top_level.txt,sha256=VydyChe4S_iMOvO2EUL2Vdv7PKgz58gF3ubGHR__lHo,6

@@ -1,0 +1,1 @@
+/usr/bin/gcc  -funroll-loops -ffast-math -Wall -Wno-strict-aliasing  -fopenmp -O3 -DNDEBUG    -rdynamic CMakeFiles/example64.dir/test/example.o  -o example64  -L/opt/boost_1_64_0/lib  -L/usr/lib/x86_64-linux-gnu/libpython2.7.so -Wl,-rpath,/opt/boost_1_64_0/lib:/usr/lib/x86_64-linux-gnu/libpython2.7.so:/home/max/Schreibtisch/kratos_bcn2/external_libraries/zlib libz.so.1.2.11 

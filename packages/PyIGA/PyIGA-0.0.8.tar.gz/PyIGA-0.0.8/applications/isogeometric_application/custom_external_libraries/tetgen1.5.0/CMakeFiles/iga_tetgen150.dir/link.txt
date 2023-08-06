@@ -1,0 +1,2 @@
+/usr/bin/ar qc libiga_tetgen150.a  CMakeFiles/iga_tetgen150.dir/tetgen.cxx.o CMakeFiles/iga_tetgen150.dir/predicates.cxx.o
+/usr/bin/ranlib libiga_tetgen150.a

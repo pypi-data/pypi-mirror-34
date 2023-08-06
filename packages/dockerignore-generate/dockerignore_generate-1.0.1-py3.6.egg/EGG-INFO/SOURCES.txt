@@ -1,0 +1,8 @@
+README.rst
+dockerignore-generate
+setup.cfg
+setup.py
+dockerignore_generate.egg-info/PKG-INFO
+dockerignore_generate.egg-info/SOURCES.txt
+dockerignore_generate.egg-info/dependency_links.txt
+dockerignore_generate.egg-info/top_level.txt

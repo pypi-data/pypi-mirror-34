@@ -1,0 +1,67 @@
+Metadata-Version: 1.1
+Name: pyrddl
+Version: 0.1.0
+Summary: RDDL lexer/parser in Python3.
+Home-page: https://github.com/thiagopbueno/pyrddl
+Author: Thiago P. Bueno
+Author-email: thiago.pbueno@gmail.com
+License: GNU General Public License v3.0
+Description: # pyrddl [![Build Status](https://travis-ci.org/thiagopbueno/pyrddl.svg?branch=master)](https://travis-ci.org/thiagopbueno/pyrddl) [![License](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/thiagopbueno/tf-mdp/blob/master/LICENSE)
+        
+        RDDL lexer/parser in Python3.
+        
+        # Quickstart
+        
+        ```bash
+        $ pip3 install pyrddl
+        ```
+        
+        # Usage
+        
+        
+        ## Script mode
+        
+        The ``pyrddl`` script provides ways to parse and inspect RDDL files
+        from the command line.
+        
+        ```bash
+        $pyrddl --help
+        
+        usage: pyrddl [-h] [-v] rddl
+        
+        RDDL lexer/parser in Python3.
+        
+        positional arguments:
+          rddl           RDDL filepath
+        
+        optional arguments:
+          -h, --help     show this help message and exit
+          -v, --verbose  verbosity mode
+        ```
+        
+        ## Programmatic mode
+        
+        The ``pyrddl`` package provides an API for integrating RDDL parser
+        into your own Python package/project.
+        
+        ```python
+        from pyrddl import RDDLParser
+        
+        # buid parser
+        parser = RDDLParser()
+        parser.build()
+        
+        # parse RDDL
+        rddl = parser.parse(rddl)
+        ```
+        
+Keywords: rddl,parser,mdp,dbn
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence

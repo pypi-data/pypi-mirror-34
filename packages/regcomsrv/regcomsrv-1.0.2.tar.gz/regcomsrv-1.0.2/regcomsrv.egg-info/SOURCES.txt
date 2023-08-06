@@ -1,0 +1,11 @@
+README.rst
+setup.py
+regcomsrv/LICENSE
+regcomsrv/__init__.py
+regcomsrv/__main__.py
+regcomsrv.egg-info/PKG-INFO
+regcomsrv.egg-info/SOURCES.txt
+regcomsrv.egg-info/dependency_links.txt
+regcomsrv.egg-info/requires.txt
+regcomsrv.egg-info/top_level.txt
+regcomsrv.egg-info/zip-safe

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sepadd
+Version: 2.0.0
+Summary: Use python-sepaxml instead
+Home-page: https://github.com/raphaelm/python-sepaxml
+Author: Raphael Michel
+Author-email: mail@raphaelmichel.de
+License: MIT License
+Keywords: xml banking sepa
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: sepaxml (>=2.0.0)
+
+Use python-sepaxml instead
+
+

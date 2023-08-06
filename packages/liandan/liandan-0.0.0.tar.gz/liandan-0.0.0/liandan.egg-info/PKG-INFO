@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: liandan
+Version: 0.0.0
+Summary: A package for LIANDAN tools
+Home-page: https://github.com/anhenghuang/liandan
+Author: ahhuang
+Author-email: contact@huanganheng.com
+License: UNKNOWN
+Description: # LIANDAN
+        
+        A package for LIANDAN.
+        
+        LIANDAN = _{features generation, features selection, model generation, model selection}_
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

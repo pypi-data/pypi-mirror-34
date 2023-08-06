@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: listoapi
+Version: 0.1.1
+Summary: Listo SDK module for web API integration
+Home-page: https://github.com/listomx/bridges-common
+Author: Hugo Villegas <hugo.villegas@listo.mx>
+Author-email: hugo.villegas@listo.mx
+License: UNKNOWN
+Keywords: api listo listoapi sdk integration python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.19.1)
+Requires-Dist: pyopenssl (==17.5.0)
+
+Listo SDK module for web API integration
+===============================================
+
+* `Install`_
+
+Install
+-------
+
+``pip install listoapi``
+
+

@@ -1,0 +1,16 @@
+NL4Py-0.4.5.dist-info/DESCRIPTION.rst,sha256=RivJUoLnPqJzdWvRfpJ-3wDxmr4ENzG6JpIqw-uQ0xw,36
+NL4Py-0.4.5.dist-info/METADATA,sha256=m9eNmTVh0mATaU7g7RhaZ_2CnIX9r6rMWf-VkhFgFk4,585
+NL4Py-0.4.5.dist-info/RECORD,,
+NL4Py-0.4.5.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+NL4Py-0.4.5.dist-info/metadata.json,sha256=oASaRkueeY2b2HBXSyU7QUydWEr7zeXL10mtkjttljs,679
+NL4Py-0.4.5.dist-info/top_level.txt,sha256=IrmdJNgi8W5mf9MMe6a9FPnyVfQyOj-U_rZ2bRylh-o,6
+nl4py/NL4PyControllerServerException.py,sha256=7RdbBYzbjdE9EF-_1xYBO83zheUgxoraLF1dZzN6Y8E,915
+nl4py/NetLogoControllerServerStarter.py,sha256=vLdBlk2FvowXheLXfimAslAirWwtAF2pbSg31QVnjWs,3486
+nl4py/NetLogoGUI.py,sha256=trgUedV09-nprGgLYe8OWLAeiSshi4i0h5tYup75mjc,8348
+nl4py/NetLogoHeadlessWorkspace.py,sha256=CwtxV9fxKPYulbVL2cI-1tWXTFeiW0HD7_mSVr8tO9k,9051
+nl4py/NetLogoWorkspaceFactory.py,sha256=DbCqhyzDMK0lYvM2InnT2CwHCJKCz3tEVGCSjiyfewE,1899
+nl4py/__init__.py,sha256=1-Neky2FycOmF5TBOkGTpvOmt73NhZcep_V5BS1NLCg,3656
+nl4py/nl4pyServer/NetLogoControllerServer.jar,sha256=fHFmmB0zCW9j4vp5zZB1wOwJEMt7nvHccXPIr1ifq9A,25859
+nl4py/nl4pyServer/py4j0.10.6.jar,sha256=2lpvYGefQXdX3yamGCcsmRQ9WLs7rCTztuTYXrccWM4,115175
+nl4py/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nl4py/test/test_nl4py.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

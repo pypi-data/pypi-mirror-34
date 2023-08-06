@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tbev
+Version: 0.0.9
+Summary: Embedding Visualizer Using Tensorboard
+Home-page: https://github.com/Backalla/tbev
+Author: Tushar Pawar
+Author-email: gmail@tusharpawar.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Tensorboard Embedding Visualizer
+
+

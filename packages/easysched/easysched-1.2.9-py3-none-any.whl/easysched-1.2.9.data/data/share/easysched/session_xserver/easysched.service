@@ -1,0 +1,12 @@
+[Unit]
+Description=easysched startup script
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=esdd --config=share/example.cfg --log-level=INFO
+ExecStop=esdctrl system exit
+Type=simple
+Environment="DISPLAY=localhost:0"
+
+[Install]
+WantedBy=graphical.target

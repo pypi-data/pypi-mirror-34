@@ -1,0 +1,10 @@
+[Unit]
+Description=easysched startup script
+
+[Service]
+ExecStart=esdd --config=share/example.cfg --log-level=info
+ExecStop=esdctrl system exit
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: easysched
+Version: 1.2.9
+Summary: Lightweight framework to easily schedule multiple tasks.
+Home-page: UNKNOWN
+Author: Lars Klitzke
+Author-email: Lars@klitzke-web.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+
+#  easysched
+
+easysched is lightweight framework to easily schedule multiple tasks designed to be easily configurable by just a 
+configuration file using default python tools.
+
+With this framework you can call every type of executable, independent of the programming language, for instance 
+bash/perl scripts, C/C++ programs, Java... or any other executable. Additionally, you can define the priority of a Task, 
+which user should be the callee and if the Task should be run once or cyclic by defining the Task execution interval and 
+if the output of a process should be logged into a file.
+
+All of this is easily configurable with only one configuration file. The parse process is based on the configparser class 
+of python3.X with the extended interpolation feature and enriched with additional functionality to call tasks.
+
+## Installation
+
+You can find the latest version on [PyPi](https://pypi.org/project/easysched/). So simply use `pip` with
+
+    pip install easysched
+
+After installing `easysched` there is a file `easysched.service` in the `<venv>/share/` directory in order to set up 
+`easysched` as a user service. Just replace the sample configuration file with the one on your system and then run 
+
+    sudo systemctrl enable <venv>/share/easysched
+
+
+## Usage
+A sample simple configuration file  `example.cfg` can be found next to the service file with the following content:
+
+    [easysched]
+    Task-tag=Task:
+    tmp-dir=/tmp/
+    log-dir=${tmp-dir}
+
+    [Task:PrintDateEverySecond]
+    command=/bin/echo
+    parameters=$$(date +"%Y%m%d %H%M%S")
+    interval=1
+
+    [Task:PrintEveryFiveSeconds]
+    command=/bin/echo
+    parameters=$$(date +"%Y%m%d %H%M%S")
+    interval=5
+
+The section for general information is named easysched so that you can use this configuration 
+file for other scripts, too. You can define where to save log files with the `log-dir` and temporary file
+with the `tmp-dir` attribute.
+
+The `Task-tag` option in the easysched section is optional - by default the tag `Task:` is assumed 
+to be the section tag for defining tasks. Feel free to change this to your needs.
+
+For attributes defined in the config files ending with `-dir`, the directories will be created by easysched. You don't
+have to create them manually. 
+
+### Start easysched
+In order to run the easysched deamon with the example configuration given above, simply run 
+
+    esdd --config=venv/share/example.cfg
+
+
+### Control easysched tasks
+Now that easysched is running it waits for commands to start, pause, stop or terminate a `Task`. In order to send 
+easysched such commands, use the easysched control tool `esdctrl`.
+
+For instance, to start the task `PrintEveryFiveSeconds` in the example configuration, run the following command:
+
+    esdctrl task PrintEveryFiveSeconds start
+
+
+
+
+
+

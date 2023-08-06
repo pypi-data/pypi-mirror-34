@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+target_postgres/__init__.py
+target_postgres/db_sync.py
+target_postgres.egg-info/PKG-INFO
+target_postgres.egg-info/SOURCES.txt
+target_postgres.egg-info/dependency_links.txt
+target_postgres.egg-info/entry_points.txt
+target_postgres.egg-info/requires.txt
+target_postgres.egg-info/top_level.txt

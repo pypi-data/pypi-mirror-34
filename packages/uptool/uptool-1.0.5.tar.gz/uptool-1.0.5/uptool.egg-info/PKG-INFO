@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: uptool
+Version: 1.0.5
+Summary: The User Provisioning Tool (UP Tool) can add or remove users from multiple web services with desired permissions and notify new user. Useful when a service does not support single sign-on or the plan cost to get single sign-on is prohibitivly expensive
+Home-page: https://www.signiant.com
+Author: UNKNOWN
+Author-email: devops@signiant.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,11 @@
+antlr4-python3-runtime
+bottle
+click
+connexion==1.1.15
+flask-jwt-extended
+gitpython
+pygithub
+python-gitlab
+python_dateutil==2.6.0
+requests
+typing==3.5.2.2

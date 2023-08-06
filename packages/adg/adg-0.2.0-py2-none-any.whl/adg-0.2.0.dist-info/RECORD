@@ -1,0 +1,14 @@
+adg/__init__.py,sha256=V_2K23rUFaqQ79_CQ39rkvS209tMgtebwue_PLSS2Cw,154
+adg/bmbpt.py,sha256=lGD5QoO0mRhJQZfjuGredWXZJS-6UDPsdqYysgWo6qo,23287
+adg/diag.py,sha256=WdDsJl6UFv4RLDnbYIkrxTcuB3zkxTnAY6BrvIWHOfU,13278
+adg/main.py,sha256=cKdyHrMQYBTnoJfrUQuQdAdJN4-x7jQ5frL-tpljNSQ,2943
+adg/mbpt.py,sha256=BEMaa8N2f87pUMBXTmExb8jxJDLyO-QnToA_ZGouA4k,16326
+adg/run.py,sha256=Kld78uGaBYpe1hsUbtAFR2oXjQ4wxse9pojtJUjcrfo,14979
+adg/tsd.py,sha256=lD-M3sndv3BVccQzFPpEqKVzR0_HQ4qKi2C4DWldk5o,11481
+adg-0.2.0.data/data/share/doc/adg/README.md,sha256=u1wkCDlyLBH2IggHl0IJ4MCtJqMecB9UWhSqdEnwFuY,4675
+adg-0.2.0.data/data/share/man/man1/adg.1,sha256=8PAEpoUWSRShXwnz9HYTnl6Gzo04Bf7TnP40VZAvHVI,38658
+adg-0.2.0.dist-info/METADATA,sha256=MlxjZKntDV38vT4QB2j8BZtcav-v8-ZG9Br32jV_pRw,1935
+adg-0.2.0.dist-info/RECORD,,
+adg-0.2.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+adg-0.2.0.dist-info/entry_points.txt,sha256=0eEU4mJ2uC__CKG779KydO63T5WoR_uUoIio_qmNMsw,39
+adg-0.2.0.dist-info/top_level.txt,sha256=2W_KZYM_3Q0B99E9cxRAe-Xu0gqr-n1d5KB9xaNhTEA,4

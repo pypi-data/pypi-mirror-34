@@ -1,0 +1,9 @@
+README.rst
+setup.py
+posixfs/__init__.py
+posixfs/py.typed
+posixfs.egg-info/PKG-INFO
+posixfs.egg-info/SOURCES.txt
+posixfs.egg-info/dependency_links.txt
+posixfs.egg-info/requires.txt
+posixfs.egg-info/top_level.txt

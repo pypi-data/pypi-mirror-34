@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: aiofilesearch
+Version: 0.9.1
+Summary: WS Demo for file search
+Home-page: https://github.com/jordic/aiofsearch
+Author: Jordi Collell
+Author-email: jordic@gmail.com
+License: BSD
+Description: 
+        
+        
+        ## 🤙 Aio File Search
+        
+        AioHTTP + Preact + Parcel + Websockets
+        
+        Search your local files through a Browser interface
+        
+        This is just a demo project on how to integrate WS Streaming responses
+        into a Web App.
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Web Environment

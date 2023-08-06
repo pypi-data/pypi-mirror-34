@@ -1,0 +1,14 @@
+pytri/__init__.py,sha256=kf6sBfR4KOyWO4Gv6o-F9YqT5_VO7YhmJXCO4DFSyZQ,12309
+pytri/js/FibersLayer.js,sha256=SSjaWDOubaDRzhWuA0-p1tr_hZK_J0iXyEhrmen8fno,1348
+pytri/js/GPUParticleSystem.js,sha256=nH1mh2mxtmIAt4sNAVsnfnhkvbiujWNjEuWpgNjgoJk,16207
+pytri/js/GraphLayer.js,sha256=nteue8y-AOr0nLXPJPax83sxlE_sjQfS7PRVeG0-8hw,3907
+pytri/js/ImageLayer.js,sha256=OwphOCOec-Wm0IMnNH2qxExd5nagkRpL5oKCae2JWzs,1137
+pytri/js/LargeGraphLayer.js,sha256=UIAOTkh1DvtvIzLkx6D4166rRU8ZafkHy4qkiUvYdq0,4389
+pytri/js/MeshLayer.js,sha256=OsaQDoTP5YQx8Psrm4EX2dWcCskPEsaTWPvBktIJt9c,966
+pytri/js/ScatterLayer.js,sha256=QBAi8yqxYffDwKLD426GUti5Uni0ZLbASxwr5LxXQ1o,829
+pytri/js/VolumeLayer.js,sha256=TA2lmLNvbwdCkD_V8Fx8K62eKW2RXHJFSRyXSuc0L3E,1172
+pytri/js/substrate.min.js,sha256=DzN-6W83fHTYSmAZA2mIW1uBAhLYgQI_EaocbTNl3pE,5896
+pytri-0.4.0.dist-info/METADATA,sha256=v7TNnqqqQUYEy73VZZbx_63ikjIeZbzIZSUlzT3CHL8,1677
+pytri-0.4.0.dist-info/RECORD,,
+pytri-0.4.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pytri-0.4.0.dist-info/top_level.txt,sha256=unpVi0Upqm4iV9Izybn-Q8AxxWklC1wWliB7B-Qn5ck,6

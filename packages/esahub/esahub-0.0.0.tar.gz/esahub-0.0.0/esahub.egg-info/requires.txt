@@ -1,0 +1,9 @@
+pyyaml
+numpy
+lxml
+pyproj
+shapely
+netCDF4
+python-dateutil
+pytz
+tqdm

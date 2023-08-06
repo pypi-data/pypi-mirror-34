@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/pytest_regressions/__init__.py
+src/pytest_regressions/data_regression.py
+src/pytest_regressions/plugin.py
+src/pytest_regressions.egg-info/PKG-INFO
+src/pytest_regressions.egg-info/SOURCES.txt
+src/pytest_regressions.egg-info/dependency_links.txt
+src/pytest_regressions.egg-info/entry_points.txt
+src/pytest_regressions.egg-info/requires.txt
+src/pytest_regressions.egg-info/top_level.txt

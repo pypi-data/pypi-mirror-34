@@ -1,0 +1,9 @@
+dedupe_hcluster-0.3.2.dist-info/METADATA,sha256=HXxLBYfpKISQzFOwq3st2t5v3biT7vOLOUZ2IB0vSQ4,1392
+dedupe_hcluster-0.3.2.dist-info/RECORD,,
+dedupe_hcluster-0.3.2.dist-info/WHEEL,sha256=y9Nen1GoEceHR3QvYRQs-DfoSXELFLV44EcY0LZMPnA,111
+dedupe_hcluster-0.3.2.dist-info/top_level.txt,sha256=Inz6_YsyroIuO_nNL62-HsAv7OSAZydOdUcqtZmwRUU,9
+hcluster/__init__.py,sha256=FuA0kLeeVgQ1_LN01Hazz-1opOUSwZTaT4OmHHP_MyM,49
+hcluster/_distance_wrap.so,sha256=fFAcIJ60YE_d99jznwRh24Yeyn6Q4X_ZGI8dh1hkK5g,57596
+hcluster/_hierarchy.so,sha256=mZTWWd9FeVyrkfnBaqNlZrZ4kdAMejR5wk058Ca48AM,312572
+hcluster/distance.py,sha256=EcIPcpZTJTzI95_opbq7k-F8HQRf6o8BrlfTMVScJic,73022
+hcluster/hierarchy.py,sha256=izHW3GyezXPq3qy9wfiRjTmKFdNOF2KuFpEn7sbPvXE,93610

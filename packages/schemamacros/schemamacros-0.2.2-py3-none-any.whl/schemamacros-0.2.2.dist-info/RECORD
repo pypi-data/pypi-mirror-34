@@ -1,0 +1,17 @@
+schemamacros/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemamacros/cli.py,sha256=EgFFg0tfk2mTVH3cQrU2GWILAuJEjNCeiSY2994_xjw,582
+schemamacros/compile.py,sha256=60lIr5PTHIdbPicoO1eAzRSbR3Qg7zRbZHG4jaLV4xM,2429
+schemamacros/config.py,sha256=NXc5XPLHNW2l_V68c0AKMTLU3G06CGwiT-pNm8j1O2Y,3611
+schemamacros-0.2.2.dist-info/DESCRIPTION.rst,sha256=fsu6r69wxbU9nes3cHeDKdmUAiFSN-jK7fKYAwj2ss8,56
+schemamacros-0.2.2.dist-info/METADATA,sha256=6VOyqAFgK2ypcxjaa8979DYsRZ6CSe0R1BbPmvP_GQc,747
+schemamacros-0.2.2.dist-info/RECORD,,
+schemamacros-0.2.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+schemamacros-0.2.2.dist-info/entry_points.txt,sha256=WxVVSpBL2YBb9kIIeh3BPNZkcD4a5oFYGFCdCrIi4ww,82
+schemamacros-0.2.2.dist-info/metadata.json,sha256=wdiEOR80sWcMDgrWIfBfpyNCFLek1xhiGfpcvxTqUBY,1037
+schemamacros-0.2.2.dist-info/top_level.txt,sha256=gIJuaXyhlIZVjsdr1mAU4B2yKWKg4ed0Jq6dj9oofv4,19
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=Ws4ORH52pLLzhutu7v0cd2epTxzetWYJZRBMYPV-C7c,1598
+tests/test_cli.py,sha256=vio9XSiEjbl4Kz6q-_v1-64_nI90QJC7c_PUPUpQtgo,2123
+tests/test_compile.py,sha256=7yernIXi_NhCIXtYFNiULxQtnP8YDY0B_A1GHRnnQ_0,3012
+tests/test_config.py,sha256=TFurnPYk4n1brKxADNSj5gsH7xVven0bd2n_1PBm8OA,947
+tests/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

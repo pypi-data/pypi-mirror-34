@@ -1,0 +1,227 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* [Designate] Adding few more designate tests
+* [Designate] fixing nameserver string parsing
+* Remove volume v1 API service client usage
+* [Tempest]: Added new cases related to Lbaas Mac-learning security-groups
+* [Tempest]: Adding new cases
+* refactor top-level pkg to vmware\_nsx\_tempest\_plugin
+* setup project for pypi releases
+* Audit on behalf changes for nsx eclipse
+* Switch to stestr
+* [Bug: 2145007] Removed port\_security Port\_Security\_enabled was throwing error in create network
+* [Bug: 2141401] Change in NSX backend response Modity/delete response message nows includes enterprise admin
+* Updated from global requirements
+* [Bug:2126848] Client Cert Mangement Changes to test no certificate and keyerror
+* [Tempest]: Added ENS scenario cases for overlay/vlan
+* [Designate]:Adding back changes which were removed
+* [Tempest]: Fixing issue while getting router snat
+* [Tempest]: Change done in MDproxy testcase
+* [Tempest]: Added vpnaas tempest cases
+* Designate scenario - added wait time for zones
+* [Tempest]: Changes done to add timer for backend operations
+* [Bug:2103628] Change from v2 to v3 auth {0} vmware\_nsx\_tempest.tests.nsxv.api.test\_tenant\_delete.ProjectDeleteTest.test\_project\_delete\_no\_resource\_for\_deletion [9.978102s] ... ok {0} vmware\_nsx\_tempest.tests.nsxv.api.test\_tenant\_delete.ProjectDeleteTest.test\_project\_delete\_purge\_using\_non\_admin [85.206430s] ... ok {0} vmware\_nsx\_tempest.tests.nsxv.api.test\_tenant\_delete.ProjectDeleteTest.test\_project\_delete\_with\_all\_resorces\_deleted [13.341820s] ... ok {0} vmware\_nsx\_tempest.tests.nsxv.api.test\_tenant\_delete.ProjectDeleteTest.test\_project\_delete\_with\_some\_resources\_left [20.043819s] ... ok
+* [Bug 2113692]: Removing the ping to dhcp interface 0} vmware\_nsx\_tempest.tests.nsxv3.scenario.test\_multiple\_networks\_ops.TestMultiNetworksOps.test\_multi\_networks\_ops [172.501788s] ... ok
+* Designate Scenario tests
+* [Tempest]: Changing exception type during tag is blank
+* [Audit: On-behalf] Adding scenarios to test audit api call for various openstack neutron operations
+* [OS:FVT] ENS based changes Tempest config updated with ens parameter Changes to new tempest design to work with ens Includes a basic scenario with N-S and E-W traffic
+* [OS:FVT] Adding designate ZONE API tests Includes CRUD tests for zone api root@prome-mdt-dhcp412:/opt/stack/tempest# ostestr --pdb vmware\_nsx\_tempest.tests.api.test\_v2\_designate.TestZones {0} vmware\_nsx\_tempest.tests.api.test\_v2\_designate.TestZones.test\_create\_zone [7.087180s] ... ok {0} vmware\_nsx\_tempest.tests.api.test\_v2\_designate.TestZones.test\_delete\_zone [0.456610s] ... ok {0} vmware\_nsx\_tempest.tests.api.test\_v2\_designate.TestZones.test\_list\_zones [0.457285s] ... ok {0} vmware\_nsx\_tempest.tests.api.test\_v2\_designate.TestZones.test\_show\_zone [0.438572s] ... ok {0} vmware\_nsx\_tempest.tests.api.test\_v2\_designate.TestZones.test\_update\_zone [5.838672s] ... ok
+* [Bug:2088241] Modified code to reflect upstream Base class : BaseAdminNetworkTest in create and delete network root@localhost:/tmp/jenkins/workspace/end2end-precommit/tempest# ./tools/with\_venv.sh stestr run vmware\_nsx\_tempest.tests.dvs.api.test\_networks\_admin\_actions.AdminNetworksTestJSON {0} vmware\_nsx\_tempest.tests.dvs.api.test\_networks\_admin\_actions.AdminNetworksTestJSON.test\_create\_update\_delete\_flat\_network\_subnet [4.502624s] ... ok {0} vmware\_nsx\_tempest.tests.dvs.api.test\_networks\_admin\_actions.AdminNetworksTestJSON.test\_create\_update\_delete\_vlan\_network\_subnet [3.449882s] ... ok {0} vmware\_nsx\_tempest.tests.dvs.api.test\_networks\_admin\_actions.AdminNetworksTestJSON.test\_list\_networks [0.147079s] ... ok {0} vmware\_nsx\_tempest.tests.dvs.api.test\_networks\_admin\_actions.AdminNetworksTestJSON.test\_show\_network [0.112556s] ... ok {0} vmware\_nsx\_tempest.tests.dvs.api.test\_networks\_admin\_actions.AdminNetworksTestJSON.test\_show\_subnet [0.615493s] ... ok
+* [tempest]: Adding of sec-rule-creation case
+* [Tempest]: Added static route in lbaas laodbalancer
+* [Bug:2088241] VIO 5.0 requies api\_v2=False With earlier code tests were failing with AttributeError: 'Manager' object has no attribute 'volumes\_client'
+* [BUG # 2069593] Starting from queen new nat rule with action 'DNAT' is added Changes are made to be backward compatible
+* [Tempest]: Added api/scenario cases for vlan backed tier-1
+* Add minssing requirements file
+* [Tempest]: Removing of extra security groups added to port
+* [Tempets]: Added traffic scenario case for PSG
+* [QOS] Scenario tests based on new tempest design Currently includes tests for below scenarios - Test bandwidth-limit rule for both network and port - Test dscp rule for both network and port - Test qos policy with both rules for both network and port - Resolved the conflict with fwaas change
+* [Tempest]: Added api cases for FWaaSv2
+* [Client-cert] NSX manager api response has changed in equinox Code change to match the new response and backward compatible with earlier releases
+* [Tempest]: Hndling of below issues
+* [QOS] Base class has changed resource cleanup module Makes use of addClassResourceCleanup instead
+* [Tempest]: Updating L2GatewayConnectionTest
+* [Tempest] L2GW NSXV api test cleanup fix
+* [Tempest]: Changes made in dhcp\_121 cases for nsxv640
+* Tempest: Added network ops testcase
+* [QOS:API] Modified bandwidth-limit egress api tests direction attribute is introduced from 'pike' series and does not work with ocata reverting the changes back to make it backward compatible
+* [Tempest]: Updated case with common case
+* [Tempest]: Adding sleep between lb operations to get complete
+* - Removed Deprecatted warnings from code - Skip few MDproxy tests. Few MDProxy tests need debian and xenail images. We still do not have good and slim debian and xenail images. So skip these, cases until we have good images
+* [tempest]: Adding of L7 rule testcases
+* [QOS-API] Pike onwards bandwidth-limit-rule is supported on ingress direction Added CRUD related tests for ingress based bandwidth-limit-rule
+* [Tempest]: Adding of external network to router
+* [Tempest]: Adding LBAAS Scenario cases for nsxv3
+* [QOSS API] D-Go release onwards minimum kbps is 1024 Changing the api test cases accordingly, the change is backward compatible with earlier releases as well
+* [Tempest]: Adding provider network api
+* MDProxy: Updated MDProxy test cases based on new design
+* [Tempest]: Added psec, psg, mac-learning api cases
+* [address-pair] Fixed address-pair bug
+* [NSXV3] Replaced super admin test case from port to qos policy Deletion of port has been modified in the backend becasue of which made changes to test super admin priveleges over deletion of qos policy created by openstack admin
+* Tempest: Renamed folder based on the need
+* Tempest: 1st patch after using cookiecutter to split in-tree project
+* Initial commit
+* Tempest: Fixed a bug # 1914831
+* Removing qos test scenarios due to pyshark removal from test-requirements.txt. Will add these tests back with new tempest design and workaround for pyshark
+* Local copy of scenario test base class
+* Tempest: Added new design for tempest test cases
+* Tempest: tempest.test.attr() is deprecated. Moving to new function
+* Use flake8-import-order plugin
+* [Tempest]: Adding of 'plr' attribute for distributed routers
+* [Tempest] spoofguard test fix from OpenStack plugin change
+* [Tempest] NSXV L2GW cleanup fix
+* {Tempest]: Changes done while updating port with PSG
+* [Tempest]: Adding of scenario cases for FWaaS
+* [Tempest]: Adding sleep between PSG creation and adding to backend
+* Remove pbr warnerrors in favor of sphinx check
+* Tempest: 2 scenario tests are fixed
+* Tempest: Fixed failed few tempest scenario test cases
+* [Tempest]: Adding "Prevent NSX admin from deleting openstack entities" testcases Incorporated nsxv3\_client.py for backend operations Made changes to nsxv3\_client.py for specific reqests Test results: root@prome-mdt-dhcp412:/opt/stack/tempest# python -m testtools.run vmware\_nsx\_tempest.tests.nsxv3.scenario.test\_client\_cert\_mgmt\_ops.TestCertificateMgmtOps Tests running... tempest/clients.py:45: DeprecationWarning: Using the 'client\_parameters' argument is deprecated   client\_parameters=self.\_prepare\_configuration()) tempest/scenario/manager.py:50: DeprecationWarning: Read-only property 'manager' has moved to 'os\_primary' in version 'Pike' and will be removed in version 'Ocata'   cls.flavors\_client = cls.manager.flavors\_client tempest/test.py:376: DeprecationWarning: Read-only property 'os' has moved to 'os\_primary' in version 'Pike' and will be removed in version 'Ocata'   if hasattr(cls, "os"):
+* Tempest: Tempest test NSX security groups failing
+* [Tempest]: Adding of more cases for FWaaS
+* Fixes vmware\_nsx\_tempest tempest plugin issues with tempest
+* Tempest: Port Types network cleanup fix
+* [Tempest]: Adding of FWaaS api testcases
+* Tempest|DVS: Add \_list\_ports for dvs scenario test case
+* [Tempest]: Adding of removed method from upstream in vmware\_nsx\_tempest repo
+* Basic QoS scenarios: Testing bandwidth-limit, DSCP rule with traffic root@prome-mdt-dhcp412:/opt/stack/tempest# python -m testtools.run vmware\_nsx\_tempest.tests.scenario.test\_qos\_ops Tests running... tempest/clients.py:45: DeprecationWarning: Using the 'client\_parameters' argument is deprecated   client\_parameters=self.\_prepare\_configuration()) Warning: Permanently added '172.24.4.9' (RSA) to the list of known hosts
+* [Tempest]: Changes done in allowed address pair scenrio testcases
+* [tempest]: Changes done for port security scenario testcases
+* Tempest: Adding network config param
+* Tempest: OpenStack Port Types Support API tests
+* Tempest:Deploy and Validate Neutron resources using HEAT Template on NSXT|V
+* Update following tempest changes
+* [Tempest]: Adding of timer in between backend operations
+* [tempest]: Adding of missing function in vmware\_nsx\_tempest
+* Tempest: Removed old and unused folder
+* [Tempest]: Reusing Lbaasv2 cases for nsxv3 plugin also
+* [Tempest]: Reusing Lbaasv2 cases for nsxv3 plugin also
+* Tempest: Fixed scenarios for SSH authentication failures
+* Tempest: Fixed SSH authentication failures
+* [Tempest] Deploy and Validate Neutron resources using HEAT Orchestration Template
+* Tempest: Fix for test\_mdproxy\_with\_server\_on\_two\_ls test case
+* Removing irrelevant note in README file
+* Tempest: Fixed TestRouterNoNATOps bugs and enhanced the test cases
+* Drop log translations
+* Remove Tap-as-a-service Support
+* Tempest: Removed skip test from test\_nsx\_port\_security.py
+* Tempest: Device driver does not allow Change of MAC address when interface is UP
+* [Tempest]: Adding of removed method from upstream
+* Tempest: test.idempotent\_id is deprecated
+* Tempest: NSXv3 Logical resource get query cursor fix
+* [Tempest]: Modified QoS API tests
+* Pass dhcp\_client in renew\_lease()
+* [Tempest]: Adding subnet-pool api testcases
+* [Tempest]: Added scenario cases for port security feature
+* Tempest: change test. to decorators.idempotent\_id and addCleanup()
+* [Tempest]: Changes done to add missing methods from upstream
+* [Tempest]: Added api cases for port security feature
+* [Tempest]: Add MAC learn API neg test - port security
+* Tempest: admin-policy scenario basic operation test
+* Switch using exec\_command() directly
+* Tempest: Moving from test.idempotent\_id to decorators.idempotent\_id
+* Don't use Tempest internal methods
+* Fix to use correct config options for image\_ssh\_user
+* [Tempest]: Adding of Allowed address pair scenario cases
+* [Tempest]: Added Provider Security Group cases for nsxv
+* Tempest: Scenario tests for Disable spoofgurad with NSXv
+* [Tempest]: Adding of Provider security Group cases
+* Use https for \*.openstack.org references
+* Fix typo in README.rst
+* Tempest: Scenario tests for Provider security group with NSXv3
+* Tempest: Changes done in dhcp\_121 for bug#1797152
+* Fix vmware\_nsx tempest plugin
+* Replace "Openstack" with "OpenStack"
+* Fix baremetal config options in Tempest plugin
+* Tempest: Added MDProxy scenario test cases
+* Tempest: API tests for Provider security group with NSXv3
+* Tempest: API tests for MAC Learning with NSXv3
+* Tempest: admin-policy API test cases
+* Using assertIs(Not)None() instead of assert(Not)Equal(None)
+* Tempest: Providing support for tenant-delete feature
+* Tempest: Add east west scenario test
+* Tempest: Remove skip decorator for security group
+* Tempest: Fix tenant\_id for nsxv scenario test
+* Tempest: TaaS Client for Tap Service and Tap Flow
+* Tempest: Remove deprecated tenant\_id
+* Tempest: Add router NoNAT scenario tests
+* tempest: lbaas l7-switching API tests
+* Tempest: NSXv3 Native DHCP Negative Test
+* Tempest: Add tests to cover Native DHCP
+* tempest: lbaas l7 switching scenario tests
+* Stop adding ServiceAvailable group option
+* Tempest: Change parameters to accommodate to tempest master
+* Tempest: router\_size create and update tests
+* Tempest: Update nsxv3\_client to query more than 1k
+* Tempest: Add Native DHCP UniScale Tests
+* Tempest: Add back addCleanup\_with\_wait
+* Tempest: Fixed error with nonexist module
+* Tempest suite file for various versions of VIO testing
+* Fix tempest.conf generation
+* Tempest: Add native DHCP methods in NSXv3 client
+* Tempest: Removed bug decorators, renamed obsolete def
+* Tempest: Add dvs specific test cases
+* Tempest: Providing support for dhcp-121 feature
+* Tempest: Network tags clients, CRUD and Filter testing
+* Tempest: Update nsxv3 scenario suite
+* Fix xenial pep8 problems - add translations
+* Tempest: Providing support for disable spoofguard feature
+* Update gate logic
+* Tempest: Support lbaas api & scenario tests to run against upstream
+* Tempest: Fix upstream patch 32049 which replacing oo-wrap
+* Tempest: fixed upstream remove network\_resources from sceanrio
+* Tempest: Use client result for Micro-Segmentation
+* Tempest: Use network client result instead of OO
+* Tempest: NSX-v external network supports multiple subnets
+* Tempest: Providing support for dhcp-121 feature
+* Tempest: QoS clients and API CRUD operation tests
+* Tempest: Change external network to public network
+* Tempest: Change tenant to project
+* Tempest: Add micro-segmentation scenario test
+* Tempest: Format vmware\_nsx\_tempest README
+* Tempest: lbaasv2 scenario http round-robin operation test
+* Tempest: Add nsxv3 api and scenario test suites
+* tempest-api-network updates
+* Cleanup script: fix typo
+* Fix tempest breakage
+* [Trivial] Remove unnecessary executable privilege
+* Tempest: Fix py3 indexing issue on dict\_keys
+* [Tempest]: dns-search-domain scenario/negative tests
+* Tempest: Skip security group tests because of bug
+* Tempest: Added L2GW API tests
+* Tempest: Change tenant prefix to project
+* [Tempest]: initial lbaasv2 clients and API tests
+* Add nsxv3 tempest test suite
+* [Tempest: use project instead of tenant
+* Tempest: Adding l2gw test
+* Tempest: Use routers\_client in router test
+* Tempest: Add external\_network\_cidr in config
+* Tempest: Use data\_utils from tempest.lib
+* Tempest: fix broken tempest tests
+* Tempest: Add multi-hypervisor scenario test
+* Used warning instead of warn
+* Tempest: change tempest\_lib to tempest.lib
+* [Tempest]: fix upstream remove commands module
+* Tempest: Add placeholder for common tempest tests
+* [Tempest]: NSX-v dhcp service is not reachable
+* Multiple Transport Zones Scenario Tests
+* Initial release of DNS search domain API test
+* Multiple Transport Zone API tests
+* Add nsxv3 delete router test
+* Add nsxv3 security group test
+* Add nsxv3 floating ip temepst test
+* Add method to get firewall rule in nsxv3 client
+* Add nsxv3 router tempest test
+* Files contains test lists for regression test execution
+* Negative tests for Multiple Transport Zones
+* Add nsxv3 client for vmware\_nsx\_tempest
+* Add nsx networks test
+* Add NSXv3 config for tempest
+* Add placeholder for NSXv3 tempest tests
+* init release of vmware-nsx tempest tests in tempest external plugin
+* Pushing initial started code based on Glance project and infrstructure work done by the melange team

@@ -1,0 +1,9 @@
+README.rst
+setup.py
+fancaiji-edwin/__init__.py
+fancaiji-edwin/main-edwin.py
+fancaiji.egg-info/PKG-INFO
+fancaiji.egg-info/SOURCES.txt
+fancaiji.egg-info/dependency_links.txt
+fancaiji.egg-info/requires.txt
+fancaiji.egg-info/top_level.txt

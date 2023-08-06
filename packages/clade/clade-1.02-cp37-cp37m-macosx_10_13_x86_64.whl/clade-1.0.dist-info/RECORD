@@ -1,0 +1,17 @@
+clade-1.0.data/purelib/clade/__init__.py,sha256=F13i2a4zwGRxuFawDIJXjj20UTmJDKncC3ZdtVwAnWg,678
+clade-1.0.data/purelib/clade/cmds.py,sha256=Ww-X4b3lJZR_Rh0dQuPt2_xePSOvfCP4qw9DDtTYqH4,2575
+clade-1.0.data/purelib/clade/intercept.py,sha256=R2bEaRDGs7oeaHXfuW5AwNKDIrOZAfOAP3wUFG5Ldf8,9746
+clade-1.0.data/purelib/clade/libinterceptor/CMakeLists.txt,sha256=6UNHjY4NzvDFP5I910e-jhV5v6qjh4IowphIbC9Sb6c,772
+clade-1.0.data/purelib/clade/libinterceptor/data.c,sha256=hmrLX3vP8GhSqkKpgNsiJOC_v1YpN_6xO-UMV-wBajA,4465
+clade-1.0.data/purelib/clade/libinterceptor/data.h,sha256=YSqyU9F-WnFCGiypkJbBWFgLZXbaPVZY373m9OBaUBs,905
+clade-1.0.data/purelib/clade/libinterceptor/interceptor.c,sha256=w5kXoWtzlrWXeUTCFC2dYYiqLJO5lxQKsbzw58f_Yg8,2715
+clade-1.0.data/purelib/clade/libinterceptor/libinterceptor.dylib,sha256=kfKCcFriKose1WTVaVvk1KKlSzhYnKct13vSXdEW9PI,13692
+clade-1.0.data/purelib/clade/libinterceptor/which.c,sha256=JU2fUR0Yq0zZxVzzk5pszXWvRpLdi0UnPV_4X2ymleE,1559
+clade-1.0.data/purelib/clade/libinterceptor/which.h,sha256=wZIOvDIax6FNhicrui2GIYIaqWvU3Qp-QskPINCVI0I,957
+clade-1.0.data/purelib/clade/libinterceptor/wrapper,sha256=8B3GQYABJWN0xYiAoKGi02YX6zPY_kLySrTUbyTZArM,13700
+clade-1.0.data/purelib/clade/libinterceptor/wrapper.c,sha256=QUt-yI5FeppU71U8mq11YedONM_DTQJYulNiraFoNio,1232
+clade-1.0.dist-info/METADATA,sha256=eHaLt7_0lb4tDDVQDU10A5_rAGUt3qdbnJX2CPG0Ng8,1619
+clade-1.0.dist-info/RECORD,,
+clade-1.0.dist-info/WHEEL,sha256=LKgIB7mcdH5tS4Fbr9iatkFt-G5yvCrYWM614rC9JZE,111
+clade-1.0.dist-info/entry_points.txt,sha256=rFV9riSpIegbiSMx9jh4KcLKmK4IkuCgtGBL3GRrlNk,105
+clade-1.0.dist-info/top_level.txt,sha256=Qrs_g1mD6u81bz45OLCSq8clHeUE4MHJ_xUAgkTgwQ0,6

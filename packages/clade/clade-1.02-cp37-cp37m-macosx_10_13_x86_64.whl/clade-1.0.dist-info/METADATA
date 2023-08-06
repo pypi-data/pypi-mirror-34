@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: clade
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/17451k/clade
+Author: Ilya Shchepetkov
+Author-email: ilya.shchepetkov@yandex.ru
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/x-rst
+Requires-Dist: ujson
+
+Clade
+=====
+
+Clade is a tool for intercepting build commands (stuff like compilation,
+linking, mv, rm, and all other commands that are executed during build).
+
+Intercepted commands can be used for purposes such as generating
+callgraph of a C project using compilation commands, visualization of
+the dependencies graph between project files, and for much more.
+
+Some of such use cases will be included in Clade later. Currently only
+build command intercepting is supported.
+
+Installation
+------------
+
+Just run the following command (Python 3 is required):
+
+.. code-block:: bash
+
+    $ pip install clade
+
+For development purposes you may install Clade in "editable" mode
+directly from the source code. An important part of Clade is written
+in C, so in order to build it yourself you must have cmake, make and
+the C compiler installed on your system.
+
+.. code-block:: bash
+
+    $ pip install -e .
+
+
+How to use
+----------
+
+After installation the usage is like this:
+
+.. code-block:: bash
+
+    $ clade-intercept make
+
+where 'make' should be replaced by your project build command.
+
+The output file called cmds.json will be stored in the current directory.
+Additional features are described in --help.
+
+
+

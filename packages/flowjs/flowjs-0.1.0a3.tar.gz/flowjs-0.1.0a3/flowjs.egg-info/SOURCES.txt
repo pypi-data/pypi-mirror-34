@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+flowjs/__init__.py
+flowjs/config.py
+flowjs/file.py
+flowjs/interfaces.py
+flowjs/requests.py
+flowjs.egg-info/PKG-INFO
+flowjs.egg-info/SOURCES.txt
+flowjs.egg-info/dependency_links.txt
+flowjs.egg-info/requires.txt
+flowjs.egg-info/top_level.txt

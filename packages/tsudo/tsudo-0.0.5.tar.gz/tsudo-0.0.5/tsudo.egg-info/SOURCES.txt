@@ -1,0 +1,11 @@
+README.md
+setup.py
+scripts/tsudo
+tsudo/__init__.py
+tsudo/__main__.py
+tsudo/tsudo.py
+tsudo.egg-info/PKG-INFO
+tsudo.egg-info/SOURCES.txt
+tsudo.egg-info/dependency_links.txt
+tsudo.egg-info/requires.txt
+tsudo.egg-info/top_level.txt

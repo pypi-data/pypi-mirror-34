@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jupyter_config/__init__.py
+jupyter_config/__main__.py
+jupyter_config/_version.py
+jupyter_config/configapp.py
+jupyter_config.egg-info/PKG-INFO
+jupyter_config.egg-info/SOURCES.txt
+jupyter_config.egg-info/dependency_links.txt
+jupyter_config.egg-info/entry_points.txt
+jupyter_config.egg-info/requires.txt
+jupyter_config.egg-info/top_level.txt

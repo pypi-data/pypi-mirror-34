@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: SLAB-Diffusion
+Version: 0.0.1
+Summary: models the radiative diffusion of photons through a slab of CSM and evaluates the observed radius and temperature
+Home-page: https://github.com/maayane/SLAB-Diffusion
+Author: Maayane T. Soumagnac
+Author-email: maayane.soumagnac@weizmann.ac.il
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/maayane/SLAB-Diffusion/issues
+Project-URL: Source, https://github.com/maayane/SLAB-Diffusion
+Description: UNKNOWN
+Keywords: astronomy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=2.7.10

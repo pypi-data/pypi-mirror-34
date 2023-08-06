@@ -1,0 +1,3 @@
+[gui_scripts]
+letsconnect-client = eduvpn.main:main_lets_connect
+

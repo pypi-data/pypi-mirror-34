@@ -1,0 +1,14 @@
+cpca.py,sha256=Oea6Z-y5pXrqr-0l8QvNcP2pwlYMKZtT17vapAHXnXs,1529
+cpca_drawers.py,sha256=OqTwNkjq4GGn84jI8_y9aKIdpqweacNrCFQIH9heZTM,5058
+chinese_province_city_area_mapper/__init__.py,sha256=lMwGl8igg2m5qehfF9RmuCIU9r4WvL6ZYVh-EXUGOuM,59
+chinese_province_city_area_mapper/domain.py,sha256=0E0TuwxlQU7BMvOyaxGBwr_lK8NLmwg1GwvOFMlV4M0,4611
+chinese_province_city_area_mapper/exceptions.py,sha256=js6_GghrII9UXksMt_Sdn43pkNw3x3-LbtFrkOu_n-Y,439
+chinese_province_city_area_mapper/infrastructure.py,sha256=0QnmnZlyNey8oabAPJK-PNp0ZUkxQArGVLN5iu2hmmQ,2617
+chinese_province_city_area_mapper/mappers.py,sha256=YAxLHqwG_BKLF5Tt5J0605q0W0NXLxHpSMktrMRciBE,270951
+chinese_province_city_area_mapper/transformer.py,sha256=D40iiWXcxEOScNcPjIiMRNfGBLno4ZK51QAq1e5zPlA,973
+cpca-0.3.dist-info/DESCRIPTION.rst,sha256=acKNMZEak2vMCvNlGQk51G0u-PwO3giUS5Yb3KezecA,2864
+cpca-0.3.dist-info/METADATA,sha256=va2oQ3OW60X3UAL-RMIctYTZyY3WO-FUsE7APRyZ-dc,3640
+cpca-0.3.dist-info/RECORD,,
+cpca-0.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+cpca-0.3.dist-info/metadata.json,sha256=zIlz87VQSG_iE7HYL-4xSulUtXiFZnSZ0pCZyLgZQmw,983
+cpca-0.3.dist-info/top_level.txt,sha256=wtGhF3WfVzQT4vllcV_zM8koPUScQe1YfItEsYf6Pd8,35

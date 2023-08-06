@@ -1,0 +1,15 @@
+prinder/__init__.py,sha256=MjXSuUhh_hKsZabWc2Ci_ZdKTWlywoAmiOldkrO_BHs,23
+prinder/logger.py,sha256=6sCReE0GunBe1TJtfgyIvPqxlqcfLrZlTCl6NOb0xvQ,367
+prinder/notifiers.py,sha256=xVvIcf-GgiSjaVtCgNLRJyxM4NIbKIYw68t3c_klP30,5910
+prinder/prinder.py,sha256=R2DRUe6GlHtJWeCyeiavpVvwd9LdLloVlsFHQsxxZd0,3184
+prinder/pull_reminder.py,sha256=baLAqpaMWRCcy2VHmqpO5PvpnN_WDOvkTBHTmsiDyqo,3710
+prinder/utilities.py,sha256=wmzTh79xnWLX40OyKOb4rU6NVc5X6nXt4nOSIyzMjvA,471
+prinder/notifiers/__init__.py,sha256=E9jmkpHuGavHMV91HLAEn-BZSzN2kcCXnmsNDdBPZzg,118
+prinder/notifiers/base_notifier.py,sha256=u0oRkQMFeeq41XxZhnGTpze7hgXikEq-bGl8xAryxJY,1559
+prinder/notifiers/mail_notifier.py,sha256=4M7P-A4KjvZxl2YdKpNRRJC_S86AiF8P-aCJZjHxooU,1426
+prinder/notifiers/slack_notifier.py,sha256=wQ-QGV3TpOH-zlCnHsy3DkV8NOhXdCO3DaiCayLCkbw,1998
+prinder-1.2.0.dist-info/METADATA,sha256=uPofWjNfHDsod9pWi-AIwXtg2P6CSdlwZLUGUSwp0So,4625
+prinder-1.2.0.dist-info/RECORD,,
+prinder-1.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+prinder-1.2.0.dist-info/entry_points.txt,sha256=9TkB1i78ZtUIBunKxo6ttMP_hXU9fos3FE3-lrxmOlg,67
+prinder-1.2.0.dist-info/top_level.txt,sha256=DmeGYIqzfRMjiJ05MP4izkmK51PUBGULoIXRMPLdXWQ,8

@@ -1,0 +1,12 @@
+reddit/__init__.py,sha256=U8DfemZSYPZI3-tbVomNYT5GDq32R3CVmsye2wWyitc,42
+reddit/config.py,sha256=61B3B9Dv2TVZIVIlp8CkODJbCO13Add-041uuS5f9sM,155
+reddit/main.py,sha256=az9a31WirtMFYkaUgtRPiU4KBH6IgfPDrpNumbuNnUg,140
+reddit/main_rdt.py,sha256=Ll76J6hMr8_Ju1nCR5zcy8JHSLTVBSsFRaQ7f4J5HhM,134
+reddit/rdt.py,sha256=ki77715YpFUvLlPNT7Sd2ZA9rYvZyi6oYA9DmyWVXWM,17628
+reddit/rdt_cli.py,sha256=d0cqUjPXJ34htmT258LMW2mxsmhfA7LpPln6OzB3xJo,1755
+reddit/redditcli.py,sha256=ZEtz_7M503BpsM4h2_iIloyKixQZh92D2iPRrmKsiKc,3395
+redditcli-2.1.0.dist-info/METADATA,sha256=hTXkEF6f9vo78Km12q1drnx83rlVyZiQksnj9bTQnnM,2853
+redditcli-2.1.0.dist-info/RECORD,,
+redditcli-2.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+redditcli-2.1.0.dist-info/entry_points.txt,sha256=gutu0x8HXhJmLZsPXfekPD32Vrg2bP4xjFEGr69jG3k,70
+redditcli-2.1.0.dist-info/top_level.txt,sha256=-A_GbCYUWHBfQw10u9Yij6aC5Yish_RvdxoAkx2zDCg,7

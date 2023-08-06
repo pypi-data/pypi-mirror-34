@@ -1,0 +1,13 @@
+README.md
+setup.py
+middleware_slack.egg-info/PKG-INFO
+middleware_slack.egg-info/SOURCES.txt
+middleware_slack.egg-info/dependency_links.txt
+middleware_slack.egg-info/entry_points.txt
+middleware_slack.egg-info/not-zip-safe
+middleware_slack.egg-info/requires.txt
+middleware_slack.egg-info/top_level.txt
+slack/__init__.py
+slack/abstract.py
+slack/entry_points.py
+slack/slack.py

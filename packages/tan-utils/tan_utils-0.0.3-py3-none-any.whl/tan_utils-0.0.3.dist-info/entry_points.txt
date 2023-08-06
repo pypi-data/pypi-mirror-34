@@ -1,0 +1,3 @@
+[console_scripts]
+tan-utils = tan_utils.tan_utils_cli:main
+

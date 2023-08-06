@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: torchnet
+Version: 0.0.2
+Summary: an abstraction to train neural networks
+Home-page: https://github.com/pytorch/tnt/
+Author: pytorch
+Author-email: ssax@fb.com, sergey.zagoruyko@enpc.fr
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: six
+Requires-Dist: visdom
+
+an abstraction to train neural networks
+
+

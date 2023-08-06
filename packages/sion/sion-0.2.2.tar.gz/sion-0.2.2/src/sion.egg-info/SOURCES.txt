@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/SIONLexer.py
+src/SIONParser.py
+src/SIONVisitor.py
+src/sion.py
+src/sion.egg-info/PKG-INFO
+src/sion.egg-info/SOURCES.txt
+src/sion.egg-info/dependency_links.txt
+src/sion.egg-info/requires.txt
+src/sion.egg-info/top_level.txt

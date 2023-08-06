@@ -1,0 +1,14 @@
+variables:
+  PKGNAME:     "autoCorrection"
+  PyVER:       "3-5.0.1"
+
+before_script:
+  - module load "i12g/anaconda/$PyVER"
+  - virtualenv venv-$PKGNAME
+  - source venv-$PKGNAME/bin/activate
+  - pip install --upgrade .
+
+main-test:
+  tags: [shell]
+  script:
+    - pytest

@@ -1,0 +1,3 @@
+[console_scripts]
+nncli = nnotes_cli.nncli:main
+

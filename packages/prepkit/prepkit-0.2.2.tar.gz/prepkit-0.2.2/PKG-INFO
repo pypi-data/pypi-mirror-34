@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: prepkit
+Version: 0.2.2
+Summary: Preprocess pandas objects for machine learning
+Home-page: https://github.com/yubessy/prepkit
+Author: Shotaro Tanaka
+Author-email: yubessy0@gmail.com
+License: LICENSE
+Description: prepkit
+        =======
+        
+        Preprocess pandas objects for machine learning
+        
+        Installation
+        ------------
+        
+        .. code-block:: plaintext
+        
+            $ pip install prepkit
+        
+Platform: UNKNOWN

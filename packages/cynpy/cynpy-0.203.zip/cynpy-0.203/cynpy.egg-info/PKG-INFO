@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: cynpy
+Version: 0.203
+Summary: Ray's public DVT utilities in Python 2.7
+Home-page: http://canyon-semi.com.tw
+Author: Ray Huang
+Author-email: rayjhuang@msn.com
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Framework :: IDLE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities

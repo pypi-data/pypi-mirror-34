@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: declutter
+Version: 0.1
+Summary: A commandline utility to declutter the files in current directory by organizing into folders automatically.
+Home-page: https://github.com/xKynn/declutter
+Author: xKynn
+Author-email: xKynn@github.com
+License: UNKNOWN
+Description: # declutter
+        Fast way to quickly organize cluttered files into approximate categories.  
+        I personally use this to declutter my desktop where I have a bad habit of dumping stuff.  
+        ```
+        declutter
+        
+        Usage:
+            declutter
+            declutter [[options] <args>...]...
+            declutter -h | --help
+        
+        Options:
+            -h --help                            Show help message.
+            --exclude_files <files>...           Exclude specific list of files from being decluttered.
+            --exclude_ext <exts>...              Exclude these file extensions from being decluttered.
+            --include_shortcuts                  Include shortcuts with extensions .url or .lnk to be decluttered.
+        Examples:
+            declutter --exclude_files myfile.txt random.docx
+            declutter --exclude_ext gif jpg
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

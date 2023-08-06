@@ -1,0 +1,9 @@
+README.md
+setup.py
+declutter/__init__.py
+declutter/__main__.py
+declutter.egg-info/PKG-INFO
+declutter.egg-info/SOURCES.txt
+declutter.egg-info/dependency_links.txt
+declutter.egg-info/entry_points.txt
+declutter.egg-info/top_level.txt

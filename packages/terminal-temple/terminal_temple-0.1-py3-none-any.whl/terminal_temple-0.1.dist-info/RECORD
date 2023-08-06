@@ -1,0 +1,17 @@
+terminal_temple/__init__.py,sha256=Mm1RMgMI_WbqUIzOOouYHHf3pph_sF54pl3ufoajLec,34
+terminal_temple/pizzazz.py,sha256=JCoW1LSukuHJ7VGeWQWrW8MMmaVfc8_YKaKPBFgOQf4,2411
+terminal_temple/puzzles.py,sha256=El0Jfdh_LZnM-tcMw09PBZiVuxMdONMD81HFGJ0Msg8,24012
+terminal_temple/terminal_temple.py,sha256=QGRYyKl9U7ju7tHV8Q7xOpnFlQu2aLez5Ky9z0eDnmg,5283
+terminal_temple/data/animuls.fasta,sha256=z2VRwZ-iKEe80rfhbNbxQFdJC2yWtNaP-XiJGNmvMJY,114302
+terminal_temple/data/greeting.txt,sha256=vIR4h-vRnl4xJkNA_bg0MViKHkd2ctpbeL-GOHwuYVg,1863
+terminal_temple/data/head.png,sha256=NDK4mes_UPH1aXTJaaMYiwa4zSmMk11XWSUFiogyhS4,159929
+terminal_temple/data/linux.txt,sha256=vR5yG65vsVXT_n563MOi_golXzxVAj9cHxiKQn-2iAY,3555
+terminal_temple/data/locations.txt,sha256=Bd1AG3DQGFHXHAQpGLej49xDOwR9GUzs1Gtch1vpgoc,889
+terminal_temple/data/mlk.txt,sha256=zK6pRbZ81GcwxryxA1Rqz5m8AycIJdSBLbXNvBVXauM,137
+terminal_temple/data/moai.txt,sha256=7Ey8x455LUORQUYB-9CKzxfjdLe_bBoJdBpLMtED-NE,2444
+terminal_temple/data/script.txt,sha256=TRaGBbfTY3jBibZ1rutMuvlG5sBLRQ1L1xU5O11GWJQ,2350
+terminal_temple-0.1.dist-info/METADATA,sha256=AVW6X_908R8t63OoR7NzxQ__KuMA9lzLUWw7Xu0mwy0,797
+terminal_temple-0.1.dist-info/RECORD,,
+terminal_temple-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+terminal_temple-0.1.dist-info/entry_points.txt,sha256=OofTZNUZZaL9hSQoSVu2Vgbau9C-u7viR4gZxdvSfv8,58
+terminal_temple-0.1.dist-info/top_level.txt,sha256=eJ7cf9W3_XD2M1j2_cbKWoUBR6qm_9US0XlRIaQ5zbM,16

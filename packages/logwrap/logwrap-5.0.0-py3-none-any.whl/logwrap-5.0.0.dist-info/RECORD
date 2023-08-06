@@ -1,0 +1,9 @@
+logwrap/__init__.py,sha256=Z5OJVwjXWb_-myvWualfAXL4WdVWF00vjqBX_5wrDI8,1709
+logwrap/_class_decorator.py,sha256=5gOMh7SnnUg7Uop4vThsdvMLVLsq2bUzWuBdER-k-lo,3987
+logwrap/_log_wrap.py,sha256=muSfg1cKExgSeDN0caQ2C1Ju7Tt4vuXxlC-ZyfZWdPM,26860
+logwrap/_repr_utils.py,sha256=OOOEkEKePHsavv6znY9PXPyv6HMbMsg7SYlVwJsvfnI,22643
+logwrap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logwrap-5.0.0.dist-info/METADATA,sha256=dIvegnnAxkO0QW_5DaVjMEnt0F4vY9TTx1Tt9PRtyLU,10142
+logwrap-5.0.0.dist-info/RECORD,,
+logwrap-5.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+logwrap-5.0.0.dist-info/top_level.txt,sha256=7q47MQq8ZedycLFMKaloOJ1NjkeTpxqwcdtYqVXduwM,8

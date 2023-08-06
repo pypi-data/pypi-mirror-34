@@ -1,0 +1,163 @@
+Metadata-Version: 1.1
+Name: CTHPoker
+Version: 1.0.0
+Summary: Texas Hold'em Poker combination finder tool
+Home-page: https://github.com/YegorDB/CTHPoker
+Author: Yegor Bitensky
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # Texas Hold'em Poker combination finder tool
+        
+        ## Install
+        
+        ```
+        pip install РЎTHPoker
+        ```
+        
+        ## Usage
+        
+        ### Card
+        
+        Card is a number.
+        
+        Weight numbers: `20` (Two), `30` (Three), `40` (Four), `50` (Five), `60` (Six), `70` (Seven), `80` (Eight), `90` (Nine), `100` (Ten), `110` (Jack), `120` (Queen), `130` (King), `140` (Ace).
+        
+        Suit numbers: `1` (clubs), `2` (diamonds), `3` (hearts), `4` (spades).
+        
+        Ace of a spades looks like `144`.
+        
+        ### Combination
+        
+        Combination is a list of numbers.
+        
+        First number is type of combination: `1` (High card), `2` (One pair), `3` (Two pairs), `4` (Three of a kind), `5` (Straight), `6` (Flush), `7` (Full house), `8` (Four of a kind), `9` (StraightFlush).
+        
+        Other numbers is combination value.
+        
+        ```python
+        # High card of Queen with Ten, Seven, Six and Four
+        [1, 12, 10, 7, 6, 4]
+        
+        # One pair of Nine with King, Eight and Five
+        [2, 9, 13, 8, 5]
+        
+        # Two pairs of Jakes and Three with Nine
+        [3, 11, 3, 9]
+        
+        # Three of a kind of Deuce with Ace and Ten
+        [4, 2, 14, 10]
+        
+        # Straight of Six, Five, Four, Three and Two
+        [5, 6]
+        
+        # Flush of Ten, Nine, Six, Four and Two
+        [6, 10, 9, 6, 4, 2]
+        
+        # Full house of Three and Six
+        [7, 3, 6]
+        
+        # Four of a kind of Seven with Queen
+        [8, 7, 12]
+        
+        # StraightFlush of Ten, Nine, Eight, Seven and Six
+        [9, 10]
+        ```
+        
+        ### Find pure combination
+        
+        ```python
+        from cthpoker import findCombo
+        
+        cards = [144, 134, 124, 114, 104] # Aв™  Kв™  Qв™  Jв™  Tв™ 
+        combo = findCombo(cards)
+        print(combo)
+        # [9, 14]
+        ```
+        
+        ### Ratio
+        
+        Ratio shows whether player hand cards in combination base cards or not.
+        
+        There is three ratio kind: `0` - nominal combination (player hand cards not in combination base cards), `1` - half nominal combination (player hand cards in part of combination base cards, possible in Full house and Two pairs only), `2` - real combination (player hand cards in combination base cards).
+        
+        #### High card
+        
+        Combination cards - `Aв™  Qв™¦ Tв™  7в™¦ 6в™Ј`. Combination base cards - `Aв™  Qв™¦ Tв™  7в™¦ 6в™Ј`. Other cards are absent.
+        
+        #### One pair
+        
+        Combination cards - `9в™Ј 9в™Ґ Kв™¦ Qв™Ј 7в™ `. Combination base cards - `9в™Ј 9в™Ґ`. Other cards - `Kв™¦ Qв™Ј 7в™ `.
+        
+        #### Two pairs
+        
+        Combination cards - `Jв™Ґ Jв™¦ 4в™  4в™¦ 3в™Ј`. Combination base cards - `Jв™Ґ Jв™¦ 4в™  4в™¦`. Other cards - `3в™Ј`. There are two parts of combination base cards: first - `Jв™Ґ Jв™¦` , second - `4в™  4в™¦`.
+        
+        #### Three of a kind
+        
+        Combination cards - `6в™¦ 6в™  6в™Ј Qв™Ґ 8в™ `. Combination base cards - `6в™¦ 6в™  6в™Ј`. Other cards - `Qв™Ґ 8в™ `.
+        
+        #### Straight
+        
+        Combination cards - `Kв™  Qв™¦ Jв™  Tв™¦ 9в™Ј`. Combination base cards - `Kв™  Qв™¦ Jв™  Tв™¦ 9в™Ј`. Other cards are absent.
+        
+        #### Flush
+        
+        Combination cards - `Aв™Ґ Jв™Ґ 8в™Ґ 5в™Ґ 2в™Ґ`. Combination base cards - `Aв™Ґ Jв™Ґ 8в™Ґ 5в™Ґ 2в™Ґ`. Other cards are absent.
+        
+        #### Full house
+        
+        Combination cards - `3в™Ј 3в™¦ 3в™Ґ 8в™Ј 8в™ `. Combination base cards - `3в™Ј 3в™¦ 3в™Ґ 8в™Ј 8в™ `. Other cards are absent. There are two parts of combination base cards: first - `3в™Ј 3в™¦ 3в™Ґ` , second - `8в™Ј 8в™ `.
+        
+        #### Three of a kind
+        
+        Combination cards - `Qв™  Qв™¦ Qв™Ј Qв™Ґ 4в™Ј`. Combination base cards - `Qв™  Qв™¦ Qв™Ј Qв™Ґ`. Other cards - `4в™Ј`.
+        
+        #### StraightFlush
+        
+        Combination cards - `Aв™  Kв™  Qв™  Jв™  Tв™ `. Combination base cards - `Aв™  Kв™  Qв™  Jв™  Tв™ `. Other cards are absent.
+        
+        
+        
+        ### Find ratio combination
+        
+        ```python
+        from cthpoker import findRatioCombo
+        
+        # In hand card is card increased by 1000
+        
+        cards = [144, 1114, 84, 72, 54, 1031, 24] # Aв™  Jв™  8в™  7в™¦ 5в™  3в™Ј 2в™ 
+        # table cards Aв™  8в™  7в™¦ 5в™  2в™ 
+        # hand cards Jв™  3в™Ј
+        combo, ratio = findRatioCombo(cards)
+        print(combo)
+        # [6, 14, 11, 8, 5, 2]
+        print(ratio)
+        # 2
+        
+        cards = [103, 102, 104, 1131, 133, 83, 1041] # Tв™Ґ Tв™¦ Tв™  Kв™Ј Kв™Ґ 8в™Ґ 4в™Ј
+        # table cards Tв™Ґ Tв™¦ Tв™  Kв™Ґ 8в™Ґ
+        # hand cards Kв™Ј 4в™Ј
+        combo, ratio = findRatioCombo(cards)
+        print(combo)
+        # [7, 10, 13]
+        print(ratio)
+        # 1
+        
+        cards = [52, 54, 51, 124, 101, 1062, 1023] # 5в™¦ 5в™  5в™Ј Qв™  Tв™Ј 6в™¦ 2в™Ґ
+        # table cards 5в™¦ 5в™  5в™Ј Qв™  Tв™Ј
+        # hand cards 6в™¦ 2в™Ґ
+        combo, ratio = findRatioCombo(cards)
+        print(combo)
+        # [4, 5, 12, 10]
+        print(ratio)
+        # 0
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: C

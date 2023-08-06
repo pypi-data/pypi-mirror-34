@@ -1,0 +1,13 @@
+google_services_helper-1.0.0.dist-info/METADATA,sha256=YSWsFrc9sNw5JB5tDZ9wlBHLAxBXJLTKpZu_ONI8Ic0,3200
+google_services_helper-1.0.0.dist-info/RECORD,,
+google_services_helper-1.0.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+google_services_helper-1.0.0.dist-info/top_level.txt,sha256=21u4B_56rqr2DmuyE70YsL4wOQ-bBJ8u5neUaKY1Fg0,10
+vedavaapi/__init__.py,sha256=0c0Tagm0dHRDAWM0VlMfrnsCJVmHJYKyyVXXayDlge4,66
+vedavaapi/google_helper/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+vedavaapi/google_helper/gdrive/__init__.py,sha256=8NfGuuscJYiPpEHGJGTKiENJVkHgs5_t67X8f1k2NhI,72
+vedavaapi/google_helper/gdrive/helper.py,sha256=50POXH2Ko9s3j8T3MwOCUGn27qBy7ecx-MnX2EwtFNs,6407
+vedavaapi/google_helper/gsheets/__init__.py,sha256=XIZEMm_LypJzIgRLIyYTgJL5Ujl6C1eg6A6ZXs4gevA,53
+vedavaapi/google_helper/gsheets/helper.py,sha256=2wmUk_Wux_ZzfzWTTtDItzVAU4T4lrp2aw8-pEL49vM,19312
+vedavaapi/google_helper/oauth/__init__.py,sha256=4ErDEs8Zf_BEjHuYbM0ygAmD9Ij6yrjiygn8sKiSRWs,375
+vedavaapi/google_helper/oauth/authorization_helper.py,sha256=_5mCa8vSo6kXZuZdD5juckHXFhjxySPOIONHHs3Ui7Y,3149
+vedavaapi/google_helper/oauth/creds_helper.py,sha256=2oKzEreGltm39yq5c37k-TIF5amzrjc9h5BNMomGPqc,1831

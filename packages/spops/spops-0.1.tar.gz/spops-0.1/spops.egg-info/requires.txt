@@ -1,0 +1,5 @@
+numpy
+h5py
+requests
+singleton_decorator
+contexttimer

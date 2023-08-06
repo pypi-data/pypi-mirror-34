@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mangenerator
+Version: 0.2.0
+Summary: Python module to generate man documentation
+Home-page: https://mangenerator.sourceforge.io/
+Author: Turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Description: Source code & Development:
+            https://mangenerator.sourceforge.io
+        Doxygen documentation:
+            http://turulomio.users.sourceforge.net/doxygen/mangenerator/
+        
+        Description
+        ===========
+        
+        License
+        =======
+        GPL-3
+        
+        Dependencies
+        ============
+        
+        None, other than Python. Tested on Python 3 
+        
+        Usage
+        =====
+        
+        
+        Changelog
+        =========
+        0.2.0
+          * Basic funcionality
+        
+        
+Keywords: man generator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

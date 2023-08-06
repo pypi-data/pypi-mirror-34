@@ -1,0 +1,6 @@
+include GPL-3.txt  
+recursive-include ./ *.py
+recursive-include locale *.po *.mo
+recursive-include locale *.1
+prune __pycache__
+global-exclude *.pyc

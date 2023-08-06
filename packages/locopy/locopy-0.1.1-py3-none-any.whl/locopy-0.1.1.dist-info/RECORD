@@ -1,0 +1,11 @@
+locopy/__init__.py,sha256=IkTxr_r2umbMgSSjceX_Ktywp6JJUTV3EebIxediVUo,729
+locopy/_version.py,sha256=LR8bUlu7PIWa34g0dVXD7RStrFD59rxfH1tkVGwLL-M,708
+locopy/errors.py,sha256=l-BNtusYBX-P9dyRbfiOGMXw7ucazG5rCCGNa2govNY,2080
+locopy/locopy.py,sha256=bffPCtQhganKL3nNSThI23Ow-5Ac6rqNVOa2HIwRpwc,8514
+locopy/logger.py,sha256=WoNJihV6t9X0YWkU-2Z6LkSBGY6WRsM6wadxVqgEHVU,1961
+locopy/s3.py,sha256=w82m2CyVU2tNQsFr6fdl4kHXyM6DFhLcc2ixF9ZNsr8,22191
+locopy/utility.py,sha256=7nSQMBX5DLRCwez5U_3OofZXjmGkRm2VMxZ_stL82Ic,7565
+locopy-0.1.1.dist-info/METADATA,sha256=qjZsAWeSozoO-233-B2OhgzqfPKDY767QUETrdcD_b0,5659
+locopy-0.1.1.dist-info/RECORD,,
+locopy-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+locopy-0.1.1.dist-info/top_level.txt,sha256=jLNhHKrPurvstgX5jGVGBXpf9HUfBFuRBo6ivsEL3xM,7

@@ -1,0 +1,14 @@
+drf_simple_api_signing-1.0.2.dist-info/METADATA,sha256=NwBbilCn_eXU4IqScuLfDq0feRSyxAKDTs0FkexCYJc,2226
+drf_simple_api_signing-1.0.2.dist-info/RECORD,,
+drf_simple_api_signing-1.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+drf_simple_api_signing-1.0.2.dist-info/top_level.txt,sha256=5qN8tNAet-iV_yvdnRsc35VN_I4TckrjDG8dRe9G40I,25
+simple_api_signing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_api_signing/exceptions.py,sha256=gJ2Tn3F0ijUZ0ILeNXBqHem37uw46P4jsI1Kapfy0Kk,524
+simple_api_signing/utils.py,sha256=HIz8mmIdhrxmYLF62x1-AfB5DARjypAxV2trnMqMkc0,2925
+simple_api_signing/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_api_signing/common/middleware.py,sha256=wS1AORZkdbwhsz6GDqHifTbpKJNKYxoXmIHlSwNjom4,581
+simple_api_signing/common/rest_permission.py,sha256=llYuKbvfRW_19JmwH6GvyvFlKJcnrHcDV06ItHy88qs,560
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/settings.py,sha256=3pEpVSI5LNhP54MDiiDr-ez6Wed6v6InrLkE6mhmdE4,121
+tests/test_drf_permission.py,sha256=oZQOVykHQ8ZAsREmqpOnFMuuvZgLMqh8220HmVf0DcE,1786
+tests/test_signing_flow.py,sha256=_gf7k9VaS7lpPT0K34-O3IUwIymNoN0N-a-JDInlXHo,1956

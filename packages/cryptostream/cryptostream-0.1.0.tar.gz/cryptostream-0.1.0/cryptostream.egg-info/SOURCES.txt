@@ -1,0 +1,8 @@
+README.rst
+setup.py
+cryptostream/__init__.py
+cryptostream.egg-info/PKG-INFO
+cryptostream.egg-info/SOURCES.txt
+cryptostream.egg-info/dependency_links.txt
+cryptostream.egg-info/requires.txt
+cryptostream.egg-info/top_level.txt

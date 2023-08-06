@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pypexels_l5
+Version: 1.0.0b3
+Summary: A simple wrapper around the Pexels API
+Home-page: https://github.com/Lumen5/pypexels_l5
+License: UNKNOWN
+Author: Josh Klar
+Author-email: josh@lumen5.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests~=2.19
+Requires-Dist: future

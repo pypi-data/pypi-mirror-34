@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jupyterlab_email/__init__.py
+jupyterlab_email/email.py
+jupyterlab_email/extension.py
+jupyterlab_email/utils.py
+jupyterlab_email.egg-info/PKG-INFO
+jupyterlab_email.egg-info/SOURCES.txt
+jupyterlab_email.egg-info/dependency_links.txt
+jupyterlab_email.egg-info/not-zip-safe
+jupyterlab_email.egg-info/top_level.txt

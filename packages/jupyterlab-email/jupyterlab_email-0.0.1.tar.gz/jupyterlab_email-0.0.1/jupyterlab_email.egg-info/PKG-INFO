@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: jupyterlab-email
+Version: 0.0.1
+Summary: Sending emails from JupyterLab
+Home-page: https://github.com/timkpaine/jupyterlab_email
+Author: Tim Paine
+Author-email: t.paine154@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/timkpaine/jupyterlab_email/archive/v0.0.1.tar.gz
+Description: # jupyterlab_email
+        A jupyterlab extension to email notebooks from the browser.
+        
+Keywords: jupyter jupyterlab
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

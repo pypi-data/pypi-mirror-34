@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+voice_robotifier/__init__.py
+voice_robotifier/sapi.py
+voice_robotifier/voice_robotifier.py
+voice_robotifier.egg-info/PKG-INFO
+voice_robotifier.egg-info/SOURCES.txt
+voice_robotifier.egg-info/dependency_links.txt
+voice_robotifier.egg-info/not-zip-safe
+voice_robotifier.egg-info/requires.txt
+voice_robotifier.egg-info/top_level.txt
+voice_robotifier/dectalk/MSVCRTd.DLL
+voice_robotifier/dectalk/dectalk.dll
+voice_robotifier/dectalk/dtalk_us.dic
+voice_robotifier/dectalk/say.exe

@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=_2Fn8HgG57BPbHR0FOAMAcCUwLi5b7hXVsnCOhwuzwY,1069
+tests/test_EN_US.py,sha256=8mp_YvEZeSvDUR_hp_N9a19gZruR-pDXXu8tI5IuYdA,3866
+words2num/__init__.py,sha256=7y6FbtAh0I0UlV2jVF1Wuu--U0cvn2w0kg2PKTw3CqU,122
+words2num/base.py,sha256=3CBt6nEgHYxM5lkaemKHA6R_y_owpdw399QgMhSXvEQ,465
+words2num/core.py,sha256=oBlFCeC8GllYvHIkZsJTlcR7cAk7p6QMlfn8L8zMat8,246
+words2num/lang_EN_US.py,sha256=NHL_56WYfUZ8U31akDG3yqjzXvMkMQ2nI2IkVcfFTAs,6665
+words2num-0.2.0.dist-info/DESCRIPTION.rst,sha256=DR0JkuLnYlZMtCG7NEnx0cviys2vKEQbNBiVx3k6gRs,196
+words2num-0.2.0.dist-info/METADATA,sha256=4A9-zme1uBAas-IezUeZNKyzzaJtV09Hj43-qhIWEFw,440
+words2num-0.2.0.dist-info/RECORD,,
+words2num-0.2.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+words2num-0.2.0.dist-info/metadata.json,sha256=8-GPKrsyXBSucc2rHzZ-XG6fx2IOshyFAp3joZQdM4w,408
+words2num-0.2.0.dist-info/top_level.txt,sha256=nv4cW50F5_P-jmUWDYoAbHabjuIY2X8BzV4cpm3M63s,16

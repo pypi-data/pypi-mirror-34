@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-generic
+Version: 0.0.2
+Summary: Generic helpers for Django framework
+Home-page: https://github.com/maledorak/django-generic
+Author: Mariusz Korzekwa
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.4
+
+django-generic
+==============
+
+Django generic helpers used in my private projects.
+
+

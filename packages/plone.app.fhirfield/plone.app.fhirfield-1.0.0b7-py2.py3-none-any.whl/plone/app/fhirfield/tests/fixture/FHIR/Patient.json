@@ -1,0 +1,55 @@
+{
+    "name": [
+        {
+            "text": "Patient Full",
+            "use": "usual",
+            "given": [
+                "Eelector",
+                "Patient",
+                "Full"
+            ],
+            "family": "Full"
+        }
+    ],
+    "language": "en",
+    "telecom": [
+        {
+            "use": "work",
+            "system": "phone",
+            "value": "2562000002"
+        },
+        {
+            "use": "work",
+            "system": "email",
+            "value": "demo1@example.com"
+        }
+    ],
+    "gender": "male",
+    "resourceType": "Patient",
+    "active": true,
+    "identifier": [
+        {
+            "assigner": {
+                "display": "CPR registret"
+            },
+            "use": "official",
+            "type": {
+                "text": "Danish Social Security Number (CPR)"
+            },
+            "system": "CPR",
+            "value": "240365-0002"
+        },
+        {
+            "assigner": {
+                "display": "Zitelab ApS"
+            },
+            "use": "usual",
+            "type": {
+                "text": "Plone Patient UUID"
+            },
+            "system": "UUID",
+            "value": "19c5245f-89a8-49f8-b244-666b32adb92e"
+        }
+    ],
+    "id": "19c5245f-89a8-49f8-b244-666b32adb92e"
+}

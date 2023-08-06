@@ -1,0 +1,3 @@
+[console_scripts]
+minervaboto = minervaboto.__main__:main
+

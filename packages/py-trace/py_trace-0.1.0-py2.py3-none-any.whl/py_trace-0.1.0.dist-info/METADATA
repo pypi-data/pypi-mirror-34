@@ -1,0 +1,83 @@
+Metadata-Version: 2.0
+Name: py-trace
+Version: 0.1.0
+Summary: Python client for interacting with the Trace api.
+Home-page: https://github.com/aiguofer/py-trace
+Author: Diego Fernandez
+Author-email: aiguo.fernandez@gmail.com
+License: MIT license
+Keywords: py_trace
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Requires-Dist: requests-oauthlib
+Provides-Extra: dev
+Requires-Dist: Sphinx (==1.7.1); extra == 'dev'
+Requires-Dist: bumpversion (==0.5.3); extra == 'dev'
+Requires-Dist: coverage (==4.5.1); extra == 'dev'
+Requires-Dist: flake8 (==3.5.0); extra == 'dev'
+Requires-Dist: pip (==9.0.1); extra == 'dev'
+Requires-Dist: pytest (==3.4.2); extra == 'dev'
+Requires-Dist: pytest-runner (==2.11.1); extra == 'dev'
+Requires-Dist: tox (==2.9.1); extra == 'dev'
+Requires-Dist: twine (==1.10.0); extra == 'dev'
+Requires-Dist: watchdog (==0.8.3); extra == 'dev'
+Requires-Dist: wheel (==0.30.0); extra == 'dev'
+
+===================
+Trace Python Client
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/py-trace.svg
+        :target: https://pypi.python.org/pypi/py-trace
+
+.. image:: https://img.shields.io/travis/aiguofer/py-trace.svg
+        :target: https://travis-ci.org/aiguofer/py-trace
+
+.. image:: https://readthedocs.org/projects/py-trace/badge/?version=latest
+        :target: https://py-trace.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+Python client for interacting with the Trace api. For information on the API see `the api documentation <http://developers.traceup.com/>`_
+
+
+* Free software: MIT license
+* Documentation: https://py-trace.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2018-07-22)
+------------------
+
+* First release on PyPI.
+
+

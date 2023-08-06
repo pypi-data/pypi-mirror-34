@@ -1,0 +1,11 @@
+openregister_client/__init__.py,sha256=9JWrqWHstyRbecKESJgG2kWn55u_dHtb0Sm49ovg25E,94
+openregister_client/fields.py,sha256=p-YpYiP2oBYdEK7ekWTCmsqsZI7dSffwO77lqVqrhH0,2916
+openregister_client/registers.py,sha256=QvpfMsMPdkXjpEjTnEaPSgEhr-4szq9uIrzLVmF4Qck,15011
+openregister_client/util.py,sha256=bgX0l1GsnCM6SCl1ocgh1id85PvQXb-jPE9SbRg79UY,7583
+openregister_client/django_compat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openregister_client/django_compat/fields.py,sha256=E0SKPUfEICjlp1OdVcmzmJElykfNEjx49-x0gm1NXgQ,1434
+openregister_client/django_compat/model_factory.py,sha256=PG6C_IqxplZtc95dZF2VjiWpSMNGY2065YH75yy1MbI,8161
+openregister_client-0.3.dist-info/METADATA,sha256=Bpf0HyFsXDLb2AGLzO2RLSfNTlOe-8MZMq0fa1e9_bU,4431
+openregister_client-0.3.dist-info/RECORD,,
+openregister_client-0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+openregister_client-0.3.dist-info/top_level.txt,sha256=QK7DBuH0OfVxNIsrlh8h7mNLEmqUcXcZzwVn79FX8NU,20

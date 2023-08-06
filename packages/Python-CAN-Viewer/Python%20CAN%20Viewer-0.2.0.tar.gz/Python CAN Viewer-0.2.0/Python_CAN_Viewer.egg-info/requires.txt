@@ -1,0 +1,14 @@
+python-can>=2.0.0
+six
+typing
+
+[:platform_system == "Windows"]
+windows-curses
+
+[test]
+future
+mock
+pytest
+pytest-runner
+coverage
+codecov

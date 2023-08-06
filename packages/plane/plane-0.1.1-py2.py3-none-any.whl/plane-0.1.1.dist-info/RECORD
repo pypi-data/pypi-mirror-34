@@ -1,0 +1,12 @@
+plane/__init__.py,sha256=ba-ZyFhbWMMm07IGYfR-_LBpMqI3-6NgMbceY7q6xeg,311
+plane/main.py,sha256=FqvXsQX_iRpJa5_06SSNowPuDq1Pzk7ye-tyJYQO2v0,2219
+plane/pattern.py,sha256=ZD9l_93GXl1RJa4ki6IQ2DYNrJIOIs2p5EkW-VmxkVA,3889
+plane/pipeline.py,sha256=WGxnd3TBKbi_8nn_sR5KyR1TqfGUS-zZ1AyXIBKeQUk,1871
+plane/plane.py,sha256=kyy_PXPaWsmotws9HJPhag4Lq-BKijELeGCqWnBFJaI,3396
+plane/punctuation.py,sha256=dqQpG_bjTa9UZtpOJOZoQt-e_zRgrFJKJ1P6NHG1bGA,795
+plane-0.1.1.dist-info/DESCRIPTION.rst,sha256=9t_9R7xM7bqFOFUPAnaLgYuyXtjffRax5gdWjQSEUm8,2321
+plane-0.1.1.dist-info/METADATA,sha256=zjCjqKTr4HZPKCsOPR3GbGJzG7GXIHRqQ7r-XAjlDGM,2650
+plane-0.1.1.dist-info/RECORD,,
+plane-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+plane-0.1.1.dist-info/metadata.json,sha256=WvFiGNE4NXhy6CpWfhx1kWvSQs3_-zoxb3agm-CHRlk,519
+plane-0.1.1.dist-info/top_level.txt,sha256=F6NlRhRKo9lhGZucwldfimYyXWvC2_rmUqyi-GKLz2g,6

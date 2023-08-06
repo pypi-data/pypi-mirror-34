@@ -1,0 +1,12 @@
+bidcap/__init__.py,sha256=OMCurRPdOUErKzIdjay-yIi9Aa_TgMnfxj9DthOaUJ0,50
+bidcap/setup.py,sha256=2-R0ssQLchDFIWB8CzKzGK0g55kjDyl7pYl11MlTkSw,689
+bidcap/datasets/__init__.py,sha256=1-mMTx7GbpvldRXdGnm9UklS47sUAczQpsVRa2JFMmI,39
+bidcap/datasets/convex.py,sha256=JB7oDyi5Nd9G2N1TAwyVKht1nBn-Fq2ns8LTUyEIFYE,635
+bidcap/datasets/data.py,sha256=iRNdW6I1DtrSW2u4cntPGOsFUWgmQHWKQ9BAu_qvtAY,5846
+bidcap/datasets/mnist.py,sha256=oHL8tOTW0gSj7OxFbmorxwH3VPDVh1oPFc1_ZpuLp8s,3374
+bidcap/utils/__init__.py,sha256=5bsvbjt5O7rwX4PqJm03Qy1LErGQgWanhn-YFB4lp9E,22
+bidcap/utils/loader.py,sha256=E5MEbGzIKITAYvDKY8JZWF8VSFkFmrapDwcOlbcvhKk,1691
+bidcap-0.0.1.dist-info/METADATA,sha256=ZeyRp2cpNaA3ucFxfZFjAAp___pmYP-jVmtMkVI-7oc,1764
+bidcap-0.0.1.dist-info/RECORD,,
+bidcap-0.0.1.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+bidcap-0.0.1.dist-info/top_level.txt,sha256=mXMt-9y5slbnTT8EuFgTKgvqhqrufTQ9Vlmros2P7b4,7

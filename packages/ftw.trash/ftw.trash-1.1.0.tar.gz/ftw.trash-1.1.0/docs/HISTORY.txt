@@ -1,0 +1,18 @@
+Changelog
+=========
+
+
+1.1.0 (2018-08-03)
+------------------
+
+- Do not restore earlier trashed children when restoring parent. [jone]
+- Allow deleting content from ZMI. [jone]
+- Fire events when trashing and restoring object. [jone]
+- Do not intercept link integrity checker. [jone]
+- Add "clean trash" functionality to trash view. [jone]
+
+
+1.0.0 (2018-07-05)
+------------------
+
+- Initial implementation [jone]

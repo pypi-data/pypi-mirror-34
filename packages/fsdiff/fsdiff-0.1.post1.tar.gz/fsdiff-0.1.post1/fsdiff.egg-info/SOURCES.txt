@@ -1,0 +1,10 @@
+README
+README.md
+setup.py
+bin/fsdiff
+fsdiff/__init__.py
+fsdiff/main.py
+fsdiff.egg-info/PKG-INFO
+fsdiff.egg-info/SOURCES.txt
+fsdiff.egg-info/dependency_links.txt
+fsdiff.egg-info/top_level.txt

@@ -1,0 +1,63 @@
+Metadata-Version: 1.1
+Name: inspire-service-orcid
+Version: 0.0.1a4
+Summary: ORCID service client
+Home-page: https://github.com/puntonim/inspire-service-orcid
+Author: puntonim
+Author-email: foo@gmail.com
+License: UNKNOWN
+Description: # Inspire ORCID service client
+        
+        This package is service client for ORCID API used in inspire-next.
+        
+        ## Client usage
+        
+        TODO
+        
+        ## Development
+        
+        ```bash
+        # Create a venv and install the requirements:
+        $ make venv
+        
+        # Run isort and lint:
+        $ make isort
+        $ make lint
+        
+        # Run all the tests:
+        $ make test  # tox against Python27 and Python36.
+        $ tox -e py27  # tox against a specific Python version.
+        $ pytest  # pytest against the active venv.
+        
+        # Run a specific test:
+        $ make test/tests/test_orcid.py  # tox against Python27 and Python36.
+        $ tox -e py27 -- tests/test_orcid.py  # tox against a specific Python version.
+        $ pytest tests/test_orcid.py  # pytest against the active venv.
+        ```
+        
+        To publish on PyPi:
+        
+        ```bash
+        # Edit .pypirc:
+        $ cat $HOME/.pypirc
+        [pypi]
+        username: myuser
+        password: mypass
+        
+        # Edit the version in `setup_gen.py`.
+        
+        # Finally compile and publish:
+        $ make publish
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP

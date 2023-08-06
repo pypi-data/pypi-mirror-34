@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+find_known_secrets/__init__.py
+find_known_secrets/__main__.py
+find_known_secrets/__version__.py
+find_known_secrets/_secrets.py
+find_known_secrets/main.py
+find_known_secrets/searcher.py
+find_known_secrets.egg-info/PKG-INFO
+find_known_secrets.egg-info/SOURCES.txt
+find_known_secrets.egg-info/dependency_links.txt
+find_known_secrets.egg-info/entry_points.txt
+find_known_secrets.egg-info/requires.txt
+find_known_secrets.egg-info/top_level.txt
+test/test_command_line.py
+test/test_main.py

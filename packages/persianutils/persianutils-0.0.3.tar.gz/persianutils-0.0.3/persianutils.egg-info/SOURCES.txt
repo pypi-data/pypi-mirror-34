@@ -1,0 +1,8 @@
+setup.py
+persianutils/ArabicAlphabet.py
+persianutils/PersianAlphabet.py
+persianutils/__init__.py
+persianutils.egg-info/PKG-INFO
+persianutils.egg-info/SOURCES.txt
+persianutils.egg-info/dependency_links.txt
+persianutils.egg-info/top_level.txt

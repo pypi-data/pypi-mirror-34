@@ -1,0 +1,12 @@
+README.md
+setup.py
+artmr/__init__.py
+artmr/artmr.py
+artmr/models.py
+artmr/views.py
+artmr.egg-info/PKG-INFO
+artmr.egg-info/SOURCES.txt
+artmr.egg-info/dependency_links.txt
+artmr.egg-info/entry_points.txt
+artmr.egg-info/requires.txt
+artmr.egg-info/top_level.txt

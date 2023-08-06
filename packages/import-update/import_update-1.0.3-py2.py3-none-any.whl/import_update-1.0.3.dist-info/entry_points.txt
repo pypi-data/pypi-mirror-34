@@ -1,0 +1,3 @@
+[console_scripts]
+import_update = import_update.cli:main
+

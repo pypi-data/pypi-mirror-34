@@ -1,0 +1,14 @@
+faunadb/__init__.py,sha256=ecSEk7oYKKMyXQ2FjO5DS5QucxM-tujVYencykQFuV4,128
+faunadb/_json.py,sha256=eKEjk75ytHP9EnGmz2z80tupQrP7S1TIyJzsoEL3hCA,2361
+faunadb/client.py,sha256=rzJOIyWGXBCEJSl3rk6CJAZGvNAwtn1UfLq465Gu9tU,7736
+faunadb/client_logger.py,sha256=dJNx_zy46ifmM2x-Y4d_2J7Sc-BQoz96vFVxEQGyWYY,1459
+faunadb/deprecated.py,sha256=Nt5IwCCqUXIYi3_ie444iIaKvlYThUIvMr4VFqYbFsI,409
+faunadb/errors.py,sha256=uPtd0zoZrvgc0zBpwuwZQD0C7kShpFAuYtZJ16excEc,5159
+faunadb/objects.py,sha256=v-TiimS_tKY9D5zrICpndfl1Y4ObfSTMz9cOHlL2WzY,4573
+faunadb/page.py,sha256=Vo4M8UBNemkA_qKGfPjNW9nsgkuDYoktSNprgv7AGdo,2274
+faunadb/query.py,sha256=slN81-noZkl1X2ixbEfnttbeSoOKE-paojAggXP3NcQ,18551
+faunadb/request_result.py,sha256=YrmX45FaTTWXEaIq-If6pEYZAuVUCrY2tUQnsF1L5lE,1441
+faunadb-2.5.0.dist-info/METADATA,sha256=pIehpB2BTrOZtbE1oghM67Q8yLJSUtEkNMWU2omRhxU,4502
+faunadb-2.5.0.dist-info/RECORD,,
+faunadb-2.5.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+faunadb-2.5.0.dist-info/top_level.txt,sha256=KjeRKkKNlubAZCfZpTFYl8e9FTJq9UGqYq9lg_TrTeo,8

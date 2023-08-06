@@ -1,0 +1,3 @@
+[console_scripts]
+eip-auditor = eip_auditor.cmdline:execute
+

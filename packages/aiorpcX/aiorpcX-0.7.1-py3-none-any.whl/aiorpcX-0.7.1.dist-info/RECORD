@@ -1,0 +1,11 @@
+aiorpcX-0.7.1.dist-info/METADATA,sha256=_BbhXLQGRk7faZJh0BAI-ICDkLzxinJBCXyUnigZOM0,836
+aiorpcX-0.7.1.dist-info/RECORD,,
+aiorpcX-0.7.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aiorpcX-0.7.1.dist-info/top_level.txt,sha256=TewV8dlOnTk67uqWdFipB1l10QshbLYOezSR2FDwmrY,8
+aiorpcx/__init__.py,sha256=lO7yzDk6ppuunhCSQbfaBNzxIh_FtnMe__rrIPjjmAs,376
+aiorpcx/curio.py,sha256=iUI5vYnOfSFTuDxlqR9v--yko5ujtpjjmvGEs081AiE,16094
+aiorpcx/framing.py,sha256=suXa5Fo_jRIozyPNs5Hpv3F8eJQEkB2VcOnhQ--864c,3756
+aiorpcx/jsonrpc.py,sha256=bjsN56b0_wHDKK5A8OpZal0-cSCA0Cr7mXEWnjFEME4,27149
+aiorpcx/session.py,sha256=TgCD9R7z5GKSCO9bYraBNUf9GGvgWcqOpk4-hi_v0Tg,13468
+aiorpcx/socks.py,sha256=sPQUqtTFWHwXR1j9LY_Lcy0fnHKdIV0P9WsWdNxfSHM,15191
+aiorpcx/util.py,sha256=FP3rmH5U86JU4Fths4B5xjru4QYhDdta0U6zmX84ies,3880

@@ -1,0 +1,4 @@
+[console_scripts]
+envgen-api = envgen.server:main
+envgen-cli = envgen.interface:main
+

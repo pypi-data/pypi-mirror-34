@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+xfce4_terminal_themes/__init__.py
+xfce4_terminal_themes/cli.py
+xfce4_terminal_themes/configurator.py
+xfce4_terminal_themes.egg-info/PKG-INFO
+xfce4_terminal_themes.egg-info/SOURCES.txt
+xfce4_terminal_themes.egg-info/dependency_links.txt
+xfce4_terminal_themes.egg-info/entry_points.txt
+xfce4_terminal_themes.egg-info/not-zip-safe
+xfce4_terminal_themes.egg-info/top_level.txt
+xfce4_terminal_themes/tests/__init__.py
+xfce4_terminal_themes/tests/test_cli.py
+xfce4_terminal_themes/tests/test_configurator.py

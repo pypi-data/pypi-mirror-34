@@ -1,0 +1,3 @@
+[console_scripts]
+xfce4-terminal-themes = xfce4_terminal_themes.cli:main
+

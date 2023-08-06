@@ -1,0 +1,3 @@
+fio_shipping >= 4.0, < 4.1
+trytond_nereid_checkout >= 4.0, < 4.1
+trytond >= 4.0, < 4.1

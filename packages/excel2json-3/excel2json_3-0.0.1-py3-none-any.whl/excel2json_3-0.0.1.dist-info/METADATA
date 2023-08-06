@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: excel2json-3
+Version: 0.0.1
+Summary: Convert MS Excel file formats to JSON
+Home-page: https://github.com/toransahu/excel_to_json
+Author: Toran Sahu
+Author-email: toran.sahu@yahoo.com
+License: UNKNOWN
+Keywords: excel to json,xlsx to json,xls to json,xlsx,xls,json
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: Text Processing
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+Requires-Dist: xlrd
+Requires-Dist: openpyxl
+Requires-Dist: requests
+
+# Excel to JSON Converter
+[![Build Status](https://travis-ci.org/toransahu/excel-to-json.svg?branch=master)](https://travis-ci.org/toransahu/excel-to-json)
+
+
+A minimal API that downloads MS Excel (XLS + XLSX) file from a given URL and converts a given sheet into JSON file.
+
+For more details on execution, please refer the [link](https://github.com/toransahu/excel-to-json/blob/master/docs/Solution.md).
+
+

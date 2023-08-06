@@ -1,0 +1,8 @@
+excel2json_3-0.0.1.dist-info/METADATA,sha256=2lg46tzm4wQzr6t-QfDWBU74q_rr1Jan-GvzSizY2_w,1582
+excel2json_3-0.0.1.dist-info/RECORD,,
+excel2json_3-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+excel2json_3-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+src/__init__.py,sha256=JU0Zvlk7vwyHpcCRKIPD02OSU94ODGf0ZpMAKrn-n-Q,272
+src/convert_excel_to_json.py,sha256=_puwxzkoUvJ5cDMv_N0-Fl9_N0_VlC0Nd7uLVVvhTZA,5221
+src/convert_excel_to_json_using_openpyxl.py,sha256=65NOXoDiFdtGf_kBxQG3p0d-s2cs9x9ro-f_4_YXGy8,2340
+src/test.py,sha256=YcKpjXl7ZD2V2VEIgTkMXTWDKvE0JMUPE_PfRYoeUhs,1664

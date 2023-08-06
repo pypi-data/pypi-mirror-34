@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: string-formatter
+Version: 1.1.0
+Summary: replacement for string.Formatter, supporting empty keys (recursively)
+Home-page: https://bitbucket.org/ruamel/string_formatter
+Author: Anthon van der Neut
+Author-email: a.van.der.neut@ruamel.eu
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

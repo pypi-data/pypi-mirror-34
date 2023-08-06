@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: khmerml
+Version: 0.0.2
+Summary: https://github.com/slashdigital/khmer-ml/issues
+Home-page: UNKNOWN
+Author: KhmerML
+Author-email: kevin@slash.co
+License: GPLv3
+Platform: UNKNOWN
+Requires: numpy
+Requires: nltk
+Provides: khmerml
+Requires-Dist: numpy (==1.14.5)
+Requires-Dist: nltk (>=3.2.4)
+
+UNKNOWN
+
+

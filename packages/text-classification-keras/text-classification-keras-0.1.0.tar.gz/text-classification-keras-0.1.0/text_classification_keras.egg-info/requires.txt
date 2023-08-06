@@ -1,0 +1,10 @@
+keras==2.2.*
+six==1.10.*
+scikit-learn==0.19.*
+joblib==0.12.*
+jsonpickle==0.9.*
+numpy==1.15.*
+
+[full]
+spacy==2.0.*
+deep-plots==0.1.*

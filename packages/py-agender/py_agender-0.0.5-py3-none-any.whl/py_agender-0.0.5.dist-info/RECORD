@@ -1,0 +1,11 @@
+py_agender-0.0.5.dist-info/METADATA,sha256=yoOhVgufEXxLoQRUaOIqeoPgbQCuDcBbFfCe-wKdSvk,3533
+py_agender-0.0.5.dist-info/RECORD,,
+py_agender-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+py_agender-0.0.5.dist-info/entry_points.txt,sha256=4NkmxyMOb4OAFeqv2Oeroal6eFdVRZiti2ocmUQF9_w,61
+py_agender-0.0.5.dist-info/top_level.txt,sha256=EWRhdz4zmX5n_iChqGcq2eCX-HxL3GzJGNXra6nGPR8,15
+pyagender/__init__.py,sha256=fFWy9xUgW7x_SU5-43HDZVXFX7rDqlopTvM6IzxGEI0,90
+pyagender/pyagender.py,sha256=IFn29ibQQZdgBoOtmE-_gm9y_E68pDsJ4TP9-1NNV2M,6036
+pyagender/pyagender_cli.py,sha256=lHXh0uL6VAjPDN7oga1whJwCnb_1_f-r-B3LGtfWQF0,1664
+pyagender/wide_resnet.py,sha256=IeUnCCGMQctPBT8U5pBKIrAz4oi_pjFZsbSBIkY4_-k,6640
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_pyagender.py,sha256=JPAl9epVSF8S_8iK1yHYH73N431ANKUQu5X6gyfDn9Q,3987

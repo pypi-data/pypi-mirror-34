@@ -1,0 +1,6 @@
+pytest-runner
+numpy
+scipy
+docrep
+mpmath
+numdifftools

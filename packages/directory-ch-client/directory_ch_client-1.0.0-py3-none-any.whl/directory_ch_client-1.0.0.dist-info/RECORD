@@ -1,0 +1,9 @@
+directory_ch_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+directory_ch_client/client.py,sha256=mCVzwvLgTplG6g4iouMU9WxIxWAVmLyja22zDLpf7uo,836
+directory_ch_client/company.py,sha256=X8Hn0dnO2p8aW1C0CYVsuti-2IQRctDbEdlL48lpyh4,1148
+directory_ch_client/dummy_client.py,sha256=Qg0G-pWGXbY_0NEDOgvU-AIc2hPAgYA4tR7bIrYbqxE,642
+directory_ch_client/version.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+directory_ch_client-1.0.0.dist-info/METADATA,sha256=Z3rn2rVMP9PQQnEbNQArdtqmxq-xTf_KJkntIY02M2o,2639
+directory_ch_client-1.0.0.dist-info/RECORD,,
+directory_ch_client-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+directory_ch_client-1.0.0.dist-info/top_level.txt,sha256=eOG6Euz-yfVpcEFgzfJMpSfDICdhfJww1TqTZQO-Mg0,20

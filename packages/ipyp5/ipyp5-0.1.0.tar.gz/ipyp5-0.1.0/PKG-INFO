@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ipyp5
+Version: 0.1.0
+Summary: p5.js Jupyter Widget
+Home-page: https://github.com/jtpio/ipyp5
+Author: Jeremy Tuloup
+Author-email: 
+License: BSD
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,IPython,p5js
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Jupyter
+Provides-Extra: docs
+Provides-Extra: examples
+Provides-Extra: test

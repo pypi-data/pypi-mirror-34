@@ -1,0 +1,12 @@
+name: ipyp5_docs
+channels:
+- conda-forge
+- defaults
+dependencies:
+- nodejs
+- python=3.5
+- jupyter_sphinx
+- nbsphinx
+- sphinx>=1.5
+- pip:
+  - nbsphinx-link

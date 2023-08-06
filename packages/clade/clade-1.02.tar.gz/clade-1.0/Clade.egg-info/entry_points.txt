@@ -1,0 +1,4 @@
+[console_scripts]
+clade-cmds-stats = clade.cmds:print_cmds_stats
+clade-intercept = clade.intercept:main
+

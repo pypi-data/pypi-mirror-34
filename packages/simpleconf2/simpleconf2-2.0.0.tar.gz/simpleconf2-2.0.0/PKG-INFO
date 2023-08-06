@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: simpleconf2
+Version: 2.0.0
+Summary: (Hopefully) the last configuration manager I will ever write.
+Home-page: https://github.com/chrisnorman7/simpleconf
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MPL-2
+Description: # simpleconf
+        A configuration manager which will hopefully get around all the shortcomings of both confmanager and configobj-dialog.
+        
+        
+Platform: UNKNOWN

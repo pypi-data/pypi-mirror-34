@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: InterferencePackage
+Version: 0.0.3
+Summary: A package for calculating incoherent (or coherent) diffraction images from FELs
+Home-page: https://gitlab.physical-engine.de
+Author: Stefan Richter
+Author-email: stefan.richter@physical-perception.de
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # QOQI Interference Package (`stefano.richtero/InterferencePackage`) #
+        ## About ##
+        This is a python package for calculating the incoherent (or coherent) diffraction images created in an FEL by using JIT CPU-Code or JIT CUDA-Code.
+        
+        ## ChangeLog and Roadmap ##
+         - 0.1(alpha)
+        
+        ## Usage ##
+        TBD
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

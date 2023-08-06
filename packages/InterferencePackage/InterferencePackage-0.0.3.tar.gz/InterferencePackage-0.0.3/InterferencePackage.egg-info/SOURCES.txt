@@ -1,0 +1,14 @@
+README.md
+setup.py
+InterferencePackage/InterferencePackage.py
+InterferencePackage/__init__.py
+InterferencePackage.egg-info/PKG-INFO
+InterferencePackage.egg-info/SOURCES.txt
+InterferencePackage.egg-info/dependency_links.txt
+InterferencePackage.egg-info/top_level.txt
+InterferencePackage/helpers/CameraGrid.py
+InterferencePackage/helpers/CrystalGrid.py
+InterferencePackage/helpers/CudaWrapper.py
+InterferencePackage/helpers/__init__.py
+InterferencePackage/tests/__init__.py
+InterferencePackage/tests/test_one.py

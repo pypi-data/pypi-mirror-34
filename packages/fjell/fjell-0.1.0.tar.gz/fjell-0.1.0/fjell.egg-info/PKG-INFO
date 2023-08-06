@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fjell
+Version: 0.1.0
+Summary: A web framework.
+Home-page: https://github.com/anlutro/TODO
+Author: Andreas Lutro
+Author-email: anlutro@gmail.com
+License: MIT
+Description: # Fjell
+        
+        A rock-solid Python web framework for those who aren't afraid of some heavy lifting and steep learning curves.
+        
+Keywords: web,framework
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

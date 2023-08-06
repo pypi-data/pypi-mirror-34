@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: data-process
+Version: 0.1.0
+Summary: make processing 2d data more convenient
+Home-page: https://github.com/weaming/data-process
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/weaming/data-process
+Project-URL: Bug Reports, https://github.com/weaming/data-process
+Description: UNKNOWN
+Keywords: json csv pandas
+Platform: UNKNOWN

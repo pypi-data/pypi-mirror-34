@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: dummy-validator
+Version: 0.0.2
+Summary: Checks that an elections file follows best practices
+Home-page: https://github.com/google/election_results_xml_validator
+Author: Miano Njoka
+Author-email: election-results-xml-validator@google.com
+Maintainer: Google gTech Partners
+Maintainer-email: election-results-xml-validator@google.com
+License: Apache License
+Description: election_results_xml_validator is a script that checks if a election data feed follows best practices and outputs errors, warnings and info messages for common issues.
+Platform: UNKNOWN

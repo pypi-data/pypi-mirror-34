@@ -1,0 +1,14 @@
+CONTRIBUTING.md
+LICENSE-2.0.txt
+MANIFEST.in
+README.rst
+__init__.py
+base.py
+rules.py
+setup.py
+dummy_validator.egg-info/PKG-INFO
+dummy_validator.egg-info/SOURCES.txt
+dummy_validator.egg-info/dependency_links.txt
+dummy_validator.egg-info/entry_points.txt
+dummy_validator.egg-info/requires.txt
+dummy_validator.egg-info/top_level.txt

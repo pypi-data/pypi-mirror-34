@@ -1,0 +1,10 @@
+edc_reports/__init__.py,sha256=pzN4EbW60r6L3_xjezDaUkS70wcg2ubxZd3AVFpoaP0,71
+edc_reports/numbered_canvas.py,sha256=GbVyMPKi4DEBgHg8BpRX5OoDvzNGska9d4VcIOt6XBU,1470
+edc_reports/report.py,sha256=fKwr5mYQyiosW7debtWbD6t7eMFgi5cv7Z6cL1KeC90,2899
+edc_reports/settings.py,sha256=fk36jCB0fdjXumy43TsIXCtHh5fMq9W9S8mFiUGj_Gg,3103
+edc_reports/urls.py,sha256=0k8MHFs6BLpMz8tGM6IA3he2oWZzUmmA9E2XPchodaE,118
+edc_reports/wsgi.py,sha256=sm1ae0TKbj7vo9xmYL3NQUBKRo4b6pL4g_56Z9EYddQ,172
+edc_reports-0.1.5.dist-info/METADATA,sha256=yOnqJnD8Xu1ilGLbOt-SLqjvdbUmMNnFBKO0Wh8_cuk,883
+edc_reports-0.1.5.dist-info/RECORD,,
+edc_reports-0.1.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+edc_reports-0.1.5.dist-info/top_level.txt,sha256=X-Du7TcOJkgdOh_zBdBNnZUF99yJFLc52ThcUmRouaU,12

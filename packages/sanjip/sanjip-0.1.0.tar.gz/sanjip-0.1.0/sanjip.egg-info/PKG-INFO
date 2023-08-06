@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sanjip
+Version: 0.1.0
+Summary: Sanji Bundle IP Module
+Home-page: https://github.com/Sanji-IO/sanjip
+Author: Sanji Team
+Author-email: sanji@moxa.com
+License: UNKNOWN
+Description: # Sanji Bundle IP Module
+        
+        ## Install
+        
+        `pip install sanjip`
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

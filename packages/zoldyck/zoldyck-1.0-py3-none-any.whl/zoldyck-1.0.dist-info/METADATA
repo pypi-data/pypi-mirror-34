@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zoldyck
+Version: 1.0
+Summary: is Universal Package for making Chatbots easy .this version 1.0, and it include only facebook messenger
+Home-page: https://github.com/AmienKhaled/zoldyck
+Author: Amien Khaled Amien
+Author-email: amin.khaled33@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: moviepy
+Requires-Dist: SpeechRecognition
+Requires-Dist: requests
+
+UNKNOWN
+
+

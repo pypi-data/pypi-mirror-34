@@ -1,0 +1,14 @@
+zoldyck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoldyck/messengerBot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoldyck/messengerBot/messenger.py,sha256=vRo99VUXA763LfKWYEAxr9VgGwGnEd9TDSGfSTgl3z0,5316
+zoldyck/messengerBot/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoldyck/messengerBot/handlers/jsonHandler.py,sha256=qlhlFOcnkD0z5CU6RRBMs9Ixl-svPWXdbZ0e_dgnCY0,5825
+zoldyck/messengerBot/structure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoldyck/messengerBot/structure/buttons.py,sha256=9A7Vl-BgNLFAFe_21Kry0chGQQYVR43oQYtCe7lnvLA,6982
+zoldyck/messengerBot/structure/quickReplies.py,sha256=lFtuhk_EF-Sz9mkZSJbvfwCYc-J0Rc3RXQu02KlYKlA,4901
+zoldyck/messengerBot/structure/simpleMsg.py,sha256=duPCcuPen0AHLT8jVOvRVIHkXM68xrvMCRlZs-biPos,4744
+zoldyck/messengerBot/structure/templates.py,sha256=aPD0TmBsBpJmMQwnehc8TRzUvPCKrsRHy6RQ1V9hBw0,18804
+zoldyck-1.0.dist-info/METADATA,sha256=ufLHWuzU9lOIDmwGqo8QFqmTCl1bnllHLJ95BMO6XFg,420
+zoldyck-1.0.dist-info/RECORD,,
+zoldyck-1.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+zoldyck-1.0.dist-info/top_level.txt,sha256=qhFJGBkrvcJo103JeviTjTFU-AVLQNQyeb1unLsytUs,8

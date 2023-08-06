@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: columns
+Version: 0.0.1
+Summary: Print a list in columns.
+Home-page: https://github.com/tslight/columns
+Author: Toby Slight
+Author-email: tobyslight@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PRINT A LIST IN COLUMNS
+
+*Does what it says on the tin.*
+
+## INSTALLATION
+
+`pip install columns`
+
+

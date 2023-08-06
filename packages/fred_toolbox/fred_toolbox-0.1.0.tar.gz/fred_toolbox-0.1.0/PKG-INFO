@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: fred_toolbox
+Version: 0.1.0
+Summary: A toolbox for machine learning and data processing
+Home-page: https://github.com/fredliang44/ML_Toolbox
+Author: Fred Liang
+Author-email: info@fredliang.cn
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # ML_Toolbox
+        
+        ![](https://img.shields.io/badge/language-python3.6-5FA8E7.svg?style=flat-square)
+        [![](https://img.shields.io/badge/codebeat-A-brightgreen.svg?style=flat-square)](https://codebeat.co/projects/github-com-fredliang44-ml_toolbox-master)
+        
+        
+        ## Visualization
+        From [bokeh](https://bokeh.pydata.org)
+        
+        ## Example
+        
+        ### Visualization
+        
+        
+        
+        ```python
+        import vis as v
+        x = [0.1, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0]
+        y  = [i**4 for i in x]
+        
+        chart = v.Line(x,y)
+        chart.x_label = "testx"
+        chart.y_label = "testy"
+        chart.show()
+        ```
+        
+        ![Line graph](https://img.l-do.cn/line.png-github)
+        
+        ```python
+        x1 = list(range(150))
+        y1 = [i**2 for i in x]
+        x2 = list(range(150))
+        y2 = [i**1.5 for i in x]
+        
+        chart = v.Dot(x,y,x,[i**1.5 for i in y])
+        chart.label1 = "testx"
+        chart.label2 = "testy"
+        chart.title = "test"
+        chart.show()
+        ```
+        
+        ![Dot graph](https://img.l-do.cn/dot.png-github)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

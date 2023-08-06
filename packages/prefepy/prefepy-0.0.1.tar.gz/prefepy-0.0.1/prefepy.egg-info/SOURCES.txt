@@ -1,0 +1,12 @@
+README.md
+setup.py
+prefepy/PrefEPy.py
+prefepy/__init__.py
+prefepy/preference_manager.py
+prefepy/vimeo_api.py
+prefepy.egg-info/PKG-INFO
+prefepy.egg-info/SOURCES.txt
+prefepy.egg-info/dependency_links.txt
+prefepy.egg-info/not-zip-safe
+prefepy.egg-info/requires.txt
+prefepy.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+excel2json/__about__.py,sha256=klJ9CBzyT6sRZDQ43p2N9lkSqVhR_pnyHmYYLljVQTo,533
+excel2json/__init__.py,sha256=YHCAY6W41A2gctEhTqKSYIG5QpwRG9J_i9IG59x9S9c,230
+excel2json/convert_excel_to_json.py,sha256=qvsWvObQ33i4nMMomrhnq37A62D5ls7voH3YafFtsHs,5193
+excel2json/convert_excel_to_json_using_openpyxl.py,sha256=d5sGZ4s4ibBuX6-vPK2gpPixL0R4U5UYxM5eK9DnNCA,2315
+excel2json/test.py,sha256=LZ5wOKBdWS6P0q53bV22RXs2CPwt8tB5t8AaQF3wNuc,1783
+excel2json_3-0.0.5.dist-info/METADATA,sha256=-yKNzWcFF3L1WVB0gH49a7hUsFULb1bOwiRpT3hsFAA,1614
+excel2json_3-0.0.5.dist-info/RECORD,,
+excel2json_3-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+excel2json_3-0.0.5.dist-info/top_level.txt,sha256=ngwr7NpK3gNT1ftg60zymA8N205vkUFx73VVo8pk-Mk,11

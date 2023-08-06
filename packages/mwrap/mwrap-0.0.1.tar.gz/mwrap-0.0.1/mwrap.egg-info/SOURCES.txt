@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+mwrap/__init__.py
+mwrap/commands.py
+mwrap/diff.py
+mwrap/find.py
+mwrap/main.py
+mwrap/parse.py
+mwrap.egg-info/PKG-INFO
+mwrap.egg-info/SOURCES.txt
+mwrap.egg-info/dependency_links.txt
+mwrap.egg-info/entry_points.txt
+mwrap.egg-info/requires.txt
+mwrap.egg-info/top_level.txt

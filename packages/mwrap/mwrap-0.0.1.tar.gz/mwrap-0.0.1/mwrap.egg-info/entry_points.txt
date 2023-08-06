@@ -1,0 +1,3 @@
+[console_scripts]
+mwrap = mwrap.main:main
+

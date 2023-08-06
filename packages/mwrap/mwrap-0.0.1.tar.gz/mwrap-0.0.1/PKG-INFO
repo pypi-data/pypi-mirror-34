@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: mwrap
+Version: 0.0.1
+Summary: Utilities for managing meson subprojects
+Home-page: https://github.com/CPB9/mwrap.git
+Author: Daniel Zalevskiy
+Author-email: dndanik@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+NoteShrinker/__init__.py
+NoteShrinker/cli.py
+NoteShrinker/noteshrinker.py
+NoteShrinker/noteshrinker_helpers.py
+NoteShrinker.egg-info/PKG-INFO
+NoteShrinker.egg-info/SOURCES.txt
+NoteShrinker.egg-info/dependency_links.txt
+NoteShrinker.egg-info/entry_points.txt
+NoteShrinker.egg-info/not-zip-safe
+NoteShrinker.egg-info/requires.txt
+NoteShrinker.egg-info/top_level.txt

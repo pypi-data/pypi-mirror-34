@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: findCircle
+Version: 0.0.11
+Summary: Find the max intercept of circles.
+Home-page: https://github.com/Tsangares/findCircle
+Author: William Wyatt
+Author-email: wwyatt@ucsc.edu
+License: UNKNOWN
+Description: Find the max intercept of circles.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

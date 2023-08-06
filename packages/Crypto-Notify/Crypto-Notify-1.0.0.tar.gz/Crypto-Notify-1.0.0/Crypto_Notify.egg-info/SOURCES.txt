@@ -1,0 +1,10 @@
+README.md
+setup.py
+Crypto_Notify.egg-info/PKG-INFO
+Crypto_Notify.egg-info/SOURCES.txt
+Crypto_Notify.egg-info/dependency_links.txt
+Crypto_Notify.egg-info/entry_points.txt
+Crypto_Notify.egg-info/requires.txt
+Crypto_Notify.egg-info/top_level.txt
+cryptonotifier/Main.py
+cryptonotifier/__init__.py

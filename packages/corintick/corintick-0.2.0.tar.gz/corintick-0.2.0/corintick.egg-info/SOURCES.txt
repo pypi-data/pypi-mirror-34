@@ -1,0 +1,10 @@
+README.rst
+setup.py
+corintick/__init__.py
+corintick/corintick.py
+corintick/serialization.py
+corintick.egg-info/PKG-INFO
+corintick.egg-info/SOURCES.txt
+corintick.egg-info/dependency_links.txt
+corintick.egg-info/requires.txt
+corintick.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+lz4>=1.0.0
+pandas>=0.23
+pymongo>=3.6
+numpy
+pytz
+msgpack-python
+
+[test]
+pytest
+pytest-cov
+flake8

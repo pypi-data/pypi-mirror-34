@@ -1,0 +1,13 @@
+README.rst
+setup.py
+sphinxpapyrus/__init__.py
+sphinxpapyrus/docxbuilder/__init__.py
+sphinxpapyrus/docxbuilder/builder.py
+sphinxpapyrus/docxbuilder/writer.py
+sphinxpapyrus/docxbuilder/templates/style.docx
+sphinxpapyrus_docxbuilder.egg-info/PKG-INFO
+sphinxpapyrus_docxbuilder.egg-info/SOURCES.txt
+sphinxpapyrus_docxbuilder.egg-info/dependency_links.txt
+sphinxpapyrus_docxbuilder.egg-info/namespace_packages.txt
+sphinxpapyrus_docxbuilder.egg-info/requires.txt
+sphinxpapyrus_docxbuilder.egg-info/top_level.txt

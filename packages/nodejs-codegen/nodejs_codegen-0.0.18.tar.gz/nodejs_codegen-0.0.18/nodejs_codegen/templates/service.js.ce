@@ -1,0 +1,5 @@
+{
+    "subscribe_name": "methods",
+    "template_path": "./service.js.template",
+    "output_path": "./service.js"
+}

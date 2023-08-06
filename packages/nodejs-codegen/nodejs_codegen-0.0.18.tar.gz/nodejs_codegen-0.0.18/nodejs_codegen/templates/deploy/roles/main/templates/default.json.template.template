@@ -1,0 +1,5 @@
+{
+    "port": {{'{{'}}{{ name }}_port{{'}}'}},
+    "db_port": {{'{{'}}interface_db_port{{'}}'}},
+    "db": "{{'{{'}}interface_db{{'}}'}}"
+}

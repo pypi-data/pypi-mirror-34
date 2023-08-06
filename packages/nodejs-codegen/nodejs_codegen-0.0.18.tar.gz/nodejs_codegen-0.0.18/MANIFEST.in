@@ -1,0 +1,1 @@
+recursive-include nodejs_codegen/templates *.ce *.template

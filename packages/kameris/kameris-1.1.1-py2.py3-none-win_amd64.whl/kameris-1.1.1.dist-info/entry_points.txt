@@ -1,0 +1,3 @@
+[console_scripts]
+kameris = kameris.__main__:main
+

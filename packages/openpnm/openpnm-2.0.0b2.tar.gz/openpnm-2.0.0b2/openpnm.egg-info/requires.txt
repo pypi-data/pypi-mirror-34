@@ -1,0 +1,13 @@
+numpy
+scipy
+matplotlib
+scikit-image
+pandas
+sympy
+numba
+networkx
+h5py
+porespy
+transforms3d
+flatdict
+scikit-umfpack

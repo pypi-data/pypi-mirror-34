@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: tru
+Version: 0.0.3
+Summary: https://github.com/TroyRetter/TRU
+Home-page: UNKNOWN
+Author: Troy Retter
+Author-email: troyretter@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: PyYAML
+Requires-Dist: pandas
+
+
+Wraps some standard python commands for brevity. Parameters default to the canonical data science use case (or the author's primary use case)
+
+see: https://github.com/TroyRetter/TRU
+
+

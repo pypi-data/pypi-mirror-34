@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyapollo
+Version: 0.0.5
+Summary: pyapollo
+Home-page: https://code.aliyun.com/cashbusrisk/pyapollo
+Author: sunguangran@daixiaomi.com
+Author-email: sunguangran@daixiaomi.com
+License: UNKNOWN
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: requests
+Requires-Dist: eventlet
+
+pyapollo 工具包
+
+
+

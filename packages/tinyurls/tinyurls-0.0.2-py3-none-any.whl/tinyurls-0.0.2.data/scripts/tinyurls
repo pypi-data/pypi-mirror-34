@@ -1,0 +1,11 @@
+#!/Users/cybint/Projects/env/bin/python
+# -*- coding: utf-8 -*-
+
+"""Executes the service on the command line
+
+"""
+
+from tinyurls.service import service
+
+if __name__ == "__main__":
+    service()

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: lztools
+Version: 1.1.15
+Summary: A collection of useful utilities by Laz aka Zanzes
+Home-page: UNKNOWN
+Author: Laz aka Zanzes
+Author-email: ubuntuea@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Systems Administration
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

@@ -1,0 +1,7 @@
+voevent-parse
+python-dateutil
+psycopg2
+configargparse
+PyYAML
+astropy
+requests

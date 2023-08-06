@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: waitz_s3_api
+Version: 0.0.3
+Summary: API created by Waitz that provides useful functionality to read and write from AWS S3.
+Home-page: https://github.com/Waitz-Inc/waitz_s3_api
+Author: Daniel Fritsch
+Author-email: dfritsch99@gmail.com
+License: UNKNOWN
+Description: # Waitz S3 API Docs
+        
+        #### download_file(bucket, key, local_path)
+        	
+            Grab a file from S3 and bring it onto your local machine at the
+            specified path.
+        
+            bucket (str)     -- Bucket that the file exists in
+            key (str)        -- Key that the file exists in
+            local_path (str) -- Where the file will be stored on the caller's machine
+            
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

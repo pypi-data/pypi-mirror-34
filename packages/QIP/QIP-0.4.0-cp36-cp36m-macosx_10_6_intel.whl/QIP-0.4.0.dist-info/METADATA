@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: QIP
+Version: 0.4.0
+Summary: Quantum Computing Library
+Home-page: https://github.com/Renmusxd/QIP
+Author: Sumner Hearth
+Author-email: sumnernh@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires: numpy
+Requires-Python: >3.4
+Requires-Dist: numpy
+
+QIP: A quantum computing simulation library.
+
+

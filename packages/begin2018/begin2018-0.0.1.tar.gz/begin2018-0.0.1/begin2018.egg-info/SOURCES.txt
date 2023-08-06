@@ -1,0 +1,14 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+begin2018/__init__.py
+begin2018/_version.py
+begin2018/main.py
+begin2018.egg-info/PKG-INFO
+begin2018.egg-info/SOURCES.txt
+begin2018.egg-info/dependency_links.txt
+begin2018.egg-info/entry_points.txt
+begin2018.egg-info/not-zip-safe
+begin2018.egg-info/top_level.txt

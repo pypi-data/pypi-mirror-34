@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: get_version
+Version: 2.0.0
+Summary: A version helper in the spirit of versioneer.
+Home-page: https://github.com/flying-sheep/get_version
+License: UNKNOWN
+Author: Philipp Angerer
+Author-email: phil.angerer@gmail.com
+Requires-Python: >=3.6
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)

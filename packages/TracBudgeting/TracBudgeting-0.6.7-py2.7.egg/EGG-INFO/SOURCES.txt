@@ -1,0 +1,14 @@
+COPYING.txt
+setup.cfg
+setup.py
+TracBudgeting.egg-info/PKG-INFO
+TracBudgeting.egg-info/SOURCES.txt
+TracBudgeting.egg-info/dependency_links.txt
+TracBudgeting.egg-info/entry_points.txt
+TracBudgeting.egg-info/requires.txt
+TracBudgeting.egg-info/top_level.txt
+ticketbudgeting/__init__.py
+ticketbudgeting/ticketbudgeting.py
+ticketbudgeting/htdocs/js/budgeting.js
+ticketbudgeting/locale/messages.pot
+ticketbudgeting/locale/de_DE/LC_MESSAGES/ticketbudgeting.po

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: TracBudgeting
+Version: 0.6.7
+Summary: Possibility to add budgeting information (estimation, cost, user) to tickets
+Home-page: https://trac-hacks.org/wiki/BudgetingPlugin
+Author: Gefasoft AG, Franz Mayer
+Author-email: franz.mayer@gefasoft.de
+License: 3-Clause BSD
+Description: UNKNOWN
+Platform: UNKNOWN

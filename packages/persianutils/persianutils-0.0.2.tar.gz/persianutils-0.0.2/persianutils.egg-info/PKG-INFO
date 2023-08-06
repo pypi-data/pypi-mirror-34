@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: persianutils
+Version: 0.0.2
+Summary: A package to preprocess your Persian text for Word2Vec embedding
+Home-page: https://github.com/ishto7/persianutils
+Author: Iman Nazari
+Author-email: imannazari@hotmail.com
+License: UNKNOWN
+Description: # persianutils
+        A package to preprocess your Persian text for Word2Vec embedding
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

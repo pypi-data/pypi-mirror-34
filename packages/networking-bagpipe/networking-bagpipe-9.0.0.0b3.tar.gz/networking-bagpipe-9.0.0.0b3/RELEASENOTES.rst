@@ -1,0 +1,69 @@
+==================
+networking-bagpipe
+==================
+
+.. _networking-bagpipe_9.0.0.0b3:
+
+9.0.0.0b3
+=========
+
+.. _networking-bagpipe_9.0.0.0b3_New Features:
+
+New Features
+------------
+
+.. releasenotes/notes/ipvpn_ovs-2eab0293cb97585b.yaml @ 083eaea9cc7394ecdad98952838719a9f266e154
+
+- Rewrite of the IPVPN dataplane driver for OVS, mainly with the
+  objective of implementing ECMP using OVS `select` groups instead
+  of the `multipath` action (which requires maintaining per-flow
+  state in the datapath, losing wildcarding).
+
+
+.. _networking-bagpipe_9.0.0.0b1:
+
+9.0.0.0b1
+=========
+
+.. _networking-bagpipe_9.0.0.0b1_New Features:
+
+New Features
+------------
+
+.. releasenotes/notes/bgpvpn-l2-ovs-6898d9ee5dbcf77f.yaml @ 32cfdc008930983cdf3db000f6fdaf318bb74b60
+
+- bagpipe-bgp now supports E-VPN with OVS thanks to this new dataplane driver,
+  BGPVPNs of type L2 can now be supported, with both linuxbridge and OVS
+
+.. releasenotes/notes/bgpvpn-routes-control-660a16ff9b1c24ca.yaml @ 32cfdc008930983cdf3db000f6fdaf318bb74b60
+
+- the project now supports the features required for the `bgpvpn-routes-control`
+  API extension, including: control of local_pref, control of per port
+  routes, control of redistribution of routes between BGPVPN with next-hop
+  modified to point to a port.
+
+.. releasenotes/notes/sfc-2000351597a8c160.yaml @ 32cfdc008930983cdf3db000f6fdaf318bb74b60
+
+- networking-bagpipe now provides a driver for the networking-sfc project.
+  Using the `bagpipe` sfc driver will result in the use of BGPVPN stiching
+  route redistribution, and BGP flowspec for the realisation of a service
+  chain defined by the networking-sfc API.
+
+
+.. _networking-bagpipe_9.0.0.0b1_Bug Fixes:
+
+Bug Fixes
+---------
+
+.. releasenotes/notes/improve_fallback-96e524daf96ebcc1.yaml @ f7a29f12bcbad1e949c4bd8c6b350a22a3369dd5
+
+- The IPVPN bgpvpn/router fallback mechanism has been improved. This
+  mechanism allows traffic not matching any VRF route in the distributed
+  BGPVPN implementation of bagpipe, to "fallback" and reach a Neutron
+  router connected on the network. The implementation has been simplified
+  and the risk removed of not reaching VRF destinations because of a stale
+  ARP entry for the gateway IP.  This improvement comes with the requirement
+  of using the OpenVSwitch security group firewall driver on
+  any node having both the l3agent and VMs with a need to reach BGPVPN
+  destinations (e.g. single node setup or DVR setup).
+

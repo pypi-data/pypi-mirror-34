@@ -1,0 +1,3 @@
+[console_scripts]
+txupnp-cli = txupnp.cli:main
+

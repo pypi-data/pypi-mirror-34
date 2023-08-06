@@ -1,0 +1,4 @@
+[console_scripts]
+lpy = cli.lpy:main
+lztools = cli.lztools:main
+

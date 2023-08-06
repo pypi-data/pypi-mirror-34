@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: precisionmapper
+Version: 0.0.2
+Summary: Python package to communicate with precisionmapper.com
+Home-page: https://github.com/tducret/precisionmapper-python
+Author: Thibault Ducret
+Author-email: hello@tducret.com
+License: MIT license
+Download-URL: https://github.com/tducret/precisionmapper-python/tarball/0.0.2
+Description: Python package to communicate with precisionmapper.com
+Keywords: api,precisionmapper,parsing,drone,platform,python-wrapper,scraping,scraper,parser,precisionhawk
+Platform: Posix; MacOS X
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3

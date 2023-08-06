@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: andrew_anderson_utils
+Version: 0.0.5
+Summary: A package with Andrew Anderson's modules
+Home-page: https://github.com/Mr-Andersen/session_protocol
+Author: Andrew Anderson
+Author-email: andrew-anderson.neo@yandex.ru
+License: MIT
+Description: # Andrew Anderson's utils
+        
+        session_protocol:
+          Basic package. Contents protocol class (socket subclass), which is designed for safe client-server communications.
+        
+        onion_dns (is not available yet):
+          Resolves dns names through tor.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

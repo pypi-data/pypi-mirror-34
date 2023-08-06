@@ -1,0 +1,9 @@
+requests
+phonenumbers
+iso8601
+attrs
+
+[dev]
+pytest
+responses
+mock

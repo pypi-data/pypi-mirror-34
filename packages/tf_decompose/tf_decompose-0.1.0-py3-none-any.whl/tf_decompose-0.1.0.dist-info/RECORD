@@ -1,0 +1,9 @@
+tf_decompose/__init__.py,sha256=6ZrrV-gF_qwgrcA7GR75zMAGHVTq0GTTgptfjq7cH60,194
+tf_decompose/dtensor.py,sha256=Vp-9D5hHlOkQccRcr8MbkftSm80_FgKVYlG9E--1OFg,2940
+tf_decompose/ktensor.py,sha256=SfoPN5kYawg83e2ZDMHCceH45fa1FZSh8og-Ud2YjWA,3793
+tf_decompose/ttensor.py,sha256=UalddDxKaQKl_vKZ-aN7WvhJuL29X4x3XgIa5-2G-6Q,6352
+tf_decompose/utils.py,sha256=ovmH6bIpoWroA195P_nfBgSqMDELJRYHmnyumiOMPrU,2947
+tf_decompose-0.1.0.dist-info/METADATA,sha256=yrBobgeyqb-NzJwm-vji2Z4OxugNCYaUdtsOxK4F6_k,2087
+tf_decompose-0.1.0.dist-info/RECORD,,
+tf_decompose-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tf_decompose-0.1.0.dist-info/top_level.txt,sha256=pXagfR8z6XW5KuPggTqX6W_jurcaRTLz6rKtsfP7GNo,13

@@ -1,0 +1,15 @@
+SIDR-0.0.2a2.dist-info/LICENSE.txt,sha256=Y-ul4CFsi4jcdrOyHui3aGXCydAVcm6iU865SgEGCQI,1057
+SIDR-0.0.2a2.dist-info/METADATA,sha256=CyK1xucAbX5NDcU7R-jd075QNC_9rdE656KGhLfI6SQ,2463
+SIDR-0.0.2a2.dist-info/RECORD,,
+SIDR-0.0.2a2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+SIDR-0.0.2a2.dist-info/entry_points.txt,sha256=oPqx9EFMhIedpypHXoNOG8D1qvvWAJauaAz6tp7epnE,39
+SIDR-0.0.2a2.dist-info/top_level.txt,sha256=f1jXLwNBkWZhwg7hAR50SjS-FmJHVP_pqhX12KRKvk4,11
+sidr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sidr/cli.py,sha256=3WICarpXvhiZpqpn3xlX7jG8SslcRqn9tQbJ2n0TotU,6054
+sidr/common.py,sha256=tvK2irxEoonekA5QDfMe2cMneJz0bbxnoOEZIN0UA-Q,10824
+sidr/default.py,sha256=GAauYslV_VAP4vr_yxXWiACxCF9VwfRuvH2T1wwGQFA,5335
+sidr/runfile.py,sha256=PazIStUiu2BfJwyYLLIHcyVaA2tOuOdbvVZq3BdjWsI,2425
+tests/test_cli.py,sha256=s3P4y8FzHXvRiOKJO63Augi5As8ouzJhbwoyrxnbmXk,225
+tests/test_common.py,sha256=hOBwvKZPV53GinKuQTjE74mFNv-B_XSyHICA3vweAjY,2161
+tests/test_default.py,sha256=nDjACenFtDilDRKIsX9SrnpscbU9yePnTlviHv7edUw,936
+tests/test_runfile.py,sha256=DG584U1nYWZXrmEDPwlFID6gqvZqQuNl-Q9X0l4tW_A,224

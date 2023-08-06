@@ -1,0 +1,13 @@
+score.sa.db-0.0.6-py3.4-nspkg.pth,sha256=d_tmM_T4tM-74YnLAndykvdJf6pMiLYeUMG2yXhuINE,660
+score/sa/db/__init__.py,sha256=4KPuaV_k2pTYO42CSlR53XeUaRtLX1mzwD3QYQjYRCQ,1545
+score/sa/db/_enum.py,sha256=hy456aWQIzCGgTt1Usi7P7XlvP8p7IAVU2llT-5Kgeg,3092
+score/sa/db/_init.py,sha256=Q7iuRmqfTHwocdIwLAN2HJJNJQTNrYhDpxEop6E22RU,8022
+score/sa/db/pg.py,sha256=eLI3jpMd7xhZMq_dlTbohOX9OQIAvfTzbLrf5zlbrI0,3412
+score/sa/db/sqlite.py,sha256=iNAM9SGIJKmzH4FFDi08vNvFvRKQZm0dZ16oaemMMV8,2690
+score.sa.db-0.0.6.dist-info/DESCRIPTION.rst,sha256=Bh-6XYnvwOpzBGOYNcAWMD13rGRsEpu2EF62OA2ZVfw,2138
+score.sa.db-0.0.6.dist-info/METADATA,sha256=L2kOs5TVGnCwqrqu92JRW4M7IxDI06TuQwx2ovv1k4Q,3086
+score.sa.db-0.0.6.dist-info/RECORD,,
+score.sa.db-0.0.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+score.sa.db-0.0.6.dist-info/metadata.json,sha256=NucthMgEEHeFm67DP4OAhBflqeg8P7jfwxU-9Bsvaic,1080
+score.sa.db-0.0.6.dist-info/namespace_packages.txt,sha256=9vG9YULXFXpe8-m7noAwww1ZwJw0pdx1xV-Efi5-xh8,15
+score.sa.db-0.0.6.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6

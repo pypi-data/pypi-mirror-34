@@ -1,0 +1,13 @@
+- project:
+    check:
+      jobs:
+        - openstack-tox-lower-constraints:
+            required-projects:
+              - openstack/horizon
+        - horizon-openstack-tox-python3-django111
+    gate:
+      jobs:
+        - openstack-tox-lower-constraints:
+            required-projects:
+              - openstack/horizon
+        - horizon-openstack-tox-python3-django111

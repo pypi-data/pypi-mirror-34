@@ -1,0 +1,12 @@
+rivers2stratigraphy/__init__.py,sha256=YXMuoBfybpKBAxmg47WwiF_wD8IbFQNquj1hMxYq5Ew,51
+rivers2stratigraphy/_version.py,sha256=l1lWRV5fzx6-C3xpWdEYCx3Y5TNykf_HgoEs12q6cfQ,21
+rivers2stratigraphy/geom.py,sha256=0AmTJ6bNIuS32RooEgPzytMnd-HibI9nkvQBDjz494E,1466
+rivers2stratigraphy/rivers2stratigraphy.py,sha256=6SQCt7QwkJVgSGouupZvqP2KilNAmU6DOa2qjDU4mr0,13719
+rivers2stratigraphy/rivers2stratigraphy_gui.py,sha256=DfvSHXUD2vrg_j1rUZXmjjAfTyc2N0fIey1TWsT49pU,13246
+rivers2stratigraphy/run.py,sha256=bkaEqQ2FcgzCxDw3Jgk3CXZ9uHRCXMSLOxR_N5H70WI,130
+rivers2stratigraphy/sedtrans.py,sha256=EmQpCcNP9Hc9trvwZwzqMBhSyGkvqkY-l8FuktHNqlE,396
+rivers2stratigraphy/utils.py,sha256=D9R7GQ1zbjqZLiOIKyVxZR4i8MLNL11pcx6hQXpj4OE,11834
+rivers2stratigraphy-0.1.6.dist-info/METADATA,sha256=gP-WaEC_89WOLCTfgPqeuYG5028QGgy_lWQSKk5w0-E,4220
+rivers2stratigraphy-0.1.6.dist-info/RECORD,,
+rivers2stratigraphy-0.1.6.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+rivers2stratigraphy-0.1.6.dist-info/top_level.txt,sha256=03ti9WNYIvMzO7vgtmGUJiHmDjab5LMuuUiYmR5EEAI,20

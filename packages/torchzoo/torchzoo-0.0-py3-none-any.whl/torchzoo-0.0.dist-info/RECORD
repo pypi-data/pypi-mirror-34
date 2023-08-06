@@ -1,0 +1,10 @@
+torchzoo/__init__.py,sha256=zP-oi6VTAImuBRuvb-DgW9HHk7c7dbsKaF8PbKpFyeU,53
+torchzoo/rnn.py,sha256=POlSnljJAxMp8qaZdjkkMt2YknlTlPiuHFxpc7mA4v8,1792
+torchzoo/simple.py,sha256=ane2b3YYf8i4q2p_LtQGGPz57kzDUTcESm4qhyaWexI,662
+torchzoo-0.0.dist-info/METADATA,sha256=BZomWVg9Tt_d1UfyKIAo0t8tRBFB8Gvbnqi9dtbWIsg,341
+torchzoo-0.0.dist-info/RECORD,,
+torchzoo-0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+torchzoo-0.0.dist-info/top_level.txt,sha256=pg1I1EX_py1CoQFZXkMciuiVxpEHyMFR26QFF4EC3PY,9
+wildfire/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wildfire/rnn.py,sha256=POlSnljJAxMp8qaZdjkkMt2YknlTlPiuHFxpc7mA4v8,1792
+wildfire/simple.py,sha256=ane2b3YYf8i4q2p_LtQGGPz57kzDUTcESm4qhyaWexI,662

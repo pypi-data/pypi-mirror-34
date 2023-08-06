@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: jinja2_github
+Version: 0.1.0
+Summary: Jinja2 Extension for rendering GitHub project properties
+Home-page: https://github.com/jcfr/jinja2-github
+Author: Jean-Christophe Fillion-Robin
+Author-email: jchris.fillionr@kitware.com

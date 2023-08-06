@@ -1,0 +1,17 @@
+[metadata]
+name = 'texion'
+version = '0.0.1'
+description = 'pytorch and scikit-learn based text classification library'
+author = 'Bharath G.S'
+author_email = 'royalkingpin@gmail.com'
+license = 'MIT'
+url = 'https://github.com/bharathgs/texion'
+
+[requires]
+python_version = ['3.6']
+
+[build-system]
+requires = ['setuptools', 'wheel']
+
+[tool.hatch.commands]
+prerelease = 'hatch build'

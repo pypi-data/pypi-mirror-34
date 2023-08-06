@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bleachrepo
+Version: 0.0.11
+Summary: Find and remove the mold from your source control repositories
+Home-page: https://github.com/shesekino/bleach
+Author: Amir Moualem
+Author-email: amoualem@gmail.com
+License: UNKNOWN
+Description: # bleach
+        Remove mold from your repositories :)
+        
+        ## Installing
+        For unpriviliged users:
+        `pip install --user bleachrepo`
+        
+        Or for priviliged users / with sudo:
+        `pip install bleachrepo`
+        
+        
+        ## Running
+        wip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: csv2json
+Version: 0.2.2
+Summary: A command-line tools and module to convert csv to json
+Home-page: https://github.com/oplatek/csv2json
+Author: Ondrej Platek
+Author-email: ondrej.platek@seznam.cz
+License: Apache 2.0
+Download-URL: https://github.com/oplatek/csv2json/tarball/0.2.2
+Description: 
+            See https://github.com/oplatek/csv2json/blob/master/README.md
+          
+Keywords: csv,json,conversion
+Platform: UNKNOWN

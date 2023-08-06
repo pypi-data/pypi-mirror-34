@@ -1,0 +1,10 @@
+README.md
+csv-to-json
+setup.cfg
+setup.py
+csv2json/__init__.py
+csv2json/test_csv2json.py
+csv2json.egg-info/PKG-INFO
+csv2json.egg-info/SOURCES.txt
+csv2json.egg-info/dependency_links.txt
+csv2json.egg-info/top_level.txt

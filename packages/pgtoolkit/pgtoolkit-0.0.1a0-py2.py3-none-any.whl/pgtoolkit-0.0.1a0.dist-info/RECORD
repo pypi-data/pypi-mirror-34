@@ -1,0 +1,11 @@
+pgtoolkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgtoolkit/_helpers.py,sha256=e64XrulMxJC2KI2QEewmZwlUIBAn9OK2PWHKC3D1uIk,372
+pgtoolkit/errors.py,sha256=ERsJEzmD6kOnzlGxdjOOHdzpDjdHyIp6GH-PD77mT_4,451
+pgtoolkit/hba.py,sha256=okDjTyzcNrQMuITWUFD4N7TD9amVKVsZ9hO2M2O-OMA,6644
+pgtoolkit/log.py,sha256=a9cXH9NDHAenOLpd4SeuvheC1U-Ept8ByfnMMV_7DmQ,18360
+pgtoolkit/pgpass.py,sha256=zMvdA00D1S1MDedF7gvISOFslQSrpeW9zjY05YJI4QA,8470
+pgtoolkit/service.py,sha256=U9QphbfkW9UZdRY27B7ll-fHe2vOryYMqdlDCbo9zy8,7233
+pgtoolkit-0.0.1a0.dist-info/METADATA,sha256=PQhxIY1p756rLRN3Nkx8BxHYx4eQqw7H04KDHOQZkEg,1693
+pgtoolkit-0.0.1a0.dist-info/RECORD,,
+pgtoolkit-0.0.1a0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pgtoolkit-0.0.1a0.dist-info/top_level.txt,sha256=NlGnc8nW2hRJ-4iDFnhNhmWo2KR-vbp4bvg_U85qq7g,10

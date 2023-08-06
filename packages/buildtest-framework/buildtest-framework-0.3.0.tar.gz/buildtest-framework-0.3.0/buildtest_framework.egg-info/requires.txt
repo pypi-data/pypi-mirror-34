@@ -1,0 +1,7 @@
+argcomplete
+pyyaml
+buildtest-configs
+Python-buildtest-config
+Perl-buildtest-config
+Ruby-buildtest-config
+R-buildtest-config

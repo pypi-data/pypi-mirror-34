@@ -1,0 +1,12 @@
+nftl_ed_lms_tools/__init__.py,sha256=FwQ7GZ2yXYgICBB7ihHesjgSjmWCRk6mEzBVuoNNBHU,27
+nftl_ed_lms_tools/client.py,sha256=5tnbAtuDvgpvZfkzy4Pph-Jtr32UUa5MJ0wmoRQ5vDI,1318
+nftl_ed_lms_tools/ed_api.py,sha256=9lxfTSUf99Y4cTuBgxOd9nY_yt7VXWjGi9SbChXLF84,4698
+nftl_ed_lms_tools/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nftl_ed_lms_tools/api/usergroups.py,sha256=W5kZqlEmh7pd_UOHehHbOOuJH50MJcjSNW6Yd42WAJo,1885
+nftl_ed_lms_tools/api/users.py,sha256=b9xvnzXfcafhIePTytZgiqWF0H9v0SJRAtz5IauNhq8,3225
+nftl_ed_lms_tools-0.1.4.dist-info/METADATA,sha256=bgcPuznszi49Mhq2V2-LFeCBMX2ii2VGalEL-takuHM,987
+nftl_ed_lms_tools-0.1.4.dist-info/RECORD,,
+nftl_ed_lms_tools-0.1.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nftl_ed_lms_tools-0.1.4.dist-info/top_level.txt,sha256=O9bA1zaFpi8a5amOEiizTj2JKoA7KWt96xHVO4O4Z60,24
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/ed_client_test.py,sha256=pIAs63AkgFRa4rbhgAU1QOuOaRjnKHA6LoLat222JsQ,3379

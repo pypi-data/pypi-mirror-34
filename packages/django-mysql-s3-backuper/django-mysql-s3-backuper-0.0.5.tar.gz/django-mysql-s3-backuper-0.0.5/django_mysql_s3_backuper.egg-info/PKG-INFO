@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: django-mysql-s3-backuper
+Version: 0.0.5
+Summary: Simple s3 backups for django projects based on MySQL
+Home-page: http://astrikov.ru
+Author: Dmitry Astrikov
+Author-email: astrikov.d@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: Simple s3 backups for django projects based on MySQL
+Keywords: django mysql s3 aws backup
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6

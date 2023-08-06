@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: triopg
+Version: 0.1.0
+Summary: PostgreSQL client for Trio based on asyncpg
+Home-page: https://github.com/python-trio/triopg
+Author: Emmanuel Leblond
+Author-email: emmanuel.leblond@gmail.com
+License: MIT -or- Apache License 2.0
+Description: triopg
+        ======
+        
+        Welcome to `triopg <https://github.com/python-trio/triopg>`__!
+        
+        PostgreSQL client for Trio based on asyncpg
+        
+        License: Your choice of MIT or Apache License 2.0
+        
+Keywords: async,trio,sql,postgresql,asyncpg
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Framework :: Trio
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: SQL
+Requires-Python: >=3.6

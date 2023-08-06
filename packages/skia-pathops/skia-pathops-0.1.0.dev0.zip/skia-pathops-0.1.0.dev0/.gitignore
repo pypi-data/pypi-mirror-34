@@ -1,0 +1,33 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[co]
+*.o
+*.so
+
+# Distribution / Packaging
+*.egg
+*.egg-info
+*.eggs
+MANIFEST
+build
+dist
+
+# Unit test / coverage files
+.tox/*
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# cython annotated html files
+src/python/pathops/_pathops.html
+
+# emacs backup files
+*~
+
+# OSX Finder
+.DS_Store
+
+# Generated cpp file(s) from Cython source
+src/python/pathops/_pathops.cpp

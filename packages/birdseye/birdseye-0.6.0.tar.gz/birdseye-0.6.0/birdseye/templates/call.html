@@ -1,0 +1,38 @@
+{% extends "call_base.html" %}
+{% block body %}
+    <h2>Call to function:
+        <a class="code-font"
+           href="{{ url_for('func_view', path=func.file, func_name=func.name) }}">
+            {{ func.name }}
+        </a>
+    </h2>
+    <p><strong>File: </strong><a href="{{ url_for('file_view', path=func.file) }}">{{ func.file }}</a></p>
+    <p><strong>Line: </strong>{{ func.lineno }}</p>
+    {% if call.arguments_list %}
+        <p><strong>Arguments:</strong></p>
+        <table class="code-font table table-bordered table-striped args-table">
+            {% for k, v in call.arguments_list %}
+                <tr>
+                    <td>{{ k }}</td>
+                    <td>{{ v }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p><strong>No arguments</strong></p>
+    {% endif %}
+    <p>
+        <strong>Start time:</strong> {{ call.pretty_start_time }}
+    </p>
+    <p><strong>Result:</strong>
+        {% if call.success %}
+            <span class="code-font">{{ call.result }}</span></p>
+        {% else %}
+            </p>
+            <pre>{{ call.traceback }}</pre>
+        {% endif %}
+    <p><strong>Code:</strong></p>
+{% endblock %}
+{% block after_container %}
+  {% include "call_core.html" %}
+{% endblock %}

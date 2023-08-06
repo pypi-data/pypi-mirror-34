@@ -1,0 +1,14 @@
+CREDITS.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+html2jirawiki/__init__.py
+html2jirawiki/html2jirawiki.py
+html2jirawiki.egg-info/PKG-INFO
+html2jirawiki.egg-info/SOURCES.txt
+html2jirawiki.egg-info/dependency_links.txt
+html2jirawiki.egg-info/not-zip-safe
+html2jirawiki.egg-info/requires.txt
+html2jirawiki.egg-info/top_level.txt

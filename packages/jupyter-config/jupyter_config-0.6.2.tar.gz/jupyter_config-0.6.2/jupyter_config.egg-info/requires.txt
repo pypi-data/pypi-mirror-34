@@ -1,0 +1,9 @@
+jupyter_core
+notebook>=5.3
+
+[dev]
+check_manifest
+pytest
+
+[test]
+pytest

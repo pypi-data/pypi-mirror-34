@@ -1,0 +1,13 @@
+README.md
+setup.py
+BotMother.egg-info/PKG-INFO
+BotMother.egg-info/SOURCES.txt
+BotMother.egg-info/dependency_links.txt
+BotMother.egg-info/requires.txt
+BotMother.egg-info/top_level.txt
+botmother/Blueprint.py
+botmother/BotConstructor.py
+botmother/Conversation.py
+botmother/__init__.py
+botmother/exception/Exceptions.py
+botmother/exception/__init__.py

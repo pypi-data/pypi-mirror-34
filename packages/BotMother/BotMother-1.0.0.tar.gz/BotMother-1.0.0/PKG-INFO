@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: BotMother
+Version: 1.0.0
+Summary: A new perspective over python-telegram-bot API
+Home-page: UNKNOWN
+Author: Insight Data Science Lab
+Author-email: insightlab@dc.ufc.br
+License: MIT
+Description: # BotMother-Python
+        
+        BotMother is a Python package made to help the programmers to develop modularized projects over python-telegram-bots API. 
+        
+        Soon more examples will be provided.
+Keywords: python telegram bot api wrapper bot mother botmother
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

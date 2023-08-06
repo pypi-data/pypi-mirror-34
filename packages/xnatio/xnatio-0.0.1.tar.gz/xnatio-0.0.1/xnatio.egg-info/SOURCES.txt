@@ -1,0 +1,12 @@
+README.md
+setup.py
+xnatio/__init__.py
+xnatio/data.py
+xnatio/subjectdata.py
+xnatio/xnatui.py
+xnatio.egg-info/PKG-INFO
+xnatio.egg-info/SOURCES.txt
+xnatio.egg-info/dependency_links.txt
+xnatio.egg-info/not-zip-safe
+xnatio.egg-info/requires.txt
+xnatio.egg-info/top_level.txt

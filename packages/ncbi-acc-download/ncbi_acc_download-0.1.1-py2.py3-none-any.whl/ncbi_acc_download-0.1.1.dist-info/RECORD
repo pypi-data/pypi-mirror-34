@@ -1,0 +1,9 @@
+ncbi_acc_download/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+ncbi_acc_download/__main__.py,sha256=CooT0LLaGXMVFzHDxDsog0zvv34tSdln_HLx8ekoRvM,1816
+ncbi_acc_download/core.py,sha256=e-AjREVGcatyDa88X3Uke1vjDunI69KnC0VaWfuGYc4,6116
+ncbi_acc_download/validate.py,sha256=5HgxJEgN5gAO0_BBmexjeCbH7o4T0Kzx4ncuDm4g4L4,1032
+ncbi_acc_download-0.1.1.dist-info/METADATA,sha256=AUL4YOHhs_icOM3Tot7o9xrp0nxYc2SPnzsGZ9JX1k8,2665
+ncbi_acc_download-0.1.1.dist-info/RECORD,,
+ncbi_acc_download-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ncbi_acc_download-0.1.1.dist-info/entry_points.txt,sha256=QnYSTl2Eo3Lk4IXN0fSyj9sg8ryEv39NxfL-qYtVhEc,109
+ncbi_acc_download-0.1.1.dist-info/top_level.txt,sha256=_SV_tNLr9GLGAPDaT_oMHzM-L7L-f2nWS6iH15q1PMg,18

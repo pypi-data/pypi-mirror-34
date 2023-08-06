@@ -1,0 +1,12 @@
+requests
+Click
+pyyaml
+
+[dev]
+
+[hvac]
+hvac
+
+[test]
+pytest
+pytest-mock

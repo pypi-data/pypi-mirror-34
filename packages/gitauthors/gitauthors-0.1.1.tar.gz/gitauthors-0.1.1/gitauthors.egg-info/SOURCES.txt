@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitauthors/__init__.py
+gitauthors/__version__.py
+gitauthors/gitauthors
+gitauthors.egg-info/PKG-INFO
+gitauthors.egg-info/SOURCES.txt
+gitauthors.egg-info/dependency_links.txt
+gitauthors.egg-info/requires.txt
+gitauthors.egg-info/top_level.txt

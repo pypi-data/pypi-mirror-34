@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+swimbundle_dev/__init__.py
+swimbundle_dev/manifest_output.py
+swimbundle_dev.egg-info/PKG-INFO
+swimbundle_dev.egg-info/SOURCES.txt
+swimbundle_dev.egg-info/dependency_links.txt
+swimbundle_dev.egg-info/top_level.txt

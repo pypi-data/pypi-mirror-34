@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+thumbor_aliases/__init__.py
+thumbor_aliases.egg-info/PKG-INFO
+thumbor_aliases.egg-info/SOURCES.txt
+thumbor_aliases.egg-info/dependency_links.txt
+thumbor_aliases.egg-info/not-zip-safe
+thumbor_aliases.egg-info/requires.txt
+thumbor_aliases.egg-info/top_level.txt

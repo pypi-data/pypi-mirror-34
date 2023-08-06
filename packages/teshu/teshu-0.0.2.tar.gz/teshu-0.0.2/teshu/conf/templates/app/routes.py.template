@@ -1,0 +1,9 @@
+from server import app
+from flask_restful import Api
+from {{name}}.viewsets import {{name}}ViewSet
+
+api = Api(app)
+
+# Example
+# api.add_resource(<viewset>, '/example')
+api.add_resource({{name}}, '/{{name}}/')

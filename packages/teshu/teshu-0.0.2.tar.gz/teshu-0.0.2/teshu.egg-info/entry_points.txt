@@ -1,0 +1,3 @@
+[console_scripts]
+teshu-admin = teshu.core.management:execute_from_command_line
+

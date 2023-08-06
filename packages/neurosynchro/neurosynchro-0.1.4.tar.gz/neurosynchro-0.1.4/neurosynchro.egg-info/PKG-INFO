@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: neurosynchro
+Version: 0.1.4
+Summary: Use neural networks to approximate polarized synchrotron radiative transfer coefficients
+Home-page: https://github.com/pkgw/neurosynchro/
+Author: Peter Williams
+Author-email: peter@newton.cx
+License: MIT
+Description: *Neurosynchro* is a small Python package for creating and using neural
+        networks to quickly approximate the coefficients needed for fully-polarized
+        synchrotron radiative transfer. It builds on the `Keras <https://keras.io/>`_
+        deep learning library. Documentation may be found `on ReadTheDocs
+        <https://neurosynchro.readthedocs.io/en/stable/>`_.
+        
+        Say that you have a code — such as `Rimphony
+        <https://github.com/pkgw/rimphony/>`_ or `Symphony
+        <https://github.com/AFD-Illinois/symphony>`_ — that calculates synchrotron
+        radiative transfer coefficients as a function of some input model parameters
+        (electron temperature, particle energy index, etc.). These calculations are
+        often accurate but slow. With *neurosynchro*, you can train a neural network
+        that will quickly approximate these calculations with good accuracy. The
+        achievable level of accuracy will depend on the particulars of your target
+        distribution function, range of input parameters, and so on.
+        
+        This code is specific to synchrotron radiation because it makes certain
+        assumptions about how the coefficients scale with input parameters such as the
+        observing frequency.
+Keywords: neural-networks radiative-transfer science
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Astronomy

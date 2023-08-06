@@ -1,0 +1,7 @@
+setup.py
+modbusStructConvert.egg-info/PKG-INFO
+modbusStructConvert.egg-info/SOURCES.txt
+modbusStructConvert.egg-info/dependency_links.txt
+modbusStructConvert.egg-info/requires.txt
+modbusStructConvert.egg-info/top_level.txt
+src/ModBus_Struct_Convert.py

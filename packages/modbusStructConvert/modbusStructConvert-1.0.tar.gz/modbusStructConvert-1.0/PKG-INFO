@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: modbusStructConvert
+Version: 1.0
+Summary: modbus寄存器值与可读值之间进行转换,支持各种寄存器地址顺序
+Home-page: UNKNOWN
+Author: Ray Wong
+Author-email: feelingswl@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: modbusStructConvert
+Platform: UNKNOWN

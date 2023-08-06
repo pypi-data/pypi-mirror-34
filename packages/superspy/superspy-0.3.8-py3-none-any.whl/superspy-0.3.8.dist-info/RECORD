@@ -1,0 +1,15 @@
+superspy/__init__.py,sha256=rSjLvxIC4shj36jDRjsIC0nbwp0_47-GFMnxrqvq-OQ,25
+superspy/ast.py,sha256=lSy-ZRMlQawXtsUtPP0gx00O4wiGEfTlwLgD_gICW9I,31892
+superspy/code_source.py,sha256=uGrpmLFd7jouWj5yN_l070PL9VFgWIk7AAxgnzobGuQ,4069
+superspy/language.py,sha256=k3VN86cS1jVAaIkhJhiSdJ6MTcY-HuFI4gA3Wcr46fY,12531
+superspy/system/arithmetic.py,sha256=L_6S1FiVfdn_tQtOum1x7GoxsGHh8v5lD1jHJt1qlfI,4960
+superspy/system/base_language.py,sha256=xsN8xFOPSbKGmeK32YnQOjjzkifL1tkk9qBJz2fInv4,2329
+superspy/system/braces.py,sha256=KyJFylnqZx_Lx3OMtJcWmQdgjKcU-hOgGWpeQoum6RY,2618
+superspy/system/datatypes.py,sha256=VCoSYBjnymAW_f-KeIOVlXeso0epIZOq0-_iBz25zsw,820
+superspy/system/flow_control.py,sha256=M18xj4-XrYGkBQnCgnUslr1ph6ZPAJOqZ79lqVQKZCg,7933
+superspy/system/io.py,sha256=2gEVzCwl_QXomBxrD0oP2-8OM8bxar7tQQqAZB9FdeQ,2192
+superspy/system/variables.py,sha256=uoD-HUR8mUlHAPj20QX40rfyyOwGwQZMeTtruDUxPL4,1480
+superspy-0.3.8.dist-info/METADATA,sha256=1HcYjgv-g4yUeY-55_ZcZ_ajYmI48T9MNZ8f4ze9oCc,7154
+superspy-0.3.8.dist-info/RECORD,,
+superspy-0.3.8.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+superspy-0.3.8.dist-info/top_level.txt,sha256=57k_kXdNQKscAdD-wOniWjP5RKkpGBMpYYlDm53gUKc,9

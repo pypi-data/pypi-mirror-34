@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SSHLitebrary
+Version: 0.1.1
+Summary: SSH and SFTP library
+Home-page: https://gitlab.com/octleons/SSHLitebrary
+Author: Leon Seng
+Author-email: octleons@gmail.com
+License: UNKNOWN
+Description: # SSHLiteLibrary
+        
+        ## Introduction
+        
+        SSHLiteLibrary is a cut down version of the Robot Framework SSHLibrary. It provides SSHLibrary (v3.1.0) functions without the need to install Robot Framework.
+        
+        ## Documentation
+        
+        See <http://robotframework.org/SSHLibrary/SSHLibrary.html>
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

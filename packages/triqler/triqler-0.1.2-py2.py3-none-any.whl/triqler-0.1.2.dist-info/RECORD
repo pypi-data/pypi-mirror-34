@@ -1,0 +1,16 @@
+triqler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triqler/__main__.py,sha256=4KsrTa5I-Sx5SYo9dkAxVahQ3tXNMxun_xhbfEdfOGE,140
+triqler/convolution_dp.py,sha256=kkrkXzFoo_qyiaYhFe-eL-cWsIqXexC8O2VSvbn2390,1127
+triqler/diff_exp.py,sha256=wMD2u8Vvb1PnUjf2RkhAxx_YczhyF7pSRBsg6c34Kd0,7976
+triqler/hyperparameters.py,sha256=KuIEiWS6EW3wgGhDZFGUF29awOi03aN8B2n31nsp_gA,7780
+triqler/multiprocessing_pool.py,sha256=ZhDcuyalBBFlb3zqKHoQFGj4aVKHJ-n1TA6a9BipaFU,1039
+triqler/parsers.py,sha256=FXdtDaydVYzwaGlxEGQeP9S_WNE8A9LKXudkpoVMcyQ,9075
+triqler/pgm.py,sha256=KeHhbHYr_jRtbMWdG2ULZRESriQLcnXk88A4Xnfny6Y,8879
+triqler/qvality.py,sha256=mIf-2e5aiM1CDpogatZwsHBpn6_BwDWOsJVyhj5crt8,13474
+triqler/triqler.py,sha256=9FzYtK_WXFeSVWJxtrUdiwIfaaFTXYbtcaxyV0xEW44,19872
+triqler-0.1.2.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+triqler-0.1.2.dist-info/METADATA,sha256=WqfUEEWWli-4qI6-Dcg1C18WF9TB9AFKuzqKu0Tcpwk,6296
+triqler-0.1.2.dist-info/RECORD,,
+triqler-0.1.2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+triqler-0.1.2.dist-info/entry_points.txt,sha256=uv79ZqXgtOvdIB9O7EGeeX9vli_bx6tRjePtIyp-gb0,50
+triqler-0.1.2.dist-info/top_level.txt,sha256=4DpzBYO4tgP8VGIRFxVZXvhwf198Rc5cL6wYaDY4vbA,8

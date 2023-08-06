@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+schemamacros-logging/__init__.py
+schemamacros-logging/templates/logging.sql
+schemamacros_logging.egg-info/PKG-INFO
+schemamacros_logging.egg-info/SOURCES.txt
+schemamacros_logging.egg-info/dependency_links.txt
+schemamacros_logging.egg-info/not-zip-safe
+schemamacros_logging.egg-info/requires.txt
+schemamacros_logging.egg-info/top_level.txt

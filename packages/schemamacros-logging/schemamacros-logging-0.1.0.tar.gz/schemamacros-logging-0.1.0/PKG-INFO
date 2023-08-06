@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: schemamacros-logging
+Version: 0.1.0
+Summary: logging for schemamacros
+Home-page: https://github.com/caj-larsson/schemamacros-logging
+Author: Caj Larsson
+Author-email: contact@caj.me
+License: MIT
+Description: 
+        Logging for schemamacros
+        ----------------
+        
+        Logging package for schemamacros.
+        
+        look at schemamacros for more info
+        
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

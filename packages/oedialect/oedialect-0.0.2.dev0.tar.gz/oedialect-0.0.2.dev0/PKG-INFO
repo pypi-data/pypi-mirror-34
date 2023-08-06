@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: oedialect
+Version: 0.0.2.dev0
+Summary: SQL-Alchemy dialect for the OpenEnergy Platform
+Home-page: https://github.com/openego/oedialect
+Author: MGlauer
+Author-email: martinglauer89@gmail.com
+License: UNKNOWN
+Description: # oeplatform-orm
+        
+        SQL-Alchemy bindings for the REST-API used by the OpenEnergy Platform (OEP)
+        
+Keywords: postgres,open,energy,database,sql,rest
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

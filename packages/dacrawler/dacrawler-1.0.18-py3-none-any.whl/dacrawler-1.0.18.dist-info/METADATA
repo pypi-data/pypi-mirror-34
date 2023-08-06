@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dacrawler
+Version: 1.0.18
+Summary: Python wrapper for crawler
+Home-page: https://github.com/
+Author: da-hyunjin-kim
+Author-email: kim@data-artist.com
+License: UNKNOWN
+Download-URL: https://githur.com/
+Keywords: crawler
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.4
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+

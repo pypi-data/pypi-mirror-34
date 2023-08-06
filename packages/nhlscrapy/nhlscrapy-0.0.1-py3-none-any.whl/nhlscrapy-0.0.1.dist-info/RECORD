@@ -1,0 +1,9 @@
+nhlscrapy/__init__.py,sha256=cK6AFqBZANj3voImhIl1yiK7fZuTWI_LhasHdkdMq-Q,18
+nhlscrapy/nhlscrapy.py,sha256=p7RGqP6J2H134C1wtL-t1Dcowk-d9N17mijuL1_lqpg,8006
+nhlscrapy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nhlscrapy/tests/context.py,sha256=kUXw637iY2Dp0pJ76ge7xjPeFPIHKu_AylG1uF1pqlA,59
+nhlscrapy/tests/test_nhlscrapy.py,sha256=4ig5oF3kWKdfz57FDjLlNLPnvQhBWDVlOo5fvjsZFaQ,381
+nhlscrapy-0.0.1.dist-info/METADATA,sha256=5pBAgQHNEMk2tLlAu7MYU_ArOY2YhULVJk7tVqGqQp4,283
+nhlscrapy-0.0.1.dist-info/RECORD,,
+nhlscrapy-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nhlscrapy-0.0.1.dist-info/top_level.txt,sha256=Ibb5rMO2hSO8PGQVZlYEepyayMp0dgXnbiUvyKFMDNg,10

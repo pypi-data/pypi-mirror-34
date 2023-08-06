@@ -1,0 +1,12 @@
+carbon_slack/__init__.py,sha256=qnq7MaBRb9FX7lx4ObWhypcNgMgJb1fHlHSBYLPYHKg,808
+carbon_slack/carbon.py,sha256=G3ckaN4m9kBQ8lxnZs1X1Xz3KMhOSuxfWusTBxV4DbE,1927
+carbon_slack/command.py,sha256=90uluGYMhqLqbV3lXi6bAcmRyr6VtiZNXK-oWSsYoAg,2730
+carbon_slack/config.py,sha256=QJ1gUI_9j87XtkZB3yyv9XT_l4wiyZn2rRAYVIvpgc4,1950
+carbon_slack/relay.py,sha256=ijSd2KABEasK-a0BK1EIW4C2e1_Wb3AWP2-U6RXXzF4,2607
+carbon_slack/slack.py,sha256=gdeZxH4_EK-dyjAYOMWPHT4Kth5fwLTVK3UMS9rP6lk,5222
+carbon_slack-0.0.5.dist-info/METADATA,sha256=EUi4oBtAk-dOCGMIzKs3W2ZxshR4W5h94Du4tHKMeqc,4702
+carbon_slack-0.0.5.dist-info/RECORD,,
+carbon_slack-0.0.5.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+carbon_slack-0.0.5.dist-info/entry_points.txt,sha256=dD4Gc4z94dKp4-0-tcDkx2NvSnWmC_9vXXfXFOVqhYk,205
+carbon_slack-0.0.5.dist-info/top_level.txt,sha256=TVOQ2Rx1Ft3x_JXWT2y3LHM73vdhmy0fZ1vu6Zu4KkI,13
+carbon_slack-0.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

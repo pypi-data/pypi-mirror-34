@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: anidb-mv
+Version: 0.1
+Summary: Command line client for AniDB
+Home-page: https://github.com/ljb/anidb-mv
+Author: Jonas Bengtsson
+Author-email: jonas@bengtsson.cc
+License: GPLv3
+Description: 
+                anidb-mv, or amv for short, is a command line client for AniDB.  It is
+                similar to the standard mv command in Unix, but in addition to moving
+                the files, it also tries to register them at AniDB.  If a file isn't
+                found on AniDB, information about it is saved in a local database, and
+                amv tries to register it the next time to command is used.
+                
+Platform: UNKNOWN

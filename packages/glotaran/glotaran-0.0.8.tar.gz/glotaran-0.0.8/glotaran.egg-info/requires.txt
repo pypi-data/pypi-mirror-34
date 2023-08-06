@@ -1,0 +1,10 @@
+numpy>=1.9.1
+scipy>=1.0.0
+Cython>=0.28.3
+setuptools>=39.2.0
+lmfit>=0.9.7
+pandas>=0.23.1
+pyyaml
+matplotlib
+natsort
+lmfit-varpro>=0.0.5

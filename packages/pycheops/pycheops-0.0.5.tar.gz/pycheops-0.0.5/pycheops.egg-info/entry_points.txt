@@ -1,0 +1,3 @@
+[console_scripts]
+make_xml_files = pycheops.targets:main
+

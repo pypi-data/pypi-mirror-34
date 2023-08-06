@@ -1,0 +1,74 @@
+sudo: required
+
+dist: trusty
+
+addons:
+  artifacts:
+    target_paths: /$PYTHON_VERSION
+    paths: "mplresults"
+  postgresql: "9.5"
+  apt:
+    packages:
+      - postgresql-9.5-postgis-2.3
+  hosts:
+    - iemdb
+    - iemdb-hads
+    - iemdb2
+env:
+  matrix:
+    - PYTHON_VERSION=2.7
+    - PYTHON_VERSION=3.6
+language: python
+
+before_install:
+  - sudo add-apt-repository ppa:ubuntugis/ppa -y
+  - sudo apt-get update -qq
+
+install:
+  # Install miniconda
+  # -----------------
+  - wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+
+  # Create the basic testing environment
+  # ------------------------------------
+  - conda config --set always_yes yes --set changeps1 no --set show_channel_urls yes
+  - conda update -q conda
+  - . $HOME/miniconda/etc/profile.d/conda.sh
+  - conda create -n test-environment python=$PYTHON_VERSION
+  - conda activate test-environment
+  
+  # Customise the testing environment
+  # ---------------------------------
+  # Prioritize conda-forge channel over defaults for best compat
+  - conda config --prepend channels conda-forge
+  - conda install -q --file conda_requirements.txt
+  - pip install -r pip_requirements.txt
+
+
+before_script:
+  - psql -c 'create database postgis;' -U postgres
+  - psql -c 'create user nobody;' -U postgres
+  - psql -c 'create user apache;' -U postgres
+  - psql -c 'create database portfolio;' -U postgres
+  - psql -c 'create database iem;' -U postgres
+  - psql -c 'create database mesosite;' -U postgres
+  - psql -c 'create database asos;' -U postgres
+  - psql -c 'create database hads;' -U postgres
+  - psql -c 'create database mos;' -U postgres
+  - psql -U postgres -f data/schema/iem.sql iem
+  - psql -U postgres -f data/schema/postgis.sql postgis
+  - psql -U postgres -f data/schema/portfolio.sql portfolio
+  - psql -U postgres -f data/schema/mesosite.sql mesosite
+  - psql -U postgres -f data/schema/asos.sql asos
+  - psql -U postgres -f data/schema/hads.sql hads
+  - psql -U postgres -f data/schema/mos.sql mos
+
+script:
+  - coverage run --source=pyiem setup.py test --addopts "--mpl --mpl-results-path=mplresults";
+
+after_success:
+  - if [[ "$PYTHON_VERSION" == 2* ]]; then
+      coveralls;
+    fi

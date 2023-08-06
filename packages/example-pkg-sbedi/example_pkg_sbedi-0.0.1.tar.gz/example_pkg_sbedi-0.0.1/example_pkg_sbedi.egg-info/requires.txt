@@ -1,0 +1,14 @@
+pywinauto
+autopy==0.51
+selenium
+SendKeys
+requests
+lxml==3.4.2
+ifaddr
+py-cpuinfo
+xmltodict
+netifaces
+winregistry
+pypiwin32==219
+psutil
+pyautogui

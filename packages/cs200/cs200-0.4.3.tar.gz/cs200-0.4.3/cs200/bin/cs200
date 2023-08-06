@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+from cs200.main import Controller
+
+ctrl = Controller()
+ctrl.init_args()
+print(ctrl.return_summarization())

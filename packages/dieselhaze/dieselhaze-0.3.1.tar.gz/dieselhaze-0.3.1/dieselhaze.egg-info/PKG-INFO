@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dieselhaze
+Version: 0.3.1
+Summary: Magic utility library
+Home-page: https://github.com/krisfris/dieselhaze
+Author: Kris
+Author-email: 31852063+krisfris@users.noreply.github.com
+License: MIT
+Description: # dieselhaze
+        Utility library with code collected from everywhere
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

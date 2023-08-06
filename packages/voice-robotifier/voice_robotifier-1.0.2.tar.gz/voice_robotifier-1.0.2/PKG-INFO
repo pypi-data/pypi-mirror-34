@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: voice_robotifier
+Version: 1.0.2
+Summary: Turns your voice into text-to-speech!
+Home-page: https://github.com/reidbhuntley/voice_robotifier
+Author: Reid Huntley
+Author-email: reidbhuntley@gmail.com
+License: MIT
+Description: Voice Robotifier
+        ================
+        This module contains an extremely simple class for recording audio, then playing it back using the text-to-speech program built into Windows.
+        
+        Setup
+        -----
+        Installation is made easy using pip:
+        ```
+        pip install voice-robotifier
+        ```
+        
+        Example
+        -------
+        ```python
+        import voice_robotifier
+        
+        vr = voice_robotifier.VoiceRobotifier()
+        push_to_talk_key = 'v'
+        
+        vr.set_input_device('Microphone (C-Media USB Audio Device)')
+        vr.set_output_device('CABLE Input (VB-Audio Virtual Cable)')
+        
+        vr.set_voice('Microsoft Zira Desktop - English (United States)')
+        vr.set_voice_rate(3) # faster
+        
+        vr.start(push_to_talk_key)
+        ```
+        
+        Reference
+        ---------
+        
+        ### `VoiceRobotifier() -> VoiceRobotifier`
+        
+        Creates a new `VoiceRobotifier` instance.
+        
+        ### `VoiceRobotifier.start(key: Union[int, str], key_quit: Union[int, str] = 'esc', block: bool = True) -> Callable[None, None]`
+        
+        Starts the `VoiceRobotifier` in push-to-talk mode, where `key` is an int or str representing the desired push-to-talk key, and `key_quit` represents the key that should cause the thread to stop.
+        
+        The operations of the method take place in a daemon thread, which the current thread will join on if `block` is `True`. If you want to carry out other program operations while it runs, set `block` to `False`.
+        
+        Returns a function that stops the daemon thread when called. (This is really only useful when `block` is `False`, since otherwise the function will never return anything until an exception occurs.)
+        
+        ### `VoiceRobotifier.start_autodetect(energy_threshold: Union[float, None] = None, key_quit: Union[int, str] = 'esc', block: bool = True) -> Callable[None, None]`
+        
+        Starts the `VoiceRobotifier` in autodetect mode -- it will wait for the audio input to have a greater energy level than `energy_threshold` before processing it. This value should generally be from 150 to 3500 in most cases. If `energy_threshold` is `None`, the input device's current energy level will be sampled to auto-determine an energy level.
+        
+        The `key_quit` and `block` arguments as well as the returned function act the same as those in `VoiceRobotifier.start`.
+        
+        ### `VoiceRobotifier.set_voice(voice_name: str) -> None`
+        
+        Sets the voice that should be used for generating text-to-speech audio. `voice_name` should be a name from the list returned by `VoiceRobotifier.list_voices`.
+        
+        ### `VoiceRobotifier.set_voice_rate(voice_rate: int) -> None`
+        
+        Sets the speed of the voice used for text-to-speech. `voice_rate` should be between -10 and 10, where -10 is the slowest, 0 is normal speed, and 10 is the fastest.
+        
+        ### `VoiceRobotifier.list_voices() -> List[str]`
+        
+        Returns a list of the names of all text-to-speech voices installed on the system. They can be passed as arguments to `VoiceRobotifier.set_voice`.
+        
+        ### `VoiceRobotifier.set_input_device(device_name: str) -> None`
+        
+        Sets the device used to get audio for speech recognition purposes. `device_name` should be a name from the list returned by `VoiceRobotifier.list_device_names`.
+        If this method is never called on a `VoiceRobotifier` object, it will use the system's default input device.
+        
+        ### `VoiceRobotifier.set_output_device(device_name: str) -> None`
+        
+        Sets the device used to output the generated text-to-speech audio. `device_name` should be a name from the list returned by `VoiceRobotifier.list_device_names`.
+        If this method is never called on a `VoiceRobotifier` object, it will use the system's default output device.
+        
+        ### `VoiceRobotifier.list_device_names() -> List[str]`
+        
+        Returns a list of device names on the system that can be passed as arguments to `VoiceRobotifier.set_input_device` and `VoiceRobotifier.set_output_device`.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

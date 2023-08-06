@@ -1,0 +1,7 @@
+argparse
+pybind11
+yafasttext
+gensim
+numpy
+ujson
+mxnet

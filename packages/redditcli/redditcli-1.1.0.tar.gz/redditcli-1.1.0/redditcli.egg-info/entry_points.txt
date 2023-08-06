@@ -1,0 +1,4 @@
+[console_scripts]
+rdt = reddit.main_rdt:cli
+reddit = reddit.main:cli
+

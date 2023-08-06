@@ -1,0 +1,3 @@
+[console_scripts]
+hex2file = hex2file:_cmd_line
+

@@ -1,0 +1,96 @@
+#!python
+
+import os
+import sys
+import re
+import json
+
+from jinja2 import Template
+from github import Github
+from github import GithubException
+from mistune import markdown
+
+# Load env variables.
+from dotenv import load_dotenv
+load_dotenv()
+
+GITHUB_SYNAPTICON_ACCESS_TOKEN = os.environ['GITHUB_SYNAPTICON_ACCESS_TOKEN']
+
+script_path = os.path.dirname(os.path.realpath(__file__))
+
+# Template.
+
+template_str = """{% for release in odb %}<div class="odb-release">
+  <h1 class="odb-release__version"><a href="{{ release['link'] }}">{{ release['version'] }}</a></h1>
+  <div class="odb-release__firmwares">
+    <h2>Supported Firmwares</h2>
+    <ul>
+      {% for firmware in release['firmwares'] %}
+      <li>{{ firmware }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="odb-release__oblac-drives">
+    <h2>OBLAC Drives {{release['dependencies']['oblac-drives']}}</h2>
+    <div>
+      {{ release['oblac-drives-changelog'] }}
+    </div>
+  </div>
+  <div class="odb-release__motion-master">
+    <h2>Motion Master {{release['dependencies']['motion-master']}}</h2>
+    <div>
+      {{ release['motion-master-changelog'] }}
+    </div>
+  </div>
+</div>{% endfor %}"""
+
+# Functions.
+
+
+def changelog_for_version(md, version):
+    md_content = md.decoded_content.decode('utf-8')
+    match = re.search('(?<=^##\s\[' + re.escape(version) +
+                      '])(.*?\n)(.*?)(?=##\s\[|\[)', md_content, re.S | re.I | re.M)
+    if match:
+        return match.group(2).lstrip().rstrip()
+
+
+try:
+    g = Github(GITHUB_SYNAPTICON_ACCESS_TOKEN)
+
+    # Get odb.json from oblac-drives-installer repo.
+    odb_json = g.get_repo(
+        'synapticon/oblac-drives-installer').get_file_contents('odb.json')
+    odb_json_content = odb_json.decoded_content
+    odb = json.loads(odb_json_content)
+
+    for release in odb:
+        # Link to OVA.
+        release['link'] = 'https://oblac-drives.s3.amazonaws.com/oblac-drives-' + \
+            release['version'] + '.ova'
+
+        # OBLAC Drives CHANGELOG.
+        changelog_md = g.get_repo(
+            'synapticon/oblac-drives').get_file_contents('CHANGELOG.md')
+        version = release['dependencies']['oblac-drives'][1:]
+        changelog = changelog_for_version(changelog_md, version)
+        if changelog:
+            release['oblac-drives-changelog'] = markdown(changelog)
+
+        # Motion Master CHANGELOG.
+        changelog_md = g.get_repo(
+            'synapticon/motion-master').get_file_contents('CHANGELOG.md')
+        version = release['dependencies']['motion-master'][1:]
+        changelog = changelog_for_version(changelog_md, version)
+        if changelog:
+            release['motion-master-changelog'] = markdown(changelog)
+
+    # Render template and print to stdout.
+    template = Template(template_str)
+    output = template.render(odb=odb)
+    print(output)
+
+except GithubException as err:
+    print(err.data['message'], file=sys.stderr)
+    print('  Is GITHUB_SYNAPTICON_ACCESS_TOKEN env variable correct? ' +
+          GITHUB_SYNAPTICON_ACCESS_TOKEN, file=sys.stderr)

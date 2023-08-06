@@ -1,0 +1,3 @@
+[console_scripts]
+contributions = contributions.__main__:main
+

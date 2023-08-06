@@ -1,0 +1,14 @@
+contributions/__init__.py,sha256=bB-csLFxd9ScHOqb8VHDdONtbvEXubRlM3kZGRBparE,4234
+contributions/__main__.py,sha256=_Qu1hSpxmEL-Ps4ZsvyT-iifRINUHJfHecr3SgPcXNI,88
+contributions/config.py,sha256=6oC2_Zzyo46JCiwG45x5XYb1ZqeUSmxQ6kEUBC3Mkp4,325
+contributions/git.py,sha256=uB3bUga1CM1PQCM1yrN2tLatpNd4JuRedacRIo-ABU8,3758
+contributions/utils.py,sha256=p7_YL-3UFrY9MrzSzv39ATZdUdasDBuXtLZJX6ZL910,735
+contributions/fonts/KeepCalm-Medium.py,sha256=erFtQpgKMg9u79VqOHlIzs7gkPdMFFH_cKTqdItWskc,86716
+contributions/fonts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contributions/fonts/arial.py,sha256=gq-zXto6Uu2xAQa8wEr5NkY4RCHe1TjTh5LBRE2BYCI,311636
+contributions-0.1.0.dist-info/METADATA,sha256=es4ErN8umVvT7e-a8FLWqR07G9HniRdS8qSPlS8OOcI,3365
+contributions-0.1.0.dist-info/RECORD,,
+contributions-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+contributions-0.1.0.dist-info/entry_points.txt,sha256=fJmhD2Wwq36b57exIB-4iehWmXGkw1j9SChamSiHFvU,63
+contributions-0.1.0.dist-info/pbr.json,sha256=FC4ZD_V1CQqMcBEPnJQqGaEGFF8z-tixCn7lPrpiqus,47
+contributions-0.1.0.dist-info/top_level.txt,sha256=iJJr3xar1qoQ0OE6K_Rc58ekHuzSfzxWSWdha0xHY50,14

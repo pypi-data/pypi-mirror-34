@@ -1,0 +1,3 @@
+[console_scripts]
+begin = begin2018.main:main
+

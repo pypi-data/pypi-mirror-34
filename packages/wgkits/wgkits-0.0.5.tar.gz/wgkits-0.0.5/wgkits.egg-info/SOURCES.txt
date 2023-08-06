@@ -1,0 +1,9 @@
+README.md
+setup.py
+wgkits/__init__.py
+wgkits/build_tool.py
+wgkits/list_con.py
+wgkits.egg-info/PKG-INFO
+wgkits.egg-info/SOURCES.txt
+wgkits.egg-info/dependency_links.txt
+wgkits.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: svgimgutils
+Version: 0.1.0
+Summary: A lightweight Python SVG parser that focuses on correctly layering SVG images
+Home-page: https://github.com/Amirh24/SVG-Image-Utils.git
+Author: A. Hagafny
+Author-email: amirh18@gmail.com
+License: MIT
+Description: When appending SVGs, the name selectors in the style tag and class paths are the same in both the base template and the appended SVG images. As a result, an abnormal looking SVG image will be created. SVG Image Utils modifies attributes that contradict each other between all the appended SVGs and thus outputs anew, intuitive looking layered SVG image.
+Platform: UNKNOWN

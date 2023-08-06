@@ -1,0 +1,16 @@
+protean/__init__.py,sha256=4urBwHs0ndcGwrC5neN2s61BTY-L2cYaPjgoxKHvoV4,82
+protean/__main__.py,sha256=4_Nfdm7yc9APr7ZQdQPgHvWpvsj-SgFg01RiWKkKOV4,386
+protean/cli.py,sha256=w9YmFwUkGQFwfe24CDWQfBhHdpEE4vP9YWKbdWUjt-s,778
+protean/context.py,sha256=lx-sT1GIn6dg6VuFzje9GySuypBEq4q1ZMzWnG6HUIY,1044
+protean/conf/__init__.py,sha256=3HDVRz-UMpasHRwNzZrKDQroG2RYU8qC5RG3kjTifBA,1547
+protean/conf/default_config.py,sha256=BA9pG_JEG-ubqYcUut2je54YGAyEM-J-1ZOGnX7KYXk,660
+protean/core/entity.py,sha256=W1VF5yCuDVpmmHvPn_h517nk53cvyKlI5yVQaLVForU,3956
+protean/core/exceptions.py,sha256=DkoNDUmXh3xiHK_2ekzJxRDZ34fAPD24xVK3833S9gU,229
+protean/core/repository.py,sha256=qcvZPQ25nUYyVg0_Lxk3WcrV9Nmop0jTfti4CU7dkGk,970
+protean/core/transport.py,sha256=Js8M6hkFDcVYtBmOpGCdYksKKjmvbCF3HQVMaptpms8,3014
+protean/core/usecase.py,sha256=em-KFeeMOzKbL8ZGg5zVyGv3_49f7ciQiVk1abHhCew,11046
+protean-0.0.5.dist-info/METADATA,sha256=OwBIZa_E1xBYZEmjn2Sd0PX8-NmLFLaMajIwlXGBa-s,2029
+protean-0.0.5.dist-info/RECORD,,
+protean-0.0.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+protean-0.0.5.dist-info/entry_points.txt,sha256=YuHamIvPZjD-IoUStVWQPJtDjNEEp66JiWYkc15eAz0,46
+protean-0.0.5.dist-info/top_level.txt,sha256=xg_dqwP0PhrGysKI0SPcbiiVeENnSFj-vrvGqBHxSI8,8

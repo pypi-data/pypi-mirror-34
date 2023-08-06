@@ -1,0 +1,16 @@
+Simple API Signing for Django (SASigning)
+=========================================
+
+Description
+-----------
+
+SASigning facilitates the way of API Signing in Django projects. This can be used when you are intending to build an API to add an extra layer of security. One of the key features of this package is that it tries to maximaize the customization of security.
+
+Table of Contents
+-----------------
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :titlesonly:
+
+   drf-simple-api-signing

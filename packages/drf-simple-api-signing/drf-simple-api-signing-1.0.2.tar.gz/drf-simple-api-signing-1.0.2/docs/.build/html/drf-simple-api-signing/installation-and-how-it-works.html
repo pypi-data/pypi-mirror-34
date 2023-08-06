@@ -1,0 +1,166 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Installation &amp; Quick Start &#8212; drf-simple-api-signing 1.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinxcontrib-httpexample.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/sphinxcontrib-httpexample.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Advanced Topics" href="advanced.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="installation-quick-start">
+<h1>Installation &amp; Quick Start<a class="headerlink" href="#installation-quick-start" title="Permalink to this headline">¶</a></h1>
+<p>To install the package, run the following command in your virtual environment</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">drf-simple-api-signing</span></code></p>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Add your <cite>Secret Key</cite> that will be used in signature computation.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">SA_SIGNING_SECRET_KEY</span> <span class="pre">=</span> <span class="pre">'some-random-secret-key'</span></code></p>
+<p>By adding this setting, your signature will be calculated using this secret key.</p>
+<ul>
+<li><p class="first">Add <code class="docutils literal notranslate"><span class="pre">SASigningPermission</span></code> permission class as Django Rest Framework setting:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">REST_FRAMEWORK</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;DEFAULT_PERMISSION_CLASSES&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">...</span>
+        <span class="c1"># Other permission classes</span>
+        <span class="s1">&#39;simple_api_signing.common.rest_permission.SASigningPermission&#39;</span><span class="p">,</span>
+        <span class="c1"># Other permission classes</span>
+        <span class="o">...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>By Adding only those settings, your API now will only accept signed signatures.
+Below we will explain how to receive signatures from the Frontend or API consumers.</p>
+<div class="section" id="exclude-specific-endpoint-from-signature-checking">
+<h3>Exclude Specific Endpoint from Signature Checking<a class="headerlink" href="#exclude-specific-endpoint-from-signature-checking" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes you want specific endpoint to be avaliable for public consumers, it can be for testing or marketing or other purposes. To exclude endpoint from being checked by signature, you can do this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyAPIViewSet</span><span class="p">(</span><span class="n">ViewSet</span><span class="p">):</span>
+    <span class="n">permission_classes</span> <span class="o">=</span> <span class="p">()</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="apply-api-signing-checking-only-for-specific-endpoint">
+<h3>Apply API Signing Checking only For Specific Endpoint<a class="headerlink" href="#apply-api-signing-checking-only-for-specific-endpoint" title="Permalink to this headline">¶</a></h3>
+<p>Instead of adding this to <code class="docutils literal notranslate"><span class="pre">DEFAULT_PERMISSION_CLASSES</span></code>, you can apply API signature only on specific endpoints:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">simple_api_signing.common.rest_permission</span> <span class="k">import</span> <span class="n">SASigningPermission</span>
+
+
+<span class="k">class</span> <span class="nc">MyAPIViewSet</span><span class="p">(</span><span class="n">ViewSet</span><span class="p">):</span>
+    <span class="n">permission_classes</span> <span class="o">=</span> <span class="p">(</span><span class="n">SASigningPermission</span><span class="p">,)</span>
+    <span class="o">....</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="use-sasigning-directly-with-django-without-drf">
+<h3>Use SASigning Directly with Django, without DRF<a class="headerlink" href="#use-sasigning-directly-with-django-without-drf" title="Permalink to this headline">¶</a></h3>
+<p>This package also is compatible using only django, without django rest framework.</p>
+<p>Instead of putting the <code class="docutils literal notranslate"><span class="pre">permission_class</span></code> in <code class="docutils literal notranslate"><span class="pre">settings.py</span></code> we have to add <strong>SASigningMiddleware</strong> to the <code class="docutils literal notranslate"><span class="pre">MIDDLEWARE</span></code> setting like this:</p>
+<p><strong>NOTE: Using it as a middleware will apply signature verification over all the Django views, endpoints and requests.</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MIDDLEWARE</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">..</span><span class="p">,</span>
+    <span class="s1">&#39;simple_api_signing.common.middleware.SASigningMiddleware&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">drf-simple-api-signing</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation &amp; Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced Topics</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="introduction.html" title="previous chapter">Introduction</a></li>
+      <li>Next: <a href="advanced.html" title="next chapter">Advanced Topics</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Ahmed Hosny Ibrahim.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/drf-simple-api-signing/installation-and-how-it-works.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

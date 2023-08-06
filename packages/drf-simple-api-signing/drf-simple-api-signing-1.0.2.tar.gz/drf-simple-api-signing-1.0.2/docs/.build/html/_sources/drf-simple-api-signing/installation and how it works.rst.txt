@@ -1,0 +1,9 @@
+============
+Installation
+============
+
+To install the package, run the following command in your virtualenvironment
+
+```sh
+pip install drf-simple-api-signing
+```

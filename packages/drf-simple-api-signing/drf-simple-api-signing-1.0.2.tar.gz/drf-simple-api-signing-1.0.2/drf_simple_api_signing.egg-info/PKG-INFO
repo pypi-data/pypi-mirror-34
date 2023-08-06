@@ -1,0 +1,70 @@
+Metadata-Version: 1.1
+Name: drf-simple-api-signing
+Version: 1.0.2
+Summary: A simple Django package to facilitate request signing.
+Home-page: UNKNOWN
+Author: Ahmed Hosny Ibrahim
+Author-email: me@ahmedhosnycs.com
+License: GNU GENERAL PUBLIC LICENSE
+Description: ===============================================
+        DRF Simple API Signing (SASigning) Introduction
+        ===============================================
+        
+        STATUS
+        ^^^^^^
+        
+        * First Release (29 July 2018)
+        
+        API Signing Benefits
+        --------------------
+        
+        1. Identity Verification: You are sure that the request is coming from who you are expecting.
+        2. You are sure that the message is not altered in communication channels.
+        3. You can prevent relay attack (optional).
+        
+        API Signing Workflow
+        --------------------
+        
+        Pseudo code explaining steps of API Signing Check in API::
+        
+            1. Read a signature from header.
+            2. Construct the message. It may consist of 
+               * Secret Key
+               * Request Method (PUT, GET, POST, ..)
+               * URL Endpoint.
+               * Request Body.
+               * other arguments
+            those parameters are concatenated and separated by **delimeter** symbol.
+            3. Hash it with SHA256 using the Secret Key.
+        
+        
+        What SASigning Do?
+        ------------------
+        
+        SASigning provides an easy way to configure your API to accept, check and define signatures.
+        It allows you to review plugin the signature checking in your flow.
+        
+        
+        ========================
+        SASIGNING DOCUMENTATION
+        ========================
+        
+        * Visit Docs_.
+        
+        .. _Docs: https://readthedocs.org/
+        
+Keywords: api_signing,simple_api_signing,django
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application

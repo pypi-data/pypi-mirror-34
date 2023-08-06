@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: target-postgres
+Version: 1.1.0
+Summary: Singer.io target for Postgres
+Home-page: https://statsbot.co
+Author: Statsbot
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only

@@ -1,0 +1,26 @@
+.gitignore
+.travis.yml
+LICENSE
+README.rst
+go.bat
+pytest.ini
+requirements.txt
+setup.py
+tox.ini
+src/scimschema/__init__.py
+src/scimschema.egg-info/PKG-INFO
+src/scimschema.egg-info/SOURCES.txt
+src/scimschema.egg-info/dependency_links.txt
+src/scimschema.egg-info/top_level.txt
+tests/__init__.py
+tests/test_attributes.py
+tests/test_model.py
+tests/test_scim_response.py
+tests/test_scim_schema.py
+tests/examples/__init__.py
+tests/examples/group.json
+tests/examples/huddleUser.json
+tests/examples/user.json
+tests/extension/SCIM Extensions Account spec.json
+tests/extension/SCIM Extensions SimpleAccount spec.json
+tests/extension/__init__.py

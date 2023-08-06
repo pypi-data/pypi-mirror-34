@@ -1,0 +1,7 @@
+[console_scripts]
+pup.http = pup.http:_main
+pup.xpath = pup.xpath:_main
+
+[distutils.commands]
+release = distutils_twine:release
+

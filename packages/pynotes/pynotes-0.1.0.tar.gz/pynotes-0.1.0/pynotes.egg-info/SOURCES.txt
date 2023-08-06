@@ -1,0 +1,9 @@
+setup.py
+pynotes/__init__.py
+pynotes/__main__.py
+pynotes.egg-info/PKG-INFO
+pynotes.egg-info/SOURCES.txt
+pynotes.egg-info/dependency_links.txt
+pynotes.egg-info/entry_points.txt
+pynotes.egg-info/not-zip-safe
+pynotes.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+pynotes = pynotes.__main__:main
+

@@ -1,0 +1,9 @@
+README.rst
+setup.py
+bin/poacher-monitor
+poacher/__init__.py
+poacher.egg-info/PKG-INFO
+poacher.egg-info/SOURCES.txt
+poacher.egg-info/dependency_links.txt
+poacher.egg-info/not-zip-safe
+poacher.egg-info/top_level.txt

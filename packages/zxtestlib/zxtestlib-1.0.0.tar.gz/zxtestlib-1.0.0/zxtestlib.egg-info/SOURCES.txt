@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+tool.py
+zxtestlib/__init__.py
+zxtestlib/zxtest.py
+zxtestlib.egg-info/PKG-INFO
+zxtestlib.egg-info/SOURCES.txt
+zxtestlib.egg-info/dependency_links.txt
+zxtestlib.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+[console_scripts]
+nbsrc = nbsrc.cli:main
+
+[nbconvert.exporters]
+pynotebook = nbsrc:PyNotebookExporter
+rnotebook = nbsrc:RNotebookExporter
+

@@ -1,0 +1,7 @@
+vlcp_docker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vlcp_docker/cleanup.py,sha256=xdkrRLHF3v8AuNoe1H9-5m46lsHK31KHBn6b9W77WLg,17908
+vlcp_docker/dockerplugin.py,sha256=6_ccIQT7BXqAORjJc54GwHmGjYGpJVzfXw76DwKOFMA,42414
+vlcp_docker_plugin-0.2.8.dist-info/METADATA,sha256=1gZKcX7NvTc8266NILrCTOXRY6tRE07rZhHEqRFz96c,341
+vlcp_docker_plugin-0.2.8.dist-info/RECORD,,
+vlcp_docker_plugin-0.2.8.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+vlcp_docker_plugin-0.2.8.dist-info/top_level.txt,sha256=rzT52r4dnSl4CuVPqC9kibX7JpGIW9kqN3o_VenwcII,12

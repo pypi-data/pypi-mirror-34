@@ -1,0 +1,13 @@
+score.geoip-0.2.3-py3.4-nspkg.pth,sha256=fA8biMkxVemSH47fyEr6pGKJjVdKLTmUlWxwQVE1VoI,302
+score/geoip/__init__.py,sha256=lxyErQRKI5wT9fNNm0c9KADbgHOqF1toFRBDiMnrvwg,1472
+score/geoip/_init.py,sha256=kL1BQtSkPq88DIDprsNkzUvWaax11yeT4G_QpK3KbsI,3186
+score/geoip/backend.py,sha256=XIw4hhp1BemtfHGBkIF2RCfWfOd1EzPRBIst51Sp8yM,4723
+score/geoip/cli.py,sha256=1B8s-y-styo8pgb23RoUmBdoJdic8bPNAnUeOvhFIjY,2284
+score.geoip-0.2.3.dist-info/DESCRIPTION.rst,sha256=6xCvjeONx_9etRbQHeeie4K9r2GCRuPMdI_sKenknH4,2124
+score.geoip-0.2.3.dist-info/METADATA,sha256=Wprf3VOojjTy6W_HMg0x5UxgON9CcSD8CyXuL44zHKQ,3003
+score.geoip-0.2.3.dist-info/RECORD,,
+score.geoip-0.2.3.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+score.geoip-0.2.3.dist-info/entry_points.txt,sha256=20P9p6hALBngnSeBBl6_XDwofKKZI4gKlQRVkpk84FQ,42
+score.geoip-0.2.3.dist-info/metadata.json,sha256=yww8xbW71s5lgLYdg6qN3SyOTtkTzizDc6mB84efi0k,1094
+score.geoip-0.2.3.dist-info/namespace_packages.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6
+score.geoip-0.2.3.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6

@@ -1,0 +1,23 @@
+---
+- include: register.yml
+  when: enable_keystone | bool and
+        (inventory_hostname in groups['ironic-api'] or
+        inventory_hostname in groups['ironic-inspector'])
+
+- include: config.yml
+  when: inventory_hostname in groups['ironic-api'] or
+        inventory_hostname in groups['ironic-conductor'] or
+        inventory_hostname in groups['ironic-inspector'] or
+        inventory_hostname in groups['ironic-pxe'] or
+        inventory_hostname in groups['ironic-ipxe']
+
+- include: clone.yml
+  when: ironic_dev_mode | bool
+
+- include: bootstrap.yml
+  when: inventory_hostname in groups['ironic-api'] or
+        inventory_hostname in groups['ironic-inspector'] or
+        inventory_hostname in groups['ironic-pxe']
+
+- name: Flush handlers
+  meta: flush_handlers

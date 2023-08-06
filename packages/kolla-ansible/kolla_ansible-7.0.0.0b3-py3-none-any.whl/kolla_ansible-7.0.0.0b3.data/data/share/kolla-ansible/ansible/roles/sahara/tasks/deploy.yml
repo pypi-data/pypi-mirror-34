@@ -1,0 +1,16 @@
+---
+- include: register.yml
+  when: inventory_hostname in groups['sahara-api']
+
+- include: config.yml
+  when: inventory_hostname in groups['sahara-api'] or
+        inventory_hostname in groups['sahara-engine']
+
+- include: clone.yml
+  when: sahara_dev_mode | bool
+
+- include: bootstrap.yml
+  when: inventory_hostname in groups['sahara-api']
+
+- name: Flush handlers
+  meta: flush_handlers

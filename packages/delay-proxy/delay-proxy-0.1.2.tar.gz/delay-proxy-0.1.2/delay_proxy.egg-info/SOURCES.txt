@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/run-delay-proxy
+delay_proxy.egg-info/PKG-INFO
+delay_proxy.egg-info/SOURCES.txt
+delay_proxy.egg-info/dependency_links.txt
+delay_proxy.egg-info/top_level.txt
+delayproxy/__init__.py
+delayproxy/basicproxy.py

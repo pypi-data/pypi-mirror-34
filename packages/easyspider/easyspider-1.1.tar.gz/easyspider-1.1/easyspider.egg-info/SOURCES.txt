@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+DBService/.DS_Store
+DBService/DBService.py
+DBService/DBService.pyc
+DBService/__init__.py
+DBService/__init__.pyc
+DBService/test.py
+DBService/testMysql_gone_away.py
+DBService/速度比较.txt
+easyspider.egg-info/PKG-INFO
+easyspider.egg-info/SOURCES.txt
+easyspider.egg-info/dependency_links.txt
+easyspider.egg-info/not-zip-safe
+easyspider.egg-info/requires.txt
+easyspider.egg-info/top_level.txt

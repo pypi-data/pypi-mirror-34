@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: esqlask
+Version: 1.0.0
+Summary: sql and elasticsearch rest framework
+Home-page: https://github.com/venkatasaikatepalli/esqlask.git
+Author: Venkata Sai Katepalli
+Author-email: venkatasaisoft@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/venkatasaikatepalli/esqlask.git
+Keywords: esqlask,sql,rest,rest api
+Platform: UNKNOWN
+Requires-Dist: elasticsearch-dsl (==6.0.1)
+Requires-Dist: flasgger (==0.8.0)
+Requires-Dist: Flask (==0.12.2)
+Requires-Dist: Flask-Cors (==3.0.3)
+Requires-Dist: Flask-JWT (==0.3.2)
+Requires-Dist: Flask-RESTful (==0.3.6)
+Requires-Dist: marshmallow (==2.15.0)
+Requires-Dist: bcrypt (==3.1.4)
+Requires-Dist: pandas (==0.23.0)
+
+UNKNOWN
+
+

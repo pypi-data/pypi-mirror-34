@@ -1,0 +1,10 @@
+from esqlask import viewsets
+from {{name}}.models import {{name}}
+from {{name}}.serializers import {{name}}Serializer
+
+class {{name}}ViewSet(viewsets.ModelViewSet):
+	model={{name}}
+
+	parser = {
+		'default': {{name}}Serializer
+	}

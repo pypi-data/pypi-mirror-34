@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tibia.py.egg-info/PKG-INFO
+tibia.py.egg-info/SOURCES.txt
+tibia.py.egg-info/dependency_links.txt
+tibia.py.egg-info/requires.txt
+tibia.py.egg-info/top_level.txt
+tibiapy/__init__.py
+tibiapy/abc.py
+tibiapy/character.py
+tibiapy/const.py
+tibiapy/guild.py
+tibiapy/others.py
+tibiapy/utils.py

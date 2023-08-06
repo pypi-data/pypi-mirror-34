@@ -1,0 +1,7 @@
+setup.py
+fleema/__init__.py
+fleema.egg-info/PKG-INFO
+fleema.egg-info/SOURCES.txt
+fleema.egg-info/dependency_links.txt
+fleema.egg-info/not-zip-safe
+fleema.egg-info/top_level.txt

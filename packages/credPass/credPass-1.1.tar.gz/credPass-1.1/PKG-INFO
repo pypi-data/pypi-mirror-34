@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: credPass
+Version: 1.1
+Summary: python class to load credentials or other sensitive data
+Home-page: https://github.com/FedericoOlivieri/networkAutomation/
+Author: Federico Olivieri
+Author-email: lvrfrc87@gmail.com
+License: MIT
+Description: Python library to load credentials or other sensitive data for .json format file.
+        Credentials must be stored under ``~/.credentials.json` in key:value dictionary format.
+        
+        Example::
+        
+          {
+           "device1":
+              { "username": "federico.olivieri", "password": "p4ssw0rd" },
+            "device2":
+              { "username": "olivierif", "password": "mys3cr3t" }
+          }
+        
+        If you want change default location of .credentials.json file you need to modify file path under `__init__` methond
+        
+        How to run it::
+        
+          db = credPass()
+          db.load('device1','password') # 'p4ssw0rd'
+        
+Platform: UNKNOWN

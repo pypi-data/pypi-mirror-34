@@ -1,0 +1,9 @@
+README.md
+setup.py
+watson_text_talker/__init__.py
+watson_text_talker/watson_text_talker.py
+watson_text_talker.egg-info/PKG-INFO
+watson_text_talker.egg-info/SOURCES.txt
+watson_text_talker.egg-info/dependency_links.txt
+watson_text_talker.egg-info/requires.txt
+watson_text_talker.egg-info/top_level.txt

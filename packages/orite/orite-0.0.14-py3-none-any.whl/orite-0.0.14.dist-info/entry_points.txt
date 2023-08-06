@@ -1,0 +1,3 @@
+[console_scripts]
+orite = orite.command_line:main
+

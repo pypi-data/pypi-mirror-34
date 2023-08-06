@@ -1,0 +1,16 @@
+---
+file-contents:
+  releasenotes/notes/1_0_0_release-fa5dd1bedecd412c.yaml:
+    fixes: [Migrate zuul job into Stolets repo., Various other minor bug fixes.]
+    upgrade: ['Moving storlets installation code to be as devstack plugin and also
+        moves
+
+        several non-python storlets code out from the docker image.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/1_0_0_release-fa5dd1bedecd412c.yaml
+    - !!binary |
+      ODQ2NTE2MjhlYTNlMDMxZjAxN2QwOTQzMjI1MDVhNmM0ZTg2MGQ5MA==
+  version: 1.0.0

@@ -1,0 +1,11 @@
+aioamqp
+dataclasses
+
+[test]
+mypy==0.600
+pycodestyle
+pylint
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock

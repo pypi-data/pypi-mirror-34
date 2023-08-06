@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: line-tools
+Version: 0.0.4
+Summary: A small set of utility useful when creating line BOT
+Home-page: https://github.com/sohoffice/line-tools
+Author: Douglas Liu
+Author-email: douglas@sohoffice.com
+License: UNKNOWN
+Description: Line tools
+        ==========
+        
+        A collection of command line tools useful when creating LINE bot.
+        
+        lt-rhythm
+        ---------
+        
+        Build and update LINE rich menu.
+        
+        Support the following commands
+        
+        - list, list current rich menus
+        - info, show details of one rich menu
+        - new, create a new rich menu
+        - delete, delete an existing rich menu
+        - link, link rich menu to one user
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

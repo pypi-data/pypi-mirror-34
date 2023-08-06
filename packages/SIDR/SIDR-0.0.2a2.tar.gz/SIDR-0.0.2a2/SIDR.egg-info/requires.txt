@@ -1,0 +1,7 @@
+NumPy<=1.14.5
+SciPy
+pysam>=0.8.1
+BioPython
+scikit-learn
+click
+pandas

@@ -1,0 +1,3 @@
+[console_scripts]
+cython-manager = CythonManager.core.managment:execute_from_command_line
+

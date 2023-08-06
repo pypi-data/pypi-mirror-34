@@ -1,0 +1,17 @@
+README.md
+setup.py
+CythonManager/__init__.py
+CythonManager/bin/cython-manager.py
+CythonManager/conf/__init__.py
+CythonManager/conf/templates/__init__.py
+CythonManager/conf/templates/setup.py
+CythonManager/core/__init__.py
+CythonManager/core/managment/__init__.py
+CythonManager/core/managment/commands/__init__.py
+CythonManager/core/managment/commands/build.py
+cython_manager.egg-info/PKG-INFO
+cython_manager.egg-info/SOURCES.txt
+cython_manager.egg-info/dependency_links.txt
+cython_manager.egg-info/entry_points.txt
+cython_manager.egg-info/requires.txt
+cython_manager.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+legiscrape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legiscrape/captions.py,sha256=KmsOYjFwmmp9s3XyilOIwd9uKgn7jFEgNwsnX3z27Lo,5830
+legiscrape/cli.py,sha256=-6jX0gzjP2dtyTvndU679FkRqpZlBfxSSxLWNYqmopg,1454
+legiscrape/granicus-captions.schema.json,sha256=EWDagX21EjVAejKVgBx0SvJlSnFKcgo4eIgQY_TEB88,1391
+legiscrape/video.py,sha256=gQXG-8FxOl6aex0CUU_HspNjIwyGza-GoSzdV65YhYs,2947
+legiscrape-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+legiscrape-0.0.1.dist-info/METADATA,sha256=kdrrCrdIa_sZbHBEaLbSKyXfWCUMiVedz4gslC6qwEo,432
+legiscrape-0.0.1.dist-info/RECORD,,
+legiscrape-0.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+legiscrape-0.0.1.dist-info/entry_points.txt,sha256=rq1quoe8KSvCsTcp0ceUapRUe8im4S2WzvZsbmJNfxA,58
+legiscrape-0.0.1.dist-info/metadata.json,sha256=cCznIlk3t6o3Yhg7gxw4IeB4xGyYZPMvrrl9oQYD6rM,791
+legiscrape-0.0.1.dist-info/top_level.txt,sha256=0o80H9b5XVig_TgtNzsgfNV8pZZ_3_Szlh1EYhdPFAM,11

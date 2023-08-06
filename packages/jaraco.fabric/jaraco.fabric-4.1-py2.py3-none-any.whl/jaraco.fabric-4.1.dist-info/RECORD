@@ -1,0 +1,15 @@
+jaraco.fabric-4.1-py3.6-nspkg.pth,sha256=Tr3Ap28XLzXVIejA1-jRQg4hHIGiCuCk-3j9JZMkTZA,539
+jaraco/fabric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaraco/fabric/__main__.py,sha256=cawX1RJrYlaHt1nhrO4GF-ABXUurf8GdmUSkmaE__NQ,171
+jaraco/fabric/apt.py,sha256=tnooQuPuItC_mLG7B-Q0fHsUzi_2mwyl40tgqqHrIAM,3732
+jaraco/fabric/fabfile.py,sha256=fVJGB4XN9F5xkmhQzSXjMC7FOvukNoY1iozlC9vn8Sw,129
+jaraco/fabric/mongod.service,sha256=t0K1wFPD2TuChXQiDGgDiPUWNZhpeQUSoyX-E2SJD1Q,279
+jaraco/fabric/mongodb.py,sha256=AWxeLJNhFjEOncGz4gVXWjKRJkRmbRWArVnh9VdVaec,3837
+jaraco/fabric/python.py,sha256=8pzTJJo0IFivP9asdsUGKfvuWWCCiXqzszPm5HmfbG8,185
+jaraco/fabric/wrapper.py,sha256=c8NxWzj17l3tqncQepVhdblyXu-FKsCTtq1ffcH6Liw,144
+jaraco.fabric-4.1.dist-info/LICENSE.txt,sha256=pV4v_ptEmY5iHVHYwJS-0JrMS1I27nPX3zlaM7o8GP0,1050
+jaraco.fabric-4.1.dist-info/METADATA,sha256=LM4x3dMzfRvqkywZZC_2cPFyOKn03jgozOjrEbQOzhs,2015
+jaraco.fabric-4.1.dist-info/RECORD,,
+jaraco.fabric-4.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+jaraco.fabric-4.1.dist-info/namespace_packages.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7
+jaraco.fabric-4.1.dist-info/top_level.txt,sha256=0JnN3LfXH4LIRfXL-QFOGCJzQWZO3ELx4R1d_louoQM,7

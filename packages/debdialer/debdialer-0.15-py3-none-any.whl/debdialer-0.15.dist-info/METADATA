@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: debdialer
+Version: 0.15
+Summary: Click-to-dial pop-up window.
+Home-page: https://salsa.debian.org/comfortablydumb-guest/Hello-from-the-Debian-side
+Author: Vishal Gupta
+Author-email: vishalg8897@gmail.com
+License: GNU
+Platform: UNKNOWN
+Requires-Dist: pytz
+Requires-Dist: phonenumbers
+Requires-Dist: vobject
+
+UNKNOWN
+
+

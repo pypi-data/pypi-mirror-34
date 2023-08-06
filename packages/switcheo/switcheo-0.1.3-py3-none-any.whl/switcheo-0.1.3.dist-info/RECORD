@@ -1,0 +1,15 @@
+switcheo/Fixed8.py,sha256=sHZg5C1nTGF-XT7T2hpGcgkuW-1HKlZHdgKiWQp48-8,3727
+switcheo/__init__.py,sha256=8cL-0uaEFEv0Ndm-QiJfysPSO-d_PuFSE0UsMxVeHa4,46
+switcheo/authenticated_client.py,sha256=0hWJavzlr3IwLEEZO_zjepgKmmsoFiVBbkdSVsk_1hI,36049
+switcheo/products.py,sha256=p6SWDlH-uuiyLloQDyw9IpduW_a7ZkIvlewtf_3S72g,1493
+switcheo/public_client.py,sha256=0phUQ1Fy2MG54Yquv4Wr1MyWQ1JnAgylanqOIC36ka4,16698
+switcheo/test_switcheo_utils.py,sha256=2x5M37yJtDl3ET575vcdkXww4E8MHhVsGFJAd9Uhso8,1514
+switcheo/utils.py,sha256=k5Zwe4yffOiQugkIhsNRZ7-0xJvBG-XX70pebRw9paM,3246
+switcheo/neo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+switcheo/neo/test_neo_utils.py,sha256=UQHyXflidzmn2gJrUa13IeX4s8tQdM8HK4ooLGDbMYM,12583
+switcheo/neo/transactions.py,sha256=aleuXMkh7iHt51J0QsuKWgdcvkFj2m4n1pXPVYQYJd4,3215
+switcheo/neo/utils.py,sha256=3uThR9vg7D9jHQcQeP9FbWBGwdqHe8j7lbpmLIFrvZU,2438
+switcheo-0.1.3.dist-info/METADATA,sha256=bKXQ97IirbcxJ5C6iV07BIr_Acc8Zd04Ta6LqSnasoU,9182
+switcheo-0.1.3.dist-info/RECORD,,
+switcheo-0.1.3.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+switcheo-0.1.3.dist-info/top_level.txt,sha256=AHrnFPBvRlJ3LECiMaDOquFLJHwe17q5J4DmHNTw5jE,9

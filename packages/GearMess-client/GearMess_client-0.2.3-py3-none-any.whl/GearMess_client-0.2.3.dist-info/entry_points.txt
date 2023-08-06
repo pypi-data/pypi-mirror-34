@@ -1,0 +1,6 @@
+[console_scripts]
+console_client = client_src.console_client:start_console
+
+[gui_scripts]
+gui_client = client_src.client_gui:start_client
+

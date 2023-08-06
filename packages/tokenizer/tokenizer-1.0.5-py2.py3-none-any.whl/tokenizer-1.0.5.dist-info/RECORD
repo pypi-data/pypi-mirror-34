@@ -1,0 +1,16 @@
+tokenizer/Abbrev.conf,sha256=s3JZf7F6wHo2CT5THm26allo9RxqBq2dPMEdhmPyJug,13693
+tokenizer/__init__.py,sha256=cK_YT71PcGiE3b-bZWlsdX5newsK4ZrV1lfBtzhqyNA,1660
+tokenizer/__init__.pyc,sha256=X76hYqf-G-YoLb82lzuG3Y-NyaGhq5RGRPZIwQPqDZM,1839
+tokenizer/abbrev.py,sha256=sMNqcJrUU8M22Phgr3gQSnVxKP7RyJwG6EVKxMQppEU,7514
+tokenizer/abbrev.pyc,sha256=7p57q65-iyQwHaCKWos11jkHEBREKQlcblkk8uXu0v8,5841
+tokenizer/tokenizer.py,sha256=dKXqGuhTJ-RcCxsBPwj6oZCwlAGgic6PruCTdsv8JbE,61925
+tokenizer/tokenizer.pyc,sha256=L134_W9bv-NW8HHjqc1vED5cFkOf4zM5cBE8cM6nMV8,26341
+tokenizer/__pycache__/__init__.cpython-36.pyc,sha256=bVr6d90deB05ARV4ewuql7Zpy0xbXyr8_NhMu_AA0nc,1784
+tokenizer/__pycache__/abbrev.cpython-36.pyc,sha256=kzoPQ124xlBEPpXhQPiEfKRZlSsjTHxaHP8u3g23cQg,4990
+tokenizer/__pycache__/tokenizer.cpython-36.pyc,sha256=LlPOW_ciLm2jZ-CSBLMvbuvIUzeNfemjH8RIq2xc3ms,20774
+tokenizer-1.0.5.dist-info/LICENSE.txt,sha256=MV-kueuA9tV37qxN-f53Hy8Zjw7EeAWMUux05We-9kc,1104
+tokenizer-1.0.5.dist-info/METADATA,sha256=14trGLPGpbsplkBYJCxUZsTUZWp8fHytPbhvSbnR9bU,15833
+tokenizer-1.0.5.dist-info/RECORD,,
+tokenizer-1.0.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+tokenizer-1.0.5.dist-info/top_level.txt,sha256=ODlQeKqMCvFle4_HiPNY1X5fX-qZyM3ABBmOPG__vnE,10
+tokenizer-1.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

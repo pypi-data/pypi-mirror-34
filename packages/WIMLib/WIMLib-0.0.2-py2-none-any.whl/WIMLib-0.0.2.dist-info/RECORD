@@ -1,0 +1,17 @@
+WIMLib/Config.py,sha256=2V7KRyJYDPIaKnaPXo2pKi0Xjo3nM9rSo9wi5Uc7LrI,1474
+WIMLib/GeoJsonHandler.py,sha256=RSS2A4EhVzHEIlXh-3q5PFhF7hbZA2mHdyc_tDK0wAo,13630
+WIMLib/MapLayer.py,sha256=IBB04KPogDsGKbn7j7b983-AfuhwFuNO0vBO5pOm_oI,5819
+WIMLib/PrismOps.py,sha256=fZ2JunTNcG2F4C1DMjNOCUGgfuKozKbN8fUmjX3eVi0,4409
+WIMLib/Shared.py,sha256=NwGVhU-Mcm-3BS_xnqutLnGn0xeIBrgsnRjJodJ9niY,2791
+WIMLib/SpatialOps.py,sha256=SrDH6U1CamdgvmJeWmEP3cjvlHwL_nSWPRhqwwn0QO4,33484
+WIMLib/UnitConverter.py,sha256=F_o3ktHgzE4ENtJE0_cq_O9N4iBb5kStlEQwlH0CtnI,2471
+WIMLib/WiMLogging.py,sha256=Fs8FuXZjNE-QdAb2-XXyDiCnGM6nmVPWLluU8hB6uas,1376
+WIMLib/__init__.py,sha256=-AG5N0MzYeWe3WMvMs6Kw9dc0sYdJzYbDQoEfp1SZt0,28
+WIMLib/Resources/Result.py,sha256=FbYEm02tcraFU6E18zqYurOXmiTqUxkRfbfXdJ5Qves,871
+WIMLib/Resources/__init__.py,sha256=-AG5N0MzYeWe3WMvMs6Kw9dc0sYdJzYbDQoEfp1SZt0,28
+WIMLib/ServiceAgents/ServiceAgentBase.py,sha256=Vuz0KdDnGDC6ymVThkJmOe0dzcpbrMkIBCQPZKnKnBc,2468
+WIMLib/ServiceAgents/__init__.py,sha256=-AG5N0MzYeWe3WMvMs6Kw9dc0sYdJzYbDQoEfp1SZt0,28
+WIMLib-0.0.2.dist-info/METADATA,sha256=TdtsUgM0G3sx-CRRdGRAfPmxHJro_Azh9RKLXDjBhUI,5882
+WIMLib-0.0.2.dist-info/RECORD,,
+WIMLib-0.0.2.dist-info/WHEEL,sha256=oGGm_O4g839AJOrCbXq_ZxGrWdwSrjduga8Rn8cINEs,97
+WIMLib-0.0.2.dist-info/top_level.txt,sha256=ir3zLnvRzNDNVHT4fRQKsVnGNouiHQKMF6ku9RuQkzs,7

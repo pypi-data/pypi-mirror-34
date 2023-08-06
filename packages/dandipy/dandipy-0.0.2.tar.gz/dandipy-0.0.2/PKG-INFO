@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dandipy
+Version: 0.0.2
+Summary: A python module to access @chattered D&D RESTful API
+Home-page: UNKNOWN
+Author: Marc Scott
+Author-email: marc@coding2learn.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3

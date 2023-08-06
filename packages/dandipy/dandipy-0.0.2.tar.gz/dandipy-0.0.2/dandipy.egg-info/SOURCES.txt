@@ -1,0 +1,9 @@
+README.md
+setup.py
+dandipy/__init__.py
+dandipy/dandi.py
+dandipy.egg-info/PKG-INFO
+dandipy.egg-info/SOURCES.txt
+dandipy.egg-info/dependency_links.txt
+dandipy.egg-info/requires.txt
+dandipy.egg-info/top_level.txt

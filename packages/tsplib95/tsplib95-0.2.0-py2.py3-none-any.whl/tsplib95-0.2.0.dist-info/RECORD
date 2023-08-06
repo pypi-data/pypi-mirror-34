@@ -1,0 +1,15 @@
+tsplib95/__init__.py,sha256=4zdugerb5vhrgjmvGFKJTWC_l-WwFDBh9KBvn2Wiitk,446
+tsplib95/cli.py,sha256=6phLNaBtErMQWpU9VXfWMa7qBlSlK409XCKIeo5MlL4,1145
+tsplib95/distances.py,sha256=7UEl_TKyEfgxCk1OYAPs4grzTzDI7p4YOYPuBo80aR4,3355
+tsplib95/matrix.py,sha256=wTYyCT6SmyI883rBa50pBxXGcQuXdEPq_SnCPxxd-oc,4545
+tsplib95/models.py,sha256=6R-NacPkg9xEJQITa__OdIdPCwptPRtdJxL3VZHiIpk,8284
+tsplib95/parser.py,sha256=wQQ32gtJ7phYJ51j84YKk4tBKZ8lTeOHwQqS7ECQqmY,7082
+tsplib95/utils.py,sha256=ta6iBNxMd5eU2Zgib9byO93mFBYy2PZJ65UooT38oJ4,1636
+tsplib95-0.2.0.dist-info/DESCRIPTION.rst,sha256=48oj-SfaT9OGRzNbo7SEuR_eKDgxZuQxd0XQnFPpY2I,2453
+tsplib95-0.2.0.dist-info/METADATA,sha256=ZIl3lK9YFEyeeFycHKBIGZV7CnAmpokKmZxvseehQq4,3274
+tsplib95-0.2.0.dist-info/RECORD,,
+tsplib95-0.2.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+tsplib95-0.2.0.dist-info/entry_points.txt,sha256=162BQO1p4YMn5A0bojSOmW5EBkJAS4YKQdckgeCv_dI,47
+tsplib95-0.2.0.dist-info/metadata.json,sha256=xpIJkSeilZuIiSqZ2hHzfWZw7KPPIgECG2bVd3s6mHA,1154
+tsplib95-0.2.0.dist-info/top_level.txt,sha256=mga5U9pCuy4yGNYtja7IxevCnm_-hgCVkP-UP6Wjryg,9
+tsplib95-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

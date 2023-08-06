@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+prefab/__init__.py
+prefab/cli.py
+prefab/filesystem.py
+prefab/jinja.py
+prefab/templating.py
+prefab.egg-info/PKG-INFO
+prefab.egg-info/SOURCES.txt
+prefab.egg-info/dependency_links.txt
+prefab.egg-info/entry_points.txt
+prefab.egg-info/top_level.txt
+templates/main.py
+templates/setup.py
+templates/test_main.py

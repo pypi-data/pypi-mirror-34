@@ -1,0 +1,41 @@
+{%- macro run_command(command) %}
+    {%- if command %}
+        {%- if debug %}
+            echo "##+ML## {{ command }}"
+        {%- endif %}
+        {{ command }}
+        {%- if debug %}
+            echo "###ML## {{ command }}"
+        {%-endif %}
+    {%- endif %}
+{%- endmacro %}
+
+{%- set requirements_txt = requirements_txt or 'requirements.txt' %}
+#!/bin/sh
+set -e
+alias errcho='>&2 echo'
+
+{%- if mali_data %}
+    mkdir -p ~/.MissingLinkAI
+    echo "{{ mali_data }}" | base64 -d > ~/.MissingLinkAI/{{ mali_file }}
+{%- endif %}
+
+{%- if ssh_identity %}
+    mkdir -p ~/.ssh
+    echo "{{ ssh_identity }}" | base64 -d > ~/.ssh/id_rsa
+    chmod 600 ~/.ssh/id_rsa
+    echo "{{ ssh_identity_pub }}" | base64 -d > ~/.ssh/id_rsa.pub
+{%- endif %}
+
+if [ -f  '{{ requirements_txt }}' ]
+then
+mkdir -p /logs
+echo "Install requirements from {{ requirements_txt }}"
+pip install -r {{ requirements_txt }} -U || true > /logs/pip_install.log; true
+else
+errcho "{{ requirements_txt }} requirements file not found"
+fi
+{{ run_command(command) }}
+{%- for command in (commands or []) %}
+    {{ run_command(command) }}
+{%- endfor %}

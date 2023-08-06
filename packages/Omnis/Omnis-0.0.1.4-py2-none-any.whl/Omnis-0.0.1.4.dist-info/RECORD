@@ -1,0 +1,17 @@
+Omnis-0.0.1.4.dist-info/METADATA,sha256=FmOTNqkhjThD8-huLQNcH075G1QjEr0W3FFaSU-lJ9U,2272
+Omnis-0.0.1.4.dist-info/RECORD,,
+Omnis-0.0.1.4.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+Omnis-0.0.1.4.dist-info/top_level.txt,sha256=3O760ZjnEca-FeZkgDmIeCfNBo5NVW3Ay1VROY5-Y_g,6
+omnis/__init__.py,sha256=M0CW3F9VYVX0nmtBEqmxc-GdOB8diOaCmOXALHeV97k,23
+omnis/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnis/model/cnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnis/model/cnn/cnn.py,sha256=lZHqPwM-LZ1_QdB0QyfLmG06lRM4dIy80-cHMo5xSgY,16688
+omnis/model/cnn/densenet.py,sha256=ln9gtZM2_Tft-PnJSemvxN66UdTrW8KfWJOXB0QrYdg,1020
+omnis/model/cnn/simplecnn.py,sha256=UjHIKlH5mlmPWmxEreXKKoDpo7iz627q61-5tcIiuTk,1462
+omnis/model/cnn/squeezenet.py,sha256=ZV4oezwt3inqyrlBSqOthSDtJtTy-ag7jJTP6SBzdbw,546
+omnis/network/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnis/network/cnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnis/network/cnn/cnn.py,sha256=PMcv7ZsQ3VWObJ5HaSBELXlAUQbGtfwGO1ATcp3J4oQ,14852
+omnis/network/cnn/densenet.py,sha256=a86hxj5g4QwFL5E7IbmiZIKPioZXhZ-zFVbIgol3tKQ,1933
+omnis/network/cnn/simplecnn.py,sha256=SU09npePSY3U6StNygbEE4FATPN5b_sbNRspuokZyKw,1513
+omnis/network/cnn/squeezenet.py,sha256=prDOnZBmb5txgz_TNRecTJrOZo89VmKe7xMYQ70EwJg,934

@@ -1,0 +1,8 @@
+nameko_statsd/__init__.py,sha256=oQSgiGENJghaa7Y6JBcPDB89EbdPBNJuZjISCOUkVWU,90
+nameko_statsd/bases.py,sha256=fJ_n2EHIMnEnJja1FTRPX9UZigLOt-xDOWnwDAyq3Eg,517
+nameko_statsd/statsd_dep.py,sha256=p2XBvTjd08kKhxdncudq4ZbUn4nIP0UbTZeFQ_aDWlM,2523
+nameko_statsd-0.0.4.dist-info/METADATA,sha256=b6pcAHh_RyERP7aERHkhsv4_WFtSVqJ0hoQXRqIxPAU,1176
+nameko_statsd-0.0.4.dist-info/RECORD,,
+nameko_statsd-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nameko_statsd-0.0.4.dist-info/top_level.txt,sha256=PYNWoYuYE0jyYzVy1o9mYEX4h5EcCsSqsaj6KB9pG6c,14
+nameko_statsd-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: acceptable
+Version: 0.16
+Summary: API version negotiation for flask-based web services.
+Home-page: https://github.com/canonical-ols/acceptable
+Author: Canonical Online Services
+Author-email: online-services@lists.canonical.com
+License: LGPLv3
+Platform: UNKNOWN
+Provides-Extra: flask
+Provides-Extra: django
+Requires-Dist: future
+Requires-Dist: jinja2
+Requires-Dist: jsonschema
+Requires-Dist: pyyaml
+Provides-Extra: django
+Requires-Dist: django (<2.1,>=1.11); extra == 'django'
+Provides-Extra: flask
+Requires-Dist: Flask (<1.0); extra == 'flask'
+
+UNKNOWN
+
+

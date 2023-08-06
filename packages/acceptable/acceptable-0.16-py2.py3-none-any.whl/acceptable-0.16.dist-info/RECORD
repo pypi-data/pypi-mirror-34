@@ -1,0 +1,16 @@
+acceptable/__init__.py,sha256=uB_VhNRL04JBAZChjoyFlWDcy_rdGz0cJ4-8zx5RMnQ,805
+acceptable/__main__.py,sha256=yUEaonSTkMoTk0qHWO4oK5OSWw2Fdopjtz4WD6-W2LI,11031
+acceptable/_build_doubles.py,sha256=_kpkQ98pqXl315L7vXT3psTpI5l_spkkQ-Zl0QQoww0,13163
+acceptable/_doubles.py,sha256=KbsJiL00nBh3tKQhj-0AyWO1MqW7WSRTGOSA2TssvFo,4583
+acceptable/_service.py,sha256=6O7Dy-e2qfdKiWZAH9atmBfifGinl34CbMCFm7Itsz4,10474
+acceptable/_validation.py,sha256=KAc4_mBd2XhFBoT095rqMKb6vCkonzLH6bm8YbREbII,7724
+acceptable/djangoutil.py,sha256=oR4FukpTKHGcTpJ2lx0yMHFu8teiymuALCWvOQJ7Ekk,6346
+acceptable/lint.py,sha256=6ZGL3hHHsEtEGt3Kibw-y9476Y0pi2QHunrg8cuhJhE,8273
+acceptable/util.py,sha256=UCQZ2HJhnEJ2nwzA20Nv6e7JbAejxl4hjdTbxJE9_Ic,385
+acceptable/templates/api_page.md.j2,sha256=tsLFDwv34l6OgbU6OZxOKR-RRPXT_uRQNQwB61wB240,556
+acceptable/templates/index.md.j2,sha256=X0N33SV-gLG8xAG6H8YXfZCM1D3U99qNvc1s36hK7Pw,610
+acceptable-0.16.dist-info/METADATA,sha256=sKO-SRjEueHqyGAwKGbLGJQdGze884-JZaxI3hdu5pg,583
+acceptable-0.16.dist-info/RECORD,,
+acceptable-0.16.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+acceptable-0.16.dist-info/entry_points.txt,sha256=L45sD7TotanpjMBig99DC89-5l87rR9YYwQi1L8YbiU,112
+acceptable-0.16.dist-info/top_level.txt,sha256=X2kRLbO2bg-dgzQ_O4k_PjTnrKcv7dq0jaSLbM_WiJ4,11

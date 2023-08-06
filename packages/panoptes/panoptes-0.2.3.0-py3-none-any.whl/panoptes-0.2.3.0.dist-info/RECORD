@@ -1,0 +1,11 @@
+panoptes/__init__.py,sha256=75xjIPLgEla5wqzg4V1Nl7YDPAJ_MBIG_qhYf5vlzKo,238
+panoptes/panoptesctl.py,sha256=zDKUoct7-Yi1P6yVqoOIgcj2AxAY9MphQhpBW1zbflE,2336
+panoptes/aws/__init__.py,sha256=NVYM9__3arO8Kp4oX3pQShzhH6Q0hC7lvfOc3i0OMnE,219
+panoptes/aws/analysis.py,sha256=Jf4SpAEJO6Cn3XsVBU3bW-UO3nNuEiTwhbWyz0Mxl-0,15125
+panoptes/aws/authentication.py,sha256=kaDFDa0viYE64VevAtJTMSw1DNMwY9zpryiTXlzu1Xo,705
+panoptes/aws/output.py,sha256=tc7uR-x2nHXcuz1ZiNyduPN3WweKMj86UfnSG4qQ-l0,6497
+panoptes-0.2.3.0.dist-info/METADATA,sha256=asAJhffBuOj6hv1Kkaq744DN7bfORfij4qy8Zxf44bA,3007
+panoptes-0.2.3.0.dist-info/RECORD,,
+panoptes-0.2.3.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+panoptes-0.2.3.0.dist-info/entry_points.txt,sha256=FlbI5o8HW4Z_u0IAb2I0zKlyAJ4SoAbBIH3Vj8ClJEg,58
+panoptes-0.2.3.0.dist-info/top_level.txt,sha256=SG3MpEcu5YbaMlic0SQwrBfhRWd0m1zHgD1wYGIjgto,9

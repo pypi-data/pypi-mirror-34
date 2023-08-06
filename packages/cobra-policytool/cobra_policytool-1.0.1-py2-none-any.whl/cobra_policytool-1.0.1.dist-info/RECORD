@@ -1,0 +1,15 @@
+cobra_policytool-1.0.1.dist-info/METADATA,sha256=boo6Gy9AB-Q05Aa4RLwEN7575hD69r7rYBDMZch6T98,6406
+cobra_policytool-1.0.1.dist-info/RECORD,,
+cobra_policytool-1.0.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+cobra_policytool-1.0.1.dist-info/entry_points.txt,sha256=FN3oxoMWjrkrHdk_6uqMFLfWqlgMQPO_w7tHJMdYTa0,71
+cobra_policytool-1.0.1.dist-info/top_level.txt,sha256=Vkj1IoMfU4qsxtvJWa039kDDMscIrNARMTIUkuBrNmE,17
+policytool/__init__.py,sha256=g3csteDWHWe8uVf8mKAAcgTE_4TJqmyUR5d1nfsjMiU,19
+policytool/atlas.py,sha256=KqhuJlrdL3faPpi1U4TvC-n3b1zdvWpYRFRJ4SjSSiU,7785
+policytool/cli.py,sha256=sDCIxTHd3EGUW94GTDVgPZv5KYvbmmh45Dj72Y8jnmM,9000
+policytool/configfile.py,sha256=XCvyEBCtu2CjU9Gv5fximZlRuFT8NMkXAtql6PIx_XY,1467
+policytool/ranger.py,sha256=ZLgv0CSCH0bN9K2fN8C4LNzpXzxw4JZcAps8yinFlmE,3918
+policytool/rangersync.py,sha256=p6P77kd7Rp9D80hoV5cpVcUlUIoFEloO3k6cLVLer-Q,5815
+policytool/tagsync.py,sha256=NQiij2MIdPtBRsJPIygT-era4TkmT6j_6PqIvWRI_RU,10422
+policytool/template.py,sha256=eFIhBZKvo8cY22Izq8GB6Cc-YbSnL1zBXf05rVfFeNc,1381
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_tagsync.py,sha256=Xh7r7GywFHsoyAMKxZ5TgeUXuoZYQaTcmS37i6UHpAQ,14994

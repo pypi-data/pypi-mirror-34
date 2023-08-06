@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: PyIGA
+Version: 0.0.8
+Summary: Isogeometric analysis in Python. Built upon KratosMultiphysics Kernel
+Home-page: UNKNOWN
+Author: Hoang-Giang Bui
+Author-email: giang.bui@rub.de
+License: MIT
+Keywords: Isogeometric Analysis IGA FEM RUB
+Platform: Linux
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+

@@ -1,0 +1,12 @@
+mkpassphrase/__init__.py,sha256=atyEGigP1Ev9uPeMzCu7Hzz6r2S_7Hl1pORj7FYWabo,173
+mkpassphrase/api.py,sha256=S6GTWeVKTnD3gd2ZFmGEjyK3sQ4juW_eVunpnVvPvnk,3379
+mkpassphrase/internal.py,sha256=u4FL0OkTRM-jpRifnkU_BwHfLUyF_UnUzhAYcCzOmjQ,4049
+mkpassphrase/main.py,sha256=iuHYTg65dxNuaEbSboBJ-835kXiOJkO35WOIXdEyc8c,3926
+mkpassphrase/wordlists/eff_large_wordlist.txt,sha256=bVV_BpOVj7XmULaLW-5YXrgs9NoyllUFx4npJHQ7xSI,62144
+mkpassphrase/wordlists/eff_short_wordlist_1.txt,sha256=NuzKSeT6IMqEsXbDLy6cgvmPRGWFGQ51-YealcCCR78,7180
+mkpassphrase/wordlists/eff_short_wordlist_2_0.txt,sha256=eqV6TT7PZYFymZK62VdbrN6_fCg3ivKuxqUPEa7DJvU,10778
+mkpassphrase-2.0.0.dist-info/METADATA,sha256=JmJcbLxAb-zwgJ_LJKYoXY5rP8u3fZ6ilOeL_yq_t-E,7286
+mkpassphrase-2.0.0.dist-info/RECORD,,
+mkpassphrase-2.0.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+mkpassphrase-2.0.0.dist-info/entry_points.txt,sha256=jts3X5zVnAfFv2vWHqO0dLxujyClzS9jzWsQAJPTt2o,57
+mkpassphrase-2.0.0.dist-info/top_level.txt,sha256=Mb6-lNRnPJXkARHXgibKxBi14qiXIhp8RoU8FcjRPBk,13

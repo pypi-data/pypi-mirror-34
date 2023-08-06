@@ -1,0 +1,14 @@
+mcc/__init__.py,sha256=C_pZ6N6Bc7TrtQsRM5J-OQGXaO-lnWGKpcQNqBwBzpE,945
+mcc/__main__.py,sha256=2omgHBWFtXIUbtcEpxpfFZPd3fcs6vjNqLpCynZGunI,1013
+mcc/cldcnct.py,sha256=QI2ckAcKJBEYx2cfFHjp0eFuCpuYp6ScN6CFD4Ks2ms,9919
+mcc/colors.py,sha256=SwH3WAvBQ08ISPX47aDIPnRDAjWf3F0Y2zp5TfGe-_Q,2621
+mcc/confdir.py,sha256=Bajgd9o1RQeD_OfFPOB2c97Knv6py3NOlGYheC_OKUw,1122
+mcc/config.ini,sha256=BvjJ6cC__rm9L4hWIO2Nm4qDaQvSoNqFzt1CpjhCqDo,3576
+mcc/core.py,sha256=hmG29Qo8TZX4ZAvRJWpkh1mO_JRyx1UN7Riq1cqRW80,5128
+mcc/tables.py,sha256=T3W59alNeHgIlIUw7JjFgwdrwfYho4xz0iQjniShqC8,2196
+mcc/uimode.py,sha256=7f0plDqdIiNqvjrTDiUOq9XtK2dxXLoAU-_ecyjk70E,12295
+mcc-0.9.6.dist-info/METADATA,sha256=4UhFDQFO-kc1_TmQ7_5qx49Ml7GH6llQdkCarLyMYcw,11250
+mcc-0.9.6.dist-info/RECORD,,
+mcc-0.9.6.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+mcc-0.9.6.dist-info/entry_points.txt,sha256=ajya6JWQ0-jiHv-431qdERAOG6JDWaYyKyqE0gGr7pw,65
+mcc-0.9.6.dist-info/top_level.txt,sha256=x9fpmuvTXJMVF7AzFLjIcn8dHy9oN9J5ZcRf_ZVahZg,4

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+oreumums/__init__.py
+oreumums/oreumums.py
+oreumums.egg-info/PKG-INFO
+oreumums.egg-info/SOURCES.txt
+oreumums.egg-info/dependency_links.txt
+oreumums.egg-info/requires.txt
+oreumums.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ec2_tag_conditional/__init__.py
+ec2_tag_conditional/util.py
+ec2_tag_conditional.egg-info/PKG-INFO
+ec2_tag_conditional.egg-info/SOURCES.txt
+ec2_tag_conditional.egg-info/dependency_links.txt
+ec2_tag_conditional.egg-info/entry_points.txt
+ec2_tag_conditional.egg-info/requires.txt
+ec2_tag_conditional.egg-info/top_level.txt

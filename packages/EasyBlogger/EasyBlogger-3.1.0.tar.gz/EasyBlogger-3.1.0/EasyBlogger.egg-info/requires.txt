@@ -1,0 +1,10 @@
+pypandoc
+google-api-python-client
+oauth2client
+python-gflags
+httplib2
+toml
+gevent
+coloredlogs
+pyyaml
+chardet

@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: agreement_phi
+Version: 0.2.5
+Summary: Inter-rater agreement Phi, as an alternative to Kripperndorfs alpha, as described in https://github.com/AlessandroChecco/agreement-phi
+Home-page: https://github.com/AlessandroChecco/agreement-phi
+Author: Alessandro Checco
+Author-email: a.checco@sheffield.ac.uk
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/AlessandroChecco/agreement-phi/issues
+Project-URL: Source, https://github.com/AlessandroChecco/agreement-phi
+Description: # Agreement measure Phi
+        Source code for inter-rater agreement measure Phi. Live demo here: http://agreement-measure.sheffield.ac.uk
+        
+        ## Requirements
+        python 3+, pymc3 3.3+. See requirements files for tested working versions on linux and osx.
+        
+        ## Installation - with pip
+        Simply run ``pip install agreement_phi``.
+        This will provide a module and a command line executable called ``run_phi``.
+        
+        ## Installation - without pip
+        Download the folder.
+        
+        ## Example - from command line
+        Prepare a csv file (no header, each row is a document, each column a rater), leaving empty the missing values. For example ``input.csv``:
+        ```
+        1,2,,3
+        1,1,2,
+        4,3,2,1
+        ``` 
+        And execute from the console ``run_phi -f input.csv``.
+        
+        ## Example - from python
+        Input is a numpy 2-dimensional array with NaN for missing values, or equivalently a python list of lists (where each list is a set of ratings for a document, with arbitrary length). Every row represents a different document, every column a different rating. Note that Phi does not take in account rater bias, so the order in which ratings appear for each document does not matter. For this reasons, missing values and a sparse representation is needed only when documents have different number of ratings.
+        
+        ### Input example 
+        ```
+        import numpy as np
+        m_random = np.random.randint(5, size=(5, 10)).tolist()
+        m_random[0][1]=np.nan
+        ```
+        or equivalently
+        ```
+        m_random = np.random.randint(5, size=(5, 10)).astype(float)
+        m_random[0][1]=np.nan
+        ```
+        
+        
+Keywords: agreement krippendorff
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

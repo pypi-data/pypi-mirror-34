@@ -1,0 +1,13 @@
+atuin/__init__.py,sha256=kr2TpyIISR7zNC6KRNwkwSGuM7rpjDuvCECMsFnnF-c,35
+atuin/__main__.py,sha256=_lJQbXPtJ1mOvhi8Ja1iRf6zhfj9oTkWh8frvIfrPSY,401
+atuin/defaults/__init__.py,sha256=-MCn-Hdzsw-7RP80qQl85ay_HmmJg63UNdKuITOYG98,160
+atuin/defaults/config.ini,sha256=6qhXzMEsDWAG-3jEMiRo3ad3vNBmT_WjAcwkQK_ucYo,124
+atuin/defaults/templates/blank.md.template,sha256=66B5Stl-kfDbyCCqVCkxxgpINq8zHBbLf9Kr0tm_xIQ,20
+atuin/defaults/templates/challenge.md.template,sha256=_LV6NyLG380m00YS4qCGLBMqLMjolxCmXds2eGuclsU,259
+atuin/defaults/templates/default.template,sha256=2ltCslQHcC8Zx2XRrc72xWdATqzF8fcd8-HienNj3TM,8
+atuin/defaults/templates/random.py.template,sha256=l9oCxxFm2LQzA8ZFhsPMvrugFMZV0VNh3DItFnTs7nM,29
+atuin-0.0.2.dist-info/METADATA,sha256=WnsQq0bKMkgnwsq4XwlmfdmOcsaKS5ofGCR6G9JPSv8,294
+atuin-0.0.2.dist-info/RECORD,,
+atuin-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+atuin-0.0.2.dist-info/entry_points.txt,sha256=F4QXjzpfdDeEFaK5FPLqwcbelIEDBCNAi-PEKEIu-zU,47
+atuin-0.0.2.dist-info/top_level.txt,sha256=4gE0wX5Lk5UwZVQR_NikpfLiQob3dEVit7JLj-JykSo,6

@@ -1,0 +1,3 @@
+[console_scripts]
+atuin = atuin.__main__:main
+

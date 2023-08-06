@@ -1,0 +1,707 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.Applications.DisplayBlockMeshQt module &mdash; PyFoam 0.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PyFoam 0.6.6 documentation" href="../index.html"/>
+        <link rel="up" title="PyFoam.Applications package" href="PyFoam.Applications.html"/>
+        <link rel="next" title="PyFoam.Applications.DumpRunDatabaseToCSV module" href="PyFoam.Applications.DumpRunDatabaseToCSV.html"/>
+        <link rel="prev" title="PyFoam.Applications.DisplayBlockMesh module" href="PyFoam.Applications.DisplayBlockMesh.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PyFoam.html">PyFoam package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="PyFoam.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="PyFoam.Applications.html">PyFoam.Applications package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Basics.html">PyFoam.Basics package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Execution.html">PyFoam.Execution package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.IPythonHelpers.html">PyFoam.IPythonHelpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Infrastructure.html">PyFoam.Infrastructure package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.LogAnalysis.html">PyFoam.LogAnalysis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Paraview.html">PyFoam.Paraview package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Site.html">PyFoam.Site package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Wrappers.html">PyFoam.Wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#module-PyFoam">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">PyFoam</a> &raquo;</li>
+        
+          <li><a href="PyFoam.html">PyFoam package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.Applications.html">PyFoam.Applications package</a> &raquo;</li>
+        
+      <li>PyFoam.Applications.DisplayBlockMeshQt module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/PyFoam.Applications.DisplayBlockMeshQt.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-PyFoam.Applications.DisplayBlockMeshQt">
+<span id="pyfoam-applications-displayblockmeshqt-module"></span><h1>PyFoam.Applications.DisplayBlockMeshQt module<a class="headerlink" href="#module-PyFoam.Applications.DisplayBlockMeshQt" title="Permalink to this headline">¶</a></h1>
+<p>New implementation of DisplayBlockMesh using PyQT4</p>
+<dl class="class">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh">
+<em class="property">class </em><code class="descclassname">PyFoam.Applications.DisplayBlockMeshQt.</code><code class="descname">DisplayBlockMesh</code><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="PyFoam.Applications.PyFoamApplicationQt4.html#PyFoam.Applications.PyFoamApplicationQt4.PyFoamApplicationQt4" title="PyFoam.Applications.PyFoamApplicationQt4.PyFoamApplicationQt4"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Applications.PyFoamApplicationQt4.PyFoamApplicationQt4</span></code></a>, <a class="reference internal" href="PyFoam.Applications.CommonTemplateFormat.html#PyFoam.Applications.CommonTemplateFormat.CommonTemplateFormat" title="PyFoam.Applications.CommonTemplateFormat.CommonTemplateFormat"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Applications.CommonTemplateFormat.CommonTemplateFormat</span></code></a></p>
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMesh.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>description</strong> – description of the command</li>
+<li><strong>usage</strong> – Usage</li>
+<li><strong>interspersed</strong> – Is the command line allowed to be interspersed (options after the arguments)</li>
+<li><strong>args</strong> – Command line arguments when using the Application as a ‘class’ from a script</li>
+<li><strong>nr</strong> – Number of required arguments</li>
+<li><strong>changeVersion</strong> – May this application change the version of OF used?</li>
+<li><strong>exactNr</strong> – Must not have more than the required number of arguments</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.Applications.DisplayBlockMeshQt'</em><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.addOptions">
+<code class="descname">addOptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMesh.addOptions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.addOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add options to the parser</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.setupGUI">
+<code class="descname">setupGUI</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMesh.setupGUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMesh.setupGUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up the graphical user interface</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog">
+<em class="property">class </em><code class="descclassname">PyFoam.Applications.DisplayBlockMeshQt.</code><code class="descname">DisplayBlockMeshDialog</code><span class="sig-paren">(</span><em>fName</em>, <em>valuesFile=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt4.QtGui.QMainWindow</span></code></p>
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.AddBlockToDict">
+<code class="descname">AddBlockToDict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.AddBlockToDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.AddBlockToDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds block to dict, using pyFoam functions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.AddBlockToText">
+<code class="descname">AddBlockToText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.AddBlockToText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.AddBlockToText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts block into opened dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.AddPatchToText">
+<code class="descname">AddPatchToText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.AddPatchToText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.AddPatchToText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts patch into opened dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.PickEvent">
+<code class="descname">PickEvent</code><span class="sig-paren">(</span><em>obj</em>, <em>evt</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.PickEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.PickEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback for picking event</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>fName</em>, <em>valuesFile=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.Applications.DisplayBlockMeshQt'</em><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addBlock">
+<code class="descname">addBlock</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addBlock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addInputToPolyData">
+<code class="descname">addInputToPolyData</code><span class="sig-paren">(</span><em>appendPoly</em>, <em>data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addInputToPolyData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addInputToPolyData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper version needed because of changed API in VTK6</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addLine">
+<code class="descname">addLine</code><span class="sig-paren">(</span><em>index1</em>, <em>index2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addLine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addPoint">
+<code class="descname">addPoint</code><span class="sig-paren">(</span><em>coord</em>, <em>factor=1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addPoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addPoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addProps">
+<code class="descname">addProps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addProps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addProps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addTmpBlockingLine">
+<code class="descname">addTmpBlockingLine</code><span class="sig-paren">(</span><em>index1</em>, <em>index2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addTmpBlockingLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addTmpBlockingLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a colored line to show blocking progress</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addUndefined">
+<code class="descname">addUndefined</code><span class="sig-paren">(</span><em>i</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addUndefined"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addUndefined" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addVertex">
+<code class="descname">addVertex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.addVertex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.addVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.axisLabelScaleChanged">
+<code class="descname">axisLabelScaleChanged</code><span class="sig-paren">(</span><em>scale</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.axisLabelScaleChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.axisLabelScaleChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.axisTubeScaleChanged">
+<code class="descname">axisTubeScaleChanged</code><span class="sig-paren">(</span><em>scale</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.axisTubeScaleChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.axisTubeScaleChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.blockMesh">
+<code class="descname">blockMesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.blockMesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.blockMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.blockMeshWasModified">
+<code class="descname">blockMeshWasModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.blockMeshWasModified"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.blockMeshWasModified" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.checkMesh">
+<code class="descname">checkMesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.checkMesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.checkMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.closeEvent">
+<code class="descname">closeEvent</code><span class="sig-paren">(</span><em>self</em>, <em>QCloseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.closeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.closeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.colorBlock">
+<code class="descname">colorBlock</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.colorBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.colorBlock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.colorPatch">
+<code class="descname">colorPatch</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.colorPatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.colorPatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.defineBlock">
+<code class="descname">defineBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.defineBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.defineBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>callback for create block button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.definePatch">
+<code class="descname">definePatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.definePatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.definePatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback for create patch button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.executeUtility">
+<code class="descname">executeUtility</code><span class="sig-paren">(</span><em>util</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.executeUtility"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.executeUtility" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.executionEnded">
+<code class="descname">executionEnded</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.executionEnded"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.executionEnded" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getDivString">
+<code class="descname">getDivString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.getDivString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getDivString" title="Permalink to this definition">¶</a></dt>
+<dd><p>block division string</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getEndHexString">
+<code class="descname">getEndHexString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.getEndHexString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getEndHexString" title="Permalink to this definition">¶</a></dt>
+<dd><p>last part of hex string</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getPatchString">
+<code class="descname">getPatchString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.getPatchString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getPatchString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getTotalHexString">
+<code class="descname">getTotalHexString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.getTotalHexString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getTotalHexString" title="Permalink to this definition">¶</a></dt>
+<dd><p>total block hex string</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getTotalPatchString">
+<code class="descname">getTotalPatchString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.getTotalPatchString"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.getTotalPatchString" title="Permalink to this definition">¶</a></dt>
+<dd><p>total patch string</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.insertBlock">
+<code class="descname">insertBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.insertBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.insertBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>inserts new block</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.insertPatch">
+<code class="descname">insertPatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.insertPatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.insertPatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>inserts new patch</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeArc">
+<code class="descname">makeArc</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.makeArc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeArc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeDirection">
+<code class="descname">makeDirection</code><span class="sig-paren">(</span><em>index1</em>, <em>index2</em>, <em>label</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.makeDirection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeDirection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeFace">
+<code class="descname">makeFace</code><span class="sig-paren">(</span><em>lst</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.makeFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeFace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeSpline">
+<code class="descname">makeSpline</code><span class="sig-paren">(</span><em>lst</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.makeSpline"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.makeSpline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.numberScaleChanged">
+<code class="descname">numberScaleChanged</code><span class="sig-paren">(</span><em>scale</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.numberScaleChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.numberScaleChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pickBlockVertice">
+<code class="descname">pickBlockVertice</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.pickBlockVertice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pickBlockVertice" title="Permalink to this definition">¶</a></dt>
+<dd><p>pick a sphere and add point to block</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pickPatchVertice">
+<code class="descname">pickPatchVertice</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.pickPatchVertice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pickPatchVertice" title="Permalink to this definition">¶</a></dt>
+<dd><p>pick a sphere and add point to vertice</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pickVertice">
+<code class="descname">pickVertice</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.pickVertice"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pickVertice" title="Permalink to this definition">¶</a></dt>
+<dd><p>pick a vertice, returns Null if invalid</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pointScaleChanged">
+<code class="descname">pointScaleChanged</code><span class="sig-paren">(</span><em>scale</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.pointScaleChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.pointScaleChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.readFile">
+<code class="descname">readFile</code><span class="sig-paren">(</span><em>resetText=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.readFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.readFile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.reread">
+<code class="descname">reread</code><span class="sig-paren">(</span><em>resetText=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.reread"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.reread" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.resetBlocking">
+<code class="descname">resetBlocking</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.resetBlocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.resetBlocking" title="Permalink to this definition">¶</a></dt>
+<dd><p>rest block</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.resetPatch">
+<code class="descname">resetPatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.resetPatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.resetPatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>rest patch</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.reverseNormal">
+<code class="descname">reverseNormal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.reverseNormal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.reverseNormal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.saveBlockMesh">
+<code class="descname">saveBlockMesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.saveBlockMesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.saveBlockMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.setAxes">
+<code class="descname">setAxes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.setAxes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.setAxes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.setStatus">
+<code class="descname">setStatus</code><span class="sig-paren">(</span><em>message='Ready'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.setStatus"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.setStatus" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.setupBlockingGui">
+<code class="descname">setupBlockingGui</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.setupBlockingGui"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.setupBlockingGui" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets up the GUI to add the Blocking functions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.showTmpBlock">
+<code class="descname">showTmpBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.showTmpBlock"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.showTmpBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a colored block</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.showTmpPatch">
+<code class="descname">showTmpPatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.showTmpPatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.showTmpPatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a colored patch</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.startBlocking">
+<code class="descname">startBlocking</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.startBlocking"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.startBlocking" title="Permalink to this definition">¶</a></dt>
+<dd><p>start blocking</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.startPatch">
+<code class="descname">startPatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.startPatch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.startPatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>start define patch</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.utilityOutputAppend">
+<code class="descname">utilityOutputAppend</code><span class="sig-paren">(</span><em>line</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#DisplayBlockMeshDialog.utilityOutputAppend"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.DisplayBlockMeshDialog.utilityOutputAppend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner">
+<em class="property">class </em><code class="descclassname">PyFoam.Applications.DisplayBlockMeshQt.</code><code class="descname">ReportToThreadRunner</code><span class="sig-paren">(</span><em>argv</em>, <em>thread</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#ReportToThreadRunner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="PyFoam.Execution.BasicRunner.html#PyFoam.Execution.BasicRunner.BasicRunner" title="PyFoam.Execution.BasicRunner.BasicRunner"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.Execution.BasicRunner.BasicRunner</span></code></a></p>
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>argv</em>, <em>thread</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#ReportToThreadRunner.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>argv</strong> – list with the tokens that are the command line</td>
+</tr>
+</tbody>
+</table>
+<p>if not set the standard command line is used
+:param silent: if True no output is sent to stdout
+:param logname: name of the logfile
+:param compressLog: Compress the logfile into a gzip
+:param lam: Information about a parallel run
+:param server: Whether or not to start the network-server
+:type lam: PyFoam.Execution.ParallelExecution.LAMMachine
+:param noLog: Don’t output a log file
+:param logTail: only the last lines of the log should be written
+:param remark: User defined remark about the job
+:param parameters: User defined dictionary with parameters for</p>
+<blockquote>
+<div>documentation purposes</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>jobId</strong> – Job ID of the controlling system (Queueing system)</li>
+<li><strong>writeState</strong> – Write the state to some files in the case</li>
+<li><strong>echoCommandLine</strong> – Prefix that is printed with the command line. If unset nothing is printed</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.Applications.DisplayBlockMeshQt'</em><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner.lineHandle">
+<code class="descname">lineHandle</code><span class="sig-paren">(</span><em>line</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#ReportToThreadRunner.lineHandle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.ReportToThreadRunner.lineHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>called every time a new line is read</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.UtilityThread">
+<em class="property">class </em><code class="descclassname">PyFoam.Applications.DisplayBlockMeshQt.</code><code class="descname">UtilityThread</code><span class="sig-paren">(</span><em>argv</em>, <em>parent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#UtilityThread"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.UtilityThread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt4.QtCore.QThread</span></code></p>
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>argv</em>, <em>parent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#UtilityThread.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.Applications.DisplayBlockMeshQt'</em><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>line</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#UtilityThread.append"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#UtilityThread.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.UtilityThread.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.Applications.DisplayBlockMeshQt.doImports">
+<code class="descclassname">PyFoam.Applications.DisplayBlockMeshQt.</code><code class="descname">doImports</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/Applications/DisplayBlockMeshQt.html#doImports"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.Applications.DisplayBlockMeshQt.doImports" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PyFoam.Applications.DumpRunDatabaseToCSV.html" class="btn btn-neutral float-right" title="PyFoam.Applications.DumpRunDatabaseToCSV module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PyFoam.Applications.DisplayBlockMesh.html" class="btn btn-neutral" title="PyFoam.Applications.DisplayBlockMesh module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Bernhard F.W. Gschaider.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

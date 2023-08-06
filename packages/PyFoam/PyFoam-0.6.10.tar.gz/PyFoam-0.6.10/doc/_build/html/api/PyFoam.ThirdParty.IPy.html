@@ -1,0 +1,1095 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.ThirdParty.IPy module &mdash; PyFoam 0.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PyFoam 0.6.6 documentation" href="../index.html"/>
+        <link rel="up" title="PyFoam.ThirdParty package" href="PyFoam.ThirdParty.html"/>
+        <link rel="next" title="PyFoam.ThirdParty.pyratemp module" href="PyFoam.ThirdParty.pyratemp.html"/>
+        <link rel="prev" title="PyFoam.ThirdParty.ply.yacc module" href="PyFoam.ThirdParty.ply.yacc.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PyFoam.html">PyFoam package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="PyFoam.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Applications.html">PyFoam.Applications package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Basics.html">PyFoam.Basics package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Execution.html">PyFoam.Execution package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.IPythonHelpers.html">PyFoam.IPythonHelpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Infrastructure.html">PyFoam.Infrastructure package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.LogAnalysis.html">PyFoam.LogAnalysis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Paraview.html">PyFoam.Paraview package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Site.html">PyFoam.Site package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Wrappers.html">PyFoam.Wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#module-PyFoam">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">PyFoam</a> &raquo;</li>
+        
+          <li><a href="PyFoam.html">PyFoam package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a> &raquo;</li>
+        
+      <li>PyFoam.ThirdParty.IPy module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/PyFoam.ThirdParty.IPy.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-PyFoam.ThirdParty.IPy">
+<span id="pyfoam-thirdparty-ipy-module"></span><h1>PyFoam.ThirdParty.IPy module<a class="headerlink" href="#module-PyFoam.ThirdParty.IPy" title="Permalink to this headline">¶</a></h1>
+<p>IPy - class and tools for handling of IPv4 and IPv6 Addresses and Networks.</p>
+<p>Copyright (c) 2006, INL
+Copyright (c) 2001-2005, Maximillian Dornseif
+All rights reserved.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.</li>
+<li>Neither the name of IPy nor the names of its contributors may be used
+to endorse or promote products derived from this software without
+specific prior written permission.</li>
+</ul>
+</div></blockquote>
+<p>THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS <a href="#id1"><span class="problematic" id="id2">``</span></a>AS IS’’ AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<div class="section" id="presentation-of-the-api">
+<h2>Presentation of the API<a class="headerlink" href="#presentation-of-the-api" title="Permalink to this headline">¶</a></h2>
+<p>The IP class allows a comfortable parsing and handling for most
+notations in use for IPv4 and IPv6 Addresses and Networks. It was
+greatly inspired bei RIPE’s Perl module NET::IP’s interface but
+doesn’t share the Implementation. It doesn’t share non-CIDR netmasks,
+so funky stuff lixe a netmask 0xffffff0f can’t be done here.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">IPy</span> <span class="k">import</span> <span class="n">IP</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/30&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
+<span class="gp">... </span> <span class="nb">print</span> <span class="n">x</span>
+<span class="gp">...</span>
+<span class="go">127.0.0.0</span>
+<span class="go">127.0.0.1</span>
+<span class="go">127.0.0.2</span>
+<span class="go">127.0.0.3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip2</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;0x7f000000/30&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span> <span class="o">==</span> <span class="n">ip2</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;0.0.0.127.in-addr.arpa.&#39;, &#39;1.0.0.127.in-addr.arpa.&#39;, &#39;2.0.0.127.in-addr.arpa.&#39;, &#39;3.0.0.127.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">.</span><span class="n">reverseName</span><span class="p">()</span>
+<span class="go">&#39;0-3.0.0.127.in-addr.arpa.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">.</span><span class="n">iptype</span><span class="p">()</span>
+<span class="go">&#39;PRIVATE&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="support-all-ip-addresses">
+<h2>Support all IP addresses<a class="headerlink" href="#support-all-ip-addresses" title="Permalink to this headline">¶</a></h2>
+<p>It can detect about a dozen different ways of expressing IP addresses
+and networks, parse them and distinguish between IPv4 and IPv6 addresses:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">version</span><span class="p">()</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">version</span><span class="p">()</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+<div class="section" id="ipv4-addresses">
+<h3>IPv4 addresses<a class="headerlink" href="#ipv4-addresses" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="mh">0x7f000001</span><span class="p">)</span>
+<span class="go">127.0.0.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;0x7f000001&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10&#39;</span><span class="p">)</span>
+<span class="go">10.0.0.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ipv6-addresses">
+<h3>IPv6 addresses<a class="headerlink" href="#ipv6-addresses" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;1080:0:0:0:8:800:200C:417A&#39;</span><span class="p">)</span>
+<span class="go">1080:0000:0000:0000:0008:0800:200c:417a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;1080::8:800:200C:417A&#39;</span><span class="p">)</span>
+<span class="go">1080:0000:0000:0000:0008:0800:200c:417a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;::1&#39;</span><span class="p">)</span>
+<span class="go">0000:0000:0000:0000:0000:0000:0000:0001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;::13.1.68.3&#39;</span><span class="p">)</span>
+<span class="go">0000:0000:0000:0000:0000:0000:0d01:4403</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="network-mask">
+<h3>Network mask<a class="headerlink" href="#network-mask" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/8&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.0/8</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/255.0.0.0&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.0/8</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0-127.255.255.255&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.0/8</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="option-check-addr-prefixlen">
+<h2>Option check_addr_prefixlen<a class="headerlink" href="#option-check-addr-prefixlen" title="Permalink to this headline">¶</a></h2>
+<p>By default, IPy rejects uncommon netmask like 172.30.1.0/22:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">IPy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IPy</span><span class="o">.</span><span class="n">check_addr_prefixlen</span> <span class="o">=</span> <span class="kc">True</span>    <span class="c1"># default value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ips</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;172.30.1.0/22&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  <span class="c">...</span>
+<span class="gr">ValueError</span>: <span class="n">IP(&#39;172.30.1.0/22&#39;) has invalid prefix length (22)</span>
+</pre></div>
+</div>
+<p>You can change this behaviour with global option check_addr_prefixlen:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IPy</span><span class="o">.</span><span class="n">check_addr_prefixlen</span> <span class="o">=</span> <span class="kc">False</span>   <span class="c1"># disable</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ips</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;172.30.1.0/22&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ips</span><span class="p">)</span>
+<span class="go">1024</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="convert-address-to-string">
+<h2>Convert address to string<a class="headerlink" href="#convert-address-to-string" title="Permalink to this headline">¶</a></h2>
+<p>Nearly all class methods which return a string have an optional
+parameter ‘wantprefixlen’ which controlles if the prefixlen or netmask
+is printed. Per default the prefilen is always shown if the net
+contains more than one address:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wantprefixlen</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">/</span> <span class="kc">None</span>        <span class="n">don</span><span class="s1">&#39;t return anything    1.2.3.0</span>
+<span class="n">wantprefixlen</span> <span class="o">==</span> <span class="mi">1</span>               <span class="o">/</span><span class="n">prefix</span>                  <span class="mf">1.2</span><span class="o">.</span><span class="mf">3.0</span><span class="o">/</span><span class="mi">24</span>
+<span class="n">wantprefixlen</span> <span class="o">==</span> <span class="mi">2</span>               <span class="o">/</span><span class="n">netmask</span>                 <span class="mf">1.2</span><span class="o">.</span><span class="mf">3.0</span><span class="o">/</span><span class="mf">255.255</span><span class="o">.</span><span class="mf">255.0</span>
+<span class="n">wantprefixlen</span> <span class="o">==</span> <span class="mi">3</span>               <span class="o">-</span><span class="n">lastip</span>                  <span class="mf">1.2</span><span class="o">.</span><span class="mf">3.0</span><span class="o">-</span><span class="mf">1.2</span><span class="o">.</span><span class="mf">3.255</span>
+</pre></div>
+</div>
+<p>You can also change the defaults on an per-object basis by fiddeling with the class members:</p>
+<blockquote>
+<div><ul class="simple">
+<li>NoPrefixForSingleIp</li>
+<li>WantPrefixLen</li>
+</ul>
+</div></blockquote>
+<p>Examples of string conversions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/32&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">()</span>
+<span class="go">&#39;10.0.0.0&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">()</span>
+<span class="go">&#39;10.0.0.0/24&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">&#39;10.0.0.0&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">&#39;10.0.0.0/24&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">&#39;10.0.0.0/255.255.255.0&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">&#39;10.0.0.0-10.0.0.255&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">ip</span>
+<span class="go">10.0.0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">.</span><span class="n">NoPrefixForSingleIp</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">ip</span>
+<span class="go">10.0.0.0/32</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">ip</span>
+<span class="go">10.0.0.0-10.0.0.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="what-s-new">
+<h2>What’s new?<a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h2>
+<p>Changes between version 0.51 and 0.52:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Fix strCompressed() for IPv6 “ffff:ffff:ffff:ffff:ffff:f:f:fffc/127”</li>
+</ul>
+</div></blockquote>
+<p>Changes between version 0.5 and 0.51:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Use real name of IPy author</li>
+<li>Use version “0.51” to help packaging since 0.5 was smaller than 0.42</li>
+<li>Fix unit test for Python 2.3 (don’t use doctest.testfile)</li>
+<li>Fix unit test for Python 2.5 (problem of hex() lower case)</li>
+<li>IPy now works on Python 2.2 to 2.5</li>
+</ul>
+</div></blockquote>
+<p>Changes between version 0.42 and 0.5: Fix all known bugs:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Apply Jean Gillaux’s patch for netmask “/0.0.0.0” bug</li>
+<li>Apply William McVey’s patch for __nonzero__() bug</li>
+<li>Apply Victor Stinner patch: setup.py can use setuptools and fix URLs</li>
+<li>Allow “172.30.1.0/22” with new option IPy.check_addr_prefixlen=False</li>
+</ul>
+</div></blockquote>
+<p>Other changes:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Add regression tests</li>
+<li>Create AUTHORS file</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="compatibility-and-links">
+<h2>Compatibility and links<a class="headerlink" href="#compatibility-and-links" title="Permalink to this headline">¶</a></h2>
+<p>IPy works on Python version 2.2 to 2.5.</p>
+<p>This Python module is under BSD license: see COPYING file.</p>
+<p>Further Information might be available at: <a class="reference external" href="http://software.inl.fr/trac/trac.cgi/wiki/IPy">http://software.inl.fr/trac/trac.cgi/wiki/IPy</a></p>
+</div>
+<div class="section" id="todo">
+<h2>TODO<a class="headerlink" href="#todo" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>better comparison (__cmp__ and friends)</li>
+<li>tests for __cmp__</li>
+<li>always write hex values lowercase</li>
+<li>interpret 2001:1234:5678:1234/64 as 2001:1234:5678:1234::/64</li>
+<li>move size in bits into class variables to get rid of some “if self._ipversion …”</li>
+<li>support for base85 encoding</li>
+<li>support for output of IPv6 encoded IPv4 Addresses</li>
+<li>update address type tables</li>
+<li>first-last notation should be allowed for IPv6</li>
+<li>add IPv6 docstring examples</li>
+<li>check better for negative parameters</li>
+<li>add addition / aggregation</li>
+<li>move reverse name stuff out of the classes and refactor it</li>
+<li>support for aggregation of more than two nets at once</li>
+<li>support for aggregation with “holes”</li>
+<li>support for finding common prefix</li>
+<li>‘&gt;&gt;’ and ‘&lt;&lt;’ for prefix manipulation</li>
+<li>add our own exceptions instead ValueError all the time</li>
+<li>rename checkPrefix to checkPrefixOk</li>
+<li>add more documentation and doctests</li>
+<li>refactor</li>
+</ul>
+</div></blockquote>
+<dl class="class">
+<dt id="PyFoam.ThirdParty.IPy.IP">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">IP</code><span class="sig-paren">(</span><em>data</em>, <em>ipversion=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PyFoam.ThirdParty.IPy.IPint" title="PyFoam.ThirdParty.IPy.IPint"><code class="xref py py-class docutils literal notranslate"><span class="pre">PyFoam.ThirdParty.IPy.IPint</span></code></a></p>
+<p>Class for handling IP Addresses and Networks.</p>
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.__add__">
+<code class="descname">__add__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.__add__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.__add__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Emulate numeric objects through network aggregation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.__getitem__">
+<code class="descname">__getitem__</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.__getitem__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called to implement evaluation of self[key].</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">=</span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/30&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
+<span class="gp">... </span> <span class="nb">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">127.0.0.0</span>
+<span class="go">127.0.0.1</span>
+<span class="go">127.0.0.2</span>
+<span class="go">127.0.0.3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">ip</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="go">127.0.0.2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">ip</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="go">127.0.0.3</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.IPy.IP.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.IPy'</em><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.__repr__">
+<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.__repr__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a representation of the Object.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span>
+<span class="go">IP(&#39;10.0.0.0/8&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.broadcast">
+<code class="descname">broadcast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.broadcast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.broadcast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the broadcast (last) address of a network as an IP object.</p>
+<p>The same as IP[-1].</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">broadcast</span><span class="p">()</span>
+<span class="go">IP(&#39;10.255.255.255&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.net">
+<code class="descname">net</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.net"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.net" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the base (first) address of a network as an IP object.</p>
+<p>The same as IP[0].</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">net</span><span class="p">()</span>
+<span class="go">IP(&#39;10.0.0.0&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.netmask">
+<code class="descname">netmask</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.netmask"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.netmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return netmask as an IP object.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">netmask</span><span class="p">()</span>
+<span class="go">IP(&#39;255.0.0.0&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.reverseName">
+<code class="descname">reverseName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.reverseName"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.reverseName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value for reverse lookup/PTR records as RfC 2317 look alike.</p>
+<p>RfC 2317 is an ugly hack which only works for sub-/24 e.g. not
+for /23. Do not use it. Better set up a Zone for every
+address. See reverseName for a way to arcive that.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseName</span><span class="p">()</span>
+<span class="go">1.1.185.195.in-addr.arpa.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.0/28&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseName</span><span class="p">()</span>
+<span class="go">0-15.1.185.195.in-addr.arpa.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IP.reverseNames">
+<code class="descname">reverseNames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IP.reverseNames"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IP.reverseNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list with values forming the reverse lookup.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;213.221.113.87/32&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;87.113.221.213.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;213.221.112.224/30&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;224.112.221.213.in-addr.arpa.&#39;, &#39;225.112.221.213.in-addr.arpa.&#39;, &#39;226.112.221.213.in-addr.arpa.&#39;, &#39;227.112.221.213.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;0.0.127.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/23&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;0.0.127.in-addr.arpa.&#39;, &#39;1.0.127.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/16&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;0.127.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/15&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;0.127.in-addr.arpa.&#39;, &#39;1.127.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;128.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;128.in-addr.arpa.&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;128.0.0.0/7&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reverseNames</span><span class="p">()</span>
+<span class="go">[&#39;128.in-addr.arpa.&#39;, &#39;129.in-addr.arpa.&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.IPy.IPint">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">IPint</code><span class="sig-paren">(</span><em>data</em>, <em>ipversion=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handling of IP addresses returning integers.</p>
+<p>Use class IP instead because some features are not implemented for
+IPint.</p>
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__cmp__">
+<code class="descname">__cmp__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__cmp__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__cmp__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called by comparison operations.</p>
+<p>Should return a negative integer if self &lt; other, zero if self
+== other, a positive integer if self &gt; other.</p>
+<p>Networks with different prefixlen are considered non-equal.
+Networks with the same prefixlen and differing addresses are
+considered non equal but are compared by thair base address
+integer value to aid sorting of IP objects.</p>
+<p>The Version of Objects is not put into consideration.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;12.0.0.0/24&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;12.0.0.0/24&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__contains__">
+<code class="descname">__contains__</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__contains__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__contains__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called to implement membership test operators.</p>
+<p>Should return true if item is in self, false otherwise. Item
+can be other IP-objects, strings or ints.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strHex</span><span class="p">()</span>
+<span class="go">&#39;0xc3b90101&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mh">0xC3B90101</span><span class="n">L</span> <span class="ow">in</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.0/24&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;127.0.0.1&#39;</span> <span class="ow">in</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/24&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/24&#39;</span><span class="p">)</span> <span class="ow">in</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/25&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__getitem__">
+<code class="descname">__getitem__</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__getitem__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called to implement evaluation of self[key].</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="o">=</span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/30&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
+<span class="gp">... </span> <span class="nb">print</span> <span class="nb">repr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">IP(&#39;127.0.0.0&#39;)</span>
+<span class="go">IP(&#39;127.0.0.1&#39;)</span>
+<span class="go">IP(&#39;127.0.0.2&#39;)</span>
+<span class="go">IP(&#39;127.0.0.3&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">IP(&#39;127.0.0.2&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ip</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">IP(&#39;127.0.0.3&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__hash__">
+<code class="descname">__hash__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__hash__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__hash__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called for the key object for dictionary operations, and by
+the built-in function hash()  Should return a 32-bit integer
+usable as a hash value for dictionary operations. The only
+required property is that objects which compare equal have the
+same hash value</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="fm">__hash__</span><span class="p">()</span>
+<span class="go">-167772185</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>data</em>, <em>ipversion=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an instance of an IP object.</p>
+<p>Data can be a network specification or a single IP. IP
+Addresses can be specified in all forms understood by
+parseAddress.() the size of a network can be specified as</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">/prefixlen</span></kbd></td>
+<td>a.b.c.0/24               2001:658:22a:cafe::/64</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-l<var>astIP</var></span></kbd></td>
+<td>a.b.c.0-a.b.c.255        2001:658:22a:cafe::-2001:658:22a:cafe:ffff:ffff:ffff:ffff</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">/decimal <var>netmask</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>a.b.c.d/255.255.255.0    not supported for IPv6</td></tr>
+</tbody>
+</table>
+<p>If no size specification is given a size of 1 address (/32 for
+IPv4 and /128 for IPv6) is assumed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/8&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.0/8</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0/255.0.0.0&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.0/8</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.0-127.255.255.255&#39;</span><span class="p">)</span>
+<span class="go">127.0.0.0/8</span>
+</pre></div>
+</div>
+<p>See module documentation for more examples.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__len__">
+<code class="descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__len__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__len__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the length of an subnet.</p>
+<p>Called to implement the built-in function len().
+It breaks with IPv6 Networks. Anybody knows how to fix this.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.IPy'</em><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__nonzero__">
+<code class="descname">__nonzero__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__nonzero__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__nonzero__" title="Permalink to this definition">¶</a></dt>
+<dd><p>All IPy objects should evaluate to true in boolean context.
+Ordinarily, they do, but if handling a default route expressed as
+0.0.0.0/0, the __len__() of the object becomes 0, which is used
+as the boolean value of the object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__repr__">
+<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__repr__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a representation of the Object.</p>
+<p>Used to implement repr(IP). Returns a string which evaluates
+to an identical Object (without the wnatprefixlen stuff - see
+module docstring.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="nb">repr</span><span class="p">(</span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/24&#39;</span><span class="p">))</span>
+<span class="go">IP(&#39;10.0.0.0/24&#39;)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.__str__">
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.__str__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dispatch to the prefered String Representation.</p>
+<p>Used to implement str(IP).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint._printPrefix">
+<code class="descname">_printPrefix</code><span class="sig-paren">(</span><em>want</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint._printPrefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint._printPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints Prefixlen/Netmask.</p>
+<p>Not really. In fact it is our universal Netmask/Prefixlen printer.
+This is considered an internel function.</p>
+<p>want == 0 / None        don’t return anything    1.2.3.0
+want == 1               /prefix                  1.2.3.0/24
+want == 2               /netmask                 1.2.3.0/255.255.255.0
+want == 3               -lastip                  1.2.3.0-1.2.3.255</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.broadcast">
+<code class="descname">broadcast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.broadcast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.broadcast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the broadcast (last) address of a network as an (long) integer.</p>
+<p>The same as IP[-1].</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.int">
+<code class="descname">int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.int"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the first / base / network addess as an (long) integer.</p>
+<p>The same as IP[0].</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="si">%X</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">int</span><span class="p">()</span>
+<span class="go">&#39;A000000&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.iptype">
+<code class="descname">iptype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.iptype"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.iptype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a description of the IP type (‘PRIVATE’, ‘RESERVERD’, etc).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iptype</span><span class="p">()</span>
+<span class="go">PRIVATE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;192.168.1.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iptype</span><span class="p">()</span>
+<span class="go">PRIVATE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iptype</span><span class="p">()</span>
+<span class="go">PUBLIC</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iptype</span><span class="p">()</span>
+<span class="go">LOOPBACK</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe:0200::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iptype</span><span class="p">()</span>
+<span class="go">ASSIGNABLE RIPE</span>
+</pre></div>
+</div>
+<p>The type information for IPv6 is out of sync with reality.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.len">
+<code class="descname">len</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.len"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.len" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the length of an subnet.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.0/28&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">len</span><span class="p">()</span>
+<span class="go">16</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.1.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">len</span><span class="p">()</span>
+<span class="go">256</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.net">
+<code class="descname">net</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.net"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.net" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the base (first) address of a network as an (long) integer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.netmask">
+<code class="descname">netmask</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.netmask"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.netmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return netmask as an integer.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;</span><span class="si">%X</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.0.0/16&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">netmask</span><span class="p">()</span><span class="o">.</span><span class="n">int</span><span class="p">()</span>
+<span class="go">&#39;FFFF0000&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.overlaps">
+<code class="descname">overlaps</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.overlaps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.overlaps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if two IP address ranges overlap.</p>
+<p>Returns 0 if the two ranged don’t overlap, 1 if the given
+range overlaps at the end and -1 if it does at the beginning.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;192.168.0.0/23&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">overlaps</span><span class="p">(</span><span class="s1">&#39;192.168.1.0/24&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;192.168.0.0/23&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">overlaps</span><span class="p">(</span><span class="s1">&#39;192.168.1.255&#39;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;192.168.0.0/23&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">overlaps</span><span class="p">(</span><span class="s1">&#39;192.168.2.0&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;192.168.1.0/24&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">overlaps</span><span class="p">(</span><span class="s1">&#39;192.168.0.0/23&#39;</span><span class="p">)</span>
+<span class="go">-1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.prefixlen">
+<code class="descname">prefixlen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.prefixlen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.prefixlen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns Network Prefixlen.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">()</span>
+<span class="go">8</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strBin">
+<code class="descname">strBin</code><span class="sig-paren">(</span><em>wantprefixlen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strBin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strBin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string representation as a binary value.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strBin</span><span class="p">()</span>
+<span class="go">01111111000000000000000000000001</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strCompressed">
+<code class="descname">strCompressed</code><span class="sig-paren">(</span><em>wantprefixlen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strCompressed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strCompressed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string representation in compressed format using ‘::’ Notation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strCompressed</span><span class="p">()</span>
+<span class="go">&#39;127.0.0.1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe:0200::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strCompressed</span><span class="p">()</span>
+<span class="go">&#39;2001:658:22a:cafe:200::1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;ffff:ffff:ffff:ffff:ffff:f:f:fffc/127&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strCompressed</span><span class="p">()</span>
+<span class="go">&#39;ffff:ffff:ffff:ffff:ffff:f:f:fffc/127&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strDec">
+<code class="descname">strDec</code><span class="sig-paren">(</span><em>wantprefixlen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strDec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strDec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string representation in decimal format.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strDec</span><span class="p">()</span>
+<span class="go">2130706433</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe:0200::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strDec</span><span class="p">()</span>
+<span class="go">42540616829182469433547762482097946625</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strFullsize">
+<code class="descname">strFullsize</code><span class="sig-paren">(</span><em>wantprefixlen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strFullsize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strFullsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string representation in the non mangled format.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">()</span>
+<span class="go">127.0.0.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe:0200::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">()</span>
+<span class="go">2001:0658:022a:cafe:0200:0000:0000:0001</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strHex">
+<code class="descname">strHex</code><span class="sig-paren">(</span><em>wantprefixlen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strHex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strHex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string representation in hex format in lower case.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strHex</span><span class="p">()</span>
+<span class="go">&#39;0x7f000001&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe:0200::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strHex</span><span class="p">()</span>
+<span class="go">&#39;0x20010658022acafe0200000000000001&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strNetmask">
+<code class="descname">strNetmask</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strNetmask"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strNetmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return netmask as an string. Mostly useful for IPv6.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;195.185.0.0/16&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNetmask</span><span class="p">()</span>
+<span class="go">255.255.0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe::0/64&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNetmask</span><span class="p">()</span>
+<span class="go">/64</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.strNormal">
+<code class="descname">strNormal</code><span class="sig-paren">(</span><em>wantprefixlen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.strNormal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.strNormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string representation in the usual format.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">()</span>
+<span class="go">127.0.0.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">IP</span><span class="p">(</span><span class="s1">&#39;2001:0658:022a:cafe:0200::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strNormal</span><span class="p">()</span>
+<span class="go">2001:658:22a:cafe:200:0:0:1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.IPy.IPint.version">
+<code class="descname">version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#IPint.version"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.IPint.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the IP version of this Object.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;10.0.0.0/8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">version</span><span class="p">()</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">IP</span><span class="p">(</span><span class="s1">&#39;::1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">version</span><span class="p">()</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._checkNetaddrWorksWithPrefixlen">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_checkNetaddrWorksWithPrefixlen</code><span class="sig-paren">(</span><em>net</em>, <em>prefixlen</em>, <em>version</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_checkNetaddrWorksWithPrefixlen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._checkNetaddrWorksWithPrefixlen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a base addess of e network is compatible with a prefixlen</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._checkNetmask">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_checkNetmask</code><span class="sig-paren">(</span><em>netmask</em>, <em>masklen</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_checkNetmask"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._checkNetmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if a netmask is expressable as e prefixlen.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._checkPrefix">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_checkPrefix</code><span class="sig-paren">(</span><em>ip</em>, <em>prefixlen</em>, <em>version</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_checkPrefix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._checkPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the validity of a prefix</p>
+<p>Checks if the variant part of a prefix only has 0s, and the length is
+correct.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_checkPrefix</span><span class="p">(</span><span class="mh">0x7f000000</span><span class="n">L</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_checkPrefix</span><span class="p">(</span><span class="mh">0x7f000001</span><span class="n">L</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">repr</span><span class="p">(</span><span class="n">_checkPrefix</span><span class="p">(</span><span class="mh">0x7f000001</span><span class="n">L</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="go">&#39;None&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">repr</span><span class="p">(</span><span class="n">_checkPrefix</span><span class="p">(</span><span class="mh">0x7f000001</span><span class="n">L</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="go">&#39;None&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._count0Bits">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_count0Bits</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_count0Bits"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._count0Bits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the highest bit set to 0 in an integer.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._count1Bits">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_count1Bits</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_count1Bits"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._count1Bits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the highest bit set to 1 in an integer.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._countFollowingZeros">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_countFollowingZeros</code><span class="sig-paren">(</span><em>l</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_countFollowingZeros"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._countFollowingZeros" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return Nr. of elements containing 0 at the beginning th the list.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._intToBin">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_intToBin</code><span class="sig-paren">(</span><em>val</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_intToBin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._intToBin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the binary representation of an integer as string.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._ipVersionToLen">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_ipVersionToLen</code><span class="sig-paren">(</span><em>version</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_ipVersionToLen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._ipVersionToLen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return number of bits in address for a certain IP version.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_ipVersionToLen</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">32</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_ipVersionToLen</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="go">128</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_ipVersionToLen</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">?</span>
+  File <span class="nb">&quot;IPy.py&quot;</span>, line <span class="m">1076</span>, in <span class="n">_ipVersionToLen</span>
+    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+<span class="gr">ValueError</span>: <span class="n">only IPv4 and IPv6 supported</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._netmaskToPrefixlen">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_netmaskToPrefixlen</code><span class="sig-paren">(</span><em>netmask</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_netmaskToPrefixlen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._netmaskToPrefixlen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an Integer reprsenting a Netmask to an prefixlen.</p>
+<p>E.g. 0xffffff00 (255.255.255.0) returns 24</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._prefixlenToNetmask">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_prefixlenToNetmask</code><span class="sig-paren">(</span><em>prefixlen</em>, <em>version</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_prefixlenToNetmask"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._prefixlenToNetmask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a mask of n bits as a long integer.</p>
+<p>From ‘IP address conversion functions with the builtin socket module’ by Alex Martelli
+<a class="reference external" href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66517">http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66517</a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy._test">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">_test</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#_test"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy._test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy.intToIp">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">intToIp</code><span class="sig-paren">(</span><em>ip</em>, <em>version</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#intToIp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.intToIp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform an integer string into an IP address.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PyFoam.ThirdParty.IPy.parseAddress">
+<code class="descclassname">PyFoam.ThirdParty.IPy.</code><code class="descname">parseAddress</code><span class="sig-paren">(</span><em>ipstr</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/IPy.html#parseAddress"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.IPy.parseAddress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a string and return the corrospondending IPaddress and the a guess of the IP version.</p>
+<p>Following Forms ar recorgnized:
+0x0123456789abcdef           # IPv4 if &lt;= 0xffffffff else IPv6
+123.123.123.123              # IPv4
+123.123                      # 0-padded IPv4
+1080:0000:0000:0000:0008:0800:200C:417A
+1080:0:0:0:8:800:200C:417A
+1080:0::8:800:200C:417A
+::1
+::
+0:0:0:0:0:FFFF:129.144.52.38
+::13.1.68.3
+::FFFF:129.144.52.38</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PyFoam.ThirdParty.pyratemp.html" class="btn btn-neutral float-right" title="PyFoam.ThirdParty.pyratemp module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PyFoam.ThirdParty.ply.yacc.html" class="btn btn-neutral" title="PyFoam.ThirdParty.ply.yacc module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Bernhard F.W. Gschaider.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

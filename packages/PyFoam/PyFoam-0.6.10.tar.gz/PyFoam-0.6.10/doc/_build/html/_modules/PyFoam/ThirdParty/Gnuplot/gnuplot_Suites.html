@@ -1,0 +1,827 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.ThirdParty.Gnuplot.gnuplot_Suites &mdash; PyFoam 0.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../../search.html"/>
+    <link rel="top" title="PyFoam 0.6.6 documentation" href="../../../../index.html"/>
+        <link rel="up" title="PyFoam" href="../../../PyFoam.html"/> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/modules.html">API documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../../../PyFoam.html">PyFoam</a> &raquo;</li>
+        
+      <li>PyFoam.ThirdParty.Gnuplot.gnuplot_Suites</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for PyFoam.ThirdParty.Gnuplot.gnuplot_Suites</h1><div class="highlight"><pre>
+<span></span><span class="c1"># $Id: gnuplot_Suites.py 292 2006-03-03 09:49:04Z mhagger $</span>
+
+<span class="c1"># This file is provided as part of the Gnuplot.py package for the</span>
+<span class="c1"># convenience of Mac users.  It was generated primarily using gensuitemodule</span>
+<span class="c1"># with Mac gnuplot 3.7.1a.  Thanks to Anthony M. Ingraldi and Noboru Yamamoto</span>
+<span class="c1"># for helping with this.</span>
+
+<span class="c1"># file contains</span>
+<span class="c1">#</span>
+<span class="c1">#  class gnuplot_Suite</span>
+<span class="c1">#  class odds_and_ends</span>
+<span class="c1">#  class Standard_Suite</span>
+<span class="c1">#  class Miscellaneous_Events</span>
+<span class="c1">#</span>
+<span class="sd">&quot;&quot;&quot;Suite gnuplot Suite: Events supplied by gnuplot</span>
+<span class="sd">Level 1, version 1</span>
+
+<span class="sd">Generated from Alpha:Desktop Folder:gnuplot.1:gnuplot 3.7.1a</span>
+<span class="sd">AETE/AEUT resource version 1/0, language 0, script 0</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">aetools</span>
+<span class="kn">import</span> <span class="nn">MacOS</span>
+
+<span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;GPSE&#39;</span>
+
+<div class="viewcode-block" id="gnuplot_Suite"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite">[docs]</a><span class="k">class</span> <span class="nc">gnuplot_Suite</span><span class="p">:</span>
+
+<div class="viewcode-block" id="gnuplot_Suite.gnuexec"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.gnuexec">[docs]</a>    <span class="k">def</span> <span class="nf">gnuexec</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;exec: execute a gnuplot command</span>
+<span class="sd">        Required argument: gnuplot command</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;GPSE&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;exec&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="gnuplot_Suite.plot"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.plot">[docs]</a>    <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;plot: create a 2-D plot</span>
+
+
+<span class="sd">        Required argument: data to be plotted</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;GPLT&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;plot&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="gnuplot_Suite.splot"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.splot">[docs]</a>    <span class="k">def</span> <span class="nf">splot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;splot: create a 3-D plot</span>
+<span class="sd">        Required argument: data to be plotted</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;GPLT&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;splt&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div></div>
+
+
+<div class="viewcode-block" id="graph"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph">[docs]</a><span class="k">class</span> <span class="nc">graph</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">ComponentItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;graph - graph - a subclass of window&quot;&quot;&quot;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;cGRF&#39;</span></div>
+<div class="viewcode-block" id="picture"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture">[docs]</a><span class="k">class</span> <span class="nc">picture</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;picture - gnuplot graph in &quot;PICT&quot; format&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;PICT&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;PICT&#39;</span></div>
+<span class="n">graph</span><span class="o">.</span><span class="n">_propdict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;picture&#39;</span> <span class="p">:</span> <span class="n">picture</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">graph</span><span class="o">.</span><span class="n">_elemdict</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="n">_Enum_lyty</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;line&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ1&#39;</span><span class="p">,</span>    <span class="c1"># line</span>
+    <span class="s1">&#39;points&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ2&#39;</span><span class="p">,</span>  <span class="c1"># points</span>
+    <span class="s1">&#39;impulses&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ3&#39;</span><span class="p">,</span>    <span class="c1"># impulses</span>
+    <span class="s1">&#39;linespoints&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ4&#39;</span><span class="p">,</span> <span class="c1"># linespoints</span>
+    <span class="s1">&#39;dots&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ5&#39;</span><span class="p">,</span>    <span class="c1"># dots</span>
+    <span class="s1">&#39;steps&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ6&#39;</span><span class="p">,</span>   <span class="c1"># steps</span>
+    <span class="s1">&#39;fsteps&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ7&#39;</span><span class="p">,</span>  <span class="c1"># fsteps</span>
+    <span class="s1">&#39;errorbars&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ8&#39;</span><span class="p">,</span>   <span class="c1"># errorbars</span>
+    <span class="s1">&#39;xerrorbars&#39;</span> <span class="p">:</span> <span class="s1">&#39;typ9&#39;</span><span class="p">,</span>  <span class="c1"># xerrorbars</span>
+    <span class="s1">&#39;yerrorbars&#39;</span> <span class="p">:</span> <span class="s1">&#39;ty10&#39;</span><span class="p">,</span>  <span class="c1"># yerrorbars</span>
+    <span class="s1">&#39;xyerrorbars&#39;</span> <span class="p">:</span> <span class="s1">&#39;ty11&#39;</span><span class="p">,</span> <span class="c1"># xyerrorbars</span>
+    <span class="s1">&#39;boxes&#39;</span> <span class="p">:</span> <span class="s1">&#39;ty12&#39;</span><span class="p">,</span>   <span class="c1"># boxes</span>
+    <span class="s1">&#39;boxerrorbars&#39;</span> <span class="p">:</span> <span class="s1">&#39;ty13&#39;</span><span class="p">,</span>    <span class="c1"># boxerrorbars</span>
+    <span class="s1">&#39;boxxyerrorbars&#39;</span> <span class="p">:</span> <span class="s1">&#39;ty14&#39;</span><span class="p">,</span>  <span class="c1"># boxxyerrorbars</span>
+    <span class="s1">&#39;vector&#39;</span> <span class="p">:</span> <span class="s1">&#39;ty19&#39;</span><span class="p">,</span>  <span class="c1"># vector</span>
+<span class="p">}</span>
+
+
+<span class="c1">#</span>
+<span class="c1"># Indices of types declared in this module</span>
+<span class="c1">#</span>
+<span class="n">_classdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;cGRF&#39;</span> <span class="p">:</span> <span class="n">graph</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">_propdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;PICT&#39;</span> <span class="p">:</span> <span class="n">picture</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">_compdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_enumdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;lyty&#39;</span> <span class="p">:</span> <span class="n">_Enum_lyty</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="sd">&quot;&quot;&quot;Suite odds and ends: Things that should be in some standard suite, but aren&#39;t</span>
+<span class="sd">Level 1, version 1</span>
+
+<span class="sd">Generated from Alpha:Desktop Folder:gnuplot.1:gnuplot 3.7.1a</span>
+<span class="sd">AETE/AEUT resource version 1/0, language 0, script 0</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">aetools</span>
+<span class="kn">import</span> <span class="nn">MacOS</span>
+
+<span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;Odds&#39;</span>
+
+<div class="viewcode-block" id="odds_and_ends"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends">[docs]</a><span class="k">class</span> <span class="nc">odds_and_ends</span><span class="p">:</span>
+
+<div class="viewcode-block" id="odds_and_ends.select"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends.select">[docs]</a>    <span class="k">def</span> <span class="nf">select</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;select: Select the specified object</span>
+<span class="sd">        Required argument: the object to select</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;misc&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;slct&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div></div>
+
+
+<span class="c1">#</span>
+<span class="c1"># Indices of types declared in this module</span>
+<span class="c1">#</span>
+<span class="n">_classdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_propdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_compdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_enumdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="sd">&quot;&quot;&quot;Suite Standard Suite: Common terms for most applications</span>
+<span class="sd">Level 1, version 1</span>
+
+<span class="sd">Generated from Alpha:Desktop Folder:gnuplot.1:gnuplot 3.7.1a</span>
+<span class="sd">AETE/AEUT resource version 1/0, language 0, script 0</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">aetools</span>
+<span class="kn">import</span> <span class="nn">MacOS</span>
+
+<span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;CoRe&#39;</span>
+
+<div class="viewcode-block" id="Standard_Suite"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite">[docs]</a><span class="k">class</span> <span class="nc">Standard_Suite</span><span class="p">:</span>
+
+    <span class="n">_argmap_close</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;saving&#39;</span> <span class="p">:</span> <span class="s1">&#39;savo&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;_in&#39;</span> <span class="p">:</span> <span class="s1">&#39;kfil&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+<div class="viewcode-block" id="Standard_Suite.close"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.close">[docs]</a>    <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;close: Close an object</span>
+<span class="sd">        Required argument: the objects to close</span>
+<span class="sd">        Keyword argument saving: specifies whether or not changes should be saved before closing</span>
+<span class="sd">        Keyword argument _in: the file in which to save the object</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;core&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;clos&#39;</span>
+
+        <span class="n">aetools</span><span class="o">.</span><span class="n">keysubst</span><span class="p">(</span><span class="n">_arguments</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_argmap_close</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+        <span class="n">aetools</span><span class="o">.</span><span class="n">enumsubst</span><span class="p">(</span><span class="n">_arguments</span><span class="p">,</span> <span class="s1">&#39;savo&#39;</span><span class="p">,</span> <span class="n">_Enum_savo</span><span class="p">)</span>
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Standard_Suite.data_size"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.data_size">[docs]</a>    <span class="k">def</span> <span class="nf">data_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;data size: Return the size in bytes of an object</span>
+<span class="sd">        Required argument: the object whose data size is to be returned</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        Returns: the size of the object in bytes</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;core&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;dsiz&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Standard_Suite.get"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get: Get the data for an object</span>
+<span class="sd">        Required argument: the object whose data is to be returned</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        Returns: The data from the object</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;core&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;getd&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+    <span class="n">_argmap_make</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;new&#39;</span> <span class="p">:</span> <span class="s1">&#39;kocl&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;at&#39;</span> <span class="p">:</span> <span class="s1">&#39;insh&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;with_data&#39;</span> <span class="p">:</span> <span class="s1">&#39;data&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;with_properties&#39;</span> <span class="p">:</span> <span class="s1">&#39;prdt&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+<div class="viewcode-block" id="Standard_Suite.make"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.make">[docs]</a>    <span class="k">def</span> <span class="nf">make</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_no_object</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;make: Make a new element</span>
+<span class="sd">        Keyword argument new: the class of the new element</span>
+<span class="sd">        Keyword argument at: the location at which to insert the element</span>
+<span class="sd">        Keyword argument with_data: the initial data for the element</span>
+<span class="sd">        Keyword argument with_properties: the initial values for the properties of the element</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        Returns: Object specifier for the new element</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;core&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;crel&#39;</span>
+
+        <span class="n">aetools</span><span class="o">.</span><span class="n">keysubst</span><span class="p">(</span><span class="n">_arguments</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_argmap_make</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">_no_object</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No direct arg expected&#39;</span><span class="p">)</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Standard_Suite.open"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.open">[docs]</a>    <span class="k">def</span> <span class="nf">open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;open: Open the specified object(s)</span>
+<span class="sd">        Required argument: Objects to open. Can be a list of files or an object specifier.</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;aevt&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;odoc&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Standard_Suite._print"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._print">[docs]</a>    <span class="k">def</span> <span class="nf">_print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;print: Print the specified object(s)</span>
+<span class="sd">        Required argument: Objects to print. Can be a list of files or an object specifier.</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;aevt&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;pdoc&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+    <span class="n">_argmap_save</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;_in&#39;</span> <span class="p">:</span> <span class="s1">&#39;kfil&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;as&#39;</span> <span class="p">:</span> <span class="s1">&#39;fltp&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+<div class="viewcode-block" id="Standard_Suite.save"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;save: save a set of objects</span>
+<span class="sd">        Required argument: Objects to save.</span>
+<span class="sd">        Keyword argument _in: the file in which to save the object(s)</span>
+<span class="sd">        Keyword argument as: the file type of the document in which to save the data</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;core&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;save&#39;</span>
+
+        <span class="n">aetools</span><span class="o">.</span><span class="n">keysubst</span><span class="p">(</span><span class="n">_arguments</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_argmap_save</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+    <span class="n">_argmap_set</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;to&#39;</span> <span class="p">:</span> <span class="s1">&#39;data&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+<div class="viewcode-block" id="Standard_Suite.set"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.set">[docs]</a>    <span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;set: Set an objects data</span>
+<span class="sd">        Required argument: the object to change</span>
+<span class="sd">        Keyword argument to: the new value</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;core&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;setd&#39;</span>
+
+        <span class="n">aetools</span><span class="o">.</span><span class="n">keysubst</span><span class="p">(</span><span class="n">_arguments</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_argmap_set</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div></div>
+
+
+<div class="viewcode-block" id="application"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application">[docs]</a><span class="k">class</span> <span class="nc">application</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">ComponentItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;application - An application program&quot;&quot;&quot;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;capp&#39;</span></div>
+<span class="c1">#        element &#39;cwin&#39; as [&#39;indx&#39;, &#39;name&#39;, &#39;rele&#39;]</span>
+<span class="c1">#        element &#39;docu&#39; as [&#39;name&#39;]</span>
+
+<div class="viewcode-block" id="window"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window">[docs]</a><span class="k">class</span> <span class="nc">window</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">ComponentItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;window - A Window&quot;&quot;&quot;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;cwin&#39;</span></div>
+<div class="viewcode-block" id="bounds"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds">[docs]</a><span class="k">class</span> <span class="nc">bounds</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;bounds - the boundary rectangle for the window&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;pbnd&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;qdrt&#39;</span></div>
+<div class="viewcode-block" id="closeable"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable">[docs]</a><span class="k">class</span> <span class="nc">closeable</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;closeable - Does the window have a close box?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;hclb&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="titled"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled">[docs]</a><span class="k">class</span> <span class="nc">titled</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;titled - Does the window have a title bar?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;ptit&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="index"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index">[docs]</a><span class="k">class</span> <span class="nc">index</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;index - the number of the window&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;pidx&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;long&#39;</span></div>
+<div class="viewcode-block" id="floating"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating">[docs]</a><span class="k">class</span> <span class="nc">floating</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;floating - Does the window float?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;isfl&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="modal"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal">[docs]</a><span class="k">class</span> <span class="nc">modal</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;modal - Is the window modal?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;pmod&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="resizable"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable">[docs]</a><span class="k">class</span> <span class="nc">resizable</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;resizable - Is the window resizable?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;prsz&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="zoomable"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable">[docs]</a><span class="k">class</span> <span class="nc">zoomable</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;zoomable - Is the window zoomable?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;iszm&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="zoomed"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed">[docs]</a><span class="k">class</span> <span class="nc">zoomed</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;zoomed - Is the window zoomed?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;pzum&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="name"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name">[docs]</a><span class="k">class</span> <span class="nc">name</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;name - the title of the window&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;pnam&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;itxt&#39;</span></div>
+<div class="viewcode-block" id="visible"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible">[docs]</a><span class="k">class</span> <span class="nc">visible</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;visible - is the window visible?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;pvis&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<div class="viewcode-block" id="position"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position">[docs]</a><span class="k">class</span> <span class="nc">position</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;position - upper left coordinates of window&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;ppos&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;QDpt&#39;</span></div>
+
+<div class="viewcode-block" id="document"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document">[docs]</a><span class="k">class</span> <span class="nc">document</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">ComponentItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;document - A Document&quot;&quot;&quot;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;docu&#39;</span></div>
+<span class="c1"># repeated property name the title of the document</span>
+<div class="viewcode-block" id="modified"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified">[docs]</a><span class="k">class</span> <span class="nc">modified</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">NProperty</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;modified - Has the document been modified since the last save?&quot;&quot;&quot;</span>
+    <span class="n">which</span> <span class="o">=</span> <span class="s1">&#39;imod&#39;</span>
+    <span class="n">want</span> <span class="o">=</span> <span class="s1">&#39;bool&#39;</span></div>
+<span class="n">application</span><span class="o">.</span><span class="n">_propdict</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="n">application</span><span class="o">.</span><span class="n">_elemdict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;window&#39;</span> <span class="p">:</span> <span class="n">window</span><span class="p">,</span>
+    <span class="s1">&#39;document&#39;</span> <span class="p">:</span> <span class="n">document</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">window</span><span class="o">.</span><span class="n">_propdict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;bounds&#39;</span> <span class="p">:</span> <span class="n">bounds</span><span class="p">,</span>
+    <span class="s1">&#39;closeable&#39;</span> <span class="p">:</span> <span class="n">closeable</span><span class="p">,</span>
+    <span class="s1">&#39;titled&#39;</span> <span class="p">:</span> <span class="n">titled</span><span class="p">,</span>
+    <span class="s1">&#39;index&#39;</span> <span class="p">:</span> <span class="n">index</span><span class="p">,</span>
+    <span class="s1">&#39;floating&#39;</span> <span class="p">:</span> <span class="n">floating</span><span class="p">,</span>
+    <span class="s1">&#39;modal&#39;</span> <span class="p">:</span> <span class="n">modal</span><span class="p">,</span>
+    <span class="s1">&#39;resizable&#39;</span> <span class="p">:</span> <span class="n">resizable</span><span class="p">,</span>
+    <span class="s1">&#39;zoomable&#39;</span> <span class="p">:</span> <span class="n">zoomable</span><span class="p">,</span>
+    <span class="s1">&#39;zoomed&#39;</span> <span class="p">:</span> <span class="n">zoomed</span><span class="p">,</span>
+    <span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s1">&#39;visible&#39;</span> <span class="p">:</span> <span class="n">visible</span><span class="p">,</span>
+    <span class="s1">&#39;position&#39;</span> <span class="p">:</span> <span class="n">position</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">window</span><span class="o">.</span><span class="n">_elemdict</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="n">document</span><span class="o">.</span><span class="n">_propdict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s1">&#39;modified&#39;</span> <span class="p">:</span> <span class="n">modified</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">document</span><span class="o">.</span><span class="n">_elemdict</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="n">_Enum_savo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;yes&#39;</span> <span class="p">:</span> <span class="s1">&#39;yes &#39;</span><span class="p">,</span> <span class="c1"># Save objects now</span>
+    <span class="s1">&#39;no&#39;</span> <span class="p">:</span> <span class="s1">&#39;no  &#39;</span><span class="p">,</span>  <span class="c1"># Do not save objects</span>
+    <span class="s1">&#39;ask&#39;</span> <span class="p">:</span> <span class="s1">&#39;ask &#39;</span><span class="p">,</span> <span class="c1"># Ask the user whether to save</span>
+<span class="p">}</span>
+
+
+<span class="c1">#</span>
+<span class="c1"># Indices of types declared in this module</span>
+<span class="c1">#</span>
+<span class="n">_classdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;cwin&#39;</span> <span class="p">:</span> <span class="n">window</span><span class="p">,</span>
+    <span class="s1">&#39;docu&#39;</span> <span class="p">:</span> <span class="n">document</span><span class="p">,</span>
+    <span class="s1">&#39;capp&#39;</span> <span class="p">:</span> <span class="n">application</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">_propdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;ptit&#39;</span> <span class="p">:</span> <span class="n">titled</span><span class="p">,</span>
+    <span class="s1">&#39;pidx&#39;</span> <span class="p">:</span> <span class="n">index</span><span class="p">,</span>
+    <span class="s1">&#39;ppos&#39;</span> <span class="p">:</span> <span class="n">position</span><span class="p">,</span>
+    <span class="s1">&#39;pnam&#39;</span> <span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s1">&#39;pbnd&#39;</span> <span class="p">:</span> <span class="n">bounds</span><span class="p">,</span>
+    <span class="s1">&#39;imod&#39;</span> <span class="p">:</span> <span class="n">modified</span><span class="p">,</span>
+    <span class="s1">&#39;isfl&#39;</span> <span class="p">:</span> <span class="n">floating</span><span class="p">,</span>
+    <span class="s1">&#39;hclb&#39;</span> <span class="p">:</span> <span class="n">closeable</span><span class="p">,</span>
+    <span class="s1">&#39;iszm&#39;</span> <span class="p">:</span> <span class="n">zoomable</span><span class="p">,</span>
+    <span class="s1">&#39;pmod&#39;</span> <span class="p">:</span> <span class="n">modal</span><span class="p">,</span>
+    <span class="s1">&#39;pzum&#39;</span> <span class="p">:</span> <span class="n">zoomed</span><span class="p">,</span>
+    <span class="s1">&#39;pvis&#39;</span> <span class="p">:</span> <span class="n">visible</span><span class="p">,</span>
+    <span class="s1">&#39;prsz&#39;</span> <span class="p">:</span> <span class="n">resizable</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">_compdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_enumdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;savo&#39;</span> <span class="p">:</span> <span class="n">_Enum_savo</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="sd">&quot;&quot;&quot;Suite Miscellaneous Events: Useful events that aren&#39;t in any other suite</span>
+<span class="sd">Level 1, version 1</span>
+
+<span class="sd">Generated from Alpha:Desktop Folder:gnuplot.1:gnuplot 3.7.1a</span>
+<span class="sd">AETE/AEUT resource version 1/0, language 0, script 0</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">aetools</span>
+<span class="kn">import</span> <span class="nn">MacOS</span>
+
+<span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;misc&#39;</span>
+
+<div class="viewcode-block" id="Miscellaneous_Events"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events">[docs]</a><span class="k">class</span> <span class="nc">Miscellaneous_Events</span><span class="p">:</span>
+
+<div class="viewcode-block" id="Miscellaneous_Events.revert"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.revert">[docs]</a>    <span class="k">def</span> <span class="nf">revert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;revert: Revert an object to the most recently saved version</span>
+<span class="sd">        Required argument: object to revert</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;misc&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;rvrt&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Miscellaneous_Events.do_script"><a class="viewcode-back" href="../../../../api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.html#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.do_script">[docs]</a>    <span class="k">def</span> <span class="nf">do_script</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_object</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">_attributes</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">_arguments</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;do script: execute a gnuplot script</span>
+<span class="sd">        Required argument: a gnuplot script</span>
+<span class="sd">        Keyword argument _attributes: AppleEvent attribute dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_code</span> <span class="o">=</span> <span class="s1">&#39;misc&#39;</span>
+        <span class="n">_subcode</span> <span class="o">=</span> <span class="s1">&#39;dosc&#39;</span>
+
+        <span class="k">if</span> <span class="n">_arguments</span><span class="p">:</span> <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;No optional args expected&#39;</span><span class="p">)</span>
+        <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_object</span>
+
+
+        <span class="n">_reply</span><span class="p">,</span> <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">_code</span><span class="p">,</span> <span class="n">_subcode</span><span class="p">,</span>
+                <span class="n">_arguments</span><span class="p">,</span> <span class="n">_attributes</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;errn&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">aetools</span><span class="o">.</span><span class="n">Error</span><span class="p">(</span><span class="n">aetools</span><span class="o">.</span><span class="n">decodeerror</span><span class="p">(</span><span class="n">_arguments</span><span class="p">))</span>
+        <span class="c1"># XXXX Optionally decode result</span>
+        <span class="k">if</span> <span class="s1">&#39;----&#39;</span> <span class="ow">in</span> <span class="n">_arguments</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_arguments</span><span class="p">[</span><span class="s1">&#39;----&#39;</span><span class="p">]</span></div></div>
+
+
+<span class="c1">#</span>
+<span class="c1"># Indices of types declared in this module</span>
+<span class="c1">#</span>
+<span class="n">_classdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_propdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_compdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="n">_enumdeclarations</span> <span class="o">=</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="c1"># Should work with Python3 and Python2</span>
+</pre></div>
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Bernhard F.W. Gschaider.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'0.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

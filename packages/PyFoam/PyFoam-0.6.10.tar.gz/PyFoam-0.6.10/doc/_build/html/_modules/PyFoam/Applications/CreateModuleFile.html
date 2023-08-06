@@ -1,0 +1,577 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.Applications.CreateModuleFile &mdash; PyFoam 0.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="PyFoam 0.6.6 documentation" href="../../../index.html"/>
+        <link rel="up" title="PyFoam" href="../../PyFoam.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/modules.html">API documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../../PyFoam.html">PyFoam</a> &raquo;</li>
+        
+      <li>PyFoam.Applications.CreateModuleFile</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for PyFoam.Applications.CreateModuleFile</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Application-class that implements pyFoamCreateModuleFile.py</span>
+
+<span class="sd">Generate a Modules modulefile for OpenFOAM using differences in environment</span>
+<span class="sd">variables before and after sourcing the main OpenFOAM configuration file</span>
+
+<span class="sd">For more information on Modules, visit the Environment  Modules Project:</span>
+<span class="sd">http://modules.sourceforge.net</span>
+
+<span class="sd">Usage : pyFoamCreateModuleFile.py OpenFOAM_CfgFile moduleFile</span>
+
+<span class="sd">        For example: pyFoamCreateModuleFile.py ./bashrc /tmp/module</span>
+
+<span class="sd">Warning #1: This command will not work if your OpenFOAM environment variabales are already</span>
+<span class="sd">            initialized.</span>
+
+<span class="sd">Warning #2: This command will not work if you are using the superuser account (aka: root)</span>
+
+<span class="sd">Author:</span>
+<span class="sd">  Martin Beaudoin, Hydro-Quebec, 2012.  All rights reserved</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">from</span> <span class="nn">optparse</span> <span class="k">import</span> <span class="n">OptionGroup</span>
+
+<span class="kn">from</span> <span class="nn">.PyFoamApplication</span> <span class="k">import</span> <span class="n">PyFoamApplication</span>
+<span class="kn">from</span> <span class="nn">PyFoam.Basics.Utilities</span> <span class="k">import</span> <span class="n">execute</span>
+<span class="kn">from</span> <span class="nn">sets</span> <span class="k">import</span> <span class="n">Set</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">path</span>
+
+<span class="kn">from</span> <span class="nn">PyFoam.ThirdParty.six</span> <span class="k">import</span> <span class="n">print_</span>
+
+<div class="viewcode-block" id="CreateModuleFile"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile">[docs]</a><span class="k">class</span> <span class="nc">CreateModuleFile</span><span class="p">(</span><span class="n">PyFoamApplication</span><span class="p">):</span>
+<div class="viewcode-block" id="CreateModuleFile.__init__"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                 <span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Create a Modules modulefile for OpenFOAM. Input parameter &#39;OpenFOAM configuration file&#39;: bashrc or cshrc file for OpenFOAM; usually $WM_PROJECT_DIR/etc/bashrc or $WM_PROJECT_DIR/etc/cshrc. Output parameter &#39;modulefile&#39;: the resulting module file. For more information on Modules,  visit the Environment  Modules Project:  http://http://modules.sourceforge.net</span>
+<span class="s2">&quot;&quot;&quot;</span>
+        <span class="n">PyFoamApplication</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                                   <span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">,</span>
+                                   <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+                                   <span class="n">usage</span><span class="o">=</span><span class="s2">&quot;%prog OpenFOAM_cfgFile modulefile&quot;</span><span class="p">,</span>
+                                   <span class="n">interspersed</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                   <span class="n">changeVersion</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                                   <span class="n">nr</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                                   <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CreateModuleFile.addOptions"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.addOptions">[docs]</a>    <span class="k">def</span> <span class="nf">addOptions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">module</span><span class="o">=</span><span class="n">OptionGroup</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parser</span><span class="p">,</span>
+                           <span class="s2">&quot;Module&quot;</span><span class="p">,</span>
+                           <span class="s2">&quot;Options specific for the module-utility&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">add_option_group</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
+
+        <span class="n">module</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s2">&quot;--csh&quot;</span><span class="p">,</span>
+                          <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span>
+                          <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;useCshell&quot;</span><span class="p">,</span>
+                          <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                          <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Use csh instead of bash for activating the OpenFOAM configuration&#39;</span><span class="p">)</span>
+        <span class="n">module</span><span class="o">.</span><span class="n">add_option</span><span class="p">(</span><span class="s2">&quot;--clear-environment&quot;</span><span class="p">,</span>
+                          <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span>
+                          <span class="n">dest</span><span class="o">=</span><span class="s2">&quot;clearEnvironment&quot;</span><span class="p">,</span>
+                          <span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                          <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Attempt to clear the environment of all traces of an OpenFOAM-installation before proceeding. This is no substitute to having a clean environment&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CreateModuleFile.uniqifyPathEnvVar"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.uniqifyPathEnvVar">[docs]</a>    <span class="k">def</span> <span class="nf">uniqifyPathEnvVar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathEnvVar</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove all duplicates from PATH env var. Order preserving&quot;&quot;&quot;</span>
+        <span class="n">checked</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">pathEnvVar</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">e</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">checked</span><span class="p">:</span>
+                <span class="n">checked</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="s2">&quot;:&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">checked</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CreateModuleFile.removeComponentWithSubstrFromPathEnvVar"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.removeComponentWithSubstrFromPathEnvVar">[docs]</a>    <span class="k">def</span> <span class="nf">removeComponentWithSubstrFromPathEnvVar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathEnvVar</span><span class="p">,</span> <span class="n">removeSubStr</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove components from PATH env var where a substring is present. Order preserving&quot;&quot;&quot;</span>
+        <span class="n">keepComponents</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">pathComponents</span> <span class="o">=</span> <span class="n">pathEnvVar</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">pathComponents</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">removeSubStr</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">keepComponents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="s2">&quot;:&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">keepComponents</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CreateModuleFile.removeComponentFromPathEnvVar"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.removeComponentFromPathEnvVar">[docs]</a>    <span class="k">def</span> <span class="nf">removeComponentFromPathEnvVar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathEnvVar</span><span class="p">,</span> <span class="n">removePathComponents</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove components from PATH env var. Order preserving&quot;&quot;&quot;</span>
+        <span class="n">keepComponents</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">pathComponents</span> <span class="o">=</span> <span class="n">pathEnvVar</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+        <span class="n">removeComponents</span> <span class="o">=</span> <span class="n">removePathComponents</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">pathComponents</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">e</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">removeComponents</span><span class="p">:</span>
+                <span class="n">keepComponents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="s2">&quot;:&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">keepComponents</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CreateModuleFile.writeModuleFileHeader"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.writeModuleFileHeader">[docs]</a>    <span class="k">def</span> <span class="nf">writeModuleFileHeader</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fid</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Write Modules file header&quot;&quot;&quot;</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;#%Module1.0</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;proc ModulesHelp { } {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    puts stderr </span><span class="se">\&quot;</span><span class="s2">OpenFOAM version &quot;</span> <span class="o">+</span> <span class="n">version</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;module-whatis </span><span class="se">\&quot;</span><span class="s2">OpenFOAM version &quot;</span> <span class="o">+</span> <span class="n">version</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CreateModuleFile.writeModuleFileFooter"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.writeModuleFileFooter">[docs]</a>    <span class="k">def</span> <span class="nf">writeModuleFileFooter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Write Modules file footer&quot;&quot;&quot;</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;#EOF</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span></div>
+
+<div class="viewcode-block" id="CreateModuleFile.writeModuleEnvironmentEntry"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.writeModuleEnvironmentEntry">[docs]</a>    <span class="k">def</span> <span class="nf">writeModuleEnvironmentEntry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fid</span><span class="p">,</span> <span class="n">envVarDict</span><span class="p">,</span> <span class="n">homeVar</span><span class="p">,</span> <span class="n">userVar</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Write Modules file environment variables&quot;&quot;&quot;</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;set HOME </span><span class="se">\&quot;</span><span class="s2">$env(HOME)</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;set USER </span><span class="se">\&quot;</span><span class="s2">$env(USER)</span><span class="se">\&quot;\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Environment variables</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Memorize PATH variables</span>
+        <span class="n">pathVars</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="c1">#Sorting keys</span>
+        <span class="n">keylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">envVarDict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="n">keylist</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keylist</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">envVarDict</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="c1"># Remove expanded occurences of $HOME variable</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">homeVar</span><span class="p">,</span> <span class="s2">&quot;$HOME&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Remove expanded occurences of $USER variable</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">userVar</span><span class="p">,</span> <span class="s2">&quot;$USER&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">k</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;PATH&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">value</span> <span class="o">!=</span> <span class="s2">&quot;:&quot;</span><span class="p">:</span>
+                <span class="n">pathVars</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;setenv &quot;</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">value</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Prepend PATH variables</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Various PATH variables</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">pathVars</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">pathVars</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;prepend-path &quot;</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">pathVars</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Write TCL variables for the environment variables.</span>
+        <span class="c1"># This is only necessary for module.</span>
+        <span class="c1"># The aliases definitions will use this</span>
+        <span class="c1"># We also need to pay attention to empty environment variables</span>
+        <span class="c1"># for TCL. if [info exists env(VARNAME)] {set value $env(VARNAME)}</span>
+        <span class="c1">#</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Temporary TCL variables for the environment variables</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Module will need this for the aliases when parsing this file</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keylist</span><span class="p">:</span>
+            <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;if [info exists env(&quot;</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;)] {set &quot;</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s1">&#39; </span><span class="se">\&quot;</span><span class="s1">$env(&#39;</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s1">&#39;)</span><span class="se">\&quot;</span><span class="s1">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CreateModuleFile.writeModuleAliasEntry"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.writeModuleAliasEntry">[docs]</a>    <span class="k">def</span> <span class="nf">writeModuleAliasEntry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fid</span><span class="p">,</span> <span class="n">aliasesVarDict</span><span class="p">,</span> <span class="n">homeVar</span><span class="p">,</span> <span class="n">userVar</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Write Modules file aliases&quot;&quot;&quot;</span>
+        <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Aliases</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1">#Sorting keys</span>
+        <span class="n">keylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aliasesVarDict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="n">keylist</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keylist</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">aliasesVarDict</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="c1"># Remove expanded occurences of $HOME variable</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">homeVar</span><span class="p">,</span> <span class="s2">&quot;$HOME&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Remove expanded occurences of $USER variable</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">userVar</span><span class="p">,</span> <span class="s2">&quot;$USER&quot;</span><span class="p">)</span>
+
+            <span class="n">fid</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;set-alias &quot;</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">value</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CreateModuleFile.run"><a class="viewcode-back" href="../../../api/PyFoam.Applications.CreateModuleFile.html#PyFoam.Applications.CreateModuleFile.CreateModuleFile.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">cfgFile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">getArgs</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">moduleFile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">getArgs</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">useCsh</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">useCshell</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">clearEnvironment</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Clearing environment of variables that might come from an OpenFAOM-installation. Nevertheless it is preferable to use a clean environment&quot;</span><span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">oldVersion</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;WM_PROJECT_VERSION&quot;</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Seems to be a clean environment anyway&quot;</span><span class="p">)</span>
+                <span class="n">oldVersion</span><span class="o">=</span><span class="kc">None</span>
+
+            <span class="k">if</span> <span class="n">oldVersion</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;WM_&quot;</span><span class="p">,</span><span class="s2">&quot;FOAM_&quot;</span><span class="p">]:</span>
+                        <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+                            <span class="k">del</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">e</span><span class="p">]</span>
+                            <span class="k">break</span>
+                <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;PATH&quot;</span><span class="p">,</span><span class="s2">&quot;DYLD_LIBRARY_PATH&quot;</span><span class="p">,</span><span class="s2">&quot;LD_LIBRARY_PATH&quot;</span><span class="p">,</span><span class="s2">&quot;MANPATH&quot;</span><span class="p">,</span><span class="s2">&quot;PV_PLUGIN_PATH&quot;</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+                        <span class="n">lst</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+                        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">l</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">l</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">oldVersion</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">cfgFile</span><span class="p">)</span> <span class="ow">and</span> <span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">cfgFile</span><span class="p">)</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">access</span><span class="p">(</span><span class="n">cfgFile</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">R_OK</span><span class="p">):</span>
+            <span class="n">print_</span><span class="p">(</span><span class="s2">&quot; Using file &quot;</span> <span class="o">+</span> <span class="n">cfgFile</span> <span class="o">+</span> <span class="s2">&quot; for loading the OpenFOAM environment&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Some more sanity check</span>
+            <span class="n">fileData</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">cfgFile</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">useCsh</span> <span class="ow">and</span> <span class="s2">&quot;setenv&quot;</span> <span class="ow">in</span> <span class="n">fileData</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot; Error: Detecting &#39;setenv&#39; instructions in this bash file. Please provide a configuration file compatible for bash, or use the --csh option.&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">useCsh</span> <span class="ow">and</span> <span class="s2">&quot;export&quot;</span> <span class="ow">in</span> <span class="n">fileData</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot; Error: Detecting &#39;export&#39; instructions in this csh file. Please provide a configuration file compatible for csh.&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">print_</span><span class="p">(</span><span class="s2">&quot; The configuration file seems ok&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot; Error: Cannot access file: &quot;</span> <span class="o">+</span> <span class="n">cfgFile</span><span class="p">)</span>
+
+        <span class="c1"># We choose not to run if the OpenFOAM environment is already loaded.</span>
+        <span class="c1"># We obviously cannot diff from such an environment</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;WM_PROJECT&quot;</span><span class="p">)</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;&quot;&quot; Error: Cannot run with OpenFOAM environment variables already present</span>
+<span class="s2">                       You need to run this script from a clean environment&quot;&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># We choose not to run under the user &#39;root&#39;, simply because the HOME and USER environment</span>
+        <span class="c1"># variables are usually very similar for this user, and this will cause problem later on</span>
+        <span class="c1"># For instance, under Centos, for the super user:</span>
+        <span class="c1">#     HOME=/root</span>
+        <span class="c1">#     USER=root</span>
+        <span class="c1"># Those two are very similar</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;USER&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;root&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;&quot;&quot; Error: You should not run this script from the &#39;root&#39; account.</span>
+<span class="s2">                       Please invoke this pyFoam command from a plain OpenFOAM user account.</span>
+<span class="s2">                       Then, make the result file available to the super user (root) of the&quot;</span>
+<span class="s2">                       destination host in order to install the modules configuration files.&quot;&quot;&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Grab environment + aliases before the activation of OpenFOAM</span>
+        <span class="c1"># We start from a minimal environment using &#39;env -i&#39;</span>
+        <span class="n">shellCmd</span> <span class="o">=</span> <span class="s1">&#39;bash -c&#39;</span>
+        <span class="n">sourceCmd</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span>
+
+        <span class="k">if</span> <span class="n">useCsh</span><span class="p">:</span>
+            <span class="n">shellCmd</span> <span class="o">=</span> <span class="s1">&#39;csh -c&#39;</span>
+            <span class="n">sourceCmd</span> <span class="o">=</span> <span class="s1">&#39;source&#39;</span>
+
+        <span class="n">oldEnv</span><span class="o">=</span><span class="n">Set</span><span class="p">(</span><span class="n">execute</span><span class="p">(</span><span class="n">shellCmd</span> <span class="o">+</span> <span class="s1">&#39; &quot;env|sort&quot;&#39;</span><span class="p">))</span>
+        <span class="n">oldAliases</span><span class="o">=</span><span class="n">Set</span><span class="p">(</span><span class="n">execute</span><span class="p">(</span><span class="n">shellCmd</span> <span class="o">+</span> <span class="s1">&#39; &quot;alias|sort&quot;&#39;</span><span class="p">))</span>
+
+        <span class="c1"># Grab environment + aliases after the activation of OpenFOAM</span>
+        <span class="n">newEnv</span><span class="o">=</span><span class="n">Set</span><span class="p">(</span><span class="n">execute</span><span class="p">(</span><span class="n">shellCmd</span> <span class="o">+</span> <span class="s1">&#39; </span><span class="se">\&quot;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">sourceCmd</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">cfgFile</span> <span class="o">+</span> <span class="s1">&#39;; env|sort&quot;&#39;</span><span class="p">))</span>
+        <span class="n">newAliases</span><span class="o">=</span><span class="n">Set</span><span class="p">(</span><span class="n">execute</span><span class="p">(</span><span class="n">shellCmd</span> <span class="o">+</span> <span class="s1">&#39; </span><span class="se">\&quot;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">sourceCmd</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">cfgFile</span> <span class="o">+</span> <span class="s1">&#39;; alias|sort&quot;&#39;</span><span class="p">))</span>
+
+        <span class="c1"># Handling of environment variables</span>
+        <span class="c1"># Memorize all the PATH environment variables for later processing</span>
+        <span class="n">oldPath</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">newPath</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">homeVar</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">userVar</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">oldEnv</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+                <span class="c1"># Memorize PATH variables</span>
+                <span class="k">if</span> <span class="n">key</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;PATH&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="n">oldPath</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+                    <span class="c1"># We remove any reference to PyFOAM in the old PATH env. variable</span>
+                    <span class="c1"># Since we run this script with PyFOAM, environment variables for PyFoam are</span>
+                    <span class="c1"># present in oldPath. If the configuration file for OpenFOAM requires PyFoam too,</span>
+                    <span class="c1"># we risk to lose these variables because they will be in common in both the</span>
+                    <span class="c1"># &#39;before&#39; and &#39;after&#39;environment.</span>
+                    <span class="c1"># This is ugly, but PyFOAM is just too useful to write this script with plain</span>
+                    <span class="c1"># python.</span>
+                    <span class="c1"># If you have installed PyFoam under a path where the string &#39;PyFoam&#39; is not present,</span>
+                    <span class="c1"># you will simply have to manually add the necessary PyFoam environment variables</span>
+                    <span class="c1"># yourself in the module file. No biggie,</span>
+                    <span class="n">oldPath</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">removeComponentWithSubstrFromPathEnvVar</span><span class="p">(</span><span class="n">oldPath</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="s1">&#39;PyFoam&#39;</span><span class="p">)</span>
+
+                <span class="c1"># Memorize HOME variable</span>
+                <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;HOME&#39;</span><span class="p">:</span>
+                    <span class="n">homeVar</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+                <span class="c1"># Memorize USER variable</span>
+                <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="s1">&#39;USER&#39;</span><span class="p">:</span>
+                    <span class="n">userVar</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Using sets, it is trivial to remove common environment variables</span>
+        <span class="c1"># and aliases between the two environments</span>
+        <span class="n">moduleEnv</span><span class="o">=</span><span class="n">newEnv</span> <span class="o">-</span> <span class="n">oldEnv</span>
+        <span class="n">moduleAliases</span><span class="o">=</span><span class="n">newAliases</span> <span class="o">-</span> <span class="n">oldAliases</span>
+
+        <span class="c1"># Dictionary for environment variables</span>
+        <span class="n">envVar</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="c1"># Dictionary for aliases</span>
+        <span class="n">aliasesVar</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="c1"># Iterate through environment variables and store in dictionary</span>
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">moduleEnv</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+                <span class="c1"># Minor cleanup</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+                <span class="c1"># Memorize PATH variables for later processing</span>
+                <span class="k">if</span> <span class="n">key</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;PATH&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="n">newPath</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">envVar</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+        <span class="c1"># Handle the PATH variables</span>
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">newPath</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">oldPath</span><span class="p">:</span>
+                <span class="c1"># Cleanup old PATH components</span>
+                <span class="n">newPath</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">removeComponentFromPathEnvVar</span><span class="p">(</span><span class="n">newPath</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">oldPath</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+
+            <span class="c1"># Remove duplicate entries in PATH variable</span>
+            <span class="n">newPath</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">uniqifyPathEnvVar</span><span class="p">(</span><span class="n">newPath</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+            <span class="n">envVar</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">newPath</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+
+        <span class="c1"># Iterate through aliases variables and store them in dictionary</span>
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">moduleAliases</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+                <span class="c1"># Minor cleanup</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;alias &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+                <span class="n">aliasesVar</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+        <span class="c1"># Generate module entries</span>
+        <span class="n">print_</span><span class="p">(</span><span class="s2">&quot; Generating modulefile: &quot;</span> <span class="p">,</span> <span class="n">moduleFile</span><span class="p">)</span>
+
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">moduleFile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">writeModuleFileHeader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">envVar</span><span class="p">[</span><span class="s2">&quot;WM_PROJECT_VERSION&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">writeModuleEnvironmentEntry</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">envVar</span><span class="p">,</span> <span class="n">homeVar</span><span class="p">,</span> <span class="n">userVar</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">writeModuleAliasEntry</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">aliasesVar</span><span class="p">,</span> <span class="n">homeVar</span><span class="p">,</span> <span class="n">userVar</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">writeModuleFileFooter</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">print_</span><span class="p">(</span><span class="s2">&quot; Done</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div></div>
+
+<span class="c1"># Should work with Python3 and Python2</span>
+</pre></div>
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Bernhard F.W. Gschaider.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

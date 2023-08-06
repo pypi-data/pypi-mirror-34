@@ -1,0 +1,1622 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.ThirdParty.IPy &mdash; PyFoam 0.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="PyFoam 0.6.6 documentation" href="../../../index.html"/>
+        <link rel="up" title="PyFoam" href="../../PyFoam.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/modules.html">API documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+          <li><a href="../../PyFoam.html">PyFoam</a> &raquo;</li>
+        
+      <li>PyFoam.ThirdParty.IPy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for PyFoam.ThirdParty.IPy</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot; IPy - class and tools for handling of IPv4 and IPv6 Addresses and Networks.</span>
+
+<span class="sd">Copyright (c) 2006, INL</span>
+<span class="sd">Copyright (c) 2001-2005, Maximillian Dornseif</span>
+<span class="sd">All rights reserved.</span>
+<span class="sd">Redistribution and use in source and binary forms, with or without</span>
+<span class="sd">modification, are permitted provided that the following conditions are met:</span>
+
+<span class="sd">    * Redistributions of source code must retain the above copyright</span>
+<span class="sd">      notice, this list of conditions and the following disclaimer.</span>
+<span class="sd">    * Redistributions in binary form must reproduce the above copyright</span>
+<span class="sd">      notice, this list of conditions and the following disclaimer in the</span>
+<span class="sd">      documentation and/or other materials provided with the distribution.</span>
+<span class="sd">    * Neither the name of IPy nor the names of its contributors may be used</span>
+<span class="sd">      to endorse or promote products derived from this software without</span>
+<span class="sd">      specific prior written permission.</span>
+
+<span class="sd">THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS&#39;&#39; AND ANY</span>
+<span class="sd">EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span>
+<span class="sd">WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="sd">DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY</span>
+<span class="sd">DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span>
+<span class="sd">(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="sd">LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</span>
+<span class="sd">ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span>
+<span class="sd">(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span>
+<span class="sd">SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+
+
+<span class="sd">Presentation of the API</span>
+<span class="sd">=======================</span>
+
+<span class="sd">The IP class allows a comfortable parsing and handling for most</span>
+<span class="sd">notations in use for IPv4 and IPv6 Addresses and Networks. It was</span>
+<span class="sd">greatly inspired bei RIPE&#39;s Perl module NET::IP&#39;s interface but</span>
+<span class="sd">doesn&#39;t share the Implementation. It doesn&#39;t share non-CIDR netmasks,</span>
+<span class="sd">so funky stuff lixe a netmask 0xffffff0f can&#39;t be done here.</span>
+
+<span class="sd">    &gt;&gt;&gt; from IPy import IP</span>
+<span class="sd">    &gt;&gt;&gt; ip = IP(&#39;127.0.0.0/30&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; for x in ip:</span>
+<span class="sd">    ...  print x</span>
+<span class="sd">    ...</span>
+<span class="sd">    127.0.0.0</span>
+<span class="sd">    127.0.0.1</span>
+<span class="sd">    127.0.0.2</span>
+<span class="sd">    127.0.0.3</span>
+<span class="sd">    &gt;&gt;&gt; ip2 = IP(&#39;0x7f000000/30&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; ip == ip2</span>
+<span class="sd">    1</span>
+<span class="sd">    &gt;&gt;&gt; ip.reverseNames()</span>
+<span class="sd">    [&#39;0.0.0.127.in-addr.arpa.&#39;, &#39;1.0.0.127.in-addr.arpa.&#39;, &#39;2.0.0.127.in-addr.arpa.&#39;, &#39;3.0.0.127.in-addr.arpa.&#39;]</span>
+<span class="sd">    &gt;&gt;&gt; ip.reverseName()</span>
+<span class="sd">    &#39;0-3.0.0.127.in-addr.arpa.&#39;</span>
+<span class="sd">    &gt;&gt;&gt; ip.iptype()</span>
+<span class="sd">    &#39;PRIVATE&#39;</span>
+
+
+<span class="sd">Support all IP addresses</span>
+<span class="sd">========================</span>
+
+<span class="sd">It can detect about a dozen different ways of expressing IP addresses</span>
+<span class="sd">and networks, parse them and distinguish between IPv4 and IPv6 addresses:</span>
+
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;).version()</span>
+<span class="sd">    4</span>
+<span class="sd">    &gt;&gt;&gt; IP(&#39;::1&#39;).version()</span>
+<span class="sd">    6</span>
+
+<span class="sd">IPv4 addresses</span>
+<span class="sd">--------------</span>
+
+<span class="sd">    &gt;&gt;&gt; print IP(0x7f000001)</span>
+<span class="sd">    127.0.0.1</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;0x7f000001&#39;)</span>
+<span class="sd">    127.0.0.1</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;127.0.0.1&#39;)</span>
+<span class="sd">    127.0.0.1</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;10&#39;)</span>
+<span class="sd">    10.0.0.0</span>
+
+<span class="sd">IPv6 addresses</span>
+<span class="sd">--------------</span>
+
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;1080:0:0:0:8:800:200C:417A&#39;)</span>
+<span class="sd">    1080:0000:0000:0000:0008:0800:200c:417a</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;1080::8:800:200C:417A&#39;)</span>
+<span class="sd">    1080:0000:0000:0000:0008:0800:200c:417a</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;::1&#39;)</span>
+<span class="sd">    0000:0000:0000:0000:0000:0000:0000:0001</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;::13.1.68.3&#39;)</span>
+<span class="sd">    0000:0000:0000:0000:0000:0000:0d01:4403</span>
+
+<span class="sd">Network mask</span>
+<span class="sd">------------</span>
+
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;127.0.0.0/8&#39;)</span>
+<span class="sd">    127.0.0.0/8</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;127.0.0.0/255.0.0.0&#39;)</span>
+<span class="sd">    127.0.0.0/8</span>
+<span class="sd">    &gt;&gt;&gt; print IP(&#39;127.0.0.0-127.255.255.255&#39;)</span>
+<span class="sd">    127.0.0.0/8</span>
+
+
+<span class="sd">Option check_addr_prefixlen</span>
+<span class="sd">===========================</span>
+
+<span class="sd">By default, IPy rejects uncommon netmask like 172.30.1.0/22:</span>
+
+<span class="sd">    &gt;&gt;&gt; import IPy</span>
+<span class="sd">    &gt;&gt;&gt; IPy.check_addr_prefixlen = True    # default value</span>
+<span class="sd">    &gt;&gt;&gt; ips = IP(&#39;172.30.1.0/22&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">      ...</span>
+<span class="sd">    ValueError: IP(&#39;172.30.1.0/22&#39;) has invalid prefix length (22)</span>
+
+<span class="sd">You can change this behaviour with global option check_addr_prefixlen:</span>
+
+<span class="sd">    &gt;&gt;&gt; IPy.check_addr_prefixlen = False   # disable</span>
+<span class="sd">    &gt;&gt;&gt; ips = IP(&#39;172.30.1.0/22&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; len(ips)</span>
+<span class="sd">    1024</span>
+
+
+<span class="sd">Convert address to string</span>
+<span class="sd">=========================</span>
+
+<span class="sd">Nearly all class methods which return a string have an optional</span>
+<span class="sd">parameter &#39;wantprefixlen&#39; which controlles if the prefixlen or netmask</span>
+<span class="sd">is printed. Per default the prefilen is always shown if the net</span>
+<span class="sd">contains more than one address::</span>
+
+<span class="sd">    wantprefixlen == 0 / None        don&#39;t return anything    1.2.3.0</span>
+<span class="sd">    wantprefixlen == 1               /prefix                  1.2.3.0/24</span>
+<span class="sd">    wantprefixlen == 2               /netmask                 1.2.3.0/255.255.255.0</span>
+<span class="sd">    wantprefixlen == 3               -lastip                  1.2.3.0-1.2.3.255</span>
+
+<span class="sd">You can also change the defaults on an per-object basis by fiddeling with the class members:</span>
+
+<span class="sd"> * NoPrefixForSingleIp</span>
+<span class="sd"> * WantPrefixLen</span>
+
+<span class="sd">Examples of string conversions:</span>
+
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/32&#39;).strNormal()</span>
+<span class="sd">    &#39;10.0.0.0&#39;</span>
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;).strNormal()</span>
+<span class="sd">    &#39;10.0.0.0/24&#39;</span>
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;).strNormal(0)</span>
+<span class="sd">    &#39;10.0.0.0&#39;</span>
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;).strNormal(1)</span>
+<span class="sd">    &#39;10.0.0.0/24&#39;</span>
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;).strNormal(2)</span>
+<span class="sd">    &#39;10.0.0.0/255.255.255.0&#39;</span>
+<span class="sd">    &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;).strNormal(3)</span>
+<span class="sd">    &#39;10.0.0.0-10.0.0.255&#39;</span>
+<span class="sd">    &gt;&gt;&gt; ip = IP(&#39;10.0.0.0&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; print ip</span>
+<span class="sd">    10.0.0.0</span>
+<span class="sd">    &gt;&gt;&gt; ip.NoPrefixForSingleIp = None</span>
+<span class="sd">    &gt;&gt;&gt; print ip</span>
+<span class="sd">    10.0.0.0/32</span>
+<span class="sd">    &gt;&gt;&gt; ip.WantPrefixLen = 3</span>
+<span class="sd">    &gt;&gt;&gt; print ip</span>
+<span class="sd">    10.0.0.0-10.0.0.0</span>
+
+
+<span class="sd">What&#39;s new?</span>
+<span class="sd">===========</span>
+
+<span class="sd">Changes between version 0.51 and 0.52:</span>
+
+<span class="sd"> * Fix strCompressed() for IPv6 &quot;ffff:ffff:ffff:ffff:ffff:f:f:fffc/127&quot;</span>
+
+<span class="sd">Changes between version 0.5 and 0.51:</span>
+
+<span class="sd"> * Use real name of IPy author</span>
+<span class="sd"> * Use version &quot;0.51&quot; to help packaging since 0.5 was smaller than 0.42</span>
+<span class="sd"> * Fix unit test for Python 2.3 (don&#39;t use doctest.testfile)</span>
+<span class="sd"> * Fix unit test for Python 2.5 (problem of hex() lower case)</span>
+<span class="sd"> * IPy now works on Python 2.2 to 2.5</span>
+
+<span class="sd">Changes between version 0.42 and 0.5: Fix all known bugs:</span>
+
+<span class="sd"> * Apply Jean Gillaux&#39;s patch for netmask &quot;/0.0.0.0&quot; bug</span>
+<span class="sd"> * Apply William McVey&#39;s patch for __nonzero__() bug</span>
+<span class="sd"> * Apply Victor Stinner patch: setup.py can use setuptools and fix URLs</span>
+<span class="sd"> * Allow &quot;172.30.1.0/22&quot; with new option IPy.check_addr_prefixlen=False</span>
+
+<span class="sd">Other changes:</span>
+
+<span class="sd"> * Add regression tests</span>
+<span class="sd"> * Create AUTHORS file</span>
+
+
+<span class="sd">Compatibility and links</span>
+<span class="sd">=======================</span>
+
+<span class="sd">IPy works on Python version 2.2 to 2.5.</span>
+
+<span class="sd">This Python module is under BSD license: see COPYING file.</span>
+
+<span class="sd">Further Information might be available at: http://software.inl.fr/trac/trac.cgi/wiki/IPy</span>
+
+<span class="sd">TODO</span>
+<span class="sd">====</span>
+
+<span class="sd"> * better comparison (__cmp__ and friends)</span>
+<span class="sd"> * tests for __cmp__</span>
+<span class="sd"> * always write hex values lowercase</span>
+<span class="sd"> * interpret 2001:1234:5678:1234/64 as 2001:1234:5678:1234::/64</span>
+<span class="sd"> * move size in bits into class variables to get rid of some &quot;if self._ipversion ...&quot;</span>
+<span class="sd"> * support for base85 encoding</span>
+<span class="sd"> * support for output of IPv6 encoded IPv4 Addresses</span>
+<span class="sd"> * update address type tables</span>
+<span class="sd"> * first-last notation should be allowed for IPv6</span>
+<span class="sd"> * add IPv6 docstring examples</span>
+<span class="sd"> * check better for negative parameters</span>
+<span class="sd"> * add addition / aggregation</span>
+<span class="sd"> * move reverse name stuff out of the classes and refactor it</span>
+<span class="sd"> * support for aggregation of more than two nets at once</span>
+<span class="sd"> * support for aggregation with &quot;holes&quot;</span>
+<span class="sd"> * support for finding common prefix</span>
+<span class="sd"> * &#39;&gt;&gt;&#39; and &#39;&lt;&lt;&#39; for prefix manipulation</span>
+<span class="sd"> * add our own exceptions instead ValueError all the time</span>
+<span class="sd"> * rename checkPrefix to checkPrefixOk</span>
+<span class="sd"> * add more documentation and doctests</span>
+<span class="sd"> * refactor</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># $HeadURL$</span>
+<span class="c1"># $Id$</span>
+
+<span class="n">__rcsid__</span> <span class="o">=</span> <span class="s1">&#39;$Id$&#39;</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s1">&#39;0.51&#39;</span>
+
+<span class="kn">import</span> <span class="nn">types</span>
+
+<span class="c1"># New in API 0.5: if true, it rejects uncommon net mask like &quot;172.30.1.0/22&quot;.</span>
+<span class="c1"># Default is enable, ie. raise ValueError on such netmask.</span>
+<span class="n">check_addr_prefixlen</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Definition of the Ranges for IPv4 IPs</span>
+<span class="c1"># this should include www.iana.org/assignments/ipv4-address-space</span>
+<span class="c1"># and www.iana.org/assignments/multicast-addresses</span>
+<span class="n">IPv4ranges</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;0&#39;</span><span class="p">:</span>                <span class="s1">&#39;PUBLIC&#39;</span><span class="p">,</span>   <span class="c1"># fall back</span>
+    <span class="s1">&#39;00000000&#39;</span><span class="p">:</span>         <span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>  <span class="c1"># 0/8</span>
+    <span class="s1">&#39;00001010&#39;</span><span class="p">:</span>         <span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>  <span class="c1"># 10/8</span>
+    <span class="s1">&#39;01111111&#39;</span><span class="p">:</span>         <span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>  <span class="c1"># 127.0/8</span>
+    <span class="s1">&#39;1&#39;</span><span class="p">:</span>                <span class="s1">&#39;PUBLIC&#39;</span><span class="p">,</span>   <span class="c1"># fall back</span>
+    <span class="s1">&#39;1010100111111110&#39;</span><span class="p">:</span> <span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>  <span class="c1"># 169.254/16</span>
+    <span class="s1">&#39;101011000001&#39;</span><span class="p">:</span>     <span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>  <span class="c1"># 172.16/12</span>
+    <span class="s1">&#39;1100000010101000&#39;</span><span class="p">:</span> <span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>  <span class="c1"># 192.168/16</span>
+    <span class="s1">&#39;11011111&#39;</span><span class="p">:</span>         <span class="s1">&#39;RESERVED&#39;</span><span class="p">,</span> <span class="c1"># 223/8</span>
+    <span class="s1">&#39;111&#39;</span><span class="p">:</span>              <span class="s1">&#39;RESERVED&#39;</span>  <span class="c1"># 224/3</span>
+    <span class="p">}</span>
+
+<span class="c1"># Definition of the Ranges for IPv6 IPs</span>
+<span class="c1"># see also www.iana.org/assignments/ipv6-address-space,</span>
+<span class="c1"># www.iana.org/assignments/ipv6-tla-assignments,</span>
+<span class="c1"># www.iana.org/assignments/ipv6-multicast-addresses,</span>
+<span class="c1"># www.iana.org/assignments/ipv6-anycast-addresses</span>
+<span class="n">IPv6ranges</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;00000000&#39;</span>              <span class="p">:</span> <span class="s1">&#39;RESERVED&#39;</span><span class="p">,</span>       <span class="c1"># ::/8</span>
+    <span class="s1">&#39;00000001&#39;</span>              <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># 100::/8</span>
+    <span class="s1">&#39;0000001&#39;</span>               <span class="p">:</span> <span class="s1">&#39;NSAP&#39;</span><span class="p">,</span>           <span class="c1"># 200::/7</span>
+    <span class="s1">&#39;0000010&#39;</span>               <span class="p">:</span> <span class="s1">&#39;IPX&#39;</span><span class="p">,</span>            <span class="c1"># 400::/7</span>
+    <span class="s1">&#39;0000011&#39;</span>               <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># 600::/7</span>
+    <span class="s1">&#39;00001&#39;</span>                 <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># 800::/5</span>
+    <span class="s1">&#39;0001&#39;</span>                  <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># 1000::/4</span>
+    <span class="s1">&#39;0010000000000000&#39;</span>      <span class="p">:</span> <span class="s1">&#39;RESERVED&#39;</span><span class="p">,</span>       <span class="c1"># 2000::/16 Reserved</span>
+    <span class="s1">&#39;0010000000000001&#39;</span>      <span class="p">:</span> <span class="s1">&#39;ASSIGNABLE&#39;</span><span class="p">,</span>     <span class="c1"># 2001::/16 Sub-TLA Assignments [RFC2450]</span>
+    <span class="s1">&#39;00100000000000010000000&#39;</span><span class="p">:</span> <span class="s1">&#39;ASSIGNABLE IANA&#39;</span><span class="p">,</span>  <span class="c1"># 2001:0000::/29 - 2001:01F8::/29 IANA</span>
+    <span class="s1">&#39;00100000000000010000001&#39;</span><span class="p">:</span> <span class="s1">&#39;ASSIGNABLE APNIC&#39;</span><span class="p">,</span> <span class="c1"># 2001:0200::/29 - 2001:03F8::/29 APNIC</span>
+    <span class="s1">&#39;00100000000000010000010&#39;</span><span class="p">:</span> <span class="s1">&#39;ASSIGNABLE ARIN&#39;</span><span class="p">,</span>  <span class="c1"># 2001:0400::/29 - 2001:05F8::/29 ARIN</span>
+    <span class="s1">&#39;00100000000000010000011&#39;</span><span class="p">:</span> <span class="s1">&#39;ASSIGNABLE RIPE&#39;</span><span class="p">,</span>  <span class="c1"># 2001:0600::/29 - 2001:07F8::/29 RIPE NCC</span>
+    <span class="s1">&#39;0010000000000010&#39;</span>      <span class="p">:</span> <span class="s1">&#39;6TO4&#39;</span><span class="p">,</span>           <span class="c1"># 2002::/16 &quot;6to4&quot; [RFC3056]</span>
+    <span class="s1">&#39;0011111111111110&#39;</span>      <span class="p">:</span> <span class="s1">&#39;6BONE&#39;</span><span class="p">,</span>          <span class="c1"># 3FFE::/16 6bone Testing [RFC2471]</span>
+    <span class="s1">&#39;0011111111111111&#39;</span>      <span class="p">:</span> <span class="s1">&#39;RESERVED&#39;</span><span class="p">,</span>       <span class="c1"># 3FFF::/16 Reserved</span>
+    <span class="s1">&#39;010&#39;</span>                   <span class="p">:</span> <span class="s1">&#39;GLOBAL-UNICAST&#39;</span><span class="p">,</span> <span class="c1"># 4000::/3</span>
+    <span class="s1">&#39;011&#39;</span>                   <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># 6000::/3</span>
+    <span class="s1">&#39;100&#39;</span>                   <span class="p">:</span> <span class="s1">&#39;GEO-UNICAST&#39;</span><span class="p">,</span>    <span class="c1"># 8000::/3</span>
+    <span class="s1">&#39;101&#39;</span>                   <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># A000::/3</span>
+    <span class="s1">&#39;110&#39;</span>                   <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># C000::/3</span>
+    <span class="s1">&#39;1110&#39;</span>                  <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># E000::/4</span>
+    <span class="s1">&#39;11110&#39;</span>                 <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># F000::/5</span>
+    <span class="s1">&#39;111110&#39;</span>                <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># F800::/6</span>
+    <span class="s1">&#39;1111110&#39;</span>               <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># FC00::/7</span>
+    <span class="s1">&#39;111111100&#39;</span>             <span class="p">:</span> <span class="s1">&#39;UNASSIGNED&#39;</span><span class="p">,</span>     <span class="c1"># FE00::/9</span>
+    <span class="s1">&#39;1111111010&#39;</span>            <span class="p">:</span> <span class="s1">&#39;LINKLOCAL&#39;</span><span class="p">,</span>      <span class="c1"># FE80::/10</span>
+    <span class="s1">&#39;1111111011&#39;</span>            <span class="p">:</span> <span class="s1">&#39;SITELOCAL&#39;</span><span class="p">,</span>      <span class="c1"># FEC0::/10</span>
+    <span class="s1">&#39;11111111&#39;</span>              <span class="p">:</span> <span class="s1">&#39;MULTICAST&#39;</span><span class="p">,</span>      <span class="c1"># FF00::/8</span>
+    <span class="s1">&#39;0&#39;</span> <span class="o">*</span> <span class="mi">96</span>                <span class="p">:</span> <span class="s1">&#39;IPV4COMP&#39;</span><span class="p">,</span>       <span class="c1"># ::/96</span>
+    <span class="s1">&#39;0&#39;</span> <span class="o">*</span> <span class="mi">80</span> <span class="o">+</span> <span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="mi">16</span>     <span class="p">:</span> <span class="s1">&#39;IPV4MAP&#39;</span><span class="p">,</span>        <span class="c1"># ::FFFF:0:0/96</span>
+    <span class="s1">&#39;0&#39;</span> <span class="o">*</span> <span class="mi">128</span>               <span class="p">:</span> <span class="s1">&#39;UNSPECIFIED&#39;</span><span class="p">,</span>    <span class="c1"># ::/128</span>
+    <span class="s1">&#39;0&#39;</span> <span class="o">*</span> <span class="mi">127</span> <span class="o">+</span> <span class="s1">&#39;1&#39;</span>         <span class="p">:</span> <span class="s1">&#39;LOOPBACK&#39;</span>        <span class="c1"># ::1/128</span>
+    <span class="p">}</span>
+
+
+<div class="viewcode-block" id="IPint"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint">[docs]</a><span class="k">class</span> <span class="nc">IPint</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Handling of IP addresses returning integers.</span>
+
+<span class="sd">    Use class IP instead because some features are not implemented for</span>
+<span class="sd">    IPint.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="IPint.__init__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">ipversion</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create an instance of an IP object.</span>
+
+<span class="sd">        Data can be a network specification or a single IP. IP</span>
+<span class="sd">        Addresses can be specified in all forms understood by</span>
+<span class="sd">        parseAddress.() the size of a network can be specified as</span>
+
+<span class="sd">        /prefixlen        a.b.c.0/24               2001:658:22a:cafe::/64</span>
+<span class="sd">        -lastIP           a.b.c.0-a.b.c.255        2001:658:22a:cafe::-2001:658:22a:cafe:ffff:ffff:ffff:ffff</span>
+<span class="sd">        /decimal netmask  a.b.c.d/255.255.255.0    not supported for IPv6</span>
+
+<span class="sd">        If no size specification is given a size of 1 address (/32 for</span>
+<span class="sd">        IPv4 and /128 for IPv6) is assumed.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.0/8&#39;)</span>
+<span class="sd">        127.0.0.0/8</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.0/255.0.0.0&#39;)</span>
+<span class="sd">        127.0.0.0/8</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.0-127.255.255.255&#39;)</span>
+<span class="sd">        127.0.0.0/8</span>
+
+<span class="sd">        See module documentation for more examples.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">NoPrefixForSingleIp</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Print no Prefixlen for /32 and /128</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">=</span> <span class="kc">None</span>     <span class="c1"># Do we want prefix printed by default? see _printPrefix()</span>
+
+        <span class="n">netbits</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">prefixlen</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+
+        <span class="c1"># handling of non string values in constructor</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">==</span> <span class="n">types</span><span class="o">.</span><span class="n">IntType</span> <span class="ow">or</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">==</span> <span class="n">types</span><span class="o">.</span><span class="n">LongType</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ipversion</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">&lt;</span> <span class="mh">0x100000000</span><span class="n">L</span><span class="p">:</span>
+                    <span class="n">ipversion</span> <span class="o">=</span> <span class="mi">4</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">ipversion</span> <span class="o">=</span> <span class="mi">6</span>
+            <span class="k">if</span> <span class="n">ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+                <span class="n">prefixlen</span> <span class="o">=</span> <span class="mi">32</span>
+            <span class="k">elif</span> <span class="n">ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+                <span class="n">prefixlen</span> <span class="o">=</span> <span class="mi">128</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">=</span> <span class="n">ipversion</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">=</span> <span class="n">prefixlen</span>
+        <span class="c1"># handle IP instance as an parameter</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">IPint</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">_ipversion</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">_prefixlen</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">ip</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># TODO: refactor me!</span>
+            <span class="c1"># splitting of a string into IP and prefixlen et. al.</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="c1"># a.b.c.0-a.b.c.255 specification ?</span>
+                <span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">last</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span>
+                <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">,</span> <span class="n">parsedVersion</span><span class="p">)</span> <span class="o">=</span> <span class="n">parseAddress</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">parsedVersion</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;first-last notation only allowed for IPv4&quot;</span>
+                <span class="p">(</span><span class="n">last</span><span class="p">,</span> <span class="n">lastversion</span><span class="p">)</span> <span class="o">=</span> <span class="n">parseAddress</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">lastversion</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;last address should be IPv4, too&quot;</span>
+                <span class="k">if</span> <span class="n">last</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;last address should be larger than first&quot;</span>
+                <span class="n">size</span> <span class="o">=</span> <span class="n">last</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span>
+                <span class="n">netbits</span> <span class="o">=</span> <span class="n">_count1Bits</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+                <span class="c1"># if no prefix is given use defaults</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">ip</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                    <span class="n">prefixlen</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+                <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only one &#39;/&#39; allowed in IP Address&quot;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">prefixlen</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span>
+                    <span class="k">if</span> <span class="n">prefixlen</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                        <span class="c1"># check if the user might have used a netmask like</span>
+                        <span class="c1"># a.b.c.d/255.255.255.0</span>
+                        <span class="p">(</span><span class="n">netmask</span><span class="p">,</span> <span class="n">vers</span><span class="p">)</span> <span class="o">=</span> <span class="n">parseAddress</span><span class="p">(</span><span class="n">prefixlen</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">vers</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">:</span>
+                            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;netmask must be IPv4&quot;</span>
+                        <span class="n">prefixlen</span> <span class="o">=</span> <span class="n">_netmaskToPrefixlen</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only one &#39;-&#39; allowed in IP Address&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;can&#39;t parse&quot;</span>
+
+            <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">,</span> <span class="n">parsedVersion</span><span class="p">)</span> <span class="o">=</span> <span class="n">parseAddress</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ipversion</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">ipversion</span> <span class="o">=</span> <span class="n">parsedVersion</span>
+            <span class="k">if</span> <span class="n">prefixlen</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+                    <span class="n">prefixlen</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">-</span> <span class="n">netbits</span>
+                <span class="k">elif</span> <span class="n">ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+                    <span class="n">prefixlen</span> <span class="o">=</span> <span class="mi">128</span> <span class="o">-</span> <span class="n">netbits</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">=</span> <span class="n">ipversion</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">prefixlen</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">_checkNetaddrWorksWithPrefixlen</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> has invalid prefix length (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="IPint.int"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.int">[docs]</a>    <span class="k">def</span> <span class="nf">int</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the first / base / network addess as an (long) integer.</span>
+
+<span class="sd">        The same as IP[0].</span>
+
+<span class="sd">        &gt;&gt;&gt; &quot;%X&quot; % IP(&#39;10.0.0.0/8&#39;).int()</span>
+<span class="sd">        &#39;A000000&#39;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span></div>
+
+<div class="viewcode-block" id="IPint.version"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.version">[docs]</a>    <span class="k">def</span> <span class="nf">version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the IP version of this Object.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;).version()</span>
+<span class="sd">        4</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;::1&#39;).version()</span>
+<span class="sd">        6</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span></div>
+
+<div class="viewcode-block" id="IPint.prefixlen"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.prefixlen">[docs]</a>    <span class="k">def</span> <span class="nf">prefixlen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns Network Prefixlen.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;).prefixlen()</span>
+<span class="sd">        8</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span></div>
+
+<div class="viewcode-block" id="IPint.net"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.net">[docs]</a>    <span class="k">def</span> <span class="nf">net</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the base (first) address of a network as an (long) integer.&quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">int</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="IPint.broadcast"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.broadcast">[docs]</a>    <span class="k">def</span> <span class="nf">broadcast</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the broadcast (last) address of a network as an (long) integer.</span>
+
+<span class="sd">        The same as IP[-1].&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">int</span><span class="p">()</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span></div>
+
+<div class="viewcode-block" id="IPint._printPrefix"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint._printPrefix">[docs]</a>    <span class="k">def</span> <span class="nf">_printPrefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">want</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Prints Prefixlen/Netmask.</span>
+
+<span class="sd">        Not really. In fact it is our universal Netmask/Prefixlen printer.</span>
+<span class="sd">        This is considered an internel function.</span>
+
+<span class="sd">        want == 0 / None        don&#39;t return anything    1.2.3.0</span>
+<span class="sd">        want == 1               /prefix                  1.2.3.0/24</span>
+<span class="sd">        want == 2               /netmask                 1.2.3.0/255.255.255.0</span>
+<span class="sd">        want == 3               -lastip                  1.2.3.0-1.2.3.255</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">==</span> <span class="mi">32</span><span class="p">)</span> <span class="ow">or</span> \
+           <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">==</span> <span class="mi">128</span><span class="p">):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">NoPrefixForSingleIp</span><span class="p">:</span>
+                <span class="n">want</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">want</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">want</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span>
+            <span class="k">if</span> <span class="n">want</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">want</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">want</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">want</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="c1"># this should work wit IP and IPint</span>
+                <span class="n">netmask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">netmask</span><span class="p">()</span>
+                <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span> <span class="o">!=</span> <span class="n">types</span><span class="o">.</span><span class="n">IntType</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span> <span class="o">!=</span> <span class="n">types</span><span class="o">.</span><span class="n">LongType</span><span class="p">:</span>
+                    <span class="n">netmask</span> <span class="o">=</span> <span class="n">netmask</span><span class="o">.</span><span class="n">int</span><span class="p">()</span>
+                <span class="k">return</span> <span class="s2">&quot;/</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">intToIp</span><span class="p">(</span><span class="n">netmask</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span><span class="p">))</span>
+            <span class="k">elif</span> <span class="n">want</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s2">&quot;-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">intToIp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># default</span>
+                <span class="k">return</span> <span class="s2">&quot;/</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;&#39;</span></div>
+
+        <span class="c1"># We have different Favours to convert to:</span>
+        <span class="c1"># strFullsize   127.0.0.1    2001:0658:022a:cafe:0200:c0ff:fe8d:08fa</span>
+        <span class="c1"># strNormal     127.0.0.1    2001:658:22a:cafe:200:c0ff:fe8d:08fa</span>
+        <span class="c1"># strCompressed 127.0.0.1    2001:658:22a:cafe::1</span>
+        <span class="c1"># strHex        0x7F000001L  0x20010658022ACAFE0200C0FFFE8D08FA</span>
+        <span class="c1"># strDec        2130706433   42540616829182469433547974687817795834</span>
+
+<div class="viewcode-block" id="IPint.strBin"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strBin">[docs]</a>    <span class="k">def</span> <span class="nf">strBin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a string representation as a binary value.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.1&#39;).strBin()</span>
+<span class="sd">        01111111000000000000000000000001</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">bits</span> <span class="o">=</span> <span class="mi">32</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">bits</span> <span class="o">=</span> <span class="mi">128</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">wantprefixlen</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">_intToBin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">)</span>
+        <span class="k">return</span>  <span class="s1">&#39;0&#39;</span> <span class="o">*</span> <span class="p">(</span><span class="n">bits</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">ret</span><span class="p">))</span> <span class="o">+</span> <span class="n">ret</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPint.strCompressed"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strCompressed">[docs]</a>    <span class="k">def</span> <span class="nf">strCompressed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a string representation in compressed format using &#39;::&#39; Notation.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.1&#39;).strCompressed()</span>
+<span class="sd">        &#39;127.0.0.1&#39;</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;2001:0658:022a:cafe:0200::1&#39;).strCompressed()</span>
+<span class="sd">        &#39;2001:658:22a:cafe:200::1&#39;</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;ffff:ffff:ffff:ffff:ffff:f:f:fffc/127&#39;).strCompressed()</span>
+<span class="sd">        &#39;ffff:ffff:ffff:ffff:ffff:f:f:fffc/127&#39;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">wantprefixlen</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># find the longest sequence of &#39;0&#39;</span>
+            <span class="n">hextets</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)]</span>
+            <span class="c1"># every element of followingzeros will contain the number of zeros</span>
+            <span class="c1"># following the corrospondending element of hextetes</span>
+            <span class="n">followingzeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">8</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)):</span>
+                <span class="n">followingzeros</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">_countFollowingZeros</span><span class="p">(</span><span class="n">hextets</span><span class="p">[</span><span class="n">i</span><span class="p">:])</span>
+            <span class="c1"># compressionpos is the position where we can start removing zeros</span>
+            <span class="n">compressionpos</span> <span class="o">=</span> <span class="n">followingzeros</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">followingzeros</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nb">max</span><span class="p">(</span><span class="n">followingzeros</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="c1"># genererate string with the longest number of zeros cut out</span>
+                <span class="c1"># now we need hextets as strings</span>
+                <span class="n">hextets</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">strNormal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)]</span>
+                <span class="k">while</span> <span class="n">compressionpos</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)</span> <span class="ow">and</span> <span class="n">hextets</span><span class="p">[</span><span class="n">compressionpos</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
+                    <span class="k">del</span><span class="p">(</span><span class="n">hextets</span><span class="p">[</span><span class="n">compressionpos</span><span class="p">])</span>
+                <span class="n">hextets</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">compressionpos</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">compressionpos</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">):</span>
+                    <span class="n">hextets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">compressionpos</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">hextets</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">hextets</span>
+                <span class="k">return</span> <span class="s1">&#39;:&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hextets</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strNormal</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPint.strNormal"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strNormal">[docs]</a>    <span class="k">def</span> <span class="nf">strNormal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a string representation in the usual format.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.1&#39;).strNormal()</span>
+<span class="sd">        127.0.0.1</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;2001:0658:022a:cafe:0200::1&#39;).strNormal()</span>
+<span class="sd">        2001:658:22a:cafe:200:0:0:1</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">wantprefixlen</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="s1">&#39;:&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">hex</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)]])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+
+
+
+        <span class="k">return</span> <span class="n">ret</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPint.strFullsize"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strFullsize">[docs]</a>    <span class="k">def</span> <span class="nf">strFullsize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a string representation in the non mangled format.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.1&#39;).strFullsize()</span>
+<span class="sd">        127.0.0.1</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;2001:0658:022a:cafe:0200::1&#39;).strFullsize()</span>
+<span class="sd">        2001:0658:022a:cafe:0200:0000:0000:0001</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">wantprefixlen</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">intToIp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPint.strHex"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strHex">[docs]</a>    <span class="k">def</span> <span class="nf">strHex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a string representation in hex format in lower case.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.1&#39;).strHex()</span>
+<span class="sd">        &#39;0x7f000001&#39;</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;2001:0658:022a:cafe:0200::1&#39;).strHex()</span>
+<span class="sd">        &#39;0x20010658022acafe0200000000000001&#39;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">wantprefixlen</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">x</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;L&#39;</span><span class="p">:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPint.strDec"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strDec">[docs]</a>    <span class="k">def</span> <span class="nf">strDec</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a string representation in decimal format.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.1&#39;).strDec()</span>
+<span class="sd">        2130706433</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;2001:0658:022a:cafe:0200::1&#39;).strDec()</span>
+<span class="sd">        42540616829182469433547762482097946625</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">WantPrefixLen</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">wantprefixlen</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">wantprefixlen</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">x</span> <span class="o">=</span>  <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;L&#39;</span><span class="p">:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_printPrefix</span><span class="p">(</span><span class="n">wantprefixlen</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPint.iptype"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.iptype">[docs]</a>    <span class="k">def</span> <span class="nf">iptype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a description of the IP type (&#39;PRIVATE&#39;, &#39;RESERVERD&#39;, etc).</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;127.0.0.1&#39;).iptype()</span>
+<span class="sd">        PRIVATE</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;192.168.1.1&#39;).iptype()</span>
+<span class="sd">        PRIVATE</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;195.185.1.2&#39;).iptype()</span>
+<span class="sd">        PUBLIC</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;::1&#39;).iptype()</span>
+<span class="sd">        LOOPBACK</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;2001:0658:022a:cafe:0200::1&#39;).iptype()</span>
+<span class="sd">        ASSIGNABLE RIPE</span>
+
+<span class="sd">        The type information for IPv6 is out of sync with reality.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># this could be greatly improved</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">iprange</span> <span class="o">=</span> <span class="n">IPv4ranges</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">iprange</span> <span class="o">=</span> <span class="n">IPv6ranges</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+
+        <span class="n">bits</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">strBin</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">bits</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">iprange</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">bits</span><span class="p">[:</span><span class="n">i</span><span class="p">]):</span>
+                <span class="k">return</span> <span class="n">iprange</span><span class="p">[</span><span class="n">bits</span><span class="p">[:</span><span class="n">i</span><span class="p">]]</span>
+        <span class="k">return</span> <span class="s2">&quot;unknown&quot;</span></div>
+
+
+<div class="viewcode-block" id="IPint.netmask"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.netmask">[docs]</a>    <span class="k">def</span> <span class="nf">netmask</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return netmask as an integer.</span>
+
+<span class="sd">        &gt;&gt;&gt; &quot;%X&quot; % IP(&#39;195.185.0.0/16&#39;).netmask().int()</span>
+<span class="sd">        &#39;FFFF0000&#39;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># TODO: unify with prefixlenToNetmask?</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">locallen</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">locallen</span> <span class="o">=</span> <span class="mi">128</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+
+        <span class="k">return</span> <span class="p">((</span><span class="mi">2</span><span class="n">L</span> <span class="o">**</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">locallen</span></div>
+
+
+<div class="viewcode-block" id="IPint.strNetmask"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.strNetmask">[docs]</a>    <span class="k">def</span> <span class="nf">strNetmask</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return netmask as an string. Mostly useful for IPv6.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;195.185.0.0/16&#39;).strNetmask()</span>
+<span class="sd">        255.255.0.0</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;2001:0658:022a:cafe::0/64&#39;).strNetmask()</span>
+<span class="sd">        /64</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># TODO: unify with prefixlenToNetmask?</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">locallen</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+            <span class="k">return</span> <span class="n">intToIp</span><span class="p">(((</span><span class="mi">2</span><span class="n">L</span> <span class="o">**</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">locallen</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">locallen</span> <span class="o">=</span> <span class="mi">128</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+            <span class="k">return</span> <span class="s2">&quot;/</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span></div>
+
+<div class="viewcode-block" id="IPint.len"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.len">[docs]</a>    <span class="k">def</span> <span class="nf">len</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the length of an subnet.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;195.185.1.0/28&#39;).len()</span>
+<span class="sd">        16</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;195.185.1.0/24&#39;).len()</span>
+<span class="sd">        256</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">locallen</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">locallen</span> <span class="o">=</span> <span class="mi">128</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+
+        <span class="k">return</span> <span class="mi">2</span><span class="n">L</span> <span class="o">**</span> <span class="n">locallen</span></div>
+
+
+<div class="viewcode-block" id="IPint.__nonzero__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__nonzero__">[docs]</a>    <span class="k">def</span> <span class="nf">__nonzero__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;All IPy objects should evaluate to true in boolean context.</span>
+<span class="sd">        Ordinarily, they do, but if handling a default route expressed as</span>
+<span class="sd">        0.0.0.0/0, the __len__() of the object becomes 0, which is used</span>
+<span class="sd">        as the boolean value of the object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="mi">1</span></div>
+
+
+<div class="viewcode-block" id="IPint.__len__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__len__">[docs]</a>    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the length of an subnet.</span>
+
+<span class="sd">        Called to implement the built-in function len().</span>
+<span class="sd">        It breaks with IPv6 Networks. Anybody knows how to fix this.&quot;&quot;&quot;</span>
+
+        <span class="c1"># Python &lt; 2.2 has this silly restriction which breaks IPv6</span>
+        <span class="c1"># how about Python &gt;= 2.2 ... ouch - it presists!</span>
+
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="IPint.__getitem__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__getitem__">[docs]</a>    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called to implement evaluation of self[key].</span>
+
+<span class="sd">        &gt;&gt;&gt; ip=IP(&#39;127.0.0.0/30&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; for x in ip:</span>
+<span class="sd">        ...  print repr(x)</span>
+<span class="sd">        ...</span>
+<span class="sd">        IP(&#39;127.0.0.0&#39;)</span>
+<span class="sd">        IP(&#39;127.0.0.1&#39;)</span>
+<span class="sd">        IP(&#39;127.0.0.2&#39;)</span>
+<span class="sd">        IP(&#39;127.0.0.3&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; ip[2]</span>
+<span class="sd">        IP(&#39;127.0.0.2&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; ip[-1]</span>
+<span class="sd">        IP(&#39;127.0.0.3&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="n">types</span><span class="o">.</span><span class="n">IntType</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">!=</span> <span class="n">types</span><span class="o">.</span><span class="n">LongType</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">IndexError</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">-</span> <span class="nb">abs</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="n">long</span><span class="p">(</span><span class="n">key</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="IPint.__contains__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__contains__">[docs]</a>    <span class="k">def</span> <span class="nf">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called to implement membership test operators.</span>
+
+<span class="sd">        Should return true if item is in self, false otherwise. Item</span>
+<span class="sd">        can be other IP-objects, strings or ints.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;195.185.1.1&#39;).strHex()</span>
+<span class="sd">        &#39;0xc3b90101&#39;</span>
+<span class="sd">        &gt;&gt;&gt; 0xC3B90101L in IP(&#39;195.185.1.0/24&#39;)</span>
+<span class="sd">        1</span>
+<span class="sd">        &gt;&gt;&gt; &#39;127.0.0.1&#39; in IP(&#39;127.0.0.0/24&#39;)</span>
+<span class="sd">        1</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.0/24&#39;) in IP(&#39;127.0.0.0/25&#39;)</span>
+<span class="sd">        0</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">item</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">ip</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="ow">and</span> <span class="n">item</span><span class="o">.</span><span class="n">ip</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">-</span> <span class="n">item</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span></div>
+
+
+<div class="viewcode-block" id="IPint.overlaps"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.overlaps">[docs]</a>    <span class="k">def</span> <span class="nf">overlaps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Check if two IP address ranges overlap.</span>
+
+<span class="sd">        Returns 0 if the two ranged don&#39;t overlap, 1 if the given</span>
+<span class="sd">        range overlaps at the end and -1 if it does at the beginning.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;192.168.0.0/23&#39;).overlaps(&#39;192.168.1.0/24&#39;)</span>
+<span class="sd">        1</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;192.168.0.0/23&#39;).overlaps(&#39;192.168.1.255&#39;)</span>
+<span class="sd">        1</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;192.168.0.0/23&#39;).overlaps(&#39;192.168.2.0&#39;)</span>
+<span class="sd">        0</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;192.168.1.0/24&#39;).overlaps(&#39;192.168.0.0/23&#39;)</span>
+<span class="sd">        -1</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">item</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">ip</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="ow">and</span> <span class="n">item</span><span class="o">.</span><span class="n">ip</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">():</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">&gt;=</span> <span class="n">item</span><span class="o">.</span><span class="n">ip</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">&lt;</span> <span class="n">item</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">len</span><span class="p">():</span>
+            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span></div>
+
+
+<div class="viewcode-block" id="IPint.__str__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__str__">[docs]</a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Dispatch to the prefered String Representation.</span>
+
+<span class="sd">        Used to implement str(IP).&quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="IPint.__repr__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__repr__">[docs]</a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Print a representation of the Object.</span>
+
+<span class="sd">        Used to implement repr(IP). Returns a string which evaluates</span>
+<span class="sd">        to an identical Object (without the wnatprefixlen stuff - see</span>
+<span class="sd">        module docstring.</span>
+
+<span class="sd">        &gt;&gt;&gt; print repr(IP(&#39;10.0.0.0/24&#39;))</span>
+<span class="sd">        IP(&#39;10.0.0.0/24&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;IPint(&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">strCompressed</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span></div>
+
+
+<div class="viewcode-block" id="IPint.__cmp__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__cmp__">[docs]</a>    <span class="k">def</span> <span class="nf">__cmp__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called by comparison operations.</span>
+
+<span class="sd">        Should return a negative integer if self &lt; other, zero if self</span>
+<span class="sd">        == other, a positive integer if self &gt; other.</span>
+
+<span class="sd">        Networks with different prefixlen are considered non-equal.</span>
+<span class="sd">        Networks with the same prefixlen and differing addresses are</span>
+<span class="sd">        considered non equal but are compared by thair base address</span>
+<span class="sd">        integer value to aid sorting of IP objects.</span>
+
+<span class="sd">        The Version of Objects is not put into consideration.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;) &gt; IP(&#39;10.0.0.0&#39;)</span>
+<span class="sd">        1</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;) &lt; IP(&#39;10.0.0.0&#39;)</span>
+<span class="sd">        0</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;) &lt; IP(&#39;12.0.0.0/24&#39;)</span>
+<span class="sd">        1</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;) &gt; IP(&#39;12.0.0.0/24&#39;)</span>
+<span class="sd">        0</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Im not really sure if this is &quot;the right thing to do&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">&lt;</span> <span class="n">other</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">():</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">()</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">&gt;</span> <span class="n">other</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">():</span>
+
+            <span class="c1"># Fixed bySamuel Krempp &lt;krempp@crans.ens-cachan.fr&gt;:</span>
+
+            <span class="c1"># The bug is quite obvious really (as 99% bugs are once</span>
+            <span class="c1"># spotted, isn&#39;t it ? ;-) Because of precedence of</span>
+            <span class="c1"># multiplication by -1 over the substraction, prefixlen</span>
+            <span class="c1"># differences were causing the __cmp__ function to always</span>
+            <span class="c1"># return positive numbers, thus the function was failing</span>
+            <span class="c1"># the basic assumptions for a __cmp__ function.</span>
+
+            <span class="c1"># Namely we could have (a &gt; b AND b &gt; a), when the</span>
+            <span class="c1"># prefixlen of a and b are different.  (eg let</span>
+            <span class="c1"># a=IP(&quot;1.0.0.0/24&quot;); b=IP(&quot;2.0.0.0/16&quot;);) thus, anything</span>
+            <span class="c1"># could happen when launching a sort algorithm..</span>
+            <span class="c1"># everything&#39;s in order with the trivial, attached patch.</span>
+
+            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">-</span> <span class="n">other</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">())</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">&lt;</span> <span class="n">other</span><span class="o">.</span><span class="n">ip</span><span class="p">:</span>
+                <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">&gt;</span> <span class="n">other</span><span class="o">.</span><span class="n">ip</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mi">0</span></div>
+
+
+<div class="viewcode-block" id="IPint.__hash__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IPint.__hash__">[docs]</a>    <span class="k">def</span> <span class="nf">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called for the key object for dictionary operations, and by</span>
+<span class="sd">        the built-in function hash()  Should return a 32-bit integer</span>
+<span class="sd">        usable as a hash value for dictionary operations. The only</span>
+<span class="sd">        required property is that objects which compare equal have the</span>
+<span class="sd">        same hash value</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/24&#39;).__hash__()</span>
+<span class="sd">        -167772185</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">thehash</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">ip</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ip</span>
+        <span class="k">while</span> <span class="n">ip</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">thehash</span> <span class="o">=</span> <span class="n">thehash</span> <span class="o">^</span> <span class="p">(</span><span class="n">ip</span> <span class="o">&amp;</span> <span class="mh">0x7fffffff</span><span class="p">)</span>
+            <span class="n">ip</span> <span class="o">=</span> <span class="n">ip</span> <span class="o">&gt;&gt;</span> <span class="mi">32</span>
+        <span class="n">thehash</span> <span class="o">=</span> <span class="n">thehash</span> <span class="o">^</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">thehash</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="IP"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP">[docs]</a><span class="k">class</span> <span class="nc">IP</span><span class="p">(</span><span class="n">IPint</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Class for handling IP Addresses and Networks.&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="IP.net"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.net">[docs]</a>    <span class="k">def</span> <span class="nf">net</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the base (first) address of a network as an IP object.</span>
+
+<span class="sd">        The same as IP[0].</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;).net()</span>
+<span class="sd">        IP(&#39;10.0.0.0&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">IP</span><span class="p">(</span><span class="n">IPint</span><span class="o">.</span><span class="n">net</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="IP.broadcast"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.broadcast">[docs]</a>    <span class="k">def</span> <span class="nf">broadcast</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the broadcast (last) address of a network as an IP object.</span>
+
+<span class="sd">        The same as IP[-1].</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;).broadcast()</span>
+<span class="sd">        IP(&#39;10.255.255.255&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">IP</span><span class="p">(</span><span class="n">IPint</span><span class="o">.</span><span class="n">broadcast</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="IP.netmask"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.netmask">[docs]</a>    <span class="k">def</span> <span class="nf">netmask</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return netmask as an IP object.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;).netmask()</span>
+<span class="sd">        IP(&#39;255.0.0.0&#39;)</span>
+<span class="sd">         &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">IP</span><span class="p">(</span><span class="n">IPint</span><span class="o">.</span><span class="n">netmask</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="IP.reverseNames"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.reverseNames">[docs]</a>    <span class="k">def</span> <span class="nf">reverseNames</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a list with values forming the reverse lookup.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;213.221.113.87/32&#39;).reverseNames()</span>
+<span class="sd">        [&#39;87.113.221.213.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;213.221.112.224/30&#39;).reverseNames()</span>
+<span class="sd">        [&#39;224.112.221.213.in-addr.arpa.&#39;, &#39;225.112.221.213.in-addr.arpa.&#39;, &#39;226.112.221.213.in-addr.arpa.&#39;, &#39;227.112.221.213.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.0/24&#39;).reverseNames()</span>
+<span class="sd">        [&#39;0.0.127.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.0/23&#39;).reverseNames()</span>
+<span class="sd">        [&#39;0.0.127.in-addr.arpa.&#39;, &#39;1.0.127.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.0/16&#39;).reverseNames()</span>
+<span class="sd">        [&#39;0.127.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;127.0.0.0/15&#39;).reverseNames()</span>
+<span class="sd">        [&#39;0.127.in-addr.arpa.&#39;, &#39;1.127.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;128.0.0.0/8&#39;).reverseNames()</span>
+<span class="sd">        [&#39;128.in-addr.arpa.&#39;]</span>
+<span class="sd">        &gt;&gt;&gt; IP(&#39;128.0.0.0/7&#39;).reverseNames()</span>
+<span class="sd">        [&#39;128.in-addr.arpa.&#39;, &#39;129.in-addr.arpa.&#39;]</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">ret</span> <span class="o">=</span><span class="p">[]</span>
+            <span class="c1"># TODO: Refactor. Add support for IPint objects</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">8</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
+                    <span class="n">ret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reverseName</span><span class="p">())</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">16</span><span class="n">L</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">(),</span> <span class="mi">2</span><span class="o">**</span><span class="mi">8</span><span class="p">):</span>
+                    <span class="n">ret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reverseName</span><span class="p">()[</span><span class="mi">2</span><span class="p">:])</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">24</span><span class="n">L</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">(),</span> <span class="mi">2</span><span class="o">**</span><span class="mi">16</span><span class="p">):</span>
+                    <span class="n">ret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reverseName</span><span class="p">()[</span><span class="mi">4</span><span class="p">:])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">(),</span> <span class="mi">2</span><span class="o">**</span><span class="mi">24</span><span class="p">):</span>
+                    <span class="n">ret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reverseName</span><span class="p">()[</span><span class="mi">6</span><span class="p">:])</span>
+            <span class="k">return</span> <span class="n">ret</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">,</span> <span class="s2">&quot;can&#39;t create IPv6 reverse names at sub nibble level&quot;</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="n">first_nibble_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">32</span> <span class="o">-</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">/</span> <span class="mi">4</span><span class="p">))</span> <span class="o">*</span> <span class="mi">2</span>
+            <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.ip6.int.&quot;</span> <span class="o">%</span> <span class="n">s</span><span class="p">[</span><span class="n">first_nibble_index</span><span class="p">:]]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="IP.reverseName"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.reverseName">[docs]</a>    <span class="k">def</span> <span class="nf">reverseName</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the value for reverse lookup/PTR records as RfC 2317 look alike.</span>
+
+<span class="sd">        RfC 2317 is an ugly hack which only works for sub-/24 e.g. not</span>
+<span class="sd">        for /23. Do not use it. Better set up a Zone for every</span>
+<span class="sd">        address. See reverseName for a way to arcive that.</span>
+
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;195.185.1.1&#39;).reverseName()</span>
+<span class="sd">        1.1.185.195.in-addr.arpa.</span>
+<span class="sd">        &gt;&gt;&gt; print IP(&#39;195.185.1.0/28&#39;).reverseName()</span>
+<span class="sd">        0-15.1.185.195.in-addr.arpa.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">strFullsize</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+            <span class="n">first_byte_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">4</span> <span class="o">-</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">/</span> <span class="mi">8</span><span class="p">))</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">%</span> <span class="mi">8</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">nibblepart</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="o">-</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">/</span> <span class="mi">8</span><span class="p">)],</span> <span class="n">intToIp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                <span class="k">if</span> <span class="n">nibblepart</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                    <span class="n">nibblepart</span> <span class="o">=</span> <span class="n">nibblepart</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">nibblepart</span> <span class="o">+=</span> <span class="s1">&#39;.&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nibblepart</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+            <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">first_byte_index</span><span class="p">:])</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">.in-addr.arpa.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">nibblepart</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ipversion</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">nibblepart</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">-</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span><span class="p">:],</span> <span class="nb">hex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ip</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+                <span class="k">if</span> <span class="n">nibblepart</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                    <span class="n">nibblepart</span> <span class="o">=</span> <span class="n">nibblepart</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">nibblepart</span> <span class="o">+=</span> <span class="s1">&#39;.&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nibblepart</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="n">first_nibble_index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">32</span> <span class="o">-</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">/</span> <span class="mi">4</span><span class="p">))</span> <span class="o">*</span> <span class="mi">2</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">.ip6.int.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">nibblepart</span><span class="p">,</span> <span class="n">s</span><span class="p">[</span><span class="n">first_nibble_index</span><span class="p">:])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span></div>
+
+<div class="viewcode-block" id="IP.__getitem__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.__getitem__">[docs]</a>    <span class="k">def</span> <span class="nf">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called to implement evaluation of self[key].</span>
+
+<span class="sd">        &gt;&gt;&gt; ip=IP(&#39;127.0.0.0/30&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; for x in ip:</span>
+<span class="sd">        ...  print str(x)</span>
+<span class="sd">        ...</span>
+<span class="sd">        127.0.0.0</span>
+<span class="sd">        127.0.0.1</span>
+<span class="sd">        127.0.0.2</span>
+<span class="sd">        127.0.0.3</span>
+<span class="sd">        &gt;&gt;&gt; print str(ip[2])</span>
+<span class="sd">        127.0.0.2</span>
+<span class="sd">        &gt;&gt;&gt; print str(ip[-1])</span>
+<span class="sd">        127.0.0.3</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">IP</span><span class="p">(</span><span class="n">IPint</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="IP.__repr__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.__repr__">[docs]</a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Print a representation of the Object.</span>
+
+<span class="sd">        &gt;&gt;&gt; IP(&#39;10.0.0.0/8&#39;)</span>
+<span class="sd">        IP(&#39;10.0.0.0/8&#39;)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="s2">&quot;IP(&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">strCompressed</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span></div>
+
+<div class="viewcode-block" id="IP.__add__"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.IP.__add__">[docs]</a>    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Emulate numeric objects through network aggregation&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">()</span> <span class="o">!=</span> <span class="n">other</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Only networks with the same prefixlen can be added.&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">prefixlen</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Networks with a prefixlen longer than /1 can&#39;t be added.&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">version</span><span class="p">()</span> <span class="o">!=</span> <span class="n">other</span><span class="o">.</span><span class="n">version</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Only networks with the same IP version can be added.&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span> <span class="o">&gt;</span> <span class="n">other</span><span class="p">:</span>
+            <span class="c1"># fixed by Skinny Puppy &lt;skin_pup-IPy@happypoo.com&gt;</span>
+            <span class="k">return</span> <span class="n">other</span><span class="o">.</span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="n">IP</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">int</span><span class="p">())</span>
+            <span class="n">ret</span><span class="o">.</span><span class="n">_prefixlen</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">prefixlen</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="n">ret</span></div></div>
+
+<div class="viewcode-block" id="parseAddress"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.parseAddress">[docs]</a><span class="k">def</span> <span class="nf">parseAddress</span><span class="p">(</span><span class="n">ipstr</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse a string and return the corrospondending IPaddress and the a guess of the IP version.</span>
+
+<span class="sd">    Following Forms ar recorgnized:</span>
+<span class="sd">    0x0123456789abcdef           # IPv4 if &lt;= 0xffffffff else IPv6</span>
+<span class="sd">    123.123.123.123              # IPv4</span>
+<span class="sd">    123.123                      # 0-padded IPv4</span>
+<span class="sd">    1080:0000:0000:0000:0008:0800:200C:417A</span>
+<span class="sd">    1080:0:0:0:8:800:200C:417A</span>
+<span class="sd">    1080:0::8:800:200C:417A</span>
+<span class="sd">    ::1</span>
+<span class="sd">    ::</span>
+<span class="sd">    0:0:0:0:0:FFFF:129.144.52.38</span>
+<span class="sd">    ::13.1.68.3</span>
+<span class="sd">    ::FFFF:129.144.52.38</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># TODO: refactor me!</span>
+    <span class="k">if</span> <span class="n">ipstr</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;0x&#39;</span><span class="p">):</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">ipstr</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span> <span class="mi">16</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ret</span> <span class="o">&gt;</span> <span class="mh">0xffffffffffffffffffffffffffffffff</span><span class="n">L</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2">: IP Address can&#39;t be bigger than 2^128&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ret</span> <span class="o">&lt;</span> <span class="mh">0x100000000</span><span class="n">L</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ipstr</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># assume IPv6</span>
+        <span class="k">if</span> <span class="n">ipstr</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;:::&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2">: IPv6 Address can&#39;t contain &#39;:::&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="n">hextets</span> <span class="o">=</span> <span class="n">ipstr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ipstr</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="c1"># this might be a mixed address like &#39;0:0:0:0:0:0:13.1.68.3&#39;</span>
+            <span class="p">(</span><span class="n">v4</span><span class="p">,</span> <span class="n">foo</span><span class="p">)</span> <span class="o">=</span> <span class="n">parseAddress</span><span class="p">(</span><span class="n">hextets</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="k">assert</span> <span class="n">foo</span> <span class="o">==</span> <span class="mi">4</span>
+            <span class="k">del</span><span class="p">(</span><span class="n">hextets</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">hextets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">v4</span> <span class="o">&gt;&gt;</span> <span class="mi">16</span><span class="p">)[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">hextets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">v4</span> <span class="o">&amp;</span> <span class="mh">0xffff</span><span class="p">)[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2">: IPv6 Address with more than 8 hexletts&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">hextets</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2"> IPv6 Address with less than 8 hexletts and without &#39;::&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+            <span class="c1"># catch :: at the beginning or end</span>
+            <span class="k">if</span> <span class="n">hextets</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">hextets</span><span class="p">[</span><span class="n">hextets</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+                <span class="n">hextets</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="c1"># catch &#39;::&#39;</span>
+            <span class="k">if</span> <span class="n">hextets</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">hextets</span><span class="p">[</span><span class="n">hextets</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+                <span class="n">hextets</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">foo</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">hextets</span><span class="p">)):</span>
+                <span class="n">hextets</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">hextets</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span>
+            <span class="n">hextets</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s1">&#39;&#39;</span> <span class="ow">in</span> <span class="n">hextets</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2"> IPv6 Address may contain &#39;::&#39; only once&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="k">if</span> <span class="s1">&#39;&#39;</span> <span class="ow">in</span> <span class="n">hextets</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2"> IPv6 Address may contain &#39;::&#39; only if it has less than 8 hextets&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">hextets</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="p">((</span><span class="mi">4</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">*</span> <span class="s1">&#39;0&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mh">0xffff</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2">: single hextet must be 0 &lt;= hextet &lt;= 0xffff which isn&#39;t true for </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+            <span class="n">num</span> <span class="o">+=</span> <span class="n">x</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">long</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="mi">6</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">ipstr</span><span class="p">)</span> <span class="o">==</span> <span class="mi">32</span><span class="p">:</span>
+        <span class="c1"># assume IPv6 in pure hexadecimal notation</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">long</span><span class="p">(</span><span class="n">ipstr</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="mi">6</span><span class="p">)</span>
+
+    <span class="k">elif</span>  <span class="n">ipstr</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ipstr</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">ipstr</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">256</span><span class="p">):</span>
+        <span class="c1"># assume IPv4  (&#39;127&#39; gets interpreted as &#39;127.0.0.0&#39;)</span>
+        <span class="nb">bytes</span> <span class="o">=</span> <span class="n">ipstr</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">bytes</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;IPv4 Address with more than 4 bytes&quot;</span>
+        <span class="nb">bytes</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="mi">4</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="nb">bytes</span><span class="p">))</span>
+        <span class="nb">bytes</span> <span class="o">=</span> <span class="p">[</span><span class="n">long</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">bytes</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">bytes</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%r</span><span class="s2">: single byte must be 0 &lt;= byte &lt; 256&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">((</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">24</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="nb">bytes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">+</span> <span class="nb">bytes</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># we try to interprete it as a decimal digit -</span>
+        <span class="c1"># this ony works for numbers &gt; 255 ... others</span>
+        <span class="c1"># will be interpreted as IPv4 first byte</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">ipstr</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ret</span> <span class="o">&gt;</span> <span class="mh">0xffffffffffffffffffffffffffffffff</span><span class="n">L</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;IP Address cant be bigger than 2^128&quot;</span>
+        <span class="k">if</span> <span class="n">ret</span> <span class="o">&lt;=</span> <span class="mh">0xffffffff</span><span class="n">L</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="intToIp"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy.intToIp">[docs]</a><span class="k">def</span> <span class="nf">intToIp</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Transform an integer string into an IP address.&quot;&quot;&quot;</span>
+
+    <span class="c1"># just to be sure and hoping for Python 2.22</span>
+    <span class="n">ip</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">ip</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;IPs can&#39;t be negative: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+
+    <span class="n">ret</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">if</span> <span class="n">version</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ip</span> <span class="o">&gt;</span> <span class="mh">0xffffffff</span><span class="n">L</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;IPv4 Addresses can&#39;t be larger than 0xffffffff: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">ip</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">ip</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="n">L</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="n">ret</span>
+            <span class="n">ip</span> <span class="o">=</span> <span class="n">ip</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">;</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">version</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ip</span> <span class="o">&gt;</span> <span class="mh">0xffffffffffffffffffffffffffffffff</span><span class="n">L</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;IPv6 Addresses can&#39;t be larger than 0xffffffffffffffffffffffffffffffff: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">ip</span><span class="p">))</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">*</span> <span class="mi">32</span> <span class="o">+</span> <span class="nb">hex</span><span class="p">(</span><span class="n">ip</span><span class="p">)[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">33</span><span class="p">):</span>
+            <span class="n">ret</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">ret</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">ret</span> <span class="o">=</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="n">ret</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span>
+
+    <span class="k">return</span> <span class="n">ret</span><span class="p">;</span></div>
+
+<div class="viewcode-block" id="_ipVersionToLen"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._ipVersionToLen">[docs]</a><span class="k">def</span> <span class="nf">_ipVersionToLen</span><span class="p">(</span><span class="n">version</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return number of bits in address for a certain IP version.</span>
+
+<span class="sd">    &gt;&gt;&gt; _ipVersionToLen(4)</span>
+<span class="sd">    32</span>
+<span class="sd">    &gt;&gt;&gt; _ipVersionToLen(6)</span>
+<span class="sd">    128</span>
+<span class="sd">    &gt;&gt;&gt; _ipVersionToLen(5)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">      File &quot;&lt;stdin&gt;&quot;, line 1, in ?</span>
+<span class="sd">      File &quot;IPy.py&quot;, line 1076, in _ipVersionToLen</span>
+<span class="sd">        raise ValueError, &quot;only IPv4 and IPv6 supported&quot;</span>
+<span class="sd">    ValueError: only IPv4 and IPv6 supported</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">version</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">32</span>
+    <span class="k">elif</span> <span class="n">version</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">128</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;only IPv4 and IPv6 supported&quot;</span></div>
+
+
+<div class="viewcode-block" id="_countFollowingZeros"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._countFollowingZeros">[docs]</a><span class="k">def</span> <span class="nf">_countFollowingZeros</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return Nr. of elements containing 0 at the beginning th the list.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">_countFollowingZeros</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span></div>
+
+
+<span class="n">_BitTable</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;0&#39;</span><span class="p">:</span> <span class="s1">&#39;0000&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span> <span class="s1">&#39;0001&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">:</span> <span class="s1">&#39;0010&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">:</span> <span class="s1">&#39;0011&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="s1">&#39;0100&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">:</span> <span class="s1">&#39;0101&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">:</span> <span class="s1">&#39;0110&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">:</span> <span class="s1">&#39;0111&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;8&#39;</span><span class="p">:</span> <span class="s1">&#39;1000&#39;</span><span class="p">,</span> <span class="s1">&#39;9&#39;</span><span class="p">:</span> <span class="s1">&#39;1001&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;1010&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="s1">&#39;1011&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="s1">&#39;1100&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="s1">&#39;1101&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="s1">&#39;1110&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span> <span class="s1">&#39;1111&#39;</span><span class="p">}</span>
+
+<div class="viewcode-block" id="_intToBin"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._intToBin">[docs]</a><span class="k">def</span> <span class="nf">_intToBin</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return the binary representation of an integer as string.&quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Only positive Values allowed&quot;</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:]:</span>
+        <span class="k">if</span> <span class="n">__debug__</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">_BitTable</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">,</span> <span class="s2">&quot;hex() returned strange result&quot;</span>
+        <span class="n">ret</span> <span class="o">+=</span> <span class="n">_BitTable</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+    <span class="c1"># remove leading zeros</span>
+    <span class="k">while</span> <span class="n">ret</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+    <span class="k">return</span> <span class="n">ret</span></div>
+
+<div class="viewcode-block" id="_count1Bits"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._count1Bits">[docs]</a><span class="k">def</span> <span class="nf">_count1Bits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Find the highest bit set to 1 in an integer.&quot;&quot;&quot;</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
+        <span class="n">ret</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">ret</span></div>
+
+<div class="viewcode-block" id="_count0Bits"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._count0Bits">[docs]</a><span class="k">def</span> <span class="nf">_count0Bits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Find the highest bit set to 0 in an integer.&quot;&quot;&quot;</span>
+
+    <span class="c1"># this could be so easy if _count1Bits(~long(num)) would work as excepted</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Only positive Numbers please: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">num</span> <span class="o">&amp;</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
+        <span class="n">ret</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">ret</span></div>
+
+
+<div class="viewcode-block" id="_checkPrefix"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._checkPrefix">[docs]</a><span class="k">def</span> <span class="nf">_checkPrefix</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">prefixlen</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Check the validity of a prefix</span>
+
+<span class="sd">    Checks if the variant part of a prefix only has 0s, and the length is</span>
+<span class="sd">    correct.</span>
+
+<span class="sd">    &gt;&gt;&gt; _checkPrefix(0x7f000000L, 24, 4)</span>
+<span class="sd">    1</span>
+<span class="sd">    &gt;&gt;&gt; _checkPrefix(0x7f000001L, 24, 4)</span>
+<span class="sd">    0</span>
+<span class="sd">    &gt;&gt;&gt; repr(_checkPrefix(0x7f000001L, -1, 4))</span>
+<span class="sd">    &#39;None&#39;</span>
+<span class="sd">    &gt;&gt;&gt; repr(_checkPrefix(0x7f000001L, 33, 4))</span>
+<span class="sd">    &#39;None&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># TODO: unify this v4/v6/invalid code in a function</span>
+    <span class="n">bits</span> <span class="o">=</span> <span class="n">_ipVersionToLen</span><span class="p">(</span><span class="n">version</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">prefixlen</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">prefixlen</span> <span class="o">&gt;</span> <span class="n">bits</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="n">ip</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">zbits</span> <span class="o">=</span> <span class="n">bits</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">zbits</span> <span class="o">=</span> <span class="n">_count0Bits</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">zbits</span> <span class="o">&lt;</span>  <span class="n">bits</span> <span class="o">-</span> <span class="n">prefixlen</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span></div>
+
+
+<div class="viewcode-block" id="_checkNetmask"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._checkNetmask">[docs]</a><span class="k">def</span> <span class="nf">_checkNetmask</span><span class="p">(</span><span class="n">netmask</span><span class="p">,</span> <span class="n">masklen</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Checks if a netmask is expressable as e prefixlen.&quot;&quot;&quot;</span>
+
+    <span class="n">num</span> <span class="o">=</span> <span class="n">long</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span>
+    <span class="n">bits</span> <span class="o">=</span> <span class="n">masklen</span>
+
+    <span class="c1"># remove zero bits at the end</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">num</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">bits</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
+        <span class="n">bits</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">bits</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="c1"># now check if the rest consists only of ones</span>
+    <span class="k">while</span> <span class="n">bits</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Netmask </span><span class="si">%s</span><span class="s2"> can&#39;t be expressed as an prefix.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">netmask</span><span class="p">))</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>
+        <span class="n">bits</span> <span class="o">-=</span> <span class="mi">1</span></div>
+
+
+<div class="viewcode-block" id="_checkNetaddrWorksWithPrefixlen"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._checkNetaddrWorksWithPrefixlen">[docs]</a><span class="k">def</span> <span class="nf">_checkNetaddrWorksWithPrefixlen</span><span class="p">(</span><span class="n">net</span><span class="p">,</span> <span class="n">prefixlen</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Check if a base addess of e network is compatible with a prefixlen&quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">check_addr_prefixlen</span>
+    <span class="k">if</span> <span class="n">check_addr_prefixlen</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">net</span> <span class="o">&amp;</span> <span class="n">_prefixlenToNetmask</span><span class="p">(</span><span class="n">prefixlen</span><span class="p">,</span> <span class="n">version</span><span class="p">)</span> <span class="o">==</span> <span class="n">net</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">prefixlen</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">_ipVersionToLen</span><span class="p">(</span><span class="n">version</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">prefixlen</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="mi">1</span></div>
+
+
+<div class="viewcode-block" id="_netmaskToPrefixlen"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._netmaskToPrefixlen">[docs]</a><span class="k">def</span> <span class="nf">_netmaskToPrefixlen</span><span class="p">(</span><span class="n">netmask</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Convert an Integer reprsenting a Netmask to an prefixlen.</span>
+
+<span class="sd">    E.g. 0xffffff00 (255.255.255.0) returns 24</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">netlen</span> <span class="o">=</span> <span class="n">_count0Bits</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span>
+    <span class="n">masklen</span> <span class="o">=</span> <span class="n">_count1Bits</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span>
+    <span class="n">_checkNetmask</span><span class="p">(</span><span class="n">netmask</span><span class="p">,</span> <span class="n">masklen</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">masklen</span> <span class="o">-</span> <span class="n">netlen</span></div>
+
+
+<div class="viewcode-block" id="_prefixlenToNetmask"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._prefixlenToNetmask">[docs]</a><span class="k">def</span> <span class="nf">_prefixlenToNetmask</span><span class="p">(</span><span class="n">prefixlen</span><span class="p">,</span> <span class="n">version</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a mask of n bits as a long integer.</span>
+
+<span class="sd">    From &#39;IP address conversion functions with the builtin socket module&#39; by Alex Martelli</span>
+<span class="sd">    http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66517</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">prefixlen</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">prefixlen</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;Prefixlen must be &gt; 0&quot;</span>
+    <span class="k">return</span> <span class="p">((</span><span class="mi">2</span><span class="n">L</span><span class="o">&lt;&lt;</span><span class="n">prefixlen</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">_ipVersionToLen</span><span class="p">(</span><span class="n">version</span><span class="p">)</span> <span class="o">-</span> <span class="n">prefixlen</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="_test"><a class="viewcode-back" href="../../../api/PyFoam.ThirdParty.IPy.html#PyFoam.ThirdParty.IPy._test">[docs]</a><span class="k">def</span> <span class="nf">_test</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">doctest</span><span class="o">,</span> <span class="nn">IPy</span>
+    <span class="k">return</span> <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">(</span><span class="n">IPy</span><span class="p">)</span></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">_test</span><span class="p">()</span>
+
+    <span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mh">0xf0</span><span class="p">,</span> <span class="mh">0xf00</span><span class="p">,</span> <span class="mh">0xff00</span><span class="p">,</span> <span class="mh">0xffff00</span><span class="p">,</span> <span class="mh">0xffffff00</span><span class="n">L</span><span class="p">]</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="n">L</span>
+</pre></div>
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Bernhard F.W. Gschaider.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

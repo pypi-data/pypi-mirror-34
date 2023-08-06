@@ -1,0 +1,876 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyFoam.ThirdParty.Gnuplot.gnuplot_Suites module &mdash; PyFoam 0.6.6 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="PyFoam 0.6.6 documentation" href="../index.html"/>
+        <link rel="up" title="PyFoam.ThirdParty.Gnuplot package" href="PyFoam.ThirdParty.Gnuplot.html"/>
+        <link rel="next" title="PyFoam.ThirdParty.Gnuplot.gp module" href="PyFoam.ThirdParty.Gnuplot.gp.html"/>
+        <link rel="prev" title="PyFoam.ThirdParty.Gnuplot.funcutils module" href="PyFoam.ThirdParty.Gnuplot.funcutils.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PyFoam
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PyFoam.html">PyFoam package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="PyFoam.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Applications.html">PyFoam.Applications package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Basics.html">PyFoam.Basics package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Execution.html">PyFoam.Execution package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.IPythonHelpers.html">PyFoam.IPythonHelpers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Infrastructure.html">PyFoam.Infrastructure package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.LogAnalysis.html">PyFoam.LogAnalysis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Paraview.html">PyFoam.Paraview package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.RunDictionary.html">PyFoam.RunDictionary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Site.html">PyFoam.Site package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyFoam.Wrappers.html">PyFoam.Wrappers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyFoam.html#module-PyFoam">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PyFoam</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">PyFoam</a> &raquo;</li>
+        
+          <li><a href="PyFoam.html">PyFoam package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.ThirdParty.html">PyFoam.ThirdParty package</a> &raquo;</li>
+        
+          <li><a href="PyFoam.ThirdParty.Gnuplot.html">PyFoam.ThirdParty.Gnuplot package</a> &raquo;</li>
+        
+      <li>PyFoam.ThirdParty.Gnuplot.gnuplot_Suites module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-PyFoam.ThirdParty.Gnuplot.gnuplot_Suites">
+<span id="pyfoam-thirdparty-gnuplot-gnuplot-suites-module"></span><h1>PyFoam.ThirdParty.Gnuplot.gnuplot_Suites module<a class="headerlink" href="#module-PyFoam.ThirdParty.Gnuplot.gnuplot_Suites" title="Permalink to this headline">¶</a></h1>
+<p>Suite gnuplot Suite: Events supplied by gnuplot
+Level 1, version 1</p>
+<p>Generated from Alpha:Desktop Folder:gnuplot.1:gnuplot 3.7.1a
+AETE/AEUT resource version 1/0, language 0, script 0</p>
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">Miscellaneous_Events</code><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Miscellaneous_Events"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.do_script">
+<code class="descname">do_script</code><span class="sig-paren">(</span><em>_object=None</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Miscellaneous_Events.do_script"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.do_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>do script: execute a gnuplot script
+Required argument: a gnuplot script
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.revert">
+<code class="descname">revert</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Miscellaneous_Events.revert"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Miscellaneous_Events.revert" title="Permalink to this definition">¶</a></dt>
+<dd><p>revert: Revert an object to the most recently saved version
+Required argument: object to revert
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">Standard_Suite</code><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_close">
+<code class="descname">_argmap_close</code><em class="property"> = {'_in': 'kfil', 'saving': 'savo'}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_make">
+<code class="descname">_argmap_make</code><em class="property"> = {'at': 'insh', 'new': 'kocl', 'with_data': 'data', 'with_properties': 'prdt'}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_make" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_save">
+<code class="descname">_argmap_save</code><em class="property"> = {'_in': 'kfil', 'as': 'fltp'}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_set">
+<code class="descname">_argmap_set</code><em class="property"> = {'to': 'data'}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._argmap_set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._print">
+<code class="descname">_print</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite._print"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite._print" title="Permalink to this definition">¶</a></dt>
+<dd><p>print: Print the specified object(s)
+Required argument: Objects to print. Can be a list of files or an object specifier.
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.close">
+<code class="descname">close</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>close: Close an object
+Required argument: the objects to close
+Keyword argument saving: specifies whether or not changes should be saved before closing
+Keyword argument _in: the file in which to save the object
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.data_size">
+<code class="descname">data_size</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.data_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.data_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>data size: Return the size in bytes of an object
+Required argument: the object whose data size is to be returned
+Keyword argument _attributes: AppleEvent attribute dictionary
+Returns: the size of the object in bytes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>get: Get the data for an object
+Required argument: the object whose data is to be returned
+Keyword argument _attributes: AppleEvent attribute dictionary
+Returns: The data from the object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.make">
+<code class="descname">make</code><span class="sig-paren">(</span><em>_no_object=None</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.make"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.make" title="Permalink to this definition">¶</a></dt>
+<dd><p>make: Make a new element
+Keyword argument new: the class of the new element
+Keyword argument at: the location at which to insert the element
+Keyword argument with_data: the initial data for the element
+Keyword argument with_properties: the initial values for the properties of the element
+Keyword argument _attributes: AppleEvent attribute dictionary
+Returns: Object specifier for the new element</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.open"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>open: Open the specified object(s)
+Required argument: Objects to open. Can be a list of files or an object specifier.
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.save">
+<code class="descname">save</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>save: save a set of objects
+Required argument: Objects to save.
+Keyword argument _in: the file in which to save the object(s)
+Keyword argument as: the file type of the document in which to save the data
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>_object</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#Standard_Suite.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.Standard_Suite.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>set: Set an objects data
+Required argument: the object to change
+Keyword argument to: the new value
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="data">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites._enumdeclarations">
+<code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">_enumdeclarations</code><em class="property"> = {}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites._enumdeclarations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Suite Miscellaneous Events: Useful events that aren’t in any other suite
+Level 1, version 1</p>
+<p>Generated from Alpha:Desktop Folder:gnuplot.1:gnuplot 3.7.1a
+AETE/AEUT resource version 1/0, language 0, script 0</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">application</code><span class="sig-paren">(</span><em>which</em>, <em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#application"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.ComponentItem</span></code></p>
+<p>application - An application program</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application._elemdict">
+<code class="descname">_elemdict</code><em class="property"> = {'document': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document at 0x115497050&gt;, 'window': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window at 0x115328ae0&gt;}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application._elemdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application._propdict">
+<code class="descname">_propdict</code><em class="property"> = {}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application._propdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application.want">
+<code class="descname">want</code><em class="property"> = 'capp'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.application.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">bounds</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#bounds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>bounds - the boundary rectangle for the window</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds.want">
+<code class="descname">want</code><em class="property"> = 'qdrt'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds.which">
+<code class="descname">which</code><em class="property"> = 'pbnd'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">closeable</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#closeable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>closeable - Does the window have a close box?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable.which">
+<code class="descname">which</code><em class="property"> = 'hclb'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">document</code><span class="sig-paren">(</span><em>which</em>, <em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#document"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.ComponentItem</span></code></p>
+<p>document - A Document</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document._elemdict">
+<code class="descname">_elemdict</code><em class="property"> = {}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document._elemdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document._propdict">
+<code class="descname">_propdict</code><em class="property"> = {'modified': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified at 0x1154970b8&gt;, 'name': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name at 0x1153280b8&gt;}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document._propdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document.want">
+<code class="descname">want</code><em class="property"> = 'docu'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.document.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">floating</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#floating"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>floating - Does the window float?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating.which">
+<code class="descname">which</code><em class="property"> = 'isfl'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">gnuplot_Suite</code><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#gnuplot_Suite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.gnuexec">
+<code class="descname">gnuexec</code><span class="sig-paren">(</span><em>_object=None</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#gnuplot_Suite.gnuexec"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.gnuexec" title="Permalink to this definition">¶</a></dt>
+<dd><p>exec: execute a gnuplot command
+Required argument: gnuplot command
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>_object=None</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#gnuplot_Suite.plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>plot: create a 2-D plot</p>
+<p>Required argument: data to be plotted
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.splot">
+<code class="descname">splot</code><span class="sig-paren">(</span><em>_object=None</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#gnuplot_Suite.splot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.gnuplot_Suite.splot" title="Permalink to this definition">¶</a></dt>
+<dd><p>splot: create a 3-D plot
+Required argument: data to be plotted
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">graph</code><span class="sig-paren">(</span><em>which</em>, <em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.ComponentItem</span></code></p>
+<p>graph - graph - a subclass of window</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph._elemdict">
+<code class="descname">_elemdict</code><em class="property"> = {}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph._elemdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph._propdict">
+<code class="descname">_propdict</code><em class="property"> = {'picture': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture at 0x115328d50&gt;}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph._propdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph.want">
+<code class="descname">want</code><em class="property"> = 'cGRF'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.graph.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">index</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>index - the number of the window</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index.want">
+<code class="descname">want</code><em class="property"> = 'long'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index.which">
+<code class="descname">which</code><em class="property"> = 'pidx'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">modal</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#modal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>modal - Is the window modal?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal.which">
+<code class="descname">which</code><em class="property"> = 'pmod'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">modified</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#modified"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>modified - Has the document been modified since the last save?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified.which">
+<code class="descname">which</code><em class="property"> = 'imod'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modified.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">name</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>name - the title of the window</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name.want">
+<code class="descname">want</code><em class="property"> = 'itxt'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name.which">
+<code class="descname">which</code><em class="property"> = 'pnam'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">odds_and_ends</code><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#odds_and_ends"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends.select">
+<code class="descname">select</code><span class="sig-paren">(</span><em>_object=None</em>, <em>_attributes={}</em>, <em>**_arguments</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#odds_and_ends.select"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.odds_and_ends.select" title="Permalink to this definition">¶</a></dt>
+<dd><p>select: Select the specified object
+Required argument: the object to select
+Keyword argument _attributes: AppleEvent attribute dictionary</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">picture</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#picture"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>picture - gnuplot graph in “PICT” format</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture.want">
+<code class="descname">want</code><em class="property"> = 'PICT'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture.which">
+<code class="descname">which</code><em class="property"> = 'PICT'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.picture.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">position</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#position"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>position - upper left coordinates of window</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position.want">
+<code class="descname">want</code><em class="property"> = 'QDpt'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position.which">
+<code class="descname">which</code><em class="property"> = 'ppos'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">resizable</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#resizable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>resizable - Is the window resizable?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable.which">
+<code class="descname">which</code><em class="property"> = 'prsz'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">titled</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#titled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>titled - Does the window have a title bar?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled.which">
+<code class="descname">which</code><em class="property"> = 'ptit'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">visible</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#visible"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>visible - is the window visible?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible.which">
+<code class="descname">which</code><em class="property"> = 'pvis'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">window</code><span class="sig-paren">(</span><em>which</em>, <em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#window"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.ComponentItem</span></code></p>
+<p>window - A Window</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window._elemdict">
+<code class="descname">_elemdict</code><em class="property"> = {}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window._elemdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window._propdict">
+<code class="descname">_propdict</code><em class="property"> = {'bounds': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.bounds at 0x115328a10&gt;, 'closeable': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.closeable at 0x115328bb0&gt;, 'floating': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.floating at 0x115328db8&gt;, 'index': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.index at 0x115328ce8&gt;, 'modal': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.modal at 0x115328e88&gt;, 'name': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.name at 0x1153280b8&gt;, 'position': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.position at 0x115328050&gt;, 'resizable': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.resizable at 0x115328ef0&gt;, 'titled': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.titled at 0x115328c18&gt;, 'visible': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.visible at 0x115328f58&gt;, 'zoomable': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable at 0x115328460&gt;, 'zoomed': &lt;class PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed at 0x115328c80&gt;}</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window._propdict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window.want">
+<code class="descname">want</code><em class="property"> = 'cwin'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.window.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">zoomable</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#zoomable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>zoomable - Is the window zoomable?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable.which">
+<code class="descname">which</code><em class="property"> = 'iszm'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomable.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed">
+<em class="property">class </em><code class="descclassname">PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.</code><code class="descname">zoomed</code><span class="sig-paren">(</span><em>fr=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/PyFoam/ThirdParty/Gnuplot/gnuplot_Suites.html#zoomed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">aetypes.NProperty</span></code></p>
+<p>zoomed - Is the window zoomed?</p>
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed.__module__">
+<code class="descname">__module__</code><em class="property"> = 'PyFoam.ThirdParty.Gnuplot.gnuplot_Suites'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed.__module__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed.want">
+<code class="descname">want</code><em class="property"> = 'bool'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed.want" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed.which">
+<code class="descname">which</code><em class="property"> = 'pzum'</em><a class="headerlink" href="#PyFoam.ThirdParty.Gnuplot.gnuplot_Suites.zoomed.which" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="PyFoam.ThirdParty.Gnuplot.gp.html" class="btn btn-neutral float-right" title="PyFoam.ThirdParty.Gnuplot.gp module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PyFoam.ThirdParty.Gnuplot.funcutils.html" class="btn btn-neutral" title="PyFoam.ThirdParty.Gnuplot.funcutils module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Bernhard F.W. Gschaider.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

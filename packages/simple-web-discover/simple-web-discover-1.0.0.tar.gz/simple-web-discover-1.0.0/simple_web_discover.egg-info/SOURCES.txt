@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+simple_web_discover/__init__.py
+simple_web_discover/main.py
+simple_web_discover/web.py
+simple_web_discover.egg-info/PKG-INFO
+simple_web_discover.egg-info/SOURCES.txt
+simple_web_discover.egg-info/dependency_links.txt
+simple_web_discover.egg-info/entry_points.txt
+simple_web_discover.egg-info/requires.txt
+simple_web_discover.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: xformer
+Version: 1.0.1
+Summary: A practical implementation of the Transformer neural network architecture.
+Home-page: https://github.com/unixpickle/xformer
+Author: Alex Nichol
+Author-email: unixpickle@gmail.com
+License: BSD
+Platform: UNKNOWN
+Provides-Extra: tf
+Provides-Extra: tf_gpu
+Requires-Dist: numpy (<2.0.0,>=1.0.0)
+Provides-Extra: tf
+Requires-Dist: tensorflow (>=1.0.0); extra == 'tf'
+Provides-Extra: tf_gpu
+Requires-Dist: tensorflow-gpu (>=1.0.0); extra == 'tf_gpu'
+
+UNKNOWN
+
+

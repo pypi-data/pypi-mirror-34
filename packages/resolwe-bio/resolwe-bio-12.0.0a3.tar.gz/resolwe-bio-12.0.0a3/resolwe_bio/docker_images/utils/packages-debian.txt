@@ -1,0 +1,7 @@
+python3-setuptools
+python3-wheel
+zip
+
+# Required by FastQC
+default-jre
+libfindbin-libs-perl

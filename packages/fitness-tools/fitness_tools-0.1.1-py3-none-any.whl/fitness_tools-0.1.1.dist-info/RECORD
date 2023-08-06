@@ -1,0 +1,15 @@
+fitness_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitness_tools/composition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitness_tools/composition/bodyfat.py,sha256=UfzGI-3yupcV0ci9CpDhfWM4vZOTX7F7xIXR-kqLhH8,8532
+fitness_tools/exercise/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitness_tools/exercise/rm_estimator.py,sha256=4t44jx4TpgrkkZrF8I9BshcW7IjR_DYvy74qsqcdPXU,2487
+fitness_tools/meals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitness_tools/meals/meal_maker.py,sha256=UWdhbhNPSrWS9TQEPXHl1O8ZSApCI4_Qqk_-PVSh19c,10019
+fitness_tools-0.1.1.dist-info/METADATA,sha256=W2n9QRwK_KdaKrcDQoiIBYakYMl1VvOx_E1jAMZAOR4,2970
+fitness_tools-0.1.1.dist-info/RECORD,,
+fitness_tools-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fitness_tools-0.1.1.dist-info/top_level.txt,sha256=2YNX5pY1f3-l2KaYtLyqMkUopKDTnGzYqjcDBkHDRJo,20
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_bodyfat_calculator.py,sha256=jnbchTH-zTEBq8U6wCcvwfWquBofELkOHZezvVAcJDU,9326
+tests/test_meal_maker.py,sha256=5X3vO-xgAI_9P6qpmjgCPEIROHM9OYx3_SmAKlCNJ8Q,12421
+tests/test_rm_calculator.py,sha256=hMZcmuo0sW9hYWXBFDyrXRS1kVSL9UdHBT4lUWmxtp8,1600

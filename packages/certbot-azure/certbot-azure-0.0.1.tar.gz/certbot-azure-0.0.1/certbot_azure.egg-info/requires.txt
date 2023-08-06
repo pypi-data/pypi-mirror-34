@@ -1,0 +1,8 @@
+acme>=0.26.1
+certbot>=0.26.0
+azure-mgmt-resource
+azure-mgmt-network
+PyOpenSSL>=17.1.0
+setuptools
+zope.interface
+mock

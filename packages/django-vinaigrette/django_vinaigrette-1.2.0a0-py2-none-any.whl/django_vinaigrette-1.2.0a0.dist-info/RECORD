@@ -1,0 +1,12 @@
+django_vinaigrette-1.2.0a0.dist-info/METADATA,sha256=jv1FJgTXSURO9xmFZsf6QxzbW2-m91fxHnnJmPozbRU,4919
+django_vinaigrette-1.2.0a0.dist-info/RECORD,,
+django_vinaigrette-1.2.0a0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+django_vinaigrette-1.2.0a0.dist-info/top_level.txt,sha256=QpXgR6_y6PVd0fmS4z74EqIZ2GLAOG_r54u7c3eeIuk,25
+test_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_project/settings.py,sha256=dm4_qH07zoH1fuRRMzjMrHwhRmza6_LOq78nzV7Nu2I,928
+test_project/urls.py,sha256=84zHz6clijN2qUgic_guNTqg9_gTPWEU6dkf-UwAOn4,226
+vinaigrette/__init__.py,sha256=JEWIWoU7GTAuvhutLL93wTJRIyxiwQpwKFzSa7RS-eU,2703
+vinaigrette/middleware.py,sha256=ZihIXdoha5VAcTid0Vjlvti1bNM_Pzumz9hGkk5Suu8,1002
+vinaigrette/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vinaigrette/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vinaigrette/management/commands/makemessages.py,sha256=334nzMyseDmGuif360d0q5QAI-tSE5wWk9QKBPZUIgY,8084

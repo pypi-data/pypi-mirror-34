@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chatq-util
+Version: 0.0.1
+Summary: Chatq utility library
+Home-page: https://github.com/ChatQSG/chatq-helping-hand
+Author: Khoi Nguyen Hoang
+Author-email: khoi.hoang@chatq.sg
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ChatQ Utility Package
+
+This is ChatQ Utility Package. It is used to setup mqtt client and more.
+

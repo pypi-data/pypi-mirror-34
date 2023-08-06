@@ -1,0 +1,11 @@
+README.md
+setup.py
+tadasets/__init__.py
+tadasets/shapes.py
+tadasets/view.py
+tadasets.egg-info/PKG-INFO
+tadasets.egg-info/SOURCES.txt
+tadasets.egg-info/dependency_links.txt
+tadasets.egg-info/requires.txt
+tadasets.egg-info/top_level.txt
+test/test_shapes.py

@@ -1,0 +1,17 @@
+{% if not widget.attrs.has_div %}<div class="file-field input-field">{% endif %}
+    <div class="btn">
+        <span>File</span>
+        <input type="file"
+               name="{{ widget.name }}"
+            {% if widget.value != None %}value="{{ widget.value|stringformat:'s' }}"{% endif %}
+            {% for name, value in widget.attrs.items %}{% if name != "class" and value is not False %} {{ name }}{% if value is not True %}="{{ value|stringformat:'s' }}"{% endif %}{% endif %}{% endfor %}>
+    </div>
+    <div class="file-path-wrapper">
+        <input type="text"
+            class="file-path active validate{% if field.errors %} invalid {% endif %}{{ widget.attrs.class }}"
+            {% if widget.attrs.multiple and not widget.attrs.placeholder %}placeholder="Upload one or more files"{% endif %}
+            {% if widget.value != None %}value="{{ widget.value|stringformat:'s' }}"{% endif %}
+            {% if widget.attrs.hidden %}hidden{% endif %}
+            >
+    </div>
+{% if not widget.attrs.has_div %}</div>{% endif %}

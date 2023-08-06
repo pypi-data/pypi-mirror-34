@@ -1,0 +1,49 @@
+{% with id=widget.attrs.id %}{% if not widget.attrs.has_div %}<div id="{% if id %}{{ id }}_div{% endif %}" class="input-field" style="{% if inline %}display: inline-block; min-width: 200px;{% endif %}{{ style }}">{% endif %}
+    <input type="text" {% if widget.value.0 != None %} value="{{ widget.value.0|stringformat:'s' }}"{% endif %}
+        id="{{ id }}" autocomplete="off"
+        {% include "django/forms/widgets/attrs.html" %}>
+    <input id="{{ id }}_sel" name="{{ widget.name }}"{% if widget.value.0 != None %} value="{{ widget.value.0|stringformat:'s' }}"{% endif %} hidden>
+
+    <script>
+        // When the document is loaded populate all of the options for the autocomplete box.
+        $(window).on('load', function() {
+            // Set variables
+            set_auto_field('#{{ id }}', 'auto_data', {});
+            set_auto_field('#{{ id }}', 'auto_data_li', {});
+
+            // Create the auto complete object
+            var auto_inst = M.Autocomplete.init($('#{{ id }}')[0], {
+                'data': get_auto_data('#{{ id }}'),
+                'limit': 10,
+
+                onAutocomplete: function(val){
+                    $('#{{ id }}').value = val;
+                    var value = get_auto_data_val('#{{ id }}', val);
+                    if(value != null) {
+                        $('#{{ id }}_sel')[0].value = value;
+                    }
+                }
+            });
+            set_auto_field('#{{ id }}', 'auto_inst', auto_inst);
+
+            // Populate the data
+            try{
+                var data = JSON.parse('{{ widget.options }}');
+                if(data){
+                    populate_autocomplete('#{{ id }}', data);
+                } else {
+                    request_autocomplete('#{{ id }}', "{{ widget.url }}");
+                }
+            }catch (exc) {
+                request_autocomplete('#{{ id }}', "{{ widget.url }}");
+            }
+
+            // If query_name given reset auto complete options when text is entered.
+            if("{{ widget.query_name }}" !== ""){
+                $('#{{ id }}').on('input', function(e){
+                    request_autocomplete('#{{ id }}', "{{ widget.url }}", "{{ widget.query_name }}");
+                });
+            }
+        });
+    </script>
+{% if not widget.attrs.has_div %}</div>{% endif %}{% endwith %}

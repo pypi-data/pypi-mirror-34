@@ -1,0 +1,5 @@
+<div id="{{ field.id_for_label }}_div" class="input-field {% if widget.input_type == "file" %}file-field {% endif %}{{ field.div_class }}" style="{{ field.div_style }}">
+    {{ field.as_widget }}
+    {% if widget.input_type != "file" %}<label for="{{ field.id_for_label }}">{{ field.label }}</label>{% endif %}
+    <span class="helper-text" data-error="{{ field.errors|join:', ' }}" data-success=""></span>
+</div>

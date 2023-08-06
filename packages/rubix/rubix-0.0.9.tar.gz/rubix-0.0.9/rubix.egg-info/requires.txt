@@ -1,0 +1,8 @@
+wheel
+plotly
+pandas
+boto3
+kubernetes
+ipywidgets
+ipython-sql
+psycopg2-binary

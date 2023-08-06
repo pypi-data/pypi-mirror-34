@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: example-pkg-riturajjtest
+Version: 0.1.5
+Summary: A small example package
+Home-page: https://github.com/riturajj/example_pkg_riturajjtest
+Author: Rituraj Jagtap
+Author-email: riturajj@google.com
+License: UNKNOWN
+Description: # example_pkg
+        This is an example package for packaging and release process
+        
+Platform: UNKNOWN

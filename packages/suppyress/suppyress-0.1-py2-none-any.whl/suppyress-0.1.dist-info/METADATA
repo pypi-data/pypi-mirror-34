@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: suppyress
+Version: 0.1
+Summary: A tiny python library for running code and ignore any errors
+Home-page: https://github.com/WYishai/suppyress
+Author: Yishai Wiesner
+Author-email: wyishai@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# suppyress
+
+A simple python library for running code and ignore any errors.
+
+## Getting Started
+
+### Installing
+
+You can install this package with pip.
+
+```shell
+pip install suppyress
+```
+
+### Usage
+
+All examples are intended for writing in a python shell (or python code file).
+
+```python
+from suppyress import suppress
+
+@suppress
+def test(a, b=1):
+    result = "%s -> %s" % (a, int(b))
+    return result
+
+
+assert test("a", b="2") is not None
+assert test("a", b="a") is None
+```
+
+or:
+
+```python
+from suppyress import safe_run
+
+assert safe_run(int, "2") is not None
+assert safe_run(int, "a") is None
+```
+
+## License
+
+This project is licensed under the Apache-2.0 License - see the [LICENSE](https://github.com/WYishai/suppyress/blob/master/LICENSE) file for details
+
+

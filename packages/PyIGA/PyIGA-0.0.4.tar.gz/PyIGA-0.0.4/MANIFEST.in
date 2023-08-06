@@ -1,0 +1,6 @@
+recursive-include applications *
+recursive-include external_libraries * 
+recursive-include gid_interface *
+recursive-include kratos *
+include CMakeLists.txt
+

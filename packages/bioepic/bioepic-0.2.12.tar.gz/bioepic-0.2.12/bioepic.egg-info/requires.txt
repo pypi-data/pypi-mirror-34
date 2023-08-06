@@ -1,0 +1,9 @@
+scipy
+pandas>=0.23.0
+numpy
+natsort
+joblib
+pyfaidx
+typing
+cython
+coveralls

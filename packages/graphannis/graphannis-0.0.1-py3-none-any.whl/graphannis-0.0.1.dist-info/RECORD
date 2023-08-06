@@ -1,0 +1,15 @@
+graphannis/__init__.py,sha256=hF04RJ6OqcWe0KPsxxepiGMkG5WKEW6iIH3OwFgi3O0,77
+graphannis/_ffi.py,sha256=RzyYyOhnRa2kdvDN-_4CbesqTDLg8yapZY-eIm0bmBQ,9745
+graphannis/common.py,sha256=r56a1JTl2kDb7TnE7Ix4GjPgNNoLFaeUm1ij2lA-Wz4,1404
+graphannis/cs.py,sha256=Sroc0foyGB0iDzRupavy6ymqn5tTU77ajjy4ypyUJzI,4165
+graphannis/graph.py,sha256=cMA1ppcka4hHuX_5f2XenfN2Bk6BL1z4fkmxV05T0kA,10149
+graphannis/query.py,sha256=eSz9jTAC4Q9fJLvIiGCFQBzw0wfe8n25pVviQMcMWVU,6505
+graphannis/test_cs.py,sha256=FUxRkrk66aDE6U7ft0hRNoTIsMgTtM9U2ksxDNU3KT8,1310
+graphannis/util.py,sha256=7DrpkVtxyarj_-wjZ8KSyATedJiEbdIeYrmN297R8Kc,4053
+graphannis/linux-x86-64/libgraphannis_capi.so,sha256=CNe7q4U-qHMNpt4F7EXk-FMMH_ypxR7xNaQmBgKqMMU,6137832
+graphannis-0.0.1.dist-info/DESCRIPTION.rst,sha256=S6rUE6fHc-J80ysh4LM3YcTTNVvH9zo8TvdClINya9E,271
+graphannis-0.0.1.dist-info/METADATA,sha256=CR2VSIg1RBWHl0gHpFH0-kHCGevVWDJocfFWHDseaCk,867
+graphannis-0.0.1.dist-info/RECORD,,
+graphannis-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+graphannis-0.0.1.dist-info/metadata.json,sha256=HETa5h52HSgfkM0Sn_9GRqDGJ7bpicLlYkx2bXWyh9M,761
+graphannis-0.0.1.dist-info/top_level.txt,sha256=CjXP-bv0n3IL570Wr6HjUhOfnxCxQK-lLPEj_zdAYXk,11

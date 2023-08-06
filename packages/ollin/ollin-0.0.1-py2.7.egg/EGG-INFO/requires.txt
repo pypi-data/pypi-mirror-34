@@ -1,0 +1,6 @@
+six
+numpy
+numba
+scipy
+pystan
+backports.functools_lru_cache

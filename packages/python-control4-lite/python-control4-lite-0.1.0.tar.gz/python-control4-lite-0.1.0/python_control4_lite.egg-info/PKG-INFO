@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: python-control4-lite
+Version: 0.1.0
+Summary: Python Bindings for Control4 API
+Home-page: https://github.com/r3pi/python-control4
+Author: Aleksi Asikainen
+Author-email: aleksi.asikainen@solera.com
+License: MIT
+Description: # Control4 API Bindings for Python
+        
+        
+        
+        
+Keywords: control4
+Platform: UNKNOWN

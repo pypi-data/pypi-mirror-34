@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mytorch
+Version: 0.1.0.dev0
+Summary: PyTorch-related utility functions
+Home-page: https://github.com/rasbt/mytorch
+Author: Sebastian Raschka
+Author-email: mail@sebastianraschka.com
+License: MIT
+Platform: any
+Provides-Extra: testing
+Provides-Extra: docs
+Requires-Dist: setuptools
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: nose; extra == 'testing'
+
+
+
+A library of PyTorch-related utility tools.
+Currently only intended for personal use.
+
+

@@ -1,0 +1,13 @@
+OpenGL_accelerate/__init__.py,sha256=r6HtMpg6cfMm8Oky12Jynb7UMUuC-Enx-02rTCAiHJU,381
+OpenGL_accelerate/arraydatatype.pyd,sha256=pCarSOGtpZ_08_Tv517IWhpNBZkZ_YruC9fCWQmhJ9A,222720
+OpenGL_accelerate/buffers_formathandler.pyd,sha256=tBi_zdKTyXysj7YiNh_-ij-j95wDKsl8JI0LxqNfX9E,55808
+OpenGL_accelerate/errorchecker.pyd,sha256=3UxPJlAE7YOhkLul3n72rmRYftG4T8BWOR2eqnasCKQ,50176
+OpenGL_accelerate/formathandler.pyd,sha256=RF4XLe9Bo-UvAidi0_nMwXs-G5YwSrq8gyQIP5tjug8,54784
+OpenGL_accelerate/latebind.pyd,sha256=BcceBD4amAkKLraemljk8cQNmJ4-8oZk9n5t8J7IJbc,47616
+OpenGL_accelerate/nones_formathandler.pyd,sha256=kQbvbYC7uDYCBZnr7yOHEKhFq9L1q8Zzog3dE22xRl4,35840
+OpenGL_accelerate/vbo.pyd,sha256=-n1skNXMgVgI52zPtO7noxwW4u7smNne2imaAKmO0rQ,144384
+OpenGL_accelerate/wrapper.pyd,sha256=I8uD5Q2frD0fWDnBpge-dfenqfpHKMnp0neC5lCrnfA,260608
+PyOpenGL_accelerate-3.1.3b1.dist-info/METADATA,sha256=e9aPhjz5Mmnk0E0ZB2L90_G0z5IsoEizu6MhgBdmC8Q,924
+PyOpenGL_accelerate-3.1.3b1.dist-info/RECORD,,
+PyOpenGL_accelerate-3.1.3b1.dist-info/WHEEL,sha256=F1_k-v0LVhnDkVni3Mbka67OoMISp1ecOQap0z-EgKc,106
+PyOpenGL_accelerate-3.1.3b1.dist-info/top_level.txt,sha256=9o0RHjJ27rL4yafmZevzZL2UGWVjawgxkrWN9pZsRFQ,18

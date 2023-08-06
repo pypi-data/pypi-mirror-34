@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: balebot
+Version: 1.2.3
+Summary: python framework for Bale messenger Bot API 
+Home-page: https://github.com/balemessenger/bale-bot-python
+Author: bale
+Author-email: balebot@elenoon.ir
+License: GNU
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==2.3.7)
+Requires-Dist: asyncio (==3.4.3)
+Requires-Dist: graypy (==0.2.14)
+
+# Changelog
+[![Build Status](https://avatars1.githubusercontent.com/u/35299314?s=200&v=4)](https://github.com/balemessenger)
+
+## [Unreleased]
+
+## [1.2.0] - 2018-06-22
+### Added
+- Support for sending location message.
+- Support for sending contact message.
+- location conversation sample.
+- contact conversation sample.
+
+
+### Changed
+- changes in SDK architecture.
+- changes in updater, dispatcher, bot, networks modules.
+- changes in samples.
+
+
+### Removed
+- Location from base models.
+- Contact from base models.
+

@@ -1,0 +1,5 @@
+[console_scripts]
+add_judge_config = interactive_judger:add_config
+interactive_judge = interactive_judger:start_judge
+remove_config = interactive_judge:remove_config
+

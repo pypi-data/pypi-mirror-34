@@ -1,0 +1,10 @@
+sepadd/__init__.py,sha256=UsqmY_g3t4TNpGnRiTg1pw-VsZOn_mOLoqRreEx4gBo,35
+sepaxml/__init__.py,sha256=d-4zCaxFaz34G8hh-oCunfeW73AwiqcolHTO-JIZ26I,97
+sepaxml/debit.py,sha256=m96UiY3_zde5VV8o5TXqTM-sfLioI-VeqB1R1a_kJ1k,20016
+sepaxml/shared.py,sha256=JfD-6D2IivzGvlXd8ydxlCd2IdabPyKYPZAmuetaUnk,3023
+sepaxml/transfer.py,sha256=yJSFnn-KHbLzUHNu8AnqyWoW4UCEpjTKVx1ruRl_uew,15278
+sepaxml/utils.py,sha256=6VoKz6epbgcbYdENzMrDhazbY0ySY_ZmeyD6j3IPKhI,2987
+sepaxml-2.0.0.dist-info/METADATA,sha256=EKQ58-O4UX38zF_lYFE0jlq2MyxXDapa4n197CEYKDU,3548
+sepaxml-2.0.0.dist-info/RECORD,,
+sepaxml-2.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sepaxml-2.0.0.dist-info/top_level.txt,sha256=m3VawcePkwPWGUN4ZYLVFU6lkfnI7dXsDvqQbBkbpWQ,15

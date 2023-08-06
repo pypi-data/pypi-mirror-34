@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+atgcN_count/__init__.py
+atgcN_count/atgcN_count.py
+atgcN_count.egg-info/PKG-INFO
+atgcN_count.egg-info/SOURCES.txt
+atgcN_count.egg-info/dependency_links.txt
+atgcN_count.egg-info/entry_points.txt
+atgcN_count.egg-info/top_level.txt

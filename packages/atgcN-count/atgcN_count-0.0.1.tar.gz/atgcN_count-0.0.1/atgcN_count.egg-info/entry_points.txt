@@ -1,0 +1,3 @@
+[console_scripts]
+atgcN_count = atgcN_count.atgcN_count:main
+

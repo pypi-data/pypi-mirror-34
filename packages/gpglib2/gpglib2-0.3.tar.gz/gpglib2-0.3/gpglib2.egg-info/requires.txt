@@ -1,0 +1,6 @@
+pycryptodome==3.6.4
+bitstring==3.1.5
+
+[tests]
+noseOfYeti
+nose

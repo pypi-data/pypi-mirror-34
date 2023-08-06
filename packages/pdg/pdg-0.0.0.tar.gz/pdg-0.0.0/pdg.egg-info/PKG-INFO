@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: pdg
+Version: 0.0.0
+Summary: Python API for accessing PDG data
+Home-page: http://pdg.lbl.gov
+Author: Particle Data Group
+Author-email: jberinger@lbl.gov
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Python API to access PDG data
+        =============================
+        
+        This package is still under development; please check back later.
+        
+Keywords: PDG,particle physics
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics

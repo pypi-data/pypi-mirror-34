@@ -1,0 +1,6 @@
+# Test dependencies
+pylint
+pytest
+coverage
+pytest-cov
+tox

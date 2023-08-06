@@ -1,0 +1,3 @@
+[console_scripts]
+cossign = cossign.cossign:_main
+

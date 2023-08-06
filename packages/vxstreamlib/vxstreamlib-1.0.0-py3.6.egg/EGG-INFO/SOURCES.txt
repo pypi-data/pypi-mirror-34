@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+test
+unittest.ini
+unittest_logging.ini
+vxstream
+vxstreamlib.py
+test_data/notepad.exe
+test_data/sample.jar
+vxstreamlib.egg-info/PKG-INFO
+vxstreamlib.egg-info/SOURCES.txt
+vxstreamlib.egg-info/dependency_links.txt
+vxstreamlib.egg-info/entry_points.txt
+vxstreamlib.egg-info/requires.txt
+vxstreamlib.egg-info/top_level.txt

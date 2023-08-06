@@ -1,0 +1,44 @@
+<div class="ui left vertical inverted menu sidebar darkviolet thin visible screen computer only top-vspacer" id='leftsidebar' >
+
+	<div class="item" style="height: 38px;" >
+		&nbsp;
+	</div>
+
+	{% for menu in menu_plugins %}
+		{% ifequal menu.menu_place 'left' %}
+			<a class="item {% if menu.active %}active{% endif %}" href="/app/{{ menu.uid }}/">
+				{% if menu.icon %}<i class="{{menu.icon}} icon"></i>{% endif %}
+				{{ menu.label }}
+			</a>
+			{% if menu.show_submenu and menu.submenus %}
+				<div class="item">
+					<div class="menu">
+						{% for submenu in menu.submenus %}
+							<a class="item {% if submenu.active %}active{% endif %}" href="/app/{{ submenu.uid }}/" onclick="{{ submenu.js_call }}" >
+								{{ submenu.label }}
+								{% if submenu.icon %}<i class="{{submenu.icon}} icon"></i>{% endif %}
+							</a>
+						{% endfor %}
+					</div>
+				</div>
+			{% endif %}
+		{% endifequal %}
+	{% endfor %}
+
+</div>
+
+
+<script type="text/javascript">
+		
+	if ($(document).width()<933) {
+		$('#leftsidebar').removeClass('visible');
+	}
+
+	$(document).ready(function(){
+		if ($(document).width()<933) {
+			$('#leftsidebar').sidebar({ dimPage: false , closable: false, transition: 'overlay' }).sidebar('attach events', '#mobile-sidebar-openerbtn', 'toggle');
+		};
+	});
+
+</script>
+

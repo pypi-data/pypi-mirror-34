@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: kvdnc
+Version: 2.2.1b5
+Summary: kvdn client library and tool
+Home-page: UNKNOWN
+Author: Grant Haywood
+Author-email: UNKNOWN
+License: Apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: requests
+
+UNKNOWN
+
+

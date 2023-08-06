@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: ahui-aiohttp-server
+Version: 0.1.13
+Summary: Simple aiohttp Server for both static and python/php file
+Home-page: http://github.com/ahuigo/ahui-aiohttp-server
+Author: ahuigo
+Author-email: nobody@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5.3
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# Ahui-aiohttp-server
+[![](https://img.shields.io/pypi/pyversions/ahui_aiohttp_server.svg?longCache=True)](https://pypi.org/pypi/ahui_aiohttp_server/)
+[![](https://img.shields.io/pypi/v/ahui_aiohttp_server.svg?maxAge=36000)](https://pypi.org/pypi/ahui_aiohttp_server/)
+
+This is a simple http async server which extends `python -m http.server`.\
+(WARN: It's not recommended  for production environments, just use it  in development or testing environments only!):
+- Support print to http response directly (same as php's echo)
+- Support async-await
+- Support php, python
+
+## Install
+
+    pip install ahui-aiohttp-server
+    pip3 install ahui-aiohttp-server
+
+## Start server
+
+    $ tree .
+    ./
+        app/
+            echo1.py
+            echo2.py
+            echo.php
+            return.py
+        js/
+            test.js
+    $ python -m ahui_aiohttp_server
+    $ python -m ahui_aiohttp_server --host 127.0.0.1 --port 5000
+
+## Access server
+
+### Access via echo server(php-like):
+
+    $ cat app/echo1.py
+    print('Hello World!')
+
+    $ curl http://127.0.0.1:5000/app/echo1.py
+    Hello World!
+    $ curl http://127.0.0.1:5000/js/test.js
+    <js content>
+    $ curl http://127.0.0.1:5000/app/echo.php
+    <js content>
+
+If you want to get request data(such as: `get, post, cookie, ...`, use `aiohttp_handler(request)` instead:
+
+    $ cat app/echo2.py
+    def aiohttp_handler(request):
+        print(request.query)    # use print 
+
+    $ curl http://127.0.0.1:5000/app/echo2.py?var=value
+    {'var':'value'}
+
+### Access via normal aiohttp server:
+
+    $ cat app/return.py
+    from aiohttp import web
+    async def aiohttp_handler(request):
+        data = await request.post()
+        return web.Response(body=str(data)) # use return
+
+    $ curl http://127.0.0.1:5000/app/return.py?var=value - 'k1=v2'
+    {'k1':'v2'}
+
+### Access static file:
+
+    $ curl http://127.0.0.1:5000/js/test.js
+    <js content>
+
+## Required
+1. aiohttp
+2. python>=3.6
+
+

@@ -1,0 +1,15 @@
+README.md
+README.rst
+delete.py
+getch_.py
+otp.py
+setup.py
+show.py
+update.py
+write.py
+otp_cli.egg-info/PKG-INFO
+otp_cli.egg-info/SOURCES.txt
+otp_cli.egg-info/dependency_links.txt
+otp_cli.egg-info/entry_points.txt
+otp_cli.egg-info/requires.txt
+otp_cli.egg-info/top_level.txt

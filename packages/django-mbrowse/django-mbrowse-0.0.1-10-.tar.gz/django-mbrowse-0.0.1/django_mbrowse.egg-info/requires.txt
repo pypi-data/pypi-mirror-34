@@ -1,0 +1,11 @@
+bioservices
+django-autocomplete-light
+django-bulk-update
+django-gfiles
+django-rest-framework
+django==1.11
+numpy
+plotly
+pubchempy
+scipy
+seaborn

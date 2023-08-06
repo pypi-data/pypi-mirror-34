@@ -1,0 +1,7 @@
+README.rst
+setup.py
+topaz/__init__.py
+topaz.egg-info/PKG-INFO
+topaz.egg-info/SOURCES.txt
+topaz.egg-info/dependency_links.txt
+topaz.egg-info/top_level.txt

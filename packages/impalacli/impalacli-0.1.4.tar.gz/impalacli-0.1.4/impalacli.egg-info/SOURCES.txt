@@ -1,0 +1,11 @@
+README.md
+setup.py
+impalacli/__init__.py
+impalacli/lexer.py
+impalacli/main.py
+impalacli.egg-info/PKG-INFO
+impalacli.egg-info/SOURCES.txt
+impalacli.egg-info/dependency_links.txt
+impalacli.egg-info/entry_points.txt
+impalacli.egg-info/requires.txt
+impalacli.egg-info/top_level.txt

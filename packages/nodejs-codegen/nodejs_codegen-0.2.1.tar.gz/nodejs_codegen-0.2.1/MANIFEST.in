@@ -1,0 +1,3 @@
+recursive-include nodejs_codegen/templates *.ce *.template
+include nodejs_codegen/code *.py
+include nodejs_codegen/mappers *.mapper

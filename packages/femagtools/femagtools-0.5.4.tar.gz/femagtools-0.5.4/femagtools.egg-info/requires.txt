@@ -1,0 +1,8 @@
+numpy
+scipy
+mako
+six
+dxfgrabber
+networkx
+meshio
+lxml

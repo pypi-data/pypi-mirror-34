@@ -1,0 +1,10 @@
+README.md
+setup.py
+loo_encoder/encoder.py
+loo_encoder/utils.py
+loo_encoder.egg-info/PKG-INFO
+loo_encoder.egg-info/SOURCES.txt
+loo_encoder.egg-info/dependency_links.txt
+loo_encoder.egg-info/not-zip-safe
+loo_encoder.egg-info/requires.txt
+loo_encoder.egg-info/top_level.txt

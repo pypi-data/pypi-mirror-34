@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qt5_cef
+Version: 0.0.5
+Summary: A simple tool kit for create desktop application
+Home-page: https://github.com/hycool/pywebview
+Author: hy
+Author-email: hycool.happy@163.com
+License: UNKNOWN
+Description: ```
+        version: 0.0.5
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

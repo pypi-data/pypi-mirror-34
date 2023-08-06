@@ -1,0 +1,3 @@
+[console_scripts]
+necrophos_wsgi = necrophos_wsgi.main:main
+

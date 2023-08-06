@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: necrophos-wsgi
+Version: 0.0.3
+Summary: wsgi-like server based on asyncio
+Home-page: https://github.com/lexdene/necrophos-wsgi
+Author: Elephant Liu
+Author-email: lexdene@gmail.com
+License: GPLv3
+Description: Necrophos wsgi
+        ==============
+        
+        similar to pep 333 but base on asyncio
+        
+        usage
+        -----
+        
+        .. code-block:: shell
+        
+            necrophos_wsgi --port 8080 --app tests.test_app:old_simple_app
+        
+Platform: UNKNOWN

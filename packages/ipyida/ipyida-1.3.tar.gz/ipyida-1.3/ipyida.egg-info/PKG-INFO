@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ipyida
+Version: 1.3
+Summary: IDA plugin to embed the IPython console inside IDA
+Home-page: https://www.github.com/eset/ipyida
+Author: Marc-Etienne M.Léveillé
+Author-email: leveille@eset.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

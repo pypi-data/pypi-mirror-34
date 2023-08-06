@@ -1,0 +1,12 @@
+score.auth-0.6.2-py3.4-nspkg.pth,sha256=fA8biMkxVemSH47fyEr6pGKJjVdKLTmUlWxwQVE1VoI,302
+score/auth/__init__.py,sha256=iQ2n5smCy11lzWXGBG-Qn57Hl5zhmTmGyH_Pi7K50-4,1647
+score/auth/_init.py,sha256=BYmOiNnySx5ECi2VdGr6fZfLgfezBmShXyMemAHoxbA,4611
+score/auth/_ruleset.py,sha256=SQyVjqUvG84Q_DLMrZsJghy7UXhIY5I-nXQVcegiufI,2768
+score/auth/authenticator.py,sha256=Tff11bs5mojJ8wK4xBgAivNTLra9qcAUVVqr5sgHncE,3291
+score.auth-0.6.2.dist-info/DESCRIPTION.rst,sha256=XU1TfceEjahBJO1DdIGTDY_tNxdBTbx4AmUQHRc9n9Q,2031
+score.auth-0.6.2.dist-info/METADATA,sha256=zPoU8iC-dgyWA6mU8l9QOifW3KZeC4L2xMaijr1150Q,2985
+score.auth-0.6.2.dist-info/RECORD,,
+score.auth-0.6.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+score.auth-0.6.2.dist-info/metadata.json,sha256=I6GItGu81s2Ei3cjynjzuHEpd-SJH_7XGnqDLX3_FVM,1092
+score.auth-0.6.2.dist-info/namespace_packages.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6
+score.auth-0.6.2.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6

@@ -1,0 +1,88 @@
+---
+version: '2.0'
+name: tripleo.swift_rings_backup.v1
+description: TripleO Swift Rings backup container Deployment Workflow v1
+
+workflows:
+
+  create_swift_rings_backup_container_plan:
+    description: >
+      This plan ensures existence of container for Swift Rings backup.
+    input:
+      - container
+      - queue_name: tripleo
+    tags:
+      - tripleo-common-managed
+    tasks:
+
+      swift_rings_container:
+        publish:
+          swift_rings_container: "<% $.container %>-swift-rings"
+          swift_rings_tar: "swift-rings.tar.gz"
+        on-complete: check_container
+
+      check_container:
+        workflow: tripleo.swift.v1.container_exists container=<% $.swift_rings_container %>
+        input:
+          create_container: true
+        on-success: get_tempurl
+        on-error: set_create_container_failed
+
+      get_tempurl:
+        action: tripleo.swift.tempurl
+        on-success: set_get_tempurl
+        input:
+          container: <% $.swift_rings_container %>
+          obj: <% $.swift_rings_tar %>
+
+      set_get_tempurl:
+        action: tripleo.parameters.update
+        input:
+          parameters:
+            SwiftRingGetTempurl: <% task(get_tempurl).result %>
+          container: <% $.container %>
+        on-success: put_tempurl
+
+      put_tempurl:
+        action: tripleo.swift.tempurl
+        on-success: set_put_tempurl
+        input:
+          container: <% $.swift_rings_container %>
+          obj: <% $.swift_rings_tar %>
+          method: "PUT"
+
+      set_put_tempurl:
+        action: tripleo.parameters.update
+        input:
+          parameters:
+            SwiftRingPutTempurl: <% task(put_tempurl).result %>
+          container: <% $.container %>
+        on-success: set_status_success
+        on-error: set_put_tempurl_failed
+
+      set_status_success:
+        on-success: notify_zaqar
+        publish:
+          status: SUCCESS
+          message: <% task(set_put_tempurl).result %>
+
+      set_put_tempurl_failed:
+        on-success: notify_zaqar
+        publish:
+          status: FAILED
+          message: <% task(set_put_tempurl).result %>
+
+      set_create_container_failed:
+        on-success: notify_zaqar
+        publish:
+          status: FAILED
+          message: <% task(create_container).result %>
+
+      notify_zaqar:
+        workflow: tripleo.messaging.v1.send
+        input:
+          queue_name: <% $.queue_name %>
+          type: <% execution().name %>
+          status: <% $.get('status', 'SUCCESS') %>
+          message: <% $.get('message', '') %>
+          execution: <% execution() %>

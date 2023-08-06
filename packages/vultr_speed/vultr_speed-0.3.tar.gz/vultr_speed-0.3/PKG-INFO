@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: vultr_speed
+Version: 0.3
+Summary: get fast vultr node for you
+Home-page: https://github.com/rfyiamcool/vultr_speed
+Author: ruifengyun
+Author-email: rfyiamcool@163.com
+License: MIT
+Description: # vultr_speed
+        
+        ## install
+        
+        ```
+        pip install vultr_speed
+        ```
+        
+        or
+        
+        ```
+        python setup.py install
+        ```
+        
+        ## run
+        
+        ```
+        > vultr_speed
+        
+        ...
+        ...
+        ...
+        
+        ```
+        
+Keywords: vultr,fengyun
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: catcher-modules
+Version: 1.2.2
+Summary: Additional modules for catcher.
+Home-page: https://github.com/comtihon/catcher_modules
+Author: Valerii Tikhonov
+Author-email: valerii.tikhonov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: mock
+Requires-Dist: pytest
+Requires-Dist: pykafka
+Requires-Dist: psycopg2
+Requires-Dist: catcher
+Requires-Dist: couchbase
+Requires-Dist: redis
+
+UNKNOWN
+
+

@@ -1,0 +1,7 @@
+numpy
+torch>=0.4
+torchvision
+scipy
+scikit-learn
+tqdm
+tensorboardX>=1.2

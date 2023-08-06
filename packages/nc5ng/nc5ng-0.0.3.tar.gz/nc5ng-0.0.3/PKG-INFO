@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: nc5ng
+Version: 0.0.3
+Summary: Python MetaPackage for nc5ng
+Home-page: https://nc5ng.org/projects/nc5ng-python
+Author: Andrey Shmakov
+Author-email: akshmakov@gmail.com
+License: MIT
+Download-URL: https://github.com/nc5ng/nc5ng-python-toplevel
+Description: Used to install all components of nc5ng-python 
+        
+        For More Information See: https://nc5ng.org/projects/nc5ng-python
+        
+        For Documentation See: https://docs.nc5ng.org/latest
+        
+Platform: UNKNOWN

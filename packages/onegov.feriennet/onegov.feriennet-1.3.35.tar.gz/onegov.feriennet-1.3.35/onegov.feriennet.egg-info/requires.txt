@@ -1,0 +1,15 @@
+faker
+icalendar
+onegov.activity
+onegov.core>=0.70.5
+onegov.org>=0.20.0
+
+[test]
+coverage
+freezegun
+onegov_testing
+pytest
+pytest-localserver
+pyquery
+requests-mock
+ulid

@@ -1,0 +1,12 @@
+setup.py
+pywmi/__init__.py
+pywmi/domain.py
+pywmi/parse.py
+pywmi/smt_check.py
+pywmi/smt_walk.py
+pywmi.egg-info/PKG-INFO
+pywmi.egg-info/SOURCES.txt
+pywmi.egg-info/dependency_links.txt
+pywmi.egg-info/not-zip-safe
+pywmi.egg-info/requires.txt
+pywmi.egg-info/top_level.txt

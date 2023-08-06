@@ -1,0 +1,10 @@
+pyonmttok-1.6.1.dist-info/top_level.txt,sha256=wuxOdfXNXj98ECi-4TSLRm_bpRYIccmePnOKlVvxvfY,10
+pyonmttok-1.6.1.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
+pyonmttok-1.6.1.dist-info/RECORD,,
+pyonmttok-1.6.1.dist-info/METADATA,sha256=_PKWBzBNz3kjbusbJ29YT2KD6QopgYiDrbGaUkc5LM0,694
+pyonmttok/__init__.py,sha256=EK9QEmBWSuGxlf7sYqNCvKT1cGwRk5cRUEJYXlL7Sjc,42
+pyonmttok/tokenizer.cpython-36m-x86_64-linux-gnu.so,sha256=Hm62lUPppDIXOpqulMldj_9vy0PKhI43nAswrs5SzBA,1402280
+pyonmttok/.libs/libsentencepiece-8acd2163.so.0.0.0,sha256=QBLlwM77HCZlQUzBLpaR-di4MqG2629cp9DVv3JyUKM,699624
+pyonmttok/.libs/libOpenNMTTokenizer-0633d0b1.so,sha256=EKKo004HVfj64dgei1RtjNlBwMvFaAjcvpVQCZlIqow,273920
+pyonmttok/.libs/libprotobuf-f16aca65.so.15.0.1,sha256=xZzP7RU4SXcD7B6k3LesEmiZoTNRoKqiBXvdpLSN5HI,30227784
+pyonmttok/.libs/libboost_python3-f5477550.so.1.66.0,sha256=KUp2U4pRh7NlKbJL_TAcUYuLxV37dDnnAWMEaAV5Yl8,439152

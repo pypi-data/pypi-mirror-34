@@ -1,0 +1,11 @@
+requests>=2.4.3
+
+[testing]
+pytest
+coverage
+pytest-cov
+requests-mock
+pytest-mock
+
+[validate]
+biopython

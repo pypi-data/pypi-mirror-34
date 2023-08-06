@@ -1,0 +1,10 @@
+
+include test_project emojineer/data/whiten_emoji_apple/*
+include test_project emojineer/data/num_wemoji_dict.json
+include test_project emojineer/data/pickle_w1x1_hash_dicts_0_256_5
+include test_project emojineer/data/pickle_w1x1_hash_dicts_0_256_20
+include test_project emojineer/data/wemoji_num_dict.json
+include test_project emojineer/data/whiten_emoji_1x1_rgb.json
+include test_project emojineer/requirements.txt
+include test_project gogh.jpg
+include test_project gogh_step_5_sim_0_c_0250.jpg

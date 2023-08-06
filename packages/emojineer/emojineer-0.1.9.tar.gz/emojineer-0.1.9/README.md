@@ -1,0 +1,33 @@
+# Emojineer
+
+Are you an engineer? No! No! You're an EMOJINEER!
+Emojineer emojinize everything on this planet.
+By emojineering you'll release your nerves.
+![before](https://image.ibb.co/hyyjPT/gogh.jpg)
+![after](https://image.ibb.co/iyEPPT/gogh_step_5_sim_0_c_0250.jpg)
+
+## Let's
+
+Execute `pip install emojineer`.
+
+Have `hello_kitty.jpg` in your project directory.
+
+Create a python script like this:
+```python
+from emojineer.emojineer import emojineer
+
+emojineer(target_file_path="hello_kitty.jpg", conversion=0.03, save_dir=".", save_name="emoji_kitty.jpg")
+```
+
+Execute the python file and you'll have emojinized hello kitty!
+
+## Parameters
+target_file_path: Path of the target image from current directory. Supported extensions are whatever opencv supports.
+
+conversion: Indicates how abstract the output will be. Takes 0 to 1.
+
+save_dir: Save directory from current directory.
+
+save_name: Base name of the output. Emojineer saves with other parameters in the save name.
+
+

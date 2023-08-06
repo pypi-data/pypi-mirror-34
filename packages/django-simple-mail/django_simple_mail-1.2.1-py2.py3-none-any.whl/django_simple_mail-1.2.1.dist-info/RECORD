@@ -1,0 +1,16 @@
+django_simple_mail-1.2.1.dist-info/METADATA,sha256=_0PNuFcIz5qDpVJf__GLKs3sDhWQ9pFwXXpyYC-dAbk,5533
+django_simple_mail-1.2.1.dist-info/RECORD,,
+django_simple_mail-1.2.1.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+django_simple_mail-1.2.1.dist-info/top_level.txt,sha256=_2FgWb73oqUdLPveZCAz3K17d3Gsg6Mg8fUUdNiHrzQ,12
+simple_mail/__init__.py,sha256=jNRu80GE72JJcclvHahOt0d_cXMrukKCPPXFULCPPxQ,680
+simple_mail/admin.py,sha256=_okvqg-DQmYz529K6GQuruSrjkll-D_2iWwh8mIflOU,4255
+simple_mail/apps.py,sha256=rFxnrEl0rB4mHCiWugqpY8Ej064M5TKZRo6-X0u4DaU,137
+simple_mail/forms.py,sha256=kEvwSawp7qcCVcLUMrDLTmbXLK008BpwbX2s5FoRx-A,332
+simple_mail/mailer.py,sha256=yuDWgtxaOxzSwiiHLKo2T3IRL2WIfu4wScoURPDYpns,425
+simple_mail/models.py,sha256=naeP9GmnnxEMSNe2UCNlddd-fA2gQuGStFiaopeUaQ4,4773
+simple_mail/settings.py,sha256=53iH5J08HWWcMAwt1q3WNAJGz_CgZol-CD52JuKmJ9E,3627
+simple_mail/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+simple_mail/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+simple_mail/migrations/0001_initial.py,sha256=5Mvn15ERJpNDiPKs-POkG6I5Vp8tS7eWXfjQYtVo88Y,1247
+simple_mail/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_mail/templates/simple_mail/default.html,sha256=MYArPf_i3jepjP56f3VBGDenUuzI7g1wTQKaG3h2p_8,12331

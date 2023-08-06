@@ -1,0 +1,8 @@
+setup.py
+revfyawo.mongo.egg-info/PKG-INFO
+revfyawo.mongo.egg-info/SOURCES.txt
+revfyawo.mongo.egg-info/dependency_links.txt
+revfyawo.mongo.egg-info/requires.txt
+revfyawo.mongo.egg-info/top_level.txt
+revfyawo/mongo/__init__.py
+revfyawo/mongo/document.py

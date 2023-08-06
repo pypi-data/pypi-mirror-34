@@ -1,0 +1,11 @@
+widgetastic/__init__.py,sha256=Zr_8Dq0yby5GcrC0PSfpv9wv5A2PRLLxBa3H2Sp6oJM,64
+widgetastic/browser.py,sha256=O-MIcHA_AFZjx0CmACSb8uUXSH6_XAtjcoFLp8jQxVY,34485
+widgetastic/exceptions.py,sha256=c1duBPNPX7h1OLw_rdReUFfHoJ3eBYXl8drHO7Z9s00,623
+widgetastic/log.py,sha256=GNSsbHNlFXlUGYBbTW7amOmlfUGe8Wt0EJUsg2Ci9h4,5696
+widgetastic/utils.py,sha256=LeLHfcuGwckEpvW0Kcq5ItT64M_uXz1V5wP1gyPUx_M,22874
+widgetastic/widget.py,sha256=3CLsFKiBz5irXOVb2Y2xjGc9VmzgA0briiwOnApAyd8,94285
+widgetastic/xpath.py,sha256=VFMeWvfQcAYo64_zfbV6VcJvyJYq8MlPkc8RHt7MCBo,738
+widgetastic.core-0.21.6.dist-info/METADATA,sha256=xpELh6xVqO71yr9k5bWpWTHQ1APKx94g0sI1rXzMK0s,3101
+widgetastic.core-0.21.6.dist-info/RECORD,,
+widgetastic.core-0.21.6.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+widgetastic.core-0.21.6.dist-info/top_level.txt,sha256=FkpIfMrvXp0ThTt2jZQyiFvG0J0YesYAOLTaeA43QgY,12

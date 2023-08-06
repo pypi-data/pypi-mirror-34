@@ -1,0 +1,16 @@
+static_frame/__init__.py,sha256=_iCIQdusGeP3XqfIymgi3JbGcfpjtlnSg6fhorc0hVE,1423
+static_frame/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+static_frame/core/display.py,sha256=aaKLNJ482z1fJ2v0tYwOMI3R-wYQUZfrymnr20aKypM,14837
+static_frame/core/frame.py,sha256=jbOXfS9nKMnmhj94dTqRHK8Ln6OhNGvopGpvT5n5I7o,60726
+static_frame/core/index.py,sha256=13ElJ9EjlZbZ6oIsgDRh9y6L1EQMYMno1iBntYvj89Q,17698
+static_frame/core/iter_node.py,sha256=lXYYuYhI5osGhlIEvjzQL1ADeStxHvOnSI5eQxJ6PQA,7823
+static_frame/core/operator_delegate.py,sha256=aJ86Guy3ikje3xVzXsM8KDMcB4He9CrbFKPy2Zna33U,6583
+static_frame/core/series.py,sha256=SZDxmNKWhsXBoASV0UZvV7aZldtjeipIFDwRbheKcT0,25148
+static_frame/core/type_blocks.py,sha256=GTwpB2AL6X1oXUDd6QjwshEkB-bkLYcGK-ZXR172Z-4,54090
+static_frame/core/util.py,sha256=ChprPzii6JRs4rRqOxVAqqFcPrFFebNc3PMtIkYcg1Q,17596
+static_frame-0.1.6.dist-info/DESCRIPTION.rst,sha256=VmcGkBFW_cO8qF_NkfAO5h8e1L_TxUOJYgYdt2Z2DFw,1027
+static_frame-0.1.6.dist-info/METADATA,sha256=3H57gPqhmPYw9C0oATm82Eeehxs2ISACCED2uYOEKLk,1763
+static_frame-0.1.6.dist-info/RECORD,,
+static_frame-0.1.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+static_frame-0.1.6.dist-info/metadata.json,sha256=tPF0LXwtIooDUpKQV_6-iLbaQZZpxVOcP3qTQ4DPvuY,916
+static_frame-0.1.6.dist-info/top_level.txt,sha256=LJGSvKwCTgH5Ac9OsU9pMQsuwcuCAV9ZwiA0xLirAkY,13

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: googlespreadsheets
+Version: 0.0.1
+Summary: A Package for read and writing google sheets to and from Pandas dataframes
+Home-page: https://github.com/yinleon/googlespeadsheets
+Author: leon yin
+Author-email: whereisleon@gmail.com
+License: MIT
+Description: A Package for read and writing google sheets to and from Pandas dataframes
+Keywords: google sheet spreadsheet pandas
+Platform: UNKNOWN

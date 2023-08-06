@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyrandomsearch
+Version: 0.1.0
+Summary: Command line utility to perform random search
+Home-page: https://github.com/vietjtnguyen/pyrandomsearch/
+Author: Viet The Nguyen
+Author-email: vietjtnguyen@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

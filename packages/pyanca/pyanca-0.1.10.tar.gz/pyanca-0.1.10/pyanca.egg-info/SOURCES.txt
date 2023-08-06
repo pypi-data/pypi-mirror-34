@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyanca/IterativeMeansAlign.py
+pyanca/KabschAlign.py
+pyanca/SD2.py
+pyanca/TD2.py
+pyanca/TD4.py
+pyanca/__init__.py
+pyanca.egg-info/PKG-INFO
+pyanca.egg-info/SOURCES.txt
+pyanca.egg-info/dependency_links.txt
+pyanca.egg-info/requires.txt
+pyanca.egg-info/top_level.txt

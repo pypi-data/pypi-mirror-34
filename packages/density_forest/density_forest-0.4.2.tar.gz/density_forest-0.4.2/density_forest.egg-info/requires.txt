@@ -1,0 +1,15 @@
+numpy
+matplotlib
+scipy
+tqdm
+Cython
+scikit-image
+pandas
+torch
+torchvision
+keras
+tensorflow
+keras
+joblib
+pip
+sklearn

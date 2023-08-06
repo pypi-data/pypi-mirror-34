@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: mkwvconf
+Version: 0.0.1
+Summary: Automatically generate a wvdial configuration for mobile broadband devices using mobile-broadband-provider-info
+Home-page: https://github.com/ascoderu/mkwvconf
+Author: Clemens Wolff
+Author-email: clemens.wolff+pypi@gmail.com
+License: Apache Software License
+Download-URL: https://pypi.python.org/pypi/mkwvconf
+Description: [![Travis CI status](https://api.travis-ci.org/ascoderu/mkwvconf.svg?branch=master)](https://travis-ci.org/ascoderu/mkwvconf)
+        
+        This is a fork of mkwvconf modified to work on Python 2.7 and later
+        
+        The original mkwvconf lives here: https://github.com/schuay/mkwvconf
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities

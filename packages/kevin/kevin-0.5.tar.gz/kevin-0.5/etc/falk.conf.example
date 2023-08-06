@@ -1,0 +1,90 @@
+###############################################################################
+# configuration for a falk vm provider
+###############################################################################
+[falk]
+name = test-falk
+control_socket = /run/kevin/falk
+control_socket_permissions = 770
+#control_socket_group = kevin
+
+# range of ports where VMs will listen for SSH
+# when the vm is spawned, it selects a port from this range.
+# when you don't have VMs, specify the port where to connect to here.
+# (can be set to [22,22] to only use port 22)
+#
+# the selected port is passed below as {SSHPORT} to the incovation.
+vm_ports = [7888,8000]
+
+
+###############################################################################
+# this is a VM provided by this falk:
+[some-random-vm-id]
+
+# VM name, which is requested by a job of some project.
+name = machine-which-the-job-requests
+
+# VM type, see falk/vm/ for supported backends.
+type = qemu
+
+# user used for ssh login
+ssh_user = chantal
+
+# host used by kevin to connect to.
+# special value: "localhost" => kevin connects to falk machine
+ssh_host = localhost
+
+# public key of the VM's ssh server so we can verify we connected to the right one.
+# you can either:
+#   * specify the ssh server public key of the vm directly
+#     (ssh-rsa AAAAB3Nza... or ecdsa-sha2-nistp256 AAAAE2..., etc)
+#   * provide a path to the public key file or known hosts file
+#     (~/.ssh/known_hosts, /etc/ssh/ssh_*_key.pub)
+#
+# comment out both to disable host key verification.
+ssh_known_host_key = ssh-ed25519 AAAAAB3Nza_The_VM's_/etc/ssh/ssh_host_ed25519_key.pub_CONTENT
+#ssh_known_host_key_file = /some/mountpoint/of/vm/etc/ssh/ssh_host_ed25519_key.pub
+
+# VM image that you created, is used to create working copies from.
+base_image = /path/to/permanent/diskimage.qcow2
+
+# VM image file name that will be stored for copy-on-write data.
+# This path will be suffixed with ".someid" for each parallel VM run
+overlay_image = /tmp/kevin-vm-tmp.img
+
+# invocation: 2 CPUs, 2G RAM, no display
+command = qemu-system-x86_64 -machine type=q35,accel=kvm -cpu host -smp 2 -m 2G -drive file={IMAGENAME},if=virtio,format=qcow2 -device virtio-balloon -display none -net nic,model=virtio -net user,hostfwd=tcp:127.0.0.1:{SSHPORT}-:22 -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0
+# folder sharing from host to VM:
+#   QEMU:          -virtfs local,path=/shared/host/path/maybe/for/ccache,mount_tag=yourtag,security_model=mapped-xattr,id=p9net0
+#   fstab in VM:   yourtag /wherever 9p trans=virtio,version=9p2000.L 0 0
+# remote desktop:
+#   QEMU:          -vnc 127.0.0.1:1    instead of -display none
+#   then use a vncclient to connect to port 5901
+#   (maybe forward the port to your machine with `ssh -L 12345:localhost:5901 youruser@falkhost`,
+#    then connect with a vncviewer: e.g. `vinagre localhost:12345`)
+
+
+###############################################################################
+# another container definition, provided by this falk:
+[custom-commands]
+
+name = machine-name-for-job
+type = custom
+
+# when kevin connects to container via ssh, he uses this user
+ssh_user = chantal
+
+# kevin's ssh connects to this host.
+# special value: "localhost" => kevin connects to falk machine
+ssh_host = localhost
+
+# custom commands for container control.
+# when the launch command terminates, the container is assumed to be shut down.
+# see falk/vm/custom.py for implementation.
+prepare = sh -c 'echo preparing manage=$FALK_MANAGE'
+launch = sh -c 'echo launching manage=$FALK_MANAGE; nc -lp $FALK_SSH_PORT'
+cleanup = echo "cleaning up"
+
+
+###############################################################################
+#[some-other-vm-id]
+#... definitions for another vm, just like the ones under [some-random-vm-id] or [custom-commands]

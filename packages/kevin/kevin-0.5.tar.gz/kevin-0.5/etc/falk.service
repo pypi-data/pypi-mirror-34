@@ -1,0 +1,12 @@
+[Unit]
+Description=Falk VM provider for Kevin
+After=network.target
+
+[Service]
+Type=simple
+User=falk
+ExecStart=/usr/bin/env python3 -m falk
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,56 @@
+# example control file
+# syntax similar to makefiles
+
+# * each step can depend on other steps
+# * it can have optional settings like cwd or env variables
+# * the step consists of one or more commands
+# * after all commands of a step, output files can be saved
+#
+# EXAMPLE:
+#
+# stepname: other-stepname other-stepname-that-must-suceed-before bla bla
+#     - optional rule setup stuff, e.g.:
+#     - env: variable=value mom="really fat"  # set environment variables
+#     - hidden                                # hide that rule from all output
+#     - skip                                  # skip this step
+#     - skip  (? if job == "some_jobname" ?)  # skip only if jobname matches
+#
+#     # there can be one or more output file declarations.
+#     # those also support the if-conditionals
+#     - output: "some/file/to/save/in/static/output/folder" as "output_name"
+#     - output: "or/some/directory/to/send/" as "output_dir_name"
+#     - cwd: "~/dir/to/run/the/commands/in/"
+#
+#     # then, the step commands follow:
+#     echo "some command executed in sh"
+#     echo "if one command fails, the step will fail"
+#     echo "it fails when returncode != 0"
+#
+#     cd somewhere/ && echo "each line is in its own shell!"
+#     echo "so the following command is no longer in 'somewhere/'"
+
+# the steps are executed in order.
+# any step with no more pending dependencies is executed.
+# if multiple are ready, the first in the order will be run first.
+
+tamale:
+	- env: STUFF="hot hot"
+	echo "do you like tamale?"
+	sleep 1
+	echo "$STUFF tamale?"
+	sleep 2
+
+sudo:
+	- hidden
+	- output: "/tmp/produced_file" as "root_result"
+	sudo echo "i got root!" | tee /tmp/produced_file
+	echo "running on whitespaceOS"  (? if job == "whitespaceOS" ?)
+
+cpuinfo: tamale sudo
+	echo awsum vm:
+	cat /proc/cpuinfo
+
+great_success: cpuinfo
+	echo "raus raus raus, die nyan-katze"
+
+	echo "now, copy this file in your project and modify it!"

@@ -1,0 +1,12 @@
+[Unit]
+Description=Kevin Continuous Integration
+After=network.target
+
+[Service]
+Type=simple
+User=kevin
+ExecStart=/usr/bin/env python3 -m kevin
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

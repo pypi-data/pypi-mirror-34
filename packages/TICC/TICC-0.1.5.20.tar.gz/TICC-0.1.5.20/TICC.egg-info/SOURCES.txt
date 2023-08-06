@@ -1,0 +1,11 @@
+MANIFEST.in
+instructions.txt
+setup.cfg
+setup.py
+TICC.egg-info/PKG-INFO
+TICC.egg-info/SOURCES.txt
+TICC.egg-info/dependency_links.txt
+TICC.egg-info/requires.txt
+TICC.egg-info/top_level.txt
+ticc/__init__.py
+ticc/ticc.py

@@ -1,0 +1,10 @@
+README.md
+setup.py
+python_twitch_irc/__init__.py
+python_twitch_irc/irc.py
+python_twitch_irc.egg-info/PKG-INFO
+python_twitch_irc.egg-info/SOURCES.txt
+python_twitch_irc.egg-info/dependency_links.txt
+python_twitch_irc.egg-info/entry_points.txt
+python_twitch_irc.egg-info/requires.txt
+python_twitch_irc.egg-info/top_level.txt

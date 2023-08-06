@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: githubapi
+Version: 0.1.0.dev0
+Summary: GitHub API Wrapper with super powers
+Home-page: https://githubapi.com/biwin/github
+Author: Biwin John
+Author-email: biwinjohn@gmail.com
+License: Apache 2.0
+Download-URL: https://githubapi.com/biwin/github/
+Description: UNKNOWN
+Keywords: github-api,github,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

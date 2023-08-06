@@ -1,0 +1,6 @@
+pyserial
+requests
+pathlib
+psutil
+azure
+tornado

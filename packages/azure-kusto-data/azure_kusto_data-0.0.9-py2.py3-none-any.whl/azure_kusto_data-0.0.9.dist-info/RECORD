@@ -1,0 +1,16 @@
+azure/kusto/__init__.py,sha256=q3JNmHn0CMPtEqkMR40lkjKQzuWUtT39xIFUYJ-MKIE,56
+azure/kusto/data/__init__.py,sha256=2OTzAQ5EHYlx9Tu1CfmdA8tye19TGv_S4bZN0-mz6TI,79
+azure/kusto/data/_request.py,sha256=aDMFmXu6ao0GkpMWk-ika973MVlnuL7nZvZjf6ostGs,8727
+azure/kusto/data/_response.py,sha256=Q35UhdSx2c0SsB4_gCk8fXccrQMOEu4R8fc3SXfPOZw,10464
+azure/kusto/data/_version.py,sha256=f6mI844oWsnVwdm9TY1mEfM0MxXyof0ZJORy-tpNT7o,38
+azure/kusto/data/aad_helper.py,sha256=9ReyTrtzHocbcjOTjs2z6qiEQs2hLygmdJnvt5JXZe8,2709
+azure/kusto/data/exceptions.py,sha256=8vseNDoUOHNjzWavdhHFwodHng7Ut7GiVtryxsE6cYM,1147
+azure_kusto_data-0.0.9.dist-info/METADATA,sha256=jI8wO2pza2e7Cq_SSNtFQ6d3pxWAqWa9kfJxtR63a3E,2026
+azure_kusto_data-0.0.9.dist-info/RECORD,,
+azure_kusto_data-0.0.9.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+azure_kusto_data-0.0.9.dist-info/top_level.txt,sha256=h-L8XDVPJ9YzBbHlPvM7FVo1cqNGToNK9ix99ySGOUY,12
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/sample.py,sha256=pGl3GmQkZHF1JC7MXDQevhthwWJv3wPLF1Mr8GNbVxg,2261
+tests/test_converter.py,sha256=53o2dmhNyB-x7ysFo8cOIGzQVM6E83qfQqOuMGXgePo,3395
+tests/test_functional.py,sha256=syrRECCTJi3et-Gi3hS9WsRW3nUY85EFNCFT-y8CNJM,6728
+tests/test_kusto_client.py,sha256=FFWvAvZJyTiBmPwDn2mP6jdLitwTa8qTlYsr3UnEQ2c,17226

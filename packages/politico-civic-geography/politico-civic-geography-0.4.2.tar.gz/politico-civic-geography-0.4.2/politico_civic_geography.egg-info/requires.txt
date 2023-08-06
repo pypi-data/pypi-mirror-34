@@ -1,0 +1,15 @@
+boto3
+census
+DictObject
+django
+djangorestframework
+dj-database-url
+geojson
+psycopg2
+pyshp
+stringcase
+tqdm
+us
+
+[test]
+pytest

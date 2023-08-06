@@ -1,0 +1,14 @@
+setup.py
+gpx_parser/GPX.py
+gpx_parser/GPXTrack.py
+gpx_parser/GPXTrackPoint.py
+gpx_parser/GPXTrackSegment.py
+gpx_parser/__init__.py
+gpx_parser/parser.py
+gpx_parser/utils.py
+gpx_parser/xml_loader.py
+gpx_parser.egg-info/PKG-INFO
+gpx_parser.egg-info/SOURCES.txt
+gpx_parser.egg-info/dependency_links.txt
+gpx_parser.egg-info/requires.txt
+gpx_parser.egg-info/top_level.txt

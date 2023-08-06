@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nimesh
+Version: 0.0.1
+Summary: A Python package to manipulate neuroimaging triangular meshes.
+Home-page: https://github.com/sdeslauriers/nimesh
+Author: Samuel Deslauriers-Gauthier
+Author-email: sam.deslauriers@gmail.com
+License: MIT
+Description: # nimesh
+        A Python package to manipulate neuroimaging meshes
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Description-Content-Type: text/markdown

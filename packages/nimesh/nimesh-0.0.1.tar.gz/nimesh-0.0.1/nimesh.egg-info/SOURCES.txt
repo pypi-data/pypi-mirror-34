@@ -1,0 +1,14 @@
+README.md
+setup.py
+nimesh/__init__.py
+nimesh/asarray.py
+nimesh/core.py
+nimesh/mixins.py
+nimesh.egg-info/PKG-INFO
+nimesh.egg-info/SOURCES.txt
+nimesh.egg-info/dependency_links.txt
+nimesh.egg-info/requires.txt
+nimesh.egg-info/top_level.txt
+nimesh/io/__init__.py
+nimesh/io/freesurfer.py
+nimesh/io/gifti.py

@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: sentry-sdk
+Version: 0.1.0rc1
+Summary: Python client for Sentry (https://getsentry.com)
+Home-page: https://github.com/getsentry/sentry-sdk
+Author: Sentry
+Author-email: hello@getsentry.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: urllib3
+Requires-Dist: certifi
+Provides-Extra: flask
+Requires-Dist: flask (>=0.8); extra == 'flask'
+Requires-Dist: blinker (>=1.1); extra == 'flask'
+
+UNKNOWN
+
+

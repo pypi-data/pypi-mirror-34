@@ -1,0 +1,8 @@
+pytest_flask_sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_flask_sqlalchemy/fixtures.py,sha256=Uq-FKwzOCLBC0V7rUQ_rqJn_tpacHpjllQkAFxarrKQ,7388
+pytest_flask_sqlalchemy/plugin.py,sha256=th5oGTLnL97bwfqyVO57DvZrw7uf25QyTblgLEDr6_8,1256
+pytest_flask_sqlalchemy-1.0.0.dist-info/METADATA,sha256=dcu-nFMAeUTbE1Roe9EdpODOL1TCtAy9WKX_dMilBEk,17634
+pytest_flask_sqlalchemy-1.0.0.dist-info/RECORD,,
+pytest_flask_sqlalchemy-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pytest_flask_sqlalchemy-1.0.0.dist-info/entry_points.txt,sha256=FDAkiuHfe0w_JqNEqZz2ujuHf2nUV2QIyjlDWrzV7oA,69
+pytest_flask_sqlalchemy-1.0.0.dist-info/top_level.txt,sha256=l-heUoT7YiVd7KNDmwBKmZDeF9vWgZZG2h0c_dQuv1c,24

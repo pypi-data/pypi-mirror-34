@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+PySimpleValidate.egg-info/PKG-INFO
+PySimpleValidate.egg-info/SOURCES.txt
+PySimpleValidate.egg-info/dependency_links.txt
+PySimpleValidate.egg-info/top_level.txt
+docs/Makefile
+docs/conf.py
+docs/index.rst
+docs/make.bat
+pysimplevalidate/__init__.py
+pysimplevalidate/test1.py
+tests/test_pysimplevalidate.py

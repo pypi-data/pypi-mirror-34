@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: sfquery
+Version: 1.0.0
+Summary: A package to query reliable collections using python or jupyter notebook interfaces
+Home-page: https://github.com/amenarde/reliable-collections-cli
+Author: Antonio Menarde, Shalabh Mohan Shrivastava
+Author-email: amenarde@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: xmljson
+Requires-Dist: sfctl
+Requires-Dist: ipywidgets
+
+# Service Fabric Reliable Collections Query API
+
+`sfquery` is a python library that allows you to discover your reliable collections and query against them.
+The recommended way of consuming `sfquery` is using its command line interface, `rcctl`.
+
+To read the full `rcctl` documentation, visit
+[https://github.com/amenarde/reliable-collections-cli](https://github.com/amenarde/reliable-collections-cli)
+
+To read the `sfquery` API and see some examples, visit
+[https://github.com/amenarde/reliable-collections-cli/blob/master/sfquery/api.md](https://github.com/amenarde/reliable-collections-cli/blob/master/sfquery/api.md)
+
+## Changelog
+
+### 0.1.0
+
+Initial beta release.
+
+API is likely to change in future.
+
+

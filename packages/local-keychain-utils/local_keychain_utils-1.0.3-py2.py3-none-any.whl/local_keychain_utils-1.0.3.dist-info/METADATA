@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: local-keychain-utils
+Version: 1.0.3
+Summary: CLI tools to manipulate local keychain
+Home-page: https://github.com/apiology/local_keychain_utils
+Author: Vince Broz
+Author-email: vince@broz.cc
+License: MIT license
+Keywords: local_keychain_utils
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: !=2,>=3.6
+Requires-Dist: keyring
+Requires-Dist: keyrings.alt
+Requires-Dist: pycrypto
+Requires-Dist: pysectools
+
+========================
+Local Keychain Utilities
+========================
+
+
+.. image:: https://img.shields.io/pypi/v/local_keychain_utils.svg
+        :target: https://pypi.python.org/pypi/local_keychain_utils
+
+.. image:: https://img.shields.io/travis/apiology/local_keychain_utils.svg
+        :target: https://travis-ci.org/apiology/local_keychain_utils
+
+.. image:: https://readthedocs.org/projects/local-keychain-utils/badge/?version=latest
+        :target: https://local-keychain-utils.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/apiology/local_keychain_utils/shield.svg
+     :target: https://pyup.io/repos/github/apiology/local_keychain_utils/
+     :alt: Updates
+
+
+
+CLI tools to manipulate local keychain
+
+
+* Free software: MIT license
+* Documentation: https://local-keychain-utils.readthedocs.io.
+
+
+Features
+--------
+
+* `local-keychain-store`: add a secret from the system keychain.
+* `local-keychain-get`: retrieve a secret from the system keychain.
+* `local-keychain-clear`: remove a secret from the system keychain.
+
+
+=======
+History
+=======
+
+0.1.0 (2018-08-05)
+------------------
+
+* First release on PyPI.
+
+

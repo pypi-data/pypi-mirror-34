@@ -1,0 +1,7 @@
+[console_scripts]
+ldoc = lztools.cli.ldock:main
+lgit = lztools.cli.lgit:main
+lmod = lztools.cli.lmod:main
+lztools = lztools.cli.console:main
+preg = lztools.cli.preg:main
+

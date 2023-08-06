@@ -1,0 +1,3 @@
+[console_scripts]
+lmod = lztools.lmod:main
+

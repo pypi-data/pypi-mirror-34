@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+lztools/lmod.py
+lztools/modules.py
+lztools.modules.egg-info/PKG-INFO
+lztools.modules.egg-info/SOURCES.txt
+lztools.modules.egg-info/dependency_links.txt
+lztools.modules.egg-info/entry_points.txt
+lztools.modules.egg-info/not-zip-safe
+lztools.modules.egg-info/requires.txt
+lztools.modules.egg-info/top_level.txt

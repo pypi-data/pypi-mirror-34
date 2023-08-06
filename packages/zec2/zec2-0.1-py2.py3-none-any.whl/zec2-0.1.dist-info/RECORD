@@ -1,0 +1,9 @@
+zec2/__init__.py,sha256=w5h7wZ6jvPFvvNtrztQoMDI81_X-vQPXpN1CT4cpjd0,39
+zec2/aws_ec2.py,sha256=QhmNcLoDP1a10Rwf0W7CuspQNoxtEMMCRT2oYs4W10Q,1615
+zec2/cli.py,sha256=NlZYvL2dTIYJkz4z0cdP32DQ1RTtERrp0hWrjJI5iD0,1573
+zec2-0.1.dist-info/LICENSE.txt,sha256=gFs-f7Ta2KbluTCG0S-Vi6oY6oLWiPzkeyK7oUBr4ZQ,1066
+zec2-0.1.dist-info/METADATA,sha256=02LjP1UNB1BPgicsvSzmhtVTJjuTzsLvhr_RtAfPqaY,1204
+zec2-0.1.dist-info/RECORD,,
+zec2-0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+zec2-0.1.dist-info/entry_points.txt,sha256=GJ6IxpaBIyruOj2T7ZXp2IvFp6BBBcdxlTAmJ7UDiGk,39
+zec2-0.1.dist-info/top_level.txt,sha256=2HSpKClf3oWceNc6KGh2o42YDp0zyZJP8sTephU2Fb4,5

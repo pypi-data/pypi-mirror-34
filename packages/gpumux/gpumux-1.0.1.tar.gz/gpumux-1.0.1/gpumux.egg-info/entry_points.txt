@@ -1,0 +1,3 @@
+[console_scripts]
+gpumux = gpumux.gpumux:main
+

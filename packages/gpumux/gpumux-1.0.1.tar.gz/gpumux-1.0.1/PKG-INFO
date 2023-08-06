@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: gpumux
+Version: 1.0.1
+Summary: A simple web interface for queueing GPU jobs in the cloud.
+Home-page: https://github.com/google/gpu-mux
+Author: David Berthelot
+Author-email: dberth@google.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Scientific/Engineering

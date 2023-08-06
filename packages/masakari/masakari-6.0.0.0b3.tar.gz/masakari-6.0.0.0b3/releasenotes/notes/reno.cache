@@ -1,0 +1,48 @@
+---
+file-contents:
+  releasenotes/notes/bp-mutable-config-57efdd467c01aa7b.yaml:
+    features: ['Masakari has been enabled for mutable config.
+
+        Below option may be reloaded by sending SIGHUP to the correct process.
+
+
+        ''retry_notification_new_status_interval'' option will apply to process
+
+        unfinished notifications.
+
+        ']
+  releasenotes/notes/db-purge-support-7a33e2ea5d2a624b.yaml:
+    features: ["Operators can now purge the soft-deleted records from the database\
+        \ tables.\nAdded below command to purge the records:\n\n  ``masakari-manage\
+        \ db purge --age_in_days <days> --max_rows <rows>``\n\nNOTE: ``notifications``\
+        \ db records will be purged on the basis of ``update_at``\nand ``status``\
+        \ fields (finished, ignored, failed) as these records will not be\nautomatically\
+        \ soft-deleted by the system.\n"]
+  releasenotes/notes/wsgi-applications-3ed7d6b89f1a5785.yaml:
+    upgrade: ['WSGI application script ``masakari-wsgi`` is now available. It allows
+
+        running the masakari APIs using a WSGI server of choice (for example
+
+        nginx and uwsgi, apache2 with mod_proxy_uwsgi or gunicorn).
+
+        The eventlet-based servers are still available, but the WSGI options will
+
+        allow greater deployment flexibility.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/bp-mutable-config-57efdd467c01aa7b.yaml
+    - !!binary |
+      NDI5OWIzODg4M2M3YzcxMWZmM2UzNDlmNWIxMzRiNmM5YTI3MmNhZg==
+  version: 6.0.0.0b3
+- files:
+  - - releasenotes/notes/wsgi-applications-3ed7d6b89f1a5785.yaml
+    - !!binary |
+      NWJiZDc4ZTMyNmU3NzI2MjI5YmI5NGY4ODdmMThmOGIyN2JiN2ExNA==
+  version: 6.0.0.0b2
+- files:
+  - - releasenotes/notes/db-purge-support-7a33e2ea5d2a624b.yaml
+    - !!binary |
+      NDA0OGIxZmQ4ZWFlMDY1NjUyMTA1ZDE5ODkyMDcxYjBhNGZhNTUzMw==
+  version: 6.0.0.0b1

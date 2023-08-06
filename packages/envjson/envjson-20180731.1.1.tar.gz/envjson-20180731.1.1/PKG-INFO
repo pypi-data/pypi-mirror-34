@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: envjson
+Version: 20180731.1.1
+Summary: Sample short description
+Home-page: https://pypi.python.org/pypi/envjson
+Author: envjson contributors
+Author-email: UNKNOWN
+License: BSD 3-Clause License
+Description: envjson
+        =======
+        https://pypi.python.org/pypi/envjson
+        
+        |release|  |lic|
+        
+        .. |release| image:: https://img.shields.io/pypi/v/envjson.svg
+            :target: https://pypi.python.org/pypi/envjson
+        
+        .. |lic| image:: https://img.shields.io/pypi/l/envjson.svg
+            :target: https://pypi.python.org/pypi/envjson
+        
+        
+        **Parse environments with ease**
+        
+        
+        Description
+        -----------
+        
+        *Sample short description*
+        
+        Here will be an introductory description.
+        
+        
+        
+        Documentation
+        -------------
+        
+        http://envjson.readthedocs.org/
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License

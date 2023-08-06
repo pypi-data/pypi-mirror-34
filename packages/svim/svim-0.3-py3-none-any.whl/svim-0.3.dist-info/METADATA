@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: svim
+Version: 0.3
+Summary: A structural variant caller for long reads.
+Home-page: https://github.com/eldariont/svim
+Author: David Heller
+Author-email: heller_d@molgen.mpg.de
+License: GPLv3
+Keywords: svim SV PacBio structural variation caller
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pysam
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: biopython
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+
+SVIM (pronounced SWIM) is a structural variant caller for long reads. It is able to detect and classify six different classes of structural variants. Unlike existing methods, SVIM integrates information from across the genome to precisely distinguish similar events, such as duplications and cut&paste insertions. In our experiments on simulated and real PacBio data, SVIM reached consistently better results than competing methods, particularly on low-coverage datasets. Furthermore, it is unique in its capability of extracting both the genomic origin and destination of insertions and duplications.
+
+

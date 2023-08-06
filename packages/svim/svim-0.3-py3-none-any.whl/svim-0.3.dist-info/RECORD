@@ -1,0 +1,15 @@
+svim/SVCandidate.py,sha256=MXiVPz0mHnVpxoW0MCA3iQcrd2m5aLHpoFWSjpK4TcY,17007
+svim/SVIM.py,sha256=-oRaicNsasC7QoyDP4bC6lGEbw03CZjucZoGG5fJf2I,12905
+svim/SVIM_CLUSTER.py,sha256=QrZr1Te8fBaX-eeJnmjG3eXdoFfWEZXiJobknRdl8HE,9997
+svim/SVIM_COLLECT.py,sha256=aaPWWwhmrjSRFfS9pUfmA44ZXFaCh2yySOhap1rfB3g,7943
+svim/SVIM_COMBINE.py,sha256=C1_q3NVcyZ7YeC_MNdcle1uLcJceB_iw7Y91QnhkpcU,18592
+svim/SVIM_clustering.py,sha256=VLzDD3ENPSh5l_9I0DbbM_CjW_CTDLXcKkqMAFqfar0,13479
+svim/SVIM_fullread.py,sha256=-Cl_1tzc-VaOu4Of2RCPVFHxl8Whq8zPCo0vLnMMZ5k,2745
+svim/SVIM_merging.py,sha256=lv0MWahC4YGJqZiLdcm5SulAiD8uX2hpvplqS6XnoA0,19230
+svim/SVIM_splitread.py,sha256=KuZENJJihacLHeu0_U96xgJTJRjOnWoZLD3K5y06cb8,17211
+svim/SVSignature.py,sha256=XOKESjN1n0qX-TvM7TtVPCwMSD5V8rlr97HygN6uihg,12886
+svim-0.3.data/scripts/SVIM.py,sha256=-oRaicNsasC7QoyDP4bC6lGEbw03CZjucZoGG5fJf2I,12905
+svim-0.3.dist-info/METADATA,sha256=0cxJRiPC7YZtfR1L-69_NMTkZWkcOjnaV20L0lHAE_o,1349
+svim-0.3.dist-info/RECORD,,
+svim-0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+svim-0.3.dist-info/top_level.txt,sha256=QRTKge_b8N9CvAI2MOJhtyOAXlPfxmii8Dl6UFAx33k,5

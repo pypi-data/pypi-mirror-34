@@ -1,0 +1,11 @@
+README.md
+setup.py
+villainscli/__init__.py
+villainscli/__main__.py
+villainscli/villainscli.py
+villainscli.egg-info/PKG-INFO
+villainscli.egg-info/SOURCES.txt
+villainscli.egg-info/dependency_links.txt
+villainscli.egg-info/entry_points.txt
+villainscli.egg-info/requires.txt
+villainscli.egg-info/top_level.txt

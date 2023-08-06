@@ -1,0 +1,16 @@
+sewer/__init__.py,sha256=m4eUzNshpodRmq3uOc7FGbCjExjzqF-6kXBWNPbdlGQ,299
+sewer/__version__.py,sha256=wj7oksETcRMivEcVoLwTkn6HjibwgZIqwPw-4wxOD3c,235
+sewer/cli.py,sha256=0q7iXOJMmQh8HvBmVGS0eT0GwH3gMlymSfRAkwnqRsk,10012
+sewer/client.py,sha256=Syv74fXe566VjM5i0aJleu7eBpjCJuW_wx--2DIWcLk,33038
+sewer/config.py,sha256=umqGQVFVsyNYPrNcM6uw8NCz0Y3mBxbjrINRxZ9xORg,167
+sewer/dns_providers/__init__.py,sha256=16SZlJnIe0UrNXgLxda4Td2NZM25lh7Ws83jXTcJdVc,234
+sewer/dns_providers/acmedns.py,sha256=YNQBsz4fFswBXDgY50dS9wEfyWcN9alJvRdosS7Nw6c,2603
+sewer/dns_providers/aliyundns.py,sha256=mecQ1sdW9YE4eUY5CZx_7WbsSu7pTRLWP9yj-nrbBvc,8379
+sewer/dns_providers/auroradns.py,sha256=ETDbdqEIXCOe7EkV17BR0xyLSgAIPf07idHfOLHC83I,3246
+sewer/dns_providers/cloudflare.py,sha256=vfNhOXdmpvE9HTLx8-d3CxKAjBTediOrtvcaZHD-QPM,6652
+sewer/dns_providers/common.py,sha256=xjWvFsu2ksd_9yBYbN9bnzI_rYsFAQEAkAeNnKzkO_M,3343
+sewer-0.5.4.dist-info/METADATA,sha256=gGKWrKQR6RU56VsMlildT_DnfFsdYRHIY4AFjLoxsWg,17601
+sewer-0.5.4.dist-info/RECORD,,
+sewer-0.5.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sewer-0.5.4.dist-info/entry_points.txt,sha256=gmWSBJR7MLD4hL-IxWtFdVdlSM9Tsg6Id3CDqXO-Udo,69
+sewer-0.5.4.dist-info/top_level.txt,sha256=_bh18tG8owKYSVOwUWyNVjj6w1rmh4UZZOK8AXJEg2s,6

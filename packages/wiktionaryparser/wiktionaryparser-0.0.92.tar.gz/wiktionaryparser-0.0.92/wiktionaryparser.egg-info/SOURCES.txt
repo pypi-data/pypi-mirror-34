@@ -1,0 +1,13 @@
+setup.py
+wiktionaryparser/__init__.py
+wiktionaryparser/wiktionaryparser.py
+wiktionaryparser.egg-info/PKG-INFO
+wiktionaryparser.egg-info/SOURCES.txt
+wiktionaryparser.egg-info/dependency_links.txt
+wiktionaryparser.egg-info/requires.txt
+wiktionaryparser.egg-info/top_level.txt
+wiktionaryparser/tests/__init__.py
+wiktionaryparser/tests/test.py
+wiktionaryparser/tests/testOutput.json
+wiktionaryparser/utils/__init__.py
+wiktionaryparser/utils/utils.py

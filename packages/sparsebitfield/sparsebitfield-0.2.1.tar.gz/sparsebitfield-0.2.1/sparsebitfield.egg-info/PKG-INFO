@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: sparsebitfield
+Version: 0.2.1
+Summary: A Cython fast number set based on bitfields
+Home-page: http://github.com/elemental-lf/sparsebitfield
+Author: Steve Stagg, Lars Fenneberg
+Author-email: stestagg@gmail.com, lf@elemental.net
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3

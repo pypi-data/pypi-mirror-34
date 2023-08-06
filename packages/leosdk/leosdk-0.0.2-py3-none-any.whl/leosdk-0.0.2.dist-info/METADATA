@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: leosdk
+Version: 0.0.2
+Summary: Python SDK for the Leo Platform
+Home-page: https://github.com/LeoPlatform/python
+Author: Monty Charlton
+Author-email: mcharlton@leoinsights.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+LeoPlatform/Python
+===================
+
+Leo Python SDK
+
+A Python interface to interact with the Leo Platform
+
+Documentation: https://docs.leoplatform.io
+
+Python versions supported: 3.6
+
+Installation
+============
+
+# make sure the awscli is installed:
+https://docs.aws.amazon.com/cli/latest/userguide/installing.html
+# and configured:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+
+#Install the boto3 
+pip3.6 install boto3
+
+
+

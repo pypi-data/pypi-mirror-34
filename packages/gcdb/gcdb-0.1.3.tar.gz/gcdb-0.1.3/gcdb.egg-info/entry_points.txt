@@ -1,0 +1,5 @@
+[console_scripts]
+gcdb = gcdb:main
+gcdb-cc = gcdb:shim
+gcdb-cxx = gcdb:shim
+

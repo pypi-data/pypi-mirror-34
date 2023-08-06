@@ -1,0 +1,9 @@
+README.md
+setup.py
+gcdb/__init__.py
+gcdb.egg-info/PKG-INFO
+gcdb.egg-info/SOURCES.txt
+gcdb.egg-info/dependency_links.txt
+gcdb.egg-info/entry_points.txt
+gcdb.egg-info/requires.txt
+gcdb.egg-info/top_level.txt

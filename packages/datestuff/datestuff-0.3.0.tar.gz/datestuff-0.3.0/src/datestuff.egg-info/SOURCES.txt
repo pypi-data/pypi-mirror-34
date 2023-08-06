@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/datestuff/__init__.py
+src/datestuff/_comparable.py
+src/datestuff/daterange.py
+src/datestuff/relative.py
+src/datestuff/utils.py
+src/datestuff.egg-info/PKG-INFO
+src/datestuff.egg-info/SOURCES.txt
+src/datestuff.egg-info/dependency_links.txt
+src/datestuff.egg-info/not-zip-safe
+src/datestuff.egg-info/top_level.txt

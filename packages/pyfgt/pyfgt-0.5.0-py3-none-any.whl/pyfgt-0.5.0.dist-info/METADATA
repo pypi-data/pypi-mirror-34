@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyfgt
+Version: 0.5.0
+Summary: Represents the base components of the Fortinet FortiGate REST interface with abstractions
+Home-page: https://github.com/p4r4n0y1ng/pyfgt
+Author: p4r4n0y1ng
+Author-email: jhuber@fortinet.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+

@@ -1,0 +1,10 @@
+nexradaws/__init__.py,sha256=ikfKxCL85k03zV-8F2KuUCKcRElzdeoXQD3Jr0o3o_A,104
+nexradaws/nexradawsinterface.py,sha256=HozcDpE95aq7dyG-gsA6LZPgO6kIX0XSHhSMD93OYpQ,16722
+nexradaws/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexradaws/resources/awsnexradfile.py,sha256=8bkxKttBPLZFqGcWR7F8ZGFCpmETN09pa1m2JqDzxVs,2753
+nexradaws/resources/downloadresults.py,sha256=wWCyz9gaqPi7LYDjRb6ngBdxGjBYU8D19G4ZDnv56CQ,2025
+nexradaws/resources/localnexradfile.py,sha256=jI0nCCbvKCstDaVw_vZOROQXZoXaHP3tByH3gW1Y_9g,2001
+nexradaws-1.1.dist-info/METADATA,sha256=lyEpegs1b8pQ97XWaSo5PSyl02kFS3uKFjgHYKu5-uQ,1719
+nexradaws-1.1.dist-info/RECORD,,
+nexradaws-1.1.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+nexradaws-1.1.dist-info/top_level.txt,sha256=0LLO4x-qBaE7FBrlmuyz_WBnqUPS-KR1VxAb5Cs0xj8,10

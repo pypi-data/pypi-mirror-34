@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: ipeaData
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/ipea/pyIpeaData
+Author: Gustavo Coelho
+Author-email: gutorc@hotmail.com
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: # pyIpeaData [![Build Status](https://travis-ci.org/ipea/pyIpeaData.svg?branch=master)](https://travis-ci.org/ipea/pyIpeaData)
+        
+Keywords: ipea
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

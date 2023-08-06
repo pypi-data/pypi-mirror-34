@@ -1,0 +1,3 @@
+[console_scripts]
+neurolucidaxml2exconverter = neurolucidaxml2ex:main
+

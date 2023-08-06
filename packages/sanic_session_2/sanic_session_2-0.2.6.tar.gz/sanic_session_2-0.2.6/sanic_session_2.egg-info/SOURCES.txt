@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+sanic_session/__init__.py
+sanic_session/aioredis.py
+sanic_session/asyncio_redis.py
+sanic_session/base.py
+sanic_session/in_memory.py
+sanic_session/memcache.py
+sanic_session/mongodb.py
+sanic_session/utils.py
+sanic_session_2.egg-info/PKG-INFO
+sanic_session_2.egg-info/SOURCES.txt
+sanic_session_2.egg-info/dependency_links.txt
+sanic_session_2.egg-info/not-zip-safe
+sanic_session_2.egg-info/requires.txt
+sanic_session_2.egg-info/top_level.txt

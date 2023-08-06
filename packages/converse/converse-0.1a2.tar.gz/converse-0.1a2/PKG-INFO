@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: converse
+Version: 0.1a2
+Summary: Conversational Analytics and Plotting Library
+Home-page: https://github.com/hrishioa/converse
+Author: Hrishi Olickel
+Author-email: hrishioa@gmail.com
+License: GNU General Public License v3
+Description: UNKNOWN
+Keywords: sentiment,messenger,chatbot,sentiment-analysis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

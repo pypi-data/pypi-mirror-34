@@ -1,0 +1,5 @@
+plotly
+textblob
+fuzzywuzzy[speedup]
+tqdm
+pandas

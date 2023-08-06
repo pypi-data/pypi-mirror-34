@@ -1,0 +1,8 @@
+README.md
+setup.py
+converse/Conversation.py
+converse/__init__.py
+converse.egg-info/PKG-INFO
+converse.egg-info/SOURCES.txt
+converse.egg-info/dependency_links.txt
+converse.egg-info/top_level.txt

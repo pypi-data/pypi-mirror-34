@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_vpp_serializer.py
+vpp_papi/__init__.py
+vpp_papi/vpp_papi.py
+vpp_papi/vpp_serializer.py
+vpp_papi.egg-info/PKG-INFO
+vpp_papi.egg-info/SOURCES.txt
+vpp_papi.egg-info/dependency_links.txt
+vpp_papi.egg-info/requires.txt
+vpp_papi.egg-info/top_level.txt
+vpp_papi.egg-info/zip-safe

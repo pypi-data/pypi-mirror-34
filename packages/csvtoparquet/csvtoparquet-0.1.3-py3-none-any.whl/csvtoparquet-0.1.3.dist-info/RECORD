@@ -1,0 +1,15 @@
+csvtoparquet/__init__.py,sha256=VbunCcKt-whAurs2fQK26xgo3aq7qyInlj-3zf57SoY,735
+csvtoparquet/__main__.py,sha256=G5NZCiMV6bZHGqwAslVt1w6Bi0EaTei-0S38xUExAwk,4499
+csvtoparquet/cli_commands.py,sha256=1fIzkC47DP3vKtE_Qj3sdYbiWl9Q-74brzS-gITtyPI,3186
+csvtoparquet/commands.py,sha256=N_V2j5COxxEaj3V2fJHvCsT5pnHZe55v9kAjMpThuik,2449
+csvtoparquet/connect.py,sha256=d-SQ7aqrnQdFzjcxL0xB-xFtNhzwPOxqcDs_8yhaSFI,1282
+csvtoparquet/convert_module.py,sha256=zegFCXs6ksYsxpJXSk4TsSGpdDgk3zY0LbI71KdJE5c,3679
+csvtoparquet/converter.py,sha256=31pdlS4ckGDWEmgQijB0FXUVyf-8lOcDHo9Iz86Myj4,1707
+csvtoparquet/helpers.py,sha256=Tbd0IaFmpqQ3J_jTTqUlebdFC6Ht7JF6JRGzt472pwk,2144
+csvtoparquet/object_module.py,sha256=xle_iyrf6OgZIvdoL9kvAMhq-L1QRAjQtnmOp19c1fA,3114
+csvtoparquet/options.py,sha256=U-OI_v9lolZ2rs9AI6Dz8tTS62ohNsBcZaGmoKVtCTA,3026
+csvtoparquet-0.1.3.dist-info/METADATA,sha256=2oWdgjNeMyxGx7tXUlSLvpavuZwaXoQI3Ad5dre7TpI,3223
+csvtoparquet-0.1.3.dist-info/RECORD,,
+csvtoparquet-0.1.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+csvtoparquet-0.1.3.dist-info/entry_points.txt,sha256=-VnmgkiblCnsv__kWddnzzgazvMp0UMr8mnR_jXeZH0,62
+csvtoparquet-0.1.3.dist-info/top_level.txt,sha256=RIUo1jqf9EtQC4DieYaHgofTkiQMHIstNVfe4B5AXQ8,13

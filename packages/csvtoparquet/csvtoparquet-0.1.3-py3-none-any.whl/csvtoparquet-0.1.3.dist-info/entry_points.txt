@@ -1,0 +1,3 @@
+[console_scripts]
+csvtoparquet = csvtoparquet.converter:main
+

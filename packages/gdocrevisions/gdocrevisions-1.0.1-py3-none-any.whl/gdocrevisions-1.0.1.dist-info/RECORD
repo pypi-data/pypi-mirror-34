@@ -1,0 +1,15 @@
+gdocrevisions/__init__.py,sha256=GktudzMj1Q4HKkqZ2So3rcbQYHYrX0K1M4jy8JCkA98,120
+gdocrevisions/document.py,sha256=e00iO6FOjZwX2OdseBJR-utTF2NINkRHkmv6VGBtfMM,8206
+gdocrevisions/element.py,sha256=XhU6I62777MLKC493fRdWcppygRzS3RbZ-kb2-_ouEo,1844
+gdocrevisions/operation.py,sha256=9IWlO1bbcfYo7yYXik6DE9NeE_de4OubqlJD2AoImWg,5665
+gdocrevisions/replay.py,sha256=V50igLTM9-dZG_1gVUqei091LiTATMQf78iIwRXCnVc,974
+gdocrevisions/revision.py,sha256=qsS5JdLATQgi0MmH2wuef-HJeAFSxR1oFaDPxHvoaC0,2145
+gdocrevisions/session.py,sha256=7uBkmOQjduY3EjWCtM_2Tz8Po8sdJjZO8kaleJBdE24,494
+gdocrevisions/suboperation.py,sha256=qlw6u9zpLJobMzez8w9WiDnNhTi6j0_UwtEp3KtAhFQ,2267
+gdocrevisions/timeddoc.py,sha256=d--7GnLurq_t4iQ9n9jIhtteQ_LVVVYcGg14fTHDLWM,1143
+gdocrevisions-1.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+gdocrevisions-1.0.1.dist-info/METADATA,sha256=YoouxVvpX4B0Bozzu_nqocEQj09rqqdPVX4NXwswLaA,528
+gdocrevisions-1.0.1.dist-info/RECORD,,
+gdocrevisions-1.0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+gdocrevisions-1.0.1.dist-info/metadata.json,sha256=soq6Os45DeT4RUFGFG8wFP4zh4b2lZbOZcp56LretCQ,697
+gdocrevisions-1.0.1.dist-info/top_level.txt,sha256=pvgIAZBgpOaWl64Yu0d6Hfp1VSDrHUj9-FvbeGT-f5Y,14

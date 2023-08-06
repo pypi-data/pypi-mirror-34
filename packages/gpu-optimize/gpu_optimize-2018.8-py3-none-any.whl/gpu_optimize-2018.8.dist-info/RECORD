@@ -1,0 +1,13 @@
+gpu_optimize/__init__.py,sha256=ebQ4qWj5RvnLBQaS2d2XYMo8iVPsZW2dSsYN0YG9oFw,77
+gpu_optimize/mf.py,sha256=fDQlfaE27hQGXwMV2l9jjY8us0HlmBt4wK7mLuNYjRE,9599
+gpu_optimize/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpu_optimize/tests/test_basic.py,sha256=gbkWLP89Txigo6Q6NbbqNCux2KUdEQ8FZFNpZeLlncQ,1453
+gpu_optimize/tests/test_big.py,sha256=ReCfGhc2dOLzlc-5KjAfINBt6Z0wbWaPKUalfnq4MlQ,902
+gpu_optimize/tests/test_debug.py,sha256=YAUBxuUOHDwLGmj2TIOAJOaCHZQK6w12LnCHjsoyZlI,547
+gpu_optimize/tests/test_not_square.py,sha256=t42kN94_TUi6btXEH7uYrPxT_epSqic8HlxQ6B6INuc,1552
+gpu_optimize/tests/test_streams.py,sha256=5mwFS43r0ywNNolfxKm5elxDQCZHCh3bYbdAhevtYq4,1707
+gpu_optimize/tests/timing.py,sha256=bwQIkiIWcdmI_z9dELlcJSU9ASeLP1npunjE2ZoCCqE,1613
+gpu_optimize-2018.8.dist-info/METADATA,sha256=FvOoV16cw0V3-lKsw6tLYl4pAeAIypFMpJp_lbzKxqg,405
+gpu_optimize-2018.8.dist-info/RECORD,,
+gpu_optimize-2018.8.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+gpu_optimize-2018.8.dist-info/top_level.txt,sha256=5JgKZMNhTz8uvooip9RBb5CKyNQmyZjULISOj8jzdpE,13

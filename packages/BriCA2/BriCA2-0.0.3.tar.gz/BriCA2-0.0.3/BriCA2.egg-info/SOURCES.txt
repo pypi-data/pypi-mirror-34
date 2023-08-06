@@ -1,0 +1,9 @@
+README.md
+setup.py
+BriCA2.egg-info/PKG-INFO
+BriCA2.egg-info/SOURCES.txt
+BriCA2.egg-info/dependency_links.txt
+BriCA2.egg-info/not-zip-safe
+BriCA2.egg-info/requires.txt
+BriCA2.egg-info/top_level.txt
+python/src/simple.cpp

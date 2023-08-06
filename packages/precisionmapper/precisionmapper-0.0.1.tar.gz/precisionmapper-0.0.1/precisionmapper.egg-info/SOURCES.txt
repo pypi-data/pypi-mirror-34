@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+precisionmapper/__init__.py
+precisionmapper.egg-info/PKG-INFO
+precisionmapper.egg-info/SOURCES.txt
+precisionmapper.egg-info/dependency_links.txt
+precisionmapper.egg-info/requires.txt
+precisionmapper.egg-info/top_level.txt
+tests/test_precisionmapper.py

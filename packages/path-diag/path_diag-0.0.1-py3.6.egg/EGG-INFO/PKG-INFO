@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: path-diag
+Version: 0.0.1
+Summary: A utility for validating paths in environment variables and modifying them safely
+Home-page: https://www.rigaspapas.com
+Author: Rigas Papathanasopoulos
+Author-email: rigaspapas@gmail.com
+License: MIT
+Description: # Path-diag
+        
+        A utility for validating paths in environment variables and modifying them safely.
+        
+        ## Prerequisites
+        
+        * Python 3
+        
+        ## Installation
+        
+        You can install `path-diag` via `pip`:
+        ```
+        pip3 install path-diag
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown

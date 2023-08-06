@@ -1,0 +1,13 @@
+coloredlogs
+keyring
+requests
+
+[dev]
+nose
+pep8
+tox
+aiounittest
+requests
+pympler
+pypandoc
+pandoc

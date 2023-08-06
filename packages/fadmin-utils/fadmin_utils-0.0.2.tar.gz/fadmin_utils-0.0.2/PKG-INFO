@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fadmin_utils
+Version: 0.0.2
+Summary: FI MUNI admin utils
+Home-page: https://github.com/ph4r05/fadmin-utils
+Author: Dusan Klinec
+Author-email: dusan.klinec@gmail.com
+License: MIT
+Description: FI MUNI Auth login
+        ==================
+        
+        .. code:: bash
+        
+            fadmin-login --help
+        
+            fadmin-login --user xtester --key-file password_file
+        
+        Or with keyring
+        
+        .. code:: bash
+        
+            keyring set https://fadmin.fi.muni.cz/auth/sit/wireless/login2.mpl xtester
+            fadmin-login --user xtester --key-ring
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Security
+Requires-Python: >=3.5
+Provides-Extra: dev

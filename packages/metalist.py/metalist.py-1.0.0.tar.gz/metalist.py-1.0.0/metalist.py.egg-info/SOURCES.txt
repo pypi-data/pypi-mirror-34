@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+metalist/__init__.py
+metalist/baseclient.py
+metalist/client.py
+metalist/exceptions.py
+metalist.py.egg-info/PKG-INFO
+metalist.py.egg-info/SOURCES.txt
+metalist.py.egg-info/dependency_links.txt
+metalist.py.egg-info/requires.txt
+metalist.py.egg-info/top_level.txt

@@ -1,0 +1,47 @@
+{% ckan_extends %}
+
+{% if pkg_dict.version %}
+{% endif %}
+
+{% block extras %}
+  {% if pkg_dict.frekuensi_penerbitan %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Frekuensi Penerbitan") }}</th>
+      <td class="dataset-details">{{ pkg_dict.frekuensi_penerbitan }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.level_penyajian %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Level Penyajian") }}</th>
+      <td class="dataset-details">{{ pkg_dict.level_penyajian }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.tahun %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Tahun") }}</th>
+      <td class="dataset-details">{{ pkg_dict.tahun }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.cakupan %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Cakupan") }}</th>
+      <td class="dataset-details">{{ pkg_dict.cakupan }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.rujukan %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Rujukan") }}</th>
+      <td class="dataset-details">{{ pkg_dict.rujukan }}</td>
+    </tr>
+  {% endif %}
+  
+  {% for extra in h.sorted_extras(pkg_dict.extras) %}
+    {% set key, value = extra %}
+    <tr rel="dc:relation" resource="_:extra{{ i }}">
+      <th scope="row" class="dataset-label" property="rdfs:label">{{ _(key) }}</th>
+      <td class="dataset-details" property="rdf:value">{{ value }}</td>
+    </tr>
+  {% endfor %}
+  
+{% endblock %}
+

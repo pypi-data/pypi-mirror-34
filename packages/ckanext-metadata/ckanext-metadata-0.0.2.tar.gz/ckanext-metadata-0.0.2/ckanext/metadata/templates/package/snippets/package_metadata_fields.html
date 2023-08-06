@@ -1,0 +1,41 @@
+{% ckan_extends %}
+
+{# Remove 'free extras' from the package form. If you're using
+convert_to/from_extras() as we are with our 'custom_text' field below then
+you need to remove free extras from the form, or editing your custom field
+won't work. #}
+
+{#
+{% block custom_fields %}
+{% endblock %}
+#}
+
+{% block package_metadata_author %}
+{% endblock %}
+{% block package_metadata_fields_version %}
+{% endblock %}
+
+{% block package_metadata_fields_maintainer %}
+	{{ form.input('maintainer', label=_('Pengelola Data'), id='field-maintainer', placeholder=_('contoh: Ericson Thomas | Nama orang atau Instansi yang bertanggung jawab terhadap dataset ini'), value=data.maintainer, error=errors.maintainer, classes=['control-medium']) }}
+	
+	{{ form.input('maintainer_email', label=_('Alamat Surel Pengelola'), id='field-maintainer-email', placeholder=_('contoh: eric@data.go.id | Alamat surel pengelola data'), value=data.maintainer_email, error=errors.maintainer_email, classes=['control-medium']) }}
+{% endblock %}
+
+{% block package_metadata_fields_custom %}
+  {{ form.input('frekuensi_penerbitan', label=_('Frekuensi Penerbitan'), id='field-frekuensi_penerbitan', placeholder=_('contoh: 1 bulan sekali | Frekuensi penerbitan dari dataset; real-time/satu minggu sekali/satu bulan sekali, dan seterusnya'), value=data.frekuensi_penerbitan, error=errors.frekuensi_penerbitan, classes=['control-medium']) }}
+
+  {{ form.input('level_penyajian', label=_('Level Penyajian'), id='field-level_penyajian', placeholder=_('contoh: Nasional | Level penyajian terkecil dari data yang disajikan'), value=data.level_penyajian, error=errors.level_penyajian, classes=['control-medium']) }}
+
+  {{ form.input('tahun', label=_('Tahun'), id='field-tahun', placeholder=_('contoh: 1945 - 2018'), value=data.tahun, error=errors.tahun, classes=['control-medium']) }}
+
+  {{ form.input('cakupan', label=_('Cakupan'), id='field-cakupan', placeholder=_('contoh: DKI Jakarta | Lingkup daerah atau wilayah tempat data tersebut berlaku atau diambil'), value=data.cakupan, error=errors.cakupan, classes=['control-medium']) }}
+
+  {{ form.input('rujukan', label=_('Rujukan'), id='field-rujukan', placeholder=_('contoh: www.kementerianlembaga.com/metadata.html | Berisi informasi tambahan mengenai metadata, berupa tautan'), value=data.rujukan, error=errors.rujukan, classes=['control-medium']) }}
+
+  <p>Sesuai dengan template DDW (16 Metadata)</p>
+  {#
+  {% block custom_fields %}
+  	{% snippet 'snippets/custom_form_fields.html', extras=data.extras, errors=errors, limit=3 %}
+  {% endblock %}	
+  #}
+{% endblock %}

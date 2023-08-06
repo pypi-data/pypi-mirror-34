@@ -1,0 +1,26 @@
+{% ckan_extends %}
+
+{% block package_basic_fields_license %}
+<style id="ericsnth-relay-f1">#ericsnth-f1 { margin-bottom:25px !important; }</style>
+<div class="control-group" id="ericsnth-f1">
+  {% set error = errors.license_id %}
+  <label class="control-label" for="field-license">Lisensi</label>
+    <input class="form-control" name="license_id" value="cc-by" type="hidden">
+    <input class="form-control" name="license_txt" value="Creative Commons Attribution (CC-BY)" disabled>
+    <small id="ericsnth-helper" class="form-text text-muted">Satu Data Indonesia menggunakan lisensi berbagi pakai Creative Commons Attribution (CC-BY)</small>
+</div>
+{% endblock %}
+{% block package_metadata_fields_visibility %}
+<style id="ericsnth-relay-f2">#ericsnth-f2 { margin-bottom:25px !important; }</style>
+  <div class="control-group" id='ericsnth-f2'>
+    <label for="field-private" class="control-label">{{ _('Jenis Publikasi') }}</label>
+    <div class="controls">
+      <select id="field-private" name="private" class="form-control">
+        {% for option in [('False', _('Publik')), ('True', _('Privat / Internal'))] %}
+        <option value="{{ option[0] }}" {% if option[0] == data.private|trim %}selected="selected"{% endif %}>{{ option[1] }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <small id="ericsnth-helper" class="form-text text-muted">Kategori yang menjelaskan apakah data ini bersifat <b>publik</b> atau <b>privat</b>; jika memilih kategori publik, maka data langsung tayang ke publik</small>
+  </div>
+{% endblock %}

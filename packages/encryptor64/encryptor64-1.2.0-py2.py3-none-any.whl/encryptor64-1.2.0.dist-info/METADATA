@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: encryptor64
+Version: 1.2.0
+Summary: Encryption to base 64
+Home-page: https://github.com/razens/encryptor
+Author: Andrey Arambitsky
+Author-email: razens@gmail.com
+License: MIT
+Keywords: Encryption
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Provides-Extra: test
+Provides-Extra: dev
+Requires-Dist: pymongo
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+# py-encryption
+Python package for encryption strings by merging some key and string throw base64encode.
+
+Example:
+```python
+# coding=utf-8
+# Encoding
+from encryption.encryption import *
+some_key = "3jdg472666HJA83jJA723lL"
+encrypt = Encryption(key=some_key)
+encoded_string = encrypt.encode("my_string_for_encode")
+print (encoded_string)
+
+# Decoding
+from encryption.encryption import *
+some_key = "3jdg472666HJA83jJA723lL"
+encrypt = Encryption(key=some_key)
+decoded_string = encrypt.decode(encoded_string)
+print (decoded_string)
+```
+
+

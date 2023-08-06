@@ -1,0 +1,16 @@
+numpy
+pandas
+xarray
+kindi
+networkx
+biomart
+gffutils
+pyliftover
+requests
+plumbum
+
+[documentation]
+Sphinx
+
+[netcdf]
+netCDF4

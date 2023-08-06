@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: contas-api-temp
+Version: 0.1
+Summary: API para gestão de finanças
+Home-page: https://github.com/felippemsc/testeOrama
+Author: Felippe
+Author-email: felippemsc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+

@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: pyresistivity
+Version: 1.0.1
+Summary: pyres is a Python package to create, run, and post-process R2 electrical resistivity forward and inverse models.
+Home-page: https://github.com/kbefus/pyres/
+Author: Kevin M. Befus
+Author-email: kbefus@uwyo.edu
+License: New BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: geophysics resistivity inversion
+Platform: Windows
+Platform: Mac OS-X
+Platform: Unix

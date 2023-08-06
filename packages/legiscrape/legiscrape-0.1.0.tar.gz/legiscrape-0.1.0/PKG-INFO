@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: legiscrape
+Version: 0.1.0
+Summary: Legistar Scraper
+Home-page: http://github.com/notpeter/legiscrape
+Author: Peter Tripp
+Author-email: peter.tripp@gmail.com
+License: MIT
+Description: Legiscrape - Download Video from Legistar Meetings / Granicus Video Toolbox.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Environment :: Console

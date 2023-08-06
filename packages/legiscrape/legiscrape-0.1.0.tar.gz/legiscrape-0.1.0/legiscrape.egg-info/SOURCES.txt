@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.cfg
+setup.py
+legiscrape/__init__.py
+legiscrape/captions.py
+legiscrape/cli.py
+legiscrape/granicus-captions.schema.json
+legiscrape/granicus-orgs.json
+legiscrape/video.py
+legiscrape.egg-info/PKG-INFO
+legiscrape.egg-info/SOURCES.txt
+legiscrape.egg-info/dependency_links.txt
+legiscrape.egg-info/entry_points.txt
+legiscrape.egg-info/not-zip-safe
+legiscrape.egg-info/requires.txt
+legiscrape.egg-info/top_level.txt

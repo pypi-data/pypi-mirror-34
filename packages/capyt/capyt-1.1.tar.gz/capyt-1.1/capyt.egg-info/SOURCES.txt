@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+capyt/VERSION
+capyt/__init__.py
+capyt/capyt.py
+capyt.egg-info/PKG-INFO
+capyt.egg-info/SOURCES.txt
+capyt.egg-info/dependency_links.txt
+capyt.egg-info/entry_points.txt
+capyt.egg-info/requires.txt
+capyt.egg-info/top_level.txt

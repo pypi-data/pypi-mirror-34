@@ -1,0 +1,26 @@
+---
+file-contents:
+  releasenotes/notes/conductor-group-9cfab3756aa108e4.yaml:
+    features: ['Adds support for the ``--conductor-group`` argument to the following
+
+        CLI commands:
+
+
+        * ``openstack baremetal node create``
+
+        * ``openstack baremetal node set``
+
+        * ``openstack baremetal node unset``
+
+        * ``openstack baremetal node list``
+
+
+        This feature requires bare metal API 1.46.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/conductor-group-9cfab3756aa108e4.yaml
+    - !!binary |
+      ZmI5NGZiODI1Y2NjZWNkMTFjNGEyZjc4YmVlZmYzYjBiMTk5NTZmMw==
+  version: 2.5.0

@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+bin/dicomunwrap
+dicomraw/dicomraw.egg-info/PKG-INFO
+dicomraw/dicomraw.egg-info/SOURCES.txt
+dicomraw/dicomraw.egg-info/dependency_links.txt
+dicomraw/dicomraw.egg-info/not-zip-safe
+dicomraw/dicomraw.egg-info/requires.txt
+dicomraw/dicomraw.egg-info/top_level.txt

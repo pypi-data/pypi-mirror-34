@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dicomraw
+Version: 0.4
+Summary: encapsulates arbitrary binary data in a valid dicom file, with the option of archiving it in a zip archive, using streaming.
+Home-page: https://gitlab.com/cfmm/dicomraw
+Author: Igor Solovey
+Author-email: isolovey@robarts.ca
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

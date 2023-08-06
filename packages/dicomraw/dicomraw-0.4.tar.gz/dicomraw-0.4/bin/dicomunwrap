@@ -1,0 +1,96 @@
+#!/usr/bin/env python2
+
+import os, sys, inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,parentdir)
+
+import argparse
+import shutil
+import tempfile
+import zipfile
+
+import pydicom
+from pydicom.filereader import DicomIter
+import dicomraw
+
+
+class DicomUnwrapper(object):
+
+    def __init__(self, input_file, output_directory, private_group, decompress):
+        self._input_file = input_file
+        self._private_group = private_group
+        self._output_directory = output_directory
+        self._decompress = decompress
+        dicom_header = pydicom.read_file(self._input_file, stop_before_pixels=True)
+        self._basename = dicom_header.SeriesDescription
+
+    def __call__(self):
+        dcm_ = DicomIter(open(self._input_file))
+        is_implicit_vr = dcm_._is_implicit_VR
+        is_little_endian = dcm_._is_little_endian
+        with open(self._input_file, 'rb') as input_fp, \
+                tempfile.NamedTemporaryFile(mode='wb') as output_fp:
+            for chunk in dicomraw.Unwrapper(input_fp, self._private_group, is_implicit_vr, is_little_endian):
+                output_fp.write(chunk)
+            output_fp.file.flush()
+            if self._decompress:
+                DicomUnwrapper._unzip(output_fp.name, self._output_directory)
+            else:
+                shutil.copyfile(
+                    output_fp.name,
+                    os.path.join(self._output_directory, self._basename + '.zip')
+                )
+
+    @staticmethod
+    def _unzip(source_filename, dest_dir):
+        with zipfile.ZipFile(source_filename) as zf:
+            zf.extractall(dest_dir)
+
+
+def parseargs():
+    """
+    Parse input arguments to application.
+
+    :return: options
+    """
+    def valid_dicom_file(item):
+        try:
+            item = os.path.abspath(item)
+            assert os.path.isfile(item) and os.access(item, os.R_OK)
+            pydicom.read_file(item, stop_before_pixels=True)
+        except:
+            raise argparse.ArgumentTypeError("{0} is not a valid readable dicom file".format(item))
+        return item
+
+    def valid_output_dir(item):
+        item = os.path.abspath(item)
+        if os.path.isdir(item):
+            return item
+        elif os.path.isdir(os.path.dirname(item)):
+            os.makedirs(item)
+            return item
+        else:
+            raise argparse.ArgumentTypeError("{0} is not a valid output directory".format(item))
+
+    def hex_string(x):
+        return int(x, 16)
+
+    parser = argparse.ArgumentParser(description='dicomunwrap')
+
+    parser.add_argument('--input_file', '-i', type=valid_dicom_file, required=True, help="Input DICOM file")
+    parser.add_argument('--output_directory', '-o', type=valid_output_dir, required=False, help="Output file path")
+    parser.add_argument('--decompress', '-u', dest='decompress', action='store_true')
+    parser.add_argument('--private_group', type=hex_string, required=False, default=0x0177,
+                        help="Group Number of the Private Element used to store the raw data.")
+    args = parser.parse_args()
+    if args.output_directory is None:
+        args.output_directory = os.path.abspath(os.getcwd())
+        print "No output path specified. Using {0}".format(args.output_path)
+    return args
+
+
+if __name__ == '__main__':
+    arguments = parseargs()
+    dcm = DicomUnwrapper(**arguments.__dict__)
+    dcm()

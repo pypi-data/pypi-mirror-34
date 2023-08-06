@@ -1,0 +1,3 @@
+[console_scripts]
+myokit = myokit._command:main
+

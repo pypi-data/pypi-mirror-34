@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pkcrypt2
+Version: 1.0.1
+Summary: public key cryptography
+Home-page: https://gitlab.com/circleclicklabs/pkcrypt2.git
+Author: Joel Ward
+Author-email: jmward@gmail.com
+License: MIT
+Description: # pkcrypt2
+        
+        public key cryptography
+        
+        - Takes over from pkcrypt
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

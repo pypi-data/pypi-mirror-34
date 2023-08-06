@@ -1,0 +1,14 @@
+fastgenomics/__init__.py,sha256=bx2ucqcJhhir_uwf_PVFllbvTttCXFQp9mkyLmmB4rs,135
+fastgenomics/_common.py,sha256=fNDI8DfGOjVtnGVEKE4tQ3i_gkJnw0WDxWKZEMKwKW4,11701
+fastgenomics/_resources.py,sha256=SnQu58VUJILLjm8Ov5zhP6TXt3786OqZbEmPxVoRN-Q,267
+fastgenomics/app_checker.py,sha256=fY0xzCUUAPSqGoGIzXAqnnvEtcJ-2JX9nHlLvmymMjU,2731
+fastgenomics/app_creator.py,sha256=NGu5p8JU0H6qvlTBy1SDbcZq0_EZ3NZq1cw3Xn-MpPc,3021
+fastgenomics/io.py,sha256=bROEjUg4XA4sjPsH3yPYmDqvgkZz4dyGuF7NHwXPURQ,9446
+fastgenomics/tools.py,sha256=T-PEJVIClUbns4VjKQbJCx74ZkLFsxh75K7JTNMVCmU,472
+fastgenomics/schemes/manifest_schema.json,sha256=FzAL4zaM2DFT2hSSYRdfFOvOaeVXlPbm_WCBBBB0bdc,4767
+fastgenomics/templates/docker-compose.yml.j2,sha256=Py8DI9K71R8baO1ZqxpF7XEJyV3FUHcTsMTxd5I7nNM,717
+fastgenomics/templates/input_file_mapping.json.j2,sha256=Xv5RmuLyib4f09J8MLTCkuLP40j2mVUjIgWHxfw1jHc,140
+fastgenomics-0.6.11.dist-info/LICENSE,sha256=w02Kk3ylRCu0PuTL_fAigClcr12Qr89xmTdelmAkbAY,1090
+fastgenomics-0.6.11.dist-info/WHEEL,sha256=JJIJMe3YbUv4boSQQZ-gtLP1eGfirZe1M8ScYeRYZ1M,79
+fastgenomics-0.6.11.dist-info/METADATA,sha256=zWqzKhu-M_023-XKZBTIn-4RNZAimLbGx5SW6tvr3zE,3854
+fastgenomics-0.6.11.dist-info/RECORD,,

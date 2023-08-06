@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pmprophet
+Version: 0.1
+Summary: Simplified version of the Facebook Prophet model re-implemented in PyMC3 
+Home-page: https://github.com/luke14free/pm-prophet
+Author: Luca Giacomel
+Author-email: luca.giacomel@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

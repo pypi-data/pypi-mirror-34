@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: BriCA1
+Version: 1.0.0.dev0
+Summary: Brain-inspired Computing Architecture Version 1
+Home-page: https://github.com/wbap/BriCA1
+Author: Kotone Itaya
+Author-email: kotone@sfc.keio.ac.jp
+License: MIT
+Description: 
+        # BriCA V1
+        
+        wbap/V1 repository contains a python implementation for BriCA V1
+        
+        ## Reference:
+        * [Tutorial](http://wbap.github.io/BriCA1/)
+        * [Wiki](http://wba-initiative.org/wiki/en/brica)
+        
+        ## Support:
+        If you have any question, please send us message on Google Group:  
+        https://groups.google.com/d/forum/wbai-dev
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7.0
+Description-Content-Type: text/markdown

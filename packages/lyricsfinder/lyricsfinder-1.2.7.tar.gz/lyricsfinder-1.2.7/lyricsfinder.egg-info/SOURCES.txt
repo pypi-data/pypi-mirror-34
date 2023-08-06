@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+lyricsfinder/__info__.py
+lyricsfinder/__init__.py
+lyricsfinder/__main__.py
+lyricsfinder/extractor.py
+lyricsfinder/lyrics_manager.py
+lyricsfinder/utils.py
+lyricsfinder.egg-info/PKG-INFO
+lyricsfinder.egg-info/SOURCES.txt
+lyricsfinder.egg-info/dependency_links.txt
+lyricsfinder.egg-info/entry_points.txt
+lyricsfinder.egg-info/requires.txt
+lyricsfinder.egg-info/top_level.txt
+lyricsfinder.egg-info/zip-safe

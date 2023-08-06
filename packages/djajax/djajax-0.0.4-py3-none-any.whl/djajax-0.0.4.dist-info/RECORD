@@ -1,0 +1,16 @@
+djajax/__init__.py,sha256=ODlsUoVoQa6UPHDh7bSscSIk641nhzLUyB6Ynn9e158,48
+djajax/__version__.py,sha256=UI4xhAWrh63iX8B8DrxAA-wZFvBpEpFRad-yVoqV4Po,63
+djajax/apps.py,sha256=df2wVZZnEe0VTdO2yrBonrzXKK1JjtFnOjusK-tkW4A,136
+djajax/fast_test_runner.py,sha256=dmQt7H4JUBAhgSHqocz8UTWtFZBYgcPiBvvumavwAJY,1886
+djajax/http.py,sha256=VbLCJ-4ue8JQ_YlrqqaXf3OtHuTSU3Rti3pElcSdvb4,588
+djajax/models.py,sha256=0KN16R3UlX7iIOfZKMSEThVjgDHYoUlynzDE3L-WG3w,4013
+djajax/views.py,sha256=cWbpmQxhcai5BIZevDpY3JYuvWYOoooV4UR0Ak5vtiM,3413
+djajax/static/js/djajax.js,sha256=SDdMnnTGUOJ7DvHVP2XI_ek707rkT0Jf86hOeMCiaz4,733
+djajax/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djajax/templatetags/djajax.py,sha256=Jd1cB_B25fG37pMK-8SMGicxGVvf9HRQ2P9Dwao3NC0,1213
+djajax/tests/__init__.py,sha256=RXJPANMG6dI9X4PyuCAC07ajI40Wy5fheQrTm4l3Lcg,38
+djajax/tests/test_serializable_mixin.py,sha256=3k-m6xXI2XH0KM6Cy3XWhlWTniGVqUSdxgG69dCVKcQ,2129
+djajax-0.0.4.dist-info/METADATA,sha256=TArnXXeJMkJwc2z2P62dly3rUO6HZvuuYjzpOJy2LIA,2455
+djajax-0.0.4.dist-info/RECORD,,
+djajax-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+djajax-0.0.4.dist-info/top_level.txt,sha256=IkFP25jCGTrIO6yo-g1lWsiThI-yIxmVH8QARiCgDDc,7

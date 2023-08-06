@@ -1,0 +1,57 @@
+Metadata-Version: 1.0
+Name: autographs
+Version: 0.0.1
+Summary: A collection of tools to make graph stuff easy.
+Home-page: https://github.com/gerrymandr/autographs
+Author: Metric Geometry and Gerrymandering Group
+Author-email: gerrymandr@gmail.com
+License: UNKNOWN
+Description: # `autographs`
+        This package contains a collection of tools for making graph stuff easy.
+        
+        ## Installation
+        Simply run `pip install autographs`, and you're set! Otherwise, you can clone this repository, navigate to its root directory, and run either (or both) of:
+        
+        ```
+            python setup.py install
+            python setup.py develop
+        ```
+        
+        ## Usage
+        Import as you normally would: `import autographs`. As an example program, we can find the faces of the dual graph induced by the counties of Iowa using a half-edge structure:
+        
+        ```
+            from autographs.faces import HalfEdge
+        
+            # Create a new half-edge data structure.
+            he = HalfEdge("./test/data/2018_19_counties/county.shp")
+        
+            # Simply iterate over the faces.
+            for face in he.faces:
+                print(face)
+        ```
+        
+        ## Inlcuded Tools
+        (Check these off as they're completed)
+        
+        - [x] Finding faces of planar graphs
+        - [ ] Complete enumeration of k-equipartitions
+        - [ ] Making graphs
+        - [ ] Grid graph stuff (?)
+        - [ ] Null models
+        
+        ## Docs
+        Forthcoming Overleaf documents with more information about the math we
+        use here.
+        
+        
+        # `autographs` Contributor's Guide
+        So glad that you decided to contribute to this project! It's ongoing, and a lot of people need to use the things included here, so it's important that we leave behind a readable, well-kept codebase.
+        
+        ## Style
+        This project abides by the [PEP8](https://www.python.org/dev/peps/pep-0008/) and [PEP257](https://www.python.org/dev/peps/pep-0257/) style guides. Please read these before contributing, as it's integral to the maintainability of this project that these standards are upheld.
+        
+        ## Pushing Code
+        We'll be using the same contribution model as [RunDMCMC](https://github.com/gerrymandr/RunDMCMC), wherein each contributing user has a fork of this repository and pushes changes to that fork. Then, when the user wants to make their code a part of the main repository, they open a [pull request](https://github.com/gerrymandr/autographs/pulls) and await approval of others (please request reviewers!). Otherwise, [follow this guide.](https://github.com/gerrymandr/RunDMCMC/blob/master/CONTRIBUTING.md)
+        
+Platform: UNKNOWN

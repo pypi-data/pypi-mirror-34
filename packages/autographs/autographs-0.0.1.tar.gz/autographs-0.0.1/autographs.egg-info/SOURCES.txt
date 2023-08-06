@@ -1,0 +1,9 @@
+README.md
+setup.py
+autographs/__init__.py
+autographs.egg-info/PKG-INFO
+autographs.egg-info/SOURCES.txt
+autographs.egg-info/dependency_links.txt
+autographs.egg-info/top_level.txt
+autographs/faces/__init__.py
+autographs/faces/halfedge.py

@@ -1,0 +1,3 @@
+[console_scripts]
+qjam = qjam.qjam:main
+

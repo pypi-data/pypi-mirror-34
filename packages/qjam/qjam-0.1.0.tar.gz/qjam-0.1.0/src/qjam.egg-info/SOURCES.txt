@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/qjam/__init__.py
+src/qjam/q_array.py
+src/qjam/q_clean.py
+src/qjam/q_sub.py
+src/qjam/q_util.py
+src/qjam/q_watch.py
+src/qjam/qjam.py
+src/qjam.egg-info/PKG-INFO
+src/qjam.egg-info/SOURCES.txt
+src/qjam.egg-info/dependency_links.txt
+src/qjam.egg-info/entry_points.txt
+src/qjam.egg-info/top_level.txt

@@ -1,0 +1,32 @@
+matrix:
+  include:
+  - language: python
+    python: 2.7
+  - language: python
+    python: 3.5
+  - language: python
+    python: 3.6
+  - language: generic
+    os: osx
+    python: 3.6
+install:
+- curl curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
+- export PATH="$HOME/.cargo/bin:$PATH"
+- rustc -V
+- pip install -r requirements.txt
+- pip install -r requirements-test.txt
+script:
+- python setup.py bdist_wheel
+- pip install -e .
+- pytest test.py
+deploy:
+  skip_cleanup: true
+  provider: pypi
+  user: BYPyPi
+  password:
+    secure: "Xcc7IlazzrNRhSS35vTRitGEyTAamX8/GT+1ROEFAb6BsIOaJN2xWhU6NISZcsQ79CuLbTIAgIQvXHOtYQp0qLW0TjfX7bH2VI3oxl9I3v3j0I08GhX3rZVHXxG3LIT9s//AGAtOIoPBny5pFLf5em1bY5EtVOp2TVTn8mpVE/tuyX4BWyP2GEpC0mdBGLzglB5q+6EfHIOEcYyIB1MpT3guXAgnzcXEnsQTGbLkgIZhndq5QphBFHJuH90pQS9fHVGnoOCT2URLfdFoiA8x6nxp47MsauKylmXyXqdI2Mzzud7RgivlguAFK66XgWRIlhrSaDf2vpn7FoLzHn4L6VXVPsb9TwBOpRxDNDezwDBWP6mjaV2L0eM7s010nh/ICJ06aAPBgcR43aLaZwkxZdwuj/w8bxiKy868Wq0/0MlECRdDnPuFoAHD6xzUPL+RlSQtCfy+IVoHUDnKuPfb2+89Y01fJr6EdNJck0Yixw9zkf5S+oTOEa4cyb8nizue/pNz1kgTrgsiPl7uQHssVPcpk2RF9Diqw6YWFJ79IbbBtGkgmMPq/pACh9Og5+aE0J+5n2P4V7Rxiro1IgtEYcSposLaXooseOIda9tSItfuiViSba0X95kHycT3jsV3yt07YGe7T7A1PDg5TgR6KvcmvsLIAkTfdxWrmXWUi5E="
+  distributions: sdist bdist_wheel
+  on:
+    tags: true
+notifications:
+  email: false

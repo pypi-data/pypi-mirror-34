@@ -1,0 +1,15 @@
+mosyn/__init__.py,sha256=ziao7Ff3E9xR7IfpFfJxKVdva5fTxuX9ZBcU6ISdczk,475
+mosyn/__main__.py,sha256=WelG29146EFxSlhGhpD_JNVx8_rtiKncEYfuRVJg1pU,266
+mosyn/mosyn.py,sha256=RBLJYyqBFHUzv9QUQ3BliKrE7YQHWFcaACZpugFltw0,11985
+mosyn/dict/spanish_dict.csv,sha256=JvvwlbHbOgDXdfYtUpfBugWd5xHF_W87nzCwcCXozic,39180941
+mosyn/util/__init__.py,sha256=Gka9-l4pvKKSCDz0Bx_P23icsZcCbp6rBM4oIgbQcJ4,323
+mosyn/util/eagles.py,sha256=zPo7NpuPbK_INagbUDizBGqX07xdpsZ5kJZIAnANGYg,67384
+mosyn/util/events.py,sha256=wuCoOU26LRoC9eYlUsumqH4tzfOBW9XXWBkr5g3B1CE,982
+mosyn/util/format.py,sha256=Jb52fzM4pKA66Mxbbhlf2__yo9cr_iRPQsk8jlZQAJY,680
+mosyn/util/io.py,sha256=GV0ul_0T5qYKnqiuExmsTLFZ4QPs1IzN-xj2X-owGtg,3530
+mosyn/util/labels.py,sha256=YFGwVaJPOhpLgmenDKjcZ2wdHXj5lz9SEVXejE3fmv4,12813
+mosyn-1.1.0.dist-info/METADATA,sha256=oCW0W3haFnX2CVXHhRcN8V4ADNkQK5R-6-DD9iAfXMw,5674
+mosyn-1.1.0.dist-info/RECORD,,
+mosyn-1.1.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+mosyn-1.1.0.dist-info/entry_points.txt,sha256=2VOiOJmm3FLSVIiZSz_pR1EQWSy1EJUVe_IwYwVU42Y,38
+mosyn-1.1.0.dist-info/top_level.txt,sha256=PGTH62luzp5Q78-eUvivz5td7gj4MQWYvDOR7SBP0eo,6

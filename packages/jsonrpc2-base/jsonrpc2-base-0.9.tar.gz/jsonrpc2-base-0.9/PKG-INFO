@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: jsonrpc2-base
+Version: 0.9
+Summary: JSONRPC 2.0 client over HTTP
+Home-page: https://github.com/bigstepinc/jsonrpc-python
+Author: Bigstep inc
+Author-email: adrian.ciausu@bigstep.com
+License: UNKNOWN
+Download-URL: https://github.com/bigstepinc/jsonrpc-python/tarball/0.9
+Description: UNKNOWN
+Keywords: jsonrpc2,client,server,base
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6

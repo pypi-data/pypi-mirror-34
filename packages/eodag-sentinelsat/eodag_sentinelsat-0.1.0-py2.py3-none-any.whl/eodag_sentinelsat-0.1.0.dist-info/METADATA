@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: eodag-sentinelsat
+Version: 0.1.0
+Summary: Sentinelsat plugin to EODAG (https://bitbucket.org/geostorm/eodag)
+Home-page: https://bitbucket.org/geostorm/eodag-sentinelsat
+Author: CS Systemes d'Information (CSSI)
+Author-email: admin@geostorm.eu
+License: GPLv3
+Project-URL: Documentation, https://bitbucket.org/geostorm/eodag-sentinelsat/src/master/README.rst
+Project-URL: Bug Tracker, https://bitbucket.org/geostorm/eodag-sentinelsat/issues/
+Project-URL: Source Code, https://bitbucket.org/geostorm/eodag-sentinelsat
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: GIS
+Provides-Extra: dev
+Provides-Extra: standalone
+Requires-Dist: tqdm
+Requires-Dist: sentinelsat
+Requires-Dist: shapely
+Provides-Extra: dev
+Requires-Dist: tox; extra == 'dev'
+Provides-Extra: standalone
+Requires-Dist: eodag; extra == 'standalone'
+
+eodag-sentinelsat
+=================
+
+This is a repository for sentinelsat plugin to `EODAG <https://bitbucket.org/geostorm/eodag>`_.
+It's an `Api <https://eodag.readthedocs.io/en/latest/api.html#eodag.plugins.apis.base.Api>`_ plugin that enables to
+search and download EO products from catalogs implementing the `SchiHub interface <https://scihub.copernicus.eu/userguide/3FullTextSearch>`_.
+It is basically a wrapper around `sentinelsat <https://sentinelsat.readthedocs.io>`_, enabling it to be used on eodag.
+
+Installation
+============
+
+* If you already have a particular version of eodag installed on your system::
+
+    python -m pip install eodag-sentinelsat
+
+* If you don't have eodag installed and want it installed and knowing about sentinelsat plugin or if you want to
+  develop on this repository::
+
+    python -m pip install eodag-sentinelsat[standalone]
+
+  The standalone install will install eodag itself along the way
+
+Providers configurations
+========================
+
+eodag-sentinelsat comes with a `providers configuration file <providers.yml>`_ where providers that
+implement scihub interface are configured. Currently available providers are:
+
+* scihub: uses `SentinelsatAPI` for `the scihub apihub <https://scihub.copernicus.eu/apihub/>`_
+
+To add these providers to the end of eodag's providers configuration that resides in the site packages of your
+Python installation or virtual environment::
+
+    # First download the providers file
+    wget "https://bitbucket.org/geostorm/eodag-sentinelsat/src/master/providers.yml"
+    cat providers.yml >> $(python -m pip show eodag | grep Location | cut -d' ' -f2)/eodag/resources/providers.yml
+
+Contribute
+==========
+
+If you intend to contribute to eodag-sentinelsat source code::
+
+    git clone https://bitbucket.org/geostorm/eodag-sentinelsat.git
+    cd eodag-sentinelsat
+    python -m pip intall -e .[standalone,dev]
+    tox
+
+LICENSE
+=======
+
+eodag-sentinelsat is licensed under GPLv3.
+See LICENSE file for details.
+
+
+AUTHORS
+=======
+
+eodag-sentinelsat is developed by CS Systèmes d'Information.
+
+
+CREDITS
+=======
+
+See NOTICE file.
+
+

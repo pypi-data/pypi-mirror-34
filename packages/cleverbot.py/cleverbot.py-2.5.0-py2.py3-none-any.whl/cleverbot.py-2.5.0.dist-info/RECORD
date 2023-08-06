@@ -1,0 +1,14 @@
+cleverbot/__init__.py,sha256=Dft7T5OKwuuS-FBJRtqf00oBtWfUe6NDghM42IL4i4I,181
+cleverbot/__main__.py,sha256=fctj0TTQf9BsqD8MrO0SZzehmwyIbPy7f4vonxWIq0Q,6932
+cleverbot/base.py,sha256=7Z4lhwkPAmb2onmg8N0xV-beVmUmKeOMmTtl4SK1I6w,6605
+cleverbot/cleverbot.py,sha256=QTmdZNHIly9HVPowxMQ9HURKBFT5mUYPVnRWNe59akw,3205
+cleverbot/errors.py,sha256=oJXnimTUoyMDBqh7N4ElrcT1E7KmGHmJgOAINr9j088,1058
+cleverbot/migrations.py,sha256=xY1IV3dIoT6NCeRGFpQC3IUwivV9Ig8t7249Kofn83I,3569
+cleverbot/utils.py,sha256=Exhw-3hf-1KhJ9Y-rYnh0EFYNg6YcoP0g-BcVcYJVUg,3961
+cleverbot/async_/__init__.py,sha256=TsDFdsuuF0wzYdjWyWaj4ysv_2-N7o28V3fWfdpwMg8,114
+cleverbot/async_/cleverbot.py,sha256=_CFnpI3kl0mwxxScrNXaYkCnsXvStZ5NDsRdBcph_zw,3416
+cleverbot.py-2.5.0.dist-info/LICENSE.txt,sha256=krwa653kfvKurXrLlwAlCwc42ioIaXAquhfuztWWsws,1071
+cleverbot.py-2.5.0.dist-info/METADATA,sha256=_7O81GRF3wIRI2ImfolKHEOBsFQLOjekY1qSFeFmpKg,6901
+cleverbot.py-2.5.0.dist-info/RECORD,,
+cleverbot.py-2.5.0.dist-info/WHEEL,sha256=saUSQBLOUjf5ACZdNkhQ0lB6XrHU-l4vpzxq_W1n_AY,116
+cleverbot.py-2.5.0.dist-info/top_level.txt,sha256=ZVDoOg3FyxgNf5H-C63yqd-6dNETMrY7bBp8sJj8xqQ,10

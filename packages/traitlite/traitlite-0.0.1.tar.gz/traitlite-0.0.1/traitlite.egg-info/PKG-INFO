@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: traitlite
+Version: 0.0.1
+Summary: A light-weight module that aims to provide control for class attributes.
+Home-page: https://github.com/lejar/traitlite
+Author: Christopher Pezley
+Author-email: pypi@pezley.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

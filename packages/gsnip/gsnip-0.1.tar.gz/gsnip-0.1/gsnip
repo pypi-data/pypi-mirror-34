@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+
+import os
+import json
+import argparse
+from subprocess import Popen, PIPE
+from operator import itemgetter
+from configparser import ConfigParser
+
+import requests
+
+
+def gist_token(section):
+    config = ConfigParser()
+    config.read(os.path.expanduser('~/.tokens.ini'))
+    return config[section]['gist']
+
+
+def post_gists(files, description='', public=False):
+    assert files, 'Empty files!'
+
+    _files = {}
+    for _file in files:
+        with open(_file) as f:
+            _files[_file] = {'content': f.read()}
+
+    data = {
+        'files': _files,
+        'description': description,
+        'public': public,
+    }
+
+    return requests.post('https://api.github.com/gists', headers=HEADER, data=json.dumps(data))
+
+
+def patch_gists(gist_id, files, description=''):
+    assert files, 'Empty files!'
+
+    _files = {}
+    for _file in files:
+        with open(_file) as f:
+            _files[_file] = {'content': f.read()}
+
+    data = {
+        'files': _files,
+        'description': description,
+    }
+
+    return requests.patch('https://api.github.com/gists/{}'.format(gist_id), headers=HEADER, data=json.dumps(data))
+
+
+def user_gists():
+    url = 'https://api.github.com/users/{user}/gists'.format(user=USER)
+    return requests.get(url, headers=HEADER)
+
+
+def post(files, description='', public=False):
+    resp = post_gists(files, description, public)
+    assert resp.headers.get('Status') == '201 Created', 'Not Created!'
+    location = resp.headers.get('Location')
+    gist_id = location.split('/')[-1]
+    print(gist_id)
+    return gist_id
+
+
+def patch(files, description=''):
+    gists = lists()
+    idx = int(input('choose: '))
+    gist_id = gists[idx]['id']
+    resp = patch_gists(gist_id, files, description)
+    assert resp.headers.get('Status') == '200 OK', 'Error!'
+    return resp.content
+
+
+def lists():
+    resp = user_gists()
+    assert resp.headers.get('Status') == '200 OK', 'Error!'
+    content = json.loads(resp.content)
+
+    proc = Popen('column -t -s"\t" | vim -u ~/.vimrc.more -', stdin=PIPE, shell=True)
+    for i, x in enumerate(content):
+        views = list(x['files']), *itemgetter('description', 'public')(x)
+        files, desc, public = map(lambda s: repr(s).encode(), views)
+        proc.stdin.write(b'%d\t%b\t%b\tpublic: %b\n' % (i, files, desc, public))
+
+    proc.communicate()
+    return content
+
+
+USER = 'jongwony'
+HEADER = {
+    'Authorization': 'token ' + gist_token(USER)
+}
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    # TODO: stdin
+    parser.add_argument('-l', '--list', dest='lists', action='store_true')
+    parser.add_argument('-c', '--post', dest='post', nargs='+', help='Create gists')
+    parser.add_argument('-e', '--patch', dest='patch', nargs='+', help='Edit gists')
+    parser.add_argument('-m', '--description', dest='desc', nargs='?', default='', help='Description')
+    parser.add_argument('-p', '--public', dest='public', action='store_true',
+                        help='Create gists with public [Default False]')
+    args = parser.parse_args()
+
+    # main
+    if args.lists:
+        lists()
+    elif args.post:
+        post(args.post, args.desc, args.public)
+    elif args.patch:
+        patch(args.patch, args.desc)
+    else:
+        raise NotImplementedError

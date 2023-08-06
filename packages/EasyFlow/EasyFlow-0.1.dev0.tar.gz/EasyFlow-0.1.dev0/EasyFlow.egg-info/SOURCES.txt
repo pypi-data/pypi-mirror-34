@@ -1,0 +1,17 @@
+README.md
+setup.py
+EasyFlow.egg-info/PKG-INFO
+EasyFlow.egg-info/SOURCES.txt
+EasyFlow.egg-info/dependency_links.txt
+EasyFlow.egg-info/top_level.txt
+bin/test.py
+easyflow/__init__.py
+easyflow/core/__init__.py
+easyflow/core/abstract_model.py
+easyflow/core/layers/__init__.py
+easyflow/core/layers/capsule.py
+easyflow/core/layers/simple.py
+easyflow/core/layers/variables.py
+easyflow/pipeline/__init__.py
+easyflow/pipeline/data_feeder.py
+easyflow/pipeline/data_reader.py

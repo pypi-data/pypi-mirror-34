@@ -1,0 +1,61 @@
+CHANGES
+=======
+
+0.4.0
+-----
+
+* Fix nova unit tests
+* Clean up unit tests
+* Cleanup libvirt driver for BIOS emulator
+* Switch to use stestr for unit test
+* Reorder unittest assertions
+* Add BIOS resource support
+* Add unittests for OpenStack nova driver
+* Fix requirements version for Flask
+* Cleanup shebang line
+* Cleanup usage of 'simulator' and 'cloud-backed' in docs
+* Fix ImportError for tox debug environment
+* Remove Flask mocking from tests
+* Fix return content-type to be JSON
+* Fix minor typo in user doc
+* Add an option to bind simulators to a local interface
+* Document how to run simulators as systemd services
+* fix tox python3 overrides
+* Fix typo in nova driver attribute name
+* tox: Use default Python 3 version, remove pypy
+* fix RAM formula, debug level, None returns and docstrings
+* fix documentation on simulators
+* Add system boot mode support
+* documentation on simulators added
+* OpenStack cloud driver added
+* Clean up unused items from templates
+* Simulator processes return rc on exit
+* Do not run functional (API) tests in the CI
+* update lower-constraints.txt to match \*requirements.txt
+* Add unit tests for emulator
+* add lower-constraints job
+* Fix a typo in libvirt driver
+* Abstract away the virtualization management interface
+* Updated from global requirements
+
+0.3.0
+-----
+
+* Zuul: Remove project name
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* add dvsm CI job
+
+0.2.0
+-----
+
+* fixed documentation links
+* rearrange existing documentation to follow the new layout
+
+0.1.0
+-----
+
+* Initial Commit
+* Added .gitreview

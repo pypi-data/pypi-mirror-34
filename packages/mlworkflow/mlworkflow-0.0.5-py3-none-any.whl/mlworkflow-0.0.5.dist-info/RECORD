@@ -1,0 +1,16 @@
+mlworkflow/__init__.py,sha256=Rv93kC-6zlhExJAV_g7cK91l73s4kJJ-ph7a3xpJmjA,535
+mlworkflow/clean_ipynb.py,sha256=5gdA5nXKJeCxc0g7L_jn8mrsAA2CdSJ9QaiPlAGZ53o,209
+mlworkflow/dashboard.py,sha256=UNqng4oVZGL8P7aB6MVH3HdfCX77EMjFTyE9mZLTrAQ,6331
+mlworkflow/data_collection.py,sha256=B4MfvHow2ZEU5PcdqcJR6lWgXoT6f40fe5VD2Dv_pwk,15676
+mlworkflow/datasets.py,sha256=AgTqlK_lRmsCsLw3au86BdxW1gOy7PFGn9kp9oomOCE,21599
+mlworkflow/environment.py,sha256=yX3HsSMEQrLkzDFiA6rgXdIwHXQ-gwTd9Ej52_Q6dl0,24255
+mlworkflow/interactive.py,sha256=awL6Y-66jFV1yf0GUqdMmy9ndRKY0mtAPFcb9UA4A5E,9884
+mlworkflow/keras_utils.py,sha256=s3r4I283PyvIpFIbZ6zrdXGyJI4MS_hp1PrtsJ4EAQk,3800
+mlworkflow/notebook.py,sha256=so8PjKKWRrRxTLWN0NKTCjz3_w35-klbgYuFgghzSJ8,4377
+mlworkflow/tf_utils.py,sha256=JldRGBtgPCrbngfoL1XoolPbXCdks6FXIcUFTG2SIKc,6517
+mlworkflow/transforms.py,sha256=bWXJAGxRpGxwGQvwYgqq36RsG8dPBQapIhSJ8DYY73A,529
+mlworkflow/utils.py,sha256=yT9SD2VAnIy8jCnw1pVDk4PqtphqHGt4CyC3HWv5Tys,7730
+mlworkflow-0.0.5.dist-info/METADATA,sha256=ERJQZTyCrDQfIvs90ySVNhZ7v55iBtcxCLIacbJpklU,402
+mlworkflow-0.0.5.dist-info/RECORD,,
+mlworkflow-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+mlworkflow-0.0.5.dist-info/top_level.txt,sha256=EXHO-0Te3Y_syA2wsVvaD198U4rUhY1hP2DQjXtLkaw,11

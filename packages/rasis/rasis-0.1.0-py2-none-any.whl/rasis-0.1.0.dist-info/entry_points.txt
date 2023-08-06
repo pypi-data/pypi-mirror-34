@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        rasis=cmds.entry:entry
+    

@@ -1,0 +1,16 @@
+BiEntropy-1.1.0.dist-info/top_level.txt,sha256=X_PmsoVMwSDdWgOPIG7CuzeLqm37Xzbi4rdINE0rTAQ,10
+BiEntropy-1.1.0.dist-info/LICENSE.txt,sha256=vr6U2vQIAb-0kinvgnTLhmJ2-ssAiZbylQWeIlLBfUc,32423
+BiEntropy-1.1.0.dist-info/RECORD,,
+BiEntropy-1.1.0.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+BiEntropy-1.1.0.dist-info/METADATA,sha256=sptzAqnfchqqC6ki4uKzqy_cdZ7OUmLJ5LUEdD3FDqM,8303
+BiEntropy-1.1.0.data/headers/bientropy.h,sha256=Co6RvAumRhiJ5-2qiW4DsNg1IpxB91oYlKV43pf4Q3g,1263
+bientropy/pybientropy.py,sha256=renrPlg8V44JLk7NRyKZCoxhkY-Ia_JEFu95LNifbAo,5083
+bientropy/benchmark.py,sha256=sxU4ZMdwm-QGORml14qA6ex5nh0NP8SetQTfQLb3QiA,4124
+bientropy/__init__.py,sha256=Cv4o05oB3r1C4re6IRc22Gt0JF_gXQ-Ya1OuYuDCr84,2195
+bientropy/testvectors.py,sha256=zDbIMW29esTWtt6f8llfb4x80hjH_XXO6_bu0PZvazI,11859
+bientropy/demo.py,sha256=FdWW9WkD0-HirY98xr1kut0247Yr5qZzkveQfr6nk_k,2995
+bientropy/cbientropy.cpython-37m-x86_64-linux-gnu.so,sha256=QzCxlciUb--gbwWkmWLZ8jhmpQt8-0VlASfF7FTAHH4,50376
+bientropy/.libs/libgmp-35b4ca60.so.3.3.3,sha256=vLrcmSyMpyB66zNjkvpCxvPx0Nu-dIwS8k7fDlinSoA,246768
+bientropy/tests/test_suite.py,sha256=tyH44sMf6P11P6XstjAe3J5vkqoObAOgdIxop7BYW2o,12001
+bientropy/tests/__main__.py,sha256=bz9YJWIwx6biIe_PPpg9yuyzd2jf6XedJqRdTduV5SQ,309
+bientropy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

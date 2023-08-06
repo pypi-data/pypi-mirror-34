@@ -1,0 +1,36 @@
+{
+  "Timeout": 60,
+  "Retries": 1,
+  "InventoryAge": 5e-05,
+  "NumThreads": 1,
+  "GFALThreads": 32,
+  "ListAge": 5e-05,
+  "IgnoreAge": 1,
+  "RedirectorAge": 1,
+  "CacheLocation": "cache",
+  "LogLocation": "logs",
+  "Redirectors": {
+    "T3_US_MIT": "t3serv006.mit.edu"
+  },
+  "PathPrefix": {},
+  "AccessMethod": {},
+  "RootPath": "/store",
+  "DirectoryList": [
+    "mc",
+    "data",
+    "hidata"
+  ],
+  "IgnoreDirectories": [],
+  "GlobalRedirectors": [
+    "cms-xrd-global.cern.ch"
+  ],
+  "SaveCache": 0,
+  "UseLoadBalancer": [],
+  "WebDir": "www",
+  "MaxMissing": 100,
+  "MaxOrphan": 1000,
+  "Unmerged": [
+    "T2_US_MIT"
+  ],
+  "UnmergedLogsAge": 60
+}

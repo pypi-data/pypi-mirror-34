@@ -1,0 +1,17 @@
+pyff/__init__.py,sha256=0UYMzK_S6XiSTeI4-HWbmEuR0_3kozg1g_X_Yq2tjjQ,47
+pyff/classes.py,sha256=6NZkEFD3lahEE4K5ElW08eX4RwuYV_oFxBYZQIz7Mtg,10900
+pyff/directories.py,sha256=dFbSk2NjsYlhm5qTu3bnvfnA-IJFjIYier29HXYs5-E,5734
+pyff/functions.py,sha256=Ns7T3Z1nihP7edQtQCVtiwrM9TYpaBJDiE4wSuQXhrk,16781
+pyff/imports.py,sha256=qtQBltGbMc8q0rRCRJQgc-o0JkL8Fs2Gt3tnjZweksU,16400
+pyff/kitchensink.py,sha256=B0VzwG52RnlBnj4vyKssMv08IeA-KwFwTNcqC91GUSw,1097
+pyff/modules.py,sha256=R-unkGRt4xASBPC2ospn-MA3790TfkM9jLh2bVgiLmA,4447
+pyff/packages.py,sha256=K3a8qg-h2CGt-YW-Hngwa8UrB1lKWFSsOaH3UjJySTs,6074
+pyff/repositories.py,sha256=h46_SS35UeR5CF3lmvkUKZ3uBCqz3M1Y0UoF45YWOpg,1599
+pyff/run.py,sha256=tyVmetGIs3ghhcInvODWyX359R43zk-c1bpczuGdtBY,2395
+pyff/statements.py,sha256=z5cW93XADEO7YieUyJwMKs4HKRbeJcuQ09153e9P09o,9074
+pyff/summary.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythondiff-0.7.0.dist-info/METADATA,sha256=aRxDXLIC7-3caQXtQnVRbYBAJv-VhkUpmt6CZxWNwuc,4056
+pythondiff-0.7.0.dist-info/RECORD,,
+pythondiff-0.7.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pythondiff-0.7.0.dist-info/entry_points.txt,sha256=FYdCp1WcYdsB5F7WDFzLCA4gcXcpGznAaL542b-Ed64,131
+pythondiff-0.7.0.dist-info/top_level.txt,sha256=SzgyuRqUCu2eGPH67ex_ad2nUA_vDcvDgO8k3sPZXUk,5

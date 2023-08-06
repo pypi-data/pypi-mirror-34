@@ -1,0 +1,6 @@
+[console_scripts]
+pyff = pyff.run:pyffmod
+pyff-dir = pyff.run:pyffdir
+pyff-git = pyff.run:pyffgit
+pyff-package = pyff.run:pyffpkg
+

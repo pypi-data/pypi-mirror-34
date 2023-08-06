@@ -1,0 +1,3 @@
+include phonetic2bengali/pyavrophonetic/resources/*.json
+include phonetic2bengali/pyavrophonetic/utils/resources/*.json
+include README.rst

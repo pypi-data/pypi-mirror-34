@@ -1,0 +1,14 @@
+indexed_gzip-0.8.7.dist-info/WHEEL,sha256=5uJgXrzESlz5BEVUtG_qT5iZkFr_xW73vqby14S5SqE,107
+indexed_gzip-0.8.7.dist-info/top_level.txt,sha256=lk5ZVPlCbcmiAtxiJdu7SWX1NUWgdJNxLy48WhZnmAk,13
+indexed_gzip-0.8.7.dist-info/METADATA,sha256=3VFqhBwkdFVgVAR1xE1v1wpXgBmVK5NFhsfMYe8Qte8,648
+indexed_gzip-0.8.7.dist-info/RECORD,,
+indexed_gzip/indexed_gzip.cpython-35m-i386-linux-gnu.so,sha256=pebjPuLGbEMr8bjIcUKzV9TRVduqqVUh-yqbxHINwWY,254388
+indexed_gzip/__init__.py,sha256=5AHs0kJfqHWJkDfhgxSWMMY0AhPWTk7hjWI8mZrGJ10,455
+indexed_gzip/.libs/libz-83853723.so.1.2.3,sha256=RXg6ZNFYfXk1W4MF8PFDsOI7JPjgObAM5e99g2BilFo,75576
+indexed_gzip/tests/__init__.py,sha256=BW-60SoFkTMUubcLUeNM72NJBkJLBSy3uQyXBXrouUE,5208
+indexed_gzip/tests/test_indexed_gzip_threading.py,sha256=79swLoaXzLyPKvEm85K3GE1EcRbyhbqC0Ee21nRXTHQ,2148
+indexed_gzip/tests/test_indexed_gzip.py,sha256=9ej-r5yY5Hz50M4QUrqyPVrglxWsOmdCvR2CSwf8cjk,4140
+indexed_gzip/tests/ctest_zran.cpython-35m-i386-linux-gnu.so,sha256=v6R_oSLduXFMiJRF5YB9PeiW8tU5d_EFaXtfzXXABQY,360400
+indexed_gzip/tests/test_zran.py,sha256=cYs84mJ4iste92ltLaHYud3Qs_3WabPX5W7ojDz3fBg,2499
+indexed_gzip/tests/benchmark.py,sha256=z-qTFC2IjAci7odA9MRbe_NHP3yJDyXusos5k0hrB0k,4405
+indexed_gzip/tests/ctest_indexed_gzip.cpython-35m-i386-linux-gnu.so,sha256=7JLArdR4f_brJgihKzLGDtd39C_mByH2NLsbm3vtkU0,498268

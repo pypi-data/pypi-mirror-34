@@ -1,0 +1,16 @@
+itolapi/Comm.py,sha256=6nArHXR-riOE50LGca_pbGdamAGaVZKiRSOpNvipHlI,3178
+itolapi/Itol.py,sha256=mCS2hGFT74rcE8aCnHbIj1JIfrUODgU8ZXjByGji-8c,3747
+itolapi/ItolExport.py,sha256=TeyhQF2A0mef7wA9Ocn8n6KPXcOJm9-BU_e8-X-6bsI,2923
+itolapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itolapi/__version__.py,sha256=g_WRdX1nbBRGFFXFYEm0RsV-gRPvS34jSeimK3qiNRc,63
+itolapi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itolapi/tests/comm.py,sha256=Wg-zWL1aud9UIn6OCpJuP6-LMuqwAtzITLTNHQpqyUQ,4043
+itolapi/tests/itol.py,sha256=nZakcyU8ytgyFnUCQSByr1iLBqjxgfPr009XmFZXS-I,2730
+itolapi/tests/itolexport.py,sha256=fP1_ZlmT5mnvd1TXsXsx-1zRJ4kAWfznZmXRHMkk-50,967
+itolapi/tests/test_version.py,sha256=TagWMWo6Qj-E4DkX7KpO9tyno1PJeeLTN2zaTBJmj4U,211
+itolapi-2.0.1.data/scripts/Itol.py,sha256=mCS2hGFT74rcE8aCnHbIj1JIfrUODgU8ZXjByGji-8c,3747
+itolapi-2.0.1.data/scripts/ItolExport.py,sha256=TeyhQF2A0mef7wA9Ocn8n6KPXcOJm9-BU_e8-X-6bsI,2923
+itolapi-2.0.1.dist-info/METADATA,sha256=amtdzrnd-0ui_vDgJ6dALmVePZjid2DkCoKjxugTlpM,5576
+itolapi-2.0.1.dist-info/RECORD,,
+itolapi-2.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+itolapi-2.0.1.dist-info/top_level.txt,sha256=e4geof3Qg0WtNk6C9hM_3VoPXr4xlzIYB3rUpYlmbeM,8

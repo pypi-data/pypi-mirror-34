@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pybillboard-js
+Version: 0.1.0a9
+Summary: simple python wrapper for naver billboard.js
+Home-page: https://github.com/eseunghwan/pybillboard-js
+Author: eseunghwan
+Author-email: shlee0290@naver.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

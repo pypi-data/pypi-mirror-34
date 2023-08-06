@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rocketchat_py_sdk
+Version: 0.0.2
+Summary: A easy way to connect and interact with Rocket.Chat
+Home-page: https://github.com/RocketChat/Rocket.Chat.py.SDK
+Author: Arthur Temporim
+Author-email: arthurrtl@gmail.com
+License: UNKNOWN
+Description: long_description
+Keywords: python,Rocket.Chat,driver
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

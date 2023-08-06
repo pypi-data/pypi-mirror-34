@@ -1,0 +1,54 @@
+rules:
+    predicate:
+        - identifier
+        - tautology
+        - contradiction
+        - not
+        - and
+        - or
+        - eq
+        - neq
+        - lt
+        - lte
+        - gt
+        - gte
+        - in
+        - literal
+        - callable
+    tautology:
+        - [ ]
+    contradiction:
+        - [ ]
+    identifier:
+        - [ name ]
+    not:
+        - [ predicate ]
+    and:
+        - [ predicate+ ]
+    or:
+        - [ predicate+ ]
+    eq:
+        - [ term, term ]
+    neq:
+        - [ term, term ]
+    lt:
+        - [ term, term ]
+    lte:
+        - [ term, term ]
+    gt:
+        - [ term, term ]
+    gte:
+        - [ term, term ]
+    in:
+        - [ term, term ]
+    callable:
+        - [ '=FunctionType' ]
+    term:
+        - var_ref
+        - literal
+    var_ref:
+        - identifier
+    literal:
+        - '~object'
+    name:
+        !regexpr '[a-zA-Z_][a-zA-Z0-9_]*'

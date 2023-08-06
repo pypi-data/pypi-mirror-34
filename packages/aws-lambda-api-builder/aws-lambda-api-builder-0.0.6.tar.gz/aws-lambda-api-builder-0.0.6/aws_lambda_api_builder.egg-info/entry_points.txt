@@ -1,0 +1,3 @@
+[console_scripts]
+zlab = api_builder.zlab:main
+

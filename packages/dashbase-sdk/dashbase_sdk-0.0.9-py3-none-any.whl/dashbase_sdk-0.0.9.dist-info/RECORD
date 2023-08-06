@@ -1,0 +1,10 @@
+dashbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dashbase/auth.py,sha256=yR6UN8R2RRbT-BkhPT-3ijZPCSMgmQycY5S5W94Z8KM,2351
+dashbase/client.py,sha256=tRDmLnmuSR5pKgoG_YPwiQgGAx05q4bwaqFvHIAYu_c,3575
+dashbase/request.py,sha256=9lywrME9zRaVD3gs_PXYGI9etQTf0OsHfRnV9enu_aA,1307
+dashbase/response.py,sha256=PhVmBNs2xBMKfXtVIVMG9lC4XSBIgQBg2rxyZdPXbw8,4055
+dashbase/utils.py,sha256=ilFlV68jZkV_1fByLJNe89EtZovcMS0Wlpqh1sDGWuw,453
+dashbase_sdk-0.0.9.dist-info/METADATA,sha256=Hax_FCaLmC8r1hk3tGzrrq2-PWBFsiZEWzmi2F0ZMAs,272
+dashbase_sdk-0.0.9.dist-info/RECORD,,
+dashbase_sdk-0.0.9.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dashbase_sdk-0.0.9.dist-info/top_level.txt,sha256=-kR0SOu-Tnfi1JPMrvRadDmAPNbCpQ9lA4GLMRewezQ,9

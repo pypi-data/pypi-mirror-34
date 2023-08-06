@@ -1,0 +1,5 @@
+include graphannis/linux-x86-64/libgraphannis_capi.so
+include graphannis/darwin-x86-64/libgraphannis_capi.dylib
+include graphannis/win32-x86-64/graphannis_capi.dll
+include README_pypi.md
+recursive-include package *

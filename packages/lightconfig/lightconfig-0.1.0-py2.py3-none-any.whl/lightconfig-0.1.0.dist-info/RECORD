@@ -1,0 +1,11 @@
+lightconfig/__init__.py,sha256=8ElVj-JrpE7GC8kaffzAG80ZMe36wKJn-6z6ehedREk,36
+lightconfig/lightconfig.py,sha256=i-VFrKWPs6ifFhkYQ01amX2tZk-L-bbVz68OyKcSH5E,6504
+lightconfig/test_lightconfig.py,sha256=Esx8N8VxSh7f9T0yW8qugyx3HOTSLWRbDuj0qrOycc0,2887
+lightconfig-0.1.0.dist-info/DESCRIPTION.rst,sha256=X-NQzTkrR4sZQK5bwNnHMrEm0TtOSHYGazUAW_IwmJ4,3139
+lightconfig-0.1.0.dist-info/METADATA,sha256=QX_FtDZxd_oKesHEeMsRqn_8ITVUjuW_fJ9Li6eOjJw,4087
+lightconfig-0.1.0.dist-info/RECORD,,
+lightconfig-0.1.0.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+lightconfig-0.1.0.dist-info/metadata.json,sha256=otaIJPXPk70xQ8w0iHgQyfUYbhNWx0JIPh8Giz0E-n4,1062
+lightconfig-0.1.0.dist-info/top_level.txt,sha256=O3WuRWc-gETkeP7GGC5PRPITpPOV2M1_D9umYz5izYk,18
+tests/__init__.py,sha256=6UyhzHqp1DD2JZCP-r1R2C_xLBopXrHAtcE2CLoqWhM,50
+tests/test_lightconfig.py,sha256=X-fDiZQGzlkIkq0J9V6DMykHzJ_BlEp1GzonU31iQAg,4221

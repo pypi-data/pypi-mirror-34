@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fenautils
+Version: 1.0.1
+Summary: Python utilities used alongside of the Fena preprocessor
+Home-page: https://github.com/Aquafina-water-bottle/fenautils
+Author: Austin Siew
+Author-email: glowing.locker@gmail.com
+License: MIT
+Keywords: minecaft language fena preprocessor fenautils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
+

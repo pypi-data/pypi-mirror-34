@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mullvad-python
+Version: 0.1.1
+Summary: Check Mullvad VPN connection status.
+Home-page: None
+Author: Franccesco Orozco
+Author-email: franccesco.orozco@codingdose.info
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=6.7,<7.0)
+Requires-Dist: colorama (>=0.3.9,<0.4.0)
+Requires-Dist: requests (>=2.19,<3.0)

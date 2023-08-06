@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: argo-ams-library
+Version: 0.4.2
+Summary: A simple python library for interacting with the ARGO Messaging Service
+Home-page: https://github.com/ARGOeu/argo-ams-library
+Author: SRCE, GRNET
+Author-email: dvrcic@srce.hr, kaggis@gmail.com, themiszamani@gmail.com
+License: ASL 2.0
+Description: A simple python library for interacting with the ARGO Messaging Service
+Platform: UNKNOWN

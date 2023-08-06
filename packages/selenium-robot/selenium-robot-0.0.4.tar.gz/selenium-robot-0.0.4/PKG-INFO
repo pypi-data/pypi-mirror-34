@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: selenium-robot
+Version: 0.0.4
+Summary: This is a robot description base selenium.
+Home-page: https://pypi.python.org/pypi
+Author: Puke
+Author-email: 1129090915@qq.com
+License: Apache
+Description: # selenium-robot
+        *基于selenium框架的robot封装，支持快速生成浏览器自动化脚本*
+        
+        ### 快速开始
+        
+        ```Python
+        robot = Robot(
+            Open('https://www.zhihu.com/'),
+            Click('登录'),
+            Input('手机号或邮箱', username),
+            Input('密码', password),
+            Click('登录', choose_func=lambda elements: elements[-1])
+        )
+        robot.setup(browser)
+        ```
+        
+        
+        
+        运行效果图
+        
+        ![](doc/robot.gif)
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7

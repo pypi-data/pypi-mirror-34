@@ -1,0 +1,16 @@
+DataProperty-0.31.2.dist-info/METADATA,sha256=reIkr-NZwPP-y8Bc-vwtyMtr2LmmHmaJaJKpQjoBq5I,11939
+DataProperty-0.31.2.dist-info/RECORD,,
+DataProperty-0.31.2.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+DataProperty-0.31.2.dist-info/top_level.txt,sha256=RiW0aJCSmIPslrGSqg9wyPRas0Rl7Kcdi_fBBEd0-LY,13
+dataproperty/__init__.py,sha256=bbseh2WNUm1fMIzIxdRGsdGRP46A95tSsjNi8BTcQG8,741
+dataproperty/__version__.py,sha256=ZSbFCv-IVC__xp-quGfneB9LFsFYpX-ZnTTAeq5DByc,285
+dataproperty/_align.py,sha256=Q1YgQuVeVQiSBIPOB7ei3-PhhJu2eTWwJwG5ZULaXLQ,592
+dataproperty/_align_getter.py,sha256=al4yL4-SPxTibYaU9bwAHlvix4MMD3aJje7DoGUa3yA,852
+dataproperty/_common.py,sha256=uJW8zbapvlVCal0QtIyXcsjidKKnlnG6CfLuiVvD08k,1810
+dataproperty/_container.py,sha256=acYJ_MgOkFNVmXUSXJjbJpRbwFfbG1u4v4Bf6IaQqKQ,3759
+dataproperty/_converter.py,sha256=RmCY8CHes3JZWHlXqdwdNJYw1PXZoypmfs3DA1aUXgA,3556
+dataproperty/_dataproperty.py,sha256=LxdV8rso8mRSbFOkz3UOki8gxLU5QT0tSFtllJooJBE,22656
+dataproperty/_extractor.py,sha256=tSc8SB1jJAnQ6vch9G3v0ixewVm5LvSOYSe51X23l_M,19492
+dataproperty/_function.py,sha256=g6yC8w6eMSWuoY4TGNF8r9n0plRKhV3S0X2D1QuUv1A,3968
+dataproperty/_interface.py,sha256=fgB-crJhUOjMaqTDrDxoZSfDRI_olxlm53oqorQNdV4,617
+dataproperty/_logger.py,sha256=tLTPlzyiJS-Yk1iB0vVCvmlRzP_-RkVXuJT4QCt06L8,1176

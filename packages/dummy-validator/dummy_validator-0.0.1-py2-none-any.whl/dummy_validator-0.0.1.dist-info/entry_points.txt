@@ -1,0 +1,3 @@
+[console_scripts]
+dummy_validator = dummy_validator.rules:main
+

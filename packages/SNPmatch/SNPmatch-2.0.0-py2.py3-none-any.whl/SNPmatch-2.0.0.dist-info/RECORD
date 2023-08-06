@@ -1,0 +1,15 @@
+SNPmatch-2.0.0.dist-info/DESCRIPTION.rst,sha256=QOoEC4ZiT544jep4HnKLgl7U18iiuAL_m2tKvnNAR78,5606
+SNPmatch-2.0.0.dist-info/METADATA,sha256=U9dVsArW1VsH3gEE3EzcZt4H3agpKizYCct5vkrwyQw,6318
+SNPmatch-2.0.0.dist-info/RECORD,,
+SNPmatch-2.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+SNPmatch-2.0.0.dist-info/entry_points.txt,sha256=6rH4-fpK5ITjPWxR2aj-0r4PoZEqOOwg4uSC8JhWtYc,44
+SNPmatch-2.0.0.dist-info/metadata.json,sha256=PZz24HoJCoc__Rxe0Jbp_7qtkFaid7XHdgUaqwMtFbE,1024
+SNPmatch-2.0.0.dist-info/top_level.txt,sha256=B0L5UjzdzwFxWZbm1mpjIQAVOqu7ASPYZwKNbOg-VaI,9
+snpmatch/__init__.py,sha256=XboYDRD1qAACwfNC4UQ4M1ea6mx81-7iUJ71_IsuAIE,10556
+snpmatch/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snpmatch/core/csmatch.py,sha256=HudZDG-YZM-h4kZTMWhMsEquJCDs19yNBpSRaXfsD8w,17762
+snpmatch/core/kinship_snpstats.py,sha256=l0f1w-4pQsd96gNKYWHbQEIMA3yYFE8uL4CQj_16TVY,1563
+snpmatch/core/makedb.py,sha256=TA8_FweuvwTjk_EC5bMIAkI5VziZ8HY6h1KZMLqV9Ek,3387
+snpmatch/core/parsers.py,sha256=eFLCWxbOTEQW-ynJRE72Nhc8Cw6DaWIhKpkGW95giMI,5366
+snpmatch/core/simulate.py,sha256=h7Q47KhiPP68QwlAnZFCrUMBdIeUZorQg-5Ol5Tzf-0,2213
+snpmatch/core/snpmatch.py,sha256=PKDBsnn7t5iDhEzUN7k006doHVRaXYFSGBBHNqAGTxg,8878

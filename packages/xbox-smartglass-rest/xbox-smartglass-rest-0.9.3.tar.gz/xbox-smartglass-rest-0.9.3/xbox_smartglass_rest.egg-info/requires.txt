@@ -1,0 +1,10 @@
+xbox-smartglass-stump
+Flask
+
+[dev]
+bumpversion
+watchdog
+coverage
+Sphinx
+wheel
+twine

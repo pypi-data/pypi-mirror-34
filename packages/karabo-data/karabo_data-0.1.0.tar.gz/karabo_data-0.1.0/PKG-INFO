@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: karabo_data
+Version: 0.1.0
+Summary: Tools to read and analyse data from European XFEL 
+Home-page: https://github.com/European-XFEL/karabo_data
+Author: European XFEL GmbH
+Author-email: cas-support@xfel.eu
+Maintainer: Thomas Michelat
+License: BSD-3-Clause
+Description: [![Build Status](https://travis-ci.org/European-XFEL/karabo_data.svg?branch=master)](https://travis-ci.org/European-XFEL/karabo_data)
+        [![codecov](https://codecov.io/gh/European-XFEL/karabo_data/branch/master/graph/badge.svg)](https://codecov.io/gh/European-XFEL/karabo_data)
+        
+        Python 3 tools for reading European XFEL's HDF5 files.
+        
+        
+        Installing
+        ==========
+        This package is dependent on fabio, h5py, matplotlib, numpy, pandas.
+        
+        Installing h5py on EuXFEL computer may require installing the *libhdf5-dev*
+        package from the ubuntu repositories.
+        
+        to install package:
+        
+            pip3 install .
+        
+        
+        Contributing
+        ===========
+        
+        Tests
+        -----
+        
+        Tests can be run as follows:
+        
+            python3 -m pytest -v
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.4
+Provides-Extra: test
+Provides-Extra: docs

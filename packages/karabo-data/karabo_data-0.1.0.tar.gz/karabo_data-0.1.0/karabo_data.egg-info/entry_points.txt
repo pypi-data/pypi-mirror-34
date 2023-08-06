@@ -1,0 +1,4 @@
+[console_scripts]
+karabo-bridge-serve-files = karabo_data.export:main
+lsxfel = karabo_data.lsxfel:main
+

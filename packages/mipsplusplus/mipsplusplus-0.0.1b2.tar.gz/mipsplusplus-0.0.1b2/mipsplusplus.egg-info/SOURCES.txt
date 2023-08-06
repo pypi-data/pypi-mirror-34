@@ -1,0 +1,17 @@
+README.md
+setup.py
+mipsplusplus/__init__.py
+mipsplusplus/__main__.py
+mipsplusplus/addresses.py
+mipsplusplus/definitions.py
+mipsplusplus/expressions.py
+mipsplusplus/functions.py
+mipsplusplus/general.py
+mipsplusplus/main.py
+mipsplusplus/operations.py
+mipsplusplus/parser.py
+mipsplusplus/utils.py
+mipsplusplus.egg-info/PKG-INFO
+mipsplusplus.egg-info/SOURCES.txt
+mipsplusplus.egg-info/dependency_links.txt
+mipsplusplus.egg-info/top_level.txt

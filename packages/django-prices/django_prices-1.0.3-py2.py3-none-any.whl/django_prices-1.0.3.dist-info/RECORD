@@ -1,0 +1,14 @@
+django_prices/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_prices/forms.py,sha256=SiZdpUe4_kGvApae8-wAB9QJ8jH7829dYgQCpaaW9Mc,2013
+django_prices/models.py,sha256=yeLPg2M6jxAIioxpn0L8ciArCSMvdrjaCOTb7hxFukc,4659
+django_prices/validators.py,sha256=lTgzSjpn7Z1wjXPBNQRuSFXTb13f12lmzRAQNWRdckk,1882
+django_prices/widgets.py,sha256=zBL4wVgSkhhpYgRgzyyToeOOGpVXZmVFHM0b3INJs24,741
+django_prices/templates/prices/price.html,sha256=ummrkFALNWj8wmYnTXvyMjOIi2hoROO_pDsS_9RT4tA,71
+django_prices/templates/prices/widget.html,sha256=QhANQCHPpkUHhaojeH_tZRJLcUURYoKbZ6N8Q9dwTPI,27
+django_prices/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_prices/templatetags/prices.py,sha256=sTvATuwoiOsRbt9z3c4ewpa9KrfANHPStVGWxty3b8o,346
+django_prices/templatetags/prices_i18n.py,sha256=Y_CTf9jYwNb7395C9rtD_8_Qg4GDbLy-AoK6Wvb1fDc,1998
+django_prices-1.0.3.dist-info/METADATA,sha256=7BZGP3tAdF4doMeKBfwdAeNUK1GqplmXLUhyOun_xIU,1007
+django_prices-1.0.3.dist-info/RECORD,,
+django_prices-1.0.3.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_prices-1.0.3.dist-info/top_level.txt,sha256=AQJtitvPLBjkMY-XWqmv5NbqQVpbKOnqbJ4SU4ZNKds,14

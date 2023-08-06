@@ -1,0 +1,13 @@
+
+0.0.2
+===========================
+
+* Added cons3rtconfig set_config method to create a config file from
+config data passed as a dict
+* Added new calls: create_system, create_scenario, and create_deployment
+* Bug fixes and cleanup
+
+0.0.1
+=====
+
+* Initial packagable version installable by pip

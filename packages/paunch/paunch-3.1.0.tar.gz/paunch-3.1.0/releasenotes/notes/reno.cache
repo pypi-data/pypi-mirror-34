@@ -1,0 +1,32 @@
+---
+file-contents:
+  releasenotes/notes/Add-security-opt-76c14c9b39d35d3e.yaml:
+    features: ['Add `--security-opt=xxx` option for the action run a container. Allows
+        to
+
+        define security options, such as turning labels (SELinux) on/off.
+
+        ']
+  releasenotes/notes/add-ulimit-option-30dbd38044d26208.yaml:
+    features: ['Add `--ulimit=xxx` option for paunch run action. Using
+
+        this option, multiple ulimits can be set for the container.
+
+        For example, `--ulimit=nproc=1024 --ulimit=nofile=1024` will
+
+        set proc and nofile limit to 1024 for the container.
+
+        ']
+  releasenotes/notes/cgroups-cpu-shares-038ced471b862b4e.yaml:
+    features: ['Add `--cpu-shares=xxx` option for the action run a container. Allows
+        to
+
+        define upper `cpu.shares` limits in the cpu cgroup.
+
+        ']
+notes:
+- files:
+  - [releasenotes/notes/Add-security-opt-76c14c9b39d35d3e.yaml, 9b8c252b75572b8b4b80c419de913d11c7236983]
+  - [releasenotes/notes/add-ulimit-option-30dbd38044d26208.yaml, 9348078452965b54ef5337913ac602e4194b7796]
+  - [releasenotes/notes/cgroups-cpu-shares-038ced471b862b4e.yaml, 4a4f43ac36c3edc2645c8fff5cf783415ea3f1cf]
+  version: 3.0.0

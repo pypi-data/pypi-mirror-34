@@ -1,0 +1,13 @@
+rdata/__init__.py,sha256=stJyiafYr0bhvlaTCk67M7wH5YqYGB_E6cXDZGnOrZo,46
+rdata/conversion/__init__.py,sha256=3zYuPYvpODiPLjvndwBsIPKTTSE8aARtroMcuA0VxIY,387
+rdata/conversion/_conversion.py,sha256=Eg634rbs41s8SivxU8sbvWFt4rE9Xnb0_qd2AT6G7rs,13477
+rdata/parser/__init__.py,sha256=3Kpqy-rEiGnzzziYsLt-S0ybpZ-SbRf9iXiPt9NUVU0,121
+rdata/parser/_parser.py,sha256=KoSU0eNmgcKV4OiT0WIs0TYxzjkMcnn3Zu-AL4OI77I,13451
+rdata/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdata/tests/test_rdata.py,sha256=3_JU4GUcuY6mefHhN5c3i0BoCF0F4XpEhCpB-QwmtE4,2514
+rdata-0.1.1.dist-info/DESCRIPTION.rst,sha256=s-FU3emNRHm0Bd6kdMGEBgzbtjjxgjm4Xp39UFgByvA,147
+rdata-0.1.1.dist-info/METADATA,sha256=sh-Cgmz-HvXt0rDPOS8-xzLqZM3nVnF1YmfwbnDn0eE,1051
+rdata-0.1.1.dist-info/RECORD,,
+rdata-0.1.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+rdata-0.1.1.dist-info/metadata.json,sha256=WYNWkoNZO8G_dUqsS0cMpEa96gEQlu9Nmm0hb4zQ1lg,1134
+rdata-0.1.1.dist-info/top_level.txt,sha256=zqfEaYdq9S8sZKU16W4vYpdZQMcI748KUuDkDVBeEqo,6

@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README
+README.md
+setup.cfg
+setup.py
+helper_zlib/__init__.py
+helper_zlib.egg-info/PKG-INFO
+helper_zlib.egg-info/SOURCES.txt
+helper_zlib.egg-info/dependency_links.txt
+helper_zlib.egg-info/top_level.txt

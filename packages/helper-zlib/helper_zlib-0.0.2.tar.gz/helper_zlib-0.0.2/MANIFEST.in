@@ -1,0 +1,2 @@
+recursive-include helper_zlib *test.py
+include LICENSE README.md

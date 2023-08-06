@@ -1,0 +1,3 @@
+[console_scripts]
+sit = sit.scripts.sit:cli
+

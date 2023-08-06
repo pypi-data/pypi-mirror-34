@@ -1,0 +1,13 @@
+AUTHORS
+ChangeLog
+LICENSE
+README.md
+setup.cfg
+setup.py
+default_argparse/__init__.py
+default_argparse.egg-info/PKG-INFO
+default_argparse.egg-info/SOURCES.txt
+default_argparse.egg-info/dependency_links.txt
+default_argparse.egg-info/not-zip-safe
+default_argparse.egg-info/pbr.json
+default_argparse.egg-info/top_level.txt

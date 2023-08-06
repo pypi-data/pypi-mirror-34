@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mapbox-earcut
+Version: 0.12.5
+Summary: Python bindings for the mapbox earcut C++ polygon triangulation library.
+Home-page: https://github.com/skogler/mapbox_earcut_python
+Author: Samuel Kogler
+Author-email: samuel.kogler@gmail.com
+License: ISC
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+Original project URL: https://github.com/mapbox/earcut.hpp
+
+

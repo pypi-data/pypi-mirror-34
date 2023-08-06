@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: env-spec
+Version: 0.1.0
+Summary: Fast, straightforward, validated environment configuration.
+Home-page: https://github.com/sourcelair/env-spec-py
+Author: SourceLair, Private Company
+Author-email: support@sourcelair.com
+License: MIT
+Description: UNKNOWN
+Keywords: environment configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

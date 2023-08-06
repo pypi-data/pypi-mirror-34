@@ -1,0 +1,7 @@
+setup.py
+KimPkg/__init__.py
+KimPkg.egg-info/PKG-INFO
+KimPkg.egg-info/SOURCES.txt
+KimPkg.egg-info/dependency_links.txt
+KimPkg.egg-info/not-zip-safe
+KimPkg.egg-info/top_level.txt

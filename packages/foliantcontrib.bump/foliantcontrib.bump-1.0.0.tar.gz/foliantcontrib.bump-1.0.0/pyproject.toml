@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "foliantcontrib.bump"
+version = "1.0.0"
+description = "Version bumper for Foliant projects."
+authors = ["Konstantin Molchanov <moigagoo@live.com>"]
+license = "MIT"
+packages = [
+    { include = "cli", from = "foliant" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+foliant = "^1.0"
+semver = "^2.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
+pytest-datadir = "^1.0"
+pylint = "^2.0"
+foliant = "^1.0"

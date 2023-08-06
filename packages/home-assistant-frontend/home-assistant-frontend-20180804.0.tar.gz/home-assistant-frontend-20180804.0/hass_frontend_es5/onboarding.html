@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, user-scalable=no'>
+    <link rel='preload' href='/static/fonts/roboto/Roboto-Regular.ttf' as='font' crossorigin />
+    <link rel='preload' href='/static/fonts/roboto/Roboto-Medium.ttf' as='font' crossorigin />
+    <title>Home Assistant</title>
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <ha-onboarding>Loading</ha-onboarding>
+    
+      <script src="/static/custom-elements-es5-adapter.js"></script>
+      <script src="/frontend_es5/compatibility-b6d0336a.js"></script>
+    
+    <script>
+    var webComponentsSupported = (
+      'customElements' in window &&
+      'content' in document.createElement('template'));
+    if (!webComponentsSupported) {
+      var e = document.createElement('script');
+      e.src = '/static/webcomponents-bundle.js';
+      document.write(e.outerHTML);
+    }
+    </script>
+    <script src="/frontend_es5/onboarding-2add2d0b.js"></script>
+    <script src='/static/hass-icons.js' async></script>
+  </body>
+</html>

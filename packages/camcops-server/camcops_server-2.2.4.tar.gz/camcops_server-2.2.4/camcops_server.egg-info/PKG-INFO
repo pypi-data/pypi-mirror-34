@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: camcops-server
+Version: 2.2.4
+Summary: CamCOPS server
+Home-page: https://www.camcops.org/
+Author: Rudolf Cardinal
+Author-email: rudolf@pobox.com
+License: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: UNKNOWN
+Description: 
+            Python server for CamCOPS.
+            By Rudolf Cardinal (rudolf@pobox.com)
+        
+Keywords: cardinal
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries

@@ -1,0 +1,3 @@
+[console_scripts]
+rcctl = rcctl:launch
+

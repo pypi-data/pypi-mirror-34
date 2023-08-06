@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vlcp-docker-plugin
+Version: 0.3.0
+Summary: Docker network plugin for VLCP
+Home-page: https://github.com/hubo1016/vlcp-docker-plugin
+Author: Hu Bo
+Author-email: hubo1016@126.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Keywords: SDN,VLCP,docker
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: vlcp (>=2.0.0)
+
+UNKNOWN
+
+

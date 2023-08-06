@@ -1,0 +1,22 @@
+CHANGES
+=======
+
+* One more deploy test
+* Try to deploy on both regular commits and tags
+* Fix typo in the README
+* Fix travis being lost in the file tree
+* Travis clean repo before deploy
+* Have travis run the tests
+* Add basic tests
+* Adapt the functions to be called by the tests
+* Handle comments
+* Fix typos in metadata
+* Metadata cleanup
+* Fix license in setup.cfg
+* Fix typo in travis
+* Make a more substancial travis config
+* Add the Travis badge at the end of the README
+* Have travis deploy
+* Make the program pip-installable
+* Add a license
+* Initial commit

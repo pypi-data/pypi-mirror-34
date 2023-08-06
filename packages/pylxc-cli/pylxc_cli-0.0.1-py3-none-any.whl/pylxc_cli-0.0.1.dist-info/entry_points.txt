@@ -1,0 +1,3 @@
+[console_scripts]
+pylxc = pylxc.__main__:cli
+

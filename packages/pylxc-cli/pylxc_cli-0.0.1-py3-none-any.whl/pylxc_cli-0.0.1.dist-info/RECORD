@@ -1,0 +1,9 @@
+pylxc/__init__.py,sha256=kU2VL-4emfreDWKOM-QT_b6EvuMyjF75CxXNMb5ahwY,1404
+pylxc/__main__.py,sha256=4tlvG1hXV8iPSS-OIDRZ20qloA9GqaCFZsLpcSis6Sk,349
+pylxc/liblxc/__init__.py,sha256=NktTQpDFEgAvn5TQfLKbh0E1u00OG6wByHEYUByyz54,21
+pylxc/liblxc/liblxc.py,sha256=UUVdfGxnPJRMwtiPhZ2GUj2jkOj3cXohIQvY_j7KEc0,3974
+pylxc_cli-0.0.1.dist-info/METADATA,sha256=VA3aTf6MsKhPA72x1DyWw-Ea6feA4Py-DVXOQmJrAfI,1276
+pylxc_cli-0.0.1.dist-info/RECORD,,
+pylxc_cli-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pylxc_cli-0.0.1.dist-info/entry_points.txt,sha256=umw8Z7_N6dVk7kDhSQK3yOZlwHf39JY4GVYxL-hmsU8,46
+pylxc_cli-0.0.1.dist-info/top_level.txt,sha256=uIn4j0_mBghnVgBtqZSV_WJutuH3D3oUAuCWyYW1sp0,6

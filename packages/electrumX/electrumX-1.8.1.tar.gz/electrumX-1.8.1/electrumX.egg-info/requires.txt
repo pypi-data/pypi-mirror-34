@@ -1,0 +1,6 @@
+aiorpcX>=0.6.2
+aiorpcX<0.7.0
+attrs>=15
+plyvel
+pylru
+aiohttp>=2

@@ -1,0 +1,9 @@
+
+[:python_version < "2.7"]
+importlib
+
+[:python_version >= "3.7"]
+modutil
+
+[test]
+pytest

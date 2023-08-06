@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pip_shims/__init__.py
+src/pip_shims/shims.py
+src/pip_shims/utils.py
+src/pip_shims.egg-info/PKG-INFO
+src/pip_shims.egg-info/SOURCES.txt
+src/pip_shims.egg-info/dependency_links.txt
+src/pip_shims.egg-info/requires.txt
+src/pip_shims.egg-info/top_level.txt
+src/pip_shims.egg-info/zip-safe

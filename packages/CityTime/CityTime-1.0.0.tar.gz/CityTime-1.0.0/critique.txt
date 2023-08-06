@@ -1,0 +1,59 @@
+Hrm. Time is a tricky thing - it has many interesting little corner cases. More importantly,
+the use of time representations has many ways in which a programmer can make mistakes.
+
+Any time representation then should be very clear about the approach it takes in any of those
+corner cases. For example, your code offers an "increment" function, but does not say whether
+the increment occurs in local time or UTC, which is a very important thing to know.
+
+Your documentation should also be clear about what equality means. In your case you seem to have
+decided that two time representations are equal if they have the same underlying UTC, however this
+design decision (made by a number of other modules as well) tends to be a poor choice - the use of
+the wrong timezone is a common error in time-related programming and forcing the programmer to be
+explicit about which tz they're operating in helps prevent this.
+
+You accept None as a tz equivalent of UTC. This has similar issues - any number of coding errors can
+result in None where a real time zone was expected, making the assumption that these errors should
+return UTC results in difficult to identify bugs in the software that is using the object.
+
+Don't overuse @property. It really is something that should be avoided in most cases and can imply
+things to the programmer using your interface that aren't true - for example that a serialization of
+the object will contain that property, or that they can set it. None of your uses of @property are good
+choices in my opinion.
+
+Finally, there is little consideration for localisation - you have a couple of formatting functions but
+they're not well thought through.
+TL;DR:
+
+    Document how you handle corner cases
+    Document the assumptions your functions make.
+    Write your interface to assume the programmer will make mistakes
+    It's nice to see someone with type annotations in docstring. Strong approval.
+
+As an aside, having implemented a similar representation for our own use, there are a number of scenarios
+you might want to consider that we ended up handling:
+
+    Dates and different from Datetimes, dramatically so in some cases. They really need their own object
+    and don't necessarily need a timezone at all (that is, you can do date math without a tz so long as you
+    remember that you can't turn the result into a datetime without being explicit about how).
+    Having your own delta representation is useful. We based ours off relativedelta
+    Truncating datetimes is a common requirement - we have a method "start_of(self, period,
+    first_day_of_week='monday')" that lets the programmer truncate a datetime to the second,
+    minute, hour, day etc.
+    Everyone needs strftime in the end
+    Date parsing and unixtime are important
+    Shortcuts to get today() and now() are important
+    Having a mechanism to calculate working days is useful (but it's tricky and not easily generalised)
+
+Also, I think you should reconsider the name. Citytime implies that things are related, somehow, to cities.
+But it isn't.
+
+Hope that helps.
+Update: Also, two other things to cover:
+
+    When producing a new anything, it is a useful thing to add documentation to the README.md or similar
+    that provides a quick comparison against existing well known solutions. You should compare against
+    standard datetime and against Arrow for example, so that potential users are aware of what you cover
+    and how you differ.
+    Make sure you've read http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time[1]
+    - not all of it is something that can be handled, there is something to be said for "good enough", but you
+    should be aware of it all and preferably document relevant design decisions whereever possible.

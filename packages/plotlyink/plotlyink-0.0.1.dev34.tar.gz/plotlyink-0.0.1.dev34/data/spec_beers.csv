@@ -1,0 +1,5 @@
+column,name,plottype,showlegend,marker.color,opacity,yaxis,marker.size,offset,mode,fill,line.dash
+,,,,,,,,,,,
+abv,alcoholic content,scatter,True,red_lighter,0.7,y1,,,lines,tozeroy,4
+ibu,International Bittering Unit,scatter,True,brown_lighter,1,y1,8,,markers,,
+ounces,size of beer in ounces,bar,True,blue_lighter,0.4,y1,,,,,

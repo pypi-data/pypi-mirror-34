@@ -1,0 +1,3 @@
+[console_scripts]
+plynk = plotlyink.cli:main
+

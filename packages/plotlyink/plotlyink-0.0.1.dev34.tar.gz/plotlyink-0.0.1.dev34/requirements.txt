@@ -1,0 +1,4 @@
+pandas>=0.23.0
+numpy
+plotly==2.5
+colorlover

@@ -1,0 +1,51 @@
+Plotlyink
+=========
+|build|
+|pypi|
+|python_versions|
+|license|
+
+
+.. _plotly: http://www.plot.ly
+.. _pandas: http://pandas.pydata.org/
+
+Plotlyink aims at marrying plotly_ with pandas_ for quick and easy plotting.
+
+Installation
+------------
+.. code:: bash
+
+    pip3 install plotlyink
+
+
+Overview
+--------
+.. code:: python
+
+    import pandas as pd
+    import plotlyink
+    df = pd.DataFrame({
+        'one' : [1., 2., 3., 4.],
+        'two' : [4., 3., 2., 1.],
+        })
+
+    # open .html in your browser:
+    df.iplot.scatter()
+
+    # get figure:
+    fig = df.iplot.scatter(as_figure=True)
+
+
+For more, see: `Tutorial Notebook <http://nbviewer.jupyter.org/github/gjeusel/plotlyink/blob/master/notebooks/tutorial.ipynb>`_.
+
+
+.. |build| image:: https://img.shields.io/travis/gjeusel/plotlyink/master.svg
+    :target: https://travis-ci.org/gjeusel/plotlyink
+
+.. |pypi| image:: https://img.shields.io/pypi/v/plotlyink.svg
+    :target: https://pypi.python.org/pypi/plotlyink
+
+.. |python_versions| image:: https://img.shields.io/pypi/pyversions/plotlyink.svg
+    :target: https://pypi.python.org/pypi/plotlyink
+
+.. |license| image:: https://img.shields.io/github/license/gjeusel/plotlyink.svg

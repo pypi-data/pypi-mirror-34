@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ztlearn
+Version: 1.0.4
+Summary: Minimalistic Python Machine Learning Toolkit.
+Home-page: https://github.com/jefkine/zeta-learn
+Author: Jefkine Kafunah
+Author-email: jefkine@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5.0
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: numba
+
+
+zeta-learn
+----------
+zeta-learn is a minimalistic python machine learning library designed to deliver
+fast and easy model prototyping.
+
+zeta-learn aims to provide an extensive understanding of machine learning through
+the use of straightforward algorithms and readily implemented examples making
+it a useful resource for researchers and students.
+
+ * **Documentation:** https://zeta-learn.com
+ * **Python versions:** 3.5 and above
+ * **Free software:** MIT license
+
+Dependencies
+------------
+ - numpy >= 1.15.0
+ - scikit-learn >= 0.18.0
+ - matplotlib >= 2.0.0
+
+Features
+--------
+ - Keras like Sequential API for building models.
+ - Built on Numpy and Matplotlib.
+ - Examples folder with readily implemented machine learning models.
+
+Install
+-------
+  - pip install ztlearn
+
+

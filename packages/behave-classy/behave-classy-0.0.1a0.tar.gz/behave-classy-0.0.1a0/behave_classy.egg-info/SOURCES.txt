@@ -1,0 +1,8 @@
+setup.py
+behave_classy/__init__.py
+behave_classy/registry.py
+behave_classy.egg-info/PKG-INFO
+behave_classy.egg-info/SOURCES.txt
+behave_classy.egg-info/dependency_links.txt
+behave_classy.egg-info/requires.txt
+behave_classy.egg-info/top_level.txt

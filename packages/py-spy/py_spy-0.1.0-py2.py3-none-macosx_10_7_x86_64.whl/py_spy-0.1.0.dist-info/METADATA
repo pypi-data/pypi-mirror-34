@@ -1,0 +1,85 @@
+Metadata-Version: 2.0
+Name: py-spy
+Version: 0.1.0
+Summary: A Sampling Profiler for Python
+Home-page: https://github.com/benfred/py-spy
+Author: Ben Frederickson
+Author-email: ben@benfrederickson.com
+License: GPL
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+
+py-spy
+======
+
+``py-spy`` is a fast sampling profiler for Python programs. ``py-spy``
+lets you visualize what your Python program is doing without restarting
+the program or modifying the code in any way. ``py-spy`` is low overhead
+and won’t pause or slow your Python program down - meaning that it is
+safe to use in production.
+
+To install:
+
+::
+
+   pip install py-spy
+
+py-spy supports Python versions 2.3+ and 3.3+ on Linux, OSX and Windows.
+
+Usage
+^^^^^
+
+py-spy works from the command line, and takes either the PID of the
+program you want to sample from, or the command line of the python
+program you want to run:
+
+.. code:: bash
+
+   py-spy --pid 12345
+   # OR
+   py-spy -- python myprogram.py
+
+The default visualization is a
+`top-like <https://linux.die.net/man/1/top>`__ live view of your python
+program:
+
+.. figure:: ./images/console_viewer.gif
+   :alt: console viewer demo
+
+   console viewer demo
+
+There is also support for generating `flame
+graphs <http://www.brendangregg.com/flamegraphs.html>`__ from the
+running process:
+
+.. code:: bash
+
+   py-spy --flame profile.svg --pid 12345
+   # OR
+   py-spy --flame profile.svg -- python myprogram.py
+
+Which will generate a SVG file looking like:
+
+.. figure:: ./images/flamegraph.svg
+   :alt: flame graph
+
+   flame graph
+
+Credits
+~~~~~~~
+
+py-spy is heavily inspired by `Julia Evans <https://github.com/jvns/>`__
+excellent work on `rbspy <http://github.com/rbspy/rbspy>`__. In
+particular the code to generate the flamegraphs is taken directly from
+rbspy, and this project use several crates
+(`read-process-memory <https://github.com/luser/read-process-memory>`__
+and `proc-maps <#TODO>`__) that were spun off from rbspy.
+
+

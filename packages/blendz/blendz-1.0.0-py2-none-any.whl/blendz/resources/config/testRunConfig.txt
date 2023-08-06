@@ -1,0 +1,5 @@
+[Run]
+
+z_len = 500
+ref_mag_lo = 20
+ref_mag_hi = 32

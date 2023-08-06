@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: stolosctl
+Version: 0.4.5
+Summary: UNKNOWN
+Home-page: https://www.sourcelair.com/
+Author: SourceLair PC
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: compose
+Provides-Extra: security
+Requires-Dist: Click (>=6.0)
+Requires-Dist: PyYAML (>=3.11)
+Requires-Dist: tabulate (>=0.7.5)
+Requires-Dist: requests (>=2.11.0)
+Requires-Dist: six
+Provides-Extra: compose
+Requires-Dist: docker-compose (>=1.7.0); extra == 'compose'
+Provides-Extra: security
+Requires-Dist: requests[security] (>=2.11.0); extra == 'security'
+
+UNKNOWN
+
+

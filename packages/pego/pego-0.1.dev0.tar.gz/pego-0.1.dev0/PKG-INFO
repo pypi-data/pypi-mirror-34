@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pego
+Version: 0.1.dev0
+Summary: Easy-to-use Parsing library
+Home-page: https://github.com/kurtbrose/pego
+Author: Kurt Rose
+Author-email: kurt@kurtrose.com
+License: BSD
+Description: *pego: parsing for the average programmer*
+        
+        PEGO is designed to make parsing accessible
+        to the average programmer with no previous experience.
+        
+        At the same time, a VM based architecture does
+        not limit performance to the speed of generated
+        python code.
+        
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6

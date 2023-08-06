@@ -1,0 +1,7 @@
+setup.py
+pego/__init__.py
+pego/pego.py
+pego.egg-info/PKG-INFO
+pego.egg-info/SOURCES.txt
+pego.egg-info/dependency_links.txt
+pego.egg-info/top_level.txt

@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: keras-bi-lm
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/PoWWoP/keras_bi_lm
+Author: CyberZHG
+Author-email: CyberZHG@gmail.com
+License: LICENSE
+Description: 
+        Keras Bi-LM
+        ===========
+        
+        
+        .. image:: https://travis-ci.org/PoWWoP/keras_bi_lm.svg
+           :target: https://travis-ci.org/PoWWoP/keras_bi_lm
+           :alt: Travis
+        
+        
+        .. image:: https://coveralls.io/repos/github/PoWWoP/keras_bi_lm/badge.svg?branch=master
+           :target: https://coveralls.io/github/PoWWoP/keras_bi_lm
+           :alt: Coverage
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

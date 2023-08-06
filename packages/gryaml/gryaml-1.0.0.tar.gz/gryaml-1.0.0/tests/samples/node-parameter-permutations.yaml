@@ -1,0 +1,13 @@
+- !gryaml.node
+    - labels:
+        - 'person'
+    - properties:
+        name: 'Bob Newhart'
+        occupation: 'Comedian'
+- !gryaml.node
+    - labels:
+        - 'person'
+- !gryaml.node
+    - properties:
+        name: 'Bob Barker'
+        occupation: 'Game Show Host'

@@ -1,0 +1,9 @@
+nameko_slack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nameko_slack/constants.py,sha256=XgMyYX4eoD0ft4ROBT-3ETy2PUXfea4TCEVblbrOuaY,50
+nameko_slack/rtm.py,sha256=5-yLn-Borqy4pjrLXXIDpP-8eU937FVSSK-S5tG9Y3c,4113
+nameko_slack/web.py,sha256=wxaEMVQTH5kjGJ7wmFt7o7CC1_8MlzbDM_OfnALBSDM,1254
+nameko_slack-0.0.5.dist-info/METADATA,sha256=za4UqoVIP4rL6AMcAx-fwAVnaiIAmLWsD5AX1kGUP2k,6797
+nameko_slack-0.0.5.dist-info/RECORD,,
+nameko_slack-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nameko_slack-0.0.5.dist-info/top_level.txt,sha256=zbi7qauD4Y2tVVnvENh0kpsjkOXt6467Afm2vEQOXwQ,13
+nameko_slack-0.0.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

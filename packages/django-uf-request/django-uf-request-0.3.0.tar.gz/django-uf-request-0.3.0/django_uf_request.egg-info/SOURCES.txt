@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+django_uf_request/__init__.py
+django_uf_request/apps.py
+django_uf_request/uf_requests.py
+django_uf_request.egg-info/PKG-INFO
+django_uf_request.egg-info/SOURCES.txt
+django_uf_request.egg-info/dependency_links.txt
+django_uf_request.egg-info/top_level.txt

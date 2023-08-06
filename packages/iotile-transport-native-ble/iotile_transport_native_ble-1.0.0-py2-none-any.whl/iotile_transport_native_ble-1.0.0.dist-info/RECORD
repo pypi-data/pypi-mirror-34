@@ -1,0 +1,16 @@
+iotile_transport_native_ble/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotile_transport_native_ble/config_variables.py,sha256=OuaRAbH_THEurGu3nzyPjr_ZThjAeVd_CykRjhYvQt8,361
+iotile_transport_native_ble/connection_manager.py,sha256=7d1LxPjrCnCJKGAzyM9tKPGKwxWcfSruPpMkmZpQoWo,25224
+iotile_transport_native_ble/device_adapter.py,sha256=9XLG2gwk4vOXzzKm6zmVmAYMniFa9_G7bOWoS6J-gx8,45108
+iotile_transport_native_ble/tilebus.py,sha256=0y0h4wuudoIDu2EY7uiw_tMs4anQU1InrbCe_GvngTg,1709
+iotile_transport_native_ble/virtual_ble.py,sha256=Fj4bxKZAFQy0W0Ea5TQp4pC1X8LxLM4PIEP8jteIi8o,18992
+iotile_transport_native_ble-1.0.0.dist-info/METADATA,sha256=KeoYDsJBy3uLHAvu9HgGgkh74yi6Gur_1Jd-CvzYAAQ,1167
+iotile_transport_native_ble-1.0.0.dist-info/RECORD,,
+iotile_transport_native_ble-1.0.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+iotile_transport_native_ble-1.0.0.dist-info/entry_points.txt,sha256=_n18FElIrhMGIwMd2bs4BI4El-2LrmAbt5tsF4vwf5s,289
+iotile_transport_native_ble-1.0.0.dist-info/top_level.txt,sha256=PfGAnZmJGoaoLyDk2TqC3ZDWEsun1eprBqCvOcEa0ss,34
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=le-USWlfhtPOlY3TBl5tw07qdEnn5cphFzsxZkuPZ8U,3026
+tests/devices_factory.py,sha256=2zsbjxw6B2R-mBBE-mA8krIQvQ0ph-KlpkmSuaEh_jE,945
+tests/test_device_adapter.py,sha256=Ti_cz9guQtX0RmBBMCj5hmT6DhbLNh5fze1UmHjtiSg,25984
+tests/test_virtual_interface.py,sha256=G-zS5VX3yFpyuEIX0LdIA1iB9ZMmguPsmWicfRTavi4,9465

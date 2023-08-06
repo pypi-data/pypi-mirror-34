@@ -1,0 +1,17 @@
+mstrio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mstrio/microstrategy.py,sha256=6l_XyZG-R8kdIyJr7NBTLjUcGIgxKk6tDDjULRqu3n4,13406
+mstrio/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mstrio/api/authentication.py,sha256=2zzetJTur5f09To1lk-z4eqc_kZXSJgFOupYaJJAAjs,2511
+mstrio/api/cubes.py,sha256=HMsqoj_UiQShje1cgjB-tBRGuzAR77w6qTGEWUH_YkI,4348
+mstrio/api/datasets.py,sha256=-56cbVn5TSy_1Nc2Km-A8VNAtXlitO-T8QerX1AjTo4,3424
+mstrio/api/projects.py,sha256=GNTacofwfdJYCQ58sRQV6U4mA6swUggiCL2ZEGbw6Ho,927
+mstrio/api/reports.py,sha256=X-xI2NekyNMNTAX97REpSCPGD7mfDrPsrgn1nT7zNq8,6520
+mstrio/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mstrio/utils/echo.py,sha256=XcXHiGg_nWhyPWZFsmX9HqC01ykFFarJgcEaLqnOogA,124
+mstrio/utils/formjson.py,sha256=e_aMZ-n0apl-9_n3mgFYAJItzJ7hnXQNeqg29uG1nWA,1902
+mstrio/utils/logger.py,sha256=9kZ3Fg035KS71eOtM-cgSbCa0N5OB8NHh_Nio_Nv6DA,178
+mstrio/utils/parsejson.py,sha256=N1vXl3ghO9QIwqyj2EMtuDkwoMVD7gZNGQJ4_wZfoTI,2130
+mstrio_py-10.11.dist-info/METADATA,sha256=0AG_BUWOYI6JAp5dPAtMLVnGnKMrLXLY6QXJ8lH8_G0,458
+mstrio_py-10.11.dist-info/RECORD,,
+mstrio_py-10.11.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+mstrio_py-10.11.dist-info/top_level.txt,sha256=Wcv28J9s1MO294i4zUvkdPU9VLLftvMQyPmvmDgfCR0,7

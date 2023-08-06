@@ -1,0 +1,3 @@
+[console_scripts]
+es_metricbeats_cleaner = es_cleaner:main
+

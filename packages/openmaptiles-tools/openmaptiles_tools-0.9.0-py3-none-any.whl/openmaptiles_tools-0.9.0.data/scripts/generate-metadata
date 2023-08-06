@@ -1,0 +1,156 @@
+#!/usr/bin/python3
+"""generate metadata to tiles.mbtiles.
+
+Usage:
+  generate_metadata <mbtiles>
+  generate_metadata <mbtiles> <west> <south> <east> <north>
+  generate_metadata (-h | --help)
+  generate_metadata --version
+
+Options:
+  -h --help                     Show this screen.
+  --version                     Show version.
+"""
+
+# generate_metadata ./data/tiles.mbtiles
+
+from __future__ import print_function
+
+import sqlite3
+import os
+import os.path
+import json
+from docopt import docopt
+import openmaptiles
+
+ATTRIBUTION = os.environ.get('METADATA_ATTRIBUTION', '<a href="https://openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>')
+VERSION = os.environ.get('METADATA_VERSION', '3.8')
+
+
+class Extract(object):
+
+    def __init__(self, extract, country, city, top, left, bottom, right,
+                 min_zoom=0, max_zoom=14, center_zoom=10):
+        self.extract = extract
+        self.country = country
+        self.city = city
+
+        self.min_lon = float(left)
+        self.min_lat = float(bottom)
+        self.max_lon = float(right)
+        self.max_lat = float(top)
+
+        self.min_zoom = min_zoom
+        self.max_zoom = max_zoom
+        self.center_zoom = center_zoom
+
+    def bounds(self):
+        return '{},{},{},{}'.format(self.min_lon, self.min_lat,
+                                    self.max_lon, self.max_lat)
+
+    def center(self):
+        center_lon = (self.min_lon + self.max_lon) / 2.0
+        center_lat = (self.min_lat + self.max_lat) / 2.0
+        return '{},{},{}'.format(center_lon, center_lat, self.center_zoom)
+
+    def metadata(self, extract_file):
+        return {
+            "type": os.environ.get('METADATA_TYPE', 'baselayer'),
+            "attribution": ATTRIBUTION,
+            "version": VERSION,
+            "minzoom": self.min_zoom,
+            "maxzoom": self.max_zoom,
+            "name": os.environ.get('METADATA_NAME', 'OpenMapTiles'),
+            "id": os.environ.get('METADATA_ID', 'openmaptiles'),
+            "description": os.environ.get('METADATA_DESC', "Development extract, based on https://openmaptiles.org"),
+            "bounds": self.bounds(),
+            "center": self.center(),
+            "basename": os.path.basename(extract_file),
+            "filesize": os.path.getsize(extract_file)
+        }
+
+
+def update_metadata(mbtiles_file, metadata):
+    """
+    Update metadata key value pairs inside the MBTiles file
+    with the provided metadata
+    """
+    conn = sqlite3.connect(mbtiles_file)
+
+    def upsert_entry(key, value):
+        conn.execute("DELETE FROM metadata WHERE name='{}'".format(key))
+        conn.execute("INSERT INTO metadata VALUES('{}', '{}')".format(key, value))
+
+    for key, value in metadata.items():
+        upsert_entry(key, value)
+
+    # Change json value in metadata
+    cursor = conn.cursor()
+    cursor.execute("SELECT name,value FROM metadata WHERE name = 'json';")
+    metadata_json = ''
+    for row in cursor:
+        metadata_json = row[1]
+        break
+    if metadata_json:
+        obj = json.loads(metadata_json)
+        # Remove Layer - contains connections and SQLs
+        if 'Layer' in obj:
+            del obj['Layer']
+        # Remove unnecessary field _prefs
+        if '_prefs' in obj:
+            del obj['_prefs']
+        # Update maxzoom in vector_layers:
+        if 'vector_layers' in obj:
+            # find out maxzoom from metadata
+            maxzoom = 0
+            cursor.execute(
+                "SELECT name,value FROM metadata WHERE name='maxzoom'")
+            for row in cursor:
+                try:
+                    maxzoom = int(row[1])
+                except:
+                    maxzoom = 0
+                break
+            if maxzoom > 0:
+                vector_layers = obj['vector_layers']
+                for layer in vector_layers:
+                    layer['maxzoom'] = maxzoom
+        # Save json back into metadata minified
+        metadata_json = json.dumps(obj, separators=(',', ':'))
+        cursor.execute("REPLACE INTO metadata VALUES(?, ?);",
+                       ('json', metadata_json, ))
+        conn.commit()
+
+    conn.commit()
+    conn.close()
+
+if __name__ == '__main__':
+    args = docopt(__doc__, version=openmaptiles.__version__, options_first=True)
+    print (args)
+
+    extract_file = args['<mbtiles>']
+
+    bbox = os.environ.get('BBOX', '-180.0,-85.0511,180.0,85.0511')
+    # $lon_min,$lat_min,$lon_max,$lat_max
+    # left,bottom,right,top
+    left, bottom, right, top = bbox.split(',')
+    left = args.get('<west>') or left
+    bottom = args.get('<south>') or bottom
+    right = args.get('<east>') or right
+    top = args.get('<north>') or top
+
+    extract = Extract(
+        extract_file,
+        country=None,
+        city=None,
+        left=left,
+        right=right,
+        top=top,
+        bottom=bottom,
+        center_zoom=5,
+        min_zoom=os.environ.get('MIN_ZOOM', 0),
+        max_zoom=os.environ.get('MAX_ZOOM', 14),
+    )
+
+    print('Update metadata {}'.format(extract_file))
+    update_metadata(extract_file, extract.metadata(extract_file))

@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+verkhovna_rada_ukr_pl/__init__.py
+verkhovna_rada_ukr_pl/descriptors.py
+verkhovna_rada_ukr_pl/rada_consoles.py
+verkhovna_rada_ukr_pl/rada_databases.py
+verkhovna_rada_ukr_pl/rada_factories.py
+verkhovna_rada_ukr_pl/rada_metaclass.py
+verkhovna_rada_ukr_pl/rada_models.py
+verkhovna_rada_ukr_pl/utils.py
+verkhovna_rada_ukr_pl/verh_rada.py
+verkhovna_rada_ukr_pl.egg-info/PKG-INFO
+verkhovna_rada_ukr_pl.egg-info/SOURCES.txt
+verkhovna_rada_ukr_pl.egg-info/dependency_links.txt
+verkhovna_rada_ukr_pl.egg-info/entry_points.txt
+verkhovna_rada_ukr_pl.egg-info/not-zip-safe
+verkhovna_rada_ukr_pl.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+README.md
+setup.py
+traversal/__init__.py
+traversal/column.py
+traversal/row.py
+traversal/spiral.py
+traversal/zigzag.py
+traversal.egg-info/PKG-INFO
+traversal.egg-info/SOURCES.txt
+traversal.egg-info/dependency_links.txt
+traversal.egg-info/top_level.txt

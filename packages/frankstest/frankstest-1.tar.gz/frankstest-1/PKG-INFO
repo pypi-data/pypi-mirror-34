@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: frankstest
+Version: 1
+Summary: 项目的简单描述
+Home-page: http://ff2.pw
+Author: frank
+Author-email: luoziluojun@126.com
+Maintainer: frank
+Maintainer-email: luoziluojun@126.com
+License: BSD License
+Description: 项目的详细描述
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries

@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: torch_sparse
+Version: 0.1.0
+Summary: PyTorch Extension Library of Optimized Sparse Matrix Operations
+Home-page: https://github.com/rusty1s/pytorch_sparse
+Author: Matthias Fey
+Author-email: matthias.fey@tu-dortmund.de
+License: UNKNOWN
+Download-URL: https://github.com/rusty1s/pytorch_sparse/archive/0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: pytorch,sparse,deep-learning
+Platform: UNKNOWN

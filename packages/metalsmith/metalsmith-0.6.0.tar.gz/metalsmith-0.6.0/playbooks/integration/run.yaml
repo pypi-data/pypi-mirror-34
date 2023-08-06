@@ -1,0 +1,27 @@
+- hosts: all
+  environment:
+    OS_CLOUD: devstack-admin
+
+  tasks:
+    - include: ssh-key.yaml
+
+    - name: Test partition image with netboot
+      include: exercise.yaml
+      vars:
+        image: "{{ centos_glance_root_image }}"
+        precreate_port: false
+        netboot: true
+
+    - name: Test whole-disk image with local boot
+      include: exercise.yaml
+      vars:
+        image: "{{ centos_glance_whole_disk_image }}"
+        precreate_port: false
+        netboot: false
+
+    - name: Test partition image with local boot and port
+      include: exercise.yaml
+      vars:
+        image: "{{ centos_glance_root_image }}"
+        precreate_port: true
+        netboot: false

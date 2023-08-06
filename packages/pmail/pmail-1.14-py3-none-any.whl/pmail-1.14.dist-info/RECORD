@@ -1,0 +1,16 @@
+pmail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pmail/attachment.py,sha256=UYfhFJNyfOU63J2f_xLR12PKNCoZsC3caWJUIH3SPAw,1702
+pmail/commandline.py,sha256=jD-vCUO_QfNb9v2OPKjZzKQ3nVWenh6d7RT_3iMeV84,407
+pmail/configuration.py,sha256=-ZhEJMwOwLHEwXg_SrbRULIZVNAv_W1ZDGOM8aZOf9w,6616
+pmail/mailserver.py,sha256=UHf1dj0uWptYMS33Y6oGd_zCYh0H_hSLyqWk8PHByWI,980
+pmail/message.py,sha256=c8ftWa-V-8Og5NhNUW7I0wltGq3QNkZd5t9OwRjYUvM,2563
+pmail/recipient.py,sha256=cqgn5QfICmOz1Yc7uTCZzVoyvQKitAyDzcnhgG4155o,2821
+pmail/run.py,sha256=4kE3AiCd-HgEhKJpCZ4jgnumWTsE4bOLAlPLG8klGhY,4785
+pmail/screen.py,sha256=lg9rQJW9dJ6IHuV8n-dbiF7z0x1tw1w8FynCy6p52S4,1350
+pmail/sender.py,sha256=poyPLPBP4pyzlH7xBAQg9poBelhGiHwUjJMywK2xqjY,2627
+pmail/text.py,sha256=CsI7RTXuCPSsmEd6BD5R9lxp8O7Jf-LmSPCU7f5RCT0,566
+pmail-1.14.dist-info/METADATA,sha256=s1q1Tq7pl4hwdTtSvMbNFxn-EBlCz1Rtnz_EoMNNG0g,13078
+pmail-1.14.dist-info/RECORD,,
+pmail-1.14.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+pmail-1.14.dist-info/entry_points.txt,sha256=6NfgfWxnjV1PKwn_i1L4VyN_IfcscMBdMjII4pae3ow,50
+pmail-1.14.dist-info/top_level.txt,sha256=9jiF85Zii8pxnwfIpdDMCz875Zc2eYXmQNQIlX-hJL0,6

@@ -1,0 +1,430 @@
+Metadata-Version: 2.1
+Name: pmail
+Version: 1.14
+Summary: Command-line e-mail sender
+Home-page: https://bitbucket.org/tomaszwaraksa/pmail
+Author: Tomasz Waraksa
+Author-email: tomasz@waraksa.net
+License: MIT
+Download-URL: https://bitbucket.org/tomaszwaraksa/pmail/get/abd3be1798d3.zip
+Keywords: mail client e-mail email send
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Requires-Dist: keyring
+
+Introduction
+============
+
+``pmail`` is used to quickly send e-mail messages from command line.
+
+Git repository: https://bitbucket.org/tomaszwaraksa/pmail
+
+Sending e-mails from command-line? Easy!
+----------------------------------------
+
+Surely there are plenty of tools for that, to begin with mail and ssmtp
+on ``*x`` systems. Unfortunately, they’re not for the weak of heart.
+Just look here for the available options:
+https://tecadmin.net/ways-to-send-email-from-linux-command-line/
+
+Yeah…
+
+That’s a lot of typing for something simple. Admittedly, all those
+``cat`` and ``< dev null`` are clever hacks, but honestly, they are also
+an utter waste of time and long-term memory. And, because of complexity,
+they often result in failure and frustration. Eventually, after a brief
+love story, you would stop using command line for sending e-mails. And
+it would be a terrible loss for humanity, given how much time is wasted
+watching Thunderbird e-mail client load.
+
+So, is there a better way?
+
+Lo and behold, I give you ``pmail``. A nifty command-line e-mail sender,
+written in Python.
+
+pmail is simple
+---------------
+
+With ``pmail`` sending an e-mail from command line is a breeze:
+
+::
+
+    pmail hq@google.com Hi! "Wasup?\n\nJohn"
+
+Reminder mail to yourself? Easy:
+
+::
+
+    pmail me "Shopping list" "Cat food\nWater\nBread\nCookies"
+
+And it can be even simpler. If you want, you can send a message in
+interactive mode. Just type:
+
+::
+
+    pmail
+
+and the application will ask you to enter the recipient, subject and
+message body:
+
+::
+
+    From: john@doe.com
+    To: ceo@google.com 
+    Subject: New design
+    Body: Please find attached some ideas for Gmail.\n\nCheers,\n\nBob
+    Attachments: ~/docs/gmail-commandline.pdf
+
+No need of course to enter ``From:`` or ``To:`` prefixes. Our
+super-intelligent cloud-connected AI will figure this out for you. And,
+after years of tedious training our deep learning algos are now able to
+figure out that an empty line has to be transmitted between message
+subject and body! Oh my goodness!
+
+Prerequisities
+--------------
+
+To run ``pmail`` you need Python 3 interpreter on your computer. At
+minimum, Python version ``3.5`` is required. You can verify whether it’s
+available using the following commands:
+
+::
+
+    python --version
+    pip --version
+
+If you happen to have both Python 2.\* and Python 3.\* on your machine,
+in all examples below you will rather use ``python3`` and ``pip3``
+commands, so that the right Python version is used.
+
+Installation
+============
+
+Installation from Python Package Index
+--------------------------------------
+
+The simplest way to is to install the application from ``PyPI``
+repository, using the following command:
+
+::
+
+    pip install pmail
+
+On ``*ux`` system you need to run it with administrative privileges, to
+have ``pmail`` command globally available:
+
+::
+
+    sudo pip install pmail
+
+If it doesn’t work, it probably means you need to install Python 3 on
+your computer. Check https://www.python.org/downloads/ to find out how
+to install Python on your platform.
+
+Manual installation
+-------------------
+
+1. Unzip the sources or clone the repository
+   https://bitbucket.org/tomaszwaraksa/pmail.git
+2. Navigate to the folder with the sources
+3. Run ``pip install -e .``
+4. If you’ll ever update the sources, just re-run the same command again
+5. Enjoy!
+
+Configuration
+=============
+
+Before you can send your first e-mail, you need to provide some
+information about the SMTP server through which ``pmail`` will send your
+messages to the world. Just type:
+
+::
+
+    pmail --configure
+
+The application will guide you through configuration steps, asking for:
+
+::
+
+    SMTP host:
+    SMTP port:
+    Login:
+    Password:
+    Security:
+    Sender name:
+    Sender address:
+
+You have to consult your e-mail provider for these values. Few tips:
+
+-  No need to prefix the SMTP host with anything, just the pure domain
+   name, for example ``smtp.godaddy.com``
+-  ``Login`` and ``Sender address`` are usually the same, just your
+   e-mail address
+-  ``Security`` can be set to ``ssl``, ``tls`` or ``none``. Please,
+   please, use ``tls`` whenever your e-mail provider supports it, which
+   seems to be the norm these days.
+
+Once you’re done entering configuration, ``pmail`` attempts to send a
+test message to verify whether the settings are correct. If the message
+has arrived into your mailbox, everything is fine and you can start
+using ``pmail``!
+
+If at any moment in future you’d like to change configuration, use the
+same command to change it.
+
+    Configuration is stored in ``~/.pmail/configuration.json`` file, so
+    you can edit it manually. The exception is login and password, which
+    are stored as encrypted. To change these, you need to run
+    ``pmail --configure`` like described above.
+
+Sending e-mails
+===============
+
+Sending e-mails in interactive mode
+-----------------------------------
+
+To send an e-mail, simply type:
+
+::
+
+    `pmail`
+
+The application will ask you to enter e-mail recipient, subject, body
+and eventual attachments. Just press ENTER to confirm each entry. Once
+you’ve entered the body, e-mail message will be sent and confirmation
+message displayed. If anything goes wrong, you will see the error
+message.
+
+    If you’ve forgotten to configure ``pmail`` as described above, no
+    worries. The application will first guide you through configuration,
+    then it will continue with sending the message.
+
+Sending e-mails super-fast
+--------------------------
+
+Once you’re used to ``pmail``, you’ll probably use the super-fast full
+command-line mode. You can enter message recipient(s), subject and
+eventual attachments as command parameters, in this exact sequence:
+
+::
+
+    pmail recipients subject body attachments
+
+The same rules apply here as with interactive mode:
+
+-  Multiple recipients are separated with ``;``
+-  To send e-mail to yourself, enter ``me`` or ``self``. No ``this``,
+   because ``this`` sucks, just see it for yourself
+   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+-  ``\n`` can be used to add linebreak to message body
+-  Message body is optional, press ENTER to send an empty message
+-  Attachments are optional, press ENTER to send a message without
+   attachments
+-  Multiple attachments are separated with ``;``
+
+Partial arguments
+-----------------
+
+You can provide only some of the input arguments, for example just the
+recipient or recipient and subject. In this case the application will
+ask you only about the remaining arguments. For example:
+
+::
+
+    pmail me 
+
+will assume your e-mail address as recipient of the message, and ask you
+about the message subject and body.
+
+Recommendations
+---------------
+
+-  wrap your parameters in quotation marks ``""`` if they contain
+   spaces. In interactive mode this is not required.
+-  If using multiple addresses or multiple attachments, wrap the whole
+   list in quotation marks ``""``. Again, in interactive mode this is
+   not required.
+
+Some examples:
+
+::
+
+    pmail john.doe@gmail.com Hi Sup?
+    pmail john.doe@gmail.com "Hi, how are you?" "Haven't heard from you in a while\n\nBob"
+    pmail "john.doe@gmail.com;mary.doe@gmail.com" Invitation "Hi, come over for a pint tomorrow!"
+    pmail mark.spencer@gmail.com "Do not open" "This is a dangerous attachment." ~/Docs/Memo.pdf
+    pmail john.doe@gmail.com "3 files" "Attached the three documents" "1.pdf;2.pdf;3.pdf"
+
+Advanced features
+=================
+
+Multiple recipients
+-------------------
+
+To send a message to multiple recipients, enter multiple e-mail
+addresses separated by semicolon ``;`` like shown below. When in
+command-line mode, wrap the addresses in quotation marks ``""``
+
+::
+
+    To: hq@google.com;ceo@google.com;cto@google.com
+
+    pmail "hq@google.com;ceo@google.com;cto@google.com" "Hello !" "Greetings from Bob"
+
+Spaces and linebreaks
+---------------------
+
+Use ``\n`` to indicate linebreaks in message body. When in command-line
+mode, wrap text containing spaces in quotation marks ``""``
+
+::
+
+    To: john.doe@gmail.com
+    Subject: Hi John!
+    Body: Hello, what's the story?\n\ncheers,\n\nSeamus\nVery Big Corporation Inc.
+
+    pmail john.doe@gmail.com "Hi John!" "Hello, what's the story?\n\ncheers,\n\nSeamus\nVery Big Corporation Inc."
+
+will result in message body looking like this:
+
+::
+
+    Hello, what's the story?
+
+    cheers,
+
+    Seamus    
+    Very Big Corporation Inc.
+
+Attachments
+-----------
+
+If you want to send any attachment, add ``-f`` parameter. In interactive
+mode you’ll be then asked to provide files to attach to the message, for
+example:
+
+::
+
+    To: john.doe@gmail.com
+    Subject: Hi John!
+    Body: Attached the memo you've requested, cheers!
+    Attachments: ~/docs/memo.txt
+
+In command-line mode simply specify the file path after ``body``
+parameter:
+
+::
+
+    pmail john.doe@gmail.com "Hi John!" "Attached the memo you've requested, cheers!" "~/docs/memo.txt"
+
+The following rules apply:
+
+-  If the file is in another directory than the current one, specify
+   file path
+-  You can use relative file paths, for example ``../docs/file.txt`` or
+   subfolder of the current folder ``docs/file.txt``
+-  Use ``~`` character to indicate your home folder. Our
+   super-intelligent AI engine supports ``~`` even on Windows
+-  If you wish to send multiple files, separate them with semicolon
+   ``;`` and in command line mode don’t forget to wrap the whole
+   parameter in double quotes ``"""``
+
+Address book
+============
+
+To further boost your productivity, ``pmail`` allows defining aliases
+for frequently used e-mail addresses. Rather than typing:
+
+::
+
+    pmail chief.executive.officer@myverybigcorporation.com Hi "Mayday, mayday, we're sinking!"
+
+you’d rather wish to do:
+
+::
+
+    pmail ceo Hi "Mayday, mayday, we're sinking!"
+
+Two aliases are predefined and you can use them right away, to send
+e-mails to yourself. Just type ``me`` or ``self``, and e-mail address
+which you’ve entered in configuration as yours, will be used as
+recipient.
+
+To create your contact book, run p-mail with ``--contacts`` flag:
+
+::
+
+    pmail --contacts
+
+This will list all the existing contacts and ask you to either add new
+contacts or to delete the existing ones. Then follow the instructions on
+the screen to fill up your address book.
+
+Once done, you can use contact names whenever sending e-mails, both in
+interactive mode as in power mode. You can freely mix contact names and
+e-mail addresses, for example:
+
+::
+
+    To: ceo;hr;bob@myverbigcorporation.com
+    Subject: Hi
+    Body: Everything all right?
+
+or in command-line mode:
+
+::
+
+    pmail "ceo;hr;bob@myverbigcorporation.com" Hi "Everything all right?"
+
+..
+
+    Contacts are stored in ~/.pmail/configuration.json file. You can
+    easily edit them manually using your preferred text editor which I
+    bet is ``nano``.
+
+Other options
+=============
+
+A few other options are available when running ``pmail``:
+
+::
+
+    --test      Sends test message, the same as when editing configuration
+    --version   Displays version number and copyright information
+    --help      Displays quick help and syntax
+    --silent    If present when sending email in power mode, no output is sent to console
+
+MIT License
+===========
+
+Copyright 2017, Dublin, Tomasz Waraksa
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+“Software”), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+

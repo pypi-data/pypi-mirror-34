@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/sprm/__init__.py
+src/sprm/robcent.py
+src/sprm/sprm.py
+src/sprm.egg-info/PKG-INFO
+src/sprm.egg-info/SOURCES.txt
+src/sprm.egg-info/dependency_links.txt
+src/sprm.egg-info/requires.txt
+src/sprm.egg-info/top_level.txt

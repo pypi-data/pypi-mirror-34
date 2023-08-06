@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tomy
+Version: 0.0.4
+Summary: Bunch of useful python codes
+Home-page: https://github.com/Tomvictor/tomy
+Author: Tom Victor
+Author-email: vjtomvictor@gmail.com
+License: UNKNOWN
+Description: Bunch of useful python codes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

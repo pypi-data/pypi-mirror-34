@@ -1,0 +1,3 @@
+[console_scripts]
+f2c = cyglass.f2c.__main__:main
+

@@ -1,0 +1,17 @@
+# Install requirements
+numpy
+six
+
+# Development requirements
+black
+check-manifest
+jedi
+flake8
+pytest-cov
+rope
+tox
+twine
+wheel
+
+# Self
+-e .

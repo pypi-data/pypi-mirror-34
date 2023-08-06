@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: grapher-core
+Version: 2.0.1
+Summary: Grapher core server and libraries
+Home-page: https://github.com/qfoxic/grapher-server-core
+Author: Volodymyr Paslavskyy
+Author-email: qfoxic@gmail.com
+License: Apache Software License
+Download-URL: https://github.com/qfoxic/grapher-server-core/archive/2.0.1.tar.gz
+Description: UNKNOWN
+Keywords: data,visualization,monitoring,graphs
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Systems Administration
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ~=3.7

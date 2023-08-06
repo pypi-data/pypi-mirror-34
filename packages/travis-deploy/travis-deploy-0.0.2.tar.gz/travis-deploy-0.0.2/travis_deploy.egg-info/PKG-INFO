@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: travis-deploy
+Version: 0.0.2
+Summary: Travis deploy test
+Home-page: https://github.com/disktnk/travis-deploy
+Author: disktnk
+Author-email: duaipp@gmail.com
+License: MIT License
+Description: Test automatically deploy via Travis CI
+Platform: UNKNOWN

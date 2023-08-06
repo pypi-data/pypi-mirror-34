@@ -1,0 +1,3 @@
+[console_scripts]
+encrypt = yxspkg_encrypt:main
+

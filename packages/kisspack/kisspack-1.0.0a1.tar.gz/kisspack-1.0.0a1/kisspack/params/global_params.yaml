@@ -1,0 +1,14 @@
+ats: KISS_a
+ats_client: null
+dut: test_dut_a
+ignore_prereq: false
+package_version: null
+process_limit: 5
+resource_mode: all
+task_package: F:\Repos\kiss_test_dev\dist\kisspack-1.0.0a1-py2-none-any.whl
+test_groups: [all]
+thread_limit: 5
+valid_result: [Passed, Completed, Skipped]
+widget_a_addr: 192.168.222.111
+iterations: 1
+widget_a_sub: 255.255.255.0

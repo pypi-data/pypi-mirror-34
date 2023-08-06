@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rightmove_webscraper/__init__.py
+rightmove_webscraper.egg-info/PKG-INFO
+rightmove_webscraper.egg-info/SOURCES.txt
+rightmove_webscraper.egg-info/dependency_links.txt
+rightmove_webscraper.egg-info/requires.txt
+rightmove_webscraper.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+tc_core/__init__.py,sha256=DaWM700ufZesRnsneATStLnutg2D8I97Vz0b13nKP4M,1841
+tc_core/app.py,sha256=lOMgPh3kNfYdgV_ZIQ26yHkDWrCvsKgKmKUD5wKJONI,2265
+tc_core/context.py,sha256=g7ZOMVO3l_owWStI8rN8sN17Y_J9h1yqOD-OJFSqyBU,1871
+tc_core/context_importer.py,sha256=9pd03PYvM7hUdN9LgbuIOA7NVVH7cbrOXgMZNTJZ-2A,1448
+tc_core/importer.py,sha256=jU9FQxMmq_pGWd3_EpeM3tmt_CPoO5UUc3QfVZuKifQ,1276
+tc_core/web.py,sha256=kQZTJH6RQHIGIR50HbgdN1uxiZWDr0e92t1x2UBX1Cg,1547
+tc_core-0.4.1.dist-info/METADATA,sha256=ZjnDRdnRaGuO5gcWSzYYNA4iJbJnowIhkqs-JxxLh1k,704
+tc_core-0.4.1.dist-info/RECORD,,
+tc_core-0.4.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+tc_core-0.4.1.dist-info/top_level.txt,sha256=95oLnPiZZDf_Bf0Vu7rqhW9S7RKsXnqjrCHcRPtNKCY,8

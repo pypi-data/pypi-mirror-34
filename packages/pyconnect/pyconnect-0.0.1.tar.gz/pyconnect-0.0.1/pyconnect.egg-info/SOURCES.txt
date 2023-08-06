@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+pyconnect/__init__.py
+pyconnect/avroparser.py
+pyconnect/pyconnectsink.py
+pyconnect.egg-info/PKG-INFO
+pyconnect.egg-info/SOURCES.txt
+pyconnect.egg-info/dependency_links.txt
+pyconnect.egg-info/requires.txt
+pyconnect.egg-info/top_level.txt
+test/test_avroparser.py
+test/test_kafka_api.py
+test/test_pyconnectsinkfile.py

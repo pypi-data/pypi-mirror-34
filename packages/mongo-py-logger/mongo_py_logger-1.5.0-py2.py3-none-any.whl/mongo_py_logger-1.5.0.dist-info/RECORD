@@ -1,0 +1,10 @@
+mongo_py_logger-1.5.0.dist-info/DESCRIPTION.rst,sha256=CoCszfJt3upsSDfm33-HkbEI7V0LPNt11jCkZYQHgfI,326
+mongo_py_logger-1.5.0.dist-info/METADATA,sha256=u4nt5sRIL0oXIw4XM_Ecvd7_rWVSr0QP5tNIqIKxMko,1121
+mongo_py_logger-1.5.0.dist-info/RECORD,,
+mongo_py_logger-1.5.0.dist-info/WHEEL,sha256=9Z5Xm-eel1bTS7e6ogYiKz0zmPEqDwIypurdHN1hR40,116
+mongo_py_logger-1.5.0.dist-info/metadata.json,sha256=32WSUlHVg5QbxL5fyFffmoW2HEd60I2EBoDGLSgkVcA,892
+mongo_py_logger-1.5.0.dist-info/top_level.txt,sha256=c5KyctK_n88PRVvOhpofok1klAUq4lev8yID4SGODko,9
+mongolog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongolog/handlers.py,sha256=3vrydhHJnqNkN8ZsGyokfwATNWsgGJoRcrzKDnvycpE,12813
+mongolog/logger.py,sha256=HfhOmZ8nsSCFWTbzxlIB1J8CLCM12y1GfnQsSyx1m3M,4101
+mongolog/tests.py,sha256=4gTaAznKPRekZ0rkroiEytbjrHkW5Lhpw0zkIFmWZJw,1392

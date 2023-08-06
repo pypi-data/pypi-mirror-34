@@ -1,0 +1,15 @@
+*.py[co]
+__pycache__/
+/static/
+.devtmp/
+.coverage
+/.eggs/
+/*.egg-info/
+.pytest_cache/
+.idea/
+
+# dorinand
+.vscode/
+
+build/
+dist/

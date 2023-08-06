@@ -1,0 +1,11 @@
+.gitignore
+setup.cfg
+setup.py
+scrapy_ext/__init__.py
+scrapy_ext/ua_list.py
+scrapy_ext.egg-info/PKG-INFO
+scrapy_ext.egg-info/SOURCES.txt
+scrapy_ext.egg-info/dependency_links.txt
+scrapy_ext.egg-info/not-zip-safe
+scrapy_ext.egg-info/top_level.txt
+scrapy_ext/downloadermiddlewares/useragent.py

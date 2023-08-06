@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: csvtoparquet
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: IBM
+Author-email: abdullah.alger@ibm.com
+License: Apache 2.0
+Description: # Convert CSV File to Parquet on IBM Cloud Object Storage
+        
+        ## Todos
+        
+        ### Objects:
+        - [x] Create connection
+        - [x] Create Convert object
+        
+        ### Methods:
+        - [x] list all objects in bucket
+        - [x] read csv files
+        - [x] convert to parquet
+        
+        ### User Stories
+        - [ ] allow users to input a single object
+        - [ ] allow users to input array of objects
+        
+Keywords: cloud csv parquet object_storage IBM
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English

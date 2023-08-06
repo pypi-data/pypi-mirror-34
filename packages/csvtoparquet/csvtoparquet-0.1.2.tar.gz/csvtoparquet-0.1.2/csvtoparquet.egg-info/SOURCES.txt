@@ -1,0 +1,15 @@
+README.md
+setup.py
+csvtoparquet/__init__.py
+csvtoparquet/cli_commands.py
+csvtoparquet/connect.py
+csvtoparquet/convert_module.py
+csvtoparquet/converter.py
+csvtoparquet/helpers.py
+csvtoparquet/object_module.py
+csvtoparquet.egg-info/PKG-INFO
+csvtoparquet.egg-info/SOURCES.txt
+csvtoparquet.egg-info/dependency_links.txt
+csvtoparquet.egg-info/entry_points.txt
+csvtoparquet.egg-info/requires.txt
+csvtoparquet.egg-info/top_level.txt

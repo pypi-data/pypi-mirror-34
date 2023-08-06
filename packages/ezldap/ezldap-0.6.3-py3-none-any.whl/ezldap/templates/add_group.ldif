@@ -1,0 +1,5 @@
+dn: cn=$groupname,$groupdn
+objectClass: top
+objectClass: posixGroup
+cn: $groupname
+gidNumber: $gid

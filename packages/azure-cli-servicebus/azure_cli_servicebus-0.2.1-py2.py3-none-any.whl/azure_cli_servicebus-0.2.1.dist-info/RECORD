@@ -1,0 +1,13 @@
+azure/cli/command_modules/servicebus/__init__.py,sha256=npmjBFgp34nF81y3f0rOn__qEM3pHuUg63YQBm7ApzM,1829
+azure/cli/command_modules/servicebus/_client_factory.py,sha256=oFXsJXes84c_fKWgLNcjaKJrXgWPE7Wq1QWMjaXf48w,1269
+azure/cli/command_modules/servicebus/_completers.py,sha256=N9calxJZhqhVwCThtzJm1CK1oqEQGaxTHwiFeOcpPUc,2220
+azure/cli/command_modules/servicebus/_help.py,sha256=cscl-nHBGR5IOM0ADtLaojuOpVH1pQ2NA66FMQ3Mjxo,26228
+azure/cli/command_modules/servicebus/_params.py,sha256=Ku8Nex9S-t4Re01qjQ5u_BeOkLcL2b5v2PF92YRx9dA,23831
+azure/cli/command_modules/servicebus/_utils.py,sha256=gdHkkxhWIetMfJHL0I6xxGKOEAaDUevDZgaGKgRpIcU,792
+azure/cli/command_modules/servicebus/_validators.py,sha256=Y0sc0C12p3aVCEsNVR1zy2VjC3bTrcDJikpubFCcTaw,4927
+azure/cli/command_modules/servicebus/commands.py,sha256=XesXoCZrdGvXsHIfJNzPInvztL9vMsbzdPMIWSPl7cI,8033
+azure/cli/command_modules/servicebus/custom.py,sha256=tgHG7hrlBjqBMrBd_kg9qbKXiEeltIR30MUmpnPgQ-Q,20124
+azure_cli_servicebus-0.2.1.dist-info/METADATA,sha256=y7LlGDXlPFAKTCXPK6lEQFHVzQQWsnb8RaQrYVzGA8U,1850
+azure_cli_servicebus-0.2.1.dist-info/RECORD,,
+azure_cli_servicebus-0.2.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+azure_cli_servicebus-0.2.1.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6

@@ -1,0 +1,4 @@
+futures
+h5py
+numpy>=1.14.0
+progressbar2

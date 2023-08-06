@@ -1,0 +1,12 @@
+django_zipfile/__init__.py,sha256=QBgNPh8kEhSXUiaAE4qIAvZnobSqPoEYxLRTbylIqWg,141
+django_zipfile/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_zipfile/templatezipfile.py,sha256=H-rtE26SxWKgtALmR-tE-sIf8RB1IxuQrjn7yhol9tk,3185
+django_zipfile/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_zipfile/tests/runtests.py,sha256=Ggj5yZDyupKT8WFSuz78xI_Dsv8jmekjNA-nF1gaoC8,1971
+django_zipfile/tests/settings.py,sha256=eqa0EdYGvjyH8a1Lyl6pSGP7OdUR_IbBbBTrs4OXigc,128
+django_zipfile/tests/tests.py,sha256=VMaVcDzH0d_YrQE0hfOFqSCKj87qxIvihfT2Knaj0-k,2976
+django_zipfile/tests/urls.py,sha256=33gmc0Sn43bT3l0Rbq-LhdJnEa73wVkCpWHcJprauFs,18
+django_zipfile-0.3.1.dist-info/METADATA,sha256=FjcPHU9OWh5BV7agicRNvKtbrlVwHqGa7Ae_VgRfCzY,2628
+django_zipfile-0.3.1.dist-info/RECORD,,
+django_zipfile-0.3.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_zipfile-0.3.1.dist-info/top_level.txt,sha256=wOdNltOtyPgYKeMywXvTm9nf6OnJMTvWfmBIYnai8hE,15

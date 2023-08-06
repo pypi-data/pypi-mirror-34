@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+oauth_slave_accounts/__init__.py
+oauth_slave_accounts/backend.py
+oauth_slave_accounts.egg-info/PKG-INFO
+oauth_slave_accounts.egg-info/SOURCES.txt
+oauth_slave_accounts.egg-info/dependency_links.txt
+oauth_slave_accounts.egg-info/requires.txt
+oauth_slave_accounts.egg-info/top_level.txt

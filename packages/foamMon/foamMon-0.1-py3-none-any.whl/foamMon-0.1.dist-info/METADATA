@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: foamMon
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Gregor Olenik
+Author-email: go@hpsim.de
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: docopt
+Requires-Dist: colorama
+
+UNKNOWN
+
+

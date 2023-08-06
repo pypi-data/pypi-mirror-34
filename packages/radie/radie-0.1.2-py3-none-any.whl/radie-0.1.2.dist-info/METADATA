@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: radie
+Version: 0.1.2
+Summary: a python application to rapidly import and view experimental data
+Home-page: https://www.github.com/dvincentwest/radie
+Author: D. Vincent West
+Author-email: dvincentwest@gmail.com
+License: GPLv2
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyqtgraph
+
+# Rapid Data Import Environment (radie)
+
+

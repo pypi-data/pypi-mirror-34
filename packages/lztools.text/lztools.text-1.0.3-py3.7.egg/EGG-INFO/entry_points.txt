@@ -1,0 +1,3 @@
+[console_scripts]
+ltext = cli.ltext:main
+

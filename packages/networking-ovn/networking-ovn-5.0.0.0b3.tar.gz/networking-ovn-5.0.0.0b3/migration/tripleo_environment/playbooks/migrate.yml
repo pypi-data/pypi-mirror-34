@@ -1,0 +1,31 @@
+---
+- name: Ensure ovn_controller is stopped on all nodes before syncing DB
+  hosts: ovn-controllers
+  tasks:
+    - name: "Stop ovn_controller before syncing DB to avoid gARP issues on FIPs"
+      shell: docker stop ovn_controller
+
+- name: Sync Neutron and OVN DBs
+  hosts: ovn-dbs
+  roles:
+    - sync-dbs
+
+- name: Activate OVN controller
+  hosts: ovn-controllers
+  roles:
+   - activate-ovn
+
+- name: Cleanup Neutron dataplane resources
+  hosts: ovn-controllers
+  roles:
+   - cleanup
+
+- name: Delete Neutron resources
+  hosts: localhost
+  roles:
+    - delete-neutron-resources
+  vars:
+      ovn_migration_temp_dir: "{{ working_dir }}/delete_neutron_resources"
+
+
+# TODO: Remove ovs_hybrid_plug='True' from the pre migation ports' binding_vif_details'

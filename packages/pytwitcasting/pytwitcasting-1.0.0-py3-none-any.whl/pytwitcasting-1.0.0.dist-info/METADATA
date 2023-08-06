@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pytwitcasting
+Version: 1.0.0
+Summary: TwitcastingのAPI2(β)のライブラリ
+Home-page: https://github.com/tamago324/PyTwitcasting
+Author: tamago324
+Author-email: tamago324.tky@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<3.0.0,>=2.0.1)
+
+# PyTwitcasting
+
+PyTwitcastingはTwitcastingのAPIv2(β)を使うためのライブラリ
+
+## インストール
+
+pipでインストール
+
+```sh
+pipenv install pytwitcasting
+```
+
+GitHubからクローンしてインストール
+
+```sh
+git clone https://github.com/tamago324/PyTwitcasting.git
+cd PyTwitcasting
+pipenv run python3 setup.py install
+```
+
+## 使用例
+
+まずは、 https://twitcasting.tv/developernewapp.php でアプリの作成を行う
+
+例）ユーザー名の表示
+
+```python
+from pytwitcasting.auth import TwitcastingApplicationBasis
+from pytwitcasting.api import API
+
+client_id = 'ClientID'
+client_secret = 'ClientSecret'
+app_basis = TwitcastingApplicationBasis(client_id=client_id,
+                                        client_secret=client_secret)
+
+api = API(application_basis=app_basis)
+
+print(api.get_user_info('twitcasting_jp').name)
+# ツイキャス公式
+```
+
+## ドキュメント
+
+ドキュメントは http://pytwitcasting.readthedocs.io/ja/latest/
+
+## ライセンス
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+

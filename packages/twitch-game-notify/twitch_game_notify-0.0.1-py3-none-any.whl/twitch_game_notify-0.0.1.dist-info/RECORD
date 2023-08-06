@@ -1,0 +1,13 @@
+twitch_game_notify-0.0.1.dist-info/METADATA,sha256=BmNsJ2BwVfqanlwkYThtcn4zHv_EMsEwAh39-0f-q94,669
+twitch_game_notify-0.0.1.dist-info/RECORD,,
+twitch_game_notify-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+twitch_game_notify-0.0.1.dist-info/entry_points.txt,sha256=EK1KVOh-PyzpW5WCPrvZCWTwgt215k0jCHlqrPE-HS0,67
+twitch_game_notify-0.0.1.dist-info/top_level.txt,sha256=0QMLyzahszzdQt6Ip2GB8kVxQGss2jO10qByFznFebE,17
+twitchgamenotify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twitchgamenotify/cache.py,sha256=yHnGS0yqkbkVCrOfZRezKLPfwztCtBhaOoB9ZNsC0V8,1470
+twitchgamenotify/configuration.py,sha256=02C7MLVdPuv-24E4Njg1Zc8S49pGqgBZVwf_L6MYQn4,3110
+twitchgamenotify/constants.py,sha256=gHczXiv9goT-jTJG5cO06IclIOlEPQq6F7JhS4aEgxA,857
+twitchgamenotify/main.py,sha256=vOq8VP_ApGLjPrkdH0d3YetHO-KRWUWLmn6wD7vNwUk,2686
+twitchgamenotify/notifications.py,sha256=2wUGfzwoER5cTiFxQQKZDMEmRL4B-KsucPET65n9tCo,6104
+twitchgamenotify/twitch_api.py,sha256=Z8gfOfBNLQ1uek6EmPoC5SaPGXb2iK75J5SDhc7wK8Q,4760
+twitchgamenotify/version.py,sha256=t7pZPRHVqyZQaPyGhwXdVZOydmWDhZW_EJ-hbI2oQHU,196

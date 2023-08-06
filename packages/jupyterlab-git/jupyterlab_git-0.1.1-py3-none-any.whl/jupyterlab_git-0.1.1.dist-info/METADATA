@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jupyterlab-git
+Version: 0.1.1
+Summary: A server extension for JupyterLab's git extension
+Home-page: UNKNOWN
+Author: Git Intern Team, Noah Stapp, Jenna Landy, Alena Mueller
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: notebook
+Requires-Dist: psutil
+
+UNKNOWN
+
+

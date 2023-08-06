@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: convert2json
+Version: 0.0.2
+Summary: Convert compatible python data types, CSV, XLSX, XLS files to JSON string. 
+Home-page: https://github.com/toransahu/convert2json
+Author: Toran Sahu
+Author-email: toran.sahu@yahoo.com
+License: UNKNOWN
+Description: # convert2json
+        Convert compatible python data types, CSV, XLSX, XLS files to JSON string.
+        
+Keywords: list to json,dict to json,string to json,hex to json,excel to json,xlsx to json,xls to json,xlsx,xls,json
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: Text Processing
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown

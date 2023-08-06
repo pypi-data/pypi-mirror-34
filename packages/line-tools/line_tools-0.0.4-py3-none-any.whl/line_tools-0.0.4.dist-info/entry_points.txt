@@ -1,0 +1,3 @@
+[console_scripts]
+lt-rhythm = linetools.build_richmenu:main
+

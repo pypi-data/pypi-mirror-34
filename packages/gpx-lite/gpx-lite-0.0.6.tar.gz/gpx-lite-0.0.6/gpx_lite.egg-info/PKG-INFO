@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: gpx-lite
+Version: 0.0.6
+Summary: Simple parser for gpx tracks, segments, and points with latitude, longitude, and time.
+Home-page: https://github.com/aicenter/gpx_lite
+Author: Olga Kholkovskaia
+Author-email: olga.kholkovskaia@gmail.com
+License: Apache License, Version 2.0
+Description: # gpx-lite
+        Simple parser for gps tracks, based on
+        https://pypi.org/project/gpxpy/
+        
+        Gpx-lite is a simplified version of gpxpy, aimed to load and save data about gpx tracks, segments,
+        and points from/to xml, including large .gpx files, quickly enough.
+        
+        Parser only collects data from trk, trkseg, and trkpt gpx tags. All other tags are ignored. 
+        Resulting GPX structure contains track list - list of track segments made of track points with latitude, 
+        longitude, and time.  
+        
+        For more information see https://github.com/aicenter/gpx_lite/wiki
+        
+        ### Prerequisites
+        Python 3.4 or higher
+        
+        Typing 3.6.2
+        
+        ### Installation
+        ```commandline
+        pip install gpx-lite
+        ```
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: pysaint
+Version: 1.4.3
+Summary: Python module for saint.ssu.ac.kr
+Home-page: https://github.com/gomjellie/pysaint
+Author: gomjellie
+Author-email: gomjellie@gmail.com
+License: MIT
+Download-URL: https://pypi.python.org/pypi/pysaint
+Description: # pysaint
+        
+        saint.ssu.ac.kr 에서 수강신청 과목정보를 실시간으로 가져오는 라이브러리 입니다.
+        
+        ## setup (for library developer)
+        
+        ```sh
+        python ./setup.py build
+        python ./setup.py install
+        ```
+        
+        ## setup (for end user)
+        ```sh
+        pip install pysaint
+        ```
+        ## Usage
+        
+        ```python
+        import pysaint
+        
+        res = pysaint.get('전공', ['2018'], ['2 학기'])
+        print(res)
+        
+        res = pysaint.get('교양필수', range(2015, 2017), ('1 학기', '여름학기', '2 학기', '겨울학기'))
+        print(res)
+        
+        res = pysaint.get('교양선택', (2016, ), ('1 학기', ))
+        print(res)
+        
+        pysaint.save_json('./json/', '{}-{}-전공'.format('2016', '1 학기'), res)
+        
+        
+        ```
+        
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Testing
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy

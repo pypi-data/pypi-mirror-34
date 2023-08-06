@@ -1,0 +1,11 @@
+README.md
+setup.py
+svnlib/__init__.py
+svnlib/exceptions.py
+svnlib/internals.py
+svnlib/svn_error_parser.py
+svnlib/svnlib.py
+svnlib.egg-info/PKG-INFO
+svnlib.egg-info/SOURCES.txt
+svnlib.egg-info/dependency_links.txt
+svnlib.egg-info/top_level.txt

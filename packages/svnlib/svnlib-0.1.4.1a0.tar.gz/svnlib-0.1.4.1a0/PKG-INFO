@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: svnlib
+Version: 0.1.4.1a0
+Summary: UNKNOWN
+Home-page: https://vinay87.github.io/svnlib
+Author: Vinay Keerthi
+Author-email: ktvkvinaykeerthi@gmail.com
+License: MIT
+Project-URL: Documentation, https://vinay87.github.io/svnlib
+Project-URL: Source Code, https://github.com/vinay87/svnlib
+Project-URL: Bug Tracker, https://github.com/vinay87/svnlib/issues
+Description: # svnlib
+        
+        This is yet another subversion wrapper for Python. The difference between this and the existing `svn` library is that this can operate on remote repositories quite well. It is meant for use with remote, infact.
+        
+        One day I want to just merge this with the existing `svn` library and send a pull request.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown

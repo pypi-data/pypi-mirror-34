@@ -1,0 +1,9 @@
+README.md
+setup.py
+jimmysh_stock_api/__init__.py
+jimmysh_stock_api/alphavantage.py
+jimmysh_stock_api/google_finance.py
+jimmysh_stock_api.egg-info/PKG-INFO
+jimmysh_stock_api.egg-info/SOURCES.txt
+jimmysh_stock_api.egg-info/dependency_links.txt
+jimmysh_stock_api.egg-info/top_level.txt

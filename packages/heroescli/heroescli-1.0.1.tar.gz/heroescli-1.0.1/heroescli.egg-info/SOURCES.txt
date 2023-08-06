@@ -1,0 +1,11 @@
+README.md
+setup.py
+heroescli/__init__.py
+heroescli/__main__.py
+heroescli/heroescli.py
+heroescli.egg-info/PKG-INFO
+heroescli.egg-info/SOURCES.txt
+heroescli.egg-info/dependency_links.txt
+heroescli.egg-info/entry_points.txt
+heroescli.egg-info/requires.txt
+heroescli.egg-info/top_level.txt

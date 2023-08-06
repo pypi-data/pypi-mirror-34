@@ -1,0 +1,3 @@
+[console_scripts]
+hero = heroescli.heroescli:main
+

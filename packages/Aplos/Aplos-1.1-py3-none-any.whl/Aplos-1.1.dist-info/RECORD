@@ -1,0 +1,17 @@
+Aplos/AplosParser.py,sha256=4Rov5rNunOUzny0b34ewfBgiDmx14HvJ3phzh3t1KGQ,23714
+Aplos/__init__.py,sha256=HWR7iYEs-hpEzvf_oF5MT54RYloC_yuOqyHvjblSnfo,72
+Aplos/exceptions.py,sha256=E4ohzDznQGiZclN7P-WAsarNM5L5RuJ44SIfILgJywU,186
+Aplos-1.1.dist-info/METADATA,sha256=bVRl1wNRForSFYLke65l7O0azymIMFR1i_ZCWCB2W44,3802
+Aplos-1.1.dist-info/RECORD,,
+Aplos-1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+Aplos-1.1.dist-info/top_level.txt,sha256=wdBRj8-siO8CGruNl0Sd8SaHd5pw4pj063KglLrJDMM,12
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_det_errors.py,sha256=PQsLFoAYQqkfWlRt32YYiyGiHgIO4PdUqgeeSZveWco,1721
+tests/test_dual_matrices.py,sha256=YnTJ54Aa15NYUTlV9NIKqAJLx5RUDyFKmO8zOeVJq7E,1981
+tests/test_file_read.py,sha256=n85aN9IWvMAJBPtLFWOyqbtJB_k1osAzCPuYfajtkms,1160
+tests/test_get_dim.py,sha256=eHkLo0EWnogXzMW_zvfd7I6Ttp5d0-n5bfj3_f92o2w,1311
+tests/test_get_matrix.py,sha256=MV8MrA5N5STP9nhD6i_eebznAfnfI1ou1qFmDBqXMRg,1789
+tests/test_get_vars.py,sha256=8XJcQ46P6BqDL9m-iOszfx2wW0tr3PIgmtXwqwph8X0,2043
+tests/test_read_matrices.py,sha256=YFgmYZMIvCatsxQKZon23iNN3z33UiGdS-M5FVGH_-o,1992
+tests/test_save_to_file.py,sha256=QRe3gpOOqnI7TelB2g_zKlg21coV4KKV_PjiaqbtnlY,2026
+tests/test_text_init.py,sha256=8OXUSWc9HPpg2Xd9Xa_G-mMCJxQi84Np08GtuuDYEe8,1580

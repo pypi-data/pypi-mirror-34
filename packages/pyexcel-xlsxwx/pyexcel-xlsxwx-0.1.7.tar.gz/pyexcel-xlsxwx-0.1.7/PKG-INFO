@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyexcel-xlsxwx
+Version: 0.1.7
+Summary: Save pyexcel data with XlsxWriter, while retaining good formatting.
+Home-page: https://github.com/patarapolw/pyexcel-xlsxwx
+Author: Pacharapol Withayasakpunt
+Author-email: patarapolw@gmail.com
+Keywords: pyexcel,excel,xlsxwriter
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: importlib_resources (>=1.0,<2.0)
+Requires-Dist: ruamel.yaml (>=0.15.50,<0.16.0)
+Requires-Dist: xlsxwriter (>=1.0,<2.0)

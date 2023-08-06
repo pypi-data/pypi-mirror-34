@@ -1,0 +1,11 @@
+apikit/__init__.py,sha256=JfSZMQdb0aLikis2ZJ10IGcwnf6fM9rH4Qz3IrT9xqc,480
+apikit/args.py,sha256=07WgMhIaR-6ut-YrTTrweiTYB9KX4RsuZbd6F_Lu-r8,1014
+apikit/authz.py,sha256=QXCJO33aEJ1qa_ScW0W2WiVyFZEsnvX8Oz8FZwWr_us,667
+apikit/cache.py,sha256=KhXN3SVUz5NvW5f_QkKKVvPzLXVMSngYjGzk8n-hMVE,857
+apikit/jsonify.py,sha256=7JHhzpDai0sdEzk5zmLAAXUTomgJIW24-YWnEjFeljU,2047
+apikit/pager.py,sha256=hlhjaGQBcOgnx9puPYeHbV1foHrazTl0S3XyN9br-nY,4754
+apikit-0.4.dist-info/METADATA,sha256=3wM0yCpHM-EHufiDJqUJ_gJsvf0exLcwSnxyECU4KD8,898
+apikit-0.4.dist-info/RECORD,,
+apikit-0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+apikit-0.4.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+apikit-0.4.dist-info/top_level.txt,sha256=IJKtG0MOgDAICTHbS7glzwvRfDMM6HkGWR_i7jItTO8,7

@@ -1,0 +1,6 @@
+GitPython==2.1.11
+boto3==1.7.70
+python-magic==0.4.15
+
+[testing]
+pytest

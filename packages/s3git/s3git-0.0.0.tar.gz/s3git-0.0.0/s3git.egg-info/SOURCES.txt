@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+s3git/__init__.py
+s3git/__main__.py
+s3git/core.py
+s3git/exceptions.py
+s3git/fileignore.py
+s3git/s3.py
+s3git/utils.py
+s3git.egg-info/PKG-INFO
+s3git.egg-info/SOURCES.txt
+s3git.egg-info/dependency_links.txt
+s3git.egg-info/entry_points.txt
+s3git.egg-info/requires.txt
+s3git.egg-info/top_level.txt

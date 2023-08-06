@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        s3git-sync=s3git.__main__:main
+    

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: s3git
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/NyanKiyoshi/s3git
+Author: NyanKiyoshi
+Author-email: hello@vanille.bid
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: testing

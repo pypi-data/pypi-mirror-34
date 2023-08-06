@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+celery_docker_tools.egg-info/PKG-INFO
+celery_docker_tools.egg-info/SOURCES.txt
+celery_docker_tools.egg-info/dependency_links.txt
+celery_docker_tools.egg-info/requires.txt
+celery_docker_tools.egg-info/top_level.txt

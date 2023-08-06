@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/platformcli/__init__.py
+src/platformcli/cli.py
+src/platformcli/junkdrawer.py
+src/platformcli/superprocess.py
+src/platformcli/version.py
+src/wellcome_platform_cli.egg-info/PKG-INFO
+src/wellcome_platform_cli.egg-info/SOURCES.txt
+src/wellcome_platform_cli.egg-info/dependency_links.txt
+src/wellcome_platform_cli.egg-info/entry_points.txt
+src/wellcome_platform_cli.egg-info/requires.txt
+src/wellcome_platform_cli.egg-info/top_level.txt

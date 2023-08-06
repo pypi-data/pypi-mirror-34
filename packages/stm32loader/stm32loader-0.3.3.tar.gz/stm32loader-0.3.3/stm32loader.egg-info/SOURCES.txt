@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+stm32loader/__init__.py
+stm32loader/__main__.py
+stm32loader/__version__.py
+stm32loader/stm32loader.py
+stm32loader.egg-info/PKG-INFO
+stm32loader.egg-info/SOURCES.txt
+stm32loader.egg-info/dependency_links.txt
+stm32loader.egg-info/entry_points.txt
+stm32loader.egg-info/requires.txt
+stm32loader.egg-info/top_level.txt

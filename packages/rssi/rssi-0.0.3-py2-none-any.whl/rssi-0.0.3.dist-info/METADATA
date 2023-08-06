@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: rssi
+Version: 0.0.3
+Summary: Easy to use package for RSSI scanning and utilizing RSSI-based self-localization.
+Home-page: https://jvillagomez@bitbucket.org/jvillagomez/rssi-module.git
+Author: Juan Antonio Villlagomez
+Author-email: email@juan-antonio.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# RSSI Python module
+With IoT projects at an all time high, there is a continuous need for positioning and localization systems in places where 
+GPS localiztion is not available. RSSI-based localization offers the ability to find an unknown position using the 
+RSSI (relative received signal strength) of nearby access-points (wifi routers). RSSI-based localiztion algortihms require 'n' number
+of access points, where 'n' >= 3 access points. With the development of wireless are networks and smart devices, the number
+of WIFI access point in buildings is increasing, as long as a mobile smart device can detect three or more
+known WIFI hotspots’ positions, it would be relatively easy to realize self-localization (Usually WIFI access points
+locations are fixed, but modifications acn be made for moving access points).
+
+This module contains two classes, 'RSSI_Scan' and 'RSSI_Localizer'.
+RSSI_Scan is used to find and return information on all available access points, within range.
+A 'networks' list can be provided as an argument to filter networks of interest.
+
+RSSI_Localizer is used for self-localization, using the information returned by RSSI_Scan. this 
+class can not be used, without the use of three or more known accesspoints.
+
+The algorithm used in this module is entirely base off of Xiuyan Zhu's, Yuan Feng's 
+'RSSI-based Algorithm for Indoor Localization' paper, published here: https://file.scirp.org/pdf/CN_2013071010352139.pdf
+
+There are exisitng Python and Java modules for network scanning and RSSI-localization, but there was a need for 
+a more extensive package that scales for a virtually unlimited number of Wifi access points. An emphasis was placed on documentation
+and easability of use. Both classes cna be used independently, if desired.
+
+This package asdesigned to be as light and effciient as possible, for use in real-time or soft real-time environments.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+A Python interpreter will be neccesary to run this module. Package is compatible with Python 2.x or 3.x.
+
+The NumPy library will need to be installed, before using this package. we will be updating this package to include the NumPy dependency. See 'Built With' section for installation.
+
+### Installing
+
+The RSSI package can be installed via PIP or by cloning this GitHub repo. Future releases will include a package installer for Linux.
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Built With
+
+This package remained incredibly light. The only dependency outside of native Python packages is 'NumPy'.
+* [Numpy](https://www.scipy.org/scipylib/download.html) - The fundamental package for scientific computing with Python.
+
+## Contributing
+
+All contributions are welcome! This package was created because of the neccesity for an easy to use module, featuring great documentation, that scales for all uses. All comments, requests, and and recomendations are welcome.
+
+## Authors
+
+* **Juan Antonio Villagomez** - *Developer* - [jvillagomez](https://github.com/jvillagomez)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to Xiuyan Zhu and Yuan Feng, for their publication on RSSI-based indoor localization.
+* Shout out to Akila Ganlath PhD at UC Riverside. Without you needing RSSI localization for your robot, I would not have mde this package.
+
+

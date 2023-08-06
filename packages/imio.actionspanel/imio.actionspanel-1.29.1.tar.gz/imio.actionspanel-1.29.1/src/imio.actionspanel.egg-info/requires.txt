@@ -1,0 +1,8 @@
+Plone
+setuptools
+appy
+imio.history
+plone.api
+
+[test]
+plone.app.testing

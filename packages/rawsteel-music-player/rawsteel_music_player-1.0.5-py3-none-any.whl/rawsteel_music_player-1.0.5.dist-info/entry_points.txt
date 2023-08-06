@@ -1,0 +1,3 @@
+[console_scripts]
+rawsteel-music-player = rawsteelp.rawsteelp:main
+

@@ -1,0 +1,17 @@
+python-dateutil
+numpy
+scipy
+xarray
+msise00
+gridaurora
+
+[plots]
+matplotlib
+seaborn
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flake8
+mypy

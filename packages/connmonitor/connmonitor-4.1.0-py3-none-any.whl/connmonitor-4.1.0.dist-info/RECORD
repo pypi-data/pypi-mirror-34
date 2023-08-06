@@ -1,0 +1,8 @@
+connmonitor/__init__.py,sha256=6O_4Asgj7GAgmej4gwwqieehRN1NFpaeVT-HrYM_8To,1084
+connmonitor/connmonitor.py,sha256=ZphLxIMFIs5y_XSJg4QCRlz7UmK4ZhJm5izwA1pFVfo,9719
+connmonitor-4.1.0.data/data/lib/systemd/system/connmonitor.service,sha256=I7bEi323QWD63DuY1kaZ_aKEqY7X7bmiEJ-X6WmpmLI,1523
+connmonitor-4.1.0.dist-info/METADATA,sha256=LwwJnRlxdRzayO8uFovUduSvvK5Pg24UCMz_Qww-o2U,12301
+connmonitor-4.1.0.dist-info/RECORD,,
+connmonitor-4.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+connmonitor-4.1.0.dist-info/entry_points.txt,sha256=SQ-b368-lcWyAxKEI5a7tqp1h_EBB65-5ymNql10KQc,50
+connmonitor-4.1.0.dist-info/top_level.txt,sha256=8PIdFEnaobqHG0El-cvAXTCpllSugIkwNznJoltp_lY,12

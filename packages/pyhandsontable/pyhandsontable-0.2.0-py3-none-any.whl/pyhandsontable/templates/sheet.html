@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link href="{{ css | default('https://cdn.jsdelivr.net/npm/handsontable-pro@5.0.0/dist/handsontable.full.min.css') }}" rel="stylesheet" media="screen">
+    <style>
+#hotArea {
+  {% if width is defined %}
+    width: {{ width }}px;
+  {% endif %}
+
+  {% if height is defined %}
+    height: {{ height }}px;
+  {% endif %}
+
+  {% if width is defined or height is defined %}
+  overflow: hidden;
+  {% endif %}
+}
+    </style>
+
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <div id="hotArea"></div>
+
+    <script src="{{ js | default('https://cdn.jsdelivr.net/npm/handsontable-pro@5.0.0/dist/handsontable.full.min.js') }}"></script>
+
+    <script>var data = {{ data|tojson }};</script>
+    <script>var columns = {{ columns|tojson }};</script>
+    <script>var colHeaders = {{ colHeaders|tojson }};</script>
+    <script>var rowHeaders = {{ rowHeaders|tojson }};</script>
+
+    <script>var config = {{ config|default('{}')|tojson }};</script>
+    <script>var maxColWidth = {{ maxColWidth|default('200') }};</script>
+    <script>
+      var container = document.getElementById('hotArea');
+      var defaultConfig = {
+        data: data,
+        rowHeaders: rowHeaders,
+        colHeaders: colHeaders,
+        dropdownMenu: true,
+        filters: true,
+        columns: columns,
+        modifyColWidth: function(width, col){
+          if(width > maxColWidth) return maxColWidth;
+        }
+      }
+      config = Object.assign(defaultConfig, config);
+    </script>
+
+    <script id="generateHandsontable">
+      var hot = new Handsontable(container, config);
+    </script>
+  </body>
+</html>

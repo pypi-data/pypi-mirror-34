@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+jsonmatch/__init__.py
+jsonmatch/compat.py
+jsonmatch/matcher.py
+jsonmatch.egg-info/PKG-INFO
+jsonmatch.egg-info/SOURCES.txt
+jsonmatch.egg-info/dependency_links.txt
+jsonmatch.egg-info/requires.txt
+jsonmatch.egg-info/top_level.txt

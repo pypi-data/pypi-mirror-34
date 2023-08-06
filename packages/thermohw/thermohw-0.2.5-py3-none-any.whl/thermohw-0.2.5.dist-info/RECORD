@@ -1,0 +1,13 @@
+thermohw/__init__.py,sha256=Cmyf-gReQVGXt2QccbLwwcronK5ULVcfU7AV8D6QQcU,479
+thermohw/_version.py,sha256=rWZ0iDaFioQUNfCMkaGZn2F9ADbozalfX-VPNqDxVNk,186
+thermohw/convert_thermo_hw.py,sha256=J2QQcAZzksg2MPqjCyyotrHlyIHtOeHxy0pVCYyu75M,7146
+thermohw/extract_attachments.py,sha256=jJWDT3ayiBwQAg4-qc3NJvw0NS7Kj6saomXq4AKMo7Q,6217
+thermohw/homework.tpl,sha256=a9MOuURY_5RBEvSYTk2JNjlTfNu289SmT6dMkW4DvJ4,891
+thermohw/preprocessors.py,sha256=z8K2xfSFgPILleDMfvVzWnmiGD1VQ-lLPKw99AnCqlM,4291
+thermohw/pymarkdown.py,sha256=PmxMbPDM6ZTh7gyqhSyqZ5HO0CBTs8ZAl1udrwG8ZEk,3657
+thermohw-0.2.5.dist-info/LICENSE.txt,sha256=WEoU8esge18y_NsGvW18czxT0yCeBybkAbZsx1-tfZg,1513
+thermohw-0.2.5.dist-info/METADATA,sha256=cK9q80xxmJvKIDamfRZUraq74_19fMa1oyWQWVlhh_g,5316
+thermohw-0.2.5.dist-info/RECORD,,
+thermohw-0.2.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+thermohw-0.2.5.dist-info/entry_points.txt,sha256=-l2LIBFnaykJNqIlY0x2MM4-Q3gG2E3Xml5uLc-MKZo,71
+thermohw-0.2.5.dist-info/top_level.txt,sha256=qrtmgq69DGAMRrDzMotMeA1w8Ur5l17Y0l6WZLkLQ5g,9

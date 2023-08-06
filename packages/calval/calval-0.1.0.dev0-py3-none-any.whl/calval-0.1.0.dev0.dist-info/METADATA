@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: calval
+Version: 0.1.0.dev0
+Summary: Python package for easy radiometric calibration&validation of satellite EO payloads
+Requires-Dist: radcalnet
+Requires-Dist: appdirs
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas (>=0.20)
+Requires-Dist: telluric (>=0.1)
+Requires-Dist: pytest
+
+Home-page: https://github.com/satellogic/calval
+Author: Slava Kerner, Amit Aronovitch
+Author-email: amit@satellogic.com
+License: UNKNOWN
+Description: ======
+        calval
+        ======
+        
+        Python Library for access and manipulation of satellite measurement sets containing
+        parameters such as surface and TOA reflection coefficients of specific calibration sites.
+        
+        Input data comes as zipped products in provider specific format.
+        The attached `make_sm.py` script contains sample code.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities

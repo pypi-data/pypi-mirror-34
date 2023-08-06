@@ -1,0 +1,12 @@
+README.md
+setup.py
+neurosynchro/__init__.py
+neurosynchro/cli.py
+neurosynchro/impl.py
+neurosynchro/train.py
+neurosynchro.egg-info/PKG-INFO
+neurosynchro.egg-info/SOURCES.txt
+neurosynchro.egg-info/dependency_links.txt
+neurosynchro.egg-info/entry_points.txt
+neurosynchro.egg-info/requires.txt
+neurosynchro.egg-info/top_level.txt

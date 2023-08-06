@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: neurosynchro
+Version: 0.1.0
+Summary: Use neural networks to approximate polarized synchrotron radiative transfer coefficients
+Home-page: https://github.com/pkgw/neurosynchro/
+Author: Peter Williams <peter@newton.cx>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: neural-networks radiative-transfer science
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Astronomy

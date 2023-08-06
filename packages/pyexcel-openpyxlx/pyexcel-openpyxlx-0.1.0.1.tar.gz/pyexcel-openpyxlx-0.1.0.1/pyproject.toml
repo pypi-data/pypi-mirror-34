@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pyexcel-openpyxlx"
+version = "0.1.0.1"
+description = "Export styles from Excel using OpenPyXL (for XlsxWriter -- pyexcel-xlsxwx)"
+authors = ["Pacharapol Withayasakpunt <patarapolw@gmail.com>"]
+license = "MIT"
+
+repository = "https://github.com/patarapolw/pyexcel-openpyxlx"
+homepage = "https://github.com/patarapolw/pyexcel-openpyxlx"
+
+keywords = ['pyexcel', 'openpyxl', 'xlsxwriter', 'pyexcel-xlsxwx']
+
+[tool.poetry.dependencies]
+python = ">=3.5"
+openpyxl = "^2.5"
+"ruamel.yaml" = "^0.15.50"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.7"

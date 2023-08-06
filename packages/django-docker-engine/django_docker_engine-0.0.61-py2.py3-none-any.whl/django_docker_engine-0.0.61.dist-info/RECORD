@@ -1,0 +1,16 @@
+django_docker_engine/VERSION.txt,sha256=8Sya3QdtizHH3W6LbCwXe0zyCrlYLXVrK7o_LlO_n_A,6
+django_docker_engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_docker_engine/docker_utils.py,sha256=R_FXTVculEM_tt2QEXjXRl2vEdzX-cZgcv16scJHLzg,9127
+django_docker_engine/historian.py,sha256=oNIWUtPQngDrYVohiNWUeQd4hz4nUHMGzKZMM3PRd9M,835
+django_docker_engine/please-wait.html,sha256=lYuitY6CPY2yhahbjghfX0sI32RQubGOMN_HKD0oldA,766
+django_docker_engine/proxy.py,sha256=VOSjCmb_RAKxaEH2tZxOda076CNklFh6xtWEEqrpvfM,5700
+django_docker_engine/container_managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_docker_engine/container_managers/base.py,sha256=M7clnuVRLDs18C7ln3QY_E4iVkcFV1C4p2UD-QcsFTk,838
+django_docker_engine/container_managers/docker_engine.py,sha256=C-cHAPpPW2FsNdNJFa_5QtP_A2zTU7dy76Mwx91ISzQ,8221
+django_docker_engine/middleware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_docker_engine/middleware/hostname_routing.py,sha256=6ATnZ9GLL8ayGjLLe7QZ2rQYW-bRvlW030c2BAQ2kjg,1326
+django_docker_engine-0.0.61.dist-info/LICENSE.txt,sha256=QpCsH4tSnxA-QBFJIrzAPoZlV_mNnj0M4vON_rr2kjg,1065
+django_docker_engine-0.0.61.dist-info/METADATA,sha256=yPxGt8DcqHSrUer0OCIHgvu4Y5WbGStd60xN8uGFxQ8,3779
+django_docker_engine-0.0.61.dist-info/RECORD,,
+django_docker_engine-0.0.61.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_docker_engine-0.0.61.dist-info/top_level.txt,sha256=qg2Hs-SsM3_GjyCoqxY2f1StK48bqSknCz6fePgBvZY,21

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sentry-sdk
+Version: 0.1.0rc2
+Summary: Python client for Sentry (https://getsentry.com)
+Home-page: https://github.com/getsentry/sentry-sdk
+Author: Sentry
+Author-email: hello@getsentry.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: CatKit-utils
+Version: 0.0.2
+Summary: Utilities for CatKit.
+Home-page: UNKNOWN
+Author: Jacob Boes
+Author-email: jrboes@stanford.edu
+License: GPL-3.0
+Description: #+Title: CatKit API utilities
+        #+Author: SUNCAT Method Development Team
+        #+OPTIONS: toc:nil
+        #+LATEX_HEADER: \setlength{\parindent}{0em}
+        
+        In the effort to make CatKit's testing suit and requirements more light weight, I removed some of the API features meant to interface with heavier packages.
+        
+        These API are still useful, but to help make CatKit more accessible to contributions from other developers, they will live separately for the foreseeable future.
+        
+        Any API housed here is made generally available through the [[./LICENSE][GPLv3 Licence]], but no testing of the functions is provided. Use at your own risk.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nesterlists
+Version: 0.0.3
+Summary: Returns items in lists that may or may not include nested lists.
+Home-page: https://github.com/Marciodm
+Author: Marciodm
+Author-email: marcio0770@gmail.com
+License: MIT License
+Description: # Package description
+        
+        This is a simple printer of nested lists in lists.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown

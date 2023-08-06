@@ -1,0 +1,13 @@
+{% extends "authen/base.html" %}
+
+{% block content %}
+    <div class="card rounded shadow-lg">
+        <div class="card-header">
+            <h4 class="mb-0">{{ logout_title }}</h4>
+        </div>
+        <div class="card-body">
+            <p>{{ logout_message }}</p>
+            <a href="{% url 'authen:login' %}">Log in again</a>
+        </div>
+    </div>
+{% endblock content %}

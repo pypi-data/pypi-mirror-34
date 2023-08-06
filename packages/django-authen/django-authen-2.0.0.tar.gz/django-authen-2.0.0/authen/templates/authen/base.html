@@ -1,0 +1,44 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+
+    {% if request.user.is_authenticated %}
+        <script>
+            window.location.href = "/";
+        </script>
+    {% endif %}
+
+    <link rel="stylesheet" href="{% static 'authen/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'authen/css/login.css' %}">
+    {% block head %}
+    {% endblock head %}
+</head>
+<body>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center text-white mb-4">{{ company_name }}</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'authen/js/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'authen/js/popper.min.js' %}"></script>
+<script src="{% static 'authen/js/bootstrap.min.js' %}"></script>
+
+{% block scripts %}
+{% endblock scripts %}
+
+</body>
+</html>

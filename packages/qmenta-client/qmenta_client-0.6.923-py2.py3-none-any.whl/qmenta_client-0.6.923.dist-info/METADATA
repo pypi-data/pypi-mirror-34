@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: qmenta-client
+Version: 0.6.923
+Summary: Python client lib to interact with the QMENTA platform.
+Home-page: http://www.qmenta.com
+Author: QMENTA
+Author-email: dev@qmenta.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: sphinx
+Requires-Dist: urllib3[secure]
+Requires-Dist: requests
+Requires-Dist: future
+Requires-Dist: pyopenssl
+Requires-Dist: cryptography
+Provides-Extra: sphinx
+Requires-Dist: sphinx-rtd-theme; extra == 'sphinx'
+
+UNKNOWN
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+superb = superbcli.superbcli:main
+

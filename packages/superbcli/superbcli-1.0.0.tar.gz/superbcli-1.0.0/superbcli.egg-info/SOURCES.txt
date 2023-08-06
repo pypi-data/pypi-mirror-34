@@ -1,0 +1,10 @@
+README.md
+setup.py
+superbcli/__init__.py
+superbcli/__main__.py
+superbcli/superbcli.py
+superbcli.egg-info/PKG-INFO
+superbcli.egg-info/SOURCES.txt
+superbcli.egg-info/dependency_links.txt
+superbcli.egg-info/entry_points.txt
+superbcli.egg-info/top_level.txt

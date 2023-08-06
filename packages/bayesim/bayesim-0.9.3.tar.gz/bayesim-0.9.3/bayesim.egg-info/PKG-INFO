@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: bayesim
+Version: 0.9.3
+Summary: Fast materials characterization via Bayesian inference
+Home-page: UNKNOWN
+Author: Rachel Kurchin, Giuseppe Romano, Tonio Buonassisi
+Author-email: rkurchin@mit.edu,romanog@mit.edu,buonassisi@mac.com
+License: GPLv2
+Description: Fast materials characterization via Bayesian inference. The example "diode" is in the main_directory/examples/
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6

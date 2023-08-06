@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: shakecast-aebm
+Version: 0.0a1
+Summary: Potential impact calculation for well defined facilities due to an input earthquake hazard
+Home-page: https://github.com/usgs/shakecast-aebm
+Author: Daniel Slosky
+Author-email: dslosky@usgs.gov
+License: MIT
+Keywords: impact hazus aebm earthquake damage
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: backports.functools-lru-cache (==1.5)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: kiwisolver (==1.0.1)
+Requires-Dist: matplotlib (==2.2.2)
+Requires-Dist: numpy (==1.15.0)
+Requires-Dist: pyparsing (==2.2.0)
+Requires-Dist: python-dateutil (==2.7.3)
+Requires-Dist: pytz (==2018.5)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: subprocess32 (==3.5.2)
+
+A Python package for estimating potential impact to a structure using HAZUS's Advanced Engineering Building Module. Potentially useful for engineering research, but developed for integration with [ShakeCast](www.github.com/usgs/shakecast)
+
+

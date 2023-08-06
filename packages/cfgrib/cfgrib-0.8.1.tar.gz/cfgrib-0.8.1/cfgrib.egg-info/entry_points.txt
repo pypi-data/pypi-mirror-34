@@ -1,0 +1,3 @@
+[console_scripts]
+cfgrib2netcdf = cfgrib.xarray_store:cfgrib2netcdf
+

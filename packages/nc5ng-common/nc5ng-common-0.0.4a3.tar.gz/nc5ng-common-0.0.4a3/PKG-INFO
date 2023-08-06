@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: nc5ng-common
+Version: 0.0.4a3
+Summary: Python common packages for nc5ng
+Home-page: https://nc5ng.org/projects/nc5ng-python
+Author: Andrey Shmakov
+Author-email: akshmakov@gmail.com
+License: MIT
+Download-URL: https://github.com/nc5ng/nc5ng-python-common
+Description: Common utilities shared by other packages. 
+            installed by default with target `nc5ng`
+        
+        For More Information See: https://nc5ng.org/projects/nc5ng-python
+        
+        For Documentation See: https://docs.nc5ng.org/latest
+        
+Platform: UNKNOWN

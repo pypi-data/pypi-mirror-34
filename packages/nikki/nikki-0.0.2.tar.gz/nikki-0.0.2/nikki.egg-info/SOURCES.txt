@@ -1,0 +1,10 @@
+README.md
+setup.py
+nikki/__init__.py
+nikki/cli.py
+nikki/nikki.py
+nikki.egg-info/PKG-INFO
+nikki.egg-info/SOURCES.txt
+nikki.egg-info/dependency_links.txt
+nikki.egg-info/requires.txt
+nikki.egg-info/top_level.txt

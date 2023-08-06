@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dotrc
+Version: 0.1
+Summary: Simple .rc file loading for your Python projects
+Home-page: https://pypi.org/project/dotrc/
+Author: Paul Holden
+Author-email: pholden@stria.com
+License: MIT
+Project-URL: GitHub, https://github.com/paulholden2/dotrc
+Description: dotrc
+        =====
+        
+        Simple .rc file loading for your Python projects. Looks for config files
+        in typical locations based on your app name:
+        
+        * .*app*rc
+        * ~/.config/*app*
+        
+        Files are loaded such that files earlier in the above list override settings
+        in later ones. The content of each file is parsed as YAML, falling back to
+        JSON if that fails.
+        
+        ## Usage
+        
+        ```python
+        import dotrc
+        
+        # Loads .apprc, ~/.config/app, etc.
+        config = dotrc.load('app')
+        ```
+        
+Keywords: dot rc config file
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

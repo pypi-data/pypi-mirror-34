@@ -1,0 +1,17 @@
+README.md
+setup.py
+Adversary/Adversary.py
+Adversary/__init__.py
+Adversary/adversary.py
+Adversary/attacks.py
+Adversary/constants.py
+Adversary/utils.py
+Adversary.egg-info/PKG-INFO
+Adversary.egg-info/SOURCES.txt
+Adversary.egg-info/dependency_links.txt
+Adversary.egg-info/requires.txt
+Adversary.egg-info/top_level.txt
+tests/__init__.py
+tests/test_adversary.py
+tests/test_attacks.py
+tests/test_utils.py

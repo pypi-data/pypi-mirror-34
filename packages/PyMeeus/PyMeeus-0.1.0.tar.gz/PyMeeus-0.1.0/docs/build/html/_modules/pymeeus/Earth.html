@@ -1,0 +1,742 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pymeeus.Earth &mdash; PyMeeus 0.0.9 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> PyMeeus
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">API:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../base.html">Base</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Angle.html">Angle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Interpolation.html">Interpolation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CurveFitting.html">Curveffiting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Epoch.html">Epoch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Earth.html">Earth</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ex-base.html">Base examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ex-Angle.html">Angle examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ex-Interpolation.html">Interpolation examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ex-CurveFitting.html">CurveFitting examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ex-Epoch.html">Epoch examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ex-Earth.html">Earth examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PyMeeus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>pymeeus.Earth</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for pymeeus.Earth</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+
+
+<span class="c1"># PyMeeus: Python module implementing astronomical algorithms.</span>
+<span class="c1"># Copyright (C) 2018  Dagoberto Salazar</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU Lesser General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU Lesser General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU Lesser General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="n">radians</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">tan</span><span class="p">,</span> <span class="n">atan</span>
+<span class="kn">from</span> <span class="nn">Angle</span> <span class="k">import</span> <span class="n">Angle</span>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">.. module:: Earth</span>
+<span class="sd">   :synopsis: Class to model Earth&#39;s globe</span>
+<span class="sd">   :license: GNU Lesser General Public License v3 (LGPLv3)</span>
+
+<span class="sd">.. moduleauthor:: Dagoberto Salazar</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="Ellipsoid"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Ellipsoid">[docs]</a><span class="k">class</span> <span class="nc">Ellipsoid</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class Ellipsoid is useful to encapsulate the most important parameters of</span>
+<span class="sd">    a given reference ellipsoid.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Ellipsoid.__init__"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Ellipsoid.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Ellipsoid constructor.</span>
+
+<span class="sd">        :param a: Semi-major or equatorial radius, in meters</span>
+<span class="sd">        :type a: float</span>
+<span class="sd">        :param f: Flattening</span>
+<span class="sd">        :type f: float</span>
+<span class="sd">        :param omega: Angular velocity of the Earth, in rad/s</span>
+<span class="sd">        :type omega: float</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_a</span> <span class="o">=</span> <span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_f</span> <span class="o">=</span> <span class="n">f</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_omega</span> <span class="o">=</span> <span class="n">omega</span></div>
+
+<div class="viewcode-block" id="Ellipsoid.__str__"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Ellipsoid.__str__">[docs]</a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method used when trying to print the object.</span>
+
+<span class="sd">        :returns: Semi-major equatorial radius, flattening and angular velocity</span>
+<span class="sd">           as a string.</span>
+<span class="sd">        :rtype: string</span>
+
+<span class="sd">        &gt;&gt;&gt; a = Ellipsoid(6378140.0, 0.0033528132, 7.292e-5)</span>
+<span class="sd">        &gt;&gt;&gt; print(a)</span>
+<span class="sd">        6378140.0:0.0033528132:7.292e-05</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_omega</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Ellipsoid.b"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Ellipsoid.b">[docs]</a>    <span class="k">def</span> <span class="nf">b</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method to return the semi-minor radius.</span>
+
+<span class="sd">        :returns: Semi-minor radius, in meters</span>
+<span class="sd">        :rtype: float</span>
+
+<span class="sd">        &gt;&gt;&gt; a = Ellipsoid(6378140.0, 0.0033528132, 7.292e-5)</span>
+<span class="sd">        &gt;&gt;&gt; round(a.b(), 3)</span>
+<span class="sd">        6356755.288</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a</span><span class="o">*</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_f</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Ellipsoid.e"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Ellipsoid.e">[docs]</a>    <span class="k">def</span> <span class="nf">e</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method to return the eccentricity of the Earth&#39;s meridian.</span>
+
+<span class="sd">        :returns: Eccentricity of the Earth&#39;s meridian</span>
+<span class="sd">        :rtype: float</span>
+
+<span class="sd">        &gt;&gt;&gt; a = Ellipsoid(6378140.0, 0.0033528132, 7.292e-5)</span>
+<span class="sd">        &gt;&gt;&gt; round(a.e(), 8)</span>
+<span class="sd">        0.08181922</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_f</span>
+        <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">f</span> <span class="o">-</span> <span class="n">f</span><span class="o">*</span><span class="n">f</span><span class="p">)</span></div></div>
+
+
+<span class="n">IAU76</span> <span class="o">=</span> <span class="n">Ellipsoid</span><span class="p">(</span><span class="mf">6378140.0</span><span class="p">,</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="mf">298.257</span><span class="p">),</span> <span class="mf">7.292114992e-5</span><span class="p">)</span>
+<span class="sd">&quot;&quot;&quot;Reference ellipsoid defined by the International Astronomic Union in 1976&quot;&quot;&quot;</span>
+
+
+<span class="n">WGS84</span> <span class="o">=</span> <span class="n">Ellipsoid</span><span class="p">(</span><span class="mf">6378137.0</span><span class="p">,</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="mf">298.257223563</span><span class="p">),</span> <span class="mf">7292115e-11</span><span class="p">)</span>
+<span class="sd">&quot;&quot;&quot;Reference ellipsoid World Geodetic System 1984, a modern ellipsoid used by</span>
+<span class="sd">the GPS system, and the standard in many applications&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="Earth"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth">[docs]</a><span class="k">class</span> <span class="nc">Earth</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Class Earth models the figure of the Earth surface and, with the help of a</span>
+<span class="sd">    configurable reference ellipsoid, provides a set of handy method to compute</span>
+<span class="sd">    different parameters, like the distance between two points on the surface.</span>
+
+<span class="sd">    Please note that here we depart a little bit from Meeus&#39; book because the</span>
+<span class="sd">    Earth class uses the **World Geodetic System 1984 (WGS84)** as the default</span>
+<span class="sd">    reference ellipsoid, instead of the International Astronomical Union 1974,</span>
+<span class="sd">    which Meeus uses. This change is done because WGS84 is regarded as more</span>
+<span class="sd">    modern.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Earth.__init__"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ellipsoid</span><span class="o">=</span><span class="n">WGS84</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Earth constructor.</span>
+
+<span class="sd">        It takes a reference ellipsoid as input. If not provided, the ellipsoid</span>
+<span class="sd">        used is the WGS84 by default.</span>
+
+<span class="sd">        :param ellipsoid: Reference ellipsoid to be used. WGS84 by default.</span>
+<span class="sd">        :type radians: :class:`Ellipsoid`</span>
+
+<span class="sd">        :returns: Earth object.</span>
+<span class="sd">        :rtype: :py:class:`Earth`</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        #&gt;&gt;&gt; a = Angle(-13, 30, 0.0)</span>
+<span class="sd">        #&gt;&gt;&gt; print(a)</span>
+<span class="sd">        #-13.5</span>
+<span class="sd">        #&gt;&gt;&gt; b = Angle(a)</span>
+<span class="sd">        #&gt;&gt;&gt; print(b)</span>
+<span class="sd">        #-13.5</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Set an invalid ellipsoid by default</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span> <span class="o">=</span> <span class="n">Ellipsoid</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">ellipsoid</span><span class="p">)</span>   <span class="c1"># Let&#39;s use &#39;set()&#39; method</span></div>
+
+<div class="viewcode-block" id="Earth.set"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.set">[docs]</a>    <span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ellipsoid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method used to define an Earth object.</span>
+
+<span class="sd">        It takes a reference ellipsoid as input. If not provided, the ellipsoid</span>
+<span class="sd">        used is the WGS84 by default.</span>
+
+<span class="sd">        :param ellipsoid: Reference ellipsoid to be used. WGS84 by default.</span>
+<span class="sd">        :type radians: :class:`Ellipsoid`</span>
+
+<span class="sd">        :returns: None</span>
+<span class="sd">        :rtype: None</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ellipsoid</span><span class="p">,</span> <span class="n">Ellipsoid</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span> <span class="o">=</span> <span class="n">ellipsoid</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">return</span></div>
+
+<div class="viewcode-block" id="Earth.__str__"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.__str__">[docs]</a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Method used when trying to print the Earth object. It essentially</span>
+<span class="sd">        returns the corresponting &#39;__str__()&#39; method from the reference</span>
+<span class="sd">        ellipsoid being used.</span>
+
+<span class="sd">        :returns: Semi-major equatorial radius, flattening and angular velocity</span>
+<span class="sd">           of the current reference ellipsoid, as a string.</span>
+<span class="sd">        :rtype: string</span>
+
+<span class="sd">        &gt;&gt;&gt; e = Earth()</span>
+<span class="sd">        &gt;&gt;&gt; s = str(e)</span>
+<span class="sd">        &gt;&gt;&gt; v = s.split(&#39;:&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; print(v[0] + &#39;|&#39; + str(round(float(v[1]), 14)) + &#39;|&#39; + v[2] )</span>
+<span class="sd">        6378137.0|0.00335281066475|7.292115e-05</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Earth.rho"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.rho">[docs]</a>    <span class="k">def</span> <span class="nf">rho</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latitude</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;Method to compute the rho term, which is the observer distance to</span>
+<span class="sd">        the center of the Earth, when the observer is at sea level. In this</span>
+<span class="sd">        case, the Earth&#39;s equatorial radius is taken as unity.</span>
+
+<span class="sd">        :param latitude: Geodetical or geographical latitude of the observer,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type latitude: int, float, :class:`Angle`</span>
+
+<span class="sd">        :returns: Rho: Distance to the center of the Earth from sea level. It</span>
+<span class="sd">            is a ratio with respect to Earth equatorial radius.</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; round(e.rho(0.0), 1)</span>
+<span class="sd">        1.0</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>         <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">latitude</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>            <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="k">return</span> <span class="mf">0.9983271</span> <span class="o">+</span> <span class="mf">0.0016764</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">phi</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.0000035</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">phi</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Earth.rho_sinphi"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.rho_sinphi">[docs]</a>    <span class="k">def</span> <span class="nf">rho_sinphi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;Method to compute the rho*sin(phi&#39;) term, needed in the calculation</span>
+<span class="sd">        of diurnal parallaxes, eclipses and occulatitions.</span>
+
+<span class="sd">        :param latitude: Geodetical or geographical latitude of the observer,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type latitude: int, float, :class:`Angle`</span>
+<span class="sd">        :param height: Height of the observer above the sea level, in meters</span>
+<span class="sd">        :type height: int, float</span>
+
+<span class="sd">        :returns: rho*sin(phi&#39;) term</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; lat = Angle(33, 21, 22.0)</span>
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; round(e.rho_sinphi(lat, 1706), 6)</span>
+<span class="sd">        0.546861</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">))</span> <span class="ow">and</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">))):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>         <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">latitude</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>            <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="n">b_a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">b</span><span class="p">()</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">b_a</span><span class="o">*</span><span class="n">tan</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">b_a</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="o">+</span> <span class="n">height</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Earth.rho_cosphi"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.rho_cosphi">[docs]</a>    <span class="k">def</span> <span class="nf">rho_cosphi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;Method to compute the rho*cos(phi&#39;) term, needed in the calculation</span>
+<span class="sd">        of diurnal parallaxes, eclipses and occulatitions.</span>
+
+<span class="sd">        :param latitude: Geodetical or geographical latitude of the observer,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type latitude: int, float, :class:`Angle`</span>
+<span class="sd">        :param height: Height of the observer above the sea level, in meters</span>
+<span class="sd">        :type height: int, float</span>
+
+<span class="sd">        :returns: rho*cos(phi&#39;) term</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; lat = Angle(33, 21, 22.0)</span>
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; round(e.rho_cosphi(lat, 1706), 6)</span>
+<span class="sd">        0.836339</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">))</span> <span class="ow">and</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">))):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>         <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">latitude</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>            <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="n">b_a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">b</span><span class="p">()</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">b_a</span><span class="o">*</span><span class="n">tan</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">cos</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="o">+</span> <span class="n">height</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Earth.rp"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.rp">[docs]</a>    <span class="k">def</span> <span class="nf">rp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latitude</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;Method to compute the radius of the parallel circle at the given</span>
+<span class="sd">        latitude.</span>
+
+<span class="sd">        :param latitude: Geodetical or geographical latitude of the observer,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type latitude: int, float, :class:`Angle`</span>
+
+<span class="sd">        :returns: Radius of the parallel circle at given latitude, in meters</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; round(e.rp(42.0), 1)</span>
+<span class="sd">        4747001.2</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>         <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">latitude</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>            <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">e</span><span class="p">()</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">e</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Earth.linear_velocity"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.linear_velocity">[docs]</a>    <span class="k">def</span> <span class="nf">linear_velocity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latitude</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;Method to compute the linear velocity of a point at latitude, due</span>
+<span class="sd">        to the rotation of the Earth.</span>
+
+<span class="sd">        :param latitude: Geodetical or geographical latitude of the observer,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type latitude: int, float, :class:`Angle`</span>
+
+<span class="sd">        :returns: Linear velocity of a point at latitude, in meters per second</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; round(e.linear_velocity(42.0), 2)</span>
+<span class="sd">        346.16</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="n">omega</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_omega</span>
+        <span class="k">return</span> <span class="n">omega</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">rp</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Earth.rm"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.rm">[docs]</a>    <span class="k">def</span> <span class="nf">rm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latitude</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;Method to compute the radius of curvature of the Earth&#39;s meridian</span>
+<span class="sd">        at the given latitude.</span>
+
+<span class="sd">        :param latitude: Geodetical or geographical latitude of the observer,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type latitude: int, float, :class:`Angle`</span>
+
+<span class="sd">        :returns: Radius of curvature of the Earth&#39;s meridian at the given</span>
+<span class="sd">            latitude, in meters</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        :raises: TypeError if input value is of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; round(e.rm(42.0), 1)</span>
+<span class="sd">        6364033.3</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">)):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>         <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi</span> <span class="o">=</span> <span class="n">latitude</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>            <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">e</span><span class="p">()</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">e</span><span class="o">*</span><span class="n">e</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">e</span><span class="o">*</span><span class="n">e</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">))</span><span class="o">**</span><span class="mf">1.5</span></div>
+
+<div class="viewcode-block" id="Earth.distance"><a class="viewcode-back" href="../../Earth.html#pymeeus.Earth.Earth.distance">[docs]</a>    <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lon1</span><span class="p">,</span> <span class="n">lat1</span><span class="p">,</span> <span class="n">lon2</span><span class="p">,</span> <span class="n">lat2</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;&quot;This method computes the distance between two points on the Earth&#39;s</span>
+<span class="sd">        surface using the method from H. Andoyer.</span>
+
+<span class="sd">        :param lon1: Longitude of the first point, in degrees</span>
+<span class="sd">        :type lon1: int, float, :class:`Angle`</span>
+<span class="sd">        :param lat1: Geodetical or geographical latitude of the first point,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type lat1: int, float, :class:`Angle`</span>
+<span class="sd">        :param lon2: Longitude of the second point, in degrees</span>
+<span class="sd">        :type lon2: int, float, :class:`Angle`</span>
+<span class="sd">        :param lat2: Geodetical or geographical latitude of the second point,</span>
+<span class="sd">            in degrees</span>
+<span class="sd">        :type lat2: int, float, :class:`Angle`</span>
+
+<span class="sd">        :returns: Tuple with distance between the two points along Earth&#39;s</span>
+<span class="sd">            surface, and approximate error, in meters</span>
+<span class="sd">        :rtype: tuple</span>
+<span class="sd">        :raises: TypeError if input values are of wrong type.</span>
+
+<span class="sd">        &gt;&gt;&gt; e = Earth(ellipsoid=IAU76)</span>
+<span class="sd">        &gt;&gt;&gt; lon1 = Angle(-2, 20, 14.0)</span>
+<span class="sd">        &gt;&gt;&gt; lat1 = Angle(48, 50, 11.0)</span>
+<span class="sd">        &gt;&gt;&gt; lon2 = Angle(77, 3, 56.0)</span>
+<span class="sd">        &gt;&gt;&gt; lat2 = Angle(38, 55, 17.0)</span>
+<span class="sd">        &gt;&gt;&gt; dist, error = e.distance(lon1, lat1, lon2, lat2)</span>
+<span class="sd">        &gt;&gt;&gt; round(dist, 0)</span>
+<span class="sd">        6181628.0</span>
+<span class="sd">        &gt;&gt;&gt; error</span>
+<span class="sd">        69.0</span>
+<span class="sd">        &gt;&gt;&gt; lon1 = Angle(-2.09)</span>
+<span class="sd">        &gt;&gt;&gt; lat1 = Angle(41.3)</span>
+<span class="sd">        &gt;&gt;&gt; lon2 = Angle(73.99)</span>
+<span class="sd">        &gt;&gt;&gt; lat2 = Angle(40.75)</span>
+<span class="sd">        &gt;&gt;&gt; dist, error = e.distance(lon1, lat1, lon2, lat2)</span>
+<span class="sd">        &gt;&gt;&gt; round(dist, 0)</span>
+<span class="sd">        6176760.0</span>
+<span class="sd">        &gt;&gt;&gt; error</span>
+<span class="sd">        69.0</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">lon1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">))</span> <span class="ow">and</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="n">lat1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">))</span> <span class="ow">and</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="n">lon2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">))</span> <span class="ow">and</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="n">lat2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">Angle</span><span class="p">))):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Invalid input value&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lon1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">l1</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">lon1</span><span class="p">)</span>              <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">l1</span> <span class="o">=</span> <span class="n">lon1</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>                 <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lat1</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi1</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">lat1</span><span class="p">)</span>            <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi1</span> <span class="o">=</span> <span class="n">lat1</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>               <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lon2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">l2</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">lon2</span><span class="p">)</span>              <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">l2</span> <span class="o">=</span> <span class="n">lon2</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>                 <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lat2</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+            <span class="n">phi2</span> <span class="o">=</span> <span class="n">radians</span><span class="p">(</span><span class="n">lat2</span><span class="p">)</span>            <span class="c1"># Convert to radians</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">phi2</span> <span class="o">=</span> <span class="n">lat2</span><span class="o">.</span><span class="n">rad</span><span class="p">()</span>               <span class="c1"># It is an Angle. Call method rad()</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="p">(</span><span class="n">phi1</span> <span class="o">+</span> <span class="n">phi2</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="p">(</span><span class="n">phi1</span> <span class="o">-</span> <span class="n">phi2</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span>
+        <span class="n">lam</span> <span class="o">=</span> <span class="p">(</span><span class="n">l1</span> <span class="o">-</span> <span class="n">l2</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span>
+        <span class="n">sin2g</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">cos2g</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">g</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">cos2f</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">sin2f</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">f</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">sin2lam</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">lam</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">cos2lam</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">lam</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">sin2g</span><span class="o">*</span><span class="n">cos2lam</span> <span class="o">+</span> <span class="n">cos2f</span><span class="o">*</span><span class="n">sin2lam</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">cos2g</span><span class="o">*</span><span class="n">cos2lam</span> <span class="o">+</span> <span class="n">sin2f</span><span class="o">*</span><span class="n">sin2lam</span>
+        <span class="n">omega</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="o">/</span><span class="n">c</span><span class="p">))</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">s</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="n">omega</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">omega</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_a</span>
+        <span class="n">h1</span> <span class="o">=</span> <span class="p">(</span><span class="mf">3.0</span><span class="o">*</span><span class="n">r</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+        <span class="n">h2</span> <span class="o">=</span> <span class="p">(</span><span class="mf">3.0</span><span class="o">*</span><span class="n">r</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">2.0</span><span class="o">*</span><span class="n">s</span><span class="p">)</span>
+        <span class="n">fe</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ellip</span><span class="o">.</span><span class="n">_f</span>
+        <span class="n">dist</span> <span class="o">=</span> <span class="n">d</span><span class="o">*</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">fe</span><span class="o">*</span><span class="p">(</span><span class="n">h1</span><span class="o">*</span><span class="n">sin2f</span><span class="o">*</span><span class="n">cos2g</span> <span class="o">-</span> <span class="n">h2</span><span class="o">*</span><span class="n">cos2f</span><span class="o">*</span><span class="n">sin2g</span><span class="p">))</span>
+        <span class="n">error</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">dist</span><span class="o">*</span><span class="n">fe</span><span class="o">*</span><span class="n">fe</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">dist</span><span class="p">,</span> <span class="n">error</span></div></div>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+
+    <span class="c1"># Let&#39;s define a small helper function</span>
+    <span class="k">def</span> <span class="nf">print_me</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">val</span><span class="p">))</span>
+
+    <span class="c1"># Let&#39;s show some uses of Earth class</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="mi">35</span><span class="o">*</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*** Use of Earth class&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">35</span><span class="o">*</span><span class="s1">&#39;*&#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="c1"># An important concept are the reference ellipsoids, comprising information</span>
+    <span class="c1"># about the Earth global model we are going to use.</span>
+
+    <span class="c1"># A very important reference ellipsoid is WGS84, predefined here</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;WGS84&quot;</span><span class="p">,</span> <span class="n">WGS84</span><span class="p">)</span>
+    <span class="c1"># First field is equatorial radius, second field is the flattening, and the</span>
+    <span class="c1"># third field is the angular rotation velocity, in radians per second</span>
+
+    <span class="c1"># Let&#39;s print the semi-minor axis (polar radius)</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Polar radius, b&quot;</span><span class="p">,</span> <span class="n">WGS84</span><span class="o">.</span><span class="n">b</span><span class="p">())</span>
+
+    <span class="c1"># And now, let&#39;s print the eccentricity of Earth&#39;s meridian</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Eccentricity, e&quot;</span><span class="p">,</span> <span class="n">WGS84</span><span class="o">.</span><span class="n">e</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># We create an Earth object with a given reference ellipsoid. By default,</span>
+    <span class="c1"># it is WGS84, but we can use another</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="n">Earth</span><span class="p">(</span><span class="n">IAU76</span><span class="p">)</span>
+
+    <span class="c1"># Print the parameters of reference ellipsoid being used</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;&#39;e&#39; Earth object parameters&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Compute the distance to the center of the Earth from a given point at sea</span>
+    <span class="c1"># level, and at a certain latitude. It is given as a fraction of equatorial</span>
+    <span class="c1"># radius</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="mi">65</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">)</span>               <span class="c1"># We can use an Angle for this</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Distance to Earth&#39;s center, from latitude 65d 45&#39; 30&#39;&#39;&quot;</span><span class="p">,</span>
+             <span class="n">e</span><span class="o">.</span><span class="n">rho</span><span class="p">(</span><span class="n">lat</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Parameters rho*sin(lat) and rho*cos(lat) are useful for different</span>
+    <span class="c1"># astronomical applications</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="mf">650.0</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;rho*sin(lat)&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">rho_sinphi</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;rho*cos(lat)&quot;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">rho_cosphi</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Compute the radius of the parallel circle at given latitude</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Radius of parallel circle at latitude 65d 45&#39; 30&#39;&#39; (meters)&quot;</span><span class="p">,</span>
+             <span class="n">e</span><span class="o">.</span><span class="n">rp</span><span class="p">(</span><span class="n">lat</span><span class="p">))</span>
+
+    <span class="c1"># Compute the radius of curvature of the Earth&#39;s meridian at given latitude</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Radius of Earth&#39;s meridian at latitude 65d 45&#39; 30&#39;&#39; (meters)&quot;</span><span class="p">,</span>
+             <span class="n">e</span><span class="o">.</span><span class="n">rm</span><span class="p">(</span><span class="n">lat</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># It is easy to compute the linear velocity at different latitudes</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Linear velocity at the Equator (meters/second)&quot;</span><span class="p">,</span>
+             <span class="n">e</span><span class="o">.</span><span class="n">linear_velocity</span><span class="p">(</span><span class="mf">0.0</span><span class="p">))</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;Linear velocity at latitude 65d 45&#39; 30&#39;&#39; (meters/second)&quot;</span><span class="p">,</span>
+             <span class="n">e</span><span class="o">.</span><span class="n">linear_velocity</span><span class="p">(</span><span class="n">lat</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Finally, let&#39;s compute the distance between two points on the Earth:</span>
+    <span class="c1"># Bangkok:          13d 14&#39; 09&#39;&#39; North, 100d 29&#39; 39&#39;&#39; East</span>
+    <span class="c1"># Buenos Aires:     34d 36&#39; 12&#39;&#39; South,  58d 22&#39; 54&#39;&#39; West</span>
+    <span class="c1"># NOTE: We will consider that positions &#39;East&#39; and &#39;South&#39; are negative</span>
+
+    <span class="c1"># Here we will take advantage of facilities provided by Angle class</span>
+    <span class="n">lon_ban</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mf">39.0</span><span class="p">)</span>
+    <span class="n">lat_ban</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">)</span>
+    <span class="n">lon_bai</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="mi">58</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mf">54.0</span><span class="p">)</span>
+    <span class="n">lat_bai</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="o">-</span><span class="mi">34</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mf">12.0</span><span class="p">)</span>
+    <span class="n">dist</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">lon_ban</span><span class="p">,</span> <span class="n">lat_ban</span><span class="p">,</span> <span class="n">lon_bai</span><span class="p">,</span> <span class="n">lat_bai</span><span class="p">)</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;The distance between Bangkok and Buenos Aires is (km)&quot;</span><span class="p">,</span>
+             <span class="nb">round</span><span class="p">(</span><span class="n">dist</span><span class="o">/</span><span class="mf">1000.0</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">print_me</span><span class="p">(</span><span class="s2">&quot;The approximate error of the estimation is (meters)&quot;</span><span class="p">,</span>
+             <span class="nb">round</span><span class="p">(</span><span class="n">error</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dagoberto Salazar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.0.9',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: expliot
+Version: 0.1.0a1.post1
+Summary: Expliot - IoT security testing and exploitation framework
+Home-page: http://www.expliot.io/
+Author: Aseem Jakhar
+Author-email: aseemjakhar@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: IoT IIot security hacking expliot exploit framework
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.5

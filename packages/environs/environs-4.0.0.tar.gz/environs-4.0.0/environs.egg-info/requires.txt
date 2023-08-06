@@ -1,0 +1,6 @@
+marshmallow>=2.7.0
+python-dotenv
+
+[django]
+dj-database-url
+dj-email-url

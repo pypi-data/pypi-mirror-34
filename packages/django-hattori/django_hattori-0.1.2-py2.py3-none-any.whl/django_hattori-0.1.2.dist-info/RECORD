@@ -1,0 +1,12 @@
+django_hattori-0.1.2.dist-info/METADATA,sha256=EN7UTK5luggzynepT0TR63c7XTXT-pmrTpVNCQZmonY,3707
+django_hattori-0.1.2.dist-info/RECORD,,
+django_hattori-0.1.2.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+django_hattori-0.1.2.dist-info/top_level.txt,sha256=dbej7KfVblhLXW2BVTabCpRSQtun7-qk0C6kQTN5hT4,8
+hattori/__init__.py,sha256=9o0u60blPyHr6RYLrKGg90PcZplKTXSdCjlRtpH-A2M,83
+hattori/base.py,sha256=UjnZj3WPtNzLDfyTKF6LwbfpRmmNkDJptSEIerBJ8OQ,2283
+hattori/constants.py,sha256=m8RjVSFzLOvNiQldJGAlKv5O78OBopYsEeyDzb1IrAA,88
+hattori/exceptions.py,sha256=bS6fOOP1WuIxyFqfrs3k-Vxzh5MYj_09UTzz2ZyqX6k,284
+hattori/utils.py,sha256=Z_2Nx9HXr81SiuU5353kqfFNWrqDE4HfSGX3mkc-Yag,2477
+hattori/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hattori/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hattori/management/commands/anonymize_db.py,sha256=nWuR550pcgGcbTjBMHi7M2Nna7nNmWvyGKm9iGGcrqA,2790

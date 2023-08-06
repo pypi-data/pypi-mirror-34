@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ace_magnetometer/__init__.py
+ace_magnetometer.egg-info/PKG-INFO
+ace_magnetometer.egg-info/SOURCES.txt
+ace_magnetometer.egg-info/dependency_links.txt
+ace_magnetometer.egg-info/entry_points.txt
+ace_magnetometer.egg-info/requires.txt
+ace_magnetometer.egg-info/top_level.txt

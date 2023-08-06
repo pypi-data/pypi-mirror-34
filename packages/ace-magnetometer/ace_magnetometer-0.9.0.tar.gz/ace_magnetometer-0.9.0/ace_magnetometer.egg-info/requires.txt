@@ -1,0 +1,14 @@
+pandas
+numpy
+python-dateutil
+
+[plot]
+matplotlib
+seaborn
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flake8
+mypy

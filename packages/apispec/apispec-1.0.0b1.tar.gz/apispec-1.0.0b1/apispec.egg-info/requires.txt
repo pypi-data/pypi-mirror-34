@@ -1,0 +1,6 @@
+
+[validation]
+prance[osv]>=0.11
+
+[yaml]
+PyYAML>=3.10

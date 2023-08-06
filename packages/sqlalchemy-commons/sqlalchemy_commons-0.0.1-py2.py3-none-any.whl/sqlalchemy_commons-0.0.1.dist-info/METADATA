@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-commons
+Version: 0.0.1
+Summary: SQLAlchemy common models
+Home-page: https://github.com/bixority/sqlalchemy-commons
+Author: Olegs Korsaks
+Author-email: kamikaze.is.waiting.you@gmail.com
+License: UNKNOWN
+Keywords: sqlalchemy orm common models
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: ~=3.7
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+

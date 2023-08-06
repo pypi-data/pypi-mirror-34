@@ -1,0 +1,4 @@
+[console_scripts]
+smap = smap.main:main
+symver-smap = smap.main:main
+

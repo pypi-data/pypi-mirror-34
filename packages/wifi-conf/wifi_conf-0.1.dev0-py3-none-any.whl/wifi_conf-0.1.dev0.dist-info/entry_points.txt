@@ -1,0 +1,3 @@
+[console_scripts]
+wifi_conf_daemon = wifi_conf.wifi_conf_daemon:run_daemon
+

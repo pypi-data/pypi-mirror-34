@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+wpy.egg-info/PKG-INFO
+wpy.egg-info/SOURCES.txt
+wpy.egg-info/dependency_links.txt
+wpy.egg-info/requires.txt
+wpy.egg-info/top_level.txt

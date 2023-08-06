@@ -1,0 +1,113 @@
+Metadata-Version: 1.2
+Name: PyJSONViewer
+Version: 0.0.1
+Summary: A JSON file data viewer using pure python
+Home-page: https://github.com/AtsushiSakai/PyJSONViewer
+Author: Atsushi Sakai
+Author-email: asakaig@gmail.com
+Maintainer: Atsushi Sakai
+Maintainer-email: asakaig@gmail.com
+License: MIT
+Description: PyJSONViewer
+        ============
+        
+        A JSON file data viewer using pure python
+        
+        -  Mac OS
+        
+        .. figure:: https://github.com/AtsushiSakai/PyJSONViewer/raw/master/img/mac.png
+           :alt: img1
+        
+           img1
+        
+        -  Windows10
+        
+        .. figure:: https://github.com/AtsushiSakai/PyJSONViewer/raw/master/img/windows.png
+           :alt: img1
+        
+           img1
+        
+        What is this?
+        =============
+        
+        This is a JSON file data viewer based on python.
+        
+        It only uses build-in libraries of python (tkinter, json).
+        
+        Features:
+        
+        1. Minimum dependency.
+        
+        2. Multi-platform (Mac, Windows, Linux).
+        
+        3. Easy to use.
+        
+        Requirements
+        ============
+        
+        -  Python 3.6.x
+        
+        Download
+        ========
+        
+        1. Install python 3.6.x.
+        
+        2. Clone or download as zip this repository.
+        
+        How to use
+        ==========
+        
+        Selct JSON file with CUI.
+        -------------------------
+        
+        1. Run pyjsonviewer.py with -f option and the path to a JSON file:
+        
+        ..
+        
+           $ python pyjsonviewer.py -f path_to_json_file/sample.json
+        
+        2. JSON data tree will be shown.
+        
+        Select JSON file with GUI.
+        --------------------------
+        
+        1. Run pyjsonviewer.py
+        
+        2. File->Open and then select json file.
+        
+        3. JSON data tree will be shown.
+        
+        You can set initial directory with CUI:
+        
+           $ python pyjsonviewer.py -d path_to_json_file_dir
+        
+        Select JSON file with drag and drop.
+        ------------------------------------
+        
+        1. Run pyjsonviewer.py with the option -o
+        
+        ..
+        
+           $ python pyjsonviewer.py -o path_to_json_file_dir
+        
+        2. File browser is shown.
+        
+        3. You can drag and drop a JSON file to the file browser.
+        
+        License
+        =======
+        
+        MIT
+        
+        Author
+        ======
+        
+        -  `Atsushi Sakai <https://github.com/AtsushiSakai/>`__
+           ([@Atsushi_twi](https://twitter.com/Atsushi_twi))
+        
+Keywords: python json tkinter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >3.6.0

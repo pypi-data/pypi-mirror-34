@@ -1,0 +1,14 @@
+gpx_parser/GPX.py,sha256=IcoyoEOSiuCnopf-3bI4La8X3SWtrkZ0iTl2aBro3WQ,7923
+gpx_parser/GPXTrack.py,sha256=kNpEDbsbvc6vKPdSbzC0BZn7uQPHJOliA82HO926Mec,5082
+gpx_parser/GPXTrackPoint.py,sha256=m43q8FumPiCBOXU5h2nmr0bkdn4q7P3F8hLz5vFDFx8,3767
+gpx_parser/GPXTrackSegment.py,sha256=fmEFHrtBC0nNsVKP9B7w7oYkReqHEXFa67bDZqXg1TA,4503
+gpx_parser/__init__.py,sha256=mpUBCAxtXd3FXKUEDrHjyL6bSdBsyHhdxtuSqo3kztU,619
+gpx_parser/gpx.py,sha256=pIwm2MaCCTYERHOCAgrMaxguRR-KwkSyh6j-NklF11s,177
+gpx_parser/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpx_parser/parser.py,sha256=JIg7_79AQYjv27pSbGe5W18Yp7AoGr5zjqImlTpGgC0,2254
+gpx_parser/utils.py,sha256=fMWIOQu9oxILxK59IpncsXW0Zn51kr_VWNaETVMgLuY,868
+gpx_parser/xml_loader.py,sha256=4Axf4tmYW7yv1Fsg9eRGD7OMEqOroVbksfSvMVWsUyg,780
+gpx_parser-0.0.3.dist-info/METADATA,sha256=d2iDZtUdUgtjc61cny1E4k9D2itYAZgI2wOs5x2giH0,4479
+gpx_parser-0.0.3.dist-info/RECORD,,
+gpx_parser-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+gpx_parser-0.0.3.dist-info/top_level.txt,sha256=0xvYxA6NcNPzHe5I8jp1ibW3v2z9kL3Sz3MC0UkKuAc,11

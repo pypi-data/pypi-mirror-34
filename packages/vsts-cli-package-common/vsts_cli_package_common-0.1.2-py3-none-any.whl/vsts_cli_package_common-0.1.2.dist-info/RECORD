@@ -1,0 +1,16 @@
+vsts/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/package/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/package/common/__init__.py,sha256=tgaJt_VIxea35CzjM39E07y-i1owyPUjHAP34jCm2ts,349
+vsts/cli/package/common/artifacttool.py,sha256=TsH7lCeO_dt3pg0MoHSLzwHx83zYohrDkDsBcJn3j1w,5461
+vsts/cli/package/common/artifacttool_updater.py,sha256=vFSLmBfsr_HWqV89h8PCV8o1D6DIlV5SKskMMwgxNLI,7749
+vsts/cli/package/common/external_tool.py,sha256=y4DCE80Yu7QkcJJgbxXRu9LEnucFwV-SGC0lMDf7g10,3189
+vsts/cli/package/common/universal.py,sha256=j1PtciWUbZLdd1mT3tc31VWqVuWl_EP-1NkmAOQt2dQ,2989
+vsts/cli/package/common/client_tool/__init__.py,sha256=esvSQn_r-zXPXNO7TjzsPPuPLf-AuAC2bym_OxlZnJQ,414
+vsts/cli/package/common/client_tool/client_tool_client.py,sha256=5YyCnI3qgeSej2NbUuocCyySM3GrbjDJ_VRpu9PiTOM,1939
+vsts/cli/package/common/client_tool/models/__init__.py,sha256=bRvgDUZws2bhksQOMyy2LZK4k4WXQWlwl0eW_3DCUlI,444
+vsts/cli/package/common/client_tool/models/client_tool_release.py,sha256=78I_cUQoObHXQOAhRn9bkTf8TStYywvRlmD1esHghXg,882
+vsts_cli_package_common-0.1.2.dist-info/METADATA,sha256=O5oZbHOkaUVhTitce8gP-Y_qn29wXdAtePMxWuM-NUg,1007
+vsts_cli_package_common-0.1.2.dist-info/RECORD,,
+vsts_cli_package_common-0.1.2.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+vsts_cli_package_common-0.1.2.dist-info/top_level.txt,sha256=r-Q1CPVoe51isile67MY1CdCYdDF5a1ghu3YlrUuU0E,5

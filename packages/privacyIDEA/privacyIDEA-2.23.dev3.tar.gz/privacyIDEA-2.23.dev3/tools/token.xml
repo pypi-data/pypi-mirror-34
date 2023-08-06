@@ -1,0 +1,48 @@
+<keycontainer version="1.0" xmlns="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
+<encryptionkey>
+<ds:keyname>Pre-shared-key</ds:keyname>
+</encryptionkey>
+<macmethod algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1">
+<mackey>
+<xenc:encryptionmethod algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"></xenc:encryptionmethod>
+<xenc:cipherdata>
+<xenc:ciphervalue>W5/5melsj2HFjfyp8VRkAucwhdtgElsf87QDk30t3mcknz9nKjiAwl/ncxugKzkj</xenc:ciphervalue>
+</xenc:cipherdata>
+</mackey>
+</macmethod><keypackage>
+<deviceinfo>
+<manufacturer>imported</manufacturer>
+<serialno>1008618003643</serialno>
+</deviceinfo>
+<key algorithm="urn:ietf:params:xml:ns:keyprov:pskc:hotp" id="1008618003643">
+<issuer>privacyIDEA</issuer>
+<algorithmparameters>
+<responseformat encoding="DECIMAL" length="6"></responseformat>
+<suite hashalgo="sha1"></suite>
+</algorithmparameters>
+<data>
+<secret>
+<encryptedvalue>
+<xenc:encryptionmethod algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"></xenc:encryptionmethod>
+<xenc:cipherdata>
+<xenc:ciphervalue>fkh/gBkuQVZSu1K6YrtA9H4GpngzPqUWWsTuDiP7SSiKU4FP/sR8lBT0H1kfX9sf</xenc:ciphervalue>
+</xenc:cipherdata>
+</encryptedvalue>
+</secret>
+<valuemac>TODOmissing</valuemac>
+<time>
+<plainvalue>0</plainvalue>
+</time>
+<timeinterval>
+<plainvalue>0</plainvalue>
+</timeinterval>
+<counter>
+<plainvalue>11000</plainvalue>
+</counter>
+<timedrift>
+<plainvalue>0</plainvalue>
+</timedrift>
+</data>
+</key>
+</keypackage>
+</keycontainer>

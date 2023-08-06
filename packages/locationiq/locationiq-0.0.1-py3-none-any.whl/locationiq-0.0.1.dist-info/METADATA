@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: locationiq
+Version: 0.0.1
+Summary: Python client library for LocationIQ Gecoding Services
+Home-page: https://github.com/skthon/locationiq-geocoder-python
+Author: saikiran ch
+Author-email: saikiranchavan@gmail.com
+License: Apache 2.0
+Platform: Posix; MacOS X; Windows
+Requires-Dist: requests (>=2.11.1)
+
+UNKNOWN
+
+

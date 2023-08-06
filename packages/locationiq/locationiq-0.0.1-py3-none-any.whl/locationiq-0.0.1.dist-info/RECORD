@@ -1,0 +1,7 @@
+locationiq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+locationiq/geocoder.py,sha256=VBNIFiFhEkRTCfZs2piBtxJ7Xr_0v3GRAr9t881LJKc,7146
+locationiq/locationiq.py,sha256=0wIlOp0XjjnsyGIxwrbEhUgGrXrZt23DwLquK0CTmiA,6946
+locationiq-0.0.1.dist-info/METADATA,sha256=fRbTyVV-f9_srELQqUyPvUkTAbGeP1ygAFtnDnqhl2M,341
+locationiq-0.0.1.dist-info/RECORD,,
+locationiq-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+locationiq-0.0.1.dist-info/top_level.txt,sha256=7B28C2WOctjZjSE57DwtaYuDlrpvha63uj3DoR5XsvE,11

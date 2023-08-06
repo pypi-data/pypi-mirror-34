@@ -1,0 +1,9 @@
+README.md
+setup.py
+badgebtle/__init__.py
+badgebtle/badgebtle.py
+badgebtle.egg-info/PKG-INFO
+badgebtle.egg-info/SOURCES.txt
+badgebtle.egg-info/dependency_links.txt
+badgebtle.egg-info/requires.txt
+badgebtle.egg-info/top_level.txt

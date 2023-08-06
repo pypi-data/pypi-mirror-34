@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fama/__init__.py
+fama/_version.py
+latte_fama.egg-info/PKG-INFO
+latte_fama.egg-info/SOURCES.txt
+latte_fama.egg-info/dependency_links.txt
+latte_fama.egg-info/top_level.txt
+latte_fama.egg-info/zip-safe

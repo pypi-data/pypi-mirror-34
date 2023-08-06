@@ -1,0 +1,25 @@
+syntax: glob
+
+*.egg-info
+*.pyc
+*.pyo
+.DS_Store
+.Python
+.cache
+.coverage
+.coverage.*
+.installed.cfg
+.mr.developer.cfg
+.pytest_cache
+bin
+build
+coverage-report/
+coverage.xml
+develop-eggs
+eggs
+htmlcov/
+include/
+lib/
+parts
+pip-selfcheck.json
+test-report/

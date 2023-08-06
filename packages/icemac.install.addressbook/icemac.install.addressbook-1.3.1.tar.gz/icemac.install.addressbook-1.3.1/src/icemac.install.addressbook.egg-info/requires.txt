@@ -1,0 +1,8 @@
+archive
+requests
+zc.buildout
+
+[test]
+mock
+pathlib
+requests-file

@@ -1,0 +1,22 @@
+{
+  "sessionAuthHost": "sup-api.symphony.com",
+  "sessionAuthPort": 8444,
+  "keyAuthHost": "sup-km.symphony.com",
+  "keyAuthPort": 8444,
+  "podHost": "sup.symphony.com",
+  "podPort": 443,
+  "agentHost": "sup-agent.symphony.com",
+  "agentPort": 443,
+  "botCertPath": "/Users/reed.feldman/Desktop/symphonyPythonClient/resources/certificates/",
+  "botCertName": "bottleBot",
+  "botCertPassword": "changeit",
+  "botEmailAddress": "bottleBot@example.com",
+  "appCertPath": "",
+  "appCertName": "",
+  "appCertPassword": "",
+  "proxyURL": "",
+  "proxyUsername": "",
+  "proxyPassword": "",
+  "authTokenRefreshPeriod": "30",
+  "authType": "RSA"
+}

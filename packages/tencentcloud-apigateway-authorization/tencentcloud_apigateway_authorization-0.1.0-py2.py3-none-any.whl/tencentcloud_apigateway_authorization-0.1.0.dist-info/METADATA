@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tencentcloud-apigateway-authorization
+Version: 0.1.0
+Summary: Generate headers with authorization for the request of TencentCloud Apigateway API.
+Home-page: https://github.com/duyixian1234/tencentcloud-apigateway-authorization
+Author: Yixian Du
+Author-email: duyixian1234@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+
+tencentcloud-apigateway-authorization
+--------------------------------------
+
+Generate headers with authorization for the request of TencentCloud Apigateway API.
+为腾讯云Api网管服务的AP的请求I生成带有authorization认证信息的header
+
+Install
+-------
+
+.. code-block:: shell
+
+    pip install tencentcloud-apigateway-authorization
+
+Use
+----
+
+.. code-block:: python
+
+    import os
+
+    from apigateway import Auth
+    import requests
+
+    secretId = os.environ['secretId']
+    secretKey = os.environ['secretKey']
+    auth = Auth(secretId, secretKey)
+    headers = auth.generateHeaders()
+    response = requests.get('https://service-{appid}.ap-shanghai.apigateway.myqcloud.com/release/api', headers=headers)
+    print(response.json())
+
+Author
+-------
+
+Yixian Du
+

@@ -1,0 +1,8 @@
+crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawler/ec2.py,sha256=uCD2sLhfPime9Ow-erpnSNLneycBSXSaJb23_sa4s6c,5651
+crawler/parse.py,sha256=lKQmrJbJOXZ77GeegXlZj5xkevPCnXhZA78IvQS47Es,874
+crawler/scrap.py,sha256=P3TB-WDhU7AUEarAtAAtrmM8ZybWEhk3jxkPo11TVtY,11236
+dacrawler-1.0.3.dist-info/METADATA,sha256=nV53EQ-ZgRgJOuWjYjv7Pke2YcBWy9UbX09X0dYZEvA,425
+dacrawler-1.0.3.dist-info/RECORD,,
+dacrawler-1.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dacrawler-1.0.3.dist-info/top_level.txt,sha256=-zAX84nOMD5IqSxPLa8WFZeEd0cLAbCG1PtXVdCHuIY,8

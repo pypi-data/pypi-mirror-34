@@ -1,0 +1,3 @@
+[console_scripts]
+kqi = cli.kqi:kqi_main
+

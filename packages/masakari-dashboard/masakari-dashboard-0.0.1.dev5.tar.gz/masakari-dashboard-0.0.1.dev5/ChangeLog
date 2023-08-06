@@ -1,0 +1,9 @@
+CHANGES
+=======
+
+* Implement update segment
+* Implement segment detail tab
+* Implement delete segment
+* Add segment panel
+* Initial UI-Cookiecutter commit
+* Added .gitreview

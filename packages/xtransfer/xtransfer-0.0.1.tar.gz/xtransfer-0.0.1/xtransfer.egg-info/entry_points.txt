@@ -1,0 +1,3 @@
+[console_scripts]
+xtransfer = xtransfer.cli:main
+

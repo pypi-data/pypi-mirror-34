@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: xtransfer
+Version: 0.0.1
+Summary: A file transfer cli to rule them all.
+Home-page: https://github.com/timbirk/python-xtransfer
+Author: Tim Birkett
+Author-email: tim.birkett@itv.com
+License: BSD
+Description-Content-Type: text/markdown
+Description: # xtransfer
+        
+        A cli utility to rule file transfers (well... between local FS, SFTP and S3)...
+        
+        Under heavy construction...
+        
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

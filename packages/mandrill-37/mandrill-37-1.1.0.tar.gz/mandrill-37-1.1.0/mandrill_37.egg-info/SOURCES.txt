@@ -1,0 +1,10 @@
+README
+mandrill.py
+setup.py
+mandrill_37.egg-info/PKG-INFO
+mandrill_37.egg-info/SOURCES.txt
+mandrill_37.egg-info/dependency_links.txt
+mandrill_37.egg-info/requires.txt
+mandrill_37.egg-info/top_level.txt
+scripts/mandrill
+scripts/sendmail.mandrill

@@ -1,0 +1,10 @@
+[console_scripts]
+ActOnChanged = ActOnChanged:main
+ListAllGithubRepos = ListAllGithubRepos:main
+find_missing_file = find_missing_file:main
+gitbranch = gitbranch:main
+gitemail = gitemail:main
+gtft = gtft:main
+gtpl = gtpl:main
+gtps = gtps:main
+

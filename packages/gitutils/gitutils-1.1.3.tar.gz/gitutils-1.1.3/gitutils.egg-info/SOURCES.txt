@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gitutils/__init__.py
+gitutils/git.py
+gitutils/github.py
+gitutils.egg-info/PKG-INFO
+gitutils.egg-info/SOURCES.txt
+gitutils.egg-info/dependency_links.txt
+gitutils.egg-info/entry_points.txt
+gitutils.egg-info/requires.txt
+gitutils.egg-info/top_level.txt

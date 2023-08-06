@@ -1,0 +1,13 @@
+colorama
+
+[github]
+pandas
+numpy
+pygithub
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flake8
+mypy

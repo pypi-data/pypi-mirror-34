@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+wpy/__init__.py
+wpy/base.py
+wpy/id.py
+wpy/image.py
+wpy/json.py
+wpy/security.py
+wpy.egg-info/PKG-INFO
+wpy.egg-info/SOURCES.txt
+wpy.egg-info/dependency_links.txt
+wpy.egg-info/requires.txt
+wpy.egg-info/top_level.txt

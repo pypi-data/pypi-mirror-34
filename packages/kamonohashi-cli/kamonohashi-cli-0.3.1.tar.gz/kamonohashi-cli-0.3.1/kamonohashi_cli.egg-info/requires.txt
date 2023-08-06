@@ -1,0 +1,4 @@
+click
+urllib3>=1.15
+six>=1.10
+kamonohashi-sdk==0.3.1

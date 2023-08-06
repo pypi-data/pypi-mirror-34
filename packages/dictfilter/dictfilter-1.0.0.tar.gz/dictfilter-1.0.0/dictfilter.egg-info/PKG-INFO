@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dictfilter
+Version: 1.0.0
+Summary: Filter dictionaries based on a list of field names.
+Home-page: https://git.bink.com/libs/dictfilter
+Author: Chris Latham
+Author-email: backwardspy@gmail.com
+License: UNKNOWN
+Description: # dictfilter
+        
+        ## installation
+        
+        ```shell
+        pip install dictfilter
+        ```
+        
+        ## usage
+        
+        ```python
+        some_data = {
+            'name': 'Galactica',
+            'class': 'Battlestar',
+            'model': 'Jupiter',
+        }
+        
+        result = query(some_data, ['name', 'class'])
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

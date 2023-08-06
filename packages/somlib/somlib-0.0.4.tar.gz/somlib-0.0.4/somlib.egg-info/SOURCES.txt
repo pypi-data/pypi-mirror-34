@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+somlib/__init__.py
+somlib/example.py
+somlib/som.py
+somlib/som_numpy.py
+somlib/som_tensor.py
+somlib.egg-info/PKG-INFO
+somlib.egg-info/SOURCES.txt
+somlib.egg-info/dependency_links.txt
+somlib.egg-info/requires.txt
+somlib.egg-info/top_level.txt

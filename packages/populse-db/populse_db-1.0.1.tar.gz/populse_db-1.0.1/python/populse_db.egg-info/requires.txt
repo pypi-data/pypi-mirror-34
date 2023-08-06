@@ -1,0 +1,9 @@
+python-dateutil
+sqlalchemy
+lark-parser
+
+[doc]
+sphinx>=1.0
+
+[postgres]
+psycopg2-binary

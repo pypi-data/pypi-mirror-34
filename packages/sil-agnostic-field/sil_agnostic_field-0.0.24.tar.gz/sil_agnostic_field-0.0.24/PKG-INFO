@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sil_agnostic_field
+Version: 0.0.24
+Summary: A database independent django model field
+Home-page: http://pip.slade360.co.ke/docs/sil_agnostic_field/
+Author: SIL
+Author-email: developers@savannahinformatics.com
+License: Proprietary
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

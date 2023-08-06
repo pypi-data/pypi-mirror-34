@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+sil_agnostic_field/__init__.py
+sil_agnostic_field/array.py
+sil_agnostic_field/json.py
+sil_agnostic_field/lookup.py
+sil_agnostic_field/serializer.py
+sil_agnostic_field/util.py
+sil_agnostic_field.egg-info/PKG-INFO
+sil_agnostic_field.egg-info/SOURCES.txt
+sil_agnostic_field.egg-info/dependency_links.txt
+sil_agnostic_field.egg-info/requires.txt
+sil_agnostic_field.egg-info/top_level.txt

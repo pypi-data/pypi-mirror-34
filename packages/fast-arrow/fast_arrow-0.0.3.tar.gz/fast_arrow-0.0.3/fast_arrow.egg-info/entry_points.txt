@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        fa=fast_arrow.cli:cli
+    

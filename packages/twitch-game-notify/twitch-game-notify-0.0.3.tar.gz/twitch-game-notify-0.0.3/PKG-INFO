@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: twitch-game-notify
+Version: 0.0.3
+Summary: Get notified when your favourite twitch streamers play your favourite games
+Home-page: https://github.com/mwiens91/twitch-game-notify
+Author: Matt Wiens
+Author-email: mwiens91@gmail.com
+License: MIT
+Description: [![Build status](https://ci.appveyor.com/api/projects/status/1qrsle0yooilklav?svg=true)](https://ci.appveyor.com/project/mwiens91/twitch-game-notify)
+        [![codecov](https://codecov.io/gh/mwiens91/twitch-game-notify/branch/master/graph/badge.svg)](https://codecov.io/gh/mwiens91/twitch-game-notify)
+        [![PyPI](https://img.shields.io/pypi/v/twitch-game-notify.svg)](https://pypi.org/project/twitch-game-notify/)
+        
+        
+        # twitch-game-notify
+        
+        ### NOTE: this is a work in progress!
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[console_scripts]
+pyholecli = pyholecli.main:program.run
+

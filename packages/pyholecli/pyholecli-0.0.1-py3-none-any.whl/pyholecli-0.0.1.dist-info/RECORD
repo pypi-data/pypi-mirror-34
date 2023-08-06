@@ -1,0 +1,15 @@
+pyholecli/__init__.py,sha256=G3MatZAHHWjJYxXYZ2dieIf21iPBf3MTSFl2Ic0yuQ8,19
+pyholecli/_version.py,sha256=yI1OOemlMyYLDYyJxE-JvaJ_BH1YFxMO5ImqwhStKRE,80
+pyholecli/exceptions.py,sha256=m6t0pR4SEhC2xfXQGE0CE5dxe493JD4Apum6LWJR9vU,44
+pyholecli/logging.py,sha256=X6wmz2Wj4NJTfDXNJmffHIlaHLGApsDY-LMnuswfObs,275
+pyholecli/main.py,sha256=NLe8L_8-N-888VW1Lcs0aRjwDfMfHGJETqX8_FOazoM,610
+pyholecli/models.py,sha256=WXUl_eipQKppHjGmuqH-5wCWaEzg32CP-ubcXK-kZ4c,1102
+pyholecli/services.py,sha256=sfZN70uaQBkbciDKoVxs7zSL7e8BgeiPQdWARYJiLNY,3188
+pyholecli/settings.py,sha256=gjTtU458yJU3yLxDqs1QANjNsGq7JrMYocgWVb1EnCQ,51
+pyholecli/tasks.py,sha256=Z9pPIBHdzLNW0QUMosZOnRuUU3GWgTJavS3-3DoYpyQ,3711
+pyholecli/utils.py,sha256=CdiB0e8_8FqSQotGDZ9dMO4v6jKr35jYRgjCeXwEhHk,415
+pyholecli-0.0.1.dist-info/METADATA,sha256=Nuqrw_GJJEf_42HvpmxVqijprgkp5jrlSpjg-5hGkU0,4658
+pyholecli-0.0.1.dist-info/RECORD,,
+pyholecli-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pyholecli-0.0.1.dist-info/entry_points.txt,sha256=GVAlqZDbP4fok04GpREmvC0NjB1dgq76yr5zqqkDHrk,58
+pyholecli-0.0.1.dist-info/top_level.txt,sha256=SFZ5YsHbWUMeZ40-36KSTu7N55s8yHGpSmGbZNk2uV0,10

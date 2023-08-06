@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+singlemodeladmin/__init__.py
+singlemodeladmin.egg-info/PKG-INFO
+singlemodeladmin.egg-info/SOURCES.txt
+singlemodeladmin.egg-info/dependency_links.txt
+singlemodeladmin.egg-info/requires.txt
+singlemodeladmin.egg-info/top_level.txt

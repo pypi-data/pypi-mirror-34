@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+setuptools_scss.py
+setuptools_scss.egg-info/PKG-INFO
+setuptools_scss.egg-info/SOURCES.txt
+setuptools_scss.egg-info/dependency_links.txt
+setuptools_scss.egg-info/entry_points.txt
+setuptools_scss.egg-info/top_level.txt

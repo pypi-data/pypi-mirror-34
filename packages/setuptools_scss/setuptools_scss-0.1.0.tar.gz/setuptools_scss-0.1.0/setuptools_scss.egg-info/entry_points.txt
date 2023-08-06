@@ -1,0 +1,6 @@
+[distutils.commands]
+build_scss = setuptools_scss:build_scss
+
+[distutils.setup_keywords]
+scss_files = setuptools_scss:validate_scss
+

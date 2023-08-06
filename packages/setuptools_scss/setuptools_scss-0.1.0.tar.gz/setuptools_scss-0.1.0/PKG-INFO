@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: setuptools_scss
+Version: 0.1.0
+Summary: Plugin for setuptools to build and compile SCSS files
+Home-page: https://github.com/CZ-NIC/setuptools_scss
+Author: Tomas Pazderka
+Author-email: tomas.pazderka@nic.cz
+License: GPLv3
+Description: ## Setuptools_scss ##
+        
+        Plugin for setuptools to build and compile SCSS files.
+        
+        #### Usage ####
+        
+        This command provides `build_scss` command.
+        
+        Run `python setup.py build_scss --help` for available options.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

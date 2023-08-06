@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+'''
+Create/update tables.
+'''
+
+__author__ = ['Miguel Ramos Pernas']
+__email__  = ['miguel.ramos.pernas@cern.ch']
+
+# Python
+import argparse
+
+# Local
+import hep_rfm
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(description=__doc__)

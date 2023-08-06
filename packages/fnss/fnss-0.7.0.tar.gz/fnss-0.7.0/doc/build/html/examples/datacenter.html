@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Datacenter &#8212; FNSS 0.7.0 documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.7.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dynamic Topology" href="dynamic_topology.html" />
+    <link rel="prev" title="Examples" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dynamic_topology.html" title="Dynamic Topology"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Examples"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FNSS 0.7.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Examples</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Examples</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dynamic_topology.html"
+                        title="next chapter">Dynamic Topology</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="datacenter">
+<h1>Datacenter<a class="headerlink" href="#datacenter" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Datacenter topology</span>
+<span class="sd">===================</span>
+
+<span class="sd">This example shows how to generate a datacenter topology, assign capacities</span>
+<span class="sd">and save everything to an XML file</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">fnss</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># create a topology with 10 core switches, 20 edge switches and 10 hosts</span>
+<span class="c1"># per switch (i.e. 200 hosts in total)</span>
+<span class="n">topology</span> <span class="o">=</span> <span class="n">fnss</span><span class="o">.</span><span class="n">two_tier_topology</span><span class="p">(</span><span class="n">n_core</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">n_edge</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">n_hosts</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># assign capacities</span>
+<span class="c1"># let&#39;s set links connecting servers to edge switches to 1 Gbps</span>
+<span class="c1"># and links connecting core and edge switches to 10 Gbps.</span>
+
+<span class="c1"># get list of core_edge links and edge_leaf links</span>
+<span class="n">link_types</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">get_edge_attributes</span><span class="p">(</span><span class="n">topology</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">)</span>
+<span class="n">core_edge_links</span> <span class="o">=</span> <span class="p">[</span><span class="n">link</span> <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">link_types</span>
+                   <span class="k">if</span> <span class="n">link_types</span><span class="p">[</span><span class="n">link</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;core_edge&#39;</span><span class="p">]</span>
+<span class="n">edge_leaf_links</span> <span class="o">=</span> <span class="p">[</span><span class="n">link</span> <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">link_types</span>
+                   <span class="k">if</span> <span class="n">link_types</span><span class="p">[</span><span class="n">link</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;edge_leaf&#39;</span><span class="p">]</span>
+
+<span class="c1"># assign capacities</span>
+<span class="n">fnss</span><span class="o">.</span><span class="n">set_capacities_constant</span><span class="p">(</span><span class="n">topology</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Gbps&#39;</span><span class="p">,</span> <span class="n">edge_leaf_links</span><span class="p">)</span>
+<span class="n">fnss</span><span class="o">.</span><span class="n">set_capacities_constant</span><span class="p">(</span><span class="n">topology</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;Gbps&#39;</span><span class="p">,</span> <span class="n">core_edge_links</span><span class="p">)</span>
+
+<span class="c1"># assign weight 1 to all links</span>
+<span class="n">fnss</span><span class="o">.</span><span class="n">set_weights_constant</span><span class="p">(</span><span class="n">topology</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># assign delay of 10 nanoseconds to each link</span>
+<span class="n">fnss</span><span class="o">.</span><span class="n">set_delays_constant</span><span class="p">(</span><span class="n">topology</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;ns&#39;</span><span class="p">)</span>
+
+<span class="c1"># save topology to a file</span>
+<span class="n">fnss</span><span class="o">.</span><span class="n">write_topology</span><span class="p">(</span><span class="n">topology</span><span class="p">,</span> <span class="s1">&#39;datacenter_topology.xml&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dynamic_topology.html" title="Dynamic Topology"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Examples"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">FNSS 0.7.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Examples</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2012-2018, Lorenzo Saino, Cosmin Cocora.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>

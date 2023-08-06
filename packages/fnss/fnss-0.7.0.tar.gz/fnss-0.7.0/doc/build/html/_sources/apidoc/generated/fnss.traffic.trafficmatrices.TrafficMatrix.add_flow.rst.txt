@@ -1,0 +1,6 @@
+fnss\.traffic\.trafficmatrices\.TrafficMatrix\.add\_flow
+========================================================
+
+.. currentmodule:: fnss.traffic.trafficmatrices
+
+.. automethod:: TrafficMatrix.add_flow

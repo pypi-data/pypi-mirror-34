@@ -1,0 +1,6 @@
+fnss\.netconfig\.delays\.set\_delays\_constant
+==============================================
+
+.. currentmodule:: fnss.netconfig.delays
+
+.. autofunction:: set_delays_constant

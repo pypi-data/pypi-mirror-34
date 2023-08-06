@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.DatacenterTopology\.adjacency\_iter
+=================================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. automethod:: DatacenterTopology.adjacency_iter

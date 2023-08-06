@@ -1,0 +1,6 @@
+fnss\.netconfig\.delays\.set\_delays\_geo\_distance
+===================================================
+
+.. currentmodule:: fnss.netconfig.delays
+
+.. autofunction:: set_delays_geo_distance

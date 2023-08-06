@@ -1,0 +1,6 @@
+fnss\.adapters\.ns2\.validate\_ns2\_stacks
+==========================================
+
+.. currentmodule:: fnss.adapters.ns2
+
+.. autofunction:: validate_ns2_stacks

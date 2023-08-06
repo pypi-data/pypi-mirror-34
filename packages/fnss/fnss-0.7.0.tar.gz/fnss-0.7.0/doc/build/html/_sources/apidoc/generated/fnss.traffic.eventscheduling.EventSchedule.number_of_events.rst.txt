@@ -1,0 +1,6 @@
+fnss\.traffic\.eventscheduling\.EventSchedule\.number\_of\_events
+=================================================================
+
+.. currentmodule:: fnss.traffic.eventscheduling
+
+.. automethod:: EventSchedule.number_of_events

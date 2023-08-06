@@ -1,0 +1,6 @@
+fnss\.topologies\.randmodels\.extended\_barabasi\_albert\_topology
+==================================================================
+
+.. currentmodule:: fnss.topologies.randmodels
+
+.. autofunction:: extended_barabasi_albert_topology

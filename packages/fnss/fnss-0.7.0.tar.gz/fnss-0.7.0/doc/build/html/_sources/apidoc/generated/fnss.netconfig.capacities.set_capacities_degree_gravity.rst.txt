@@ -1,0 +1,6 @@
+fnss\.netconfig\.capacities\.set\_capacities\_degree\_gravity
+=============================================================
+
+.. currentmodule:: fnss.netconfig.capacities
+
+.. autofunction:: set_capacities_degree_gravity

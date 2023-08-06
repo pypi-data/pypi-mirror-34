@@ -1,0 +1,6 @@
+fnss\.topologies\.simplemodels\.line\_topology
+==============================================
+
+.. currentmodule:: fnss.topologies.simplemodels
+
+.. autofunction:: line_topology

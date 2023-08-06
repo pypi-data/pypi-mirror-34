@@ -1,0 +1,6 @@
+fnss\.netconfig\.nodeconfig\.clear\_applications
+================================================
+
+.. currentmodule:: fnss.netconfig.nodeconfig
+
+.. autofunction:: clear_applications

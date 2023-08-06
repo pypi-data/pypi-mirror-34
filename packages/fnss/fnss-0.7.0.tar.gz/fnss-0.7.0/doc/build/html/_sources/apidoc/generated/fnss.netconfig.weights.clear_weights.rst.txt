@@ -1,0 +1,6 @@
+fnss\.netconfig\.weights\.clear\_weights
+========================================
+
+.. currentmodule:: fnss.netconfig.weights
+
+.. autofunction:: clear_weights

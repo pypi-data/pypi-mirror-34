@@ -1,0 +1,6 @@
+fnss\.netconfig\.buffers\.set\_buffer\_sizes\_constant
+======================================================
+
+.. currentmodule:: fnss.netconfig.buffers
+
+.. autofunction:: set_buffer_sizes_constant

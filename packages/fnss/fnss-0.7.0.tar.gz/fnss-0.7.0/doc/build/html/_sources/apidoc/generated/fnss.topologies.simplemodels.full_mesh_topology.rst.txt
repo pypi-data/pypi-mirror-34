@@ -1,0 +1,6 @@
+fnss\.topologies\.simplemodels\.full\_mesh\_topology
+====================================================
+
+.. currentmodule:: fnss.topologies.simplemodels
+
+.. autofunction:: full_mesh_topology

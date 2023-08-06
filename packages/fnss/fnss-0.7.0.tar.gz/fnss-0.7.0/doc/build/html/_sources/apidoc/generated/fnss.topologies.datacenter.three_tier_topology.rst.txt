@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.three\_tier\_topology
+===================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. autofunction:: three_tier_topology

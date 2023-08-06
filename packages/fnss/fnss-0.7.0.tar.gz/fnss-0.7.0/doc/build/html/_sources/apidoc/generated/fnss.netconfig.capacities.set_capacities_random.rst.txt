@@ -1,0 +1,6 @@
+fnss\.netconfig\.capacities\.set\_capacities\_random
+====================================================
+
+.. currentmodule:: fnss.netconfig.capacities
+
+.. autofunction:: set_capacities_random

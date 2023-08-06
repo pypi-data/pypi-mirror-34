@@ -1,0 +1,6 @@
+fnss\.netconfig\.delays\.get\_delays
+====================================
+
+.. currentmodule:: fnss.netconfig.delays
+
+.. autofunction:: get_delays

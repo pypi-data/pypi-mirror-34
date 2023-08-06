@@ -1,0 +1,6 @@
+fnss\.topologies\.topology\.DirectedTopology\.add\_nodes\_from
+==============================================================
+
+.. currentmodule:: fnss.topologies.topology
+
+.. automethod:: DirectedTopology.add_nodes_from

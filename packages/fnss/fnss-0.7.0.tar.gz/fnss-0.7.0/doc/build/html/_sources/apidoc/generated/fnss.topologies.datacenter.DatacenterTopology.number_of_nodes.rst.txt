@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.DatacenterTopology\.number\_of\_nodes
+===================================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. automethod:: DatacenterTopology.number_of_nodes

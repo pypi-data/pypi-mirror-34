@@ -1,0 +1,6 @@
+fnss\.netconfig\.nodeconfig\.remove\_stack
+==========================================
+
+.. currentmodule:: fnss.netconfig.nodeconfig
+
+.. autofunction:: remove_stack

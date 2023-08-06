@@ -1,0 +1,6 @@
+fnss\.topologies\.datacenter\.fat\_tree\_topology
+=================================================
+
+.. currentmodule:: fnss.topologies.datacenter
+
+.. autofunction:: fat_tree_topology

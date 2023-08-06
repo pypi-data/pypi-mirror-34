@@ -1,0 +1,6 @@
+fnss\.topologies\.randmodels\.erdos\_renyi\_topology
+====================================================
+
+.. currentmodule:: fnss.topologies.randmodels
+
+.. autofunction:: erdos_renyi_topology

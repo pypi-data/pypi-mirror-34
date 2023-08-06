@@ -1,0 +1,6 @@
+fnss\.traffic\.trafficmatrices\.link\_loads
+===========================================
+
+.. currentmodule:: fnss.traffic.trafficmatrices
+
+.. autofunction:: link_loads

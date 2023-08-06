@@ -1,0 +1,6 @@
+fnss\.traffic\.eventscheduling\.deterministic\_process\_event\_schedule
+=======================================================================
+
+.. currentmodule:: fnss.traffic.eventscheduling
+
+.. autofunction:: deterministic_process_event_schedule

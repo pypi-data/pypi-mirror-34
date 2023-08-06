@@ -1,0 +1,6 @@
+fnss\.topologies\.simplemodels\.chord\_topology
+===============================================
+
+.. currentmodule:: fnss.topologies.simplemodels
+
+.. autofunction:: chord_topology

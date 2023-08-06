@@ -1,0 +1,6 @@
+fnss\.topologies\.parsers\.parse\_ashiip
+========================================
+
+.. currentmodule:: fnss.topologies.parsers
+
+.. autofunction:: parse_ashiip

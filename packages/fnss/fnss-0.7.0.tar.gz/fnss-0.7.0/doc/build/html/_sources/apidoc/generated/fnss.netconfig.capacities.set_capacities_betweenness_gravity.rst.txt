@@ -1,0 +1,6 @@
+fnss\.netconfig\.capacities\.set\_capacities\_betweenness\_gravity
+==================================================================
+
+.. currentmodule:: fnss.netconfig.capacities
+
+.. autofunction:: set_capacities_betweenness_gravity

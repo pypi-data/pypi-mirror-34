@@ -1,0 +1,6 @@
+fnss\.netconfig\.weights\.set\_weights\_delays
+==============================================
+
+.. currentmodule:: fnss.netconfig.weights
+
+.. autofunction:: set_weights_delays

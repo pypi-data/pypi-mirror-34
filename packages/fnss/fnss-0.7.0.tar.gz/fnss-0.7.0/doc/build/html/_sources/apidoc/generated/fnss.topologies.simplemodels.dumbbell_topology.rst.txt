@@ -1,0 +1,6 @@
+fnss\.topologies\.simplemodels\.dumbbell\_topology
+==================================================
+
+.. currentmodule:: fnss.topologies.simplemodels
+
+.. autofunction:: dumbbell_topology

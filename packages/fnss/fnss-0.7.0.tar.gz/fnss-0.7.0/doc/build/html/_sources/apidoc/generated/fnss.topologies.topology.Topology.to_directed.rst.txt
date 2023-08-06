@@ -1,0 +1,6 @@
+fnss\.topologies\.topology\.Topology\.to\_directed
+==================================================
+
+.. currentmodule:: fnss.topologies.topology
+
+.. automethod:: Topology.to_directed

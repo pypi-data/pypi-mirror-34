@@ -1,0 +1,6 @@
+fnss\.netconfig\.capacities\.clear\_capacities
+==============================================
+
+.. currentmodule:: fnss.netconfig.capacities
+
+.. autofunction:: clear_capacities

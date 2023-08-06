@@ -1,0 +1,6 @@
+fnss\.topologies\.topology\.Topology\.nodes\_iter
+=================================================
+
+.. currentmodule:: fnss.topologies.topology
+
+.. automethod:: Topology.nodes_iter

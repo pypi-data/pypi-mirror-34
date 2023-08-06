@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>fnss.topologies.simplemodels.dumbbell_topology &#8212; FNSS 0.7.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.7.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="fnss.topologies.simplemodels.full_mesh_topology" href="fnss.topologies.simplemodels.full_mesh_topology.html" />
+    <link rel="prev" title="fnss.topologies.simplemodels.chord_topology" href="fnss.topologies.simplemodels.chord_topology.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="fnss.topologies.simplemodels.full_mesh_topology.html" title="fnss.topologies.simplemodels.full_mesh_topology"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="fnss.topologies.simplemodels.chord_topology.html" title="fnss.topologies.simplemodels.chord_topology"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">FNSS 0.7.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../fnss.functions.html" accesskey="U">Functions</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="fnss.topologies.simplemodels.chord_topology.html"
+                        title="previous chapter">fnss.topologies.simplemodels.chord_topology</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fnss.topologies.simplemodels.full_mesh_topology.html"
+                        title="next chapter">fnss.topologies.simplemodels.full_mesh_topology</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="fnss-topologies-simplemodels-dumbbell-topology">
+<h1>fnss.topologies.simplemodels.dumbbell_topology<a class="headerlink" href="#fnss-topologies-simplemodels-dumbbell-topology" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="fnss.topologies.simplemodels.dumbbell_topology">
+<code class="descname">dumbbell_topology</code><span class="sig-paren">(</span><em>m1</em>, <em>m2</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/fnss/topologies/simplemodels.html#dumbbell_topology"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#fnss.topologies.simplemodels.dumbbell_topology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dumbbell topology consisting of two star topologies
+connected by a path.</p>
+<p>More precisely, two star graphs <img class="math" src="../../_images/math/cac4264cfa00562419d58721782e7d0316b53e88.png" alt="K_{m1}"/> form the left and right
+bells, and are connected by a path <img class="math" src="../../_images/math/51f0f5156539ef47109450b6b959a1f67319161a.png" alt="P_{m2}"/>.</p>
+<dl class="docutils">
+<dt>The <img class="math" src="../../_images/math/435dbeded39c98e513f91ff7008de6589ed177c7.png" alt="2*m1+m2"/>  nodes are numbered as follows.</dt>
+<dd><ul class="first last simple">
+<li><img class="math" src="../../_images/math/d96adca2189ed9f76f009619504e980b4064905f.png" alt="0,...,m1-1"/> for the left barbell,</li>
+<li><img class="math" src="../../_images/math/db2144526efbcb8195fd7042e79be3f02407f251.png" alt="m1,...,m1+m2-1"/> for the path,</li>
+<li><img class="math" src="../../_images/math/3da168afc100d9f6637a1e673948756916fef702.png" alt="m1+m2,...,2*m1+m2-1"/> for the right barbell.</li>
+</ul>
+</dd>
+</dl>
+<p>The 3 subgraphs are joined via the edges <img class="math" src="../../_images/math/a2574b5ec33b22abad95f943ada7c73cf6b337d8.png" alt="(m1-1,m1)"/> and
+<img class="math" src="../../_images/math/c01e2d7e7af8645db6e919687a3fd6ff7229db69.png" alt="(m1+m2-1,m1+m2)"/>. If m2 = 0, this is merely two star topologies
+joined together.</p>
+<p>Please notice that this dumbbell topology is different from the barbell
+graph generated by networkx’s barbell_graph function. That barbell graph
+consists of two complete graphs connected by a path. This consists of two
+stars whose roots are connected by a path. This dumbbell topology is
+particularly useful for simulating transport layer protocols.</p>
+<p>All nodes and edges of this topology have an attribute <em>type</em> which can be
+either <em>right bell</em>, <em>core</em> or <em>left_bell</em></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>m1</strong> : int</p>
+<blockquote>
+<div><p>The number of nodes in each bell</p>
+</div></blockquote>
+<p><strong>m2</strong> : int</p>
+<blockquote>
+<div><p>The number of nodes in the path</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>topology</strong> : A Topology object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="fnss.topologies.simplemodels.full_mesh_topology.html" title="fnss.topologies.simplemodels.full_mesh_topology"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="fnss.topologies.simplemodels.chord_topology.html" title="fnss.topologies.simplemodels.chord_topology"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">FNSS 0.7.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../fnss.functions.html" >Functions</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2012-2018, Lorenzo Saino, Cosmin Cocora.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+fnss\.netconfig\.nodeconfig\.add\_application
+=============================================
+
+.. currentmodule:: fnss.netconfig.nodeconfig
+
+.. autofunction:: add_application

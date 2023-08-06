@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odoo11-addons-oca-product-variant
+Version: 11.0.20180809.0
+Summary: Meta package for oca-product-variant Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo11-addon-product-variant-default-code
+
+UNKNOWN
+
+

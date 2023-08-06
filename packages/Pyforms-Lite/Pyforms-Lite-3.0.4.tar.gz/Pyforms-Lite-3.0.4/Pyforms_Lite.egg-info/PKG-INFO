@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: Pyforms-Lite
+Version: 3.0.4
+Summary: Pyforms-Lite is a Python 2.7 and 3.5 framework to develop GUI applications based on PyQt
+Home-page: https://github.com/NikhilNarayana/pyforms-lite
+Author: Nikhil Narayana
+Author-email: nikhil.narayana@live.com
+License: MIT
+Description: # PyForms-Lite
+        
+        PyForms-Lite provides all the features of PyForms without the extra controls like `ControlVisVis(Volume)` and `ControlOpenGL` and others. A more detailed list will be available later.
+        
+        Go checkout [PyForms](https://github.com/UmSenhorQualquer/pyforms) for more info, all the tutorials should give a good idea on how to work with it.
+        
+        # Note
+        This module will not work with PyForms installed.
+Platform: UNKNOWN

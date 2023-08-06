@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: lettuce-rest
+Version: 1.0.1
+Summary: BDD-style Rest API testing tool
+Home-page: https://gitlab.com/vmeca87/lettuce_rest
+Author: Victor Cabello
+Author-email: vmeca87@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: certifi (==2018.4.16)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: colorama (==0.3.9)
+Requires-Dist: extras (==1.0.0)
+Requires-Dist: fixtures (==3.0.0)
+Requires-Dist: funcsigs (==1.0.2)
+Requires-Dist: fuzzywuzzy (==0.16.0)
+Requires-Dist: idna (==2.7)
+Requires-Dist: jpath (==1.6)
+Requires-Dist: lettuce (==0.2.23)
+Requires-Dist: linecache2 (==1.0.0)
+Requires-Dist: mock (==2.0.0)
+Requires-Dist: pbr (==4.2.0)
+Requires-Dist: python-levenshtein (==0.12.0)
+Requires-Dist: python-mimeparse (==1.6.0)
+Requires-Dist: python-subunit (==1.3.0)
+Requires-Dist: requests (==2.19.1)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: sure (==1.4.11)
+Requires-Dist: testtools (==2.3.0)
+Requires-Dist: traceback2 (==1.4.0)
+Requires-Dist: unittest2 (==1.1.0)
+Requires-Dist: urllib3 (==1.23)
+
+# lettuce_rest
+
+---
+
+[![pipeline status](https://gitlab.com/vmeca87/lettuce_rest/badges/master/pipeline.svg)](https://gitlab.com/vmeca87/lettuce_rest/commits/master)
+
+---
+
+BDD-style Rest API testing tool
+
+This repo was inspired on [behave-rest](https://github.com/stanfy/behave-rest) but for a personal need I required to use lettuce so I take all the good ideas from stanfy and implemented the same idea but for lettuce.
+
+## Installation
+
+Run `pip install lettuce_rest` to download package and install required dependencies
+
+But in order to make it works you probability neet o add to your terrain.py 
+
+```python
+import lettuce_rest
+```
+
+
+## Running
+
+This is project contains some predefined steps that you can use with lettuce so in order to run test cases with this framework you just need to inovke lettuce in the following way:
+
+```bash
+$ lettuce
+```
+
+But you can found more information about lettuce here http://lettuce.it/
+
+
+

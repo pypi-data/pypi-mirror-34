@@ -1,0 +1,3 @@
+[console_scripts]
+i2s = itunes2spotify.itunes2spotify:main
+

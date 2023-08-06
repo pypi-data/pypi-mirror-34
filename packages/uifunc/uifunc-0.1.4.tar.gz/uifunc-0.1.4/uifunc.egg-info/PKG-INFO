@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: uifunc
+Version: 0.1.4
+Summary: convenience functions for opening and saving files/folders
+Home-page: https://github.com/Palpatineli/uifunc
+Author: Keji Li
+Author-email: mail@keji.li
+License: GPLv3
+Download-URL: https://github.com/Palpatineli/uifunc/archive/0.1.3.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: wx
+Provides-Extra: qt

@@ -1,0 +1,10 @@
+Click
+aiohttp
+colorama
+uvloop
+peewee
+geopy
+lxml
+feedparser
+brotlipy
+aiobreaker

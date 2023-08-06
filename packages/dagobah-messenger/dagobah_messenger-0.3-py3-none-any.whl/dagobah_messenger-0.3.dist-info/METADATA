@@ -1,0 +1,42 @@
+Metadata-Version: 2.0
+Name: dagobah-messenger
+Version: 0.3
+Summary: JIM socket messenger
+Home-page: https://github.com/ikrugloff/jim-messenger
+Author: Ilia Kruglov
+License: GNU General Public License v3.0
+Keywords: python,messenger,json,jim,geekbrains
+Platform: UNKNOWN
+Requires-Python: >=3.6.5
+Requires-Dist: PyQt5 (==5.11.2)
+Requires-Dist: SQLAlchemy (==1.2.10)
+Requires-Dist: pycryptodome (==3.6.4)
+Requires-Dist: pycryptodomex (==3.6.4)
+
+### dagobah-messenger ###
+JSON instant messenger with presence control and AES encryption.
+
+### Install ###
+
+    pip install dagobah-messenger
+
+### How to start ###
+
+1. Run server:
+
+		python3 -m dagobah-messenger -m server
+
+2. Run any number (max 5) of GUI or console clients:
+
+		python3 -m dagobah-messenger  # run console client
+		python3 -m dagobah-messenger -m clnt_gui  # run GUI client
+		python3 -m dagobah-messenger  # run console client (default)
+		python3 -m dagobah-messenger -m clnt_cli  # run console client
+
+
+P.S. Use PyCharm to avoid module not found issue with pycryptodome.
+
+Thx a lot to Leo Orlov and GeekBrains.
+Ilia Kruglov, 31072018.
+
+

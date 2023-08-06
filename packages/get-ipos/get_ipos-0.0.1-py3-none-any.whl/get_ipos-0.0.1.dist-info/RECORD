@@ -1,0 +1,16 @@
+get_ipos-0.0.1.dist-info/METADATA,sha256=9-_DA-fevddDKsSgcTd-FoC2e4vrPy1pU8GIoI-QffQ,447
+get_ipos-0.0.1.dist-info/RECORD,,
+get_ipos-0.0.1.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+get_ipos-0.0.1.dist-info/top_level.txt,sha256=hxarYgUB7YpkUQkoKMNo457EJ-Bmu2JvXxY3ENvgNSI,15
+ipos/__init__.py,sha256=l2H0BN_j_uS6naCnbfkW-Olx52gxfiVeN8SX8JTsrcU,30
+ipos/get_ipos.py,sha256=UqPDOv827Sky46loNwKKqrtTj5su_lPIOv4Q7tgzV8E,2186
+ipos_list/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipos_list/bse.py,sha256=DdIVtGRCezd9K9yu6sIJC-g-fnB5TeVyjmzy-9tOU2c,1140
+ipos_list/euronext.py,sha256=LlWIkE1GczcNvi4gIGm4-3alK2xWbFYArszWJjLWj1Y,3139
+ipos_list/lse.py,sha256=8Lv99qYE_HkTVRCmkd3etjk30l5_eBq-XAdz6ZsK634,1034
+ipos_list/nasdaq.py,sha256=7HNUQpixJ-XHmUnkLshsvg0021TAWuHDJEzjYlSAsCs,1652
+ipos_list/nsei.py,sha256=4ZlUlt2eIOOQWsKOYPHJ3ndto3WmaeP0IR_vZ0VJAXk,2094
+ipos_list/nyse.py,sha256=VjAnH4R3dcIfvsKqzfSae8qzfZgzKtwvLeBpTIaWhpU,1152
+ipos_list/sehk.py,sha256=5QkUTaIu4GC8UHCoMkGKE_r8uMfIJiYzkrteokmgSEk,1294
+ipos_list/tsx.py,sha256=8ePVbRNakngJxYA-YOVNoGuUU5zjDO_2GNOfT_7bvh0,1381
+ipos_list/tyo.py,sha256=UiN1ELHwFTDPSmpuliE8gGLo15xaCln92mVk6E8R_GQ,995

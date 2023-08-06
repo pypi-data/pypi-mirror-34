@@ -1,0 +1,10 @@
+os_api_cache/__init__.py,sha256=AswEg0qNY9vQjN2RUTyCqaTp6g4U-q8BzOXerdJ63Jc,480
+os_api_cache/base_cache.py,sha256=_MJjqYZ2UyHsNXtZAZGuXX56ViaZg7MF2gnisibxmHU,856
+os_api_cache/os_cache.py,sha256=_S4VLcz8J-oCYm4O65zJ28x_vtem-Gn9G6HtTmauE3I,634
+os_api_cache/redis_cache.py,sha256=mfRkwSwazUvmuHa3AMHVyJ4BcRIOEHY6dhv86DPbDmA,1923
+os_api_cache-0.0.7.dist-info/DESCRIPTION.rst,sha256=P1oqEgKU_mGDGPYbjZrRLztToY6qd7AxrvIpRUD0FYQ,332
+os_api_cache-0.0.7.dist-info/METADATA,sha256=ScjH63QAw7QVmnUng-nY_0qY3NmOHFmgkBAtQrYQDxM,982
+os_api_cache-0.0.7.dist-info/RECORD,,
+os_api_cache-0.0.7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+os_api_cache-0.0.7.dist-info/metadata.json,sha256=A_d_32rDlGzd4lg2LJAHuHkBQEju2j5XDGUWu52moxc,867
+os_api_cache-0.0.7.dist-info/top_level.txt,sha256=udL1XujX6XiQANzeLMAByrtBa_tpKFePXrAjS4zO890,13

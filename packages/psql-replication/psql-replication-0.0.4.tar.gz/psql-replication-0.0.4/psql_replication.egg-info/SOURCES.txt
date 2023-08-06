@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+ppsqlreplication/__init__.py
+ppsqlreplication/logic_stream.py
+ppsqlreplication/packet.py
+ppsqlreplication/row_event.py
+ppsqlreplication/util.py
+psql_replication.egg-info/PKG-INFO
+psql_replication.egg-info/SOURCES.txt
+psql_replication.egg-info/dependency_links.txt
+psql_replication.egg-info/not-zip-safe
+psql_replication.egg-info/requires.txt
+psql_replication.egg-info/top_level.txt

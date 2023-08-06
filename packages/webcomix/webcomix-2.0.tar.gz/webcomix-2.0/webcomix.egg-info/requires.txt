@@ -1,0 +1,11 @@
+Click
+lxml
+requests
+fake-useragent
+scrapy
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+coveralls

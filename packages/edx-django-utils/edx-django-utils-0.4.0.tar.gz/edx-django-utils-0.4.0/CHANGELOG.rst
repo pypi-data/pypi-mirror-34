@@ -1,0 +1,50 @@
+Change Log
+----------
+
+..
+   All enhancements and patches to edx_django_utils will be documented
+   in this file.  It adheres to the structure of http://keepachangelog.com/ ,
+   but in reStructuredText instead of Markdown (for ease of incorporation into
+   Sphinx documentation and the PyPI description).
+   
+   This project adheres to Semantic Versioning (http://semver.org/).
+
+.. There should always be an "Unreleased" section for changes pending release.
+
+Unreleased
+~~~~~~~~~~
+
+*
+
+[0.4.0] - 2018-08-10
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Added
+_____
+
+* Rename CacheUtilsMiddleware to RequestCacheMiddleware.
+
+[0.3.0] - 2018-08-02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Removed
+_______
+
+* Temporarily dropped Python 3 support to land this.
+
+[0.2.0] - 2018-08-01
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Added
+_____
+
+* Added cache and monitoring utilities.
+
+
+[0.1.0] - 2018-07-23
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Added
+_____
+
+* First release on PyPI.

@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: yxs-required
+Version: 1.0
+Summary: Pypi modules that I need to install for a new python environment
+Home-page: https://github.com/blacksong
+Author: Blacksong
+Author-email: blacksong@yeah.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

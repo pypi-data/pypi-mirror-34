@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: micropython-mqttse
+Version: 1.1
+Summary: Lightweight mqttse library for MicroPython, nonblocking Mqtt for ESP8266.
+Home-page: https://github.com/straga/micropython/tree/master/projects/modules_my/MqttSe
+Author: https://github.com/straga
+Author-email: vostraga@gmail.com
+Maintainer: micropython-lib Developers
+Maintainer-email: vostraga@gmail.com
+License: MIT
+Description: TBD
+        ========
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: Implementation :: MicroPython

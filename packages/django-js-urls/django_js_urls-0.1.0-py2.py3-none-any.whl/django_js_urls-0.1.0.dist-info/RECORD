@@ -1,0 +1,16 @@
+.DS_Store,sha256=3X8Kafcpu1GSVkltCQ9epeezUGLwaLmNFgrJKMxMIpw,6148
+django_js_urls-0.1.0.dist-info/LICENSE.txt,sha256=3PKBVfjvTsNml1-HJGVV9XPo38BaNxajCdZubvQ93mc,1070
+django_js_urls-0.1.0.dist-info/METADATA,sha256=BIZDhjXjce8Qac9qHUITQdSS7LpJuGMWLEb1Ybi6FEs,3326
+django_js_urls-0.1.0.dist-info/RECORD,,
+django_js_urls-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_js_urls-0.1.0.dist-info/top_level.txt,sha256=VHHFX53NAPYJ6UInJb2oPq99Zq6z7-416mQGKAEx4U0,8
+js_urls/__init__.py,sha256=yPIDEf_bX-_Ni5ZO5GUSdp49fbyOaoYwlfsR631FJqE,506
+js_urls/apps.py,sha256=AHtAX4acuBItMorM5giEJQrH-WwEpWNws4srYowdaCE,466
+js_urls/serializer.py,sha256=c7Kv4HvNcTT_yTEkSgzwJor5B74okR3af96QQwF4v2k,4261
+js_urls/views.py,sha256=3QQ-FpqRnCDn2iAbXTYfA5kyhZ7Qyjt9D4KlIIuUGv8,723
+js_urls/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+js_urls/conf/settings.py,sha256=6W2g4pd68qWLYS0xG4RmX-ozoZbAQlUEN5__wtm55Ic,599
+js_urls/templates/js_urls/js_urls.js,sha256=tWiIziHkgjKMX5JGymZYyP_6HsNM4e2Rs04p4gl6PEU,1320
+js_urls/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+js_urls/utils/compat.py,sha256=GnGKVVck1euGxN2rFkEiqtxVxoMaV5Cdw75dUs_s8u0,589
+js_urls/utils/text.py,sha256=D5zlQ1lVqXgUBlQiXrsFnm-nb5OKsJdKo1D_JLbnJMU,513

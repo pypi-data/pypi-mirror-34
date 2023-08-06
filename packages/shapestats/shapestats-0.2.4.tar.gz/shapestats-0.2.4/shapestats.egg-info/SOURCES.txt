@@ -1,0 +1,14 @@
+README.md
+setup.py
+shapestats/__init__.py
+shapestats/_amoments.py
+shapestats/_util.py
+shapestats/compactness.py
+shapestats/maxbc.py
+shapestats/minbc.py
+shapestats.egg-info/PKG-INFO
+shapestats.egg-info/SOURCES.txt
+shapestats.egg-info/dependency_links.txt
+shapestats.egg-info/not-zip-safe
+shapestats.egg-info/requires.txt
+shapestats.egg-info/top_level.txt

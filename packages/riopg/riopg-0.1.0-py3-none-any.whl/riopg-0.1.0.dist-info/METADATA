@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: riopg
+Version: 0.1.0
+Summary: A postgresql library for (cu|t)rio
+Home-page: https://github.com/Fuyukai/riopg
+Author: Laura Dickinson
+Author-email: l@veriny.tf
+License: LGPLv3
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Requires-Dist: multio (<0.4.0,>=0.2.0)
+Requires-Dist: psycopg2 (<2.8,>=2.7)
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Requires-Dist: codecov; extra == 'tests'
+Requires-Dist: trio (>=0.5.0); extra == 'tests'
+Requires-Dist: curio (>=0.8); extra == 'tests'
+
+|pypi| |docs| |ci| |cov|
+
+
+riopg
+-----
+
+``riopg`` is a small wrapper for psycopg2 that allows connecting to PostgreSQL databases
+asynchronously using the ``curio`` or ``trio`` libraries.
+
+For more information, see the docs at https://riopg.readthedocs.io/en/latest/ .
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/riopg.svg?style=for-the-badge
+    :alt: PyPI
+.. |docs| image:: https://img.shields.io/badge/docs-read%20now-blue.svg?style=for-the-badge
+   :target: https://riopg.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+.. |ci| image:: https://img.shields.io/circleci/project/github/Fuyukai/riopg.svg?style=for-the-badge
+    :alt: CircleCI
+    :target: https://circleci.com/gh/Fuyukai/riopg/
+.. |cov| image:: https://img.shields.io/codecov/c/github/Fuyukai/riopg.svg?style=for-the-badge
+    :alt: Codecov
+

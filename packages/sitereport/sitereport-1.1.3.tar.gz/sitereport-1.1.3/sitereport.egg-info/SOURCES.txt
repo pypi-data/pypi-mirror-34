@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+sitereport/__init__.py
+sitereport/api.py
+sitereport.egg-info/PKG-INFO
+sitereport.egg-info/SOURCES.txt
+sitereport.egg-info/dependency_links.txt
+sitereport.egg-info/requires.txt
+sitereport.egg-info/top_level.txt
+sitereport.egg-info/zip-safe

@@ -1,0 +1,10 @@
+triopg/__init__.py,sha256=gTKBEw5woigzF3Q4jbfCxsG1TOttqFSYxI121g3EVW8,166
+triopg/_triopg.py,sha256=Xh1c9YeiFrCtPEvCypPAmlosr8dehyJ5Suu9IcPDsLU,2814
+triopg/_version.py,sha256=EV200MBapdQBdtAtPkMfBNOIhmYg-t3E58j1DbNBYS8,89
+triopg/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triopg/_tests/conftest.py,sha256=g2g7TTCbkobwINxuy0jqfoypJyrYTlUWKSWGKK-BVE0,476
+triopg/_tests/test_triopg.py,sha256=vD-JzCz7qQc5bWHYWFgWzAh2tmV09EXWmVLwy7wkGJI,2922
+triopg-0.1.0.dist-info/METADATA,sha256=N7ArBX1PCJU4tJT7PKv-W0k67XLdvXwFhmTmL02sQAg,1118
+triopg-0.1.0.dist-info/RECORD,,
+triopg-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+triopg-0.1.0.dist-info/top_level.txt,sha256=_UVQIu12UnRisa1ZEWi_iSDG2jm_B9GtOUlTmfLZsiA,7

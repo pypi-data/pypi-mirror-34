@@ -1,0 +1,6 @@
+[redash.extensions]
+dockerflow = redash_stmo.dockerflow:dockerflow
+
+[webpack_bundles]
+datasource_link = redash_stmo.js_extensions:datasource_link
+

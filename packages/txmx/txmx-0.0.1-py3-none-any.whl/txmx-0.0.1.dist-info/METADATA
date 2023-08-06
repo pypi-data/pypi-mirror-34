@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: txmx
+Version: 0.0.1
+Summary: MailExchange in Twisted
+Home-page: https://gitlab.com/uda/txmx/
+Author: Yehuda Deutsch
+Author-email: yeh@uda.co.il
+License: MIT
+Project-URL: Source, https://gitlab.com/uda/txmx/
+Keywords: twisted extension mail smtp imap
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Framework :: Twisted
+Classifier: Framework :: Zope
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Email
+Description-Content-Type: text/markdown
+
+# txmx - MailExchange in Twisted
+
+

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: SEMSTR
+Version: 1.0.52
+Summary: Scheme Evaluation and Mapping for Structural Text Representation
+Home-page: https://github.com/huji-nlp/semstr
+Author: Daniel Hershcovich
+Author-email: danielh@cs.huji.ac.il
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Provides-Extra: amr
+Provides-Extra: ud
+Requires-Dist: numpy (>=1.12.1)
+Requires-Dist: tqdm (>=4.23.3)
+Requires-Dist: requests (>=2.18.4)
+Requires-Dist: configargparse (>=0.13.0)
+Requires-Dist: ucca (>=1.0.109)
+Provides-Extra: amr
+Requires-Dist: penman (==0.6.2); extra == 'amr'
+Requires-Dist: nltk (==3.3); extra == 'amr'
+Requires-Dist: parsimonious (==0.8.1); extra == 'amr'
+Requires-Dist: word2number (==1.1); extra == 'amr'
+Requires-Dist: pyspotlight (==0.7.2); extra == 'amr'
+Provides-Extra: ud
+Requires-Dist: ufal.udpipe (>=1.2.0.1); extra == 'ud'
+
+UNKNOWN
+
+

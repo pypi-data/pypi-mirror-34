@@ -1,0 +1,3 @@
+[console_scripts]
+stripe-hooks = stripe_hooks.__main__:start
+

@@ -1,0 +1,9 @@
+pyramid_request_schema/__init__.py,sha256=J1NT4-Z9HB_VcDY2zuahAJSUMOoUxLAGKJhZe5r_jGM,304
+pyramid_request_schema/base_schema.py,sha256=axYXo631okcUvCNJc_iDLlN14bWa4t5Ad7I1U0vNSmQ,1344
+pyramid_request_schema/deriver.py,sha256=lXUwDblf-tJSkKJzfYiPK4X3obYCmiOjBy4Sg9phyOI,1395
+pyramid_request_schema/exceptions.py,sha256=EIBlkotauIwW8Gjpcmld8F2DPfZp42BF24idpVwhnuA,444
+pyramid_request_schema/tests.py,sha256=2rV4NzxgkBgs_Leq_neUHCpv88T6uLZ9flfa504XN6I,5283
+pyramid_request_schema-1.0.0.dist-info/METADATA,sha256=msMpZ75YguObyVMymnZSSSLL3pss_as2dnw3vtHmQw0,333
+pyramid_request_schema-1.0.0.dist-info/RECORD,,
+pyramid_request_schema-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pyramid_request_schema-1.0.0.dist-info/top_level.txt,sha256=ppawHvcv3_rhJJrft-EMfgIFVolc0XPAX8nRmdppW78,23

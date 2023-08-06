@@ -1,0 +1,15 @@
+AIJIdevtools-0.5.1.dist-info/METADATA,sha256=FQ8t3gXjeYOM-reGLUU4_AxhVp7UoHAvtor8KLWl3rM,537
+AIJIdevtools-0.5.1.dist-info/RECORD,,
+AIJIdevtools-0.5.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+AIJIdevtools-0.5.1.dist-info/top_level.txt,sha256=a_PegLulF3Z72Mql1g0DQmET3Fk2ASwVxFUrKe9eJQ0,9
+devtools/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+devtools/cli.py,sha256=pv1r0grjTUQ53WE_A_ySzbsjMyFarhLhao-Zf-79Row,1294
+devtools/daemon.py,sha256=5XPpELxd2BPaJODX1R7oAoRE_joQqVAzy4fx536-vwI,7129
+devtools/dictools.py,sha256=7owHJRENVDQgTpNSWdjsX-VjZiaWxd69MUHabqo5RH8,605
+devtools/exctools.py,sha256=p8UVlZrWuEei2t0X-wKZl2rOJ3lhxuRa0w6tExACh50,436
+devtools/file.py,sha256=dHEDuCequp3G39wgksloTXMEQC31nR4S05-KoO9mnq4,605
+devtools/listools.py,sha256=zRyT4tACy6w7DvJwAtLzKqAaCBMpNt_UmfMnMi8HO6k,957
+devtools/remotetools.py,sha256=0jrp_mLKeK7q6LoZyhKb38UtSawhmTDCTYNKkxYPOTw,218
+devtools/sqltools.py,sha256=xLWFABbNaSwMG6P-0BmWWNkmIGk71skP9ZGVyS06hAk,1756
+devtools/trantools.py,sha256=3TqtJHkNFghSQt2as4Rqe05g9sXacgWhoKj79gcxmLs,925
+devtools/web.py,sha256=UHn82KTO7F1X7oSY7VsVdMXwOQNUDHSd8zRo1uM11Rc,1864

@@ -1,0 +1,10 @@
+talk_video_uploader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talk_video_uploader/__main__.py,sha256=o1-EEYdliakT2iHBTSsjPqfKM9E_gXsOAul5CCbqCL0,4143
+talk_video_uploader/dumper.py,sha256=cnJhg_gg90tjov7xvpz-mLQw5nlG4sNAMu5bns90DcE,552
+talk_video_uploader/upload_video.py,sha256=zOpjxW2sERRagM0_oq7DrEaUGNLSsVSppfr5DtvFuJ8,5302
+talk_video_uploader-0.1.data/data/share/talk-video-uploader/client_id.json,sha256=OWfI_xELBhLDXOE-_tX0vjVKrjmIsOACaqpyOYWlY7I,427
+talk_video_uploader-0.1.dist-info/METADATA,sha256=-ARXrLO2j6AU6AzE-FaOIXXNsQG7ZmoxeXUBYTuklDY,2287
+talk_video_uploader-0.1.dist-info/RECORD,,
+talk_video_uploader-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+talk_video_uploader-0.1.dist-info/entry_points.txt,sha256=sPzbhjHpK8BgmZn7DEZs4XB6Rt5SNJR_jLjXFHVmlCQ,75
+talk_video_uploader-0.1.dist-info/top_level.txt,sha256=m2VcRSijbSzyt7AFHEl6bm3zL5KB_R7WtwyeV0erbOU,20

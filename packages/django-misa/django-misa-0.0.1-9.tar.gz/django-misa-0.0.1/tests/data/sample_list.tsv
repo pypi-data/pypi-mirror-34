@@ -1,0 +1,17 @@
+source_name	organism	organism_part	sample_name	factor_[control]	factor_[time]	factor_[time]_[unit]
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_13	with Thalassiosira	1	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_14	cell-free control	1	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_15	with Thalassiosira	1	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_16	with Thalassiosira	1	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_17	cell-free control	1	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_18	with Thalassiosira	1	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_21	with Thalassiosira	0	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_22	with Thalassiosira	0	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_23	cell-free control	0	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_24	with Thalassiosira	0	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_25	with Thalassiosira	0	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_26	cell-free control	0	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_27	with Thalassiosira	0	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_28	with Thalassiosira	0	day
+diatom metabolites	Thalassiosira pseudonana	exometabolome	Mtab_FT_012611_29	cell-free control	0	day
+diatom metabolites	Thalassiosira pseudonana	endometabolome	Mtab_FT_012611_30	with Thalassiosira	0	day

@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: textoutpc
+Version: 0.1
+Summary: Textout() equivalent from Planète Casio
+Home-page: https://forge.touhey.fr/pc/textout.git/
+Author: Thomas "Cakeisalie5" Touhey
+Author-email: thomas@touhey.fr
+License: MIT
+Description: UNKNOWN
+Keywords: planète casio textout bbcode translator parser
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: Text Processing :: Markup :: HTML

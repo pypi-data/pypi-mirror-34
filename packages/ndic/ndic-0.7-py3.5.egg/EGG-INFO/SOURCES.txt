@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+ndic/__init__.py
+ndic/ndic.py
+ndic.egg-info/PKG-INFO
+ndic.egg-info/SOURCES.txt
+ndic.egg-info/dependency_links.txt
+ndic.egg-info/entry_points.txt
+ndic.egg-info/requires.txt
+ndic.egg-info/top_level.txt

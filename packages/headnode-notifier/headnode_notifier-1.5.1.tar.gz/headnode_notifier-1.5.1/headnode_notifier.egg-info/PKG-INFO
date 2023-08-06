@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: headnode-notifier
+Version: 1.5.1
+Summary: Simple script for sending emails
+Home-page: https://github.com/dizak/headnode_notifier
+Author: Dariusz Izak
+Author-email: dariusz.izak@ibb.waw.pl
+License: MIT
+Description: UNKNOWN
+Keywords: smtp,script,mail,client,layer
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

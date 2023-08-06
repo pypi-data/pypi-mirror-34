@@ -1,0 +1,10 @@
+README.md
+setup.py
+JsonGet/JsonGet.py
+JsonGet/__init__.py
+JsonGet.egg-info/PKG-INFO
+JsonGet.egg-info/SOURCES.txt
+JsonGet.egg-info/dependency_links.txt
+JsonGet.egg-info/requires.txt
+JsonGet.egg-info/top_level.txt
+test/test.py

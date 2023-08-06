@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: JsonGet
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/cortexiphan1/JsonGet
+Author: Dennis Wang
+Author-email: dennis.wang@detvista.com
+License: Apache License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6

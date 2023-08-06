@@ -1,0 +1,9 @@
+README.md
+setup.py
+test/test_utter_more.py
+utter_more/__init__.py
+utter_more/utter_more.py
+utter_more.egg-info/PKG-INFO
+utter_more.egg-info/SOURCES.txt
+utter_more.egg-info/dependency_links.txt
+utter_more.egg-info/top_level.txt

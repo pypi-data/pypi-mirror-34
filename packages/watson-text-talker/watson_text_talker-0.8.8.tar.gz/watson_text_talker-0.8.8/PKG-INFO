@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: watson_text_talker
+Version: 0.8.8
+Summary: Python Text-to-Speech Interface for Raspberry Pi using IBM's Watson TTS
+Home-page: https://github.com/ziligy/watson-text-talker
+Author: Jeff Greenberg
+Author-email: jeff@ziligy.com
+License: UNKNOWN
+Description: # Watson Text Talker
+        
+        Python Text-to-Speech Interface for Raspberry Pi using IBM's Watson TTS
+        
+        for more see Github page [here](https://github.com/ziligy/watson-text-talker)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

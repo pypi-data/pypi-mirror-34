@@ -1,0 +1,16 @@
+potemkin/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+potemkin/app.py,sha256=T0ZmCs-LtQRjzBZ-BdZctFbTWyzMVonzL3E8q6FX-_Q,388
+potemkin/routes.py,sha256=f3r-BywboyfQvBIj323f43YupgDdEdo1J3CliRowi2Q,191
+potemkin/views.py,sha256=swZZrblGTrAzpkDNe5vkpB0VXvPjIHmSd0m1tsMAa04,2285
+potemkin/static/formsubmit.js,sha256=JoG8N0kX-5Nvh1kZLJodiqNlfDQb7Z2-k1XTYNd4UzY,1342
+potemkin/static/pyramid-16x16.png,sha256=52DP5dX_2p74SElE8el4ZbY6OhjH0DOHjv2gS-TrzAA,1319
+potemkin/static/pyramid.png,sha256=PImDmeDNeQY9cO8eUDFW8eri5RceItq0Sk6r0IiMVHQ,12901
+potemkin/static/theme.css,sha256=cXf--NKt5E59q8-6FM2MKyzXxZW89z0RvshtZCsO7JE,2934
+potemkin/templates/layout.jinja2,sha256=KnibqEWogMetpsm7HES027L0s_lBNGnrWb_RaxfSWBE,376
+potemkin/templates/ltilaunch_form.html.jinja2,sha256=ic2J__oZjggWvOUiIKFOuatbvFfnyLx1CsNxqEDGO14,985
+potemkin/templates/ltilaunch_iframe.html.jinja2,sha256=Bu473BaDUUh0xF_SWA1gCY6PpGvNeB7ejCSFGnV1aNM,154
+potemkin-0.0.dist-info/METADATA,sha256=hMKhHxRC_IHI8Bh3LhRTKdqe4JdvU83HKt35-5uoR9g,1207
+potemkin-0.0.dist-info/RECORD,,
+potemkin-0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+potemkin-0.0.dist-info/entry_points.txt,sha256=WARN3cz92MyqIeeaVKj6VW-BrKoadXzHakYVF5b7aDg,42
+potemkin-0.0.dist-info/top_level.txt,sha256=xAO-6bV64PWU2ahAW3QFeyYZrArsWjR9x1HvZZ2CiA0,9

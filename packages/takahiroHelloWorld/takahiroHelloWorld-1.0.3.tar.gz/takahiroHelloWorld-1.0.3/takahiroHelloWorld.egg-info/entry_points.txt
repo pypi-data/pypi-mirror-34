@@ -1,0 +1,3 @@
+[console_scripts]
+my_say_hello = helloWorld.hello:main
+

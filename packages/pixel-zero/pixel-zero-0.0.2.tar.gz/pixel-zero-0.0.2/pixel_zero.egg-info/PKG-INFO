@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: pixel-zero
+Version: 0.0.2
+Summary: A zero boilerplate neopixel control library for the Raspberry Pi 
+Home-page: https://github.com/AllAboutCode/pixelzero/
+Author: Joshua Lowe
+Author-email: joshualowe1002@gmail.com
+License: GPL
+Description: PixelZero
+        ---------
+        A zero boilerplate neopixel control library for the Raspberry Pi
+        
+        
+        0.0.1
+        -----
+        
+        * Initial Release
+        
+        0.0.2
+        -----
+        
+        * RST file
+        
+        
+Keywords: Neopixels
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3 :: Only

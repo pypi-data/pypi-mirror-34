@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+pixelzero/__init__.py
+pixelzero.egg-info/PKG-INFO
+pixelzero.egg-info/SOURCES.txt
+pixelzero.egg-info/dependency_links.txt
+pixelzero.egg-info/requires.txt
+pixelzero.egg-info/top_level.txt

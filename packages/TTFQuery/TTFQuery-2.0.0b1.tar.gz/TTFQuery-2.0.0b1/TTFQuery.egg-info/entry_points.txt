@@ -1,0 +1,6 @@
+[console_scripts]
+ttffamily = ttfquery.ttffamily:main
+ttffiles = ttfquery.ttffiles:main
+ttfgroups = ttfquery.ttfgroups:main
+ttfmetadata = ttfquery.ttfmetadata:main
+

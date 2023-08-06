@@ -1,0 +1,34 @@
+Changelog
+=========
+
+**unreleased**
+
+v1.0.3
+-----
+- Fix the build
+
+v1.0.2
+-----
+- Fix the manifest.in
+
+v1.0.1
+-----
+- Add a vulnerabilities checking to the CI pipeline (snyk.io)
+
+v1.0.0
+-----
+- Add the package to pypi
+- Update the install readme
+
+v0.0.3
+-----
+- Updated ci pipeline 
+
+v0.0.2
+-----
+- Update the install description
+
+v0.0.1
+-----
+* Implemented tox testing
+* Created

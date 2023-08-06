@@ -1,0 +1,6 @@
+[console_scripts]
+apimeter = apimeter.cli:main_apimeter
+locusts = apimeter.cli:main_locust
+ymapi = apimeter.cli:main_apimeter
+ymapimeter = apimeter.cli:main_apimeter
+

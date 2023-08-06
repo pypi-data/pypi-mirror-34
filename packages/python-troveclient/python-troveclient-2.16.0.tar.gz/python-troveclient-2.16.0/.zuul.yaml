@@ -1,0 +1,34 @@
+- project:
+    templates:
+      - openstackclient-plugin-jobs
+    check:
+      jobs:
+        - python-troveclient-tempest-neutron-src
+        - openstack-tox-lower-constraints
+    gate:
+      queue: trove
+      jobs:
+        - python-troveclient-tempest-neutron-src
+
+        - openstack-tox-lower-constraints
+- job:
+    name: python-troveclient-tempest-neutron-src
+    parent: devstack-tempest
+    timeout: 7800
+    required-projects:
+      - openstack-dev/devstack
+      - openstack-infra/devstack-gate
+      - openstack/ara
+      - openstack/neutron
+      - openstack/python-troveclient
+      - openstack/trove
+      - openstack/trove-dashboard
+      - openstack/tempest
+      - openstack/trove-tempest-plugin
+    vars:
+      tox_envlist: 'full'
+      devstack_localrc:
+        TEMPEST_PLUGINS: '/opt/stack/trove-tempest-plugin'
+      devstack_plugins:
+        trove: git://git.openstack.org/openstack/trove
+

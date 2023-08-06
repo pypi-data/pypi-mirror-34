@@ -1,0 +1,11 @@
+README.md
+setup.py
+sharedql/__init__.py
+sharedql/base.py
+sharedql/schema.py
+sharedql.egg-info/PKG-INFO
+sharedql.egg-info/SOURCES.txt
+sharedql.egg-info/dependency_links.txt
+sharedql.egg-info/not-zip-safe
+sharedql.egg-info/requires.txt
+sharedql.egg-info/top_level.txt

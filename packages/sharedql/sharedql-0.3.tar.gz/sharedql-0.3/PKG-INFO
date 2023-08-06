@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sharedql
+Version: 0.3
+Summary: Break graphene schema.py in multiples apps with single decorator
+Home-page: https://github.com/akaytatsu/sharedql
+Author: Thiago Freitad
+Author-email: thiagosistemas3@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: graphene apps plugins break schema.py multiples files
+Platform: UNKNOWN

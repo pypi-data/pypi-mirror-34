@@ -1,0 +1,8 @@
+.eggs
+.pytest_cache
+.coverage
+/tests/__pychche__
+/src/piyon.egg-info
+UNKNOWN.egg-info
+build
+dist

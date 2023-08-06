@@ -1,0 +1,8 @@
+backports/__init__.py,sha256=SpyNeUCzUx-OO92b8b1rGXr4Ds2VeQavw6_juBqZJ-g,93
+backports/html/__init__.py,sha256=2IY7gBKye2xkAfH3NqIAKudc5AULynP18ePReBTTEdM,5092
+backports/html/entities.py,sha256=a1LhkCWdTiCKa7AAnk_To5ouhKuaNNtLxrg-d-yLaV8,75643
+backports/html/parser.py,sha256=nwnJW8YEznAtRaCl8yZyVwqq5L3gD8jZkJyQbVOC4UM,17833
+backports.html-1.0.0.dist-info/METADATA,sha256=KZxTJ3eev7asQGDWz0Qq1dECi2grXXesLBz25CttuMc,1076
+backports.html-1.0.0.dist-info/RECORD,,
+backports.html-1.0.0.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+backports.html-1.0.0.dist-info/top_level.txt,sha256=cGjaLMOoBR1FK0ApojtzWVmViTtJ7JGIK_HwXiEsvtU,10

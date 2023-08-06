@@ -1,0 +1,13 @@
+/build/
+/dist/
+/doc/
+/test/data/*
+.DS_Store
+/.idea/
+/.pytest_cache/
+/.cache/
+/.eggs/
+.*.swp
+*.pyc
+*.egg-info/
+config.dox

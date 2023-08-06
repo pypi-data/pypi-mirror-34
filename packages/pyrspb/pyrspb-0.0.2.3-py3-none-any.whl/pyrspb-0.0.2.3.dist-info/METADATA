@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyrspb
+Version: 0.0.2.3
+Summary: UNKNOWN
+Home-page: https://gitlab.com/RS_PocketBot/pyrspb
+Author: RS Pocketbook
+Author-email: admin@rspocketbook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+

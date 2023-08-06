@@ -1,0 +1,11 @@
+README.rst
+setup.py
+grepmx/__init__.py
+grepmx/__main__.py
+grepmx/grepmx.py
+grepmx.egg-info/PKG-INFO
+grepmx.egg-info/SOURCES.txt
+grepmx.egg-info/dependency_links.txt
+grepmx.egg-info/entry_points.txt
+grepmx.egg-info/requires.txt
+grepmx.egg-info/top_level.txt

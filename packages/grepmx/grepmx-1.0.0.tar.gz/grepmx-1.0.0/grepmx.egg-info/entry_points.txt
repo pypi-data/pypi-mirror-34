@@ -1,0 +1,3 @@
+[console_scripts]
+grepmx = grepmx.__main__:main
+

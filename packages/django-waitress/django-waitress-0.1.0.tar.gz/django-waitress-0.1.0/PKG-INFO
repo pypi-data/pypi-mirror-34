@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-waitress
+Version: 0.1.0
+Summary: Run a production-ready server from manage.py
+Home-page: None
+Author: Adam Brenecki
+Author-email: None
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: waitress (>=1.1,<2.0)

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: tsudo
+Version: 0.0.4
+Summary: Tsundere wrapper for sudo command.
+Home-page: https://github.com/giovanism/tsudo
+Author: Giovan Isa Musthofa
+Author-email: giovanism@outlook.co.id
+License: WTFPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >3
+Description-Content-Type: text/markdown
+Requires-Dist: pexpect
+
+# tsudo
+
+Tsundere wrapper for sudo command.
+
+Spice up your sudo password prompt with cute remarks. Hand-picked from most
+famous characters and internet memes. Also, you can add your own currated list
+of insults (in the future).
+
+## Installation
+
+```
+$ pip install tsudo --user
+```
+
+## Enable sudo insults
+
+Uncomment this line from your `sudoers` file
+
+```
+# Defaults insults
+```
+
+## Enable credential caching
+
+> sudoers uses per-user time stamp files for credential caching. Once a user
+> has been authenticated, a record is written containing the user ID that was
+> used to authenticate, the terminal session ID, the start time of the session
+> leader (or parent process) and a time stamp (using a monotonic clock if one
+> is available).
+
+Since pexpect spawn another child process using pty, each `tsudo` call will
+have different credentials. However, you can still use another tty creds by
+turning off `tty_tickets`.
+
+Add this line to your `sudoers` file
+
+```
+Defaults !tty_tickets
+```
+
+
+

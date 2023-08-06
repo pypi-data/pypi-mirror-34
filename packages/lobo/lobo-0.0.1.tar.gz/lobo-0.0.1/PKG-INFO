@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: lobo
+Version: 0.0.1
+Summary: AWS Load Balancer list cli
+Home-page: https://github.com/boroivanov/lobo
+Author: Borislav Ivanov
+Author-email: borogl@gmail.com
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

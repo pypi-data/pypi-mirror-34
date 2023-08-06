@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ignorio
+Version: 0.2.1
+Summary: Manage your .gitignore with ease!
+Home-page: https://github.com/franccesco/ignorio
+Author: Franccesco Orozco
+Author-email: franccesco@codingdose.info
+Keywords: git,gitignore,exclusion,vcs
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=6.7,<7.0)
+Requires-Dist: colorama (>=0.3.9,<0.4.0)
+Requires-Dist: requests (>=2.19,<3.0)

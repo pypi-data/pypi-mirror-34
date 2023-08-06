@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nikki
+Version: 0.0.4
+Summary: Simple crypted journal for personal use
+Home-page: https://github.com/WIN32GG/nikki
+Author: win32gg
+Author-email: gregor.jouet@laposte.net
+License: MIT
+Description: 
+        # Nikki
+        Crypted Journal for personal records
+        
+        ### What is nikki ?
+        Nikki is an easy to manage, crypted, personal journal. It uses gnupg to encrypt your journal with AES using a passphrase.
+        ### How easy is it ?
+        Nikki is easy
+         - to install:
+         > pip install nikki
+         - to use:
+         > nikki init<br>
+         > nikki edit entry1<br>
+         > nikki edit entry2
+         - to transfer on another computer with git
+         > nikki git init
+         >
+         > nikki git remote add origin <your url><br>
+         > nikki edit my thoughts<br>
+         > nikki git push
+        
+        ### What do I need ?
+        You need pip, and you need to set your ``EDITOR`` environment variable to the text editor of your choice, one exited, the journal will be crypted again
+Platform: UNKNOWN
+Requires-Python: >=3.4, <4
+Description-Content-Type: text/markdown

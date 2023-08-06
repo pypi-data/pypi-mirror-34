@@ -1,0 +1,12 @@
+gpx_lite/__init__.py,sha256=yr9iqpngTvrGaJ8b7FRqUYKIeRvdgG05ShCUz4iLMhQ,675
+gpx_lite/from_csv.py,sha256=0rV1eD5iildV5JkcQA8nUVBEvIJA26fTkXK-57VEIlo,1527
+gpx_lite/gpx.py,sha256=Cj-tTmVd1iTU2MDqiG6Mxe1S0qa8nfGtdE0V1i4x45k,4735
+gpx_lite/gpxtrack.py,sha256=oG7CjK-PAoPIkbo8oVzCNv6BiXH3yDjby4dsiCtcKyQ,4578
+gpx_lite/gpxtrackpoint.py,sha256=0qvF_mrXgxkN4110LX_ZtAucIUAEB3UKeI-0GyW0lAU,1702
+gpx_lite/gpxtracksegment.py,sha256=Jy9DUj6VCRR3mQtvLNh0IKBjUe4R6t1ZxV-Ed8P4jfs,2668
+gpx_lite/parser.py,sha256=HjlDc12GcICsCXUmQ8ZxBOFsP4KHFCU1-fGxvLF9CkM,3783
+gpx_lite/utils.py,sha256=jltOQGlZLGzWAAVy79ASFspypQ2kYppSqJSe0fLTMks,1270
+gpx_lite-0.0.3.dist-info/METADATA,sha256=emNM4ynuQpUarTDxlb81y8J6a8jhY2pMHfVm9UhGGbU,1005
+gpx_lite-0.0.3.dist-info/RECORD,,
+gpx_lite-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+gpx_lite-0.0.3.dist-info/top_level.txt,sha256=SdiinqjuZGwibyUJbLuAfEQEBn1Ut1lVo4NaUSB0x38,9

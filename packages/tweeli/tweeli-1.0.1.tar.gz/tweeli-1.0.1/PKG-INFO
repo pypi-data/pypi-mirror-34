@@ -1,0 +1,47 @@
+Metadata-Version: 1.2
+Name: tweeli
+Version: 1.0.1
+Summary: You can using Twitter in CLI mode
+Home-page: http://github.com/smmtaheri/tweeli
+Author: Mohammad Taheri
+Author-email: admirer135@yahoo.com
+License: MIT
+Description: # tweeli = twitter + cli
+        
+        A command line interface for Twitter with some cool features writing with python 3
+        
+        ## QuickStart
+        
+        * First, enable Twitter apps for your account with the following link [Twitter Account Manager](https://apps.twitter.com).
+        * Then, write all neccessary information into config file which is located in `src/config/config.ini`
+        * Install the required packages in requirements.txt:
+        
+        ```sh
+        $ pip3 install -r requirements.txt
+        ```
+        * Run `main.py` program and press 'tab' to show all available commands. Then run your ideal command and enjoy it!
+        
+        ## Contribution
+        
+        Bug reports and pull requests are welcome on GitHub at https://github.com/smmtaheri/tweeli .
+        
+        Please fork it and raise a pull request for your contribution.
+        
+        ## To-Do:
+        
+        1. Complete twitter core functions (list, direct, trends and ...)
+        2. Implement file system caching (handle twitter api limites and )
+        3. Add unfollow track (DB is required!)
+        
+Keywords: twitter CLI library
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=2.7

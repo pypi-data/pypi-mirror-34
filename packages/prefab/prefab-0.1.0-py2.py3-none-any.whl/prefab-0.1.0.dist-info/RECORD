@@ -1,0 +1,9 @@
+prefab/cli.py,sha256=DfcFQ-HwzP-syEibTiriqD3LTsfx7yriWvYl3acnc8U,2452
+prefab/filesystem.py,sha256=2KEzYIhY6VEPjXVmc2oiixwXwsl7iwI2IGvdeXsywB8,220
+prefab/jinja.py,sha256=D58ggxjuJ4ew_Q1YfEdIzAQBcRku99bUu8RtUYsoItM,274
+prefab/templating.py,sha256=RFT5dYRVZpEX3E6JW22Xp4DoNikqm2Vj02MrhAT6nYk,911
+prefab-0.1.0.dist-info/METADATA,sha256=t2e3UuwmGB3tj6IaMo1aD1tGqIiqI6biocZ1Lxg2W18,1165
+prefab-0.1.0.dist-info/RECORD,,
+prefab-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+prefab-0.1.0.dist-info/entry_points.txt,sha256=6v439a57WQVKyk5apv2gXaj85_GBFlWexniZOKP6fzI,44
+prefab-0.1.0.dist-info/top_level.txt,sha256=LlpL7hGYgHqEYLkO-vQupEXqnCnCIB7JGIiAfpmisw4,7

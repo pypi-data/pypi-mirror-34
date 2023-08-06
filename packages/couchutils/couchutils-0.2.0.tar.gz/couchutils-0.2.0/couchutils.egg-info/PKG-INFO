@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: couchutils
+Version: 0.2.0
+Summary: A collection of CouchDB utils.
+Home-page: https://github.com/rwanyoike/couchutils
+Author: Raymond Wanyoike
+Author-email: raymond.wanyoike@gmail.com
+License: MIT
+Description: # couchutils: Python CouchDB Utils
+        
+        [![Travis (.org)](https://img.shields.io/travis/rwanyoike/couchutils.svg)](https://travis-ci.org/rwanyoike/couchutils)
+        [![Codecov](https://img.shields.io/codecov/c/gh/rwanyoike/couchutils.svg)](https://codecov.io/gh/rwanyoike/couchutils)
+        [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/couchutils.svg)](https://pypi.python.org/pypi/couchutils)
+        [![PyPI - License](https://img.shields.io/pypi/l/couchutils.svg)](https://pypi.python.org/pypi/couchutils)
+        
+        > A collection of CouchDB utils.
+        
+        ## Installation
+        
+        To install couchutils, simply run:
+        
+        ```shell
+        $ pip install -U couchutils
+        ```
+        
+        ---
+        
+        # Version History
+        
+        ## 0.2.0 (2018-08-05)
+        
+        - Add Python 3.7 support.
+        
+        ## 0.1.0 (2018-03-24)
+        
+        - First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: openstack-opentracing
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jaeger-client (>=3.10.0)
+Requires-Dist: opentracing-instrumentation (>=2.3.0)
+Requires-Dist: oslo.middleware (>=3.0.0)
+Requires-Dist: oslo.config (>=3.14.0)
+Requires-Dist: oslo.service (>=1.10.0)
+Requires-Dist: flask (>=0.10.0)
+Requires-Dist: futures
+Requires-Dist: requests (>=2.10.0)
+
+UNKNOWN
+
+

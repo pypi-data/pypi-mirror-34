@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+fadmin/__init__.py
+fadmin/login.py
+fadmin_utils.egg-info/PKG-INFO
+fadmin_utils.egg-info/SOURCES.txt
+fadmin_utils.egg-info/dependency_links.txt
+fadmin_utils.egg-info/entry_points.txt
+fadmin_utils.egg-info/requires.txt
+fadmin_utils.egg-info/top_level.txt

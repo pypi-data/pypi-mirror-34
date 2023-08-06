@@ -1,0 +1,17 @@
+CacheControl
+certifi
+google-api-python-client
+httplib2
+msgpack-python
+numpy
+oauth2client
+Pyforms-LitePyQt5
+PyQt5-sip
+python-dateutil
+requests
+rsa
+sip
+six
+tbapy
+uritemplate
+urllib3

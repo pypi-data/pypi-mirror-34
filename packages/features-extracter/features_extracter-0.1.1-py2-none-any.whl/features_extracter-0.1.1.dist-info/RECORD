@@ -1,0 +1,11 @@
+extracter/__init__.py,sha256=UDNuawdUPwKf9N_QqNPSAyoZ6xm8bjGr7UOwVlbhqkA,232
+extracter/ig/__init__.py,sha256=T7ZzF86M_RbTJRkVR9KIbnQq9sj2ZnHodTp2PdtuouM,216
+extracter/ig/information_gain.py,sha256=dAs4-IYDgAW7ChliI962yp7YgoB817ho2t1JaPaXjjk,4723
+extracter/tfidf/__init__.py,sha256=3yqPrPhbRFJk-KpQo044dLwVWYWutbMue21qkYJYiN8,198
+extracter/tfidf/tfidf.py,sha256=ReON2j_ZJ74CVBr1-FK-Btuq7mx0l9GQ0V2VbQVl73A,3684
+features_extracter-0.1.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+features_extracter-0.1.1.dist-info/METADATA,sha256=sZHtSNICsrtL9qBmVepht2K32tDYp4Zb03ADqoHI4I8,401
+features_extracter-0.1.1.dist-info/RECORD,,
+features_extracter-0.1.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+features_extracter-0.1.1.dist-info/metadata.json,sha256=51oatrW5kKwHaO6E7GhlKHZanN45zH_Uu2erSfi4uSw,595
+features_extracter-0.1.1.dist-info/top_level.txt,sha256=Y2gvfPqpWlDVVihZ3cqZVWe6gJYkMULMdltqinVmCHU,10

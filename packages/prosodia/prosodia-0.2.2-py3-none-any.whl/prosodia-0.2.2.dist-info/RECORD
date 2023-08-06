@@ -1,0 +1,17 @@
+prosodia/__init__.py,sha256=1-1Q_iOg7ayAanNN3OALLiKrXCZnkJiEWzYMkPd_aGQ,63
+prosodia/base/__init__.py,sha256=1-1Q_iOg7ayAanNN3OALLiKrXCZnkJiEWzYMkPd_aGQ,63
+prosodia/base/bnf/__init__.py,sha256=1-1Q_iOg7ayAanNN3OALLiKrXCZnkJiEWzYMkPd_aGQ,63
+prosodia/base/bnf/parser.py,sha256=9I5KQRpGQfghK81Lxu6l8a25qYjFOGCG0kAWMWern2o,7369
+prosodia/base/bnf/text.py,sha256=csF5h6khfctj8ed6URSMZD8V3ibkI8-LXF2ja0dcBg4,1495
+prosodia/base/bnf/transform.py,sha256=WYH5sPzEvN1-q1EsxNhjGnv0YjUNBfTha-lSNARcQSg,4240
+prosodia/core/__init__.py,sha256=1-1Q_iOg7ayAanNN3OALLiKrXCZnkJiEWzYMkPd_aGQ,63
+prosodia/core/grammar.py,sha256=FN4B46cEbikgDGKbvCjopCMtPAcPNMppowPUiAui-G8,10347
+prosodia/core/resolvable.py,sha256=RfA_xglsk0PnBhdI6wjQNsUQdpg5y_nqtVLbl7U1xRA,2181
+prosodia/core/transform.py,sha256=bH2t-brsos3mO4sIlxDhxmSMLBIyJOWM81JLJ5dfGK8,7713
+prosodia/core/tree.py,sha256=v1u09vM_aAfpSbeK1d63JtBDHQf2aGRG4mk4o22KCyg,1318
+prosodia/validation/__init__.py,sha256=1-1Q_iOg7ayAanNN3OALLiKrXCZnkJiEWzYMkPd_aGQ,63
+prosodia/validation/transform_validation.py,sha256=KRYvXE3oiwZM1-fOJpPulCyel24S_tK_QI-diGDTTdM,3907
+prosodia-0.2.2.dist-info/METADATA,sha256=42TrEKNK_J3UN6bXgtNtEWeUcx9e-qUmaDt8QjbNhZM,209
+prosodia-0.2.2.dist-info/RECORD,,
+prosodia-0.2.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+prosodia-0.2.2.dist-info/top_level.txt,sha256=afqywULA2CFct_NG_iP_4yHa61kpB9dPhRTsjosCRuM,9

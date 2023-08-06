@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: showit-again
+Version: 1.1.3
+Summary: simple and sensible display of images
+Home-page: https://github.com/freeman-lab/showit
+Author: freeman-lab
+Author-email: the.freeman.lab@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+See https://github.com/freeman-lab/showit
+
+

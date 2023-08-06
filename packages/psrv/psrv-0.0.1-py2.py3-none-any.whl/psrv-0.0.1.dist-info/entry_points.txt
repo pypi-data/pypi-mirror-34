@@ -1,0 +1,13 @@
+[calmjs.artifacts]
+styles.css = calmjs.sassy.artifact:complete_css
+webpack.js = calmjs.webpack.artifact:complete_webpack
+
+[calmjs.module]
+psrv = psrv
+
+[calmjs.scss]
+psrv = psrv
+
+[console_scripts]
+psrv-demo = psrv.app:main
+

@@ -1,0 +1,16 @@
+psrv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psrv/app.py,sha256=6qGBfLq_JTQHKGcf4QV3c8eIOykXbFVORsN92mNCcK8,1192
+psrv/index.js,sha256=5dyK4kWs0G-Fsq5F0OSW-RfptO80SusSgeHSjVOnqpo,494
+psrv/index.scss,sha256=0nUtMtQgbZ9ilf1yOeprFAGiL9j5O8ZacSxJSFa1skQ,108
+psrv/static/index.html,sha256=GZxI_lBBMNrHzvKZwr2zBU-IavFx9CmRxYVgXuruTyg,859
+psrv-0.0.1.dist-info/METADATA,sha256=ewbxJCprZnXzTLzSFCqhezfAZBeUg6lYPAta3_DijFs,2212
+psrv-0.0.1.dist-info/RECORD,,
+psrv-0.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+psrv-0.0.1.dist-info/calmjs_artifacts.json,sha256=pLvDo6C6NeuooqgfLMyTQmE8QGTFRzYAghbajtcXvqs,972
+psrv-0.0.1.dist-info/entry_points.txt,sha256=-Dh9xxsa8W8dQ5CDlXov8kXHfZd7efrIalF3dM_1p64,223
+psrv-0.0.1.dist-info/extras_calmjs.json,sha256=V9Qw9JuXlgCxTAxYcUNAHFz1KNMpB0UzENmOGY9CAhw,26
+psrv-0.0.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+psrv-0.0.1.dist-info/package.json,sha256=I4IBt4qnMHtgMIHnFeH-1X3jTB0YW5-q6ouLmqZdOt0,26
+psrv-0.0.1.dist-info/top_level.txt,sha256=0pm5x3EaOxMvzSiuclzMNyanGPWfqzwbwcx6_7u6PNw,5
+psrv-0.0.1.dist-info/calmjs_artifacts/styles.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psrv-0.0.1.dist-info/calmjs_artifacts/webpack.js,sha256=0C1ua1P4TDvTxRdc0807S_eiwF5bGvymla317ce6aKQ,303279

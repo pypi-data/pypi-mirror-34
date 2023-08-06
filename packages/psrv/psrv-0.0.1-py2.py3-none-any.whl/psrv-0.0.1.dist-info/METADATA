@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: psrv
+Version: 0.0.1
+Summary: A simple psutil web front end
+Home-page: https://github.com/metatoaster/psrv
+Author: Tommy Yu
+Author-email: y@metatoaster.com
+License: GPL
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Provides-Extra: dev
+Provides-Extra: rjs
+Provides-Extra: webpack
+Provides-Extra: scss
+Requires-Dist: gaugesrv
+Requires-Dist: psutil
+Provides-Extra: dev
+Requires-Dist: calmjs.dev; extra == 'dev'
+Requires-Dist: aiohttp; extra == 'dev'
+Provides-Extra: rjs
+Requires-Dist: calmjs.rjs; extra == 'rjs'
+Provides-Extra: scss
+Requires-Dist: calmjs.sassy[libsass]; extra == 'scss'
+Provides-Extra: webpack
+Requires-Dist: calmjs.webpack; extra == 'webpack'
+
+psrv
+====
+
+Simple web utility to serve up a system's statistics using psutil.  This
+can be referred to as ps service or process and service remote viewer.
+This is a basic demo proof of concept that really aims to showcase how
+Python backends and JavaScript frontends can be integrated together.
+
+This demo may be installed using the following commands into a Python
+virtual environment:
+
+.. code::
+
+    $ git clone https://github.com/metatoaster/psrv.git
+    $ cd psrv
+    $ pip install -e .[dev,webpack,scss]
+    $ calmjs npm --install -i -D psrv[dev,webpack,scss]
+    $ python setup.py build
+    $ psrv-demo
+
+Connect a web browser to http://localhost:8000 and a simple page showing
+the current CPU and memory utilization for the current machine will be
+visible with updates done by polling the status endpoint every three
+seconds (defined in the JavaScript code in this module).
+
+0.0.0 (Unreleased)
+==================
+
+- Initial release.
+
+

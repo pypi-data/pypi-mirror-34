@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: anotherpdfmerger
+Version: 0.0.6
+Summary: Merge pdfs and generate bookmarks
+Home-page: https://github.com/mwiens91/anotherpdfmerger
+Author: Matt Wiens
+Author-email: mwiens91@gmail.com
+License: MIT
+Description: [![PyPI](https://img.shields.io/pypi/v/anotherpdfmerger.svg)](https://pypi.org/project/anotherpdfmerger/)
+        
+        # anotherpdfmerger
+        
+        This is a small program to concatenate PDFs and add bookmarks where the
+        start of each PDF begins. The bookmarks have the same filename as the
+        PDF, minus the `.pdf` extension.
+        
+        There are a few of these programs around, but none that had the exact
+        formatting I wanted. So here's another one.
+        
+        Install this with
+        
+        ```
+        sudo pip3 install anotherpdfmerger
+        ```
+        
+        or just run the [`run_anotherpdfmerger.py`](run_anotherpdfmerger.py)
+        script directly.
+        
+        Either way, if you want to merge `1.pdf`, `2.pdf`, and `3.pdf` into
+        `combined.pdf`, run
+        
+        ```
+        anotherpdfmerger 1.pdf 2.pdf 3.pdf combined.pdf
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
+Description-Content-Type: text/markdown

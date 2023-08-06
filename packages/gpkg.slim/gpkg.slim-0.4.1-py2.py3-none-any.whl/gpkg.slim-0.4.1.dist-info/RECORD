@@ -1,0 +1,14 @@
+gpkg.slim-0.4.1-py3.5-nspkg.pth,sha256=3xb90dBivDFXdtzoeCL9KXHrd-f6F3608fOH6f5Ond0,529
+gpkg/slim/README.md,sha256=_pR0-H8rSmuG26Ho5Q9P6uuNgroWWjtohvCaSxUlgBc,304
+gpkg/slim/__init__.py,sha256=jv2YF__bseklT3OWEzlqJ5qE24c4aWd5F4r0TTjOrWQ,65
+gpkg/slim/guild.yml,sha256=LetKC_YN7R0AE_TG6bw0IMmMftGDSGmq265aQ3gCt2E,1076
+gpkg/slim/label_image.py,sha256=_rHRMoYNR0tqXCX2hTdqomR_1mLGgogi3kt25JWGps4,2802
+gpkg/slim/shared.yml,sha256=ve3E4UJKdZq6-HW9cDzsZ0aNvw03CN2adGAUqFSHOuo,6990
+gpkg/slim/slim_op.py,sha256=Yvfe8ZSMn4PlhK96JLX-R6QlgphJiERQxaZKowCo7Kc,3865
+gpkg.slim-0.4.1.dist-info/METADATA,sha256=-jtLtnymX1jcpktdPWi3QO2WOwNqjxhl9czYYrGTdjk,253
+gpkg.slim-0.4.1.dist-info/PACKAGE,sha256=BFSambxNVSIO8WQv5h4MXqOejar7y3FsFGXlNQDVBH0,856
+gpkg.slim-0.4.1.dist-info/RECORD,,
+gpkg.slim-0.4.1.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+gpkg.slim-0.4.1.dist-info/entry_points.txt,sha256=9XhpbAxc-aH2LQNIEw_UCl-h58yHjIM6wq8FmsZ4T9I,106
+gpkg.slim-0.4.1.dist-info/namespace_packages.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.slim-0.4.1.dist-info/top_level.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5

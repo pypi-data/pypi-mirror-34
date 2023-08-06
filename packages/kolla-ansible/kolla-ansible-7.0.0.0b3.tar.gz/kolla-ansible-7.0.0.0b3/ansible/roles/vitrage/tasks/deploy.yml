@@ -1,0 +1,19 @@
+---
+- include: register.yml
+  when: inventory_hostname in groups['vitrage-api']
+
+- include: config.yml
+  when: inventory_hostname in groups['vitrage-api'] or
+        inventory_hostname in groups['vitrage-ml'] or
+        inventory_hostname in groups['vitrage-graph'] or
+        inventory_hostname in groups['vitrage-notifier'] or
+        inventory_hostname in groups['vitrage-collector']
+
+- include: clone.yml
+  when: vitrage_dev_mode | bool
+
+- include: bootstrap.yml
+  when: inventory_hostname in groups['vitrage-api']
+
+- name: Flush handlers
+  meta: flush_handlers

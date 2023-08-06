@@ -1,0 +1,12 @@
+Django
+celery
+requests
+py-zipkin==0.8.3
+
+[dev]
+pytest<4.0,>=3.6
+pytest-xdist
+pytest-django<4.0,>=3.3.3
+mock
+responses
+flake8

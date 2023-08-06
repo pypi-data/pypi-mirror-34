@@ -1,0 +1,17 @@
+dss/__init__.py,sha256=3WmLJBoJ99JF_OlJnRK9JPC6LAhf4I2BilV7UDtS1Do,184
+dss/_cffi_api_util.py,sha256=Wyv2GZdPlkQYVtqNuurP4wuQhzn4WwhcAjfVddPUv7Y,6472
+dss/_dss_capi_v7.cp37-win32.pyd,sha256=Oh7q_2ghrvMNurSjK1p6YZDwXnCy07vwC16Eey8UtEg,279552
+dss/_dss_capi_v8.cp37-win32.pyd,sha256=LjeSmS5j71DIcx0UVAwisR7Cq2Lem_KIsg1hYhpIc7Y,284672
+dss/dss_capi_v7.dll,sha256=2rcDfEmp6rdytZWYwjuqw_wgFudjntse2DMvEXwWwpI,2152448
+dss/dss_capi_v8.dll,sha256=P3Mt3eNN7OB9LbBqwrcH-Dg_D33z741l7Syaz7LNDEE,2257920
+dss/enums.py,sha256=HN0yrOGdjplDha-L6C2blv5bv_a4wE13-nio22K33G8,2170
+dss/libklusolve.dll,sha256=9MVId8Rq5GS53ynTQ3aGeSXZm8Xrx2LFcX0fEmxgF8U,70656
+dss/v7/__init__.py,sha256=RJFNjLB3euyAp89Vm61PiH_hZCU9T1TOwOPzh8DWBVw,259
+dss/v7/dss_capi.py,sha256=Cr6bphXH10bACDEOi5HX2HRwjEG48y0nOCQqO97cRL4,160306
+dss/v8/__init__.py,sha256=HuNEle9LAfPBNz8NBwXpXBmhHt-iK-Wqfbt00f9BhlA,259
+dss/v8/dss_capi.py,sha256=NRIFBGdEFyMC3BUBr8U0PdecqW2jxwig3SYPceWlkhM,162284
+dss_python-0.9.8.dist-info/LICENSE.txt,sha256=t2oNTpkJno_ssq9Ob4hQCJDvalTEN-iHf9SDHbChDB8,1516
+dss_python-0.9.8.dist-info/METADATA,sha256=TsoyP598X4p0QONTO0VI_Z5XQscNuDfRTcEsuVJhV5w,9577
+dss_python-0.9.8.dist-info/RECORD,,
+dss_python-0.9.8.dist-info/WHEEL,sha256=2zzu_YdXIu-xXZDqaBZlJhw2t5mxGHySzFgniB0mw4c,102
+dss_python-0.9.8.dist-info/top_level.txt,sha256=VTQ7GqrfGFntIET82_dz_SimV-Pb5PC87kMu6u4jeyc,30

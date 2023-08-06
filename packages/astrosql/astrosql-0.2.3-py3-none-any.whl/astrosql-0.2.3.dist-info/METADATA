@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: astrosql
+Version: 0.2.3
+Summary: Simple API to access to existing astronomical MySQL database
+Home-page: https://github.com/ketozhang/astroSQL
+Author: Keto Zhang, Weikang Zheng
+Author-email: keto.zhang@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: peewee
+Requires-Dist: termcolor
+Requires-Dist: pymysql
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+

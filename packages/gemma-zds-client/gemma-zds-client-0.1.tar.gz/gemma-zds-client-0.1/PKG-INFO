@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: gemma-zds-client
+Version: 0.1
+Summary: Generieke client voor GEMMA-zaken componenten
+Home-page: https://github.com/VNG-Realisatie/gemma-zds-client
+Author: Maykin Media, VNG-Realisatie
+Author-email: support@maykinmedia.nl
+License: EUPL 1.2
+Description: ==========================================================
+        ZDS-Client - Generieke client voor GEMMA-zaken componenten
+        ==========================================================
+        
+        De ZDS-Client is een (voorlopig) interne client die op basis van OAS 3.0
+        specificaties met GEMMA-zaken componenten communiceert.
+        
+        .. contents::
+        
+        .. section-numbering::
+        
+        Features
+        ========
+        
+        * Ophalen van OAS 3.0 specificatie
+        * Aanmaken van resources volgens specificatie
+        * Generiek
+        
+        Installatie
+        ===========
+        
+        Benodigdheden
+        -------------
+        
+        * Python 3.6 of hoger
+        * setuptools 30.3.0 of hoger
+        
+        Installeren
+        -----------
+        
+        .. code-block:: bash
+        
+            pip install gemma-zds-client
+        
+        Gebruik
+        =======
+        
+        TODO
+        
+Keywords: openapi,swagger,django,vng,client,requests
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tests
+Provides-Extra: pep8
+Provides-Extra: release
+Provides-Extra: coverage
+Provides-Extra: docs

@@ -1,0 +1,33 @@
+Metadata-Version: 1.0
+Name: Aman
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Hamza Ali
+Author-email: UNKNOWN
+License: MIT
+Description: # aman
+        A simple alias manager for shell lovers.
+        
+        #### INSTALLATION
+        
+        1. clone the repo: `git clone git@github.com:HmzAli/aman.git`
+        2. cd into the repo `cd aman` and run `python setup.py`
+        3. After the installation is completed, add the following line to the profile of your default shell (e.g. `bashrc`/ `zshrc`)
+        
+        ```shell
+        source $HOME/.aman/aliases
+        ```
+        4. Open a new shell session and type `aman` to verify installation
+        
+        #### USAGE
+        
+        To add an alias:
+        ```shell
+        aman <alias-name>='<value>'
+        ```
+        
+        For more commands, type `--help`.
+        
+        
+Platform: UNKNOWN

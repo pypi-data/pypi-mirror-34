@@ -1,0 +1,12 @@
+setup.py
+consts/__init__.py
+consts/endpoint.py
+consts/host.py
+test/__init__.py
+test/client_test.py
+zuorapy/__init__.py
+zuorapy/client.py
+zuorapy.egg-info/PKG-INFO
+zuorapy.egg-info/SOURCES.txt
+zuorapy.egg-info/dependency_links.txt
+zuorapy.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+qipu = qipu.cli:main
+

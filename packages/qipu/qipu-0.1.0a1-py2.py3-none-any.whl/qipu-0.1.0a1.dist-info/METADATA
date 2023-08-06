@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qipu
+Version: 0.1.0a1
+Summary: A simple market simulator served using the FIX protocol
+Home-page: UNKNOWN
+Author: Carlo Holl
+Author-email: carloholl@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6.5
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: fixtrate (>=0.1.2)
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+
+
+# Qipu: Market simulator served with the FIX protocol
+
+

@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pylendingclub
+Version: v2.0.2
+Summary: A Python wrapper for the Lending Club API.
+Home-page: https://github.com/bbarney213/PyLendingClub-Wrapper
+Author: Brandon Barney
+Author-email: brandon.barney213@yahoo.com
+License: UNKNOWN
+Download-URL: https://github.com/bbarney213/PyLendingClub-Wrapper/archive/v2.0.2.tar.gz
+Description: UNKNOWN
+Keywords: python,lendingclub
+Platform: UNKNOWN

@@ -1,0 +1,105 @@
+Metadata-Version: 2.0
+Name: flyingcircus
+Version: 0.0.0.0
+Summary: Everything you always wanted to have in Python.*
+Home-page: https://bitbucket.org/norok2/flyingcircus
+Author: Riccardo Metere
+Author-email: rick@metere.it
+License: GPLv3+
+Keywords: utils,misc,iterators,metaprogramming,science,mathematics,math,physics,format,formatting,numpy,scipy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: blessed
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: setuptools-scm
+
+============
+FlyingCircus
+============
+
+**FlyingCircus** - Everything you always wanted to have in Python.*
+
+(*But were afraid to write)
+
+.. code::
+     _____ _       _              ____ _
+    |  ___| |_   _(_)_ __   __ _ / ___(_)_ __ ___ _   _ ___
+    | |_  | | | | | | '_ \ / _` | |   | | '__/ __| | | / __|
+    |  _| | | |_| | | | | | (_| | |___| | | | (__| |_| \__ \
+    |_|   |_|\__, |_|_| |_|\__, |\____|_|_|  \___|\__,_|___/
+             |___/         |___/
+
+Overview
+--------
+This software provides a library of miscellaneous utilities for Python.
+It is relatively easy to extend and users are encouraged to tweak with it.
+
+Most of the code is used is used in a number of projects
+
+As a result of the code maturity, some of the library components may undergo
+(eventually heavy) refactoring, although this is currently unexpected.
+
+
+Releases information are available through ``NEWS.rst``.
+
+For a more comprehensive list of changes see ``CHANGELOG.rst``.
+
+
+Installation
+------------
+The recommended way of installing the software is through
+`PyPI <https://pypi.python.org/pypi/flyingcircus>`_:
+
+.. code:: shell
+
+    $ pip install flyingcircus
+
+Alternatively, you can clone the source repository from
+`Bitbucket <https://bitbucket.org/norok2/flyingcircus>`_:
+
+.. code:: shell
+
+    $ git clone git@bitbucket.org:norok2/flyingcircus.git
+    $ cd flyingcircus
+    $ pip install -e .
+
+For more details see also ``INSTALL.rst``.
+
+License
+-------
+This work is licensed through the terms and conditions of the
+`GPLv3+ <http://www.gnu.org/licenses/gpl-3.0.html>`_
+See the accompanying ``LICENSE.rst`` for more details.
+
+
+Acknowledgements
+----------------
+For a complete list of authors please see ``AUTHORS.rst``.
+
+People who have influenced this work are acknowledged in ``THANKS.rst``.
+
+

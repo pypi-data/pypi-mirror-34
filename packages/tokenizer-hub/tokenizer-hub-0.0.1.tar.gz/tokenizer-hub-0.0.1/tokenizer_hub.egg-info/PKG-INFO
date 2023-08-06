@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: tokenizer-hub
+Version: 0.0.1
+Summary: Yoctol Natural Language Tokenizer
+Home-page: https://github.com/Yoctol/tokenizer-hub
+Author: Solumilken
+License: MIT
+Description: # tokenizer-hub
+        
+        yoctol 乂卍oO煞氣ㄟtokenizerOo卍乂
+        
+        Tokenizers have the same interface of Jieba:
+        
+        ```python
+        from tokenizer_hub import XXX_tokenizer
+        tokenizer = XXX_tokenizer()
+        tokenizer.lcut('我来到北京清华大学')
+        > ['我', '来到', '北京', '清华大学']
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5

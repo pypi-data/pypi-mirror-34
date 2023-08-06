@@ -1,0 +1,10 @@
+django_system_globals-0.0.7.dist-info/METADATA,sha256=KM6SmVnd3_WLjBWmLADMq01FMlaa6gHnjWyU4UZuCuI,335
+django_system_globals-0.0.7.dist-info/RECORD,,
+django_system_globals-0.0.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_system_globals-0.0.7.dist-info/top_level.txt,sha256=x925nuNsCg0EMJG45eUKtSd_EGgscXa84lruO_DARXU,15
+system_globals/__init__.py,sha256=XERHp9qQ7GYCFN1GtVtY0Ji89jCydHAsO_t3EPMGWh0,98
+system_globals/admin.py,sha256=pzXM2QcQ8En7elN41ukEbpgOTkj9cOUO3cvjszZnA60,236
+system_globals/context_processors.py,sha256=QoDVniWiOL3ZQwt6ihqiL3ezulLju-Jho_j73HEp9L4,140
+system_globals/models.py,sha256=OdVnCjlNMdIvxPMpJguH_6xb7mzjNbCjeDwSw8zB10I,4672
+system_globals/tests.py,sha256=QhKcVmxxmwu_4K7kfPaIwGaWA0A3E2Qb5SbyelH4w8w,8206
+system_globals/views.py,sha256=F42JXgnqFqK0fajXeutyJJxwOszRxoLMNkIhfc4Z7KI,26

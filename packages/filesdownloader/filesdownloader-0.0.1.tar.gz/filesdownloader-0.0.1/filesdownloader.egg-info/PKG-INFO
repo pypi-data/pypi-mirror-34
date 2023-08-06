@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: filesdownloader
+Version: 0.0.1
+Summary: Fast download mulitple files from web
+Home-page: https://github.com/spidezad/filesdownloader
+Author: Tan Kok Hua
+Author-email: kokhua81@gmail.com
+License: BSD
+Download-URL: https://github.com/spidezad/filesdownloader/tarball/0.0.1
+Description: filesdownloader
+        ===============================
+        
+        version number: 0.0.1
+        author: Tan Kok Hua
+        author_email: kokhua81@gmail.com
+        
+        Overview
+        --------
+        
+        Fast download mulitple files from web
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install filesdownloader
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/spidezad/filesdownloader.git
+            $ python setup.py install
+            
+        Contributing
+        ------------
+        
+        TBD
+        
+        Example
+        -------
+        
+        TBD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3

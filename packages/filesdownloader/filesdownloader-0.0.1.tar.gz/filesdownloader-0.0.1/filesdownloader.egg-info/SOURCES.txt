@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+filesdownloader/__init__.py
+filesdownloader/dl_files_to_dir.py
+filesdownloader.egg-info/PKG-INFO
+filesdownloader.egg-info/SOURCES.txt
+filesdownloader.egg-info/dependency_links.txt
+filesdownloader.egg-info/requires.txt
+filesdownloader.egg-info/top_level.txt

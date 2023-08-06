@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: lmfit-varpro
+Version: 0.0.4
+Summary: A variable projection implementation for Python/lmfit.
+Home-page: https://github.com/glotaran/lmfit-varpro
+Author: Joris Snellenburg, Joern Weissenborn
+Author-email: j.snellenburg@gmail.com,
+                    joern.weissenborn@gmail.com
+License: GPLv3
+Download-URL: https://github.com/glotaran/lmfit-varpro/tarball/master
+Description: [![latest release](https://pypip.in/version/lmfit-varpro/badge.svg)](https://pypi.org/project/lmfit-varpro/)
+        [![Build Status](https://travis-ci.org/glotaran/lmfit-varpro.svg?branch=master)](https://travis-ci.org/glotaran/lmfit-varpro)
+        [![Build Status](https://ci.appveyor.com/api/projects/status/github/glotaran/lmfit-varpro?branch=master&svg=true)](https://ci.appveyor.com/project/jsnel/lmfit-varpro?branch=master)
+        [![Documentation Status](https://readthedocs.org/projects/lmfit-varpro/badge/?version=latest)](https://lmfit-varpro.readthedocs.io/en/latest/?badge=latest)
+        [![Coverage Status](https://coveralls.io/repos/github/glotaran/lmfit-varpro/badge.svg?branch=master)](https://coveralls.io/github/glotaran/lmfit-varpro?branch=master)
+        
+        ### Warning
+        This project is still in its pre-alpha phase and undergoing rapid development,
+        including changes to the core API, thus it is *not* production ready.
+        ### Additional warning for scientists
+        The algorithms provided by this package still need to be validated and reviewed,
+        pending the official release it should not be used in scientific publications.
+        
+        # lmfit-varpro
+        Python-lmfit based implementation of variable projection
+        
+        ## Credits
+        
+        The credits can be found in the documentations
+        `credits section <https://lmfit-varpro.readthedocs.io/en/latest/credits.html>`_
+Keywords: alpha
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown

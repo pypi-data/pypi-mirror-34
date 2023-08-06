@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: comodo_rest_api
+Version: 0.1.2
+Summary: Simpler python access to the Comodo CCM REST API
+Home-page: https://github.com/erinn/comodo_rest_api
+Author: Erinn Looney-Triggs
+Author-email: erinn.looneytriggs@gmail.com
+License: AGPL-3.0
+Description: 
+        comodo_rest_api provides a wrapper around the Comodo REST API to allow for simple(r) interaction
+        with their API.
+        
+        All responses are in jsend format for simplicity: https://labs.omniti.com/labs/jsend
+        
+        
+        
+        
+Keywords: comodo-rest-api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4, <4
+Provides-Extra: test

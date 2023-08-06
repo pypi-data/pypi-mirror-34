@@ -1,0 +1,3 @@
+[console_scripts]
+wheelock = wheelock:main
+

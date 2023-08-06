@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: security_group_auditor
+Version: 0.1
+Summary: A Python security group auditor that will scan all your AWS regions and will return the security group rules in a CSV file to easily audit 
+Home-page: https://github.com/vmanikes/AWS_security_group_auditor
+Author: Venkata S S K M Chaitanya
+Author-email: kchaitanya39@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

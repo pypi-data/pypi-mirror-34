@@ -1,0 +1,15 @@
+numpy
+xarray>=0.10
+pandas
+dask
+cytoolz
+toolz
+affine
+
+[dev]
+pytest
+sphinx
+sphinx_rtd_theme
+
+[optional]
+rasterio>=1

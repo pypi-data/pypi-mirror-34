@@ -1,0 +1,1 @@
+DELETE FROM `write_forbidden_field` WHERE `write_forbidden_field_id`='150';

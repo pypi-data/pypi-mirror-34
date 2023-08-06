@@ -1,0 +1,10 @@
+future
+mock<=1.0.1
+portpicker
+psutil>=5.4.4
+pytz
+pyyaml
+timeout_decorator
+pyserial
+enum34
+futures

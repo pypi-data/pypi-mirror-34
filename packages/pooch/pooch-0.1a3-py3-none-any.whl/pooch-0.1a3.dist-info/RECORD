@@ -1,0 +1,16 @@
+pooch/__init__.py,sha256=mRetje9giwCgbZuFMXKJA98IShfYFSgTngg33TveC2U,1268
+pooch/_version.py,sha256=Xjkf8h6TJG0BsDau_TH-W7mZfzUJLdcZgXcq_1s0l10,498
+pooch/core.py,sha256=qBXv3Gfw7wCUYgVj9xQF5syLmYMOKl7_-vBiUX8lXqk,12030
+pooch/utils.py,sha256=dF05o3FXh8ZeQhZ_rt-zKDX8Cg9S4tOC0AV8J_U2TqA,3721
+pooch/version.py,sha256=_NvOMmDe5-akC5DIa0mpunOtKJSs0w48bNj-X7VAxWM,226
+pooch/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pooch/tests/test_core.py,sha256=Ht5h0uh7H0hv9wypgRV45KCDWykgFYrscjOrdiejr28,4146
+pooch/tests/test_integration.py,sha256=iRHqGKzr0_BJvVc6h2-LB7zW9a-8CBA45k1LI10cjtg,1687
+pooch/tests/utils.py,sha256=KFZpDFED1OtCAQpDIQW43x2q49CBq9X5VpMNxPjSbqg,1396
+pooch/tests/data/registry-invalid.txt,sha256=Wq2FfAqMLLEJKY5aek0aic7uFo2b3PapuTLP03VON10,122
+pooch/tests/data/registry.txt,sha256=7hpJuOzSzXypDr6cDZcE9eK5X390ab6oakjgIAg0cII,79
+pooch/tests/data/tiny-data.txt,sha256=uu4IlNuhSxIIXqyyBChLl-Ni9PPlpYB2k8yQ70FcGy0,59
+pooch-0.1a3.dist-info/METADATA,sha256=62dNcCx0STEBZAS72VzRLt49hLgbxS4q2-rwHY2oH-U,7243
+pooch-0.1a3.dist-info/RECORD,,
+pooch-0.1a3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pooch-0.1a3.dist-info/top_level.txt,sha256=obom5VVMRubsFhFGNJpD4mAEkAVBqEa-xSVQ5uxNNQU,6

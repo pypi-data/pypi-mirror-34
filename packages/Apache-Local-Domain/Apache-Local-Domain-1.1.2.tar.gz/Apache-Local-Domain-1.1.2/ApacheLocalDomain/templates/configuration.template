@@ -1,0 +1,21 @@
+# DEBUG
+DEBUG = {DEBUG}
+
+# apache2 modules PATH
+APACHE2_MODULES_PATH = "{APACHE2_MODULES_PATH}"
+
+# HOSTS file
+HOSTS = '{HOSTS}'
+
+# VirtualHosts PATH
+VIRTUAL_HOSTS_ENABLED_PATH = "{VIRTUAL_HOSTS_ENABLED_PATH}"
+VIRTUAL_HOSTS_AVAILABLE_PATH = "{VIRTUAL_HOSTS_AVAILABLE_PATH}"
+
+# VirtualHost file Extension
+EXTENSION = "{EXTENSION}"
+
+# Template Informations
+TAMPLATES_FOLDER = "templates"
+PHP_TEMPLATE_NAME = "php.template"
+HOST_TEMPLATE_NAME = "host.template"
+WSGI_TEMPLATE_NAME = "wsgi.template"

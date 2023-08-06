@@ -1,0 +1,3 @@
+[console_scripts]
+apacheld = ApacheLocalDomain.app.cli:cli
+

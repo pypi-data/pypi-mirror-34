@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyawair/__init__.py
+pyawair/auth.py
+pyawair/data.py
+pyawair/devices.py
+pyawair/objects.py
+pyawair/orginizations.py
+pyawair.egg-info/PKG-INFO
+pyawair.egg-info/SOURCES.txt
+pyawair.egg-info/dependency_links.txt
+pyawair.egg-info/entry_points.txt
+pyawair.egg-info/requires.txt
+pyawair.egg-info/top_level.txt

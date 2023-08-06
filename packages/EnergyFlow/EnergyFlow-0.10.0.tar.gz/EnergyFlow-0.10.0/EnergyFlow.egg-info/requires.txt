@@ -1,0 +1,9 @@
+numpy>=1.14.0
+six>=1.10.0
+
+[examples]
+keras
+scikit-learn
+
+[generation]
+python-igraph

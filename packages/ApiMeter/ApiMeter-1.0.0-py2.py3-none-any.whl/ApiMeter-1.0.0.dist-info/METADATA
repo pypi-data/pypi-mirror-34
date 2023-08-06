@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: ApiMeter
+Version: 1.0.0
+Summary: One-stop solution for HTTP(S) testing.
+Home-page: https://git.umlife.net/qa/YmApiMeter
+Author: tester
+Author-email: tester@youmi.net
+License: MIT
+Keywords: HTTP api test requests locust
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: PyYAML
+Requires-Dist: Jinja2
+Requires-Dist: har2case
+Requires-Dist: colorama
+Requires-Dist: colorlog
+Requires-Dist: requests-toolbelt
+
+# ApiMeter
+
+ApiMeter 是一款面向 HTTP(S) 协议的通用测试框架，只需编写维护一份 YAML/JSON 脚本，即可实现自动化测试、性能测试、线上监控、持续集成等多种测试需求。基于 Python 开发，支持 Python 2.7和3.3以上版本，可运行于 macOS、Linux、Windows平台。 
+
+### 安装方式
+```
+pip install ApiMeter
+```
+
+### 版本升级
+```
+pip install -U ApiMeter
+```
+
+### 使用方式
+在 ApiMeter 安裝成功后，可以使用 apimeter、ymapi、ymapimeter 命令进行调用，如：
+```
+$ apimeter -V
+1.0.0
+
+$ ymapi -V
+1.0.0
+
+$ ymapimeter -V
+1.0.0
+
+$ apimeter -h
+usage: main.py [-h] [-V] [--no-html-report]
+               [--html-report-name HTML_REPORT_NAME]
+               [--html-report-template HTML_REPORT_TEMPLATE]
+               [--log-level LOG_LEVEL] [--log-file LOG_FILE]
+               [--dot-env-path DOT_ENV_PATH] [--failfast]
+               [--startproject STARTPROJECT]
+               [--validate [VALIDATE [VALIDATE ...]]]
+               [--prettify [PRETTIFY [PRETTIFY ...]]]
+               [testset_paths [testset_paths ...]]
+
+One-stop solution for HTTP(S) testing.
+
+positional arguments:
+  testset_paths         testset file path
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -V, --version         show version
+  --no-html-report      do not generate html report.
+  --html-report-name HTML_REPORT_NAME
+                        specify html report name, only effective when
+                        generating html report.
+  --html-report-template HTML_REPORT_TEMPLATE
+                        specify html report template path.
+  --log-level LOG_LEVEL
+                        Specify logging level, default is INFO.
+  --log-file LOG_FILE   Write logs to specified file path.
+  --dot-env-path DOT_ENV_PATH
+                        Specify .env file path, which is useful for keeping
+                        production credentials.
+  --failfast            Stop the test run on the first error or failure.
+  --startproject STARTPROJECT
+                        Specify new project name.
+  --validate [VALIDATE [VALIDATE ...]]
+                        Validate JSON testset format.
+  --prettify [PRETTIFY [PRETTIFY ...]]
+                        Prettify JSON testset format.
+
+$ ymapimeter test_file.yml or test_file.ymal or test_file.json or test_dir/
+test result and report ...
+```     
+
+### 开发者模式
+ApiMeter使用 pipenv 对依赖包进行管理，如果你没有安装，安装命令如下：
+```
+pip install pipenv
+```
+拉取 ApiMeter 源代码：
+```
+git clone git@git.umlife.net:qa/YmApiMeter.git
+```
+进入仓库目录，安装依赖：
+```
+cd YmApiMeter/
+pipenv install --dev
+```
+进入测试目录，运行单元测试：
+```
+cd tests/
+pipenv run python -m unittest discover -t 仓库目录路径
+```
+开发调试，运行方式：
+```
+pipenv run python main.py apimeter -h
+```
+
+### 一键上传 PYPI 并打 TAG
+每次在 __about__.py 更新版本号后，运行以下命令，实现自动化打包上传 PYPI ，同时根据版本号自动打 TAG 并推送到仓库：
+```
+pipenv run python setup.py upload
+```
+

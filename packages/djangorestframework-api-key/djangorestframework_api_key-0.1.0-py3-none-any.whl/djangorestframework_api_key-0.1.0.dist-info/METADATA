@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: djangorestframework-api-key
+Version: 0.1.0
+Summary: Web API permissions for the Django REST Framework
+Home-page: https://github.com/florimondmanca/djangorestframework-api-key
+Author: Florimond Manca
+Author-email: florimond.manca@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Description-Content-Type: text/markdown
+
+# djangorestframework-api-key [![travis][travis-image]][travis-url]
+
+🔐 Web API permissions for the [Django REST Framework][rest-framework-url].
+
+This project is based on (yet not a fork of) the unmaintained [django-rest-framework-api-key][django-rest-framework-api-key-url] project.
+
+## Supported versions
+
+- Python: 3.4, 3.5, 3.6, 3.7
+- Django: 1.11 (not on Python 3.7), 2.0
+- Django REST Framework: 3.8+
+
+## Install
+
+- Install from PyPI:
+
+```
+$ pip install djangorestframework-api-key
+```
+
+- Add to your `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+  # ...,
+  'rest_framework_api_key',
+]
+```
+
+Run the included migrations:
+
+```
+$ python manage.py migrate
+```
+
+## Usage
+
+Also see [example project][example-project-url].
+
+### Permission classes
+
+This package provides permission classes to allow external clients to use your API.
+
+The `HasAPIKey` permission class requires **all clients** to provide a valid API key, regardless of whether they provide authentication details.
+
+If you want to allow clients to provide either an API key or authentication credentials, use the utility `HasAPIKeyOrIsAuthenticated` permission class instead.
+
+As with every permission class, you can either use them globally:
+
+```python
+# settings.py
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework_api_key.HasAPIKey',
+    ]
+}
+```
+
+or on a per-view basis:
+
+```python
+# views.py
+from rest_framework_api_key.permissions import HasAPIKey
+from rest_framework.views import APIView
+
+class UserListView(APIView):
+    permission_classes = (HasAPIKey,)
+    # ...
+```
+
+Refer to [DRF Docs - Setting the permission policy][setting-the-permission-policy-url] for more information on using permission classes.
+
+## Development
+
+### Install
+
+Installing locally requires [Pipenv][pipenv-url] and Python 3.7.
+
+1. Fork the repo
+2. Clone it on your local
+3. Install dependencies with Pipenv: `$ pipenv install`
+4. Activate using `$ pipenv shell`
+
+### Tests
+
+Run the tests using:
+
+```bash
+$ python runtests.py
+```
+
+### Generating migrations
+
+This package includes migrations. To regenerate them in case of changes without setting up a Django project, run:
+
+```bash
+$ python makemigrations.py rest_framework_api_key
+```
+
+### CI/CD
+
+Travis CI is in use to automatically:
+
+- Test the package on supported versions of Python and Django.
+- Deploy tagged commits to PyPI.
+
+Refer to `.travis.yml` for more information.
+
+
+<!-- URLs -->
+
+[example-project-url]: https://github.com/florimondmanca/djangorestframework-api-key-example
+
+[rest-framework-url]: http://www.django-rest-framework.org
+
+[pipenv-url]: https://github.com/pypa/pipenv
+
+[setting-the-permission-policy-url]: http://www.django-rest-framework.org/api-guide/permissions/#setting-the-permission-policy
+
+[django-rest-framework-api-key-url]: https://github.com/manosim/django-rest-framework-api-key
+
+[travis-image]: https://travis-ci.org/florimondmanca/djangorestframework-api-key.svg?branch=master
+
+[travis-url]: https://travis-ci.org/florimondmanca/djangorestframework-api-key
+
+

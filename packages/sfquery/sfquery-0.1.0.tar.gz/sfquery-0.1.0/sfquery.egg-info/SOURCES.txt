@@ -1,0 +1,9 @@
+setup.py
+sfquery/__init__.py
+sfquery/interface.py
+sfquery/sfquery.py
+sfquery.egg-info/PKG-INFO
+sfquery.egg-info/SOURCES.txt
+sfquery.egg-info/dependency_links.txt
+sfquery.egg-info/requires.txt
+sfquery.egg-info/top_level.txt

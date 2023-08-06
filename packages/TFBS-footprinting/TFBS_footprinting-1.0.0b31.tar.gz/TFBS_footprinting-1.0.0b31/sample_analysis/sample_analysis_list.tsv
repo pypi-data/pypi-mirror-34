@@ -1,0 +1,21 @@
+ens_tid	target tfs filename	target species	species group	coverage	before TSS	after TSS	locality threshold	strand threshold	num tfs to plot	output dir	pval
+ENST00000619087	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	-6	56	5	1	10		0.01
+ENST00000617185	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	59	-9	5	1	10		0.01
+ENST00000617185	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	64	-14	5	1	10		0.01
+ENST00000317881	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	373	-323	5	1	10		0.01
+ENST00000317881	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	260	-210	5	1	10		0.01
+ENST00000317881	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	421	-371	5	1	10		0.01
+ENST00000343932	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	146	-96	5	1	10		0.01
+ENST00000343932	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	146	-96	5	1	10		0.01
+ENST00000563987	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	131	-81	5	1	10		0.01
+ENST00000592320	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	126	-76	5	1	10		0.01
+ENST00000354785	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	87	-37	5	1	10		0.01
+ENST00000264162	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	112	-62	5	1	10		0.01
+ENST00000301464	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	-118	168	5	1	10		0.01
+ENST00000337514	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	219	-169	5	1	10		0.01
+ENST00000337514	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	56	-6	5	1	10		0.01
+ENST00000399256	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	-714	764	5	1	10		0.01
+ENST00000429925	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	30	20	5	1	10		0.01
+ENST00000429925	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	30	20	5	1	10		0.01
+ENST00000381330	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	111	-61	5	1	10		0.01
+ENST00000592383	./sample_jaspar_tf_ids.txt	homo_sapiens	mammals	low	243	-193	5	1	10		0.01

@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: uclmr-jack
+Version: 0.2.0
+Summary: Jack the Reader is a Python framework for Machine Reading
+Home-page: https://github.com/uclmr/jack
+Author: UCL Machine Reading
+Author-email: s.riedel@cs.ucl.ac.uk
+License: MIT
+Keywords: tensorflow machine learning natural language processing question answering
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Provides-Extra: tf
+Provides-Extra: tf_gpu
+Provides-Extra: torch
+Requires-Dist: jsonschema
+Requires-Dist: numpy
+Requires-Dist: parse
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: typing
+Requires-Dist: sacred (==0.7.2)
+Requires-Dist: sqlalchemy
+Requires-Dist: pyyaml
+Requires-Dist: progressbar2
+Requires-Dist: spacy (==1.9)
+Requires-Dist: diskcache
+Requires-Dist: pytest
+Requires-Dist: pytest-runner
+Requires-Dist: pytest-xdist
+Requires-Dist: pytest-pep8
+Requires-Dist: pytest-xdist
+Requires-Dist: pytest-cov
+Requires-Dist: codecov
+Provides-Extra: tf
+Requires-Dist: tensorflow (==1.8.0); extra == 'tf'
+Provides-Extra: tf_gpu
+Requires-Dist: tensorflow-gpu (==1.8.0); extra == 'tf_gpu'
+Provides-Extra: torch
+Requires-Dist: torch; extra == 'torch'
+
+UNKNOWN
+
+

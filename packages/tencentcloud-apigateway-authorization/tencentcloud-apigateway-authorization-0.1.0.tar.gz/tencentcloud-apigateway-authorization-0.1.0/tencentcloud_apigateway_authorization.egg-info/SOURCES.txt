@@ -1,0 +1,9 @@
+README.rst
+setup.py
+apigateway/__init__.py
+apigateway/__version__.py
+apigateway/auth.py
+tencentcloud_apigateway_authorization.egg-info/PKG-INFO
+tencentcloud_apigateway_authorization.egg-info/SOURCES.txt
+tencentcloud_apigateway_authorization.egg-info/dependency_links.txt
+tencentcloud_apigateway_authorization.egg-info/top_level.txt

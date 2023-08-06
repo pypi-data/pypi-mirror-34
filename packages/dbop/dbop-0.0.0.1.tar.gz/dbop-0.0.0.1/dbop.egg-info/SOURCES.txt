@@ -1,0 +1,10 @@
+README.md
+setup.py
+dbop/__init__.py
+dbop/dbop.py
+dbop.egg-info/PKG-INFO
+dbop.egg-info/SOURCES.txt
+dbop.egg-info/dependency_links.txt
+dbop.egg-info/entry_points.txt
+dbop.egg-info/requires.txt
+dbop.egg-info/top_level.txt

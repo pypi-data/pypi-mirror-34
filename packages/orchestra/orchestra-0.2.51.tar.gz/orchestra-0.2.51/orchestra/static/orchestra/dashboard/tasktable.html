@@ -1,0 +1,71 @@
+<section class="section-panel tasks-section"
+         st-table="displayedTasks"
+         st-safe-src="vm.tasktable.tasks">
+  <div class="container-fluid">
+    <div class="row section-header">
+      <div class="col-lg-10">
+        <h3>
+          {{vm.tasktable.label}} ({{ vm.tasktable.tasks.length || 0 }})
+          <button type="button"
+                    ng-if="vm.enableNewTaskButtons"
+                    ng-click="vm.newTask('entry_level')"
+                    ng-class="{'disabled': vm.orchestraTasks.preventNew ||
+                                           vm.noTaskTimer}"
+                    class="btn btn-primary btn-new-entry-task">
+              New delivery task
+            </button>
+            <button type="button"
+                    ng-if="vm.orchestraTasks.reviewerStatus &&
+                           vm.enableNewTaskButtons"
+                    ng-click="vm.newTask('reviewer')"
+                    ng-class="{'disabled': vm.orchestraTasks.preventNew ||
+                                           vm.noTaskTimer}"
+                    class="btn btn-primary btn-new-review-task">
+              New review task
+            </button>
+            <span class="warning-message"
+                  ng-show="vm.newTaskError && !vm.orchestraTasks.preventNew">
+              No tasks available at the moment
+            </span>
+            <i class="fa fa-spinner fa-spin" ng-show="vm.waiting"></i>
+        </h3>
+
+      </div>
+      <div class="tasks-search-bar-container col-lg-2">
+        <div class="tasks-search-bar">
+          <i class="fa fa-search"></i>
+          <input st-search="" placeholder="Search..." type="text"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+          <table ng-if="vm.tasktable.tasks.length > 0"
+                 class="table table-striped">
+            <thead>
+              <tr>
+                <th st-sort="project">Project</th>
+                <th st-sort="step">Task</th>
+                <th st-sort="detail">Details</th>
+                <th st-sort="next_todo_dict.description">Next steps</th>
+                <th st-sort="next_todo_dict.start_by_datetime">Start by</th>
+                <th st-sort="next_todo_dict.due_datetime">Due on</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr
+                 ng-class="{'task-row':true, 'danger': vm.isInDanger(task)}"
+                 ng-repeat="task in displayedTasks"
+                 ng-click="vm.openTask(task)">
+                <td>{{task.project}}</td>
+                <td>{{task.step}}</td>
+                <td>{{task.detail|limitTo:50}}{{task.detail.length > 50 ? '...' : ''}}</td>
+                <td>{{task.next_todo_dict.description|limitTo:50}}{{task.next_todo_dict.description.length > 50 ? '...' : ''}}</td>
+                <td><datetime-display datetime="task.next_todo_dict.start_by_datetime" show-time="false" /></td>
+                <td><datetime-display datetime="task.next_todo_dict.due_datetime" show-time="false" /></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</section>

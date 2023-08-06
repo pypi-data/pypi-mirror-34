@@ -1,0 +1,11 @@
+#!python
+# filename: i_love_sam
+from __future__ import print_function
+from i_love_sam.i_love import love
+
+
+
+
+
+if __name__ == '__main__':
+    love()

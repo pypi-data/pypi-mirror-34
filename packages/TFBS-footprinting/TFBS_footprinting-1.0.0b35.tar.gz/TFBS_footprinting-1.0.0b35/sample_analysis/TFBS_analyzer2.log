@@ -1,0 +1,889 @@
+INFO:root:2018-08-10 12:28:08 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:28:08 ENST00000426431
+INFO:root:2018-08-10 12:28:08 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:29:19 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:29:19 ENST00000426431
+INFO:root:2018-08-10 12:29:19 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:29:58 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:29:58 ENST00000426431
+INFO:root:2018-08-10 12:29:58 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:46 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:30:46 ENST00000426431
+INFO:root:2018-08-10 12:30:46 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:46 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:30:46 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53381539-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+WARNING:root:2018-08-10 12:30:46 Cannot request a slice whose start is greater than its end. Start: 53381539. End: 53380738
+WARNING:root:2018-08-10 12:30:46 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:46 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:30:46 ENST00000426431
+INFO:root:2018-08-10 12:30:46 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:46 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:30:46 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53382639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+WARNING:root:2018-08-10 12:30:47 Cannot request a slice whose start is greater than its end. Start: 53382639. End: 53380738
+WARNING:root:2018-08-10 12:30:47 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:47 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 5, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:30:47 ENST00000426431
+INFO:root:2018-08-10 12:30:47 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:47 transcript_dict already exists: loading
+INFO:root:2018-08-10 12:30:47 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53381539-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+WARNING:root:2018-08-10 12:30:47 Cannot request a slice whose start is greater than its end. Start: 53381539. End: 53380738
+WARNING:root:2018-08-10 12:30:47 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:47 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.001]
+INFO:root:2018-08-10 12:30:47 ENST00000426431
+INFO:root:2018-08-10 12:30:47 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:47 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:30:48 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53381539-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+WARNING:root:2018-08-10 12:30:48 Cannot request a slice whose start is greater than its end. Start: 53381539. End: 53380738
+WARNING:root:2018-08-10 12:30:48 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:48 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'high', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:30:48 ENST00000426431
+INFO:root:2018-08-10 12:30:48 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:48 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:30:48 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53381539-53380738:1?method=EPO;compact=1;content-type=application/json;species_set_group=mammals
+WARNING:root:2018-08-10 12:30:49 Cannot request a slice whose start is greater than its end. Start: 53381539. End: 53380738
+WARNING:root:2018-08-10 12:30:49 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:49 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'primates', 'high', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:30:49 ENST00000426431
+INFO:root:2018-08-10 12:30:49 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:30:49 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:30:49 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53381539-53380738:1?method=EPO;compact=1;content-type=application/json;species_set_group=primates
+WARNING:root:2018-08-10 12:30:49 Cannot request a slice whose start is greater than its end. Start: 53381539. End: 53380738
+WARNING:root:2018-08-10 12:30:49 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:49 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000380152', '', 'homo_sapiens', 'mammals', 'low', -900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.0001]
+INFO:root:2018-08-10 12:30:49 ENST00000380152
+INFO:root:2018-08-10 12:30:49 http://rest.ensembl.org/archive/id/ENST00000380152?content-type=application/json
+INFO:root:2018-08-10 12:30:49 http://rest.ensembl.org/overlap/id/ENST00000380152?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:30:49 http://rest.ensembl.org/alignment/block/region/homo_sapiens/13:32316374-32315573:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+WARNING:root:2018-08-10 12:30:50 Cannot request a slice whose start is greater than its end. Start: 32316374. End: 32315573
+WARNING:root:2018-08-10 12:30:50 No ensembl alignment, or size is zero
+INFO:root:
+
+INFO:root:2018-08-10 12:30:50 total time for 7 transcripts: 10.2936589718 seconds
+
+
+INFO:root:2018-08-10 12:35:17 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:35:17 ENST00000426431
+INFO:root:2018-08-10 12:35:17 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:35:19 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:35:19 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 12:35:24 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 12:35:28 total time for this transcript: 3.09916687012 seconds
+INFO:root:
+
+INFO:root:2018-08-10 12:44:11 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:44:11 ENST00000426431
+INFO:root:2018-08-10 12:44:11 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:44:12 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:44:12 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53378639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 12:44:14 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53378639-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 12:44:20 total time for this transcript: 4.69586706161 seconds
+INFO:root:2018-08-10 12:52:30 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:52:30 ENST00000426431
+INFO:root:2018-08-10 12:52:30 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:52:30 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 12:52:30 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 12:52:32 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 12:52:36 total time for this transcript: 3.10189986229 seconds
+INFO:root:2018-08-10 12:54:02 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:54:02 ENST00000426431
+INFO:root:2018-08-10 12:54:02 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:54:02 transcript_dict already exists: loading
+INFO:root:2018-08-10 12:54:02 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 12:54:03 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 12:54:03 total time for this transcript: 0.68456697464 seconds
+INFO:root:2018-08-10 12:56:10 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 12:56:10 ENST00000426431
+INFO:root:2018-08-10 12:56:10 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 12:56:11 transcript_dict already exists: loading
+INFO:root:2018-08-10 12:56:11 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 12:56:11 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 12:56:12 total time for this transcript: 0.694576025009 seconds
+INFO:root:
+
+INFO:root:2018-08-10 13:04:46 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 13:04:46 ENST00000426431
+INFO:root:2018-08-10 13:04:46 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 13:04:46 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 13:04:46 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53378639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 13:04:52 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53378639-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 13:04:57 total time for this transcript: 4.71284794807 seconds
+INFO:root:2018-08-10 13:16:25 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 13:16:25 ENST00000426431
+INFO:root:2018-08-10 13:16:25 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 13:16:25 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 13:16:26 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 13:16:30 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 13:16:33 total time for this transcript: 3.11585497856 seconds
+INFO:root:2018-08-10 13:31:23 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 13:31:23 ENST00000426431
+INFO:root:2018-08-10 13:31:23 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 13:31:24 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 13:31:24 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 13:31:29 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 13:31:33 total time for this transcript: 3.2123260498 seconds
+INFO:root:2018-08-10 13:46:52 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 13:46:52 ENST00000426431
+INFO:root:2018-08-10 13:46:52 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 13:46:52 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 13:46:52 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 13:46:54 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 13:46:58 total time for this transcript: 3.1133210659 seconds
+INFO:root:2018-08-10 13:49:22 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 13:49:22 ENST00000426431
+INFO:root:2018-08-10 13:49:22 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 13:49:22 transcript_dict already exists: loading
+INFO:root:2018-08-10 13:49:22 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 13:49:22 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 13:49:23 total time for this transcript: 0.691471815109 seconds
+INFO:root:2018-08-10 14:47:53 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 14:47:53 ENST00000426431
+INFO:root:2018-08-10 14:47:53 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 14:47:53 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 14:47:55 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 14:49:20 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 14:49:24 total time for this transcript: 3.1586728096 seconds
+INFO:root:2018-08-10 14:51:30 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 14:51:30 ENST00000426431
+INFO:root:2018-08-10 14:51:30 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 14:51:31 transcript_dict already exists: loading
+INFO:root:2018-08-10 14:52:56 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 14:52:56 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 14:52:57 total time for this transcript: 0.672363042831 seconds
+INFO:root:2018-08-10 14:54:25 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 14:54:25 ENST00000426431
+INFO:root:2018-08-10 14:54:25 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 14:54:25 transcript_dict already exists: loading
+INFO:root:2018-08-10 14:55:48 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 14:55:48 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 14:55:49 total time for this transcript: 0.680772066116 seconds
+INFO:root:2018-08-10 14:57:28 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 14:57:28 ENST00000426431
+INFO:root:2018-08-10 14:57:28 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 14:57:30 transcript_dict already exists: loading
+INFO:root:2018-08-10 14:58:48 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 14:58:48 ENST00000426431
+INFO:root:2018-08-10 14:58:48 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 14:58:48 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:00:12 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:00:12 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:00:13 total time for this transcript: 0.687399148941 seconds
+INFO:root:2018-08-10 15:02:03 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:02:03 ENST00000426431
+INFO:root:2018-08-10 15:02:03 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:02:04 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:03:28 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:03:28 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:03:29 total time for this transcript: 0.678405046463 seconds
+INFO:root:2018-08-10 15:05:13 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:05:13 ENST00000426431
+INFO:root:2018-08-10 15:05:13 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:05:14 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:06:37 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:06:37 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:06:37 total time for this transcript: 0.681875944138 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:06:52 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:06:52 ENST00000426431
+INFO:root:2018-08-10 15:06:52 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:06:52 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 15:06:53 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53378639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 15:11:08 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53378639-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 15:11:14 total time for this transcript: 4.62514710426 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:11:45 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 600, -100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:11:45 ENST00000426431
+INFO:root:2018-08-10 15:11:45 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:11:45 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 15:11:46 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53380039-53380538:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 15:11:52 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53380039-53380538:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 15:11:55 total time for this transcript: 1.35193490982 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:12:02 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 5, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:12:02 ENST00000426431
+INFO:root:2018-08-10 15:12:02 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:12:03 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:13:27 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:13:27 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:13:27 total time for this transcript: 0.0334429740906 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:13:42 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.001]
+INFO:root:2018-08-10 15:13:42 ENST00000426431
+INFO:root:2018-08-10 15:13:42 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:13:42 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 15:13:43 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 15:15:10 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 15:15:14 total time for this transcript: 2.11426401138 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:15:19 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'high', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:15:19 ENST00000426431
+INFO:root:2018-08-10 15:15:19 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:15:20 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 15:15:20 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 15:15:41 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 15:15:44 total time for this transcript: 2.4779510498 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:15:59 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'primates', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:15:59 ENST00000426431
+INFO:root:2018-08-10 15:15:59 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:16:00 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 15:16:01 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=primates
+INFO:root:2018-08-10 15:16:21 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 15:16:24 total time for this transcript: 2.41148805618 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:16:39 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000380152', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.0001]
+INFO:root:2018-08-10 15:16:39 ENST00000380152
+INFO:root:2018-08-10 15:16:39 http://rest.ensembl.org/archive/id/ENST00000380152?content-type=application/json
+INFO:root:2018-08-10 15:16:39 http://rest.ensembl.org/overlap/id/ENST00000380152?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 15:16:40 http://rest.ensembl.org/alignment/block/region/homo_sapiens/13:32314574-32315573:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 15:20:05 http://rest.ensembl.org/overlap/region/homo_sapiens/13:32314574-32315573:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 15:36:57 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:36:57 ENST00000426431
+INFO:root:2018-08-10 15:36:57 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:36:57 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:38:23 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:38:23 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:38:24 total time for this transcript: 0.686328887939 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:38:34 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:38:34 ENST00000426431
+INFO:root:2018-08-10 15:38:34 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:38:34 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:42:42 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:42:43 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:42:43 total time for this transcript: 0.0579009056091 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:43:05 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 600, -100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:43:05 ENST00000426431
+INFO:root:2018-08-10 15:43:05 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:43:05 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:43:10 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:43:10 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:43:10 total time for this transcript: 0.0187199115753 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:43:15 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:43:15 ENST00000426431
+INFO:root:2018-08-10 15:43:15 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:43:15 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:44:40 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:44:40 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:44:40 total time for this transcript: 0.0345349311829 seconds
+INFO:root:2018-08-10 15:45:51 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:45:51 ENST00000426431
+INFO:root:2018-08-10 15:45:51 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:45:51 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:47:15 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:47:15 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:47:16 total time for this transcript: 0.700481176376 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:47:26 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:47:26 ENST00000426431
+INFO:root:2018-08-10 15:47:26 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:47:26 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:48:56 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:48:56 ENST00000426431
+INFO:root:2018-08-10 15:48:56 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:48:56 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:50:20 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:50:20 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:50:21 total time for this transcript: 0.705214977264 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:50:31 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:50:31 ENST00000426431
+INFO:root:2018-08-10 15:50:31 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:50:31 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:52:27 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:52:27 ENST00000426431
+INFO:root:2018-08-10 15:52:27 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:52:28 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:53:02 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:53:02 ENST00000426431
+INFO:root:2018-08-10 15:53:02 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:53:02 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:54:15 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:54:15 ENST00000426431
+INFO:root:2018-08-10 15:54:15 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:54:15 transcript_dict already exists: loading
+INFO:root:2018-08-10 15:55:41 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 15:55:41 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 15:55:41 total time for this transcript: 0.681273937225 seconds
+INFO:root:
+
+INFO:root:2018-08-10 15:55:52 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 15:55:52 ENST00000426431
+INFO:root:2018-08-10 15:55:52 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 15:55:53 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:00:01 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:00:02 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 16:00:02 total time for this transcript: 0.0599901676178 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:00:24 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 600, -100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:00:24 ENST00000426431
+INFO:root:2018-08-10 16:00:24 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:00:24 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:00:29 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:00:29 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 16:00:29 total time for this transcript: 0.0209181308746 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:00:34 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:00:34 ENST00000426431
+INFO:root:2018-08-10 16:00:34 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:00:34 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:01:58 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:01:58 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 16:01:58 total time for this transcript: 0.0366010665894 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:02:08 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.001]
+INFO:root:2018-08-10 16:02:08 ENST00000426431
+INFO:root:2018-08-10 16:02:08 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:02:08 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:03:33 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:03:33 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 16:03:33 total time for this transcript: 0.00543999671936 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:03:38 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'high', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:03:38 ENST00000426431
+INFO:root:2018-08-10 16:03:38 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:03:38 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:03:59 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:03:59 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 16:03:59 total time for this transcript: 0.0349199771881 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:04:09 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'primates', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:04:09 ENST00000426431
+INFO:root:2018-08-10 16:04:09 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:04:10 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:04:28 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:04:29 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 16:04:29 total time for this transcript: 0.0372841358185 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:04:39 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000380152', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.001]
+INFO:root:2018-08-10 16:04:39 ENST00000380152
+INFO:root:2018-08-10 16:04:39 http://rest.ensembl.org/archive/id/ENST00000380152?content-type=application/json
+INFO:root:2018-08-10 16:04:39 http://rest.ensembl.org/overlap/id/ENST00000380152?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 16:04:39 http://rest.ensembl.org/alignment/block/region/homo_sapiens/13:32314574-32315573:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 16:08:01 http://rest.ensembl.org/overlap/region/homo_sapiens/13:32314574-32315573:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 16:08:04 total time for this transcript: 2.28555989265 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:08:08 total time for 8 transcripts: 838.650825977 seconds
+
+
+INFO:root:2018-08-10 16:55:19 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:55:19 ENST00000426431
+INFO:root:2018-08-10 16:55:19 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:55:20 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 16:55:20 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 16:55:24 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 16:56:23 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:56:23 ENST00000426431
+INFO:root:2018-08-10 16:56:23 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:56:24 transcript_dict already exists: loading
+INFO:root:2018-08-10 16:56:24 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 16:56:28 total time for this transcript: 3.06769299507 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:56:39 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:56:39 ENST00000426431
+INFO:root:2018-08-10 16:56:39 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:56:39 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 16:56:40 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53378639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 16:56:47 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53378639-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 16:56:54 total time for this transcript: 4.89123797417 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:57:18 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 600, -100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:57:18 ENST00000426431
+INFO:root:2018-08-10 16:57:18 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:57:18 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 16:57:19 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53380039-53380538:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 16:58:22 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:58:22 ENST00000426431
+INFO:root:2018-08-10 16:58:22 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:58:22 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 16:58:23 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 16:58:34 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 16:58:39 total time for this transcript: 3.14948892593 seconds
+INFO:root:
+
+INFO:root:2018-08-10 16:58:49 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 16:58:49 ENST00000426431
+INFO:root:2018-08-10 16:58:49 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 16:58:50 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 16:58:51 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53378639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:00:28 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:00:28 ENST00000426431
+INFO:root:2018-08-10 17:00:28 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:00:28 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:00:29 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:00:32 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:00:36 total time for this transcript: 3.08740115166 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:00:46 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 2000, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:00:46 ENST00000426431
+INFO:root:2018-08-10 17:00:46 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:00:46 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:00:47 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53378639-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:00:50 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53378639-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:00:57 total time for this transcript: 5.03289008141 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:01:19 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 600, -100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:01:19 ENST00000426431
+INFO:root:2018-08-10 17:01:19 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:01:21 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:01:21 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53380039-53380538:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:01:22 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53380039-53380538:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:01:25 total time for this transcript: 1.34776186943 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:01:30 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:01:30 ENST00000426431
+INFO:root:2018-08-10 17:01:30 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:01:30 transcript_dict already exists: loading
+INFO:root:2018-08-10 17:01:30 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 17:01:31 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 17:01:31 total time for this transcript: 0.0349590778351 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:01:41 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.001]
+INFO:root:2018-08-10 17:01:41 ENST00000426431
+INFO:root:2018-08-10 17:01:41 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:01:41 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:01:41 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:01:43 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:01:47 total time for this transcript: 2.33878803253 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:01:52 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'mammals', 'high', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:01:52 ENST00000426431
+INFO:root:2018-08-10 17:01:52 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:01:53 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:01:54 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:01:54 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:01:57 total time for this transcript: 2.42427492142 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:02:07 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000426431', '', 'homo_sapiens', 'primates', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:02:07 ENST00000426431
+INFO:root:2018-08-10 17:02:07 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:02:08 http://rest.ensembl.org/overlap/id/ENST00000426431?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:02:08 http://rest.ensembl.org/alignment/block/region/homo_sapiens/12:53379739-53380738:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=primates
+INFO:root:2018-08-10 17:02:09 http://rest.ensembl.org/overlap/region/homo_sapiens/12:53379739-53380738:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:02:12 total time for this transcript: 2.45859503746 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:02:22 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_analysis_list.csv', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_analysis_list.csv', 'ENST00000380152', '', 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.001]
+INFO:root:2018-08-10 17:02:22 ENST00000380152
+INFO:root:2018-08-10 17:02:22 http://rest.ensembl.org/archive/id/ENST00000380152?content-type=application/json
+INFO:root:2018-08-10 17:02:22 http://rest.ensembl.org/overlap/id/ENST00000380152?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:02:22 http://rest.ensembl.org/alignment/block/region/homo_sapiens/13:32314574-32315573:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:02:25 http://rest.ensembl.org/overlap/region/homo_sapiens/13:32314574-32315573:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:02:28 total time for this transcript: 2.28489804268 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:02:32 total time for 8 transcripts: 130.052527905 seconds
+
+
+INFO:root:2018-08-10 17:06:07 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_ensembl_ids.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_ensembl_ids.txt', 'ENST00000426431', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:06:07 ENST00000426431
+INFO:root:2018-08-10 17:06:07 http://rest.ensembl.org/archive/id/ENST00000426431?content-type=application/json
+INFO:root:2018-08-10 17:06:08 transcript_dict already exists: loading
+INFO:root:2018-08-10 17:06:08 regulatory_decoded already exists: loading
+INFO:root:2018-08-10 17:06:09 tfbss_found_dict already exists: loading
+INFO:root:2018-08-10 17:06:09 total time for this transcript: 0.714095830917 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:06:19 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./sample_ensembl_ids.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './sample_ensembl_ids.txt', 'ENST00000380152', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:06:19 ENST00000380152
+INFO:root:2018-08-10 17:06:19 http://rest.ensembl.org/archive/id/ENST00000380152?content-type=application/json
+INFO:root:2018-08-10 17:06:19 http://rest.ensembl.org/overlap/id/ENST00000380152?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:06:20 http://rest.ensembl.org/alignment/block/region/homo_sapiens/13:32314574-32315573:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:06:22 http://rest.ensembl.org/overlap/region/homo_sapiens/13:32314574-32315573:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:06:25 total time for this transcript: 2.37646913528 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:06:32 total time for 2 transcripts: 30.7946050167 seconds
+
+
+INFO:root:2018-08-10 17:11:03 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:11:03 ENST00000523953
+INFO:root:2018-08-10 17:11:03 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-10 17:11:04 http://rest.ensembl.org/overlap/id/ENST00000523953?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:11:04 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85378915-85379914:-1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:11:12 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85378915-85379914:-1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:11:13 total time for this transcript: 0.70868897438 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:11:16 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:11:16 ENST00000285379
+INFO:root:2018-08-10 17:11:16 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-10 17:11:17 http://rest.ensembl.org/overlap/id/ENST00000285379?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:11:17 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85462952-85463951:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:11:23 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85462952-85463951:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:11:28 total time for this transcript: 2.81820607185 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:11:35 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285381', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:11:35 ENST00000285381
+INFO:root:2018-08-10 17:11:35 http://rest.ensembl.org/archive/id/ENST00000285381?content-type=application/json
+INFO:root:2018-08-10 17:11:35 http://rest.ensembl.org/overlap/id/ENST00000285381?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:11:35 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85437927-85438926:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:11:40 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85437927-85438926:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:11:44 total time for this transcript: 2.49506187439 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:11:49 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000300900', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:11:49 ENST00000300900
+INFO:root:2018-08-10 17:11:49 http://rest.ensembl.org/archive/id/ENST00000300900?content-type=application/json
+INFO:root:2018-08-10 17:11:49 http://rest.ensembl.org/overlap/id/ENST00000300900?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:11:50 http://rest.ensembl.org/alignment/block/region/homo_sapiens/17:60149036-60150035:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:11:56 http://rest.ensembl.org/overlap/region/homo_sapiens/17:60149036-60150035:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:11:59 total time for this transcript: 2.41802787781 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:12:04 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000377443', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:12:04 ENST00000377443
+INFO:root:2018-08-10 17:12:04 http://rest.ensembl.org/archive/id/ENST00000377443?content-type=application/json
+INFO:root:2018-08-10 17:12:06 http://rest.ensembl.org/overlap/id/ENST00000377443?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:12:07 http://rest.ensembl.org/alignment/block/region/homo_sapiens/1:8944983-8945982:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:12:15 http://rest.ensembl.org/overlap/region/homo_sapiens/1:8944983-8945982:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:12:16 total time for this transcript: 0.715611934662 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:12:18 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000394069', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:12:18 ENST00000394069
+INFO:root:2018-08-10 17:12:18 http://rest.ensembl.org/archive/id/ENST00000394069?content-type=application/json
+INFO:root:2018-08-10 17:12:19 http://rest.ensembl.org/overlap/id/ENST00000394069?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:12:19 http://rest.ensembl.org/alignment/block/region/homo_sapiens/16:66844032-66845031:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:12:28 http://rest.ensembl.org/overlap/region/homo_sapiens/16:66844032-66845031:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:12:31 total time for this transcript: 2.71526908875 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:12:37 total time for 6 transcripts: 101.139664888 seconds
+
+
+INFO:root:2018-08-10 17:16:25 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:16:25 ENST00000523953
+INFO:root:2018-08-10 17:16:25 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-10 17:16:25 http://rest.ensembl.org/overlap/id/ENST00000523953?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:16:25 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85378915-85379914:-1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:16:27 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85378915-85379914:-1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:16:35 total time for this transcript: 0.727777004242 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:16:37 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:16:37 ENST00000285379
+INFO:root:2018-08-10 17:16:37 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-10 17:16:37 http://rest.ensembl.org/overlap/id/ENST00000285379?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:16:37 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85462952-85463951:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:16:39 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85462952-85463951:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:17:14 total time for this transcript: 2.41705799103 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:17:21 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285381', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:17:21 ENST00000285381
+INFO:root:2018-08-10 17:17:21 http://rest.ensembl.org/archive/id/ENST00000285381?content-type=application/json
+INFO:root:2018-08-10 17:17:21 http://rest.ensembl.org/overlap/id/ENST00000285381?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:17:21 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85437927-85438926:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:17:22 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85437927-85438926:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:18:03 total time for this transcript: 2.33590483665 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:18:08 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000300900', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:18:08 ENST00000300900
+INFO:root:2018-08-10 17:18:08 http://rest.ensembl.org/archive/id/ENST00000300900?content-type=application/json
+INFO:root:2018-08-10 17:18:09 http://rest.ensembl.org/overlap/id/ENST00000300900?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:18:09 http://rest.ensembl.org/alignment/block/region/homo_sapiens/17:60149036-60150035:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:18:12 http://rest.ensembl.org/overlap/region/homo_sapiens/17:60149036-60150035:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:18:23 total time for this transcript: 2.3726401329 seconds
+INFO:root:2018-08-10 17:26:39 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:26:39 ENST00000523953
+INFO:root:2018-08-10 17:26:39 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-10 17:26:39 http://rest.ensembl.org/overlap/id/ENST00000523953?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:26:40 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85378915-85379914:-1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:26:43 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85378915-85379914:-1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:26:51 total time for this transcript: 0.70215511322 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:26:53 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:26:53 ENST00000285379
+INFO:root:2018-08-10 17:26:53 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-10 17:26:54 http://rest.ensembl.org/overlap/id/ENST00000285379?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:26:55 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85462952-85463951:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:26:57 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85462952-85463951:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:27:32 total time for this transcript: 2.38701701164 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:27:39 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285381', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:27:39 ENST00000285381
+INFO:root:2018-08-10 17:27:39 http://rest.ensembl.org/archive/id/ENST00000285381?content-type=application/json
+INFO:root:2018-08-10 17:27:40 http://rest.ensembl.org/overlap/id/ENST00000285381?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:27:40 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85437927-85438926:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:27:43 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85437927-85438926:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:28:24 total time for this transcript: 2.31766200066 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:28:29 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000300900', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:28:29 ENST00000300900
+INFO:root:2018-08-10 17:28:29 http://rest.ensembl.org/archive/id/ENST00000300900?content-type=application/json
+INFO:root:2018-08-10 17:28:30 http://rest.ensembl.org/overlap/id/ENST00000300900?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:28:31 http://rest.ensembl.org/alignment/block/region/homo_sapiens/17:60149036-60150035:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:28:33 http://rest.ensembl.org/overlap/region/homo_sapiens/17:60149036-60150035:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:28:46 total time for this transcript: 2.3443748951 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:28:51 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000377443', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:28:51 ENST00000377443
+INFO:root:2018-08-10 17:28:51 http://rest.ensembl.org/archive/id/ENST00000377443?content-type=application/json
+INFO:root:2018-08-10 17:28:51 http://rest.ensembl.org/overlap/id/ENST00000377443?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:28:51 http://rest.ensembl.org/alignment/block/region/homo_sapiens/1:8944983-8945982:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:28:54 http://rest.ensembl.org/overlap/region/homo_sapiens/1:8944983-8945982:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:28:56 total time for this transcript: 0.683076858521 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:28:57 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000394069', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:28:57 ENST00000394069
+INFO:root:2018-08-10 17:28:57 http://rest.ensembl.org/archive/id/ENST00000394069?content-type=application/json
+INFO:root:2018-08-10 17:28:58 http://rest.ensembl.org/overlap/id/ENST00000394069?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:28:58 http://rest.ensembl.org/alignment/block/region/homo_sapiens/16:66844032-66845031:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:29:00 http://rest.ensembl.org/overlap/region/homo_sapiens/16:66844032-66845031:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:29:51 total time for this transcript: 2.7323448658 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:29:56 total time for 6 transcripts: 203.167528868 seconds
+
+
+INFO:root:2018-08-10 17:39:18 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:39:18 ENST00000523953
+INFO:root:2018-08-10 17:39:18 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-10 17:39:18 http://rest.ensembl.org/overlap/id/ENST00000523953?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:39:18 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85378915-85379914:-1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:39:20 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85378915-85379914:-1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:39:22 total time for this transcript: 0.708657026291 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:39:24 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:39:24 ENST00000285379
+INFO:root:2018-08-10 17:39:24 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-10 17:39:25 http://rest.ensembl.org/overlap/id/ENST00000285379?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:39:25 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85462952-85463951:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:39:27 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85462952-85463951:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:39:30 total time for this transcript: 2.90504097939 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:39:37 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285381', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:39:37 ENST00000285381
+INFO:root:2018-08-10 17:39:37 http://rest.ensembl.org/archive/id/ENST00000285381?content-type=application/json
+INFO:root:2018-08-10 17:39:38 http://rest.ensembl.org/overlap/id/ENST00000285381?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:39:38 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85437927-85438926:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:39:39 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85437927-85438926:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:39:43 total time for this transcript: 2.41061997414 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:39:48 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000300900', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:39:48 ENST00000300900
+INFO:root:2018-08-10 17:39:48 http://rest.ensembl.org/archive/id/ENST00000300900?content-type=application/json
+INFO:root:2018-08-10 17:39:48 http://rest.ensembl.org/overlap/id/ENST00000300900?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:39:48 http://rest.ensembl.org/alignment/block/region/homo_sapiens/17:60149036-60150035:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:39:51 http://rest.ensembl.org/overlap/region/homo_sapiens/17:60149036-60150035:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:39:54 total time for this transcript: 2.47636580467 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:39:59 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000377443', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:39:59 ENST00000377443
+INFO:root:2018-08-10 17:39:59 http://rest.ensembl.org/archive/id/ENST00000377443?content-type=application/json
+INFO:root:2018-08-10 17:39:59 http://rest.ensembl.org/overlap/id/ENST00000377443?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:39:59 http://rest.ensembl.org/alignment/block/region/homo_sapiens/1:8944983-8945982:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:40:02 http://rest.ensembl.org/overlap/region/homo_sapiens/1:8944983-8945982:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:40:03 total time for this transcript: 0.668193101883 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:40:04 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000394069', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-10 17:40:04 ENST00000394069
+INFO:root:2018-08-10 17:40:04 http://rest.ensembl.org/archive/id/ENST00000394069?content-type=application/json
+INFO:root:2018-08-10 17:40:04 http://rest.ensembl.org/overlap/id/ENST00000394069?feature=transcript;content-type=application/json
+INFO:root:2018-08-10 17:40:04 http://rest.ensembl.org/alignment/block/region/homo_sapiens/16:66844032-66845031:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-10 17:40:08 http://rest.ensembl.org/overlap/region/homo_sapiens/16:66844032-66845031:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-10 17:40:13 total time for this transcript: 2.72905111313 seconds
+INFO:root:
+
+INFO:root:2018-08-10 17:40:19 total time for 6 transcripts: 67.9908571243 seconds
+
+
+INFO:root:2018-08-11 16:39:02 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:39:02 ENST00000523953
+INFO:root:2018-08-11 16:39:02 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 16:39:02 http://rest.ensembl.org/overlap/id/ENST00000523953?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 16:39:02 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85378915-85379914:-1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 16:39:13 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85378915-85379914:-1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 16:47:30 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:47:30 ENST00000523953
+INFO:root:2018-08-11 16:47:30 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 16:47:30 transcript_dict already exists: loading
+INFO:root:2018-08-11 16:47:30 regulatory_decoded already exists: loading
+INFO:root:2018-08-11 16:47:31 total time for this transcript: 0.725131034851 seconds
+INFO:root:
+
+INFO:root:2018-08-11 16:47:33 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:47:33 ENST00000285379
+INFO:root:2018-08-11 16:47:33 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-11 16:47:33 http://rest.ensembl.org/overlap/id/ENST00000285379?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 16:47:33 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85462952-85463951:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 16:47:39 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85462952-85463951:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 16:47:42 total time for this transcript: 2.79375910759 seconds
+INFO:root:
+
+INFO:root:2018-08-11 16:47:49 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285381', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:47:49 ENST00000285381
+INFO:root:2018-08-11 16:47:49 http://rest.ensembl.org/archive/id/ENST00000285381?content-type=application/json
+INFO:root:2018-08-11 16:47:49 http://rest.ensembl.org/overlap/id/ENST00000285381?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 16:47:49 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85437927-85438926:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 16:47:54 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85437927-85438926:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 16:47:57 total time for this transcript: 2.34079694748 seconds
+INFO:root:
+
+INFO:root:2018-08-11 16:48:02 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000300900', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:48:02 ENST00000300900
+INFO:root:2018-08-11 16:48:02 http://rest.ensembl.org/archive/id/ENST00000300900?content-type=application/json
+INFO:root:2018-08-11 16:48:03 http://rest.ensembl.org/overlap/id/ENST00000300900?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 16:48:03 http://rest.ensembl.org/alignment/block/region/homo_sapiens/17:60149036-60150035:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 16:48:09 http://rest.ensembl.org/overlap/region/homo_sapiens/17:60149036-60150035:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 16:48:12 total time for this transcript: 2.35426712036 seconds
+INFO:root:
+
+INFO:root:2018-08-11 16:48:17 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000377443', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:48:17 ENST00000377443
+INFO:root:2018-08-11 16:48:17 http://rest.ensembl.org/archive/id/ENST00000377443?content-type=application/json
+INFO:root:2018-08-11 16:48:17 http://rest.ensembl.org/overlap/id/ENST00000377443?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 16:48:17 http://rest.ensembl.org/alignment/block/region/homo_sapiens/1:8944983-8945982:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 16:48:25 http://rest.ensembl.org/overlap/region/homo_sapiens/1:8944983-8945982:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 16:48:26 total time for this transcript: 0.734219074249 seconds
+INFO:root:
+
+INFO:root:2018-08-11 16:48:28 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000394069', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 16:48:28 ENST00000394069
+INFO:root:2018-08-11 16:48:28 http://rest.ensembl.org/archive/id/ENST00000394069?content-type=application/json
+INFO:root:2018-08-11 16:48:28 http://rest.ensembl.org/overlap/id/ENST00000394069?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 16:48:29 http://rest.ensembl.org/alignment/block/region/homo_sapiens/16:66844032-66845031:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 16:48:37 http://rest.ensembl.org/overlap/region/homo_sapiens/16:66844032-66845031:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 16:48:41 total time for this transcript: 2.68851399422 seconds
+INFO:root:
+
+INFO:root:2018-08-11 16:48:46 total time for 6 transcripts: 84.5559811592 seconds
+
+
+INFO:root:2018-08-11 17:00:42 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:00:42 ENST00000523953
+INFO:root:2018-08-11 17:00:42 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 17:00:42 http://rest.ensembl.org/overlap/id/ENST00000523953?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 17:00:43 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85378915-85379914:-1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 17:00:46 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85378915-85379914:-1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 17:01:43 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:01:43 ENST00000523953
+INFO:root:2018-08-11 17:01:43 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 17:01:44 transcript_dict already exists: loading
+INFO:root:2018-08-11 17:01:44 regulatory_decoded already exists: loading
+INFO:root:2018-08-11 17:03:29 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:03:29 ENST00000523953
+INFO:root:2018-08-11 17:03:29 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 17:03:29 transcript_dict already exists: loading
+INFO:root:2018-08-11 17:03:29 regulatory_decoded already exists: loading
+INFO:root:2018-08-11 17:05:41 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:05:41 ENST00000523953
+INFO:root:2018-08-11 17:05:41 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 17:05:41 transcript_dict already exists: loading
+INFO:root:2018-08-11 17:05:41 regulatory_decoded already exists: loading
+INFO:root:2018-08-11 17:05:41 total time for this transcript: 0.70451593399 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:05:44 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:05:44 ENST00000285379
+INFO:root:2018-08-11 17:05:44 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-11 17:44:45 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000523953', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:44:45 ENST00000523953
+INFO:root:2018-08-11 17:44:45 http://rest.ensembl.org/archive/id/ENST00000523953?content-type=application/json
+INFO:root:2018-08-11 17:44:45 transcript_dict already exists: loading
+INFO:root:2018-08-11 17:44:45 regulatory_decoded already exists: loading
+INFO:root:2018-08-11 17:44:45 tfbss_found_dict already exists: loading
+INFO:root:2018-08-11 17:44:45 total time for this transcript: 0.00726389884949 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:44:47 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285379', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:44:47 ENST00000285379
+INFO:root:2018-08-11 17:44:47 http://rest.ensembl.org/archive/id/ENST00000285379?content-type=application/json
+INFO:root:2018-08-11 17:44:49 http://rest.ensembl.org/overlap/id/ENST00000285379?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 17:44:50 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85462952-85463951:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 17:44:52 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85462952-85463951:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 17:44:56 total time for this transcript: 2.82674407959 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:45:03 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000285381', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:45:03 ENST00000285381
+INFO:root:2018-08-11 17:45:03 http://rest.ensembl.org/archive/id/ENST00000285381?content-type=application/json
+INFO:root:2018-08-11 17:45:03 http://rest.ensembl.org/overlap/id/ENST00000285381?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 17:45:03 http://rest.ensembl.org/alignment/block/region/homo_sapiens/8:85437927-85438926:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 17:45:06 http://rest.ensembl.org/overlap/region/homo_sapiens/8:85437927-85438926:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 17:45:09 total time for this transcript: 2.40097403526 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:45:14 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000300900', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:45:14 ENST00000300900
+INFO:root:2018-08-11 17:45:14 http://rest.ensembl.org/archive/id/ENST00000300900?content-type=application/json
+INFO:root:2018-08-11 17:45:15 http://rest.ensembl.org/overlap/id/ENST00000300900?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 17:45:15 http://rest.ensembl.org/alignment/block/region/homo_sapiens/17:60149036-60150035:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 17:45:19 http://rest.ensembl.org/overlap/region/homo_sapiens/17:60149036-60150035:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 17:45:22 total time for this transcript: 2.40020108223 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:45:27 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000377443', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:45:27 ENST00000377443
+INFO:root:2018-08-11 17:45:27 http://rest.ensembl.org/archive/id/ENST00000377443?content-type=application/json
+INFO:root:2018-08-11 17:45:27 http://rest.ensembl.org/overlap/id/ENST00000377443?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 17:45:27 http://rest.ensembl.org/alignment/block/region/homo_sapiens/1:8944983-8945982:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 17:45:31 http://rest.ensembl.org/overlap/region/homo_sapiens/1:8944983-8945982:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 17:45:32 total time for this transcript: 0.750706911087 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:45:34 [Namespace(coverage='low', exp_data_update=False, output_dir='/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', promoter_after_tss=100, promoter_before_tss=900, pval=0.01, species_group='mammals', t_ids_file='./cas.txt', target_species='homo_sapiens', tf_ids_file=None, top_x_tfs=10), './cas.txt', 'ENST00000394069', None, 'homo_sapiens', 'mammals', 'low', 900, 100, 10, '/home/harlan/Dropbox/github/TFBS_footprinting/sample_analysis/tfbs_results', 0.01]
+INFO:root:2018-08-11 17:45:34 ENST00000394069
+INFO:root:2018-08-11 17:45:34 http://rest.ensembl.org/archive/id/ENST00000394069?content-type=application/json
+INFO:root:2018-08-11 17:45:34 http://rest.ensembl.org/overlap/id/ENST00000394069?feature=transcript;content-type=application/json
+INFO:root:2018-08-11 17:45:34 http://rest.ensembl.org/alignment/block/region/homo_sapiens/16:66844032-66845031:1?method=EPO_LOW_COVERAGE;compact=1;content-type=application/json;species_set_group=mammals
+INFO:root:2018-08-11 17:45:37 http://rest.ensembl.org/overlap/region/homo_sapiens/16:66844032-66845031:1?feature=regulatory;content-type=application/json
+INFO:root:2018-08-11 17:45:40 total time for this transcript: 2.67869210243 seconds
+INFO:root:
+
+INFO:root:2018-08-11 17:45:45 total time for 6 transcripts: 67.9147238731 seconds
+
+

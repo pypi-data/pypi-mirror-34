@@ -1,0 +1,6 @@
+[pybtex.style.formatting]
+apa = formatting.apa:APAStyle
+
+[pybtex.style.labels]
+apa = labels.apa:LabelStyle
+

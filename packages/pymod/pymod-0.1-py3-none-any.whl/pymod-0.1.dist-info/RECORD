@@ -1,0 +1,9 @@
+pymod/__init__.py,sha256=Toe0O_H3BOgyaDi1CRPODjaUCj6uQkSE2pDHNitzLoU,3779
+pymod/__main__.py,sha256=zHkf9h4W_bOLD7ah-3EjDSA64J5KW4da3Z17_yzf3C4,39
+pymod/cli.py,sha256=dBK5WZD-r1u5EIaSojAQepdfwhJIs5In4yoiiywiGJQ,750
+pymod/shell.py,sha256=BW5rAxnTwmi3oBi8eb1HGIph-cb3eRJb0DyG94RT2bk,472
+pymod-0.1.dist-info/METADATA,sha256=SJdo5cpKd2XZPtLBjBsEG-3hZjrZ3WPpKkWS9Bmm31M,809
+pymod-0.1.dist-info/RECORD,,
+pymod-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pymod-0.1.dist-info/entry_points.txt,sha256=uj9rLR_F3RqFWdbx6F8EYtUHri3Q7auaCJ4US6YdONY,42
+pymod-0.1.dist-info/top_level.txt,sha256=xx5mRxdQfuYuLNepxyX1WLdvZB035wIC_26gjjkmKYk,6

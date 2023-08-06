@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pymod
+Version: 0.1
+Summary: Simple Environment Variable Manager
+Home-page: https://github.com/chengscott/pymod
+Author: chengscott
+Maintainer: chengscott
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: System :: Shells
+Description-Content-Type: text/markdown
+
+# pymod
+
+## installation
+
+```shell
+pip install pymod
+```
+
+## config
+
+1. `.` (script directory)
+2. ` ~/.config/pymod`
+3. `/usr/local/etc/pymod`
+
+## shell usage
+
+- take advantage of command substitution
+
+### bash
+
+```shell
+$(pymod -u ompi)
+```
+
+### fish
+
+```shell
+eval (pymod -u ompi)
+```
+
+

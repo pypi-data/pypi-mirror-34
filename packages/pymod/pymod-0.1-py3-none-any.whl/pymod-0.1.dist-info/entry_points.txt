@@ -1,0 +1,3 @@
+[console_scripts]
+pymod = pymod:run_main
+

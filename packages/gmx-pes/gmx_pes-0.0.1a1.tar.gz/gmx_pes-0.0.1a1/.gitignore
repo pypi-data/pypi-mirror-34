@@ -1,0 +1,6 @@
+__pycache__
+.*.swp
+build
+dist
+gmx_pes.egg-info
+

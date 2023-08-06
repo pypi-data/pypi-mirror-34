@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: gmx-pes
+Version: 0.0.1a1
+Summary: A package to compare Potential Energy Surfaces in Gromacs
+Home-page: https://pessoal.ect.ufrn.br/~elton.carvalho
+Author: Elton Carvalho
+Author-email: elton.carvalho@ect.ufrn.br
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # gmx_pes
+        
+        A module for testing GROMACS forcefield parameters by matching Potential Energy Surfaces.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.5

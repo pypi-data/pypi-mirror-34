@@ -1,0 +1,3 @@
+[console_scripts]
+chp-django = chp.django.example.manage:main
+

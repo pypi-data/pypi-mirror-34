@@ -1,0 +1,9 @@
+README.md
+setup.py
+undictify/__init__.py
+undictify/__tests.py
+undictify/_unpack.py
+undictify.egg-info/PKG-INFO
+undictify.egg-info/SOURCES.txt
+undictify.egg-info/dependency_links.txt
+undictify.egg-info/top_level.txt

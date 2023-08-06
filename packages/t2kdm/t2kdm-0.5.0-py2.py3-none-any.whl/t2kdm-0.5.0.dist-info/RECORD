@@ -1,0 +1,16 @@
+t2kdm/__init__.py,sha256=u0cmx5lRhBC6nijjYCmoDeo9uFN42b_PIRANEPF1gMI,683
+t2kdm/backends.py,sha256=ElUCTzXXxEGiz74kzzjm_AZVMXlUzikPO2DGEk_ZOwI,30735
+t2kdm/cache.py,sha256=0eAcE83VMENgujVPqooMMQBgpo5WTd344xGiC_lSzno,2059
+t2kdm/cli.py,sha256=_pJFwIkoxpSWHcXBs5X7ADoRBhYTHmqA6lh-0bRxFGw,7609
+t2kdm/commands.py,sha256=g_nScPuwTbabaz0CM6QKLHXwOuV1l5GC9iVd0ov66fM,11646
+t2kdm/configuration.py,sha256=G9qGmS93yJzPdrAmzz69WwGx8yCWqMZoQZIJA_cvw-4,5048
+t2kdm/maid.py,sha256=jgDOqhvym2A68AUh7_6PEq1xQqnyu-fAtwGsiavqdU8,23559
+t2kdm/storage.py,sha256=oh6zhYbMvRtTT1YCjpyO0D21XpkJ_Cq7TSUWp4YKj-Q,9524
+t2kdm/tests.py,sha256=SLAk6WY45K5w5TUimiQ_hZUYoGkYnO0nVA-lwXRcfeA,7079
+t2kdm/utils.py,sha256=OkCK6j38p53w6XRr0-I1otI4YHvYLDQu6NDXRGVCEVs,12428
+t2kdm-0.5.0.dist-info/METADATA,sha256=8Yrn11BDENr6VqQI3ztZRXk6DVXxDFBCNkucxqfSbnE,815
+t2kdm-0.5.0.dist-info/RECORD,,
+t2kdm-0.5.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+t2kdm-0.5.0.dist-info/entry_points.txt,sha256=3TvhQI8A0qcAC8n2w8m3NwgvYQUa1x2-zqDHDSQQf0o,592
+t2kdm-0.5.0.dist-info/top_level.txt,sha256=zY9VhzOmRTBNWbt-XRsXUnbOeRQZ86lwVW8UwMUAUjE,6
+t2kdm-0.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

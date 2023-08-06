@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+vcvf_emotion/__init__.py
+vcvf_emotion/face_emotion.py
+vcvf_emotion/test.jpg
+vcvf_emotion.egg-info/PKG-INFO
+vcvf_emotion.egg-info/SOURCES.txt
+vcvf_emotion.egg-info/dependency_links.txt
+vcvf_emotion.egg-info/entry_points.txt
+vcvf_emotion.egg-info/requires.txt
+vcvf_emotion.egg-info/top_level.txt
+vcvf_emotion/face_utils/__init__.py
+vcvf_emotion/face_utils/facealigner.py
+vcvf_emotion/face_utils/helpers.py
+vcvf_emotion/models/happymodle.json
+vcvf_emotion/models/weights.best.hdf5

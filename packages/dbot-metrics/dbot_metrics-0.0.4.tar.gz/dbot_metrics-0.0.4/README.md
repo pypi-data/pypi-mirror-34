@@ -1,0 +1,80 @@
+# DBot-server metrics
+The metrics client for dbot-server.
+
+It supports collecting and transporting metrics for each dbot-server.  
+* Currently we have some inner output-plugins, and more, you can define your own ouput-plugins. 
+* Output-plugins can work at the same time, but we recommand only one.
+* Also the input metric-plugin can be defined by yourself. 
+* Only you need to do is implementing the Plugin-Interface and configuring the file `collect.conf`.
+
+## Installation  
+
+
+## Dependencies
+Install leveldb if you want to use the recommand output-plugin leveldb-client
+```
+pip install leveldb
+```
+
+Install influxdb-python first if you want to use the inner output-plugin influxdb-client.
+```
+$ sudo apt-get install python-influxdb
+```
+
+Get more information, see https://github.com/influxdata/influxdb-python.
+
+Install tinydb if you want to use the inner output-plugin tinydb-client.
+```
+pip install tinydb
+```
+
+Install unqlite if you want to use output-plugin unqlite-client
+```
+pip install unqlite
+```
+
+## Documentation  
+See https://github.com/ATNIO/AI_market_plan/wiki/metric-heartbeat.
+
+## Interface
+Metrics support query interface, it receive a json-type request parameter like this:
+```
+{ 'range': { 'from': 1532023625, 'to': 1532025313 },
+  'targets': [{'table':'student', 'type':'all', 'sentence':''},
+              {'table':'teacher', 'type':'sql', 'sentence': 'select * from teacher'},
+              {'table':'others', 'type':'columns', 'sentence': 'age|name|no'}]}
+```
+and the response format is like this:
+```
+[ {
+    'name': 'influxdb',
+    'content':[ {
+                  'time':1532023688,
+                  'tags':{'name':'John', 'No':10023},
+                  'fields': {'age': 23, 'gender': 'male'} 
+                },
+                {
+                  'time':1532023798,
+                  'tags':{'name':'Tom', 'No':10024},
+                  'fields': {'age': 25, 'gender': 'male'}
+                }
+              ]
+   }
+]
+```
+
+## Examples
+```
+from core.dbotmetrics_collector import DBotMetricsCollector
+from input.plugins.dbot_service_metric import DBotApiMetric
+
+DBotMetricsCollector().Start("./collector.conf")
+m = DBotMetricsCollector().GetMetric("apimetric")
+m.EnableDetailRecord(False)
+
+apiinfo = m.CallBegin("/api/dbot_server/api_call_test", "user")
+# ... ... processing
+m.CallEnd(apiinfo, 0)
+
+DBotMetricsCollector().Stop()
+```

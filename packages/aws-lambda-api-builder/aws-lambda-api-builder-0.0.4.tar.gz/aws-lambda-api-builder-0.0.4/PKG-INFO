@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aws-lambda-api-builder
+Version: 0.0.4
+Summary: Build and deploy AWS API Gateways using AWS Lambda
+Home-page: https://github.com/zmiller91/python-lambda-packager
+Author: Zachary Miller
+Author-email: me@zackmiller.info
+License: UNKNOWN
+Description: Requirements
+        
+        * Python 3.6
+        * pip
+        * pipenv: https://packaging.python.org/tutorials/managing-dependencies/
+        
+        Install Dependencies
+        
+        cd /path/to/AwsLambdaexample
+        pipenv install
+        
+        https://docs.pipenv.org/basics/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

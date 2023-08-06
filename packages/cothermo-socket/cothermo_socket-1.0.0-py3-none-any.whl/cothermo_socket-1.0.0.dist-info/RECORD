@@ -1,0 +1,11 @@
+cothermo_socket/UOMSet.json,sha256=4OlmHDifbT6sKZ86qWlDP8D5krieG3HJ3NbEODhoSKw,3921
+cothermo_socket/__init__.py,sha256=C5neuHr7r4HA4sVexeVEHiZ86BGlezFY9iFKSt2sUIQ,221
+cothermo_socket/cothermo_socket.py,sha256=L9dVsE0Xgsyw_EVynaGNQUJmT-doMZ0NajdeqN53hdw,5133
+cothermo_socket/cothermo_socket.py.7317738340c5fc4dd443691b521cd9f4.py,sha256=BPeZvD5k4dekPg_Ww1ElhikNWW0bfHy8naQYwarY1qI,4587
+cothermo_socket/uom.py,sha256=bImWOasw9iaJ55HUm5MNJDeCq43NijVR3a8KztAkuKc,2519
+cothermo_socket/32bit/COThermoSocket.Core.dll,sha256=OpnjuvSjf6nu1dH6MrCUnzF5pA7o2xm2Rc5vYJ0eBqY,20992
+cothermo_socket/64bit/COThermoSocket.Core.dll,sha256=XIaA15HKU7bdW_K0B5nmh7Cm_WguhtSvTxLLk_NGvcw,20992
+cothermo_socket-1.0.0.dist-info/METADATA,sha256=e-BYpLVoM2JGJqrq-m8qRIDPTXK1voC-_E6-vgixzC0,285
+cothermo_socket-1.0.0.dist-info/RECORD,,
+cothermo_socket-1.0.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+cothermo_socket-1.0.0.dist-info/top_level.txt,sha256=Yu2J7CtT5q2YR4E-AVQUHkWpPZEqCKpq-bv4QiMiE2c,16

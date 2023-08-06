@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cothermo-socket
+Version: 1.0.0
+Summary: cape-open thermo python package.
+Home-page: UNKNOWN
+Author: bshao
+Author-email: bshao@163.com
+License: MIT Licence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pythonnet
+
+UNKNOWN
+
+

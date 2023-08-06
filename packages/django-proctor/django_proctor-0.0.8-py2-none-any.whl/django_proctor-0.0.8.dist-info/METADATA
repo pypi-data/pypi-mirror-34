@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-proctor
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Django
+Requires-Dist: requests
+Requires-Dist: pyOpenSSL
+Requires-Dist: ndg-httpsclient
+
+UNKNOWN
+
+

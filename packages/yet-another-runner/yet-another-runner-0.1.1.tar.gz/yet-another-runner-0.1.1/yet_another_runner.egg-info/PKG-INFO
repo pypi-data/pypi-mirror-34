@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: yet-another-runner
+Version: 0.1.1
+Summary: Simple process runner
+Home-page: https://github.com/aragaer/runner
+Author: Ilya Konovalov
+Author-email: aragaer@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: run command shell socket
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

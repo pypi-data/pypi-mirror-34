@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sanic-session
+Version: 0.3.0
+Summary: Provides server-backed sessions for Sanic using Redis, Memcache and more.
+Home-page: http://github.com/subyraman/sanic_session
+Author: Suby Raman
+Author-email: UNKNOWN
+License: MIT
+Keywords: sessions,sanic,redis,memcache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Requires-Dist: sanic
+Requires-Dist: ujson
+
+UNKNOWN
+
+

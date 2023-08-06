@@ -1,0 +1,14 @@
+h5py
+matplotlib
+numpy
+pandas
+pyfaidx
+pytabix
+torch
+torchvision
+scikit-learn
+scipy
+seaborn
+statsmodels
+pyyaml
+plotly

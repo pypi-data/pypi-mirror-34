@@ -1,0 +1,140 @@
+#!/usr/bin/env python
+#
+# Copyright (c) 2015-2016 Tim Savannah under LGPLv3. See LICENSE for more information.
+# This application converts a single timestamp with current drift, and optionally adds another drift marker if outside threshold
+import time
+import sys
+
+import printk_timestamp_converter
+
+MODE_LOCAL = 0
+MODE_UTC = 1
+MODE_EPOCH = 2
+
+# TODO: Add better usage
+def printUsage():
+    sys.stderr.write("""printk_time_convert (Options) [printk1 timestamp] (optional: additional timestamps)
+
+  Converts printk timestamps, which may be inaccurate, to human readable dates that are accurate.
+
+       Output Formats (pick one):
+       
+           -l or --local           Output time on LOCAL format (DEFAULT).
+           -u or --utc             Output time in UTC format.
+           -e or --epoch           Output time in Unix Epoch format (seconds since Jan 1 1970 00:00:00)
+
+       Output Format Option:
+
+           -s or --subsec          Output subseconds.
+                                    Only is meaningful in "local" or "utc" output.
+                                    Epoch always contains subseconds
+
+
+See dmesg_format_dates --help for more info.
+
+For each timestamp given, the conversion will be printed, one per line.
+
+""")
+
+def rzfill(val, digits):
+    '''
+        rzfill - Add zeros to the end of #val such that at least #digits are displayed.
+
+                    Useful for post-decimal point values
+
+            @param val <str/int/float> - A number
+
+            @param digits <int> - The minimum number of digits. Zeros will be added to the right to meet this
+    '''
+
+    val = str(val)
+    valLen = len(val)
+    if valLen < digits:
+        val += '0' * ( digits - len(val) )
+    return val
+
+def dec_rzfill(val, digits):
+    '''
+        dec_rzfill - Adds zeros to the end of #val such that after the decimal point at least #digits are displayed.
+
+            This differs from the 'rzfill' function in that this function splits by the decimal point and
+              ensures that at least #digits number of digits are found after the decimal. rzfill works on whole numbers.
+
+          @see rzfill
+    '''
+    val = str(val)
+    if '.' not in val:
+       val += '.' + ( '0' * digits )
+    else:
+       valSplit = val.split('.')
+       valSplit[1] = rzfill(valSplit[1], digits)
+       val = '.'.join(valSplit)
+
+    return val
+
+if __name__ == '__main__':
+
+    args = sys.argv[1:]
+
+    mode = MODE_LOCAL
+    includeSubSeconds = False
+
+    toConvert = []
+
+    for arg in args:
+        if arg in ('--help', '-h', '-?'):
+            printUsage()
+            sys.exit(0)
+        elif arg in ('-u', '--utc'):
+            mode = MODE_UTC
+        elif arg in ('-l', '--local'):
+            mode = MODE_LOCAL
+        elif arg in ('-e', '--epoch'):
+            mode = MODE_EPOCH
+        elif arg in ('-s', '--subsec', '--subsecond'):
+            includeSubSeconds = True
+        else:
+            try:
+                float(arg)
+                toConvert.append(arg)
+            except ValueError:
+                sys.stderr.write('Unknown argument: %s\n\n' %(arg,))
+                printUsage()
+                sys.exit(1)
+
+    if len(toConvert) == 0:
+        sys.stderr.write('Missing printk timestamp to convert.\n\n')
+        printUsage()
+        sys.exit(1)
+
+    CTIME_FORMAT_NOYEAR = '%a %b %e %H:%M:%S'
+    if not includeSubSeconds:
+        # Ctime
+        CTIME_FORMAT_YEAR = CTIME_FORMAT_NOYEAR + ' %Y'
+        timeAsStr = lambda datetimeObj : datetimeObj.strftime(CTIME_FORMAT_YEAR)
+    else:
+        def timeAsStr(datetimeObj):
+            subSeconds = str(int(float(datetimeObj.microsecond) / 10000.0))
+            subSeconds = rzfill(subSeconds, 2)
+            #subSeconds += '0' * (2 - len(subSeconds))
+
+            return datetimeObj.strftime(CTIME_FORMAT_NOYEAR) + ( ".%s %s" %(subSeconds, str(datetimeObj.year)) )
+
+
+    nowTimestamp = time.time()
+    currentUptime = printk_timestamp_converter.getSystemUptime()
+    # Get the selected timestamp output function
+    if mode == MODE_EPOCH:
+        getTimePortion = lambda _printkSeconds : dec_rzfill(printk_timestamp_converter.printk_convertTimestampToEpoch(_printkSeconds, uptime=currentUptime, fromTimestamp=nowTimestamp), 2)
+    elif mode == MODE_LOCAL:
+        getTimePortion = lambda _printkSeconds : timeAsStr ( printk_timestamp_converter.printk_convertTimestampToDatetime(_printkSeconds, uptime=currentUptime, fromTimestamp=nowTimestamp) )
+    else:
+        getTimePortion = lambda _printkSeconds : timeAsStr ( printk_timestamp_converter.printk_convertTimestampToUTCDatetime(_printkSeconds, uptime=currentUptime, fromTimestamp=nowTimestamp) )
+
+
+    for printkTimestamp in toConvert:
+        dateStr = getTimePortion(printkTimestamp)
+        
+        sys.stdout.write(dateStr + '\n')
+
+# vim: sw=4 ts=4 expandtab

@@ -1,0 +1,98 @@
+* 4.0.0 - Aug 04 2018
+
+- Change from using integers for calculating drift time to using floats with 2 significant digits past the decimal point (which is the same accuracy as /proc/uptime reports). This brings the maximum accuracy to around +- 10ms from +- 1s. We still only report time to the second-level, but this will better ensure that second-level reporting has more accuracy.
+
+- Python2 - Fix syntax error on python2 in dmesg_format_dates - providing a keyword-expansion ( \*\*kwargs ) followed by a keyword-arg ( a=b ) is only legal in python3. So remove the pass-by-keyword and set it as a key in the dict being used for the keyword expansion
+
+- dmesg_format_dates - Add a '-s' or '--subsec' flag to also print subseconds (out of 100, so for example date output could look like 'Thu Aug  2 16:17:31.58 2018' with the .58 after the seconds, indicating 58/100ths of a second past 31 seconds.
+
+Also add a note to the help message that the timing is at best (excluding clock drift) accurate to within +-10ms, or +- .01 seconds.
+
+- Some minor variable renaming/cleanup
+
+- Add a "fromTimestamp" argument (default None) to each of the printk_convertTimestampTo* functions.
+
+If we provide a fixed "uptime" value ( like in dmesg_format_dates so we don't recalculate the uptime for every line printed), previously for each timestamp converted ( each line printed ) we were regenerating a timestamp of "now" (time.time()). Because "uptime" was not changing but as execution time went on this "now" timestamp was changing, we were adding a small error which increased as time went on. This was not noticable before subsecond printing became available except in epoch mode. On my system, 100 sequential converts of the same printk timestamp with the same uptime caused a drift of .00013 seconds. This has been reduced to 0.
+
+- Update dmesg_format_dates to use the aforementioned "fromTimestamp", linking the pre-calculated "uptime" with the timestamp it was calculated at, removing drift in the subseconds portions.
+
+- Update printk_convertTimestampToEpoch to round the result to 2 decimal places. This is because we only have 2 significant digits available from the "uptime" clock, so anything past that was random variance. This brings the variance from sequential calls to dmesg_format_dates to 0 ( NO ERROR! ), whereas previously in epoch mode you could see a variance past the 2nd significant digit of the decimal portion.
+
+- Update printk_time_convert to have all the output updates that dmesg_format_dates has gotten in this version
+
+
+* 3.0.0 - Aug 31 2017
+
+* output warnings prefixed with ## WARNING: first on stderr then on
+stdout at end (the latter can be disabled via --no-warnings flag)
+
+* Better implementation of reading to ensure if stream pauses, NFS
+delays, etc will always provide a complete read (very very very
+unlikely small chance before that a partial read could happen)
+
+* BACKWARDS-INCOMPATIBLE CHANGE:
+
+Previously, if there was not a "recent enough" drift (defined by a
+static threshold of 12000 seconds, or 3 hours and 20 minutes) we
+would abort with error, unless we were root and not reading from a
+file, in which case we would mark the end (even though the beginning
+could still be inaccurate with long uptimes).
+
+Now, we perform the following:
+
+   ** If no recent drift, scan for ANY drift. If present, use the
+   availbale drifts and warn the user (new warning)
+
+   ** If there are no drifts available at all, assume a drift of 0
+   and warn the user. This would be equivilant to the output from
+   "dmesg -T" and thus not very useful, but means that
+   "dmesg_format_dates" can be used unconditionally on all files
+   whether or not they contain a drift.
+
+Thus, we work without any drifts or without recent drifts now, and
+just warn about the lack of accuracy doing so.
+
+* Some minor cleanups
+
+* Add "--no-mark" flag (and associated updates to library) which will prevent
+any attempts to add a mark to the log when collecting drift times if a
+recent-enough (12000 seconds) mark is not present.
+
+* Add a "dmesg_get_drifts" command, which will print the time of each marked
+drift, and how much the clock has drifted at that point.
+
+  This can be used to evaluate how much your system is drifting to accurately
+  tune how often you should be marking. It could also be parsed by an external
+  application that can't use the provided python library (like written in a
+  different language)
+
+* Fix typo preventing -h from printing help in dmesg_format_dates
+
+* Fix MANIFEST.in missing printk_mark_drift and also typo in
+printk_time_convert
+
+* Prefer setuptools for distribution in setup.py (with fallback to distutils)
+
+
+* 2.2.1 - Mar 3 2016
+- Fix usage of dmesg_format_dates with head (no longer prints warning)
+- Simplify main loop of dmesg_format_dates to omit a comparison
+
+* 2.2.0 - Jan 16 2016 
+- Expand READMEs and fillout setup.py
+- Change -t and --timestamp to -e and --epoch in dmesg_format_dates and
+printk_convert_time
+- Cleanup help messages and add all possible arguments
+- Allow printk_convert_time to take multiple timestamps for conversion
+- Allow module to accept a floats and ints instead of a str for timestamp
+- Add pydoc
+
+* 2.1.0 - Jan 15 2016 (release)
+- Fixed issue on reading and writing first mark at same time
+- Split out marking current drift into separate function
+- Add tool to mark drift
+- Fix extra newline at end of log
+
+* 2.0.0 (prerelease)
+- Partial Prerelease
+

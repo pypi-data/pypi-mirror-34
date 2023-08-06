@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: deepair-encoder
+Version: 0.0.1
+Summary: This is a sub modular package for encoding
+Home-page: https://bitbucket.org/deepair/
+Author: DeepAir Dev
+Author-email: naman@deepair.io
+License: UNKNOWN
+Description: ## Deep Air Encoder
+        
+        ### Package structure
+        
+        deepair_encoder
+        ├── encoder.py
+        ├── __init__.py
+        └── utils
+            ├── encoder_tools.py
+            ├── __init__.py
+            ├── logger.py
+            └── splitters.py
+        
+        1 directory, 6 files
+        
+        ### Dependencies
+        
+        > **Note**: The following python3 packages are necessary for this package to run:
+        >
+        > 1. numpy
+        > 2. scipy
+        > 3. pandas
+        > 4. sklearn
+        > 5. tabulate
+        > 6. datetime
+        > 7. tqdm
+        > 8. time
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

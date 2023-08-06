@@ -1,0 +1,10 @@
+min/__init__.py,sha256=6SKGOl25CodDd5EJ4GeRT3zgUB1VK5FvPPqvXKQVrKY,63
+min/cli/__init__.py,sha256=hkAJKpxgJZ-i6pXVaJg2Tc2cSberQfbHsqQXoKdNGa0,52
+min/cli/cli.py,sha256=APcA0yehbI10LRjYGdXpLz57jignvkaSr-cQqJe5NZk,1058
+min/cli/config.py,sha256=8IhTYC9LImZpcgBt2ozsEVk-l5O8KviSt_eipyBQ9qU,117
+min/cli/io_ops.py,sha256=UbQCYYq2_CM0MeQQS-77HMw9HhDm3t8u_kUvJozrCA0,2283
+miniman-0.0.1.dist-info/METADATA,sha256=7mBB0nhbAfi-ILAde8uLDv5b2NVVed8Ar19g7xsYZfI,1226
+miniman-0.0.1.dist-info/RECORD,,
+miniman-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+miniman-0.0.1.dist-info/entry_points.txt,sha256=JUt0Q4TOJYO0J_dAMvalol-osLOXO9U_k1AtJMbYaCI,45
+miniman-0.0.1.dist-info/top_level.txt,sha256=TifEA6XG9dn0xsD5KXFuo6SsI111YtMwvR-F7DqJd_U,4

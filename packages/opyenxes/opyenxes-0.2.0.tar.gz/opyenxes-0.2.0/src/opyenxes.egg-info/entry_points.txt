@@ -1,0 +1,6 @@
+[console_scripts]
+opyenxes = opyenxes.cli:main
+
+[pytest11]
+opyenxes = opyenxes
+

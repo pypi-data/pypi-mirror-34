@@ -1,0 +1,9 @@
+google_documents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_documents/service.py,sha256=luEJsM8LeDfSJM2H-nJcYRGhYtSQ-unp3tiCYSV3wUI,944
+google_documents/settings.py,sha256=0DyD1Gh-wEOoKsAdHJuyDWYOisaTWofQvVvTxrPWI8c,274
+google_documents/entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_documents/entities/file.py,sha256=XaYeB-YBFMOFifNlmOn5uaPNd7YRH0bBWjUviIewn4A,5715
+google_documents-0.0.1.dist-info/METADATA,sha256=DIR9zGMtm3ECJzO9QOePNjxPgmzWuYIBFYaSybMF0dM,560
+google_documents-0.0.1.dist-info/RECORD,,
+google_documents-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+google_documents-0.0.1.dist-info/top_level.txt,sha256=spr-Ktwi3fyW1i-QN5rMlWFyushM7XjjYx9qF_AeWLo,17

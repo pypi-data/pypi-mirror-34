@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ziu/__init__.py
+ziu/editfilter.py
+ziu/listview.py
+ziu/main.py
+ziu/qt.py
+ziu.egg-info/PKG-INFO
+ziu.egg-info/SOURCES.txt
+ziu.egg-info/dependency_links.txt
+ziu.egg-info/entry_points.txt
+ziu.egg-info/requires.txt
+ziu.egg-info/top_level.txt

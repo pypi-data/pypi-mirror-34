@@ -1,0 +1,13 @@
+README.md
+setup.py
+rawsocketpy/__init__.py
+rawsocketpy/asyncserver.py
+rawsocketpy/packet.py
+rawsocketpy/server.py
+rawsocketpy/socket.py
+rawsocketpy/util.py
+rawsocketpy.egg-info/PKG-INFO
+rawsocketpy.egg-info/SOURCES.txt
+rawsocketpy.egg-info/dependency_links.txt
+rawsocketpy.egg-info/not-zip-safe
+rawsocketpy.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+pylint-plugin-utils>=0.4
+pylint>=2.0
+
+[with_django]
+Django

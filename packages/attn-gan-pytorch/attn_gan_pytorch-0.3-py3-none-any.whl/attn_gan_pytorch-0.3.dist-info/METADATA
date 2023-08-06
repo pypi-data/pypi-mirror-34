@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: attn-gan-pytorch
+Version: 0.3
+Summary: python package for self-attention gan implemented as extension of PyTorch nn.Module. paper -> https://arxiv.org/abs/1805.08318
+Home-page: https://github.com/akanimax/attn_gan_pytorch
+Author: animesh karnewar
+Author-email: animeshsk3@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: numpy
+Requires-Dist: PyYAML
+
+UNKNOWN
+
+

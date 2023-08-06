@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+simple_pyms.egg-info/PKG-INFO
+simple_pyms.egg-info/SOURCES.txt
+simple_pyms.egg-info/dependency_links.txt
+simple_pyms.egg-info/requires.txt
+simple_pyms.egg-info/top_level.txt
+simplepyms/__init__.py
+simplepyms/microservice.py
+simplepyms/monitor.py
+simplepyms/topics.py

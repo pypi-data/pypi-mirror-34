@@ -1,0 +1,11 @@
+gwc/__init__.py,sha256=ogWbMqYwLvkYKs3FZxlzOu3fCm4FqCiQklj_4nWRjKw,110
+gwc/__version__.py,sha256=kn2mVah5LhE72KmqyNm0Ykx6tgxUJGN4f8wRi3u3Uxk,282
+gwc/authpolicy.py,sha256=PQdsApnFwjzVvycg1QAIkle4XFnyRyaZl315QlJUS_M,2556
+gwc/globals.py,sha256=0s-XQZAdKho826cNQ9rJCccYZmRuxnbdSzOLv7jO3j0,64
+gwc/gwc_scripts.py,sha256=eEm7Ka9Nm31-i5OyDzcwFwlb3nYkrXP5Py2B6SKIvHU,88792
+gwc/login.py,sha256=pbhfhh_JRrDsARZXrCqhmxXArCpkVN1zw3stSsLr9Bs,1721
+gwc-0.3.3.dist-info/METADATA,sha256=xgcW4Y4ZUuoJV6wWQoxc-sRB_6BUwwXpOb6-wB3G09Q,800
+gwc-0.3.3.dist-info/RECORD,,
+gwc-0.3.3.dist-info/WHEEL,sha256=9xUnOISuCvrSyfu9GlFZT4i2TZ_2OLkwLNqcDvIo3zM,92
+gwc-0.3.3.dist-info/entry_points.txt,sha256=qqgjpLCk6CNNA9ms7TjoZTJU5H6SJYQN2bCycb9btT0,46
+gwc-0.3.3.dist-info/top_level.txt,sha256=G1OmARapzkBvGris5R_pOCdiR8sFFP_1kKA0oeayK-o,4

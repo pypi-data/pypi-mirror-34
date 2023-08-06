@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        sound-down=sound_downloader.scripts.sound_down:main
+    

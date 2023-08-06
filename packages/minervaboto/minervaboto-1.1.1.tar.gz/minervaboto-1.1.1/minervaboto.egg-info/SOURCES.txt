@@ -1,0 +1,12 @@
+README.md
+setup.py
+minervaboto/__init__.py
+minervaboto/__main__.py
+minervaboto/minervaboto.py
+minervaboto/utils.py
+minervaboto.egg-info/PKG-INFO
+minervaboto.egg-info/SOURCES.txt
+minervaboto.egg-info/dependency_links.txt
+minervaboto.egg-info/entry_points.txt
+minervaboto.egg-info/requires.txt
+minervaboto.egg-info/top_level.txt

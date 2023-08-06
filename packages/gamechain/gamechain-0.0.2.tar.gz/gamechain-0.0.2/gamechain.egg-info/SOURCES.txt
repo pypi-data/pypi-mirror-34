@@ -1,0 +1,14 @@
+README.md
+setup.py
+gamechain/__init__.py
+gamechain/gamechain.py
+gamechain/games.py
+gamechain/gc_engine.py
+gamechain/gc_message.py
+gamechain/gc_message_builder.py
+gamechain/gc_parser.py
+gamechain/gc_state.py
+gamechain.egg-info/PKG-INFO
+gamechain.egg-info/SOURCES.txt
+gamechain.egg-info/dependency_links.txt
+gamechain.egg-info/top_level.txt

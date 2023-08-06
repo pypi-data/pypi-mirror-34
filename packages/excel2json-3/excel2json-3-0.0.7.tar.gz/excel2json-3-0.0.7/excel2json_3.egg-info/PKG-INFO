@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: excel2json-3
+Version: 0.0.7
+Summary: Convert Excel Sheet into JSON file.
+Home-page: https://github.com/toransahu/excel2json-3
+Author: Toran Sahu
+Author-email: toran.sahu@yahoo.com
+License: Distributed under terms of the AGPL license.
+Description: # Excel to JSON Converter
+        [![Build Status](https://travis-ci.org/toransahu/excel2json-3.svg?branch=master)](https://travis-ci.org/toransahu/excel2json-3)
+        
+        
+        A minimal API that downloads MS Excel (XLS + XLSX) file from a given URL and converts a given sheet into JSON file.
+        
+        For more details on execution, please refer the [link](https://github.com/toransahu/excel2json-3/blob/master/docs/Solution.md).
+        # Pre-requisites
+        1. Linux
+        2. Python 3.6.4
+        
+        # Installation
+        Install requirements in virtual environment
+        
+        1. Install virtualenv
+            ```
+            pip install virtualenv
+            ```
+        2. Create virtualenv
+            ```
+            mkdir myvenv
+            cd myvenv
+            virtualenv myvenv
+            ```
+        
+        3. Activate `myvenv` venv
+            ```
+            source myvenv/bin/activate
+            
+            or 
+            
+            . myvenv/bin/activate
+            ```
+        
+        4. Install from requirements.pip
+            ```
+            pip install -r requirements.pip
+            ```
+        
+        # Code Execution
+        1. Change to 'src' directory
+            ```
+            cd excel-to-json/src/
+            ``` 
+        2. Run the application
+            ```
+            python convert_excel_to_json.py
+            ``` 
+        
+            
+        # Testing
+        1. Test convert_excel_to_json.py module
+            ```
+            cd excel-to-json/src/
+            pytest test.py
+            ``` 
+Keywords: excel to json,xlsx to json,xls to json,xlsx,xls,json
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: Text Processing
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown

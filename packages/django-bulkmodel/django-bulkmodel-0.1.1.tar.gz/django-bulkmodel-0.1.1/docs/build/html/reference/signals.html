@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Signals API Reference &mdash; django-bulkmodel 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Helpers" href="helpers.html" />
+    <link rel="prev" title="QuerySet API Reference" href="queryset.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django-bulkmodel
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation and Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/overview-all-features.html">Overview of All Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">In-Depth Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/updates.html">1. Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/concurrent-writes.html">2. Concurrent writes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/connection-management.html">3. Connection Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/copy-to-from.html">4. Copy TO / FROM support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/signals.html">5. Signals</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="queryset.html">QuerySet API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Signals API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bulk-create-signals">Bulk create signals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pre-bulk-create">pre_bulk_create</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#post-bulk-create">post_bulk_create</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#update-signals">Update signals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pre-update">pre_update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#post-update">post_update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-update-fields">pre_update_fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#post-update-fields">post_update_fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#copy-to-from-signals">Copy to / from signals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pre-copy-from-instances">pre_copy_from_instances</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#post-copy-from-instances">post_copy_from_instances</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concurrency-executor.html">Concurrency Executor</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django-bulkmodel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Signals API Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ailling/django-bulkmodel/blob/masterreference/signals.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="signals-api-reference">
+<h1>Signals API Reference<a class="headerlink" href="#signals-api-reference" title="Permalink to this headline">¶</a></h1>
+<p>API reference for additional signals included in Django-bulkmodel</p>
+<hr class="docutils" />
+<div class="section" id="bulk-create-signals">
+<h2>Bulk create signals<a class="headerlink" href="#bulk-create-signals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pre-bulk-create">
+<h3>pre_bulk_create<a class="headerlink" href="#pre-bulk-create" title="Permalink to this headline">¶</a></h3>
+<p>Fired before bulk_create writes data to the database</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of model instances about to be written to the database</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="post-bulk-create">
+<h3>post_bulk_create<a class="headerlink" href="#post-bulk-create" title="Permalink to this headline">¶</a></h3>
+<p>Fired after bulk_create has written data to the database</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of model instances that have been written to the database</li>
+<li><code class="docutils literal notranslate"><span class="pre">queryset</span></code>: a queryset of records saved in the bulk create; only applies if <code class="docutils literal notranslate"><span class="pre">return_queryset=True</span></code> is passed to <code class="docutils literal notranslate"><span class="pre">bulk_create()</span></code></li>
+</ul>
+</div></blockquote>
+<p>Fired after a bulk-create is issued</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="update-signals">
+<h2>Update signals<a class="headerlink" href="#update-signals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pre-update">
+<h3>pre_update<a class="headerlink" href="#pre-update" title="Permalink to this headline">¶</a></h3>
+<p>Fired just before <code class="docutils literal notranslate"><span class="pre">update()</span></code> performs a homogeneous update</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of instances about to be updated</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="post-update">
+<h3>post_update<a class="headerlink" href="#post-update" title="Permalink to this headline">¶</a></h3>
+<p>Fired just after <code class="docutils literal notranslate"><span class="pre">update()</span></code> performs a homogeneous update</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of instances that have been updated</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="pre-update-fields">
+<h3>pre_update_fields<a class="headerlink" href="#pre-update-fields" title="Permalink to this headline">¶</a></h3>
+<p>Fired just before <code class="docutils literal notranslate"><span class="pre">update_fields()</span></code> performs a hetergenous update</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of instances about to be updated</li>
+<li><code class="docutils literal notranslate"><span class="pre">field_names</span></code>: a list of fieldnames being updated; if empty, all fields are being updated</li>
+<li><code class="docutils literal notranslate"><span class="pre">field_defaults</span></code>: defaults for each field, provided as a dictionary</li>
+<li><code class="docutils literal notranslate"><span class="pre">batch_size</span></code>: the batch size used for the update</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="post-update-fields">
+<h3>post_update_fields<a class="headerlink" href="#post-update-fields" title="Permalink to this headline">¶</a></h3>
+<p>Fired just after <code class="docutils literal notranslate"><span class="pre">update_fields()</span></code> performs a heterogeneous update</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of instances about to be updated</li>
+<li><code class="docutils literal notranslate"><span class="pre">queryset</span></code>: a queryset of records updated, if <code class="docutils literal notranslate"><span class="pre">return_queryset=True</span></code> is passed to update_fields</li>
+<li><code class="docutils literal notranslate"><span class="pre">field_names</span></code>: a list of fieldnames being updated; if empty, all fields are being updated</li>
+<li><code class="docutils literal notranslate"><span class="pre">field_defaults</span></code>: defaults for each field, provided as a dictionary</li>
+<li><code class="docutils literal notranslate"><span class="pre">batch_size</span></code>: the batch size used for the update</li>
+<li><code class="docutils literal notranslate"><span class="pre">n</span></code>: number of instances updated</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="copy-to-from-signals">
+<h2>Copy to / from signals<a class="headerlink" href="#copy-to-from-signals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pre-copy-from-instances">
+<h3>pre_copy_from_instances<a class="headerlink" href="#pre-copy-from-instances" title="Permalink to this headline">¶</a></h3>
+<p>Fired just before <code class="docutils literal notranslate"><span class="pre">copy_from_instances</span></code> writes data to the database</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of instances about to be updated</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="post-copy-from-instances">
+<h3>post_copy_from_instances<a class="headerlink" href="#post-copy-from-instances" title="Permalink to this headline">¶</a></h3>
+<p>Fired just after <code class="docutils literal notranslate"><span class="pre">copy_from_instances</span></code> writes data to the database</p>
+<p>Parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">instances</span></code>: a list of instances that have been updated</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="helpers.html" class="btn btn-neutral float-right" title="Helpers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="queryset.html" class="btn btn-neutral" title="QuerySet API Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Alan Illing.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

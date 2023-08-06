@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Bulk Create &mdash; django-bulkmodel 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Bulk Updates" href="bulk-update.html" />
+    <link rel="prev" title="Overview of All Features" href="overview-all-features.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django-bulkmodel
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview-all-features.html">Overview of All Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">In-Depth Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Bulk Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#returning-queryset">1.1. Returning queryset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-data-by-copying-from-a-buffer">1.2. Writing data by copying from a buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#missing-signals">1.3. Missing signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#concurrent-writes">1.4. Concurrent writes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bulk-update.html">2. Bulk Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concurrent-writes.html">3. Concurrent writes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connection-management.html">4. Connection Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copy-to-from.html">5. Copy TO / FROM support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">6. Signals</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/queryset.html">QuerySet API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/signals.html">Signals API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/concurrency-executor.html">Concurrency Executor</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django-bulkmodel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>1. Bulk Create</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ailling/django-bulkmodel/blob/masterpages/bulk-create.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bulk-create">
+<h1>1. Bulk Create<a class="headerlink" href="#bulk-create" title="Permalink to this headline">¶</a></h1>
+<p>Django ships with a <code class="docutils literal notranslate"><span class="pre">bulk_create</span></code> method that supports a batch_size parameter for batch writing.</p>
+<p>Django-bulkmodel expands on this queryset method with some new options.</p>
+<div class="section" id="returning-queryset">
+<h2>1.1. Returning queryset<a class="headerlink" href="#returning-queryset" title="Permalink to this headline">¶</a></h2>
+<p>Creating data in bulk returns what the database returns: the number of records created.</p>
+<p>However there many cases where you want to obtain the created records for further manipulation, and
+there’s no way to do with this without have the primary keys associated with each record.</p>
+<p>Django-bulkmodel exposes a parameter called <code class="docutils literal notranslate"><span class="pre">return_queryset</span></code> which returns created data as a queryset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span><span class="p">,</span> <span class="n">random</span><span class="p">,</span> <span class="n">string</span>
+<span class="kn">from</span> <span class="nn">bulkmodel.models</span> <span class="kn">import</span> <span class="n">BulkModel</span>
+
+<span class="k">class</span> <span class="nc">Foo</span><span class="p">(</span><span class="n">BulkModel</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">(</span><span class="n">null</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="n">foo_objects</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">foo_objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Foo</span><span class="p">(</span>
+        <span class="c1"># random string</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span><span class="p">,</span> <span class="mi">25</span><span class="p">)),</span>
+
+        <span class="c1"># random value</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">),</span>
+    <span class="p">))</span>
+
+<span class="c1"># create instances and return a queryset of the created items</span>
+<span class="n">foos</span> <span class="o">=</span> <span class="n">Foo</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">bulk_create</span><span class="p">(</span><span class="n">foo_objects</span><span class="p">,</span> <span class="n">return_queryset</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="writing-data-by-copying-from-a-buffer">
+<h2>1.2. Writing data by copying from a buffer<a class="headerlink" href="#writing-data-by-copying-from-a-buffer" title="Permalink to this headline">¶</a></h2>
+<p>Bulk create will perform several inserts. Depending on your schema and database it may be faster to load
+data from a path or buffer.</p>
+<p>For supported databases, a BulkModel queryset exposes this functionality.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foos</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">foos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Foo</span><span class="p">(</span>
+        <span class="c1"># random string</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span><span class="p">,</span> <span class="mi">25</span><span class="p">)),</span>
+
+        <span class="c1"># random value</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">),</span>
+    <span class="p">))</span>
+
+<span class="n">foos</span> <span class="o">=</span> <span class="n">Foo</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">copy_from_objects</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">return_queryset</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">return_queryset</span></code> is available on all write methods. See the <a class="reference internal" href="../reference/queryset.html"><span class="doc">Queryset Reference</span></a> for more details.</p>
+</div>
+<div class="section" id="missing-signals">
+<h2>1.3. Missing signals<a class="headerlink" href="#missing-signals" title="Permalink to this headline">¶</a></h2>
+<p>A <code class="docutils literal notranslate"><span class="pre">BulkModel</span></code> adds several signals, including signals around creating data in bulk.</p>
+<p>These signals are coupled to the two methods of creating data, as documented above:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">pre_bulk_create</span></code> / <code class="docutils literal notranslate"><span class="pre">post_bulk_create</span></code>: signals fired when data is created from <code class="docutils literal notranslate"><span class="pre">bulk_create</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pre_copy_from_instances</span></code> / <code class="docutils literal notranslate"><span class="pre">post_copy_from_instances</span></code>: signals fired when data is created using <code class="docutils literal notranslate"><span class="pre">copy_from_objects</span></code></li>
+</ul>
+<p>You can optionally turn off emitting signals when creating data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo_objects</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="c1"># do not send signals (the default is True)</span>
+<span class="n">Foo</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">bulk_create</span><span class="p">(</span><span class="n">foo_objects</span><span class="p">,</span> <span class="n">send_signals</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For more information see the <a class="reference internal" href="signals.html"><span class="doc">signals user guide</span></a> or the <a class="reference internal" href="../reference/signals.html"><span class="doc">signals API reference</span></a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="concurrent-writes">
+<h2>1.4. Concurrent writes<a class="headerlink" href="#concurrent-writes" title="Permalink to this headline">¶</a></h2>
+<p>You can accelerate the loading of data by splitting work into batches and writing each batch concurrently.</p>
+<p>A BulkModel queryset exposes three parameters to give you full control over this process:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">batch_size</span></code>: The size of each chunk to write into the database; this parameter can be used with or without concurrency</li>
+<li><code class="docutils literal notranslate"><span class="pre">concurrent</span></code>: If true, a write will happen concurrently. The default is False</li>
+<li><code class="docutils literal notranslate"><span class="pre">max_concurrent_workers</span></code>: The total number of concurrent workers involved in the event loop.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foos</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="c1"># concurrently write foos into the database</span>
+<span class="n">Foo</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">bulk_create</span><span class="p">(</span><span class="n">foos</span><span class="p">,</span> <span class="n">concurrent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">max_concurrent_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># a regular (homogeneous) update can be written concurrently</span>
+<span class="n">foos</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">concurrent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">max_concurrent_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># and so can a heterogeneous update</span>
+<span class="n">foos</span><span class="o">.</span><span class="n">update_fields</span><span class="p">(</span><span class="n">concurrent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">max_concurrent_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For more information see the <a class="reference internal" href="concurrent-writes.html"><span class="doc">concurrent writes user guide</span></a> or the <a class="reference internal" href="../reference/queryset.html"><span class="doc">queryset API reference</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bulk-update.html" class="btn btn-neutral float-right" title="2. Bulk Updates" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview-all-features.html" class="btn btn-neutral" title="Overview of All Features" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Alan Illing.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

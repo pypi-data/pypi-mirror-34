@@ -1,0 +1,408 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>7.5. Beck Depression Inventory (BDI) &#8212; CamCOPS 2.2.7 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/camcops_docs.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7.6. Body mass index (BMI)" href="bmi.html" />
+    <link rel="prev" title="7.4. Bristol Activities of Daily Living Scale (BADLS)" href="badls.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="bmi.html" title="7.6. Body mass index (BMI)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="badls.html" title="7.4. Bristol Activities of Daily Living Scale (BADLS)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CamCOPS 2.2.7 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="_tasks_all.html" accesskey="U">7. All tasks</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="beck-depression-inventory-bdi">
+<span id="bdi"></span><h1>7.5. Beck Depression Inventory (BDI)<a class="headerlink" href="#beck-depression-inventory-bdi" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>(¶)</strong> <strong>Reproduction of this task/scale is not permitted. This CamCOPS
+task is a data collection tool only, with the actual task/scale not
+included for copyright reasons. Use it only in conjunction with a licensed
+copy of the original task.</strong> (That is, if you own a licensed paper copy of
+the task, feel free to use this data collection tool, but if you don’t, it
+will probably be useless.)</p>
+</div>
+<div class="section" id="intellectual-property-rights">
+<h2>7.5.1. Intellectual property rights<a class="headerlink" href="#intellectual-property-rights" title="Permalink to this headline">¶</a></h2>
+<p>Copyright to the BDI is held by Pearson, and the scale is commercial; see
+<a class="reference external" href="http://www.pearsonassessments.com/">http://www.pearsonassessments.com/</a>.</p>
+</div>
+<div class="section" id="sources-and-notes">
+<h2>7.5.2. Sources and notes<a class="headerlink" href="#sources-and-notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Overviews: see <a class="reference internal" href="#wikipediabdi" id="id1">[WikipediaBDI]</a>, <a class="reference internal" href="#beck1988" id="id2">[Beck1988]</a>, <a class="reference internal" href="#jacksonkoku2016" id="id3">[JacksonKoku2016]</a>,
+<a class="reference internal" href="#beck2010" id="id4">[Beck2010]</a>, <a class="reference internal" href="#smarr2003" id="id5">[Smarr2003]</a>.</li>
+<li>Notes:<ul>
+<li>The BDI (= BDI-I), BDI-IA (“revised BDI”), and BDI-II all have 21
+questions.</li>
+<li>The 21 questions mostly map to the same concepts in all versions (e.g.
+Q1 sadness, Q2 pessimism/hopelessness, Q3 feeling a failure), but there are
+some differences between versions.</li>
+<li>Q9 concerns suicidal thoughts/wishes (in the BDI, BDI-IA, and BDI-II).</li>
+<li>There is also a BDI Short Form (BDI-SF), which has 13 questions; see e.g.
+<a class="reference internal" href="#chibnall1994" id="id6">[Chibnall1994]</a>.</li>
+<li>There’s also a “BDI FastScreen for Medical Patients” (= BDI-Primary Care,
+BDI-PC), which has 7 questions <a class="reference internal" href="#smarr2003" id="id7">[Smarr2003]</a>.</li>
+</ul>
+</li>
+<li><strong>BDI-I (“BDI”):</strong> reference is <a class="reference internal" href="#beck1961" id="id8">[Beck1961]</a>.<ul>
+<li>Distinguishing features:<ul>
+<li>rates “right now” <a class="reference internal" href="#beck1988" id="id9">[Beck1988]</a></li>
+<li>some questions have multiple answers having the same score (see Wikipedia
+article above), e.g. “2a” and “2b” answers both scoring 2.</li>
+</ul>
+</li>
+<li>Summary of questions, each rated 0-3 <a class="reference internal" href="#beck1988" id="id10">[Beck1988]</a>:
+“(a) Mood, (b) Pessimism, (c) Sense of Failure, (d) Lack of Satisfaction,
+(e) Guilt Feelings, (f) Sense of Punishment, (g) Self-dislike, (h)
+Self-accusation, (i) Suicidal Wishes, (j) Crying, (k) Irritability, (l)
+Social Withdrawal, (m) Indecisiveness, (n) Distortion of Body Image, (o)
+Work Inhibition, (p) Sleep Disturbance, (q) Fatigability, (r) Loss of
+Appetite, (s) Weight Loss, (t) Somatic Preoccupation, and (u) Loss of
+Libido.”</li>
+</ul>
+</li>
+<li><strong>BDI-IA (“revised BDI”):</strong> developed from 1971, copyrighted in 1978 (as per
+<a class="reference internal" href="#beck1988" id="id11">[Beck1988]</a>), published in 1979; reference is <a class="reference internal" href="#beck1979" id="id12">[Beck1979]</a>.<ul>
+<li>Distinguishing features:<ul>
+<li>rates the past one week <a class="reference internal" href="#beck1988" id="id13">[Beck1988]</a> <a class="reference internal" href="#beck1996b" id="id14">[Beck1996b]</a></li>
+<li>only one answer per score</li>
+<li>Q11 irritation</li>
+<li>Q14 own appearance</li>
+<li>Q15 ability to work</li>
+<li>Q17 tiredness</li>
+<li>Q19 weight loss</li>
+<li>Q20 health worry</li>
+</ul>
+</li>
+<li>Compared to the BDI, there are fewer responses or wording changes for 15
+items; 6 are unchanged (irritability, crying, fatigability, appetite,
+weight loss, loss of libido) <a class="reference internal" href="#beck1988" id="id15">[Beck1988]</a>.</li>
+<li>Summary of questions, each rated 0-3 <a class="reference internal" href="#beck1996b" id="id16">[Beck1996b]</a>:
+(1) sadness, (2) pessimism, (3) sense of failure, (4) self-dissatisfaction,
+(5) guilt, (6) punishment, (7) self-dislike, (8) self-accusations, (9)
+suicidal ideas, (10) crying, (11) irritability, (12) social withdrawal,
+(13) indecisiveness, (14) body image change, (15) work difficulty, (16)
+insomnia, (17) fatigability, (18) loss of appetite, (19) weight loss, (20)
+somatic preoccupation, (21) loss of libido.</li>
+</ul>
+</li>
+<li><strong>BDI-II</strong> <a class="reference internal" href="#beck1996a" id="id17">[Beck1996a]</a>:<ul>
+<li>Distinguishing features:<ul>
+<li>rates the past two weeks <a class="reference internal" href="#beck1996b" id="id18">[Beck1996b]</a></li>
+<li>only one answer per score, except sleep question (Q16) and appetite
+question (Q18)</li>
+<li>sleep and appetite questions deal with increases as well as decreases</li>
+<li>Q11 agitation/restlessness</li>
+<li>Q14 own worth</li>
+<li>Q15 loss of energy</li>
+<li>Q17 irritability</li>
+<li>Q19 concentration</li>
+<li>Q20 tiredness/fatigue</li>
+</ul>
+</li>
+<li>Summary of questions, each rated 0-3 <a class="reference internal" href="#beck1996b" id="id19">[Beck1996b]</a> <a class="reference internal" href="#steer1999" id="id20">[Steer1999]</a> <a class="reference internal" href="#gary2018" id="id21">[Gary2018]</a>:
+(1) sadness, (2) pessimism, (3) past failure, (4) loss of pleasure, (5)
+guilty feelings, (6) punishment feelings, (7) self-dislike, (8)
+self-criticalness, (9) suicidal thoughts or wishes, (10) crying, (11)
+agitation, (12) loss of interest, (13) indecisiveness, (14) worthlessness,
+(15) loss of energy, (16) changes in sleeping pattern, (17) irritability,
+(18) changes in appetite, (19) concentration difficulty, (20) tiredness or
+fatigue, (21) loss of interest in sex.</li>
+</ul>
+</li>
+</ul>
+<p class="rubric">Footnotes</p>
+<table class="docutils citation" frame="void" id="beck1961" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[Beck1961]</a></td><td>Beck AT, Ward CH, Mendelson M, Mock J, Erbaugh J (1961). An inventory for
+measuring depression. <em>Arch. Gen. Psychiatry</em> 4: 561–71.
+<a class="reference external" href="https://doi.org/10.1001/archpsyc.1961.01710120031004">doi:10.1001/archpsyc.1961.01710120031004</a>.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/13688369">13688369</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="beck1979" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id12">[Beck1979]</a></td><td>Beck AT, Rush AJ, Shaw BF, Emery G (1979).
+<em>Cognitive therapy of depression.</em> New York: Guilford Press.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="beck1988" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[Beck1988]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id9">2</a>, <a class="fn-backref" href="#id10">3</a>, <a class="fn-backref" href="#id11">4</a>, <a class="fn-backref" href="#id13">5</a>, <a class="fn-backref" href="#id15">6</a>)</em> Beck AT, Steer RA, Carbin MG (1988). Psychometric properties of the Beck
+Depression Inventory: Twenty-five years of evaluation. Clinical Psychology
+Review* 8: 77-100.
+<a class="reference external" href="https://doi.org/10.1016/0272-7358(88)90050-5">doi:10.1016/0272-7358(88)90050-5</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="chibnall1994" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[Chibnall1994]</a></td><td>Chibnall JT, Tait RC (1994). The short form of the Beck Depression
+Inventory: Validity issues with chronic pain patients. <em>Clinical Journal of
+Pain</em> 10: 261-266.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/7858354">7858354</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="beck1996a" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id17">[Beck1996a]</a></td><td>Beck AT, Steer RA, Brown GK (1996). <em>Manual for the Beck Depression
+Inventory-II.</em> San Antonio, TX: Psychological Corporation.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="beck1996b" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[Beck1996b]</td><td><em>(<a class="fn-backref" href="#id14">1</a>, <a class="fn-backref" href="#id16">2</a>, <a class="fn-backref" href="#id18">3</a>, <a class="fn-backref" href="#id19">4</a>)</em> Beck AT, Steer RA, Ball R, Ranieri W (1996). Comparison of Beck Depression
+Inventories -IA and -II in psychiatric outpatients. <em>Journal of Personality
+Assessment</em> 67: 588–597.
+<a class="reference external" href="https://doi.org/10.1207/s15327752jpa6703_13">doi:10.1207/s15327752jpa6703_13</a>.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/8991972">8991972</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="steer1999" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id20">[Steer1999]</a></td><td>Steer RA, Ball R, Ranieri WF, Beck AT (1999).
+Dimensions of the Beck Depression Inventory-II in clinically depressed
+outpatients. <em>J Clin Psychol</em> 55: 117-128.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/10100838">10100838</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="smarr2003" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[Smarr2003]</td><td><em>(<a class="fn-backref" href="#id5">1</a>, <a class="fn-backref" href="#id7">2</a>)</em> Smarr KL. Measures of depression and depressive symptoms.
+<em>Arthritis &amp; Rheumatism</em> 49: S134-S146.
+<a class="reference external" href="https://doi.org/10.1002/art.11410">doi: 10.1002/art.11410</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="beck2010" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[Beck2010]</a></td><td>Beck AT, Steer RA, Ball R, Ranieri WF (2010). Comparison of Beck Depression
+Inventories-IA and-II in Psychiatric Outpatients. <em>Journal of Personality
+Assessment</em> 67: 588-597.
+<a class="reference external" href="https://doi.org/10.1207/s15327752jpa6703_13">doi:10.1207/s15327752jpa6703_13</a>.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/8991972">8991972</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="jacksonkoku2016" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[JacksonKoku2016]</a></td><td>Jackson-Koku G (2016). Questionnaire review: Beck Depression
+Inventory. <em>Occupational Medicine</em> 66: 174-175.
+<a class="reference external" href="https://doi.org/10.1093/occmed/kqv087">doi:10.1093/occmed/kqv087</a>.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/26892598">26892598</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="gary2018" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id21">[Gary2018]</a></td><td>Gary F, Yarandi H, Evans E, Still C, Michels P, Hassan M, Campbell DW,
+Conic R (2018). Beck Depression Inventory-II: Factor analyses with three
+groups of midlife women of African descent in the Midwest, the South, and
+the U.S. Virgin Islands. <em>Issues Ment Health Nurs</em> 39: 233-243.
+<a class="reference external" href="https://doi.org/10.1080/01612840.2017.1373175">doi:10.1080/01612840.2017.1373175</a>.
+PMID <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/29193995">29193995</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="wikipediabdi" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[WikipediaBDI]</a></td><td><a class="reference external" href="https://en.wikipedia.org/wiki/Beck_Depression_Inventory">https://en.wikipedia.org/wiki/Beck_Depression_Inventory</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/download.html">2. Downloading CamCOPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../client/client_installation.html">3. Installing and configuring the client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../client/client_using.html">4. Using the client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_front_end_general.html">5. Web site: general use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_tasks_by_category.html">6. Tasks in CamCOPS by category</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_tasks_all.html">7. All tasks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ace3.html">7.1. Addenbrooke’s Cognitive Examination — III (ACE-III)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aims.html">7.2. Abnormal Involuntary Movement Scale (AIMS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audit.html">7.3. Alcohol Use Disorders Identification Test (AUDIT and AUDIT-C)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="badls.html">7.4. Bristol Activities of Daily Living Scale (BADLS)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7.5. Beck Depression Inventory (BDI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bmi.html">7.6. Body mass index (BMI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bprs.html">7.7. Brief Psychiatric Rating Scale (BPRS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bprse.html">7.8. Brief Psychiatric Rating Scale, Expanded (BPRS-E)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cage.html">7.9. CAGE Questionnaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cape.html">7.10. Community Assessment of Psychic Experiences (CAPE)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="caps.html">7.11. Cardiff Anomalous Perceptions Scale (CAPS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cardinal_expdet.html">7.12. Cardinal RN — Expectation–Detection task</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cardinal_expdetthreshold.html">7.13. Cardinal RN — Threshold predetermination for Expectation–Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cbir.html">7.14. Cambridge Behavioural Inventory, revised (CBI-R)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cecaq3.html">7.15. Childhood Experience of Care and Abuse Questionnaire (CECA-Q3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cgi.html">7.16. Clinical Global Impressions scale (CGI, CGI-I)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cgisch.html">7.17. Clinical Global Impression – Schizophrenia (CGI-SCH)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cisr.html">7.18. Clinical Interview Schedule, Revised (CIS–R)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ciwa.html">7.19. Clinical Institute Withdrawal Assessment for Alcohol Scale, Revised (CIWA-Ar)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clinical.html">7.20. Clinical clerkings, notes, contact logs, photographs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cope.html">7.21. COPE Inventory (brief version)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dad.html">7.22. Disability Assessment for Dementia scale (DAD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dast.html">7.23. Drug Abuse Screening Test (DAST)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deakin_1.html">7.24. Deakin JB — 1 — Antibody-mediated psychosis study</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demoquestionnaire.html">7.25. Demonstration questionnaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="demqol.html">7.26. Dementia Quality of Life measure (DEMQOL, DEMQOL-Proxy)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="distressthermometer.html">7.27. Distress Thermometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fast.html">7.28. Fast Alcohol Screening Test (FAST)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="from_lp.html">7.29. FROM-LP additional scales (CGI-I, IRAC, PSS, FFT, RSS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frs.html">7.30. Frontotemporal Dementia Rating Scale (FRS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gad7.html">7.31. Generalized Anxiety Disorder Assessment (GAD-7)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaf.html">7.32. Global Assessment of Functioning (GAF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gds.html">7.33. Geriatric Depression Scale, 15-item version (GDS-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gmcpq.html">7.34. UK General Medical Council (GMC) Patient Questionnaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hads.html">7.35. Hospital Anxiety and Depression Scale (HADS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hama.html">7.36. Hamilton Rating Scale for Anxiety (HAM-A)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hamd.html">7.37. Hamilton Depression Rating Scale (HDRS) / Hamilton Rating Scale for Depression (HRSD, HAM-D)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="honos.html">7.38. Health of the Nation Outcome Scales (HoNOS, HoNOS 65+, HoNOSCA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="icd.html">7.39. International Classification of Diseases: codes and diagnostic criteria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ided3d.html">7.40. Three-dimensional intradimensional/extradimensional set-shifting task (IDED3D)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iesr.html">7.41. Impact of Events Scale – Revised (IES-R)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ifs.html">7.42. INECO Frontal Screening (IFS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="khandaker_1.html">7.43. Khandaker G — 1 — Insight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mast.html">7.44. Michigan Alcohol Screening Test (MAST); Short MAST (SMAST)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mds_updrs.html">7.45. Movement Disorder Society-Sponsored Revision of the Unified Parkinson’s Disease Rating Scale (MDS-UPDRS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="moca.html">7.46. Montreal Cognitive Assessment (MoCA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nart.html">7.47. National Adult Reading Test (NART)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="npiq.html">7.48. Neuropsychiatric Inventory Questionnaire (NPI-Q)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="panss.html">7.49. Positive and negative syndrome scale (PANSS) for schizophrenia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pcl.html">7.50. PTSD Checklist (PCL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdss.html">7.51. Panic Disorder Severity Scale (PDSS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phq9.html">7.52. Patient Health Questionnaire-9 (PHQ-9)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phq15.html">7.53. Patient Health Questionnaire-15 (PHQ-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pswq.html">7.54. Penn State Worry Questionnaire (PSWQ)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qol.html">7.55. Quality of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rand36.html">7.56. RAND 36-Item Short Form Health Survey 1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slums.html">7.57. Saint Louis University Mental Status (SLUMS) Examination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wemwbs.html">7.58. Warwick–Edinburgh Mental Well-Being Scale (WEMWBS) and Short WEMWBS (SWEMWBS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsas.html">7.59. Work and Social Adjustment Scale (WSAS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ybocs.html">7.60. Yale–Brown Obsessive Compulsive Scale (Y-BOCS) and Y-BOCS Symptom Checklist (Y-BOCS-SC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zbi.html">7.61. Zarit Burden Interview (ZBI)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_tasks_missing.html">7.62. Why isn’t task X in CamCOPS?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../client/client_troubleshooting.html">8. Troubleshooting client problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_installation.html">9. Installing CamCOPS on the server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_configuration.html">10. Configuring the server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_config_file.html">11. The CamCOPS server configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_front_end_admin.html">12. Web site: admin functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_command_line.html">13. CamCOPS command-line tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_troubleshooting.html">14. Troubleshooting server problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licences/licences.html">15. Licences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/index.html">16. Developer notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/tcpip_ports.html">17. Common relevant TCP/IP ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/linux_flavours.html">18. Linux flavours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autodoc/_index.html">19. Automatic documentation of core server source code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">20. Change log/history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq_known_problems.html">21. FAQ and known problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../to_do.html">22. Things to do</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wishlist.html">23. Wishlist and blue-sky thoughts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/local_info.html">24. Local configuration information</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="badls.html"
+                        title="previous chapter">7.4. Bristol Activities of Daily Living Scale (BADLS)</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bmi.html"
+                        title="next chapter">7.6. Body mass index (BMI)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/tasks/bdi.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="bmi.html" title="7.6. Body mass index (BMI)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="badls.html" title="7.4. Bristol Activities of Daily Living Scale (BADLS)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CamCOPS 2.2.7 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="_tasks_all.html" >7. All tasks</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2012-2018, Rudolf Cardinal.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
+    </div>
+  </body>
+</html>

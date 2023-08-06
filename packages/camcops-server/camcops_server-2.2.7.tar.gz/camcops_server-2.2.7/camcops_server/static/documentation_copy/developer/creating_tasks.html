@@ -1,0 +1,345 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>16.1. Creating tasks &#8212; CamCOPS 2.2.7 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/camcops_docs.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="16.2. Building the CamCOPS client" href="building_client.html" />
+    <link rel="prev" title="16. Developer notes" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="building_client.html" title="16.2. Building the CamCOPS client"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="16. Developer notes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CamCOPS 2.2.7 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">16. Developer notes</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="creating-tasks">
+<h1>16.1. Creating tasks<a class="headerlink" href="#creating-tasks" title="Permalink to this headline">¶</a></h1>
+<p>Tasks on the client (tablet, desktop) are written in C++. All client tasks are
+classes that inherit from the <cite>Task</cite> class, define their database structure,
+and implement an <cite>editor()</cite> function that implements the task itself.
+Typically, one of two methods is used:</p>
+<ul class="simple">
+<li>Simple tasks create a <cite>Questionnaire</cite> object and use questionnaire elements
+(described below) to capture user responses. Arbitrary logic is possible,
+both in terms of what constitutes “enough information” and in terms of page
+flow (see e.g. the <a class="reference internal" href="../tasks/cisr.html#cisr"><span class="std std-ref">CIS-R</span></a>).</li>
+<li>Complex tasks create a graphics widget and manipulate Qt graphics objects
+directly, giving arbitrary power. Examples include the <a class="reference internal" href="../tasks/ided3d.html#ided3d"><span class="std std-ref">IDED3D task</span></a>.</li>
+</ul>
+<p>On the server, a single Python class represents the task. It must define its
+database structure and provide an HTML view on the data (used for the HTML and
+PDF representations). More or less everything else is optional, but tasks may
+provide numerical summary information (for trackers) or customize their
+clinical text views.</p>
+<div class="section" id="questionnaire-elements">
+<h2>16.1.1. Questionnaire elements<a class="headerlink" href="#questionnaire-elements" title="Permalink to this headline">¶</a></h2>
+<p>Programmers can embed arbitrary logic in a task. Several elements are
+available; all inherit from <cite>QuElement</cite>. Elements are grouped into pages
+(<cite>QuPage</cite>).</p>
+<div class="section" id="display-sound">
+<h3>16.1.1.1. Display/sound<a class="headerlink" href="#display-sound" title="Permalink to this headline">¶</a></h3>
+<p>These elements are primarily for static display (though, for example, the
+programmer can manipulate the contents of static text dynamically).</p>
+<ul class="simple">
+<li><cite>QuAudioPlayer</cite>. Allows sounds to be played.</li>
+<li><cite>QuBackground</cite>. Widget that is styled (via CSS) to have a colour. Used to
+create striping background effects for custom tables (etc.).</li>
+<li><cite>QuHeading</cite>. Subclass of <cite>QuText</cite>; displays headings.</li>
+<li><cite>QuHorizontalLine</cite>. A horizontal rule or line.</li>
+<li><cite>QuImage</cite>. A static image.</li>
+<li><cite>QuSpacer</cite>. A fixed-size spacer.</li>
+<li><cite>QuText</cite>. Static text.</li>
+</ul>
+</div>
+<div class="section" id="user-input">
+<h3>16.1.1.2. User input<a class="headerlink" href="#user-input" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><cite>QuBoolean</cite>. An element to control a single boolean (0/1/NULL) field. It may
+display text or an image. The text may appear as a button or with an adjacent
+widget. Some possible appearances:<ul>
+<li>Unselected (NULL): <a class="reference internal" href="../_images/check_unselected1.png"><img alt="check_unselected" class="align-middle" src="../_images/check_unselected1.png" style="width: 24px; height: 24px;" /></a> or <span class="unselectedtext">Option</span></li>
+<li>Unselected (NULL) and required: <a class="reference internal" href="../_images/check_unselected_required1.png"><img alt="check_unselected_required" class="align-middle" src="../_images/check_unselected_required1.png" style="width: 24px; height: 24px;" /></a> or
+<span class="missingtext">Option</span></li>
+<li>False: <a class="reference internal" href="../_images/check_false_black1.png"><img alt="check_false_black" class="align-middle" src="../_images/check_false_black1.png" style="width: 24px; height: 24px;" /></a> or <a class="reference internal" href="../_images/check_false_red1.png"><img alt="check_false_red" class="align-middle" src="../_images/check_false_red1.png" style="width: 24px; height: 24px;" /></a> or <span class="unselectedtext">Option</span></li>
+<li>True: <a class="reference internal" href="../_images/check_true_black1.png"><img alt="check_true_black" class="align-middle" src="../_images/check_true_black1.png" style="width: 24px; height: 24px;" /></a> or <a class="reference internal" href="../_images/check_true_red1.png"><img alt="check_true_red" class="align-middle" src="../_images/check_true_red1.png" style="width: 24px; height: 24px;" /></a> or <span class="selectedtext">Option</span></li>
+</ul>
+</li>
+<li><cite>QuButton</cite>. A button, used to execute arbitrary code.</li>
+<li><cite>QuCanvas</cite>. A canvas for sketching, which can take a default or background
+image.</li>
+<li><cite>QuCountdown</cite>. A countdown timer.</li>
+<li><cite>QuDateTime</cite>. Date/time input method.</li>
+<li><cite>QuDiagnosticCode</cite>. Allows searching and selection of diagnostic codes using
+a recognized system (e.g. <a class="reference internal" href="../tasks/icd.html#icd"><span class="std std-ref">ICD-10</span></a>).</li>
+<li><cite>QuLineEdit</cite>. One-line text editor. (For a bigger version, see <cite>QuTextEdit</cite>.)</li>
+<li><cite>QuLineEditDouble</cite>. A one-line editor for a floating-point number, allowing
+constraints.</li>
+<li><cite>QuLineEditInteger</cite>. A one-line editor for an integer (C++ int), allowing
+constraints.</li>
+<li><cite>QuLineEditLongLong</cite>. A one-line editor for a large signed integer, allowing
+constraints.</li>
+<li><cite>QuLineEditULongLong</cite>. A one-line editor for a large unsigned integer,
+allowing constraints.</li>
+<li><cite>QuMcq</cite>. A simple 1-from-many or multiple-choice question (MCQ), with a range
+of layout and visual options.<ul>
+<li>Unselected: <a class="reference internal" href="../_images/radio_unselected1.png"><img alt="radio_unselected" class="align-middle" src="../_images/radio_unselected1.png" style="width: 24px; height: 24px;" /></a> or <span class="unselectedtext">Option</span></li>
+<li>Unselected and a response is required: <a class="reference internal" href="../_images/radio_unselected_required1.png"><img alt="radio_unselected_required" class="align-middle" src="../_images/radio_unselected_required1.png" style="width: 24px; height: 24px;" /></a> or
+<span class="missingtext">Option</span></li>
+<li>Selected: <a class="reference internal" href="../_images/radio_selected1.png"><img alt="radio_selected" class="align-middle" src="../_images/radio_selected1.png" style="width: 24px; height: 24px;" /></a> or <span class="selectedtext">Option</span></li>
+</ul>
+</li>
+<li><cite>QuMcqGrid</cite>. An MCQ specialized to operate in a grid, with lots of questions
+having a common set of possible answers.</li>
+<li><cite>QuMcqGridDouble</cite>. A specialized MCQ with a double grid (lots of questions
+having a common pair of sets of possible answers; e.g. for each question,
+pick one from A/B/C and pick one from X/Y/Z).</li>
+<li><cite>QuMcqGridSingleBoolean</cite>. Another specialized MCQ; as for <cite>QuMcqGrid</cite> but
+with an additional Boolean variable per question (e.g. for each question,
+pick one of absent/mild/moderate/severe, and tick if distressing).</li>
+<li><cite>QuMultipleResponse</cite>. An n-from-many (multiple response) question.<ul>
+<li>Unselected: <a class="reference internal" href="../_images/check_unselected1.png"><img alt="check_unselected" class="align-middle" src="../_images/check_unselected1.png" style="width: 24px; height: 24px;" /></a> or <span class="unselectedtext">Option</span></li>
+<li>Unselected and more responses required: <a class="reference internal" href="../_images/check_unselected_required1.png"><img alt="check_unselected_required" class="align-middle" src="../_images/check_unselected_required1.png" style="width: 24px; height: 24px;" /></a> or
+<span class="missingtext">Option</span></li>
+<li>Selected: <a class="reference internal" href="../_images/check_true_red1.png"><img alt="check_true_red" class="align-middle" src="../_images/check_true_red1.png" style="width: 24px; height: 24px;" /></a> or <span class="selectedtext">Option</span></li>
+</ul>
+</li>
+<li><cite>QuPhoto</cite>. Uses the device camera to take a photo.</li>
+<li><cite>QuPickerInline</cite>. Pick from a list of options using a spinner or similar
+interface.</li>
+<li><cite>QuPickerPopup</cite>. Pick from a list of options using a pop-up selector.</li>
+<li><cite>QuSpinBoxDouble</cite>. Offers a text editing box with spinbox controls, for
+floating-point entry.</li>
+<li><cite>QuSpinBoxInteger</cite>. Offers a text editing box with spinbox controls, for
+integer entry.</li>
+<li><cite>QuSlider</cite>. A slider, for discrete or continuous numerical variables.</li>
+<li><cite>QuTextEdit</cite>. An expanding editor for entering large quantities of text.
+(For a smaller version, see <cite>QuLineEdit</cite>.)</li>
+<li><cite>QuThermometer</cite>. A thermometer-style visual analogue scale.</li>
+</ul>
+</div>
+<div class="section" id="layout">
+<h3>16.1.1.3. Layout<a class="headerlink" href="#layout" title="Permalink to this headline">¶</a></h3>
+<p>These elements are simply for layout:</p>
+<ul class="simple">
+<li><cite>QuFlowContainer</cite>. A container that flows its contents like a word processor
+flows words.</li>
+<li><cite>QuGridContainer</cite>. A container implementing a grid of cells, like a table.</li>
+<li><cite>QuHorizontalContainer</cite>. Arranges other elements in a horizontal row.</li>
+<li><cite>QuVerticalContainer</cite>. Arranges other elements in a vertical column.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="dynamic-questionnaire-logic-with-examples">
+<h2>16.1.2. Dynamic questionnaire logic, with examples<a class="headerlink" href="#dynamic-questionnaire-logic-with-examples" title="Permalink to this headline">¶</a></h2>
+<p>Individual task classes inherit from <code class="docutils literal notranslate"><span class="pre">Task</span></code> which inherits from
+<code class="docutils literal notranslate"><span class="pre">DatabaseObject</span></code>. Database objects have <strong>fields</strong> (<code class="docutils literal notranslate"><span class="pre">Field</span></code> objects) that
+are referred to by name (plus methods to load/save from the database).</p>
+<p>Questionnaire elements automatically and dynamically reflect their field
+content. For example, a <code class="docutils literal notranslate"><span class="pre">QuMcq</span></code> object (and many other <code class="docutils literal notranslate"><span class="pre">Element</span></code> objects)
+takes a <code class="docutils literal notranslate"><span class="pre">FieldRefPtr</span></code>, which is a pointer to a <code class="docutils literal notranslate"><span class="pre">FieldRef</span></code>. A <code class="docutils literal notranslate"><span class="pre">FieldRef</span></code>
+may refer to something wholly arbitrary and transient (such as via
+getter/setter functions), but most typically a <code class="docutils literal notranslate"><span class="pre">FieldRef</span></code> refers to a field
+in a <code class="docutils literal notranslate"><span class="pre">DatabaseObject</span></code>, by field name. This system allows questionnaires to
+show arbitrary content but provides a simple mechanism to have one or many
+fields provide views onto the task’s fields.</p>
+<ul class="simple">
+<li>A very basic example is the <code class="docutils literal notranslate"><span class="pre">Irac</span></code> task, which uses two <code class="docutils literal notranslate"><span class="pre">QuMcq</span></code> elements.</li>
+<li>A basic example using <code class="docutils literal notranslate"><span class="pre">QuMcqGrid</span></code> is the <code class="docutils literal notranslate"><span class="pre">Phq9</span></code> task.</li>
+<li>An example of a slightly more complex view on data is the <code class="docutils literal notranslate"><span class="pre">Bmi</span></code> task. This
+stores mass and height in metric units, but can provide a dynamic editable
+view in Imperial units.</li>
+</ul>
+<p>More dynamic content usually requires that the Task objects keeps some sort of
+reference to the questionnaire during editing. The simplest way is to keep a
+safe pointer to the Questionnaire (<code class="docutils literal notranslate"><span class="pre">QPointer&lt;Questionnaire&gt;</span> <span class="pre">m_questionnaire</span></code>)
+but you can keep pointers to more detailed things too. (The task will not <em>own</em>
+the Questionnaire. A <a class="reference external" href="http://doc.qt.io/qt-5/qpointer.html">QPointer</a> is
+automatically set to zero when its referenced object is destroyed.)</p>
+<p>Since <code class="docutils literal notranslate"><span class="pre">FieldRef</span></code> objects also maintain a <strong>mandatory</strong> flag, data input can
+be made conditional.</p>
+<ul class="simple">
+<li>A reasonably simple example of this is the <code class="docutils literal notranslate"><span class="pre">Icd10Depressive</span></code> task. It
+connects the <code class="docutils literal notranslate"><span class="pre">FieldRef::valueChanged</span></code> signal, for each of its informative
+fields, to its <code class="docutils literal notranslate"><span class="pre">Icd10Depressive::updateMandatory</span></code> function. This function
+calculates whether the task is in a position to know if the patient
+definitely meets the criteria for depression, or definitely does not have
+depression by these criteria, or whether there is insufficient information to
+be sure. If there is insufficient information, all the relevant fields are
+set to mandatory, using <code class="docutils literal notranslate"><span class="pre">FieldRef::setMandatory()</span></code>. If it has all the
+information it needs, it makes the fields non-mandatory (optional). It
+achieves all this without storing a pointer to its Questionnaire.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">Cecaq3</span></code> task is a much more complicated example, mostly using this
+simple principle.</li>
+</ul>
+<p>The <strong>display</strong> of elements can also be made conditional, in a simple way.</p>
+<p>Elements (and pages) can have one or several string <strong>tags</strong> added to them.
+<code class="docutils literal notranslate"><span class="pre">FieldRef</span></code> objects can have <strong>hints</strong> attached to them. Both these systems
+allow recipients of callbacks to identify the source, without the need for a
+profusion of callback functions. Tags are also (and more commonly) used to set
+an attribute (such as being visible or mandatory) on multiple elements or field
+references that are conceptually related.</p>
+<ul class="simple">
+<li>The <code class="docutils literal notranslate"><span class="pre">Cape42</span></code> task uses hints to determine which question a callback is
+coming from. If the subject endorses a symptom, a set of further questions
+(frequency, distress) is made visible (and potentially mandatory), using the
+tag system to apply visibility. The result is that if the subject doesn’t
+endorse the symptom, he/she can move on without seeing the follow-up
+questions, but those questions appear and must be completed if the symptom is
+endorsed.</li>
+<li>In the <code class="docutils literal notranslate"><span class="pre">Ace3</span></code> task, if the subject has got all the free address recall
+questions right, the cued recall page shows a “Nothing to see here; move
+along” message. Internally, it has a <code class="docutils literal notranslate"><span class="pre">m_questionnaire</span></code> pointer as its only
+link to its Questionnaire.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">Bdi</span></code> task switches which of three <code class="docutils literal notranslate"><span class="pre">QuMcqGrid</span></code> elements is shown,
+depending on which scale version is selected. It takes the approach of
+storing safe pointers to them directly.</li>
+</ul>
+<p>Tasks can use callbacks with the hints and tags systems, but can of course
+also store safe pointers to elements or <code class="docutils literal notranslate"><span class="pre">FieldRef</span></code> objects.</p>
+<ul class="simple">
+<li>The <code class="docutils literal notranslate"><span class="pre">Caps</span></code> task is an example of storing  <code class="docutils literal notranslate"><span class="pre">FieldRefPtr</span></code> objects for use
+in callbacks.</li>
+</ul>
+<p>Arbitrarily complex logic can be used with the <strong>dynamic questionnaire</strong>
+system. Rather than a plain <code class="docutils literal notranslate"><span class="pre">Questionnaire</span></code>, one can use a
+<code class="docutils literal notranslate"><span class="pre">DynamicQuestionnaire</span></code>. This takes as parameters two functions: one to make
+a page (given its integer index), and one to report whether or not there are
+more pages to go (given the integer index of the current page).</p>
+<ul class="simple">
+<li>The <code class="docutils literal notranslate"><span class="pre">Cisr</span></code> task is pretty complex as questionnaires go. It implements a
+decision tree that includes or skips questions (pages) depending on the
+subject’s answers. The total number of pages depends on the subject’s
+answers, and the subject can browse back and forth. New pages are created and
+build dynamically; see <code class="docutils literal notranslate"><span class="pre">Cisr::makePage()</span></code> and <code class="docutils literal notranslate"><span class="pre">Cisr::morePagesToGo()</span></code>.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/download.html">2. Downloading CamCOPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../client/client_installation.html">3. Installing and configuring the client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../client/client_using.html">4. Using the client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_front_end_general.html">5. Web site: general use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/_tasks_by_category.html">6. Tasks in CamCOPS by category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks/_tasks_all.html">7. All tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../client/client_troubleshooting.html">8. Troubleshooting client problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_installation.html">9. Installing CamCOPS on the server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_configuration.html">10. Configuring the server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_config_file.html">11. The CamCOPS server configuration file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_front_end_admin.html">12. Web site: admin functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_command_line.html">13. CamCOPS command-line tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../server/server_troubleshooting.html">14. Troubleshooting server problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licences/licences.html">15. Licences</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">16. Developer notes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">16.1. Creating tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building_client.html">16.2. Building the CamCOPS client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cpp_code_style.html">16.3. C++ code style used</a></li>
+<li class="toctree-l2"><a class="reference internal" href="design_notes.html">16.4. Design notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development_command_line.html">16.5. Development command-line tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/tcpip_ports.html">17. Common relevant TCP/IP ports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/linux_flavours.html">18. Linux flavours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autodoc/_index.html">19. Automatic documentation of core server source code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">20. Change log/history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq_known_problems.html">21. FAQ and known problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../to_do.html">22. Things to do</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wishlist.html">23. Wishlist and blue-sky thoughts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/local_info.html">24. Local configuration information</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">16. Developer notes</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="building_client.html"
+                        title="next chapter">16.2. Building the CamCOPS client</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/developer/creating_tasks.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="building_client.html" title="16.2. Building the CamCOPS client"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="16. Developer notes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CamCOPS 2.2.7 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >16. Developer notes</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2012-2018, Rudolf Cardinal.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.5.
+    </div>
+  </body>
+</html>

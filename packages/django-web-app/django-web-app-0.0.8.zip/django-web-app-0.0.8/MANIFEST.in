@@ -1,0 +1,4 @@
+include LICENSE README.rst CHANGELOG.rst
+recursive-include web_app *
+recursive-include examples *.py
+recursive-include docs *

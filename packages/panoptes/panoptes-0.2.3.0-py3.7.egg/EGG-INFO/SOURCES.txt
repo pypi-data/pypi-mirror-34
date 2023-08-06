@@ -1,0 +1,14 @@
+README.md
+setup.py
+panoptes/__init__.py
+panoptes/panoptesctl.py
+panoptes.egg-info/PKG-INFO
+panoptes.egg-info/SOURCES.txt
+panoptes.egg-info/dependency_links.txt
+panoptes.egg-info/entry_points.txt
+panoptes.egg-info/requires.txt
+panoptes.egg-info/top_level.txt
+panoptes/aws/__init__.py
+panoptes/aws/analysis.py
+panoptes/aws/authentication.py
+panoptes/aws/output.py

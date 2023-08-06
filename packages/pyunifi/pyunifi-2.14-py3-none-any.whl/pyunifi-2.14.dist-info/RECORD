@@ -1,0 +1,10 @@
+pyunifi/__init__.py,sha256=_zCiGLfsUchNzF-z4seZ-SA0RzQfYtl8y20qStqtaeQ,162
+pyunifi/controller.py,sha256=g__FGV5x9aeeofQ0wb79plur-1PvoM2_pHfGwUvv1Ek,15672
+pyunifi-2.14.data/scripts/unifi-log-roaming,sha256=E9ZpRKTn-DsDgPf3Rgjkc_bCEVJ-KyZX7EqP9byWFIk,1550
+pyunifi-2.14.data/scripts/unifi-low-snr-reconnect,sha256=UHsuTZ-TQNEZgI05v9VHObB0EtR29yuKy_73gtk7zzw,2527
+pyunifi-2.14.data/scripts/unifi-ls-clients,sha256=cdwyh4diKe5Z6G03KFd4xBqBFDNoAj7eSmNxiyfqGzs,1669
+pyunifi-2.14.data/scripts/unifi-save-statistics,sha256=ZBIn4e0zBc8tzroSu1wcqyWg-IGyZgUOVpymGqLHILg,1514
+pyunifi-2.14.dist-info/METADATA,sha256=p-yb3BUoAlgSyc4AUCoAALRxc-U06b0eVDfkp9ONqg0,274
+pyunifi-2.14.dist-info/RECORD,,
+pyunifi-2.14.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+pyunifi-2.14.dist-info/top_level.txt,sha256=oCF_kvvdMGgekAw-T3liOrfpZKOvBvYwm766QZjT-g8,8

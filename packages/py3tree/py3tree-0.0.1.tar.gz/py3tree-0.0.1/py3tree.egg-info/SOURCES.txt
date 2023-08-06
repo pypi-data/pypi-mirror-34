@@ -1,0 +1,10 @@
+README.md
+setup.py
+py3tree/__init__.py
+py3tree/py3tree.py
+py3tree.egg-info/PKG-INFO
+py3tree.egg-info/SOURCES.txt
+py3tree.egg-info/dependency_links.txt
+py3tree.egg-info/entry_points.txt
+py3tree.egg-info/requires.txt
+py3tree.egg-info/top_level.txt

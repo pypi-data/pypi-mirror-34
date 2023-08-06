@@ -1,0 +1,11 @@
+README.md
+setup.py
+Netbyte.egg-info/PKG-INFO
+Netbyte.egg-info/SOURCES.txt
+Netbyte.egg-info/dependency_links.txt
+Netbyte.egg-info/top_level.txt
+netbyte/__init__.py
+netbyte/__main__.py
+netbyte/compile.py
+netbyte/empty.nbe
+netbyte/main.py

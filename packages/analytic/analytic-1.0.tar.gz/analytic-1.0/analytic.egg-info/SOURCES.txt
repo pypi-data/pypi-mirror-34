@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+analytic/__init__.py
+analytic/column.py
+analytic/convertDT.py
+analytic/mapp.py
+analytic/reduce.py
+analytic.egg-info/PKG-INFO
+analytic.egg-info/SOURCES.txt
+analytic.egg-info/dependency_links.txt
+analytic.egg-info/top_level.txt

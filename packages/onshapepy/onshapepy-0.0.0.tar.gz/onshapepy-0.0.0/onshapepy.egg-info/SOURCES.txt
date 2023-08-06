@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+onshapepy/__init__.py
+onshapepy/assembly.py
+onshapepy/client.py
+onshapepy/onshape.py
+onshapepy/part.py
+onshapepy/utils.py
+onshapepy.egg-info/PKG-INFO
+onshapepy.egg-info/SOURCES.txt
+onshapepy.egg-info/dependency_links.txt
+onshapepy.egg-info/requires.txt
+onshapepy.egg-info/top_level.txt

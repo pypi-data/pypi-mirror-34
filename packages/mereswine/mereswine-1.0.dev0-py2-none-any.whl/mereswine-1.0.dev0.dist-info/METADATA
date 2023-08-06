@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mereswine
+Version: 1.0.dev0
+Summary: UNKNOWN
+Home-page: https://github.com/indico/mereswine
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Babel (==2.4.0)
+Requires-Dist: Flask (==0.12.2)
+Requires-Dist: Flask-Assets (==0.12)
+Requires-Dist: Flask-Babel (==0.11.2)
+Requires-Dist: Flask-Mail (==0.9.1)
+Requires-Dist: Flask-Multipass (>=0.0.dev4)
+Requires-Dist: Flask-OAuthlib (==0.9.3)
+Requires-Dist: Flask-SQLAlchemy (==2.2)
+Requires-Dist: Flask-WTF (==0.14.2)
+Requires-Dist: WTForms (==2.1)
+Requires-Dist: Jinja2 (==2.10)
+Requires-Dist: SQLAlchemy (==1.1.10)
+Requires-Dist: Werkzeug (==0.12.2)
+Requires-Dist: celery (==4.0.2)
+Requires-Dist: csscompressor (==0.9.4)
+Requires-Dist: hiredis (==0.2.0)
+Requires-Dist: pytz
+Requires-Dist: redis (==2.10.5)
+Requires-Dist: requests (==2.17.3)
+Requires-Dist: webassets (==0.12.1)
+Requires-Dist: psycopg2 (==2.7.1)
+Requires-Dist: libsass (==0.12.3)
+Requires-Dist: IPython
+Requires-Dist: flask-shell-ipython
+
+UNKNOWN
+
+

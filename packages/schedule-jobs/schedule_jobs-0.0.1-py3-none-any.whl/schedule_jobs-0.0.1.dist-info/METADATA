@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: schedule-jobs
+Version: 0.0.1
+Summary: A Schedule Jobs Library
+Home-page: UNKNOWN
+Author: Tsotsi
+Author-email: tsotsi@tsotsi.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+
+### Init
+
+```
+$ cd schedule_jobs
+$ virtualenv venv --no-site-packages
+$ . venv/bin/activate
+$ pip install -r requirements.txt
+```
+
+
+### Usage
+
+```
+$ python app.py -- --help
+$ python app.py schedule -- --help
+$ python app.py schedule --daemon
+```
+

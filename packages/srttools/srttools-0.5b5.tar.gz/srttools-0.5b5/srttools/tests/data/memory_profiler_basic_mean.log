@@ -1,0 +1,33 @@
+Filename: /Users/meo/anaconda/envs/py3/lib/python3.6/site-packages/srttools-0.5.dev1147-py3.6.egg/srttools/convert.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    99 178.5898437500 MiB 178.5898437500 MiB   @profile(precision=precision, stream=fp)
+   100                             def launch_mbfits_creator(name, label, test=False, wrap=False):
+   101 178.5898437500 MiB   0.0000000000 MiB       if not os.path.isdir(name):
+   102                                     raise ValueError('Input for MBFITS conversion must be a directory.')
+   103 178.5898437500 MiB   0.0000000000 MiB       name = name.rstrip('/')
+   104 178.5976562500 MiB   0.0078125000 MiB       random_name = 'tmp_' + str(np.random.random())
+   105 179.1953125000 MiB   0.5976562500 MiB       mbfits = MBFITS_creator(random_name, test=test)
+   106 179.1953125000 MiB   0.0000000000 MiB       summary = os.path.join(name, 'summary.fits')
+   107 179.1953125000 MiB   0.0000000000 MiB       if os.path.exists(summary):
+   108 181.4531250000 MiB   2.2578125000 MiB           mbfits.fill_in_summary(summary)
+   109                             
+   110 567.6289062500 MiB   0.0039062500 MiB       for fname in glob.glob(os.path.join(name, '*.fits')):
+   111 540.8945312500 MiB   0.0000000000 MiB           if 'summary.fits' in fname:
+   112 181.4570312500 MiB   0.0000000000 MiB               continue
+   113 567.6289062500 MiB 386.1718750000 MiB           mbfits.add_subscan(fname)
+   114                             
+   115 567.6289062500 MiB   0.0000000000 MiB       mbfits.update_scan_info()
+   116 567.6289062500 MiB   0.0000000000 MiB       if os.path.exists(name + '_' + label):
+   117                                     shutil.rmtree(name + '_' + label)
+   118                             
+   119 567.6289062500 MiB   0.0000000000 MiB       if wrap:
+   120                                     fnames = mbfits.wrap_up_file()
+   121                                     for febe, fname in list(fnames.items()):
+   122                                         shutil.move(fname, name + '.' + febe + '.fits')
+   123 567.6289062500 MiB   0.0000000000 MiB       outname = name + '_' + label
+   124 567.6289062500 MiB   0.0000000000 MiB       shutil.move(random_name, outname)
+   125 567.6289062500 MiB   0.0000000000 MiB       return outname, mbfits
+
+

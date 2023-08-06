@@ -1,0 +1,4 @@
+
+file out onoff_xarcos_cal_feed0.gdf multiple /overwrite
+fits read onoff_xarcos_cal_feed0.fits
+                

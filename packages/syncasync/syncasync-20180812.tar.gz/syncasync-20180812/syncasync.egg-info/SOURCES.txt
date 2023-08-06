@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+syncasync.py
+syncasync.egg-info/PKG-INFO
+syncasync.egg-info/SOURCES.txt
+syncasync.egg-info/dependency_links.txt
+syncasync.egg-info/not-zip-safe
+syncasync.egg-info/requires.txt
+syncasync.egg-info/top_level.txt

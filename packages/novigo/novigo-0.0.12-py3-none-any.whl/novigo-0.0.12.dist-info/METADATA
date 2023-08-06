@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: novigo
+Version: 0.0.12
+Summary: A small example package
+Home-page: https://github.com/Yatheen07/novigo-python-package
+Author: yatheen!
+Author-email: pravan.yatheen@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: scipy
+
+#Example Package
+This Package allows you to predict user salary based on number of years of experience.
+# novigo-python-package
+
+

@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: uhb
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/benranderson/uhb
+Author: Ben Randerson
+Author-email: ben.m.randerson@gmail.com
+License: MIT License
+Keywords: upheaval buckling uhb engineering pipelines
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (==6.7)
+Requires-Dist: pytest (==3.6.1)
+Requires-Dist: pytest-cov (==2.5.1)
+Requires-Dist: numpy (==1.14.5)
+Requires-Dist: scipy (==1.1.0)
+Requires-Dist: matplotlib (==2.2.2)
+
+# uhb
+
+[![PyPI Status][pypi-image]][pypi-url]
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+
+Upheaval Buckling (UHB) toolkit
+
+![uhb](https://nonerieska.files.wordpress.com/2013/02/post12-2.jpg)
+
+Includes:
+
+-   Analytical calculation
+-   Soil springs (ASCE, GSW and FS2000)
+-   Natural wavelength and foundation profile (JIP)
+-   Non-linear material model (Ramberg-Osgood, SR function)
+
+## Installation
+
+```sh
+$ pip install uhb
+```
+
+<!-- Markdown link & img dfn's -->
+
+[pypi-image]: https://img.shields.io/pypi/v/uhb.svg
+[pypi-url]: https://pypi.python.org/pypi/uhb
+[travis-image]: https://travis-ci.org/benranderson/uhb.svg?branch=master
+[travis-url]: https://travis-ci.org/benranderson/uhb
+[coveralls-image]: https://coveralls.io/repos/github/benranderson/uhb/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/benranderson/uhb?branch=master
+
+

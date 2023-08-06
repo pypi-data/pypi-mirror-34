@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cryptease
+Version: 0.1.1
+Summary: Fall over easy encryption
+Home-page: https://www.neuroinfo.org
+Author: Neuroinformatics Research Group
+Author-email: info@neuroinfo.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: ssh

@@ -1,0 +1,13 @@
+README.md
+setup.py
+cryptease/__init__.py
+cryptease/__version__.py
+cryptease.egg-info/PKG-INFO
+cryptease.egg-info/SOURCES.txt
+cryptease.egg-info/dependency_links.txt
+cryptease.egg-info/requires.txt
+cryptease.egg-info/top_level.txt
+cryptease/compat/__init__.py
+cryptease/compat/pickle/__init__.py
+scripts/crypt.py
+scripts/keyring.py

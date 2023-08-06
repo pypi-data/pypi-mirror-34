@@ -1,0 +1,126 @@
+.. vim: filetype: rst
+.. |pydim_version_install| replace:: If you have Python 2 installed, you have to install pydim2 2.X.X. If you want to use PyDIM with Python 3, you have to install pydim3 3.X.X.
+.. |pydimX_instructions| replace:: where X = 2 if you want the Python 2 PyDIM version, or X = 3 if you want the Python 3 PyDIM version.
+
+================
+Installing PyDIM
+================
+
+Requirements
+============
+
+- DIM. The package has been developed using the v16rXX, v17rXX and v18r0 DIM
+   versions. It has not been tested with older versions but it has good chances
+   to work.
+- Python >= 2.3
+- The package has been developed on both 32 and 64 bits architectures.
+
+Installing PyDIM with pip
+=========================
+
+1. Install DIM : https://dim.web.cern.ch/dim/
+I would suggest placing the DIM libraries and header files in
+``/usr/local/lib`` and ``/usr/local/include`` respectively.
+Please make the necessary changes so that the run-time linker finds libdim.so
+(basically add an entry in /etc/ld.so.conf that points to the DIM library directory).
+Make sure that the DIM library is built using the same compiler and
+architecture as the Python installation you want to use.
+
+2. If pip is not yet installed, install it with the command::
+
+    sudo yum install python-pip
+
+3. Install the latest version of PyDIM by typing::
+
+    pip install pydimX --user (|pydimX_instructions|)
+
+3-bis. |pydim_version_install|
+
+Installing from the RPM package
+===============================
+
+An other way for installing PyDIM is through the RPM package ``pydimX`` |pydimX_instructions|.
+
+|pydim_version_install|
+
+Install the right version according to your operating system and the hardware
+architecture.
+
+The ``pydimX`` package depends on ``dim`` and ``pythonX`` packages |pydimX_instructions|. On the other
+hand, for building the source package the header files are required, these are
+included in the packages ``dim-devel``.
+
+Installing from source
+======================
+
+You also can install PyDIM from the source. In order to do that you will need
+to have DIM with its header files, either by installing the RPM packages or
+by doing manually. If you opt for a manual installation, it's recommended to
+put the DIM libraries and header files in the *standard* locations for your
+operating system and architecture. Usually, they are ``/usr/local/lib`` and
+``/usr/local/include`` respectively.
+
+Please make the necessary changes so that the run-time linker finds
+``libdim.so`` (basically add an entry in ``/etc/ld.so.conf`` that points to
+the DIM library directory). Make sure that the DIM library is built using the
+*same* compiler and architecture as the Python installation you want to use.
+
+For installing and running PyDIM you must follow these steps.
+
+1. Source code
+--------------
+
+|pydim_version_install|
+
+Get the PyDIM version 2.X.X (Python 2) or 3.X.X (Python 3) from the CERN's Gitlab (You can have the version you want by
+specifying tags).
+
+    https://gitlab.cern.ch/lhcb-online/pydim
+
+2. Install script
+-----------------
+
+Run the installation script::
+
+    $ python setup.py install
+
+Change the rights of the installation folder if this command fails.
+
+3. Environment variables
+------------------------
+
+In the general case this should take care of building the library.
+
+In case DIM libraries are not found, declare an environment variable named
+``DIMDIR``, ``DIMHOME`` or ``DIM_HOME`` pointing to the main DIM installation
+directory, i.e. the one that contains the sub-directories `dim` and the
+specific one for your operating system, e.g. `linux`.
+
+
+Building the documentation
+--------------------------
+
+There is 2 PyDIM documentations : The guide doc and the API doc.
+
+The guide doc is useful for Python developpers who want to use PyDIM. This doc is generated with the `Sphinx`_ tool and can be modified in the folder
+``doc/guide``. In order to generate the guide doc, install Sphinx and type ``make doc_guide`` from the project's root folder.
+It will build PyDIM and generate the associated documentation in the folder ``doc/guide/.build/html``
+
+The api doc is useful for the PyDIM developpers. This doc is generated with the `Doxygen`_ tool and can be modified in ``doc/api``.
+In order to generate the api doc, install Doxygen and type ``make doc_api`` from the project's root folder.
+It will generate the API doc that can be found in the ``doc/api/html``
+
+Test the installation
+=====================
+
+To test the installation, simply go to your home directory and type::
+
+    $ python -c "import pydim"
+    $ python -c "import dimbrowser"
+
+If the two import have succeeded (nothing happens after each import), the PyDIM installation is OK :)
+
+.. _Sphinx: http://sphinx.pocoo.org/
+.. _easy_install: http://pypi.python.org/pypi/setuptools
+.. _Sphinx documentation: http://sphinx.pocoo.org/contents.html
+.. _Doxygen: http://www.stack.nl/~dimitri/doxygen/index.html

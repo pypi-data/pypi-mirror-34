@@ -1,0 +1,6 @@
+include MANIFEST
+include VERSION
+include INSTALL
+include doc/guide/*
+include src/*
+include README.md

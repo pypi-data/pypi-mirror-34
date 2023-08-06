@@ -1,0 +1,9 @@
+README.md
+setup.py
+googlespreadsheets/__init__.py
+googlespreadsheets/googlespreadsheets.py
+googlespreadsheets.egg-info/PKG-INFO
+googlespreadsheets.egg-info/SOURCES.txt
+googlespreadsheets.egg-info/dependency_links.txt
+googlespreadsheets.egg-info/requires.txt
+googlespreadsheets.egg-info/top_level.txt

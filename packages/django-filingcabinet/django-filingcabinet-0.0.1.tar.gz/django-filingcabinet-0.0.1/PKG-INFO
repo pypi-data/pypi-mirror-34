@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: django-filingcabinet
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/okfde/django-filingcabinet
+Author: Stefan Wehrmeyer
+Author-email: mail@stefanwehrmeyer.com
+License: MIT
+Description: # django-filingcabinet
+        
+        A Django app that manages documents with pages, annotations and collections.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities

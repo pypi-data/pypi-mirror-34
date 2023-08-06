@@ -1,0 +1,21 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Added notification panel
+* Implement update host
+* Implement host detail
+* Implement delete host
+* Add host panel
+
+0.1.0
+-----
+
+* Implement update segment
+* Implement segment detail tab
+* Implement delete segment
+* Add segment panel
+* Initial UI-Cookiecutter commit
+* Added .gitreview

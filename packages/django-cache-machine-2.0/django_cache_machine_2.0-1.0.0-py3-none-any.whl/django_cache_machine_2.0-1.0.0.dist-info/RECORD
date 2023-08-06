@@ -1,0 +1,11 @@
+caching/__init__.py,sha256=xDbHrmdr0NTmKSwN1spEu3EFpEXqH9o5MmAy48iEssI,99
+caching/base.py,sha256=DzJpnM8VzDlvIBqH_GkWkp4WiC6XQrHstyhO_JpvA5c,14830
+caching/config.py,sha256=xe0T8j9TzXGDsy5OE_DOBuiWqjAJFFJipt51TuHUUUw,847
+caching/ext.py,sha256=jm8xJ-bEA3aPxbzgTKaZdi-K1uGcQAgS7K4rDn9LPCs,2778
+caching/invalidation.py,sha256=qZsjtPna6jHobLN9J7HtDXrA0yzLgTKC9mFUlHgBqlM,9490
+django_cache_machine_2.0-1.0.0.dist-info/DESCRIPTION.rst,sha256=1F4RHoD9cmVbCWUc-i45aV-m7obi9wvs6yVr8u2Mnao,1129
+django_cache_machine_2.0-1.0.0.dist-info/METADATA,sha256=PAT2LBroOy_8tjoGjKxBOEk1u6TYqf2uJsAsglLJkqo,2116
+django_cache_machine_2.0-1.0.0.dist-info/RECORD,,
+django_cache_machine_2.0-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+django_cache_machine_2.0-1.0.0.dist-info/metadata.json,sha256=_-Q0oRewXxftolXtfaU6gy1gxRE74HWitqoDqM9nnV0,1064
+django_cache_machine_2.0-1.0.0.dist-info/top_level.txt,sha256=6HQwTX4Qkhurve82tUYGqHQxRS8PKc5pMZphVIN-HKM,8

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: GearMess-client
+Version: 0.2.1
+Summary: Simple messenger.
+Home-page: https://github.com/StanislavAntunovich/GearMess
+Author: StanislavAntunovich
+Author-email: stanislav.antunovich@yandex.ru
+License: MIT
+Keywords: python,messenger
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: SQLAlchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+

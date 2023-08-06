@@ -1,0 +1,16 @@
+py_sysadmin-1.2.1.data/scripts/gen-factory-settings.py,sha256=igWCbjp_Vi2xAzQzKhg0aYGv01X-VDVxchEPaZK2cIM,2617
+py_sysadmin-1.2.1.data/scripts/migrate.py,sha256=c61UIGnpPGvm7MB7IinhQBUbxOOwQJna-mn37XigLoo,2327
+py_sysadmin-1.2.1.data/scripts/sysadminctl,sha256=Ub9TsTq45kBtfWba5ImbNV79sGLkO4XqU_EoIc_PLWU,11024
+py_sysadmin-1.2.1.data/scripts/templater.py,sha256=NJ9x2mit322HCfVOWlHkUNUNtNOJzR11N-Wlp1Kq-PQ,1512
+py_sysadmin-1.2.1.dist-info/METADATA,sha256=_aJPMaPq99sOrXlK2upwT7iJaILRec_WMGZV49-o7nc,650
+py_sysadmin-1.2.1.dist-info/RECORD,,
+py_sysadmin-1.2.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+py_sysadmin-1.2.1.dist-info/top_level.txt,sha256=6xgKTTmRg9HuGABuged929sYfocddh-U-wH4C6Rn68I,9
+sysadmin/Client.py,sha256=JNclIoGmHnZrt5Q63Gq4dFqwbkc8BeFy2NTxNN_ewkY,5895
+sysadmin/ConfigTemplateRenderer.py,sha256=sMrv8Tbklg2LwuszIh3BdnUCsxJWPVZ-FfwmdD8VWvk,1436
+sysadmin/LazySysAdmin.py,sha256=Y4G4GN-iYBhFlgYU2XT9IJhQSAv6syE-2U1glM2iryc,4566
+sysadmin/Migrations.py,sha256=RdhvYlIvRYvscPNjOGIGfpyPhSCfFtt3fQPWilNv8Kw,5097
+sysadmin/SysAdminUser.py,sha256=GkkcbGJuedeBwLZ4RjF-UeMiioFH_O_D2R9K2grhL9o,1550
+sysadmin/__init__.py,sha256=0C5yGRN7bQ939_ZkxH-sf9V1-O_6v_rA8fHEzHglfIg,402
+sysadmin/generated/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sysadmin/generated/sysadminctl_pb2.py,sha256=su2ReEc8rUy1Yg5t0AP0sdKqN1jaGxadRY4mDjctG-A,50707

@@ -1,0 +1,9 @@
+tsnecuda/NaiveTSNE.py,sha256=jAt0-3VWYvEsb_V5I_sOPEi2X2WD82ZDSORzybolbvQ,7657
+tsnecuda/TSNE.py,sha256=YFHyD8Db_J8qKtBYz1n3aFzSbCobC8v70CxL3-SSFmg,9200
+tsnecuda/__init__.py,sha256=SojIURZm6W9T79BfbzdQ8NLqtyKiAAK0VRZ5pXvJG6A,51
+tsnecuda/libtsnecuda.so,sha256=pCGaVwSxP2JkmvQSXhQuNYEi653INUvlDjHFSEpMNvk,43960880
+tsnecuda/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsnecuda-0.1.1.dist-info/METADATA,sha256=rPBOpiUK9cKxuVfSYz_lqs0TAzfc5pFUJ083OhlDS-s,1144
+tsnecuda-0.1.1.dist-info/RECORD,,
+tsnecuda-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tsnecuda-0.1.1.dist-info/top_level.txt,sha256=5v8vZ2UvCF-fw9tPAI6VoH33nHbjlcCDrex0ubwofGk,9

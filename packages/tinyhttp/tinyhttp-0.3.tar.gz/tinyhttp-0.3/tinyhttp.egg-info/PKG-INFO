@@ -1,0 +1,39 @@
+Metadata-Version: 1.0
+Name: tinyhttp
+Version: 0.3
+Summary: Async static HTTP server.
+Home-page: https://github.com/WincerChan/Tiny-Http
+Author: Wincer
+Author-email: WincerChan@gmail.com
+License: GPL-3.0
+Description: ===============
+        Tiny HTTP
+        ===============
+        Introduction
+        ==============
+        A socket-based static HTTP server, Support for asynchronous.
+          
+        Install
+        ==============
+        ``pip install tinyhttp``
+        
+        Usage
+        ==============
+        Asynchrous
+          
+        ``pip -m tinyhttp # or pip -m tinyhttp.async``
+        
+        Multi-Thread
+        
+        ``pip -m tinyhttp.thread``
+        
+        Set Port(The defalut port is 6789.)
+        
+        
+        ``pip -m tinyhttp.thread 6666``
+        
+        Debug mode
+        
+        ``pip install tinyhttp --debug``
+        
+Platform: UNKNOWN

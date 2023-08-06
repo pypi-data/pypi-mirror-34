@@ -1,0 +1,16 @@
+README.md
+setup.py
+gpu_optimize/__init__.py
+gpu_optimize/mf.py
+gpu_optimize.egg-info/PKG-INFO
+gpu_optimize.egg-info/SOURCES.txt
+gpu_optimize.egg-info/dependency_links.txt
+gpu_optimize.egg-info/requires.txt
+gpu_optimize.egg-info/top_level.txt
+gpu_optimize/tests/__init__.py
+gpu_optimize/tests/test_basic.py
+gpu_optimize/tests/test_big.py
+gpu_optimize/tests/test_debug.py
+gpu_optimize/tests/test_not_square.py
+gpu_optimize/tests/test_streams.py
+gpu_optimize/tests/timing.py

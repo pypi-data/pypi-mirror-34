@@ -1,0 +1,7 @@
+ansible
+argparse
+dnspython
+future
+netaddr
+passlib
+python-ldap

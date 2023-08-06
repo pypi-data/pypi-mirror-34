@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jupyterlab_commands/__init__.py
+jupyterlab_commands/extension.py
+jupyterlab_commands.egg-info/PKG-INFO
+jupyterlab_commands.egg-info/SOURCES.txt
+jupyterlab_commands.egg-info/dependency_links.txt
+jupyterlab_commands.egg-info/not-zip-safe
+jupyterlab_commands.egg-info/top_level.txt

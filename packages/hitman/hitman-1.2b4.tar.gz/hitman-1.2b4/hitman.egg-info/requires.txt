@@ -1,0 +1,10 @@
+semidbm
+requests
+clint
+six
+feedparser>=5.1.3
+beautifulsoup4>=4.3.2
+click>=6
+
+[platform_system=="Windows"]
+win10toast

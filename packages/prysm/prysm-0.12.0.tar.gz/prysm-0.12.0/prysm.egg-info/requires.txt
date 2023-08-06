@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+matplotlib
+imageio
+
+[Mx]
+h5py>=2.8.0
+
+[cpu+]
+numba>=0.37.0
+
+[cuda]
+cupy>=4.0.0

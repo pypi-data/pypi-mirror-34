@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: ltlf2dfa
+Version: 0.1.9
+Summary: A tool for generating a DFA from an LTLf formula
+Home-page: https://github.com/Francesco17/LTLf2DFA
+Author: Francesco Fuggitti
+Author-email: francesco.fuggitti@gmail.com
+License: MIT license
+Keywords: ltlf2dfa
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: ply
+Requires-Dist: graphviz
+Requires-Dist: pydot
+
+# LTL<sub>f</sub>2DFA
+[![ciaio](https://img.shields.io/badge/python-3.6-blue.svg)]()
+
+LTL<sub>f</sub>2DFA is a simple tool that processes an LTL<sub>f</sub> formula (with past or future operators) and generates the corresponding minimized DFA (Deterministic Finite state Automaton) using [MONA](http://www.brics.dk/mona/).
+This tool is written in Python 3.6.
+
+It is tested on Linux Ubuntu 16.04 and on macOs 10.13.6.
+
+## Getting Started
+
+### Requirements
+
+This tool uses MONA for the generation of the DFA. Hence, you should first install MONA with all its dependencies on your OS following the instructions [here](http://www.brics.dk/mona/download.html).
+
+This tool is also based on the following libraries:
+
+- [ply 3.11](https://pypi.org/project/ply/)
+- [graphviz 0.8.3](http://graphviz.org)
+- [pydot 1.2.4](https://pypi.org/project/pydot/)
+- [pyparsing 2.2.0](https://pypi.org/project/pyparsing/)
+
+They are automatically added while installing LTL<sub>f</sub>2DFA.
+
+## How To Install It
+
+- From PyPI:
+```
+pip install ltlf2dfa
+```
+- From this repository:
+```
+pip install git+https://github.com/Francesco17/LTLf2DFA@distribution#egg=ltlf2dfa
+```
+
+## How To Use It
+
+- Simply parse an LTL<sub>f</sub> formula with past or future operators:
+```python
+from ltlf2dfa.Parser import MyParser
+
+formula = "G(a->Xb)"
+parser = MyParser()
+parsed_formula = parser(formula)
+
+print(parsed_formula)
+```
+- Translate an LTL<sub>f</sub> formula to the corresponding DFA automaton:
+```python
+from ltlf2dfa.Translator import Translator
+from ltlf2dfa.DotHandler import DotHandler
+
+formula = "G(a->Xb)"
+declare_flag = False #True if you want to compute DECLARE assumption for the formula
+
+translator = Translator(formula)
+translator.formula_parser()
+translator.translate()
+translator.createMonafile(declare_flag) #it creates automa.mona file
+translator.invoke_mona("automa.mona") #it returns an intermediate automa.dot file
+
+dotHandler = DotHandler("inter-automa.dot")
+dotHandler.modify_dot()
+dotHandler.output_dot() #it returns the final automa.dot file
+```
+## Syntax
+
+The syntax accepted by LTL<sub>f</sub>2DFA is the following:
+
+|    OPERATOR   | SYMBOL |
+|:-------------:|:------:|
+|      TRUE     |    T   |
+|     FALSE     |    F   |
+|      AND      |    &   |
+|       OR      |    \|  |
+|      NOT      |    ~   |
+|  IMPLICATION  |   ->   |
+| D-IMPLICATION |   <->  |
+|      NEXT     |    X   |
+|     UNTIL     |    U   |
+|   EVENTUALLY  |    E   |
+|    GLOBALLY   |    G   |
+| YESTERDAY (*) |    Y   |
+|    SINCE (*)  |    S   |
+|    ONCE (*)   |    O   |
+|  GLOBALLY (*) |    H   |
+
+(*) are PAST operators.
+
+Also parentheses `(` and `)` can be used.
+
+**NOTE**: LTL<sub>f</sub>2DFA accepts ONLY separated formulas, i.e. formulas that have only past, only future or none operators.
+
+## Author
+
+[Francesco Fuggitti](https://www.linkedin.com/in/francesco-fuggitti-b78336131/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Francesco17/LTLf2FOL/blob/master/LICENSE) file for details
+
+## Contacts
+
+If, for any reason, you are interested in feel free to contact me by email.
+
+

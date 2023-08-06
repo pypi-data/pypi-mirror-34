@@ -1,0 +1,3 @@
+[console_scripts]
+pycopyql = pycopyql.cli:main
+

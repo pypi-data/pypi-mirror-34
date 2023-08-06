@@ -1,0 +1,9 @@
+README.md
+setup.py
+kiwiclient/__init__.py
+kiwiclient/__main__.py
+kiwiclient.egg-info/PKG-INFO
+kiwiclient.egg-info/SOURCES.txt
+kiwiclient.egg-info/dependency_links.txt
+kiwiclient.egg-info/requires.txt
+kiwiclient.egg-info/top_level.txt

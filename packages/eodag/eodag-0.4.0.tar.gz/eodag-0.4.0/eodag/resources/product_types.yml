@@ -1,0 +1,149 @@
+# -*- coding: utf-8 -*-
+# Copyright 2018, CS Systemes d'Information, http://www.c-s.fr
+#
+# This file is part of EODAG project
+#     https://www.github.com/CS-SI/EODAG
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+S1_OCN:
+  desc: ""
+  meta: []
+
+S1_GRD:
+  desc: ""
+  meta: []
+
+S1_SLC:
+  desc: ""
+  meta: []
+
+S1_RAW:
+  desc: ""
+  meta: []
+
+L8_L1T:
+  desc: ""
+  meta: []
+
+L8_L1GT:
+  desc: ""
+  meta: []
+
+L8_LC8:
+  desc: ""
+  meta: []
+
+L7_L1GT:
+  desc: ""
+  meta: []
+
+L7_L1G:
+  desc: ""
+  meta: []
+
+L7_L1T:
+  desc: ""
+  meta: []
+
+L5_L1GT:
+  desc: ""
+  meta: []
+
+L5_L1G:
+  desc: ""
+  meta: []
+
+L5_L1T:
+  desc: ""
+  meta: []
+
+ES_FRS:
+  desc: ""
+  meta: []
+
+S3_EFR:
+  desc: ""
+  meta: []
+
+S3_ERR:
+  desc: ""
+  meta: []
+
+S3_RBT:
+  desc: ""
+  meta: []
+
+S3_SRA:
+  desc: ""
+  meta: []
+
+S3_WAT:
+  desc: ""
+  meta: []
+
+S3_LAN:
+  desc: LAN or SR_2_LAN___ (peps)
+  meta: []
+
+S3_LST:
+  desc: ""
+  meta: []
+
+S3_LRR:
+  desc: OL_2_LRR___
+  meta: []
+
+S3_LFR:
+  desc: OL_2_LFR___
+  meta: []
+
+LS_REFLECTANCE:
+  desc: Landsat
+  meta: []
+
+LS_REFLECTANCETOA:
+  desc: Landsat
+  meta: []
+
+PLD_REFLECTANCE:
+  desc: Pleiades
+  meta: []
+
+PLD_REFLECTANCETOA:
+  desc: Pleiades
+  meta: []
+
+S2_REFLECTANCE:
+  desc: Sentinel2
+  meta: []
+
+S2_MSI_L1C:
+  desc: Sentinel 2
+  meta:
+    - key: PRODUCT_START_TIME
+      type: date
+    - key: PRODUCT_STOP_TIME
+      type: date
+
+S2_MSI_L2Ap:
+  desc: Sentinel 2
+  meta: []
+
+S3_SRA_BS:
+  desc: ""
+  meta: []
+
+S3_SRA_A_BS:
+  desc: ""
+  meta: []

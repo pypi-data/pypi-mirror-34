@@ -1,0 +1,9 @@
+keepcli/__init__.py,sha256=SDqTPg5KpS1iA-wzl8JpwkjNlh6rjh87A2-NLMNJXzg,84
+keepcli/kcliparser.py,sha256=roqHLFDje-krPyUmpswDLLmLRsfMRk0i9OrxrnrGts8,917
+keepcli/keep.py,sha256=AUwhQzbhNVqI6Y04Da0QgxsPrtoUKm9_Cxru_2Qf-9A,37730
+keepcli/version.py,sha256=QjJNAo5aG4uI4LYTYo8eykJAggmHmHAFdFrSPyequvA,231
+keepcli-1.0.1.data/scripts/keepcli,sha256=kH_9QT85blqW7j4v-DmA6uotj_FTdbfNHMEYpMGAFHQ,45
+keepcli-1.0.1.dist-info/METADATA,sha256=mbVx9cWwutTCsvl9OVUl7ZCEK-np8yQOBtknoY3728w,2515
+keepcli-1.0.1.dist-info/RECORD,,
+keepcli-1.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+keepcli-1.0.1.dist-info/top_level.txt,sha256=6QpwnCoxjSRNFkUwKdllhw9YGMKQUoR0zBR3qV6itew,8

@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: prosail
+Version: 2.0.0
+Summary: PROSPECT, SAIL and PROSAIL Python wrappers
+Home-page: http://github.com/jgomezdans/prosail
+Author: J Gomez-Dans/NCEO & University College London
+Author-email: j.gomez-dans@ucl.ac.uk
+License: UNKNOWN
+Description: The PROSPECT + SAILh radiative transfer models from Python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console

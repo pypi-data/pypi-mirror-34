@@ -1,0 +1,12 @@
+README.md
+setup.py
+prosail/FourSAIL.py
+prosail/__init__.py
+prosail/prospect_d.py
+prosail/sail_model.py
+prosail/spectral_library.py
+prosail.egg-info/PKG-INFO
+prosail.egg-info/SOURCES.txt
+prosail.egg-info/dependency_links.txt
+prosail.egg-info/requires.txt
+prosail.egg-info/top_level.txt

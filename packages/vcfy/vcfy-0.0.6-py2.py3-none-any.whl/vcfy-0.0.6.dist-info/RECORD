@@ -1,0 +1,15 @@
+vcfy/__init__.py,sha256=Tfik_dX9d5cemmSBDNXSt5yMcZh1dxasBu-q3fMbfrA,216
+vcfy/cli.py,sha256=7ocucWJK9i474q4OHMa-D_3AxpnFCy-krFvLRUcs8Xc,1513
+vcfy/ksnper.py,sha256=0hF-JgdRxistF00hHzr9-mUIkHASIfJ9GTTbmwcPdtw,4245
+vcfy/model.py,sha256=innGUeWJ7NP2auz9BxlB6imZ5oLEP-pEOpinBoEltyg,3518
+vcfy/release.py,sha256=KmYKsZJr6Nyhet5dD1uf9mV_0wfo84wgYbyyApbKQkE,2260
+vcfy/util.py,sha256=K0-ymFKamOVNfrxiqNDZtR7V9xbdTxGJhW--MFcdMTo,3901
+vcfy/resources/__init__.py,sha256=fJl42pX5ULuusdZLPhCSeFAAAZWgOptTL1AJmyg1sf0,205
+vcfy/resources/templates/__init__.py,sha256=oMtJiPaTi-PqS7tPL9oqZ60ftK9xJ7CVPsNIqPJ9lbU,229
+vcfy/resources/templates/template.vcf,sha256=pz_kz4daLXq7BnWzuHC2o7eKB9STdn33GTD7b6JnH9o,198
+vcfy-0.0.6.dist-info/LICENSE.txt,sha256=qSiP59XEJUPZFoWOKcoHk6jVt0x4iN6f8cGvKgSpu70,1070
+vcfy-0.0.6.dist-info/METADATA,sha256=M3rx2EVVAGQqVJYIhJ-t3v7-bTeT2T6oIm0KlL8dgFo,1308
+vcfy-0.0.6.dist-info/RECORD,,
+vcfy-0.0.6.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+vcfy-0.0.6.dist-info/entry_points.txt,sha256=lGboKpGI1LOKS_D2gqRKU1zAhImxhGYJAA7ABbO6uA8,60
+vcfy-0.0.6.dist-info/top_level.txt,sha256=GmKgzq7NwR6lChooXBHMn3RlFpGqrCvPiTnPDpUcB8Y,5

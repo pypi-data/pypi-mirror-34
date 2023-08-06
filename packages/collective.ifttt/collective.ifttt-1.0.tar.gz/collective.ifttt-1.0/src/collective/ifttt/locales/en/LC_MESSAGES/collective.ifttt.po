@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-06-01 16:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/ifttt/actions/ifttt.py:69
+msgid "${method} ${ifttt_name}"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:132
+msgid "Add Ifttt Action"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:133
+msgid "An ifttt action can execute HTTP GET or POST with interpolated  JSON payload."
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:41
+msgid "Call method"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:137
+msgid "Configure element"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:152
+msgid "Edit Ifttt Action"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:25
+msgid "GET"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:35
+msgid "IFTTT event name"
+msgstr ""
+
+#: collective/ifttt/actions/configure.zcml:45
+msgid "Ifttt"
+msgstr ""
+
+#: collective/ifttt/browser/controlpanel.py:13
+msgid "Ifttt Settings"
+msgstr ""
+
+#: collective/ifttt/configure.zcml:31
+msgid "Installs the collective.ifttt add-on."
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:26
+msgid "POST"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:46
+msgid "Payload"
+msgstr ""
+
+#: collective/ifttt/interfaces.py:20
+msgid "Register Ifttt\"s secret key"
+msgstr ""
+
+#: collective/ifttt/interfaces.py:19
+msgid "Secret Key"
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:36
+msgid "The IFTTT event name"
+msgstr ""
+
+#: collective/ifttt/actions/configure.zcml:45
+msgid "Trigger Ifttt as an actions"
+msgstr ""
+
+#: collective/ifttt/configure.zcml:40
+msgid "Uninstalls the collective.ifttt add-on."
+msgstr ""
+
+#: collective/ifttt/actions/ifttt.py:47
+msgid "Whether the 3rd payload is Description, Username of editor, or Event Start Date/time"
+msgstr ""
+
+#: collective/ifttt/configure.zcml:31
+msgid "collective.ifttt"
+msgstr ""
+
+#: collective/ifttt/configure.zcml:40
+msgid "collective.ifttt (uninstall)"
+msgstr ""

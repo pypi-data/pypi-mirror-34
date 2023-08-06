@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<registry>
+<!-- -*- extra stuff goes here -*- -->
+
+  <records interface="collective.ifttt.browser.controlpanel.ICollectiveIFtttSettings"
+         prefix="ifttt" />
+</registry>

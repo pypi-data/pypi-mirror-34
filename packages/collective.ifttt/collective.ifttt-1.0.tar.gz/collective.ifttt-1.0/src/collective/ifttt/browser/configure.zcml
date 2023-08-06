@@ -1,0 +1,80 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.ifttt">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <!--<includeDependencies package="." />-->
+
+  <browser:jbot
+      directory="overrides"
+      layer="collective.ifttt.interfaces.ICollectiveIftttLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.ifttt"
+      type="plone"
+      directory="static"
+      />
+
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      name="collectiveifttt-controlpanel"
+      class=".controlpanel.IftttControlPanelView"
+      permission="collective.ifttt.manageSettings"
+      />
+
+  <browser:page
+      for="*"
+      name="checkifttt"
+      class=".views.checkView"
+      permission="collective.ifttt.manageSettings"
+      allowed_attributes="check_iftttconfig"
+      />
+
+  <browser:page
+      for="*"
+      name="ifttt_content_trigger"
+      class=".content_trigger.ContentTrigger"
+      permission="collective.ifttt.manageSettings"
+      />
+
+  <browser:page
+      for="*"
+      name="ifttt_user_trigger"
+      class=".user_trigger.UserTrigger"
+      permission="collective.ifttt.manageSettings"
+      />
+
+  <browser:page
+      for="*"
+      name="ifttt_event_trigger"
+      class=".event_trigger.EventTrigger"
+      permission="collective.ifttt.manageSettings"
+      />
+
+  <browser:page
+      for="*"
+      name="ifttt_manage_trigger"
+      class=".manage_trigger.ManageTrigger"
+      permission="collective.ifttt.manageSettings"
+      />
+
+  <!-- Sub-menus -->
+
+  <browser:menu
+    id="plone_contentmenu_ifttttriggers"
+    title="The IFTTT - allows the user to configure IFTTT content rules on an object"
+    class=".menu.IftttTriggersMenu"
+    />
+
+  <adapter for="* *"
+           name="plone.contentmenu.ifttttriggers"
+           factory=".menu.IftttTriggersSubMenuItem"
+           provides="plone.app.contentmenu.interfaces.IContentMenuItem" />
+
+</configure>

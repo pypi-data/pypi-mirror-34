@@ -1,0 +1,9 @@
+sphinx_version_warning-0.2.0.dist-info/METADATA,sha256=7jHKt_YpK8l3KNJLkzM97RefTjGPxAYC-inH7yOD4nM,4932
+sphinx_version_warning-0.2.0.dist-info/RECORD,,
+sphinx_version_warning-0.2.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sphinx_version_warning-0.2.0.dist-info/top_level.txt,sha256=Wf7jzGFncApyXW58P-gondkwseMmsZFuUVjbYbV6FDs,15
+versionwarning/__init__.py,sha256=r_AhNaTTqsmFsPYNTjUWqS71tpWjkgk-eJub623yUHQ,2295
+versionwarning/banner.py,sha256=QzhFzGeMuCgDk1icm8_zsXdnLj_e_5nqeM6GbvA6nws,3171
+versionwarning/readthedocs.py,sha256=0Vi3MCS3zocGvbXrRxWNa_dn26b9c1Bj3ENe0ZMjX_s,1605
+versionwarning/signals.py,sha256=1BpdbI-O1IPfB8tus_0jx6MIFSxG_NQ1Xzmjnj47AWk,2226
+versionwarning/_static/js/versionwarning.js,sha256=JWHo2OnKS3nnq23FkmVS4EGL9DGJU4TP5sBmX5JnGNY,18138

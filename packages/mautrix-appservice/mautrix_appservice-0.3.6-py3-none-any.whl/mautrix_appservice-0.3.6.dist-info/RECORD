@@ -1,0 +1,9 @@
+mautrix_appservice/__init__.py,sha256=VV6prSlCHTg3ekGHO5Sj24npbAfmO5Y5PbI2exI_md0,241
+mautrix_appservice/appservice.py,sha256=pu8dLaj3Ud4HntQ31lsPMvwJ9Vssi2R9iSjPzpJqOgA,6737
+mautrix_appservice/errors.py,sha256=2IoJguSSYZtVPEvXNYtxfqpi38E-5-k_0ze82b-4ufM,1002
+mautrix_appservice/intent_api.py,sha256=rHJAfXAsyT1YoDTawDpEPFba5jMwc0Cl9-tqocofe6E,39119
+mautrix_appservice/state_store.py,sha256=-mNt08PrYyD2s_ukindfrsGjZB09ht0drriig23e3WI,6276
+mautrix_appservice-0.3.6.dist-info/METADATA,sha256=qNglCBxvEUlnl47_hyuKvlnkW5QHQn8vvI-hgd9pUf0,1754
+mautrix_appservice-0.3.6.dist-info/RECORD,,
+mautrix_appservice-0.3.6.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+mautrix_appservice-0.3.6.dist-info/top_level.txt,sha256=zruS2K4S9CQR9vgnFkoKAVz0ECI6XKL_xe0ZC7zceNc,19

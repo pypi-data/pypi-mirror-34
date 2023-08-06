@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dinosar
+Version: 0.1.2
+Summary: SAR processing on the Cloud
+Home-page: https://github.com/scottyhq/dinosar
+Author: Scott Henderson
+Author-email: scottyh@uw.edu
+Maintainer: Scott Henderson
+Maintainer-email: scottyh@uw.edu
+License: MIT
+Keywords: SAR,Cloud,Batch,AWS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.18)
+Requires-Dist: pandas (>=0.23)
+Requires-Dist: geopandas (>=0.3)
+Requires-Dist: lxml (>=4.2)
+Requires-Dist: pyyaml (>=3.13)
+Requires-Dist: rasterio (>=1.0)
+
+[![Build Status](https://travis-ci.org/scottyhq/dinosar.svg?branch=master)](https://travis-ci.org/scottyhq/dinosar)
+
+# dinoSAR
+tools for InSAR processing on AWS
+
+## currently testing packaging and deployment tools, so the only functionality is querying ASF archive
+
+get_inventory_asf.py -r 0.610607 1.047751 -78.195699 -77.522255
+
+

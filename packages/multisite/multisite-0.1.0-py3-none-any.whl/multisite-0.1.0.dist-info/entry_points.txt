@@ -1,0 +1,3 @@
+[console_scripts]
+multisite = multisite.__main__:main
+

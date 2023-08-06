@@ -1,0 +1,12 @@
+astrosql/__init__.py,sha256=w-z_XMX5KmvvTu2jWqnLhxTVdX0aLnuUG5kjIuCw2Fw,23
+astrosql/apass.py,sha256=KYyRTj3rzWtRWXOHfouMeMGudzjvRi_GiVHTfKEVInY,5228
+astrosql/argparser.py,sha256=ny0ga27D42eWJjr5Zxl83ZiKXpvOGGaKxTMWwk7ipnc,6946
+astrosql/astrosql.py,sha256=waZIehmZerh8tY_zQsHFIjbm4AqGAIa2635RXQVjlEE,8890
+astrosql/command_line.py,sha256=KPgWMwAhC_rswtDFSXjLM-oOPRy8e7kKGekBjuFiKCw,1082
+astrosql/config.py,sha256=X6jFNjWJrVBeyGiBAZumdz9grLAHNuMswrY0nBld0aQ,644
+astrosql/peeweedb.py,sha256=glKjeknnU2b2patcnTy4ogshfV9gAoqWaeCUrx8fsK8,3336
+astrosql/sqlconnector.py,sha256=wU9GbIdqFGN1PVudNaoffstw9iAoeQTdSK4HkCF2194,1845
+astrosql-0.3.0.dist-info/METADATA,sha256=C7YXPOaCWdiipUVkRQ4ZeApuu8aWwl2TIQv6ppxAYTQ,3099
+astrosql-0.3.0.dist-info/RECORD,,
+astrosql-0.3.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+astrosql-0.3.0.dist-info/top_level.txt,sha256=7oyisPY5IKKGU3Bn7szRrD8ynp44BsN9OvOHAkNV9hY,9

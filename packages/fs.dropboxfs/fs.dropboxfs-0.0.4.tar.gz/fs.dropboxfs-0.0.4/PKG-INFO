@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: fs.dropboxfs
+Version: 0.0.4
+Summary: Pyfilesystem2 implementation for Dropbox
+Home-page: https://github.com/rkhwaja/fs.dropboxfs
+Author: Rehan Khwaja
+Author-email: rehan@khwaja.name
+License: MIT
+Description: fs.dropboxfs
+        =============
+        
+Keywords: filesystem,Pyfilesystem2,dropbox
+Platform: any
+Requires-Python: >= 3.6

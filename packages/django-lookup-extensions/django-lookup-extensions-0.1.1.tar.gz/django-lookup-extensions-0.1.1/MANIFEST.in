@@ -1,0 +1,26 @@
+include *.rst
+include LICENSE
+include MANIFEST.in
+include setup.cfg
+include setup.py
+include Makefile
+
+exclude .editorconfig
+exclude .pyup.yml
+exclude .travis.yml
+exclude runmakemigrations.py
+exclude tox.ini
+exclude requirements.txt
+
+graft lookup_extensions
+graft docs
+graft requirements
+graft tests
+
+prune .github
+prune docs/_build
+prune vendor
+
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude *.cfg

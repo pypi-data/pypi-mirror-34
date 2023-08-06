@@ -1,0 +1,9 @@
+pyturbo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyturbo/face_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyturbo/face_detection/MTCNN_tf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyturbo/face_detection/MTCNN_tf/detect_face.py,sha256=0I9_L8riah13xFL6X7TPO3W87JsYVlHkXsRUr2_F5tw,30984
+pyturbo/face_detection/MTCNN_tf/mtcnn.py,sha256=6Mzwd1jZiIQoP6FInwXTYDvLDZwKDe8v9Z4W0UuGOMw,1898
+pyturbo-18.7.27.dist-info/METADATA,sha256=2HNgZXwXixGFo_I6z-Wzn0ymjU8_8eCA5i411Ju76kA,482
+pyturbo-18.7.27.dist-info/RECORD,,
+pyturbo-18.7.27.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+pyturbo-18.7.27.dist-info/top_level.txt,sha256=xZsgvIwAD8JzsiZ5_pH72O9pkBjkQvuqKzLXF3i7W-U,8

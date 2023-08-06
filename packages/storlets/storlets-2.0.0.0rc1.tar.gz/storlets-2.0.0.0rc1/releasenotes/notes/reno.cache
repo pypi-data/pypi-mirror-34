@@ -1,0 +1,31 @@
+---
+file-contents:
+  releasenotes/notes/2_0_0-e987cd43729edf86.yaml:
+    Upgrades: ['Refactor sbus listing server that is used on conversation between
+        Storlets
+
+        daemon and Storlets middleware. The refactor decrease the number of lines
+
+        for common process communications.
+
+        ']
+    fixes: [Fix all python Storlets daemon processes as py3 compatible., Switch test
+        runner from testr to stestr, Other various minor bug fixes]
+    issues: ['Secure container isolation for Storlets environment is still an ongoing
+
+        work. Storlets enables user-defined code to run on the OpenStack Swift
+
+        node with Docker container isolation level but a malicious user would run
+
+        any attacking code there using recent vulnerability. Using more secure
+
+        container like kata may mitigate such a risk of vulnerability.
+
+        ', Support user function written by py3 (current runner only supports python2
+        env)]
+notes:
+- files:
+  - - releasenotes/notes/2_0_0-e987cd43729edf86.yaml
+    - !!binary |
+      MjAxZjJiOTk0MTFlZTc4YWYxODgyZmM1NTAxNjZhYTU4ZDRiMWQ4YQ==
+  version: 2.0.0.0rc1

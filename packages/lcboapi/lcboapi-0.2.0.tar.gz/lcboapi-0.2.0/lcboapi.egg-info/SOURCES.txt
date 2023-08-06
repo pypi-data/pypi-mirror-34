@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+lcboapi/__init__.py
+lcboapi.egg-info/PKG-INFO
+lcboapi.egg-info/SOURCES.txt
+lcboapi.egg-info/dependency_links.txt
+lcboapi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_datasets.py
+tests/test_inventories.py
+tests/test_products.py
+tests/test_stores.py

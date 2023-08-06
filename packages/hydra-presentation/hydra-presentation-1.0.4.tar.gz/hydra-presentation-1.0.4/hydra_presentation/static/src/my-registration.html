@@ -1,0 +1,82 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="/static/polymer/polymer-element.html">
+<link rel="import" href="/static/iron-form/iron-form.html">
+<link rel="import" href="/static/paper-button/paper-button.html">
+<link rel="import" href="/static/paper-input/paper-input.html">
+<link rel="import" href="/static/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="/static/src/shared-styles.html">
+
+<dom-module id="my-registration">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px;
+
+                @apply --layout-vertical;
+                @apply --layout-center-center;
+
+                /*background-color: var(--app-primary-color);*/
+            }
+        </style>
+
+        <div class="card">
+            <h1>Registration</h1>
+
+            <iron-form id="registrationForm">
+                <form method="POST" action="[[registrationEndpointUrl]]">
+                    <paper-input label="Username" type="text" name="username"></paper-input>
+                    <paper-input label="Email" type="email" name="email"></paper-input>
+                    <paper-input label="Password" type="password" name="password"></paper-input>
+                    <div class="layout vertical">
+                        <a href="[[forgottenPasswordUrl]]">Forgotten password</a>
+                        <a href="[[loginUrl]]">Sign In</a>
+                    </div>
+                </form>
+
+                <div class="layout horizontal-reverse around-justified">
+                    <paper-button raised on-tap="authorize">Sign on</paper-button>
+                </div>
+            </iron-form>
+        </div>
+    </template>
+
+    <script>
+        class MyRegistrationView extends Polymer.Element {
+            static get is() {
+                return 'my-registration';
+            }
+
+            static get properties() {
+                return {
+                    registrationEndpointUrl: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true
+                    },
+                    forgottenPasswordUrl: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true
+                    },
+                    loginUrl: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true
+                    },
+                }
+            }
+        }
+
+        window.customElements.define(MyRegistrationView.is, MyRegistrationView);
+    </script>
+</dom-module>

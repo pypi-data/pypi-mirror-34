@@ -1,0 +1,14 @@
+som/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+som/som.py,sha256=jFUhviRa3TFuEfeGedK2K4NbfdsUEetc4lwba765Aj4,1940
+som/som_numpy.py,sha256=Kv43RHMrcY-jhucBQi_If4ssA3ZW2qTjlu0o9xILLd0,8700
+som/som_tensor.py,sha256=9OaQ7ugFNH9O1Isdn25hBZt3uHQ8lETCOFmpo_a8c3M,11385
+somlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+somlib/som.py,sha256=jFUhviRa3TFuEfeGedK2K4NbfdsUEetc4lwba765Aj4,1940
+somlib/som_numpy.py,sha256=Kv43RHMrcY-jhucBQi_If4ssA3ZW2qTjlu0o9xILLd0,8700
+somlib/som_tensor.py,sha256=9OaQ7ugFNH9O1Isdn25hBZt3uHQ8lETCOFmpo_a8c3M,11385
+somlib-0.0.2.dist-info/DESCRIPTION.rst,sha256=4XtoIXxbPqDdj1ojlM2m-mUwpze1YPdgWsDuDHJTHiI,989
+somlib-0.0.2.dist-info/METADATA,sha256=2i_TfYl7MNx-h51gLmibQjCt_gOn91V5dZlkXZpaYXc,1629
+somlib-0.0.2.dist-info/RECORD,,
+somlib-0.0.2.dist-info/WHEEL,sha256=90z-L1FjHEv_g8pMPaPbaXuhBIvSlvYObRaa122x8ag,97
+somlib-0.0.2.dist-info/metadata.json,sha256=l5FJcMLkBnQXi-XOlaS96qkMKDmFQEuYOHJXrMBI5cg,730
+somlib-0.0.2.dist-info/top_level.txt,sha256=jFUFl4fZmF2jS2euk5h-18ov-WXMAkybLoFEvf1QHXU,7

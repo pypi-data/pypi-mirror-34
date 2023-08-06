@@ -1,0 +1,11 @@
+blinker==1.4
+boto==2.42.0
+celery==3.1.18
+flask_restful==0.3.4
+jsonpickle
+pycrypto==2.6.1
+pyelasticsearch==1.4
+raven==5.5.0
+redis==2.10.3
+requests==2.7.0
+selenium==3.0.1

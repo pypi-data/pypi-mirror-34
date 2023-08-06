@@ -1,0 +1,12 @@
+misu/SIprefixes.py,sha256=0yg3AnKRCvzn1l6ksvlPdV8mbbfFKRaCHm4MNL4m518,753
+misu/__init__.py,sha256=cdQZ3IldiHg0LJnT2vJHkt_JmJXhUYP2w0ZzVZOuHvY,27
+misu/addmodule.py,sha256=JqknOcQTrA1nZDX-fBXPJurx4M0scGGu3rTwBN2d5CU,345
+misu/engine.pyd,sha256=7cjx5YJmAL8xqpS4YKymvuzSf2aj61o3BuicNgprw0M,271872
+misu/make_README.py,sha256=lCHG2YVMAXox1jjqk6gRnwAtOqLsA4JbiSYvHZ68kb0,3597
+misu/misulib.py,sha256=r_siDbrw9c9Xzi3lgW_1B1cA_OKMpogndA4Uz6s2KkM,35270
+misu/profiler_support.py,sha256=asgqODP9UdeVdk1VYtf7g-JH6IKwpSJZ6rEUZYmhJPE,582
+misu/unitmachine.py,sha256=GMOv9bgbAOv1Gvme0KSEnebTd33MKMfsPPF4LL2TTpU,3122
+misu-1.0.4.dist-info/METADATA,sha256=PjC9Oc18aSNO-LQuPMQjcIAP8qf4c_brW7DgQjaSDnc,8094
+misu-1.0.4.dist-info/RECORD,,
+misu-1.0.4.dist-info/WHEEL,sha256=F1_k-v0LVhnDkVni3Mbka67OoMISp1ecOQap0z-EgKc,106
+misu-1.0.4.dist-info/top_level.txt,sha256=HFnhfynppCLXryEdzu1NGgHvK2XVeFndtou2SD6hq5Y,5

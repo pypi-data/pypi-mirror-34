@@ -1,0 +1,15 @@
+nftl_slack_tools/__init__.py,sha256=7AsGogbBKgSFiqcp8icl1s5n_-MTyzA9l1L2AsHw73w,26
+nftl_slack_tools/client.py,sha256=eFwjnbYQoqm-_CmQtsQmS7mZixeWosdM3YVwoc_DeYA,2183
+nftl_slack_tools/slack_api.py,sha256=PvJ61dZWzgrYMv2YNaSKpXDrO2P5LRhFAirct8h1Kdw,4723
+nftl_slack_tools/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nftl_slack_tools/api/channels.py,sha256=PlLqre_XsJXPeVw0n6qmfwXCGg1Zg8C1r0xbmgIYUQA,10816
+nftl_slack_tools/api/chat.py,sha256=S4cEVXQCfvJsPbjNBcvttPUaFbPBst7XVSdm2hE5lsc,1229
+nftl_slack_tools/api/groups.py,sha256=UtXFq_a_Ldrfs1rtHm8hQYi5S95HkKBkt8Y_nKzwCNM,10621
+nftl_slack_tools/api/users.py,sha256=aHYuHh5PhmPsagi8x0-Ldv8_XeC13qbrmql_kMq-85w,1439
+nftl_slack_tools-0.2.2.dist-info/METADATA,sha256=KixePv56HBs1kTdsl3HYw3p_Z9piur_-14Ug5C90Xz4,8996
+nftl_slack_tools-0.2.2.dist-info/RECORD,,
+nftl_slack_tools-0.2.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nftl_slack_tools-0.2.2.dist-info/top_level.txt,sha256=DDlfEn1lQ4h5bi_bXaHcP2ZAiRxpeekPohB46jCCqQo,23
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/slack_client_groups_test.py,sha256=CJbE0YD3jBMJ_eXZ7mG0329R6dE0SVUr0Jk5JuRbLkY,7528
+tests/slack_client_test.py,sha256=K8zvhu0U95yIxuXQsJYOu5D_9BU30In08P-f-1LxNHU,9041

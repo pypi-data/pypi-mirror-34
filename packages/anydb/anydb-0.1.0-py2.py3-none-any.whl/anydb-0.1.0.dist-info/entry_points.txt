@@ -1,0 +1,3 @@
+[console_scripts]
+anydb = anydb.__main__:main
+

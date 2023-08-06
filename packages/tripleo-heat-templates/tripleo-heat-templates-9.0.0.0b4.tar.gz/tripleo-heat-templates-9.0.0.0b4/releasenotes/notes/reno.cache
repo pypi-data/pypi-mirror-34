@@ -1,0 +1,1213 @@
+---
+file-contents:
+  releasenotes/notes/Add-EnablePublicTLS-parameter-b3fcd01af6f3c101.yaml:
+    features: ['This adds a flag called EnablePublicTLS, which defaults to ''true''.
+        It
+
+        reflects that Public TLS is enabled by default, and it''s read by
+
+        the deployment workflow to let the public certificate generation happen.
+
+        It can also be used to disable this feature, if it''s set to ''false'' as
+
+        it''s done in the no-tls-endpoints-public-ip.yaml environment
+
+        file, which allows deployers to turn this feature off.
+
+        ']
+  releasenotes/notes/Deprecate-cinder-API-nova_catalog_admin_info-006ebda240f730a2.yaml:
+    deprecations: ['The nova_catalog_admin_info parameter is no longer being configured
+        for
+
+        cinder since it was deprecated.
+
+        ']
+  releasenotes/notes/Need-explicit-memcacheddebug-to-activate-memcached-debug.-41cfa69d4537cbd7.yaml:
+    deprecations: ['The Debug parameter do not activate Memcached debug anymore.  You
+
+        have to pass MemcachedDebug explicitly.
+
+        ']
+  releasenotes/notes/Remove-version-from-KeystoneUrl-output-fe4ce6f1a45849d3.yaml:
+    features: ['The KeystoneURL stack output is now versionless.
+
+        ']
+  releasenotes/notes/add-cinder-backend-nvmeof-023d967980fcf7b8.yaml:
+    features: ['Add NVMeOF as Cinder backend.
+
+        ']
+  releasenotes/notes/add-cinder-backup-nfs-backend-0108fba91a3058ea.yaml:
+    features: ['Adds support for configuring the cinder-backup service with an NFS
+        backend.
+
+        ']
+    fixes: ['Fixes `bug 1744174 <https://bugs.launchpad.net/tripleo/+bug/1744174>`__.
+
+        ']
+  releasenotes/notes/add-docker-sfc-bda84d08b119a250.yaml:
+    features: ['Adds docker service for Neutron SFC.
+
+        ']
+  releasenotes/notes/add-mistral-volumes-param-a97418faf7a09022.yaml:
+    features: ['The parameter MistralExecutorExtraVolumes can be set to add volume
+        mounts
+
+        into the undercloud mistral-executor container. This allows workflows to
+
+        have access to the required files for custom tasks such as rebuilding
+
+        container images.
+
+        ']
+  releasenotes/notes/add-purge-nova-tables-e0706cdcffa0f42e.yaml:
+    features: ['Add the ability of fully purging the shadow
+
+        tables whether in the archive or the purge
+
+        cron.
+
+        ']
+  releasenotes/notes/add_bios_interface_support-740a666a4ec629fc.yaml:
+    features: ['Adds support to configure enabled bios interfaces, using IronicEnabledBiosInterfaces
+        setting.']
+  releasenotes/notes/add_neutron_segments_plugin_to_default-8acb69b112d4b31c.yaml:
+    other: ['Add "segments" service plugin to the default list of
+
+        neutron service plugins.
+
+        ']
+  releasenotes/notes/add_params_to_configure_ulimit-2359aa058da58054.yaml:
+    features: ['Add Parameters to Configure Ulimit for Containers.
+
+        These parameters can be used to configure ulimit
+
+        per container basis as per the requirement of the
+
+        deployment.
+
+        Following parameters are added for neutron, nova
+
+        and cinder:-
+
+        - DockerNeutronDHCPAgentUlimit defaults to nofile=1024
+
+        - DockerNeutronL3AgentUlimit defaults to nofile=1024
+
+        - DockerOpenvswitchUlimit defaults to nofile=1024
+
+        - DockerNovaComputeUlimit defaults to nofile=1024
+
+        - DockerCinderVolumeUlimit defaults to nofile=131072
+
+        ']
+  releasenotes/notes/add_site_id_cisco_ml2-60cfa450637d4fe0.yaml:
+    fixes: ['Add VTSSideId parameter to Cisco VTS ML2 template.
+
+        ']
+  releasenotes/notes/all-nodes-extra-map-data-b8c8829dfa7f1c26.yaml:
+    features: [AllNodesExtraMapData is a new parameter that can be used to inject
+        additional hieradata into the all_nodes.yaml hieradata file on each node.
+        The injected data will be deeply merged with the new all_nodes hieradata calculated
+        for the stack.]
+  releasenotes/notes/blacklistedhostnames-stack-output-02c9f93f9d1ce7d8.yaml:
+    other: [BlacklistedHostnames has been added as a stack output. The value of the
+        output is a list of blacklisted hostnames.]
+  releasenotes/notes/bug-1775667-fix-manila-share-typo-upgrade-82d9b3edea77b94a.yaml:
+    fixes: [Fix a typo in the manila-share pacemaker template which was causing failures
+        on upgrades and updates.]
+  releasenotes/notes/check-old-style-nic-config-4624a60e3303411b.yaml:
+    other: [Add check for nic config files using the old style format (os-apply-config)
+        and list the script that can be used to convert the file.]
+  releasenotes/notes/collectd-overcloud-gnocchi-049a63bbd196a9bb.yaml:
+    features: ['Makes collectd deployment default output metrics data to Gnocchi instance
+
+        running on overcloud nodes.
+
+        ']
+  releasenotes/notes/collectd-polling-4aac123faaebd1bc.yaml:
+    features: ['Adds possibility to override default polling interval for collectd
+        and set
+
+        default value to 120 seconds, because current default (10s)
+
+        was too aggressive.
+
+        ']
+  releasenotes/notes/compute-cpu-shared-set-be9da772ac8f7582.yaml:
+    features: ['Introduces NovaComputeCpuSharedSet parameter to set
+
+        ``[compute]/cpu_shared_set`` option for compute nodes.
+
+        Some workloads run best when the hypervisor overhead processes
+
+        (emulator threads in libvirt/QEMU) can be placed on different
+
+        physical host CPUs than other guest CPU resources. This allows
+
+        those workloads to prevent latency spikes for guest vCPU threads.
+
+
+        To place a workload''s emulator threads on a set of isolated
+
+        physical CPUs, set the configuration option to the set of host
+
+        CPUs that should be used for best-effort CPU resources. Then set
+
+        a flavor extra spec to ``hw:emulator_threads_policy=share`` to
+
+        instruct nova to place that workload''s emulator threads on that
+
+        set of host CPUs.
+
+        ']
+  releasenotes/notes/compute-tuned-profile-cbe4e22b1e185c5e.yaml:
+    fixes: ['Previously the default throughput-performance was set on the computes.
+
+        Now virtual-host is set as default for the Compute roles. For compute
+
+        NFV use case cpu-partitioning, RT realtime-virtual-host and HCI
+
+        throughput-performance.
+
+        ']
+  releasenotes/notes/config-download-default-to-true-2331debd56c396eb.yaml:
+    deprecations: [environments/disable-config-download.yaml can be used to disable
+        config-download but is deprecated.]
+    features: ['The mappings from environments/config-download-environment.yaml are
+        now included by default in overcloud-resource-registry.j2.yaml. config-download
+        is now the default way of deploying. An environment at environments/disable-config-download.yaml
+        is added to enable the previous method, but that method is deprecated.']
+  releasenotes/notes/configure-ip-forward-268c165708cbd203.yaml:
+    features: ['Add KernelIpForward configuration to enable/disable the net.ipv4.ip_forward
+
+        configuration.
+
+        ']
+  releasenotes/notes/container-images-prepare-c446ed0b04c587f7.yaml:
+    other: ['Add the ``ContainerImagePrepareLogFile`` heat parameter, which points
+        to
+
+        a log file to store outputs of the
+
+        ``openstack tripleo container image prepare`` commands
+
+        invoked by ansible for containers registry deployments.
+
+        As it takes quite a while to finish, and may be retrying intermittent
+
+        failures, make the command to log ``--verbose`` details as well.
+
+
+        The default log file ``tripleo-container-image-prepare.log`` will
+
+        be placed in the directory containing downloaded ansible playbooks and
+
+        inventory files. For undercloud deployments, logs destination is shared
+
+        with the default ``install-undercloud.log`` file.
+
+        ']
+  releasenotes/notes/containerize-neutron-lbaas-service-plugin-20562487d6631c88.yaml:
+    features: ['Add support for Neutron LBaaSV2 service plugin in a containerized
+
+        deployment.
+
+        ']
+  releasenotes/notes/containerized-tempest-support-0ceaaf6427ce36e9.yaml:
+    features: [Added containerized tempest support in undercloud., Add DockerTempestImage
+        parameter to add a fake tempest service which makes sure tempest container
+        exists on the undercloud.]
+  releasenotes/notes/containers-as-default-37bbe8afa0a60c2b.yaml:
+    features: ['Containers are now the default way of deploying. There is still a
+        way to
+
+        deploy the baremetal services in environments/baremetal-services.yaml, but
+
+        this is expected to eventually disappear.
+
+        ']
+    upgrade: ["Environment files originally referenced from `environments/services-docker`\n\
+        should be altered to the `environments/services` paths. If some of the\ndeployed\
+        \ baremetal services need to be retained as non-containerized,\nupdate its\
+        \ references to `environments/services-baremetal` instead of\n`environments/services`.\n\
+        \n.. note:: Starting from Rocky, overcloud upgrades to baremetal services\n\
+        \  (non-containerized), or mixed services is no more tested nor verified.\n"]
+  releasenotes/notes/convert-resource-name-to-number-80ada6c825554f56.yaml:
+    fixes: ['Previously, get-occ-config.sh could configure nodes out of order when
+        deploying with more than 10 nodes. The script has been updated to properly
+        sort the node resource names by first converting the names to a number.']
+  releasenotes/notes/ctlplane_fixed_ip-81d14db5a01fa531.yaml:
+    features: ['Add ability to specify a fixed IP for the provisioning control plane
+
+        (ctlplane) network. This works similarly to the existing fixed IPs
+
+        for isolated networks, by including an environment file which includes
+
+        an IP for each node in each role that should use a fixed IP. An example
+
+        environment file is included in environments/ips-from-pool-ctlplane.yaml.
+
+        ']
+  releasenotes/notes/custom-network-names-c62a57827d98eea5.yaml:
+    fixes: ['The name_lower field in network_data.yaml can be used to define custom
+        network names but the ServiceNetMap must be updated with the new names in
+        all places.  This change adds a new field to network_data.yaml - service_net_map_replace,
+        that should be set to the original name_lower so that ServiceNetMap will be
+        automatically updated.']
+  releasenotes/notes/default-octavia-ssh-pub-key-to-keypair-70377d43bf76a407.yaml:
+    fixes: [Default Octavia SSH public key to 'default' keypair from undercloud.]
+  releasenotes/notes/deprecate-non-config-download-templates-3971fbf85b93846d.yaml:
+    deprecations: [The templates at extraconfig/pre_network/host_config_and_reboot.yaml
+        (replaced with extraconfig/pre_network/boot-params-service.yaml) and extraconfig/tasks/ssh/host_public_key.yaml
+        (replaced with the tripleo-ssh-known-hosts role) are deprecated as they do
+        not work with config-download. They will be removed in the Stein release.]
+  releasenotes/notes/deprecate_auth_uri_parameter-bdebdc6614ce8b7e.yaml:
+    deprecations: ['auth_uri is depreacted and will be removed in a future release.
+        Please, use www_authenticate_uri instead.']
+  releasenotes/notes/designate-support-b66127d9f4995db2.yaml:
+    features: ['Support for deploying Designate is now available.  Designate support
+        in
+
+        TripleO is experimental and not recommended for use in production.
+
+        ']
+  releasenotes/notes/direct-deploy-by-default-bc78a63f0a0c6e15.yaml:
+    upgrade: ['Ironic in the containerized undercloud now uses the ``direct`` deploy
+
+        interface by default for better performance and scalability. See
+
+        `the direct deploy documentation
+
+        <https://docs.openstack.org/ironic/latest/admin/interfaces/deploy.html#direct-deploy>`_
+
+        for details.
+
+
+        If undesired, this change can be reverted per node by setting the node''s
+
+        ``deploy_interface`` field to ``iscsi`` or globally by changing the new
+
+        ``IronicDefaultDeployInterface`` to empty string.
+
+        ']
+  releasenotes/notes/docker-bip-9a334c8f31a59b96.yaml:
+    other: ['The default docker0 brige should be normally given a
+
+        value that does not conflict to any of the existing
+
+        networks'' CIDR ranges.
+
+
+        If there is a conflict for the default value `172.31.0.1/24`,
+
+        allow users to alter the the docker service startup ``--bip``
+
+        option via ``DockerNetworkOptions``.
+
+        ']
+  releasenotes/notes/error-on-new-heat-deployment-outputs-1377270acbc5bc7e.yaml:
+    other: [New Heat deployments that use outputs will now cause an error by yaml-validate.py
+        as these do not work with config-download. Existing deployments with outputs
+        are excluded.]
+  releasenotes/notes/ffu-custom-script-to-switch-repo-a65db91760b46ec2.yaml:
+    features: ["The user can now use a custom script to switch repo during the\nfast\
+        \ forward upgrade.  He/She has to set ``FastForwardRepoType``\nto ``custom-script``\
+        \ and set\n``FastForwardCustomRepoScriptContent`` to a string representing\
+        \ a\nshell script.  That script will be executed on each node and given\n\
+        the upstream name of the release as the first argument (ocata,\npike, queens\
+        \ in that order).  Here is an example that describes\nits interface.\n\n..\
+        \ code-block:: bash\n\n    #!/bin/bash\n    case $1 in\n      ocata)\n   \
+        \     curl -o /etc/yum.repos.d/ocata.repo http://somewhere.com/my-Ocata.repo;\n\
+        \        yum clean metadata;\n      pike)\n        curl -o /etc/yum.repos.d/pike.repo\
+        \ http://somewhere.com/my-Pike.repo;\n        yum clean metadata;\n      queens)\n\
+        \        curl -o /etc/yum.repos.d/pike.repo http://somewhere.com/my-Queens.repo;\n\
+        \        yum clean metadata;\n      *)\n        echo \"unknown release $1\"\
+        \ >&2\n        exit 1\n    esac\n"]
+  releasenotes/notes/fix-get-occ-config-with-role-count-greater-1-10ce2010556e5b76.yaml:
+    fixes: ['When using get-occ-config.sh with a role using a count greater than 1,
+        the script will now configure all nodes that are of that role type instead
+        of exiting after only configuring the first.']
+  releasenotes/notes/fix-neutron-cert-key-perms.yaml-efcc17f188798cc4.yaml:
+    fixes: ['Fixes Neutron certificate and key for TLS deployments to have the correct
+
+        user/group IDs.
+
+        ']
+  releasenotes/notes/fix-odl-gui-feature-6525b8c6807fb784.yaml:
+    fixes: ['Fixes GUI feature loaded into OpenDaylight, which fixes the GUI as well
+
+        as the URL used for Docker healthcheck.
+
+        ']
+  releasenotes/notes/fix-odl-missing-etc-config-87c33bc05f692f44.yaml:
+    fixes: ['Fixes OpenDaylight container service not starting due to missing config
+
+        files in /opt/opendaylight/etc directory.
+
+        ']
+  releasenotes/notes/fix-odl-ovs-allowed-network-types-d196d6d40fadb1bc.yaml:
+    fixes: ['Fixes missing type "flat" from the default allowed network types for
+
+        the ODL OVS parameter HostAllowedNetworkTypes.  See
+
+        https://bugs.launchpad.net/tripleo/+bug/1762495
+
+        ']
+  releasenotes/notes/fix-odl-ovs-vhostusermode-7bc2b64fd2676ca2.yaml:
+    deprecations: ['Using ''client'' for OvsVhostuserMode parameter. See ''vhost-user''
+        section
+
+        at http://docs.openvswitch.org/en/latest/topics/dpdk/vhost-user/
+
+        ']
+    fixes: ['Fixes default of vhostuser_mode in ODL-OVS to be server, and clarifies
+
+        the configuration parameter. See
+
+        https://bugs.launchpad.net/tripleo/+bug/1762473
+
+        ']
+  releasenotes/notes/fix-odl-update-upgrade-cache-83004abe108971c1.yaml:
+    fixes: ['Fixes update and upgrade along with modifying configuration for
+
+        OpenDaylight deployments.  See
+
+        https://bugs.launchpad.net/tripleo/+bug/1775919
+
+        ']
+  releasenotes/notes/fix-str-replace-hostname-issue-393fb6954f12f7e6.yaml:
+    fixes: ['Fixes an issue where Custom Hostnames is in use. Previously it was possible
+
+        that the ``HostnameMap`` lookup lookup would return unexpected and
+
+        incorrect results if the hostname (the key) is not in the map. The string
+
+        replacement mechanism used previously was replaced by a yaql expression
+
+        that will do exact matching only. If no matching key is in the
+
+        HostnameMap, the default hostname is returned.
+
+        `bug 1781560  <https://review.openstack.org/#/c/582475/>`_.
+
+        ']
+  releasenotes/notes/fix-tls-neutron-agents-c40d5fc779d53bfa.yaml:
+    fixes: ['Fixes failure to create Neutron certificates for roles which do not
+
+        contain Neutron DHCP agent, but include other Neutron agents
+
+        (i.e. default Compute role).
+
+        ']
+  releasenotes/notes/fix_nova_host-0b82c88597703353.yaml:
+    fixes: ['The nova/neutron/ceilometer host parameter is now explicitly set to the
+
+        same value that is written to /etc/hosts. On a correctly configured
+
+        deployment they should be already be identical. However if the hostname
+
+        or domainname is altered (e.g via DHCP) then the hostname is unlikely to
+
+        resolve to the correct IP address for live-migraiton.
+
+        Related bug: https://bugs.launchpad.net/tripleo/+bug/1758034
+
+        ']
+  releasenotes/notes/gnocchi-archive-policy-deprecation-09c086e9a0f9af86.yaml:
+    deprecations: ['GnocchiArchivePolicy is now deprecated. The archive policy have
+        to be passed
+
+        through the PipelinePublishers/EventPipelinePublishers uris.
+
+        ']
+  releasenotes/notes/hiera_net_ip_map-ff866b443a28bdc4.yaml:
+    upgrade: ['Per-service config_settings should now use hiera interpolation to set
+
+        the bind IP for services, e.g "%{hiera(''internal_api'')}" whereas prior
+
+        to this release we replaced e.g internal_api for the IP address internally.
+
+        The network name can still be derived from the ServiceNetMap - all the
+
+        in-tree templates have been converted to the new format, but any out
+
+        of tree templates may require similar adjustment.
+
+        ']
+  releasenotes/notes/ipxe_timeout-5824c87e849b1b50.yaml:
+    features: ['A new parameter IronicIPXETimeout can change the default iPXE timeout,
+        set to
+
+        60 seconds. Note that 0 would set an infinite timeout.
+
+        ']
+  releasenotes/notes/ironic-inspector-use-dnsmasq_ip_subnets-abba77307e761b96.yaml:
+    deprecations: [The parameter ``IronicInspectorIpRange`` is deprecated. Use the
+        new ``IronicInspectorSubnets`` instead.]
+    features: [Adds support to configure ironic-inspector with multiple ip ranges.
+        This enables ironic-inspector's DHCP server to serve request that came in
+        via dhcp-relay agent.]
+  releasenotes/notes/ironic-networking-baremetal-29d9ad465565bb87.yaml:
+    features: [Adds support for Ironic Networking Baremetal. Networking Baremetal
+        is used to integrate the Bare Metal service with the Networking service.]
+  releasenotes/notes/ironic-rescue-cb1edecce357fc0b.yaml:
+    features: ['Rescue mode is now enabled by default in ironic. To disable it, set
+
+        ``IronicDefaultRescueInterface`` to ``no-rescue``.
+
+        ']
+  releasenotes/notes/kernel_sysctl_role-d4f6a50d08b7a388.yaml:
+    features: ['Allow to configure extra Kernel modules and extra sysctl settings
+        per role
+
+        and not only global to the whole deployment.
+
+        The two parameters that can be role-specific are ExtraKernelModules and
+
+        ExtraSysctlSettings.
+
+        ']
+  releasenotes/notes/l2gw-driver-change-1f5b11d5676c5015.yaml:
+    features: [L2GW driver changes to version 2 when using OpenDaylight.]
+  releasenotes/notes/live_migration_inbound_addr_all_transports-2fc9cd74d435a367.yaml:
+    fixes: ['Set live_migration_inbound_addr for ssh transport
+
+
+        Previously this was only set when TLS is enabled, which means that with the
+        ssh
+
+        transport we could not control the network used, and were relying on DNS or
+
+        hosts file to be correct, which is not guaranteed (especially with DNS).
+
+        ']
+  releasenotes/notes/live_migration_port_range-54c28faf0a67a3fc.yaml:
+    fixes: ['By default, libvirtd uses ports from 49152 to 49215 for live-migration
+
+        as specified in qemu.conf, that becomes a subset of ephemeral ports
+
+        (from 32768 to 61000) used by many linux kernels.
+
+        The issue here is that these ephemeral ports are used for outgoing TCP
+
+        sockets. And live-migration might fail, if there are no port available
+
+        from the specified range.
+
+        Moving the port range out of ephemeral port range to be used only for
+
+        live-migration.
+
+        ']
+  releasenotes/notes/logrotate-containers-purge-a5587253fe6cbb28.yaml:
+    security: ['New heat parameters for containerized services ''LogrotateMaxsize'',
+
+        ''LogrotateRotationInterval'', ''LogrotateRotate'' and
+
+        ''LogrotatePurgeAfterDays'' allow customizing size/time-based rules
+
+        for the containerized services logs rotation.
+
+        The time based rules prevail over all.
+
+        ']
+    upgrade: ['The ''LogrotatePurgeAfterDays''
+
+        enforces cleaning up of information exceeded its life-time
+
+        (defaults to a 14 days) in the /var/log/containers directory of
+
+        bare metal overcloud hosts, including upgrade (from containers)
+
+        cases, when leftovers may be remaining on the host systems.
+
+        ']
+  releasenotes/notes/memcached_hardening-2529734099da27f4.yaml:
+    security: ['Restrict memcached service to TCP and internal_api network (CVE-2018-1000115).
+
+        ']
+  releasenotes/notes/memcached_logging-f69ade3665a70a5c.yaml:
+    upgrade: ['Containerized memcached logs to stdout/stderr instead of a file.
+
+        Its logs may be picked up via journald.
+
+        ']
+  releasenotes/notes/merge_keys_from_services-cd17425d58b49840.yaml:
+    features: ["It is now possible to specify values for any key in `config_settings`\n\
+        from multiple services; multiple values will be merged using YAQL\nmergeWith()\
+        \ function. For example, assuming two services defining\na key as follows:\n\
+        \n  config_settings:\n    mykey:\n    - val1\n\n  config_settings:\n    mykey:\n\
+        \    - val2\n    - val3\n\nthe content of the key, as seen by ansible or puppet\
+        \ on the nodes,\nwill be:\n\n  mykey: ['val1','val2','val3']\n"]
+  releasenotes/notes/mistral_execs-5e1c363c9293504d.yaml:
+    features: ['MistralEvaluationInterval is a new parameter that allow to configure
+
+        how often will the Mistral Executions be evaluated.
+
+        For example for value 120 the interval will be 2 hours (every 2 hours).
+
+        ', 'MistralFinishedExecutionDuration is a new parameter that allow to configure
+
+        how Mistral will evaluate from which time remove executions in minutes.
+
+        For example when set to 60, remove all executions that finished a 60 minutes
+
+        ago or more.
+
+        Note that only final state execution will remove (SUCCESS/ERROR).
+
+        ']
+  releasenotes/notes/ml2-networking-ansible-0330b1203f0fc75c.yaml:
+    features: [Added support for networking-ansible ML2 plugin.]
+  releasenotes/notes/mod_ssl-e7fd4db71189242e.yaml:
+    upgrade: ['When a service is deployed in WSGI with Apache, make sure mode_ssl
+        package is deployed during the upgrade process, it''s now required by default
+        so Apache can start properly.']
+  releasenotes/notes/move_glance_nfs_mount_task_to_common_place-d284378fb16f180a.yaml:
+    other: ['Moved glance nfs mount task to puppet/services under
+
+        host_prep_tasks instead of having it seperately for puppet
+
+        & docker services.
+
+
+        This is just refactoring cleanup, so there will be no functional
+
+        change & upgrade impact.
+
+        ']
+  releasenotes/notes/neutron-port-predictable-ips-857b8369ca81aa4c.yaml:
+    features: ["Support for predictable IP addressing added to the default port templates.\n\
+        In previous releases the use of _from_pool templates was required to have\n\
+        predictable ip addresses assigned to the nodes. Use of the\n``port_from_pool``\
+        \ templates is no longer required. The interface to\nconfigure predictable\
+        \ IP addressing without ``port_from_pool`` templates is\nthe same. For example::\n\
+        \n  parameter_defaults:\n    ControllerIPs:\n      intapi:\n        - 10.0.0.10\n\
+        \        - 10.0.0.11\n      external:\n        - 172.16.1.10\n        - 172.16.1.11\n"]
+    upgrade: ['Support for predictable IP addressing has been added to the default
+        port
+
+        templates. This however has not been tested for upgrades. If upgrading
+
+        continues use of the _from_pool templates is required.
+
+        ']
+  releasenotes/notes/neutron_db_rename-bbfbce1c58cadc84.yaml:
+    upgrade: ['When the undercloud was not containerized, the neutron database name
+        was called neutron.
+
+        When we upgrade to a containerized undercloud, the database name is called
+        ovs_neutron.
+
+        ']
+  releasenotes/notes/nic-config-script-handle-blank-line-f86553d7589826ed.yaml:
+    fixes: [This fixes an issue with the yaml-nic-config-2-script.py script that converts
+        old-style nic config files to new-style. It now handles blank lines followed
+        by a comment line.]
+  releasenotes/notes/no-classic-drivers-9c59b696d8b50692.yaml:
+    upgrade: ['Support for deprecated classic drivers was removed from the Ironic
+
+        templates. Please use ``IronicEnabledHardwareTypes`` and
+
+        ``IronicEnabled***Interfaces`` parameters to enable/disable support
+
+        for hardware types and interfaces.
+
+        ']
+  releasenotes/notes/nova_qemu_enable_config-c89016b4d93802d6.yaml:
+    fixes: ['With https://review.openstack.org/#/c/561784 we change the default
+
+        migration port range to ''61152-61215''.
+
+        nova::migration::qemu::configure_qemu needs to be set to true that
+
+        the config gets applied via puppet-nova.
+
+        ']
+  releasenotes/notes/nova_statedir_ownership-54c75dfe8ad64b4f.yaml:
+    fixes: ['The nova statedir ownership logic has been reimplemented to target only
+        the
+
+        files/directories controlled by nova.
+
+        Resolves VM I/O errors when using an NFS backend (`bug 1778465
+
+        <https://bugs.launchpad.net/tripleo/+bug/1778465>`__).
+
+        ']
+  releasenotes/notes/octavia-amphora-image-defaults-0d9efe1a0222b76d.yaml:
+    features: ['The Octavia amphora image name is now derived from the filename by
+        default so the
+
+        `OctaviaAmphoraImageName` now behaves as an override if set to a non-default
+        value.
+
+        ', The Octavia amphora image file name default value is now an empty string
+        resulting in a distribution specific default location being used. The `OctaviaAmphoraImageFilename`
+        parameter now behaves as an override if set to a non-default value.]
+  releasenotes/notes/octavia-amphora-ssh-245a21a35598440a.yaml:
+    features: [Allow users to specify SSH name and public key to add to Octavia amphorae.]
+  releasenotes/notes/odl_delete_data_folder-b8c2f9a9382fd692.yaml:
+    fixes: [Delete ODL data folder while updating/upgrading ODL.]
+  releasenotes/notes/odl_dscp_marking_inheritance-41e41ff5f0c281d4.yaml:
+    features: ['In OpenDaylight, a config parameter is available to enable DSCP
+
+        marking inheritance for packets egressing out of OVS through
+
+        VXLAN/GRE tunnels. Add a flag "OpenDaylightInheritDSCPMarking" in
+
+        TripleO to enable this parameter via puppet-opendaylight. If the
+
+        flag is set to ''true'', DSCP marking feature is enabled in
+
+        OpenDaylight.']
+  releasenotes/notes/odl_stand_alone_log_config-5358ec26f7e7a970.yaml:
+    features: ['Configure ODL to log to file instead of console. Also ODL
+
+        log configuration has been moved out of general service
+
+        configurations to a stand-alone config file at
+
+        docker/services/logging/files/opendaylight-api.yaml. ODL
+
+        logs are now accessible at /var/log/containers/opendaylight/
+
+        karaf.log']
+  releasenotes/notes/os-tripleo-ports-output-hostroutes-3c710bd9f5641101.yaml:
+    features: ['Adds ``host_routes`` of the ports neutron subnet to output of
+
+        ``OS::TripleO::{{role.name}}::Ports::{{network.name}}Port`` resources.
+
+        ']
+  releasenotes/notes/oslo-messaging-separate-backends-2d2221066f88f479.yaml:
+    features: [Support separate oslo.messaging services for RPC and Notifications.
+        Enable separate messaging backend servers.]
+  releasenotes/notes/ovn-dbs-ha-fix-minor-update-issue-3a1206549e3b75aa.yaml:
+    fixes: ['Fixes minor updates issue for ovn dbs pacemaker bundle resource by tagging
+
+        the docker image used for ovn dbs pacemaker resource with pcmklatest and
+
+        adding required missing tasks in "update_tasks" and "upgrade_tasks"
+
+        section of the service file.
+
+        ']
+  releasenotes/notes/ovn-remove-nonha-env-files-7b68a1e656b9f753.yaml:
+    other: ['Removed environment files to deploy OVN db servers in non HA mode for
+        OVN
+
+        deployments as it is not recommended. There is no support to upgrade an existing
+
+        OVN deployments from non HA to HA. It is recommended to have a fresh deployment.
+
+        To deploy OVN with dvr support, use environment/services/neutron-ovn-dvr-ha.yaml,
+
+        otherwise use environment/services/neutron-ovn-ha.yaml
+
+        ']
+  releasenotes/notes/ovn-set-dns-servers-config-option-e8f91ad2a05df9a9.yaml:
+    features: [Provides the option to define a set of DNS servers which will be configured
+        in the 'ovn' section of etc/neutron/plugins/ml2_conf.ini. These DNS servers
+        will be used as DNS forwarders for the VMs if a neutron subnet is not defined
+        with 'dns_nameservers' option.]
+  releasenotes/notes/ovn_metadata_agent_support_debug_mode-9d0656ce156a3c91.yaml:
+    features: ['Now it is possible to enable/disable debug mode in OVN metadata agent.
+
+        ']
+  releasenotes/notes/ovs-dpdk-permissions-50c5b33334ff4711.yaml:
+    features: ['Till now, the ovs service file and ovs-ctl command files are patched
+        to allow ovs to run with qemu group. In order to remove this workarounds,
+        a new group hugetlbfs is created which will be shared between ovs and qemu.
+        Vhostuser Socket Directory is changed from "/var/run/openvswitch" to "/var/lib/vhost_sockets"
+        to avoid modifying the directory access by packaged scripts. Use env file
+        ovs-dpdk-permissions.yaml while deploying.']
+  releasenotes/notes/ovs-dpdk-remove-deprecated-params-9b4e46eb336301b2.yaml:
+    upgrade: ['Deprecated OVS-DPDK parameters (in pike) have been removed in rocky.
+
+        If the deployment still uses the removed parameters, use the alternate
+
+        parameters.
+
+        Use ``OvsDpdkCoreList`` instead of ``HostCpusList``.
+
+        Use ``OvsPmdCoreList`` instead of ``NeutronDpdkCoreList``.
+
+        Use ``OvsDpdkMemoryChannels`` instead of ``NeutronDpdkMemoryChannels``.
+
+        Use ``OvsDpdkSocketMemory`` instead of ``NeutronDpdkSocketMemory``.
+
+        Use ``OvsDpdkDriverType`` instead of ``NeutronDpdkDriverType``.
+
+        ']
+  releasenotes/notes/pre_upgrade_rolling_tasks-6345e98e8283a907.yaml:
+    upgrade: ['pre_upgrade_rolling_tasks are added for use by the composable
+
+        service templates. The resulting
+
+        pre_upgrade_rolling_steps_playbook is intended to be run at the
+
+        beginning of major update workflow (before running the
+
+        upgrade_steps_playbook). As the name suggests, the tasks in this
+
+        playbook will be executed in a node-by-node rolling fashion.
+
+        ']
+  releasenotes/notes/remove-odl-dlux-gui-4728de06c973cd53.yaml:
+    deprecations: ['odl-dlux-all feature for OpenDaylight is no longer supported and
+        removed
+
+        from default installed OpenDaylightFeatures. See
+
+        https://bugs.launchpad.net/tripleo/+bug/1751857
+
+        ']
+  releasenotes/notes/remove-pacemaker-passwords-default-values-dd0cfdf7922ecf90.yaml:
+    fixes: ['The default values for the PcsdPassword and PacemakerRemoteAuthkey parameters
+        have been removed, as they did not result in a functioning pacemaker installation.
+        These values are instead generated by tripleo-common, and in the cases where
+        they are not (direct API), we want to fail explicitly if they are not provided.']
+  releasenotes/notes/remove-support-for-puppet-ceph-bdafca24a59e7075.yaml:
+    deprecations: ['Deployment of a managed Ceph cluster using puppet-ceph
+
+        is not supported from the Pike release. From the Queens
+
+        release it is not supported to use puppet-ceph when
+
+        configuring OpenStack with an external Ceph cluster.
+
+        In Rocky any support file necessary for the deployment
+
+        with puppet-ceph is removed completely.
+
+        ']
+  releasenotes/notes/remove-undercloud-specific-services-23046e607565d36d.yaml:
+    deprecations: ['The environment/services/undercloud-*.yaml files will be removed
+        in the Stein
+
+        release. These files relied on OS::TripleO::Services::Undercloud* services
+
+        that have been removed.
+
+        ']
+  releasenotes/notes/remove_disable_upgrade_deployment_flag-872df40d7ff171b8.yaml:
+    upgrade: ['The disable_upgrade_deployment flag is now completely removed from
+
+        the roles_data. It will have no effect if you continue to include
+
+        this flag. It has not been used since the Pike upgrade. In Queens
+
+        the upgrade workflow is delivered with ansible playbooks.
+
+        ']
+  releasenotes/notes/rm-special-manila-docker-envs-5a376db667ddfd1c.yaml:
+    upgrade: ['manila containerization was experimental in Pike and we had both bare
+
+        metal and docker versions of some of the manila environment files.  Now
+
+        the docker environment files are fully supported so we keep them using the
+
+        standard manila environment file names, without any ''docker'' in their name.
+
+        ']
+  releasenotes/notes/role-support-for-upgrade-to-dvr-containers-bc876f82f3e9f139.yaml:
+    upgrade: ['Upgrading DVR deployments may require customization of the Compute
+        role if
+
+        they depend on the overcloud''s external API network for floating IP
+
+        connectivity. If necessary, please add "External" to the list of
+
+        networks for the Compute role in roles_data.yaml before upgrading.
+
+        ']
+  releasenotes/notes/ssh_pass_auth-8cab3ca5a50d2a5a.yaml:
+    security: ['PasswordAuthentication is enabled by default when deploying a containerized
+        undercloud.
+
+        We don''t expect our operators to setup ssh keys during the initial deployment
+        so we allow
+
+        them to use the password to login into the undercloud node.
+
+        ']
+  releasenotes/notes/standalone-default-openstack-services-4ca49c6795bf8ccc.yaml:
+    features: ['With the standalone deployment mechanism, the default list of enabled
+
+        OpenStack services is Keystone, Nova (and related), Neutron (and related),
+
+        Glance, Cinder, Swift and Horizon. The default list of disabled of
+
+        OpenStack services is Aodh, Barbican, Ceilomter, Congress, Designate,
+
+        Gnocchi, Heat, Ironic, Manila, Mistral, Panko, Sahara, Tacker and Zaqar.
+
+        Disabled services can be enabled by passing the appropriate environment
+
+        files to re-enable them during the deployment.
+
+        ']
+  releasenotes/notes/tls-inject-86ef6706e68f5740.yaml:
+    deprecations: [NodeTLSData is now deprecated.]
+    prelude: 'TLS certificate injection is now done with Ansible instead of a bash
+      script called by Heat.
+
+      It deprecates the NodeTLSData resource and script, while keeping the use of
+      its variables (SSLCertificate, SSLIntermediateCertificate, SSLKey)
+
+      '
+    upgrade: [All NodeTLSData related resources must be removed., 'SSLCertificate,
+        SSLIntermediateCertificate, SSLKey are still used for the TLS configuration.']
+  releasenotes/notes/tripleo-nova-nfs-ead2827338aa9519.yaml:
+    features: ['Allow NFS configuration of storage backend for Nova. This way
+
+        the instance files will be stored on a shared NFS storage.
+
+        ']
+  releasenotes/notes/tripleo-ssh-known-hosts-5c64b1a90d61d7f2.yaml:
+    fixes: ['Add support for the SshKnownHostsDeployment resources to config-download.
+        Since the deployment resources relied on Heat outputs, they were not supported
+        with the default handling from tripleo-common that relies on the group_vars
+        mechanism.  The templates have been refactored to add the known hosts entries
+        as global_vars to deploy_steps_playbook.yaml, and then include the new tripleo-ssh-known-hosts
+        role from tripleo-common to apply the same configuration that the Heat deployment
+        did.']
+  releasenotes/notes/tripleo-validations-b231184816a9ab64.yaml:
+    features: ['Add composable service for TripleO Validations, that will be deployed
+
+        on the Undercloud when enabled.
+
+        ']
+  releasenotes/notes/undercloud-selinux-37fc6f69a9753109.yaml:
+    features: ['Added support to be able to configure SELinux with the containerized
+
+        undercloud. By default it is `enforcing`. To disable SELinux, use
+
+        `SELinuxMode: permissive` as part of the deployment extra configuration.
+
+        ']
+  releasenotes/notes/update-dellemc-vnx-templates-74a0596fac39b488.yaml:
+    fixes: ["manila-backend-vnx.yaml:\n  1. Remove ManilaVNXServerMetaPool since meta_pool\
+        \ is not used by\n     Manila VNX.\n  2. Add ManilaVNXServerContainer.\n",
+      "cinder-dellemc-vnx-config.yaml:\n  1. Remove default value of CinderDellEMCVNXStorageSecurityFileDir\n\
+        \     since it is not mandatory option for Cinder VNX driver.\n"]
+  releasenotes/notes/update-lb-mgmt-subnet-to-class-b-1cd832ef08a30c85.yaml:
+    features: ['Enhance lb-mgmt-subnet to be a class B subnet, so the global amount
+        of Octavia loadbalancers won''t be constrained to a very low number.']
+    upgrade: [This fix is changing the default mask for lb-mgmt-subnet. Operators
+        can either manually modify the already existing subnet or create a new one
+        and update Octavia to use it. Newly create loadbalancer will use The newly
+        created subnet.]
+  releasenotes/notes/update-pcmk-resource-by-default-ed54100721f55a30.yaml:
+    fixes: ['Historically if a puppet definition for a pacemaker resource did change
+
+        puppet would not update it. We now enable the updating of pacemaker resources
+
+        by default. The main use case being restarting a bundle when a bind mount
+        gets
+
+        added. Puppet will wait for the resource to completely restart before
+
+        proceeding with the deploy.
+
+        ']
+  releasenotes/notes/update_manila_unity_driver-43aeb041029c4e7f.yaml:
+    features: ['Adds network_plugin_ipv6_enabled, emc_ssl_cert_verify and
+
+        emc_ssl_cert_path options for Manila Unity driver.
+
+        ']
+  releasenotes/notes/update_manila_vnx_driver-678b22c4fcd81fcf.yaml:
+    features: ['Adds network_plugin_ipv6_enabled, emc_ssl_cert_verify and emc_ssl_cert_path
+        options for Manila VNX driver.']
+  releasenotes/notes/update_odl-cb997ce5c136ebb7.yaml:
+    features: ['Minor update ODL steps are added. ODL minor update (within same ODL
+        release) can have 2 different workflow. These are called level 1 and level2.
+        Level 1 is simple - stop, update and start ODL. Level 2 is complex and involved
+        yang model changes. This requires wiping of DB and resync to repopulate the
+        data. Steps involved in level 2 update are 1. Block OVS instances to connect
+        to ODL 2. Set ODL upgrade flag to True 3. Start ODL 4. Start Neutron re-sync
+        and wait for it to finish 5. Delete OVS groups and ports 6. Stop OVS 7. Unblock
+        OVS ports 8. Start OVS 9. Unset ODL upgrade flag To achieve L2 update, use
+        "-e environments/services-docker/ update-odl.yaml" along with other env files
+        to the update command.']
+  releasenotes/notes/use-role-name-ExtraConfig-with-deprecations-2688f34fbc6de74a.yaml:
+    fixes: ['``{{role.name}}ExtraConfig`` will now be honored even when using deprecated
+
+        params in roles_data.yaml. Previously, its value was ignored and never used
+
+        even though it is defined as a valid parameter in the rendered template.
+
+        ']
+  releasenotes/notes/use-subnet-attrs-ctlplane-cidr-a02e14a251733726.yaml:
+    features: ['It is no longer a requirement to provide the parameter:
+
+        ``ControlPlaneSubnetCidr``  in the environment when deploying. Now
+
+        ``get_attr`` on the server resource is used to resolve the value from the
+
+        ``ctlplane`` subnet''s ``cidr`` attribute. A conditional is used to
+
+        determine if the user provided the parameter in the environment. If the
+
+        user provided the parameter, the user provided value is used.
+
+        ']
+    upgrade: ["Since the the ``ControlPlaneSubnetCidr`` can now be resolved from the\n\
+        ``ctlplane`` subnet(s) this parameter can be removed from the environment\n\
+        (``network-environment.yaml``).\n\n.. Note:: Prior to removing the parameter,\
+        \ ensure that the property of\n          the ``ctlplane`` subnet(s) is correct.\
+        \ In case it is not, update\n          ``undercloud.conf`` with the correct\
+        \ configuration and re-run the\n          ``openstack undercloud install``\
+        \ command to ensure the property\n          is set correctly.\n\n.. Note::\
+        \ ``ControlPlaneSubnetCidr`` is now passed to the network config\n       \
+        \   template when the resource is created. Because of this the\n         \
+        \ parameter must be defined in the network config template, even if\n    \
+        \      it is not used.\n"]
+  releasenotes/notes/use-subnet-attrs-ctlplane-default-route-625ef5e414a65f2e.yaml:
+    features: ['It is no longer a requirement to provide the parameter:
+
+        ``ControlPlaneDefaultRoute``  in the environment when deploying. Now
+
+        ``get_attr`` on the server resource is used to resolve the value from the
+
+        ``ctlplane`` subnet''s ``gateway_ip`` attribute. A conditional is used to
+
+        determine if the user provided the parameter in the environment. If the
+
+        user provided the parameter, the user provided value is used.
+
+        ']
+    upgrade: ["Since the the ``ControlPlaneDefaultRoute`` can now be resolved from\
+        \ the\n``ctlplane`` subnet(s) this parameter can be removed from the environment\n\
+        (``network-environment.yaml``).\n\n.. Note:: Prior to removing the parameter\
+        \ ensure that the property of\n          the ``ctlplane`` subnet(s) is correct.\
+        \ In case it is not, update\n          ``undercloud.conf`` with the correct\
+        \ configuration and re-run the\n          ``openstack undercloud install``\
+        \ command to ensure the property\n          is set correctly.\n\n.. Note::\
+        \ ``ControlPlaneDefaultRoute`` is now passed to the network config\n     \
+        \     template when the resource is created. Because of this the\n       \
+        \   parameter must be defined in the network config template, even if\n  \
+        \        it is not used.\n"]
+  releasenotes/notes/use-subnet-attrs-dnsservers-f751ec1125a9f787.yaml:
+    features: ['It is no longer a requirement to provide the parameter: ``DnsServers``
+
+        in the environment when deploying. Now ``get_attr`` on the server resource
+
+        is used to resolve the value from the ``ctlplane`` subnet''s
+
+        ``dns_nameservers`` attribute. A conditional is used to determine if the
+
+        user provided the parameter in the environment. If the user provided the
+
+        parameter, the user provided value is used.
+
+        ']
+    upgrade: ["Since the the ``DnsServers`` can now be resolved from the ``ctlplane``\n\
+        subnet(s) this parameter can be removed from the environment\n(``network-environment.yaml``).\n\
+        \n.. Note:: Prior to removing the parameter ensure that the property of\n\
+        \          the ``ctlplane`` subnet(s) is correct. In case it is not, update\n\
+        \          ``undercloud.conf`` with the correct configuration and re-run the\n\
+        \          ``openstack undercloud install`` command to ensure the property\n\
+        \          is set correctly.\n\n.. Note:: ``DnsServers`` is now passed to\
+        \ the network config template when\n          the resource is created. Because\
+        \ of this the parameter must be\n          defined in the network config template,\
+        \ even if it is not used.\n"]
+  releasenotes/notes/use-subnet-attrs-ec2metadataip-aa28f3c030f13c9c.yaml:
+    features: ['It is no longer a requirement to provide the parameter: ``EC2MetadataIp``
+
+        in the environment when deploying. Now ``get_attr`` on the server resource
+
+        is used to resolve the value from the ``ctlplane`` subnet''s ``host_routes``
+
+        attribute.. A conditional is used to determine if the user provided the
+
+        parameter in the environment. If the user provided the parameter, the user
+
+        provided value is used.
+
+        ']
+    upgrade: ["Since the the ``EC2MetadataIp`` can now be resolved from the ``ctlplane``\n\
+        subnet(s) this parameter can be removed from the environment\n(``network-environment.yaml``).\n\
+        \n.. Note:: Prior to removing the parameter ensure that the property of\n\
+        \          the ``ctlplane`` subnet(s) is correct. In case it is not, update\n\
+        \          ``undercloud.conf`` with the correct configuration and re-run the\n\
+        \          ``openstack undercloud install`` command to ensure the property\n\
+        \          is set correctly.\n\n.. Note:: ``EC2MetadataIp`` is now passed\
+        \ to the network config template\n          when the resource is created.\
+        \ Because of this the parameter must\n          be defined in the network\
+        \ config template, even if it is not\n          used.\n"]
+  releasenotes/notes/validate-no-config-outputs-used-8abcb673da6d373f.yaml:
+    deprecations: [The use of outputs with Heat SoftwareConfig or StructuredConfig
+        resources is now deprecated as they are no longer supported with config-download.
+        Resources that depend on outputs and their values should be changed to use
+        composable services with external_deploy_tasks or deploy_steps_tasks.]
+  releasenotes/notes/vnc_tls-b3707d0134697cc7.yaml:
+    features: ['If TLS on the internal network is enabled, the nova-novnc to libvirt
+        vnc
+
+        transport defaults to using TLS. This can be changed by setting the
+
+        ``UseTLSTransportForVnc`` parameter, which is ``true`` by default.
+
+        A dedicated IPA sub-CA can be specified by the ``LibvirtVncCACert``
+
+        parameter. By default the main IPA CA will be used.
+
+        ']
+  releasenotes/notes/xtremio_cinder_c5572898724a11e7.yaml:
+    features: ['Add support for Dell EMC XTREMIO ISCSI cinder driver
+
+        ']
+  releasenotes/notes/zaqar-use-redis-by-default-930f542dda895a31.yaml:
+    upgrade: ['Zaqar has been switched to use the redis backend by default from the
+
+        mongodb backend. Mongodb has not been supported by TripleO since Pike.
+
+        ']
+notes:
+- files:
+  - [releasenotes/notes/Need-explicit-memcacheddebug-to-activate-memcached-debug.-41cfa69d4537cbd7.yaml,
+    1898cc5c834d921c547f29e6f1426505cc6efdde]
+  - [releasenotes/notes/add-docker-sfc-bda84d08b119a250.yaml, baec8bba6fc347052e737524683d14db5dafd26b]
+  - [releasenotes/notes/add-mistral-volumes-param-a97418faf7a09022.yaml, afba68e50a86dadf848672b21907f7cc81baf97f]
+  - [releasenotes/notes/add_bios_interface_support-740a666a4ec629fc.yaml, 80a0415710f5eaee3d7f4f760d67abcecf24e686]
+  - [releasenotes/notes/all-nodes-extra-map-data-b8c8829dfa7f1c26.yaml, 7f422720244e36691ef0c9fdc761d75255582cbc]
+  - [releasenotes/notes/blacklistedhostnames-stack-output-02c9f93f9d1ce7d8.yaml, 262c0b4b860eb751b25089ec06cabf6b9f299e48]
+  - [releasenotes/notes/bug-1775667-fix-manila-share-typo-upgrade-82d9b3edea77b94a.yaml,
+    5e3d90f851230c5d0489c16b68d09ddace29da8b]
+  - [releasenotes/notes/compute-cpu-shared-set-be9da772ac8f7582.yaml, 780d0e5f9707358a1f38dd6a181ab12a5c84a0f9]
+  - [releasenotes/notes/compute-tuned-profile-cbe4e22b1e185c5e.yaml, ea9360b52d2c6eb24461ce7abd7972f3b2fc65e6]
+  - [releasenotes/notes/container-images-prepare-c446ed0b04c587f7.yaml, e489e58db4a8ff53df6dff2598d29c2f304de57b]
+  - [releasenotes/notes/custom-network-names-c62a57827d98eea5.yaml, d3eb296e19e5ec6d5e26ec8b261e119fed767494]
+  - [releasenotes/notes/deprecate-non-config-download-templates-3971fbf85b93846d.yaml,
+    07528b07b281db91c9737d0156d1c9e1bb342ee0]
+  - [releasenotes/notes/designate-support-b66127d9f4995db2.yaml, 0f025958a34c0a1aa9de8da5fcb74a7cd410fc73]
+  - [releasenotes/notes/docker-bip-9a334c8f31a59b96.yaml, beff4795a59dd5fc9b52cc020df9bca49af87528]
+  - [releasenotes/notes/error-on-new-heat-deployment-outputs-1377270acbc5bc7e.yaml,
+    82df65cdccb044b7c6a0fb03809f1d3f3d80d695]
+  - [releasenotes/notes/fix-odl-update-upgrade-cache-83004abe108971c1.yaml, dc9c7315aedfa37e2d3448f996858d1f61742a32]
+  - [releasenotes/notes/fix-str-replace-hostname-issue-393fb6954f12f7e6.yaml, aeb783fdcfd40584e00206a947f391f8fc182126]
+  - [releasenotes/notes/gnocchi-archive-policy-deprecation-09c086e9a0f9af86.yaml,
+    a57f34f321ec31c66efe32ba96d89dd93e3a3f70]
+  - [releasenotes/notes/memcached_logging-f69ade3665a70a5c.yaml, c9c0fcf945d976dda248b52c5a23a9cf895be777]
+  - [releasenotes/notes/ml2-networking-ansible-0330b1203f0fc75c.yaml, 6d5b9ab4216f76977f7d181f443c76d5c5829c1c]
+  - [releasenotes/notes/move_glance_nfs_mount_task_to_common_place-d284378fb16f180a.yaml,
+    2664ddd5b7eb8cc889c0923befe073748d621e7d]
+  - [releasenotes/notes/neutron-port-predictable-ips-857b8369ca81aa4c.yaml, 7817fccc5bc85d9cb888a118490f094d2e1ad237]
+  - [releasenotes/notes/nic-config-script-handle-blank-line-f86553d7589826ed.yaml,
+    f997e3da60fe21e545736f78f3045167e06f0d1b]
+  - [releasenotes/notes/nova_qemu_enable_config-c89016b4d93802d6.yaml, 547552fc7b6730f7d0670c5b0d76f63e5372f8c7]
+  - [releasenotes/notes/nova_statedir_ownership-54c75dfe8ad64b4f.yaml, 58624abf5ff97cb1cb016ceae621ef04ac672145]
+  - [releasenotes/notes/odl_dscp_marking_inheritance-41e41ff5f0c281d4.yaml, bdd51e937ac81d789c50b0569cafde1d134632f8]
+  - [releasenotes/notes/odl_stand_alone_log_config-5358ec26f7e7a970.yaml, 223b9428f14b466c1c723dc02e4fb39b7f152caa]
+  - [releasenotes/notes/os-tripleo-ports-output-hostroutes-3c710bd9f5641101.yaml,
+    f0bc5e460a47b247feb4c47a0a685bdcd99bbf9f]
+  - [releasenotes/notes/ovn-dbs-ha-fix-minor-update-issue-3a1206549e3b75aa.yaml, c90e0a7197e5f84d4f0cf1e284866eba48c093d4]
+  - [releasenotes/notes/ovn-remove-nonha-env-files-7b68a1e656b9f753.yaml, 819805d708cccc6e1419a47b16fc012955ce9156]
+  - [releasenotes/notes/ovn-set-dns-servers-config-option-e8f91ad2a05df9a9.yaml, 371e5d626491a042afcd5d83377737ae941beb67]
+  - [releasenotes/notes/ovn_metadata_agent_support_debug_mode-9d0656ce156a3c91.yaml,
+    c37b9ae4c49359395fdda2d9cae28421c5897f29]
+  - [releasenotes/notes/ovs-dpdk-remove-deprecated-params-9b4e46eb336301b2.yaml, 58b6034b2429b4e0c24388c4bb1cb7f3f7a25669]
+  - [releasenotes/notes/rm-special-manila-docker-envs-5a376db667ddfd1c.yaml, 08e67b8ff02db3ccf82fd96a0c8ff2eb17a2988b]
+  - [releasenotes/notes/standalone-default-openstack-services-4ca49c6795bf8ccc.yaml,
+    72b2417e95f1d05a6f13390760fdaefe6b4d792a]
+  - [releasenotes/notes/tripleo-validations-b231184816a9ab64.yaml, 0e0147732c091360c6c3c7e34962507f7548fa15]
+  - [releasenotes/notes/undercloud-selinux-37fc6f69a9753109.yaml, db181732c63fb0b6b79adc94a8adeb644246f3f1]
+  - [releasenotes/notes/update-dellemc-vnx-templates-74a0596fac39b488.yaml, 3474e4b15d92a5efb75589079437a942c2dded62]
+  - [releasenotes/notes/update-pcmk-resource-by-default-ed54100721f55a30.yaml, 60d75f19e5165d784d0d46c6addb81fe4a8b2876]
+  - [releasenotes/notes/use-subnet-attrs-ctlplane-cidr-a02e14a251733726.yaml, 6ab86a3ebe7734beb0f16ce3a7375336032fe928]
+  - [releasenotes/notes/use-subnet-attrs-ctlplane-default-route-625ef5e414a65f2e.yaml,
+    c649cf05453538eda783021e3604d4754dc5a3de]
+  - [releasenotes/notes/use-subnet-attrs-dnsservers-f751ec1125a9f787.yaml, 52ec1a018bf83afa0b169cfa06dbc5038ef3dd1b]
+  - [releasenotes/notes/use-subnet-attrs-ec2metadataip-aa28f3c030f13c9c.yaml, 19381ecffbd723297190f32f1f607ba0a6dc2ce2]
+  version: 9.0.0.0b4
+- files:
+  - [releasenotes/notes/Add-EnablePublicTLS-parameter-b3fcd01af6f3c101.yaml, 1260da27461af826017afcbc765775832e5a9dde]
+  - [releasenotes/notes/Remove-version-from-KeystoneUrl-output-fe4ce6f1a45849d3.yaml,
+    99263591319150ab286c712b6da87de901971fb7]
+  - [releasenotes/notes/add-cinder-backend-nvmeof-023d967980fcf7b8.yaml, afcf2c71e31322d27b1b447409ee8a731847c64b]
+  - [releasenotes/notes/add_neutron_segments_plugin_to_default-8acb69b112d4b31c.yaml,
+    bc3600b3628605436834d4712a745dfe9c43ddf4]
+  - [releasenotes/notes/add_site_id_cisco_ml2-60cfa450637d4fe0.yaml, e52d7a552c9ca3b1eda344f4637405777cf9ad2d]
+  - [releasenotes/notes/collectd-overcloud-gnocchi-049a63bbd196a9bb.yaml, 723e428f405a517ebec0e1ea77ba69a64d7d55ff]
+  - [releasenotes/notes/collectd-polling-4aac123faaebd1bc.yaml, 6c5b96c19202d3830b0a066a65198a7a909e7fe8]
+  - [releasenotes/notes/config-download-default-to-true-2331debd56c396eb.yaml, f44e8d7bd2615dfdb0ed15b3bbd45a4475ae0152]
+  - [releasenotes/notes/containerize-neutron-lbaas-service-plugin-20562487d6631c88.yaml,
+    9526cef547278a53c237f08c5b5e79948fc031dd]
+  - [releasenotes/notes/convert-resource-name-to-number-80ada6c825554f56.yaml, 49d072133563dde3c7693e8dacbfdaafac121329]
+  - [releasenotes/notes/ctlplane_fixed_ip-81d14db5a01fa531.yaml, 393476fda3652637bf6e5344f8815b3bb5398900]
+  - [releasenotes/notes/default-octavia-ssh-pub-key-to-keypair-70377d43bf76a407.yaml,
+    0e87e640c88c316a8bc8d75974c8ac79aca868be]
+  - [releasenotes/notes/deprecate_auth_uri_parameter-bdebdc6614ce8b7e.yaml, 2b662be9a458d71101a1ba4c6a3b45c9cebdd272]
+  - [releasenotes/notes/direct-deploy-by-default-bc78a63f0a0c6e15.yaml, 89de728acb7a734824ed61cc31cdf289da7e0f24]
+  - [releasenotes/notes/fix_nova_host-0b82c88597703353.yaml, 31e4c0194dd1d6e049a728c876347df93ce89908]
+  - [releasenotes/notes/live_migration_inbound_addr_all_transports-2fc9cd74d435a367.yaml,
+    9faea7204ca56561a92b45426fc8047e5b48fe61]
+  - [releasenotes/notes/live_migration_port_range-54c28faf0a67a3fc.yaml, 3da3f5d8de91181fa6c65ecfcf8d4733e000ace4]
+  - [releasenotes/notes/logrotate-containers-purge-a5587253fe6cbb28.yaml, 62cdc3949f733b726fc1e25708b755e1a21dd9f7]
+  - [releasenotes/notes/merge_keys_from_services-cd17425d58b49840.yaml, 8a8ad26435c43bc32e6cfe055ae69f208ab610ed]
+  - [releasenotes/notes/no-classic-drivers-9c59b696d8b50692.yaml, a42373980f29c46f8655026329f21853ff61310f]
+  - [releasenotes/notes/octavia-amphora-image-defaults-0d9efe1a0222b76d.yaml, 4d8a80f3860cffc9064c51cbe39b5a11ea150e04]
+  - [releasenotes/notes/octavia-amphora-ssh-245a21a35598440a.yaml, 38eee383e52fa6e406c75f1e74b95493a10e54f8]
+  - [releasenotes/notes/odl_delete_data_folder-b8c2f9a9382fd692.yaml, 871e9619d5fdfa201736a2c6f0bafb5a4c56d89d]
+  - [releasenotes/notes/oslo-messaging-separate-backends-2d2221066f88f479.yaml, 78bc45758563452ca5c3fd91afa901d93f9d8007]
+  - [releasenotes/notes/remove-support-for-puppet-ceph-bdafca24a59e7075.yaml, 753a3504184d966c63121ca95bc0135afbc83a75]
+  - [releasenotes/notes/remove-undercloud-specific-services-23046e607565d36d.yaml,
+    64bc4a7683fab7e9d6feb67cd3252c4716722e6e]
+  - [releasenotes/notes/role-support-for-upgrade-to-dvr-containers-bc876f82f3e9f139.yaml,
+    f51f84e7818f7f70e4f6f298fff6d57509af4fbd]
+  - [releasenotes/notes/ssh_pass_auth-8cab3ca5a50d2a5a.yaml, b749e027a031069625f0b71c2815499b686fbbf4]
+  - [releasenotes/notes/tls-inject-86ef6706e68f5740.yaml, 59b762658d72977f838affa7fcf3d8d912e13678]
+  - [releasenotes/notes/tripleo-nova-nfs-ead2827338aa9519.yaml, 6b6ae966ba7880787d0584d7e8304e5d6c9c0093]
+  - [releasenotes/notes/update-lb-mgmt-subnet-to-class-b-1cd832ef08a30c85.yaml, 5a28efc27da47782a10c5ba8450ee0e90527d908]
+  - [releasenotes/notes/update_manila_unity_driver-43aeb041029c4e7f.yaml, 79719a11ccde300aefcf3d98a8a55afdf3c09edd]
+  - [releasenotes/notes/update_manila_vnx_driver-678b22c4fcd81fcf.yaml, 60796ebfc921fae598e125bfeef94a942e5a61b8]
+  - [releasenotes/notes/validate-no-config-outputs-used-8abcb673da6d373f.yaml, a134b717dd787a5b6e28dc401260e22e77ef2162]
+  version: 9.0.0.0b3
+- files:
+  - [releasenotes/notes/Deprecate-cinder-API-nova_catalog_admin_info-006ebda240f730a2.yaml,
+    4268c8829cffd95cbfc23f9def4d30cc846a524a]
+  - [releasenotes/notes/add-cinder-backup-nfs-backend-0108fba91a3058ea.yaml, e456e103fbfb5d7dd12f4dcbee4fd6686384117c]
+  - [releasenotes/notes/add-purge-nova-tables-e0706cdcffa0f42e.yaml, fb29f77987d9bb1009f99edf55758309e8c710dc]
+  - [releasenotes/notes/add_params_to_configure_ulimit-2359aa058da58054.yaml, 70276931a4664d0bedcd6b0caa5a9cac2b73187b]
+  - [releasenotes/notes/check-old-style-nic-config-4624a60e3303411b.yaml, 0017b64560074032b09b18b349c2ba1d8b71196b]
+  - [releasenotes/notes/configure-ip-forward-268c165708cbd203.yaml, 75ee85b1e45b09ac3093d3ace1112d5c3be18074]
+  - [releasenotes/notes/containerized-tempest-support-0ceaaf6427ce36e9.yaml, 06638e76b74e58eccdfdee9c475dc529bb8bdf5a]
+  - [releasenotes/notes/containers-as-default-37bbe8afa0a60c2b.yaml, 6c5f2b8f69d42b2201f29264360ca15a518f376b]
+  - [releasenotes/notes/ffu-custom-script-to-switch-repo-a65db91760b46ec2.yaml, 2587cb4acf44d9b64ff2cabab8b056f66812d45b]
+  - [releasenotes/notes/fix-get-occ-config-with-role-count-greater-1-10ce2010556e5b76.yaml,
+    154879b68dfe3ff3834babcfb1d619a4d05044af]
+  - [releasenotes/notes/fix-neutron-cert-key-perms.yaml-efcc17f188798cc4.yaml, 16731819c5bb92d9bb33c6fb8086a6a776bdef8c]
+  - [releasenotes/notes/fix-odl-gui-feature-6525b8c6807fb784.yaml, e581c27e32202606e4580b6ba8b42c3bb9ae097e]
+  - [releasenotes/notes/fix-odl-missing-etc-config-87c33bc05f692f44.yaml, 97173caf8f68695140d207c2ab88226fd86659dc]
+  - [releasenotes/notes/fix-odl-ovs-allowed-network-types-d196d6d40fadb1bc.yaml, 186b03d72098858c9d8f1b0b014527ffe9864d72]
+  - [releasenotes/notes/fix-odl-ovs-vhostusermode-7bc2b64fd2676ca2.yaml, 2ecf3ac88bcdbab60b7f292ce635915c99acebc8]
+  - [releasenotes/notes/fix-tls-neutron-agents-c40d5fc779d53bfa.yaml, df31016a9af5003533f80989bcb8d3da42099953]
+  - [releasenotes/notes/hiera_net_ip_map-ff866b443a28bdc4.yaml, 3a7baa8fa6fa8dd6735f38d6236e8a2cb5d34659]
+  - [releasenotes/notes/ipxe_timeout-5824c87e849b1b50.yaml, 931067f9006fac97efd0493a79b33db168109054]
+  - [releasenotes/notes/ironic-inspector-use-dnsmasq_ip_subnets-abba77307e761b96.yaml,
+    c60489ecd989c07e27288b1973bd7df49304634d]
+  - [releasenotes/notes/ironic-networking-baremetal-29d9ad465565bb87.yaml, 5203e4397905d9d62ab2487b2fc5873937d8db42]
+  - [releasenotes/notes/ironic-rescue-cb1edecce357fc0b.yaml, 3464547983c893292d1f3821aadf3e07e967f260]
+  - [releasenotes/notes/kernel_sysctl_role-d4f6a50d08b7a388.yaml, da1ed3d19c54b5f60fdc883fd4f11f613914c854]
+  - [releasenotes/notes/l2gw-driver-change-1f5b11d5676c5015.yaml, add4ce1ccabd4b3e52e9fc89772af8ce7c29ed00]
+  - [releasenotes/notes/memcached_hardening-2529734099da27f4.yaml, eaf77cb09c72fd1a9205c7a3266b99d6ce49d827]
+  - [releasenotes/notes/mistral_execs-5e1c363c9293504d.yaml, a360759fd249dd50e62e9f5aad97c17950de54b3]
+  - [releasenotes/notes/mod_ssl-e7fd4db71189242e.yaml, 628da8a37e544ae2783a7b2114c929e35c779003]
+  - [releasenotes/notes/neutron_db_rename-bbfbce1c58cadc84.yaml, d86025593be16c136a2f2104dc91f37fe7bca99f]
+  - [releasenotes/notes/ovs-dpdk-permissions-50c5b33334ff4711.yaml, 825bd7d9e13ccbdf552e3bb01718d043d83487c6]
+  - [releasenotes/notes/pre_upgrade_rolling_tasks-6345e98e8283a907.yaml, ae085825e22cb4ce7bf877087c2e324b8bec1f03]
+  - [releasenotes/notes/remove-odl-dlux-gui-4728de06c973cd53.yaml, f51f5336798751d9a23b69c4c301f748251a6064]
+  - [releasenotes/notes/remove-pacemaker-passwords-default-values-dd0cfdf7922ecf90.yaml,
+    d57bd297a9470fedb15224e215733e01a198b286]
+  - [releasenotes/notes/remove_disable_upgrade_deployment_flag-872df40d7ff171b8.yaml,
+    66df6bdb4666dbacd4a10d4433aede7bfa937018]
+  - [releasenotes/notes/tripleo-ssh-known-hosts-5c64b1a90d61d7f2.yaml, 088d5c12f0f37e24d836e6f8791f41fbeba3326d]
+  - [releasenotes/notes/update_odl-cb997ce5c136ebb7.yaml, 98faacad44e39a456d9fe1a1d21f5a65e8de4fc1]
+  - [releasenotes/notes/use-role-name-ExtraConfig-with-deprecations-2688f34fbc6de74a.yaml,
+    fa4b3e2a3c634c8f1a18087e508d585a693aa84b]
+  - [releasenotes/notes/vnc_tls-b3707d0134697cc7.yaml, 37a339d2b0f0282bf1bac96587b10ca61868cec5]
+  - [releasenotes/notes/xtremio_cinder_c5572898724a11e7.yaml, a462d796a7a1efe17c399e81395a22610b016952]
+  - [releasenotes/notes/zaqar-use-redis-by-default-930f542dda895a31.yaml, e290824ce3cda176f9f71429d768369f715671f1]
+  version: 9.0.0.0b2

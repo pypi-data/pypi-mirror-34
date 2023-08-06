@@ -1,0 +1,11 @@
+aiorpcX-0.6.2.dist-info/METADATA,sha256=Hw9XEe67d1PkUPSBZo1LhayxxeKDnxZdnJQ4bJnytcA,815
+aiorpcX-0.6.2.dist-info/RECORD,,
+aiorpcX-0.6.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aiorpcX-0.6.2.dist-info/top_level.txt,sha256=TewV8dlOnTk67uqWdFipB1l10QshbLYOezSR2FDwmrY,8
+aiorpcx/__init__.py,sha256=fYBFfYZwUt0_Kc2Zwohd9CVin_ZWlXn-Mf70Y3xqDFI,376
+aiorpcx/curio.py,sha256=HZv_YITiqy2DSjyk93F3w8ymUH077uRsjF9FgCc2Sq0,15841
+aiorpcx/framing.py,sha256=suXa5Fo_jRIozyPNs5Hpv3F8eJQEkB2VcOnhQ--864c,3756
+aiorpcx/jsonrpc.py,sha256=XZhEVTc7f_WWxoFG3P6OGsoJ2KXvf8vOR1tu-EYUxdQ,27259
+aiorpcx/session.py,sha256=CxTGijp9zzoGpYJg1vLnTwKeF4-FkLPteRn_LQvj0kg,12891
+aiorpcx/socks.py,sha256=sPQUqtTFWHwXR1j9LY_Lcy0fnHKdIV0P9WsWdNxfSHM,15191
+aiorpcx/util.py,sha256=FP3rmH5U86JU4Fths4B5xjru4QYhDdta0U6zmX84ies,3880

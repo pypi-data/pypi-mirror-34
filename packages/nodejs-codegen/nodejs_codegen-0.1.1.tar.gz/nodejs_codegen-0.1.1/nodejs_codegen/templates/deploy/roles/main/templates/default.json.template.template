@@ -1,0 +1,6 @@
+{
+    "port": {{'{{'}}{{ name }}_port{{'}}'}},
+{% for service in dep_services %}    "{{service}}": "{{'{{'}}{{service}}{{'}}'}}",
+    "{{service}}_port: "{{'{{'}}{{service}}_port{{'}}'}}"{%if not loop.last %},{% endif %}
+{% endfor %}
+}

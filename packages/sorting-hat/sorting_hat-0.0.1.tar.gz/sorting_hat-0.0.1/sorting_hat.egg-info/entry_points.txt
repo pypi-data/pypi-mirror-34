@@ -1,0 +1,3 @@
+[console_scripts]
+sorting_hat = sorting_hat.sorting_hat:main
+

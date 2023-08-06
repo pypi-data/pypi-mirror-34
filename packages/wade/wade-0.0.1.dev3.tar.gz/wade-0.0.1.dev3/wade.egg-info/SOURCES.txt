@@ -1,0 +1,10 @@
+README.md
+setup.py
+wade/__init__.py
+wade/wade.py
+wade.egg-info/PKG-INFO
+wade.egg-info/SOURCES.txt
+wade.egg-info/dependency_links.txt
+wade.egg-info/entry_points.txt
+wade.egg-info/requires.txt
+wade.egg-info/top_level.txt

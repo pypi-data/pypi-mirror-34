@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+showit/VERSION
+showit/__init__.py
+showit/showit.py
+showit_again.egg-info/PKG-INFO
+showit_again.egg-info/SOURCES.txt
+showit_again.egg-info/dependency_links.txt
+showit_again.egg-info/requires.txt
+showit_again.egg-info/top_level.txt
+test/test_main.py

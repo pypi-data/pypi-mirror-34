@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/scrapy_kafka_redis/__init__.py
+src/scrapy_kafka_redis/connection.py
+src/scrapy_kafka_redis/defaults.py
+src/scrapy_kafka_redis/dupefilter.py
+src/scrapy_kafka_redis/picklecompat.py
+src/scrapy_kafka_redis/queue.py
+src/scrapy_kafka_redis/scheduler.py
+src/scrapy_kafka_redis/spiders.py
+src/scrapy_kafka_redis.egg-info/PKG-INFO
+src/scrapy_kafka_redis.egg-info/SOURCES.txt
+src/scrapy_kafka_redis.egg-info/dependency_links.txt
+src/scrapy_kafka_redis.egg-info/requires.txt
+src/scrapy_kafka_redis.egg-info/top_level.txt

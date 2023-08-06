@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: scrapy-kafka-redis
+Version: 0.0.7
+Summary: Kafka and Redis based components for Scrapy.
+Home-page: https://github.com/tenlee2012/scrapy-kafka-redis
+Author: tenlee
+Author-email: tenlee2012@163.com
+License: MIT
+Description: UNKNOWN
+Keywords: scrapy-kafka-redis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

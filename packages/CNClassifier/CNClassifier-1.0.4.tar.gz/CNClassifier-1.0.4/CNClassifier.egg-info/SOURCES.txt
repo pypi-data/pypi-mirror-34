@@ -1,0 +1,9 @@
+setup.py
+CNClassifier/__init__.py
+CNClassifier/cnclassifier.py
+CNClassifier/helper.py
+CNClassifier.egg-info/PKG-INFO
+CNClassifier.egg-info/SOURCES.txt
+CNClassifier.egg-info/dependency_links.txt
+CNClassifier.egg-info/not-zip-safe
+CNClassifier.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+xbox_smartglass_rest-0.9.3-py3.6-nspkg.pth,sha256=ID1yPNMlLLQty0Pxs3Ik0flYPFZWnHcLOB9pAHey7ck,529
+xbox/rest/__init__.py,sha256=mEIiLSyu6Ow2HD4yCJwgsh5K0S8BQDHRzkLLrb6128Y,133
+xbox/rest/engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbox/rest/engine/server.py,sha256=wEiv6-mdflVYznrlMiQ8sKRVeZzQdekcpJO9gaOVRxk,18025
+xbox/rest/scripts/__init__.py,sha256=t6_rq5IrW5JoAfRIuc5upKx-0FcyJGpIvFzwltoCp_A,201
+xbox/rest/scripts/rest_server.py,sha256=3Zf0tqjqm0OXfVlQqnUn5hduD4WM4GOeWGJC6NlZogU,722
+xbox_smartglass_rest-0.9.3.dist-info/METADATA,sha256=BFIfmnlndJ8FxE9Xl-pPG7q9m8GZLlY_D-VCg7INKIk,3353
+xbox_smartglass_rest-0.9.3.dist-info/RECORD,,
+xbox_smartglass_rest-0.9.3.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+xbox_smartglass_rest-0.9.3.dist-info/entry_points.txt,sha256=CI26pNpSuVpcEGBNpSF9dv-6rIwkCohH9gORKHP9pIs,73
+xbox_smartglass_rest-0.9.3.dist-info/namespace_packages.txt,sha256=8y-L0qqFvOL0a3jyBEpQS_boAiI07cp8vXPDTWoH9AY,5
+xbox_smartglass_rest-0.9.3.dist-info/top_level.txt,sha256=8y-L0qqFvOL0a3jyBEpQS_boAiI07cp8vXPDTWoH9AY,5

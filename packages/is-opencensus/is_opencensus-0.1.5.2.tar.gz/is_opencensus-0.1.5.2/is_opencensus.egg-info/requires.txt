@@ -1,0 +1,4 @@
+google-api-core<2.0.0,>=0.1.1
+
+[stackdriver]
+google-cloud-trace<0.20,>=0.17.0

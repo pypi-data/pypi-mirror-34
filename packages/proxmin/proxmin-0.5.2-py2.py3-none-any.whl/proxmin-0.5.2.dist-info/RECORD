@@ -1,0 +1,13 @@
+proxmin/__init__.py,sha256=o_RmJUPEgZN2hIu7N64ob5oM3NtEykFC_L8m3HiMuLk,98
+proxmin/algorithms.py,sha256=4LkKBK237uycwxTZS-HNe7Vd4KZGfUfX3C_os9p9Aos,21889
+proxmin/nmf.py,sha256=Mz3nmRKG2Tyjk8vaPh8GJGbbzuSnnM384YyQQbilKPQ,7222
+proxmin/operators.py,sha256=FUCYlq0GScCdzbT9VUwsICcXY-eZN_LYBGJP1hAkbG0,6527
+proxmin/proximal.py,sha256=20lBFZSn-3SvN2ZTzL-R-rsN4-_VqBRO7jqb2U75M0o,2192
+proxmin/utils.py,sha256=VNnonjfJO1UljZE2orwlpdblkffvYq06blEOaUIBOx8,14274
+proxmin/utils_nmf.py,sha256=B8x67rwCBp3vjVWkRhukNrVG6PKiJkrRoQyfcADYHVU,3261
+proxmin-0.5.2.dist-info/DESCRIPTION.rst,sha256=7o2vJ9-e3aONU0qGpblhe8MAlFvf4JMtdXvJSjXBsCs,7131
+proxmin-0.5.2.dist-info/METADATA,sha256=dznG_eFSotZKxq6IrvxZp7FEUl785x1bb0TZUKWxffM,7944
+proxmin-0.5.2.dist-info/RECORD,,
+proxmin-0.5.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+proxmin-0.5.2.dist-info/metadata.json,sha256=DB_JFhKz7YNmK6bNxXNWSiRZAOduQ3L8hEFbUY806JU,981
+proxmin-0.5.2.dist-info/top_level.txt,sha256=x0_M3H7D0TNlM2KpFIsBU9c5Geh4cbD3K98Lc2Mb1mQ,8

@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+endermite/__init__.py
+endermite.egg-info/PKG-INFO
+endermite.egg-info/SOURCES.txt
+endermite.egg-info/dependency_links.txt
+endermite.egg-info/top_level.txt
+tests/__init__.py
+tests/test_endermite.py

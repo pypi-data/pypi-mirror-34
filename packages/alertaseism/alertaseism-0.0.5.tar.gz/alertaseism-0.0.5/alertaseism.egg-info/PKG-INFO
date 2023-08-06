@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: alertaseism
+Version: 0.0.5
+Summary: O librarie folosiind date XML de la INFP pentru a afla magnitudinea la secunda. 
+Home-page: https://github.com/TudorGruian/alerta-seism-python3
+Author: Tudor Gruian
+Author-email: gruiantudor@hotmail.com
+License: UNKNOWN
+Description: O librarie folosiind date XML de la INFP pentru a afla magnitudinea la secunda.
+        Github: https://github.com/TudorGruian/alerta-seism-python3
+        
+        
+        Exemplu:
+        
+        ```python
+        import alertaseism
+        
+        print(alertaseism.mag()) # <- pentru magnitudine
+        print(alertaseism.heart()) # <- pentru stare server
+        
+        if alertaseism.mag() >= 1:
+            print("CUTREMUUUR")
+        ```
+        
+        Tot pe Git gasesti si exemple de loop
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

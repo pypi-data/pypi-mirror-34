@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: sfquery
+Version: 0.1.0
+Summary: A package to query reliable collections in python notebooks
+Home-page: https://github.com/amenarde/service-fabric-queryable-indexing
+Author: Antonio Menarde
+Author-email: amenarde@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: xmljson
+Requires-Dist: sfctl
+Requires-Dist: ipywidgets
+
+UNKNOWN
+
+

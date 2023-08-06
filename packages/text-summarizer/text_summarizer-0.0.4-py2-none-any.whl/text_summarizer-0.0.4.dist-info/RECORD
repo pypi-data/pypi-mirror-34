@@ -1,0 +1,15 @@
+algo/__init__.py,sha256=dCCZy4mycAv-WrJpXG03O5ebu0Va_OWwfBEjJQyxhXE,154
+algo/abstract_summarizer_algo.py,sha256=ipZGZvbMGs8Vg1o-HYZ1rovuanv_aJNZDXlKaGjrGzY,257
+algo/dummy_algo.py,sha256=Co0CDk7ylMS7eIkb82_Fx2zOO3-tLKisaZsV9hcxpjQ,321
+algo/summ.py,sha256=_3DJ8K5_utYQM475JphlXuzjXgEntRXmpaFHZuFdQ1c,199
+algo/text_rank_algo.py,sha256=FY8ZTUf5T0zlumCAvsTCvLrihSAhTIRxQykRUwyPdx0,2011
+algo/tools/__init__.py,sha256=sCrgMFNOLPhTtriq3d5wG_lOtNivRxI1ZAtMwLlwkOI,96
+algo/tools/cosine_similarity.py,sha256=qpiOakt3vA9StiE7XDqjUtqU0E4gcF8q2eBVz20j9zI,851
+algo/tools/tf_idf.py,sha256=Q2o1xHC5Y4FQcXmx_NZGk0tRku2SD3nDeB9OMHAmhrI,1523
+algo/tools/utils.py,sha256=UpQIKCt7ZYik40GfcmRWS4QyNBcgmsTzNiXhVoQOFnE,1175
+text_summarizer/__init__.py,sha256=KTTJzgBoleV0JX79juwAxm7T4Y6HENekEsQ9p6D132M,39
+text_summarizer/text_summarizer.py,sha256=z-8QylhX30DmiS5TZcSd4e9k06hqgLhCamRL4RXzIas,3145
+text_summarizer-0.0.4.dist-info/METADATA,sha256=iuMNteifz9uwKYo03JXZ0bFP4Zq3a9ZX4BJHsHsnF9Q,1339
+text_summarizer-0.0.4.dist-info/RECORD,,
+text_summarizer-0.0.4.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+text_summarizer-0.0.4.dist-info/top_level.txt,sha256=ab0OwGuNz-HxMWFbCTeVcSNoZA-OS3je2ftUjtN3W3w,21

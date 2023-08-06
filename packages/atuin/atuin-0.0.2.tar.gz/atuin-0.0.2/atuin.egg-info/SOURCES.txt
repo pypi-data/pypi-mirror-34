@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+atuin/__init__.py
+atuin/__main__.py
+atuin.egg-info/PKG-INFO
+atuin.egg-info/SOURCES.txt
+atuin.egg-info/dependency_links.txt
+atuin.egg-info/entry_points.txt
+atuin.egg-info/requires.txt
+atuin.egg-info/top_level.txt
+atuin/defaults/__init__.py
+atuin/defaults/config.ini
+atuin/defaults/templates/blank.md.template
+atuin/defaults/templates/challenge.md.template
+atuin/defaults/templates/default.template
+atuin/defaults/templates/random.py.template

@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+bin/gram-scanner
+gram_scanner.egg-info/PKG-INFO
+gram_scanner.egg-info/SOURCES.txt
+gram_scanner.egg-info/dependency_links.txt
+gram_scanner.egg-info/requires.txt
+gram_scanner.egg-info/top_level.txt
+gramscanner/__init__.py
+gramscanner/gramscanner.py
+gramscanner/logger.py

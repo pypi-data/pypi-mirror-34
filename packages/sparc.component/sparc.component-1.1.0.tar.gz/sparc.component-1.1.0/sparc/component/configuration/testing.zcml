@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="sparc.component.configuration">
+
+    <!-- This is required to enable the component registration zcml directives -->
+    <include package="zope.component" />
+    
+    <!-- Some components to help verify tests -->
+    <utility
+        name="sparc.component.configuration.test"
+        component=".testing.SparcTestFactory"
+        />
+
+</configure>

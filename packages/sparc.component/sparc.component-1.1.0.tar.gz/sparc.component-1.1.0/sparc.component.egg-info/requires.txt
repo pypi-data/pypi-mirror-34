@@ -1,0 +1,10 @@
+setuptools
+zope.interface
+zope.component
+zope.configuration
+zope.dottedname
+sparc.config
+
+[testing]
+zope.testrunner
+sparc.testing[zcml]

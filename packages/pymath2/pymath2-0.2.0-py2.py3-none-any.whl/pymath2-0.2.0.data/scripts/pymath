@@ -1,0 +1,9 @@
+#!python
+
+from os.path import abspath
+from subprocess import call
+
+import pymath
+
+path = abspath(pymath.__file__)
+call(['python', '-i', path])

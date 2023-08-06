@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sqlite-utils
+Version: 0.3
+Summary: Python utility functions for manipulating SQLite databases
+Home-page: https://github.com/simonw/sqlite-utils
+Author: Simon Willison
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: click (==6.7)
+Provides-Extra: test
+Requires-Dist: pytest (==3.6.0); extra == 'test'
+Requires-Dist: black (==18.6b4); extra == 'test'
+
+# sqlite-utils
+
+

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyRMVtransport
+Version: 0.0.7
+Summary: Get transport information from opendata.rmv.de
+Home-page: https://github.com/cgtobi/PyRMVtransport
+Author: cgtobi
+Author-email: cgtobi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+
+# PyRMVtransport
+Python library to make use of transport information from opendata.rmv.de.
+
+## RMVtransport.get_departures()
+Retrieve the next departures from opendata.rmv.de.
+
+

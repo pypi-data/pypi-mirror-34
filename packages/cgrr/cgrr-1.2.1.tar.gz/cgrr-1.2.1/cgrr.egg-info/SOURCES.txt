@@ -1,0 +1,12 @@
+.gitignore
+COPYING
+README.md
+setup.py
+cgrr/__init__.py
+cgrr/cgrr.py
+cgrr/parsetab.py
+cgrr.egg-info/PKG-INFO
+cgrr.egg-info/SOURCES.txt
+cgrr.egg-info/dependency_links.txt
+cgrr.egg-info/requires.txt
+cgrr.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Click>=6.0
+PyYAML>=3.11
+tabulate>=0.7.5
+requests>=2.11.0
+six
+
+[compose]
+docker-compose>=1.7.0
+
+[security]
+requests[security]>=2.11.0

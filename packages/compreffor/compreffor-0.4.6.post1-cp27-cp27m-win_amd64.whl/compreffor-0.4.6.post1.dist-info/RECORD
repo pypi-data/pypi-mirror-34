@@ -1,0 +1,15 @@
+compreffor/__init__.py,sha256=4makkgj9vQ4XXLK-WqK9sH1cwzeBHkYbaleB-7rd9zc,6607
+compreffor/__main__.py,sha256=aLmMBP0Qs43pl_XeAj_2s6_-1YAm1dQWzthdpnxoDo0,5505
+compreffor/_compreffor.pyd,sha256=YWOf9vprW1NVGoZSmuxyyMyAygXfrtvdznHu1sPrGs0,734720
+compreffor/cxxCompressor.py,sha256=cZwJfcRbGgcYv1eRLF53DoQfes0VKQwSH6YbckvdZUU,6901
+compreffor/pyCompressor.py,sha256=Tl57q0Suwu6_e7aUsx6CUgDe8qsm33GJ228USYEz6Nk,40386
+compreffor/test/__init__.py,sha256=ZFyZoYD_NOxdi5X01dXSO1gqfB-5ALUA7BWkA0UmEF8,598
+compreffor/test/dummy.py,sha256=aC_KaqhSyTpWQs7afS4jIlJz_sYdEGm0B4DRfdbgQ8Q,1668
+compreffor/test/pyCompressor_test.py,sha256=Ff7Fe08wqLRCPLqWLQN0IFPjhW95uBfC4P9D3sbB72I,10409
+compreffor/test/util.py,sha256=LQqM5alO2p6BXVI8pFsJV2tUngMyua2gi2R3Csej4LQ,4260
+compreffor-0.4.6.post1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+compreffor-0.4.6.post1.dist-info/METADATA,sha256=k3s2AR5IXm2JMYY-2D8S2aMyu8S5JGPxYopCKaXEXkI,1190
+compreffor-0.4.6.post1.dist-info/RECORD,,
+compreffor-0.4.6.post1.dist-info/WHEEL,sha256=F1_k-v0LVhnDkVni3Mbka67OoMISp1ecOQap0z-EgKc,106
+compreffor-0.4.6.post1.dist-info/entry_points.txt,sha256=XfN_v5r-wkc6LSma3qYpOqO1CBpL3PhO_XW8FZi_GlY,57
+compreffor-0.4.6.post1.dist-info/top_level.txt,sha256=GAK0vNsy8JVj63FK4ivzXeT1rEYst1L9kGlACjqWvX0,11

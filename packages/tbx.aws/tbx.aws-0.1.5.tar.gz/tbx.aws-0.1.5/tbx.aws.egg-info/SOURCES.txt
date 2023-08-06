@@ -1,0 +1,14 @@
+CHANGES.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+VERSION.txt
+requirements.txt
+setup.py
+tbx/__init__.py
+tbx/aws.py
+tbx.aws.egg-info/PKG-INFO
+tbx.aws.egg-info/SOURCES.txt
+tbx.aws.egg-info/dependency_links.txt
+tbx.aws.egg-info/requires.txt
+tbx.aws.egg-info/top_level.txt

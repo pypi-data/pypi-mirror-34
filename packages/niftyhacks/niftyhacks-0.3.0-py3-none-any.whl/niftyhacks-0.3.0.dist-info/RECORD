@@ -1,0 +1,14 @@
+niftyhacks/__init__.py,sha256=WU_EIIkYS3AddimBXmvBu2iFrhU02vETeItzI7u24pQ,114
+niftyhacks/browser.py,sha256=jzucK0tBYftAIQmsXvLVbE6C_Qur0whTbyHm17Qa_do,3619
+niftyhacks/cache.py,sha256=3d3vauVY0xvnoRXGm4utnFRtR52oQvmxU0b_LSMwT7I,6177
+niftyhacks/db.py,sha256=2LNpdZmT_qGas7Mua6z_EYWtkiym6JVHV9Xe5comifI,3838
+niftyhacks/jinja_envy.py,sha256=DqrNGZ8Hfwr61DfiksFAw7uS_oge0eSrhHCJid449vc,484
+niftyhacks/pytest_utils.py,sha256=CUY23mcX4tBKRQ9D29jYQyB68Ahxs_oQ2q7cs8LhHxA,1554
+niftyhacks/texar.py,sha256=heCs-2cRN7n1TrX3dTC3wv2c2UEgl9RYNKk-iUJbjaA,1849
+niftyhacks-0.3.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+niftyhacks-0.3.0.dist-info/METADATA,sha256=4jkCZ-s7UE7MhTuBj6Wh3DlQZRah--UHFs0tWtessw8,847
+niftyhacks-0.3.0.dist-info/RECORD,,
+niftyhacks-0.3.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+niftyhacks-0.3.0.dist-info/entry_points.txt,sha256=rObl9GWOW-ryAEq1wTMsuhzo3qqvbCMdkWM6na7GTbc,77
+niftyhacks-0.3.0.dist-info/metadata.json,sha256=NwcsLTgNJgrjsgY3JUuxDmQBr2R4mTGBOYTG66FilDM,1121
+niftyhacks-0.3.0.dist-info/top_level.txt,sha256=WK6DkorakQe_ispvbmxf27swFLGg1JhLL7R0jX0xkfQ,11

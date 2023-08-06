@@ -1,0 +1,9 @@
+README.md
+setup.py
+pychattr/__init__.py
+pychattr/channel_attribution.py
+pychattr.egg-info/PKG-INFO
+pychattr.egg-info/SOURCES.txt
+pychattr.egg-info/dependency_links.txt
+pychattr.egg-info/requires.txt
+pychattr.egg-info/top_level.txt

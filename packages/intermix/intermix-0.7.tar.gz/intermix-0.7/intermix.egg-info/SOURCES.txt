@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+intermix.py
+setup.cfg
+setup.py
+intermix.egg-info/PKG-INFO
+intermix.egg-info/SOURCES.txt
+intermix.egg-info/dependency_links.txt
+intermix.egg-info/top_level.txt

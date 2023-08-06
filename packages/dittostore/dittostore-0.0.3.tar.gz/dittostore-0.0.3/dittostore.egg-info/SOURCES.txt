@@ -1,0 +1,10 @@
+README.md
+setup.py
+dittostore/__init__.py
+dittostore/dittostore.py
+dittostore/objects.py
+dittostore.egg-info/PKG-INFO
+dittostore.egg-info/SOURCES.txt
+dittostore.egg-info/dependency_links.txt
+dittostore.egg-info/requires.txt
+dittostore.egg-info/top_level.txt

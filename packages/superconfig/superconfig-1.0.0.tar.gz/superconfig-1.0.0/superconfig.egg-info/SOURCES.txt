@@ -1,0 +1,7 @@
+setup.py
+superconfig/__init__.py
+superconfig/superconfig.py
+superconfig.egg-info/PKG-INFO
+superconfig.egg-info/SOURCES.txt
+superconfig.egg-info/dependency_links.txt
+superconfig.egg-info/top_level.txt

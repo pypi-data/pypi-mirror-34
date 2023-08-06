@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+import libtmux
+from pmuxy import Pmuxy
+from pmuxy.config import Config
+from pathlib import Path
+
+import click
+
+
+@click.group()
+@click.pass_context
+def cli(ctx):
+    ctx.obj['pmuxy'] = Pmuxy(config=Config(config_dir=Path().home() / ".pmuxy"),
+                             session=libtmux.Server().sessions[0])
+
+
+@cli.command()
+@click.pass_context
+def list(ctx):
+    for c in ctx.obj['pmuxy'].config_options(): click.echo(c)
+
+
+@cli.command()
+@click.argument('config')
+@click.pass_context
+def open(ctx, config):
+    ctx.obj['pmuxy'].open(config)
+
+
+if __name__ == '__main__':
+    cli(obj={})

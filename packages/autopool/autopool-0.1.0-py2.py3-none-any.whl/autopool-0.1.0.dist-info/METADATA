@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: autopool
+Version: 0.1.0
+Summary: Adaptive pooling operators for multiple instance learning
+Home-page: http://github.com/marl/autopool
+Author: MARL
+Author-email: brian.mcfee@nyu.edu
+License: MIT
+Download-URL: http://github.com/marl/autopool/releases
+Keywords: deep learning,multiple instance learning,machine learning
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Requires-Dist: keras (>=2.0)
+Provides-Extra: docs
+Requires-Dist: numpydoc; extra == 'docs'
+Requires-Dist: sphinx-gallery; extra == 'docs'
+
+# autopool
+Adaptive pooling operators for Multiple Instance Learning ([documentation](http://autopool.readthedocs.io/)).
+
+[![PyPI](https://img.shields.io/pypi/v/autopool.svg)](https://pypi.python.org/pypi/autopool)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/marl/autopool.svg?branch=master)](https://travis-ci.org/marl/autopool)
+[![Coverage Status](https://coveralls.io/repos/github/marl/autopool/badge.svg?branch=master)](https://coveralls.io/github/marl/autopool?branch=master)
+[![Documentation Status](https://readthedocs.org/projects/autopool/badge/?version=latest)](http://scaper.readthedocs.io/en/latest/?badge=latest)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/autopool.svg)]()
+
+
+AutoPool is an adaptive (trainable) pooling operator which smoothly interpolates between common pooling operators, such
+as min-, max-, or average-pooling, automatically adapting to the characteristics of the data.
+
+AutoPool can be readily applied to any differentiable model for time-series label prediction. AutoPool is presented in the following paper, where it is evaluated in conjunction with convolutional neural networks for Sound Event Detection:
+
+[Adaptive pooling operators for weakly labeled sound event detection](http://www.justinsalamon.com/uploads/4/3/9/4/4394963/mcfee_autopool_taslp_2018.pdf)<br/>
+Brian Mcfee, Justin Salamon, and Juan Pablo Bello<br/>
+IEEE Transactions on Audio, Speech and Language Processing, In press, 2018.
+
+
+
+
+

@@ -1,0 +1,11 @@
+sansio_lsp_client/__init__.py,sha256=I69ZODizWa2S8Mdqmrhx0AZixaIkXMa8ib2MDRNMQ_I,221
+sansio_lsp_client/__main__.py,sha256=MF22n3ARb82BlH_elgF8oi3mReMoZyKj0tP_MhOuYiU,3037
+sansio_lsp_client/client.py,sha256=nSwBbowlih8m4VG0BAUjluyxaXgsg7bhNztFfa_USlI,10346
+sansio_lsp_client/errors.py,sha256=fbV59xn64G4EwrKGlgULpzEPVVrOh410axfCFtM-ezw,187
+sansio_lsp_client/events.py,sha256=nCIzkKgbTVu3rss7ulnsRWG0ulFTIfH_mlduw63jZYI,2296
+sansio_lsp_client/io_handler.py,sha256=3jCXyHqug7izfkCAREzrtntXUbGSKOw8JujwjxFGibc,4252
+sansio_lsp_client/structs.py,sha256=06h5bu8SpmWC2uTvt1fXjqfYP8l63O6Ua51hHCyq_L4,4387
+sansio_lsp_client-0.4.1.dist-info/LICENSE,sha256=vSV8ygYRRZO5GOT3LlM4uZqw4bK3EpulRjuC2YbnHOk,1067
+sansio_lsp_client-0.4.1.dist-info/WHEEL,sha256=MFEQOzKZY6N12hbF4w0YuFbR157Dp62tZDjrh69j2Vc,84
+sansio_lsp_client-0.4.1.dist-info/METADATA,sha256=Fbtyf3fUKIVk-vGpJmPlPtRhAedhhawhT6wwEEtp0PU,808
+sansio_lsp_client-0.4.1.dist-info/RECORD,,

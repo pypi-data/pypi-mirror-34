@@ -1,0 +1,13 @@
+author: Guild AI
+author-email: packages@guild.ai
+description: CNN and softmax regression classifiers for MNIST digits
+license: Apache 2.0
+package: mnist
+tags:
+- mnist
+- cnn
+- softmax
+- images
+- model
+url: https://github.com/guildai/index/tree/master/mnist
+version: 0.4.1

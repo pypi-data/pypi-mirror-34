@@ -1,0 +1,13 @@
+rolldice_binding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rolldice_binding/__main__.py,sha256=Nqv1ERrGxeRRP5CMcjjVdwsqF3hi9qjfp49DfAyXQRU,879
+rolldice_binding/core.py,sha256=z1ykg2DI_RCa64UGwzE_nJk0NpZhA2ZHSSMtTRQDtLM,467
+rolldice_binding/render/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rolldice_binding/render/json.py,sha256=hd5KRsCNfMHb_XBIwDy369OB1DCye2sQNCqZV64PzgU,331
+rolldice_binding/render/pretty.py,sha256=AxbF_0GMVWZ5W77BfJVUYTUSHPdgWK9KaDrqwGeGvII,492
+rolldice_binding-0.1.dist-info/DESCRIPTION.rst,sha256=D6JMvlmI5hQVbFRAkPboylhEzPKaC5EJ60y8sNXlpWg,330
+rolldice_binding-0.1.dist-info/METADATA,sha256=sbRfm2N3kqUn2mYT22pEBsYNwwU-p332fXHxPVNs5Eg,860
+rolldice_binding-0.1.dist-info/RECORD,,
+rolldice_binding-0.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+rolldice_binding-0.1.dist-info/entry_points.txt,sha256=zVlyPdwT9kVoxPrhB4mTPB9fz2Vr0OXsbdEydASNwIw,61
+rolldice_binding-0.1.dist-info/metadata.json,sha256=xiQ-hCcCiwQtPPIsBvpLYaS05QlDsnWXAJJYTICbpkk,902
+rolldice_binding-0.1.dist-info/top_level.txt,sha256=rKZpIKgvEccM_KAma0oI_1DFfL4D1kVkxBhof1L6VnQ,17

@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ctpfrec
+Version: 0.1
+Summary: Collaborative topic Poisson factorization for recommender systems
+Home-page: https://github.com/david-cortes/ctpfrec
+Author: David Cortes
+Author-email: david.cortes.rivera@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/david-cortes/ctpfrec/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: collaborative,topic,modeling,poisson,probabilistic,non-negative,factorization,variational inference,collaborative filtering,cold-start
+Platform: UNKNOWN

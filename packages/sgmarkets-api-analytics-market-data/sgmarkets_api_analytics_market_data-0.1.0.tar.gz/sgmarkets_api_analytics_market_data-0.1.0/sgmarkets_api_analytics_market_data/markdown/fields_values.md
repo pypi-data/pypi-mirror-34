@@ -1,0 +1,1 @@
+**v2_fields_values** endpoint returns all the available values for a given field.

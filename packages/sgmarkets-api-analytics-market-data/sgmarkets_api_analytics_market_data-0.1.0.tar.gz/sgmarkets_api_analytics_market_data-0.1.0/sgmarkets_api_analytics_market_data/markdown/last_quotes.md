@@ -1,0 +1,1 @@
+**v2_last_quotes** endpoint returns last data point. See the request information

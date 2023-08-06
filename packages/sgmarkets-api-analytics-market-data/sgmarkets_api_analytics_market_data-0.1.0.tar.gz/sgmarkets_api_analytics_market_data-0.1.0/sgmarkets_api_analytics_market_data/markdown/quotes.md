@@ -1,0 +1,1 @@
+**v2_quotes** endpoint returns historical data. See the request information

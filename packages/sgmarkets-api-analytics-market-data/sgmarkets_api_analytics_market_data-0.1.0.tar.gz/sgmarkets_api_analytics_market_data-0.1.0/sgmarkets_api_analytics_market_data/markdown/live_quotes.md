@@ -1,0 +1,1 @@
+**v2_live_quotes** endpoint returns real time data. You need access privilege.See general information for contacts list.

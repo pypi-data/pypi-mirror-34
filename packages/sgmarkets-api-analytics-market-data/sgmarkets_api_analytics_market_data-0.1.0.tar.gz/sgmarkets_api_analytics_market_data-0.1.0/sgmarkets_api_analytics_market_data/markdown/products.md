@@ -1,0 +1,1 @@
+**v2_products** endpoint returns all the available products, fields, refSets, features... .

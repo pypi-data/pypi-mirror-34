@@ -1,0 +1,1 @@
+**v2_products_fields** endpoint returns all the fields (descriptions/indicators) for a given product.

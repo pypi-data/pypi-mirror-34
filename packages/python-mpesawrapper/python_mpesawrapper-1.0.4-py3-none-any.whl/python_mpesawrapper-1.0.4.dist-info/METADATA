@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-mpesawrapper
+Version: 1.0.4
+Summary: python wrapper for the new mpesa daraja api
+Home-page: https://gitlab.com/Quantumke/mpesawrapper
+Author: Benson Nguru
+Author-email: nguruben@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: nose
+Requires-Dist: requests
+Requires-Dist: sphinx-rtd-theme
+
+UNKNOWN
+
+

@@ -1,0 +1,10 @@
+django_file_download/__init__.py,sha256=Ep1nNYrO7VzFeRfrUpWrKzGtqeWgd7GbWfzTXIgkp0k,124
+django_file_download/admin.py,sha256=T8IPui462uVlPKLPDYWH2Nl3duDHKwkgSrVunXJgXig,64
+django_file_download/models.py,sha256=TaLCYOWlUSkjDtWfcVkqC-OxbG4v7pdkeXNGNLWRZwQ,58
+django_file_download/tests.py,sha256=DV4PwpYr1bPXjDWiJSGUXrgrPYO-OUbfxMeIqOfcC30,61
+django_file_download/urls.py,sha256=tprGqrA8d9PTOrEYCAuCsv7mbqWVmYTq-bzc4paXBwc,203
+django_file_download/views.py,sha256=wTN97fL6xF8soPetN7a2B6thz-6ObUnP5tUUkPr41Yc,2438
+django_file_download-1.0.1.dist-info/METADATA,sha256=7KBrOmNVOtdT9fMyyN4VhTeqJUWBlL6Fy2mliUvjUCs,1379
+django_file_download-1.0.1.dist-info/RECORD,,
+django_file_download-1.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_file_download-1.0.1.dist-info/top_level.txt,sha256=angcx5EtVvBjeAqXqfsb5qCMabkBtCy58cVBVh_Suso,21

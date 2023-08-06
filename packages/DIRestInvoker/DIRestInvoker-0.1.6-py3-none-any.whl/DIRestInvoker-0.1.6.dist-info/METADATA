@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: DIRestInvoker
+Version: 0.1.6
+Summary: 调用 DIRestPlus 接口，实现Wind、iFinD、Choice接口调用
+Home-page: https://github.com/DataIntegrationAlliance/DIRestInvoker
+Author: MG
+Author-email: mmmaaaggg@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Software Development
+Requires-Python: >=3.5
+Requires-Dist: pandas (>=0.23.0)
+Requires-Dist: requests (>=2.19.1)
+Requires-Dist: xlrd (>=1.1.0)
+
+# DIRestInvoker [![Build Status](https://travis-ci.org/DataIntegrationAlliance/DIRestInvoker.svg?branch=master)](https://travis-ci.org/DataIntegrationAlliance/DIRestInvoker)
+Data Integration RESTPlus Invoker，调用 [DIRestPlus](https://github.com/DataIntegrationAlliance/DIRestPlus) 接口，实现Wind、iFinD、Choice接口调用
+
+## 安装
+```commandline
+pip install DIRestInvoker
+```
+
+## iFinD接口调用举例
+```python
+from direstinvoker.ifind import IFinDInvoker, APIError
+url_str = "http://localhost:5000/iFind/"
+invoker = IFinDInvoker(url_str)
+```
+
+### THS_DateQuery
+```python
+try:
+    data_df = invoker.THS_DateQuery('SSE', 'dateType:0,period:D,dateFormat:0', '2018-06-15', '2018-06-21')
+    print(data_df)
+except APIError as exp:
+    if exp.status == 500:
+        print('APIError.status:', exp.status, exp.ret_dic['message'])
+    else:
+        print(exp.ret_dic.setdefault('error_code', ''), exp.ret_dic['message'])
+```
+
+## 修改历史
+
+* version 0.1.4
+
+  > THS_BasicData 支持 list 作为 thsCode 参数，并且支持按一定数量自动分割发送（解决大批量数据请求的情况下，20W数字限制，可能引发-205错误的问题）
+
+----
+项目地址：[DIRestInvoker](https://github.com/DataIntegrationAlliance/DIRestInvoker)
+
+

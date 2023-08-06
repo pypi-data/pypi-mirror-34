@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: plover-phenrsteno
+Version: 0.0.3
+Summary: Phonemic non-rhotic English stenotype system for Plover
+Home-page: https://github.com/contrum/phenrsteno
+Author: Gregory Chamberlain
+Author-email: 15685804+contrum@users.noreply.github.com
+License: UNKNOWN
+Description: # phenrsteno
+        Phonemic and non-rhotic English stenotype system for [Plover][1]. The layout is optimised for RP and Midlands stenographers.
+        
+        ![phenrsteno layout](./doc/layout.png)
+        
+        # Chorded phonemes
+        This sections describes how you can transcribe phonemes other than those printed on the keys.
+        
+        ## Vowels
+        Diphthongs like [aɪ] and [eɪ] arise naturally from the layout. Strokes for other vowel sounds are in the table below.
+        
+        | Vowel | Stroke |
+        | ----- | -------|
+        | [ɒ]   | `ae`   |
+        | [iː]  | `ɪʊ`   |
+        | [uː]  | `eʊ`   |
+        | [ɑː]  | `aɪʊ`  |
+        | [ɔː]  | `aeɪʊ` |
+        | [əʊ]  | `aeʊ`  |
+        
+        
+        ## Consonants
+        
+        Phonemes under the left hand:
+        
+        | Initial consonant | Left-hand stroke |
+        | ----------------- | ---------------- |
+        | [f]               | `sb`             |
+        | [v]               | `sd`             |
+        | [k]               | `pb`             |
+        | [l]               | `td`             |
+        | [j]               | `wr`             |
+        | [tʃ]              | `twr`            |
+        | [dʒ]              | `dwr`            |
+        | [ʃ]               | `swr`            |
+        | [g]               | `pt`             |
+        | [h]               | `ptw`            |
+        | [n]               | `bd`             |
+        | [m]               | `bdr`            |
+        | [θ]               | `bt`             |
+        
+        Phonemes under the right hand:
+        
+        | Final consonant | Right-hand stroke |
+        | --------------- | ----------------- |
+        | [p]             | `ft`              |
+        | [b]             | `ftʃ`             |
+        | [k]             | `td`              |
+        | [θ]             | `tdʃ`             |
+        | [ŋ]             | `ng`              |
+        | [m]             | `ftnd`            |
+        
+        # Development
+        To-do:
+        
+        - [ ] Integrate with [Plover's plugin manager][2]
+        - [ ] Include JSON dictionaries for
+          - [ ] vocabulary
+          - [ ] affixes
+          - [ ] punctuation
+          - [ ] plover commands
+        
+        
+        [1]: https://github.com/openstenoproject/plover "Plover GitHub repository"
+        [2]: https://github.com/benoit-pierre/plover_plugins_manager "Plover Plugin Manager GitHub repository"
+        
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Description-Content-Type: text/markdown

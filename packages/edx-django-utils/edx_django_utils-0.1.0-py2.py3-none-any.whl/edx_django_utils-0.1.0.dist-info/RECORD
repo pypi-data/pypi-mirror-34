@@ -1,0 +1,9 @@
+edx_django_utils/__init__.py,sha256=RuzltxTm1LgmN2HdzXhv87XFHLshl8UG8-YE67vLtV8,239
+edx_django_utils/apps.py,sha256=a2CVnwVH3caFJGeBzswg1FZCmmBcWu1YPqgFNKN9w_k,328
+edx_django_utils/models.py,sha256=PoXOWRjU7MO0Jxkq-T3iOpYHip1RNzVK6jh51U0KckA,128
+edx_django_utils/urls.py,sha256=3y07nMgPDeeLcAYPYQdEDb6r17wyrv4ksne4mecYzJo,295
+edx_django_utils/templates/edx_django_utils/base.html,sha256=wtjBYqfHmOnyEY5tN3VGOmzYLsOD24MXdEUhTZ7OmwI,662
+edx_django_utils-0.1.0.dist-info/METADATA,sha256=3_R0RiPC-rWPUbTGsV8uBK07gPDlKNwW_aS9Nct17w4,4589
+edx_django_utils-0.1.0.dist-info/RECORD,,
+edx_django_utils-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+edx_django_utils-0.1.0.dist-info/top_level.txt,sha256=Z7ghN-K6pc28K3yM3Fq7o_RN8Hy-lTU96zL4xhsttH8,17

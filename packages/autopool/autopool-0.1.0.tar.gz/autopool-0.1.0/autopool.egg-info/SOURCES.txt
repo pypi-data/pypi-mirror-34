@@ -1,0 +1,10 @@
+README.md
+setup.py
+autopool/__init__.py
+autopool/autopool.py
+autopool/version.py
+autopool.egg-info/PKG-INFO
+autopool.egg-info/SOURCES.txt
+autopool.egg-info/dependency_links.txt
+autopool.egg-info/requires.txt
+autopool.egg-info/top_level.txt

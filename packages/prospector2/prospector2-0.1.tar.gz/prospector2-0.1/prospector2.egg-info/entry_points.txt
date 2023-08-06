@@ -1,0 +1,4 @@
+[console_scripts]
+prospector = prospector2.run:main
+prospector2 = prospector2.run:main
+

@@ -1,0 +1,12 @@
+aioamqp_consumer_best/__init__.py,sha256=_Bn1twRH7voK_5X0CknAKlN0_9u8Ob96iOnl35Sc5f8,358
+aioamqp_consumer_best/base_middlewares.py,sha256=477KWulTjdgzq_VsP0AeE4r0ob95ZDSu-UCDUmkQr4k,6060
+aioamqp_consumer_best/connect.py,sha256=R-nS5dQtceMU5A-_9IsswL0d6SsI3kXhRjsOrNmzmf0,871
+aioamqp_consumer_best/consumer.py,sha256=F1wFiUK-fbYA6rqQAmifo8whRoSrzhQvnsbiv5XlBXc,6190
+aioamqp_consumer_best/declare_queue.py,sha256=QXjL0S4y2Jp_HNsxxO32FtACOh7L0LZnyAPWG_CGQwM,913
+aioamqp_consumer_best/message.py,sha256=76lKjtCS9NWaMaiDyRhUyNy8pQ0qdrE4wsZSPFNcRcs,1445
+aioamqp_consumer_best/middlewares.py,sha256=Sdh1lsDI3Ytp3LsD1dgE2lCRI5psDABd3_oLZCeuN_w,2639
+aioamqp_consumer_best/records.py,sha256=YwlHc1Arku4m9BUnD5MDffZtIjFJrtR_oBNuFXryKFc,1788
+aioamqp_consumer_best-1.0.1.dist-info/METADATA,sha256=f71blp2-Ve1irMgM_AIdjChszNe-0u7R1ow2yWFSbY4,568
+aioamqp_consumer_best-1.0.1.dist-info/RECORD,,
+aioamqp_consumer_best-1.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aioamqp_consumer_best-1.0.1.dist-info/top_level.txt,sha256=YblPRCqpzi-mihiFqMQmnhKZftw2H6cGJTNWDnmlSzY,22

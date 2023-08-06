@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ardiss
+Version: 0.1.1
+Summary: Automated Relevance Determination for Imputation of GWAS Summary Statistics
+Home-page: https://github.com/BorgwardtLab/ardiss
+Author: Matteo Togninalli
+Author-email: matteo.togninalli@bsse.ethz.ch
+License: Apache Software License
+Keywords: summary-statistics gwas imputation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: Tensorflow with GPU
+Requires-Dist: numpy (>=1.10.0)
+Requires-Dist: scipy (>=0.18.0)
+Requires-Dist: scikit-learn (>=0.19.0)
+Requires-Dist: tensorflow (>=1.5.0)
+Requires-Dist: gpflow
+Provides-Extra: Tensorflow with GPU
+Requires-Dist: tensorflow-gpu; extra == 'Tensorflow with GPU'
+
+UNKNOWN
+
+

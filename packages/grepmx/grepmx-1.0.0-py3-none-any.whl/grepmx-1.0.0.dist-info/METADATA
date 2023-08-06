@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: grepmx
+Version: 1.0.0
+Summary: Grep lines from files based on found MX
+Home-page: https://github.com/JohnDoee/grepmx
+Author: Anders Jensen
+Author-email: johndoee@tidalstream.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: dnspython
+
+UNKNOWN
+
+

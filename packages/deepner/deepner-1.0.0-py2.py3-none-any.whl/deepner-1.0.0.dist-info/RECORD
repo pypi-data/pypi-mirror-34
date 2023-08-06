@@ -1,0 +1,13 @@
+deepner/__init__.py,sha256=rXXwHLdaxHwvqLxfRemCc5clEABibnZqvefFLrzKe2s,31
+deepner/analysis.py,sha256=h3JBUj4VhcdceY9ClKvW4r9F5xmVYHGKyvFBtJGJAoo,2152
+deepner/ner.json,sha256=bQRo8B4kktHBgcEst675mK_2yKp2N538z_3_DMDT8uQ,774
+deepner/ner.pb,sha256=ummjsoAoz_nC7WY_N0MbPuYexyfma2pErdy-HaqSvn4,6025118
+deepner/resources/data/tags.txt,sha256=WT34BW8h8Q4ffW14lCfXxwnhI5IHallNfcTnRy8KCw0,83
+deepner/resources/data/vocab.txt,sha256=xhEuwpNb7ODMu2liEWaIWOc1XYlN6CazjaeMXMa65tM,39604
+deepner-1.0.0.dist-info/DESCRIPTION.rst,sha256=4gLDq5fn4VpkQae004Sv8gpsgkffvP4MhdbZV2FYLO4,66
+deepner-1.0.0.dist-info/METADATA,sha256=Cy1eeurziatc_AfNQDWXig2YPNvuprPtrqF7sIvr5A8,761
+deepner-1.0.0.dist-info/RECORD,,
+deepner-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+deepner-1.0.0.dist-info/entry_points.txt,sha256=zgn3p-6FaCMDwiOBxTUSkjxgSqzyItOxzQZCKmEmWWY,517
+deepner-1.0.0.dist-info/metadata.json,sha256=cIjbrIlNFfMZMzKBYzyazx6E3pXzApxhdMLALLGypOY,1988
+deepner-1.0.0.dist-info/top_level.txt,sha256=33XSWboICGSYFY2pj8zZAMXXJJvJnRS6BHpFPwk9kAM,8

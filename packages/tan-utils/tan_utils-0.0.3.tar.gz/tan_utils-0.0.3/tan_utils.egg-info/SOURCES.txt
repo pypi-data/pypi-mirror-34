@@ -1,0 +1,8 @@
+setup.py
+tan_utils/__init__.py
+tan_utils/tan_utils_cli.py
+tan_utils.egg-info/PKG-INFO
+tan_utils.egg-info/SOURCES.txt
+tan_utils.egg-info/dependency_links.txt
+tan_utils.egg-info/entry_points.txt
+tan_utils.egg-info/top_level.txt

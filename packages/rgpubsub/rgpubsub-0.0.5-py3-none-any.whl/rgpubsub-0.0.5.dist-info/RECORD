@@ -1,0 +1,8 @@
+rgpubsub/__init__.py,sha256=MfBLO1m9GPbd9ZTcQsDYvGY_ubh6bmHc-HDwy-LnPw0,1206
+rgpubsub/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rgpubsub/clients/google.py,sha256=WoYmLCP7un1r29fqH77EqQtRFtxZVqp9yiDQsdP6YAY,334
+rgpubsub/clients/google_clients.py,sha256=dvDq6zfsUOaFS3RTGaRC1EatTIL5RMQsHh3Ml3apG5I,639
+rgpubsub-0.0.5.dist-info/METADATA,sha256=PM1VnroyYlJpAv8sgJuGLdRxMw8LcBPJFhvzmjMbxsE,838
+rgpubsub-0.0.5.dist-info/RECORD,,
+rgpubsub-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+rgpubsub-0.0.5.dist-info/top_level.txt,sha256=WJB6RO-sw5cTAnXfUmH2hr91311tPnXd5fWcv020vVM,9

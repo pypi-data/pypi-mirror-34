@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: rgpubsub
+Version: 0.0.5
+Summary: Simple helper utility to send Google Pubsub messages easily
+Home-page: UNKNOWN
+Author: Eirik Tenold
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-pubsub
+
+# rgpubsub
+
+Simple helper utility to send Google Pubsub messages easily.
+
+#### Simple usage example
+
+    import rgpubsub
+    from rgpubsub import Publisher
+
+    publisher = Publisher.default_instance()
+
+    topic_name = rgpubsub.topic('testtopic')
+
+    message = {
+        'foo': 'bar'
+    }
+
+    attributes = {
+        'baz': 'bar'
+    }
+
+    publisher.publish(topic_name, message, attributes)
+
+    print('Sent message')
+

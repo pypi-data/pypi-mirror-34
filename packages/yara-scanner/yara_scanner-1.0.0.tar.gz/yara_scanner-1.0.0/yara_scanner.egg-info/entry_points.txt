@@ -1,0 +1,5 @@
+[console_scripts]
+scan = yara_scanner:main
+ysc = ysc:__main__
+yss = yss:__main__
+

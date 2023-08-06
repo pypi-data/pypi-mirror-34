@@ -1,0 +1,14 @@
+django_rest_invitations-0.1.1.dist-info/METADATA,sha256=in2fzyAqVOB111S6_A7FI3MFVsTsL0Z7EVXiuxirhxY,705
+django_rest_invitations-0.1.1.dist-info/RECORD,,
+django_rest_invitations-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_rest_invitations-0.1.1.dist-info/pbr.json,sha256=1_pSGIDditRfBQhNZNsYdGazVKD6kq2uNTZ35KqzTrU,46
+django_rest_invitations-0.1.1.dist-info/top_level.txt,sha256=GdmxaZXVa7tDTqMGgLtiFLdwBim5ecBcbGiL6shrims,23
+rest_invitations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_invitations/app_settings.py,sha256=ur1BPvq01PSCP4agwhLXYCVYmaVH6yH2-0h4lwwayeM,1431
+rest_invitations/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_invitations/serializers.py,sha256=2DAxrjxpuPgLAfy5Ma0zt9iIkCENuApL4YjOJ4wvm_w,3099
+rest_invitations/urls.py,sha256=GSbatzCr6fo0EI0oV3jF0xZmrH34V7EOffFOpvHd9NI,626
+rest_invitations/utils.py,sha256=UO2ahpRdRoUpdb8FB5VODHq3kNqS6VYZfACe3DU3Itg,267
+rest_invitations/views.py,sha256=5clzcuS6bnS3zLQu7CVYBJdO96XiHjMjbk30GwI-d20,5181
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests.py,sha256=pd9K0KBQGzd25Tz819Dlx6Fs5CzuNGcUvly42SfVRIA,5536

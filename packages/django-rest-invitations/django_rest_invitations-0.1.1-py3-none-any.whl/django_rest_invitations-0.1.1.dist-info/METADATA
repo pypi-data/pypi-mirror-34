@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-rest-invitations
+Version: 0.1.1
+Summary: Create a set of REST API endpoints to handle invitations
+Home-page: http://github.com/fmarco/django-rest-invitations
+Author: Marco Federighi
+Author-email: federighi.marco@gmail.com
+License: UNKNOWN
+Keywords: django,invitation,django-allauth,invite,rest,django-rest-framework,drf,invitations
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Dist: djangorestframework (>=3.7.7)
+Requires-Dist: django-invitations (==1.9.2)
+
+UNKNOWN
+
+

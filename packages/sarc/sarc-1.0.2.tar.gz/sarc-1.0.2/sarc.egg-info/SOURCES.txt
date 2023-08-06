@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+sarc/__init__.py
+sarc/__main__.py
+sarc/aglenv_file_info.yml
+sarc/sarc.py
+sarc.egg-info/PKG-INFO
+sarc.egg-info/SOURCES.txt
+sarc.egg-info/dependency_links.txt
+sarc.egg-info/entry_points.txt
+sarc.egg-info/requires.txt
+sarc.egg-info/top_level.txt

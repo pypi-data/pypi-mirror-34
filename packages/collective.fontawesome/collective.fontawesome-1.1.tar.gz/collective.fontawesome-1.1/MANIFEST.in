@@ -1,0 +1,5 @@
+include *.rst *.txt
+recursive-include collective *.py *.css *.pt *.xml *.sh *.po *.pot *.zcml *.otf *.eot *.svg *.ttf *.woff *.woff2
+include *
+global-exclude *.pyc *~
+recursive-include docs *.txt *.GPL *.png

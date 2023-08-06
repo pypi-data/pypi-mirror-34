@@ -1,0 +1,12 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optichill/GBM_model.py,sha256=CQFcwljp-Wj6spWuJ1ORwXmo3YD7kkExn6BQG_iVChM,2931
+optichill/__init__.py,sha256=klKE5Z7R312ExscJHdSr3_yLZPObG-K3SiagGKjpYhY,257
+optichill/bas_filter.py,sha256=szn9pqeVWmzXnaeInK367u1_RYf_Y0wRmegQyFg8b_U,9068
+optichill/version.py,sha256=vq-H_9kCS3kQkWywoCH5AJKfmmznmDg96ur6WNsTAf0,21
+optichill/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optichill/test/test_GBM_model.py,sha256=8xSKPyK2pBgjczPDWCEvru2evq8QAvNSeBzbD7Mu9qU,2261
+optichill/test/test_bas_filter.py,sha256=kMvEVl1VwB0-xiNsxIQs_XkAw0Dl5wdMHTPpMvKJyzU,2956
+optichill-1.0.dist-info/METADATA,sha256=kXiMgRPXDZlDFFze79q_jF1AlFRjnCDuOAKuGo8_Lwg,438
+optichill-1.0.dist-info/RECORD,,
+optichill-1.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+optichill-1.0.dist-info/top_level.txt,sha256=Cx1FG60r0ZngOw3ilbSwHSnJCUBe5a8QB5f5RcuqUjI,19

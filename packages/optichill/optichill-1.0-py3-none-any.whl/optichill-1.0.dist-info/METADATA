@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: optichill
+Version: 1.0
+Summary: Machine Learning Package for chiller plant efficiency
+Home-page: https://github.com/optichill/optichill
+Author: Optimum energy DIRECT team
+Author-email: tacohen@uw.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: sklearn
+
+UNKNOWN
+
+

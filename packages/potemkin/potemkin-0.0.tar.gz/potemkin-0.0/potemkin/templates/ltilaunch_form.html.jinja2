@@ -1,0 +1,32 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<form id="lti_launch_parameters" method="post">
+  <fieldset>
+    <label for="lti_launch_url">LTI Launch URL</label>
+    <input type="text" id="lti_launch_url" name="lti_launch_url" value="http://localhost:8001/lti_launches">
+  </fieldset>
+  <fieldset>
+    {% for label, value in fields.items() -%}
+      <div>
+        <label for="{{ label }}">{{ label }}:</label>
+        <input type="text" id="{{ label }}" name="{{ label }}" value="{{ value }}">
+      </div>
+    {%- endfor %}
+  </fieldset>
+
+  <fieldset>
+    <label for="oauth_signature">oauth_signature</label>
+    <input type="text" id="oauth_signature" name="oauth_signature">
+    <button type="submit" id="sign_button" formaction="/sign">Sign</button>
+  </fieldset>
+
+  <fieldset>
+    <button type="submit" id="launch_button">Launch</button>
+  </fieldset>
+</form>
+{% endblock content %}
+
+{% block scripts %}
+  <script src="/static/formsubmit.js"></script>
+{% endblock scripts %}

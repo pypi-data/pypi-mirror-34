@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: termination
+Version: 0.0.2
+Summary: A library for first-order term-rewriting
+Home-page: https://github.com/chrisbouchard/termination
+Author: Chris Bouchard
+Author-email: chris@upliftinglemma.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# `termination`: A library for first-order term-rewriting
+
+TODO: Write this README
+
+
+

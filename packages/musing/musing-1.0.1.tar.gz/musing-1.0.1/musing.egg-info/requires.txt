@@ -1,0 +1,7 @@
+pretty-midi
+
+[dev]
+check-manifest
+
+[test]
+coverage

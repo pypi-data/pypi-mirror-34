@@ -1,0 +1,8 @@
+README.md
+setup.py
+mscan/__init__.py
+mscan/mscan.py
+mscan.egg-info/PKG-INFO
+mscan.egg-info/SOURCES.txt
+mscan.egg-info/dependency_links.txt
+mscan.egg-info/top_level.txt

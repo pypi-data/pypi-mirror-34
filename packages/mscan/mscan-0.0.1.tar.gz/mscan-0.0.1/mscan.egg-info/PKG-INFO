@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: mscan
+Version: 0.0.1
+Summary: Looking for a job description on the website monster.com.
+Home-page: https://github.com/sm-svyat/monsterscan
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: # monsterscan
+        Looking for a job description on the website monster.com.
+        
+        Installation
+        
+        $ pip install monstrscan
+        
+        Example
+        
+        ms = MonsterScan('python')  
+        ms.search()  
+        ms.get_urls()  
+        ms.parce_urls()  
+        ms.save_vacancies('python.csv')
+        
+Platform: UNKNOWN

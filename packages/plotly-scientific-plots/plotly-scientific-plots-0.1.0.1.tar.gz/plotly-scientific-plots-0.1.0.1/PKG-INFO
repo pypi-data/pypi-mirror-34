@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: plotly-scientific-plots
+Version: 0.1.0.1
+Summary: Python package extending plotly for scientific computing and visualization
+Home-page: https://github.com/rsandler00/plotly-scientific-tools
+Author: Roman Sandler
+Author-email: rsandler00@gmail.com
+License: MIT
+Description: ## This is a bunch of tools to create scientific graphs from plotly in python using a simple matlab-like API
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

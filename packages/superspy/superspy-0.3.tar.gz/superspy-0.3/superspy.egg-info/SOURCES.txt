@@ -1,0 +1,13 @@
+MANIFEST.in
+readme.md
+setup.py
+superspy/__init__.py
+superspy/ast.py
+superspy/code_source.py
+superspy/language.py
+superspy.egg-info/PKG-INFO
+superspy.egg-info/SOURCES.txt
+superspy.egg-info/dependency_links.txt
+superspy.egg-info/not-zip-safe
+superspy.egg-info/requires.txt
+superspy.egg-info/top_level.txt

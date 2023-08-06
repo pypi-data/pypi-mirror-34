@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: markb
+Version: 0.1.25
+Summary: Render a markdown file and open in a browser
+Home-page: https://github.com/amireldor/markb
+Author: Amir Eldor
+Author-email: amir@eize.ninja
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: Markdown
+
+markb
+=====
+
+This is a little script that renders a markdown file to a temporary file and
+then opens a browser to view it.  It's intended to be used as `markb README.md`
+in your terminal when you nagivate into some repo's root and want to quickly
+read the README.
+
+

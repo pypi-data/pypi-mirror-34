@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clusterfunc
+Version: 0.0.1
+Summary: Python package for clustering statistics
+Home-page: https://github.com/clusterfunc/clusterfunc
+Author: Manodeep Sinha
+Author-email: manodeep@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+clusterfunc
+=============
+Python repo for all clustering statistics. Since co-routines are used, only `python>=3.5` is supported.
+
+

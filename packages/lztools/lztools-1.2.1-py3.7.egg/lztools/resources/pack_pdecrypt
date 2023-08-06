@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd $(realpath $(dirname $0))
+
+rm -r pdec 2> /dev/null
+rm pdecrypt.zip 2> /dev/null
+mkdir pdec
+
+cp ../commands/mdecrypt pdec/.
+cp ../commands/pdecrypt pdec/__main__.py
+
+python -m zipfile -c pdecrypt.zip pdec/*
+cp -f pdecrypt.zip ~/dev/mir/test/ui_tests/SharedData/SharedResources/.
+rm -rf pdec

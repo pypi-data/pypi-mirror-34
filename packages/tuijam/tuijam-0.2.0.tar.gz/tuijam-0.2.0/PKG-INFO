@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: tuijam
+Version: 0.2.0
+Summary: A fancy TUI client for Google Play Music
+Home-page: https://github.com/cfangmeier/tuijam
+Author: Caleb Fangmeier
+Author-email: caleb@fangmeier.tech
+License: MIT
+Description: UNKNOWN
+Keywords: terminal music streaming
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: Unix
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only

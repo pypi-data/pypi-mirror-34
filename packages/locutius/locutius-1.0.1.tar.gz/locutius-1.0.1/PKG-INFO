@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: locutius
+Version: 1.0.1
+Summary: Clojure-style multimethods with arbitrary dispatch keys.
+Home-page: https://github.com/rebcabin/locutius
+Author: Brian Beckman
+Author-email: bc.beckman@gmail.com
+License: MIT
+Description: # LOCUTIUS
+        
+        Adapted from Adam Bard's work at https://unpythonic.com/02_02_multimethods/,
+        with clarifications, corrections, and unit tests.
+        
+        Clojure-style multimethods with arbitrary dispatch keys. See 'test_locutius.py'
+        for usage examples.
+        
+        
+        ## INSTALLATION
+        
+            pip install locutius
+        
+        Requires Python 3, preferably 3.6 or later.
+        
+Keywords: locutius,multimethod,multimethods,decorator,decorators,dispatch
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

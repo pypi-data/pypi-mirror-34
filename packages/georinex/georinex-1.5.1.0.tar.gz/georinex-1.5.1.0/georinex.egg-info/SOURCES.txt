@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+georinex/__init__.py
+georinex/io.py
+georinex/keplerian.py
+georinex/nav2.py
+georinex/nav3.py
+georinex/obs2.py
+georinex/obs3.py
+georinex/plots.py
+georinex.egg-info/PKG-INFO
+georinex.egg-info/SOURCES.txt
+georinex.egg-info/dependency_links.txt
+georinex.egg-info/entry_points.txt
+georinex.egg-info/requires.txt
+georinex.egg-info/top_level.txt

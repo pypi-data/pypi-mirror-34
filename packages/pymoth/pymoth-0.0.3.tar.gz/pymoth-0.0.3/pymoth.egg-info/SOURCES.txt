@@ -1,0 +1,15 @@
+README.md
+setup.py
+pymoth/Clock.py
+pymoth/DataSet.py
+pymoth/Frame.py
+pymoth/Instance.py
+pymoth/Namespace.py
+pymoth/Sequence.py
+pymoth/__init__.py
+pymoth/formats.py
+pymoth/utils.py
+pymoth.egg-info/PKG-INFO
+pymoth.egg-info/SOURCES.txt
+pymoth.egg-info/dependency_links.txt
+pymoth.egg-info/top_level.txt

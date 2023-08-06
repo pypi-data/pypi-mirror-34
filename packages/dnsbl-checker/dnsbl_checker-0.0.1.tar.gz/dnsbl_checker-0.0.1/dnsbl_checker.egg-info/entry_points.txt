@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dnsbl=dnsbl_checker.cli:cli
+    

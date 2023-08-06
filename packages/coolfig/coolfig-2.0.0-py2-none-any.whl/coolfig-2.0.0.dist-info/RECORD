@@ -1,0 +1,11 @@
+coolfig/__init__.py,sha256=cbbDZlhZxtFx_hqX5Y2CJPFX59QjL9MOmm3ojs8aNWY,809
+coolfig/django.py,sha256=4AD6Tsutei5Ql8bawzuOYl6XS5pDsCLeaWFFz8mwFLo,3065
+coolfig/providers.py,sha256=jVdYQf3BGK3nXXb28t_p8i7kuiciM-JbzLXXGV1duHg,1780
+coolfig/schema.py,sha256=MQTKXDWwxjWGqrKh2jRxG1LeUVoFXCi_zkT1ZtW8AA8,5989
+coolfig/test_config.py,sha256=T8CN7F94VKMD1TjunlRBbQ-7m6Ne8jiX-OAhGiIPT2A,6641
+coolfig/test_django.py,sha256=tO0ARMqsdbjsEIJaROSU6tY4nSlXdbdAoKVJGywBiWU,6350
+coolfig/types.py,sha256=Ur97GYd3HfxZDuAxnx1yfaTgmN-JMpEzuagp8MwkHrg,1534
+coolfig-2.0.0.dist-info/METADATA,sha256=nZnaw2i4IarTIjjg7cMa-qdbO3RKZxW43_YPDjltELU,5932
+coolfig-2.0.0.dist-info/RECORD,,
+coolfig-2.0.0.dist-info/WHEEL,sha256=9xUnOISuCvrSyfu9GlFZT4i2TZ_2OLkwLNqcDvIo3zM,92
+coolfig-2.0.0.dist-info/top_level.txt,sha256=oW5qSMxZXjWKtqHkd-mwV_MhJKW-Os4vVh9hxGJpe_U,8

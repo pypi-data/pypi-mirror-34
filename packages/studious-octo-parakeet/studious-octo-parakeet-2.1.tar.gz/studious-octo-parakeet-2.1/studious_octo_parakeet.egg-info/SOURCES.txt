@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/__init__.py
+src/main.py
+studious_octo_parakeet.egg-info/PKG-INFO
+studious_octo_parakeet.egg-info/SOURCES.txt
+studious_octo_parakeet.egg-info/dependency_links.txt
+studious_octo_parakeet.egg-info/top_level.txt
+tests/__init__.py
+tests/test_main.py

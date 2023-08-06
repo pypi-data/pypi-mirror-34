@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+from cs200.main import default_cli
+
+default_cli()

@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: autocrc
+Version: 1.0
+Summary: Automated CRC-checking
+Home-page: https://github.com/ljb/autocrc
+Author: Jonas Bengtsson
+Author-email: jonas@bengtsson.cc
+License: GPLv3
+Description: 
+                autocrc uses 32-bit CRC-sums to verify the integrity of files.
+                The CRC-sums are parsed both from filenames and from sfv files.
+                autocrc can perform CRC-checks recursively. After it's done, it prints
+                a summary of the result.
+                
+Platform: UNKNOWN

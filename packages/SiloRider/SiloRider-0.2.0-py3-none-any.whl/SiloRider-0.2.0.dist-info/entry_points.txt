@@ -1,0 +1,3 @@
+[console_scripts]
+silorider = silorider.main:main
+

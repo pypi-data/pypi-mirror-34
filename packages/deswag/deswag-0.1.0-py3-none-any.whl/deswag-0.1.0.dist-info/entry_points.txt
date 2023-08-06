@@ -1,0 +1,3 @@
+[console_scripts]
+deswag = deswag.cli:main
+

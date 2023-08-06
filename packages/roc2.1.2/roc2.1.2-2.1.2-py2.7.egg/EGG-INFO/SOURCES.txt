@@ -1,0 +1,14 @@
+README.txt
+setup.py
+ROC/Analyze_xml.py
+ROC/IOU.py
+ROC/__init__.py
+ROC/conRoc.py
+ROC/read.py
+ROC/roc.py
+roc2.1.2.egg-info/PKG-INFO
+roc2.1.2.egg-info/SOURCES.txt
+roc2.1.2.egg-info/dependency_links.txt
+roc2.1.2.egg-info/top_level.txt
+transform/__init__.py
+transform/txt2xml.py

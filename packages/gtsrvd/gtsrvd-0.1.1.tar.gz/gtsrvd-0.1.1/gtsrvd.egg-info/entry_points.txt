@@ -1,0 +1,4 @@
+[console_scripts]
+gtsrvd-create = gtsrvd.cli:create
+gtsrvd-delete = gtsrvd.cli:delete
+

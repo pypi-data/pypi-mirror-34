@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: gtsrvd
+Version: 0.1.1
+Summary: gtsrvd proxies localhost to public internet
+Home-page: https://github.com/narfman0/gtsrvd
+Author: Jon Robison
+Author-email: narfman0@gmail.com
+License: LICENSE
+Description: UNKNOWN
+Keywords: aws ngrok serveo
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

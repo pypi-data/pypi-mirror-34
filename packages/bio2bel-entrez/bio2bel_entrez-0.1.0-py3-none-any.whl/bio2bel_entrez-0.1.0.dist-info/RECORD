@@ -1,0 +1,14 @@
+bio2bel_entrez/__init__.py,sha256=9BhfA-0ljunihxueZj2ThNOGi-iUpN2PitEP6WyQCBg,468
+bio2bel_entrez/__main__.py,sha256=UfZ9XmEusVdUt8DYecSqYMc-js-r2_TMC98CIkoLXS8,86
+bio2bel_entrez/cli.py,sha256=2o9LxD2YUvahwiPv5Q7ob9fjCgh6P5gNjWLf0nH10m4,1380
+bio2bel_entrez/cli_utils.py,sha256=feBhofF94DP6pxcrtBIP1ksaf_U1VHWr0zpyDnSGRUQ,1350
+bio2bel_entrez/constants.py,sha256=r8JKabcC-1m7G8mNIbU0UuLq6Kw-huZCxyvCrTvMMBc,929
+bio2bel_entrez/manager.py,sha256=irJ-efafXNYtD-hQvvhznp-ArZsZmXP4d_e4lB-NIJk,13189
+bio2bel_entrez/models.py,sha256=PfMnaNbYabGaVhK3Bb9Ma5x_d8S97xF-GXuGUx8nEoA,3284
+bio2bel_entrez/parser.py,sha256=rn3DnJfm6D6Oitln_n1-QzNuHjIyy1Wf5Kt4Dc9tXPw,2689
+bio2bel_entrez/web.py,sha256=zEwbMvI9m2RsRi-eDPjMqxaaG9OzEY_u6sI46TGNkOU,1331
+bio2bel_entrez-0.1.0.dist-info/METADATA,sha256=cQYJpc-kjbqT46OW19wplCvbklwy9vdVu7Tw2w3xjjU,3501
+bio2bel_entrez-0.1.0.dist-info/RECORD,,
+bio2bel_entrez-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+bio2bel_entrez-0.1.0.dist-info/entry_points.txt,sha256=QQW4WcUEC-OaEKvZ3VEWLZj21nZUIKzJqMzQatGIzKY,95
+bio2bel_entrez-0.1.0.dist-info/top_level.txt,sha256=j2-XrYha6gztrV0a_ODG9enKaim1tqj_-oiuQe4Vt44,15

@@ -1,0 +1,6 @@
+[bio2bel]
+entrez = bio2bel_entrez
+
+[console_scripts]
+bio2bel_entrez = bio2bel_entrez.cli:main
+

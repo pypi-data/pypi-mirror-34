@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: signalepy
+Version: 0.3.0
+Summary: Elegant Console Logger For Python Command Line Apps
+Home-page: https://github.com/ShardulNalegave/signale.py
+Author: Shardul Nalegave
+Author-email: nalegaveshardul40@gmail.com
+Keywords: logger,cli,elegant,command-line,colored
+Requires-Python: >=3.0,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

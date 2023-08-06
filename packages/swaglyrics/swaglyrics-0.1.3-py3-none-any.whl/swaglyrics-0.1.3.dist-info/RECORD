@@ -1,0 +1,13 @@
+swaglyrics/__init__.py,sha256=PMtsRAzI8d1IfmJsQtI3alqqNiep6X_nMRnRDqnnS-s,21
+swaglyrics/__main__.py,sha256=Sz-yzllN2jdnp-kC3C6r6ShIcS_bSfKmAyhwq8is-Cc,1472
+swaglyrics/cli.py,sha256=CRuYtBN4empB52KtLq6nF-4_7LBK60urtPXl_0_6yvQ,3230
+swaglyrics/run.py,sha256=roe4EF8tzcOsOtlUbqO4dcYYhfMdA4idjhcjl6GtPEw,1191
+swaglyrics/spotify.py,sha256=URUbxmutXkKnst0UtrZvqRqaFcg31PXU8DN6W_Cp6f8,914
+swaglyrics/swaglyrics.py,sha256=roe4EF8tzcOsOtlUbqO4dcYYhfMdA4idjhcjl6GtPEw,1191
+swaglyrics/tab.py,sha256=w62RO0sLhLeGBZwTQxViT4SnX36gCmF6NBb76r3ImNM,757
+swaglyrics/tests.py,sha256=UAkntvTuEjTX-CBz9I2gRWL6FP9foD1QqU6iPrbLAzA,1381
+swaglyrics-0.1.3.dist-info/METADATA,sha256=WhUrjHGoVct0v1-4hFdGVm3wsCkbMsJSqdW6qGmlZoI,1238
+swaglyrics-0.1.3.dist-info/RECORD,,
+swaglyrics-0.1.3.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+swaglyrics-0.1.3.dist-info/entry_points.txt,sha256=I-p2Mtic_sKdk6hEhqXGqH7ROodMTgWXjU-EjRrB7Cg,57
+swaglyrics-0.1.3.dist-info/top_level.txt,sha256=x2BxS9jZjI6uzI-0pxQGlAlKPB0FMZamQbPC0tXT2lg,11

@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: nftl-ed-lms-tools
+Version: 0.1.5
+Summary: Tool 4 partial Ed LMS API handling
+Home-page: UNKNOWN
+Author: Grzegorz Pawełczuk
+Author-email: grzegorz.pawelczuk@nftlearning.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Library: nftl-ed-lms-tools
+
+This is a tool for Ed LMS API handling.
+
+Source documentation of api is available [here](http://developer.edapp.com/)
+
+[PyPI project page](https://pypi.org/project/nftl-ed-lms-tools/)
+
+
+# Installation
+
+```sh
+pip install nftl-ed-lms-tools
+```
+
+# Usage
+
+```python
+    from nftl_ed_lms_tools.client import EdClient
+
+    ed = EdClient(token='xoxp-...')
+    users = ed.get_users_api().get_users()
+
+    if users:
+        print('Yupi!')
+```
+
+# Interface
+
+## Users
+```python
+    from nftl_ed_lms_tools.client import EdClient
+
+    ed = EdClient(token='xoxp-...')
+    users = ed.get_users_api().get_users()
+
+    if users:
+        print('Yupi!')
+```
+
+### Available methods
+#### get_users()
+
+Get a list of users.
+
+[API reference](http://developer.edapp.com/#users_get)
+
+```
+Args:
+    token: optional auth token that will overwrite EdApi token
+Returns:
+    None if data is invalid or users info as :py:class:`typing.List`
+    when success
+```
+
+#### create_or_update_user()
+
+Create or update a user.
+
+[API reference](http://developer.edapp.com/#users_post)
+
+```
+Args:
+    user_data: user data to create or update
+    token: optional auth token that will overwrite EdApi token
+Returns:
+    None if data is invalid or users info as :py:class:`typing.List`
+    when success
+```
+
+#### get_external_token()
+
+Get users authentication token by externalId.
+
+[API reference](http://developer.edapp.com/#users_external__id__token_get)
+
+```
+Args:
+    external_id: users external identifier
+    token: optional auth token that will overwrite EdApi token
+Returns:
+    None if data is invalid or users info as :py:class:`typing.List`
+    when success
+```
+
+#### get_token()
+
+Get users authentication token by user id.
+
+[API reference](http://developer.edapp.com/#users__id__token_get)
+
+```
+Args:
+    user_id: users external identifier
+    token: optional auth token that will overwrite EdApi token    
+Returns:
+    None if data is invalid or users info as :py:class:`typing.List`
+    when success
+```
+
+## User groups
+```python
+    from nftl_ed_lms_tools.client import EdClient
+
+    ed = EdClient(token='xoxp-...')
+    groups = ed.get_usersgroups_api().get()
+
+    if groups:
+        print('Yupi!')
+```
+
+### Available methods
+#### get()
+
+Get a list of user groups.
+
+[API reference](http://developer.edapp.com/#usergroups_get)
+
+```
+Args:
+    token: optional auth token that will overwrite EdApi token
+Returns:
+    None if data is invalid or user groups info as
+    :py:class:`typing.List` when success
+```
+
+#### create_or_update_group()
+
+Create or update a user group.
+
+[API reference](http://developer.edapp.com/#usergroups_post)
+
+```
+Args:
+    group_data: group data to create or update
+    token: optional auth token that will overwrite EdApi token
+Returns:
+    None if data is invalid or group info as :py:class:`typing.Dict`
+    when success
+```
+
+# Deployment how to
+
+Available [here](https://packaging.python.org/tutorials/packaging-projects/)
+

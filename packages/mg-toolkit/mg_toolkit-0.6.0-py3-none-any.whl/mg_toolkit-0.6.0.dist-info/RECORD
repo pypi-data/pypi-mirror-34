@@ -1,0 +1,10 @@
+mg_toolkit/__init__.py,sha256=iY40kQgma_XDbJyUFnTpW9bkHZtF0yaWKq8mu3GenM0,7122
+mg_toolkit/bulk_download.py,sha256=ZXNyTUnd61D_p50cgUgbzFIaRqxNznfNDp8ojjwsIMg,9336
+mg_toolkit/metadata.py,sha256=FaXtUAeJdI4YAQjGGpOhYN0ccFpE-1UzKNxyQaCGDCM,3227
+mg_toolkit/search.py,sha256=mO6OzJCRT1PPUVWJlrruAf0y7Hok81xbkLIbaaEuqbk,8212
+mg_toolkit/utils.py,sha256=zV8SRXnRf3ytzlE8JCpUav_pGfpeoGHTDXmWoZoapkQ,1707
+mg_toolkit-0.6.0.dist-info/METADATA,sha256=5tYZPy795D0QNn4RFowzRBfgFQ65KWHTyEFKK9GZDE4,5071
+mg_toolkit-0.6.0.dist-info/RECORD,,
+mg_toolkit-0.6.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+mg_toolkit-0.6.0.dist-info/entry_points.txt,sha256=fs94p59ax6EysKsZdv_Ip2QYrQrqWeMyyKdMn_i-_Gc,48
+mg_toolkit-0.6.0.dist-info/top_level.txt,sha256=t43Q34xZBPTQg64EoL9QzU1AAZj5HooAamXRpOCghbo,11

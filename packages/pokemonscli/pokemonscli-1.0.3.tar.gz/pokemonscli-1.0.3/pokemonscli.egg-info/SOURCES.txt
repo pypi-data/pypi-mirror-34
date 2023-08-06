@@ -1,0 +1,11 @@
+README.md
+setup.py
+pokemonscli/__init__.py
+pokemonscli/__main__.py
+pokemonscli/pokemonscli.py
+pokemonscli.egg-info/PKG-INFO
+pokemonscli.egg-info/SOURCES.txt
+pokemonscli.egg-info/dependency_links.txt
+pokemonscli.egg-info/entry_points.txt
+pokemonscli.egg-info/requires.txt
+pokemonscli.egg-info/top_level.txt

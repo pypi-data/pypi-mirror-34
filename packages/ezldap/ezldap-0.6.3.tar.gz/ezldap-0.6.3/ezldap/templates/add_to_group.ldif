@@ -1,0 +1,4 @@
+dn: cn=$groupname,$groupdn
+changetype: modify
+add: memberUid
+memberUid: $username

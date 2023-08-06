@@ -1,0 +1,17 @@
+dn: uid=$username,$peopledn
+objectClass: top
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+uid: $username
+cn: $username
+sn: $username
+userPassword: $user_password
+loginShell: /bin/bash
+uidNumber: $uid
+gidNumber: $gid
+gecos: $username
+shadowMax: 180
+shadowWarning: 7
+shadowLastChange: 0
+homeDirectory: $homedir/$username

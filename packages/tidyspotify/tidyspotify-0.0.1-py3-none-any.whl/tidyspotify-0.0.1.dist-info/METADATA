@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: tidyspotify
+Version: 0.0.1
+Summary: tidy wrapper around spotipy library
+Home-page: https://github.com/machow/tidyspotify
+Author: Michael Chow
+Author-email: michael@datacamp.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: spotipy
+
+UNKNOWN
+
+

@@ -1,0 +1,20 @@
+ygram/__init__.py,sha256=pwVfIxm2sWzJXUB3ppPfcBoc9e9KCl-TSOWALq_8fdc,21
+ygram/client.py,sha256=3M-2Vv9cfx331P_LU7cLhMVwDum4nzDBxffaftZ6vyI,8655
+ygram/client_gui.py,sha256=kLiyABP8m-8RvxvTthWlu3mQusZQ4ILKR14uIxm41Rg,30921
+ygram/errors.py,sha256=qiw8pcF1LtoDYurffoNCckRK5XjGRab8s1LFBmuVJSo,939
+ygram/image_client.py,sha256=tB2t8bIvTFocGn7toQJ8p1n0YeyalO3kHlHOsj-Qdlg,1946
+ygram/image_server.py,sha256=qlQ4LBXZYQ8bBlP0YvB7WFOV8HDCJfkjMt8O1Q_fVSg,2362
+ygram/scratch.py,sha256=Faj5r75hFoRM93I2MX2f6ZEojO78SVEa2E7Zx4MBCII,3021
+ygram/server.py,sha256=jiMOEJt0FEBKgMkacpaMLlwbiMgALYUuLEXXMgz6fck,12078
+ygram/server_gui_ничего_интересного здесь пока нет.py,sha256=F24ngCEYsgjVn8YGv_BeMI0ulQSnMQj5AbXSB84McyU,3229
+ygram/start2.py,sha256=zoGt2jBlWd7O2jAzbQkJnAHvGLsRHBPQ6lPZebk-kHs,316
+ygram/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ygram/db/users_db.py,sha256=Rl0WJ5NgfBTX9p47_93dVN9o8VLXNWubHuEWe0Di7wY,4197
+ygram/jim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ygram/jim/config.py,sha256=CEXAH2l0CxjlXIXxM1rHSRgVViUURNLzislLwSj8aEc,802
+ygram/jim/message.py,sha256=s-Hr6yyTTdSqE9s6KXicP14-nmW71sMQKYu2c7cjIkM,4194
+ygram/jim/utils.py,sha256=nxiy3eDD-vBOLxIAd8vRD3CovybsJ3bc8XxWjJKfRbU,2403
+ygram-0.1.3.dist-info/METADATA,sha256=AFB9zjrVlyYBaOtf11trQVbsZoH_7ME18S9B0ZcTLEY,449
+ygram-0.1.3.dist-info/RECORD,,
+ygram-0.1.3.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+ygram-0.1.3.dist-info/top_level.txt,sha256=qn1f6c5T2q8c0Wrwng2lvDGVYaf0VAsAoNBe-gkDa_k,6

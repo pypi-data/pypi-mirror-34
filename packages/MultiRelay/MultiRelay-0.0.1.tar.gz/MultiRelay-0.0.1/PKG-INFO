@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MultiRelay
+Version: 0.0.1
+Summary: A simple TCP/UDP relay for multiple connection
+Home-page: https://github.com/jj11hh/MultiRelay
+Author: Chiang Iheng
+Author-email: jj11hh@live.com
+License: UNKNOWN
+Description: # MultiRelay
+        
+        A simple TCP/UDP relay, still in development
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Topic :: System :: Networking
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown

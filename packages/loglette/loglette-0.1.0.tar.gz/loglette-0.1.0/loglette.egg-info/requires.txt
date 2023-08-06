@@ -1,0 +1,9 @@
+python-dateutil
+
+[all]
+mistune
+jinja2
+
+[html]
+mistune
+jinja2

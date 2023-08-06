@@ -1,0 +1,15 @@
+stop_suite_on_fail: False
+exclusive_resources: [widget_a]
+shared_resources: [widget_s]
+resource_configs: {}
+max_resource_retry: 5
+thread_safe: False
+process_safe: False
+valid_ats: [KISS_a]
+valid_duts: [test_dut_a, test_dut_b]
+req_param_keys: [widget_a_addr]
+optional_param_keys: [widget_a_sub]
+prereq_tasks: [test_check_setup]
+est_task_time: 60
+always_teardown: True
+priority: 5

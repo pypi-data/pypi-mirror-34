@@ -1,0 +1,17 @@
+azure/datalake/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+azure/datalake/store/__init__.py,sha256=4NH32ivYUpTdtI55vr38CnOTuqu5mO9sqglWVvVUIUc,583
+azure/datalake/store/core.py,sha256=uapGriB4MQPByWclVSw830E_pFSLqZKRDf3MwNLLPgc,38947
+azure/datalake/store/enums.py,sha256=J9X-VydKYymGG4_Y-cJCUE_KGCPu1J9V_2TGFCSHtLk,556
+azure/datalake/store/exceptions.py,sha256=6sb6Y9DJTGm6BUtQCCWpxO3SQxce43j8qKRuVZEawdk,855
+azure/datalake/store/lib.py,sha256=TBOiYO0KVTuzjZHyfaSY67DCsLP6UIC2U05xZV0s6io,20404
+azure/datalake/store/multithread.py,sha256=EJqEmGM14e3lrCgSV352Oa5YkK-xE4kc2jCtddZ-jkU,23915
+azure/datalake/store/retry.py,sha256=iURhio6oLXRJT-bpwlMQhT1hqeQn9QAF6IzB4qgzOAA,2033
+azure/datalake/store/transfer.py,sha256=DP0eHNnkXZaXq9OtNH5gyFil2PelKOs3CMEUcV_4toA,23105
+azure/datalake/store/utils.py,sha256=b4JQNkpcXcYdYnTITSCcPpPzzDKYSACpOt2vqHAupq4,5211
+azure_datalake_store-0.0.27.dist-info/METADATA,sha256=2BPHDcTa9IacESbQBPLZndlsZWsMNx9i8CTv8WnmXAU,15218
+azure_datalake_store-0.0.27.dist-info/RECORD,,
+azure_datalake_store-0.0.27.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+azure_datalake_store-0.0.27.dist-info/top_level.txt,sha256=RxH5pXSPvvaymD5w0WC6YYF1KipCRkMBc6tCnDyPe84,14
+samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samples/benchmarks.py,sha256=oUbbCEY5FdTQQNLiX-oQVYkjaIJg116nc48vEkoLbUs,8579
+samples/cli.py,sha256=We6s9owVgcWw7vg1EuyQwfxvxQxe2OzTKBDmHBKBpo0,16427

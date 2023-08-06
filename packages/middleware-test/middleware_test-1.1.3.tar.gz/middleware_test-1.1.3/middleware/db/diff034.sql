@@ -1,0 +1,1 @@
+UPDATE system SET sync_enabled=0  WHERE system_id = '4';

@@ -1,0 +1,19 @@
+{
+  "selectHR_db_name": "SELECTHR_Test",
+  "selectHR_db_host": "LHO-ST-HR-SQL",
+  "selectHR_db_user": "Middleware_testing",
+  "selectHR_db_password": "h3RE9?[6",
+  "selectHR_audit_db_name": "SELECTHR_Test",
+  "selectHR_driver": "{ODBC Driver 11 for SQL Server}",
+  "slack_api_token": "xoxp-162022975779-284370838339-286064697554-80bc3605ddd046e552c8e66df08185d3",
+  "mysql_user": "root",
+  "mysql_password": "12345",
+  "AD_admin": "Yuliya.Probachai@test-octopus.local",
+  "AD_password": "Octopus!",
+  "AD_server": "ldap://10.254.1.70:389",
+  "AD_base_dn": "dc=test-octopus,dc=local",
+  "slack_api_tokens_dict": {
+    "octopuslabs.com": "xoxp-162022975779-284370838339-286064697554-80bc3605ddd046e552c8e66df08185d3",
+    "yandex.ru": "xoxp-354496342934-353602271186-379088424819-f275cbe9ff62ee3d9442645ef536870d"
+  }
+}

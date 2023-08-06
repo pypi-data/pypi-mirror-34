@@ -1,0 +1,17 @@
+suitable/__init__.py,sha256=_PoiWkjgYv6b7i4lGAVABRK22C1dLS_awKhU7PY9O6k,231
+suitable/api.py,sha256=pkpWlbvt1A8XfKMZEhov6lSHnTXhfzfj03gZbwAgrqc,11144
+suitable/callback.py,sha256=azYS8Q6Zn0qwV3lLhCajhU4WcpmabvSuL--IgQ5woo0,1074
+suitable/common.py,sha256=Jkn0oKo2Da523pgNslBf4MDlgw1ygzPF1R1kDk0U_D8,162
+suitable/compat.py,sha256=hFy9_Mh34ZtpRrLgPKCEbOGzjn5kOeNQit7LqMx_x8U,230
+suitable/errors.py,sha256=ia1RWur_d5A7Fj80Phjsr8aBJSdJo7Ltfid7EzT3M3o,1080
+suitable/mitogen.py,sha256=G4azoTpfeBSTR3QXx--1Vmbt9TbN6XqoM9TOzc8Vs_E,828
+suitable/module_runner.py,sha256=Bt0IakP0B0KRKlGsAavswl_hugRZFKus6J2n2vMzzSQ,7967
+suitable/runner_results.py,sha256=JF_-3f_lvx1mbLqWjL7nlsMXHAG16GCflLc2pzPB1Xk,962
+suitable/utils.py,sha256=QB8KZhDmt2I90Q8QbViCSxOyaMjiluLICCLHAF9zP6k,558
+suitable/tests/conftest.py,sha256=q5auWwbHCj5Z5AWkesjxg5hNgHzMRm8LGP5UIKzlHFo,157
+suitable/tests/test_api.py,sha256=Kl1dXjE-CQ-KU9chKTIS95V_2ELE4hPaXySVpoJXC2s,6988
+suitable/tests/test_utils.py,sha256=VMfWwpyFwuqvUJHM5Nl9AeMA2sgXBT41GGRWi46pnBI,548
+suitable-0.13.0.dist-info/METADATA,sha256=C4StsnTyiEKE7zxdO644oqAwmRFpPX2G7R0CgY5Y818,5166
+suitable-0.13.0.dist-info/RECORD,,
+suitable-0.13.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+suitable-0.13.0.dist-info/top_level.txt,sha256=LpYcMyZo-Eary2v5pA4wXbAyWYjF4WQmU2U_xtZOFhI,9

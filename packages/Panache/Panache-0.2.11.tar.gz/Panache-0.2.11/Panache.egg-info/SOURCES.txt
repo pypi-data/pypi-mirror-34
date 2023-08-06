@@ -1,0 +1,10 @@
+README
+setup.py
+Panache.egg-info/PKG-INFO
+Panache.egg-info/SOURCES.txt
+Panache.egg-info/dependency_links.txt
+Panache.egg-info/requires.txt
+Panache.egg-info/top_level.txt
+panache/__init__.py
+panache/panache.py
+panache/version.py

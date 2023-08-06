@@ -1,0 +1,15 @@
+*.egg
+*.egg-info
+*.py?
+*~
+.coverage
+.python-version
+/*.egg
+/.eggs
+/.pytest_cache
+/.tox
+/ChangeLog
+/build
+/dist
+/how-to-make-a-release.txt
+/tmp

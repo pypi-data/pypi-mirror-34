@@ -1,0 +1,9 @@
+README.md
+setup.py
+ms5803py/__init__.py
+ms5803py/sensor.py
+ms5803py.egg-info/PKG-INFO
+ms5803py.egg-info/SOURCES.txt
+ms5803py.egg-info/dependency_links.txt
+ms5803py.egg-info/not-zip-safe
+ms5803py.egg-info/top_level.txt

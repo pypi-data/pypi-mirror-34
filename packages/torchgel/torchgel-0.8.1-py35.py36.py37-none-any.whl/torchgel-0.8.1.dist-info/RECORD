@@ -1,0 +1,10 @@
+gel/__init__.py,sha256=kEajUrO6-UuAlM9J7BnuHcbZRQFewKybbXj9p6IXvkc,37
+gel/_version.py,sha256=J6iW5aQxFlO6qwl5m__IMV34HoMJkp5xzfJr2tJZ9lI,73
+gel/gelcd.py,sha256=H0jCl-Vi1rpsRFcysgEKvCymaoPNwUO_UQNIkgLgclc,11061
+gel/gelfista.py,sha256=Mx9ReKE8mdopwJJp87I3W_Qdrj2yI13oslo0FVrvVz8,6982
+gel/gelpaths.py,sha256=yXGA8SkjDt6738mFtq7Hvnws10w810WVUNieix_tdyQ,13379
+torchgel-0.8.1.dist-info/LICENSE.txt,sha256=uB6Z_w9U2Yd5-8Yjk45TZHfAfqGdEOZAr7sxx0FDvAc,1072
+torchgel-0.8.1.dist-info/METADATA,sha256=TDspiYnamPuEA6UQD8TzGcwQfB74RokayhJZxaImK6M,6824
+torchgel-0.8.1.dist-info/RECORD,,
+torchgel-0.8.1.dist-info/WHEEL,sha256=yQysg9OlFFgC8t4YpODJ4sGQseq5aw5vAcpTNugkX6k,131
+torchgel-0.8.1.dist-info/top_level.txt,sha256=4bHKPtbXsU6jTkh7hPYPNA-OyonMHEj4w_6zVtPp81s,4

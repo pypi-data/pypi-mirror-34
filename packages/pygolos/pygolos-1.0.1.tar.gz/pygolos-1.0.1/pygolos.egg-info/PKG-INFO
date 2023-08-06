@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pygolos
+Version: 1.0.1
+Summary: Golos classes library
+Home-page: https://github.com/kozakovi4/pygolos
+Author: kozakovi4 & fake364
+Author-email: kozakovi4@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: golos,blockchain,classes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: ecdsa

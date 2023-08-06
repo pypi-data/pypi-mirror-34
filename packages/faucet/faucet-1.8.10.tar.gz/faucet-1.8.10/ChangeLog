@@ -1,0 +1,159 @@
+CHANGES
+=======
+
+1.8.10
+------
+
+* Enable barriers for OVS
+* Revert "Make VIP priority depend on VLAN VID."
+* Revert "Avoid arp\_tpa."
+* Avoid arp\_tpa
+* Make VIP priority depend on VLAN VID
+* FAUCET VIPs added before flood
+* Revert "Disable stack edge optimization."
+* mac\_addr\_is\_unicast() incorrect for 34 prefix
+* Disable stack edge optimization
+* Min coverage 92
+* TFM now sent by datapath\_connect()
+* Avoid switch reconfig on cold start config change
+* Move delete all flows to switch\_features
+* Version bump for release
+* Skip eventlet for pyup per https://github.com/pyupio/pyup/issues/273 (Ryu needs eventlet pinned)
+* If learning for a stack edge, we can learn immediately
+* ofproto\_to\_ryu.json no longer needed as a file
+* Remove more TFM boilerplate
+* Improve OF pcap text output parser
+* Remove test directory if empty
+* Synchronize TFM set\_field
+* Remove unnecessary VLAN actions
+* Remove unnecessary set\_field from VLAN table
+* Remove unnecessary actions from destination table
+* Ethernet source table doesn't set set\_fields
+* Fix generation of OFPInstructionId
+* OFPTFPT\_INSTRUCTIONS is now automatically generated for TFM
+* pylint
+* OF match TFM automatically generated for non-ACL tables
+* Don't statically configure matches
+* Bracket pipeline reprogramming with disabling port status changes/packet ins
+* Synchronize TFM pipeline
+* Support skipping of dynamically generated TFM features
+* Synchronize Aruba pipeline config with verified FAUCET pipeline config
+* vlan table also needs eth\_dst mask
+* Fix eth\_dst mask in eth\_src
+* Verify flow mask flags
+* Add mask field to pipeline definition
+* Docs tidy
+* Fix for unhashable key in config found during fuzzing
+* Make ROUNDS a variable
+* Document faucet\_mac
+* Fuzzers don't need python2
+* Preversion 1.8.10
+
+1.8.9
+-----
+
+* pytype
+* Bump version for release
+* Add Bob Lantz
+* pylint
+* Somewhat generalize star-stack topology implementation
+* Make pip install quiet again
+* Special case for 2 layer stacks - leverage DP-local flooding
+* Compute longest path to root length
+* pytype
+* pylint
+* Remove dependency on Ryu for python2
+* pytype noise
+* pytype noise
+* mininet library check needs to more flexible
+* ConnectionError conflict
+* pylint
+* Restore min pylint to 9.2
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* pylint
+* Reset min pylint
+* Reset min pylint to 9.0
+* pylint
+* pylint
+* Reduce lint score for py3 based lint
+* py2 doesn't need ryu
+* Re-enable external pip cache
+* Move influxdb dependency check for py3
+* Reduce dependencies for py2
+* Fix pip/pip3
+* Split py2 requirements
+* Remove astroid from test-requirements.txt
+* Disable pip quiet
+* Disable pip cache
+* FaucetSimpleTest should support hardware
+* Update the capabilities for the Cisco C9K switch
+* Use more efficient wildcard delete for in\_port
+* Log active table IDs, and use more efficient wildcard delete command
+* vlan\_match\_tables() needs to be a set
+* Don't try to delete unconfigured tables for VLAN match
+* Missed call to self.dp.reset\_refs() causes VLAN associations to be lost if all ports change
+* Preversion 1.8.9
+
+1.8.8
+-----
+
+* Fix duplicate output when a port mirrors more than one other port
+* Use warm start for MultiMirror test
+* Test case where both ports are mirrored
+* Version bump
+* SanityTest misreports conflicting processes running on ::1
+* InfluxDB test fails on hardware that has unsupported counters (report value as 0)
+* Test InfluxDB server has to be IPv4
+* InfluxDB python client doesn't support IPv6 addresses
+* Reduce parallel test max by half
+* Move Prometheus and ofctl test traffic to ::1 from 127.0.0.1
+* Leave TCP config alone. Don't set self.net to None on stop
+* Use recycle not reuse
+* Don't start any controllers on a remap switch for hardware testing
+* Deconfigure switch controllers before net.stop()
+* update version of grafana
+* update version of influxdb
+* fuzzer pylint
+* Improve pylint score for fuzz\_packet.py
+* Add AFL
+* Improve pylint score for display\_packet\_crash.py
+* Remove debug statements from MultiDB test. Implement LISTPORTS command for test port server
+* src\_files should use find, which is smarter than ls
+* Disambiguate test port names with PID
+* explicitly throw errors if they occur
+* valve test file moved
+* Add experimental API test app back to unit tests
+* Pin docker-ce 18.03.1~ce-0~ubuntu
+* Revert to 17.09.1~ce-0~ubuntu
+* Dump travis docker-ce versions
+* Pin docker to 17.12.1
+* Pin docker version
+* Update path to unit tests in documentation
+* Rename/reorganize test scripts
+* Non hardware switches in software stack should be OVS
+* Clean up our gitlab CI build script
+* Preversion 1.8.8
+
+1.8.7
+-----
+
+* Bump README version
+* Handle reconfiguration after not receiving any routes from BGP peer
+* BGP should re-add routes it has learned on VLAN reconfiguration
+* Atomic replacement of BGP speaker structure
+* Incremental refactoring to make BGP warm starts safe
+* update pika library to latest
+* update docs for running only a single int test
+* use stat based reload for RandVlan test
+* Revert "Report test output in json format."
+* Report test output in json format
+* Log result of SanityTest
+* Add jsonreport option to tests
+* add in missing keywords for ping tests
+* test should be less than minimum, not also equal
+* pylint

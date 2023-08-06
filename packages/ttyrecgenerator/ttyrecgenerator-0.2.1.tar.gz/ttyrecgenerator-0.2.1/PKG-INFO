@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ttyrecgenerator
+Version: 0.2.1
+Summary: Python module to save console output into a GIF or a video
+Home-page: https://ttyrecgenerator.sourceforge.io/
+Author: Turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Description: Download and docs:
+            http://pypi.python.org/pypi/ttyrecgenerator
+        Source code & Development:
+            https://ttyrecgenerator.sourceforge.io
+        Doxygen documentation:
+            http://turulomio.users.sourceforge.net/doxygen/ttyrecgenerator/
+        
+        Description
+        ===========
+        
+        License
+        =======
+        
+        Dependencies
+        ============
+        
+        None, other than Python. Tested on Python 3 
+        
+        Usage
+        =====
+        
+        
+        Changelog
+        =========
+        0.2.0
+          * Solved problems with internacionalization distribution
+        0.1.0
+          * Basic funcionality
+        
+        
+Keywords: ttyrec save console output
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

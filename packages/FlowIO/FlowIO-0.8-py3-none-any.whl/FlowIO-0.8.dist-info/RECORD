@@ -1,0 +1,9 @@
+FlowIO-0.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+FlowIO-0.8.dist-info/METADATA,sha256=EFJR4onEq96QOIvLyLHvp9MHsfW00VfImd7s-sEHOD8,222
+FlowIO-0.8.dist-info/RECORD,,
+FlowIO-0.8.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+FlowIO-0.8.dist-info/metadata.json,sha256=XOsHmt4bOdo8zJbWZBsdVqoBJAMUV4w2XXp1IhakJTU,271
+FlowIO-0.8.dist-info/top_level.txt,sha256=PsjL54xxA7x5QYkF3XCgq8AjeWWr8Uj_kS2HIS530j0,7
+flowio/__init__.py,sha256=B26fYldVz9btoAjaUY0UsEgYs5deen02HhzJOXmNdrU,66
+flowio/create_fcs.py,sha256=f32aJHMFBUzb6nGnuFbuDVP4Azy5xwSROJp2ARvkbfM,6873
+flowio/flowdata.py,sha256=PBji6w4ruZuRw3HsV_zt6iodpCwzuAl0POclkKeGBkc,15110

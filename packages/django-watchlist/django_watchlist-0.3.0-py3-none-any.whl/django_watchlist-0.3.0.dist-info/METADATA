@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-watchlist
+Version: 0.3.0
+Summary: Stupid simple django watch and favorite
+Home-page: http://github.com/tBaxter/django-watchlist
+Author: Tim Baxter
+Author-email: mail.baxter@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+
+# Django Watchlist
+
+A stupidly simple system to allow users to watch/bookmark/favorite content.
+
+Keeps track of which users like what.
+
+Stores to session if user is not authenticated.
+
+### Installation
+
+`pip install django-watchlist`
+
+

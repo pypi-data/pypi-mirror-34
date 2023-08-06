@@ -1,0 +1,12 @@
+django_watchlist-0.3.0.dist-info/METADATA,sha256=IwyT-ikQhajAvtFzEEUsLO7W5I312cG8ueqNEv-4hyk,490
+django_watchlist-0.3.0.dist-info/RECORD,,
+django_watchlist-0.3.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_watchlist-0.3.0.dist-info/top_level.txt,sha256=zQA-URZJMBesqymIVhtPRis51UhonVwn_sI1X5-iR1g,10
+watchlist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watchlist/admin.py,sha256=M5q-O8JG0FZl--OqBNM4GqYEydp4T3vYrqcCtAXNc_s,202
+watchlist/models.py,sha256=sVRbqNzWZ1lqNpO9D2sMMabHuYAhFPY5VACadc-k8a0,1015
+watchlist/urls.py,sha256=aFSzhPEVrGjMcoayv0_piiY3DJ5MZYuj3EVZkPW5LfU,622
+watchlist/views.py,sha256=MSkogOA2U2l6TpsBVvN2dILeNn5f2NHTBoH-UAEuHLA,3343
+watchlist/templates/watchlist/watch_item_added.html,sha256=zBKVbTI7_mIIJlArOkL1D2UrQCZoJ8f5NWdZvBn9vhg,319
+watchlist/templates/watchlist/watch_item_removed.html,sha256=L3yDklMcChxIAw2JoJTuXATDhpy4XemUURepItbcRdk,287
+watchlist/templates/watchlist/watch_list.html,sha256=Y5KXgpViBC3QFhlVlq3Uz_BFDsWejKGrMb5fVksk70M,2116

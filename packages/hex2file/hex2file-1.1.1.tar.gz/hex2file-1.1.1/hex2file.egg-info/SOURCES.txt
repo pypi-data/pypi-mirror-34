@@ -1,0 +1,10 @@
+README.md
+setup.py
+hex2file/__init__.py
+hex2file/hex2file.py
+hex2file.egg-info/PKG-INFO
+hex2file.egg-info/SOURCES.txt
+hex2file.egg-info/dependency_links.txt
+hex2file.egg-info/entry_points.txt
+hex2file.egg-info/requires.txt
+hex2file.egg-info/top_level.txt

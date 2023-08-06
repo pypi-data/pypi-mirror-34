@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pylint2codeclimate
+Version: 1.1
+Summary: pylint reporter class to export results in codeclimate format
+Home-page: https://gitlab.com/alelec/pylint2codeclimate
+Author: Andrew Leech
+Author-email: andrew@alelec.net
+License: MIT
+Platform: UNKNOWN
+
+pylint2codeclimate
+==================
+
+Pylint reporter class to export results in codeclimate format, originally from 
+https://github.com/mikebryant/codeclimate-pylint/blob/master/codeclimate_reporter.py
+
+It can be used in a gitlab-ci.yml stage like:
+
+::
+
+    codequality:
+      stage: test
+      script:
+        - pip install pylint2codeclimate pylint
+        - pylint -f pylint2codeclimate.CodeClimateReporter *.py > codeclimate.json
+      artifacts:
+        when: always
+        paths: [codeclimate.json]
+
+

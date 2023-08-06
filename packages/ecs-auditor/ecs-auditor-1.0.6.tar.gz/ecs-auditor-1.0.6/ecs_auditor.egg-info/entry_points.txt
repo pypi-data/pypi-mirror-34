@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-auditor = ecs_auditor.cmdline:execute
+

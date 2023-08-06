@@ -1,0 +1,7 @@
+from teshu.serializers import Serializer
+
+# you can create your serializers here
+class {{name}}Serializer(Serializer):
+	
+	class Meta:
+		feilds = []

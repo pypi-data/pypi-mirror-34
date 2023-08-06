@@ -1,0 +1,10 @@
+from teshu.db import models
+
+# you can create your models here
+class {{name}}(models.Model):
+	# you can add your feilds here
+
+	
+	class Meta:
+		index=""
+		doc_type="{{name}}"

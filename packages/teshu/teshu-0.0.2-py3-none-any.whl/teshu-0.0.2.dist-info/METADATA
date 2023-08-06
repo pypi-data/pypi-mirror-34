@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: teshu
+Version: 0.0.2
+Summary: teshu rest framework
+Home-page: https://github.com/teshu/teshu.git
+Author: Venkata Sai Katepalli
+Author-email: venkata.katepalli@inmar.com
+License: UNKNOWN
+Download-URL: https://github.com/teshu/teshu.git
+Keywords: teshu,rest,rest api
+Platform: UNKNOWN
+Requires-Dist: elasticsearch-dsl (==6.0.1)
+Requires-Dist: flasgger (==0.8.0)
+Requires-Dist: Flask (==0.12.2)
+Requires-Dist: Flask-Cors (==3.0.3)
+Requires-Dist: Flask-JWT (==0.3.2)
+Requires-Dist: Flask-RESTful (==0.3.6)
+Requires-Dist: marshmallow (==2.15.0)
+Requires-Dist: bcrypt (==3.1.4)
+Requires-Dist: pandas (==0.23.0)
+
+UNKNOWN
+
+

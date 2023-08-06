@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: dretools
+Version: 0.0.1
+Summary: A software package for finding differential RNA editing.
+Home-page: https://bitbucket.org/dretools/dretools
+Author: Tyler Weirick
+Author-email: tyler.weirick@gmail.com
+License: MIT
+Description: # DRETools
+        
+        Installation
+        
+        
+        Usage
+        
+        
+        
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

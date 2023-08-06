@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: module-starter.leon
+Version: 0.0.1
+Summary: Starter project for python modules
+Home-page: https://github.com/AumitLeon/module_starter_cli
+Author: Nichole Wespe
+Author-email: nwespe@indigoag.com
+License: UNKNOWN
+Keywords: module starter
+Platform: UNKNOWN
+Provides-Extra: dev
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: python-semantic-release; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+
+## Starter repo for future python modules
+
+

@@ -1,0 +1,11 @@
+setuptools
+six>=1.7
+numpy
+astropy>=2
+scipy
+PyYaml
+matplotlib
+python-dateutil
+
+[:python_version < "3.4"]
+enum34

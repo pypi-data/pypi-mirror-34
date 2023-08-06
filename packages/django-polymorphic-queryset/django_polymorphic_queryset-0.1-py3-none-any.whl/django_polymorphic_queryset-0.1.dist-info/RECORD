@@ -1,0 +1,10 @@
+django_polymorphic_queryset-0.1.dist-info/METADATA,sha256=HaJMHG7w3_VLEic5xe12dZwKHPiZ2TAHCNqudvanj6M,5598
+django_polymorphic_queryset-0.1.dist-info/RECORD,,
+django_polymorphic_queryset-0.1.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+django_polymorphic_queryset-0.1.dist-info/top_level.txt,sha256=cfjp__YPw4QLsK7Ybq1rnBQRvUL2rHiQMbS9St2oQrE,21
+polymorphic_queryset/__init__.py,sha256=X_mk7HJeakSReJfZxF-LdjZylzUDZQILSZ31ywCZDRk,4424
+polymorphic_queryset/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polymorphic_queryset/tests/models.py,sha256=zjuJ5Hc3wZiGZr5LW2xMrsWoUjJshIUqAh59EZrfnLU,1770
+polymorphic_queryset/tests/test_queries.py,sha256=PrXc8IcdcMjwf8ULHYrLEaAWwJjkmRr2bEgeHLe8UOQ,2432
+polymorphic_queryset/tests/migrations/0001_initial.py,sha256=LM6TjEcmD7Q9qA_payHlbaGRWqQimjHb-0vMZnm9z08,2137
+polymorphic_queryset/tests/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: mongo-filter-evaluator
+Version: 1.0.0
+Summary: Evaluator & validator for mongo-like queries
+Home-page: https://github.com/zlebnik/mongo_filter_evaluator
+Author: Gleb Kovalev
+Author-email: gleb@popmechanic.io
+License: MIT license
+Keywords: mongo_filter_evaluator
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+======================
+Mongo Filter Evaluator
+======================
+
+
+.. image:: https://img.shields.io/pypi/v/mongo_filter_evaluator.svg
+        :target: https://pypi.python.org/pypi/mongo_filter_evaluator
+
+
+Evaluator & validator for mongo-like queries
+
+
+* Free software: MIT license
+* Documentation: https://mongo-filter-evaluator.readthedocs.io.
+
+
+Features
+--------
+
+* Evaluate mongo-like queries in Python:
+
+.. code-block:: python
+
+    DataConditionEvaluator({
+        'value': 'value',
+        'int': {'$lte': 2}
+    }, {
+        'value': 'value',
+        'int': 1
+    }).evaluate()
+
+
+* Validate typed mongo-like queries:
+
+.. code-block:: python
+
+    errors = ConditionValidator({
+        'value': 'value',
+        'int': {'$lte': 1}
+    }, {
+        'value': StringField,
+        'int': NumericField
+    }).validate()
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+1.0.0 (2018-07-24)
+------------------
+
+* First release on PyPI.
+
+

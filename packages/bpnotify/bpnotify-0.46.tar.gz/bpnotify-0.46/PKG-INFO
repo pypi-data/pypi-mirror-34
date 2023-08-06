@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bpnotify
+Version: 0.46
+Summary: Notification routing for Django
+Home-page: https://github.com/beproud/bpnotify/
+Author: BeProud
+Author-email: project@beproud.jp
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/beproud/bpnotify.svg?branch=master)](https://travis-ci.org/beproud/bpnotify)
+        
+        `bpnotify` is notification routing for Django. Application notify function with targets, notify_type, media, extra_data, then bpnotify send notify with backend (example: mail).
+        
+        # Requirements
+        
+        * Python (2.7, 3.6)
+        * Celery (4.1)
+        * Django (1.8, 1.11)
+        * django-jsonfield (1.0.1)
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

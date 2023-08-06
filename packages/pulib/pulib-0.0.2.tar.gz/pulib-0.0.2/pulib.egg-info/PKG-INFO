@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pulib
+Version: 0.0.2
+Summary: Positive-Unlabeled machine learning package
+Home-page: https://github.com/ronaldpereira/pulib
+Author: Ronald Pereira
+Author-email: ronald.drp11@gmail.com
+License: UNKNOWN
+Description: # PULib - Positive Unlabeled Library (Python 3)
+        
+        Positive Unlabeled machine learning library made with Python 3
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

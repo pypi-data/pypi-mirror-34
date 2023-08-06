@@ -1,0 +1,13 @@
+README.md
+setup.py
+place/__about__.py
+place/__init__.py
+place/api_resource.py
+place/client.py
+place/exceptions.py
+place/resources.py
+place.egg-info/PKG-INFO
+place.egg-info/SOURCES.txt
+place.egg-info/dependency_links.txt
+place.egg-info/requires.txt
+place.egg-info/top_level.txt

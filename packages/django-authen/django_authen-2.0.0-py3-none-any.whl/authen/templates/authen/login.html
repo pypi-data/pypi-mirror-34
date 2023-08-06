@@ -1,0 +1,67 @@
+{% extends "authen/base.html" %}
+
+{% block content %}
+    <div class="card rounded shadow-lg">
+        <div class="card-header">
+            <h4 class="mb-0">{{ login_title }}</h4>
+        </div>
+        <div class="card-body">
+            <form class="form" role="form" autocomplete="on" id="formLogin" novalidate=""
+                  method="POST" action="{% url 'authen:login' %}"> {% csrf_token %}
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control form-control-lg rounded" name="username"
+                           required="">
+                    <div class="invalid-feedback">Username is required!</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control form-control-lg rounded" name="password"
+                           required="">
+                    <div class="invalid-feedback">Password is required!</div>
+                </div>
+
+                {% if form.errors %}
+                    <div class="alert alert-danger" role="alert">
+                        Your username and password didn't match. Please try again.
+                    </div>
+                {% endif %}
+
+                {% if next %}
+                    {% if user.is_authenticated %}
+                        <div class="alert alert-warning" role="alert">
+                            Your account doesn't have access to this page. To proceed,
+                            please login with an account that has access.
+                        </div>
+                    {% else %}
+                        <div class="alert alert-warning" role="alert">
+                            Please login to see this page.
+                        </div>
+                    {% endif %}
+                {% endif %}
+
+                <div class="alert alert-danger" id="errorMessage" hidden role="alert"></div>
+
+                <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script>
+        let $formLogin = $("#formLogin");
+
+        $(document).ready(function () {
+            $formLogin.submit(function (event) {
+                if ($formLogin[0].checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $formLogin.addClass('was-validated');
+                }
+            });
+        });
+    </script>
+{% endblock scripts %}

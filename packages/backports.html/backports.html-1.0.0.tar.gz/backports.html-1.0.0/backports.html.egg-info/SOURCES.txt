@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+backports/__init__.py
+backports.html.egg-info/PKG-INFO
+backports.html.egg-info/SOURCES.txt
+backports.html.egg-info/dependency_links.txt
+backports.html.egg-info/top_level.txt
+backports/html/__init__.py
+backports/html/entities.py
+backports/html/parser.py

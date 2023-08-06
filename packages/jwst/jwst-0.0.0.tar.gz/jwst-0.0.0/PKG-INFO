@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: jwst
+Version: 0.0.0
+Summary: JWST
+Home-page: http://ssb.stsci.edu
+Author: OED/SSB, etc
+Author-email: help@stsci.edu
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5

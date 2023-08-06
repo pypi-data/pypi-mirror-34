@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+jwst/__init__.py
+jwst.egg-info/PKG-INFO
+jwst.egg-info/SOURCES.txt
+jwst.egg-info/dependency_links.txt
+jwst.egg-info/top_level.txt

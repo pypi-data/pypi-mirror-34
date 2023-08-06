@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: trinity
+Version: 0.1.0a12
+Summary: The Trinity Ethereum Client
+Home-page: https://github.com/ethereum/py-evm
+Author: Ethereum Foundation
+Author-email: piper@pipermerriam.com
+License: MIT
+Keywords: ethereum blockchain evm trinity
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: py-evm[p2p,trinity] (==0.2.0a28)
+
+UNKNOWN
+
+

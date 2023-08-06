@@ -1,0 +1,90 @@
+
+Installation
+============
+
+* Dependencies
+
+ -  numpy, scipy  ->  Mandatory, automatically installed by pip
+ -  Pillow        ->  Mandatory, for reading of SAXS images, automatic install by pip
+ -  matplotlib    ->  Mandatory, for 3D plots
+ -  Ipython       ->  Optional, for convenience as a powerfull python shell
+ -  gfortran      ->  Optional, without some functions dont work or use only slower python
+ -  xmgrace       ->  Optional, prefered plotting on Unix like (use matplotlib on Windows)
+
+Installation may need root privileges. Use "sudo" on Linux and MacOS if needed.
+
+* Pip installation options (use pip2 or pip3 dependent if you use python2.7 or python3) ::
+
+   sudo pip install jscatter
+
+  As user in home directory (pip default is in ~/.local/).
+  No sudo needed, only user privileges::
+
+   pip install jscatter --user
+
+  from a local repository (development versions)::
+
+   pip install jscatter --user --upgrade --pre --find-links /where/the/file/is/saved
+
+   options
+   --user       : Install in user directory (folder defined by PYTHONUSERBASE or the default ~/.local)
+   --find-links : look in the given path for package links e.g development releases
+   --upgrade    : to install upgrades
+   --pre        : to install also development versions
+
+* Ubuntu, all Debian related Linux ::
+
+   sudo apt-get install gfortran grace python-matplotlib  # or python3-matplotlib
+   sudo pip install ipython
+   sudo pip install jscatter
+
+* MacOs, install Homebrew first as given on their web page (see `Homebrew <https://brew.sh/>`_) ::
+
+   # install XQuartz from homebrew or from the AppStore
+   sudo brew cask install xquartz
+   # install xmgrace and gfortran
+   sudo brew install grace gfortran matplotlib
+   # then use pip
+   sudo pip install ipython
+   sudo pip install jscatter
+
+
+* Anaconda is a python distribution as easy alternative for MacOs and Windows
+  (also working on Linux)  with numpy, scipy, matplotlib, Ipython preinstalled.
+  Need of sudo depends on how Anaconda was installed::
+
+   # install xmgrace (only Linux/OSX)
+   conda install -c uvcdat xmgrace
+   # install gfortran
+   conda install -c uvcdat gfortran
+   # install jscatter
+   pip install jscatter
+
+* Manjaro Linux (yaourt ask for permission as root or prepend sudo as above)  ::
+
+   # install gfortran
+   yaourt gcc-fortran
+   # install xmgrace (only found in AUR)
+   yaourt xorg-fonts-75 xorg-fonts-100 grace-openmotif python-matplotlib
+   pip install ipython
+   pip install jscatter
+
+* CONTIN in DLS module (Only if needed).
+
+  See DLS module documentation for details how to get and compile the original fortran code.
+
+* Testing
+
+  You can test basic functionality of jscatter after installation::
+
+   import jscatter as js
+   js.test.doTest()
+
+
+  During development::
+
+   python setup.py test
+
+
+
+

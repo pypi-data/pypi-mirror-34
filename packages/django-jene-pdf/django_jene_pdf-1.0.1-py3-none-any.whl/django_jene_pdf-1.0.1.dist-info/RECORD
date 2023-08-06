@@ -1,0 +1,8 @@
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/jene_engine.py,sha256=0t0TWDQPO3kjzztxtJ7qHLmVX9PaC0vMiGLjzknu-lo,2262
+django_jene_pdf-1.0.1.dist-info/METADATA,sha256=eK4RAPwQu6mZ1P1geppme6QQPk78JNrRAAGS2gPkM70,914
+django_jene_pdf-1.0.1.dist-info/RECORD,,
+django_jene_pdf-1.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_jene_pdf-1.0.1.dist-info/top_level.txt,sha256=yUlaxnOZG4n4UsUtk-ohnzQvcTws6TqbNZfFleOVJBw,19
+jeneprocessor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jeneprocessor/jenepdf.py,sha256=DYWJB_8c-15Fwj6viSlw3YFZsj2i9Ng59ldaw8QUkPY,932

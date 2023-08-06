@@ -1,0 +1,11 @@
+aioipfs/__init__.py,sha256=OybxIIE0cEgI5tiviruK4e0vhrll7Z-Th3fXqwad488,3286
+aioipfs/api.py,sha256=KLevHhFqIdTLXS_CDBBq9VK7bHZpt25DrojQ7TnUFKA,28771
+aioipfs/multi.py,sha256=WjGQ44kVQfR7r6GS8fYx4weKMVOl1FHfzLQZSSWPrQ4,7910
+aioipfs-0.3.dist-info/METADATA,sha256=cF0K_vswige8nOlEdEX1wyuXhsXUh18u4e9pxz0-NX8,3807
+aioipfs-0.3.dist-info/RECORD,,
+aioipfs-0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aioipfs-0.3.dist-info/entry_points.txt,sha256=Dkzf_rbyngAqQ6V9GDsD_bzAyI_i4Z6J3eM3q34KYaE,90
+aioipfs-0.3.dist-info/top_level.txt,sha256=JcubCWARLuiMV7n3rhvFKxGHcHCkoR5FXg4d32bml6U,16
+scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripts/asyncipfs.py,sha256=t0EwtZptUzvFX1eksPImPWmyAjpJW9Gf5YrQEEKHzDk,2970
+scripts/ipfsfind.py,sha256=PAKL3V8QnCUPr2DAJK0UZmHVoVlUVusKWUyTna74Mwk,4821

@@ -1,0 +1,7 @@
+README.md
+setup.py
+setuptools_test/__init__.py
+setuptools_test.egg-info/PKG-INFO
+setuptools_test.egg-info/SOURCES.txt
+setuptools_test.egg-info/dependency_links.txt
+setuptools_test.egg-info/top_level.txt

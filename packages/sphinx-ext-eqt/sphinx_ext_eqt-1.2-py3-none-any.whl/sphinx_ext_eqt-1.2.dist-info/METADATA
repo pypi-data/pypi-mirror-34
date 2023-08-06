@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sphinx-ext-eqt
+Version: 1.2
+Summary: A sphinx extension to integrate multiple choices questionnaires
+Home-page: https://github.com/naeka/sphinx-ext-eqt
+Author: Naeka
+Author-email: contact@naeka.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# sphinx-ext-eqt
+
+This is a sphinx extension to integrate multiple choices questionnaires
+

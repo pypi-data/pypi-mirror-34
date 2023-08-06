@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: kodi-addon-checker
+Version: 0.0.8
+Summary: Check kodi addons or whole kodi repositories for errors and best practices.
+Home-page: https://github.com/xbmc/addon-check
+Author: Team Kodi
+License: UNKNOWN
+Download-URL: https://github.com/xbmc/addon-check/archive/master.zip
+Keywords: kodi add-on add-on_checker
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: radon
+Requires-Dist: tabulate
+
+[![Build Status](https://travis-ci.org/xbmc/addon-check.svg?branch=master)](https://travis-ci.org/xbmc/addon-check)
+[![PyPI version](https://badge.fury.io/py/kodi-addon-checker.svg)](https://badge.fury.io/py/kodi-addon-checker)
+
+# Kodi Addon checker
+
+This tool checks the Kodi repo for best practices and creates problem and warning reports
+
+## Features
+
+- Checks if all images are valid images
+
+- Checks if all xml files are valid
+
+- Checks if addon.xml and license file exists for an addon
+
+- Checks if the addon id in addon.xml matches with the folder name
+
+- Checks if artwork is available and if the size is as defined
+
+- Checks if the addon uses the old strings.xml translation format
+
+- Check if the addon uses the old language folders (English vs resource.language.en_gb)
+
+- Checks for various blacklisted strings
+
+- Check for blacklisted filetypes
+
+## Installation
+
+```bash
+pip install kodi-addon-checker
+```
+
+## How to use
+
+1. Open Terminal in add-on repository directory
+2. Execute `kodi-addon-checker`
+
+

@@ -1,0 +1,17 @@
+click
+numpy
+pandas
+pillow
+tqdm
+requests
+
+[tests]
+mock
+nose
+coverage
+yanc
+preggy
+tox
+ipdb
+coveralls
+sphinx

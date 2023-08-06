@@ -1,0 +1,250 @@
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:13:05.2508784Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 23248, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 19.142 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:13:29.1796377Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 26576, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 19.156 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:15:34.3473816Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 21912, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.914 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:19:21.1668691Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 25460, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.814 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:21:49.2770890Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 26300, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.758 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:22:10.8421077Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 17708, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.629 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:22:49.4766684Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 3740, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.58 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:23:56.8341328Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 12336, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.521 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:24:31.8751271Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 24736, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.432 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:31:28.1093043Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 26540, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.991 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:32:02.4763218Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 11932, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.813 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:32:41.3494932Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 24580, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.822 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:33:32.9397088Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 19576, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.705 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:35:20.1012175Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 12108, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.63 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:58:16.9986906Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 12672, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.637 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T12:58:54.1598064Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 26060, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.482 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:01:44.2428983Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 22464, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.636 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:02:12.4722693Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 24184, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.525 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:02:40.1776944Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 19840, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.477 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:03:02.5073604Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 23236, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.374 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:03:32.2412839Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 20012, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.294 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:03:52.3411048Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 18664, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.225 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:04:10.7042872Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 20288, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.169 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:04:30.1879907Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 27628, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.09 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:05:01.9002979Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 27300, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.028 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:05:38.4027885Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 27636, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.927 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:12:24.7529808Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 22624, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.383 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:38:05.7592083Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 22636, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 19.322 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:39:38.2779101Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 6392, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 19.296 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T13:57:10.8691361Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 24784, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 19.092 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:00:50.0568900Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 20052, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.983 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:01:22.8303241Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 24088, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.958 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:02:46.8516655Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 24712, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.915 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:07:18.6943063Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 28276, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.763 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:07:33.5698840Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 29388, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.752 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:08:14.0404459Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 29632, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.651 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:09:02.1808438Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 12952, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.555 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:10:12.8383559Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 27432, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 18.568 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:27:20.9154021Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 9916, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.906 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:27:54.6205020Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 22368, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.759 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:28:28.9016435Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 30408, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.646 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:29:14.9606473Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 21488, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.558 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:29:51.7241831Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 30368, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.483 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:30:10.4123043Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 23388, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.493 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:30:36.6821138Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 31464, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.376 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:31:01.0176686Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 27764, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.364 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:31:04.3150364Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 26484, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.3 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:31:33.8843898Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 31572, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.252 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:31:47.2030998Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 11924, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.14 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.
+Time,	Thread,	Level,	Source,	Logger,	Message,	Exception
+2018-07-29T14:34:22.5581514Z, 1, Operations, Server, Raven.Server.Program,  Build 41, Version 4.1, SemVer 4.1.0-nightly-20180702-0430, Commit 3d3d3bf
+ PID 16844, 64 bits, 8 Cores, Arch: X64
+ 31.832 GBytes Physical Memory, 17.145 GBytes Available Memory
+ Using GC in server concurrent mode retaining memory from the OS.

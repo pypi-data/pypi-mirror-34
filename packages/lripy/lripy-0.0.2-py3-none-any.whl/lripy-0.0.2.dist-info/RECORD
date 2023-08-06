@@ -1,0 +1,16 @@
+lripy/__init__.py,sha256=6XP34JCsAIGHNoSK_duGy3dJcSMRt-UjB0EuKU28oYY,601
+lripy/dr.py,sha256=GGdV810L_-omQdZYwRmoj9NdQsi3AUbMgL-TobGVfDM,3336
+lripy/drcomplete.py,sha256=phV3d1kaQfx3wgXTC2i9S183xEmztcliitzGcrDE-OA,4631
+lripy/drhankelapprox.py,sha256=Iq6PYvJnxtHQGHscaFMfczbGXKD9ifcSgan8UgOHDlA,4078
+lripy/projhankel.py,sha256=P3tSYwRYuNmwfBBBzTyBSO958XXJ5OQdyfiRWTxhX6M,1391
+lripy/projindex.py,sha256=I2MsctuVAGmYEI208cCWlO_IfjO-sXVtmhM_UaNhzwM,792
+lripy/projrast.py,sha256=OUFpLBKOek22wo5bl3lB5qiH0POk7ccSRlal73wP2ws,3748
+lripy/projrnorm.py,sha256=YRv4zekscL-TW8Nb5716lwvWDett3sjn56SjuiHbmS0,19470
+lripy/proxnonconv.py,sha256=4-Y_tm12kwTU0SJDcfB39cTumifhN-Ll3Dj9Jf0IH1Q,2549
+lripy/proxnonconv_square.py,sha256=WXGixrDfJ4SovGY9J9PQEJdHDCD0QYq6ZC_fzCvrNBg,2604
+lripy/proxnormrast.py,sha256=DUVLAhr0NFymWF17eLIeWaqg_SDFXBTmlHBHLQ5P02g,3617
+lripy/proxnormrast_square.py,sha256=C8pPysCvS1x_TWZnqGmEQgvj2a6I1XK-B2OaTc6JDLA,2814
+lripy-0.0.2.dist-info/METADATA,sha256=-NlopIcfg1t19V7YdPhcV_WKWK291Sbp2j42D2TT4T4,4688
+lripy-0.0.2.dist-info/RECORD,,
+lripy-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+lripy-0.0.2.dist-info/top_level.txt,sha256=4Z4rxXDKLMSU_EcPc52WRu6OFBFiN1ofUH8hHYTOTTE,6

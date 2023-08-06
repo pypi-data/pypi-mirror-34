@@ -1,0 +1,12 @@
+README.md
+setup.py
+min/__init__.py
+min/cli/__init__.py
+min/cli/cli.py
+min/cli/config.py
+min/cli/io_ops.py
+miniman.egg-info/PKG-INFO
+miniman.egg-info/SOURCES.txt
+miniman.egg-info/dependency_links.txt
+miniman.egg-info/entry_points.txt
+miniman.egg-info/top_level.txt

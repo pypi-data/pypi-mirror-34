@@ -1,0 +1,13 @@
+dhis2/__init__.py,sha256=8u4ReOojxR2nRbq8ovKDvjSz_DH0TpfX4EW9V5nUGa8,931
+dhis2/__version__.py,sha256=1ctyspGmkMDQ_0FwMEfUjQ8z3B86C1QMLL97egCQOVI,231
+dhis2/api.py,sha256=mdFvZf1izzxKm2mVthvujgYp_ON_wvhwVGKpflYO2Ts,11335
+dhis2/common.py,sha256=7CnB44pekiewZ0hcAhpDrejTdIV3EWNP3J6s54J21-c,290
+dhis2/exceptions.py,sha256=0_5gTg7lzMCToCYDx_uPAGQnPtW8dgJuGzmQehbd5ak,825
+dhis2/logger.py,sha256=tZNNHIwD4g0vwXF007VXGTVsjGcHdtwvqKAMlR7IDOI,1002
+dhis2/utils.py,sha256=CfWjVEyGbtjsZaEVLWww6WNfbxVmQ5KiMc15TGcK504,2322
+dhis2.py-1.3.1.dist-info/DESCRIPTION.rst,sha256=IVxgJRstWY2BHutJmr-fviQHZj6DUZFCqrN3OD1WWFM,5896
+dhis2.py-1.3.1.dist-info/METADATA,sha256=YyJpQy6ey0AW7THo5-ix_0DJCdMppc_QKN8PtFvqk1s,6808
+dhis2.py-1.3.1.dist-info/RECORD,,
+dhis2.py-1.3.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+dhis2.py-1.3.1.dist-info/metadata.json,sha256=2aQKgWuYN6GTM2b5GExss4IZOsK7gSH4iXM9icpOD0Y,1121
+dhis2.py-1.3.1.dist-info/top_level.txt,sha256=LOjPD3dllCJKNuAW93wBAvZFwaNDAhKHm0IsR2SIwFo,6

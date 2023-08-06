@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gpu_optimize
+Version: 2018.8.1
+Summary: Drop-in replacement functions that run on NVIDIA GPUs, parallelized for speed
+Home-page: https://github.com/Jackmastr/gpu-optimize.git
+Author: Jackson Sipple
+Author-email: jsipple@berkeley.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: PyHal
+Version: 10.0.3
+Summary: A multipurpose library to perform great stuff in the most easy, short and pythonic way.
+Home-page: https://github.com/sirfoga/pyhal
+Author: sirfoga
+Author-email: sirfoga@protonmail.com
+License: UNKNOWN
+Keywords: library scratch maths
+Platform: UNKNOWN
+Requires-Dist: Crypto
+Requires-Dist: GitPython
+Requires-Dist: aiohttp
+Requires-Dist: aiosocks
+Requires-Dist: bs4
+Requires-Dist: colorama
+Requires-Dist: httplib2
+Requires-Dist: lxml
+Requires-Dist: matplotlib
+Requires-Dist: mutagen
+Requires-Dist: numpy
+Requires-Dist: oauth2client
+Requires-Dist: psutil
+Requires-Dist: pycrypto
+Requires-Dist: pymongo
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: send2trash
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: stem
+Requires-Dist: unidiff
+
+HAL
+
+A multipurpose library homemade from scratch to perform great stuff in a pythonic way
+
+Install
+
+- $ pip3 install . --upgrade --force-reinstall, from the source
+- $ pip3 install pyhal, via pip
+
+Questions and issues
+
+The Github issue tracker is only for bug reports and feature requests.
+

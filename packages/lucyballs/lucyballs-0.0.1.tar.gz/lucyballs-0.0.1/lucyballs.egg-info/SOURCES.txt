@@ -1,0 +1,8 @@
+README.md
+setup.py
+lucyballs/__init__.py
+lucyballs/lucy.py
+lucyballs.egg-info/PKG-INFO
+lucyballs.egg-info/SOURCES.txt
+lucyballs.egg-info/dependency_links.txt
+lucyballs.egg-info/top_level.txt

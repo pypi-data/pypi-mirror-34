@@ -1,0 +1,17 @@
+README.md
+setup.py
+accbpg/__init__.py
+accbpg/algorithms.py
+accbpg/applications.py
+accbpg/comparisons.py
+accbpg/ex_D_opt.py
+accbpg/ex_KL_regr.py
+accbpg/ex_PoissonL1.py
+accbpg/ex_PoissonL2.py
+accbpg/functions.py
+accbpg/trianglescaling.py
+accbpg.egg-info/PKG-INFO
+accbpg.egg-info/SOURCES.txt
+accbpg.egg-info/dependency_links.txt
+accbpg.egg-info/requires.txt
+accbpg.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+takumi/__init__.py,sha256=grMLYWbAofEMJsmonx0gCV-Qbz7hsCrrK9B9r6-PbYk,513
+takumi/_compat.py,sha256=ODzfotZ6LLq-Itn_YUCqxBI5nHn4rUWPLDx_L0ZTAY8,588
+takumi/exc.py,sha256=BlWyQ6lz2sUFyLAOgkdSrOIRtlO9DOP0v9VsedZ0tfU,615
+takumi/log.py,sha256=LTjOsKDXGNUFe5laL4dm5CHDZ0McTJwXoj8_YvQrxrI,2658
+takumi/service.py,sha256=vvaxOZPQzOXJuSAfRB3Gk9k7F3xNCEFySSGpaI0TduE,13070
+takumi/testing.py,sha256=2gAtoBgk6Ltz2xZXNhLzDSTpQmPwVrd_kDpImcgqTPM,3232
+takumi/hook/__init__.py,sha256=VFNscXfuS7C9MMSj3HTIBoHPhG7k9G8-Dg9kRgFeCFY,1522
+takumi/hook/api.py,sha256=HkA1d7mwE76ZYIHElik_WErcfXxO_-mCsdRQucNpU-M,1104
+takumi-0.1.8.dist-info/DESCRIPTION.rst,sha256=VVmYjTSGdsJHNGcjSDlT5_1lYyi1L2K_OYoDDUwlxfU,930
+takumi-0.1.8.dist-info/METADATA,sha256=V6_w0fVHgeCYo_woZnrxTiPsQE4ds9O5vMycD4QQw2A,1271
+takumi-0.1.8.dist-info/metadata.json,sha256=fwG2nFP9QR6rEGBXUZsvjaYKlPkd5CoDHgQ0QPnr7uk,505
+takumi-0.1.8.dist-info/RECORD,,
+takumi-0.1.8.dist-info/top_level.txt,sha256=-jf3Az0gfxuZxwCj3XqkKfFU9lY6f2aYsTwDIts74dE,7
+takumi-0.1.8.dist-info/WHEEL,sha256=AvR0WeTpDaxT645bl5FQxUK6NPsTls2ttpcGJg3j1Xg,110

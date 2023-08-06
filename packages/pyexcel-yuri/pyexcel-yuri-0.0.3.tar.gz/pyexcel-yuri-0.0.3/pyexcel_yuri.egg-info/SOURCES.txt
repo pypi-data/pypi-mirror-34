@@ -1,0 +1,16 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pyexcel_yuri/__init__.py
+pyexcel_yuri/csvr.py
+pyexcel_yuri/csvw.py
+pyexcel_yuri/xlsxr.py
+pyexcel_yuri/xlsxw.py
+pyexcel_yuri.egg-info/PKG-INFO
+pyexcel_yuri.egg-info/SOURCES.txt
+pyexcel_yuri.egg-info/dependency_links.txt
+pyexcel_yuri.egg-info/not-zip-safe
+pyexcel_yuri.egg-info/requires.txt
+pyexcel_yuri.egg-info/top_level.txt

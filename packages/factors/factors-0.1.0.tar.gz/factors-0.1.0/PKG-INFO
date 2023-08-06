@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: factors
+Version: 0.1.0
+Summary: Generates actuarial factors for premium calculations.
+Home-page: https://github.com/Oxylo/factors
+Author: Pieter Marres
+Author-email: pmarres@oxylo.com
+License: MIT
+Download-URL: https://github.com/Oxylo/factors/archive/0.1.0.tar.gz
+Description: [![pypi-version]][pypi]
+        
+        # factors
+        
+        Generates actuarial factors for premium calculations
+        
+        ## Installation
+        
+            $ pip install factors
+        
+        
+        ## Requirements
+        
+        These dependencies are automatically installed:
+        
+            Numpy
+            Pandas
+            xlrd
+            openpyxl
+        
+        
+        ## Example
+        
+            >> from factors.examples import example1
+            >> example1()
+        
+        
+        ## Changelog
+        See CHANGELOG.md for the latest changes.
+        
+        [changelog]: CHANGELOG.md
+        [pypi-version]: https://img.shields.io/pypi/v/factors.svg
+        [pypi]: https://pypi.python.org/pypi/factors
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

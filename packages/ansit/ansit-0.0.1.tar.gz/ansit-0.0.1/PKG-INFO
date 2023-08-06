@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: ansit
+Version: 0.0.1
+Summary: Sophisticated tool for testing configuration managment
+Home-page: https://github.com/Jakski/ansit
+Author: Jakub Pieńkowski
+Author-email: jakski@sealcode.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License

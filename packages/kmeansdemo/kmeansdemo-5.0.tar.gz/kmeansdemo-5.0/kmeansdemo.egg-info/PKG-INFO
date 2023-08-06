@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: kmeansdemo
+Version: 5.0
+Summary: kmeans
+Home-page: UNKNOWN
+Author: abhi
+Author-email: abhi@yahoo.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3

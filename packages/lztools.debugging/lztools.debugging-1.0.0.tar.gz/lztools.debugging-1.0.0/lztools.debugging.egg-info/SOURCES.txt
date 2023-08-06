@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+lztools/debugging.py
+lztools.debugging.egg-info/PKG-INFO
+lztools.debugging.egg-info/SOURCES.txt
+lztools.debugging.egg-info/dependency_links.txt
+lztools.debugging.egg-info/entry_points.txt
+lztools.debugging.egg-info/not-zip-safe
+lztools.debugging.egg-info/requires.txt
+lztools.debugging.egg-info/top_level.txt

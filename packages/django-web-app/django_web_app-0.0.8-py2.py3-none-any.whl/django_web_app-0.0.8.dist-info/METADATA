@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-web-app
+Version: 0.0.8
+Summary: a django web app
+Home-page: https://gitee.com/upcwangying/UpcwangyingWebApp
+Author: Ying Wang
+Author-email: upcwangying@126.com
+License: MIT
+Project-URL: Documentation, https://docs.upcwangying.com/
+Project-URL: Source, https://gitee.com/upcwangying/UpcwangyingWebApp
+Requires-Dist: django (>=1.10)
+
+Web App
+
+

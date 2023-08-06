@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: trio-aiohttp
+Version: 0.2.0
+Summary: Helpers for running aiohttp under Trio
+Home-page: https://github.com/smurfix/trio-aiohttp
+Author: Matthias Urlichs
+Author-email: matthias@urlichs.de
+License: GPLv3 or later
+Description: trio-aiohttp
+        ============
+        
+        Welcome to `trio-aiohttp <https://github.com/smurfix/trio-aiohttp>`__!
+        
+        This package contains helpers for running aiohttp under Trio. Specifically,
+        this code allows you to run a basic Trio-based web server, including WobSocket
+        supprt.
+        
+        License: GPLv3 as published by the Free Software Foundation, or (at your option) any later version
+        
+        
+Keywords: html,server
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Framework :: Trio
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: Trio
+Requires-Python: >=3.5

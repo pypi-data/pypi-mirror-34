@@ -1,0 +1,5 @@
+wagtail<2.2,>=1.10
+django-flags<4.0,>=3.0
+
+[testing]
+coverage>=3.7.0

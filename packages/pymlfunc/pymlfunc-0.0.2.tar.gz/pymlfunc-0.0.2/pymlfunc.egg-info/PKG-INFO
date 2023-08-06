@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pymlfunc
+Version: 0.0.2
+Summary: Implementation of some useful Matlab functions that are missing from numpy/scipy
+Home-page: https://github.com/fzyukio/python-matlab-functions
+Author: Yukio Fukuzawa
+Author-email: y.fukuzawa@massey.ac.nz
+License: UNKNOWN
+Description: # Install
+        ```bash
+        pip install pymlfunc 
+        ```
+        
+        # List of functions
+         - normxcorr2
+         - tictoc (as context)
+         - sub2ind
+         - ind2sub
+        
+        
+        # Usage
+        ```python
+        from pymlfunc import *
+        
+        ```
+        
+        # Test
+        ```bash
+        nosetests --nocapture -v
+        ``` 
+         
+        # Check coding standard:
+        ```bash
+        gitlab-runner exec docker check-coding-standard-compliance
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

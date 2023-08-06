@@ -1,0 +1,8 @@
+README.md
+setup.py
+agcod/__init__.py
+agcod/client.py
+agcod.egg-info/PKG-INFO
+agcod.egg-info/SOURCES.txt
+agcod.egg-info/dependency_links.txt
+agcod.egg-info/top_level.txt

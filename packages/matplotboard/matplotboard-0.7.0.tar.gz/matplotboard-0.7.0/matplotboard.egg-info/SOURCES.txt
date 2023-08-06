@@ -1,0 +1,13 @@
+README.md
+setup.py
+matplotboard/__init__.py
+matplotboard.egg-info/PKG-INFO
+matplotboard.egg-info/SOURCES.txt
+matplotboard.egg-info/dependency_links.txt
+matplotboard.egg-info/requires.txt
+matplotboard.egg-info/top_level.txt
+matplotboard/static/css/default.css
+matplotboard/templates/base.j2
+matplotboard/templates/dump.j2
+matplotboard/templates/report.j2
+matplotboard/templates/slides.j2

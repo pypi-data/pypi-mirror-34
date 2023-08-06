@@ -1,0 +1,50 @@
+/*
+ * mautrix-telegram - A Matrix-Telegram puppeting bridge
+ * Copyright (C) 2018 Tulir Asokan
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+form > div {
+	display: none;
+}
+
+form[data-status="request"]  > div.status-request,
+form[data-status="code"]     > div.status-code,
+form[data-status="password"] > div.status-password {
+	display: initial;
+}
+
+.container {
+	margin-top: 3rem;
+	max-width: 60rem;
+}
+
+.error, .message {
+	border-radius: .25rem;
+	padding: .5rem 1rem;
+	border: 1px solid transparent;
+	margin: .5rem 0;
+}
+
+.error {
+	border-color: #f5c6cb;
+	background-color: #f8d7da;
+	color: #721c24;
+}
+
+.message {
+	border-color: #c3e6cb;
+	background-color: #d4edda;
+	color: #155724;
+}

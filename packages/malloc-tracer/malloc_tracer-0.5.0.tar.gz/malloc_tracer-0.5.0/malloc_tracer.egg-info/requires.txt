@@ -1,0 +1,7 @@
+
+[doc]
+sphinx
+
+[test]
+coverage
+nose

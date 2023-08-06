@@ -1,0 +1,10 @@
+deprecation_factory/__init__.py,sha256=aB_6SmlJcWlJcEnmoS4X2A_k804yXVVqY7HAOxPYU9E,224
+deprecation_factory/_version.py,sha256=Kn2IGmiUit__4UAUpBFFguwqIP8ZBZWCVeNo37kZUoY,536
+deprecation_factory/deprecation_factory.py,sha256=-69FlwydOQjW6J3-5Xcj_EtFizhf5vqlI-fVMiOzEk4,5095
+deprecation_factory/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deprecation_factory/tests/test_kwarg_deprecation.py,sha256=vvtL1-qOupgKXz_CTiBHG8dhnAAnEZUiLIKCaybkfMY,6752
+deprecation_factory-0.1.4.dist-info/LICENSE.txt,sha256=gxRfgZ6jegaAn94Q5Xp0-FSiSsEQgoO07EnRjuP1VXQ,1514
+deprecation_factory-0.1.4.dist-info/METADATA,sha256=8QMypzysZfvqdfNFJTTG4-jtMTpO7zHQYabcCi3KKB0,4209
+deprecation_factory-0.1.4.dist-info/RECORD,,
+deprecation_factory-0.1.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+deprecation_factory-0.1.4.dist-info/top_level.txt,sha256=ktNBftvfsWrx8UZywnUsMhXKssz12TLbmZRubfrEAqA,20

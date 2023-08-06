@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.cfg
+setup.py
+flaskbb_plugin_vanity.egg-info/PKG-INFO
+flaskbb_plugin_vanity.egg-info/SOURCES.txt
+flaskbb_plugin_vanity.egg-info/dependency_links.txt
+flaskbb_plugin_vanity.egg-info/entry_points.txt
+flaskbb_plugin_vanity.egg-info/not-zip-safe
+flaskbb_plugin_vanity.egg-info/requires.txt
+flaskbb_plugin_vanity.egg-info/top_level.txt
+vanity/__init__.py
+vanity/models.py
+vanity/views.py
+vanity/migrations/201807261925_96daae59325b_like_functionality.py
+vanity/templates/vanity_like_button.html

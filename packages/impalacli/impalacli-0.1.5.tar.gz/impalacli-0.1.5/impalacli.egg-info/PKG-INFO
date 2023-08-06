@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: impalacli
+Version: 0.1.5
+Summary: CLI for Impala Database. With syntax highlighting.
+Home-page: https://github.com/tranch/impalacli
+Author: tranch
+Author-email: tranch.xiao@gmail.com
+License: BSD
+Description: CLI for Impala Database. With syntax highlighting.
+Platform: any

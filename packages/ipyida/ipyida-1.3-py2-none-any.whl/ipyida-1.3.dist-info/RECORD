@@ -1,0 +1,11 @@
+ipyida/__init__.py,sha256=VJWmy6ZKVkcBGRiMxZJiMVmurXdmC1wHThknjw_TNa8,213
+ipyida/ida_plugin.py,sha256=Pcee8L4fFDBrYiJMyPZ2v7C6_UYsjXVESCOv6oFwQ2M,2272
+ipyida/ida_qtconsole.py,sha256=O7emnG3c3-_YqE3jjlFRs38TJqNsGqlJ8WsxoqwF3qU,5772
+ipyida/ipyida_plugin_stub.py,sha256=MBXJUEw9dUYHaKAmsUWvkz8549Kf0o9b0DhY9CocVDk,410
+ipyida/kernel.py,sha256=x9FlAxyD4ozKq40-M0un9o53alUYcCwqTwAFVCxqlPo,4150
+ipyida-1.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+ipyida-1.3.dist-info/METADATA,sha256=cY5nX_p88UtuGg-Xd6XUViNoOvMUErVRa38c_DfMK_Q,328
+ipyida-1.3.dist-info/RECORD,,
+ipyida-1.3.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+ipyida-1.3.dist-info/metadata.json,sha256=es72jKaN7AnKwU82nbJCvFmW68hZEMP8x6aSQFPp4oc,536
+ipyida-1.3.dist-info/top_level.txt,sha256=0TQosBOexphyJXN_lH5dx7oIuXhYEe1wxc950V9kUsY,7

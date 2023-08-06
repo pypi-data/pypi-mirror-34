@@ -1,0 +1,69 @@
+# Convert CSV object files to Apache Parquet with IBM Cloud Object Storage
+
+This tool was developed to help users on IBM Cloud convert their CSV objects in IBM Cloud Object Storage (COS) to Apache Parquet objects. It's developed using Python 3.6.6 and will work with Python 3 versions up to 3.6.6.
+
+### Installation
+To install the tool, run `pip` with:
+
+```
+pip install csvtoparquet
+```
+
+After the tool's installed, you must have an IBM Cloud API Key and IBM COS service to make the command line tool work. It requires that you insert your IBM Cloud API Key and a IBM COS service. You can find the API Key from your IBM Cloud management panel: **Manage > Security > Platform API Keys**. If you don't have IBM COS as a service, you can find it in the cloud **Catalog** under Object Storage, which has a lite tier (free).
+
+If you already have the COS service, you'll need the name of the bucket where your CSV objects are located. Right now, the tool doesn't support multiple buckets, so you can't convert objects from one bucket and store them in another. Nonetheless, you can rename your converted objects to use prefixes such as:
+
+```
+[object name] - mycsvfile.csv
+[renamed object stored as parquet] - new/prefix/mycsvfile.parquet
+```
+
+The file extension `.parquet` will be automatically added to your new object name.
+
+### Usage
+
+Run `csvtoparquet` on the command line using the following required flags:
+
+```
+csvtoparquet -a <IBM_CLOUD_API_KEY> -e <IBM_CLOUD_COS_ENDPOINT> -b <IBM_COS_BUCKET>
+```
+
+- `-a` or `--apikey` - IBM Cloud API Key
+- `-e` or `--endpoint` - COS bucket endpoint
+- `-b` or `--bucket` - COS bucket name where the CSV objects are stored
+
+After using the flag you can append the following flags to the command:
+
+- `-l` or `--list` - Lists all the objects in the bucket
+- `-c` or `--csv`  - Lists all CSV objects in the bucket 
+- `-f` or `--file` - Name of the CSV object you want to convert - used with `-n`
+- `-n` or `--name` - Name of the **new** object - can include prefixes - used with `-f`
+
+#### Converting objects
+
+##### Convert one object
+
+Input:
+```
+csvtoparquet -a <IBM_CLOUD_API_KEY> -e <IBM_CLOUD_COS_ENDPOINT> -b <IBM_COS_BUCKET> \
+-f csvfile.csv -n csvfile
+```
+
+Output:
+```
+Now Converting: csvfile.csv --> csvfile.parquet
+```
+
+##### Convert more than one object
+
+Input: 
+```
+csvtoparquet -a <IBM_CLOUD_API_KEY> -e <IBM_CLOUD_COS_ENDPOINT> -b <IBM_COS_BUCKET> \ 
+-f csvfile.csv anothercsvfile.csv -n csvfile new/csvfile
+```
+
+Output:
+```
+Now Converting: csvfile.csv --> csvfile.parquet
+Now Converting: anothercsvfile.csv --> new/csvfile.parquet
+```

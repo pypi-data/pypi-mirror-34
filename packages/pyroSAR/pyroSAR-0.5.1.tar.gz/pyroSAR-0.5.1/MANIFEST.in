@@ -1,0 +1,2 @@
+recursive-include pyroSAR/snap *.xml
+recursive-include examples *

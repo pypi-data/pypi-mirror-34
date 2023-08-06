@@ -1,0 +1,5 @@
+numpy
+pathos>=0.2
+progressbar2
+scoop
+spatialist>=0.2.5

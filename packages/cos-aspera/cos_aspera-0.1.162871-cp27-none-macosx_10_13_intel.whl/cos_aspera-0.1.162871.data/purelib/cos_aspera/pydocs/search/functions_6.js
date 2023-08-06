@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['http_5ffallback',['http_fallback',['../classtransferspec_1_1_transfer_spec.html#ae86ca7231b0efbbd4caaf0b3757d4e6d',1,'transferspec.TransferSpec.http_fallback(self)'],['../classtransferspec_1_1_transfer_spec.html#a2075a7697326c0221bbdeca4625e3a73',1,'transferspec.TransferSpec.http_fallback(self, value)']]],
+  ['http_5ffallback_5fport',['http_fallback_port',['../classtransferspec_1_1_transfer_spec.html#ae6d6a60d0b46526027fc16351c806c37',1,'transferspec.TransferSpec.http_fallback_port(self)'],['../classtransferspec_1_1_transfer_spec.html#a2c5b52f2233927f672a8bf2ce9e44a09',1,'transferspec.TransferSpec.http_fallback_port(self, value)']]],
+  ['https_5fcertificate_5ffilename',['https_certificate_filename',['../classtransferspec_1_1_transfer_spec.html#a407b0d08ee37b091f5f2cfa97986fd06',1,'transferspec.TransferSpec.https_certificate_filename(self)'],['../classtransferspec_1_1_transfer_spec.html#a83a0a5b57c1793adccf8e028229fd8db',1,'transferspec.TransferSpec.https_certificate_filename(self, value)']]],
+  ['https_5fkey_5ffilename',['https_key_filename',['../classtransferspec_1_1_transfer_spec.html#a4d9e7d78f4b09de79596722fcf80a368',1,'transferspec.TransferSpec.https_key_filename(self)'],['../classtransferspec_1_1_transfer_spec.html#aea0bce8e8f9ce1112ba5361a62ceae69',1,'transferspec.TransferSpec.https_key_filename(self, value)']]],
+  ['https_5fproxy',['https_proxy',['../classtransferspec_1_1_transfer_spec.html#a445d49add24de2475441eff140b61ffc',1,'transferspec.TransferSpec.https_proxy(self)'],['../classtransferspec_1_1_transfer_spec.html#a788f7f7015d5fbf69d799c31f379dbbc',1,'transferspec.TransferSpec.https_proxy(self, value)']]]
+];

@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+phonetic2bengali/__init__.py
+phonetic2bengali/phonetic2bengalifunc.py
+phonetic2bengali.egg-info/PKG-INFO
+phonetic2bengali.egg-info/SOURCES.txt
+phonetic2bengali.egg-info/dependency_links.txt
+phonetic2bengali.egg-info/requires.txt
+phonetic2bengali.egg-info/top_level.txt
+phonetic2bengali/pyavrophonetic/__init__.py
+phonetic2bengali/pyavrophonetic/avro.py
+phonetic2bengali/pyavrophonetic/config.py
+phonetic2bengali/pyavrophonetic/resources/avrodict.json
+phonetic2bengali/pyavrophonetic/utils/__init__.py
+phonetic2bengali/pyavrophonetic/utils/count.py
+phonetic2bengali/pyavrophonetic/utils/validate.py

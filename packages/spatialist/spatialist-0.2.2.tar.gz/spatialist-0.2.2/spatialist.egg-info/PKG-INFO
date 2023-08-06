@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: spatialist
+Version: 0.2.2
+Summary: A Python module for spatial data handling
+Home-page: https://github.com/johntruckenbrodt/spatialist.git
+Author: John Truckenbrodt
+Author-email: john.truckenbrodt@uni-jena.de
+License: MIT
+Description: an in-depth package description can be found on GitHub [here]("https://github.com/johntruckenbrodt/spatialist")
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=2.7.9

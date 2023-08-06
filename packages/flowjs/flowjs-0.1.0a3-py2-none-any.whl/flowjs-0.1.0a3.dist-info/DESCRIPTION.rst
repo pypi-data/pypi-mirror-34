@@ -1,0 +1,115 @@
+Copyright (c) 2018 Huw Jones
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Download-URL: https://github.com/huwcbjones/py-flowjs/archive/master.zip
+Description: flow.js python server
+        =======================
+        
+        Python library for handling chunk uploads (based on flow-php-server). Library contains helper methods for:
+         * Testing if uploaded file chunk exists.
+         * Validating file chunk
+         * Creating separate chunks folder
+         * Validating uploaded chunks
+         * Merging all chunks to a single file
+        
+        The library currently only supports Cyclone, but it is trivial to implement interfaces for other web servers (flask, etc).
+        
+        This library is compatible with HTML5 file upload library: https://github.com/flowjs/flow.js
+        
+        How to get started?
+        --------------
+        Install the pip module:
+        ```
+        pip install flowjs
+        ```
+        
+        Create a new py file named `upload.py`:
+        ```python
+        # Import flowjs
+        import uuid
+        import os
+        
+        import flowjs
+        
+        config = flowjs.Config()
+        request = flowjs.requests.CycloneRequest(cyclone_http_request)
+        upload_directory = "/path/to/final/upload/directory"
+        upload_file_name = uuid.uuid1().hex + "_" + request.get_file_name()
+        upload_path = os.path.join(upload_directory, upload_file_name)
+        try:
+            result = flowjs.save(upload_path, config, request)
+            if result:
+                # file was saved to path
+                pass
+            else:
+                # not final chunk or invalid request
+                pass
+        except flowjs.NoContent:
+            # Set status to 204 No Content
+            # Do _not_ return any content in the response body
+        except flowjs.BadRequest:
+            # Set status to 400 Bad Request
+        ```
+        
+        Config
+        ------
+        
+        ## tempDir
+        Temporary directory where chunks are stored (will default to your system temp dir).
+        
+        Make sure that the temp path exists and is writable. All chunks will be saved in this folder.
+        
+        
+        ## hashNameCallback
+        Function applied to the request to generate a unique identifier for the file.
+        
+        Defaults to a SHA1 hash of the `flowIdentifier`
+        
+        
+        ## preProcessCallback
+        Function applied before each chunk is merged into the resultant file.
+        
+        
+        ## deleteChunksOnSave
+        Should the server delete the file chunks after it saves the final file.
+        
+        Defaults to `True`
+        
+        
+        Other Web Servers
+        -----------------
+        
+        To use this module with other webservers, implement the `IRequest` and `IFile` interfaces with your webserver's specific implementation details.
+        
+        Contribution
+        ------------
+        
+        Your participation in development is very welcome!
+        
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development :: Libraries

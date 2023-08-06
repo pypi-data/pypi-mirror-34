@@ -1,0 +1,6 @@
+mysqlclient
+requests
+pykafka
+pyodbc
+deprecated
+retrying

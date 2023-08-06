@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: GENDIS
+Version: 1.0.7
+Summary: Contains an implementation (sklearn API) of the algorithm proposed in "GENDIS: GEnetic DIscovery of Shapelets" and code to reproduce all experiments.
+Home-page: https://github.com/IBCNServices/GENDIS
+Author: Gilles Vandewiele
+Author-email: gilles.vandewiele@ugent.be
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: deap (==1.2.2)
+Requires-Dist: matplotlib (==2.1.2)
+Requires-Dist: numpy (==1.14.5)
+Requires-Dist: pandas (==0.23.0)
+Requires-Dist: pathos (==0.2.2)
+Requires-Dist: scipy (==1.1.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: tqdm (==4.23.2)
+Requires-Dist: tslearn (==0.1.18.3)
+Requires-Dist: nose2 (==0.8.0)
+
+UNKNOWN
+
+

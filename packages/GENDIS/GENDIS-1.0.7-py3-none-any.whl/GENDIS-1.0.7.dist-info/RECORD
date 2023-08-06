@@ -1,0 +1,8 @@
+GENDIS-1.0.7.dist-info/METADATA,sha256=8hKptuuhcfjxrJ7flB7aXopmSTLUmTQzMxm0tEoOjKY,695
+GENDIS-1.0.7.dist-info/RECORD,,
+GENDIS-1.0.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+GENDIS-1.0.7.dist-info/top_level.txt,sha256=ztt9BHDlNp_MHFP-NF1TVV9QuHkHnXEvpcqRoev0Lbk,7
+gendis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gendis/genetic.py,sha256=F27HaIX0-UOX5LGXw9nxYvOm6_vQKyDvJ_IR0FVJn_4,20081
+gendis/mstamp_stomp.py,sha256=SiGQSFuVWqa9WiEN_FR3v0pgI9MJa-UIhDa5tF23svg,8414
+gendis/util.py,sha256=NbFEK43_BzcGB0bMa1dqweIJQ_ZJFkt43ptWoIHpesc,1206

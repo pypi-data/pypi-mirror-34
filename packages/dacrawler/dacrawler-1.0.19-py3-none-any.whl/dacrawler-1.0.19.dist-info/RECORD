@@ -1,0 +1,10 @@
+dacrawler/__init__.py,sha256=-K7w9nrUujlf6Inl65cTybjnyrvWXuoTiqsIxp3XMg4,1276
+dacrawler/dd_amazon.py,sha256=CN6scG_taVLRje82Zd1yfWkpeRHKwublvjDpnAuu6Fc,5534
+dacrawler/ec2.py,sha256=Lk6F9WCTDD2jDnjt5c19edVkwyot8D2e52MX2NhSpEI,15541
+dacrawler/parse.py,sha256=4rPmAsP4agPI9omwjzkYXGVxsVPTGLV1NyN4-_me7IQ,5528
+dacrawler/s3.py,sha256=IGXqnTmWnbuaBX94HG1BF52asyRZ4-NB8x0PU8FhLYg,3674
+dacrawler/scrap.py,sha256=MhWamwj8PEsV_re5e7w1V29YREaZXKtNcO3B3wg8jtw,2344
+dacrawler-1.0.19.dist-info/METADATA,sha256=NDWVPuR_pEKVuwJPPd_B-lHZGEH3NcyTjn5rumsF7Gw,426
+dacrawler-1.0.19.dist-info/RECORD,,
+dacrawler-1.0.19.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dacrawler-1.0.19.dist-info/top_level.txt,sha256=641FYuKBJYl46PieMJ0YTMsYTaUvQ_clflIjWgdB2ZU,10

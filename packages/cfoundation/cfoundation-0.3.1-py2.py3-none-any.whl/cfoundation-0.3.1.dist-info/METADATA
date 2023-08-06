@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: cfoundation
+Version: 0.3.1
+Summary: Framework for building command line interfaces built on top of cement
+Home-page: https://github.com/codejamninja/cfoundation
+Author: Jam Risser
+Author-email: jam@codejam.ninja
+License: MIT
+Keywords: cli framework command line interface cement terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: backports.shutil-get-terminal-size (==1.0.0)
+Requires-Dist: cement (==2.10.12)
+Requires-Dist: colorama (==0.3.9)
+Requires-Dist: cursor (==1.2.0)
+Requires-Dist: enum34 (==1.1.6)
+Requires-Dist: log-symbols (==0.0.11)
+Requires-Dist: munch (==2.3.2)
+Requires-Dist: pydash (==4.5.0)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: spinners (==0.0.19)
+Requires-Dist: termcolor (==1.1.0)
+
+cfoundation
+===========
+
+|GitHub stars|
+
+   Framework for building command line interfaces built on top of cement
+
+Please ★ this repo if you found it useful ★ ★ ★
+
+Features
+--------
+
+-  Create controllers
+-  Create services
+-  Custom logger
+-  Support for spinners
+
+Installation
+------------
+
+.. code:: sh
+
+   pip install cfoundation
+
+Dependencies
+------------
+
+-  `Python 3 <https://www.python.org/download/releases/3.0>`__
+
+Usage
+-----
+
+`Contribute <https://github.com/codejamninja/cfoundation/blob/master/CONTRIBUTING.md>`__
+usage docs
+
+Support
+-------
+
+Submit an
+`issue <https://github.com/codejamninja/cfoundation/issues/new>`__
+
+Screenshots
+-----------
+
+`Contribute <https://github.com/codejamninja/cfoundation/blob/master/CONTRIBUTING.md>`__
+a screenshot
+
+Contributing
+------------
+
+Review the `guidelines for
+contributing <https://github.com/codejamninja/cfoundation/blob/master/CONTRIBUTING.md>`__
+
+License
+-------
+
+`MIT
+License <https://github.com/codejamninja/cfoundation/blob/master/LICENSE>`__
+
+`Jam Risser <https://codejam.ninja>`__ © 2018
+
+Changelog
+---------
+
+Review the
+`changelog <https://github.com/codejamninja/cfoundation/blob/master/CHANGELOG.md>`__
+
+Credits
+-------
+
+-  `Jam Risser <https://codejam.ninja>`__ - Author
+
+Support on Liberapay
+--------------------
+
+A ridiculous amount of coffee ☕ ☕ ☕ was consumed in the process of
+building this project.
+
+`Add some fuel <https://liberapay.com/codejamninja/donate>`__ if you’d
+like to keep me going!
+
+|Liberapay receiving| |Liberapay patrons|
+
+.. |GitHub stars| image:: https://img.shields.io/github/stars/codejamninja/cfoundation.svg?style=social&label=Stars
+   :target: https://github.com/codejamninja/cfoundation
+.. |Liberapay receiving| image:: https://img.shields.io/liberapay/receives/codejamninja.svg?style=flat-square
+   :target: https://liberapay.com/codejamninja/donate
+.. |Liberapay patrons| image:: https://img.shields.io/liberapay/patrons/codejamninja.svg?style=flat-square
+   :target: https://liberapay.com/codejamninja/donate
+
+

@@ -1,0 +1,9 @@
+exclude .gitignore
+exclude .gitreview
+
+recursive-include doc *
+include requirements.txt
+include test-requirements.txt
+include test_*py
+include LICENSE
+recursive-include tests *

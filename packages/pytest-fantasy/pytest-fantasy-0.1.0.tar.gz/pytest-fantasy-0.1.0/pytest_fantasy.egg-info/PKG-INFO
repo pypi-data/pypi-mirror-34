@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pytest-fantasy
+Version: 0.1.0
+Summary: Pytest plugin for Flask Fantasy Framework
+Home-page: https://github.com/wangwenpei/pytest-fantasy
+Author: WANG WENPEI
+Author-email: stormxx@1024.engineer
+License: MIT
+Download-URL: https://github.com/wangwenpei/pytest-fantasy/tarball/master
+Description: UNKNOWN
+Keywords: fantasy,flask
+Platform: UNKNOWN

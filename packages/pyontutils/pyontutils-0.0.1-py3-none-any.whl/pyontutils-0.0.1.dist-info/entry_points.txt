@@ -1,0 +1,13 @@
+[console_scripts]
+graphml_to_ttl = pyontutils.graphml_to_ttl:main
+ilxcli = pyontutils.ilxcli:main
+necromancy = pyontutils.necromancy.py:main
+ontload = pyontutils.ontload:main
+ontutils = pyontutils.ontutils:main
+overlaps = pyontutils.overlaps:main
+qnamefix = pyontutils.qnamefix:main
+scig = pyontutils.scig:main
+scigraph-codegen = pyontutils.scigraph:main
+scigraph-deploy = pyontutils.scigraph_deploy:main
+ttlfmt = pyontutils.ttlfmt:main
+

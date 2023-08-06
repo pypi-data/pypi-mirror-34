@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: datetimex
+Version: 1.0.0
+Summary: A Python library that formats strings with date and time.
+Home-page: https://github.com/GreenLotusx/DateTimex
+Author: greenlotusx
+Author-email: greenlotusx@163.com
+License: MIT
+Description: A Python library that can be converted to the corresponding date and time by the incoming legal string.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

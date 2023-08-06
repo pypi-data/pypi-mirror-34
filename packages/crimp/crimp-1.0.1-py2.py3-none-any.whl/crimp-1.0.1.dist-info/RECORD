@@ -1,0 +1,10 @@
+crimp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crimp/__main__.py,sha256=eABOgagCJGpNXWg0HXEHiFsI1oHcbnKbUoEin1X8fbA,134
+crimp/runtime.py,sha256=wdLLDwIcbqxzQBM7es0aOwYlQ2zfaUmmSGkiMW5mf5w,8852
+crimp/tests/__init__.py,sha256=4YeX5J1BFlG6qQedbCdjkwy0oQFCpBSYMjvBFkZKLhc,216
+crimp/tests/test_runtime.py,sha256=R-dtwJjdWUkVTO5dPD4Zl_w_UVyJOQzWOvfhEkFnoD8,16906
+crimp-1.0.1.dist-info/METADATA,sha256=y69cbqu3geIvU7reObahkIEYi_JJjqWwWeYQONcqzp0,7455
+crimp-1.0.1.dist-info/RECORD,,
+crimp-1.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+crimp-1.0.1.dist-info/entry_points.txt,sha256=8gy1Ai-hphuAf7s9yQgV53i7RtoM_860ebfzz7913Vo,46
+crimp-1.0.1.dist-info/top_level.txt,sha256=UobGvDyR64ktd4-t0owIt1qJzBE-go9B2xhifjCuaUA,6

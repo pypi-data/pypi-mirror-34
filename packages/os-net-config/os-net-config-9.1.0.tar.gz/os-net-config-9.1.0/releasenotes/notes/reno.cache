@@ -1,0 +1,51 @@
+---
+file-contents:
+  releasenotes/notes/add-neutron-route-schema-support-e8e20a8c3b79d14d.yaml:
+    features: ['Adds support to use ``destination`` and ``nexthop`` as keys in the
+
+        ``Route`` objects. ``destination`` maps to ``ip_netmask`` and ``nexthop``
+
+        maps to ``next_hop``. Neutron Route objects use ``destination`` and
+
+        ``nexthop``, supporting the same schema allow passing a neutron route
+
+        directly to os-net-config.
+
+        ']
+  releasenotes/notes/add_contrail_vrouter_vlan_linux_bond_type-0a89f3499a7ab08b.yaml:
+    fixes: ['This fix adds support for member interfaces of type vlan and linux_bond
+
+        ']
+    issues: ['Currently the member interface for a contrail vrouter interface can
+        only
+
+        be of type interface. Types vlan and linux_bond are needed.
+
+        ']
+  releasenotes/notes/check-ovs-ef665418762ca123.yaml:
+    fixes: ['OVS is not required for os-net-config to run but some objects (OvsBond,
+        OvsBridge etc.) rely on it being installed. This adds a check to ensure OVS
+        is installed before creating objects that need it.']
+  releasenotes/notes/dpdk-on-mellanox-nics-1d8fdb843a4e2b60.yaml:
+    features: ['Adding dpdk support in meallnox nics.
+
+        Dpdk now fully suuported in mellanox nics.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/add-neutron-route-schema-support-e8e20a8c3b79d14d.yaml
+    - !!binary |
+      MjA2NjE1Mjg4YWIyODQyMzMxMzRkYTRhYjU1Mjc4ODhlODBhNjJhNQ==
+  - - releasenotes/notes/add_contrail_vrouter_vlan_linux_bond_type-0a89f3499a7ab08b.yaml
+    - !!binary |
+      NDBjZTU3MTIwOTA4N2QyMmUxYmY2ZTk1MTAyMThlYjhlZmFmMGJjMQ==
+  - - releasenotes/notes/check-ovs-ef665418762ca123.yaml
+    - !!binary |
+      ODI1MGQ2N2EyMzdlNWYyMTlkODM5ODk5Yjk2NzE1MDA0Y2YxNGZlYQ==
+  version: 9.1.0
+- files:
+  - - releasenotes/notes/dpdk-on-mellanox-nics-1d8fdb843a4e2b60.yaml
+    - !!binary |
+      YWVhYTZmZTYyYjM5YTAwZjNiMDc1YTk0YzA3NmYyNjdmMGM3MGFmMA==
+  version: 9.0.0

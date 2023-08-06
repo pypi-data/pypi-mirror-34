@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: ppg-features
+Version: 1.2
+Summary: Filter and extract features from finger PPG
+Home-page: https://github.com/JaronWhitty/remote-ppg
+Author: Jaron C Whittington
+Author-email: jaronwhitty@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

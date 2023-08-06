@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: robin8-utils
+Version: 0.0.3
+Summary: Utils used in Robin8 projects
+Home-page: https://github.com/Robin8Put/pmes/tree/master/utils
+Author: Robin8
+Author-email: vvasyuk@robin8.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Utils used in Robin8 projects. See https://github.com/Robin8Put/pmes/tree/master/utils for more info.
+
+

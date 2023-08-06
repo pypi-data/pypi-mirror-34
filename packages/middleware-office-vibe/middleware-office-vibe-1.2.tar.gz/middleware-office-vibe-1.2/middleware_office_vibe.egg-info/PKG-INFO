@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: middleware-office-vibe
+Version: 1.2
+Summary: Middleware plugin for office vibe
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: probachai.yu@gmail.com
+License: BSD
+Description: Middleware provider for OfficeVibe
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2

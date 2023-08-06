@@ -1,0 +1,3 @@
+[console_scripts]
+office_vibe_init = office_vibe.entry_points:init
+

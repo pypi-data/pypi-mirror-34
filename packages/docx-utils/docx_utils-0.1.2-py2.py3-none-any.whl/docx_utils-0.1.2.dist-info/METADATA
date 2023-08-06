@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: docx-utils
+Version: 0.1.2
+Summary: Creation and manipulation of Open XML documents (mainly docx).
+Home-page: https://github.com/tantale/docx_utils
+Author: Laurent LAPORTE
+Author-email: tantale.solutions@gmail.com
+License: MIT License
+Keywords: Microsoft,Office,Word,Excel,PowerPoint,docx,xlsx,pptx,XML
+Platform: posix
+Platform: nt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Provides-Extra: test
+Requires-Dist: click
+Requires-Dist: six
+Requires-Dist: lxml
+Requires-Dist: enum34
+Provides-Extra: test
+Requires-Dist: PyTest; extra == 'test'
+Requires-Dist: PyTest-Cov; extra == 'test'
+Requires-Dist: Tox (<3); extra == 'test'
+Requires-Dist: isort; extra == 'test'
+
+========
+Overview
+========
+
+
+
+Creation and manipulation of Open XML documents (mainly docx).
+
+* Free software: MIT license
+
+
+Features
+========
+
+This library allow you to:
+
+* Convert Open XML documents into flat OPC format.
+
+
+Installation
+============
+
+.. code:: bash
+
+    pip install docx-utils
+
+
+Using the library
+=================
+
+Using the library to convert an Open XML document into flat OPC format:
+
+.. code:: python
+
+   >>> from docx_utils.flatten import opc_to_flat_opc
+   >>> opc_to_flat_opc("sample.docx", "sample.xml")
+
+
+Command Line Interface (CLI)
+============================
+
+Printing the online help:
+
+.. code:: bash
+
+   $ docx_utils --help
+   Usage: docx_utils [OPTIONS] COMMAND [ARGS]...
+
+     Docx utilities
+
+   Options:
+     --version  Show the version and exit.
+     --help     Show this message and exit.
+
+   Commands:
+     flatten  Convert an Open XML document into flat OPC format.
+
+Converting an Open XML document into flat OPC format:
+
+.. code:: bash
+
+   $ docx_utils flatten sample.docx sample.xml
+   Converting 'sample.docx' to flat XML...
+   Conversion done: 'sample.xml'.
+
+
+Documentation
+=============
+
+https://docx_utils.readthedocs.io/
+
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+
+
+=========
+Changelog
+=========
+
+
+
+v0.1.2 (2018-07-26)
+===================
+
+Fixed
+~~~~~
+
+* Drop support for PyPy: it seams that lxml is not available for this Python implementation.
+
+* Drop support for Python 3.7: this Python version is not yet available on all platform.
+  However, it is known to work on Ubuntu with the python-3.7-dev release.
+
+Other
+~~~~~
+
+* Use the pseudo-tags ``start-exclude``/``end-exclude`` in ``CHANGELOG.rst`` and ``README.rst``
+  to exclude text from the generated ``PKG-INFO`` during setup.
+
+
+v0.1.1 (2018-07-25)
+===================
+
+Fixed
+~~~~~
+
+* Fix wheel version on PyPi.
+
+
+v0.1.1 (2018-07-24)
+===================
+
+Added
+~~~~~
+
+* First release.
+
+

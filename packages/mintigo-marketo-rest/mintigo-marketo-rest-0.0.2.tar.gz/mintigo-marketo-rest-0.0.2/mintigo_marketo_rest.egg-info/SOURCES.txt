@@ -1,0 +1,10 @@
+README
+setup.cfg
+setup.py
+mintigo_marketo_rest.egg-info/PKG-INFO
+mintigo_marketo_rest.egg-info/SOURCES.txt
+mintigo_marketo_rest.egg-info/dependency_links.txt
+mintigo_marketo_rest.egg-info/requires.txt
+mintigo_marketo_rest.egg-info/top_level.txt
+mintigomarketorest/__init__.py
+mintigomarketorest/client.py

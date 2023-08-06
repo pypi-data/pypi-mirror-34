@@ -1,0 +1,14 @@
+numpy
+scikit-dataaccess
+scikit-discovery
+pandas
+scipy
+numba
+statsmodels
+geodesy
+GDAL
+matplotlib
+ipywidgets
+atomicwrites
+requests
+setuptools

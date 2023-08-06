@@ -1,0 +1,13 @@
+pyconll/__init__.py,sha256=3FiR1aZjOlUugV9k2RNVyTey-d-K4eQ4DAlX7uaGDPs,164
+pyconll/_parser.py,sha256=UsLYl5_bjLjRVplAfKCKQV4z-mPkv91FbMMHZIBKZgI,3341
+pyconll/exception.py,sha256=uiUb7DNrw_ghWyAT7w_tT2JFiN0FuVIt1UHcEa8kNJE,125
+pyconll/load.py,sha256=hng0IYp4AtwVCuSYdpMDiMUfh7vt4ZtRYCIk04Ra4AA,3188
+pyconll/util.py,sha256=Zeq9ZtzihLhTfSMiKfe4JNflt8TLczteQAjfiMpH-6I,2308
+pyconll/unit/__init__.py,sha256=wU2FhdwDhPH9eVdB4Le7w7i54n3ZS4FFparr6cL35-c,123
+pyconll/unit/conll.py,sha256=7PzJqyxC-T2oT2NqnmhThoCg8ueuOxXMjlfU_rDR0Fc,4710
+pyconll/unit/sentence.py,sha256=NVzYpJYM7AagPuQtdOhhkWmJpjYg6anxLl_PSgUtjmQ,10183
+pyconll/unit/token.py,sha256=9N57g0VE_I6ujYwJlt6P8F4i2z3MPUD7p8ENBGp1f8g,15531
+pyconll-0.3.1.dist-info/METADATA,sha256=Y8H9oAQQoUitPFe82Tr3MB8Pzf6EJrJkbzgVaTUhWQQ,5299
+pyconll-0.3.1.dist-info/RECORD,,
+pyconll-0.3.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pyconll-0.3.1.dist-info/top_level.txt,sha256=Yj72yFVZDD-h6TDshInBBV_XPrt_N5h_LhAsgavr-1w,8

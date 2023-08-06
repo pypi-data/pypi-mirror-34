@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MagicBaidu
+Version: 0.0.9
+Summary: A baidu search results crawler
+Home-page: https://github.com/1049451037/MagicBaidu
+Author: Qingsong Lv
+Author-email: lqs@mail.bnu.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests (>=2.12.4)
+Requires-Dist: cchardet
+
+UNKNOWN
+
+

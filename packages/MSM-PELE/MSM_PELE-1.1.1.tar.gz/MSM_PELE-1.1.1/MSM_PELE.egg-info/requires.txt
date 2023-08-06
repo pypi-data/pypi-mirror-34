@@ -1,0 +1,5 @@
+prody==1.8.1
+mdtraj
+future
+pyemma
+msmtools

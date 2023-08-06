@@ -1,0 +1,6 @@
+requests==2.19.1
+
+[dev]
+prospector[with_pyroma]
+yapf
+isort

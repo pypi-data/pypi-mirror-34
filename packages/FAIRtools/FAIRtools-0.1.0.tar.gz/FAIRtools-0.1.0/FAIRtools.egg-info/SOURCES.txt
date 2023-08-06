@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+FAIRtools/__init__.py
+FAIRtools/collections.py
+FAIRtools/evaluations.py
+FAIRtools/metrics.py
+FAIRtools/showup.py
+FAIRtools.egg-info/PKG-INFO
+FAIRtools.egg-info/SOURCES.txt
+FAIRtools.egg-info/dependency_links.txt
+FAIRtools.egg-info/not-zip-safe
+FAIRtools.egg-info/requires.txt
+FAIRtools.egg-info/top_level.txt

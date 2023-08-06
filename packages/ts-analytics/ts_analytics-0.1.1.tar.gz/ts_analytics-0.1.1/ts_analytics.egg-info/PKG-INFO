@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ts-analytics
+Version: 0.1.1
+Summary: Traffic data analytics
+Home-page: https://github.com/pypa/ts_project
+Author: Eneliko Mulokozi
+Author-email: emulokozi@aol.com
+License: UNKNOWN
+Description: Project description
+        
+        ts-analytics is a python package designed to classify traffic systems data. It accepts data in a pandas DataFrame structure and a user can load data from one or multiple locations. A good a examples of these data include sensors data. 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

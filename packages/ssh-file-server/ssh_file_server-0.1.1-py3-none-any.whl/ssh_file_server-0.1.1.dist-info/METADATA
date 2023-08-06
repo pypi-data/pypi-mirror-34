@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ssh-file-server
+Version: 0.1.1
+Summary: Quickly accessing remote files as if they are local
+Home-page: https://github.com/zh217/ssh-file-server
+Author: Ziyang Hu
+Author-email: hu.ziyang@cantab.net
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: paramiko
+
+UNKNOWN
+
+

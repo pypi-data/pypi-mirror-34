@@ -1,0 +1,9 @@
+README.rst
+setup.py
+subsonic_cli.py
+subsonic_cli.egg-info/PKG-INFO
+subsonic_cli.egg-info/SOURCES.txt
+subsonic_cli.egg-info/dependency_links.txt
+subsonic_cli.egg-info/entry_points.txt
+subsonic_cli.egg-info/requires.txt
+subsonic_cli.egg-info/top_level.txt

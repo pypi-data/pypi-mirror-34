@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: whratio
+Version: 1.1.3-1
+Summary: Calculate integer and decimal aspect ratio for dimensions.
+Home-page: https://github.com/mirukan/whratio
+Author: miruka
+Author-email: miruka@disroot.org
+License: LGPLv3
+Keywords: calculate aspect ratio dimension width height image video
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Requires-Python: >=2.7, <4
+Description-Content-Type: text/markdown
+
+# whratio
+
+[![Downloads](http://pepy.tech/badge/whratio)](http://pepy.tech/project/whratio)
+
+Calculate integer and decimal aspect ratio for dimensions.
+
+## Python module examples
+
+```python3
+    >>> from whratio import *
+
+    >>> ratio_float(640, 480)
+    1.33
+
+    >>> ratio_float(1920, 1080, ndigits=4)
+    1.7778
+
+    >>> ratio_int(1920, 1080)
+    (16, 9)
+```
+
+## CLI examples
+
+```sh
+    whratio 1024 768
+```
+Returns `4 3 1.33` (integer *4:3*, decimal *1.33*).
+
+```sh
+    whratio 100 200 | cut -d' ' -f3
+```
+Get the 3rd value of `1 2 0.5` (decimal ratio *0.5*) on POSIX systems.
+
+```sh
+    whratio 1920 1080 | awk '{print $1":"$2}'
+```
+Format integer ratio as `16:9` on POSIX systems.
+
+## Installation
+
+Requires Python 2 or 3.
+
+From **pip**:
+
+```sh
+    sudo pip install whratio
+```
+
+Manually:
+
+```sh
+    git clone https://github.com/mirukan/whratio
+    cd whratio
+    sudo python setup.py install
+```
+
+

@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_vpp_serializer.py,sha256=ghCPE1p_7t7b_MVdQfkPGqownvnUx1tHjmNjw38Rnkw,8741
+vpp_papi/__init__.py,sha256=sQ21WsNCjRKg9x0_Ppfd1U7GnvyZIF8kKoTadIgx_u0,24
+vpp_papi/vpp_papi.py,sha256=AJkDvsi0AXQkv5AJIce76Ddli49-QaxzS8crRyElDz0,24038
+vpp_papi/vpp_serializer.py,sha256=bOEHfesyH0XRRQTDOP0wOgf6prZbY9t6zkZGgf4LHbE,10455
+vpp_papi-1.6.dist-info/DESCRIPTION.rst,sha256=APXH4IkH0weQJ-3SHpCTWpiJc-neP3zgh1p7afmqOM4,31
+vpp_papi-1.6.dist-info/METADATA,sha256=GsU-6kwPEmajRd5Gzh36oy2-e-FK1Qn3d3JVXen_igY,293
+vpp_papi-1.6.dist-info/RECORD,,
+vpp_papi-1.6.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+vpp_papi-1.6.dist-info/metadata.json,sha256=EQrY-2jlBfLB75zDl24fi_mFPnM1oR3Bb6tWpuYgeVo,472
+vpp_papi-1.6.dist-info/top_level.txt,sha256=rCzy6ckJ9UAErNXKzXLkvVVeX3tOpvn-_IGWX_X27xo,15
+vpp_papi-1.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1

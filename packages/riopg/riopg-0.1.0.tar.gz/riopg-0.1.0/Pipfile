@@ -1,0 +1,25 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+trio = ">=0.2.0"
+"psycopg2" = ">=2.7"
+curio = "*"
+"sphinx_py3doc_enhanced_theme" = "*"
+Sphinx = ">=1.7.0"
+sphinx-autodoc-typehints = "*"
+sphinxcontrib-trio = "*"
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "3.6"

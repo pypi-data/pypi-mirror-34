@@ -1,0 +1,9 @@
+multio<0.4.0,>=0.2.0
+psycopg2<2.8,>=2.7
+
+[tests]
+pytest
+pytest-cov
+codecov
+trio>=0.5.0
+curio>=0.8

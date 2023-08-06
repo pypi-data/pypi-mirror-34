@@ -1,0 +1,13 @@
+deepmage-0.2.1.data/scripts/deepmage,sha256=R1V6zDzIJKrf-E2dusJ_2Kd_6dcv9_ae39llo-3146w,475
+deepmage-0.2.1.data/scripts/deepmage-hexdump,sha256=Asu97pwAE0rfYPf1C83RFwP3LmY8YO9gU2EZTpLu6O0,1231
+deepmage-0.2.1.data/scripts/deepmage-hexparse,sha256=_ikpWikv8PMYsErOvY74_USBnHuAeJuMPhkvzpvamJw,2373
+deepmage-0.2.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+deepmage-0.2.1.dist-info/METADATA,sha256=KO8SvIKV3C-JESDwRHWuG0s9VJOIebhfv9-bKtM557E,823
+deepmage-0.2.1.dist-info/RECORD,,
+deepmage-0.2.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+deepmage-0.2.1.dist-info/top_level.txt,sha256=dhm3LU4LjvY987FcMbb0biNcyupjtKYWrQ9lqiejIxs,12
+libdeepmage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libdeepmage/bitstream_reader.hy,sha256=tiv6E6Y0PpLG3Hez-uArGH740_2jDA1wR_Ots9LGEbo,6091
+libdeepmage/cursor.hy,sha256=KOo51D_P3atqJvGpXZNjr1uMkZKJ9H-wN-X0zrIcyJw,8742
+libdeepmage/deepmage.py,sha256=ulZgc5bY3F9-Q56EE3rpq1tiW58xtWkSeZEfmWetFm8,9168
+libdeepmage/parser.hy,sha256=S03mdTbTXS_S1552XR-c6HLqqo3P4-u7GwJZUfNSCbo,1048

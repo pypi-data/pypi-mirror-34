@@ -1,0 +1,17 @@
+asn1crypto>=0.23
+
+[:python_version<'3']
+dnspython
+
+[:python_version>='3']
+dnspython3
+
+[test_pep8]
+flake8
+flake8-import-order
+pep8-naming
+
+[tests]
+WebTest
+coverage
+pytest

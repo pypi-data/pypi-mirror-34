@@ -1,0 +1,14 @@
+edx_drf_extensions-1.5.5.dist-info/METADATA,sha256=LHXb-RshyJsY7-9edqiC9-6x9zxWL-uWcrMauO1W_NE,1293
+edx_drf_extensions-1.5.5.dist-info/RECORD,,
+edx_drf_extensions-1.5.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+edx_drf_extensions-1.5.5.dist-info/top_level.txt,sha256=cz_WBaFRc9z9yDCT-BkHWEt0Y_8mPyUGlsHwAXwAOck,30
+edx_rest_framework_extensions/__init__.py,sha256=hzlIZ97cx3lTcPmzLLOpA0ijSZSNe7I98hY8yi7BJw8,89
+edx_rest_framework_extensions/authentication.py,sha256=F9acJEKp9Am38q2hkoVnZq3f8bV056l3YR4SZ2lb8nc,8582
+edx_rest_framework_extensions/config.py,sha256=BQK2b-lXZri7TU4VXXNcRNZYIOPxFb1-eHbreuF_7GQ,231
+edx_rest_framework_extensions/exceptions.py,sha256=MW72rPwhOPOdImBgVePM4He9KoOXBBlCnL21brg7L_o,166
+edx_rest_framework_extensions/jwt_decoder.py,sha256=zIZJFCqpSYI6ZTMDqzGg0VlVkJI6kxZY8bpRg9RymM0,6286
+edx_rest_framework_extensions/middleware.py,sha256=9_gmyQNLgvWYoskiiaz_GZOnx0-0igVRCyQvT6_mAew,2906
+edx_rest_framework_extensions/paginators.py,sha256=rkVZstbddlNBKZqUt4-uodLCr91eW7P15PxLaWdeBQc,4185
+edx_rest_framework_extensions/permissions.py,sha256=YSJnet02vjz7VdG1UYMlJcsY2IGNHZzw5pO96RtA1qA,5962
+edx_rest_framework_extensions/settings.py,sha256=PW7M-MqpO_qBM3IyqcihrhTMhFEtQ1J6dbdyQZXUPVs,2897
+edx_rest_framework_extensions/utils.py,sha256=EaKrqwK5WTTzbKgAdjcuQ-TTcHJ6F7PxdY_MHs5Xv-I,149

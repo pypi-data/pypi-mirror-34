@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lightsteem
+Version: 0.0.3
+Summary: A light python client to interact with the STEEM blockchain
+Home-page: http://github.com/emre/lightsteem
+Author: emre yilmaz
+Author-email: mail@emreyilmaz.me
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

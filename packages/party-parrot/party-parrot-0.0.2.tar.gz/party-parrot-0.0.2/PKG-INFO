@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: party-parrot
+Version: 0.0.2
+Summary: Party or die
+Home-page: https://github.com/santiagobasulto/party-parrot
+Author: Santiago Basulto
+Author-email: santiago.basulto@gmail.com
+License: UNKNOWN
+Description: A funny package to join Parrot's party
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

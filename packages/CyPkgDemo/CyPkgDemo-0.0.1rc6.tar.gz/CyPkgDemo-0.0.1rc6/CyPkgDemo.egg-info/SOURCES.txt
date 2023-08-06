@@ -1,0 +1,15 @@
+README.md
+setup.py
+CyPkgDemo.egg-info/PKG-INFO
+CyPkgDemo.egg-info/SOURCES.txt
+CyPkgDemo.egg-info/dependency_links.txt
+CyPkgDemo.egg-info/requires.txt
+CyPkgDemo.egg-info/top_level.txt
+cypkgdemo/__init__.py
+cypkgdemo/atoi.c
+cypkgdemo/atoi.pxd
+cypkgdemo/atoi.pyx
+cypkgdemo/calc.c
+cypkgdemo/calc.pyx
+cypkgdemo/calc_py.py
+cypkgdemo/sin.pxd

@@ -1,0 +1,10 @@
+django_static_compress-1.2.1.dist-info/METADATA,sha256=g1TkEwMHg_lWW1czCt4ggiCpkc9ydPIET6SlJGmXgO0,1019
+django_static_compress-1.2.1.dist-info/RECORD,,
+django_static_compress-1.2.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_static_compress-1.2.1.dist-info/top_level.txt,sha256=iDdumwvt8anU3vxbzPsFG6YH5z-VXbvkzvcIOZdP5EM,21
+static_compress/__init__.py,sha256=wEd8xCQawe0GTQnBIEvuvq87wCbH9uU4Pc7qpYXH9gY,78
+static_compress/compressors.py,sha256=oZizlFo3K0FNyDU56eufjm2PwlnM7-bJtasRKEiSs8c,597
+static_compress/mixin.py,sha256=o1zim2z6ppOlcTks_pNmADS5BKbylVN9M6dwfZUwNeA,5177
+static_compress/storage.py,sha256=Tyqys4jOEbguBKY3lrK9dAq30Y7fgUARiVSA72tmsew,555
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_compressors.py,sha256=8_gcYWU2_xGkRtiKUkipZz7E5HYFKR1XcCgiEeLu0UA,1317

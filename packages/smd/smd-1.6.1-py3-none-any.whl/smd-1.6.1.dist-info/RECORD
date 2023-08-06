@@ -1,0 +1,10 @@
+smd/__init__.py,sha256=S044YWaooGEqZTY461GQcCJC-HQP8lqNFXHPoO1i0aU,6487
+smd/__main__.py,sha256=m0KZKemkerDNuD0t5PKxjR76RTLl5_DoUGb8_8yiFmM,82
+smd/downloader.py,sha256=uFrfzFgD_cazT8pBAl-sIMAKSeTJ1qHtKlVs29J1XkI,22858
+smd/utils.py,sha256=bf5w5Om07NIfIkqEmjW459Whq1Yglri2-UTV9oe5pd8,19105
+smd/locale/es/LC_MESSAGES/smd.mo,sha256=bSyOrGHGds5GFqw3ckqRvh2EYQxGseymaBzgmK1hihQ,8295
+smd-1.6.1.dist-info/METADATA,sha256=rB51l4p-AEVxwdDTJLj9-rSkKEsKKrrJWID_FqLISYU,3750
+smd-1.6.1.dist-info/RECORD,,
+smd-1.6.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+smd-1.6.1.dist-info/entry_points.txt,sha256=hZTCo_7FSC8O1XuCXcwaAq2ZR5gnyPMTzocsIj6zAY4,34
+smd-1.6.1.dist-info/top_level.txt,sha256=_G2VO3Iccxlab6B4IyH57aiNI-ajK3HZnrRCIy_fb4I,4

@@ -1,0 +1,11 @@
+Ki/__init__.py,sha256=ROqp_Hg2YxnuzRRzmDeftiGMV6JxpvHxQvWP0p0lv2U,179
+Ki/Core/Connection.py,sha256=URAldsTVSsA_I7FzakqfTGXn9-uoA6PYs6K_yqPeYpw,438
+Ki/Core/FeedForwardNetwork.py,sha256=ws5GMSMTl0Q7oh4UZDH_fM9XLXL4qOrObKRlfsU0hdw,2816
+Ki/Core/GeneticNetwork.py,sha256=gTVQUmG9qQaywBKyzqXX_0WKmSOw5SSHmMo2uMuNBFU,8316
+Ki/Core/NeuralSwarm.py,sha256=nh3RS7_LrHIy941K581HGthMnUKDDXZcsB6069x2RWo,8491
+Ki/Core/Neuron.py,sha256=br1wKH9SU-4FRG3g273WM9k3nHKXf5QaCbMqS8_NWio,852
+Ki/Core/__init__.py,sha256=dt4JP5-uN8eYeiEzxo4pE0_hktm23bMdWwMibzXShAs,286
+Ki-0.1.dist-info/METADATA,sha256=hYod-kzQKmkpnV1etHfI_PnVOt0Wb2O8BT9jiWkyc6Y,1235
+Ki-0.1.dist-info/RECORD,,
+Ki-0.1.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+Ki-0.1.dist-info/top_level.txt,sha256=3W87Kf71VAjWe-LYaZpX4b6R0KkqMGNS25riPZGlUoo,3

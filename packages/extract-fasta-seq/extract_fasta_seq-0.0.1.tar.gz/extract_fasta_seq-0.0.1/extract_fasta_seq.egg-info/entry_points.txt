@@ -1,0 +1,3 @@
+[console_scripts]
+extract_fasta_seq = extract_fasta_seq.extract_fasta_seq:main
+

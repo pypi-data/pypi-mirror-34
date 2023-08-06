@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+extract_fasta_seq/__init__.py
+extract_fasta_seq/extract_fasta_seq.py
+extract_fasta_seq.egg-info/PKG-INFO
+extract_fasta_seq.egg-info/SOURCES.txt
+extract_fasta_seq.egg-info/dependency_links.txt
+extract_fasta_seq.egg-info/entry_points.txt
+extract_fasta_seq.egg-info/top_level.txt

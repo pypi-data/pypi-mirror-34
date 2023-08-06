@@ -1,0 +1,12 @@
+README.md
+setup.py
+animatplot/__init__.py
+animatplot/_version.py
+animatplot/timeline.py
+animatplot/util.py
+animatplot.egg-info/PKG-INFO
+animatplot.egg-info/SOURCES.txt
+animatplot.egg-info/dependency_links.txt
+animatplot.egg-info/not-zip-safe
+animatplot.egg-info/requires.txt
+animatplot.egg-info/top_level.txt

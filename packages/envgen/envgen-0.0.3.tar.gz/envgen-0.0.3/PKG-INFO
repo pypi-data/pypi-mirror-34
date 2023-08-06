@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: envgen
+Version: 0.0.3
+Summary: A Virtual Environment Generator
+Home-page: https://github.com/jonebeabout/envgen
+Author: Jonathan Beabout
+Author-email: jonebeabout@gmail.com
+License: UNKNOWN
+Description: # envgen
+        A Virtual Network Generator for Educators and Students to enhance simulation and exploratory learning in Computer Science and Cyber Security fields of study.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown

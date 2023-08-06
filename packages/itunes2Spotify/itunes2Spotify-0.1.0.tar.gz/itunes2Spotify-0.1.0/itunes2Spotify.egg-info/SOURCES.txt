@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+itunes2Spotify/__init__.py
+itunes2Spotify/album.py
+itunes2Spotify/itunes2spotify.py
+itunes2Spotify/menu.py
+itunes2Spotify/transfer.py
+itunes2Spotify.egg-info/PKG-INFO
+itunes2Spotify.egg-info/SOURCES.txt
+itunes2Spotify.egg-info/dependency_links.txt
+itunes2Spotify.egg-info/entry_points.txt
+itunes2Spotify.egg-info/requires.txt
+itunes2Spotify.egg-info/top_level.txt

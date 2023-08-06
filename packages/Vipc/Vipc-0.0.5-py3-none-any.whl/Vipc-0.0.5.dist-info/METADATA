@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Vipc
+Version: 0.0.5
+Summary: command line tool for auto tuner
+Home-page: https://github.com/ly1016799291/ceshi.git
+Author: liyang
+Author-email: liyang@vipcode.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: baidu-aip
+Requires-Dist: pyaudio
+Requires-Dist: soundfile
+Requires-Dist: pygame
+
+UNKNOWN
+
+

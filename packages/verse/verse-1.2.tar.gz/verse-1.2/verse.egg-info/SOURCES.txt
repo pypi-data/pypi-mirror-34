@@ -1,0 +1,9 @@
+README.md
+setup.py
+verse.egg-info/PKG-INFO
+verse.egg-info/SOURCES.txt
+verse.egg-info/dependency_links.txt
+verse.egg-info/entry_points.txt
+verse.egg-info/top_level.txt
+versesrc/__init__.py
+versesrc/verse.py

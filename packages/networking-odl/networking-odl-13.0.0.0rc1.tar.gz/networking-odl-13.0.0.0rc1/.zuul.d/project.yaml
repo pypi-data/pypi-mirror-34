@@ -1,0 +1,70 @@
+- project:
+    check:
+      jobs:
+        - openstack-tox-lower-constraints:
+            required-projects:
+              - openstack/ceilometer
+              - openstack/neutron
+              - openstack/neutron-fwaas
+              - openstack/neutron-lbaas
+              - openstack/networking-l2gw
+              - openstack/networking-sfc
+              - openstack/networking-bgpvpn
+        - networking-odl-grenade:
+            voting: false
+            branches: ^(?!(driverfixes|stable/(mitaka|newton))).*$
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^.*\.rst$
+              - ^doc/.*$
+              - ^releasenotes/.*$
+              - ^setup.cfg$
+        - networking-odl-tempest-oxygen
+        - networking-odl-tempest-fluorine
+        - networking-odl-tempest-oxygen-multinode:
+            voting: false
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^.*\.rst$
+              - ^doc/.*$
+              - ^releasenotes/.*$
+              - ^setup.cfg$
+        - networking-odl-tempest-fluorine-multinode:
+            voting: false
+            irrelevant-files:
+              - ^(test-|)requirements.txt$
+              - ^.*\.rst$
+              - ^doc/.*$
+              - ^releasenotes/.*$
+              - ^setup.cfg$
+        - networking-odl-rally-oxygen:
+            voting: false
+            branches: ^(?!stable/(newton|ocata|pike)).*$
+            irrelevant-files:
+              - ^.*\.rst$
+              - ^doc/.*$
+              - ^releasenotes/.*$
+        - networking-odl-rally-fluorine:
+            voting: false
+            branches: ^(?!stable/(newton|ocata|pike)).*$
+            irrelevant-files:
+              - ^.*\.rst$
+              - ^doc/.*$
+              - ^releasenotes/.*$
+        - networking-odl-functional-oxygen
+        - networking-odl-fullstack-oxygen
+        - networking-odl-functional-fluorine
+        - networking-odl-fullstack-fluorine
+    gate:
+      jobs:
+        - openstack-tox-lower-constraints:
+            required-projects:
+              - openstack/ceilometer
+              - openstack/neutron
+              - openstack/neutron-fwaas
+              - openstack/neutron-lbaas
+              - openstack/networking-l2gw
+              - openstack/networking-sfc
+              - openstack/networking-bgpvpn
+        - networking-odl-functional-oxygen
+        - networking-odl-functional-fluorine

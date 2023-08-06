@@ -1,0 +1,9 @@
+README.md
+setup.py
+sydsvenskan/__init__.py
+sydsvenskan/newsday.py
+sydsvenskan/search.py
+sydsvenskan.egg-info/PKG-INFO
+sydsvenskan.egg-info/SOURCES.txt
+sydsvenskan.egg-info/dependency_links.txt
+sydsvenskan.egg-info/top_level.txt

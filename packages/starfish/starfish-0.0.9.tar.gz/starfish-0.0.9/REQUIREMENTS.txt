@@ -1,0 +1,18 @@
+click
+matplotlib
+numpy != 1.13.0
+pandas
+pytest>=3.6.3
+regional
+requests
+semantic_version
+scikit-image>=0.14.0
+scikit-learn
+scipy
+showit
+slicedimage == 0.0.0-dev21
+scikit-learn
+tqdm
+trackpy
+validators
+xarray

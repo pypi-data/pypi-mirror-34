@@ -1,0 +1,293 @@
+Metadata-Version: 1.1
+Name: middleware-test
+Version: 2.0
+Summary: Module to sync users' profiles
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: probachai.yu@gmail.com
+License: BSD
+Description: **Installation**
+            `pip install middleware_test`
+        
+            `middleware-active-directory` is required as main provider
+        
+        **Settings**
+        
+        All of the settings are specified in config/{env}.conf file
+        
+            `config/local.conf` will be autocreated after installation
+            You had to specify all configs there
+        
+        **Database creation**
+        
+            `create_db` - creates initial database structure on existing database.
+            User, password and db name must be specified in config/{env}.conf file
+        
+        **Possible configuration params**
+        
+        *Database config*
+        
+            `middleware_db_name` -- name of database
+            `mysql_user` -- database user
+            `mysql_password` -- password to connect to database
+            `middleware_db_ip` -- db ip
+        
+        *Active directory settings*
+        
+             `AD_admin'` - admin profile to connect to Active Director
+             `AD_password` - password for admin profile
+             `AD_server` - Active Directory server address
+             `AD_base_dn` - base dn for Active Directory server
+        
+        *Slack settings*
+        
+            `slack_api_tokens_dict` - dict of slack tokens from slack app with read and write permissions for multiply workspaces
+        
+        *Other settings*
+        
+        You can setup expiration time of logs in days in 'logs_expires' setting
+        
+        *Read fields configuration*
+        
+        Fields which would be read from system you can configure in 'field_read_configuration' table.
+        There are fields:
+        (`field_read_configuration_id`, `system_id`, `from_path`, `to_field_name`, `active`, `create_dttm`)
+        
+        `from_path` should start from '$.'. For example, for this structure:
+         ```
+         {
+         "user":
+             {
+             "profile":
+                 {
+                 "name": "Test_name"
+                 }
+             }
+         }
+         ```
+         `from_path` would be `$.user.profile.name`
+        
+         `to_field_name` should be just the single name of the field, the same for the all of systems with equivalent values
+        
+        Example structure of Active Directory user data:
+        ```
+        {u'attributes':
+        {u'manager': u'',
+        u'departmentNumber': [],
+        u'telephoneNumber': u'',
+        u'countryCode': ,
+        u'physicalDeliveryOfficeName': u'',
+        u'co': u'',
+        u'homePhone': u'',
+        u'streetAddress': u'',
+        u'title': u'',
+        u'objectGUID': u'',
+        u'distinguishedName': u'',
+        u'name': u'',
+        u'company': u'',
+        u'objectClass': [u'top', u'person', u'organizationalPerson', u'user'],
+        u'street': [],
+        u'wWWHomePage': u'',
+        u'comment': [],
+        u'department': u'',
+        u'middleName': [],
+        u'description': [u'Love Python'],
+        u'initials': u'Y.V.',
+        u'isDeleted': [],
+        u'userPrincipalName': u'Some.User@test-octopus.local',
+        u'c': u'UA',
+        u'postOfficeBox': [u''],
+        u'cn': u'Some User',
+        u'displayName': u'Some User',
+        u'jpegPhoto': [],
+        u'mail': u'email@example.com',
+        u'mobile': u'+380672112999',
+        u'whenChanged': u'2018-02-27 14:31:38+00:00',
+        u'sn': u'User',
+        u'sAMAccountName': u'Some.User',
+        u'givenName': u'Some',
+        u'postalAddress': [],
+        u'facsimileTelephoneNumber': u'',
+        u'photo': [],
+        u'st': u'Vinnitsya'},
+        u'dn': u''}
+        ```
+        
+        Example of Slack user data
+        ```
+        {
+            "ok": true,
+            "user": {
+                "id": "",
+                "team_id": "",
+                "name": "",
+                "deleted": ,
+                "color": "",
+                "real_name": "",
+                "tz": "",
+                "tz_label": "",
+                "tz_offset": ,
+                "profile": {
+                    "title": "",
+                    "phone": "",
+                    "skype": "",
+                    "real_name": "",
+                    "real_name_normalized": "",
+                    "display_name": "",
+                    "display_name_normalized": "",
+                    "status_text": "",
+                    "status_emoji": "",
+                    "avatar_hash": "",
+                    "guest_channels": "[]",
+                    "image_original": "",
+                    "email": "",
+                    "first_name": "",
+                    "last_name": "",
+                    "image_24": "",
+                    "image_32": "",
+                    "image_48": "",
+                    "image_72": "",
+                    "image_192": "",
+                    "image_512": "",
+                    "image_1024": "",
+                    "team": ""
+                },
+                "is_admin": false,
+                "is_owner": false,
+                "is_primary_owner": false,
+                "is_restricted": true,
+                "is_ultra_restricted": false,
+                "is_bot": false,
+                "updated": ,
+                "is_app_user": false,
+                "has_2fa": false,
+                "enterprise_user": {
+                    "id": "",
+                    "enterprise_id": "",
+                    "enterprise_name": "",
+                    "is_admin": false,
+                    "is_owner": false,
+                    "teams": [
+                        "",
+                        ""
+                    ]
+                }
+            }
+        }
+        ```
+        
+        Example of SelectHR user data:
+        ```
+        {'first_name': '',
+          'surname': '',
+          'gender': '',
+          'mobile_phone_number': '',
+          'e-mail': '',
+          'person_number': ,
+          'birth_date': '',
+          'updated_at': '',
+          'initials': '',
+          'second_name': '',
+          'nationality': '',
+          'end_date': '',
+          'title': '',
+          'work_phone_number': '',
+          'biography': '',
+          'salutation': '',
+          'post_name': '',
+          'manager_name': '',
+          'team': '',
+        ```
+        
+        !Email and updated_at fields are required for each system
+        
+        !Person_number is required for SelectHR in `field_read_configuration` and `field_write_configuration`
+        
+        !Salutation field in SelectHr cannot be updated because, it is a computed field
+        
+        *Write fields configuration*
+        
+        Fields which would be read from system you can configure in 'field_write_configuration' table.
+        There are fields:
+        (`field_write_configuration_id`, `system_id`, `from_field_name`, `to_path`, `active`, `create_dttm`)
+        
+        `from_field_name` is a field name from actual_user_data
+        `to_path` starts from '$.' and configures final field path per system
+        For example:
+        `('1', '1', 'first_name', '$.givenName', TRUE, '2017-05-05 12:00:00'), `
+        
+        
+        For Active Directory and SelectHR structure will be the same as in `field_read_configuration`,
+        but Slack system allows to configure only profile fields, so structure for configuring will be:
+        ```
+        "profile": {
+                    "title": "",
+                    "phone": "",
+                    "skype": "",
+                    "real_name": "",
+                    "real_name_normalized": "",
+                    "display_name": "",
+                    "display_name_normalized": "",
+                    "status_text": "",
+                    "status_emoji": "",
+                    "avatar_hash": "",
+                    "guest_channels": "[]",
+                    "image_original": "",
+                    "email": "",
+                    "first_name": "",
+                    "last_name": "",
+                    "image_24": "",
+                    "image_32": "",
+                    "image_48": "",
+                    "image_72": "",
+                    "image_192": "",
+                    "image_512": "",
+                    "image_1024": "",
+                    "team": ""
+                }
+        ```
+        
+        *Write forbidden fields*
+        
+        in `write_forbidden_field` table you can specified field that cannot be updated
+        
+        Fields
+        (`write_forbidden_field_id`, `system_id`, `field_name`,  `create_dttm`)
+        
+        Example:
+        
+        `('1', '3', 'last_name', '2017-05-05 12:00:00'),`
+        
+        
+        *Write Required Fields*
+        
+        in `write_required_field` table you can specify field required to update from specified system to other ones
+        
+        Fields
+        (`write_required_field_id`, `system_id`, `field_name`, `create_dttm`)
+        
+        Example:
+        
+        `('1', '3', 'manager', '2017-05-05 12:00:00'),`
+        
+        
+        
+        *Write Empty Field By User*
+        
+        in `write_empty_field_by_user` table you can set up field that would be rewritten in specified system by default value for specified user
+        
+        Fields
+        `write_empty_field_by_user_id`, `system_id`, `field_name`, `user_email`, `default_value`, `create_dttm`)
+        
+        Example:
+        
+        `('1', '1', 'job_title', 'email@example.com', '', '2017-05-05 12:00:00')`
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2

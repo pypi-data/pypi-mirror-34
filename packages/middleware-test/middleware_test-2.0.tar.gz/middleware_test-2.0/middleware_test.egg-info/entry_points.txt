@@ -1,0 +1,5 @@
+[console_scripts]
+create_db = middleware.commandline_scripts:create_db_structure
+make_report = middleware.make_report:Report.make_report
+start_sync = middleware.start_sync:Sync.run
+

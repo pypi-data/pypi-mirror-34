@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aiochan
+Version: 0.1.2
+Summary: CSP-style concurrency for Python
+Home-page: https://github.com/zh217/aiochan
+Author: Ziyang Hu
+Author-email: hu.ziyang@cantab.net
+License: Apache
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.5.3
+
+UNKNOWN
+
+

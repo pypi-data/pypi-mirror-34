@@ -1,0 +1,10 @@
+README.rst
+setup.py
+src/neurolucidaxml2ex.py
+src/neurolucidaxml2ex.egg-info/PKG-INFO
+src/neurolucidaxml2ex.egg-info/SOURCES.txt
+src/neurolucidaxml2ex.egg-info/dependency_links.txt
+src/neurolucidaxml2ex.egg-info/entry_points.txt
+src/neurolucidaxml2ex.egg-info/not-zip-safe
+src/neurolucidaxml2ex.egg-info/requires.txt
+src/neurolucidaxml2ex.egg-info/top_level.txt

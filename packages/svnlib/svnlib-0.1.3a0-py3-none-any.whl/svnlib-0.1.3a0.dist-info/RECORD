@@ -1,0 +1,11 @@
+svnlib/__init__.py,sha256=uJQVeRsiZQMQeexFiIO0JuF_dScR1uaVjAGu61kL9As,911
+svnlib/exceptions.py,sha256=rTuz9aC_BCkLZaWEuRl2SrIALFj9XfHg8QHCYak4afA,92
+svnlib/internals.py,sha256=EHFtbuJCduyHCM2RXS6z4QiSYb5EawntxmFBCTCXnJI,906
+svnlib/svn_error_parser.py,sha256=IFCmy-Uuzjxn1awUtVVoz9UybLZwn4uwGH8AFqnZYIg,5041
+svnlib/svnlib.py,sha256=FmXoFdZPrO2V2E4UpuWQxlTfkceTErtxYPQxVA32QPA,11767
+svnlib-0.1.3a0.dist-info/METADATA,sha256=mFggGn7nnpo010Ba34o7-XPCUivdQgt0RPhTuaOziPk,1097
+svnlib-0.1.3a0.dist-info/RECORD,,
+svnlib-0.1.3a0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+svnlib-0.1.3a0.dist-info/top_level.txt,sha256=cJjKud8LAT90SXpk9oqFzhp4KHNGb7JCo4YaFWEU6kU,7
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_svnlib.py,sha256=3T_uPBQu19nvGUYqXETEGvJbXCpCZbPxwyf-QoZn7hg,5841

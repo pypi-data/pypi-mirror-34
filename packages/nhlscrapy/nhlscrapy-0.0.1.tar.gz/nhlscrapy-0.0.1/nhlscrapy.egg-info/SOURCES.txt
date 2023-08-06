@@ -1,0 +1,11 @@
+README.md
+setup.py
+nhlscrapy/__init__.py
+nhlscrapy/nhlscrapy.py
+nhlscrapy.egg-info/PKG-INFO
+nhlscrapy.egg-info/SOURCES.txt
+nhlscrapy.egg-info/dependency_links.txt
+nhlscrapy.egg-info/top_level.txt
+nhlscrapy/tests/__init__.py
+nhlscrapy/tests/context.py
+nhlscrapy/tests/test_nhlscrapy.py

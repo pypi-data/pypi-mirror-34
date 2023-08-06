@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gridbspline
+Version: 1.0.1
+Summary: N-Dimensional, gridded, and multivariate data interpolation using splines
+Home-page: http://gridbspline.readthedocs.org/
+Author: Oscar Esteban
+Author-email: code@oscaresteban.es
+Maintainer-email: code@oscaresteban.es
+License: Apache-2.0
+Download-URL: https://github.com/oesteban/gridbspline/archive/1.0.1.tar.gz
+Description: N-Dimensional, gridded, and multivariate data interpolation using splines. This package generalizes the interpolation code of P. Thévenaz (http://bigwww.epfl.ch/thevenaz/interpolation/) to Python.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: all
+Provides-Extra: test
+Provides-Extra: doc

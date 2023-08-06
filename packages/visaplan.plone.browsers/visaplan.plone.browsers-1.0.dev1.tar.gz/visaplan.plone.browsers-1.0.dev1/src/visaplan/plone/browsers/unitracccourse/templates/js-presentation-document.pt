@@ -1,0 +1,26 @@
+<tal:block tal:define="current nocall:options/current;
+                       unitracccourse nocall:here/@@unitracccourse;
+                       here python:unitracccourse.current_to_object(current);
+                       transform nocall:here/@@transform"
+           i18n:domain="plone">
+
+
+    <h1 class="documentFirstHeading">
+        <tal:block tal:content="structure here/Title"/>
+    </h1>
+
+    <p class="documentDescription"
+       tal:condition="here/Description"
+       tal:content="here/Description"
+       tal:on-error="string:Fehler beim Anzeigen der Beschreibung!">
+       Die (optionale) Beschreibung
+    </p>
+
+    <div
+         tal:content="structure python:transform.get4Ajax(here.getText())"
+         >
+         Der Seiteninhalt
+    </div>
+
+
+</tal:block>

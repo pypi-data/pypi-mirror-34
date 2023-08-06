@@ -1,0 +1,19 @@
+TODO.txt zum Browser Unitracc@@unitracccourse
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Modulvariable "mapping_":
+-------------------------
+
+Die Variable und die sie verwendenden Methoden müssen dringend gesichtet
+und/oder überarbeitet werden.  Der einfache Schlüssel (UID) berücksichtigt
+nicht die UID des Kurses und kann bei Vewendung derselben Seite in mehr als
+einem Kurs zu unerwarteten Effekten führen.
+
+Idee:
+- Die (besser zu benennende) Modulvariable verweist direkt nur noch auf Kurse;
+- die verwiesenen Werten entsprechen in der Verwendung dem bisherigen mapping_.
+- Die Modulvariable ist ein defaultdict;
+  - wenn der Wert None ist, wird die Struktur für den Kurs bei Abfrage neu
+    eingelesen (ggf. Fehlermeldung "Kein Kurs" o.ä.)
+  - dies ermöglicht auch, etwaige Änderungen eines Kurses auf die Navigation
+    und die Kursstatistik anzuwenden

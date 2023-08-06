@@ -1,0 +1,272 @@
+<metal:block metal:define-macro="main">
+<tal:outer tal:define="
+brains brains | here/@@book/search;
+"><tal:success condition="brains"><tal:inner
+i18n:domain="plone"><tal:comment replace="nothing"><!--
+Siehe auch (gf):
+./technical_information_nontable_folder_view.pt
+../../browser/nora/templates/listing_nora.pt
+
+Makros:
+- monotable-list -
+  eine Tabelle mit genau einer Spalte, zwecks Filterung durch Datatables;
+  td.row mit div.col-md-X und div.col-md-(12-X) ("responsive Tabelle"; experimentell)
+- nontable-list - responsive Liste nach Bootstrap 3
+--></tal:comment>
+
+<metal:mac1 define-macro="monotable-list">
+<table class="datatb datatb-mono"
+tal:define="
+col1span col1span | python:3;
+col2span python:12 - col1span;
+col1cls string:col-md-$col1span;
+col2cls string:col-md-$col2span;
+col1cls string:col-md-$col1span;
+col2cls string:col-md-$col2span;
+contact nocall:here/@@contact;
+contactPerson python:contact.getContactPerson;
+industrialsector nocall:here/@@industrialsector;
+industrialsector_getValue nocall:industrialsector/getValue;
+industrialsector_getImage nocall:industrialsector/getImage;
+unitraccmacros nocall:here/unitraccmacros/macros;
+brain_date nocall:unitraccmacros/brain_date;
+toTime python:context.getAdapter('totime');
+debug request/debug | nothing;
+">
+<thead>
+<tr>
+<th></th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tal:loop repeat="brain brains">
+<tr class="row" tal:define="
+thumbnail_src brain/getThumbnailPath;
+pt brain/portal_type;
+ismedia python:pt in ('UnitraccImage', 'UnitraccAnimation', 'UnitraccVideo', 'UnitraccTable');
+append_view ismedia;
+pathlist python:brain.getPath().split('/');
+dummy python:append_view and pathlist.append('view');
+iscourse python:pt == 'UnitraccCourse';
+url python:iscourse and 'course_overview?cuid='+brain.UID or '/'.join(pathlist[1:]);
+show_date not:ismedia;
+shortdate python:show_date and pt in ('UnitraccCourse', 'Folder');
+thedate python:show_date and (shortdate and brain.getDateForList or brain.effective) or None;
+imgsrc brain/getThumbnailPath;
+brain_url python:brain.getURL();
+code python:brain.getCode;
+codeimg python:industrialsector_getImage(code);
+title python:codeimg and industrialsector_getValue(code);
+">
+<td tal:attributes="class col1cls"
+     class="col-md-3">
+    <a href="/resolveuid/abc123/view"
+       tal:attributes="href url"
+       ><img src="/pfad/zum/Vorschaubildchen"
+             tal:attributes="src thumbnail_src"
+             alt=""></a>
+</td><!-- .col-md-3 -->
+<td tal:attributes="class python:thumbnail_src and col2cls or 'col-md-12'"
+     class="col-md-9">
+
+    <div class="info-data"
+         tal:define="c2 python:brain.getContactCompany;
+                     c3 python:contactPerson(brain);
+                     c4 python:brain.Rights;
+                     "
+         tal:condition="python:thedate or c2 or c3 or c4">
+         <p class="info subject"
+             tal:condition="python:1 and code and code != '**'"
+             tal:content="python:industrialsector.getValue(code)"
+             i18n:translate="">
+             Fachbereich
+         </p>
+         <p class="info author"
+            tal:condition="c2"
+            tal:content="c2">
+            S &amp; P Consult GmbH
+         </p>
+         <p class="info author"
+            tal:condition="c3"
+            tal:content="c3">
+            Dr. Hase Caesar
+         </p>
+         <p class="info legal"
+            tal:condition="c4"
+            tal:content="c4">
+            &copy; Stein &amp; Partner
+         </p>
+         <p class="info"
+            tal:condition="thedate">
+            <tal:if condition="shortdate"
+                    content="python:thedate.year()">
+                2005
+            </tal:if><tal:else condition="not:shortdate"
+                    content="python:toTime(thedate)">
+                27.3.2015
+            </tal:else>
+         </p>
+    </div><!-- .info-data -->
+    <h3>
+        <a tal:attributes="href url"
+           tal:content="brain/pretty_title_or_id">
+           Titel des Fachbuchs
+        </a>
+    </h3>
+    <div tal:define="value python:brain.Description"
+         tal:condition="value"
+         tal:content="value"
+         class="text-plain">
+        Beschreibung des Fachbuchs
+    </div>
+</td><!-- .col-md-9 -->
+</tr>
+</tal:loop>
+</tbody>
+</table>
+</metal:mac1>
+
+
+
+<metal:main define-macro="nontable-list">
+<tal:loop define="
+industrialsector nocall:here/@@industrialsector;
+industrialsector_getImage nocall:industrialsector/getImage;
+industrialsector_getValue nocall:industrialsector/getValue;
+illustration request/form/illustration | python:True;
+stage_get_as_brains nocall:here/@@stage/get_as_brains;
+show_partners show_partners | options/show_partners | python:False;
+
+batch nocall:here/@@batch;
+batch_size batch_size | python:25;
+batch python:batch(brains, batch_size);
+portal_url here/portal_url;
+contact nocall:here/@@contact;
+contactPerson python:contact.getContactPerson;
+col1span col1span | python:2;
+col2span python:12 - col1span;
+col1cls string:col-md-$col1span;
+col2cls string:col-md-$col2span;
+
+col1cls string:col-md-3;
+col2cls string:col-md-9;
+" tal:repeat="brain brains">
+    <div class="row listing-item large MARK-nontable-list"
+         tal:define="
+brain_uid python:show_partners and brain.UID or None;
+codeimg python:industrialsector_getImage(code);
+title python:codeimg and industrialsector_getValue(code);
+brain_url python:brain.getURL();
+illu_brains python:illustration and stage_get_as_brains('illustration', brain_uid)[:1];
+
+
+neu string:hier die neuen Zuweisungen:
+
+thumbnail_src brain/getThumbnailPath;
+pt brain/portal_type;
+ismedia python:pt in ('UnitraccImage', 'UnitraccAnimation', 'UnitraccVideo', 'UnitraccTable');
+append_view ismedia;
+pathlist python:brain.getPath().split('/');
+dummy python:append_view and pathlist.append('view');
+iscourse python:pt == 'UnitraccCourse';
+url python:iscourse and 'course_overview?cuid='+brain.UID or '/'.join(['']+pathlist[1:]);
+show_date not:ismedia;
+shortdate python:show_date and pt in ('UnitraccCourse', 'Folder');
+thedate python:show_date and (shortdate and brain.getDateForList or brain.effective) or None;
+imgsrc brain/getThumbnailPath;
+path string:/resolveuid/$uid/view;
+brain_url python:brain.getURL();
+code python:brain.getCode;
+code_title python:industrialsector_getValue(code);
+title python:codeimg and industrialsector_getValue(code);
+">
+        <div class="col-md-3"
+             tal:attributes="class col1cls"
+             tal:condition="illu_brains">
+            <a tal:repeat="illu_brain illu_brains"
+               tal:attributes="href string:${brain_url}/view">
+                <img tal:attributes="
+                src string:${illu_brain/getURL}/@@scaling/get?scaling=120x120;
+                title brain/pretty_title_or_id;
+                " alt=""/>
+            </a>
+        </div><!-- .col-md-3 -->
+        <div class="col-md-9"
+             tal:attributes="class python:illu_brains and col2cls or 'col-md-12';
+                             ">
+            <tal:loop2 condition="show_partners"
+                       repeat="partner_brain python:stage_get_as_brains('unitracc-partner', brain_uid)">
+            <a target="_blank"
+               tal:define="hasi python:partner_brain.hasImage;
+                           url python:hasi and partner_brain.getWebLink"
+               tal:condition="hasi"
+               class="partner-img"
+               tal:omit-tag="not:url"
+               tal:attributes="href url">
+                <img tal:attributes="src string:${partner_brain/getURL}/@@scaling/get?scaling=80x80;
+                                     class python:(not url) and 'partner-img' or None"/>
+            </a>
+            </tal:loop2>
+            <div class="info-data"
+                 tal:define="c2 python:brain.getContactCompany;
+                             c3 python:contactPerson(brain);
+                             c4 python:brain.Rights;
+                             "
+                 tal:condition="python:thedate or c2 or c3 or c4">
+                 <p class="info subject"
+                     tal:condition="python:1 and code and code != '**'"
+                     tal:content="python:industrialsector.getValue(code)"
+                     i18n:translate="">
+                     Fachbereich
+                 </p>
+                 <p class="info author"
+                    tal:condition="c2"
+                    tal:content="c2">
+                    S &amp; P Consult GmbH
+                 </p>
+                 <p class="info author"
+                    tal:condition="c3"
+                    tal:content="c3">
+                    Dr. Hase Caesar
+                 </p>
+                 <p class="info legal"
+                    tal:condition="c4"
+                    tal:content="c4">
+                    &copy; Stein &amp; Partner
+                 </p>
+                 <p class="info"
+                    tal:condition="thedate">
+                    <tal:if condition="shortdate"
+                            content="thedate/year">
+                    2017</tal:if><tal:else condition="not:shortdate"
+                            content="thedate">
+                    12.7.2017
+                    </tal:else>
+                 </p>
+            </div><!-- .info-data -->
+            <h3>
+                <a tal:attributes="href url"
+                   tal:content="brain/pretty_title_or_id">
+                   Titel des Fachbuchs
+                </a>
+            </h3>
+            <div tal:define="value python:brain.Description"
+                 tal:condition="value"
+                 tal:content="value">
+                Beschreibung des Fachbuchs
+            </div>
+        </div><!-- .col-md-8 -->
+    </div><!-- .row listing-item large -->
+</tal:loop>
+</metal:main>
+
+</tal:inner>
+</tal:success>
+<tal:nothingfound condition="not: brains">
+<p i18n:translate="">
+Sorry, nothing found!
+</p>
+</tal:nothingfound>
+</tal:outer>
+</metal:block>

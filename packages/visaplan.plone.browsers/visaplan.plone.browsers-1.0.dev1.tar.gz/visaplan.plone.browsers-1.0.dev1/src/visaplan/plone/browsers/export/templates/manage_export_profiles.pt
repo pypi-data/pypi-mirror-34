@@ -1,0 +1,130 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1);" />
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <metal:no-ads fill-slot="column_one_slot"/>
+    <head>
+      <metal:css fill-slot="style_slot">
+        <metal:css define-macro="chosen-css"/>
+      </metal:css>
+    </head>
+    <body>
+        <metal:cr_outer fill-slot="breadcrumb">
+            <metal:breadcrumb use-macro="here/crumbs/macros/main"/>
+        </metal:cr_outer>
+
+        <metal:main fill-slot="main"
+                    tal:define="dummy python:context.getBrowser('authorized').authorized('unitracc: Manage Export Profiles');
+                                Bexport nocall:here/@@export;
+                                profiles Bexport/profilesOverview;
+                                act_lang python:context.getAdapter('langcode')();
+                                translate python:context.getAdapter('translate');
+                                msgstrDeleteConfirm python:translate('Do you really want to delete this item?');">
+
+            <div class="area-title">
+                <h1 i18n:translate="">
+                    Manage Export Profiles
+                </h1>
+
+            </div>
+            <div class="area-content">
+                <div class="well">
+                    <div class="well-content">
+
+                        <p i18n:translate="">
+                        The list below gives you an overview of all profiles that have been created.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hauptbereich des Gruppen-Forums -->
+                <div>
+                    <!-- Überschriften Border -->
+                    <div class="border chosen-container-single">
+                        <!-- Überschrift -->
+
+                        <form action="@@export/newExportProfile">
+                            <button type="submit"
+                                    class="btn btn-primary">
+                                 <i class="glyphicon glyphicon-plus icon-white"></i>
+                                 <tal:block i18n:translate="">
+                                 Create a new export profile
+                                 </tal:block>
+                             </button>
+                        </form>
+                    </div>
+
+                    <!-- Thread Body -->
+                    <table cellspacing="0" cellpadding="0"
+                           class="datatb table table-bordered table-hover table-sorted" sort="-1" aaSorting="2,asc">
+                        <thead>
+                            <tr >
+                                <th class="" i18n:translate="">
+                                    Export type
+                                </th>
+                                <th class="" i18n:translate="">
+                                    Name
+                                </th>
+                                <th class="" i18n:translate="">
+                                    Creator
+                                </th>
+                                <th class="" i18n:translate="">
+                                    Creation date
+                                </th>
+                                <th class="" i18n:translate="">
+                                    Subportal
+                                </th>
+                                <th class="" i18n:translate="">
+                                    Active
+                                </th>
+                                <td class=""><!-- kein sortierbarer Inhalt --></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tal:repeating tal:repeat="id profiles">
+                                <tr tal:define="row python:profiles[id];
+                                                subportals python: ', '.join(row['subportal']);
+                                                langcodes row/title/keys;
+                                                title python:row['title'].get(act_lang) or row['title'][row['title'].keys()[0]];">
+                                    <td class="">
+                                        <tal:ublock tal:content="row/etype"/>
+                                    </td>
+                                    <td tal:attributes="id id" class="my-code-listing-item border-bottom-e4e4e4">
+                                        <a tal:attributes="href string:@@export/viewExportProfile?pid=${id}"
+                                               tal:content="string: ${title}"></a>
+                                    </td>
+                                    <td class="" tal:content="row/creator"></td>
+                                    <td class=""><tal:dateblock tal:content="row/creation_date"/></td>
+                                    <td class="">
+                                        <tal:ublock tal:content="subportals"/>
+                                    </td>
+                                    <td class="">
+                                        <i class="glyphicon glyphicon-ok"
+                                           tal:condition="row/active"></i>
+                                        <i class="glyphicon glyphicon-remove"
+                                           tal:condition="not:row/active"></i>
+                                        <span class="invisible" tal:content="row/active"/>
+                                    </td>
+                                    <td class="">
+                                        <a tal:attributes="href string:@@export/viewExportProfile?pid=${id}"><i class="glyphicon glyphicon-eye-open"></i></a>
+                                        <a tal:attributes="href string:@@export/editExportProfile?pid=${id}"><i class="glyphicon glyphicon-pencil"></i></a>
+                                        <a tal:attributes="href string:@@export/deleteExportProfile?pid=${id};
+                                                           onclick string:return confirm('${msgstrDeleteConfirm}')"><i class="glyphicon glyphicon-trash"></i></a>
+                                    </td>
+                                </tr>
+                            </tal:repeating>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </metal:main>
+    </body>
+
+</html>

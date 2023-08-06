@@ -1,0 +1,33 @@
+<tal:ns define="folder here/@@book/getBookFolder">
+<tal:if tal:condition="nocall:folder">
+<div class="col-md-12"
+    tal:define="book nocall:folder/@@book;
+uid python:here.UID();
+                next python:book.getNextBrain(uid);
+                previous python:book.getPreviousBrain(uid);
+                ">
+    <div id="book-navigation" class="book-navigation row"
+         tal:attributes="data-uid uid">
+        <div class="row" tal:omit-tag="">
+            <div class="col-md-1">
+                <a tal:attributes="href previous/current/getURL"
+                   tal:condition="previous">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </a>
+            </div>
+            <div class="col-md-10">
+                <p class="text-center" tal:content="book/getBookFolderInfo">
+                Instandhaltung von Kanalisationen (Stein 2005)
+                </p>
+            </div>
+            <div class="col-md-1 pull-right">
+                <a tal:attributes="href next/current/getURL"
+                   tal:condition="next">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</tal:if>
+</tal:ns>

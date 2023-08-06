@@ -1,0 +1,222 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <metal:no-ads fill-slot="column_one_slot"/>
+    <metal:main fill-slot="main">
+        <metal:block tal:define="Bexport nocall:here/@@export;
+                                 can_export python:Bexport.canExport(True);
+                                 can_manage python:context.getAdapter('checkperm')('unitracc: Manage Export Profiles');
+                                 act_lang python:context.getAdapter('langcode')();
+                                 brain here/getHereAsBrain;
+                                 exports Bexport/getExportedFiles;
+                                 exporttypes Bexport/getExportTypes;
+                                 scorm nocall:here/@@scorm | nothing;
+                                 offer_scorm python:scorm and scorm.exportable_context();
+                                 uid context/getUID;
+                                 ">
+            <h1 tal:content="brain/Title"></h1>
+            <div >
+                <div class="well">
+                    <div class="well-content">
+                        <h2 i18n:translate="">
+                            Exported files
+                        </h2>
+                        <ul tal:condition="exports">
+                            <li tal:repeat="file exports"
+                                i18n:translate="">
+                                <a tal:attributes="href file/url"
+                                   tal:content="file/title"
+                                   target="_blank"
+                                   i18n:name="export_filetitle">
+                                </a>
+                                created on <tal:block tal:content="file/created"
+                                                      i18n:name="filecreationdate"/>
+                            </li>
+                        </ul>
+                        <p tal:condition="not:exports"
+                           i18n:translate="">
+                           No exports saved
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <tal:if_export condition="can_export">
+            <h2 i18n:translate="">Export document</h2>
+            <tal:if-has-etypes tal:condition="exporttypes">
+                <form tal:define="brain_url brain/getURL"
+                      action="@@export/export"
+                      tal:attributes="action string:${brain_url}/@@export/export"
+                      id="export-form"
+                      method="POST">
+                    <ul style="list-style: None"
+                        tal:condition="not:can_manage">
+                        <tal:repeat tal:repeat="etypes exporttypes">
+                        <li tal:repeat="etype etypes">
+                            <label class="radio"
+                                   tal:define="type python:etypes[etype];
+                                               long python:type['titles'].get(act_lang) or type['titles'][type['titles'].keys()[0]];
+                                               title python:etypes[etype]['etype']+' '+long">
+                                <input type="radio" name="export"
+                                       tal:attributes="value etype"/>
+                                <tal:block i18n:translate=""
+                                           tal:content="title"/>
+                            </label>
+                        </li>
+                        </tal:repeat>
+                    </ul>
+                    <table tal:condition="can_manage"
+                           class="my-content-listing"
+                           >
+                        <thead>
+                        <tr>
+                            <td></td>
+                            <th i18n:translate="">
+                            Export type
+                            </th>
+                            <th i18n:translate="">
+                            Name
+                            </th>
+                            <td></td>
+                            <th i18n:translate=""
+                                tal:replace="nothing">
+                            Edit
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tal:loop_outer tal:repeat="etypes exporttypes"
+                                        define="etype_given request/etype | nothing">
+                        <tal:loop_inner tal:repeat="etype etypes">
+                            <tr tal:define="type python:etypes[etype];
+                                            long python:type['titles'].get(act_lang) or type['titles'][type['titles'].keys()[0]];
+                                            type_s python:etypes[etype]['etype'];
+                                            radio_id string:radio-${repeat/etypes/number}-${repeat/etype/number};
+                                            checked python:str(etype) == etype_given;
+                                            ">
+                                <td>
+                                    <input type="radio" name="export"
+                                           value="42"
+                                           tal:attributes="value etype;
+                                                           id radio_id;
+                                                           checked checked;
+                                                           "/>
+                                </td>
+                                <td>
+                                    <label tal:content="type_s"
+                                           tal:attributes="for radio_id"
+                                           style="display:block"
+                                           for="radio-1-1">
+                                    PDF
+                                    </label>
+                                </td>
+                                <td>
+                                    <label tal:attributes="for radio_id"
+                                           for="radio-1-1">
+                                    <tal:txt content="long">mit Pommes und Salat</tal:txt>
+                                    <tal:if condition="python:type_s == 'PDF'">
+                                   (<a href="html_view?pid=42"
+                                       tal:attributes="href string:$brain_url/html_view?pid=$etype"
+                                       i18n:translate="">HTML preview</a>)
+                                   </tal:if>
+                                    </label>
+                                </td>
+                                <td>
+                                    <a href="@@export/viewExportProfile?pid=42"
+                                       tal:attributes="href string:@@export/viewExportProfile?pid=$etype"
+                                       i18n:translate="">
+                                       View export profile
+                                    </a>
+                                </td>
+                            </tr>
+                        </tal:loop_inner>
+                        </tal:loop_outer>
+                        </tbody>
+                    </table>
+                    <script type="text/javascript"
+                            tal:condition="offer_scorm">
+jQuery(document).ready(
+    function () {
+        var form_selector = 'form#export-form'
+        var theform = jQuery(form_selector);
+        var action_ori = theform.attr('action')
+        jQuery('form#export-form input[type=radio]').change(function () {
+            theform.attr('action', action_ori);
+            console.log(this);
+            });
+        jQuery(form_selector+' ul').each(function (index, element) {
+            var radio = jQuery('<input type="radio">').change(function () {
+                theform.attr('action', '@@scorm/export');
+                });
+            var li = jQuery('<li/>');
+            var label = jQuery('<label>SCORM</label>');
+            label.prepend(radio);
+            li.append(label);
+            jQuery(this).append(li);
+        })
+        jQuery(form_selector+' table tbody').each(function (index, element) {
+            var radio = jQuery('<input type="radio" name="export" id="radio-scorm">')
+            var tr = jQuery('<tr/>');
+            var td = jQuery('<td/>');
+            td.append(radio);
+            tr.append(td);
+            var label = jQuery('<label for="radio-scorm">SCORM</label>')
+            td = jQuery('<td colspan="2"/>');
+            td.append(label);
+            tr.append(td);
+            jQuery(this).append(tr);
+            jQuery(radio).change(
+                                function () {
+                                        theform.attr('action', '@@scorm/export');
+                                });
+        })
+
+    });
+                    </script>
+                    <div class="form-data"
+                         tal:condition="python:0">
+                        <label>
+                        <tal:txt i18n:translate="">Superordinate title:</tal:txt>
+                        <input type="text" class="full-width" name="suptitle"
+                               tal:attributes="value request/suptitle|nothing">
+                       </label>
+                    </div>
+                    <div class="form-actions" >
+                        <button class="btn btn-primary" type="submit"
+                                i18n:translate=""
+                                tal:condition="exporttypes">
+                            Start export
+                        </button>
+                        <a href="#" class="btn btn-default"
+                           tal:attributes="href string:${brain/getURL}/view"
+                           i18n:translate="">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+                <noscript tal:condition="offer_scorm">
+                    <form action="@@scorm/export">
+                        <button class="btn btn-primary" type="submit"
+                                i18n:translate=""
+                                >
+                            SCORM export
+                        </button>
+                    </form>
+                </noscript>
+            </tal:if-has-etypes>
+            <p tal:condition="not:exporttypes"
+               i18n:translate="">
+                No export profiles created. As long as there is no
+                export profile, the selected resource can not be exported.
+            </p>
+            </tal:if_export>
+
+        </metal:block>
+    </metal:main>
+</html>
+

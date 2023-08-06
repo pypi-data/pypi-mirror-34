@@ -1,0 +1,29 @@
+<tal:main define="
+list_ options/content;
+level options/level;
+count nocall:options/count;
+templateId templateId | template/getId;
+dummy python:count(templateId);
+section nocall:here/html_section;
+page nocall:here/html_page;
+cmt_start python:'[' * level;
+cmt_end python:']' * level;
+">
+<tal:comment replace="structure string:<!-- $cmt_start html_section ($level) $cmt_start ... -->"/>
+    <div class="document-section level-N"
+         tal:attributes="class string:document-section level-${level}">
+        <tal:loop repeat="element list_">
+        <tal:block content="structure python:page(page=element, level=level, count=count)"
+                   condition="python: level &gt; 1">
+            Inhalt des Elements
+        </tal:block>
+        <tal:if-children
+            condition="python:element['childs']"
+            content="structure python:section(content=element['childs'], level=level+1, count=count)">
+            Rekursion für die Kindelemente
+        </tal:if-children>
+        </tal:loop>
+    </div>
+
+<tal:comment replace="structure string:<!-- ... $cmt_end html_section ($level) $cmt_end -->"/>
+</tal:main>

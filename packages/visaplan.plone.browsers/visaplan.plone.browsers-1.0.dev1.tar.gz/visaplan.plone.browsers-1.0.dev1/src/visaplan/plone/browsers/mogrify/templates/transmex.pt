@@ -1,0 +1,277 @@
+<metal:block metal:use-macro="here/main_template/macros/master"
+             i18n:domain="plone">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1);
+                         authorized nocall:here/@@authorized;
+                         dummy python:authorized.authorized('unitracc: Import XML');
+                         "/>
+
+<metal:block fill-slot="javascript_head_slot"
+             tal:condition="python:0">
+  <script tal:attributes="src string:${here/portal_url}/++resource++mogrify/mogrify.js"></script>
+</metal:block>
+<metal:block fill-slot="head_slot">
+<style type="text/css">
+fieldset {
+  margin: 0.3em 0;
+  padding: 0.2em;
+  border: 1px solid gray;
+}
+fieldset legend {
+  margin: 0 0.1em;
+  padding: 0;
+  border: none;
+  width: auto;
+}
+</style>
+</metal:block>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_one_slot"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+
+<metal:main fill-slot="main">
+<metal:mac define-macro="mogriform"
+            tal:define="mogrify nocall:context/@@mogrify;
+                        default python:mogrify.formdata();
+                        develmode default/DevelopmentMode | nothing;
+                        ">
+
+    <div id="area-title">
+        <h1 i18n:translate=""
+            metal:define-slot="title">
+            Export (transmogrify)
+        </h1>
+    </div>
+    <metal:slot define-slot="defaults-info">
+    <tal:if-devel condition="default/show-form-data | nothing">
+    <pre tal:define="pformat python:context.getAdapter('pformat')"
+         tal:content="python:pformat(default)">
+    {'DevelopmentMode': True,
+     'debug-options': {},
+     ...}
+    </pre>
+    </tal:if-devel>
+    </metal:slot>
+
+    <form action="@@mogrify/export" id="export-form" method="get"
+          tal:define="verbose default/verbose;
+                      action action | string:export;
+                      showval python:verbose or develmode;
+                      "
+          tal:attributes="action string:@@mogrify/$action">
+
+        <div tal:define="items items | default/export-cfg-choices;
+                         curval curval | default/export-cfg;
+                         "
+             metal:define-slot="action">
+            <label class="for-next-input"
+                   i18n:translate="">
+            Action to perform:
+            </label>
+            <div tal:repeat="item items">
+            <label tal:define="value item/value;
+                               label item/label;
+                               ">
+                <input type="radio" name="export-cfg"
+                       checked="checked"
+                       id="radio-cfg-export"
+                       tal:attributes="checked python:value == curval;
+                                       value value;
+                                       id string:radio-cfg-$value"
+                       value="q-dir">
+                <tal:showval condition="showval">(<tt tal:content="value">catalog</tt>)</tal:showval>
+                <tal:txt i18n:translate=""
+                         tal:content="item/label"
+                         >Export (...)</tal:txt>
+            </label>
+            </div>
+        </div>
+
+        <div>
+            <label class="for-next-input"
+                   i18n:translate="">
+            Export method:
+            </label>
+            <div tal:repeat="item default/flavour-choices">
+            <label tal:define="value item/value;
+                               ">
+                <input type="radio" name="flavour"
+                       checked="checked"
+                       id="radio-flavour-q-dir"
+                       tal:attributes="checked item/selected;
+                                       value value;
+                                       id string:radio-flavour-$value"
+                       value="q-dir">
+                <tal:showval condition="showval">(<tt tal:content="value">catalog</tt>)</tal:showval>
+                <tal:txt i18n:translate=""
+                         tal:content="item/label"
+                         >json directory</tal:txt>
+            </label>
+            </div>
+        </div>
+
+        <div>
+            <label for="input-path"
+                   i18n:translate="path">
+                Path
+            </label>
+            <textarea name="path:lines" id="input-path"
+                   class="input-xxlarge"
+                   tal:condition="default/path_multiline"
+                   tal:content="default/path">
+            Zeilenweise Pfadangaben, z.B. /unitracc/pfad/zum/Dings;
+            der Name des Root-Elements wird nötigenfalls ergänzt
+            </textarea>
+            <input name="path:lines" id="input-path"
+                   class="input-xxlarge"
+                   tal:condition="not:default/path_multiline"
+                   tal:attributes="value default/path">
+        </div>
+
+        <tal:if-verbose condition="verbose">
+        <div>
+            <label for="input-path-prefix"
+                   i18n:translate="">
+                Prefix
+            </label>
+            <input name="path-prefix" id="input-path-prefix"
+                   class="input-xxlarge"
+                   tal:attributes="value default/path-prefix">
+        </div>
+
+        <div tal:define="checked default/exclude-contained;
+                         ">
+            <label>
+                <input type="radio" name="exclude-contained"
+                       checked="checked"
+                       tal:attributes="checked not:checked"
+                       value="false">
+                <tal:txt i18n:translate="">Include contained elements</tal:txt>
+            </label>
+            <label>
+                <input type="radio" name="exclude-contained"
+                       checked=""
+                       tal:attributes="checked checked"
+                       value="true">
+                <tal:txt i18n:translate="">Exclude contained elements</tal:txt>
+            </label>
+        </div>
+
+        <div tal:define="checked default/use-transactions;
+                         ">
+            <label>
+                <input type="radio" name="use-transactions"
+                       checked="checked"
+                       tal:attributes="checked checked"
+                       value="true">
+                <tal:txt i18n:translate="">Use transactions</tal:txt>
+            </label>
+            <label>
+                <input type="radio" name="use-transactions"
+                       checked=""
+                       tal:attributes="checked not:checked"
+                       value="false">
+                <tal:txt i18n:translate="">Don't use transactions</tal:txt>
+            </label>
+        </div>
+        </tal:if-verbose>
+        <tal:else-verbose condition="not:verbose">
+          <input name="path-prefix" id="input-path-prefix" type="hidden"
+                 tal:attributes="value default/path-prefix">
+          <input name="exclude-contained" type="hidden"
+                 value="false">
+          <input name="use-transactions" type="hidden"
+                 value="false">
+        </tal:else-verbose>
+
+        <div>
+          <label for="input-output-prefix">
+              <strong i18n:translate="">
+                Output Prefix
+              </strong>
+              <p i18n:translate="">
+              For <a i18n:name="for-dir-output"
+                     tal:define="target string:radio-flavour-q-dir"
+                     tal:attributes="href string:$templateId#$target"
+                     tal:omit-tag=""
+                     href="#radio-flavour-q-dir">directory export</a>:
+              subdirectory to hold the exported data.
+              <strong>Not cleared before processing!</strong>
+              To use a timestamp and get a clean directory tree,
+              leave this empty.
+              </p>
+            </label>
+            <input name="output-prefix" id="input-output-prefix"
+                   class="input-xxlarge"
+                   tal:attributes="value default/output-prefix">
+        </div>
+
+        <fieldset tal:condition="develmode"
+            style="border: 1px solid gray; padding: 0.3em">
+            <legend style="margin-left: 3em; padding: 0.1em 0.3em; display:inline-block">
+                Entwicklungsoptionen
+            </legend>
+            <fieldset tal:define="curval default/debug | python:0;
+                             choices default/debug-choices">
+                <legend>
+                    Entwicklungsmodus
+                </legend>
+                <div tal:repeat="item choices">
+                  <label>
+                    <tal:txt content="item/label">
+                      Off
+                    </tal:txt>
+                    <input type="radio" name="debug"
+                           style="float: left;margin-right: 0.3em"
+                           tal:define="value item/value"
+                           tal:attributes="value value;
+                                           checked python:value == curval">
+                  </label>
+                </div>
+            </fieldset>
+            <div>
+              <label>
+                <input type="checkbox" name="trace-first" value="true"
+                       style="float: left;margin-right: 0.3em"
+                       tal:attributes="checked default/trace-first | nothing">
+                <p>
+                Trace first item
+                (used by some blueprints)
+                </p>
+              </label>
+            </div>
+            <div>
+              <label>
+                <tal:txt i18n:translate="">
+                  IDs to trigger debugging
+                  (used by some blueprints)
+                </tal:txt>
+                <div>
+                <textarea name="debug-ids:lines"
+                  tal:content="default/debug-ids | nothing">
+                  komisches-objekt-1
+                  gurke-2
+                </textarea>
+                </div>
+              </label>
+            </div>
+        </fieldset>
+        <input type="hidden" name="debug:bool"
+               tal:condition="not:develmode"
+               value="false"/>
+
+        <div>
+            <button class="btn btn-primary" type="submit">
+                <tal:block i18n:translate="">Export</tal:block>
+            </button>
+            <input class="btn btn-default" type="reset">
+        </div>
+    </form>
+    <script type="text/javascript" src="/++resource++mogrify/mogrify.js"></script>
+
+</metal:mac>
+</metal:main>
+</metal:block>
+<!-- vim: set ts=2 sts=2 sw=2 si et hls :-->

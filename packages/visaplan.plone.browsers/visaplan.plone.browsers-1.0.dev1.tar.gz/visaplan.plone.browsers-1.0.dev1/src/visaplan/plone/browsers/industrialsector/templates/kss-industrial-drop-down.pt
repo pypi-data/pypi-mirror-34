@@ -1,0 +1,41 @@
+<tal:block tal:define="industrialsector nocall:here/@@industrialsector;
+                       maxlist python:here.getAdapter('maxlist');
+                       dict_ industrialsector/getConfigure;
+                       portal_url here/portal_url;
+                       lists python:maxlist(dict_.get('relationships','').split('\r\n'), 1)"
+           i18n:domain="plone">
+    <tal:block  tal:repeat="list_ lists">
+        <ul>
+            <tal:block tal:repeat="value list_">
+                <tal:block tal:define="pair python:value.split('@@')"
+                           tal:condition="python:pair[1:]" >
+                    <li>
+                        <strong tal:content="python:pair[1]"
+                                i18n:translate=""
+                                />
+                    </li>
+                    <tal:block tal:repeat="value python:dict_.get(value,{}).get('sublevel','').split('\r\n')">
+                        <tal:block tal:condition="value">
+                            <li tal:define="pair python:value.split('@@')">
+                                <a tal:attributes="href python:portal_url+'/search_view?SearchableText=&showExtended=1&getCode='+pair[0]"
+                                   tal:content="python:pair[1]"
+                                   i18n:translate=""/>
+                            </li>
+                        </tal:block>
+                    </tal:block>
+                    <li>
+                        <a tal:attributes="href python:portal_url+'/search_view?SearchableText=&showExtended=1&getCode='+pair[0]">
+                            <i class="glyphicon glyphicon-circle-arrow-right"></i>
+                            <tal:block i18n:translate="" >more</tal:block>
+                            <tal:block tal:content="python:pair[1]"
+                                       i18n:translate=""/>
+                        </a>
+                    </li>
+                </tal:block>
+            </tal:block>
+        </ul>
+        <hr tal:define="number python:repeat['list_'].number()"
+            tal:condition="python: number < len(lists) and not number % 3"
+            class="clear"/>
+    </tal:block>
+</tal:block>

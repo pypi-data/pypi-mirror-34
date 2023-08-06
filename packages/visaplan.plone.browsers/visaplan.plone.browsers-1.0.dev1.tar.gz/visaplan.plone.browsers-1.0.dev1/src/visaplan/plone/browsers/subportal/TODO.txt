@@ -1,0 +1,15 @@
+TODO für unitracc@subportal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Mehrsprachigkeit ist erforderlich für:
+  - Portaltitel
+  - Portalbeschreibung
+  (siehe ../registration/browser.py, wnzkb-trunk@12969)
+  Die Mehrsprachigkeit ist vorzugsweise generisch zu realiseren,
+  mit jeweiligem Fallback-Wert, wenn keine sprachspezifische Festlegung
+  vorhanden
+  Evtl. müßten dann die Subportale auf echten eigenen Seiten bearbeitet werden,
+  um die Tabs für die Mehrsprachigkeit zur Verfügung zu haben.
+- Google-Analytics-Code in Datei auslagern (kann beim Start einmalig geladen werden)
+- Caching
+- Unterstützung von Logos je nach Anzeigesprache

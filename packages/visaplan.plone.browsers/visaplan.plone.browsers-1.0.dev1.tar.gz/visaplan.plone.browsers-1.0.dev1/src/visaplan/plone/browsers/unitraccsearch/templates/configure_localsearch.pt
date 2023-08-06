@@ -1,0 +1,389 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="
+dummy context/@@authorized/managePortal;
+search nocall:context/@@unitraccsearch;
+dict_ search/getLocalSearch;
+gCS python: dict_.get('getCustomSearch', []);
+uid here/UID;
+devel context/@@management/isDeveloper;
+">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Configure local search
+    </h1>
+
+    <tal:if-devel tal:condition="python:dict_ and devel">
+    <div tal:define="
+        pformat python:context.getAdapter('pformat');
+    ">
+    <h2 i18n:translate="">Current values (in Python syntax)</h2>
+    <h3 i18n:translate="">Configured value</h3>
+    <pre tal:content="python:pformat(dict_)"
+         tal:condition="devel">
+{'getCustomSearch': ['portal_type=UnitraccImage',
+                     'portal_type=UnitraccStandard'}
+    </pre>
+    <h3 i18n:translate="">Effective value</h3>
+    <pre tal:define="dic context/@@unitraccsearch/createLocalQuery"
+         tal:content="python:pformat(dic)"
+         >
+{'getCustomSearch': ['portal_type=UnitraccImage',
+                     'portal_type=UnitraccStandard'}
+    </pre>
+    </div>
+    </tal:if-devel>
+
+   <form method="post" tal:attributes="action string:${here/absolute_url}/@@unitraccsearch/setLocalSearch">
+        <fieldset>
+            <div class="field form-group">
+                <label for="gCS">
+                <span
+                    i18n:translate="">Versatile search
+                </span>
+                <span tal:condition="devel">(<tt>getCustomSearch</tt>)</span>
+                <p i18n:translate=""><strong>Note:</strong>
+                The criteria given here will be <em>disjunct</em>, i.e. anyone of them might match.
+                To search a certain structure type for a certain object type, combine with
+                a <tt><label i18n:name="locallink"
+                             for="portal_type">portal_type</label></tt> specification.
+                </p>
+                </label>
+                <select tal:attributes="name string:${uid}.getCustomSearch:record:list"
+                        tal:define="
+grouped python:1;
+vocab python:context.getBrowser('unitracctype').get(pretty=1, grouped=grouped)
+"
+                        class="chosen form-control"
+                        size="10"
+                        id="gCS"
+                        multiple="multiple">
+<tal:grouped condition="grouped">
+<optgroup tal:repeat="optgroup vocab"
+          label="by object type"
+          tal:attributes="label optgroup/label">
+<tal:options repeat="pair python:optgroup['items']">
+<option tal:define="value python:pair[0];
+                    label python:pair[1];
+                    "
+        tal:attributes="value value;
+                        selected python:value in gCS;
+                        "
+        tal:content="label">
+Das Label wird von unitracctype(..., grouped) schon übersetzt zurückgegeben
+</option>
+</tal:options>
+</optgroup>
+</tal:grouped>
+<tal:flat condition="not:grouped">
+                    <option tal:repeat="pair vocab"
+                            tal:attributes="value python:pair[0];
+                                            selected python:pair[0] in gCS and 'selected' or None"
+                            tal:content="python:pair[1]"/>
+</tal:flat>
+                </select>
+            </div>
+
+            <div class="field form-group">
+                <label for="portal_type">
+                <span
+                    i18n:translate="">Object Types
+                </span>
+                <span tal:condition="devel">(<tt>portal_type</tt>)</span>
+                <p i18n:translate=""><strong>Note:</strong>
+                It <em>does</em> matter whether you specify object types <em>here</em>
+                or in <tt><label i18n:name="locallink"
+                                 for="gCS">getCustomSearch</label></tt>!
+                </p>
+                </label>
+                <select tal:attributes="name string:${uid}.${key}:record:list"
+                        tal:define="
+grouped python:0;
+vocab python:context.getBrowser('unitracctype').getPortalTypes(pretty=1, typeonly=1);
+key string:portal_type;
+cursel python: dict_.get(key, []);
+"
+                        class="chosen form-control"
+                        size="10"
+                        id="portal_type"
+                        multiple="multiple">
+<tal:grouped condition="grouped">
+    <tal:options repeat="pair vocab">
+                    <option tal:define="value python:pair[0];
+                                        label python:pair[1];
+                                        "
+                            tal:attributes="value value;
+                                            selected python:value in portal_type;
+                                            "
+                            tal:content="label">
+                    Das Label wird von unitracctype.getPortalTypes(pretty) schon übersetzt zurückgegeben
+                    </option>
+    </tal:options>
+</tal:grouped>
+<tal:flat condition="not:grouped">
+                    <option tal:repeat="pair vocab"
+                            tal:attributes="value python:pair[0];
+                                            selected python:pair[0] in cursel and 'selected' or None"
+                            tal:content="python:pair[1]"/>
+</tal:flat>
+                </select>
+            </div>
+
+<h1>Workflow</h1>
+<div class="field form-group"
+     tal:define="key string:override_workflow;
+                 ">
+<label>
+<input type="checkbox"
+       name="...:override_workflow"
+       tal:attributes="name string:${uid}.${key}:record:bool;
+                       checked python:dict_.get(key, False);
+                       "
+       value="true">
+<tal:txt i18n:translate="">
+Disregard workflow states.
+If this is not checked, and if the following selection is empty,
+a default selection is used.
+</tal:txt>
+</label>
+</div>
+
+<div class="field form-group"
+     tal:define="key string:review_state">
+<label for="review_state">
+<span
+    i18n:translate="">Review states
+</span>
+</label>
+<select tal:attributes="name string:${uid}.${key}:record:list"
+	tal:define="
+grouped python:0;
+vocab search/getReviewStates;
+cursel python: dict_.get(key, ['published', 'inherit', 'visible']);
+"
+	class="chosen form-control"
+	size="10"
+	id="portal_type"
+	multiple="multiple">
+<tal:grouped condition="grouped">
+<tal:options repeat="dic vocab">
+    <option tal:define="value python:dic['id'];
+			label python:dic['title'];
+			"
+	    tal:attributes="value value;
+			    selected python:value in cursel;
+			    "
+	    tal:content="label">
+    Das Label wird schon übersetzt zurückgegeben
+    </option>
+</tal:options>
+</tal:grouped>
+<tal:flat condition="not:grouped">
+<tal:loop tal:repeat="dic vocab">
+    <option tal:define="value python:dic['id'];
+                        label python:dic['title']"
+	    tal:attributes="value value;
+			    selected python:value in cursel"
+	    tal:content="label"/>
+</tal:loop>
+</tal:flat>
+</select>
+</div>
+
+            <div class="field form-group" tal:define="
+choices python:('sortable_title',
+                'getObjPositionInParent',
+                'effective',
+                'start',
+                'created',
+                );
+key string:sort_on;
+curval python: dict_.get(key);
+bogus_value python:curval and curval not in choices;
+create_optgroups python:bogus_value or not curval;
+omit_optgroups not:create_optgroups;
+">
+
+<label for="sort_on">
+    <span i18n:translate="">Sorting criterion</span>
+    <span tal:condition="devel">(<tt>sort_on</tt>)</span>
+</label>
+<select id="sort_on" name="sort_on"
+        tal:attributes="name string:${uid}.${key}:record:ignore_empty">
+    <option value=""
+            i18n:translate="">Not specified here <em>(use default)</em></option>
+    <optgroup tal:condition="python:create_optgroups and curval"
+              i18n:attributes="label"
+              label="Current value">
+        <option value="curval"
+                selected="selected"
+                tal:attributes="value curval"
+                tal:content="curval">
+        bogus value
+        </option>
+    </optgroup>
+    <optgroup i18n:translate=""
+              tal:omit-tag="omit_optgroups"
+              label="Configured choices">
+<tal:loop repeat="choice choices">
+        <option value="title"
+                tal:content="choice"
+                tal:attributes="value choice;
+                                selected python:choice == curval">
+        title
+        </option>
+</tal:loop>
+    </optgroup>
+</select>
+
+            </div><!-- .field form-group -->
+
+            <div class="field form-group" tal:define="
+reverse_choices python:('descending', 'reverse');
+choices python:('ascending',) + reverse_choices;
+key string:sort_order;
+curval python: dict_.get(key);
+bogus_value python:curval and curval not in choices;
+create_optgroups python:bogus_value or not curval;
+omit_optgroups not:create_optgroups;
+">
+                <label for="sort_on">
+                    <span i18n:translate="">Sorting order</span>
+                    <span tal:condition="devel">(<tt>sort_order</tt>)</span>
+                </label>
+                <select id="sort_order" name="sort_order"
+                        tal:attributes="name string:${uid}.${key}:record:ignore_empty">
+                    <option value=""
+                            i18n:translate="">Not specified here <em>(use default)</em></option>
+                    <optgroup tal:condition="python:create_optgroups and curval"
+                              i18n:attributes="label"
+                              label="Current value">
+                        <option value="curval"
+                                selected="selected"
+                                tal:attributes="value curval"
+                                tal:content="curval">
+                        bogus value
+                        </option>
+                    </optgroup>
+                    <optgroup i18n:translate=""
+                              tal:omit-tag="omit_optgroups"
+                              label="Supported choices">
+                        <option value="ascending"
+                                tal:attributes="selected python:curval == 'ascending'"
+                                i18n:translate="">
+                            <tt i18n:name="value">ascending</tt>
+                            (Default)
+                        </option>
+                        <option value="reverse"
+                                tal:attributes="selected python:curval in reverse_choices"
+                                i18n:translate="">
+                            <tt i18n:name="value">reverse</tt>
+                            (same as <tt i18n:name="alias">descending</tt>)
+                        </option>
+                    </optgroup>
+                </select>
+            </div><!-- .field form-group -->
+
+            <div class="field form-group" tal:define="
+key string:hasCode;
+choices python:[{'id': '', 'label': 'Show all'},
+                {'id': 1, 'label': 'With industrial sector only'},
+                {'id': 0, 'label': 'Without industrial sector only'},
+                ];
+curval python:dict_.get(key);
+">
+                <label for="hasCode">
+                    <span i18n:translate="">Regard industrial sector code?</span>
+                    <span tal:condition="devel">(<tt>hasCode</tt>)</span>
+                </label>
+                <select id="hasCode" name="hasCode"
+                        class="chosen"
+                        tal:attributes="name string:${uid}.${key}:record:int:ignore_empty">
+                <tal:loop repeat="dic choices">
+                <option tal:define="val dic/id"
+                        tal:attributes="selected python:val == curval;
+                                        value val"
+                        tal:content="dic/label"
+                        i18n:translate="">
+                with industrial sector only
+                </option>
+                </tal:loop>
+                </select>
+            </div>
+
+            <div class="field form-group" tal:define="
+key string:path;
+choices python:[{'id': '', 'label': 'Default (below current folder)'},
+                {'id': '.', 'label': 'Below current folder'},
+                {'id': '..', 'label': 'Below parent folder'},
+                {'id': 'NOPATH', 'label': 'no path filter'},
+                {'id': 'SPEC', 'label': 'specified root folder'},
+                ];
+curval python:dict_.get(key);
+">
+                <label for="path">
+                    <span i18n:translate="">Path criterion</span>
+                    <span tal:condition="devel">(<tt>path</tt>)</span>
+                </label>
+                <select id="path" name="path"
+                        class="chosen"
+                        tal:attributes="name string:${uid}.${key}:record:ignore_empty">
+                <tal:loop repeat="dic choices">
+                <option tal:define="val dic/id"
+                        tal:attributes="selected python:val == curval;
+                                        value val"
+                        tal:content="dic/label"
+                        i18n:translate="">
+                Default (below current folder)
+                </option>
+                </tal:loop>
+                </select>
+            </div>
+
+            <div class="field form-group" tal:define="
+key string:path_spec;
+curval python:dict_.get(key) or context.getPath();
+">
+                <label for="path">
+                    <span i18n:translate="">Path criterion</span>
+                    <span tal:condition="devel">(<tt>path_spec</tt>)</span>
+                    <p i18n:translate="">
+                    This will be ignored unless activated
+                    by the previous setting (choose "specified root folder")
+                    </p>
+                </label>
+                <input type="text"
+                        tal:attributes="name string:${uid}.${key}:record:ignore_empty;
+                                        value curval;
+                                        ">
+            </div>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Save"
+               class="btn btn-primary"
+               i18n:attributes="value label_save"/>
+        <input type="reset"
+               class="btn btn-reset">
+    </form>
+
+<metal:dev use-macro="context/configure_localsearch_json/macros/sibling-pages"/>
+</metal:main>
+
+</body>
+</html>
+

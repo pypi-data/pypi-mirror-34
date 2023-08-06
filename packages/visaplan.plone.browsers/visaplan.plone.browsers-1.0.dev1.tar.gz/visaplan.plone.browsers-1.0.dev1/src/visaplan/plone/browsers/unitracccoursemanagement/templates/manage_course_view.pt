@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:block fill-slot="javascript_head_slot">
+        <script type="text/javascript"
+                src="/++resource++usermanagement/manage_course_view.js"></script>
+        <link rel="stylesheet" type="text/css"
+              href="/++resource++usermanagement/usermanagement.css"/>
+
+
+    </metal:block>
+
+
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="dummy context/@@unitracccoursemanagement/authManageCourses">
+
+    <div id="area-title">
+        <h1 i18n:translate="">
+            Course Manager
+        </h1>
+    </div>
+    <div class="area-content">
+
+        <form method="post" class="form-action"
+              tal:attributes="action string:${portal_url}/manage_coursegroup_add">
+            <button class="btn btn-primary" type="submit">
+                <i class="glyphicon glyphicon-plus icon-white"></i>
+                <tal:block i18n:translate="">Add Group</tal:block>
+            </button>
+        </form>
+
+        <form method="post" id="search-form" action="manage_course_view"
+              accept-charset="UTF-8">
+
+
+            <div class="input-group user-search">
+                <input type="hidden" name="b_start"
+                       tal:attributes="value request/form/b_start | python:0" id="b_start"/>
+                <input id="appendedInputButton" class="col-md-6" type="text" name="SearchableText"
+                       tal:attributes="value request/SearchableText | nothing"/>
+                <button type="submit" class="btn btn-default search-button" id="appendedInputButton">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <tal:block i18n:translate="">Search</tal:block>
+                </button>
+            </div>
+        </form>
+
+        <div id="js-listing-course">
+            <!-- -->
+        </div>
+
+    </div>
+
+</metal:main>
+
+</body>
+</html>

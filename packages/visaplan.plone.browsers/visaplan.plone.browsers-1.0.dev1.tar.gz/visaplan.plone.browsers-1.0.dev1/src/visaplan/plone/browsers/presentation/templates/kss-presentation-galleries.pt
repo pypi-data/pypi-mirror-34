@@ -1,0 +1,24 @@
+<metal:block metal:define-macro="main"
+             tal:define="here_url here/absolute_url;
+                         template_id string:ppt_view"
+             i18n:domain="plone">
+
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#kss-gallery" data-toggle="tab" i18n:translate="gallery_view">Gallery view</a>
+        </li>
+        <li >
+            <a href="#kss-slides" data-toggle="tab" i18n:translate="">Slide view</a>
+        </li>
+
+    </ul>
+    <div class="tab-content">
+        <div id="kss-gallery" class="tab-pane active" data-toggle="tab">
+            <metal:block metal:use-macro="here/book_gallery/macros/main"/>
+        </div>
+        <div id="kss-slides" class="tab-pane active" data-toggle="tab">
+            <metal:block metal:use-macro="here/presentation_view/macros/slides"/>
+
+        </div>
+    </div>
+</metal:block>

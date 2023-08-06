@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<metal:page define-macro="master"
+            i18n:domain="plone">
+<html>
+    <body>
+        <p>
+            <tal:block i18n:translate="">Dear</tal:block>
+            <tal:block tal:content="options/user">Heinz Kunz</tal:block>,
+        </p>
+        <p tal:condition="python:options['status']=='success'"
+           i18n:translate="">
+            Your requested
+            <tal:type tal:content="options/type"
+                      i18n:name="export_type">PDF</tal:type>
+            export
+            of "<tal:title tal:content="options/title" i18n:name="exporttitle"/>"
+            is finished. You can get the download file at 
+            <a href="" tal:attributes="href options/url" tal:content="options/url"
+               i18n:name="export_url">
+                URL zu Export
+            </a>.
+        </p>
+        <p tal:condition="python:options['status']=='failure'"
+           i18n:translate="">
+            We're sorry that your <tal:type tal:content="options/type" i18n:name="export_type"/> export
+            of "<tal:title tal:content="options/title" i18n:name="exporttitle"/>" did not work.
+            If this happens often please send a mail to:<a i18n:name="mail_email_link" href="mailto:development@unitracc.de">development@unitracc.de</a>.
+        </p>
+    </body>
+</html>
+</metal:page>

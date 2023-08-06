@@ -1,0 +1,399 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+    <head>
+      <metal:js fill-slot="head_slot">
+      <metal:js define-macro="chosen-js">
+      <script type="text/javascript">
+          $(document).ready(function () {
+              $('select.chosen').chosen();
+          })
+      </script>
+      </metal:js>
+      </metal:js>
+    </head>
+
+<body>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+<metal:main fill-slot="main"
+            tal:define="dummy python:context.getAdapter('authorized')('unitracc: Publish structure types');
+                        langCode python:context.getAdapter('langcode')();
+                        workflow nocall:here/@@workflow">
+
+    <h1 class="documentFirstHeading padding-top-10">
+        Vortrag freigeben
+    </h1>
+    <metal:block metal:define-macro="main">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#1" class="active"
+                   i18n:translate="">
+                    Set structure state
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#2"
+                    i18n:translate="">Validate structure
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#3"
+                    i18n:translate="">Delete structure
+                </a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#4"
+                    i18n:translate="">Set subportal
+                </a>
+            </li>
+        </ul>
+    </metal:block>
+    <div class="tab-content">
+        <div id="1" class="tab-pane active">
+            <form method="post" action="/@@temp/publishStructure"
+                  tal:attributes="action string:${portal_url}/@@temp/publishStructure">
+                <metal:block metal:define-macro="publish">
+                    <legend i18n:translate="">Structure</legend>
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="label_language">
+                                Language
+                            </tal:block>
+                        </label>
+                        <select i18n:domain="languagedropdown" name="sourceLanguage"
+                                tal:attributes="onchange string:window.location.href=this.options[this.selectedIndex].value"
+                                >
+                            <tal:block tal:repeat="item here/@@additionallanguages/languages">
+                                <option tal:attributes="value string:${portal_url}/${templateId}?set_language=${item/code};
+                                                        selected python:item['code']==langCode and 'selected' or None"
+                                        tal:content="structure item/name"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="">
+                                Content
+                            </tal:block>
+                        </label>
+                        <select name="uid" class="chosen col-md-12"
+                                data-placeholder="Choose one ..."
+                                tal:define="given_uid python: request.form.get('uid')"
+                                i18n:attributes="data-placeholder">
+                            <option></option>
+                            <tal:block tal:repeat="brain brains | python:here.getBrowser('structuretype').getPresentationFolders()">
+                                <option tal:attributes="value value;
+                                                        selected python: value==given_uid and 'selected' or None"
+                                        tal:define="value brain/UID"
+                                        tal:content="structure brain/Title"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+                    <legend i18n:translate="">Referenced objects</legend>
+                    <div class="field">
+                        <label for="include-references-all0">
+                            <input type="radio" name="include_references"
+                                   value="all" id="include-references-all0"/>
+                            <tal:block i18n:translate="">Include all</tal:block>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="include-references-temp0">
+                            <input type="radio" name="include_references"
+                                   value="temp" checked="checked"
+                                   id="include-references-temp0"/>
+                            <tal:block i18n:translate="">Include /temp</tal:block>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="include-references-none0">
+                            <input type="radio" name="include_references"
+                                   value="none" id="include-references-none0"/>
+                            <tal:block i18n:translate="">Include none</tal:block>
+                        </label>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="transition"><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="label_target_status">
+                                Target status
+                            </tal:block>
+                        </label>
+                        <select name="transition" id="transition"
+                                tal:define="given_transition python:request.form.get('transition');
+                                            gsbt python:workflow.getStateByTransition;
+                                            transitions python:['make_public', 'make_visible', 'make_restricted', 'make_private']">
+                            <tal:block tal:repeat="value transitions">
+                                <option tal:attributes="value value;
+                                                        selected python:value == given_transition"
+                                        tal:content="python:gsbt(value)['title']"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>
+                            <input type="checkbox" name="redirect_to"
+                                   value="changed" checked="checked">
+                            <tal:block i18n:translate="">Redirect to published structure</tal:block>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" value="Set state"
+                           i18n:attributes="value" class="btn btn-primary"/>
+                    </div>
+                </metal:block>
+            </form>
+        </div>
+        <div class="tab-pane" id="2">
+            <metal:block metal:define-macro="setstructuregroups">
+                <form method="post"
+                      tal:attributes="action string:${portal_url}/@@temp/setStructureGroups">
+                    <div i18n:translate="explain_structure_validation">
+                        All linked resources (like e.g. images) are made available
+                        to the group of authors which is connected to the structured
+                        element.
+                    </div>
+
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="label_language">
+                                Language
+                            </tal:block>
+                        </label>
+                        <select i18n:domain="languagedropdown" name="sourceLanguage"
+                                tal:attributes="onchange string:window.location.href=this.options[this.selectedIndex].value">
+                            <tal:block tal:repeat="item here/@@additionallanguages/languages">
+                                <option tal:attributes="value string:${portal_url}/${templateId}?set_language=${item/code};
+                                                        selected python:item['code']==langCode and 'selected' or None"
+                                        tal:content="structure item/name"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+
+                    <div class="has-chosen-below-label" style="min-height:320px">
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="">
+                                Content
+                            </tal:block>
+                        </label>
+                        <select name="uid" class="chosen col-md-12"
+                                data-placeholder="Choose one ..."
+                                i18n:attributes="data-placeholder">
+                            <option></option>
+                            <tal:block tal:repeat="brain brains_validate | python:here.getBrowser('structuretype').getPresentationFolders()">
+                                <option tal:attributes="value brain/UID;
+                                                        selected python:brain.UID==request.form.get('uid') and 'selected' or None"
+                                        tal:content="structure brain/Title"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="reset-to-private">
+                            <input type="checkbox" name="transition" value="make_private" id="reset-to-private"/>
+                            <tal:block i18n:translate="">
+                                Reset container and contained elements to private state
+                            </tal:block>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" value="Validate"
+                           i18n:attributes="value" class="btn btn-primary"/>
+                    </div>
+                    </div>
+                </form>
+
+            </metal:block>
+        </div>
+        <div class="tab-pane" id="3">
+            <metal:block metal:define-macro="delete">
+                <form method="post"
+                      tal:attributes="action string:${portal_url}/@@temp/deletePrivateStructure">
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="label_language">
+                                Language
+                            </tal:block>
+                        </label>
+                        <select i18n:domain="languagedropdown" name="sourceLanguage"
+                                tal:attributes="onchange string:window.location.href=this.options[this.selectedIndex].value">
+                            <tal:block tal:repeat="item here/@@additionallanguages/languages">
+                                <option tal:attributes="value string:${portal_url}/${templateId}?set_language=${item/code};
+                                                        selected python:item['code']==langCode and 'selected' or None"
+                                        tal:content="structure item/name"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+
+                    <div class="has-chosen-below-label" style="min-height:320px">
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="">
+                                Content
+                            </tal:block>
+                        </label>
+                        <select name="uid" class="chosen col-md-12"
+                                data-placeholder="Choose one ..."
+                                tal:define="given_uid python: request.form.get('uid')"
+                                i18n:attributes="data-placeholder">
+                            <option></option>
+                            <tal:block tal:repeat="brain brains | python:here.getBrowser('structuretype').getPresentationFolders(review_state='private')">
+                                <option tal:attributes="value value;
+                                                        selected python: value==given_uid and 'selected' or None"
+                                        tal:define="value brain/UID"
+                                        tal:content="structure brain/Title"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+                    <legend i18n:translate="">Referenced objects</legend>
+                    <div class="field">
+                        <label for="include-references-all1">
+                            <input type="radio" name="include_references"
+                                   value="all" id="include-references-all1"/>
+                            <tal:block i18n:translate="">Include all</tal:block>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="include-references-temp1">
+                            <input type="radio" name="include_references"
+                                   value="temp" checked="checked"
+                                   id="include-references-temp1"/>
+                            <tal:block i18n:translate="">Include /temp</tal:block>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="include-references-none1">
+                            <input type="radio" name="include_references"
+                                   value="none" id="include-references-none1"/>
+                            <tal:block i18n:translate="">Include none</tal:block>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <input type="submit" value="Delete" class="btn btn-primary"
+                               i18n:attributes="value"/>
+                    </div>
+                    </div>
+                </form>
+            </metal:block>
+        </div>
+        <div class="tab-pane" id="4">
+            <metal:block define-macro="set_subportal">
+                <form method="post"
+                      tal:attributes="action string:${portal_url}/@@temp/setSubportal"
+                      tal:define="subportal python:here.getBrowser('subportal');
+                                  portale python:subportal.get();">
+                    <p i18n:translate="">
+                    Sets the visibility of structured content for the subportals.
+                    </p>
+                    <legend i18n:translate="">Structure</legend>
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="label_language">
+                                Language
+                            </tal:block>
+                        </label>
+                        <select i18n:domain="languagedropdown" name="sourceLanguage"
+                                tal:attributes="onchange string:window.location.href=this.options[this.selectedIndex].value"
+                                >
+                            <tal:block tal:repeat="item here/@@additionallanguages/languages">
+                                <option tal:attributes="value string:${portal_url}/${templateId}?set_language=${item/code};
+                                                        selected python:item['code']==langCode and 'selected' or None"
+                                        tal:content="structure item/name"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="">
+                                Content
+                            </tal:block>
+                        </label>
+                        <select name="uid" class="chosen col-md-12"
+                                data-placeholder="Choose one ..."
+                                tal:define="given_uid python: request.form.get('uid')"
+                                i18n:attributes="data-placeholder">
+                            <option></option>
+                            <tal:block tal:repeat="brain brains | python:here.getBrowser('structuretype').getPresentationFolders()">
+                                <option tal:attributes="value value;
+                                                        selected python: value==given_uid and 'selected' or None"
+                                        tal:define="value brain/UID"
+                                        tal:content="structure brain/Title"
+                                        i18n:translate=""/>
+                            </tal:block>
+                        </select>
+                    </div>
+                    <legend i18n:translate="">Referenced objects</legend>
+                                        <div class="field">
+                        <label for="include-references-all2">
+                            <input type="radio" name="include_references"
+                                   value="all" id="include-references-all2"/>
+                            <tal:block i18n:translate="">Include all</tal:block>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="include-references-temp2">
+                            <input type="radio" name="include_references"
+                                   value="temp" checked="checked"
+                                   id="include-references-temp2"/>
+                            <tal:block i18n:translate="">Include /temp</tal:block>
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="include-references-none2">
+                            <input type="radio" name="include_references"
+                                   value="none" id="include-references-none2"/>
+                            <tal:block i18n:translate="">Include none</tal:block>
+                        </label>
+                    </div>
+                    <legend i18n:translate="unitracc_label_subportals">Subportals</legend>
+                    <div class="field">
+                        <label><i class="glyphicon glyphicon-exclamation-sign"></i>
+                            <tal:block i18n:translate="unitracc_label_subportals">
+                                Subportals
+                            </tal:block>
+                        </label>
+                        <tal:block tal:repeat="portal portale">
+                            <div tal:condition="python: 'default_uid' != portal">
+                                <label>
+                                    <input type="checkbox" name="subportals"
+                                       tal:attributes="value portal;
+                                                       checked python: portal==portale['default_uid'];
+                                                       disabled python: portal==portale['default_uid']"/>
+                                    <tal:block tal:content='python:portale[portal]["title"]'/>
+                                </label>
+                            </div>
+                        </tal:block>
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" value="Set subportal" class="btn btn-primary"
+                           i18n:attributes="value"/>
+                    </div>
+                </form>
+            </metal:block>
+        </div>
+    </div>
+</metal:main>
+
+</body>
+</html>
+

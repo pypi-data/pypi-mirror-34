@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      tal:attributes="xml:lang python:here.getAdapter('langcode')();
+                      lang python:here.getAdapter('langcode')()">
+
+<head>
+<title>book_macros.pt: Makros für den Browser unitracc@@book</title>
+</head>
+
+<body>
+<h1>Makro <tt>carousel_item</tt>:</h1>
+
+        <metal:item define-macro="carousel_item">
+<tal:ns2 define="
+url brain_url | brain/getURL;
+url string:${url}/view;
+imgsrc brain/getThumbnailPath;
+">
+            <a tal:attributes="href url;
+                               "
+               metal:define-slot="link-and-image"
+               tal:condition="imgsrc"
+               href="#"
+               class="thumbnail">
+                <img alt=""
+                     class="img-responsive"
+                     metal:define-slot="image"
+                     tal:attributes="src imgsrc;
+                                     "/>
+            </a>
+            <div class="info-data"
+                 metal:define-slot="info-data">
+                <p class="info date"
+                     metal:define-slot="date"
+                     tal:define="tim brain/getDateForList;
+                                 year python:tim and tim.year() or nothing;
+                                 "
+                     tal:condition="year"
+                     tal:content="year">
+                     18.9.2013
+                </p>
+                <p class="info subject"
+                     tal:define="code python:industrialsector.getValue(brain.getCode)"
+                     tal:condition="code"
+                     tal:content="code">
+                     Fachbereich
+                </p>
+            </div><!-- .info-data -->
+            <h3 metal:define-slot="headline">
+                <a tal:attributes="href url"
+                   tal:content="brain/Title"
+                   href="#">
+                    News-Überschrift
+                </a>
+            </h3>
+            <metal:slot define-slot="text">
+            <p tal:define="description brain/Description;
+                           text_hidden python:description.split()[words:] and ' ...' or '';
+                           text_shown python:' '.join(description.split()[:words]) + text_hidden;
+                           "
+               tal:condition="description"
+               tal:content="text_shown">
+               Die ersten {words} Wörter des Texts
+            </p>
+            </metal:slot>
+</tal:ns2>
+        </metal:item>
+
+</body>
+</html>

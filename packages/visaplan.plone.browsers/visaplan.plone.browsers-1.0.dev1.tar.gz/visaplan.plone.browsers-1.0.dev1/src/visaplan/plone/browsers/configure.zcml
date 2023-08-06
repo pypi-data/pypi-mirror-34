@@ -1,0 +1,207 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <include package="visaplan.tools" />
+    <include package="visaplan.plone.tools" />
+    <include package="visaplan.kitchen" />
+
+    <include package=".additionallanguages" />
+
+    <include package=".advertisement" />
+
+    <include package=".article" />
+
+    <include package=".author" />
+
+    <include package=".book" />
+
+    <include package=".booking" />
+
+    <include package=".changestate" />
+
+    <include package=".contact" />
+
+    <include package=".contenticon" />
+
+    <include package=".cookie" />
+
+    <include package=".copystructure" />
+
+    <include package=".counter" />
+
+    <include package=".countrycodetocountry" />
+
+    <include package=".coursestatistics" />
+
+    <include package=".defaultimage" />
+
+    <include package=".event" />
+
+    <include package=".export" />
+
+    <include package=".fcksearch" />
+
+    <include package=".flashfile" />
+
+    <include package=".flvpreview" />
+
+    <include package=".glossary" />
+
+    <include package=".greeting" />
+
+    <include package=".groupboard" />
+
+    <include package=".groupdesktop" />
+
+    <include package=".groupsharing" />
+
+    <include package=".hideactions" />
+
+    <include package=".hubandinfo" />
+
+    <include package=".industrialsector" />
+
+    <include package=".isthreecolumnlayoutvisible" />
+
+    <include package=".json" />
+
+    <include package=".languageredirector" />
+
+    <include package=".lightsearch" />
+
+    <include package=".literature" />
+
+    <include package=".logging" />
+
+    <include package=".logo" />
+
+    <include package=".mainpage" />
+
+    <include package=".management" />
+
+    <include package=".managementuser" />
+
+    <include package=".mediathek" />
+
+    <include package=".migrator" />
+
+<!-- temporär auskommentiert:
+    <include package=".mogrify" />
+-->
+
+    <include package=".myaccount" />
+
+    <include package=".mycontent" />
+
+    <include package=".myunitracc" />
+
+    <include package=".navigation" />
+
+    <include package=".news" />
+
+    <include package=".nora" />
+
+    <include package=".numbertag" />
+
+    <include package=".partner" />
+
+    <include package=".password" />
+
+    <include package=".picturenumber" />
+
+    <include package=".presentation" />
+
+    <include package=".redirector" />
+
+    <include package=".registration" />
+
+    <include package=".resolvereviewstate" />
+
+    <include package=".reviewstates" />
+
+    <include package=".rssfeed" />
+
+    <include package=".scaling" />
+
+    <include package=".servicearticle" />
+
+    <include package=".servicenews" />
+
+    <include package=".servicetemp" />
+
+    <include package=".sortpriority" />
+
+    <include package=".standard" />
+
+    <include package=".storagefolder" />
+
+    <include package=".structureauthoring" />
+
+    <include package=".structurenumber" />
+
+    <include package=".structuretype" />
+
+    <include package=".subportal" />
+
+    <include package=".swfplayer" />
+
+    <include package=".tan" />
+
+    <include package=".temp" />
+
+    <include package=".transform" />
+
+    <include package=".tree" />
+
+    <include package=".txng" />
+
+    <include package=".unitraccaudio" />
+
+    <include package=".unitraccckfinder" />
+
+    <include package=".unitracccourse" />
+
+    <include package=".unitracccoursemanagement" />
+
+    <include package=".unitraccfeature" />
+
+    <include package=".unitraccformula" />
+
+    <include package=".unitraccgroups" />
+
+    <include package=".unitraccmail" />
+
+    <include package=".unitraccsearch" />
+
+    <include package=".unitraccsettings" />
+
+    <include package=".unitraccswf" />
+
+    <include package=".unitracctype" />
+
+    <include package=".unitraccvideo" />
+
+    <include package=".unitraccvideomp4" />
+
+    <include package=".unitraccvideoogg" />
+
+    <include package=".untranslated" />
+
+    <include package=".userlanguage" />
+
+    <include package=".usermanagement" />
+
+    <include package=".useruid" />
+
+    <include package=".vcard" />
+
+<!-- verbleibt in Products.unitracc:
+    <include package=".versioninformation" />
+-->
+
+    <include package=".viewpreview" />
+
+    <include package=".xmlimport" />
+
+</configure>

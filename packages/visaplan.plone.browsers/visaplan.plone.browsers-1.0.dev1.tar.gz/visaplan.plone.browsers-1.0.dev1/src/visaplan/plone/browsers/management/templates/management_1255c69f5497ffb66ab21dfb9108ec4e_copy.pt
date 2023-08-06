@@ -1,0 +1,153 @@
+<tal:comment replace="nothing"><!-- -*- coding: utf-8 -*- äöü --></tal:comment>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+    <head>
+      <metal:js fill-slot="head_slot">
+      <metal:js use-macro="here/management_1255c69f5497ffb66ab21dfb9108ec4e_publish/macros/chosen-js"></metal:js>
+      <script type="text/javascript"
+	      src="/++resource++management/management_1255c69f5497ffb66ab21dfb9108ec4e_copy.js">
+      </script>
+      </metal:js>
+    </head>
+
+<body>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+
+
+
+<metal:main fill-slot="main"
+            tal:define="dummy python:context.getAdapter('authorized')('unitracc: Copy structure types');
+                        dict_ python:{};
+                        uid request/form/uid | nothing;
+                        showAll python:0;
+                        templateId python:here.getAdapter('templateid')();
+                        langCode python:context.getAdapter('langcode')()">
+
+    <h1 class="documentFirstHeading padding-top-10">
+        Vortrag kopieren
+    </h1>
+
+    <form method="post"
+          tal:attributes="action string:${portal_url}/@@temp/copyPresentation">
+
+        <fieldset>
+            <legend>F&uuml;llen Sie alle Felder</legend>
+
+            <metal:block metal:define-macro="main">
+
+            <p><strong>Hinweis:</strong>
+            Vermeiden Sie es, in diesem Formular die Return-Taste zu verwenden &ndash; es sei denn, zur Auswahl des Empfängers!
+            </p>
+
+            <fieldset class="wide-input">
+                <legend i18n:translate="">Source</legend>
+                <div class="field">
+                    <label i18n:translate="label_original_language" for="copyform-sourceLanguage">Original language</label>
+                    <span title="Erforderlich" class="fieldRequired"
+                          i18n:translate="label_required">(Required)</span><br/>
+                    <select i18n:domain="languagedropdown" name="sourceLanguage" id="copyform-sourceLanguage"
+                            tal:attributes="onchange string:window.location.href=this.options[this.selectedIndex].value">
+                        <tal:block tal:repeat="item here/@@additionallanguages/languages">
+                            <option tal:attributes="value string:${portal_url}/${templateId}?set_language=${item/code};
+                                                    selected python:item['code']==langCode and 'selected' or None"
+                                    tal:content="structure item/name"
+                                    i18n:translate=""/>
+                        </tal:block>
+                    </select>
+                </div>
+                <div class="field">
+                    <label i18n:translate="" for="copyform-copyFrom">Copy from</label>
+                    <span title="Erforderlich" class="fieldRequired"
+                          i18n:translate="label_required">(Required)</span><br/>
+                    <select name="copyFrom" id="copyform-copyFrom"
+			    class="chosen col-md-12"
+                            data-placeholder="Choose one ..."
+                            i18n:attributes="data-placeholder">
+			<option></option>
+                        <tal:block tal:repeat="brain brains | here/@@presentation/getPresentations">
+                            <option tal:attributes="value brain/UID;
+                                                    selected python:brain.UID==request.form.get('copyFrom') and 'selected' or None"
+                                    tal:content="structure brain/Title"
+                                    i18n:translate=""/>
+                        </tal:block>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <fieldset class="wide-input">
+                <legend i18n:translate="">Destination</legend>
+                <div class="field">
+                    <label i18n:translate="label_language" for="copyform-language">Language</label>
+                    <span title="Erforderlich" class="fieldRequired"
+                          i18n:translate="label_required">(Required)</span><br/>
+                    <select name="language" id="copyform-language"
+                            i18n:domain="languagedropdown">
+                        <tal:block tal:repeat="item here/@@additionallanguages/languages">
+                            <option tal:attributes="value item/code;
+                                                    selected python:item['code']==request.form.get('language') and 'selected' or None;
+                                                    class string:language-${item/code}"
+                                    tal:content="structure item/name"
+                                    i18n:translate=""/>
+                        </tal:block>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label i18n:translate="" for="copyform-title">Title</label>
+                    <span title="Erforderlich" class="fieldRequired"
+                          i18n:translate="label_required">(Required)</span><br/>
+                    <input type="text" name="title" id="copyform-title" class="full-width col-md-12"/>
+                </div>
+
+                <div class="field">
+                    <label i18n:translate="" for="user_id_search">Owner</label>
+                    <p>Filter eingeben, <tt>Return</tt> drücken und durch Klick auf Pluszeichen auswählen:</p>
+                    <input type="test" id="user_id_search"/>
+                    <div id="user_id_selected" style="display: block">
+                        <span i18n:translate="">selected:</span>
+                        <input type="text" name="user_id" id="user_id" value="" readonly="readonly">
+                    </div>
+                    <div id="user_id_search_results"><!-- --></div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend i18n:translate="">Type</legend>
+                <div class="field">
+                    <input type="radio" name="copyType" value="1" checked="checked" id="copyform-copyType-1"/>
+                    <label i18n:translate="" for="copyform-copyType-1">Independent copy</label>
+                </div>
+
+                <div class="field">
+                    <input type="radio" name="copyType" value="2" id="copyform-copyType-2"/>
+                    <label i18n:translate="" for="copyform-copyType-2">Create translation</label>
+                </div>
+            </fieldset>
+
+            </metal:block>
+
+            <input type="submit" value="Copy"
+                   class="btn btn-default"
+                   i18n:attributes="value"/>
+
+        </fieldset>
+
+
+    </form>
+
+</metal:main>
+
+</body>
+</html>
+

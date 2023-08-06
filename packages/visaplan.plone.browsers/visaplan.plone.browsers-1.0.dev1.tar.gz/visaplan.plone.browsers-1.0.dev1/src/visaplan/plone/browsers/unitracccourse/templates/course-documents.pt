@@ -1,0 +1,72 @@
+<tal:block tal:define="dummy python:request.set('span_class', 'col-md-9');
+"><html
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <metal:no-ads fill-slot="ad-block-above-content"/>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border', 1)" />
+
+    <metal:block fill-slot="head_slot">
+        <script type="text/javascript"
+                tal:condition="python:0"
+                src="/++resource++unitracccourse/course_view.js"></script>
+    </metal:block>
+
+<body>
+    <!-- Fülle Breadcrumbs -->
+    <metal:block fill-slot="breadcrumb">
+        <metal:block metal:use-macro="context/crumbs/macros/main"/>
+    </metal:block>
+
+    <!-- Fülle Navigation -->
+    <metal:block metal:fill-slot="column_one_slot"/>
+
+    <!-- Fülle Inhalt -->
+<tal:comment replace="nothing"><!--
+
+Bei fehlerhaften Werten für die UID (hier leider: cuid) kann ggf. unitracccourse.get_uid
+bzw. (wegen des abweichenden Namens) eine davon abgeleitete Methode verwendet werden.
+Frage: ergibt der Rückfallwert "| nothing" hier einen Sinn?!
+
+--></tal:comment>
+    <metal:main fill-slot="main">
+        <div class="area-content"
+         tal:define="
+uid            request/form/cuid | nothing;
+unitracccourse nocall:here/@@unitracccourse;
+brain          python:unitracccourse.get_brain_by_uid(uid);
+here           python:unitracccourse.get_current(uid);
+title          brain/Title;
+text           brain/getCourse_documents_text;
+">
+            <div class="row">
+            <div class="col-md-8">
+                <h1 tal:content="structure title">
+                    Kurstitel
+                </h1>
+                <tal:if-has-text condition="text">
+                <div tal:define="transform nocall:here/@@transform"
+                     tal:content="structure python:transform.get(text)">
+                Hier der Hinweistext für die Kursdokumente
+                </div>
+                </tal:if-has-text>
+                <div tal:condition="not:text"
+                     i18n:translate="">
+                Sorry, no course documents available yet.
+                </div>
+            </div>
+            </div>
+        </div>
+    </metal:main>
+
+</body>
+</html>
+</tal:block>

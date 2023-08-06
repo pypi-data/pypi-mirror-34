@@ -1,0 +1,66 @@
+<tal:block i18n:domain="plone"
+           tal:define="status request/form/status">
+    <div class="area-title">
+        <h1 i18n:translate=""
+            tal:condition="python:status=='1'">
+            Add lesson
+        </h1>
+        <h1 i18n:translate=""
+            tal:condition="python:status=='2'">
+            Edit lesson
+        </h1>
+    </div>
+    <form method="post" action="#" class="course-edit-form">
+        <div class="field">
+            <label>
+                <i class="glyphicon glyphicon-exclamation-sign"></i> 
+                <tal:block i18n:translate="">Title</tal:block>
+            </label>
+            <input type="text" name="title" class="col-md-6"
+                   tal:attributes="value request/form/title | nothing"/>
+        </div>
+        <div class="field">
+            <label i18n:translate="">Duration</label>
+            <input type="text" name="duration" class="input-lg"
+                   tal:attributes="value request/form/duration | nothing"/>
+        </div>
+        <div class="field">
+            <label for="summary"
+                   i18n:translate="">Summary</label>
+            <textarea name="summary"
+                   id="summary"
+                   class="col-md-6"
+                   rows="10"
+                   tal:content="request/form/summary | nothing">
+                   Zusammenfassung mit
+                   etwaigen Zeilenumbruechen
+            </textarea>
+        </div>
+        <div class="field">
+            <label for="objective"
+                   i18n:translate="">Objectives</label>
+            <textarea name="objective"
+                   id="objective"
+                   class="col-md-6"
+                   rows="10"
+                   tal:content="request/form/objective | nothing">
+                   Beschreibungstext mit
+                   etwaigen Zeilenumbruechen
+            </textarea>
+        </div>
+        <input type="hidden" name="uid"
+               tal:attributes="value request/form/uid"/>
+        <tal:block tal:condition="python:status=='1'">
+            <input class="button-object-actions button-lesson-create btn btn-default"
+                   type="button" value="Create"
+                   i18n:attributes="value"/>
+        </tal:block>
+        <tal:block tal:condition="python:status=='2'">
+            <input class="button-object-actions button-lesson-edit btn btn-default"
+                   type="button" value="Save"
+                   i18n:attributes="value"/>
+        </tal:block>
+
+
+    </form>
+</tal:block>

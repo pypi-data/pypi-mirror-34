@@ -1,0 +1,145 @@
+<metal:block metal:use-macro="here/main_template/macros/master"
+             i18n:domain="plone">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1);
+                         authorized nocall:here/@@authorized;
+                         dummy python:authorized.authorized('unitracc: Import XML');
+                         "/>
+
+<metal:block fill-slot="javascript_head_slot"
+             tal:condition="python:0">
+  <script tal:attributes="src string:${here/portal_url}/++resource++mogrify/mogrify.js"></script>
+</metal:block>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_one_slot"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+
+<metal:main metal:fill-slot="main"
+            tal:define="mogrify nocall:context/@@mogrify;
+                        default python:mogrify.formdata();
+                        ">
+
+    <div id="area-title">
+        <h1 i18n:translate="">
+            Transmogrify
+        </h1>
+    </div>
+
+    <form action="@@mogrify/perform" id="export-form" method="get"
+          tal:define="verbose default/verbose">
+          <input type="hidden" name="config-id" value="structuregroups">
+
+        <div>
+            <label for="input-path"
+                   i18n:translate="path">
+                Path
+            </label>
+            <textarea name="path:lines" id="input-path"
+                   class="input-xxlarge"
+                   tal:condition="default/path_multiline"
+                   tal:content="default/path">
+            Zeilenweise Pfadangaben, z.B. /unitracc/pfad/zum/Dings;
+            der Name des Root-Elements wird nötigenfalls ergänzt
+            </textarea>
+            <input name="path:lines" id="input-path"
+                   class="input-xxlarge"
+                   tal:condition="not:default/path_multiline"
+                   tal:attributes="value default/path">
+        </div>
+
+        <tal:if-verbose condition="verbose">
+        <div>
+            <label for="input-path-prefix"
+                   i18n:translate="">
+                Prefix
+            </label>
+            <input name="path-prefix" id="input-path-prefix"
+                   class="input-xxlarge"
+                   tal:attributes="value default/path-prefix">
+        </div>
+
+        <div tal:define="checked default/exclude-contained;
+                         ">
+            <label>
+                <input type="radio" name="exclude-contained"
+                       checked="checked"
+                       tal:attributes="checked not:checked"
+                       value="false">
+                <tal:txt i18n:translate="">Include contained elements</tal:txt>
+            </label>
+            <label>
+                <input type="radio" name="exclude-contained"
+                       checked=""
+                       tal:attributes="checked checked"
+                       value="true">
+                <tal:txt i18n:translate="">Exclude contained elements</tal:txt>
+            </label>
+        </div>
+        </tal:if-verbose>
+        <tal:else-verbose condition="not:verbose">
+          <input name="path-prefix" id="input-path-prefix" type="hidden"
+                 tal:attributes="value default/path-prefix">
+          <input name="exclude-contained" type="hidden"
+                 value="false">
+        </tal:else-verbose>
+
+        <div>
+          <label for="add-members">
+              <strong i18n:translate="">
+                Add Members
+              </strong>
+              <p i18n:translate="">
+              The following members are added to the
+              (newly-created or already present)
+              Author and Reader groups;
+              specify one per line.
+              </p>
+            </label>
+            <textarea id="add-members" name="add-members"></textarea>
+        </div>
+
+        <div>
+          <label for="whitelist">
+              <strong i18n:translate="">
+                Whitelist
+              </strong>
+              <p i18n:translate="">
+              Specification of matching Folders
+              </p>
+            </label>
+            <textarea id="whitelist" name="whitelist">
+akademie/vortraege/*
+knowhow/fachbuecher/*
+            </textarea>
+        </div>
+
+        <fieldset tal:condition="verbose"
+            style="border: 1px solid gray; padding: 0.3em">
+            <legend style="margin-left: 3em; padding: 0.1em 0.3em; display:inline-block">
+                Entwicklungsmodus
+            </legend>
+            <label>
+                <input type="checkbox" name="debug" value="true"
+                       style="float: left;margin-right: 0.3em"
+                       tal:attributes="checked default/debug | nothing">
+                <p><strong>Achtung:</strong> Kann <tt>set_trace</tt> auslösen
+                (&rarr; unsichtbares warten auf Eingabe, bzw. im
+                Produktionsmodus: Fehler!)
+                </p>
+            </label>
+        </fieldset>
+
+        <div>
+            <button class="btn btn-primary" type="submit">
+                <tal:block i18n:translate="">Perform</tal:block>
+            </button>
+            <input class="btn btn-default" type="reset">
+        </div>
+    </form>
+    <script type="text/javascript" src="/++resource++mogrify/mogrify.js"></script>
+
+</metal:main>
+</metal:block>
+<!-- vim: set ts=2 sts=2 sw=2 si et hls :-->

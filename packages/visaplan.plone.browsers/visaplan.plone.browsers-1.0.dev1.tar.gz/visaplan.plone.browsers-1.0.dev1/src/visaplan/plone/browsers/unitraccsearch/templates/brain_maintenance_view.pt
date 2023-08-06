@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="
+dummy context/@@unitraccsearch/authRefreshBrains;
+brain context/getHereAsBrain;
+devel context/@@management/isDeveloper;
+">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Brain maintenance
+    </h1>
+<p i18n:translate="brain_maintenance_description">
+Allows to refresh the catalog object (indexes and metadata)
+without the need to change the object.
+This includes the (re)creation of the preview image.
+</p>
+
+    <div tal:condition="brain">
+    <div tal:define="gTP python:brain.getThumbnailPath"
+         tal:condition="gTP">
+         <h2 i18n:translate="">
+         Preview image
+         </h2>
+         <pre tal:content="gTP">/++thumbnail++/abc123</pre>
+         <img src="/++thumbnail++/abc123"
+              tal:attributes="src gTP"
+              alt="not found"
+              i18n:attributes="alt">
+    </div>
+    </div>
+
+   <form method="post" tal:attributes="action string:${here/absolute_url}/@@unitraccsearch/refreshBrain">
+        <label>
+	    <input type="checkbox"
+		   name="force.replace-thumbnail:record">
+            <span i18n:translate="">
+            Replace thumbnail image even if newer than object data
+            </span>
+        </label>
+               
+        <div>
+        <input type="submit" value="Refresh"
+               class="btn btn-primary"
+               i18n:attributes="value label_refresh"/>
+        <a href="view"
+           class="btn btn-default"
+           i18n:translate=""
+           >Back
+        </a>
+        <input type="reset"
+               tal:condition="python:0"
+               class="btn btn-reset">
+        </div>
+    </form>
+
+</metal:main>
+</body>
+</html>
+

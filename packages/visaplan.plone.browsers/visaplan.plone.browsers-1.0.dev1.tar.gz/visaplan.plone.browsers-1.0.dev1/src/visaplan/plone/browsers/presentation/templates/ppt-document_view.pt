@@ -1,0 +1,19 @@
+<tal:comment condition=python:0><!--
+Die Klasse "page" (für das div mit dem transformierten "text") wurde in Rev. 19134 entfernt
+--></tal:comment>
+<tal:main-macro metal:define-macro="main"
+       tal:define="transform nocall:here/@@transform;">
+
+    <h1 class="documentFirstHeading">
+        <tal:block tal:content="structure here/Title"/>
+    </h1>
+
+    <p class="documentDescription"
+       tal:condition="here/Description"
+       tal:content="here/Description"/>
+
+    <div
+         tal:content="structure python:transform.get(here.getAdapter('rawbyname')('text'))">
+    </div>
+
+</tal:main-macro>

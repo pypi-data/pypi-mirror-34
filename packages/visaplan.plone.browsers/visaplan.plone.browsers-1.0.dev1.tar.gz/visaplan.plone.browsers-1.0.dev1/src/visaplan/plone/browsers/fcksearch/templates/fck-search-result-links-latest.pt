@@ -1,0 +1,79 @@
+<tal:block tal:define="brains here/@@fcksearch/latestLinks;
+                       unitracctype nocall:here/@@unitracctype;
+                       contenticon nocall:here/@@contenticon"
+           i18n:domain="plone">
+
+    <table id="tableFiles"
+           class="custom-listing table table-bordered table-striped table-hover table-sorted">
+    <tbody>
+    <tr style="font-size:11px;">
+        <th>
+            <!-- -->
+        </th>
+        <th>
+            <!-- -->
+        </th>
+        <th i18n:translate="">
+            Type
+        </th>
+        <th i18n:translate="">
+            Title
+        </th>
+        <th>
+            <!-- -->
+        </th>
+        <th i18n:translate="">
+            Language
+        </th>
+        <th i18n:translate="">
+            Status
+        </th>
+        <th i18n:translate="">
+            Path
+        </th>
+    </tr>
+    <tal:block tal:repeat="brain brains">
+    <tr>
+        <td>
+            <div><tal:block tal:content="repeat/brain/number"/>.</div>
+        </td>
+        <td>
+            <img tal:define="value python:contenticon.get(brain)"
+                 tal:condition="value"
+                 tal:attributes="src value"/>
+        </td>
+        <td>
+            <div tal:content="python:unitracctype.getTitle(brain)"
+                 i18n:translate=""/>
+        </td>
+        <td>
+            <div tal:content="brain/pretty_title_or_id"/>
+        </td>
+        <td class="fck-actions">
+            <a tal:attributes="href string:javascript:OpenFile('/@@resolveuid/${brain/UID}');"
+               >
+                <img src="images/lier.gif" title="Link"
+                     i18n:attributes="title"/>
+            </a>
+            &nbsp;&nbsp;
+            <a tal:attributes="href string:javascript:var event=window.open('${brain/getURL}/view?fckpreview=True','Popup')"
+               >
+                <img src="images/preview.gif" title="Preview"
+                     i18n:attributes="title"/>
+            </a>
+        </td>
+        <td>
+            <div tal:content="brain/Language"/>
+        </td>
+        <td>
+            <div tal:content="brain/review_state"
+                 i18n:translate=""/>
+        </td>
+        <td>
+            <div tal:content="python:' -> '.join(brain.getPath().split('/')[2:])"/>
+        </td>
+    </tr>
+    </tal:block>
+    </tbody>
+    </table>
+</tal:block>

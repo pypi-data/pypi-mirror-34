@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master">
+
+    <metal:block fill-slot="top_slot"
+                     tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:no-ads fill-slot="column_one_slot"/>
+    <metal:no-ads fill-slot="column_two_slot"/>
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="errors request/form/errors | python:{}"
+            i18n:domain="plone">
+
+    <div class="add-temp">
+
+        <h1 class="documentFirstHeading"
+            i18n:translate="">
+            Add Animation
+        </h1>
+
+        <form method="post" enctype="multipart/form-data"
+              tal:attributes="action string:${portal_url}/@@temp/create">
+
+            <metal:field use-macro="python:here.widget('title', mode='edit')"/>
+            <metal:field use-macro="python:here.widget('code', mode='edit')"/>
+            <metal:field use-macro="python:here.widget('file', mode='edit')"/>
+            <metal:field use-macro="python:here.widget('image', mode='edit')"/>
+            <metal:field use-macro="python:here.widget('legend', mode='edit')"/>
+            <metal:field use-macro="python:here.widget('caption', mode='edit')"/>
+            <metal:field use-macro="python:here.widget('partnerLink', mode='edit')"/>
+
+            <input type="hidden" name="portal_type" value="UnitraccFile"/>
+            <input type="hidden" name="uid" tal:attributes="value here/UID"/>
+            <input type="hidden" name="template_id" tal:attributes="value request/form/template_id"/>
+
+            <input class="btn btn-primary"
+                   type="submit" name="Create"/>
+
+        </form>
+
+    </div>
+
+</metal:main>
+
+</body>
+</html>
+

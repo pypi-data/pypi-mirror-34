@@ -1,0 +1,44 @@
+<metal:block metal:define-macro="main">
+<tal:block i18n:domain="plone"
+tal:on-error="string:js-presentation-slides"
+tal:define="
+list_ here/@@unitracccourse/get_slides;
+urlparse nocall:here/@@urlparse;
+url request/form/url | nothing;
+dummy python:url and request.form.update(urlparse.getParameter(url)) or None;
+batch python:here.getBrowser('batch')(list_,25);
+absurl here/absolute_url;
+">
+<div class="area-content-navigation text-center">
+    <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+</div>
+<tal:loop tal:repeat="dict_ batch">
+<div class="list-action-item col-md-2">
+    <a class="no-lightbox course-ppt-page"
+       tal:define="uid dict_/uid_object;
+                   rel string:rel-$uid;
+
+                   src dict_/url | nothing;
+                   idx dict_/index;
+                   nummer python:idx+1;
+                   "
+       tal:attributes="href string:$absurl/course_ppt_view?uid=$uid;
+                       rel rel;
+                       next dict_/uid_next | nothing;
+                       prev dict_/uid_prev | nothing">
+        <img class="kss-ppt-page"
+             tal:attributes="title dict_/title;
+                             src src;
+                             alt string:Seite $nummer;
+                             rel rel;"/>
+    </a>
+</div>
+<div tal:condition="python:not repeat['dict_'].number() % 5"
+     class="clear"></div>
+</tal:loop>
+
+<div class="area-content-navigation text-center">
+    <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+</div>
+</tal:block>
+</metal:block>

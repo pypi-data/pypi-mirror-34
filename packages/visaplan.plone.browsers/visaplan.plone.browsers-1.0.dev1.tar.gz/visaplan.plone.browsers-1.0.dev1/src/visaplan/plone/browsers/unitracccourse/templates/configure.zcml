@@ -1,0 +1,194 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="course-documents"
+             template="course-documents.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="course_ppt_view"
+             template="course_ppt_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="course_view"
+             template="course_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="coursemanagement_edit"
+             template="coursemanagement_edit.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-course-content"
+             template="js-course-content.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-course-navigation-level"
+             template="js-course-navigation-level.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-course-navigation"
+             template="js-course-navigation.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-course-navigation_ppt"
+             template="js-course-navigation_ppt.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-coursemanagement-browse"
+             template="js-coursemanagement-browse.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-coursemanagement-lesson-edit"
+             template="js-coursemanagement-lesson-edit.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-coursemanagement-lesson"
+             template="js-coursemanagement-lesson.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-coursemanagement-level"
+             template="js-coursemanagement-level.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-lesson-edit-menu"
+             template="js-lesson-edit-menu.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-page-document"
+             template="js-page-document.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-page-folder"
+             template="js-page-folder.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-page-unitracclesson"
+             template="js-page-unitracclesson.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-ppt-navigation"
+             template="js-ppt-navigation.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-document"
+             template="js-presentation-document.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-folder"
+             template="js-presentation-folder.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-galleries"
+             template="js-presentation-galleries.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-gallery"
+             template="js-presentation-gallery.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-page"
+             template="js-presentation-page.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-slides"
+             template="js-presentation-slides.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="js-presentation-unitracclesson"
+             template="js-presentation-unitracclesson.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="unitracccourse_html_left"
+             template="unitracccourse_html_left.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="unitracccourse_html_left_recurse"
+             template="unitracccourse_html_left_recurse.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="unitracccourse_macros"
+             template="unitracccourse_macros.pt"
+             permission="zope2.View"
+             />
+
+</configure>

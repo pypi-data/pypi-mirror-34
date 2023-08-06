@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="column_one_slot"/>
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+<body>
+
+<metal:block fill-slot="top_slot"
+                tal:define="dummy python:here.getAdapter('checkperm')('Manage portal') or request.set('disable_border', 1)"/>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<tal:block >
+    <metal:buttonlist fill-slot="buttonlist">
+        <metal:buttons use-macro="here/export_button/macros/buttons"/>
+    </metal:buttonlist>
+</tal:block>
+<metal:main fill-slot="main"
+            tal:define="presentation nocall:here/@@presentation;
+                        canModify python:here.getAdapter('checkperm')('Modify portal content');
+                        list_ here/@@tree/getFlatNavigationWithBrains;
+                        pagination python:request.form.get('b_start',-1) >= 0  ">
+
+    <img class="image-right"
+         tal:attributes="src string:$portal_url/code/picto_presentation_l.png"/>
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Detailed view
+    </h1>
+    <h2 tal:content="here/pretty_title_or_id"/>
+    <p i18n:translate="presentation_view1">
+         On this page you will find the slides of the lecture. By choosing one of the slides, you can enter the lecture. The lecture opens up in a new window (mode of presentation).
+         <br/><br/>
+        <strong>Important:</strong> The slides are optimized for 100% font-size. Please make the necessary settings in your browser.
+    </p>
+
+    <ul class="nav nav-tabs">
+        <li tal:attributes="class python: not pagination and 'active' or ''">
+            <a href="#kss-outline" data-toggle="tab" i18n:translate="">Outline view</a>
+        </li>
+        <li tal:attributes="class python:pagination and 'active' or ''">
+            <a href="#kss-slides" data-toggle="tab" i18n:translate="">Slide view</a>
+        </li>
+
+    </ul>
+
+    <div class="tab-content">
+        <div id="kss-outline" 
+             tal:attributes="class python: not pagination and 'tab-pane active' or 'tab-pane'">
+            <h2 i18n:translate="">
+                Slides in this presentation
+            </h2>
+
+            <table>
+            <tal:block tal:repeat="dict_ list_">
+            <tr>
+                <td tal:condition="canModify">
+                    <a target="_self"
+                       tal:attributes="href string:${dict_/current/getURL}/edit"
+                       ><i class="glyphicon glyphicon-pencil"></i></a>
+                    &nbsp;
+                    <a target="_self"
+                       href="#"
+                       title="layout view"
+                       tal:attributes="href string:${here/absolute_url}/ppt_view?uid=uid-${dict_/current/UID}"
+                       ><i class="glyphicon glyphicon-eye-open"></i></a>
+                       &nbsp;
+                </td>
+                <td>
+                    <tal:block tal:content="repeat/dict_/number"/>.
+                </td>
+                <td class="padding-left-10">
+                    <a href="#"
+                            title="presentation view"
+                            tal:attributes="href string:${here/absolute_url}/ppt_view?uid=uid-${dict_/current/UID}"
+                            tal:content="dict_/current/pretty_title_or_id"
+                            i18n:attributes="title presentation_view">
+                        Title of Slide
+                    </a>
+                </td>
+                <td class="padding-left-10"
+                    tal:condition="canModify">
+                    <tal:block tal:content="dict_/current/portal_type"
+                               i18n:translate=""/>
+                </td>
+            </tr>
+            </tal:block>
+            </table>
+
+        </div>
+        <div tal:attributes="class python: pagination and 'tab-pane active' or 'tab-pane'" id="kss-slides">
+            <metal:block metal:define-macro="slides">
+                <tal:block tal:content="structure here/kss-slides"/>
+            </metal:block>
+        </div>
+    </div>
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+</metal:main>
+
+</body>
+</html>
+

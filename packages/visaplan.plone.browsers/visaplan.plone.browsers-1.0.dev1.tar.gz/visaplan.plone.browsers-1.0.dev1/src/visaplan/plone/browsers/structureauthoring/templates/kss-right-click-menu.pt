@@ -1,0 +1,151 @@
+<tal:block tal:define="uid request/form/uid | here/UID;
+                       rc python:context.getAdapter('rc')();
+                       here python:rc.lookupObject(uid);
+                       structureauthoring nocall:here/@@structureauthoring"
+           i18n:domain="plone">
+    <tal:block tal:condition="here/@@presentation/isPresentationPage">
+        <ul tal:define="canAddSlideInPresentation structureauthoring/canAddSlideInPresentation;
+                        canAddFolderInPresentation structureauthoring/canAddFolderInPresentation">
+            <metal:block metal:define-macro="head">
+                <li>
+                    <span class="title border-bottom">
+                        <tal:block i18n:translate="" >Actions for</tal:block>
+                        "<tal:block tal:content="here/pretty_title_or_id"/>"
+                    </span>
+                </li>
+            </metal:block>
+            <li tal:condition="structureauthoring/canAddSlideForPresentation">
+                <span id="right-click-add-slide" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Add slides</span>
+            </li>
+            <li tal:condition="structureauthoring/canAddFolderForPresentation">
+                <span id="right-click-add-presentation-folder" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Add folder</span>
+            </li>
+            <li tal:condition="python:here.portal_type=='Folder'">
+                <span id="right-click-edit-structure-folder" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Edit folder</span>
+            </li>
+            <li tal:condition="python:here.portal_type=='Document'">
+                <span id="right-click-edit-structure-page" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Edit slide</span>
+            </li>
+            <metal:block metal:define-macro="cutcopydelete">
+                <tal:block tal:condition="structureauthoring/canCopyMoveDelete">
+                    <li>
+                        <span id="right-click-cut" class="pointer border-bottom span-hover"
+                              tal:attributes="rel string:id---${uid}"
+                              i18n:translate="">Cut</span>
+                    </li>
+                    <li>
+                        <span id="right-click-copy" class="pointer border-bottom span-hover"
+                              tal:attributes="rel string:id---${uid}"
+                              i18n:translate="">Copy</span>
+                    </li>
+                    <li>
+                        <span id="right-click-delete" class="pointer  border-bottom span-hover"
+                              tal:attributes="rel string:id---${uid}"
+                              i18n:translate="">Delete</span>
+                    </li>
+                    <li>
+                        <span id="right-click-paste-before" class="pointer border-bottom span-hover"
+                              tal:attributes="rel string:id---${uid}"
+                              i18n:translate="">Paste before</span>
+                    </li>
+                    <li tal:condition="structureauthoring/canPasteInFolder">
+                        <span id="right-click-paste-in-folder" class="pointer border-bottom span-hover"
+                              tal:attributes="rel string:id---${uid}"
+                              i18n:translate="">Paste in folder</span>
+                    </li>
+                    <li>
+                        <span id="right-click-paste-after" class="pointer border-bottom span-hover"
+                              tal:attributes="rel string:id---${uid}"
+                              i18n:translate="">Paste after</span>
+                    </li>
+                </tal:block>
+            </metal:block>
+            <li tal:condition="canAddSlideInPresentation">
+                <span id="right-click-add-slide-before" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_slides_before">Add slides before current content</span>
+            </li>
+            <li tal:condition="canAddSlideInPresentation">
+                <span id="right-click-add-slide-after" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_slides_after">Add slide after current content</span>
+            </li>
+            <li tal:condition="canAddFolderInPresentation">
+                <span id="right-click-add-presentation-folder-before" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_folder_before">Add folder before current content</span>
+            </li>
+            <li tal:condition="canAddFolderInPresentation">
+                <span id="right-click-add-presentation-folder-after" class="pointer span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_folder_after">Add folder after current content</span>
+            </li>
+
+        </ul>
+    </tal:block>
+    <tal:block tal:condition="here/@@book/isBook">
+        <ul tal:define="canAddPageInStructure structureauthoring/canAddPageInStructure;
+                        canAddFolderInStructure structureauthoring/canAddFolderInStructure">
+            <metal:block metal:use-macro="here/kss-right-click-menu/macros/head"/>
+            <metal:block metal:use-macro="here/kss-right-click-menu/macros/cutcopydelete"/>
+            <li tal:condition="structureauthoring/canAddFolderForStructure">
+                <span id="right-click-add-structure-folder" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Add folder</span>
+            </li>
+            <li tal:condition="python:here.portal_type=='Folder'">
+                <span id="right-click-edit-structure-folder" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Edit folder</span>
+            </li>
+            <li tal:condition="canAddFolderInStructure">
+                <span id="right-click-add-structure-folder-before" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_folder_before">Add folder before current content</span>
+            </li>
+            <li tal:condition="canAddFolderInStructure">
+                <span id="right-click-add-structure-folder-after" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_folder_after">Add folder after current content</span>
+            </li>
+            <li tal:condition="structureauthoring/canAddPageForStructure">
+                <span id="right-click-add-page" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Add Page</span>
+            </li>
+            <li tal:condition="python:here.portal_type=='Document'">
+                <span id="right-click-edit-structure-page" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="">Edit page</span>
+            </li>
+            <li tal:condition="canAddPageInStructure">
+                <span id="right-click-add-page-before" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_page_before">Add page before current content</span>
+            </li>
+            <li tal:condition="canAddPageInStructure">
+                <span id="right-click-add-page-after" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="add_page_after">Add page after current content</span>
+            </li>
+            <li tal:condition="structureauthoring/canSetAgendaView">
+                <span id="right-click-set-agenda-view" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="set_agenda_view">Set Agenda view</span>
+            </li>
+            <li tal:condition="structureauthoring/canSetDefaultPage">
+                <span id="right-click-set-default-page" class="pointer border-bottom span-hover"
+                      tal:attributes="rel string:id---${uid}"
+                      i18n:translate="set_default_page">Set default page</span>
+            </li>
+        </ul>
+    </tal:block>
+</tal:block>

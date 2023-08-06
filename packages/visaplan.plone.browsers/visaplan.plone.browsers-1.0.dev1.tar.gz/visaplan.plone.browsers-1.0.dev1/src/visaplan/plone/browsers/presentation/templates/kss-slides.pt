@@ -1,0 +1,30 @@
+<tal:block tal:define="list_ here/@@tree/getFlatNavigationWithBrains;
+                       urlparse nocall:here/@@urlparse;
+                       url request/form/url | nothing;
+                       dummy python:url and request.form.update(urlparse.getParameter(url)) or None;
+                       batch python:here.getBrowser('batch')(list_,25)">
+
+    <div class='area-content-navigation text-center'>
+        <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+    </div>
+
+    <tal:block tal:repeat="dict_ batch">
+    <div class="list-action-item col-md-2">
+            <a class="no-lightbox course-ppt-page"
+               tal:attributes="href string:${here/absolute_url}/ppt_view?uid=uid-${dict_/current/UID}">
+                <img class="kss-ppt-page"
+                     tal:define="src dict_/url | nothing"
+                     tal:attributes="title dict_/current/pretty_title_or_id;
+                                     src string:${dict_/current/getURL}/@@viewpreview/get;
+                                     rel string:uid-${dict_/current/UID}"/>
+            </a>
+        </div>
+        <div tal:condition="python:(not repeat['dict_'].number() % 5) or (repeat['dict_'].number() == len(batch))"
+             class='clear'></div>
+    </tal:block>
+
+    <div class='area-content-navigation text-center'>
+        <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+    </div>
+
+</tal:block>

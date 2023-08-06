@@ -1,0 +1,118 @@
+<tal:block tal:define="dummy python:request.set('span_class','col-md-9')"/>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block metal:use-macro="here/documentation_folder_view/macros/head">
+    ./documentation_folder_view.pt
+    </metal:block>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+<body>
+<!--
+Eine Sicht für Ordner, die eine lokale Suche haben (also einen üblicherweise
+lokal konfigurierten Wert für [unitracc]settings "localsearch").
+
+Sie wird nicht automatisch verwendet, sondern muß ganz normal zugewiesen
+werden.
+
+Im Unterschied zu den älteren Sichten {instructions,paper,...}_{nontable_,}folder_view.pt
+wird der Wert für getCustomSearch hier nicht hart codiert, sondern (wie auch
+zur Befüllung des generischen Suchformulars in ./top.pt) der Konfiguration
+entnommen.
+
+Siehe:
+./top.pt
+../../browser/unitraccsettings/browser.py
+../../browser/unitraccsearch/browser.py
+bzw.
+../browser.py
+
+Zur Suchlogik:
+- ils enhält den (ggf. geerbten) Wert für die Lokale Suche;
+  dabei stehen
+  - die Formulardaten im Unterschlüssel 'data'
+  - Informationen über den Startordner der Suche im Unterschlüssel 'root'
+
+Aktuell wird als 'list_view' stets (gf) ./localsearch_monotable.pt,
+als 'list_macro' das Makro monotable-list in (gf) ./localsearch_macros.pt verwendet.
+
+Da die HTML-Tabelle nicht mit dem Zope-üblichen Batching-Mechanismus auf die
+erste Seite gekürzt, sondern für den kompletten Datensatz serverseitig (mit
+TAL) erzeugt wird, empfiehlt sich diese Variante nur für kleinere Listen.
+
+Variante mit Tabelle aus AJAX-Daten:
+./localsearch_ajax_view.pt
+-->
+
+<metal:main fill-slot="main"
+            tal:define="
+stage nocall:here/stage;
+prolog python:stage.get('unitracc-prolog');
+epilog python:stage.get('unitracc-epilog');
+search nocall:context/@@unitraccsearch;
+ils search/inheritedLocalSearch;
+ls_data python:ils['data'];
+ls_root python:ls_data and ils['root'];
+kwargs python:search.getLocalsearch_kwargs();
+view2call python:kwargs['func']['list_view'];
+">
+
+    <div class="area-content">
+        <div class="row">
+            <div class="title col-md-12">
+                <h1 i18n:translate="" tal:content="here/title_or_id"/>
+            </div>
+            <div class="well" tal:condition="prolog">
+                <div class="well-content">
+                    <p tal:content="structure python:prolog[0].getBrowser('resolvei18n').getObject().getText()"/>
+                 </div>
+            </div>
+
+            <tal:ifls condition="ls_data">
+            <div class="col-md-12"
+                 tal:define="dummy python:request.form.update(ls_data);
+                             ">
+<div class="area-content"
+     id="kss-search-result"
+tal:content="structure python:view2call(**kwargs)">
+Dieses div#kss-search-result wird bei Umsortierung etc.
+per Javascript (handleSearchSubmit)
+durch dasselbe Template erneut gefüllt
+
+Siehe ./localsearch_listing.pt
+
+eine Kopie von:
+./listing_nontable.pt
+</div><!-- .area-content -->
+            </div>
+            </tal:ifls>
+            <div class="col-md-12"
+                 tal:condition="not:ls_data">
+<p i18n:translate="">
+Local search not configured!
+</p>
+<p i18n:translate="">
+<a href="configure_localsearch" i18n:name="goto" i18n:translate="visit-this-page-for-config">Visit this page</a>
+for missing configuration
+</p>
+<metal:dev use-macro="context/configure_localsearch_json/macros/sibling-pages"/>
+            </div>
+
+            <div tal:condition="epilog"
+                 tal:content="structure python:epilog[0].getBrowser('resolvei18n').getObject().getText()"/>
+
+            <div tal:replace="structure provider:plone.belowcontentbody" />
+        </div>
+    </div>
+</metal:main>
+
+</body>
+</html>
+

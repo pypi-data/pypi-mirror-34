@@ -1,0 +1,21 @@
+<li tal:define="uid request/form/uid"
+    tal:attributes="id string:lesson-${uid}">
+    <input type="checkbox" class="content-checkbox lesson-checkbox" name="lessons:list" checked
+           tal:attributes="value uid;
+                           id string:input-lession-${uid};
+                           rel string:UnitraccLesson"/>
+    <img class="actionicon-lesson" src="/++resource++unitracc-images/icon_action.png"/>
+    <img src="./blackboard_empty.png"/>
+    <span tal:attributes="id string:lesson-title-${uid}"
+          tal:content="request/title"/>
+    <ul class="connectedSortable">
+        <li class="headline lesson-start"
+            i18n:translate="">
+            Lesson start
+        </li>
+        <li class="headline lesson-end"
+            i18n:translate="">
+            Lesson end
+        </li>
+    </ul>
+</li>

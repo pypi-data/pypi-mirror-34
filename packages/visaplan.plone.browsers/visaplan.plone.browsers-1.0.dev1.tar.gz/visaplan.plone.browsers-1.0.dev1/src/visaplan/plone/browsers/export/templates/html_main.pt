@@ -1,0 +1,65 @@
+<metal:page define-macro="master"
+            i18n:domain="plone"><!DOCTYPE html>
+<html tal:define="opts options;
+                  title opts/title;
+                  title python:title.strip();
+                  content opts/content;
+                  prologue opts/prologue;
+                  epilogue opts/epilogue;
+                  level python:1;
+                  counter nocall:context/@@counter;
+                  count python:counter.get(prefix='PDF');
+                  templateId templateId | template/getId;
+                  dummy python:count(templateId);
+                  css opts/css;
+                  tmpl nocall:here/html_section;
+                  portal_state context/@@plone_portal_state;
+                  lang portal_state/language;
+                  "
+       tal:attributes="lang lang;
+                       ">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title tal:content="title">
+            Name des Objektes/Buches
+        </title>
+        <base href="http://.../pfad/zum/inhalt/"
+              tal:define="pid request/pid | nothing;
+                          qs python:pid and '?pid=%s' % (pid,) or '';
+                          base request/ACTUAL_URL"
+              tal:attributes="href string:$base$qs">
+        <link href="my.css"
+              tal:repeat="obj css/files"
+              tal:attributes="href string:/${obj/name}"
+              type="text/css" rel="stylesheet">
+        <style type="text/css"
+               tal:condition="css/manual"
+               tal:content="structure css/manual/manual_css">
+        </style>
+    </head>
+    <body>
+        <div class="document">
+            <h1 class="document-title"
+                id="document-title"
+                tal:condition="title"
+                tal:content="title">
+                Dokumentüberschrift
+            </h1>
+            <div class="prologue"
+                 tal:condition="prologue"
+                 tal:content="structure python:tmpl(content=prologue, level=level, count=count)">
+                 Prolog
+            </div>
+            <div id="content"
+                 tal:content="structure python:tmpl(content=content, level=level, count=count)">
+            Inhalt
+            </div>
+            <div class="epilogue"
+                 tal:condition="epilogue"
+                 tal:content="structure python:tmpl(content=epilogue, level=level, count=count)">
+                 Epilog
+            </div>
+        </div>
+    </body>
+</html>
+</metal:page>

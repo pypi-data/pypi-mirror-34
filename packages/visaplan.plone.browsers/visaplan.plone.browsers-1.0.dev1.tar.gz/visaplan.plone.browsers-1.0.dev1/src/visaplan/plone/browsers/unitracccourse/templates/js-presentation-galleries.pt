@@ -1,0 +1,24 @@
+<metal:block metal:define-macro="main"
+             tal:define="here_url here/absolute_url;"
+             i18n:domain="plone">
+
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a href="#kss-slides" data-toggle="tab" i18n:translate="">Slide view</a>
+    </li>
+    <li>
+        <a href="#kss-gallery" data-toggle="tab" i18n:translate="gallery_view">Gallery view</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id="kss-slides" class="tab-pane active" data-toggle="tab">
+        <metal:block metal:use-macro="here/js-presentation-slides/macros/main"/>
+    </div>
+    <tal:parachute on-error="structure string:<!-- gallery: error! -->">
+    <div id="kss-gallery" class="tab-pane" data-toggle="tab">
+        <metal:block metal:use-macro="here/js-presentation-gallery/macros/main"/>
+    </div>
+    </tal:parachute>
+</div>
+
+</metal:block>

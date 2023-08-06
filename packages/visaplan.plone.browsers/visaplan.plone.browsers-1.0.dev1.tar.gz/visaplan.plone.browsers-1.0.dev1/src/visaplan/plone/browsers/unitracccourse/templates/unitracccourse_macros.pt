@@ -1,0 +1,32 @@
+<tal:comment replace="nothing"><!--
+item: Makro für die Darstellung eines einzelnen Kurses in einer Übersicht (Karussell)
+
+Anmerkungen:
+- die div-Klassen .item und ggf. .active sowie
+  col-md-* kommen aus dem carousel-Makro
+- Für die meisten Kursobjekte gibt es gegenwärtig noch kein spezielles Bild;
+  um nicht jedesmal dasselbe Standard-Piktogramm auszugeben, wird dann ggf. eben kein Bild ausgegeben
+  (aktuell: generell noch nicht!)
+--></tal:comment>
+<metal:mac define-macro="item">
+<tal:ns define="
+url_prefix url_prefix | string:${here/absolute_url}/course_overview;
+brain_uid brain/UID;
+url string:${url_prefix}?cuid=${brain_uid};
+">
+<div class="course-box">
+<h3><a href="#"
+       tal:attributes="href url"
+       tal:content="brain/Title">
+       Kurstitel
+</a></h3>
+<p tal:content="brain/Description"
+   class="course-description text-plain">
+Beschreibung des Kurses.
+Gegenwärtig wird kein HTML-Text unterstützt.
+</p>
+</div>
+
+</tal:ns>
+</metal:mac>
+

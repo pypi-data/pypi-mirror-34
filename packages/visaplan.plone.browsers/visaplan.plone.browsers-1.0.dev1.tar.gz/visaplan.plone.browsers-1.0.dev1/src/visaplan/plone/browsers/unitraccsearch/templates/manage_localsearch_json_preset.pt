@@ -1,0 +1,273 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="
+dummy context/@@authorized/managePortal;
+search nocall:context/@@unitraccsearch;
+dict_ python:search.getJsonPresetsManageFormData();
+form_action dict_/form_action | string:list;
+preset_name dict_/preset_name | request/preset_name | nothing;
+action request/action | nothing;
+devel context/@@management/isDeveloper;
+pformat python:context.getAdapter('pformat');
+">
+
+
+<tal:list condition="python:form_action == 'list'">
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Display presets for local search
+    </h1>
+    <form action="/@@unitraccsearch/getJsonPresetsManageFormData"
+          method="post">
+    <table>
+    <tr tal:repeat="psdic dict_/current_presets">
+<tal:row define="
+name psdic/name;
+label psdic/label;
+radio_id string:radio-${repeat/psdic/number};
+">
+<td tal:define="
+disabled python:name == 'default' or None;
+checked python:not disabled and name == preset_name;
+">
+<input type="radio"
+       name="preset_name"
+       value="default"
+tal:attributes="
+id radio_id;
+value name;
+disabled disabled;
+checked checked;
+">
+</td>
+<td>
+<label for="radio-1"
+       tal:attributes="for radio_id">
+<a href="/manage_localsearch_json_preset?preset_name=default"
+   tal:attributes="
+href string:/manage_localsearch_json_preset?preset_name=${name}
+"><tt tal:content="name">default</tt>
+</a>
+<tal:if condition="python:label and label != name">
+(<span tal:content="label">
+Standardkonfiguration
+</span>)</tal:if>
+</label>
+</td>
+</tal:row>
+</tr>
+</table>
+
+
+<div class="form-group">
+<button type="submit"
+        class="btn btn-default btn-danger"
+        name="save_action"
+        value="Delete"
+tal:define="disabled python:0"
+tal:attributes="disabled disabled"
+        i18n:translate="">
+Delete
+</button>
+</div>
+
+    </form>
+<form action="/manage_localsearch_json_preset"
+      method="get">
+<button type="submit"
+        name="action"
+        value="create"
+        class="btn btn-default"
+        i18n:translate="">
+Create
+</button>
+</form>
+
+
+</tal:list>
+
+<tal:edit condition="python:form_action != 'list'">
+
+    <form action="/@@unitraccsearch/getJsonPresetsManageFormData"
+          method="post"
+          tal:define="current_preset dict_/preset_data | nothing">
+<input type="hidden" name="preset_name"
+       tal:condition="python:form_action != 'create'"
+       tal:attributes="value preset_name">
+<div class="row">
+    <div class="col-md-12">
+<pre tal:content="python:pformat(dict_)"
+     tal:condition="python:0"/>
+
+    <h1 class="documentFirstHeading"
+        tal:condition="python:form_action == 'edit'"
+        i18n:translate="">
+        Edit display preset
+        <tt tal:content="preset_name"
+            i18n:name="name">default</tt>
+        for local search
+    </h1>
+    <h1 class="documentFirstHeading"
+        tal:condition="python:form_action == 'create'"
+        i18n:translate="">
+        Create display preset for local search
+    </h1>
+
+    </div><!-- .col-md-12 -->
+
+<div class="form-group col-md-12"
+     tal:condition="python:form_action == 'create'">
+<label for="preset_name"
+       i18n:translate="">Name
+</label>
+<input type="text"
+       class="form-control"
+       id="preset_name"
+       name="preset_name"
+       value="">
+</div>
+
+<div class="form-group col-md-12">
+<label for="label"
+       i18n:translate="">Title
+</label>
+<input type="text"
+       class="form-control"
+       id="label"
+       name="preset.label:record"
+       value="Beschriftung"
+       tal:attributes="
+value current_preset/label | request/label | nothing;
+">
+</div><!-- .form-group.col-md-12 -->
+</div><!-- .row -->
+
+<div class="row">
+
+<div class="form-group col-md-3"
+tal:define="
+value current_preset/names | request/names | nothing;
+">
+<label for="names"
+       i18n:translate="">Felder
+</label>
+<textarea
+       class="form-control"
+       id="names"
+       name="preset.names:lines:record"
+tal:define="
+value python:value or [];
+value python:[v.strip() for v in value];
+"
+tal:content="python:'\n'.join([v for v in value if v])">
+Titel
+Creator
+getThumbnailPath
+Description
+</textarea>
+</div><!-- .form-group -->
+
+<div class="form-group col-md-9">
+<label for="columns"
+       i18n:translate="">Columns
+</label>
+<textarea
+       class="form-control"
+       id="columns"
+       name="preset.columns:record"
+tal:define="
+value current_preset/columns | current_preset/columnDefs | request/columns | nothing;
+"
+tal:content="value">
+[{"data": "getThumbnailPath",
+  "render": function (data, type, row, meta) {
+            ...
+            }
+  }]
+</textarea>
+</div><!-- .form-group col-md-9 -->
+</div><!-- .row -->
+
+
+<div class="row">
+<div class="col-md-12">
+<h2 i18n:translate="">
+Server-side rendering
+</h2>
+<label for="item_macro"
+       i18n:translate="">Item macro
+</label>
+<select id="item_macro"
+        name="preset.item_macro:record"
+        class="form-control"
+        tal:define="
+curval current_preset/item_macro | nothing;
+">
+<option value="" i18n:translate="">
+Choose one ...
+</option>
+<tal:loop repeat="item search/getItemMacroChoices">
+<option tal:attributes="
+value item;
+selected python:item == curval;
+" tal:content="item"
+>templatename/macros/macroname
+</option>
+</tal:loop>
+</select>
+
+</div><!-- .col-md-12 -->
+</div><!-- .row -->
+
+
+
+<div class="row">
+<div class="col-md-12">
+<button type="submit"
+        class="btn btn-default"
+        name="save_action"
+        value="Save"
+        tal:define="value dict_/save_action"
+        tal:attributes="value value"
+        tal:content="value"
+        i18n:translate="">
+Save
+</button>
+
+<button type="submit"
+        class="btn btn-danger"
+        name="save_action"
+        value="Delete"
+tal:condition="python:form_action != 'create'"
+tal:define="disabled python:preset_name == 'default';
+cls_base string:btn btn-danger;
+cls python:disabled and (cls_base+' btn-disabled') or cls_base;
+"
+tal:attributes="disabled disabled"
+        i18n:translate="">
+Delete
+</button>
+<input type="reset"
+       class="btn btn-reset">
+</div><!-- .col-md-12 -->
+</div><!-- .row -->
+</form>
+</tal:edit>
+</metal:main>
+
+</body>
+</html>

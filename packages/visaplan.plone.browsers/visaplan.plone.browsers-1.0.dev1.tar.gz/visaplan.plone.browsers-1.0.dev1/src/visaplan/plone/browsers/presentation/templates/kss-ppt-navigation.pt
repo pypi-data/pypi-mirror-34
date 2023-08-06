@@ -1,0 +1,23 @@
+<metal:block metal:define-macro="main"
+             tal:define="current_uid python:context.getAdapter('uidorint')()['uid'];
+                         current_uid string:uid-$current_uid">
+
+    <select name="uid"
+            onchange="window.location.href=this.options[this.selectedIndex].value">
+        <tal:loop define="twoblanks string:&nbsp;&nbsp;"
+                  repeat="dict_ list_ | here/@@tree/getFlatNavigationWithoutBrains">
+            <option tal:define="factor python:dict_['level']-1;
+                                level python:twoblanks * factor;
+                                num    python:repeat['dict_'].number();
+                                number python:num<10 and '0'+str(num) or num;
+                                loop_uid dict_/current;
+                                uid_str string:uid-$loop_uid;
+                                "
+                    tal:attributes="value string:${here/absolute_url}/ppt_view?uid=$uid_str;
+                                    selected python:(loop_uid == current_uid) and 'selected' or None"
+                    tal:content="structure string:${number}. ${level} ${dict_/Title}">
+                    01.   Seitentitel
+            </option>
+        </tal:loop>
+    </select>
+</metal:block>

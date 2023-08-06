@@ -1,0 +1,171 @@
+<metal:block metal:define-macro="main" i18n:domain="plone">
+    <tal:block tal:define="
+course nocall:here;
+isanon python:context.getAdapter('isanon')();
+unitracccourse nocall:here/@@unitracccourse;
+coursestatistics nocall:here/@@coursestatistics;
+rc python:context.getAdapter('rc')();
+uid request/form/uid | uid | coursestatistics/get/last_viewed_page_uid | python:1;
+here_uid python:here.UID();
+current python:unitracccourse.element_item_info(here_uid, uid);
+portal_type current/portal_type;
+current_info python:unitracccourse.get_prev_and_next(uid);
+next current_info/next;
+previous current_info/prev;
+here python:rc.lookupObject(uid) and rc.lookupObject(uid) or here;
+transform nocall:here/@@transform;
+item_position python:unitracccourse.get_item_position(current);
+page_count unitracccourse/get_course_page_count;
+stats python:not isanon and coursestatistics.set(here_uid, uid, item_position, page_count) or None;
+templateId here/getDefaultLayout | nothing;
+template python:here and here.unrestrictedTraverse(templateId, None) or None;
+isViewTemplate python:True;
+">
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-8 pull-left text-left">
+                    <h3 tal:content="structure course/Title">
+                        Der lokale Titel
+                    </h3>
+                </div>
+                <div class="col-md-4 pull-right text-right">
+                    <a class="btn btn-default"
+                       tal:attributes="href string:${course/absolute_url}/course_ppt_view?uid=${uid}"
+                       i18n:translate="">Switch to presentation view</a>
+                    <a class="btn btn-default"
+                       href="edit"
+                       tal:condition="python:0"
+                       tal:attributes="href string:/@@resolveuid/$uid/edit"
+                       i18n:translate="">
+                       Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <form method="post" name="info-form">
+            <input type="hidden" name="uid"
+                   tal:attributes="value current/uid_object"/>
+        </form>
+        <input type="hidden" id="history_manipulating"
+               tal:attributes="value string:${course/absolute_url}/course_view?uid=${current/uid_object}"/>
+        <div class="col-md-12">
+            <div class="book-navigation"
+                 tal:condition="python:(previous or next)">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a tal:condition="previous"
+                           class="course-nav-link"
+                           tal:attributes="href string:${course/absolute_url}/course_view?uid=${previous/uid_object};
+                                           rel string:img-${previous/uid_object};
+                                           next previous/uid_next;
+                                           prev previous/uid_prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-10 book-navigation-center">
+                        <span id="learningprogress" style="cursor: pointer;">
+                            <form name="form_go_to" id="form_go_to"
+                                  action="/@@unitracccourse/go_to">
+
+                                <input type="hidden" name="uid" id="cuid"
+                                  tal:attributes="value here_uid"/>
+                                <input type="hidden" value="course_view"
+                                    name="view"/>
+
+                                <input id="goto"
+                                    size="3" type="text"
+                                    class="input-mini text-right" name="page"
+                                    tal:attributes="value item_position"/>
+
+                                <input type="submit" value="Go to"
+                                    class="btn btn-default"
+                                    i18n:attributes="value"/>
+
+                            </form>/<tal:block tal:content="page_count">42</tal:block>
+                        </span>
+                    </div>
+                    <div class="col-md-1 pull-right">
+                        <a tal:condition="next"
+                           class="course-nav-link"
+                           tal:attributes="href string:${course/absolute_url}/course_view?uid=${next/uid_object};
+                                           rel string:img-${next/uid_object};
+                                           next next/uid_next;
+                                           prev next/uid_prev">
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-page-content col-md-12"
+             tal:define="course_url course/absolute_url">
+            <h2 tal:condition="python:current['portal_type'] != 'UnitraccLesson'">
+                <tal:block tal:content="here/pretty_title_or_id | current/title | nothing"/>
+            </h2>
+            <tal:block tal:content="structure python:unitracccourse.get_content('js-page-', current, course_url)"/>
+            <tal:ifdoc
+                define="doit python:current['portal_type'] == 'Document';
+                o python:doit and unitracccourse.current_to_object(current);
+                notes python:o and o.getNotes()">
+                <div class="box-primary"
+                     tal:condition="notes">
+                     <h2 i18n:translate="">additional information</h2>
+                     <div tal:content="structure python:transform.get(notes)">
+                        Etwaige Anmerkungen zur aktuellen Seite
+                     </div>
+                 </div>
+            </tal:ifdoc>
+
+        </div>
+        <div id="tooltipsy" style="display:none"
+             tal:condition="stats"
+             tal:on-error="string:">
+            <div class="progress-indicator">
+                <div class="progressbar-tooltip">
+                    <h3 i18n:translate="learningprogress">
+                        Learning progress
+                    </h3>
+                    <div class="progress">
+                        <div class="bar-value"
+                              tal:content="string: ${stats/percent}%">42.0%</div>
+                        <div class="bar"
+                              tal:attributes="style string: width:${stats/percent}%"></div>
+                    </div>
+                    <p>
+                        <span i18n:translate="Actual Slide:">
+                        Current slide:
+                        </span>
+                        <strong tal:content="item_position">39</strong>
+                    </p>
+                    <p>
+                    <span i18n:translate="Maximum Slide:">
+                            Maximum slide:
+                    </span>
+                    <strong><tal:block tal:on-error="string:0"
+                                       tal:content="stats/max_page_nr">42</tal:block>/<tal:block tal:content="page_count">790</tal:block></strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('#learningprogress').tooltipsy({
+                offset: [0,6],
+                content: $('#tooltipsy').html()}
+            )
+            $(document).ready(function () {
+                $('#form_go_to :submit').hide();
+                // Jump to Site
+                $('#goto').keypress(function (event) {
+                    key = event.keyCode || event.which;
+                    if (parseInt(key) == 13) {
+                        event.preventDefault();
+                        go_to_page();
+                        return false;
+                    }
+                });
+            })
+        </script>
+    </tal:block>
+</metal:block>

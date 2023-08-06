@@ -1,0 +1,6 @@
+<tal:mainblock
+xmlns:tal="http://xml.zope.org/namespaces/tal"
+define="Bexport nocall:here/@@export;
+        content python:Bexport.getPDF();">
+    
+</tal:mainblock>

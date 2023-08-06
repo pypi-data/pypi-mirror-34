@@ -1,0 +1,38 @@
+<metal:block metal:define-macro="main">
+<tal:block tal:define="
+unitracccourse nocall:here/@@unitracccourse;
+">
+<ul class="connectedSortable"
+    tal:omit-tag="python:dict_['level']==0">
+<tal:loop tal:repeat="dict_ dict_/childs">
+    <li tal:define="
+brain nocall:dict_/current;
+brain_uid brain/UID;
+parent python:brain.getParent();
+"
+        tal:attributes="id string:li-${brain_uid}">
+        <input type="checkbox" class="content-checkbox" name="uids:list" checked
+               tal:condition="parent"
+               tal:attributes="value brain_uid;
+                               id string:input-${brain_uid}@${parent/UID};
+                               rel brain/portal_type"/>
+        <img class="actionicon"
+             src="/++resource++unitracc-images/icon_action.png"
+             tal:attributes="id string:imgaction-${brain_uid}"/>
+        <img tal:define="src brain/getIcon"
+             tal:condition="src"
+             tal:attributes="src string:/${src};
+                             id string:img-${brain_uid};
+                             class python:brain.is_folderish and 'folderish-browser' or ''"/>
+        <a href="#" class="content-open"
+           tal:attributes="id string:ac-${brain_uid}"
+           tal:content="brain/pretty_title_or_id"
+           tal:omit-tag="python:not unitracccourse.is_folderish(brain)"/>
+        <div tal:attributes="id string:div-${brain_uid}">
+            <metal:block metal:use-macro="here/unitracccourse_html_left_recurse/macros/main"/>
+        </div>
+    </li>
+</tal:loop>
+</ul>
+</tal:block>
+</metal:block>

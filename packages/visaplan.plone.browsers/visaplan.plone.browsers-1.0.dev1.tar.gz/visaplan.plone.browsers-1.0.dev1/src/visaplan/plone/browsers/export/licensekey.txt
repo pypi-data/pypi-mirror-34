@@ -1,0 +1,28 @@
+<license>
+  <licenseserialno>3679</licenseserialno>
+  <licensee>
+    <name>visaplan GmbH</name>
+    <address>
+      <street>Konrad-Zuse-Str. 6</street>
+      <city>44801 Bochum</city>
+      <country>Germany</country>
+    </address>
+  </licensee>
+  <product>PDFreactor</product>
+  <majorversion>7</majorversion>
+  <minorversion>0</minorversion>
+  <licensetype>CPU</licensetype>
+  <amount>4</amount>
+  <unit>CPU</unit>
+  <maintenanceexpirationdate>2015-06-25</maintenanceexpirationdate>
+  <purchasedate>2014-06-25</purchasedate>
+  <outputformats>
+    <pdf/>
+    <image/>
+  </outputformats>
+  <signatureinformation>
+    <signdate>2014-06-25 14:19</signdate>
+    <signature>302c0214470857b1d02065fbd7504c2279ce0f2097a72eda021410fc83a21c0b97452ac83e2e34cea1431a67b7f5</signature>
+    <checksum>1814</checksum>
+  </signatureinformation>
+</license>

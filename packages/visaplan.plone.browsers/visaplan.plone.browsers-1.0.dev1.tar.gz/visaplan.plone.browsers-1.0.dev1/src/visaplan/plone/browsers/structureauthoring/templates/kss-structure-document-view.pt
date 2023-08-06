@@ -1,0 +1,28 @@
+<metal:block metal:define-macro="main"
+             tal:define="stage nocall:here/@@stage;
+                         transform nocall:here/@@transform;
+                         booknav booknav | python:1;
+                         "
+             i18n:domain="plone">
+
+    <tal:nav-1 tal:condition="booknav"
+               tal:content="structure here/kss-book-navigation"/>
+
+    <h1 class="documentFirstHeading"
+        tal:content="structure here/Title"/>
+
+    <p class="documentDescription"
+       tal:condition="here/Description"
+       tal:content="here/Description"/>
+
+    <div id="parent-fieldname-text"
+         class="clearfix"
+         tal:content="structure python:transform.get(here.getText())"
+         tal:on-error="here/absolute_url"/>
+
+    <div class="visualClear"><!-- --></div>
+    <br/>
+    <tal:nav-1 tal:condition="booknav"
+               tal:content="structure here/kss-book-navigation"/>
+
+</metal:block>

@@ -1,0 +1,54 @@
+<tal:block tal:define='dummy python:request.set("span_class", "col-md-9")'/>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+    <metal:block fill-slot="head_slot">
+
+        <metal:block metal:define-macro="header">
+        </metal:block>
+        <!-- hier ist navi -->
+    </metal:block>
+<body>
+
+<metal:main fill-slot="main">
+
+    <metal:block metal:define-macro="main"
+                 tal:define="stage nocall:here/@@stage;
+                             objects python:[brain.getObject() for brain in stage.getAsBrains('book-start-page', here.UID())]">
+
+        <tal:block tal:condition="objects">
+            <tal:block tal:repeat="here objects">
+                <tal:block tal:define="templateId here/getDefaultLayout | nothing;
+                                       template python:templateId and here.unrestrictedTraverse(templateId, None) or None"
+                           tal:condition="template">
+                    <tal:block tal:define="belowcontentbody python:False">
+                        <metal:block metal:use-macro="template/macros/main">
+../../../skins/unitracc_templates/folder_listing.pt
+../../../skins/unitracc_templates/document_view.pt
+			</metal:block>
+                    </tal:block>
+                </tal:block>
+            </tal:block>
+        </tal:block>
+
+        <tal:block tal:condition="not:objects">
+            <metal:block metal:use-macro="here/book_agenda_view/macros/main">
+./book_agenda_view.pt
+            </metal:block>
+        </tal:block>
+
+    </metal:block>
+
+
+</metal:main>
+
+</body>
+</html>
+

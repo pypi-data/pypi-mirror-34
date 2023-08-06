@@ -1,0 +1,5 @@
+numpy>=1.10
+six>=1.0.0
+
+[:python_version < "3.2"]
+futures

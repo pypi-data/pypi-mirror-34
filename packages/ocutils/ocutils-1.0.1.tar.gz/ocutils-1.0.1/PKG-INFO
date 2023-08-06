@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ocutils
+Version: 1.0.1
+Summary: Utility functions for oceanography related work
+Home-page: UNKNOWN
+Author: Marcus Donnelly
+Author-email: marcus.k.donnelly@gmail.com
+License: BSD
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: Oceanography,Utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering

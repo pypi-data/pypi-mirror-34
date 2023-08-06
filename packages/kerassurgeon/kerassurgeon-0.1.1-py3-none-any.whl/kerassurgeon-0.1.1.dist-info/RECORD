@@ -1,0 +1,14 @@
+kerassurgeon/__init__.py,sha256=dqagzA1mNC8Yjm3040H4tUInTu5Hb9V0jWYEhI8OkpU,64
+kerassurgeon/identify.py,sha256=m0rCfR9GAaCrzs6GuJs3RfFchRiVqNr0v4k2JdNmmAc,4410
+kerassurgeon/operations.py,sha256=HqepYpDx3ZxKPXKS8eQm3MXwXa_v_IOWZJsmn2DFKxI,4203
+kerassurgeon/surgeon.py,sha256=7-xuinfEgbpQGvXBE2tEMwUpv7fpdwsjdiGef7islNg,31414
+kerassurgeon/utils.py,sha256=xT5JcLdMWxh5kaZWNDiqBA8tjQv137Cs3jPc-wmwmlw,6150
+kerassurgeon/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kerassurgeon/examples/demo_model.py,sha256=fD2Qvhu_K9f7rqbpbt6KqgutQ4bBnm6M1nL6VdtWVC4,777
+kerassurgeon/examples/inception_flowers_prune.py,sha256=YOntYNBgLiU_myc-kRiyc6TcdxGGN5hVc3br7UzwE5k,6796
+kerassurgeon/examples/inception_flowers_tune.py,sha256=Ymz5CXzZrljuZa6fbOx2TjdNfSkuX1CmqB00HxgZ2xY,7771
+kerassurgeon/examples/lenet_mnist.py,sha256=PnbmBVPqzqyp66hhCqNQYR17kNi-rIN1inJiqEMf7XE,3761
+kerassurgeon-0.1.1.dist-info/METADATA,sha256=XYGJDnpRYhQHEZ-JX9WA3aNybyfjJNCRLXyDfAA3gog,469
+kerassurgeon-0.1.1.dist-info/RECORD,,
+kerassurgeon-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+kerassurgeon-0.1.1.dist-info/top_level.txt,sha256=avludl0_R5QBiw0KSwlSvi59TJKTZa9I_xDnZF1tB24,13

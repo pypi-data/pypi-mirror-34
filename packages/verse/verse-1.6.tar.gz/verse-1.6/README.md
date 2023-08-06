@@ -1,0 +1,139 @@
+# Verse
+
+> Tired of having to change ENV variable for each of your project?\
+> Or to write long and hard to remember commands?\
+> Verse help you to create project specific alias and environment modification thanks to a simple file
+
+## How does it work ?
+
+- Create a verse folder inside your project folder.
+- create and edit a Versefile.
+- Use the following instruction guide to customize your Versefile
+- Type `verse` and enter in a verse shell with your custom env and aliases!
+
+## Instructions
+
+- NAME (name)
+
+    Set a project name. Verse will then use this to customize your prompt.
+    ```
+    NAME MoonApp
+    ```
+
+- ALIAS (name, command)
+
+    Create a custom alias for your project.
+    ```
+    ALIAS dev react-native-run android --settings moonapp-settings-dev.json
+    ```
+
+- ENV
+
+    - ADD (key, value)
+
+        Modify content of key in env to append value.
+        ```
+        ENV ADD ANDROID_PATH ./android-sdk
+        ```
+
+    - SET (key, value)
+
+        Modify content of key in env by value.
+        ```
+        ENV SET VERSION 4
+        ```
+
+- RUN (command)
+
+    This command will be run when executing `verse run`
+    ```
+    RUN mongod --port 5542 &
+    ```
+
+- SETUP (command)
+
+    This command will be run when executing `verse setup`
+    ```
+    SETUP npm i
+    ```
+
+## There is also some customization commands
+
+- PRINT (message)
+
+    Print a message
+    ```
+    PRINT MoonLanding project !
+    ```
+
+- DESC (description)
+
+    Must be placed before `ALIAS`\
+    Add a description for an alias
+    ```
+    DESC use to clean npm packages
+    ALIAS rm -rf nodes-modules
+    ```
+
+- FORE (r, g, b)
+
+    Used to set the prompt foreground
+    ```
+    FORE 255 255 255
+    ```
+
+- BACK (r, g, b)
+
+    Used to set the prompt background
+    ```
+    BACK 162 35 173
+    ```
+
+## Verse CLI
+
+`verse {ROOTDIR, default=./verse}`
+
+Launch verse shell with a optional path to a dir containing a Versefile
+
+> `[arg]` is mandatory, `{arg}` is optional
+
+`verse [OPTIONS]`
+
+Options:
+- `run {ROOTDIR}` Execute all RUN commands of Versefile
+- `setup {ROOTDIR}` Execute all SETUP commands of Versefile
+- `list {ROOTDIR}` Display all commands in Versefile
+- `info {ROOTDIR}` Display Versefile info
+- `help` Display help
+
+###  Example
+
+```
+NAME AndroidApp
+
+FORE 255 60 255
+BACK 255 255 255
+
+ENV SET ANROID_PATH ../android_sdk
+ENV SET LINTER_PATH ../bin/linter
+ENV ADD PATH ../bin
+
+ALIAS build npm build
+ALIAS run npm run
+
+DESC Check linter and push
+ALIAS push linter && git push
+
+SETUP npm i
+SETUP curl localhost:6088/secret-key > secret-key.key
+
+RUN mongod --port 55555 &
+```
+
+## Important informations:
+- All command and alias will be executed in a subshell, so ALIAS exit will not exit your shell.
+- All path will be replaced by `VERSEFILE_FOLDER_FULL_PATH`+path except these starting by `/`
+
+## TODO
+> - make `ENV` directives also used by `run` et `setup`
+> implement `verse create`

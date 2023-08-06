@@ -1,0 +1,17 @@
+nonocaptcha/__init__.py,sha256=-kS4nqiQyI3OloXLbu6z0sSObfqJSXfMJ0MOSQAiLMg,770
+nonocaptcha/audio.py,sha256=WiObKfXenBXMDsqWdZFxCOGbDGkOQjF8sBb0omnYM8Y,4366
+nonocaptcha/base.py,sha256=QNkOZKR919ogN5D0YwVP_hHRRubaOMHXO2uzFm-WYnc,3826
+nonocaptcha/image.py,sha256=oiExMz-Yjn233GQFRiJirjrteGlj9yAzmZYJWqVzWJA,2900
+nonocaptcha/launcher.py,sha256=E7NKkrqnMxiJXuPJz5EWkkJDWHMmwgHroE3uW3SRwnw,3370
+nonocaptcha/nonocaptcha.example.yaml,sha256=Go_euwgXiJnev8_08BgosmKauT6PdMVrCEjCDASFX3I,525
+nonocaptcha/proxy.py,sha256=kzMYC3tHa3OBoh7j-vmI2KErwb3rwWn7O9n7bsSotDI,3367
+nonocaptcha/solver.py,sha256=jfjY9Hg7mhSLqwb8Wiw3nUlyCgYLzRyZrZoqUY6WOZQ,9971
+nonocaptcha/speech.py,sha256=NBAVQnrTDtOpiHa_5XWlCVORR4AI6xYzNmVG9MeqJ8I,8703
+nonocaptcha/util.py,sha256=fk3I6nQa100WAGDQ0I5WW6wknQIRfywinsZZTT8eRFA,2962
+nonocaptcha/data/deface.html,sha256=nfiT0Fv0wE9q4r45q_cd92V9GsGKWhHesYGz1d2y9WQ,290
+nonocaptcha/data/jquery.js,sha256=nXyIaoO9xr5zJ7NRFbdur-BiHue1WuvhuZDfC6P1ceg,133672
+nonocaptcha/data/override.js,sha256=Q8AfQQQvR1lLfJOfUMXVSJcQw2HPyQDggkDF6QRIVLc,744
+nonocaptcha-1.8.0.dist-info/METADATA,sha256=neM3OTUmMmNMK-84jjI0F14thyRuNEOs89TV9V1pD7k,5196
+nonocaptcha-1.8.0.dist-info/RECORD,,
+nonocaptcha-1.8.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+nonocaptcha-1.8.0.dist-info/top_level.txt,sha256=E1Z7w5RHqOI32oLiLWMbVgKpMFtUZym7X0un8tJdUsI,12

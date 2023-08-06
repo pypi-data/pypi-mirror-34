@@ -1,0 +1,6 @@
+six==1.11.0
+natsort==5.2.0
+xlutils==2.0.0
+openpyxl==2.5.1
+robotframework>=3.0
+enum34==1.1.6

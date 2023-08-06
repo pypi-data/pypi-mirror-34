@@ -1,0 +1,15 @@
+CHANGES.txt
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+README.rst
+VERSION
+dockerignore-generate
+requirements.txt
+setup.cfg
+setup.py
+dockerignore_generate.egg-info/PKG-INFO
+dockerignore_generate.egg-info/SOURCES.txt
+dockerignore_generate.egg-info/dependency_links.txt
+dockerignore_generate.egg-info/top_level.txt

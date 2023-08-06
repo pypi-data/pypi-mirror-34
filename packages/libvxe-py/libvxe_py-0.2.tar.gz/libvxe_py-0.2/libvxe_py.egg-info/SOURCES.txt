@@ -1,0 +1,9 @@
+setup.py
+libvxe_py/__init__.py
+libvxe_py/util.py
+libvxe_py.egg-info/PKG-INFO
+libvxe_py.egg-info/SOURCES.txt
+libvxe_py.egg-info/dependency_links.txt
+libvxe_py.egg-info/not-zip-safe
+libvxe_py.egg-info/requires.txt
+libvxe_py.egg-info/top_level.txt

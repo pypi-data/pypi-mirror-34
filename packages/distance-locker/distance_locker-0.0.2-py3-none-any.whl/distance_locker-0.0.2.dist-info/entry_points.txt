@@ -1,0 +1,3 @@
+[console_scripts]
+distance_locker = distance_locker.__main__:main
+

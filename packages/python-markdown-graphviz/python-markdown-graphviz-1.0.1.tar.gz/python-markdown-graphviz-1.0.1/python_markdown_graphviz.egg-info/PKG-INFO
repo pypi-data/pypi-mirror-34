@@ -1,0 +1,30 @@
+Metadata-Version: 1.0
+Name: python-markdown-graphviz
+Version: 1.0.1
+Summary: Graphviz extension for python-markdown
+Home-page: https://github.com/liuyug/python-markdown-graphviz.git
+Author: Yugang LIU
+Author-email: liuyug@gmail.com
+License: MIT
+Description: ======================================
+        Graphviz extension for Python-Markdown
+        ======================================
+        
+        A Python Markdown extension that replaces inline Graphviz definitins with inline SVGs or PNGs!
+        
+        refer: https://github.com/sprin/markdown-inline-graphviz
+        
+        Install `Graphviz <https://www.graphviz.org/>`_ first! The command "dot" should be in system PATH.
+        
+        example::
+        
+            {% dot attack_plan.svg
+                digraph G {
+                    rankdir=LR
+                    Earth [peripheries=2]
+                    Mars
+                    Earth -> Mars
+                }
+            %}
+        
+Platform: UNKNOWN

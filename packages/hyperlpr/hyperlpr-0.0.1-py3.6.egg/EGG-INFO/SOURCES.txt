@@ -1,0 +1,15 @@
+setup.py
+hyperlpr/__init__.py
+hyperlpr/hyperlpr.py
+hyperlpr/table_chs.py
+hyperlpr.egg-info/PKG-INFO
+hyperlpr.egg-info/SOURCES.txt
+hyperlpr.egg-info/dependency_links.txt
+hyperlpr.egg-info/requires.txt
+hyperlpr.egg-info/top_level.txt
+hyperlpr/models/cascade/char/char_single.xml
+hyperlpr/models/cascade/detector/detector_ch.xml
+hyperlpr/models/dnn/HorizonalFinemapping.caffemodel
+hyperlpr/models/dnn/HorizonalFinemapping.prototxt
+hyperlpr/models/dnn/SegmenationFree-Inception.caffemodel
+hyperlpr/models/dnn/SegmenationFree-Inception.prototxt

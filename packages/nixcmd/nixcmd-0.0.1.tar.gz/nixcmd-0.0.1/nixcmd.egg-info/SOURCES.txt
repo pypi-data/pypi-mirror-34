@@ -1,0 +1,7 @@
+README.md
+setup.py
+nixcmd/__init__.py
+nixcmd.egg-info/PKG-INFO
+nixcmd.egg-info/SOURCES.txt
+nixcmd.egg-info/dependency_links.txt
+nixcmd.egg-info/top_level.txt

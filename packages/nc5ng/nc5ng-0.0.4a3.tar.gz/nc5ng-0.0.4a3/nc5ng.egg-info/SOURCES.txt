@@ -1,0 +1,9 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+nc5ng.egg-info/PKG-INFO
+nc5ng.egg-info/SOURCES.txt
+nc5ng.egg-info/dependency_links.txt
+nc5ng.egg-info/requires.txt
+nc5ng.egg-info/top_level.txt

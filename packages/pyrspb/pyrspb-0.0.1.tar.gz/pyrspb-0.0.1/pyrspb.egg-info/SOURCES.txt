@@ -1,0 +1,17 @@
+README.md
+setup.py
+pyrspb/__init__.py
+pyrspb.egg-info/PKG-INFO
+pyrspb.egg-info/SOURCES.txt
+pyrspb.egg-info/dependency_links.txt
+pyrspb.egg-info/top_level.txt
+pyrspb/objects/__init__.py
+pyrspb/objects/invention_item.py
+pyrspb/objects/material.py
+pyrspb/objects/page_parser.py
+pyrspb/parsers/__init__.py
+pyrspb/parsers/book_version.py
+pyrspb/parsers/material_calculator.py
+pyrspb/parsers/materials.py
+pyrspb/utils/__init__.py
+pyrspb/utils/string_formatting.py

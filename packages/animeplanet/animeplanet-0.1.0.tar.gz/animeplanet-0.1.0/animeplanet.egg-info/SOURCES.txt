@@ -1,0 +1,10 @@
+README.md
+setup.py
+animeplanet/__init__.py
+animeplanet/animeplanet.py
+animeplanet.egg-info/PKG-INFO
+animeplanet.egg-info/SOURCES.txt
+animeplanet.egg-info/dependency_links.txt
+animeplanet.egg-info/entry_points.txt
+animeplanet.egg-info/requires.txt
+animeplanet.egg-info/top_level.txt

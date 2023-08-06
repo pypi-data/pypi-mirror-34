@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: piyon
+Version: 0.1.1
+Summary: a tiny cli to create a python project with pytest and basic pytest plugins
+Home-page: https://github.com/kiyonlin/piyon
+Author: kiyon
+Author-email: kiyonlin@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python pytest
+Platform: UNKNOWN
+Requires-Python: >=3.6

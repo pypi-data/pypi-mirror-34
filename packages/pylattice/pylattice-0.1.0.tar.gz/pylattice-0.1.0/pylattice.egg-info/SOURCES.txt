@@ -1,0 +1,10 @@
+CHANGES.txt
+MANIFEST.in
+README.md
+setup.py
+pylattice/__init__.py
+pylattice.egg-info/PKG-INFO
+pylattice.egg-info/SOURCES.txt
+pylattice.egg-info/dependency_links.txt
+pylattice.egg-info/requires.txt
+pylattice.egg-info/top_level.txt

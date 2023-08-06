@@ -1,0 +1,16 @@
+bientropy/__init__.py,sha256=Cv4o05oB3r1C4re6IRc22Gt0JF_gXQ-Ya1OuYuDCr84,2195
+bientropy/benchmark.py,sha256=sxU4ZMdwm-QGORml14qA6ex5nh0NP8SetQTfQLb3QiA,4124
+bientropy/cbientropy.cpython-35m-darwin.so,sha256=nYzCzMs9vCwmRUgefaq5r92i7DxIStSFlIILWNtG9wA,36612
+bientropy/demo.py,sha256=FdWW9WkD0-HirY98xr1kut0247Yr5qZzkveQfr6nk_k,2995
+bientropy/pybientropy.py,sha256=renrPlg8V44JLk7NRyKZCoxhkY-Ia_JEFu95LNifbAo,5083
+bientropy/testvectors.py,sha256=zDbIMW29esTWtt6f8llfb4x80hjH_XXO6_bu0PZvazI,11859
+bientropy/.dylibs/libgmp.10.dylib,sha256=eccc4M173SvW9pTxZsL8pdmKSmOxSsZGxlCaOxKEw_E,422620
+bientropy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bientropy/tests/__main__.py,sha256=bz9YJWIwx6biIe_PPpg9yuyzd2jf6XedJqRdTduV5SQ,309
+bientropy/tests/test_suite.py,sha256=tyH44sMf6P11P6XstjAe3J5vkqoObAOgdIxop7BYW2o,12001
+BiEntropy-1.1.1.data/headers/bientropy.h,sha256=Co6RvAumRhiJ5-2qiW4DsNg1IpxB91oYlKV43pf4Q3g,1263
+BiEntropy-1.1.1.dist-info/LICENSE.txt,sha256=vr6U2vQIAb-0kinvgnTLhmJ2-ssAiZbylQWeIlLBfUc,32423
+BiEntropy-1.1.1.dist-info/METADATA,sha256=q4jXhn9CqBJy-4mAPNya0wqfAmFmuEqQzFqmfXJFnfg,8484
+BiEntropy-1.1.1.dist-info/RECORD,,
+BiEntropy-1.1.1.dist-info/top_level.txt,sha256=X_PmsoVMwSDdWgOPIG7CuzeLqm37Xzbi4rdINE0rTAQ,10
+BiEntropy-1.1.1.dist-info/WHEEL,sha256=ydkBELDrr9W8Qd-L-_tE7DzY1lybOjDsSsHhe-RORfQ,249

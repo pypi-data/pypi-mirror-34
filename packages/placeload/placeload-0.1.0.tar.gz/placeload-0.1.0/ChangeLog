@@ -1,0 +1,14 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* add Makefile to build stuff
+* whoops forgot the setup.\* files
+* add links to placedock
+* Make placeload releaseble
+* Support setting aggregates on the created providers
+* Add support for setting inventory
+* First commit of working resource provider create
+* Initial commit

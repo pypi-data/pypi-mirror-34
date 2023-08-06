@@ -1,0 +1,15 @@
+README.md
+setup.py
+SLAB_Diffusion/__init__.py
+SLAB_Diffusion/black_body_flux_density.py
+SLAB_Diffusion/distances_conversions.py
+SLAB_Diffusion/fit_black_body_flux_spec.py
+SLAB_Diffusion/params.py
+SLAB_Diffusion/plotter_3D.py
+SLAB_Diffusion/script.py
+SLAB_Diffusion/solver_3D.py
+SLAB_Diffusion.egg-info/PKG-INFO
+SLAB_Diffusion.egg-info/SOURCES.txt
+SLAB_Diffusion.egg-info/dependency_links.txt
+SLAB_Diffusion.egg-info/requires.txt
+SLAB_Diffusion.egg-info/top_level.txt

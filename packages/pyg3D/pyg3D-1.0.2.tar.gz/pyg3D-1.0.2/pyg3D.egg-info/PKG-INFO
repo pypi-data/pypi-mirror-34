@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyg3D
+Version: 1.0.2
+Summary: A simple 3D rendering library for python
+Home-page: https://gitlab.com/ll13s5h/pyg3D
+Author: Sam H
+Author-email: ll13s5h@leeds.ac.uk
+License: UNKNOWN
+Description: pyg3D
+        ===============
+        
+        pyg3D is a simple library built on top of pyglet, to provide a simple 3D graphics
+        library for python.
+        
+        Dependencies
+        ----------------------------
+        
+        pyg3D requires:
+        
+        - pyglet
+        - numpy
+        - PyOpenGL
+        
+        Installation
+        ----------------------------
+        
+        pyg3D can be installed through pip with the command
+        ``pip install pyg3D``
+Keywords: simple 3D games graphics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/x-rst

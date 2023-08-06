@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: udata-geoplatform
+Version: 1.0.1
+Summary: Connects uData with Geoplatform (geo.data.gouv.fr)
+Home-page: https://github.com/opendatateam/udata-geoplatform
+Author: Open Data Team
+Author-email: contact@opendata.team
+License: AGPL
+Keywords: udata,harvester,uData Geoplatform connector
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test
+Requires-Dist: udata (>=1.4.0.dev)
+Provides-Extra: test
+Requires-Dist: httpretty (==0.8.14); extra == 'test'
+Requires-Dist: mock (==2.0.0); extra == 'test'
+Requires-Dist: pytest-flask (==0.10.0); extra == 'test'
+Requires-Dist: pytest-sugar (==0.9.1); extra == 'test'
+Requires-Dist: pytest (==3.5.0); extra == 'test'
+
+# uData Geoplatform connector
+
+Connects uData with Geoplatform (geo.data.gouv.fr)
+
+## Usage
+
+Install the plugin package in you udata environement:
+
+```bash
+pip install udata-geoplatform
+```
+
+Then activate it in your `udata.cfg`:
+
+```python
+PLUGINS = ['udata-geoplatform']
+```
+
+# Changelog
+
+## 1.0.1 (2018-08-03)
+
+- Pass current locale to preview URL [#3](https://github.com/etalab/udata-geoplatform/pull/3)
+
+## 1.0.0 (2018-06-06)
+
+- Initial release
+
+
+

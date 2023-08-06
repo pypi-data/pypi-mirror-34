@@ -1,0 +1,9 @@
+README.md
+setup.py
+thumbor_padding.egg-info/PKG-INFO
+thumbor_padding.egg-info/SOURCES.txt
+thumbor_padding.egg-info/dependency_links.txt
+thumbor_padding.egg-info/requires.txt
+thumbor_padding.egg-info/top_level.txt
+thumbor_padding_filter/__init__.py
+thumbor_padding_filter/padding.py

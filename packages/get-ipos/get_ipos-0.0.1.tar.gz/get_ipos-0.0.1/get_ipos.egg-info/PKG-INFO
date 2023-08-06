@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: get-ipos
+Version: 0.0.1
+Summary: Get the IPOs listings from top exchanges
+Home-page: https://github.com/sarthaknegi/get_ipos
+Author: Sarthak Negi
+Author-email: sarthaknegi609@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

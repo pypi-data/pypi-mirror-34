@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+assembly/package.py
+py_assembly.egg-info/PKG-INFO
+py_assembly.egg-info/SOURCES.txt
+py_assembly.egg-info/dependency_links.txt
+py_assembly.egg-info/not-zip-safe
+py_assembly.egg-info/top_level.txt

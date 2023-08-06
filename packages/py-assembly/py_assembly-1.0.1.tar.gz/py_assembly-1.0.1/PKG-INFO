@@ -1,0 +1,92 @@
+Metadata-Version: 1.1
+Name: py_assembly
+Version: 1.0.1
+Summary: assemble project with all dependencies for install offline
+Home-page: http://github.com/chaokunyang/py_assembly
+Author: chaokunyang
+Author-email: UNKNOWN
+License: Apache License 2.0
+Description: 
+        py_assembly
+        ===========
+        
+        py_assembly is a tool of package python code libs and dependencies for offline installation. py_assembly implements an project build process like maven assembly
+        
+        Get Started
+        -----------
+        
+        Install py_assembly
+        
+        .. code-block:: bash
+        
+           pip install py_assembly
+        
+        ``setup.py`` example
+        
+        .. code-block:: python
+        
+           from setuptools import find_packages, setup
+           from assembly.package import Package
+        
+           setup(
+               name='py_assembly_example',
+               author="chaokunyang",
+               version='1.0',
+               description='assemble project with all dependencies for install offline',
+               long_description=open('README.rst').read(),
+               classifiers=[
+                   'Programming Language :: Python :: 3.6',
+                   'Intended Audience :: Developers',
+                 ],
+               keywords='assembly dist offline install dependencies',
+               url='http://github.com/chaokunyang/py_assembly/example',
+               license='Apache License 2.0',
+               packages=find_packages(),
+               include_package_data=True,
+               zip_safe=False,
+               cmdclass={
+                   "package": Package
+               }
+           )
+        
+        Package
+        
+        .. code-block:: bash
+        
+           python setup.py package
+        
+        Install
+        
+        Install dependencies
+        
+        .. code-block:: bash
+        
+           pip install -r requirements.txt --no-index --find-links wheelhouse
+        
+        Install project package
+        
+        .. code-block:: bash
+        
+           pip install .
+        
+        Others
+        ------
+        
+        You can do it manually:
+        
+        
+        * Download libs
+          .. code-block:: bash
+        
+               pip download django -d wheelhouse
+               pip download -r requirements.txt -d wheelhouse
+        
+        * Install libs
+          .. code-block:: bash
+        
+               pip install -r requirements.txt --no-index --find-links wheelhouse
+        
+Keywords: assembly dist offline install dependencies
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers

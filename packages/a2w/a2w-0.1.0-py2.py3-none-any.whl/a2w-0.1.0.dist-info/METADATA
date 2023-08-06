@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: a2w
+Version: 0.1.0
+Summary: TTool  to convert ANSI output to HTML. Optionally it can also upload the result to a web server/service and return a sharable url.
+Home-page: https://github.com/ssbarnea/a2w
+Author: Sorin Sbarnea
+Author-email: sorin.sbarnea@gmail.com
+License: MIT license
+Keywords: a2w
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+
+===========
+ANSI-to-web
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/a2w.svg
+        :target: https://pypi.python.org/pypi/a2w
+
+.. image:: https://img.shields.io/travis/ssbarnea/a2w.svg
+        :target: https://travis-ci.org/ssbarnea/a2w
+
+.. image:: https://readthedocs.org/projects/a2w/badge/?version=latest
+        :target: https://a2w.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+TTool  to convert ANSI output to HTML. Optionally it can also upload the result to a web server/service and return a sharable url.
+
+
+* Free software: MIT license
+* Documentation: https://a2w.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2018-08-02)
+------------------
+
+* First release on PyPI.
+
+

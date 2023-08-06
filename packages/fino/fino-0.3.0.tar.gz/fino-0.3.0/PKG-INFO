@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: fino
+Version: 0.3.0
+Summary: Output the Finnish word for a given integer.
+Home-page: https://github.com/hugovk/fino
+Author: hugovk
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Finnish,suomi,numbers,integers
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Finnish
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*

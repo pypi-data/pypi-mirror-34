@@ -1,0 +1,12 @@
+README.rst
+setup.py
+s_test/__init__.py
+s_test/__version__.py
+s_test/a.py
+s_test/b.py
+s_test/c.py
+s_test.egg-info/PKG-INFO
+s_test.egg-info/SOURCES.txt
+s_test.egg-info/dependency_links.txt
+s_test.egg-info/top_level.txt
+s_test.egg-info/zip-safe

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aws-syncr
+Version: 0.6
+Summary: Application that reads yaml and syncs definitions with amazon
+Home-page: https://github.com/delfick/aws_syncr
+Author: Stephen Moore
+Author-email: delfick755@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: aws
+Platform: UNKNOWN
+Provides-Extra: tests

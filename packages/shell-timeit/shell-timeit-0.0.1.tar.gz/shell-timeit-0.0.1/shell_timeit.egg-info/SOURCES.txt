@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+shell_timeit/__init__.py
+shell_timeit/_timeit.py
+shell_timeit.egg-info/PKG-INFO
+shell_timeit.egg-info/SOURCES.txt
+shell_timeit.egg-info/dependency_links.txt
+shell_timeit.egg-info/entry_points.txt
+shell_timeit.egg-info/requires.txt
+shell_timeit.egg-info/top_level.txt
+shell_timeit.egg-info/zip-safe

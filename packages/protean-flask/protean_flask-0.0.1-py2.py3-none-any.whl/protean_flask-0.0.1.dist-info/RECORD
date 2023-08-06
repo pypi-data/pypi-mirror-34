@@ -1,0 +1,12 @@
+protean_flask/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+protean_flask/__main__.py,sha256=M9HvPIxHzU9zJsS4vqhXBks1TWeeWCufzSpmglQfb34,373
+protean_flask/cli.py,sha256=_SmU6UNuuNSq8I1ub6rxwoqovmaKe0MnxRblRHIW5_s,750
+protean_flask/config.py,sha256=mywBjez1zOGXbEhXnHcNNqSLW0PxNjFd8fzCWFNeNz4,1007
+protean_flask/serializer.py,sha256=BebEZpblm6nxlkO9q7Qc-4rlx_1SvjYvoRfSzpXruJY,1809
+protean_flask/tasklet.py,sha256=y6svzpNpdUXun4KTYjf0ltfjFtb4ScZUzlOyCfkG5_c,1883
+protean_flask/view.py,sha256=XonQQWrSmwY2bhJAqt3Yoj16ZcOYDbgIx20v6y2LxNM,11182
+protean_flask-0.0.1.dist-info/METADATA,sha256=-UBGUlDJNSPIey-pqXKapFVVDM-iAXW32r1UcQZszaY,1913
+protean_flask-0.0.1.dist-info/RECORD,,
+protean_flask-0.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+protean_flask-0.0.1.dist-info/entry_points.txt,sha256=xNQ2FsnDI3g0NZSllNduVZvzXETB0xb3XK7da_t8EtA,58
+protean_flask-0.0.1.dist-info/top_level.txt,sha256=14wAeK4kA76E1wuM14X0LTIpCOJFYWI3z6w8fK9CC2M,14

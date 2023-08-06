@@ -1,0 +1,10 @@
+CyPkgDemo-0.0.1rc6.dist-info/METADATA,sha256=YwCFSXcj9tVgApdbdD5qIViG_jVh9HbZyE8kAerAuHY,3739
+CyPkgDemo-0.0.1rc6.dist-info/RECORD,,
+CyPkgDemo-0.0.1rc6.dist-info/WHEEL,sha256=PszkVMoApkYqOfxHbYOiE6Eqm7r1bcpLV9_97pfJhVE,110
+CyPkgDemo-0.0.1rc6.dist-info/top_level.txt,sha256=8miSWy-v9M9gQcZ63R12rhcHM4VqxyITqDhwxTbyuWo,10
+cypkgdemo/__init__.py,sha256=R800fk2UY3z9aqfNcy3Ei7clUuvL4xsIRwaKU9ErfsI,452
+cypkgdemo/atoi.pxd,sha256=gW_0WTD6dfO8RsLlgwAJczZiYFpNobjk9QDa4q97Cz0,38
+cypkgdemo/atoi.so,sha256=kdcfQNuMGwkt0eZ8qOMMxAYWZdUY82jL-9lubsK6_Yo,42336
+cypkgdemo/calc.so,sha256=JOpkL4mF-NDkn4sU8mFwIeC3iCxYWEyosEyo4fAu4Dc,73544
+cypkgdemo/calc_py.py,sha256=rut0JQ6BBQcCc9IGnbx42PwetN1E0ZFtfgFns_l3Mvs,184
+cypkgdemo/sin.pxd,sha256=vLSW1hv_hYmke2TpJ87FBY2_67u5SAqjfx4u5GL18yE,58

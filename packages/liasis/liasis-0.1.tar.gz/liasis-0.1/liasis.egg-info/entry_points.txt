@@ -1,0 +1,3 @@
+[console_scripts]
+liasis = liasis.app:main
+

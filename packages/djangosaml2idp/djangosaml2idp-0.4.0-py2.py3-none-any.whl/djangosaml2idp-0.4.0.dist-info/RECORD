@@ -1,0 +1,10 @@
+djangosaml2idp/__init__.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+djangosaml2idp/processors.py,sha256=4Aextr-CjQtoGX8GvRAv3j_aMttNg_-2wmZ1jaG0kco,824
+djangosaml2idp/urls.py,sha256=6jviIPPePSQXMuIAQZEwTfJeqZ_AsuQaKN-_tHkNyPU,494
+djangosaml2idp/views.py,sha256=UKOykA4rPWFEsWdt-1dWfflUgDXki9pk2vmQQH081VQ,9010
+djangosaml2idp/templates/djangosaml2idp/login.html,sha256=tdiPk5hiEAFN2TrEuiT6HCUklssjTj6bpcDAEnVKCbE,437
+djangosaml2idp-0.4.0.dist-info/LICENSE.txt,sha256=v4RKkP5VOrRsyoho7e3ikPaMCNBiJsoFXmljsobIzLg,1083
+djangosaml2idp-0.4.0.dist-info/METADATA,sha256=6MCeT3Ez-2_Xepg8wIzycgo13p1I2kvFfowMcVJe5sM,7625
+djangosaml2idp-0.4.0.dist-info/RECORD,,
+djangosaml2idp-0.4.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+djangosaml2idp-0.4.0.dist-info/top_level.txt,sha256=htL8XM3CTIdB1f07OjSK9F_MX96M-wKDgjg4ltZJHfo,15

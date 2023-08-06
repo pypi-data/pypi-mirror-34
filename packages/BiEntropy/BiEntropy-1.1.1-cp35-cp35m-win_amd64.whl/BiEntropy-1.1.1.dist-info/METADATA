@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: BiEntropy
+Version: 1.1.1
+Summary: High-performance implementations of BiEntropy metrics proposed by Grenville J. Croll
+Home-page: https://github.com/sandialabs/bientropy
+Author: Ryan Helinski
+Author-email: rhelins@sandia.gov
+License: UNKNOWN
+Keywords: entropy randomness statistics
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Security :: Cryptography
+Requires-Dist: bitstring (>=3.1.5)
+Requires-Dist: numpy (>=1.11.2)
+
+UNKNOWN
+
+

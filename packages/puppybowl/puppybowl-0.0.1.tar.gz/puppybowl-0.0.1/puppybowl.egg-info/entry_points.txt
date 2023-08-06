@@ -1,0 +1,3 @@
+[console_scripts]
+puppybowl = app.main:main
+

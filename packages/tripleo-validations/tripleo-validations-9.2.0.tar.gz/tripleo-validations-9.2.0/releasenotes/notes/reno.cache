@@ -1,0 +1,69 @@
+---
+file-contents:
+  releasenotes/notes/add-selinux-validation-e23694aaf94d2a66.yaml:
+    features: ['New validation to check for the SELinux Enforcing mode on the Undercloud.
+
+        ']
+  releasenotes/notes/bug-1776721-2e0abe371abee71c.yaml:
+    features: ['Adds an undercloud heat-manage purge_deleted cron job validation.
+
+        ']
+  releasenotes/notes/check-latest-minor-version-14befc616a59002b.yaml:
+    features: ['New validation to check for latest minor version of python-tripleoclient
+
+        ', 'New module to check for new minor and major versions of a package
+
+        ']
+  releasenotes/notes/deprecate-ini-inventory-d7446df7e967adfe.yaml:
+    deprecations: ['The ``--static-inventory`` argument to ``tripleo-ansible-inventory``
+        has
+
+        been deprecated and aliased to ``--static-yaml-inventory``.  See
+
+        `bug 1751855 <https://bugs.launchpad.net/tripleo/+bug/1751855>`__.
+
+        ']
+  releasenotes/notes/validate-xfs-ftype-equals-0-8fdb1f8c99bee975.yaml:
+    upgrade: ['Validate that there are no volumes formatted with XFS
+
+        and ftype=0.
+
+        Deployments from OpenStack Kilo or Liberty have XFS
+
+        partitions formatted with ftype=0, which is incompatible
+
+        with the docker overlayfs driver.
+
+        From OpenStack Newton, we have support for XFS ftype=1
+
+        by default.
+
+        This check will make fail the pre-upgrade validations
+
+        if there are deployments coming back from Kilo or Liberty
+
+        and have XFS partitions with ftype=0.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/bug-1776721-2e0abe371abee71c.yaml
+    - !!binary |
+      NWU3YzI1YzEyNDNmZGJiMzhkYWVjMmQzZjYyMGQxOGIzYzZkZWJkMg==
+  version: 9.2.0
+- files:
+  - - releasenotes/notes/validate-xfs-ftype-equals-0-8fdb1f8c99bee975.yaml
+    - !!binary |
+      YTVlNjNlZTcyNTMxYzg1ZWU1MjdjZTcyMTAyMmZmZmNlM2NmY2Y3NQ==
+  version: 9.1.0
+- files:
+  - - releasenotes/notes/add-selinux-validation-e23694aaf94d2a66.yaml
+    - !!binary |
+      YzZlNjJhYzdiZmVlMjExOTlmMWNjY2U5ZDBiZWUxODhmNTlkYjkwOQ==
+  - - releasenotes/notes/check-latest-minor-version-14befc616a59002b.yaml
+    - !!binary |
+      NDkyMGRhYjI4ZGY3YjE2MjQ2ZmUyY2M3NTkyMzFiZjZhNWZkMDQ2MQ==
+  - - releasenotes/notes/deprecate-ini-inventory-d7446df7e967adfe.yaml
+    - !!binary |
+      ZDYwM2Q5NzgwNjFkYTIxYjcwMTQ0Y2UyODdjY2YwYTg1MmU4ODc0Mg==
+  version: 9.0.0

@@ -1,0 +1,7 @@
+README.rst
+setup.py
+Pedal.egg-info/PKG-INFO
+Pedal.egg-info/SOURCES.txt
+Pedal.egg-info/dependency_links.txt
+Pedal.egg-info/top_level.txt
+pedal/__init__.py

@@ -1,0 +1,14 @@
+InterferencePackage/InterferencePackage.py,sha256=iJPFDJiCOEhWxh6UDsPU_TMzCkHB16q1e2LwCSPqlC4,4514
+InterferencePackage/__init__.py,sha256=MNn2_2ngt5LAAcIJMMNQW-AFsbcvjyWhYHePjZwuyS0,30
+InterferencePackage/helpers/CameraGrid.py,sha256=RMBT5GYL4CUfaBTQ7r1CBNTBD5b36yuNvK6mtrL_9Ps,1412
+InterferencePackage/helpers/CrystalGrid.py,sha256=WQ2PCIySu4jE9kTVxt4-jEO9CNpx_6fIl9ppm0QuQVY,5763
+InterferencePackage/helpers/CudaWrapper.py,sha256=yrYSjdnp6g4dZiOWEJzhTIgl8EE1RDuVzbDpNNRCD2A,4708
+InterferencePackage/helpers/__init__.py,sha256=TFqcb0SkzP25QfF9JSN4bPwYtcZdBhkn_yGoIgZZoPc,18
+InterferencePackage/tests/__init__.py,sha256=5GfdfAt8dzCVGLUOfe3tTWN8KFPp670wsEgxUdlL4C0,16
+InterferencePackage/tests/test_one.py,sha256=VAgAQdd1KQkg2mO6flq-C8tD4vijk4EtOkV0IU0AbbM,198
+InterferencePackage-0.0.3.dist-info/DESCRIPTION.rst,sha256=GBu2vIRV_VtKKVAA5zlRAesvAW5Hb9vndxFaUJS5OMc,292
+InterferencePackage-0.0.3.dist-info/METADATA,sha256=HVdzWYavFi85hBzGsIGgU1L7KkliqRNKZx2ktx2WqXE,786
+InterferencePackage-0.0.3.dist-info/RECORD,,
+InterferencePackage-0.0.3.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+InterferencePackage-0.0.3.dist-info/metadata.json,sha256=6WOkD4o43M8PZpYnh1rgSSLKUt2oJ12hNmunJ7E4QjM,696
+InterferencePackage-0.0.3.dist-info/top_level.txt,sha256=6VI66vpHeLCzU4jLybPXP04JmGduT6yv86u2dUXX36o,20

@@ -1,0 +1,3 @@
+[console_scripts]
+freud = freud.__main__:main
+

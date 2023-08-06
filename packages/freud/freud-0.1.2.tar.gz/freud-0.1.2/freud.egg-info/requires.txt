@@ -1,0 +1,10 @@
+requests
+prompt_toolkit==2.0.3
+pygments
+
+[dev]
+flake8
+pytest
+pytest_asyncio
+pytest_httpbin
+tox

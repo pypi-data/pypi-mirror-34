@@ -1,0 +1,6 @@
+svgwrite
+
+[test]
+coverage
+pytest
+pytest-cov

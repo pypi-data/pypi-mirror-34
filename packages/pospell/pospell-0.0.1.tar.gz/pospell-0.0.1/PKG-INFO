@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pospell
+Version: 0.0.1
+Summary: Spellcheck .po files containing reStructuredText translations
+Home-page: https://github.com/JulienPalard/pospell
+Author: Julien Palard
+Author-email: julien@palard.fr
+License: MIT license
+Description: UNKNOWN
+Keywords: po spell gettext
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

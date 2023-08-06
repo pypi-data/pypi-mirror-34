@@ -1,0 +1,12 @@
+README.md
+setup.py
+kinectmatics/__init__.py
+kinectmatics/libvid.py
+kinectmatics/opticalflow.py
+kinectmatics/timesegmentation.py
+kinectmatics/version.py
+kinectmatics.egg-info/PKG-INFO
+kinectmatics.egg-info/SOURCES.txt
+kinectmatics.egg-info/dependency_links.txt
+kinectmatics.egg-info/requires.txt
+kinectmatics.egg-info/top_level.txt

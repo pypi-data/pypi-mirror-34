@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: kinectmatics
+Version: 0.1
+Summary: computer vision toolbox for analyzing movement kinematics from video
+Home-page: https://gitlab.com/pgabriel/kinectmatics
+Author: Translational Neural Engineering Lab
+Author-email: pgabriel@eng.ucsd.edu
+License: Apache License, 2.0
+Download-URL: https://gitlab.com/pgabriel/kinectmatics/tags
+Description: 
+        ========================================
+        kinectmatics: Kinect computer vision toolbox for movement kinematics
+        ========================================
+        This is where a description of kinectmatics would go... if there was one.
+        
+Keywords: kinematics,kinect,video processing,optical flow,computer vision
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

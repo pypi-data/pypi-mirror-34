@@ -1,0 +1,8 @@
+README.md
+setup.py
+foliant/cli/bump.py
+foliantcontrib.bump.egg-info/PKG-INFO
+foliantcontrib.bump.egg-info/SOURCES.txt
+foliantcontrib.bump.egg-info/dependency_links.txt
+foliantcontrib.bump.egg-info/requires.txt
+foliantcontrib.bump.egg-info/top_level.txt

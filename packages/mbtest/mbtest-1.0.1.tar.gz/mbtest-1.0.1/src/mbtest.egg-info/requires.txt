@@ -1,0 +1,4 @@
+requests~=2.0
+furl~=1.0
+pyhamcrest~=1.9
+pytest~=3.0

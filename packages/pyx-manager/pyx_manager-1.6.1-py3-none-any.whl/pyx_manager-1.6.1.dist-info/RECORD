@@ -1,0 +1,15 @@
+pyx/__init__.py,sha256=3y62I9Jor5k3iTACdW9rTGcRnCCX44PbYrF7x1eU2b8,159
+pyx/__main__.py,sha256=AltocUw2HyjIWjjHD6JKvGb_2mYzAJSXwKGovLcaoVg,1080
+pyx/errors.py,sha256=7axNMI5f2zhuaQx-VZqxKL5Ti81uKoDBpS0w0CekcaY,74
+pyx/utils.py,sha256=OFSdqpf9DiGaCmtA3lpNlY9q9kL_bpq-MuhYApJ94Q8,3918
+pyx/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyx/tasks/new.py,sha256=TTdrfT1re43aSJ2r-mPLlBFHazEl4cfIb5OfGu35DCA,3655
+pyx/tasks/release.py,sha256=o_8FOMNSKII3ZgV7_fFvbK2gk8Zg0cW8YOHOR0Fbjjk,1227
+pyx/tasks/run.py,sha256=PcyPMuCQYi9Isscs-JCKcIek3NiGJI16l4xTQmZ2sz8,284
+pyx/tasks/test.py,sha256=Zzs79ev24MGPCXvYN18DtK2cwYXw112i6v7fWAnbKp0,269
+pyx/tasks/version.py,sha256=feiSulfsaVnL3bgYqo9hopJKv6PfHh6Y10POHJkDfSQ,919
+pyx_manager-1.6.1.dist-info/METADATA,sha256=UQ-cdpdKlAyUJy9GgNSHk03KbeXzf8VT7TMiiVTnyiA,278
+pyx_manager-1.6.1.dist-info/RECORD,,
+pyx_manager-1.6.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pyx_manager-1.6.1.dist-info/entry_points.txt,sha256=-flHNqAM2K0z3bnhIoImlJegLOunDr3Rr6bY6PXKZaY,43
+pyx_manager-1.6.1.dist-info/top_level.txt,sha256=bWtuEhbs3lAunc9skPvp0bfTbyZPlmFkdNYDJyxzImI,4

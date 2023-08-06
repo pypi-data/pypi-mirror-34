@@ -1,0 +1,92 @@
+contas_orama
+======================================
+
+|build-status-image| |pypi-version|
+
+DescriÃ§Ã£o
+-------------
+
+Sistema de controles de finanÃ§as pessoais.
+UsuÃ¡rio pode criar uma conta e fazer lanÃ§amentos na mesma.
+
+UsuÃ¡rio poderÃ¡ ver o extrato e consultar o saldo em perÃ­odos e
+datas arbitrÃ¡rias.
+
+Requerimentos
+--------------
+
+-  Python
+-  Django
+-  Django REST Framework
+
+InstalaÃ§Ã£o
+------------
+
+InstalaÃ§Ã£o usa ``pip``\ â€¦
+
+.. code:: bash
+
+    $ pip install contas_orama
+
+UtilizaÃ§Ã£o
+----------
+
+1. Em settings.py adicione "contas_orama" e "rest_framework" em INSTALLED_APPS:
+
+.. code:: bash
+
+    INSTALLED_APPS = [
+      ...
+      'rest_framework',
+      'contas_orama',
+    ]
+
+  Ainda em settings.py adicione o seguinte bloco de comando:
+
+.. code:: bash
+
+    REST_FRAMEWORK = {
+      'DEFAULT_PAGINATION_CLASS':
+      'rest_framework.pagination.PageNumberPagination',
+      'PAGE_SIZE': 20
+    }
+
+  O cÃ³digo acima se refere a [paginaÃ§Ã£o](http://www.django-rest-framework.org/api-guide/pagination/#pagination).
+
+  Dessa forma, em views onde ocorrem listagens de objetos, sÃ³ serÃ£o listados
+  20 contas e/ou 20 lanÃ§amentos.
+
+  Mudar o parÃ¢metro 'PAGE_SIZE' se desejar um nÃºmero diferente.
+
+
+2. Inclua a URL no urls.py do seu projeto.
+
+.. code:: bash
+
+    url('^contas_orama/', include('contas_orama.urls')),
+
+3. Crie os modelos ...
+
+.. code:: bash
+
+      $ python manage.py migrate
+
+4. Crie novos usuÃ¡rios (nÃ£o Ã© permitido acessar as contas sem login) ...
+
+... code:: bash
+
+      $ python manage.py createsuperusers
+
+5. Visitar http://127.0.0.1:8000/contas/ para gerir as contas.
+
+
+Testando
+--------
+
+Para executar os testes:
+
+.. code:: bash
+
+    $ python manage.py test contas_orama
+
+

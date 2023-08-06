@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fistro
+Version: 0.2.0
+Summary: A fixture generator based on type annotations.
+Home-page: https://github.com/kingoodie/fistro
+Author: Pablo Cabezas
+Author-email: pabcabsal@gmail.com
+Keywords: fixture,testing,tool,dataclasses,annotations
+Requires-Python: >=3.7.0,<3.8.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

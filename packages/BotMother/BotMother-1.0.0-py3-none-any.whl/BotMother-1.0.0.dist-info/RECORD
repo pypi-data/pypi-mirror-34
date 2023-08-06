@@ -1,0 +1,12 @@
+BotMother-1.0.0.dist-info/DESCRIPTION.rst,sha256=HV9vYsBRAabIZL2Nsin03biy9n1BI2WYvFZ_pn4OO5k,182
+BotMother-1.0.0.dist-info/METADATA,sha256=bfcbEekZZLvmady5ArPp6Qv1hIjjagwT47vpV52ra5U,1091
+BotMother-1.0.0.dist-info/RECORD,,
+BotMother-1.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+BotMother-1.0.0.dist-info/metadata.json,sha256=d0ob5lHAFkXe4nL5vbaCIdqBm_y96a33hxd5nYTR8BM,1031
+BotMother-1.0.0.dist-info/top_level.txt,sha256=liBvAYpgo3IUzxDvo3HCrIMeNHp6cE-WArfkALu4-es,10
+botmother/Blueprint.py,sha256=eAtWcB6XKvh3vdOXHdMUXL1iz9omMkuKaevqXz4DYKo,4052
+botmother/BotConstructor.py,sha256=LbkAtYY5zmI7I0Rk48RjZeFk4AdDHXGQM5zgS-hSj4s,5473
+botmother/Conversation.py,sha256=AAgHJTLU5IescqzYUQNM2u44fToFKI3ecEb0fmggVeI,8533
+botmother/__init__.py,sha256=1-B6HtvDY-44VsNFtFyvrWM8ulRJTXkAJypBPzPlLz8,21
+botmother/exception/Exceptions.py,sha256=IbJdWAe4ss3Y6s5MsoC5FQehVpSSo1z6HAaEre0Gk0g,681
+botmother/exception/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

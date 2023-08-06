@@ -1,0 +1,2 @@
+SHARD_STRATEGY_CRC = "crc"
+SHARD_STRATEGY_CYCLE = "cycle"

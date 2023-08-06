@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+hiptest/__init__.py
+hiptest/client.py
+python_hiptest.egg-info/PKG-INFO
+python_hiptest.egg-info/SOURCES.txt
+python_hiptest.egg-info/dependency_links.txt
+python_hiptest.egg-info/top_level.txt

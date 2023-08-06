@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "sphinxience"
+version = "0.1.2-alpha.0"
+description = "A Sphinx extension to assist in publishing scientific writing in either HTML or PDF."
+license = "MIT"
+authors = ["Bram Geron <bram@bram.xyz>"]
+readme = "README.md"
+homepage = "https://github.com/bgeron/sphinxience"
+repository = "https://github.com/bgeron/sphinxience"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Science/Research",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering",
+]
+
+
+# TODO documentation = ...
+
+[tool.poetry.dependencies]
+python = "^3.0"
+Sphinx = "~1.7"
+
+[tool.poetry.dev-dependencies]
+# pytest = "^3.0"
+
+

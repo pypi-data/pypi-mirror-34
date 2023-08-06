@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sphinxience
+Version: 0.1.2a0
+Summary: A Sphinx extension to assist in publishing scientific writing in either HTML or PDF.
+Home-page: https://github.com/bgeron/sphinxience
+Author: Bram Geron
+Author-email: bram@bram.xyz
+Requires-Python: >=3.0,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: Sphinx (>=1.7,<1.8)

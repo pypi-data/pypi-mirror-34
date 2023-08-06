@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: eloqua-python-sdk
+Version: 0.2.1
+Summary: Eloqua Python SDK
+Home-page: https://github.com/ignotas-petrulis/eloqua-python-sdk.git
+Author: Ignotas Petrulis
+Author-email: ignotas.petrulis@gmail.com
+License: UNKNOWN
+Description: 
+        Eloqua Python SDK wrapping Eloqua Rest API and Eloqua BULK API.
+        
+Platform: UNKNOWN

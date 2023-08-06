@@ -1,0 +1,8 @@
+README.md
+setup.py
+dgpy/__init__.py
+dgpy/misc.py
+dgpy.egg-info/PKG-INFO
+dgpy.egg-info/SOURCES.txt
+dgpy.egg-info/dependency_links.txt
+dgpy.egg-info/top_level.txt

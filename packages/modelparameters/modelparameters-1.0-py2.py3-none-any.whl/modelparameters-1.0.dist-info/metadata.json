@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "modelparameters", "run_requires": [{"requires": ["numpy (>=1.5)", "six", "sympy (<=0.7.7)"]}], "summary": "", "version": "1.0"}

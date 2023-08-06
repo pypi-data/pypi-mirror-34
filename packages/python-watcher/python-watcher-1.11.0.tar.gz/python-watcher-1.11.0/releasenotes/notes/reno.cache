@@ -1,0 +1,94 @@
+---
+file-contents:
+  releasenotes/notes/add-ha-support-b9042255e5b76e42.yaml:
+    features: [Watcher services can be launched in HA mode. From now on Watcher Decision
+        Engine and Watcher Applier services may be deployed on different nodes to
+        run in active-active or active-passive mode. Any ONGOING Audits or Action
+        Plans will be CANCELLED if service they are executed on is restarted.]
+  releasenotes/notes/add-name-for-audit-0df1f39f00736f06.yaml:
+    features: ['Audits have ''name'' field now, that is more friendly to end users.
+        Audit''s name can''t exceed 63 characters.']
+  releasenotes/notes/bp-audit-scope-exclude-project-511a7720aac00dff.yaml:
+    features: ['Feature to exclude instances from audit scope based on project_id
+        is added.
+
+        Now instances from particular project in OpenStack can be excluded from audit
+
+        defining scope in audit templates.
+
+        ']
+  releasenotes/notes/compute-cdm-include-all-instances-f7506ded2d57732f.yaml:
+    features: ['Watcher has a whole scope of the cluster, when building compute CDM
+        which includes all instances. It filters excluded instances when migration
+        during the audit.']
+  releasenotes/notes/host-maintenance-strategy-41f640927948fb56.yaml:
+    features: ['Added a strategy for one compute node maintenance,
+
+        without having the user''s application been interrupted.
+
+        If given one backup node, the strategy will firstly
+
+        migrate all instances from the maintenance node to
+
+        the backup node. If the backup node is not provided,
+
+        it will migrate all instances, relying on nova-scheduler.
+
+        ']
+  releasenotes/notes/multiple-global-efficacy-indicator-fc11c4844a12a7d5.yaml:
+    features: ['Watcher got an ability to calculate multiple global efficacy indicators
+        during audit''s execution. Now global efficacy can be calculated for many
+        resource types (like volumes, instances, network) if strategy supports efficacy
+        indicators.']
+  releasenotes/notes/notifications-actionplan-cancel-edb2a4a12543e2d0.yaml:
+    features: [Added notifications about cancelling of action plan. Now event based
+        plugins know when action plan cancel started and completed.]
+  releasenotes/notes/replace-cold-migrate-to-use-nova-migration-api-cecd9a39ddd3bc58.yaml:
+    features: ['Instance cold migration logic is now replaced with using Nova migrate
+
+        Server(migrate Action) API which has host option since v2.56.
+
+        ']
+    fixes: ['The migrate action of migration type cold with destination_node parameter
+
+        was fixed. Before fixing, it booted an instance in the service project
+
+        as a migrated instance.
+
+        ']
+    upgrade: ['Nova API version is now set to 2.56 by default. This needs the migrate
+
+        action of migration type cold with destination_node parameter to work.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/add-ha-support-b9042255e5b76e42.yaml
+    - !!binary |
+      ZTQyNmEwMTVlZWZmM2I3ZDk1MDYxZmI0MTgwZTJjYzg3OGRiMDMwOA==
+  version: 1.11.0
+- files:
+  - - releasenotes/notes/bp-audit-scope-exclude-project-511a7720aac00dff.yaml
+    - !!binary |
+      ZmMzODhkODI5MjMyY2Q5NTI1MWFjNDg3YjU2ZDJiMTk0NTA4MWI2Mg==
+  - - releasenotes/notes/host-maintenance-strategy-41f640927948fb56.yaml
+    - !!binary |
+      NTgyNzZlYzc5ZTg1NmNkMTFkNDViYWFhMzU0OGI5YmYwZGIwMTVkNw==
+  version: 1.10.0
+- files:
+  - - releasenotes/notes/add-name-for-audit-0df1f39f00736f06.yaml
+    - !!binary |
+      OWZiNWIyYTRlNzhhYzgwZmNmMzczNzA4YTVmMTljODU1ODk2NzdmZQ==
+  - - releasenotes/notes/compute-cdm-include-all-instances-f7506ded2d57732f.yaml
+    - !!binary |
+      ZGFkNjBmYjg3ODg3YzgyMDcwYTUwOWM3OTA5ZWVmYzE0MGQ5MGIxMA==
+  - - releasenotes/notes/multiple-global-efficacy-indicator-fc11c4844a12a7d5.yaml
+    - !!binary |
+      OWZiNWIyYTRlNzhhYzgwZmNmMzczNzA4YTVmMTljODU1ODk2NzdmZQ==
+  - - releasenotes/notes/notifications-actionplan-cancel-edb2a4a12543e2d0.yaml
+    - !!binary |
+      OWZiNWIyYTRlNzhhYzgwZmNmMzczNzA4YTVmMTljODU1ODk2NzdmZQ==
+  - - releasenotes/notes/replace-cold-migrate-to-use-nova-migration-api-cecd9a39ddd3bc58.yaml
+    - !!binary |
+      NDE3OWMzNTI3Y2MwOTA4OGU3MDAwOGYxYTI5NTliNmUyNzMwZDUyNg==
+  version: 1.9.0

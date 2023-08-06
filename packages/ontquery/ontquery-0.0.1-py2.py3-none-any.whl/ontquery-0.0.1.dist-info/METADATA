@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ontquery
+Version: 0.0.1
+Summary: a framework querying ontology terms
+Home-page: https://github.com/tgbugs/ontquery
+Author: Tom Gillespie
+Author-email: tgbugs@gmail.com
+License: MIT
+Description: 
+Keywords: ontology scigraph
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: dev
+Requires-Dist: pyontutils; extra == 'dev'
+

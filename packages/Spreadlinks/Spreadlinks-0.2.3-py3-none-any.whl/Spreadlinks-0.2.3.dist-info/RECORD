@@ -1,0 +1,21 @@
+Spreadlinks-0.2.3.dist-info/METADATA,sha256=PLvhfOu1DKXdPN8LXkTMuensBnEaSUk29Bw-cXDVo0Q,5084
+Spreadlinks-0.2.3.dist-info/RECORD,,
+Spreadlinks-0.2.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+Spreadlinks-0.2.3.dist-info/top_level.txt,sha256=Hp3pyH7rAE88d3b3vuVAayLiMjKz48i57SwRG7MJN7U,12
+spreadlinks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spreadlinks/linklibrarylib.py,sha256=Rfz5Bmcwmm0EMNZFQbXNNV8gGYZPF4N-bp6BXrU_OTQ,6683
+spreadlinks/models.py,sha256=h0crz-8pCp0yFNfQnT4-Paj7Q7nopbmBM1E5lr-39rI,729
+spreadlinks/tests.py,sha256=S8E_e9aBwLZKGMieXU6vu8JgEtEFagsD2PpXtZu2x0U,8389
+spreadlinks/urls.py,sha256=RtbIMLt60uJ2Vvv4Oo-BCBsQrY7Oqinaq3K6ZvVC-C4,694
+spreadlinks/views.py,sha256=J5x0sHaeoV2DQt7OU6yd2hgzCao5QWMsFWP6qwxDBLk,4655
+spreadlinks/static/style/League Gothic.otf,sha256=nOQVve1hfGc_gwRJYHWo7j2Xg6Fh2pFeUCgz6JigRbM,17332
+spreadlinks/static/style/base.css,sha256=qAjqjKs5GqsUdStS0pfEaj7HUr8v1rlWATOK0hblqHM,3113
+spreadlinks/static/style/front.css,sha256=Ehuf7BTBLsAW1ykKuDFZ1d2wKs9jIhSsnhP-zr-fBUc,1917
+spreadlinks/static/style/jeremyday-bg-dark.png,sha256=F0_RgBxMABoEY7YrxAOEL7LeiVSFfG6A6UFASSgLeSU,4679
+spreadlinks/static/style/jeremyday-bg-pale.png,sha256=hJiPOz3XxMxKgabss86IRHKT30SOvjbSXAgB25lde6o,4140
+spreadlinks/static/style/jeremyday-bg.gif,sha256=sxKkohTwBOruCMHt9LGMS5xZbFrV_8wT6zMiuWRQ6WU,1294
+spreadlinks/static/style/jeremyday.css,sha256=HcHLBIq4iXXd8vmJqDWz1EWpqaXnQgV_H9uYN2RiboE,2572
+spreadlinks/templates/jeremyday/base.html,sha256=iW7chA2W2qfBMQspDCXv4ZmNzRY2JUvTy16SULojcnI,943
+spreadlinks/templates/spreadlinks/base.html,sha256=-dtzCfdifx2bLteaovfvdDXTb927ptoZpe0VeVmeFPc,708
+spreadlinks/templates/spreadlinks/library-detail.html,sha256=__ElHennepnRtUUUWmW24xWWhUoEQJm3SgQCW-znWBQ,2435
+spreadlinks/templates/spreadlinks/library-list.html,sha256=Ht59zAbDSlESb8ywAwNLaz9KOeD2kIpHFOjowkFheqs,412

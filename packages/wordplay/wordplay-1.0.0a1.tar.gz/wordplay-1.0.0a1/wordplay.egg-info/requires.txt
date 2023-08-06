@@ -1,0 +1,8 @@
+enum34
+
+[dev]
+check-manifest
+
+[test]
+pytest
+tox

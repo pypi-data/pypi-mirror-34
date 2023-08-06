@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+flowjs.egg-info/PKG-INFO
+flowjs.egg-info/SOURCES.txt
+flowjs.egg-info/dependency_links.txt
+flowjs.egg-info/requires.txt
+flowjs.egg-info/top_level.txt

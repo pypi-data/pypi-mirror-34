@@ -1,0 +1,64 @@
+Metadata-Version: 2.0
+Name: NsoneObservium
+Version: 1.0.1b1
+Summary: A simple python library for the Observium API
+Home-page: https://github.com/ns1/ns1-observium
+Author: bcavanagh@ns1.com
+Author-email: bcavanagh@ns1.com
+License: UNKNOWN
+Keywords: observium network automation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+# NS1 Observium API Python Library
+
+A python library for interacting with the Observium API: http://docs.observium.org/api/
+
+# Installing
+
+```
+$ pip install NsoneObservium
+```
+
+Examples
+========
+[see more]http://docs.observium.org/api/#get-endpoints
+```
+from NsoneObservium.NsoneObservium import NsoneObservium
+
+observium = NsoneObservium('https://observium01.example.com', 'myuser', 'mypassword', ssl_verify=False)
+observium.get_devices({'hostname': "mpr.myrouter"})
+
+observium.get_devices()
+observium.get_devices({'device_id': "34"})
+
+observium.get_alerts()
+observium.get_alerts({'alert_id': "234"})
+
+
+```
+
+Contributing
+============
+
+Contributions, ideas and criticisms are all welcome.
+
+# LICENSE
+
+GNU GPL v3 - see the included LICENSE file for more information
+
+
+
+

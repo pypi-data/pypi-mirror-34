@@ -1,0 +1,3 @@
+[console_scripts]
+pdiary = pdiary.main:main
+

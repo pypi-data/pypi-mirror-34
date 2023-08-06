@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+		"Id": {
+			"type": "integer"
+		},
+		"Tag": {
+			"type": "string"
+		},
+		"Type": {
+			"type": "string"
+		},
+		"Keywords": {
+			"type": ["null", "object"],
+			"properties": {
+				"Id": {
+					"type": "array",
+					"items": {
+						"type": "integer"
+					}
+				}
+			}
+		}
+    }
+}

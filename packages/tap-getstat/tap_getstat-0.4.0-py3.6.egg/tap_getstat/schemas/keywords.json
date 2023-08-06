@@ -1,0 +1,84 @@
+{
+    "type": "object",
+    "properties": {
+		"Id": {
+			"type": "integer"
+		},
+		"Keyword": {
+			"type": "string"
+		},
+		"KeywordMarket": {
+			"type": "string"
+		},
+		"KeywordLocation": {
+			"type": ["null", "string"]
+		},
+		"KeywordDevice": {
+			"type": "string"
+		},
+		"KeywordTags": {
+			"type": ["null", "string"]
+		},
+		"KeywordStats": {
+			"type": "object",
+			"properties": {
+				"AdvertiserCompetition": {
+					"type": ["null", "number"]
+				},
+				"GlobalSearchVolume": {
+					"type": ["null", "integer"]
+				},
+				"RegionalSearchVolume": {
+					"type": ["null", "integer"]
+				},
+				"LocalSearchTrendsByMonth": {
+					"type": "object",
+					"properties": {
+						"Jan": {
+							"type": ["null", "integer"]
+						},
+						"Feb": {
+							"type": ["null", "integer"]
+						},
+						"Mar": {
+							"type": ["null", "integer"]
+						},
+						"Apr": {
+							"type": ["null", "integer"]
+						},
+						"May": {
+							"type": ["null", "integer"]
+						},
+						"Jun": {
+							"type": ["null", "integer"]
+						},
+						"Jul": {
+							"type": ["null", "integer"]
+						},
+						"Aug": {
+							"type": ["null", "integer"]
+						},
+						"Sep": {
+							"type": ["null", "integer"]
+						},
+						"Oct": {
+							"type": ["null", "integer"]
+						},
+						"Nov": {
+							"type": ["null", "integer"]
+						},
+						"Dec": {
+							"type": ["null", "integer"]
+						}
+					}
+				},
+				"CPC": {
+					"type": "number"
+				}
+			}
+		},
+		"CreatedAt": {
+			"type": "string"
+		}
+    }
+}

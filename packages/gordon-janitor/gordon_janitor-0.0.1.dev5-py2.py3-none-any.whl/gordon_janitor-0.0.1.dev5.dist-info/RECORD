@@ -1,0 +1,14 @@
+gordon_janitor/__init__.py,sha256=bXetQv9TQAtgUOnQwl2yGtf8PN0JIxm1RutZ2vGVnss,842
+gordon_janitor/exceptions.py,sha256=_QmEmyBMS14a3zwxkp7A6P1oPbpjoK03mi4bAXtP0Fc,843
+gordon_janitor/interfaces.py,sha256=FLXwNXXJnG8DKr_dvfFhjPJDhftjUoSfk342uZr6pcg,4480
+gordon_janitor/main.py,sha256=ooHdb_UrBR-qNRLoOxc5YUxHWMY1R_s5zv5vqV2NUOM,5702
+gordon_janitor-0.0.1.dev5.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+gordon_janitor-0.0.1.dev5.dist-info/METADATA,sha256=K8ZMo8mfbdW5lTvRz850Tn8VxQQrskh4NnkNGyrStYk,1012
+gordon_janitor-0.0.1.dev5.dist-info/RECORD,,
+gordon_janitor-0.0.1.dev5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+gordon_janitor-0.0.1.dev5.dist-info/entry_points.txt,sha256=mXXepkvpjXjz5dt9JJNclh8MwhHm4WaBvqh26c6hYtw,87
+gordon_janitor-0.0.1.dev5.dist-info/top_level.txt,sha256=RT4RoGQUMYTUMrBH9q700TkueBwdFJhChvDKo5Fphho,21
+tests/__init__.py,sha256=-f1fKIvZPKTrcqAvboWOhyPB8oL47HcD9RhyqfsGeUI,596
+tests/unit/__init__.py,sha256=-f1fKIvZPKTrcqAvboWOhyPB8oL47HcD9RhyqfsGeUI,596
+tests/unit/conftest.py,sha256=kulv3B_pD2XpMNqAu6F8OTLJFkU6xSTc_Qk0QGTHZGs,2458
+tests/unit/test_main.py,sha256=ow-_qVRhQXLCHawFYb4SItLIuN_0EFQS4lc7lTi4d1Y,7691

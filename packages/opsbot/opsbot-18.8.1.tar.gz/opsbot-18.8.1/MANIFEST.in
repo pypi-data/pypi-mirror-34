@@ -1,0 +1,6 @@
+include README.md
+include opsbot/template/.opsbot.template
+include opsbot/template/env/*.sh
+include opsbot/template/fix/*.sh
+include opsbot/template/site/*.sh
+include opsbot/template/user/*.sh

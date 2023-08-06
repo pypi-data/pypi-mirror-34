@@ -1,0 +1,16 @@
+setting
+    target_os ubuntu
+    target_os_version 18.04
+    password_length 18
+env
+    common
+    lamp
+    https
+    #node
+    #scrapy
+user
+    firstusr --mysql --database-prefix=frst_
+    secondusr --mysql --mongodb --database-prefix=scnd_
+site
+   example.com firstusr
+   example2.com secondusr

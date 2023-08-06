@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+gql_py/__init__.py
+gql_py/gql.py
+gql_py.egg-info/PKG-INFO
+gql_py.egg-info/SOURCES.txt
+gql_py.egg-info/dependency_links.txt
+gql_py.egg-info/not-zip-safe
+gql_py.egg-info/requires.txt
+gql_py.egg-info/top_level.txt

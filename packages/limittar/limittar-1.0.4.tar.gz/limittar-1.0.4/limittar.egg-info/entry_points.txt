@@ -1,0 +1,3 @@
+[console_scripts]
+limittar = limittar:_main
+

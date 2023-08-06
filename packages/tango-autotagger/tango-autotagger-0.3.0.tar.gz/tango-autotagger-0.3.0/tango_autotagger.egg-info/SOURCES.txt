@@ -1,0 +1,16 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+autotagger/__init__.py
+autotagger/admin.py
+autotagger/autotag_content.py
+autotagger/how_to.md
+autotagger/models.py
+docs/requirements.txt
+tango_autotagger.egg-info/PKG-INFO
+tango_autotagger.egg-info/SOURCES.txt
+tango_autotagger.egg-info/dependency_links.txt
+tango_autotagger.egg-info/not-zip-safe
+tango_autotagger.egg-info/top_level.txt

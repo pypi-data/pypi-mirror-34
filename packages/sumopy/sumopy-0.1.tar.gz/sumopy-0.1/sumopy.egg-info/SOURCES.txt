@@ -1,0 +1,9 @@
+README.rst
+setup.py
+sumopy/__init__.py
+sumopy/handler.py
+sumopy.egg-info/PKG-INFO
+sumopy.egg-info/SOURCES.txt
+sumopy.egg-info/dependency_links.txt
+sumopy.egg-info/requires.txt
+sumopy.egg-info/top_level.txt

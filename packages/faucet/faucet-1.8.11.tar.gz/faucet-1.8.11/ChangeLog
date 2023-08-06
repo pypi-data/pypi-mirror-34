@@ -1,0 +1,158 @@
+CHANGES
+=======
+
+1.8.11
+------
+
+* Use copy of generated tables
+* Use copy of FAUCET\_PIPELINE
+* Bump README version
+* Revert "Prevent duplicate VLAN VID."
+* fib table fix
+* Prevent duplicate VLAN VID
+* Fix unit test wrapper to run from base dir for PBR. Increase coverage back to 93%
+* dp.dp -> dp
+* Simpifiy use of ValveTableConfig
+* More generic detection of pipeline change
+* Duplicate acls.append(self.acls[acl])
+* Break/fix
+* Break/fix
+* Pylint
+* Pylint
+* Use override table config pattern
+* Clean up table\_config
+* OFPTFPT\_APPLY\_SETFIELD dynamically generated
+* OFPTFPT\_APPLY\_SETFIELD is now dynamically generated
+* Test coverage
+* Simply ACL reload test
+* test coverage for DP ACLs
+* vlan\_match\_tables not used
+* Test coverage
+* Break/fix
+* Expand ValveTableConfig
+* pylint
+* Prime another reload test for TFM switches
+* Prime TFM based switches for ACL tests
+* pylint
+* Use frozenset for dynamic attributes
+* More tuple references
+* Make tagged\_vlans() a tuple
+* Unnecessary lists for tagged/untagged ports
+* Make more DP attributes immutable
+* Make more VLAN attributes immutable
+* Missed reference to dyn\_running
+* Make some more attributes immutable
+* TODO for mutable attrs on Confs
+* Enforce not setting attribures on finalized Conf objects
+* Avoid DP attributes for pipeline
+* All tables now get TFM matches
+* TupleTest should require no wild cards
+* Add exact\_match attribute to table
+* Add note that matches are automatically configured
+* Disable METER
+* pytype
+* Re enable test\_flow\_stats
+* Fix IPv4 tuple test fields
+* pylint
+* pylint
+* tuple test primes pipeline
+* pylint
+* missing TFM wildcards
+* Non TFM pipelines have no TFM flows
+* Temporarily disable test\_flow\_stats
+* Log pipeline changes
+* Log VIP IPs and pipeline matches
+* Incorrect sense for TFM ACL match change
+* Improve config debug messages
+* Always provision in\_port for table 0
+* Dynamically generate ACL TFM matches
+* Only build raspbian image on git tag
+* DP object parses matches from ACLs
+* Wait longer for flow counters to update
+* ofctl port stats/desc should actually use port no
+* host port stats returns stats for all ports
+* Avoid batching of port status change by ofctl
+* Retry set port status. Rename tests to SameVlan/DiffVlan
+* max\_loadavg() must be int
+* Log include file inclusions
+* Increase parallel test over subscription
+* IPv6 verify\_invalid\_bgp\_route() REs
+* verify\_bgp\_invalid\_route() REs
+* More log REs
+* Fix REs for log lines
+* Make test failure message when OFErrors logged more helpful
+* Stage name changes, cd simplify & image version number
+* Faucet raspbian image with gitlab CI
+* Add tests for new vlan route format
+* configuration inconsistency fix #1836
+* Preversion 1.8.11
+
+1.8.10
+------
+
+* Enable barriers for OVS
+* Revert "Make VIP priority depend on VLAN VID."
+* Revert "Avoid arp\_tpa."
+* Avoid arp\_tpa
+* Make VIP priority depend on VLAN VID
+* FAUCET VIPs added before flood
+* Revert "Disable stack edge optimization."
+* mac\_addr\_is\_unicast() incorrect for 34 prefix
+* Disable stack edge optimization
+* Min coverage 92
+* TFM now sent by datapath\_connect()
+* Avoid switch reconfig on cold start config change
+* Move delete all flows to switch\_features
+* Version bump for release
+* Skip eventlet for pyup per https://github.com/pyupio/pyup/issues/273 (Ryu needs eventlet pinned)
+* If learning for a stack edge, we can learn immediately
+* ofproto\_to\_ryu.json no longer needed as a file
+* Remove more TFM boilerplate
+* Improve OF pcap text output parser
+* Remove test directory if empty
+* Synchronize TFM set\_field
+* Remove unnecessary VLAN actions
+* Remove unnecessary set\_field from VLAN table
+* Remove unnecessary actions from destination table
+* Ethernet source table doesn't set set\_fields
+* Fix generation of OFPInstructionId
+* OFPTFPT\_INSTRUCTIONS is now automatically generated for TFM
+* pylint
+* OF match TFM automatically generated for non-ACL tables
+* Don't statically configure matches
+* Bracket pipeline reprogramming with disabling port status changes/packet ins
+* Synchronize TFM pipeline
+* Support skipping of dynamically generated TFM features
+* Synchronize Aruba pipeline config with verified FAUCET pipeline config
+* vlan table also needs eth\_dst mask
+* Fix eth\_dst mask in eth\_src
+* Verify flow mask flags
+* Add mask field to pipeline definition
+* Docs tidy
+* Fix for unhashable key in config found during fuzzing
+* Make ROUNDS a variable
+* Document faucet\_mac
+* Fuzzers don't need python2
+* Preversion 1.8.10
+
+1.8.9
+-----
+
+* pytype
+* Bump version for release
+* Add Bob Lantz
+* pylint
+* Somewhat generalize star-stack topology implementation
+* Make pip install quiet again
+* Special case for 2 layer stacks - leverage DP-local flooding
+* Compute longest path to root length
+* pytype
+* pylint
+* Remove dependency on Ryu for python2
+* pytype noise
+* pytype noise
+* mininet library check needs to more flexible
+* ConnectionError conflict
+* pylint
+* Restore min pylint to 9.2
+* Reduce lint score for py3 based lint

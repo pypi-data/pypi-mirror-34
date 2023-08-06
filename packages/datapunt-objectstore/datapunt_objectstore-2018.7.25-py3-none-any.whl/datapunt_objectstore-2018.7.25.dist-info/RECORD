@@ -1,0 +1,9 @@
+datapunt_objectstore-2018.7.25.dist-info/METADATA,sha256=HlgLKyjL1tThv18Bf1yTfl4SORB_UcbYmeEWErsxC2o,3205
+datapunt_objectstore-2018.7.25.dist-info/RECORD,,
+datapunt_objectstore-2018.7.25.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+datapunt_objectstore-2018.7.25.dist-info/top_level.txt,sha256=34QfEAqyqnW-6hQSZsRsobT3Qt4dm6ac6Ze5oyNps5Y,12
+objectstore/__init__.py,sha256=a9GH4C_M4GmGp5_wfcw6Z14YplKQGbpemza34QC2HxE,260
+objectstore/databasedumps.py,sha256=-DEJRUsNzo5ywlZMrh-TQVUJHnxPzgIYQdqtVCFcZGo,5453
+objectstore/db_objectstore.py,sha256=uMtjhGU2efH51wntcejuSrXtfQ08j7lX2mCi6XjXuBw,781
+objectstore/objectstore.py,sha256=KSwt2Dm_iXlm5spfZ-pifcIi0MyEzDCGBquJs3xWZIU,3968
+objectstore/upload_db.py,sha256=Qtr-sN8crVdNaig8ErbGuN6n6cwsFFIuwghl8rAeRjY,791

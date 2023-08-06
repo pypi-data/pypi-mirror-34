@@ -1,0 +1,16 @@
+README.md
+setup.py
+gnucash_portfolio_cli/__init__.py
+gnucash_portfolio_cli/account_search.py
+gnucash_portfolio_cli/favourite-accounts.py
+gnucash_portfolio_cli/portfolio_value.py
+gnucash_portfolio_cli/security_info.py
+gnucash_portfolio_cli/security_search.py
+gnucash_portfolio_cli/upcoming_scheduled_transactions.py
+gnucash_portfolio_cli/webview.py
+gnucash_portfolio_cli.egg-info/PKG-INFO
+gnucash_portfolio_cli.egg-info/SOURCES.txt
+gnucash_portfolio_cli.egg-info/dependency_links.txt
+gnucash_portfolio_cli.egg-info/requires.txt
+gnucash_portfolio_cli.egg-info/top_level.txt
+test/test_security_info.py

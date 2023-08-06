@@ -1,0 +1,9 @@
+README.md
+setup.py
+beets_ydl.egg-info/PKG-INFO
+beets_ydl.egg-info/SOURCES.txt
+beets_ydl.egg-info/dependency_links.txt
+beets_ydl.egg-info/requires.txt
+beets_ydl.egg-info/top_level.txt
+beetsplug/__init__.py
+beetsplug/ydl.py

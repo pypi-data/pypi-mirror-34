@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aerosol-optprop
+Version: 0.3
+Summary: Optical property calculations of aerosol aerosol_optprop
+Home-page: https://gitlab.com/LandonRieger/aerosol_optprop
+Author: Landon Rieger
+Author-email: landon.rieger@canada.ca
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: miepython
+
+UNKNOWN
+
+

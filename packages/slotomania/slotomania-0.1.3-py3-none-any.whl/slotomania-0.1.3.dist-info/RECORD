@@ -1,0 +1,13 @@
+slotomania/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slotomania/core.py,sha256=aXIbzxH2l6PuYlRdm6VimawhTjUN3mMZg0IaFAJFFSQ,10650
+slotomania/debugger.py,sha256=krmIEWDJy6jjfVpZYGzoNJ0Wi437A-VgveQWHWEc1NQ,48
+slotomania/exceptions.py,sha256=SNwXRpjZgc-LBCXm7eunUhB9RkDK71caia12AMVeoyA,223
+slotomania/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slotomania/contrib/contracts.py,sha256=4BTC3ex4tjWBRl6SP-4FQ8zYrZerPipCssCIBgS0EUQ,217
+slotomania/contrib/jwt_auth.py,sha256=4Zq-3Bih7LqQCdY_wCWOH8r8V7JO3QDsdo2wuENjMF0,3179
+slotomania/contrib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slotomania-0.1.3.data/scripts/fix_sloto_stubs.py,sha256=QEJ0bb2AoNpUjFlVtMcFqmFywD9p-Ung8RCnTgUPA1s,738
+slotomania-0.1.3.dist-info/METADATA,sha256=4C3GaM8qgAWCfshlh85Mv1rtdujZALYcdgdGrvTyCdI,1284
+slotomania-0.1.3.dist-info/RECORD,,
+slotomania-0.1.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+slotomania-0.1.3.dist-info/top_level.txt,sha256=MnuZ3Tb6W3EPdV9DCH-jA7DfkkzfaLSMnpldoD_FmvQ,11

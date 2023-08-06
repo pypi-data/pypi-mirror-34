@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python_adb_utils
+Version: 0.0.6
+Summary: This is the first test of a ADB interface for Python
+Home-page: https://github.com/christopherferreira3/Python-ADB-Tools
+Author: Christopher Ferreira
+Author-email: christopher.ferreira3@outlook.com
+License: UNKNOWN
+Description: # Python-ADB-Tools
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

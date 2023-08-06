@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rkoMadness
+Version: 1.0.5
+Summary: python package for rkoMadness
+Home-page: https://gitlab.com/Quantumke/rkoMadness
+Author: Benson Nguru
+Author-email: nguruben@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: nose
+Requires-Dist: requests
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: termcolor
+
+UNKNOWN
+
+

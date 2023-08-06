@@ -1,0 +1,44 @@
+#!python
+import sys,re,subprocess,os,re
+from git import Repo
+class Handler:
+    @staticmethod
+    def helpHandler():
+        print('=======================================================')
+        print('\x1b[6;30;42m' + 'Available commands!' + '\x1b[0m')
+        print('=======================================================')
+        print('''
+        help
+        newproject
+        ''')
+    @staticmethod
+    def newprojectHandler(commands):
+        CRED = '\033[91m'
+        CEND = '\033[0m'
+        print('Creating new project')
+        if len(commands) <2:
+            print(CRED + "Please add project name with command rkomadness newproject project name" + CEND)
+        elif len(commands) <2:
+            print(CRED + "Please add project name with command rkomadness newproject project name" + CEND)
+        else:
+            projectName=commands[1]
+		    #we clone scaffold from git!
+            directory=os.getcwd()
+            Repo.clone_from('https://gitlab.com/Quantumke/rkoFramework.git', str(directory)+'/'+projectName,branch='framework')
+            newDir=str(directory)+'/'+projectName+'/rkoFramework'
+            curDir=str(directory)+'/'+projectName+'/'+projectName
+            os.rename(newDir,curDir)
+            #subprocess.Popen("sed -i -e  's/rkoFramework/{0}/g' {1}/manage.py".format(projectName,projectName),shell=True)
+            subprocess.Popen("perl -i -pe 's/rkoFramework/{0}/' {1}/manage.py".format(projectName,projectName),shell=True)
+            subprocess.Popen("perl -i -pe 's/rkoFramework/{0}/' {1}/{2}/settings.py".format(projectName,projectName,projectName),shell=True)
+def main():
+    command=sys.argv[1:][0]
+    match=re.search(r'^help', command, re.IGNORECASE)
+    if match:
+        Handler().helpHandler()
+    match=re.search(r'^newproject(.*)$', command, re.IGNORECASE)
+    if match:
+        Handler().newprojectHandler(sys.argv[1:])
+if __name__ =='__main__':
+    main()
+

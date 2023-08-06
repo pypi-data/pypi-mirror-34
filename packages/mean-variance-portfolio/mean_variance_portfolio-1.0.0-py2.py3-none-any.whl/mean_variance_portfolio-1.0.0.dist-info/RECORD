@@ -1,0 +1,10 @@
+mean_variance_portfolio-1.0.0.dist-info/DESCRIPTION.rst,sha256=4PsQSMbowdVxYJ8Qelq6lqZIYoMYd2yFpbmUMLlehAU,2799
+mean_variance_portfolio-1.0.0.dist-info/METADATA,sha256=mzdBEWxmAxm1i5KGvlNusoY0tDD46bM06pn1WtCwzbg,3809
+mean_variance_portfolio-1.0.0.dist-info/RECORD,,
+mean_variance_portfolio-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+mean_variance_portfolio-1.0.0.dist-info/metadata.json,sha256=1MhGjAJAqLJ3aYvtxN-V081hp7wUR0wZbDk6DR1-Z4Q,1179
+mean_variance_portfolio-1.0.0.dist-info/top_level.txt,sha256=pcDkuz2KWpBYRy5-RLq0XgStYlWovUJhEHT-Ja3riao,7
+mvport/__init__.py,sha256=q9FDkLDTgyacp4Hb3uEaKzBn1oduYKR7BSBwMEFxLPc,244
+mvport/portfolio.py,sha256=CMbEIYSwckrepOElFZNExmssjxEgzK4_Ewd8FUiXAtg,9589
+mvport/stock.py,sha256=WFAtNjN6GLSqFHrJoDn2_eX7Zm_z7NL_742U99MDP08,3607
+mvport/utils.py,sha256=K9Qan-YxMR2VkTSk0ZqGCSXgWbSWW9ocQdBKXr-Mc-E,229

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: sanic-session-2
+Version: 0.2.5
+Summary: Provides server-backed sessions for Sanic using Redis, Memcache, Mongo, in-memory.
+Home-page: https://bitbucket.org/vlad1777d/sanic_session_2
+Author: Suby Raman
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: sessions,sanic,redis,memcache,async
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session

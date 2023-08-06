@@ -1,0 +1,8 @@
+version: 1
+
+kind: experiment
+
+logging:
+  level: INFO
+
+saved-models: 'serialized'

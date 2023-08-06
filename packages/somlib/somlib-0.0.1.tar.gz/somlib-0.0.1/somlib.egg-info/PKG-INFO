@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: somlib
+Version: 0.0.1
+Summary: This is python implementation for Kohonen Self Organizing map using numpy and tensor
+Home-page: https://github.com/pankajr141/SOM
+Author: Pankaj Rawat
+Author-email: pankajr141@gmail.com
+License: UNKNOWN
+Description: # SOM
+        
+        This is python implementation for Kohonen Self Organizing map using numpy and tensor
+        
+        Details can be found in https://github.com/pankajr141/SOM
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+README.md
+setup.py
+python_ytg/__init__.py
+python_ytg/ytg.py
+python_ytg.egg-info/PKG-INFO
+python_ytg.egg-info/SOURCES.txt
+python_ytg.egg-info/dependency_links.txt
+python_ytg.egg-info/not-zip-safe
+python_ytg.egg-info/requires.txt
+python_ytg.egg-info/top_level.txt

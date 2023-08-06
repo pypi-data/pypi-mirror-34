@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: ixnetwork-restpy
+Version: 0.1.3
+Summary: IxNetwork Generated REST API Python Client
+Home-page: https://keysight.com
+Author: Keysight ISG IxNetwork team
+Author-email: ixnetwork@keysight.com
+License: MIT
+Keywords: ixnetwork test tool ixia automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7, <4
+Requires-Dist: requests
+
+IxNetwork Generated REST API Python Client
+
+

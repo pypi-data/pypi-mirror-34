@@ -1,0 +1,3 @@
+[console_scripts]
+docx_utils = docx_utils.cli:main
+

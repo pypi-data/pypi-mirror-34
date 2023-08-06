@@ -1,0 +1,11 @@
+README.rst
+setup.py
+FastTextRank/W2VTextRank4Sentence.py
+FastTextRank/W2VTextRank4Word.py
+FastTextRank/__init__.py
+FastTextRank/util.py
+FastTextRank.egg-info/PKG-INFO
+FastTextRank.egg-info/SOURCES.txt
+FastTextRank.egg-info/dependency_links.txt
+FastTextRank.egg-info/requires.txt
+FastTextRank.egg-info/top_level.txt

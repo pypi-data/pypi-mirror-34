@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: salic-ml-dev
+Version: 0.0.5
+Summary: Automate the Salic proposal admission process
+Home-page: https://github.com/lappis-unb/salic-ml
+License: GPL v3.0
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+UNKNOWN
+
+

@@ -1,0 +1,3 @@
+[pypiserver.authenticators]
+passlib = pypiserver_passlib.auth:PasslibAuthenticator
+

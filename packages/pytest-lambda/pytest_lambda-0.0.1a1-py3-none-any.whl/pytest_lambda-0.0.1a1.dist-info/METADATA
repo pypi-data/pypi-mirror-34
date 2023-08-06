@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytest-lambda
+Version: 0.0.1a1
+Summary: Define pytest fixtures using lambda functions
+Home-page: https://github.com/theY4Kman/pytest-lambda
+License: UNKNOWN
+Author: Zach "theY4Kman" Kanzler
+Author-email: they4kman@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: pytest>=3.6.0
+
+# pytest-lambda
+
+Define pytest fixtures with lambda functions.
+

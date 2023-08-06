@@ -1,0 +1,17 @@
+bio2bel_hgnc/__init__.py,sha256=ProVBoWWC1Crzp6a3Yi2unXU-ZrrXo7PjSyv3f2ZsXY,459
+bio2bel_hgnc/__main__.py,sha256=UfZ9XmEusVdUt8DYecSqYMc-js-r2_TMC98CIkoLXS8,86
+bio2bel_hgnc/cli.py,sha256=4gIzTHuW44kd-J_3jimBHX86YhmzXALkFtVfhPjkjLk,218
+bio2bel_hgnc/constants.py,sha256=ipH8sR2OVTsApRRymox2D-z95p_hNaGinAz_-XAwFE4,1377
+bio2bel_hgnc/enrich.py,sha256=ZqyjGccevb31TQjagtY15oO9gaDIvB45Bhvy8Kgvwfg,3145
+bio2bel_hgnc/gfam_manager.py,sha256=ol6kaJsLC5GOvxPi6FJ1iXkBpX-7vpeUq8XXISrDvOQ,1428
+bio2bel_hgnc/manager.py,sha256=gd8RnhtDtFA5Vvn0PV9mKFyuCmB58UBZMElM2iWy7OU,21451
+bio2bel_hgnc/model_utils.py,sha256=GZmCy1fhNTjsLTsVK7qwfnh7gxfz1AC9023NUTAvVoA,2035
+bio2bel_hgnc/models.py,sha256=8A-_f6H2EpouobbAnrDxIZWF2nLsu2H41raip8VnbhY,320
+bio2bel_hgnc/utils.py,sha256=rdJp5iUsEcxsMGhCXmIF27ZhovWj2X8dIbQNNqk7oVk,227
+bio2bel_hgnc/web.py,sha256=h_7XgpXBqVZL0wR1UTGi9OCJlTL7yHJlKRE7yKucc-w,399
+bio2bel_hgnc/wrapper.py,sha256=LRfS05ii6qr3qw4rZmCKEM673bHKhqLHqcx5ViN3VY8,234
+bio2bel_hgnc-0.1.0.dev0.dist-info/METADATA,sha256=CUqGWX28f-Sml9lV51BJSVceLH8eUuYfOqbvuA_8W6g,3246
+bio2bel_hgnc-0.1.0.dev0.dist-info/RECORD,,
+bio2bel_hgnc-0.1.0.dev0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+bio2bel_hgnc-0.1.0.dev0.dist-info/entry_points.txt,sha256=_Y-odkHDKoir6CBoONG8sNmRaxLHEoT5bM1bHlyE1zo,133
+bio2bel_hgnc-0.1.0.dev0.dist-info/top_level.txt,sha256=2zN_X63t77Mc7aJz-9Jr0pmTCl_wciSXbfqa2EDNHMM,13

@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+"""
+distutilazy script
+------------------
+An entry point to run distutilazy commands directly without a need to
+create a setup file/config.
+
+:license: MIT. For more details see LICENSE file or
+https://opensource.org/licenses/MIT
+"""
+
+from argparse import ArgumentParser
+from distutils.core import setup
+from distutilazy import __version__
+import distutilazy.clean
+
+
+commands = {
+    'clean_pyc': distutilazy.clean.CleanPyc,
+    'clean_jython_class': distutilazy.clean.CleanJythonClass,
+    'clean_all': distutilazy.clean.CleanAll,
+}
+
+setup_params = dict(
+    name='distutilazy',
+    author='Farzad Ghanei',
+    version=__version__,
+    cmdclass=commands,
+)
+
+
+def get_arg_parser():
+    parser = ArgumentParser(description='Distutilazy Script', prog='distutilazy')
+    parser.add_argument('--version', action='version', version='%(prog)s {}'.format(__version__))
+    command_subparsers = parser.add_subparsers(help='commands help')
+    # create a subparser for each available command, with args for each user option
+    for (cmd, cmd_class) in commands.items():
+        command_parser = command_subparsers.add_parser(cmd, help=cmd_class.description)
+        bool_options = getattr(cmd_class, 'boolean_options', [])
+        for user_option_info in cmd_class.user_options:
+            user_option_name = user_option_info[0].strip('=')
+            user_option_desc = user_option_info[2] if len(user_option_info) > 2 else ''
+            action = 'store_true' if user_option_name in bool_options else 'store'
+            command_parser.add_argument('--' + user_option_name, action=action,  help=user_option_desc)
+    return parser
+
+
+def main():
+    parser = get_arg_parser()
+    parser.parse_args()
+    setup(**setup_params)
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+pymath/pymath.py
+pymath2.egg-info/PKG-INFO
+pymath2.egg-info/SOURCES.txt
+pymath2.egg-info/dependency_links.txt
+pymath2.egg-info/top_level.txt
+scripts/pymath

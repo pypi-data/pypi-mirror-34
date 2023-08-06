@@ -1,0 +1,10 @@
+README.md
+setup.py
+bloomfilter/__init__.py
+bloomfilter/bloomfilter.py
+simplebloomfilter.egg-info/PKG-INFO
+simplebloomfilter.egg-info/SOURCES.txt
+simplebloomfilter.egg-info/dependency_links.txt
+simplebloomfilter.egg-info/not-zip-safe
+simplebloomfilter.egg-info/requires.txt
+simplebloomfilter.egg-info/top_level.txt

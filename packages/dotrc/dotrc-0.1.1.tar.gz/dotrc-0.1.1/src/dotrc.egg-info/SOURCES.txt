@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/dotrc/__init__.py
+src/dotrc/load.py
+src/dotrc.egg-info/PKG-INFO
+src/dotrc.egg-info/SOURCES.txt
+src/dotrc.egg-info/dependency_links.txt
+src/dotrc.egg-info/requires.txt
+src/dotrc.egg-info/top_level.txt

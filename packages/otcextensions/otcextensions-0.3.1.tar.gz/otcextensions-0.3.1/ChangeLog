@@ -1,0 +1,261 @@
+CHANGES
+=======
+
+0.3.1
+-----
+
+* change pbr version-info
+* unfortunately travis still does not support 3.7
+* reuse common Fake
+* add quota support in osc
+* fix unittest
+* update rds docs
+* refactor rds backup to use proprietary api
+* add DMS group OSC implementation
+* enable py37 tests
+* initial osc for dms
+* integrate hodigy dms impl for small refactor
+* dont forget to delete policy in func test
+* set default OS\_CLOUD for functional tests
+* fix pep8 complain
+* add docs for VBS
+* update VBS work
+* rebase to the new sphinx theme
+* integrate gate jobs
+* integrate gate jobs
+* funct test of consume messages
+* interim work on VBS
+* remove v1
+* funct test send message completed OS\_TIMEOUT has to set to 60 to execute
+* enable pep8 check in zuul
+* pep fixes
+* try to enable functional tests in otcextensions
+* rename ULB command to avoid conflict in UI mode
+* open point
+* add list\_ext to base
+* refactor quota
+* refactor quota
+* enable pep8 in zuul
+* raise openstacksdk
+* rename to GroupMessage
+* rename to group\_message
+* rename to group\_message
+* rename MessageConsumer to GroupMessage
+* Unit test corrections
+* integrate zuul checks
+* enable zuul on main branch
+* update open points
+* some flakes
+* flake8
+* retry tox-py36 job
+* revert zuul
+* fix flake
+* update zuul jobs
+* initial content
+* spinup zuul
+* pep8 correction
+* pep8 corrections
+* pep8 corrections
+* pep8 corrections
+* pop8 error corrections
+
+0.2.0
+-----
+
+* flake8 fix
+* small update of pip project name
+* fix exception if no nodes in the cluster
+* complete CCE cluster operations
+* indent corrections
+* indent correction
+* indent corrections
+* test correction
+* :x
+* semantic corrections
+* test fix
+* refactoring and code style corrections
+* Funct test message update
+* fix unit test on fedora27 (some older dep)
+* refactor DMS group
+* funct test added
+* test fix
+* refactor dms
+* refactor DMS
+* purge profile support (as OSC does)
+* Funct test upd
+* test update
+* Funct test update
+* Queue groups refactor
+* enable pep8 test in travis
+* Message funct test fix
+* Groups as a list
+* Funct test
+* pep8 fixes
+* add ignore\_missing=True for show LB resources
+* add possibility to filter LB pools by LB\_id
+* Funct test DMS messages
+* change pip package name
+* change home-page of the package to point to the generated docs
+* pin travis
+
+0.1.0
+-----
+
+* rename cli prefix for the ulb to load balancer
+* Funct test DMS Queue
+* new base resource class
+* Funct test Queue
+* funct test
+* funct test 4 DMS
+* enable documentation of the ULB CLI
+* update list of open points
+* add load balancer OSC (SDK native)
+* extend test\_base with cliff formatter "mock"
+* review fix2
+* fixes from review
+* update open\_points before PR merge
+* test fix
+* test fix
+* test fix
+* fix session
+* test fix
+* group test fix
+* delete group ignore missing param added0
+* test fix
+* proxy test fix0
+* Update open\_points
+* proxy corrected for create and delete queue
+* update params
+* debug errors
+* test\_queue fixed
+* wait for the next tag to try
+* another try
+* add condition
+* try reenable travis deploy
+* next bunch of CCE (add cluster\_node) APIs
+* correct doc src
+* add cce cluster delete
+* temporarily comment out deploy to pypi - it doesn't work
+* add first cce cluster commands in osc
+* retry travis to release to pypi
+* interim commit (add initial CCE sdk)
+* retry tag release to pypi
+
+v0.0.1
+------
+
+* upload to pip only on tag
+* add open points
+* add kms cli docs
+* add basic kms to osc
+* fix osc clients
+* modify travis to enable env variables for conditional deploy
+* travis deploy to pypi
+* update spec
+* add info to readme about S3 env values
+* add support for ak/sk from S3 Env for legacy
+* enable kms sdk docs and purge remaining prints
+* add open\_points tracking
+* enable kms in sdk
+* sdk kms
+* correct tests executes
+* test corrections
+* removed endpoint override
+* dms init
+* update spec
+* update install docs
+* change readme and add initial spec (fedora)
+* change project info
+* removed unused tests
+* renice docs
+* broken char
+* finish AS work
+* OSC AS POLICY operations
+* as policy create osc test
+* move client fetch to later phase
+* as osc bunch
+* rebase BaseProxy to Proxy in docs
+* even 3.7-dev is not broken
+* 3.7 seems not to be ready in travis
+* switch to openstack.proxy.Proxy instead of BaseProxy to remove obsoletion
+* hopefully fix docs
+* isntall doc renicement
+* add python3.7 to travis
+* complete Auto\_Scaling SDK
+* as policy sdk doc update
+* as policy sdk impl
+* add space for docs
+* AS GROUP CREATE in osc
+* again
+* again
+* and again
+* and again
+* additional update for docs
+* potentially fix docs (disappeared cli commands content)
+* complete AS Config
+* remove API ver arguments
+* ignore ropeproject
+* basic prepare for the AK/SK
+* OTC 3.0 fix
+* move raise\_from\_response to exc and repair py2
+* partial pep cleanup
+* repair paging in AS
+* next bunch of SDK/OSC AS.Config changes (create)
+* next bunch of SDK/OSC AS.Config changes (create)
+* some mod of the init
+* update AS.config tests
+* some output formatting
+* basic SDK AS config
+* go away from prepending project\_id for AS (rds tbd)
+* midification after merge
+* update from upstream
+* next bunch of AutoScale stuff (SDK)
+* bring docs for new services
+* mish-mash for the AK/SK support. Not used so far
+* initial AS support
+* small mod for obs
+* introduce swift-like interface to OBS
+* oslo to docs for readthedocs
+* add cliff for docs
+* introduct rds cli docs
+* some update of the RDS docs
+* bring back sdk into doc requirements
+* some update of the docs
+* add some info on start using
+* replace rds endpoint, inject headers globaly
+* tox -e py27 != source py27 && stestr run. Fix flavor under py27
+* wrong file mode
+* next try to fix py2.7
+* fix py27 test
+* next bunch of rds updates
+* update travis loc
+* bunch of rds changes
+* update sdk
+* make type required
+* some modifications
+* travis does not support allowed\_updated
+* rework rds config to be Travis compatible
+* beginning of osc rds parameter\_group
+* fix broken sdk rds flavor test
+* osc rds flavor
+* osc rds datastores
+* add comment
+* fix coverage tests env
+* remove pypy env
+* next round of SDK.RDS extensions
+* enable doc generation
+* integrate docs from openstacksdk for further extension
+* override base Proxy and Resource enabling endpoint/header arguments
+* extend rds test coverage
+* corrected pep8
+* new RDS resources
+* fix missed char
+* some rds extensions
+* small fixes
+* rst syntax
+* integrate travis build status
+* add travis integration
+* wrong symbol
+* switch to tests.unit.base
+* Bring back fixtures
+* Initial version

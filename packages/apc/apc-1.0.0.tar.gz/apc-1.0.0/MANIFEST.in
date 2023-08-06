@@ -1,0 +1,6 @@
+include README.md
+include LICENSE.txt
+include apc/tests/*.py
+include apc/vignettes/*.ipynb
+include apc/data/*.xlsx
+include apc/data/*.csv

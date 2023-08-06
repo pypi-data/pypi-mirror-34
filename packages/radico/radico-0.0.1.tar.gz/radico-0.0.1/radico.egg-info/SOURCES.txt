@@ -1,0 +1,8 @@
+README.md
+setup.py
+radico/__init__.py
+radico.egg-info/PKG-INFO
+radico.egg-info/SOURCES.txt
+radico.egg-info/dependency_links.txt
+radico.egg-info/requires.txt
+radico.egg-info/top_level.txt

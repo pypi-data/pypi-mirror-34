@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: toripchanger
+Version: 1.0.0
+Summary: Python powered way to get a unique Tor IP
+Home-page: https://github.com/DusanMadar/TorIpChanger
+Author: Dusan Madar
+Author-email: madar.dusan@gmail.com
+License: MIT
+Keywords: change tor ip
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Requires-Dist: requests
+Requires-Dist: stem
+
+UNKNOWN
+
+

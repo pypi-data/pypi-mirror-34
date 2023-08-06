@@ -1,0 +1,22 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five">
+
+    <browser:page
+        for="*"
+        name="unitracccourse"
+        class=".browser.Browser"
+        permission="zope2.AccessContentsInformation"
+        allowed_interface=".browser.IUnitraccCourseBrowser"
+        />
+
+    <browser:resourceDirectory
+             name="unitracccourse"
+             directory="resource" />
+
+    <include package=".templates" />
+    <include package="visaplan.tools" />
+    <include package="visaplan.plone.tools" />
+    <include package="visaplan.kitchen" />
+
+</configure>

@@ -1,0 +1,68 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="kss-ppt-navigation"
+             template="kss-ppt-navigation.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-presentation-agenda"
+             template="kss-presentation-agenda.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-presentation-galleries"
+             template="kss-presentation-galleries.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-presentation-page"
+             template="kss-presentation-page.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="kss-slides"
+             template="kss-slides.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="ppt-document_view"
+             template="ppt-document_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="ppt_preview"
+             template="ppt_preview.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="ppt_view"
+             template="ppt_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="presentation_view"
+             template="presentation_view.pt"
+             permission="zope2.View"
+             />
+
+</configure>

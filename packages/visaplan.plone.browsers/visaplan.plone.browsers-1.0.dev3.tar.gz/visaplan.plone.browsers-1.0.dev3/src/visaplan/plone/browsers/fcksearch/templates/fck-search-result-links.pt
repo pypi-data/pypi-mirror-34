@@ -1,0 +1,86 @@
+<tal:block tal:define="brains here/@@fcksearch/search;
+                       unitracctype nocall:here/@@unitracctype;
+                       contenticon nocall:here/@@contenticon"
+           i18n:domain="plone">
+
+
+
+    <table id="tableFiles"
+           class="datatb table table-bordered table-striped table-hover table-sorted">
+    <tbody>
+    <tr style="font-size:11px;">
+        <th>
+            <!-- -->
+        </th>
+        <th>
+            <!-- -->
+        </th>
+        <th i18n:translate="">
+            Type
+        </th>
+        <th i18n:translate="">
+            Title
+        </th>
+        <th>
+            <!-- -->
+        </th>
+        <th i18n:translate="">
+            Language
+        </th>
+        <th i18n:translate="">
+            Status
+        </th>
+        <th i18n:translate="">
+            Path
+        </th>
+    </tr>
+    <tal:rows-loop tal:repeat="brain brains">
+    <tr tal:define="number repeat/brain/number;
+                    brain_uid brain/UID;
+                    ">
+        <td>
+            <div><tal:number tal:content="number"/>.</div>
+        </td>
+        <td>
+            <img tal:define="value python:contenticon.get(brain)"
+                 tal:condition="value"
+                 tal:attributes="src value"/>
+        </td>
+        <td>
+            <div tal:content="python:unitracctype.getTitle(brain)"
+                 i18n:translate=""/>
+        </td>
+        <td>
+            <div tal:content="brain/pretty_title_or_id"/>
+        </td>
+        <td class="fck-actions">
+            <a class="ckeditor-take-link"
+                tal:attributes="href string:/@@resolveuid/${brain_uid}/view">
+                <i class="glyphicon glyphicon-plus"></i>
+            </a>
+            <a class="box-overlay-html fancybox" data-fancybox-type="ajax"
+               tal:attributes="href string:/@@resolveuid/${brain_uid}/view?fckpreview=True">
+                <i class="glyphicon glyphicon-eye-open"></i>
+            </a>
+        </td>
+        <td tal:define="la brain/Language">
+            <div tal:condition="la"
+                 tal:content="la">
+            de
+            </div>
+        </td>
+        <td tal:define="review_state brain/review_state">
+            <div tal:content="review_state"
+                 tal:attributes="title review_state"
+                 i18n:translate="">
+            veröffentlicht
+            </div>
+        </td>
+        <td>
+            <div tal:content="python:u' → '.join(brain.getPath().split('/')[2:])"/>
+        </td>
+    </tr>
+    </tal:rows-loop>
+    </tbody>
+    </table>
+</tal:block>

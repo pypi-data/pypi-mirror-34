@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* TODO:
+ * - Schriftgrößen glattziehen!
+ * - auch alle darauf basierenden Längenangaben (em) anpassen!
+ * - Klassen und IDs "presentation" (letztere schon in ppt.css vorhanden) konsolidieren
+ */
+
+#ajax-spinner {
+    display:none;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background-position: center center;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.presentation .presentation-agenda {
+cursor:pointer;
+}
+
+.presentation {
+font-size:76%;
+margin:0;
+padding:0;
+background:#b2b2b2;;
+}
+
+#kss-book-page,
+body, html {
+height:100%; /* for mozilla vertical centering */
+}
+
+.presentation table {
+font-size:1.0em /* IE nested element correction */
+}
+
+#presentation {
+width:82.5em; /* 1000px */
+height:59.4em; /* 720px */
+background-color:#d8d9d4;
+border:1px solid black;
+text-align:left;
+padding-bottom:1px;
+}
+
+#titlebar table {
+height:2.64em; /* 32px */
+background: #949b8d url(gradient_darkgreen.png) repeat-x;
+background-color:#949b8d;
+}
+
+#titlebar h1 {
+font-family: Arial, Helvetica, sans-serif; /* different font-family for narrow display */
+color:white;
+font-size:1em; /* 11px */
+margin:0 0 0 2em;
+text-transform: uppercase;
+letter-spacing:0.1em;
+text-decoration:none;
+}
+
+#titlebar select {
+width: 30em;
+margin: 0 1em 0.1em 0;
+font-size: 1.15em;
+height:1.4em;
+/*font-size: 14px;
+height:20px;*/
+}
+
+.presentation form {
+margin:0;
+padding:0;
+}
+
+#slide {
+width:100%; /* mehr als 860px; */
+height:56.66em; /* 682px; */
+background-color:#ffffff;
+border:1px solid white; /* for mozilla respecting background */
+overflow:auto;
+}
+
+#slideContent {
+padding:0 2em; /* etwa 10px */
+}
+
+#slideContent h1 {
+font-size:2.2em;
+margin:0.3em 0em 0.5em 0em;
+font-weight:bold;
+margin-bottom:0px;
+margin-top:0px;
+}
+
+#slideContent h2 {
+font-size:1.6em;
+margin:0.8em 0em 0.3em 0em;
+font-weight:normal;
+color:#8a9283;
+padding:0px;
+}
+
+#slideNavigation {
+float:right;
+margin:0;
+width:10em; /* mehr als 120px; */
+height:56.66em; /* 682px; */
+/*background-color:#ff00ff;*/
+background-color:#d8d9d4;
+}
+
+#slideNavigation .slideNavigationImage {
+margin: 1em 0 0 1em;
+}
+
+#slideNavigation .slideNavigationBlock {
+margin:25em 0 0 1em;
+}
+
+/* typografische veraenderungen */
+
+.presentation p {
+font-size:1.55em;
+line-height: 1.5em;
+margin: 0.4em 0em 0.8em 0em;
+}
+
+.presentation ul,
+.presentation ol  {
+font-size:1.55em;
+font-style:normal;
+font-weight:normal;
+}
+
+.presentation ul ol,
+.presentation ol ul,
+.presentation ul ul {
+font-size: 100%;
+}
+
+.presentation li {
+font-size: 100%;
+}
+
+/* ---------- Agenda ---------- */
+
+#agenda {
+padding:0;
+}
+
+#agenda li {
+margin:0.5em 0;
+padding:0.2em 2em;
+color: #000000;
+list-style-type:none;
+background-color: #ebece9;
+}
+
+#agenda li#selected {
+color: #ffffff;
+background-color: #b76116;
+}
+
+#agenda li a {
+color: #000000;
+}
+
+#agenda li#selected a {
+color: #ffffff;
+}
+
+/* ---------- /Agenda ---------- */
+
+
+/* warum? */
+/* p.slide {
+font-size:100%;
+} */
+
+.presentation a.ani,
+.presentation a.img,
+.presentation a.lit,
+.presentation a.tab,
+.presentation a.info {
+font-style:normal;
+font-weight:bold;
+color:#000000;
+text-decoration:none;
+}
+
+.presentation a.lit {
+color:#888888;
+font-weight:normal;
+}
+
+
+/**########### Old stuff ##################*/
+.presentation td.tabletitle {
+font-style:italic;
+font-size:13px;
+padding-bottom:5px;
+}
+
+.documentActions {
+display:none;
+}
+
+#slideContent td {
+vertical-align:top;
+}
+
+.presentation ul {
+padding-left:40px;
+}
+
+.presentation .table-headline-prefix {
+font-weight:bold;
+float:left;
+}

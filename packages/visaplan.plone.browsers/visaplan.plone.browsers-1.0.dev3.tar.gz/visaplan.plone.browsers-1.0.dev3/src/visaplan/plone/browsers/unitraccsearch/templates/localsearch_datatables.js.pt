@@ -1,0 +1,15 @@
+<tal:4vim replace="nothing"><!-- äöü vim: set sw=4 sts=4 si noet :
+
+Javascript-Aufruf für DataTables;
+siehe <https://datatables.net/examples/ajax/>
+
+Eingebunden von ./localsearch_ajax_view.pt
+
+--></tal:4vim><tal:txt define="
+dummy python:request.response.setHeader('content-type','text/javascript;;charset=utf-8');
+"
+tal:content="structure context/@@unitraccsearch/getLocalSearch_jscode">
+
+... Beispieldaten ...
+
+</tal:txt>

@@ -1,0 +1,18 @@
+<tal:block tal:define="here here/@@unitracccourse/get_current;
+                       unitracccourse nocall:here/@@unitracccourse"
+           i18n:domain="plone">
+    <tal:block tal:repeat="brain unitracccourse/crumbs">
+        <a class="folderish-browser" href="#"
+           tal:attributes="id string:ac-${brain/UID};"
+           tal:content="brain/translated_title_or_id"/>
+        <tal:block tal:condition="not:repeat/brain/end">
+        /
+        </tal:block>
+    </tal:block>
+    <div class="visualClear"><!-- --></div>
+
+    <metal:block metal:use-macro="here/js-coursemanagement-level/macros/main"><!--
+    gf: ./js-coursemanagement-level.pt
+    --></metal:block>
+
+</tal:block>

@@ -1,0 +1,53 @@
+<tal:block tal:define="childs options/childs | request/childs | python:{};
+                       parent options/parent | request/parent| nothing;
+                       currentUid here/UID;
+                       getbrain python:here.getAdapter('getbrain');
+                       here_url here/absolute_url;
+                       tree nocall:here/@@tree;
+                       book nocall:here/@@book;
+                       level options/level | request/level">
+
+    <ul>
+        <tal:block tal:repeat="dict_ childs">
+            <tal:block tal:define="getURL dict_/current/getURL;
+                                   title dict_/current/Title;
+                                   uid dict_/current/UID;
+                                   portal_type dict_/current/portal_type;
+                                   class_ python:book.getStyleClass(dict_['current'])">
+                <li tal:condition="python:portal_type!='Folder'">
+                    <span class="book-navigation-item">
+                        <a tal:attributes="href getURL;
+                                           class string:book-link level${level} ${class_}">
+                            <img width="9"
+                                 tal:attributes="src string:${here/portal_url}/++resource++unitracc-images/book_arrow_left.png"/>
+                            <tal:block tal:content="title"/>
+                        </a>
+                    </span>
+                </li>
+                <li tal:condition="python:portal_type=='Folder'">
+                    <span class="book-navigation-item"
+                          tal:define="lenChilds python:len(tree.getCachedLevel(getbrain(uid)))">
+                            <a tal:attributes="href getURL;
+                                               class string:book-node level${level} ${class_}">
+                                <tal:block tal:condition="python:lenChilds>0">
+                                    <img width="9" src="plus.png"
+                                         tal:condition="not:dict_/childs | nothing"/>
+                                    <img width="9" src="minus.png"
+                                         tal:condition="dict_/childs | nothing"/>
+                                </tal:block>
+                                <tal:block tal:condition="python:lenChilds==0">
+                                    <img width="9"
+                                         tal:attributes="src string:${here/portal_url}/++resource++unitracc-images/book_arrow_left.png"/>
+                                </tal:block>
+                                <tal:block tal:content="title"/>
+                            </a>
+                    </span>
+                    <span class="kss-book-level">
+                        <tal:block tal:condition="dict_/childs | nothing"
+                                   tal:content="structure python:here.restrictedTraverse('kss-book-level')(childs=dict_.get('childs',[]),parent=dict_['current'],level=level+1)"/>
+                    </span>
+                </li>
+            </tal:block>
+        </tal:block>
+    </ul>
+</tal:block>

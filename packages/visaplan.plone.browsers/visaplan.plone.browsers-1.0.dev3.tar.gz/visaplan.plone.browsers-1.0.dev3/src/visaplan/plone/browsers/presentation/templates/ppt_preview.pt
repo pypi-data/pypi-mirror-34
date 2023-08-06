@@ -1,0 +1,88 @@
+<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html PUBLIC
+  &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+  &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" />
+<metal:block use-macro="here/global_defines/macros/defines" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      tal:define="lang python:here.getAdapter('langcode')()"
+      tal:attributes="lang lang;
+                      xml:lang lang">
+
+<head>
+
+    <metal:block metal:define-macro="head"
+                 tal:define="pptCssPrefix pptCssPrefix | nothing;
+                             newstyles request/newstyles | nothing;
+                             newstyles python:newstyles in ('1', 'true')">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"
+              tal:define="charset site_properties/default_charset|string:utf-8"
+              tal:attributes="content string:text/html;;charset=${charset}" />
+
+        <link rel="stylesheet" type="text/css"
+              href="/++resource++unitracc-resource/ppt.css"
+              tal:condition="not:newstyles"/>
+        <link rel="stylesheet" type="text/css"
+              href="/++resource++presentation.css"
+              tal:condition="newstyles"/>
+        <link rel="stylesheet" type="text/css"
+              href="/++resource++unitracc-resource/book-gallery.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="/++resource++unitracc-resource/book.css"/>
+        <link rel="stylesheet" type="text/css"
+              href="/++resource++unitracc-resource/ppt-preview.css"/>
+
+    </metal:block>
+
+</head>
+
+<body>
+
+    <metal:block metal:define-macro="main"
+                 tal:define="templateId python:'ppt-document_view';
+                             template python:here and here.restrictedTraverse(templateId,None) or None;
+                             is_editable python:False;
+                             presentation nocall:here/@@presentation;
+                             wtool here/portal_workflow | nothing;
+                             isViewTemplate python:True;">
+        <div id="slide">
+            <div id="slideContent">
+                <tal:block tal:condition="python:here.portal_type!='Folder'">
+                    <metal:block metal:use-macro="template/macros/main"/>
+                </tal:block>
+                <metal:block metal:define-macro="folder">
+                    <tal:block tal:condition="python:here.portal_type=='Folder'">
+                        <tal:block tal:define="current nocall:here;
+                                               here presentation/getPresentationFolder;
+                                               tree nocall:here/@@tree;
+                                               list_ tree/getFlatNavigationWithBrains">
+
+                            <h1 class="documentFirstHeading"
+                                i18n:translate="">
+                                Agenda
+                            </h1>
+                            <div id="agenda">
+                                <ul>
+                                    <tal:block tal:repeat="dict_ list_">
+                                        <li tal:condition="python:dict_['current'].portal_type=='Folder'"
+                                            tal:attributes="id python:(current and current.UID()==dict_['current'].UID) and 'selected' or None">
+                                           <a tal:attributes="href string:${here/absolute_url}/ppt_view?uid=uid-${dict_/current/UID};
+                                                              class python:'course-ppt-page level1 '+((current and current.UID()==dict_['current'].UID) and ' navigation-current' or '')"
+                                              tal:content="dict_/current/pretty_title_or_id"/>
+                                        </li>
+                                    </tal:block>
+
+                                </ul>
+                            </div>
+                        </tal:block>
+                    </tal:block>
+                </metal:block>
+            </div>
+        </div>
+
+    </metal:block>
+
+</body>
+</html>

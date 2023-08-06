@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<metal:block use-macro="here/global_defines/macros/defines" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      tal:define="lang python:context.getAdapter('langcode')()"
+      tal:attributes="lang lang;
+                      xml:lang lang">
+
+<head tal:define="
+      newstyles request/newstyles | nothing;
+      newstyles python:newstyles in ('1', 'true');
+      ">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+          tal:define="charset site_properties/default_charset|string:utf-8"
+          tal:attributes="content string:text/html;;charset=${charset}" />
+
+    <tal:block tal:replace="structure provider:plone.htmlhead" />
+
+    <base tal:attributes="href context/@@plone/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+
+    <link rel="stylesheet" type="text/css"
+          href="/++resource++unitracc-resource/ppt.css"
+          tal:condition="not:newstyles"/>
+    <link rel="stylesheet" type="text/css"
+          href="/++resource++unitracc-resource/book.css"/>
+    <link rel="stylesheet" type="text/css" href="/++resource++unitracc-libs/jquery.qtip.min.css">
+    <script type="text/javascript" src="/++resource++unitracc-libs/jquery.qtip.min.js"></script>
+    <script type="text/javascript"
+            src="/++resource++unitracccourse/course_ppt_view.js"></script>
+
+    <metal:block metal:use-macro="here/main_template/macros/mathjax"/>
+
+</head>
+
+<body tal:define="unitracccourse nocall:here/@@unitracccourse;
+                  first unitracccourse/get_first;
+                  "
+      class="presentation-view">
+<tal:if condition="first">
+<tal:block tal:define="uid first/uid_object;
+                       next python:unitracccourse.element_item_info(here.UID(), first['uid_next']);
+                       template_id template/id;
+                       ">
+    <tal:main-macro metal:define-macro="main">
+        <div class="js-course-content"
+             >
+            <metal:block metal:use-macro="here/js-presentation-page/macros/main">
+<!-- (gf:)
+../browser.py
+../resource/course_ppt_view.js
+./js-presentation-page.pt
+../../../skins/unitracc_templates/unitracccourse_view.pt
+-->
+            </metal:block>
+        </div>
+
+    </tal:main-macro>
+</tal:block>
+</tal:if>
+<div tal:condition="not:first"
+     i18n:translate="">
+    This course is empty.
+</div>
+<div id="log" tal:condition="python:0">
+<h1>Javascript-Log</h1>
+<p><a href="/++resource++unitracccourse/course_ppt_view.js">course_ppt_view.js</a></p>
+</div>
+
+<script tal:replace="structure here/@@subportal/get_analytics"></script>
+</body>
+</html>

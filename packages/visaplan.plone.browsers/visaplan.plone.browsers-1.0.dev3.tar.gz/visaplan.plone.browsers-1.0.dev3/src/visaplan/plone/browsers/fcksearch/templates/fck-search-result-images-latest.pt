@@ -1,0 +1,9 @@
+<tal:block tal:define="brains here/@@fcksearch/latestImage;
+                       unitracctype nocall:here/@@unitracctype;
+                       contenticon nocall:here/@@contenticon"
+           i18n:domain="plone">
+
+    <metal:block metal:use-macro="here/fck-search-result-images/macros/listing"/>
+
+
+</tal:block>

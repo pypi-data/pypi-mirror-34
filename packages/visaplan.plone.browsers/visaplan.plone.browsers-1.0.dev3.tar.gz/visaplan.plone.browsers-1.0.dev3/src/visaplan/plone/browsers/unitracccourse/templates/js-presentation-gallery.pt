@@ -1,0 +1,55 @@
+<metal:block metal:define-macro="main">
+<tal:block i18n:domain="plone"
+tal:define="
+list_ here/@@unitracccourse/get_page_images;
+"><tal:ns on-error="string:ns-inner" define="
+urlparse nocall:here/@@urlparse;
+url request/form/url | nothing;
+transform nocall:here/@@transform;
+dummy python:context.getAdapter('updateactualurl')(context.absolute_url()+'/course_ppt_view');
+getbrain python:context.getAdapter('getbrain');
+batch python:here.getBrowser('batch')(list_,25);
+">
+
+<div class="area-content-navigation text-center">
+    <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+</div>
+<tal:loop tal:repeat="pair batch">
+    <tal:item tal:define="uid_image python:pair[1];
+               dict_ python:pair[0];
+               brain python:getbrain(uid_image);"
+               tal:condition="brain">
+<div class="list-action-item col-md-2 text-center"
+     style="min-height:160px;max-height:160px;"
+     tal:on-error="string:brain">
+
+    <a rel="lightbox[image]"
+       tal:on-error="string:a-attributes"
+       href="/resolveUid/abc123/image"
+       title="ToDo: HTML-Title --> Text"
+       tal:attributes="href string:./resolveUid/${uid_image}/image;
+                       title python:transform.get(brain.getCaption);
+                       ">
+        <img tal:attributes="src string:./resolveUid/${uid_image}/@@scaling/get?scaling=120x120"
+             tal:on-error="string:img-attributes"
+             src="/resolveUid/abc123/@@scaling/get?scaling=120x120">
+    </a>
+    <a href="#"
+       class="kss-ppt-page course-ppt-page"
+       tal:on-error="string:a-attributes+content"
+       tal:attributes="href string:${here/absolute_url}/course_ppt_view?uid=${dict_/uid_object};
+                       rel string:rel-${dict_/uid_object};
+                       next dict_/uid_next | nothing;
+                       prev dict_/uid_prev | nothing"
+       tal:content="dict_/title"/>
+</div>
+    </tal:item>
+</tal:loop>
+<div class="clear">
+<div class="area-content-navigation text-center">
+    <metal:block metal:use-macro="here/batch_macros/macros/navigation"/>
+</div>
+
+</tal:ns>
+</tal:block>
+</metal:block>

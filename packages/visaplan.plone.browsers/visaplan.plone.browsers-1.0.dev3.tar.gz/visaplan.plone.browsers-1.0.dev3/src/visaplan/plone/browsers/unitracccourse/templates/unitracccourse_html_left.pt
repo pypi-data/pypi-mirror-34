@@ -1,0 +1,35 @@
+<tal:block i18n:domain="plone">
+    <tal:block tal:repeat="dict_ here/@@unitracccourse/get_complete_tree">
+        <ul class="start-padding connectedSortable ui-sortable"
+            tal:condition="python:dict_['portal_type']=='UnitraccLesson'">
+            <li class="headline course-start"
+                i18n:translate="">Course start</li>
+            <li id="lesson-1">
+                <input class="content-checkbox lesson-checkbox" name="lessons:list" checked="" type="checkbox" value="1"
+                       tal:attributes="id string:input-lession-${dict_/uid_object};
+                                       rel string:${dict_/portal_type};
+                                       value dict_/uid_object">
+                <img class="actionicon-lesson" src="/++resource++unitracc-images/icon_action.png">
+                <img src="/blackboard_empty.png">
+                <span tal:attributes="id string:lesson-title-${dict_/uid_object}"
+                      tal:content="dict_/title"/>
+            <ul class="connectedSortable ui-sortable">
+                <li class="headline lesson-start"
+                    i18n:translate="">
+                    Lesson start
+                </li>
+                <metal:block metal:use-macro="here/unitracccourse_html_left_recurse/macros/main">
+                siehe (gf): ./unitracccourse_html_left_recurse.pt
+                </metal:block>
+                <li class="headline lesson-end"
+                    i18n:translate="">
+                    Lesson end
+                </li>
+            </ul>
+            <li class="headline course-end"
+                i18n:translate="">
+                Course end
+            </li>
+        </ul>
+    </tal:block>
+</tal:block>

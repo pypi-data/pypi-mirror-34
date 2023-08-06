@@ -1,0 +1,127 @@
+<!-- [ u_t/listing_aktuelles [ --><tal:for-editor replace="nothing"><!-- vim: set ts=8 sts=4 sw=4 si et :--></tal:for-editor>
+<tal:block xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+i18n:domain="plone"
+tal:define="
+plone nocall:here/@@plone;
+ga python:here.getAdapter;
+toTime python:here.getAdapter('totime');
+nora nocall:here/@@nora;
+industrialsector_getValue nocall:context/@@industrialsector/getValue;
+getbrain python:here.getAdapter('getbrain');
+portal_url context/@@plone_portal_state/portal_url;
+feed_link nocall: here/unitraccmacros/macros/feed-link-p;
+brains_per_slide brains_per_slide | python:3;
+unitraccmacros nocall:here/unitraccmacros/macros;
+mediamacros nocall:here/unitraccmedia_macros/macros;
+media_carousel nocall:mediamacros/media_carousel;
+carousel_simple nocall:unitraccmacros/carousel_simple;
+carousel_batched nocall:unitraccmacros/carousel_batched;
+mediaitem nocall:here/unitraccmedia_macros/macros/item;
+search_limit python:brains_per_slide * 3;
+getImageUrl python:nora.getImageUrl;
+">
+
+<div class="media-carousels">
+<div id="images"
+     tal:define="
+brains python:nora.search_images(search_limit=search_limit)[:search_limit];
+carousel_id string:images-carousel;
+getImageUrl python:nora.getImageUrl;
+" tal:condition="brains">
+    <h1>
+        <tal:headline i18n:translate="">
+        Images
+        </tal:headline>
+        <small i18n:translate="">
+        Mediathek
+        </small>
+    </h1>
+<metal:carousel use-macro="media_carousel"><!--
+./unitraccmedia_macros.pt
+-->
+            <div class="item active">
+                 <div class="col-md-4">
+<metal:item fill-slot="item">
+<metal:mac use-macro="mediaitem"><!-- 
+./mediathek_folder_view.pt
+../../../skins/unitracc_templates/unitraccmacros.pt
+../../nora/templates/unitraccnora_macros.pt
+-->
+</metal:mac>
+</metal:item>
+                 </div>
+            </div>
+</metal:carousel>
+</div><!-- #images -->
+
+<div id="animations"
+     tal:define="
+brains python:nora.search_animations(search_limit=search_limit)[:search_limit];
+carousel_id string:animations-carousel;
+" tal:condition="brains">
+    <h1>
+        <tal:headline i18n:translate="">
+        Animations
+        </tal:headline>
+        <small i18n:translate="">
+        Mediathek
+        </small>
+    </h1>
+<metal:carousel use-macro="media_carousel">
+            <div class="item active">
+                 <div class="col-md-4">
+<metal:item fill-slot="item">
+<metal:mac use-macro="mediaitem"><!-- 
+./mediathek_folder_view.pt
+../../../skins/unitracc_templates/unitraccmacros.pt
+../../nora/templates/unitraccnora_macros.pt
+-->
+</metal:mac>
+</metal:item>
+                 </div>
+            </div>
+</metal:carousel>
+</div><!-- #animations -->
+
+<div id="videos"
+     tal:define="
+brains python:nora.search_videos(search_limit=search_limit)[:search_limit];
+carousel_id string:videos-carousel;
+getImageUrl python:nora.getImageUrl;
+" tal:condition="brains">
+    <h1>
+        <tal:headline i18n:translate="">
+        Videos
+        </tal:headline>
+        <small i18n:translate="">
+        Mediathek
+        </small>
+    </h1>
+<metal:carousel use-macro="media_carousel">
+            <div class="item active">
+                 <div class="col-md-4">
+<metal:item fill-slot="item">
+<metal:mac use-macro="mediaitem"><!-- 
+./mediathek_folder_view.pt
+../../../skins/unitracc_templates/unitraccmacros.pt
+../../nora/templates/unitraccnora_macros.pt
+-->
+</metal:mac>
+</metal:item>
+                 </div>
+            </div>
+</metal:carousel>
+</div><!-- #videos -->
+</div><!-- .media-carousels -->
+
+<div class="row">
+    <div class="col-md-9 listing-item">
+        <tal:loop repeat="object_ python:here.getBrowser('stage').get('list-folder-right')[:1]"
+                  content="structure object_/getText">
+        Was tut sich in der Branche? (...)
+        </tal:loop> 
+    </div><!-- .col-md-9 listing-item -->
+</div><!-- .row -->
+
+</tal:block>
+<!-- ] u_t/listing_aktuelles ] -->

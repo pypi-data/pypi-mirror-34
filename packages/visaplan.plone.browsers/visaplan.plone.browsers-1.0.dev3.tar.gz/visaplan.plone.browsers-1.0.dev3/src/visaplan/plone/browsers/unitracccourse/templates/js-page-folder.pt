@@ -1,0 +1,76 @@
+<metal:block metal:define-macro="main">
+    <tal:block tal:define="current nocall:options/current;
+                           course_url options/course_url | nothing;
+                           unitracccourse nocall:here/@@unitracccourse;
+                           transform nocall:here/@@transform;
+                           book nocall:here/@@book;
+                           presentation nocall:here/@@presentation;
+                           stage nocall:here/@@stage;
+                           here python:unitracccourse.current_to_object(current)"
+               i18n:domain="plone">
+
+        <table cellspacing="0" cellpadding="0"  width="100%">
+        <tr>
+            <td>
+                <tal:block tal:condition="python:here.getLayout() in presentation.getPresentationTemplates()+book.getBookTemplates()+['book_agenda_view','folder_listing'] and not here.getDefaultPage()">
+
+                    <p class="documentDescription">
+                        <tal:block i18n:translate="technical_book_chapter_summary"
+                                    tal:condition="python:here.getLayout() == 'technical_information_view'">
+                            This technical book includes the following chapters:
+                        </tal:block>
+                        <tal:block i18n:translate="instruction_chapter_summary"
+                                    tal:condition="python:here.getLayout() == 'instructions_view'">
+                            This instruction includes the following chapters:
+                        </tal:block>
+                        <tal:block i18n:translate="documentation_chapter_summary"
+                                    tal:condition="python:here.getLayout() == 'documentation_view'">
+                            This documentation includes the following chapters:
+                        </tal:block>
+                        <tal:block i18n:translate="paper_chapter_summary"
+                                    tal:condition="python:here.getLayout() == 'paper_view'">
+                            This paper includes the following chapters:
+                        </tal:block>
+                        <tal:block i18n:translate="chapter_topic_summary"
+                                    tal:condition="python:here.getLayout() == 'book_agenda_view'">
+                            This chapter includes the following topics:
+                        </tal:block>
+                    </p>
+
+                    <ul tal:define="pformat python:context.getAdapter('pformat');
+                                    ">
+                        <li tal:repeat="dict_ python:unitracccourse.get_current_childs(here.UID(),current)">
+                            <a class="no-page-confirm course-nav-link"
+                               tal:attributes="href string:${course_url}/course_view?uid=${dict_/uid_object};
+                                               rel string:rel-${dict_/uid_object};
+                                               next dict_/uid_next | nothing;
+                                               prev dict_/uid_prev | nothing"
+                               tal:content="dict_/title"/>
+                        </li>
+                    </ul>
+                </tal:block>
+                <tal:block tal:condition="here/getDefaultPage">
+                    <tal:block tal:define="object_ python:here.restrictedTraverse(here.getDefaultPage(),None)"
+                               tal:content="structure python:transform.get(object_.getText())"/>
+                </tal:block>
+            </td>
+            <td width="1%"
+                tal:define="brains python:stage.getAsBrains('unitracc-partner',here.UID())"
+                tal:condition="brains">
+                <div class="partner-box">
+                    <a target="_blank"
+                       tal:repeat="brain brains"
+                       tal:attributes="href python:brain.getWebLink"
+                       tal:omit-tag="python:not brain.getWebLink">
+                        <img tal:attributes="src string:${brain/getURL}/@@scaling/get?scaling=120x120"/>
+                    </a>
+                    <p i18n:translate="book_agenda_view_02">
+                        The following content is kindly supported by our partner.
+                    </p>
+
+                </div>
+            </td>
+        </tr>
+        </table>
+    </tal:block>
+</metal:block>

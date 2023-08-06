@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+    
+    <browser:page
+             for="*"
+             name="listing_nora"
+             template="listing_nora.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="nora_folder_view"
+             template="nora_folder_view.pt"
+             permission="zope2.View"
+             />
+
+    <browser:page
+             for="*"
+             name="unitraccnora_macros"
+             template="unitraccnora_macros.pt"
+             permission="zope2.View"
+             />
+
+</configure>

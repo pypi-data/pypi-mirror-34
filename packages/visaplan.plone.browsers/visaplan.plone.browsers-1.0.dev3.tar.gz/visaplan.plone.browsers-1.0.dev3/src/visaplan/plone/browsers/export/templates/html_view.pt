@@ -1,0 +1,10 @@
+<metal:page define-macro="master"
+            i18n:domain="plone"
+tal:define="
+export nocall:here/@@export;
+isPDFExport request/form/isPDFExport|nothing;
+profile request/form/pid|nothing;
+content python:export.getHTML(profile, isPDFExport);
+"
+tal:content="structure content">
+</metal:page>

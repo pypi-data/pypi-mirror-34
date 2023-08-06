@@ -1,0 +1,23 @@
+<metal:block metal:define-macro="main">
+    <ul tal:define="structureauthoring nocall:here/@@structureauthoring;
+                    uid uid | request/uid | python:None">
+        <tal:block tal:repeat="brain python:structureauthoring.getPresentationLevel(uid)">
+            <li tal:define="childs python:structureauthoring.getPresentationLevel(brain.UID);
+                            level python:len(brain.getPath().split('/'))-5"
+                tal:attributes="id string:li---${brain/UID};
+                                class python:'level'+str(level)">
+                <span tal:attributes="id string:parent---${brain/UID};
+                                      class python:'parent-click span-padding'+(childs and ' folder' or '')">
+                    <tal:block tal:content="brain/pretty_title_or_id">
+                    Titel der Seite oder des Ordners
+                    </tal:block>
+                    <tal:block tal:condition="childs">
+                    </tal:block>
+                </span>
+                <span tal:attributes="id string:span---${brain/UID}">
+                    <!-- -->
+                </span>
+            </li>
+        </tal:block>
+    </ul>
+</metal:block>

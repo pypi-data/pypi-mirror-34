@@ -1,0 +1,154 @@
+<metal:block metal:use-macro="here/main_template/macros/master"
+             i18n:domain="plone">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1);
+                         authorized nocall:here/@@authorized;
+                         dummy python:authorized.authorized('unitracc: Import XML');
+                         "/>
+
+<metal:block fill-slot="javascript_head_slot"
+             tal:condition="python:0">
+  <script tal:attributes="src string:${here/portal_url}/++resource++mogrify/mogrify.js"></script>
+</metal:block>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_one_slot"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+
+<metal:main metal:fill-slot="main"
+            tal:define="mogrify nocall:context/@@mogrify;
+                        default python:mogrify.formdata();
+                        ">
+
+    <div id="area-title">
+        <h1 i18n:translate="">
+            Import (transmogrify)
+        </h1>
+    </div>
+
+    <div>
+      <p>
+      Es wird im aktuellen Kontext
+      (<tt tal:content="default/path-prefix">/unitracc</tt>)
+      importiert.
+      </p>
+    </div>
+
+    <form action="@@mogrify/import_tarball" id="import-form"
+          enctype="multipart/form-data" method="post"
+          tal:define="verbose request/verbose | string:false;
+                      verbose python:verbose.lower() == 'true'"
+          >
+
+        <div tal:define="items default/import-cfg-choices;
+                         curval default/import-cfg;
+                         ">
+            <label class="for-next-input"
+                   i18n:translate="">
+            Action to perform:
+            </label>
+            <div tal:repeat="item items">
+            <label tal:define="value item/value;
+                               label item/label;
+                               ">
+                <input type="radio" name="import-cfg"
+                       checked="checked"
+                       id="radio-cfg-import"
+                       tal:attributes="checked python:value == curval;
+                                       value value;
+                                       id string:radio-cfg-$value"
+                       value="q-dir">
+                <tal:txt i18n:translate=""
+                         tal:content="item/label"
+                         >Export (...)</tal:txt>
+            </label>
+            </div>
+        </div>
+
+        <div>
+            <label class="for-next-input"
+              i18n:translate="">
+            Import method:
+            </label>
+            <div tal:repeat="item default/flavour-choices">
+            <label>
+                <input type="radio" name="flavour"
+                       checked="checked"
+                       tal:attributes="checked item/selected;
+                                       value item/value"
+                       value="json-dir">
+                <tal:txt i18n:translate=""
+                         tal:content="item/label"
+                         >JSON directory</tal:txt>
+            </label>
+            </div>
+        </div>
+
+        <div data-flavour-choices="q-tarball">
+            <label>
+                <div i18n:translate="">
+                Select an archive for import:
+                </div>
+                <input type="file" name="upload"
+                       value="">
+            </label>
+        </div>
+
+        <div data-flavour-choices="q-dir json-dir">
+            <label for="input-source"
+                   i18n:translate="source">
+                Path on server:
+            </label>
+            <input name="source" id="input-source"
+                   class="input-xxlarge"
+                   tal:attributes="value default/source | nothing">
+        </div>
+
+        <div data-flavour-choices="q-dir json-dir">
+            <label for="input-source"
+                   i18n:translate="source">
+                Existing objects:
+            </label>
+            <select name="existing"
+                    tal:define="values python:['count', 'skip', 'ignore'];
+                                curval default/existing | nothing;
+                                ">
+                <option tal:repeat="value values"
+                        tal:content="value"
+                        tal:attributes="selected python:value == curval">
+                    skip
+                </option>
+            </select>
+        </div>
+
+        <fieldset tal:condition="default/DevelopmentMode | nothing"
+            style="border: 1px solid gray; padding: 0.3em">
+            <legend style="margin-left: 3em; padding: 0.1em 0.3em; display:inline-block">
+                Entwicklungsmodus
+            </legend>
+            <label>
+                <input type="checkbox" name="debug" value="true"
+                       tal:attributes="checked default/debug | nothing"
+                       style="float: left;margin-right: 0.3em">
+                <p><strong>Achtung:</strong> Kann <tt>set_trace</tt> auslösen
+                (&rarr; unsichtbares warten auf Eingabe, bzw. im
+                Produktionsmodus: Fehler!)
+                </p>
+            </label>
+          
+        </fieldset>
+
+        <div>
+            <button class="btn btn-primary" type="submit">
+                <i class="glyphicon glyphicon-plus icon-white"></i>
+                <tal:block i18n:translate="">Import</tal:block>
+            </button>
+            <input class="btn btn-default" type="reset">
+        </div>
+    </form>
+    <script type="text/javascript" src="/++resource++mogrify/mogrify.js"></script>
+
+</metal:main>
+</metal:block>
+<!-- vim: set ts=4 sts=4 sw=4 si et hls :-->

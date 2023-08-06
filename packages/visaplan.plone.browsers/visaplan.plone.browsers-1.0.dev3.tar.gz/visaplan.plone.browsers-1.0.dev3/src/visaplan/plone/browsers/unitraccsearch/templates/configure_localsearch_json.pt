@@ -1,0 +1,138 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="
+dummy context/@@authorized/managePortal;
+search nocall:context/@@unitraccsearch;
+dict_ search/getJsonSettings;
+uid here/UID;
+devel context/@@management/isDeveloper;
+pformat python:context.getAdapter('pformat');
+debug python:0;
+verbose request/verbose | python:0;
+verbose python:0;
+make_fieldsets verbose;
+short_form not:make_fieldsets;
+">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Choose local search display preset
+    </h1>
+
+    <form method="post"
+          tal:define="presets python:search.getJsonPresets(forform=True)"
+          tal:attributes="action string:${here/absolute_url}/@@unitraccsearch/chooseJsonPreset">
+<pre tal:content="python:pformat(presets)"
+     tal:condition="debug"/>
+    <tal:loop on-error="string:Fehler beim Iterieren"
+              repeat="item presets">
+        <fieldset tal:define="
+key item/key;
+label item/label | nothing;
+label python:label or key;
+" tal:omit-tag="short_form">
+            <pre tal:content="python:pformat(item)"
+                 tal:condition="debug"/>
+	    <legend tal:content="label"
+                    tal:condition="make_fieldsets">media list, excluding date information</legend>
+            <div class="field form-group" tal:define="
+name string:key;
+">
+<label>
+<input type="radio" name="abc123"
+       tal:attributes="name uid;
+                       checked item/selected | nothing;
+                       value key;
+                       ">
+<tt tal:content="key">default</tt>
+<tal:if condition="python:label and label != key">
+(<span tal:content="label">Standardversion</span>)
+</tal:if>
+</label>
+<a href="/manage_localsearch_json_preset"
+   tal:attributes="href string:/manage_localsearch_json_preset?preset_name=$key"
+   i18n:translate="">
+Edit
+</a>
+</div>
+<tal:if condition="make_fieldsets">
+<div tal:on-error="string:Oops">
+    <strong>names</strong>:
+    <tt tal:content="preset/names">Title, getThumbnailPath ...</tt>
+</div>
+<div>
+    <strong>columns</strong>:
+    <pre tal:content="preset/columns | preset/columnDefs">
+    (Javascript-Code, enthält üblicherweise Funktionen)
+    </pre>
+</div>
+</tal:if>
+	
+        </fieldset>
+        </tal:loop>
+        <br/>
+        <input type="submit" value="Save"
+               class="btn btn-primary"
+               i18n:attributes="value label_save"/>
+        <input type="reset"
+               class="btn btn-reset">
+    </form>
+
+
+<metal:devmac define-macro="sibling-pages">
+<tal:macns tal:define="
+urls python:['localsearch_ajax_view.pt'[:-3],
+             'configure_localsearch_json.pt'[:-3],
+             'localsearch_datatables.js',
+             'localsearch_json.js',
+             'configure_localsearch.pt'[:-3],
+             'localsearch_view.pt'[:-3],
+             ];
+thistid python:context.getAdapter('templateid')();
+configuredid context/getLayout;
+">
+<h2>Entwicklungsunterstützung</h2>
+<ul>
+<li tal:replace="nothing"><tt tal:content="thistid">xxx</tt></li>
+<li tal:repeat="url urls">
+  <strong tal:omit-tag="python:url != thistid"
+  ><a href="#"
+     tal:attributes="href url"
+     tal:content="url">
+      der Sicht-Name
+  </a></strong>
+  <tal:if condition="python:url.endswith('_view')"
+  ><tal:ns define="
+active python:url == configuredid;
+activate_href string:selectViewTemplate?templateId=${url};
+">(<strong
+      tal:condition="active"
+      ><a href="selectViewTemplate?templateId=..."
+          tal:attributes="href activate_href"
+          >aktiv</a></strong
+><a href="#"
+    tal:condition="not:active"
+    tal:attributes="href activate_href"
+    >aktivieren</a>)</tal:ns></tal:if>
+</li>
+</ul>
+</tal:macns>
+</metal:devmac>
+</metal:main>
+
+</body>
+</html>

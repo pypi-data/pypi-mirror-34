@@ -1,0 +1,441 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+<body>
+
+<metal:no-ads fill-slot="ad-block-above-content"/>
+<metal:no-ads fill-slot="column_two_slot"/>
+<metal:main fill-slot="main"
+            tal:define="subportal nocall:here/@@subportal;
+                        dummy context/@@authorized/managePortal;
+                        has_booking here/@@unitraccfeature/has_booking;
+                        dict_ subportal/get;
+current_spid subportal/get_current_id;
+items python:subportal.keys_and_titles(current_spid=current_spid);
+devel context/@@management/isDeveloper;
+">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Subportal configuration
+    </h1>
+
+    <fieldset>
+        <legend i18n:translate="">Actions</legend>
+
+        <form method="post" class="action-button"
+              tal:attributes="action string:${here/absolute_url}/@@subportal/add">
+            <input type="submit" value="Add new subportal"
+                   class="btn btn-default"
+                   i18n:attributes="value" />
+            <input type="text"
+                   class="form-control"
+                   name="title"
+                   placeholder="Title of new Subportal"
+                   i18n:attributes="placeholder"/>
+        </form>
+
+    </fieldset>
+
+
+
+    <form method="post" tal:attributes="action string:${portal_url}/@@subportal/set">
+
+        <fieldset>
+            <legend i18n:translate="">Settings</legend>
+
+            <div class="field form-group">
+                <label i18n:translate="">Default UID</label><br/>
+                <input type="text" size="40" name="default_uid"
+                       tal:attributes="value python:dict_.get('default_uid','')"/>
+            </div>
+
+            <ul class="nav nav-tabs"
+                tal:define="pformat python:here.getAdapter('pformat')">
+                <tal:loop tal:repeat="item items">
+                <li class="active"
+                    tal:define="active item/active;
+                                cls python:active and 'active' or None"
+                    tal:attributes="class cls">
+                    <a data-toggle="tab" href="#abc123..."
+                       class="active"
+                       tal:attributes="class cls;
+                                       href string:#${item/uid}"
+                       tal:content="item/title"
+                       >
+                       Lesbarer Name des Subportals
+                    </a>
+                </li>
+                </tal:loop>
+            </ul>
+
+            <div class="tab-content">
+            <tal:loop tal:repeat="item items">
+            <div id="1" class="tab-pane active"
+                 tal:define="active item/active"
+                 tal:attributes="id item/uid;
+                                 class python:active and 'tab-pane active' or 'tab-pane'">
+            <fieldset tal:define="uid item/uid;
+                                  sp_dict python:dict_.get(uid,{})">
+                <legend i18n:translate="">
+                    Subportal
+                    <tal:uid content="uid" i18n:name="uid">e123...</tal:uid>
+                </legend>
+
+    <tal:if-devel tal:condition="python:sp_dict and devel">
+    <div tal:define="
+        pformat python:context.getAdapter('pformat');
+    ">
+    <h2 i18n:translate="">Current values (in Python syntax)</h2>
+    <h3 i18n:translate="">Configured value</h3>
+    <pre tal:content="python:pformat(sp_dict, width=72)"
+         tal:condition="devel">
+{'booking_bic': '', 'booking_email': 'orders@unitracc.de', 'booking_iban': '', 'css': '', 'domains': 'http://...'}
+    </pre>
+    <div tal:condition="active">
+    <h3 i18n:translate="">Effective value</h3>
+    <h4 i18n:translate="">get_logo_settings</h4>
+    <pre tal:define="dic subportal/get_logo_settings"
+         tal:content="python:pformat(dic)"
+         tal:on-error="string:Oops!">
+{'alt': None,
+ 'host_lang': 'de',
+ 'hostname': 'www.stein.de',
+ 'image_id': 'logo_stein_und_partner.png',
+ 'lang_code': 'de',
+ 'logo': 'logo-de.jpg',
+ 'logoleft_full': '/++resource++unitracc-images/logo-de.jpg',
+ 'logoright_full': '/++resource++unitracc-images/logo_stein_und_partner.png',
+ 'url': 'http://www.stein.de',
+ 'usemap': None}
+    </pre>
+    </div>
+    </div>
+    </tal:if-devel>
+
+                <tal:remark condition="nothing"><!--
+                Für neue Felder bitte die Makros subportal-input
+                und subportal-textarea verwenden (siehe unten)
+                bzw. - wenn sinnvoll - neue ableiten!
+                --></tal:remark>
+
+                <tal:title define="varname string:title;
+                                   ">
+                <div class="field form-group" metal:define-macro="subportal-input">
+                <tal:ns define="
+                             label label | python:varname.capitalize();
+                             fieldid string:${varname}-${uid};
+                             fieldname string:${uid}.${varname}:record;
+                             default default | nothing;
+                             curval python:sp_dict.get(varname, default);
+                             description description | nothing;
+                             ">
+                    <label tal:attributes="for fieldid; title varname"
+                           tal:content="label"
+                           i18n:translate="">
+                       Portal-Titel (für diese Verwaltungsansicht)
+                    </label>
+                    <div tal:condition="description"
+                         tal:content="description"
+                         metal:define-slot="description"
+                         i18n:translate=""
+                         >Beschreibung des Felds.
+                         Es ist ggf. dieses Element durch ein &lt;p&gt; zu ersetzen
+                         und/oder mit CSS-Klassen zu pimpen.
+                    </div>
+                    <metal:slot define-slot="special"/>
+                    <input type="text" size="40"
+                           metal:define-slot="input"
+                           tal:attributes="name fieldname;
+                                           id fieldid;
+                                           type type | string:text;
+                                           value python:sp_dict.get(varname, default)"/>
+                </tal:ns>
+                </div>
+                </tal:title>
+
+                <tal:shortname define="
+varname string:shortname;
+description string:Short name for use as an identifier;; must not contain spaces;
+                "><metal:shortname use-macro="template/macros/subportal-input" />
+                </tal:shortname>
+
+                <tal:domains define="varname string:domains;
+                ">
+                <div class="field form-group"
+                     metal:define-macro="subportal-textarea"
+                     metal:extend-macro="template/macros/subportal-input">
+                     <textarea metal:fill-slot="input"
+                           tal:attributes="name fieldname;
+                                           id fieldid;
+                                           "
+                           tal:content="curval">
+                         http://www.unitracc.de
+                     </textarea>
+                 </div>
+                </tal:domains>
+
+                <tal:field2 define="varname string:team_email;
+                                    type string:email;
+                                    ">
+                <div class="field form-group"
+                     metal:define-macro="subportal-email"
+                     metal:extend-macro="template/macros/subportal-input">
+                     <div metal:fill-slot="special">
+                         <pre tal:define="pformat python:here.getAdapter('pformat')"
+                              tal:content="python:pformat(curval)"
+                              tal:condition="python:1">
+                             curval
+                         </pre>
+
+                         <a tal:define="curval python:str(curval) or None"
+                            tal:condition="curval"
+                            href="mailto:some@mail.address"
+                            tal:attributes="href string:mailto:$curval"
+                            tal:content="curval">some@mail.address</a>
+                     </div>
+                    Das tal:define muß außerhalb des metal:use-macro stehen;
+                    sonst wäre varname nicht bekannt.
+                </div>
+                </tal:field2>
+
+                <tal:field2 define="varname string:registration_from;
+                                    type string:email;
+                                    ">
+                <div class="field form-group"
+                     metal:use-macro="template/macros/subportal-email">
+                </div>
+                </tal:field2>
+
+                <tal:field2 define="varname string:registration_bcc;
+                                    type string:email;
+                                    ">
+                <div class="field form-group"
+                     metal:use-macro="template/macros/subportal-email">
+                </div>
+                </tal:field2>
+
+                <tal:field3 define="varname string:css;
+                                    label string:CSS;
+                                    ">
+                <div class="field form-group"
+                     metal:use-macro="template/macros/subportal-textarea">
+                </div>
+                </tal:field3>
+
+                <div class="field form-group"
+                     tal:define="fieldid string:js-${uid}">
+                    <label tal:attributes="for fieldid"
+                           title="js"
+                           i18n:translate="">JS</label><br/>
+                    <textarea tal:attributes="name string:${uid}.js:record;
+                                              id fieldid"
+                              tal:content="python:sp_dict.get('js','')"
+                              >foobar.js</textarea>
+                </div>
+
+
+                <div class="field form-group"
+                     tal:define="fieldid string:htmltitle-${uid}">
+                    <label tal:attributes="for fieldid"
+                           i18n:translate="">Portal title</label><br/>
+                    <input type="text" size="40"
+                           tal:attributes="name string:${uid}.portal_title:record;
+                                           id fieldid;
+                                           value python:sp_dict.get('portal_title','')"/>
+                </div>
+
+                <div class="field form-group"
+                     tal:define="fieldid string:htmlsubtitle-${uid}">
+                    <label tal:attributes="for fieldid"
+                           i18n:translate="">Portal subtitle</label><br/>
+                    <input type="text" size="40"
+                           tal:attributes="name string:${uid}.portal_subtitle:record;
+                                           id fieldid;
+                                           value python:sp_dict.get('portal_subtitle','')"/>
+                </div>
+
+                <div class="field form-group"
+                     tal:define="fieldid string:languages-${uid}">
+                    <label tal:attributes="for fieldid"
+                           i18n:translate="">Languages</label><br/>
+                    <textarea tal:attributes="name string:${uid}.languages:record;
+                                              id fieldid"
+                              tal:content="python:sp_dict.get('languages','')"
+                              >de;Deutsch</textarea>
+                </div>
+
+                <div class="field form-group"
+                     tal:define="fieldid string:logo-${uid}">
+                    <label tal:attributes="for fieldid">
+                    <strong
+                           i18n:translate="">Logo file (left)
+                           </strong>
+                           <div i18n:translate="">
+                           This is the path to the main logo of the site (the site being e.g.
+                           <span i18n:name="example">unitracc.de</span>).
+                           Leave empty to use different logos for the language variants of the
+                           subportal.
+                           </div>
+                           </label>
+                    <input type="text" size="40"
+                           tal:attributes="name string:${uid}.logo:record;
+                                           id fieldid;
+                                           value python:sp_dict.get('logo','')"/>
+                </div>
+
+                <tal:logomask define="
+                varname string:logoleft_mask;
+                label string:Mask for left logo filename;
+                description string:For experts: Python keyword comprehension;; combined with image base, see below.
+                                   Used only if no 'logo file (left)' (above) is configured.;
+                default string:logo-%(host_lang)s.jpg;
+                ">
+                <div metal:use-macro="template/macros/subportal-input">
+                </div>
+                </tal:logomask>
+
+                <div class="field form-group"
+                     tal:define="fieldid string:logoright-${uid}">
+                    <label tal:attributes="for fieldid"
+                           i18n:translate="">Logo right</label>
+                    <textarea tal:attributes="name string:${uid}.logoright:record;
+                                              id fieldid"
+                              tal:content="python:sp_dict.get('logoright','')"
+                              >de;mylogo.png;http://www.unitracc.de</textarea>
+                </div>
+
+                <tal:imgbase define="
+                varname string:imagebase;
+                label string:Image base;
+                description string:Base path for logo images which are specified without a path component;
+                default string:/;
+                ">
+                <div metal:use-macro="template/macros/subportal-input">
+                </div>
+                </tal:imgbase>
+
+                <div class="field form-group"
+                     tal:define="fieldid string:gacode-${uid}">
+                    <label tal:attributes="for fieldid"
+                           i18n:translate="">Google analytics code</label><br/>
+                    <input type="text" size="40"
+                           tal:attributes="name string:${uid}.gacode:record;
+                                           value python:sp_dict.get('gacode','');
+                                           id fieldid"/>
+                </div>
+
+                <tal:if-has-booking condition="has_booking">
+                <tal:paypal-url define="varname string:paypal_url;
+                                 label string:Paypal url;
+                                 default string:https://www.sandbox.paypal.com/de/cgi-bin/webscr;
+                                 values here/@@booking/get_paypal_urls;
+                                 ">
+                <div class="field form-group" metal:use-macro="template/macros/subportal-input">
+                    <select name="paypal_url" id="paypal_url"
+                            metal:fill-slot="input"
+                            tal:attributes="name fieldname;
+                                            id fieldid;
+                                            ">
+                        <option tal:repeat="value values"
+                                tal:attributes="selected python:value == curval"
+                                tal:content="value">
+                            https://www.sandbox.paypal.com/de/cgi/webscr
+                        </option>
+                    </select>
+                </div>
+                </tal:paypal-url>
+
+                <tal:paypal-id define="varname string:paypal_id;
+                                       label string:Paypal id;
+                                       type string:email;
+                                       ">
+                <div class="field form-group"
+                     metal:use-macro="template/macros/subportal-email">
+                    Das tal:define muß außerhalb des metal:use-macro stehen;
+                    sonst wäre varname nicht bekannt.
+                </div>
+                </tal:paypal-id>
+
+                <tal:field1 define="varname string:vat_id;
+                                    ">
+                <div class="field form-group"
+                     metal:use-macro="template/macros/subportal-input">
+                    Das tal:define muß außerhalb des metal:use-macro stehen;
+                    sonst wäre varname nicht bekannt.
+                </div>
+                </tal:field1>
+
+                <tal:field2 define="varname string:booking_email;
+                                    type string:email;
+                                    ">
+                <div class="field form-group"
+                     metal:use-macro="template/macros/subportal-email">
+                    Das tal:define muß außerhalb des metal:use-macro stehen;
+                    sonst wäre varname nicht bekannt.
+                </div>
+                </tal:field2>
+
+                <tal:field4 define="varname string:booking_iban">
+                <tal:input metal:use-macro="template/macros/subportal-input">
+                <div metal:fill-slot="description"
+                     i18n:translate=""
+                     >
+                    International Bank Account Number
+                </div>
+                </tal:input>
+                </tal:field4>
+
+                <tal:field5 define="varname string:booking_bic">
+                <tal:input metal:use-macro="template/macros/subportal-input">
+                <div metal:fill-slot="description"
+                     i18n:translate=""
+                     >
+                    Bank Identification Code
+                </div>
+                </tal:input>
+                </tal:field5>
+                </tal:if-has-booking>
+
+            </fieldset>
+            </div>
+            </tal:loop>
+
+        <input type="submit" value="Save"
+               class="btn btn-primary"
+               i18n:attributes="value label_save"/>
+        <input type="reset" class="btn btn-default">
+        </fieldset>
+
+    </form>
+
+    <fieldset tal:condition="python:items[1:]">
+        <legend i18n:translate="">Delete Subportal</legend>
+
+        <form method="post" tal:attributes="action string:${portal_url}/@@subportal/delete">
+            <div tal:repeat="item items">
+                <label tal:define="uid item/uid">
+                    <input type="radio" name="uid" value="XX"
+                           tal:attributes="value uid;
+                                           testid string:uid-${repeat/item/number};
+                                           ">
+                    <span tal:replace="item/title">Titel oder UID</span>
+                </label>
+            </div>
+
+            <input type="submit" value="Delete"
+                   class="btn btn-danger"
+                   i18n:attributes="value">
+            <input type="reset" class="btn btn-default">
+        </form>
+
+    </fieldset>
+</metal:main>
+
+</body>
+<!-- vim: set ts=8 sts=4 sw=4 si et :-->
+</html>

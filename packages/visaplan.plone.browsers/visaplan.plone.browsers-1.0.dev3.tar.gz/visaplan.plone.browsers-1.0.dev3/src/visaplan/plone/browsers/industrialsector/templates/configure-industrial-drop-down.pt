@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+<body>
+
+<metal:main fill-slot="main"
+            tal:define="industrialsector nocall:here/@@industrialsector;
+                        dummy python:here.getAdapter('authorized')('Manage portal');
+                        dict_ industrialsector/getConfigure">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="">
+        Konfiguration Know-How Bereich
+    </h1>
+
+    <p class="documentDescription">
+    </p>
+
+    <form method="post" tal:attributes="action string:${portal_url}/@@industrialsector/setConfigure">
+        <label i18n:translate="">Hauptpunkte</label><br/>
+        <metal:block metal:define-macro="help">
+            <div class="formHelp">Bitte geben sie die Eintr&auml;ge in folgendem Format ein code@@Titel Beispiel: PB@@Planung und Bemessung.
+                                  Bitte schreiben sie jeden Eintrag in eine neue Zeile.</div>
+        </metal:block>
+        <textarea rows="10" name="relationships"><tal:block tal:content="python:industrialsector.getConfigure().get('relationships','')"/></textarea>
+        <br/>
+
+        <fieldset tal:condition="industrialsector/getConfigure">
+            <legend>Hauptpunkt umbenennen</legend>
+        <div>
+            <label>Von:</label><br/>
+            <select name="changeFrom">
+                <option value=""
+                        i18n:translate="">Please select</option>
+                <tal:block tal:repeat="value python:dict_.get('relationships','').split('\r\n')">
+                    <option tal:attributes="value value"
+                            tal:content="value"/>
+                </tal:block>
+            </select>
+        </div>
+        <br/>
+        <div>
+            <label>Nach:</label><br/>
+            <input type="text" name="changeTo"/>
+        </div>
+        </fieldset>
+
+        <tal:block tal:repeat="relationship python:dict_.get('relationships','').split('\r\n')">
+            <fieldset tal:condition="relationship">
+                <legend>Unterpunkte f&uuml;r <tal:block tal:content="relationship"/></legend>
+                <div class="field">
+                    <label>Unterpunkte</label><br/>
+                    <metal:block metal:use-macro="here/configure-industrial-drop-down/macros/help"/>
+                    <textarea rows="10"
+                              tal:attributes="name string:${relationship}.sublevel:record"><tal:block tal:content="python:dict_.get(relationship,{}).get('sublevel','')"/></textarea>
+                </div>
+            </fieldset>
+        </tal:block>
+
+        <input type="submit" value="Save"
+               i18n:attributes="value label_save"/>
+
+    </form>
+
+</metal:main>
+
+</body>
+</html>

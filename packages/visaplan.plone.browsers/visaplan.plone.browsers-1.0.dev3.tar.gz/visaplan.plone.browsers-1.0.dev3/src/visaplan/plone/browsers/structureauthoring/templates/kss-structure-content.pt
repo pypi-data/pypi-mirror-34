@@ -1,0 +1,61 @@
+<tal:block tal:define="uid request/form/uid | here/UID;
+                       rc python:context.getAdapter('rc')();
+                       here python:rc.lookupObject(uid);
+                       presentation nocall:here/@@presentation;
+                       isAnon python:here.getAdapter('isanon')();
+                       isPresentationPage presentation/isPresentationPage;
+                       pt python:here.portal_type;
+                       not_a_folder python: pt != 'Folder';
+                       editable not_a_folder;
+                       "
+           i18n:domain="plone">
+
+    <div id="ppt"
+         tal:condition="isPresentationPage">
+        <div id="slideContent">
+            <metal:block metal:use-macro="here/ppt_preview/macros/folder"/>
+            <tal:block tal:condition="not_a_folder">
+                <tal:block tal:define="template python:here and here.unrestrictedTraverse('kss-ppt-document-view',None) or None;">
+            <div tal:condition="python: 1 or editable">
+                <button i18n:translate=""
+                        onclick="load_editor(this, 'abcd123')"
+                        disabled="disabled"
+                        class="btn btn-default"
+                        tal:define="onclick string:load_editor(this, '$uid');
+                        "
+                        tal:attributes="onclick python:editable and onclick or None;
+                                        disabled not:editable;
+                                        "
+                        metal:define-macro="edit-button">
+                    Edit
+                </button>
+            </div>
+                    <metal:block metal:use-macro="template/macros/main"/>
+                </tal:block>
+            </tal:block>
+        </div>
+    </div>
+
+    <div id="region-content" class="documentContent"
+         tal:condition="not:isPresentationPage">
+        <tal:nsp define="dict_ here/@@structureauthoring/getDefaultView;
+                         here nocall:dict_/context;
+                         buttonmac template/macros/edit-button;
+                         template nocall:dict_/template;
+                         booknav python:0;
+                         uid here/UID;
+                         ">
+        <div tal:condition="python: 1 or editable">
+            <button metal:use-macro="buttonmac"
+                    >
+                Edit
+            </button>
+        </div>
+        <div tal:attributes="id string:div---${uid};
+                             class python:editable and 'edit-content structureInlineEditable' or '';
+                             ">
+            <metal:block metal:use-macro="template/macros/main"/>
+        </div>
+        </tal:nsp>
+    </div>
+</tal:block>

@@ -1,0 +1,28 @@
+<metal:block metal:define-macro="main"
+             tal:define="stage nocall:here/@@stage;
+                         transform nocall:here/@@transform"
+             i18n:domain="plone">
+
+    <div class="edit-content structureInlineEditable"
+         tal:attributes="id string:div---${here/UID}">
+
+        <h1 class="documentFirstHeading"
+            tal:content="structure here/Title"/>
+
+        <p class="documentDescription"
+           tal:condition="here/Description"
+           tal:content="here/Description"/>
+        <div tal:content="structure python:transform.get(here.getText())"/>
+
+    </div>
+
+    <div class="pageNotes"
+         tal:define="notes here/getNotes"
+         tal:condition="notes">
+
+        <h2 i18n:translate="">additional information</h2>
+        <p tal:content="structure notes"/>
+
+    </div>
+
+</metal:block>

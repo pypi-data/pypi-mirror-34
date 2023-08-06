@@ -1,0 +1,90 @@
+<tal:block tal:define="dummy python:request.set('span_class', 'col-md-9')">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:no-ads fill-slot="column_two_slot"/>
+    <metal:no-ads fill-slot="ad-block-above-content"/>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border', 1)" />
+
+    <metal:block fill-slot="head_slot">
+        <script type="text/javascript"
+                src="/++resource++unitracccourse/course_view.js"></script>
+    </metal:block>
+
+<body>
+    <!-- Fülle Breadcrumbs -->
+    <metal:block fill-slot="breadcrumb">
+        <metal:block metal:use-macro="here/crumbs/macros/main"/>
+    </metal:block>
+
+    <!-- Fülle Navigation -->
+    <metal:block metal:fill-slot="column_one_slot">
+        <div class="content-region-1 col-md-3">
+            <div id="kss-book-navigation"
+                 i18n:domain="plone">
+
+                <div id="portlet-book-navigation">
+                    <div class="header"
+                         i18n:translate="">
+                        Table of Contents
+                    </div>
+                    <div class="portlet-body" id="course-navigation"
+                         tal:define="unitracccourse nocall:here/@@unitracccourse;
+                                     first unitracccourse/get_first;
+                                     ">
+                    <tal:if-has-first condition="first">
+                    <tal:show-first define="
+                                     uid first/uid_object">
+                        <metal:block metal:use-macro="here/js-course-navigation/macros/main"/>
+                    </tal:show-first>
+                    </tal:if-has-first>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </metal:block>
+
+    <!-- Fülle Inhalt -->
+    <metal:main fill-slot="main">
+        <div class="area-content">
+            <div class="row">
+                <tal:main-macro metal:define-macro="main"
+                                tal:define="unitracccourse nocall:here/@@unitracccourse;
+                                    first unitracccourse/get_first;
+                                     ">
+                    <tal:if-has-first condition="first">
+                    <tal:show-first define="
+                                    uid first/uid_object;
+                                    next python:unitracccourse.element_item_info(here.UID(), first['uid_next'])">
+
+
+
+                    <metal:block metal:use-macro="here/js-course-content/macros/main">
+<!-- (gf:)
+../resource/course_view.js
+./js-course-content.pt
+../../../skins/unitracc_templates/unitracccourse_view.pt
+-->
+                    </metal:block>
+                    </tal:show-first>
+                    </tal:if-has-first>
+                    <tal:if-no-first condition="not:first">
+                    Erste Seite nicht gefunden!
+                    </tal:if-no-first>
+
+
+                </tal:main-macro>
+            </div>
+        </div>
+    </metal:main>
+
+</body>
+</html>
+</tal:block>

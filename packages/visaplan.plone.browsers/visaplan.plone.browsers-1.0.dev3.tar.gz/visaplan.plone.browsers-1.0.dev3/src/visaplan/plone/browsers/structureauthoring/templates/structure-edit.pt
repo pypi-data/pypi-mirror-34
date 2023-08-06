@@ -1,0 +1,104 @@
+<metal:block use-macro="here/global_defines/macros/defines"></metal:block>
+<!DOCTYPE html>
+<html lang="en"
+      tal:define="isPresentationPage here/@@presentation/isPresentationPage;
+                  lang python:context.getAdapter('language')();
+                  pu here/portal_url;
+                  subportal nocall:here/@@subportal;
+                  "
+      tal:attributes="lang lang;
+                      xml:lang lang"><tal:cache tal:define="charset site_properties/default_charset|string:utf-8"><metal:cache use-macro="here/global_cache_settings/macros/cacheheaders">
+      Get the global cache headers located in global_cache_settings.</metal:cache></tal:cache>
+
+<head>
+
+    <base tal:attributes="href context/@@plone/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    <tal:block tal:content="structure here/rr-js"/>
+    <tal:block tal:content="structure here/rr-css"/>
+
+
+    <script type="text/javascript"
+            tal:attributes="src string:$pu/++resource++structureauthoring/structureauthoring.js"></script>
+    <link rel="stylesheet" type="text/css" tal:attributes="href string:$pu/++resource++structureauthoring/structureauthoring.css"/>
+
+    <tal:block tal:condition="isPresentationPage">
+        <tal:block tal:define="pptCssPrefix python:context.getAdapter('quote')('#ppt ')">
+            <metal:block metal:use-macro="here/ppt_preview/macros/head"/>
+        </tal:block>
+    </tal:block>
+
+    <metal:block metal:use-macro="here/main_template/macros/mathjax"/>
+
+</head>
+
+<body tal:define="dummy here/@@tpcheck/auth_modify_portal_content;
+                  uid here/UID;
+                  brain here/getHereAsBrain;
+                  unitracctype nocall:here/@@unitracctype;
+                  pc python:context.getAdapter('pc')()"
+      i18n:domain="plone">
+
+    <!-- Dummy form do not remove-->
+    <form method="post" action="#" id="filter-post">
+        <input type="hidden" value="" name="uid" id="uid"/>
+        <input type="hidden" name="presentation" id="presentation"
+               tal:attributes="value isPresentationPage"/>
+    </form>
+
+    <!-- Head -->
+    <div class="row structure-edit-head">
+        <div class="col-md-6">
+            <a id="logo-link-1"
+               tal:attributes="href here/portal_url">
+                <img alt=""
+                     tal:attributes="src string:$pu/${subportal/getLogo}"/>
+            </a>
+        </div>
+        <div class="col-md-6 text-align-right">
+            <tal:block tal:define="image_right_info subportal/get_image_right_info">
+                <a id="logo-link-2" target="_blank"
+                   tal:condition="image_right_info"
+                   tal:attributes="href image_right_info/url">
+                    <img alt=""
+                         tal:attributes="src string:$pu/${image_right_info/image_id}"/>
+                </a>
+            </tal:block>
+        </div>
+        <div class="col-md-12 header-region-3">
+            <div class="navbar-inner">
+                <div class="title" tal:content="here/Title">
+                    Titel der Struktur
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="row">
+        <!-- Navigation -->
+        <div class="col-md-4 structure-edit-navigation">
+            <div class="top-point">
+                <span class="level0 parent-click"
+                      tal:attributes="id string:parent---${here/UID}">
+                    <tal:block tal:content="python:unitracctype.getTitle(brain)"
+                               i18n:translate="">
+                        Vortrag
+                    </tal:block>
+                </span>
+            </div>
+            <span tal:attributes="id string:span---${here/UID}" id="structure-navigation" class="open click-1001">
+                <metal:block metal:use-macro="here/kss-presentation-level/macros/main"/>
+            </span>
+        </div>
+        <!-- Page content -->
+        <div class="col-md-8 structure-edit-content">
+            <div id="kss-structure-content">
+            <tal:comment replace="nothing"><!-- (gf:)
+                ./kss-structure-content.pt
+                ./kss-slide-edit.pt
+            --></tal:comment>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

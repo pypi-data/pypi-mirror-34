@@ -1,0 +1,482 @@
+<metal:block metal:define-macro="main"
+i18n:domain="plone"><tal:comment replace="nothing"><!--
+
+js-presentation-page: Verwendung durch ./course_ppt_view.pt
+
+Bitte synchron halten mit
+../../presentation/templates/kss-presentation-page.pt
+
+Siehe auch:
+../../presentation/browser.py
+../../unitracccourse/browser.py
+
+Die Ermittlung der UID (sofern per Request-Variable uid im Query-String übergeben)
+erfolgt hier per ...get_uid, um eine Fehlfunktionen bei Klick auf ein Suchergebnis
+bei Suche direkt nach Öffnen des Kurses zu beheben.
+(vorerst wieder deaktiviert, wg. Problem bei Baumnavigation!)
+
+Die folgende Zeile würde zu Fehlern in der Baumnavigation führen
+(Aufruf einer Lektionsseite, z. B. uid=2):
+  uid python:unitracccourse.get_uid() or uid;
+
+Daher:
+  uid python:request.form.get('uid') or uid;
+
+--></tal:comment><tal:ns define="
+portal_url here/portal_url;
+getAdapter python:here.getAdapter;
+lang python:getAdapter('langcode')();
+presentation nocall:here/@@presentation;
+help python:presentation.getHelp(lang);
+isViewTemplate python:True;
+checkperm python:getAdapter('checkperm');
+course nocall:here;
+isanon python:getAdapter('isanon')();
+unitracccourse nocall:here/@@unitracccourse;
+industrialsector nocall:here/@@industrialsector;
+coursestatistics nocall:here/@@coursestatistics;
+rc python:getAdapter('rc')();
+uid python:request.form.get('uid') or uid;
+here_uid here/UID;
+course_title here/Title;
+current python:unitracccourse.element_item_info(here_uid, uid);
+parent python:unitracccourse.get_current_parent(here_uid, current);
+lesson python:unitracccourse.get_current_lesson(here_uid, current);
+portal_type current/portal_type;
+current_uid current/uid_object;
+rnext_uid request/form/next | first/uid_object | nothing;
+current_info python:unitracccourse.get_prev_and_next(current_uid);
+next current_info/next;
+previous current_info/prev|nothing;
+first unitracccourse/get_first;
+last unitracccourse/get_last;
+here python:rc.lookupObject(uid) or here;
+dummy python:request.set('tooltip_divs', 'false');
+transform nocall:here/@@transform;
+templateId here/getDefaultLayout | nothing;
+template python:here and here.unrestrictedTraverse(templateId, None) or None;
+page_count unitracccourse/get_course_page_count;
+item_position python:unitracccourse.get_item_position(current);
+stats python:not isanon and coursestatistics.set(here_uid, current_uid, item_position, page_count, 'course_ppt_view') or None;
+stage nocall:here/@@stage;
+here_url here/absolute_url;
+desktop_path here/@@unitraccfeature/desktop_path;
+"
+tal:condition="nocall:here">
+
+<form method="post" action="#" id="pptuid" name="pptuid">
+    <input type="hidden" id="uid"
+           tal:attributes="value current_uid"/>
+</form>
+<div id="wrapper-ppt-main-center">
+    <div id="wrapper-ppt-main">
+        <div id="ppt-main">
+            <!-- Headline -->
+            <div id="ppt-head">
+                <div id="ppt-head-title"
+                     tal:define="txt course_title;
+                                 limit python:70;
+                                 cut python:len(txt) &gt; limit;
+                                 ">
+                    <h1 tal:condition="cut"
+                        tal:content="python:txt[:limit]+'...'"/>
+                    <h1 tal:condition="not:cut"
+                        tal:content="txt"/>
+                </div>
+                <input type="hidden" id="history_manipulating"
+                       tal:attributes="value uid"/>
+                <div id="ppt-head-logo">
+                    <img class="ppt-head-logo-element" src="/++resource++unitracc-images/logo-unitracc.png"/>
+                    <ul id="ppt-head-navi"
+                        >
+                        <li class="ppt-head-navi-element"><span class="ppt-head-navi-button" href="#"></span>
+                            <ul>
+                                <li><a href="#"
+                                       tal:attributes="href portal_url"
+                                       i18n:translate=""
+                                       >Home</a></li>
+                                <li><a href="#"
+                                       tal:attributes="href string:${portal_url}$desktop_path"
+                                       i18n:translate=""
+                                       >myUNITRACC</a></li>
+                                <li><a href="#"
+                                       tal:attributes="href string:${course/absolute_url}/course_view?uid=${uid}"
+                                       i18n:translate="">switch to platform mode</a></li>
+                                <li tal:condition="python:checkperm('Modify portal content') and uid not in ['1','2','3','4','5','6','7','8','9','10']">
+                                    <a href="#"
+                                       target="_blank"
+                                       tal:attributes="href string:/@@resolveuid/${uid}/edit"
+                                       i18n:translate="">Edit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <div id="toggle" i18n:domain="plone">
+                <div id="ppt-content-directory">
+                    <div class="header">
+                        <h2 i18n:translate="">Table of Contents</h2>
+                    </div>
+                    <div id="portlet-book-navigation"
+                         tal:define="uid first/uid_object;
+                         here nocall:course"
+                         >
+                        <metal:block metal:use-macro="here/js-course-navigation_ppt/macros/main">
+                        gf: ./js-course-navigation_ppt.pt
+                        </metal:block>
+                    </div>
+                </div>
+                <div id="ppt-main-navi-directory">
+                </div>
+            </div>
+            <!-- Content -->
+            <div id="ppt-content">
+                <div id="ppt-content-body">
+                    <h2 tal:content="python:lesson['title']">
+                    Titel der Lektion
+                    </h2>
+                    <div id="kss-presentation-content">
+                        <tal:block tal:content="structure python:unitracccourse.get_content('js-presentation-', current)"
+                        >
+                        Z. B. Aufruf von ./js-presentation-document.pt, zur Darstellung des Inhalts
+                        </tal:block>
+                    </div>
+                </div>
+
+                <!-- Footnavigation -->
+                <div id="ppt-main-navi">
+                    <div id="ppt-main-navi-first">
+                        <img src="/++resource++unitracc-images/icon-directory-out.png"
+                             onclick="javascript:table_of_content()"
+                             onmouseout="this.src='/++resource++unitracc-images/icon-directory-out.png'"
+                             onmouseover="this.src='/++resource++unitracc-images/icon-directory-out-active.png'"
+                             title="table of contents"
+                             i18n:attributes="title"
+                             />
+
+                        <a class="course-ppt-page"
+                        tal:attributes="href string:${course/absolute_url}/course_ppt_view?uid=${parent/uid_object};
+                                       rel string:rel-${parent/uid_object};
+                                       next parent/uid_next | nothing;
+                                       prev parent/uid_prev | nothing">
+                        <img class="presentation-agenda"
+                             src="/++resource++unitracc-images/icon-directory-list.png"
+                             onmouseout="this.src='/++resource++unitracc-images/icon-directory-list.png'"
+                             onmouseover="this.src='/++resource++unitracc-images/icon-directory-list-active.png'"
+                             title="list view"
+                             i18n:attributes="title"
+                             /></a>
+                        <a href="#"
+                        tal:attributes="rel string:rel-${current/uid_object};
+                                       next current/uid_next | nothing;
+                                       prev current/uid_prev | nothing">
+                        <img class="presentation-galleries"
+                             src="/++resource++unitracc-images/icon-directory-foils.png"
+                             onmouseout="this.src='/++resource++unitracc-images/icon-directory-foils.png'"
+                             onmouseover="this.src='/++resource++unitracc-images/icon-directory-foils-active.png'"
+                             tal:define="rel next/current/UID | nothing"
+                             tal:attributes="rel string:uid-${rel}"
+                             title="overview pages"
+                             i18n:attributes="title"
+                             /></a>
+                    </div>
+                    <div id="ppt-main-navi-center">
+                        <!-- Prev -->
+                        <a tal:define="uid previous/uid_object | nothing"
+                           tal:attributes="href string:${course/absolute_url}/course_ppt_view?uid=${uid};
+                                           rel string:rel-${uid};
+                                           next previous/uid_next | nothing;
+                                           prev previous/uid_prev | nothing"
+                           tal:condition="nocall:previous" class="course-ppt-page"
+                           ><img
+                            onmouseout="this.src='/++resource++unitracc-images/icon-backward.png'"
+                            onmouseover="this.src='/++resource++unitracc-images/icon-backward-active.png'"
+                            src="/++resource++unitracc-images/icon-backward.png"
+                            title="previous page"
+                            i18n:attributes="title"
+                         /></a>
+                         <img tal:condition="nocall:not:previous" src="/++resource++unitracc-images/icon-backward.png"
+                         />
+                         <!-- Pages -->
+                         <span id="learningprogress" style="cursor:pointer;">
+                             <form name="form_go_to" id="form_go_to"
+                                   action="/@@unitracccourse/go_to">
+
+                                <input type="hidden" name="uid" id="cuid"
+                                  tal:attributes="value here_uid"/>
+                                <input type="hidden" value="course_ppt_view"
+                                    name="view"/>
+
+                                <input id="goto"
+                                    size="3" type="text"
+                                    class="input-mini text-right" name="page"
+                                    tal:attributes="value item_position"/>
+
+                                <input type="submit" value="Go to"
+                                    class="btn btn-default"
+                                    i18n:attributes="value"/>
+
+                            </form>/
+                            <tal:txt content="page_count">
+                            394
+                            </tal:txt>
+                        </span>
+                        <!-- next -->
+                        <a class="course-ppt-page"
+                           tal:define="uid next/uid_object | nothing"
+                           tal:attributes="href string:${course/absolute_url}/course_ppt_view?uid=${uid};
+                                       rel string:apage-${uid};
+                                       next next/uid_next | nothing;
+                                       prev next/uid_prev | nothing"
+
+                           tal:condition="nocall:next" class="course-ppt-page">
+                            <img onmouseout="this.src='/++resource++unitracc-images/icon-forward.png'"
+                                 onmouseover="this.src='/++resource++unitracc-images/icon-forward-active.png'"
+                                 src="/++resource++unitracc-images/icon-forward.png"
+                                 title="next page"
+                                 i18n:attributes="title"
+                                 />
+                        </a>
+                        <img src="/++resource++unitracc-images/icon-forward.png"
+                             tal:condition="nocall:not:next"/>
+                    </div>
+
+                    <div id="ppt-main-navi-last">
+
+                        <!-- Search -->
+                        <a href="#" id="search" class="btn btn-default"
+                           title="search"
+                           i18n:attributes="title"
+                           >
+                            <i class="glyphicon glyphicon-search">
+                        </i></a>
+
+                        <div id="searchform" style="display:none;">
+                            <form action="@@unitraccsearch/search_in_structures">
+
+                                <input type="hidden" name="uid"
+                                    tal:attributes="value here_uid" />
+
+                                <input type="hidden" name="portal_type"
+                                       value="course"/>
+
+                                <tal:comment replace="nothing"><!--
+                                ../../unitraccsearch/browser.py  ("search_in_structures")
+
+                                Anzeige-Template für Hyperlinks der Suchergebnisseite:
+                                --></tal:comment>
+                                <input type="hidden" name="template_id"
+                                       value="course_ppt_view"
+                                       tal:define="template_id template_id | nothing"
+                                       tal:condition="template_id"
+                                       tal:attributes="value template_id"/>
+
+                                <div class="input-group">
+                                    <input id="appendedInputButton"
+                                        placeholder="Search in Course"
+                                        i18n:attributes="placeholder"
+                                        type="text"
+                                        name="SearchableText"/>
+                                    <button class="btn btn-default btn-search" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                        <tal:block i18n:translate="label_search">
+                                        Search
+                                        </tal:block>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Notes-->
+                        <tal:block tal:define="notes python:here.portal_type=='Document' and str(here.getAdapter('rawbyname')('notes')).strip() or ''">
+                            <img id="notes" class="jqModalTrigger"
+                                 onmouseout="this.src='/++resource++unitracc-images/icon-note.png'"
+                                 onmouseover="this.src='/++resource++unitracc-images/icon-note-active.png'"
+                                 onclick="$('#jqModalWindowNote').jqmShow()" src="/++resource++unitracc-images/icon-note.png"
+                                 title="additional information"
+                                 i18n:attributes="title"
+                                 tal:condition="notes"/>
+                            <img src="/++resource++unitracc-images/icon-note-active.png"
+                                 tal:condition="not:notes"/>
+                            <div id="jqModalWindowNote" class="jqmWindow" style="z-index: 3000; display: none;"
+                                 tal:content="structure python:transform.get(notes)"
+                                 i18n:translate=""/>
+                        </tal:block>
+
+                        <!-- Help -->
+                        <img onmouseout="this.src='/++resource++unitracc-images/icon-help.png'"
+                             onmouseover="this.src='/++resource++unitracc-images/icon-help-active.png'"
+                             src="/++resource++unitracc-images/icon-help.png"
+                             title="help"
+                             i18n:attributes="title"
+                             onclick="$('#jqModalWindowHelp').jqmShow()">
+                        </div>
+                        <!-- content -->
+                        <div id="jqModalWindowHelp" class="jqmWindow" style="z-index: 3000; display: none;"
+                             i18n:translate="">
+                            <h2 tal:content="structure help/getRawTitle">Hier ist der Titel</h2>
+                            <div tal:content="structure help/getText" style="text-align:left;">
+                                Hier ist Text Drin.
+                            </div>
+
+                        </div>
+
+                    <div id="jqModalWindowResult" class="jqmWindow"
+                         style="z-index: 3000; display: none;">
+                        <div class="ppt-area-close pull-right">
+                            <a href="#" class="close-jqm">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </a>
+                        </div>
+
+                        <div class="jqmResultContent">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id="ppt-footer">
+                <metal:m1 use-macro="here/main_template/macros/disclaimer">
+                    <p>© 2015 visaplan GmbH, ein Unternehmen der Prof. Dr. Ing. Stein &amp; Partner GmbH</p>
+                    <ul>
+                        <li><a href="#">Datenschutzhinweis</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </metal:m1>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tooltipsy" style="display:none"
+     tal:condition="stats"
+     tal:on-error="string:">
+    <div class="progress-indicator">
+        <div class="progressbar-tooltip">
+            <h3 i18n:translate="learningprogress">
+                Learning progress
+            </h3>
+            <div class="progress">
+                <div class="bar-value"
+                     tal:content="string: ${stats/percent}%">42.0%</div>
+                <div class="bar"
+                     tal:attributes="style string: width:${stats/percent}%"></div>
+            </div>
+            <p>
+                <span i18n:translate="Actual Slide:">
+                Current slide:
+                </span>
+                <strong tal:content="item_position">39</strong>
+            </p>
+            <p>
+            <span i18n:translate="Maximum Slide:">
+                    Maximum slide:
+            </span>
+            <strong><tal:block tal:on-error="string:0"
+                               tal:content="stats/max_page_nr">42</tal:block>/<tal:block tal:content="page_count">790</tal:block></strong>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var learntooltip = $('#learningprogress').tooltipsy({
+        offset: [0,-18],
+        content: $('#tooltipsy').html()
+        })
+
+    $().ready(function () {
+        $('#jqModalWindowNote').jqm();
+        $('#jqModalWindowHelp').jqm();
+        $('#jqModalWindowResult').jqm();
+
+        search_visible = false;
+        // Such overlay
+        $('.close-jqm').click(function (e) {
+            e.preventDefault();
+            $('#jqModalWindowResult').jqmHide();
+        });
+
+        // Suchfeld einblenden
+        $('#search').click(function (event) {
+            event.preventDefault();
+            if (!search_visible) {
+                $('#searchform').show();
+                $('#appendedInputButton').focus();
+                search_visible = true;
+            } else {
+                $('#searchform').hide();
+                search_visible = false;
+            }
+        });
+
+        // Suche ausführen
+        $('.btn-search').click(function (event) {
+            event.preventDefault();
+
+            url = $('#searchform form').attr('action');
+            data = {};
+            $.each($('#searchform form input'), function (i, o) {
+                name = $(o).attr('name');
+                value = $(o).val();
+                data[name] = value;
+            });
+            $.get(url, data
+            ).done(function (result) {
+                $('.jqmResultContent').html(result);
+                $('#jqModalWindowResult').jqmShow();
+                $('.jqmResultContent a').click(function (e) {
+                    e.preventDefault();
+                    var url = $(e.target).attr('href'),
+                        uid = url.replace(/^.*uid=([0-9a-f]+)$/, '$1'),
+                    data = {'uid': uid};
+/*
+                    if (! uid) {
+                        alert('URL '+url+' enthaelt keine UID! ('+uid+')');
+                    }
+*/
+                    manage_history(url);
+                    handle_page_switch(data);
+                    handle_navigation(data);
+                });
+            }
+            ).error(function (jqXHR, exception) {
+// https://stackoverflow.com/a/14563181/1051649
+	        var msg = 'Unknown error';
+		if (jqXHR.status === 0) {
+		    msg = 'Not connect.\n Verify Network.';
+		} else if (jqXHR.status == 404) {
+		    msg = 'Requested page not found. [404]';
+		} else if (jqXHR.status == 500) {
+		    msg = 'Internal Server Error [500].';
+		} else if (exception === 'parsererror') {
+		    msg = 'Requested JSON parse failed.';
+		} else if (exception === 'timeout') {
+		    msg = 'Time out error.';
+		} else if (exception === 'abort') {
+		    msg = 'Ajax request aborted.';
+		} else {
+		    msg = 'Uncaught Error.\n' + jqXHR.responseText;
+		}
+		//$('#post').html(msg);
+                alert(msg)
+            });
+        });
+        $('#form_go_to :submit').hide();
+        /* Springe auf Seite */
+        $('#goto').keypress(function (event) {
+            key = event.keyCode || event.which;
+            if (parseInt(key) == 13) {
+                event.preventDefault();
+                go_to_page();
+                return false;
+            }
+        });
+    });
+
+</script>
+<tal:block tal:content="structure here/@@subportal/get_analytics"/>
+</tal:ns>
+</metal:block>

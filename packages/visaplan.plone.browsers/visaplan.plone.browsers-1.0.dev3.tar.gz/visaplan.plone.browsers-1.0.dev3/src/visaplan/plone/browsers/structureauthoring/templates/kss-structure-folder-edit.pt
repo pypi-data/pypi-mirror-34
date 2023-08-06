@@ -1,0 +1,61 @@
+<metal:block use-macro="here/global_defines/macros/defines" />
+<tal:block tal:define="view context/@@at_base_edit_view;
+                       schematas here/Schemata;
+                       allow_tabbing python: not view.isMultiPageSchema();
+                       gTSL python:view.getTranslatedSchemaLabel;
+                       fieldsets python:[key for key in schematas.keys() if (schematas[key].editableFields(here, visible_only=True))];
+                       sole_fieldset python:len(fieldsets) == 1;
+                       portal python:context.getAdapter('portal')();
+                       errors python:{};
+                       "
+           i18n:domain="plone">
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            $('.nav-tabs a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+    </script>
+    <div id="tabs" class="tabbable" data-tabs="tabs">
+        <ul class="nav nav-tabs">
+            <li tal:repeat="fieldset fieldsets"
+                tal:attributes="class python:repeat['fieldset'].start and 'active' or None">
+            <a href="#tab1"
+                tal:define="first repeat/fieldset/start"
+                tal:attributes="href string:#tab${repeat/fieldset/number}"
+                tal:content="python: gTSL(fieldset)"
+                >Standard
+            </a>
+            </li>
+        </ul>
+    </div>
+
+    <form id="edit-form" method="post" action="#">
+        <div class="tab-content">
+            <div class="tab-pane"
+                 tal:repeat="fieldset fieldsets"
+                 tal:attributes="id string:tab${repeat/fieldset/number};
+                                 class python:path('repeat/fieldset/start') and 'tab-pane active' or 'tab-pane';
+                                 ">
+                <fieldset tal:attributes="id string:fieldset-${fieldset}"
+                          tal:omit-tag="sole_fieldset">
+                    <legend id="fieldsetlegend-xy"
+                            tal:content="python: gTSL(fieldset)"
+                            tal:attributes="id string:fieldsetlegend-${fieldset}"
+                            tal:condition="not:sole_fieldset">
+                        Standard
+                    </legend>
+                    <tal:fields repeat="field python:schematas[fieldset].editableFields(here, visible_only=True)">
+                        <metal:fieldMacro use-macro="python:here.widget(field.getName(), mode='edit')" />
+                    </tal:fields>
+                </fieldset>
+            </div>
+
+            <metal:block metal:use-macro="here/kss-slide-edit/buttons"/>
+
+        </div>
+    </form>
+
+</tal:block>

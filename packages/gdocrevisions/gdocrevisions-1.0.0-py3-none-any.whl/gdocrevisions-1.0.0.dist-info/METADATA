@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: gdocrevisions
+Version: 1.0.0
+Summary: Package for downloading and analyzing google doc revision history data.
+Home-page: https://github.com/harvard-vpal/gdocrevisions
+Author: Andrew Ang
+Author-email: andrew_ang@harvard.edu
+License: MIT
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: future (==0.16.0)
+Requires-Dist: google-api-python-client (==1.6.6)
+Requires-Dist: google-auth (==1.4.1)
+Requires-Dist: google-auth-httplib2 (==0.0.3)
+Requires-Dist: requests (==2.18.1)
+
+UNKNOWN
+
+

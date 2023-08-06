@@ -1,0 +1,3 @@
+[console_scripts]
+flippy = flippy.__main__:main
+

@@ -1,0 +1,11 @@
+README.md
+setup.py
+igemwikiscraper/__init__.py
+igemwikiscraper/__main__.py
+igemwikiscraper/scraper.py
+igemwikiscraper.egg-info/PKG-INFO
+igemwikiscraper.egg-info/SOURCES.txt
+igemwikiscraper.egg-info/dependency_links.txt
+igemwikiscraper.egg-info/entry_points.txt
+igemwikiscraper.egg-info/requires.txt
+igemwikiscraper.egg-info/top_level.txt

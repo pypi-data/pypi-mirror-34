@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+alias errcho='>&2 echo'
+
+{%- if mali_data_b64 %}
+    mkdir -p ~/.MissingLinkAI
+    echo "{{ mali_data_b64 }}" | base64 -d > ~/.MissingLinkAI/{{ mali_file_name }}
+{%- endif %}
+
+{%- if ssh_identity_b64 %}
+    mkdir -p ~/.ssh
+    echo "{{ ssh_identity_b64 }}" | base64 -d > ~/.ssh/id_rsa
+    chmod 600 ~/.ssh/id_rsa
+    echo "{{ ssh_identity_pub_b64 }}" | base64 -d > ~/.ssh/id_rsa.pub
+    echo "Skipping StrictHostKeyChecking" > ~/.ssh/config
+    echo "Host *" > ~/.ssh/config
+    echo "   StrictHostKeyChecking=no" >> ~/.ssh/config
+    echo "   IdentityFile=$HOME/.ssh/id_rsa"  >> ~/.ssh/config
+{%- endif %}

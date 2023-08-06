@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyinsar
+Version: 0.0.5
+Summary: Package of InSAR utilities
+Home-page: UNKNOWN
+Author: MITHAGI
+Author-email: skdaccess@mit.edu
+License: UNKNOWN
+Description: <p align="left">
+          <img alt="PyInSAR" src="https://github.com/MITeaps/pyinsar/raw/master/docs/images/pyinsar_logo315x83.png"/>
+        </p>
+        
+        - Data Tools for Interferometric Synthetic-Aperture Radar Satellite Data
+        
+        ### Introduction
+        
+        PyINSAR contains many tools for working InSAR.
+        
+        ### Install
+        PyInSAR requires OpenCV. To install OpenCV with anaconda use:
+        ```
+        conda install opencv
+        ```
+        
+        PyInSAR can then be installed via pip:
+        ```
+        pip install pyinsar
+        ```
+        
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown

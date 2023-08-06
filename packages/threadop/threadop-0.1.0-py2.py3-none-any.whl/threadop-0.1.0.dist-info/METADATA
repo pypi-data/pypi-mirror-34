@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: threadop
+Version: 0.1.0
+Summary: Adds a threading operator to Python.
+Home-page: UNKNOWN
+License: BSD-3-Clause
+Author: Bogdan Popa
+Author-email: popa.bogdanp@gmail.com
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

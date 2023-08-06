@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pycedar
+Version: 0.0.4
+Summary: Python binding of cedar (implementation of efficiently-updatable double-array trie) using Cython
+Home-page: https://github.com/akivajp/pycedar
+Author: Akiva Miura
+Author-email: akiva.miura@gmail.com
+License: GPLv2, GPLv2.1 and BSD
+Platform: UNKNOWN
+
+UNKNOWN
+
+

@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+quick_email/__init__.py
+quick_email/builder.py
+quick_email/sender.py
+quick_email.egg-info/PKG-INFO
+quick_email.egg-info/SOURCES.txt
+quick_email.egg-info/dependency_links.txt
+quick_email.egg-info/requires.txt
+quick_email.egg-info/top_level.txt

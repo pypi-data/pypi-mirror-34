@@ -1,0 +1,35 @@
+======================
+ironic-staging-drivers
+======================
+
+.. _ironic-staging-drivers_0.10.0:
+
+0.10.0
+======
+
+.. _ironic-staging-drivers_0.10.0_Upgrade Notes:
+
+Upgrade Notes
+-------------
+
+.. releasenotes/notes/classic-drivers-removal-cd39f4bf843a381c.yaml @ f3c9cab07fc938d46413da507a7f8705afa4791b
+
+- The following deprecated classic drivers have been removed:
+  
+  * fake_wol_fake
+  * pxe_wol_iscsi
+  * pxe_wol_agent
+  * agent_ipmitool_nm
+  * fake_nm
+  * fake_amt_fake
+  * pxe_amt_iscsi
+  * pxe_amt_agent
+  * pxe_libvirt_agent
+  * pxe_libvirt_iscsi
+  * fake_libvirt_fake
+  * fake_iboot_fake
+  * pxe_iboot_iscsi
+  * pxe_iboot_agent
+  
+  Use their hardware type counterparts instead.
+

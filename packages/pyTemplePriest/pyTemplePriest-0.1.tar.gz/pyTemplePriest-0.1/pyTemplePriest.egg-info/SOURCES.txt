@@ -1,0 +1,9 @@
+README.txt
+setup.py
+pyTemplePriest.egg-info/PKG-INFO
+pyTemplePriest.egg-info/SOURCES.txt
+pyTemplePriest.egg-info/dependency_links.txt
+pyTemplePriest.egg-info/requires.txt
+pyTemplePriest.egg-info/top_level.txt
+templepriest/__init__.py
+templepriest/types.py

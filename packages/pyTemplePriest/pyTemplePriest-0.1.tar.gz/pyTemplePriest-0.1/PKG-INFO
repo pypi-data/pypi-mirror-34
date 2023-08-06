@@ -1,0 +1,35 @@
+Metadata-Version: 1.0
+Name: pyTemplePriest
+Version: 0.1
+Summary: Python temple priest api. 
+Home-page: https://github.com/painca/pyTemplePriestAPI
+Author: painca
+Author-email: painca@tutanota.com
+License: GPL3
+Description: # pyTemplePriestAPI
+        * Установка с репозитория:
+        ```
+        $ git clone https://github.com/painca/pyTemplePriestAPI.git
+        $ cd pyTemplePriestAPi
+        $ python setup.py install
+        ```
+        * Запуск:
+        ```
+        import templepriest
+        
+        app_id = "app_id"
+        app_token = "app_token"
+        user_id = 123456789
+        
+        api = templepriest.api(app_id, app_token)
+        api.get_user_code(user_id)
+        
+        user_token = api.get_user_token(user_id, input("Enter code: ")) #Код придет в лс с ботом
+        
+        user = api.get_user(user_token)
+        print("Уровень:", user.lvl, "("+str(user.xp)+"/"+str(user.next_lvl_xp)+")")
+        ```
+        
+        Для получения app_id и app_token обратится к @serogaq
+        
+Platform: UNKNOWN

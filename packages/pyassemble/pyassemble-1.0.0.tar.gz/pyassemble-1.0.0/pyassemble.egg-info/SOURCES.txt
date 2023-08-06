@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+pyassemble/package.py
+pyassemble.egg-info/PKG-INFO
+pyassemble.egg-info/SOURCES.txt
+pyassemble.egg-info/dependency_links.txt
+pyassemble.egg-info/not-zip-safe
+pyassemble.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+README.md
+setup.py
+grython/__init__.py
+grython/core.py
+grython/utils.py
+grython.egg-info/PKG-INFO
+grython.egg-info/SOURCES.txt
+grython.egg-info/dependency_links.txt
+grython.egg-info/requires.txt
+grython.egg-info/top_level.txt

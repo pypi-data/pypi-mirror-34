@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: working
+Version: 0.1.1
+Summary: Makes spawning processes enjoyable.
+Home-page: https://pypi.org/project/working/
+Author: Grzegorz Krason
+Author-email: grzegorz.krason@gmail.com
+License: MIT
+Keywords: process,multiprocessing,spawn,join
+Platform: UNKNOWN
+Requires-Dist: tblib
+Requires-Dist: six
+
+UNKNOWN
+
+

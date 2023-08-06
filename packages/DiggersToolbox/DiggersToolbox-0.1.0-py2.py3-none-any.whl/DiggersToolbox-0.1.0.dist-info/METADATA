@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: DiggersToolbox
+Version: 0.1.0
+Summary: Toolbox for music diggers
+Home-page: UNKNOWN
+Author: Clément Doumouro
+Author-email: clement.doumouror@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: tests
+Requires-Dist: future (>=0.16.0<0.17)
+Requires-Dist: plac (<2.0,>=1.0)
+Requires-Dist: pydub (<0.23,>=0.22)
+Requires-Dist: tqdm (>=4.0<5.0)
+Requires-Dist: backports.tempfile; python_version < "3.4"
+Requires-Dist: pathlib (<2.0,>=1.0); python_version < "3.4"
+Provides-Extra: tests
+Requires-Dist: pytest (<4.0,>=3.7); extra == 'tests'
+Requires-Dist: pylint (<2.0,>=1.0); extra == 'tests'
+
+UNKNOWN
+
+

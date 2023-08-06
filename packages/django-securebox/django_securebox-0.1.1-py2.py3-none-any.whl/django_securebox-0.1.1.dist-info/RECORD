@@ -1,0 +1,12 @@
+django_securebox/__init__.py,sha256=wml98-jpNklvCt9iqla7JD9Nhln07Mn5SLwAM-hbjzc,228
+django_securebox/apps.py,sha256=EJQhfhomb3b6tWHAQ5vi9ufc5KHtSDlTlhZR5fxUFh4,279
+django_securebox/middleware.py,sha256=M0St3MF3PAFRMZxrLx1TjVC_a9Y_q7HUuoZegdqtTkU,1083
+django_securebox/models.py,sha256=CQ0j5-EGYoXRkYl_wnJB18k_afEhr17NAFMzYbfUwrU,4766
+django_securebox/signals.py,sha256=I-J09dC6zRJ5zn8g4OzKAuJu9eGjuC1Jhd4UpwjspZs,455
+django_securebox/utils.py,sha256=x2AmkU7rAcMC5HDhLB0O0hxXQakhy6eIduShKj8Uj_k,10619
+django_securebox/migrations/0001_initial.py,sha256=89uIv_UKgR0nQg7z1mQGxc4iqD8oyBM4xWNojf-FOVE,1912
+django_securebox/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_securebox-0.1.1.dist-info/METADATA,sha256=_BCjcdBi8UdGz9P6tsgL88S-mBKfOahtTx9IIfXKr74,2008
+django_securebox-0.1.1.dist-info/RECORD,,
+django_securebox-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+django_securebox-0.1.1.dist-info/top_level.txt,sha256=0vTAXoFt9VhmajBYiFuSxogt3AdSlKgl_-tygKit2dI,17

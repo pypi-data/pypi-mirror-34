@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sunscreen
+Version: 0.0.1
+Summary: What's the UV forecast?
+Home-page: https://github.com/jmillxyz/sunscreen
+Author: Jon Miller
+Author-email: jondelmil@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: appdirs
+Requires-Dist: arrow
+Requires-Dist: colored
+Requires-Dist: click
+Requires-Dist: requests
+
+UNKNOWN
+
+

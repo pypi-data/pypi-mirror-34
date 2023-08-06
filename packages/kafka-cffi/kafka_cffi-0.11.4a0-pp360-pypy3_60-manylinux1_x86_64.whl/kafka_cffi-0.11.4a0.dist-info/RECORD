@@ -1,0 +1,16 @@
+kafka_cffi-0.11.4a0.dist-info/WHEEL,sha256=gZO2B22IGLeAn9xqiqMnyhD_K2JDWd7hmmLbxQnLMNo,113
+kafka_cffi-0.11.4a0.dist-info/top_level.txt,sha256=r0htQUH8-LpTDy9SVD785dOVDJeZ_UwYLDYvyUSEMAw,11
+kafka_cffi-0.11.4a0.dist-info/METADATA,sha256=3r-Md2aWFKyroSTCkVPRxPlAH4U_KI7aUUblndoOOFc,293
+kafka_cffi-0.11.4a0.dist-info/RECORD,,
+kafka_cffi/client.py,sha256=l9gWCGx5ShCrT2qWX8QkIiQj3jK-zG5dB4PN7sMSALg,6545
+kafka_cffi/_rdkafka.pypy3-60-x86_64-linux-gnu.so,sha256=JKt-bWAbsUr-9LR9MPq6UMnmtvLnyfDixj7MzfeRZjU,34392
+kafka_cffi/consumer.py,sha256=8KbzS7df18UwXZb6cFL2guhx3UdvowqbgVThVMI250Y,1088
+kafka_cffi/producer.py,sha256=FFilNByWrlwpR3MdLKm0gxW8iK-vUzBjnR2izlRD-Io,3779
+kafka_cffi/__init__.py,sha256=1pMONh_7v3dfMA5fKFX11RrhZ8aACPJWltRftsDycFY,198
+kafka_cffi/_rdkafka.pypy3-510-x86_64-linux-gnu.so,sha256=h4J1wKiGr7LUm7jAxfMcB5jwJISQxLKZRNJdyjkNCN0,34392
+kafka_cffi/enums.py,sha256=LhBGjSE0OnuKazsyCnVG68oYS2p9rADJ-dzGWsUZYPs,168
+kafka_cffi/message.py,sha256=nqei_UgLD4-zSA2dHCqIW1fKrKmJgynlofwy1w1fou4,1481
+kafka_cffi/utils.py,sha256=HBKwmdpVFJhCToyEnelr7riSNehGv439Iq69QQukueI,1512
+kafka_cffi/errors.py,sha256=htya8FHrgBgxhckbedXchHB-8Wa_6vZBVeFQfMDDDkI,3706
+kafka_cffi/.libs/libz-31481ee5.so.1.2.3.4,sha256=Aa3FnofQmVs36VHxV6mFFYMapaPBgH_O1GklcWav2As,95864
+kafka_cffi/.libs/librdkafka-d64c0ca0.so.1,sha256=2242kyPHAF_uwJgn_MjYrK8xm2kzaIaR3btbiH59HLY,3910264

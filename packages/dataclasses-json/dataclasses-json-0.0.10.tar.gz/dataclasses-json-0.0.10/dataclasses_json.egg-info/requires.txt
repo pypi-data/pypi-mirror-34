@@ -1,0 +1,9 @@
+
+[:python_version == "3.6"]
+dataclasses
+
+[dev]
+pytest
+ipython
+mypy
+hypothesis

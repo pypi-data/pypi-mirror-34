@@ -1,0 +1,15 @@
+cfoundation/__init__.py,sha256=R0_tyrf82dvNoSoWBaTD6_HgFj6sLVI7-_30ZI7m6-4,92
+cfoundation/app.py,sha256=Oh07tXhA52okWbvMgOMoTjGQiiMr447Ksu3VeCgnYbY,1797
+cfoundation/controller.py,sha256=gNl9jg3UTpSWgN7trG9zqZVgGGzIzy1-uq-SgNvxaJk,149
+cfoundation/logger.py,sha256=EhTCXxPfS4vweYpP3j5Cz4ACtkS5voQdoBdM6Z_lhSs,720
+cfoundation/service.py,sha256=sr7_uQn7ontOp7ejrFGLG9pX7_uiiXq9giGT1qMJpj8,96
+cfoundation-0.3.0.dist-info/METADATA,sha256=CWXB-tJQ6XsjLw8gNlUtvhSDvdTN_hdhyPGEuK3CNSM,3254
+cfoundation-0.3.0.dist-info/RECORD,,
+cfoundation-0.3.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+cfoundation-0.3.0.dist-info/top_level.txt,sha256=4mH5hgX2wYvBFpsatKGvmPQoUpLoyRhdZk1riSMERCM,20
+example/__init__.py,sha256=rU7voI7Y_3i1kcEjEgld3cmiOm2JILcgzJcCrbMs0VU,301
+example/__main__.py,sha256=FrTlqFd1Xo3-KQHC2g9GI_yIQTNYhi3ntzHxAZiQHoc,195
+example/controllers/__init__.py,sha256=JZ_d7_M3w7r18m0oqZj-ac1eYaAWf3UfhaYVJpm2nBc,23
+example/controllers/base.py,sha256=FZ9wE1SvWv_bz_L8VixaHBW3kUbx5iEmu5JHn0eFJS8,1297
+example/services/__init__.py,sha256=5cM0n_CFB2qgkutmuFETd0V-3s6q-DJeWx_sJrENqfo,25
+example/services/greet.py,sha256=lBRItRoUPsOt4fNM77swpcUWh29ezkvlQ1YOh_hZyGw,470

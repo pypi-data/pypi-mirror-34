@@ -1,0 +1,9 @@
+README.md
+setup.py
+hellomars/__init__.py
+hellomars/__main__.py
+hellomars.egg-info/PKG-INFO
+hellomars.egg-info/SOURCES.txt
+hellomars.egg-info/dependency_links.txt
+hellomars.egg-info/entry_points.txt
+hellomars.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+hellomars = hellomars.__main__:main
+

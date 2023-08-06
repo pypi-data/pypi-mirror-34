@@ -1,0 +1,5 @@
+[console_scripts]
+qha-convert = qha.convert:main
+qha-plot = qha.plot:main
+qha-run = qha.run:main
+

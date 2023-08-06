@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: zmq-rpc
+Version: 1.0.1
+Summary: 0mq RPC calls implemented with pyzmq.
+Home-page: http://odoo.consulting
+Author: XCG Consulting
+Author-email: contact@xcg-consulting.fr
+License: UNKNOWN
+Keywords: zmq rpc msgpack
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Dist: msgpack
+Requires-Dist: pyzmq
+
+zmq_rpc
+=======
+
+0mq RPC calls implemented with pyzmq; part of the `zmq_rpc`_ project.
+
+.. _zmq_rpc: https://bitbucket.org/xcg/zmq_rpc
+
+
+Installing
+----------
+
+Install from pip::
+
+    $ pip install zmq_rpc
+
+
+Playing around
+--------------
+
+Run the demo server::
+
+    python zmq_rpc/server.py
+
+Run the demo client::
+
+    python zmq_rpc/client.py
+
+Watch them talk! =)
+
+Contributors
+============
+
+In order of appearance in the project:
+
+    - Houzéfa Abbasbhay, <houzefa.abba@xcg-consulting.fr>
+    - Jérémie Gavrel, <jeremie.gavrel@xcg-consulting.fr>
+
+Changelog
+=========
+
+
+1.0.1
+-----
+
+- Update the demo server so our demo actually works.
+
+- Doc updates.
+
+
+0.4
+---
+
+- Packaging tweaks following pypi changes (no multiple source packs).
+
+
+0.3
+---
+
+- Fix imports.
+
+- Dependencies: Move to ``msgpack`` instead of ``msgpack-python``.
+
+
+0.2
+---
+
+- Take logging set-up out of the lib itself.
+
+
+0.1
+---
+
+-  Initial version.
+
+

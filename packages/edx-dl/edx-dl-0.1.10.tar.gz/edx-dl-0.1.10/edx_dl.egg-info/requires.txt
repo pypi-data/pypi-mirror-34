@@ -1,0 +1,10 @@
+beautifulsoup4>=4.6.0
+html5lib>=1.0.1
+requests>=2.18.4
+six>=1.11.0
+youtube_dl>=2018.06.18
+
+[dev]
+pytest-cov
+pytest-xdist
+pytest>=2.5

@@ -1,0 +1,306 @@
+---
+file-contents:
+  releasenotes/notes/add-conntrack-workers-89d303e9ec3b4963.yaml:
+    fixes: ['Fixes bug `1745468 <https://bugs.launchpad.net/neutron/+bug/1745468>`_.
+
+        ']
+    prelude: 'In order to reduce the time spent processing security group updates
+      in the L2 agent, conntrack deletion is now performed in a set of worker threads
+      instead of the main agent thread, so it can return to processing other events
+      quickly.
+
+      '
+    upgrade: ['On an upgrade, conntrack entries will now be cleaned-up in a worker
+
+        thread, instead of in the calling thread.
+
+        ']
+  releasenotes/notes/add-multiple-port-bindings-f16eb47ebdddff2d.yaml:
+    features: ["In order to better support instance migration, multiple port\nbindings\
+        \ can be associated to compute owned ports.\n\n* Create, update, list, show\
+        \ and activate operations are supported\n  for port bindings by the ReST API.\n\
+        * A compute owned port can have one active binding and many\n  inactive bindings.\n\
+        * There can be only one binding (active or inactive) per compute\n  host.\n\
+        * When the ``activate`` operation is executed, a previously\n  inactive binding\
+        \ is made active. The previously active binding\n  becomes inactive.\n* As\
+        \ a consequence of the multiple port bindings implementation,\n  the ``port_binding``\
+        \ relationship in the SQLAlchemy ``Port``\n  object has been renamed ``port_bindings``.\
+        \ Similarly, the\n  ``binding`` attribute of the ``Port`` OVO has been renamed\n\
+        \  ``bindings``.\n"]
+    prelude: 'Support multiple bindings for compute owned ports.
+
+      '
+  releasenotes/notes/add-new-harouter-state-5612fc5b5c2043a5.yaml:
+    features: [Added new ``unknown`` state for HA routers. Sometimes l3 agents may
+        not be able to update health status to Neutron server due to communication
+        issues. During that time the server may not know whether HA routers hosted
+        by that agent are active or standby.]
+    fixes: ['Fixes bug `1682145 <https://launchpad.net/bugs/1682145>`_.']
+  releasenotes/notes/add-port_details-to-floatingip-fefceab2c740e482.yaml:
+    features: ['Add attribute ``port_details`` to floating IP. The value of this attribute
+
+        contains information of the associated port.
+
+        ']
+  releasenotes/notes/add-standard-attributes-to-segment-d39c4b89988aa701.yaml:
+    fixes: ['Fix an issue that standard attributes, such as ``created_at``,
+
+        ``updated_at`` and ``revision_number``, are not rendered in the response
+
+        of segment resource.
+
+        ']
+  releasenotes/notes/allow-update-subnet-segment-id-association-1fb02ace27e85bb8.yaml:
+    features: ['Add support for setting the ``segment_id`` for an existing
+
+        subnet. This enables users to convert a non-routed network
+
+        with no subnet/segment association to a routed one. It is
+
+        only possible to do this migration if both of the following
+
+        conditions are met - the current ``segment_id`` is ``None``
+
+        and the network contains a single segment and subnet.
+
+        ']
+  releasenotes/notes/dns_domain-6f0e628aeb3c650c.yaml:
+    fixes: ['Previously a network''s dns_domain attribute was ignored by the DHCP
+        agent.
+
+        With this release, OpenStack deployments using Neutron''s DHCP agent will
+
+        be able to specify a per network dns_domain and have instances configure
+
+        that domain in their dns resolver configuration files (Linux''s
+
+        /etc/resolv.conf) to allow for local partial DNS lookups. The per-network
+
+        dns_domain value will override the DHCP agent''s default dns_domain
+
+        configuration value. Note that it''s also possible to update a network''s
+
+        dns_domain, and that new value will be propogated to new instances
+
+        or when instances renew their DHCP lease. However, existing leases will
+
+        live on with the old dns_domain value.
+
+        ']
+  releasenotes/notes/ib-dhcp-allocation-fix-a4ebe8b55bb2c065.yaml:
+    fixes: ['For Infiniband support, Ironic needs to send the ''client-id'' DHCP option
+
+        as a number in order for IP address assignment to work.
+
+        This is now supported in Neutron, and can be specified as option number
+
+        61 as defined in RFC 4776.  For more information see bug
+
+        `1770932 <https://bugs.launchpad.net/neutron/+bug/1770932>`_']
+  releasenotes/notes/ivs-interfacedriver-removal-a9cce87310028b99.yaml:
+    other: [The deprecated ``IVSInterfaceDriver`` class has been removed from the
+        code base.  This means neither the ``ivs`` nor the ``neutron.agent.linux.interface.IVSInterfaceDriver``
+        can any longer be used as a value for the ``interface_driver`` config option
+        in ``neutron.conf``.]
+  releasenotes/notes/ovs-mac-table-size-config-option-d255d5208650f34b.yaml:
+    features: ['A new config option ``bridge_mac_table_size`` has been added for
+
+        Neutron OVS agent.
+
+        This value will be set on every Open vSwitch bridge managed by the
+
+        openvswitch-neutron-agent in ``other_config:mac-table-size`` column
+
+        in ovsdb.
+
+        Default value for this new option is set to 50000 and it should be enough
+
+        for most systems.
+
+        More details about this option can be found in `Open vSwitch documentation
+
+        <http://www.openvswitch.org/support/dist-docs/ovs-vswitchd.conf.db.5.html>`_
+
+        For more information see bug
+
+        `1775797 <https://bugs.launchpad.net/neutron/+bug/1775797>`_.
+
+        ']
+  releasenotes/notes/ovsdb_timeout_override_for_ovs_cleanup_tool-e6ed6db258d0819e.yaml:
+    fixes: ['Fixes bug `1763604 <https://bugs.launchpad.net/neutron/+bug/1763604>`_.
+
+        Override default value of ``ovsdb_timeout`` config option in
+
+        ``neutron-ovs-cleanup`` script.
+
+        The default value is 10 seconds, but that is not enough for the
+
+        ``neutron-ovs-cleanup`` script when there are many ports to remove from
+
+        a single bridge, for example, 5000. Because of that, we now override the
+
+        default value for the config option to be 600 seconds (10 minutes).
+
+        ']
+    issues: ['In the case when the number of ports to clean up in a single bridge
+        is
+
+        larger than about 10000, it might require an increase in the
+
+        ``ovsdb_timeout`` config option to some value higher than 600 seconds.
+
+        ']
+  releasenotes/notes/port-mac-address-regenerate-312978c834abaa52.yaml:
+    features: ['Adds  api extenstion ``port-mac-address-regenerate``. When passing
+
+        ``''null''`` (``None``) as the ``mac_address`` on port update a converter
+
+        will generate a new mac address that will be assigned to the port.
+
+        `RFE:  #1768690 <https://bugs.launchpad.net/neutron/+bug/1768690>`_.
+
+        ']
+  releasenotes/notes/routed-networks-hostroutes-a13a9885f0db4f69.yaml:
+    features: ['Adds host routes for subnets on the same network when using routed
+
+        networks. Static routes will be configured for subnets associated with
+
+        other segments on the same network. This ensures that traffic within an L3
+
+        routed network stays within the network even when the default route is on
+
+        a different interface.
+
+        ']
+  releasenotes/notes/security-groups-port-filtering-69d36ac7db90c9e0.yaml:
+    features: ['Support port filtering on security group IDs.
+
+        The feature can be used if ''port-security-group-filtering'' extension is
+        available.
+
+        ']
+  releasenotes/notes/support-empty-string-filtering-4a39096b62b9abf2.yaml:
+    features: ['Add support for filtering attributes with value as empty string. A
+        shim
+
+        extension is added to indicate if this feature is supported.
+
+        ']
+  releasenotes/notes/support-filter-validation-fee2cdeedbe8ad76.yaml:
+    features: ['Starting from this release, neutron server will perform validation
+        on
+
+        filter parameters on list requests. Neutron will return a 400 response
+
+        if the request contains invalid filter parameters.
+
+        The list of valid parameters is documented in the neutron API reference.
+
+
+        Add an API extension ``filter-validation`` to indicate this new API
+
+        behavior. This extension can be disabled by operators via a config option.
+
+        ']
+    other: ['Each plugin can decide if it wants to support filter validation by
+
+        setting ``__filter_validation_support`` to True or False. If this field is
+
+        not set, the default value is False.
+
+        Right now, the ML2 plugin and all the in-tree service plugins support
+
+        filter validation. Out-of-tree plugins will have filter validation
+
+        disabled by default but they can turn it on if they choose to.
+
+        For filter validation to be supported, the core plugin and all the
+
+        services plugins in a deployment must support it.
+
+        ']
+    prelude: 'Perform validation on filter parameters on listing resources.
+
+      '
+    upgrade: ['Prior to the upgrade, if a request contains an unknown or unsupported
+
+        parameter, the server will silently ignore the invalid input.
+
+        After the upgrade, the server will return a 400 Bad Request response
+
+        instead.
+
+
+        API users might observe that requests that received a successful response
+
+        now receive a failure response. If they encounter such experience,
+
+        they are suggested to confirm if the API extension ``filter-validation``
+
+        is present and validate filter parameters in their requests.
+
+
+        Operators can disable this feature if they want to maintain
+
+        backward-compatibility. If they choose to do that, the API extension
+
+        ``filter-validation`` will not be present and the API behavior is
+
+        unchanged.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/add-multiple-port-bindings-f16eb47ebdddff2d.yaml
+    - !!binary |
+      ZjcwNjRmMmI2YzZiYTFkMGFiNWY5ODcyYjJkNWFkNzk2OWE2NGU3Yg==
+  - - releasenotes/notes/dns_domain-6f0e628aeb3c650c.yaml
+    - !!binary |
+      MTM3YTZkNjEwNTNmYjFjZmI5YTBhNTgzYjVhNWMwZjYyNTNjNzVlNg==
+  - - releasenotes/notes/ovs-mac-table-size-config-option-d255d5208650f34b.yaml
+    - !!binary |
+      MWY4Mzc4ZTBhYzRiOGMzZmM0NjcwMTQ0ZTZlZmM1MTk0MGQ3OTZhZA==
+  - - releasenotes/notes/port-mac-address-regenerate-312978c834abaa52.yaml
+    - !!binary |
+      OGYzYTA2NmIyMGI3ZmZhZmVjOTVhNjE4ZDYwZTQwNzI3NTA0ZjM3Yw==
+  - - releasenotes/notes/routed-networks-hostroutes-a13a9885f0db4f69.yaml
+    - !!binary |
+      ODM2MWI4YjVhZWJhZDRkZjNjMTAxMjk1MmQ5YTg3YjkzNmZlZjMyNg==
+  - - releasenotes/notes/support-filter-validation-fee2cdeedbe8ad76.yaml
+    - !!binary |
+      MmIxZDhlYTRhMjAyZjI0YzFiNDg1Y2NlYmRiZjgzMWM1MDVhNGU2YQ==
+  version: 13.0.0.0b3
+- files:
+  - - releasenotes/notes/add-port_details-to-floatingip-fefceab2c740e482.yaml
+    - !!binary |
+      Yzc2MGQ0ZjI2ZjRiNDc1M2M4MDI2OTQzN2QyY2QwYjhmNjNkYmM3Yw==
+  - - releasenotes/notes/allow-update-subnet-segment-id-association-1fb02ace27e85bb8.yaml
+    - !!binary |
+      YjZkMTE3ZmNkNTc3ZjUwYTQzMTExM2M0YWQxMzI1OGE3NjkyZTgyMg==
+  - - releasenotes/notes/ib-dhcp-allocation-fix-a4ebe8b55bb2c065.yaml
+    - !!binary |
+      NTliYzE5YzE0YTg0MjgzYWRhZDU1NWRjZTg1MzZmZDcxOThiODJiMw==
+  - - releasenotes/notes/ivs-interfacedriver-removal-a9cce87310028b99.yaml
+    - !!binary |
+      M2FkOTFmNjFmMmQ0MGQ3ODg3NjRkNjRiMTg3MGQ1MDkwNjlhYWQwYQ==
+  - - releasenotes/notes/support-empty-string-filtering-4a39096b62b9abf2.yaml
+    - !!binary |
+      YTczMmJiZjE5ZTMxZjZiYWI4ZDFmZmQyNTQwZjZlMzY3Y2FhYjRjOA==
+  version: 13.0.0.0b2
+- files:
+  - - releasenotes/notes/add-conntrack-workers-89d303e9ec3b4963.yaml
+    - !!binary |
+      NjVhODE2MjNmYzAzNzdiMjZkMmQ1ODAwNjA3ZjdjM2FjYzA4YzQ1YQ==
+  - - releasenotes/notes/add-new-harouter-state-5612fc5b5c2043a5.yaml
+    - !!binary |
+      YjYyZDFiZmRmNzFjMmY4ODEwZDliMTQzZDUwMTI3YjhmM2E0OTQyZA==
+  - - releasenotes/notes/add-standard-attributes-to-segment-d39c4b89988aa701.yaml
+    - !!binary |
+      NGQ4NGMxMGJhNDQzMDc1MmJmOGMxMjI3Yzc3MGZiM2M0ZjBhMTYxOA==
+  - - releasenotes/notes/ovsdb_timeout_override_for_ovs_cleanup_tool-e6ed6db258d0819e.yaml
+    - !!binary |
+      ODA2ZDk2Y2JiZTQ1ZmNkNDczOTM1ZTc3N2EyYTU2MDM3ZmJiOWQxMg==
+  - - releasenotes/notes/security-groups-port-filtering-69d36ac7db90c9e0.yaml
+    - !!binary |
+      NDNkM2U4OGEwN2I0Mjc1YWQ4MTRjNjg3NWZhMDM3ZWZkOTQyMjNiYg==
+  version: 13.0.0.0b1

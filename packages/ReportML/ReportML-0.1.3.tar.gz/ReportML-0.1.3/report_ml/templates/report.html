@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        @page {margin: 1.2cm}
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    {%- for section in sections -%}
+        <h2>{{ section.title }}</h2>
+        {% for key in section.items.keys() %}
+            <p>{{ key }}: {{ section.items[key] }}</p>
+        {% endfor %}
+    {%- endfor -%}
+    <h2>Plots</h2>
+    {%- for plot in plots -%}
+        <img src="{{ plot.path }}"/>
+    {%- endfor -%}
+</body>
+</html>

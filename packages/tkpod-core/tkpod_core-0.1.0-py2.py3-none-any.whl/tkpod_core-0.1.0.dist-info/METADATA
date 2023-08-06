@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tkpod-core
+Version: 0.1.0
+Summary: Core libraries for the `tkpod` project.
+Home-page: https://gitlab.com/tkpod/tkpod-core
+Author: Alexey Strokach
+Author-email: alex.strokach@utoronto.ca
+License: UNKNOWN
+Keywords: tkpod
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+
+# tkpod-core
+
+[![conda](https://img.shields.io/conda/dn/ostrokach-forge/tkpod-core.svg)](https://anaconda.org/ostrokach-forge/tkpod-core/)
+[![docs](https://img.shields.io/badge/docs-v0.1.0-blue.svg)](https://tkpod.gitlab.io/tkpod-core/v0.1.0/)
+[![build status](https://gitlab.com/tkpod/tkpod-core/badges/v0.1.0/build.svg)](https://gitlab.com/tkpod/tkpod-core/commits/v0.1.0/)
+[![coverage report](https://gitlab.com/tkpod/tkpod-core/badges/v0.1.0/coverage.svg)](https://tkpod.gitlab.io/tkpod-core/v0.1.0/htmlcov/)
+
+Core libraries for the `tkpod` project.
+
+## Features
+
+* TODO
+
+

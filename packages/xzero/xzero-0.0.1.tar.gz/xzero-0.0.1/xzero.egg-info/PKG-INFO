@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: xzero
+Version: 0.0.1
+Summary: python backtest toolkit
+Home-page: https://github.com/alpha-xone/xzero
+Author: Alpha
+License: Apache 2
+Description: # xzero
+        Simple backtest toolkit for portfolio management
+        
+        Installation:
+        =============
+        
+        From pypi:
+        ----------
+        
+            pip install xzero
+        
+        From github (recommended):
+        --------------------------
+        
+            pip install git+https://github.com/alpha-xone/xzero.git -U
+        
+Keywords: python backtest trading
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: all

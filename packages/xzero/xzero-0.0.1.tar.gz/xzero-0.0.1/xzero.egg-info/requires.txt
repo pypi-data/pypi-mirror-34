@@ -1,0 +1,11 @@
+numba
+numpy
+pandas
+pandas-datareader
+xone
+pyarrow
+pyfolio
+xdoctest
+requirements-parser
+
+[all]

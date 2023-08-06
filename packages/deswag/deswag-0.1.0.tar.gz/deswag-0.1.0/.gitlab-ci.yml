@@ -1,0 +1,12 @@
+image: python:3
+
+before_script:
+  - pip install tox
+
+py3-tests:
+  script:
+    - tox -e py3-tests
+
+pep8:
+  script:
+    - tox -e py3-pep8

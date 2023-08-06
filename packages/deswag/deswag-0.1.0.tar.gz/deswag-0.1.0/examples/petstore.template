@@ -1,0 +1,10 @@
+import flask
+
+app = flask.Flask(__name__)
+{% for path, pathitem in paths.items() %}{% for method, operation in pathitem.items() %}
+
+@app.route('{{ [basePath, path]|join|replace('{', '<')|replace('}', '>') }}', methods=['{{ method }}'])
+def route{{ path|replace('/', '_')|replace('{', '')|replace('}', '') }}_{{ method }}():
+    # insert business logic for {{ method }} on {{ path }} here
+    return "Not Implemented", 501
+{% endfor %}{% endfor %}

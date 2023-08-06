@@ -1,0 +1,30 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* add version 0.1.0 to setup.cfg
+* add more information to readme
+* update petstore template and output
+* add cli module
+* fix error in petstore.template
+* update tox to use py3
+* add initial templater
+* add some examples for reference
+* add missing constant to tests
+* add more tests to openapi v2 schema
+* add more path item object tests
+* add path item object and related tests
+* add path test for paths object
+* add basic paths object
+* refactor to\_dict into data
+* add info object and tests
+* refactor a base schema class
+* add to\_dict scanning mechanics
+* add required fields to root schema
+* add to\_dict to v2 schema object
+* add noqa to openapi schema file
+* add gitlab ci yaml
+* update tox config
+* add basic code with v2 validation

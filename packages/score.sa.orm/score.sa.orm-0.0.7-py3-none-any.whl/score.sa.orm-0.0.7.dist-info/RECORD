@@ -1,0 +1,16 @@
+score.sa.orm-0.0.7-py3.4-nspkg.pth,sha256=d_tmM_T4tM-74YnLAndykvdJf6pMiLYeUMG2yXhuINE,660
+score/sa/orm/__init__.py,sha256=HkOH7C8jInZOvoPDbdsQBKVNRk7r1vnzffUNhk04XKg,1799
+score/sa/orm/_init.py,sha256=DAG9kbjRRIrdsD28FntoZ0XYXA31bWH4eMRav45Aw0Y,10511
+score/sa/orm/_session.py,sha256=tA16UmrJkq7slmwvSNE0PoEChY4DQeayegfmK9-xQEo,4116
+score/sa/orm/base.py,sha256=xY7FCIYy435kMs_gw4ZGCGHqgq0XHUFE2S7_BgZ05E4,11269
+score/sa/orm/dataloader.py,sha256=OvduURXdsRLyeC3SvAC8vazVdRT39Srqib0s_VzhZ6Y,6365
+score/sa/orm/helpers.py,sha256=O5FyiINk-_MUJCJ3QldvJE6B_DhfR9QWOV39-y4UGwo,5588
+score/sa/orm/triggers.py,sha256=hSd5zglv_oYd04s5sbiMWrfyKDn0dcx43f03pcVL39s,1786
+score/sa/orm/views.py,sha256=tZgKFbnfuPrr-z7mXl-wKyJkKb1bJWDquVKXTQXirSE,2223
+score.sa.orm-0.0.7.dist-info/DESCRIPTION.rst,sha256=JGJvz7J4oBb4ybMn9KM7vKeFKh61iQ4xML7poZZyjaE,2242
+score.sa.orm-0.0.7.dist-info/METADATA,sha256=Nan8wRIJM5hPX6LgqBm7C22rIGjXGhC1cTSTrZd8wuM,3103
+score.sa.orm-0.0.7.dist-info/RECORD,,
+score.sa.orm-0.0.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+score.sa.orm-0.0.7.dist-info/metadata.json,sha256=1T03PgrdlqM-vjPeLbesSGi0Omq1qWf68Qba_3stIUE,1020
+score.sa.orm-0.0.7.dist-info/namespace_packages.txt,sha256=9vG9YULXFXpe8-m7noAwww1ZwJw0pdx1xV-Efi5-xh8,15
+score.sa.orm-0.0.7.dist-info/top_level.txt,sha256=ombXQcxxoHXkOBjIMIwHIdXOU_bRR6fxpkmCd_LLxCQ,6

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dataframer/VERSION.txt
+dataframer/__init__.py
+dataframer/dataframer.py
+dataframer.egg-info/PKG-INFO
+dataframer.egg-info/SOURCES.txt
+dataframer.egg-info/dependency_links.txt
+dataframer.egg-info/not-zip-safe
+dataframer.egg-info/requires.txt
+dataframer.egg-info/top_level.txt

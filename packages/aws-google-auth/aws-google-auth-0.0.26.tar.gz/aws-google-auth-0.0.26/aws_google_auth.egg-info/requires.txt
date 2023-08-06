@@ -1,0 +1,12 @@
+boto3
+lxml
+requests
+beautifulsoup4
+configparser
+tzlocal
+tabulate
+keyring
+six
+
+[u2f]
+python-u2flib-host

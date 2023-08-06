@@ -1,0 +1,133 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="/static/polymer/polymer-element.html">
+<link rel="import" href="/static/iron-ajax/iron-ajax.html">
+<link rel="import" href="/static/iron-localstorage/iron-localstorage.html">
+<link rel="import" href="/static/brum-global-variable/brum-global-variable.html">
+<link rel="import" href="/static/src/shared-styles.html">
+
+<dom-module id="plutonium-allauth-authentication">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: none;
+            }
+        </style>
+
+        <iron-ajax id="userInfoAjaxEndpoint" url="[[userInfoEndpointUrl]]" method="GET" handle-as="json" auto last-response="{{profileModel}}"></iron-ajax>
+        <iron-ajax id="logOutAjaxEndpoint" url="[[logOutEndpointUrl]]" method="GET" handle-as="json"></iron-ajax>
+
+        <iron-localstorage name="user-storage" value="{{storedUser}}" on-iron-localstorage-load="_setProfileImg"></iron-localstorage>
+
+        <brum-global-variable key="userData" value="{{storedUser}}"></brum-global-variable>
+
+    </template>
+
+    <script>
+        class PlutoniumAllauthAuthentication extends Polymer.Element {
+            static get is() {
+                return 'plutonium-allauth-authentication';
+            }
+
+            static get properties() {
+                return {
+                    profileModel: {
+                        type: Object,
+                        notify: true
+                    },
+                    storedUser: Object,
+                    profileImgSrc: {
+                        type: String,
+                        value: ''
+                    },
+                    userInfoEndpointUrl: {
+                        type: String
+                    },
+                    logOutEndpointUrl: {
+                        type: String
+                    },
+                    authenticated: {
+                        type: Boolean,
+                        notify: true,
+                        reflectToAttribute: true,
+                        value: () => false
+                    }
+                }
+            }
+
+            static get observers() {
+                return [
+                    'computeAuthenticated(storedUser)',
+                    'observeUserInfo(profileModel)'
+                ]
+            }
+
+            connectedCallback() {
+                super.connectedCallback();
+
+
+            }
+
+            //
+            observeUserInfo(profileModel) {
+                this.set('storedUser', {
+                    name: profileModel.name,
+                    loggedIn: true,
+                    profile: profileModel
+                });
+            }
+
+            computeAuthenticated(storedUser) {
+                this.authenticated = storedUser && storedUser.loggedIn;
+            }
+
+            fetchUserInfo() {
+                let request = this.$.userInfoAjaxEndpoint.generateRequest();
+                let _self = this;
+                request.completes.then(function (req) {
+                        // succesful request, argument is iron-request element
+                        let profile = req.xhr.response;
+
+                        _self.storedUser = {
+                            name: profile.name,
+                            email: profile.email,
+                            picture: profile.picture,
+                            loggedIn: true,
+                            profile: profile
+                        };
+                        _self.profileImgSrc = profile.picture;
+                    }, function (rejected) {
+                        // failed request, argument is an object
+                        let req = rejected.request;
+                        let error = rejected.error;
+                        console.error('Error getting profile:', error);
+                    }
+                );
+            }
+
+            _setProfileImg() {
+                this.profileImgSrc = this.storedUser.profile.picture;
+            }
+
+            authorize() {
+                webAuth.authorize();
+            }
+
+            logOut() {
+                this.storedUser = null;
+                this.profileImgSrc = '';
+                this.$.logOutAjaxEndpoint.generateRequest();
+            }
+        }
+
+        window.customElements.define(PlutoniumAllauthAuthentication.is, PlutoniumAllauthAuthentication);
+    </script>
+</dom-module>

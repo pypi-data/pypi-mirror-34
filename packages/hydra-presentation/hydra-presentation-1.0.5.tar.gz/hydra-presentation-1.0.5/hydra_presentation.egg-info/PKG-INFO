@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: hydra-presentation
+Version: 1.0.5
+Summary: Polymer based presentation layer for Django.
+Home-page: https://github.com/lordoftheflies/hydra-presentation/
+Author: lordoftheflies
+Author-email: laszlo.hegedus@cherubits.hu
+License: Apache 2.0 License
+Description: # hydra-presentation
+        Presentation layer for Hydra framework
+        
+        
+        ## Setup project ...
+        
+        ```bash
+        # Install bower packages from your project settings.py
+        python manage.py bower install
+        # Build hydra-frontend
+        python manage.py polymer build
+        # Finally merge in static folder
+        python manage.py collectstatic -i
+        ```
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: System :: Monitoring
+Classifier: Development Status :: 2 - Pre-Alpha

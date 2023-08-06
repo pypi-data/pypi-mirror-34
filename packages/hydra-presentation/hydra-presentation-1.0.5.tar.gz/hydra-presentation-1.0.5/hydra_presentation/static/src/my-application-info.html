@@ -1,0 +1,62 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="/static/polymer/polymer-element.html">
+<link rel="import" href="/static/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="/static/iron-image/iron-image.html">
+<link rel="import" href="/static/paper-item/paper-icon-item.html">
+<link rel="import" href="/static/src/my-icons.html">
+<link rel="import" href="/static/src/shared-styles.html">
+
+<dom-module id="my-application-info">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+            }
+
+            #logoImage {
+                width: 32px;
+                height: 32px;
+                margin: 8px;
+            }
+        </style>
+        <app-toolbar>
+            <iron-image id="logoImage" src="[[logoSrc]]" sizing="contain"></iron-image>
+            <label>[[title]]</label>
+        </app-toolbar>
+
+    </template>
+
+    <script>
+        class MyApplicationInfoView extends Polymer.Element {
+            static get is() {
+                return 'my-application-info';
+            }
+
+            static get properties() {
+                return {
+                    logoSrc: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true,
+                        value: () => 'images/logo.png'
+                    },
+                    title: {
+                        type: String,
+                        notify: true,
+                    }
+                }
+            }
+        }
+
+        window.customElements.define(MyApplicationInfoView.is, MyApplicationInfoView);
+    </script>
+</dom-module>

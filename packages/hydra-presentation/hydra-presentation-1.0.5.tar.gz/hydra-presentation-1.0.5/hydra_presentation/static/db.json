@@ -1,0 +1,49 @@
+{
+  "userInfo": {
+    "name": "testuser",
+    "email": "laszlo.hegedus@cherubits.hu",
+    "picture": "https://secure.gravatar.com/avatar/fc30a37b5c06f999c2a02aebb075c4de"
+  },
+  "applications": [
+    {
+      "id": 1,
+      "name": "Report builder",
+      "url": "/my-app/"
+    },
+    {
+      "id": 2,
+      "name": "Web scraper",
+      "url": "/my-app/"
+    },
+    {
+      "id": 3,
+      "name": "Wavemeter",
+      "url": "/my-app/"
+    }
+  ],
+  "logOut": {
+    "result": "ok"
+  },
+  "logIn": {
+    "email": "",
+    "password": "",
+    "rememberme": "on"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

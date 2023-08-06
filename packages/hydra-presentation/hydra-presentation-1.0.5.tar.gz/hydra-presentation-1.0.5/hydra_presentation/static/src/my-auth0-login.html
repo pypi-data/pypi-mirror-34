@@ -1,0 +1,95 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="/static/polymer/polymer-element.html">
+<link rel="import" href="/static/iron-localstorage/iron-localstorage.html">
+<link rel="import" href="/static/brum-global-variable/brum-global-variable.html">
+<link rel="import" href="/static/src/shared-styles.html">
+
+<dom-module id="my-auth0-login">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: none;
+            }
+        </style>
+
+        <iron-localstorage name="user-storage" value="{{storedUser}}" on-iron-localstorage-load="_setProfileImg"></iron-localstorage>
+
+        <brum-global-variable key="userData" value="{{storedUser}}"></brum-global-variable>
+
+    </template>
+
+    <script>
+        class MyAuth0Login extends Polymer.Element {
+            static get is() {
+                return 'my-auth0-login';
+            }
+
+            static get properties() {
+                return {
+                    storedUser: Object,
+                    profileImgSrc: {
+                        type: String,
+                        value: ''
+                    }
+                }
+            }
+
+            connectedCallback() {
+                super.connectedCallback();
+                const _self = this;
+
+                // Parse the hash
+                if (window.location.hash) {
+                    webAuth.parseHash({hash: window.location.hash}, function (error, authResult) {
+                        if (error) {
+                            console.error('Error reading hash:', error);
+                            return;
+                        }
+
+                        if (authResult) {
+                            webAuth.client.userInfo(authResult.accessToken, function (error, profile) {
+                                if (error) {
+                                    console.error('Error getting profile:', error);
+                                    return;
+                                }
+
+                                _self.storedUser = {
+                                    name: profile.name,
+                                    id_token: authResult.idToken,
+                                    access_token: authResult.accessToken,
+                                    loggedin: true,
+                                    profile: profile
+                                };
+                                _self.profileImgSrc = profile.picture;
+                            });
+                        }
+                    });
+                }
+            }
+
+            _setProfileImg() {
+                this.profileImgSrc = this.storedUser.profile.picture;
+            }
+
+            authorize() {
+                webAuth.authorize();
+            }
+
+            logOut() {
+                this.storedUser = null;
+                this.profileImgSrc = '';
+            }
+        }
+
+        window.customElements.define(MyAuth0Login.is, MyAuth0Login);
+    </script>
+</dom-module>

@@ -1,0 +1,129 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="/static/polymer/polymer-element.html">
+<link rel="import" href="/static/brum-global-variable/brum-global-variable.html">
+<link rel="import" href="/static/iron-form/iron-form.html">
+<link rel="import" href="/static/iron-localstorage/iron-localstorage.html">
+<link rel="import" href="/static/paper-button/paper-button.html">
+<link rel="import" href="/static/paper-input/paper-input.html">
+<link rel="import" href="/static/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="/static/src/shared-styles.html">
+
+<dom-module id="my-login">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px;
+
+                @apply --layout-vertical;
+                @apply --layout-center-center;
+
+                /*background-color: var(--app-primary-color);*/
+            }
+        </style>
+
+
+
+        <div class="card">
+            <h1>Login</h1>
+
+            <iron-form id="loginForm">
+                <form method="POST" action="[[loginEndpointUrl]]">
+                    <paper-input label="Email" type=email" name="email"></paper-input>
+                    <paper-input label="Password" type="password" name="password"></paper-input>
+                    <div class="layout vertical">
+                        <paper-toggle-button name="rememberme" checked="{{rememberMe}}">Remember me</paper-toggle-button>
+                        <a href="[[forgottenPasswordUrl]]">Forgotten password</a>
+                        <a href="[[registrationUrl]]">Sign On</a>
+                    </div>
+                </form>
+
+                <div class="layout horizontal-reverse around-justified">
+                    <paper-button raised on-tap="authorize">Sign</paper-button>
+                </div>
+            </iron-form>
+
+        </div>
+    </template>
+
+    <script>
+        class MyLoginView extends Polymer.Element {
+            static get is() {
+                return 'my-login';
+            }
+
+            static get properties() {
+                return {
+                    rememberMe: {
+                        type: Boolean,
+                        notify: true,
+                        value: () => false
+                    },
+                    loginEndpointUrl: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true
+                    },
+                    forgottenPasswordUrl: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true
+                    },
+                    registrationUrl: {
+                        type: String,
+                        notify: true,
+                        reflectToAttribute: true
+                    },
+
+                    storedUser: Object,
+                    profileImgSrc: {
+                        type: String,
+                        value: ''
+                    }
+                }
+            }
+
+            _setProfileImg() {
+                this.profileImgSrc = this.storedUser.profile.picture;
+            }
+
+            connectedCallback() {
+                super.connectedCallback();
+                let self = this;
+                this.$.loginForm.addEventListener('iron-form-response', function(event) {
+                    self.dispatchEvent(new CustomEvent('my-navigation-changed', {
+                        bubbles: true,
+                        composed: true,
+                        detail: {
+                            path: null
+                        }
+                    }));
+                    self.dispatchEvent(new CustomEvent('plutonium-authentication-changed', {
+                        bubbles: true,
+                        composed: true,
+                        detail: {
+                            path: null
+                        }
+                    }));
+                });
+            }
+
+
+            authorize() {
+                console.debug('Submit login.');
+                this.$.loginForm.submit();
+            }
+        }
+
+        window.customElements.define(MyLoginView.is, MyLoginView);
+    </script>
+</dom-module>

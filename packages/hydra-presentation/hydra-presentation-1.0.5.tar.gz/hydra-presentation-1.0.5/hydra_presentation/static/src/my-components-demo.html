@@ -1,0 +1,87 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="/static/polymer/polymer-element.html">
+<link rel="import" href="/static/paper-button/paper-button.html">
+<link rel="import" href="/static/src/plutonium-application-selector.html">
+<link rel="import" href="/static/src/plutonium-user-info.html">
+<link rel="import" href="/static/src/plutonium-notification-mixin.html">
+<link rel="import" href="/static/src/shared-styles.html">
+
+<dom-module id="my-components-demo">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+
+                padding: 10px;
+            }
+        </style>
+
+        <div class="card">
+            <div class="circle">1</div>
+            <h1>Header components</h1>
+            <p>
+                <plutonium-user-info has-image stored-user='{ "name": "testuser", "email": "laszlo.hegedus@cherubits.hu", "picture": "https://secure.gravatar.com/avatar/fc30a37b5c06f999c2a02aebb075c4de" }'></plutonium-user-info>
+                <plutonium-application-selector applications='[{ "name": "Application A", "url": "http://localhost/"}, { "name": "Application B", "url": "http://localhost/"}]'></plutonium-application-selector>
+            </p>
+        </div>
+        <div class="card">
+            <div class="circle">2</div>
+            <h1>Pre-created pages</h1>
+            <div>
+                <ul>
+                    <li>
+                        <a href="/login">Sign-in page</a>
+                    </li>
+                    <li>
+                        <a href="/registration">Sign-on page</a>
+                    </li>
+                    <li>
+                        <a href="/forgotten-password">Forgotten-password page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h1>Feedback</h1>
+            <paper-button raised on-tap="sendNotification">Notify</paper-button>
+            <paper-button raised on-tap="sendWarning">Warning</paper-button>
+            <paper-button raised on-tap="sendSuccess">Success</paper-button>
+            <paper-button raised on-tap="sendError">Error</paper-button>
+        </div>
+    </template>
+
+    <script>
+        class MyComponentsDemoView extends Plutonium.NotificationProducerMixin(Polymer.Element) {
+            static get is() {
+                return 'my-components-demo';
+            }
+
+            sendNotification(event) {
+                this.notify('This is a notification feedback');
+            }
+
+            sendWarning(event) {
+                this.warning('This is a warning feedback');
+            }
+
+            sendSuccess(event) {
+                this.success('This is a success feedback');
+            }
+
+            sendError(event) {
+                this.error('This is a error feedback');
+            }
+        }
+
+        window.customElements.define(MyComponentsDemoView.is, MyComponentsDemoView);
+    </script>
+</dom-module>

@@ -1,0 +1,8 @@
+README.md
+setup.py
+spader/__init__.py
+spader/spader.py
+spader.egg-info/PKG-INFO
+spader.egg-info/SOURCES.txt
+spader.egg-info/dependency_links.txt
+spader.egg-info/top_level.txt

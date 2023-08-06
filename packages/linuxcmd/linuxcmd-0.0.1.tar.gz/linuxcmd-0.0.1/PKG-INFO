@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: linuxcmd
+Version: 0.0.1
+Summary: A Python tool to get linux commands results from remote servers
+Home-page: https://github.com/Adityank003
+Author: Aditya nk
+Author-email: adityank003@gmail.com
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

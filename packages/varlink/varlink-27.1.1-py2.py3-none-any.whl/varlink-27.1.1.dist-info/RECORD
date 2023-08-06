@@ -1,0 +1,11 @@
+varlink/__init__.py,sha256=uZu6F68qlNabl14G6tr2eCGQaUF4zAC45txh814lvwc,1681
+varlink/cli.py,sha256=iSf7xoXboVstAnuUGW9FYY39Ay5S7Eaw1bJs7w3lUMY,8799
+varlink/client.py,sha256=6urTd1Wr01f9Yns3G4zcDxgfXZHsl8zG-ReMx0PRAfg,21253
+varlink/error.py,sha256=Yg_95BmVXK_7pAqj9kH76BsqKiin_AugTeS2rkqI6lk,4183
+varlink/org.varlink.service.varlink,sha256=ImpCk2u7W3oaonrAIIZOPPcJlheAY_Tv9GHIkOCIWDc,910
+varlink/scanner.py,sha256=3jxcZ7uXuK8VSgn9qT56xqMi_VIBk2VLhRC4N1RZCds,14091
+varlink/server.py,sha256=-rIoFKVL8msKCU-VamhJlhQSSQoVRyM0t5oQuIEEB-k,16836
+varlink-27.1.1.dist-info/METADATA,sha256=5ccod9wBhJM6Edc_A1zEt0-O_2-Dr4_zLD686t2elRE,700
+varlink-27.1.1.dist-info/RECORD,,
+varlink-27.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+varlink-27.1.1.dist-info/top_level.txt,sha256=F0cApc8KPLk7JSOl4AoRcELnVcJSyIS5dc6chXzulJ0,8

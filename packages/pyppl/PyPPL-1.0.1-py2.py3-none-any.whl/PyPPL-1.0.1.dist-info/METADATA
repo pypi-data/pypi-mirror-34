@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyPPL
+Version: 1.0.1
+Summary: A Python PiPeLine framework
+Home-page: https://github.com/pwwang/PyPPL
+Author: pwwang
+Author-email: pwwang@pwwang.com
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Requires-Dist: six
+Requires-Dist: filelock
+Requires-Dist: loky
+Requires-Dist: futures
+
+https://github.com/pwwang/PyPPL
+
+

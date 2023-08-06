@@ -1,0 +1,3 @@
+[console_scripts]
+elecinfo = buptelecmon.main:loader
+

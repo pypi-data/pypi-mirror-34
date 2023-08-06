@@ -1,0 +1,10 @@
+README.md
+setup.py
+helloWorld/__init__.py
+helloWorld/hello.py
+takahiroHelloWorld.egg-info/PKG-INFO
+takahiroHelloWorld.egg-info/SOURCES.txt
+takahiroHelloWorld.egg-info/dependency_links.txt
+takahiroHelloWorld.egg-info/entry_points.txt
+takahiroHelloWorld.egg-info/not-zip-safe
+takahiroHelloWorld.egg-info/top_level.txt

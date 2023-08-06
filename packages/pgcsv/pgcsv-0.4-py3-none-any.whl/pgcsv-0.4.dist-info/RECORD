@@ -1,0 +1,11 @@
+pgcsv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgcsv/cli.py,sha256=dbOfRUUNG9yBJyFL7sFIyUT4Kd1Kkgko3JFeWULKvew,854
+pgcsv/csv.py,sha256=Q3IS-VKrxOOCtg7dAvnRbTHOr2Gqu1xXFHUjhYTu6Yw,701
+pgcsv/db.py,sha256=S0qPnQKUloprQIOJTg4JKT3QRePBYxAJplnZfiJA4Ws,3126
+pgcsv/util.py,sha256=3IUiq7r2wGTjsK8BBL-CcCq1iOmAAdd_Xit_IcVngzc,428
+pgcsv-0.4.dist-info/METADATA,sha256=A0wBB8vJFU1brcfDljFYTsZN2CR1rpcGQEOD2RtfMZg,757
+pgcsv-0.4.dist-info/RECORD,,
+pgcsv-0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pgcsv-0.4.dist-info/entry_points.txt,sha256=1fzPtJ6aUpav8Wkn_ayusTewU1l4e-ILTvYyM1cjORY,42
+pgcsv-0.4.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pgcsv-0.4.dist-info/top_level.txt,sha256=G_wEc9bvi22U9_OIrOsu7pcb-poMjpztRz1BP0lmGGQ,6

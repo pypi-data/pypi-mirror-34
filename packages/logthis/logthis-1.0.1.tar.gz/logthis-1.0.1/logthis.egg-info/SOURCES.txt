@@ -1,0 +1,9 @@
+README.rst
+setup.py
+logthis/__init__.py
+logthis/py.typed
+logthis.egg-info/PKG-INFO
+logthis.egg-info/SOURCES.txt
+logthis.egg-info/dependency_links.txt
+logthis.egg-info/requires.txt
+logthis.egg-info/top_level.txt

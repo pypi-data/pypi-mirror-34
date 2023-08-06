@@ -1,0 +1,45 @@
+---
+file-contents:
+  releasenotes/notes/add-service-types-class-574caf54f7461163.yaml:
+    features: ['Added ServiceTypes class, which is the primary entry point for Python
+        developers who need access to the OpenStack Service Types Authority data.']
+  releasenotes/notes/get-service-types-f5e56799a55a6df4.yaml:
+    features: ['Factory function ``os_service_types.get_service_types`` added. Returns
+
+        a singleton instance of ServiceTypes. ServiceTypes is a very low cost
+
+        object in the first place, but it does read a data file from disk and
+
+        then the data is pretty static.
+
+        ']
+  releasenotes/notes/missed-notes-d16705a6a56eb3c6.yaml:
+    features: ['Added ``permissive`` flag to ``get_service_type`` defaulting to ``False``
+
+        to allow returning the given type instead of ``None`` if the given type
+
+        is unknown.
+
+        ', 'Added ``container-infra`` alias for
+
+        ``container-infrastructure-management``.
+
+        ', 'Added ``function-engine`` service type for ``qinling`` project.
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/missed-notes-d16705a6a56eb3c6.yaml
+    - !!binary |
+      MmU1YjM4MDg4YTQzNTM5NjIxZGU4MmFhMmQwYzFiMzY2YzI2MzhhOQ==
+  version: 1.3.0
+- files:
+  - - releasenotes/notes/get-service-types-f5e56799a55a6df4.yaml
+    - !!binary |
+      ZjlkY2E2Zjc4OGNmMzFkMTkxYWNjNmNiOWNhNWE3NDNhZTg0ZDEwNA==
+  version: 1.2.0
+- files:
+  - - releasenotes/notes/add-service-types-class-574caf54f7461163.yaml
+    - !!binary |
+      NDhhOTRlMDBhNzliNWRiODBjOWI4MDcxMjA3ZjgyYzE2ZmE2OTNkNg==
+  version: 1.0.0

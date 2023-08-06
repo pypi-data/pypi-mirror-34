@@ -1,0 +1,13 @@
+Metadata-Version: 2.0
+Name: helper-zlib
+Version: 0.0.2
+Summary: Helper zlib
+Home-page: https://github.com/shuge/helper_zlib
+Author: Shuge Lee
+Author-email: shuge.lee@gmail.com
+License: MIT License
+Platform: UNKNOWN
+
+zlib gzdeflate, gzinflate, gzcompress and gzuncompress functions in pure Python.
+
+

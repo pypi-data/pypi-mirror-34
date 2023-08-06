@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/netplan-parser
+netplan/__init__.py
+netplan/config.py
+netplan/interface.py
+netplan/parser.py
+netplan.egg-info/PKG-INFO
+netplan.egg-info/SOURCES.txt
+netplan.egg-info/dependency_links.txt
+netplan.egg-info/top_level.txt
+netplan.egg-info/zip-safe

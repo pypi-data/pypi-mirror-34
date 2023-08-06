@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: standalone
+Version: 1.0.1
+Summary: Standalone lets you access Django shell from your Python modules
+Home-page: https://github.com/biwin/standalone
+Author: Biwin John
+Author-email: biwinjohn@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/biwin/standalone/
+Description: UNKNOWN
+Keywords: django,standalone,python
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3

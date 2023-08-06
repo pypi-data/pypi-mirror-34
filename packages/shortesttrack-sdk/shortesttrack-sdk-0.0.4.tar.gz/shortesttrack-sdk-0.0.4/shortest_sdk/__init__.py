@@ -1,0 +1,1 @@
+from shortest_sdk.shortest_library import ShortestLibrary

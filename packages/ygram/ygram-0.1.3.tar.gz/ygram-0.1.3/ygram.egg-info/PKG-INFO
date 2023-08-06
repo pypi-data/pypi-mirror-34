@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ygram
+Version: 0.1.3
+Summary: A simple messenger
+Home-page: https://github.com/alexey-yunoshev/python_course_gu
+Author: Alexey Yunoshev
+Author-email: alexey.yunoshev@gmail.com
+License: UNKNOWN
+Description: Nothing here to read
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

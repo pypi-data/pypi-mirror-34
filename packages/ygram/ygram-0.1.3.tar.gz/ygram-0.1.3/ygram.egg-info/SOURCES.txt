@@ -1,0 +1,22 @@
+README.md
+setup.py
+ygram/__init__.py
+ygram/client.py
+ygram/client_gui.py
+ygram/errors.py
+ygram/image_client.py
+ygram/image_server.py
+ygram/scratch.py
+ygram/server.py
+ygram/server_gui_ничего_интересного здесь пока нет.py
+ygram/start2.py
+ygram.egg-info/PKG-INFO
+ygram.egg-info/SOURCES.txt
+ygram.egg-info/dependency_links.txt
+ygram.egg-info/top_level.txt
+ygram/db/__init__.py
+ygram/db/users_db.py
+ygram/jim/__init__.py
+ygram/jim/config.py
+ygram/jim/message.py
+ygram/jim/utils.py

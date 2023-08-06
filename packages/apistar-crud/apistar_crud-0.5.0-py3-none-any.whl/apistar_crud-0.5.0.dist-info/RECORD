@@ -1,0 +1,12 @@
+apistar_crud/__init__.py,sha256=OAdEns3uLblC5fL-hoavrCTCMIp83D6ooZLung_ML-g,237
+apistar_crud/admin.py,sha256=y_SYsMcfelzchLU9YPhcPtiNQqTqMKCJo1lIjy6dL7w,1287
+apistar_crud/resource/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apistar_crud/resource/base.py,sha256=aCIbczIOhu3cjvAXjO0bc7uyEeA1L3N49JDml2bBSDY,3414
+apistar_crud/resource/peewee.py,sha256=JJRsl-BRqp3G6b5gDVOy1WyQevx-QW8VW1ePDFTSifk,3905
+apistar_crud/resource/sqlalchemy.py,sha256=PScSv3gpkLnWqgublE_sU1P3T9zTOqLIc40R8gDJ92k,3987
+apistar_crud/routes.py,sha256=D7zIz-lw_nQ8PyE1DCxdK06YVLeUZS_HzLAis-BpUkw,1172
+apistar_crud/templates/admin.html,sha256=8uG9xbf4S03pf76i1tQiWwacowk04rKk9nq_hxfeFvY,742
+apistar_crud-0.5.0.dist-info/LICENSE,sha256=xukia0I6c6TvKAWwcr_FQXbOiFEb2Lo0CAbU1YoXUoY,35171
+apistar_crud-0.5.0.dist-info/WHEEL,sha256=HZBbCDRt_yH1dGNZWtKCSPJ61jLgUcy7M8fjZdBoprI,84
+apistar_crud-0.5.0.dist-info/METADATA,sha256=xMgFx2C2SWxx47AyIVUAMJ0EBxxKMRrs0frb0VMuN3Y,6478
+apistar_crud-0.5.0.dist-info/RECORD,,

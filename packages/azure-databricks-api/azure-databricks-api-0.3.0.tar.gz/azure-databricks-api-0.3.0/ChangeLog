@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+0.3
+---
+
+* Updates setup.cfg and README.md to fix PyPI issue
+* Formats and updates setup.cfg to correct package specification
+* Revert "Updates setup.py to not generate AUTHORS or ChangeLog files"
+* Enables 'token' service
+* Updates setup.py to not generate AUTHORS or ChangeLog files
+* Updates .gitignore to exclude everything in PyCharm .idea folder
+* Release 0.1

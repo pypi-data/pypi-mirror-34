@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+fspdf/__init__.py
+fspdf/__main__.py
+fspdf/fspdf.py
+fspdf.egg-info/PKG-INFO
+fspdf.egg-info/SOURCES.txt
+fspdf.egg-info/dependency_links.txt
+fspdf.egg-info/entry_points.txt
+fspdf.egg-info/requires.txt
+fspdf.egg-info/top_level.txt
+test/tests.py

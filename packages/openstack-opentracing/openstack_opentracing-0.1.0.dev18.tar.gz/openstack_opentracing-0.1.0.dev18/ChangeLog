@@ -1,0 +1,22 @@
+CHANGES
+=======
+
+* Experiments with pbr
+* Pushing a new version
+* Pushing a new version
+* Pushing a new version
+* Pushing a new version
+* Pushing a new version
+* Pushing a new version
+* Fixed the version of opentracing, opentracing\_instrumentation & jaeger\_client
+* Added new deploy password
+* Added Travis build-status for the ver-0.1 branch
+* Added Travis integration
+* Various fixes to prepare for version 0.1
+* Incomplete: The test don't run as expected, but the middleware works across services
+* Converted the test to multiple process
+* Updated Readme
+* Adding hacks to workaround issues with Tornado io\_loop, jaeger\_client needs serious rework so that it can work with eventlets, this hack works, but not it is ugly
+* Adding a oslo\_middleware based Jaeger Middleware along with a small test cases (incomplete)
+* Pushing the first barely working version
+* Initial commit

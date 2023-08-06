@@ -1,0 +1,14 @@
+requests
+python-dateutil
+six
+pytz
+decorator>=4.0.0
+http_ece>=1.0.5
+cryptography>=1.6.0
+
+[test]
+pytest
+pytest-cov
+vcrpy
+pytest-vcr
+pytest-mock

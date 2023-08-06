@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: asposestoragecloud
+Version: 1.0.5
+Summary: Aspose.Storage for Cloud APIs
+Home-page: https://www.aspose.cloud/
+Author: Aspose
+Author-email: aspose.cloud@asposeptyltd.com
+License: MIT
+Keywords: Aspose.Storage for Cloud APIs
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+Aspose.Storage for Cloud APIs https://apireference.aspose.cloud/storage/
+
+

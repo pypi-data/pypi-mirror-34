@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: johnnydep
+Version: 0.3
+Summary: Display dependency tree of Python distribution
+Home-page: https://github.com/wimglenn/johnnydep
+Author: Wim Glenn
+Author-email: hey@wimglenn.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: anytree
+Requires-Dist: structlog
+Requires-Dist: tabulate
+Requires-Dist: wimpy
+Requires-Dist: colorama
+Requires-Dist: cachetools
+Requires-Dist: oyaml
+Requires-Dist: pytoml
+Requires-Dist: pip
+Requires-Dist: packaging (>=17)
+Requires-Dist: wheel (>=0.31.0)
+Requires-Dist: setuptools (>=38.3)
+Requires-Dist: pkginfo (>=1.4.2)
+
+UNKNOWN
+
+

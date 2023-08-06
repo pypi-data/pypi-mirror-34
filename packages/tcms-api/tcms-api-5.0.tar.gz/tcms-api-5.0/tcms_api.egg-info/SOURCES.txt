@@ -1,0 +1,8 @@
+README.rst
+setup.py
+./__init__.py
+./xmlrpc.py
+tcms_api.egg-info/PKG-INFO
+tcms_api.egg-info/SOURCES.txt
+tcms_api.egg-info/dependency_links.txt
+tcms_api.egg-info/top_level.txt

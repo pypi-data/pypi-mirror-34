@@ -1,0 +1,14 @@
+README.rst
+setup.py
+xc_ip_info/__init__.py
+xc_ip_info/ip_info.py
+xc_ip_info.egg-info/PKG-INFO
+xc_ip_info.egg-info/SOURCES.txt
+xc_ip_info.egg-info/dependency_links.txt
+xc_ip_info.egg-info/requires.txt
+xc_ip_info.egg-info/top_level.txt
+xc_ip_info/data/17monipdb.dat
+xc_ip_info/lib/__init__.py
+xc_ip_info/lib/ipip.py
+xc_ip_info/test/__init__.py
+xc_ip_info/test/test_ip.py

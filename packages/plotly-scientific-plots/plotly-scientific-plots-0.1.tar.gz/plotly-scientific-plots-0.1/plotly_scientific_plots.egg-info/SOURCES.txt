@@ -1,0 +1,11 @@
+README.md
+setup.py
+plotly-scientific-plots/__init__.py
+plotly-scientific-plots/misc.py
+plotly-scientific-plots/plotly_ML.py
+plotly-scientific-plots/plotly_plot_tools.py
+plotly_scientific_plots.egg-info/PKG-INFO
+plotly_scientific_plots.egg-info/SOURCES.txt
+plotly_scientific_plots.egg-info/dependency_links.txt
+plotly_scientific_plots.egg-info/requires.txt
+plotly_scientific_plots.egg-info/top_level.txt

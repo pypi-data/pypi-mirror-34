@@ -1,0 +1,17 @@
+GearMess_client-0.3.2.dist-info/METADATA,sha256=ntRMAqTod798og_vXlSqlV-SoSMXEGBdnfDXxn23Fy4,363
+GearMess_client-0.3.2.dist-info/RECORD,,
+GearMess_client-0.3.2.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+GearMess_client-0.3.2.dist-info/entry_points.txt,sha256=YC8fbm2S8UjQToXPRx5lHeLcD9Lnxq8sCD0CAbsBu5U,139
+GearMess_client-0.3.2.dist-info/top_level.txt,sha256=OMnHHUFiLlaIpymYRfX91_IRqCv8cdMxgDuRwW5kLfg,11
+client_src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client_src/client.py,sha256=YKzBHCEBkcF_59n6RYx3z8VCi54xlw91RhvG2c5Z0gM,4640
+client_src/client_gui.py,sha256=qCfJmBBfPjlGfo53CVAn4EkkUwMkMcdlwbZZ32rTQ3A,15682
+client_src/client_models.py,sha256=wp6SN7673WROv1EVRqooYip1n_JkEhC0Dhoyigzoibg,1056
+client_src/client_storage_handler.py,sha256=oGHL7Ls8mcE7YON704qcvCgnFbu-icT5yaXR0GKxeX4,3238
+client_src/client_views.py,sha256=KjwadNXKEm30YSI9jMlmQicsus9DZGfCVaM4mNHpZYU,9545
+client_src/console_client.py,sha256=uACexDW8nfp9rqqUHboywJNkYoww6X6cdP5_ZRTaGyY,5423
+client_src/JIM/JIMs.py,sha256=kT1ZHQcSw8xbz3Ju0M3KrM5Ee2WpkOXAuOJhAHuPy7c,4719
+client_src/JIM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client_src/JIM/jim_config.py,sha256=rIf7YkKYgHiZNdVCV0gXVgnazaC5uo8Xu2xypi3yGc4,1592
+client_src/crypto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client_src/crypto/crypto.py,sha256=iWCdR0tX5FBg-gcbbxoNM73aqu3D831wxPM4ZrrvmWc,1137

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: envoy-reader
+Version: 0.1
+Summary: A program to read from an Enphase Envoy on the local network
+Home-page: https://github.com/jesserizzo/envoy_reader
+Author: Jesse Rizzo
+Author-email: jesse.rizzo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+A program to read from an Enphase Envoy on the local network. Reads electricity consumed and produced instantaneously, that day, the last seven days, and the lifetime of the envoy.
+
+Only tested on the Envoy S
+
+

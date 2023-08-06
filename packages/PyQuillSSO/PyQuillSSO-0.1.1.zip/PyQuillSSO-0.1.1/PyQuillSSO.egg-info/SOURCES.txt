@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+PyQuillSSO.egg-info/PKG-INFO
+PyQuillSSO.egg-info/SOURCES.txt
+PyQuillSSO.egg-info/dependency_links.txt
+PyQuillSSO.egg-info/requires.txt
+PyQuillSSO.egg-info/top_level.txt
+pyquillsso/__init__.py
+pyquillsso/quillsso.py

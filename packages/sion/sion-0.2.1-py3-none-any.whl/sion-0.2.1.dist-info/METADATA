@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: sion
+Version: 0.2.1
+Summary: loading and dumping a SION format file
+Home-page: https://github.com/kamimura/py-sion
+Author: kamimura
+Author-email: kamimura@live.jp
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+Requires-Dist: antlr4-python3-runtime
+
+# py-sion
+
+[SION](https://dankogai.github.io/SION/) deserializer/serializer for Python.
+
+## Synopsis
+
+stream
+
+text
+```python
+import sion
+#...
+with open('spam.sion') as f:
+    obj = sion.load(f)
+with open('eggs.sion', 'w') as f:     
+    sion.dump(obj, f)
+#...
+```
+bytes
+```python
+import sion
+from urllib.request import urlopen
+#...
+with urlopen(ham) as res:
+    obj = load(res)
+#...
+```
+
+string
+```python
+import sion
+#...
+spam = sion.loads('sion data')
+eggs = sion.dumps(spam)
+#...
+```
+## Usage
+
+```sh
+$ pip3 install sion
+```
+
+

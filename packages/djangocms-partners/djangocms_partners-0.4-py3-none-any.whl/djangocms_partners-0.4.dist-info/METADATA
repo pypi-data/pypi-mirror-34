@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: djangocms-partners
+Version: 0.4
+Summary: show parteners
+Home-page: https://github.com/dmodules/djangocms_partners
+Author: D-Modules
+Author-email: support@d-modules.com
+License: BSD 3-Clause "New" or "Revised" License
+Platform: UNKNOWN
+Requires-Dist: django (>=1.8)
+
+#djangocms_partners
+Show partners section in django
+
+

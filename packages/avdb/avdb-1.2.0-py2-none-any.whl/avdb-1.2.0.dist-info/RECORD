@@ -1,0 +1,14 @@
+avdb/__init__.py,sha256=17OrzgVaEJc3hVNVVy_6J31BlZsi8WmzmRmFpZJCLZg,530
+avdb/__main__.py,sha256=wNPju-iLfwopJVRG7cyNj2ajyCvVSDdGpI4LuiCBAxI,10266
+avdb/__version__.py,sha256=MoOSDygtyWRrCte1G5D3VM_y_LongFjtV-5gtparhDQ,18
+avdb/csdb.py,sha256=WMwEfN_pgy7tVQUEXCwZEwHhVaoaXWtkZoOgEm_P-oE,4544
+avdb/model.py,sha256=jIKGFgkJvCy5kZhye6UgEP674riedsRGROlIF6lUX2A,6129
+avdb/subcmd.py,sha256=ToKMl4403LovV0NYxUx4C5192SOn3FltjEVn14QlUqU,5190
+avdb/templates.py,sha256=vzdh01sDGdwbQ24ZUwp7aAc20kwOgY3it6hVRmBnMik,889
+avdb-1.2.0.dist-info/DESCRIPTION.rst,sha256=4H9pqu0TytdnWQCvYdGtx5ZIIF4dKTX0QTFTKspR9Kc,3758
+avdb-1.2.0.dist-info/METADATA,sha256=R5L-m1axaIvYCf_OwtsLEUj-JLyDz1GJbrq-pnmvxuY,4448
+avdb-1.2.0.dist-info/RECORD,,
+avdb-1.2.0.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+avdb-1.2.0.dist-info/entry_points.txt,sha256=41S-_GoTuQ9cYbHMa86aINRGBCup0l3ATNCrzH9ct2w,45
+avdb-1.2.0.dist-info/metadata.json,sha256=IAC1ebs1lGDGHk15MOHR0ZZg0btuPPCWk0dIR4Au-Xg,927
+avdb-1.2.0.dist-info/top_level.txt,sha256=owCcrP8XNq_aYGbZxPTSq4Tad4QpdVPaADFsVmPkfLo,5

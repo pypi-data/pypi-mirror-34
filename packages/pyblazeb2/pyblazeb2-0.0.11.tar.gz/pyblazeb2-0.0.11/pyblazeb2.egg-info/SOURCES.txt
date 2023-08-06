@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+pyblazeb2/__init__.py
+pyblazeb2/pyblazeb2.py
+pyblazeb2.egg-info/PKG-INFO
+pyblazeb2.egg-info/SOURCES.txt
+pyblazeb2.egg-info/dependency_links.txt
+pyblazeb2.egg-info/top_level.txt

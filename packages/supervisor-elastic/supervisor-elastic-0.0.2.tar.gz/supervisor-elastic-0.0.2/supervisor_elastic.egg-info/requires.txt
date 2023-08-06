@@ -1,0 +1,5 @@
+redis
+
+[tests]
+pre-commit
+supervisor

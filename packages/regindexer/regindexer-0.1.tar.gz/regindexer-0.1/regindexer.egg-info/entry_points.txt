@@ -1,0 +1,6 @@
+[console_scripts]
+regindexer = regindexer.cli:cli
+
+[moksha.consumer]
+regindexer = regindexer.consumer:Consumer
+

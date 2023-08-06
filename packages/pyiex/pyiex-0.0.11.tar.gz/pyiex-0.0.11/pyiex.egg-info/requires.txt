@@ -1,0 +1,7 @@
+http_request_randomizer>=1.0.0
+
+[dev]
+check-manifest
+
+[test]
+coverage

@@ -1,0 +1,12 @@
+tilematrix/__init__.py,sha256=syw8y5Er7VXsO80T613w07UN9Ff3GBaryl-PcDdhtww,328
+tilematrix/_conf.py,sha256=XExgglKusrf88NU-3TokC2aNTheKM_fLCDHzs9J-CAk,679
+tilematrix/_funcs.py,sha256=fHSl0b0oejnpAN5Ao_BP8o8NmVSDzFg3Hjo-L_L_3xc,10747
+tilematrix/_tile.py,sha256=-emjP9KoUYI--yb1Rws3iJszL_yY0IzXxEl3a5wxrLU,7817
+tilematrix/_tilepyramid.py,sha256=FAy5cxtOJjU4CK0bGxFjCPlIrkyD1yLPJYCF7DZcXWI,8075
+tilematrix/tmx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tilematrix/tmx/main.py,sha256=dW8bV-srB8s0SSFvfLFvJnH7hjAgQk_B_Usj19XWHe0,5951
+tilematrix-0.15.dist-info/METADATA,sha256=_NIm-viGKtxpNDfd4hBzkL0CaLVyzh-exAvx6ivuDgM,672
+tilematrix-0.15.dist-info/RECORD,,
+tilematrix-0.15.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+tilematrix-0.15.dist-info/entry_points.txt,sha256=wdWJJIe5Jz2PT0ifzERA_KsYRdmz_XK8cHGH5Yd-WGA,49
+tilematrix-0.15.dist-info/top_level.txt,sha256=zpMT3RzC_Ru84altd65zWlDuJCcsapPzLkZjUdzGkYc,11

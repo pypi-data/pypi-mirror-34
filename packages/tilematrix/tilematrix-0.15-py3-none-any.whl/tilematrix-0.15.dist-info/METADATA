@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tilematrix
+Version: 0.15
+Summary: helps handling tile pyramids
+Home-page: https://github.com/ungarj/tilematrix
+Author: Joachim Ungar
+Author-email: joachim.ungar@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: affine
+Requires-Dist: click
+Requires-Dist: geojson
+Requires-Dist: rasterio (>=1.0a3)
+Requires-Dist: shapely
+Requires-Dist: six
+
+UNKNOWN
+
+

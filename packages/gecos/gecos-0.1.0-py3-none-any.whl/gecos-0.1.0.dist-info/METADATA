@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: gecos
+Version: 0.1.0
+Summary: Generated color schemes
+Home-page: UNKNOWN
+Author: Patrick Kunzmann
+Author-email: padix.key@gmail.com
+License: BSD 3-Clause
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.5
+Requires-Dist: biotite
+Requires-Dist: maplotlib
+Requires-Dist: numpy
+
+
+Generated color schemes.
+
+

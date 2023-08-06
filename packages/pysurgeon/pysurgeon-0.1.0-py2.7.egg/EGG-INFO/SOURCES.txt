@@ -1,0 +1,9 @@
+README.md
+setup.py
+pysurgeon.egg-info/PKG-INFO
+pysurgeon.egg-info/SOURCES.txt
+pysurgeon.egg-info/dependency_links.txt
+pysurgeon.egg-info/entry_points.txt
+pysurgeon.egg-info/top_level.txt
+src/__init__.py
+src/pysurgeon.py

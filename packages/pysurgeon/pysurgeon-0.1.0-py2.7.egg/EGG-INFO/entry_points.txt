@@ -1,0 +1,3 @@
+[console_scripts]
+pysurgeon = src.pysurgeon:main
+

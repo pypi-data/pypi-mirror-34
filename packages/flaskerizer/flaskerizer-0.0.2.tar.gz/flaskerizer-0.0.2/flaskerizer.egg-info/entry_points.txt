@@ -1,0 +1,3 @@
+[console_scripts]
+flaskerizer = flaskerizer.__main__:main
+

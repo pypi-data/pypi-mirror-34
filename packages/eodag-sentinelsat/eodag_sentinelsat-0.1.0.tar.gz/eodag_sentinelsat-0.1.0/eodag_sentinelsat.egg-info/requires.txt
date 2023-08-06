@@ -1,0 +1,9 @@
+tqdm
+sentinelsat
+shapely
+
+[dev]
+tox
+
+[standalone]
+eodag

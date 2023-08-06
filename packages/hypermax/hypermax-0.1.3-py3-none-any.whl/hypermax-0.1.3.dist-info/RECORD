@@ -1,0 +1,15 @@
+hypermax/__init__.py,sha256=0yYU4LTNkgbV_0_rXxJL99i4ZeLNYQpa65MFFNkp9dM,19
+hypermax/cli.py,sha256=qk7s7mgLnu6iQFEbABCBoeLuEN6XteGdiI7bWE8v4bI,2441
+hypermax/configuration.py,sha256=Q6eSyR71SNxbXb1khU0aM3gacH1zD1cZsXvBidoI3aE,303
+hypermax/cui.py,sha256=BJ0oZKsluFlwPFBo3Q23_zXRilCu62b6VPMFbuAxras,23594
+hypermax/execution.py,sha256=ZMfKEC_A-TdnWstXjFldSGSJ2V27lla-YyZtfPK-TmM,8767
+hypermax/hyperparameter.py,sha256=pKYJdtZ2xhbp71ekiiANLMQeT4C2NUTBUoSeBlABdow,4561
+hypermax/optimizer.py,sha256=VzNWbQ7YkLkdI9MBe0TtVR2E-tSp_GvAYQ1fDGQ0K7M,9713
+hypermax/results_analyzer.py,sha256=ex3sPxdaQanR9JwlLdvVNQyqnbLxiEMbuF_aKw5CQEE,41289
+hypermax/test_model.py,sha256=iMmlFRsVEvqs48HBsMYbtrNzHA9XDVhsLw5zSViUvYI,770
+hypermax/utils.py,sha256=0oEdX9CIYs8kWNu7ivyLzsNYShmYbP3i8ubz2uA9ywo,196
+hypermax-0.1.3.dist-info/METADATA,sha256=O-vLTFzZz1gWupIdDMJFEu3lMAGz8mt2LtNlTERgs04,27166
+hypermax-0.1.3.dist-info/RECORD,,
+hypermax-0.1.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+hypermax-0.1.3.dist-info/entry_points.txt,sha256=ndduL5_u4-VVtyh-ZL5Qyhd3Qrbb49j7y-62j_hpNyM,48
+hypermax-0.1.3.dist-info/top_level.txt,sha256=W6vHllRTj-dE8dlnyBjGVaJX6CJCEz2C-xRaSxi94iA,9

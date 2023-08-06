@@ -1,0 +1,6 @@
+numpy
+scipy
+pandas
+plotly==2.0.10
+seaborn
+tables

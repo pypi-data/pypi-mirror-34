@@ -1,0 +1,80 @@
+CHANGES
+=======
+
+* nm/checkpoint: Introduce transaction capabilities
+* nm: Removing a bond should also remove its slaves
+* libnmstate: Raise error when apply fails
+* libnmstate: Remove duplicate apply and sleep workarounds
+* libnmstate: Use a main-loop for the NM provider
+* libnmstate: Process OVS only if the capability exists
+* nm/applier: OVS slaves need special admin state handling
+* netapplier: Reflect correctly slave master even when reused
+* libnmstate: Process ifaces marked as absent in admin state only
+* libnmstate: Deleting an OVS bridge and its connected ifaces
+* readme: Add ovs-bridge to the supported iface types
+* libnmstate: Support ovs-bridge configuration
+* libnmstate: Include master type in the metadata
+* libnmstate: Generalize master/slave metadata handling
+* libnmstate: Support ovs-bridge reporting
+* Add initial integration tests
+* netapplier: Apply settings twice to get it to work
+* nmstatectl: Filter state to specified interfaces
+* Do not require "-f/--file" to specify state
+* Update pip installation instructions
+* add basic logging initialization
+* Update license header
+* tests: Fix typo in function name
+* libnmstate: Fix IPv4 prefix format reporting with yaml
+* libnmstate: Support IPv4 static address configuration
+* libnmstate: Support IPv4 info reporting
+* tests: Fix bad test name in nm.connection_test
+* tests: Refactor netinfo test module
+* tests: Refactor netapplier test module
+* tests: Remove helloworld test
+* libnmstate: Cover nm.translator module using unit tests
+* libnmstate: Cover nm.applier module using unit tests
+* libnmstate: Cover nm.connection module using unit tests
+* libnmstate: Cover nm.ip* module using unit tests
+* libnmstate: Cover nm.bond module using unit tests
+* libnmstate: Cover nm.device module using unit tests
+* libnmstate: Extract NM specific config setup to nm.applier
+* libnmstate: Remove netapplier dependency on nmclient
+* libnmstate: Reorganize netinfo, moving NM specific code
+* libnmstate: Reorganizing nm.translator into classes
+* libnmstate: Relocate link admin state translation to nm
+* doc: Update README file with up-to-date information
+* libnmstate: On iface state 'up', always activate the connection
+* libnmstate: Add 1sec sleep on config set
+* libnmstate: Ethernet ifaces report with correct type
+* schema: Support dummy interfaces
+* libnmstate: Support bond slaves configuration
+* libnmstate: Report the slaves of a bond
+* libnmstate: Add bond state validation
+* libnmstate: Support interface state editation
+* libnmstate: Canonicalize desired state with current state
+* libnmstate: Add support for new bond configuration
+* libnmstate: Add support for bond reporting
+* libnmstate: Refactor netapplier structure
+* Pretty print new state after applying, too
+* libnmstate: Support software interface removal
+* Refresh nmclient after changing state
+* Allow action functions to determine exit code
+* Detect JSON
+* Add initial yaml support
+* add link to project homepage
+* set description content type to markdown
+* libnmstate: If iface state is not "activated", consider it "down"
+* nmstatectl: Introduce basic set command
+* libnmstate: Control an interface state (up/down)
+* libnmstate: Small spell fix
+* Pretty print network state
+* nmstatectl: Introduce 'show' command to display state
+* libnmstate: Minimal support for showing iface state
+* tox: Specify full path to the requirements.txt file
+* Add interface schema ethernet properties
+* Add interface schema common properties
+* Introduce a basic schema with validation tests
+* add code skeleton, setup config and do some cleanup
+* Integrate with coveralls
+* Integrate with travis-ci
+* Initial commit

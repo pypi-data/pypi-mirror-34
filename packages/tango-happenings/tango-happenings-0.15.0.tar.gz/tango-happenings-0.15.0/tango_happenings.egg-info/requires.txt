@@ -1,0 +1,4 @@
+python-card-me==0.9.1
+tango-shared-core>=1.4
+tango-comments>=0.1
+jinja2

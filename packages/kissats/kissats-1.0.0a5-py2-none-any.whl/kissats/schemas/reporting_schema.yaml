@@ -1,0 +1,25 @@
+name:
+    type: string
+    required: True
+description:
+    type: string
+    required: True
+result:
+    type: string
+    required: True
+metadata:
+    type: dict
+    schema:
+        run_time:
+            type: float
+            default: 0
+            required: True
+        est_task_time:
+            type: float
+            default: 0
+            required: True
+        run_time_delta:
+            type: float
+            default: 0
+            required: True
+    required: True

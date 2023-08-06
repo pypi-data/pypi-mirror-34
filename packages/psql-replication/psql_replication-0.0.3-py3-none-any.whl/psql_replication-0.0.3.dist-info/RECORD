@@ -1,0 +1,9 @@
+ppsqlreplication/__init__.py,sha256=0ORHjtXqnmpLCzfZP3pLQJSWniXH9TUkMP9mtjhVcOY,44
+ppsqlreplication/logic_stream.py,sha256=xJgYyV4N0zM603wlVL4Bu6uXsL1VTPMBwEgtlNdTwoc,4655
+ppsqlreplication/packet.py,sha256=ENY9JkXixrD4CmXJOPOI4YY7NSJMB06Katz0wP_1LpA,1248
+ppsqlreplication/row_event.py,sha256=IFbrhWyrl1TmVqzDm0F5mZNPGj-hs_4ScOd2ens8dIs,2123
+ppsqlreplication/util.py,sha256=dmxrc6f5VJSraV5o3iDsawY8KHNs9WQYLdSYcj8K3M4,260
+psql_replication-0.0.3.dist-info/METADATA,sha256=VPqhsnoyBxyGmpWubahH8UwQfPSiQpZnCLy-DbfEYtY,347
+psql_replication-0.0.3.dist-info/RECORD,,
+psql_replication-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+psql_replication-0.0.3.dist-info/top_level.txt,sha256=1hwcKtV5FGwFVeDESJI1SzkIq6oZV2mYpnSFMgXyoIo,17

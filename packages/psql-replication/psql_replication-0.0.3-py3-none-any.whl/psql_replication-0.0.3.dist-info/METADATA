@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: psql-replication
+Version: 0.0.3
+Summary: Pure Python Implementation of PSQL Replication Only data change not DDLbuild on top of psycopg2.
+Home-page: https://github.com/jiamo/python-psql-replication
+Author: jiamo
+Author-email: life.130815@gmail.com
+License: Apache 2
+Platform: UNKNOWN
+Requires-Dist: psycopg2
+
+UNKNOWN
+
+

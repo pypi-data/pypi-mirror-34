@@ -1,0 +1,10 @@
+MANIFEST.in
+PdbEditorSupport.py
+README.rst
+setup.py
+test_pdbeditorsupport.py
+tox.ini
+PdbEditorSupport.egg-info/PKG-INFO
+PdbEditorSupport.egg-info/SOURCES.txt
+PdbEditorSupport.egg-info/dependency_links.txt
+PdbEditorSupport.egg-info/top_level.txt

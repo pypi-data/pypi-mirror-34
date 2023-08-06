@@ -1,0 +1,9 @@
+aioapp_amqp/__init__.py,sha256=T19MecZJ28AmGSeU_34srSaEZqqPr08xhZZjnZ6XwME,18149
+aioapp_amqp-0.0.1a1.dist-info/METADATA,sha256=0Rt-N7cSQGx9XDsrUcTanMbsmTSdkHYo60mstXxTeiU,1368
+aioapp_amqp-0.0.1a1.dist-info/RECORD,,
+aioapp_amqp-0.0.1a1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+aioapp_amqp-0.0.1a1.dist-info/top_level.txt,sha256=-9EWuDbYhRC53rJIa-KmLq_jhC8YijNQzx3iNnomF-c,18
+tests/__init__.py,sha256=tl2hK64aWuMnprPko4Zhuk8zy5JXI-dbeGA9z6CN6C8,61
+tests/conftest.py,sha256=-tEb91W5mf6YDS_yNjRqJ1-CvXhlpgVb4CwxuVEgQKs,4313
+tests/docker-compose.yml,sha256=VO6RIzyR7xoJggp3sCIDxRzaFOwlUv1qKR-A2yYu8gg,96
+tests/test_amqp.py,sha256=O7pxixxNEI5TebuVNgR0Jyu2dlcuwNBzz_H_cT7BrZw,5812

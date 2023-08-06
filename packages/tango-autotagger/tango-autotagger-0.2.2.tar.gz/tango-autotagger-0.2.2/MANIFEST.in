@@ -1,0 +1,5 @@
+include LICENSE README.md CHANGES.md
+recursive-include autotagger *.html
+recursive-include autotagger *.json
+recursive-include autotagger *.md
+recursive-include docs *.txt

@@ -1,0 +1,14 @@
+README.md
+setup.py
+pygbrowse/__init__.py
+pygbrowse/datasources.py
+pygbrowse/intervaloverlaps.py
+pygbrowse/plots.py
+pygbrowse/romannumerals.py
+pygbrowse/utilities.py
+pygbrowse.egg-info/PKG-INFO
+pygbrowse.egg-info/SOURCES.txt
+pygbrowse.egg-info/dependency_links.txt
+pygbrowse.egg-info/not-zip-safe
+pygbrowse.egg-info/requires.txt
+pygbrowse.egg-info/top_level.txt

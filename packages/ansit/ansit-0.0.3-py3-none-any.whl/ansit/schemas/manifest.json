@@ -1,0 +1,90 @@
+{
+  "$comment": "Manifest file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "directory",
+    "machines",
+    "provision"
+  ],
+  "properties": {
+    "directory": {
+      "$comment": "Directory with code to test",
+      "type": "string"
+    },
+    "provision": {
+      "$comment": "Provisioning configuration",
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "tmp_dir": {
+      "$comment": "Directory for environment",
+      "type": "string"
+    },
+    "machines": {
+      "$comment": "Environment machines",
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object"
+        }
+      }
+    },
+    "excludes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "changes": { 
+      "$comment": "Changes to environment",
+      "type": "array",
+      "items": { "$ref": "file:change.json" }
+    },
+    "drivers": {
+      "$comment": "Default drivers",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": { "type": "string" },
+        "provisioner": { "type": "string" },
+        "tester": { "type": "string" }
+      }
+    }
+  },
+  "definitions": {
+    "machine": {
+      "$comment": "Strict machine definition",
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "driver"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "driver": { "type": "string" }
+      }
+    },
+    "test": {
+      "$comment": "Strict test definition",
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "driver"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "driver": { "type": "string" }
+      }
+    },
+    "provisioner": {
+      "$comment": "Strict provisioner",
+      "type": "object",
+      "required": [
+        "driver"
+      ],
+      "properties": {
+        "driver": { "type": "string" }
+      }
+    }
+  }
+}

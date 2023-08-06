@@ -1,0 +1,14 @@
+README.rst
+setup.py
+flask_restful_patched.egg-info/PKG-INFO
+flask_restful_patched.egg-info/SOURCES.txt
+flask_restful_patched.egg-info/dependency_links.txt
+flask_restful_patched.egg-info/requires.txt
+flask_restful_patched.egg-info/top_level.txt
+flask_restplus_patched/__init__.py
+flask_restplus_patched/api.py
+flask_restplus_patched/model.py
+flask_restplus_patched/namespace.py
+flask_restplus_patched/parameters.py
+flask_restplus_patched/resource.py
+flask_restplus_patched/swagger.py

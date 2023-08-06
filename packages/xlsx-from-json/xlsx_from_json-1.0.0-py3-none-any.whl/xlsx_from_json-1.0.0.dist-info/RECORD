@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=ZCOnXrZnj-vUJN6_8WUSOXyM2KM89SgCT2j8OHGAUAw,7613
+xlsx_from_json/__init__.py,sha256=5IUC5WkvFhEZpJb2L9w0wGH457ZGnrWhLLCbiGZJ21E,60
+xlsx_from_json/api.py,sha256=a7jG4ycPCJAg2hJ_jdoTQuMSk6oaNurUTrqVgTawaHw,4019
+xlsx_from_json/models.py,sha256=MwOjcVmBkIjiOJG-IQa3Z4Yz1EMjGHifx_yBxOoXNkI,1401
+xlsx_from_json/utils.py,sha256=6JFcz5082Lab6JxEt7H8tX2vM2_qUXesK7RZUhANT-U,1619
+xlsx_from_json-1.0.0.dist-info/METADATA,sha256=8QkDomqCsbnJNio-M3B-eD20cxJk1cmM2F8JNSW1au8,2861
+xlsx_from_json-1.0.0.dist-info/RECORD,,
+xlsx_from_json-1.0.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+xlsx_from_json-1.0.0.dist-info/top_level.txt,sha256=VUMCydTDwTWZQguSrgARElAbQaJCBE_l2OA3YILjYxc,21

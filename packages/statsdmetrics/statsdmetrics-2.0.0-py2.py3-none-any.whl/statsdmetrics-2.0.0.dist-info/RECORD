@@ -1,0 +1,17 @@
+statsdmetrics/__init__.py,sha256=p_Nho3asGVP41-SNst1Ml1LUfju0Nf3MYHX6LByzs2k,585
+statsdmetrics/metrics.py,sha256=LV-JB2eGOPIIBzdMtpURI7nrFPOgCcsBsvU4_DmAy0w,10757
+statsdmetrics/client/__init__.py,sha256=cuEbJEpgquHB3OtWwnVheiRdfM5uw6W-lcNi1dyIXIc,11350
+statsdmetrics/client/tcp.py,sha256=CSmVew0LNt0DBzT7-eS--xD6oF7tuuDKQHeuUC9c5fA,2713
+statsdmetrics/client/timing.py,sha256=tbT38aKFB-tkwGB8DrZUpgTBdI0Z_XYxNWKvUTWREeA,4189
+statsdmetrics-2.0.0.dist-info/METADATA,sha256=nCyP4UCUyDRrXslrcbmprOfD4_CMIA-wJjS1cvA8oEo,7731
+statsdmetrics-2.0.0.dist-info/RECORD,,
+statsdmetrics-2.0.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+statsdmetrics-2.0.0.dist-info/top_level.txt,sha256=sRoGEYVw5lUv3rjIBhLrmEDSGEXBxNJjEtLe_iipnGw,20
+statsdmetrics-2.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/__init__.py,sha256=vv_IquU_LuigmJvetAyG3PfuekJcqfl5ecFnN-GImsw,4087
+tests/integration_test_tcp.py,sha256=wwybYU_7x8AbJLuli4xgC-NMRjS7d-o61aF857wTFD0,7266
+tests/integration_test_udp.py,sha256=FJMPTYRN3Qzrgf_J9D4dU0B8VoKC2UaQSDFYq1H1vlU,6356
+tests/test_client.py,sha256=F-Ex4zGWULQ7Kms4s_5V7Pwmi45Td_Gc9EQ0Q0eCB30,24335
+tests/test_client_tcp.py,sha256=awubapnfVN_Y3vOtATuD0FCphsJyPhpFw5iGxhzOboo,17266
+tests/test_client_timing.py,sha256=joGM-9VPTW00saOcM40HG0WoVVNfe1ltyeI2jEulcTA,7838
+tests/test_metrics.py,sha256=tPOtOt7GYvUU0tbKMUG77NJZufx9nDdFG8pXyvtx2k8,17692

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        guildwatcher=guild_watcher:main
+    

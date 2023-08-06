@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+guild_watcher.py
+requirements.txt
+setup.py
+guildwatcher.egg-info/PKG-INFO
+guildwatcher.egg-info/SOURCES.txt
+guildwatcher.egg-info/dependency_links.txt
+guildwatcher.egg-info/entry_points.txt
+guildwatcher.egg-info/requires.txt
+guildwatcher.egg-info/top_level.txt

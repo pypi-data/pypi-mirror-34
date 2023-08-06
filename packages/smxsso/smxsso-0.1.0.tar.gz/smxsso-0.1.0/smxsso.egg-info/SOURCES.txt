@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+bin/smxsso
+bin/smxsso.cmd
+smxsso/__init__.py
+smxsso.egg-info/PKG-INFO
+smxsso.egg-info/SOURCES.txt
+smxsso.egg-info/dependency_links.txt
+smxsso.egg-info/requires.txt
+smxsso.egg-info/top_level.txt

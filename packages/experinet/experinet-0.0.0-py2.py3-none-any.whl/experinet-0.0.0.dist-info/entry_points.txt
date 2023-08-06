@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        experinet=scripts.experinet_cli:cli
+    

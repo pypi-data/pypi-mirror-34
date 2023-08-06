@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: wm_dist
+Version: 1.0.2
+Summary: Calculates distances through volume with Eikonal equation
+Home-page: https://github.com/tfunck/wm_dist
+Author: Thomas Funck
+Author-email: tffunck@gmail.com
+License: UNKNOWN
+Description: wm_dist calculates distances from points on a mesh through a volume. Distances are calculated by solving the Eikonal equation.
+        The primary use case for wm_dist is brain imaging for calculating distances through the cortical white matter from vertex points defined on a mesh representation of the cortical gray matter. However, in principal, any distances can be calculated through any volume from any points defined on an surface mesh.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

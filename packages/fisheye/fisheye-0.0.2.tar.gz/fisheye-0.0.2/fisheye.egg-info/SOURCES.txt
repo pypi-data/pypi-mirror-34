@@ -1,0 +1,10 @@
+README.md
+setup.py
+fisheye/__init__.py
+fisheye/main.py
+fisheye.egg-info/PKG-INFO
+fisheye.egg-info/SOURCES.txt
+fisheye.egg-info/dependency_links.txt
+fisheye.egg-info/not-zip-safe
+fisheye.egg-info/requires.txt
+fisheye.egg-info/top_level.txt

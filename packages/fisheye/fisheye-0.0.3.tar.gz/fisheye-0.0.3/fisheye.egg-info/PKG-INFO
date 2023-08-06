@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fisheye
+Version: 0.0.3
+Summary: Transform single points or arrays of points using several fisheye functions.
+Home-page: https://www.github.com/benmaier/python-fisheye
+Author: Benjamin F. Maier
+Author-email: bfmaier@physik.hu-berlin.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

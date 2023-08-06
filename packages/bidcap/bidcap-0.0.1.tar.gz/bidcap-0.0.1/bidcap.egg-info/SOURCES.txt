@@ -1,0 +1,13 @@
+README.md
+bidcap/__init__.py
+bidcap/setup.py
+bidcap.egg-info/PKG-INFO
+bidcap.egg-info/SOURCES.txt
+bidcap.egg-info/dependency_links.txt
+bidcap.egg-info/top_level.txt
+bidcap/datasets/__init__.py
+bidcap/datasets/convex.py
+bidcap/datasets/data.py
+bidcap/datasets/mnist.py
+bidcap/utils/__init__.py
+bidcap/utils/loader.py

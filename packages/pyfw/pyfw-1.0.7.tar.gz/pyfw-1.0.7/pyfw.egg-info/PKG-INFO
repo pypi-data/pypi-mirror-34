@@ -1,0 +1,52 @@
+Metadata-Version: 1.0
+Name: pyfw
+Version: 1.0.7
+Summary: python framework
+Home-page: https://github.com/wenanguo/pyfw
+Author: Andrew Wen
+Author-email: 79912844@qq.com
+License: MIT Licence
+Description-Content-Type: UNKNOWN
+Description: pyfw 应用简介
+        -------
+        
+        ##### 一、应用介绍
+        
+        本应用为基础开发框架，进行相关基础工具的整合,实现快速进行应用开发
+        
+        
+        ---
+        
+        ##### 二、启动命令
+        
+        ###### 启动命令
+        ```
+        python manage.py runserver --host 0.0.0.0
+        ```
+        
+        ###### 测试命令
+        ```
+        python manage.py test
+        ```
+        
+        ###### 服务器启动命令
+        ```
+        gunicorn -b 0.0.0.0:8000  manage:app
+        ```
+        
+        
+        ##### 三、版本信息
+        
+        v1.0.1
+        ---
+        1、完成基础开发功能
+        
+        2、完成基础UI搭建
+        
+        ---
+        v1.0.2
+        ---
+        
+        ---
+Keywords: pip,cmcc,python,pyfw,framework
+Platform: any

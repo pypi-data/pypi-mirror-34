@@ -1,0 +1,10 @@
+README.md
+setup.py
+scriptlib/__init__.py
+scriptlib/scriptfile.py
+scriptlib/scriptjson.py
+scriptlib/scriptui.py
+scriptlib.egg-info/PKG-INFO
+scriptlib.egg-info/SOURCES.txt
+scriptlib.egg-info/dependency_links.txt
+scriptlib.egg-info/top_level.txt

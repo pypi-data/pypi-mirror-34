@@ -1,0 +1,19 @@
+# Install requirements
+Django
+pytest-django
+six
+
+# Development dependencies
+black
+check-manifest
+flake8
+jedi
+pre-commit
+psycopg2-binary
+pytest-cov
+tox
+twine
+wheel
+
+# Self
+-e .

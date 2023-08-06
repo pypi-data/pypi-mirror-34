@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: scannertools
+Version: 0.2.15
+Summary: Video analytics toolkit
+Home-page: http://github.com/scanner-research/scannertools
+Author: Will Crichton
+Author-email: wcrichto@cs.stanford.edu
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: attrs
+Requires-Dist: cloudpickle
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+UNKNOWN
+
+

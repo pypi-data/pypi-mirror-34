@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simplecel
+Version: 0.2.10
+Summary: Offline Excel-like app with no formula conversion, but with image/markdown/HTML support.
+Home-page: https://github.com/patarapolw/simplecel
+Author: Pacharapol Withayasakpunt
+Author-email: patarapolw@gmail.com
+Keywords: excel,handsontable,pyexcel
+Requires-Python: >=3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=6.7,<7.0)
+Requires-Dist: flask (>=1.0,<2.0)
+Requires-Dist: pyexcel (>=0.5.8,<0.6.0)
+Requires-Dist: ruamel.yaml (>=0.15.48,<0.16.0)

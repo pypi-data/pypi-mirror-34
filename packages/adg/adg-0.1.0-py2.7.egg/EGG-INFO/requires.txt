@@ -1,0 +1,7 @@
+networkx>=2.0
+numpy
+
+[develop]
+roman
+sphinx
+sphinx_rtd_theme

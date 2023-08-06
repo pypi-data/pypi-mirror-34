@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: adg
+Version: 0.1.0
+Summary: A powerful diagram generator and evaluator for many-body formalisms in physics and chemistry
+Home-page: UNKNOWN
+Author: Pierre Arthuis
+Author-email: pierre.arthuis@pm.me
+Maintainer: Pierre Arthuis
+Maintainer-email: pierre.arthuis@pm.me
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: physics,chemistry,theory,many-body,diagram,cli,batch
+Platform: linux
+Platform: osx
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=2.7.1
+Provides-Extra: develop

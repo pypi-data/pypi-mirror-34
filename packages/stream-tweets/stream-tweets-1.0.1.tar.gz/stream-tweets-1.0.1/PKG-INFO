@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: stream-tweets
+Version: 1.0.1
+Summary: stream tweets to a queue
+Home-page: https://github.com/wesuuu/queue_tweets
+Author: Wesley Uykimpang
+Author-email: wesu07@gmail.com
+License: UNKNOWN
+Description: stream tweets to a queue for a finite amount of time         that can be parallelized with a consumption process
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10

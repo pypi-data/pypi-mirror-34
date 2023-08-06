@@ -1,0 +1,12 @@
+crawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawler/ec2.py,sha256=uCD2sLhfPime9Ow-erpnSNLneycBSXSaJb23_sa4s6c,5651
+crawler/parse.py,sha256=lKQmrJbJOXZ77GeegXlZj5xkevPCnXhZA78IvQS47Es,874
+crawler/scrap.py,sha256=P3TB-WDhU7AUEarAtAAtrmM8ZybWEhk3jxkPo11TVtY,11236
+dacrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dacrawler/ec2.py,sha256=uCD2sLhfPime9Ow-erpnSNLneycBSXSaJb23_sa4s6c,5651
+dacrawler/parse.py,sha256=lKQmrJbJOXZ77GeegXlZj5xkevPCnXhZA78IvQS47Es,874
+dacrawler/scrap.py,sha256=P3TB-WDhU7AUEarAtAAtrmM8ZybWEhk3jxkPo11TVtY,11236
+dacrawler-1.0.4.dist-info/METADATA,sha256=qVBAEpb0kXomnRoFpojMebslapQBp9BfOgrzvjFfbSU,425
+dacrawler-1.0.4.dist-info/RECORD,,
+dacrawler-1.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dacrawler-1.0.4.dist-info/top_level.txt,sha256=641FYuKBJYl46PieMJ0YTMsYTaUvQ_clflIjWgdB2ZU,10

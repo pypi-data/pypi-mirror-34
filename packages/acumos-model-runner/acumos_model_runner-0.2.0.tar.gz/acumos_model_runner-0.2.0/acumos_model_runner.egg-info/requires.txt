@@ -1,0 +1,8 @@
+acumos>=0.5.3
+lark-parser
+connexion
+gunicorn
+pyyaml
+jinja2
+protobuf
+flask-cors

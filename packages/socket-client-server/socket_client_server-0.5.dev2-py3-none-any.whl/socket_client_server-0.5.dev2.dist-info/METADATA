@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: socket-client-server
+Version: 0.5.dev2
+Summary: UNIX domain socket client and server classes
+Home-page: https://github.com/mbunse/socket_client_server
+Author: Moritz Bunse
+Author-email: mbunse@hotmail.com
+License: MIT
+Keywords: server client unix socket daemon
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Requires-Dist: future
+Requires-Dist: six
+
+UNKNOWN
+
+

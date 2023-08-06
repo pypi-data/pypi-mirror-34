@@ -1,0 +1,8 @@
+depinfo
+biopython
+numpy
+pandas
+xlrd
+requests
+goodtables
+importlib-resources

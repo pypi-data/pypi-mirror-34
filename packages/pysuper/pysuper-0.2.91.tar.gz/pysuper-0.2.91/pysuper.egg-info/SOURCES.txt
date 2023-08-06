@@ -1,0 +1,9 @@
+README.md
+setup.py
+pysuper/__init__.py
+pysuper/build_pysuper.py
+pysuper.egg-info/PKG-INFO
+pysuper.egg-info/SOURCES.txt
+pysuper.egg-info/dependency_links.txt
+pysuper.egg-info/requires.txt
+pysuper.egg-info/top_level.txt

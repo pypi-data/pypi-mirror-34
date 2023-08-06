@@ -1,0 +1,8 @@
+README.md
+setup.py
+jiraph/__init__.py
+jiraph.egg-info/PKG-INFO
+jiraph.egg-info/SOURCES.txt
+jiraph.egg-info/dependency_links.txt
+jiraph.egg-info/not-zip-safe
+jiraph.egg-info/top_level.txt

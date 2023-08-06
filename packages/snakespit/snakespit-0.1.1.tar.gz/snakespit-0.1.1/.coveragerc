@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/snakespit
+   */site-packages/snakespit
+
+[run]
+branch = true
+source =
+    snakespit
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*

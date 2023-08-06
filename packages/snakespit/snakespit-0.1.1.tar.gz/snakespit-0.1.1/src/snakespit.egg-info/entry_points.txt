@@ -1,0 +1,3 @@
+[console_scripts]
+snakespit = snakespit.cli:main
+

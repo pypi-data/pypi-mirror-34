@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyanca
+Version: 0.1.10
+Summary: Anharmonic Conformational Analysis
+Home-page: https://github.com/ChakraLabPitt/pyanca
+Author: Akash Parvatikar
+Author-email: pyancadev@gmail.com
+License: MIT
+Keywords: molecular biophysics,molecular dynamics simulations,anharmonicity,higher order statistics,bioinformatics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: test
+Provides-Extra: dev
+Requires-Dist: mdanalysis
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+
+# pyANCA
+
+

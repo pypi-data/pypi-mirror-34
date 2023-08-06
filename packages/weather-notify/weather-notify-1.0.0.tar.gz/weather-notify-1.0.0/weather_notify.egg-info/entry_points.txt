@@ -1,0 +1,3 @@
+[console_scripts]
+weathernotifier = weathernotifier.notifier:notify
+

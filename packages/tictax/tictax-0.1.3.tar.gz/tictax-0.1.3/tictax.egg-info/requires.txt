@@ -1,0 +1,4 @@
+argh==0.26.2
+tqdm==4.24.0
+aiohttp==2.3.7
+biopython==1.72

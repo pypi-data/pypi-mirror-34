@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: features-extracter
+Version: 0.1.0
+Summary: text feature extracter
+Home-page: https://github.com/Lzejie/features-extracter
+Author: L_zejie
+Author-email: lzj_xuexi@163.com
+License: MIT Licence
+Keywords: feature,extracter,nlp
+Platform: UNKNOWN
+Requires-Dist: sklearn
+Requires-Dist: gensim
+Requires-Dist: numpy
+Requires-Dist: jieba
+
+UNKNOWN
+
+

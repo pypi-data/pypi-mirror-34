@@ -1,0 +1,9 @@
+extracter/__init__.py,sha256=pkQC4U9AhTYgBWXYVHIZj249eOI7emr6OQq-pPYcmGQ,155
+extracter/ig/__init__.py,sha256=NMeXQC3Ki4hhhrFSi2TUfyErW7OZcjteNE29x3QaI2Y,156
+extracter/ig/information_gain.py,sha256=DVe4S10kn1eBWYSGLlUPta_7WVpwrVFzchsNSKoOQSw,4034
+extracter/tfidf/__init__.py,sha256=57RACnPdIJ3xbfHbLyL1HaOe6shl9iZPxFw7y87QmTM,156
+extracter/tfidf/tfidf.py,sha256=ReON2j_ZJ74CVBr1-FK-Btuq7mx0l9GQ0V2VbQVl73A,3684
+features_extracter-0.1.0.dist-info/METADATA,sha256=SK-pmRq5rlSvtAPehbJFhSUEOQy9QnLeN5RetMimwus,367
+features_extracter-0.1.0.dist-info/RECORD,,
+features_extracter-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+features_extracter-0.1.0.dist-info/top_level.txt,sha256=Y2gvfPqpWlDVVihZ3cqZVWe6gJYkMULMdltqinVmCHU,10

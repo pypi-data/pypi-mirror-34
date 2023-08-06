@@ -1,0 +1,3 @@
+[console_scripts]
+log2csv = log2csv:main
+

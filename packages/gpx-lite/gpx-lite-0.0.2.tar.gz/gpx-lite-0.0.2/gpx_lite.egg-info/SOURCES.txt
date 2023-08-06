@@ -1,0 +1,14 @@
+README.md
+setup.py
+gpx_lite/__init__.py
+gpx_lite/gpx.py
+gpx_lite/gpxtrack.py
+gpx_lite/gpxtrackpoint.py
+gpx_lite/gpxtracksegment.py
+gpx_lite/parser.py
+gpx_lite/utils.py
+gpx_lite.egg-info/PKG-INFO
+gpx_lite.egg-info/SOURCES.txt
+gpx_lite.egg-info/dependency_links.txt
+gpx_lite.egg-info/requires.txt
+gpx_lite.egg-info/top_level.txt

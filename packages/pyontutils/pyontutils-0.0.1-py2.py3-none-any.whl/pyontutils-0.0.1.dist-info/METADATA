@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyontutils
+Version: 0.0.1
+Summary: utilities for working with the NIFSTD ontology and SciGraph
+Home-page: https://github.com/tgbugs/pyontutils
+Author: Tom Gillespie
+Author-email: tgbugs@gmail.com
+License: MIT
+Description: 
+Keywords: nif nifstd ontology scigraph
+Platform: UNKNOWN
+Provides-Extra: dev
+Requires-Dist: docopt
+Requires-Dist: flask
+Requires-Dist: gitpython
+Requires-Dist: ipython
+Requires-Dist: joblib
+Requires-Dist: lxml
+Requires-Dist: ontquery
+Requires-Dist: psutil
+Requires-Dist: pymysql
+Requires-Dist: pyyaml
+Requires-Dist: rdflib
+Requires-Dist: requests
+Requires-Dist: robobrowser
+Requires-Dist: sqlalchemy
+Provides-Extra: dev
+Requires-Dist: hunspell; extra == 'dev'
+Requires-Dist: jupyter; extra == 'dev'
+Requires-Dist: mysql-connector; extra == 'dev'
+Requires-Dist: protobuf; extra == 'dev'
+Requires-Dist: psycopg2; extra == 'dev'
+

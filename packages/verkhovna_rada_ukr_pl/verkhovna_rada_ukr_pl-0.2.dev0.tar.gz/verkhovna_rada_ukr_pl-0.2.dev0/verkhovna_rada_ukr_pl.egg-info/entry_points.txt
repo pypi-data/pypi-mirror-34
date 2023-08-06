@@ -1,0 +1,3 @@
+[console_scripts]
+rada = vekrhovna_rada_urk_pl.verh_rada:main
+

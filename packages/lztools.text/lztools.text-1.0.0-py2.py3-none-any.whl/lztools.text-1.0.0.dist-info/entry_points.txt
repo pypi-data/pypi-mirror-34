@@ -1,0 +1,3 @@
+[console_scripts]
+ltext = lztools.ltext:main
+

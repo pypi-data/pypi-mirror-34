@@ -1,0 +1,12 @@
+open_api_sdk-1.0.0.dist-info/METADATA,sha256=APU0Kbc1jkNVcfjEAA5kBQM0urxU2SmL9r5GGieErXA,8323
+open_api_sdk-1.0.0.dist-info/RECORD,,
+open_api_sdk-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+open_api_sdk-1.0.0.dist-info/top_level.txt,sha256=lo2o76QwGqN3My7uY8yNKAFEWmyS7tcB2Wwd_m2BlNc,19
+openplatform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openplatform/config.py,sha256=xOa7avMyPwhFKWh6cqgW8aUFlusR9lz_s7fe-eRCTAA,141
+openplatform/senders.py,sha256=3XcMIkwBoRJH2hl1lAjsq7CgtEOjXoy9y5jkP7v4B88,3164
+openplatform/urls.py,sha256=4vW19YD7G5UykIqXGloYvrrKSlpVgZ-kpLTmYQPK3OU,236
+openplatform/utils.py,sha256=Cqwi7W4fgm4UDvpuuIjbxyBBKLsAGhHa13DJ9OJG6vQ,529
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/const.py,sha256=p2I6vWjGwP2uZ-kmRNx1PE4TK07DZiYYSH-bsFX9yNA,9265
+tests/test.py,sha256=_uc6q6ViOrloBmUxSN__-CxdlTX1gpgsDPhWPF_rz-M,9419

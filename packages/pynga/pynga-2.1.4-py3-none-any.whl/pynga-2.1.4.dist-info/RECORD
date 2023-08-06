@@ -1,0 +1,13 @@
+pynga/__init__.py,sha256=T9ozw2BojUna_p5dfBGzlRR3b8lpkvs3kDWwGXF3aa4,3369
+pynga/__version__.py,sha256=eDa1qmjZbFndVORStl7YZdY-C2Tm1fnSo6G8zDq_oww,229
+pynga/default_config.py,sha256=WnHjvgIPrW6asbtbtwg6jy-_lWn1Ue49gmyfLUf68Bk,1209
+pynga/forum.py,sha256=4iPWQsjVEoncvNYa9MaBxhG1P1a3E22lw9lev-7Ijh8,4432
+pynga/misc.py,sha256=-yU5q08oeFOLD-HerDKCeaFvH_8JVWig87zv3LDTe2k,1599
+pynga/post.py,sha256=dF1clkOyGxu-Eu1J7v2RLjtdWtZFf8IsHRhMQHKFHxU,4323
+pynga/session.py,sha256=Kyp4_QRbmCpOc8baxmuu99mD3fEIH1jlR7WiMJmEUZM,4078
+pynga/thread.py,sha256=y_RSkdCp2p1vEJK-dRdke1vpOp2mD8dCfmGgXmJMwgc,4140
+pynga/user.py,sha256=nXp_55j4ahkIG8KKUcfp8GEKIb8HIYWrnH7uO2WIIgw,8944
+pynga-2.1.4.dist-info/METADATA,sha256=HvTmrNHr6VSW8hbelu_HbE7Ud5pkio0h1s2vTk88e6c,1234
+pynga-2.1.4.dist-info/RECORD,,
+pynga-2.1.4.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+pynga-2.1.4.dist-info/top_level.txt,sha256=C6Iz3AsP8cJpge-W0XD6SfeEh0rWjDarpXcLVu9ZPj8,6

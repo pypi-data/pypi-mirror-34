@@ -1,0 +1,12 @@
+README.md
+setup.py
+tf_decompose/__init__.py
+tf_decompose/dtensor.py
+tf_decompose/ktensor.py
+tf_decompose/ttensor.py
+tf_decompose/utils.py
+tf_decompose.egg-info/PKG-INFO
+tf_decompose.egg-info/SOURCES.txt
+tf_decompose.egg-info/dependency_links.txt
+tf_decompose.egg-info/requires.txt
+tf_decompose.egg-info/top_level.txt

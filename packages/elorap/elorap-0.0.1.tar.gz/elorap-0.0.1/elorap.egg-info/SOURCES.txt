@@ -1,0 +1,9 @@
+setup.py
+elorap/__init__.py
+elorap/main.py
+elorap.egg-info/PKG-INFO
+elorap.egg-info/SOURCES.txt
+elorap.egg-info/dependency_links.txt
+elorap.egg-info/entry_points.txt
+elorap.egg-info/requires.txt
+elorap.egg-info/top_level.txt

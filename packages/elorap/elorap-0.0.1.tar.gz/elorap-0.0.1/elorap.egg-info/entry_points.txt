@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            siemano=elorap.main:main
+        

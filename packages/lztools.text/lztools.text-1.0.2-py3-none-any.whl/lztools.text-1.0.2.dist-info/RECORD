@@ -1,0 +1,10 @@
+cli/ltext.py,sha256=vCD6M0ApKMIolqpXYK5yQ3yI9UAe9JV7XTPi05DgzG4,2855
+lztools/Ansi.py,sha256=d4mA55WXwFbM9ttvOItMQMzkr5Uli3HytYaY7KWZBw4,1605
+lztools/BlockWriter.py,sha256=pJQZBiW5IfzCQAxkYhQIjuGcZrDCUACR8ROEcF2EqtY,2203
+lztools/ColumnWriter.py,sha256=nEm3t1KSUGUzrgn1nV2Kc0t3alPTjgqWRqkYC47LaGA,3075
+lztools/text.py,sha256=FffruHCn-bIL32ConmryPQAaNPaai9O5s24lfFdH-1M,4344
+lztools.text-1.0.2.dist-info/METADATA,sha256=K5U7IG5F4ChCSpCv_ilvxq5UqEHvok9zK01lOPGlY2Y,484
+lztools.text-1.0.2.dist-info/RECORD,,
+lztools.text-1.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+lztools.text-1.0.2.dist-info/entry_points.txt,sha256=hNTWPfk_J3fG8iAbOSqtv_pGzAyy0QGSCyS2uzfCwWk,42
+lztools.text-1.0.2.dist-info/top_level.txt,sha256=bJbLP6KpDln_lNxL6fu0D6YqAoecHE-BI9TpltrPb4M,12

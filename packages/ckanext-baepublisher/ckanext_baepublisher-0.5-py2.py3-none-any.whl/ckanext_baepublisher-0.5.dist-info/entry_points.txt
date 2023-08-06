@@ -1,0 +1,4 @@
+
+        [ckan.plugins]
+        baepublisher=ckanext.baepublisher.plugin:StorePublisher
+    

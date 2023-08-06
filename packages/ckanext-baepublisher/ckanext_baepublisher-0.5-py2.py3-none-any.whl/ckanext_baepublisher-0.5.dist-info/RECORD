@@ -1,0 +1,16 @@
+ckanext_baepublisher-0.5-py3.7-nspkg.pth,sha256=oZfyi-ETzHw3lEdNfYzJcXK_0mgbxULBtjG8j01xgdI,1756
+ckanext/baepublisher/plugin.py,sha256=9MTfPgxtwj6ej9uyuaC9xY_vgt4CRozJW0dlI25cQaw,2397
+ckanext/baepublisher/store_connector.py,sha256=r6QkvEM0CMT95N-1Od1QGoylTB2kRNQCTAPv2pS57p0,18304
+ckanext/baepublisher/assets/logo-ckan.png,sha256=KD5eQeFaianaQvnAQPN6eZhPLlz_JQjb8WaLCjCsqyw,22584
+ckanext/baepublisher/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/baepublisher/controllers/ui_controller.py,sha256=Xe8muMtaSdLG45JxkC857y-ONzPmkkTmxDmiFfnpjvY,10356
+ckanext/baepublisher/fanstatic/image_upload.js,sha256=nPbfUgNVSfwoPyy_pEL-p_FmXTeEZThEGgMYpzuSrrs,1546
+ckanext/baepublisher/templates/package/edit_base.html,sha256=gvfzoz5JUz1MkYIEpW6QFj5q8-q1HOf4EvdNBF-N4TM,153
+ckanext/baepublisher/templates/package/publish.html,sha256=kXsZHfPMMS4V3ZlaF6_EdGWtLpfU8VKTDXZnyEuN8Ss,1250
+ckanext/baepublisher/templates/package/snippets/storepublisher_publish_form.html,sha256=1cdO9VCpr6CzkkIkf1lx0D8wdV7aMqxVIX9Yrd1Aqw0,6724
+ckanext_baepublisher-0.5.dist-info/METADATA,sha256=I1zy07nIrAtfGd5ROc_RkKPAgpwlVlhe5oPdeQPrTrQ,3660
+ckanext_baepublisher-0.5.dist-info/RECORD,,
+ckanext_baepublisher-0.5.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ckanext_baepublisher-0.5.dist-info/entry_points.txt,sha256=uDHSSeb3U-_P8uz35i04PmSilfoVMMTKvew71XGGUHE,92
+ckanext_baepublisher-0.5.dist-info/namespace_packages.txt,sha256=xxeDQ2nP6nSB1_3IvUsyGcusxEITzzS7a1LUrbz4qFk,29
+ckanext_baepublisher-0.5.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8

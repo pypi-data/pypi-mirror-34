@@ -1,0 +1,10 @@
+gmapi/__init__.py,sha256=BzxuN5tQ_iSOfd5APHWgkzpkvtsp1S6PZC-3Xv97y60,15
+gmapi/cli.py,sha256=L_ke1QYtqjLlgX-V1WxBPKvOckFfgZINSudFeJQghi8,876
+gmapi/code.py,sha256=YNTRtiLinlJFM5mbmkRkBw1bBRW1L1AttGdiZNIVh9k,13108
+gmapi/constants.py,sha256=lj5bwU475_ZzetaqXao-wwL82VxqqEwv40YIHbhOP_8,334
+gmapi/gmapi.py,sha256=N1yZ1Ct9iKKm1PyMVnsT0R32VnUEgFiZ_dzB9rFyxa4,17432
+gmapi-1.14.29.dist-info/METADATA,sha256=HnuaxbIS6hNpDBdnoAvzAyT8b7b1x2CZsgcHxCCWMQo,1668
+gmapi-1.14.29.dist-info/RECORD,,
+gmapi-1.14.29.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+gmapi-1.14.29.dist-info/entry_points.txt,sha256=fHWujCeUvu6UkOIq_SgUzrLU6bgCGN_5iya0YHcyuk0,40
+gmapi-1.14.29.dist-info/top_level.txt,sha256=Occt3CrOOBqExIo_g03iiTOaldkFJ6IkNORuk_54yf8,6

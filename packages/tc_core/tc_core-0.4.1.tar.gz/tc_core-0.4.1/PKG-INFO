@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tc_core
+Version: 0.4.1
+Summary: Thumbor community extensions core
+Home-page: http://github.com/thumbor_community/core
+Author: Thumbor Community
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tests

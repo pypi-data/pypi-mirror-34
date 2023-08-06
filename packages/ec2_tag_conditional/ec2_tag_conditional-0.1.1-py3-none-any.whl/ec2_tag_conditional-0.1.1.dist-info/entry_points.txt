@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    instance-tags=ec2_tag_conditional.util:command_line
+    

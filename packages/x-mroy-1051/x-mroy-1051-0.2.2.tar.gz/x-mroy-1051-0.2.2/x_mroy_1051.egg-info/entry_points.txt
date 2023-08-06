@@ -1,0 +1,3 @@
+[console_scripts]
+x-sehen = DrMoriaty.cmd.main:main
+

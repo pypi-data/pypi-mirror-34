@@ -1,0 +1,37 @@
+from DrMoriaty.utils.log import lprint, gprint, rprint, colored, tprint, Tprint, tag2dict
+from bs4 import BeautifulSoup as BS
+import requests
+import re
+
+mode = "thread"
+thread = 20
+
+def usage():
+    gprint("test if html has login form")
+
+def test_single(url, ssl=False):
+    if ssl:
+        u = 'https://' + url
+    else:
+        u = 'http://' + url
+    try:
+        res = requests.get(u, timeout=12)
+        if res.status_code == 200:
+            t = BS(res.text, 'html.parser')("form")
+            if t:
+                for tt in t:
+                    if 'login' in tt.decode():
+                        tprint(u, tt.attrs.get('action'), tt.attrs.get("method"))
+                        for single_input in tt.select("input"):
+                            tdict = tag2dict(single_input.decode())
+                            Tprint(tdict, color='blue')
+                            print()
+                        return True
+                    return False
+    except Exception as e:
+        print(colored("[%s] "%url, "yellow"), colored(e, 'red'))
+        return False
+
+def test(target):
+    url = target.ip + ":" + target.port
+    return target.port + " " + str(test_single(url))

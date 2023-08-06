@@ -1,0 +1,25 @@
+from bs4 import BeautifulSoup as BS
+from DrMoriaty.utils.log import gprint, rprint, colored
+import requests
+
+mode = "thread"
+thread = 20
+
+def usage():
+    gprint("get http banner's title")
+
+def test(target):
+    url = target.ip + ":" + target.port
+    if target.port == 443:
+        u = 'https://' + target.ip
+    else:
+        u = 'http://' + target.ip + ":" + target.port
+    try:
+        res = requests.get(u, timeout=10)
+        if res.status_code == 200:
+            t = BS(res.text, 'html.parser')("title")[0].text
+            if isinstance(t, bytes):
+                t = t.decode(res.encoding, 'ignore')
+            gprint(u, t)
+    except Exception as e:
+        rprint(url, colored(e, 'red'))

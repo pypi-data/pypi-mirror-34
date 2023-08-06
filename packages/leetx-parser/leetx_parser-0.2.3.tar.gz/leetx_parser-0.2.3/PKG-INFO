@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: leetx_parser
+Version: 0.2.3
+Summary: Find magnet links for TV show episodes
+Home-page: https://github.com/evgeny1602/leetx_parser
+Author: Evgeny Lobanov
+Author-email: evgeny1602@gmail.com
+License: UNKNOWN
+Description: leetx_parser
+        ============
+        
+        .. image:: https://img.shields.io/pypi/v/leetx_parser.svg
+            :target: https://pypi.python.org/pypi/leetx_parser
+            :alt: Latest PyPI version
+        
+        .. image:: https://www.travis-ci.org/evgeny1602/leetx_parser.png
+           :target: https://www.travis-ci.org/evgeny1602/leetx_parser
+           :alt: Latest Travis CI build status
+        
+        Finds magnet links for TV show episodes
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        GNU General Public License v3.0
+        
+        Authors
+        -------
+        
+        `leetx_parser` was written by `Evgeny Lobanov <evgeny1602@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

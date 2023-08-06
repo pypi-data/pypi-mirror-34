@@ -1,0 +1,12 @@
+AUTHORS
+ChangeLog
+README.rst
+setup.cfg
+setup.py
+tobiko.egg-info/PKG-INFO
+tobiko.egg-info/SOURCES.txt
+tobiko.egg-info/dependency_links.txt
+tobiko.egg-info/entry_points.txt
+tobiko.egg-info/not-zip-safe
+tobiko.egg-info/pbr.json
+tobiko.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+numpy
+pyyaml
+scipy
+scikit-learn
+cvxpy<=0.4.11,>=0.4
+matplotlib
+pathos
+pytest
+pandas
+progress

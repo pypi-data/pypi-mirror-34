@@ -1,0 +1,8 @@
+python_asip_client/__init__.py,sha256=20OgGikK7U0ybcpyRKLbYWTtev7g_HFgNhlgUCbq7WE,28
+python_asip_client/mqtt_mirto_robot.py,sha256=nfkrGrT9bq3d38QV_OXVP5dmbmtlDU_j8W86kjFh3cQ,4117
+python_asip_client/serial_mirto_robot.py,sha256=IswbnOXSqcoNAIufDXV02eCl13Vh_TnktoVdBDxaq4I,4268
+python_asip_client/tcp_mirto_robot.py,sha256=1sMAojM23RvmDc6VsmS0a1teVhr69EMLHsMUxKFw5pk,4038
+python_asip_client-1.0.0.dist-info/METADATA,sha256=ZaBHldynhqVKdXsLNuwhMNKCyia9pmibFoH-p6EYRa0,621
+python_asip_client-1.0.0.dist-info/RECORD,,
+python_asip_client-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+python_asip_client-1.0.0.dist-info/top_level.txt,sha256=yuLCK7hp_jqR6KGYjQjLJUHZMu9WGFX3yV_-8VnKcgo,19

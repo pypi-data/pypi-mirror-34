@@ -1,0 +1,13 @@
+reprozip_jupyter/__init__.py,sha256=pE78kcA_EbRMWw2BY3Hj7ev0WgatXWR8m85UpQThmGg,436
+reprozip_jupyter/main.py,sha256=gz55BlXEAWiXbCRIPN-IftQpeGbzu3h2__c3vENu4DQ,1614
+reprozip_jupyter/notebook-extension.js,sha256=7FqmBDl6RfMkkk3xwFyTqn4XR2ZpicFy5pVMx8FypgY,4647
+reprozip_jupyter/run.py,sha256=xO5fFA4ult_C6eOGcTqrj2YVeGAnNQmryCiRAZy2xuI,3650
+reprozip_jupyter/server_extension.py,sha256=q3FeH_nFipGWeGTXDO2wPlfmNPd5PPrQ5NqCyCf79KE,3273
+reprozip_jupyter/trace.py,sha256=dtZR-D39eHmTOILsaxIH2tpFQTOliENIGpEB16dBQlw,6973
+reprozip_jupyter-1.0.14.dist-info/DESCRIPTION.rst,sha256=wYOluiDILoOwogmQyFILr_629B5zz2Ib77hVW99isqc,2029
+reprozip_jupyter-1.0.14.dist-info/METADATA,sha256=IeqW1tpzyzhZu7Ai96-jgTM1-A4yyQb6T1kwjNE4pMI,3317
+reprozip_jupyter-1.0.14.dist-info/RECORD,,
+reprozip_jupyter-1.0.14.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+reprozip_jupyter-1.0.14.dist-info/entry_points.txt,sha256=U0zX-yK4iNHqebX3GyQNcXlnaVZzneHTLN59XXRtrfo,65
+reprozip_jupyter-1.0.14.dist-info/metadata.json,sha256=3aBJF7HE0ZnbckZwAvb4jZE_NZR0dI0e0x2vWRInTes,1343
+reprozip_jupyter-1.0.14.dist-info/top_level.txt,sha256=r42GQ6J_zNwXub1AotmS83vEdCJuzbd3jyrNxcG6OXc,17

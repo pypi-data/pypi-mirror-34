@@ -1,0 +1,8 @@
+digraph {
+	fake [style=invisible]
+	0 [root=true shape=doublecircle]
+	fake -> 0 [style=bold]
+	label="weak_next
+WX A"
+	fontsize=20
+}

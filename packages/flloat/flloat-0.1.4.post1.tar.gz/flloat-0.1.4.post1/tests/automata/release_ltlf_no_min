@@ -1,0 +1,24 @@
+digraph {
+	"fake{(!(A) R !(B))}" [style=invisible]
+	"{(false R false)}" [shape=doublecircle]
+	"{}" [shape=doublecircle]
+	"{(!(A) R !(B))}" [root=true shape=doublecircle]
+	"fake{(!(A) R !(B))}" -> "{(!(A) R !(B))}" [style=bold]
+	"{}" -> "{}" [label="{B, A}"]
+	"{}" -> "{}" [label="{C, B}"]
+	"{}" -> "{}" [label="{A}"]
+	"{}" -> "{}" [label="{C, A}"]
+	"{}" -> "{}" [label="{C, B, A}"]
+	"{}" -> "{}" [label="{}"]
+	"{}" -> "{}" [label="{B}"]
+	"{}" -> "{}" [label="{C}"]
+	"{(!(A) R !(B))}" -> "{(false R false)}" [label="{A}"]
+	"{(!(A) R !(B))}" -> "{(!(A) R !(B))}" [label="{A}"]
+	"{(!(A) R !(B))}" -> "{(false R false)}" [label="{C, A}"]
+	"{(!(A) R !(B))}" -> "{(!(A) R !(B))}" [label="{C, A}"]
+	"{(!(A) R !(B))}" -> "{}" [label="{}"]
+	"{(!(A) R !(B))}" -> "{}" [label="{C}"]
+	label="release
+!A R !B"
+	fontsize=20
+}

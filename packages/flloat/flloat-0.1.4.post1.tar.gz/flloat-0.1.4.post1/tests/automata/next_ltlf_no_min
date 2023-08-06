@@ -1,0 +1,30 @@
+digraph {
+	"fake{X(A)}" [style=invisible]
+	"{A, (true U true)}"
+	"{X(A)}" [root=true]
+	"{}" [shape=doublecircle]
+	"fake{X(A)}" -> "{X(A)}" [style=bold]
+	"{A, (true U true)}" -> "{}" [label="{B, A}"]
+	"{A, (true U true)}" -> "{}" [label="{A}"]
+	"{A, (true U true)}" -> "{}" [label="{C, A}"]
+	"{A, (true U true)}" -> "{}" [label="{C, B, A}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{B, A}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{C, B}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{A}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{C, A}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{C, B, A}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{B}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{}"]
+	"{X(A)}" -> "{A, (true U true)}" [label="{C}"]
+	"{}" -> "{}" [label="{B, A}"]
+	"{}" -> "{}" [label="{C, B}"]
+	"{}" -> "{}" [label="{A}"]
+	"{}" -> "{}" [label="{C, A}"]
+	"{}" -> "{}" [label="{C, B, A}"]
+	"{}" -> "{}" [label="{}"]
+	"{}" -> "{}" [label="{B}"]
+	"{}" -> "{}" [label="{C}"]
+	label="next
+X A"
+	fontsize=20
+}

@@ -1,0 +1,21 @@
+digraph {
+	"fake{A}" [style=invisible]
+	"{A}" [root=true]
+	"{}" [shape=doublecircle]
+	"fake{A}" -> "{A}" [style=bold]
+	"{A}" -> "{}" [label="{B, A}"]
+	"{A}" -> "{}" [label="{A}"]
+	"{A}" -> "{}" [label="{C, A}"]
+	"{A}" -> "{}" [label="{C, B, A}"]
+	"{}" -> "{}" [label="{B, A}"]
+	"{}" -> "{}" [label="{C, B}"]
+	"{}" -> "{}" [label="{A}"]
+	"{}" -> "{}" [label="{C, A}"]
+	"{}" -> "{}" [label="{C, B, A}"]
+	"{}" -> "{}" [label="{}"]
+	"{}" -> "{}" [label="{B}"]
+	"{}" -> "{}" [label="{C}"]
+	label="atomic
+A"
+	fontsize=20
+}

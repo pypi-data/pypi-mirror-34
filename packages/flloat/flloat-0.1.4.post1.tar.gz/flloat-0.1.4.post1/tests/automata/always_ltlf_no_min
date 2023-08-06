@@ -1,0 +1,26 @@
+digraph {
+	"fake{(false R A)}" [style=invisible]
+	"{(false R false)}" [shape=doublecircle]
+	"{}" [shape=doublecircle]
+	"{(false R A)}" [root=true shape=doublecircle]
+	"fake{(false R A)}" -> "{(false R A)}" [style=bold]
+	"{}" -> "{}" [label="{B, A}"]
+	"{}" -> "{}" [label="{C, B}"]
+	"{}" -> "{}" [label="{A}"]
+	"{}" -> "{}" [label="{C, A}"]
+	"{}" -> "{}" [label="{C, B, A}"]
+	"{}" -> "{}" [label="{}"]
+	"{}" -> "{}" [label="{B}"]
+	"{}" -> "{}" [label="{C}"]
+	"{(false R A)}" -> "{(false R false)}" [label="{B, A}"]
+	"{(false R A)}" -> "{(false R A)}" [label="{B, A}"]
+	"{(false R A)}" -> "{(false R false)}" [label="{A}"]
+	"{(false R A)}" -> "{(false R A)}" [label="{A}"]
+	"{(false R A)}" -> "{(false R false)}" [label="{C, A}"]
+	"{(false R A)}" -> "{(false R A)}" [label="{C, A}"]
+	"{(false R A)}" -> "{(false R false)}" [label="{C, B, A}"]
+	"{(false R A)}" -> "{(false R A)}" [label="{C, B, A}"]
+	label="always
+G A"
+	fontsize=20
+}

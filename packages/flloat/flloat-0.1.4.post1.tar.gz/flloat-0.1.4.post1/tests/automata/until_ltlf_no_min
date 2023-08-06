@@ -1,0 +1,30 @@
+digraph {
+	"fake{(A U B)}" [style=invisible]
+	"{(A U B), (true U true)}"
+	"{}" [shape=doublecircle]
+	"{(A U B)}" [root=true]
+	"fake{(A U B)}" -> "{(A U B)}" [style=bold]
+	"{(A U B), (true U true)}" -> "{}" [label="{B, A}"]
+	"{(A U B), (true U true)}" -> "{}" [label="{C, B}"]
+	"{(A U B), (true U true)}" -> "{(A U B), (true U true)}" [label="{A}"]
+	"{(A U B), (true U true)}" -> "{(A U B), (true U true)}" [label="{C, A}"]
+	"{(A U B), (true U true)}" -> "{}" [label="{C, B, A}"]
+	"{(A U B), (true U true)}" -> "{}" [label="{B}"]
+	"{}" -> "{}" [label="{B, A}"]
+	"{}" -> "{}" [label="{C, B}"]
+	"{}" -> "{}" [label="{A}"]
+	"{}" -> "{}" [label="{C, A}"]
+	"{}" -> "{}" [label="{C, B, A}"]
+	"{}" -> "{}" [label="{}"]
+	"{}" -> "{}" [label="{B}"]
+	"{}" -> "{}" [label="{C}"]
+	"{(A U B)}" -> "{}" [label="{B, A}"]
+	"{(A U B)}" -> "{}" [label="{C, B}"]
+	"{(A U B)}" -> "{(A U B), (true U true)}" [label="{A}"]
+	"{(A U B)}" -> "{(A U B), (true U true)}" [label="{C, A}"]
+	"{(A U B)}" -> "{}" [label="{C, B, A}"]
+	"{(A U B)}" -> "{}" [label="{B}"]
+	label="until
+A U B"
+	fontsize=20
+}

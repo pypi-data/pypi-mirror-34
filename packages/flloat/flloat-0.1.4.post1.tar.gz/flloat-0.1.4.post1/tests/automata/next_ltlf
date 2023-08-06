@@ -1,0 +1,30 @@
+digraph {
+	fake [style=invisible]
+	0 [root=true]
+	1
+	2 [shape=doublecircle]
+	fake -> 0 [style=bold]
+	0 -> 1 [label="{B, C, A}"]
+	0 -> 1 [label="{A}"]
+	0 -> 1 [label="{C, A}"]
+	0 -> 1 [label="{B, C}"]
+	0 -> 1 [label="{}"]
+	0 -> 1 [label="{B, A}"]
+	0 -> 1 [label="{B}"]
+	0 -> 1 [label="{C}"]
+	1 -> 2 [label="{C, A}"]
+	1 -> 2 [label="{B, C, A}"]
+	1 -> 2 [label="{A}"]
+	1 -> 2 [label="{B, A}"]
+	2 -> 2 [label="{B, C, A}"]
+	2 -> 2 [label="{A}"]
+	2 -> 2 [label="{C, A}"]
+	2 -> 2 [label="{B, C}"]
+	2 -> 2 [label="{}"]
+	2 -> 2 [label="{B, A}"]
+	2 -> 2 [label="{B}"]
+	2 -> 2 [label="{C}"]
+	label="next
+X A"
+	fontsize=20
+}

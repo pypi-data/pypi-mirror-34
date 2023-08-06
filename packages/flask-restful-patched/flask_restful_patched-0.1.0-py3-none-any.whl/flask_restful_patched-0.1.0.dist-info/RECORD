@@ -1,0 +1,11 @@
+flask_restful_patched-0.1.0.dist-info/METADATA,sha256=OVBCDUjjBtlZ4g4nqM9WWlF9cKkssCJh55WZzhLy7bY,674
+flask_restful_patched-0.1.0.dist-info/RECORD,,
+flask_restful_patched-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+flask_restful_patched-0.1.0.dist-info/top_level.txt,sha256=Rbuec16NmMVfLDQOJqq4jY4omfhJDB195FVKdNJDKOs,23
+flask_restplus_patched/__init__.py,sha256=1i5ewj4iWC7y1GZFRBNacFMyeT38tcglPaXm7r5VNrU,282
+flask_restplus_patched/api.py,sha256=nM1hdk-uq3N6_mxSMfHJWY2Yy_lLbyRNJy37sknO0HI,1296
+flask_restplus_patched/model.py,sha256=GYiNmIpSsTyIQ02tjO1_teR9GMHLvnDDVORKDqyiDvQ,1462
+flask_restplus_patched/namespace.py,sha256=iA33FZMqRM5FJYNaRZP80Oj3zvb4ELQIxs7Ow0J1DCA,8270
+flask_restplus_patched/parameters.py,sha256=7_px8eEL9eiMKSB6jYKG_7F_n0Woj2sy-TIDK06tHSs,7555
+flask_restplus_patched/resource.py,sha256=sqQYvhIhjg_k8k1_PJQngxVYlv09lqH59g1BhTfizE4,3366
+flask_restplus_patched/swagger.py,sha256=2dWNsRX4YGLVGzhipis-s59d9omYpa1fatpxRp6WLN4,721

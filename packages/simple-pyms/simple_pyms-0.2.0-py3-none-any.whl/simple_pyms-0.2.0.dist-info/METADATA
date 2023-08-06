@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: simple-pyms
+Version: 0.2.0
+Summary: Microservices Without Headaches
+Home-page: UNKNOWN
+Author: Jaime Wyant
+Author-email: programmer.py@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (>=18.1.0)
+Requires-Dist: autobahn (>=18.7.1)
+Requires-Dist: automat (>=0.7.0)
+Requires-Dist: constantly (>=15.1.0)
+Requires-Dist: hyperlink (>=18.0.0)
+Requires-Dist: idna (>=2.7)
+Requires-Dist: incremental (>=17.5.0)
+Requires-Dist: psutil (>=5.4.6)
+Requires-Dist: pyhamcrest (>=1.9.0)
+Requires-Dist: six (>=1.11.0)
+Requires-Dist: twisted (>=18.7.0)
+Requires-Dist: txaio (>=18.7.1)
+Requires-Dist: zope.interface (>=4.5.0); python_version != "3.1.*"
+Requires-Dist: pywin32 (>=223); sys_platform == "win32"
+
+
+simple-pyms: Python Microservices Without The Headaches
+=======================================================
+
+Simple PyMS (SPMS) provides base class abstractions for a very simple 
+microservice architecture.  Currently SPMS provides a baseline component that 
+sends heartbeats and a monitor component that tracks microservices and their 
+statuses based on these heartbeats.
+
+The WAMP protocol is used to handle message brokering and RPC.  So, to use PyMS
+you will need a
+[WAMP router](https://wamp-proto.org/implementations/index.html#routers) such
+as [crossbar.io](https://crossbar.io/).
+
+What Does It Do?
+----------------
+SPMS makes creating microservices (WAMP Components) and monitoring them easy.
+There are two components to deal with - Monitor and Microservice.  Monitor
+monitors Service instances.
+
+So, create a single Monitor instance and one or more Microservice instances.
+Connect them to the router and you have a poor man's microservice architecture. 
+
+Configuring Your Wamp Router
+----------------------------
+
+To configure your wamp router, you will need to setup roles for your components.
+Each microservice component will need to have permissions setup properly for
+the microservice uri: `py.ms.*`
+
+    permissions:
+      # Microservice activities
+      - uri: py.ms
+        match: prefix
+        allow:
+          call: true
+          register: true
+          publish: true
+          subscribe: true
+
+Creating A Simple Component
+---------------------------
+
+```python
+
+from simplepyms.microservice import mk_component
+from autobahn.twisted.component import run
+component = mk_component('component-name', 'ws://localhost:8080/ws', 'realm')
+run(component)
+```
+
+The code above creates a component that has stop, restart and heartbeat 
+notification built in.  Add functionality to make your component more 
+meaningful.
+
+```python
+
+from simplepyms.microservice import mk_component
+from autobahn.twisted.component import run
+component = mk_component('component-name', 'ws://localhost:8080/ws', 'realm')
+
+@component.register('py.ms.add')
+def add(a, b):
+    return a + b
+
+run(component)
+```
+

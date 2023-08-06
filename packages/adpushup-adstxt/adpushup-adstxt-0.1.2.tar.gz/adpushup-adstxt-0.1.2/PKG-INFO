@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: adpushup-adstxt
+Version: 0.1.2
+Summary: AdPushUp ads.txt management API.
+Home-page: https://bitbucket.org/romkenet/adpushup-adstxt/
+Author: Roman Barczyński
+Author-email: romanb@leanlab.pl
+License: UNKNOWN
+Description: This library provides adpushup API for handling ads.txt management.
+        
+        Django:
+        
+        1. add it to installed apps:
+           ```python
+           INSTALLED_APPS = (
+               ...,
+               'adpushup_adstxt',
+               ...,
+               )
+           ```
+        
+        2. add your user_id and key to YOUR settings.py:
+           ```python
+           ADPUSHUP_API_USER_ID = 'test@example.com'
+           ADPUSHUP_API_KEY = '1234'
+           ```
+        
+        3. OPTIONALLY add different WWW_DIR:
+           ```python
+           ADPUSHUP_WWW_DIR = '/some/dir/to/put/ads.txt/in/it/'
+           ```
+        
+           by default it is Djangos `ROOT_DIR + '/www'`
+        
+        4. ADD it to your urlconf:
+           ```python
+           from adpushup_adstxt.django_views import handle
+        
+           urlpatterns += patterns(
+               '',
+               url(r'^adsTxtManagementApiByAdpushup.php', handle)),
+           ````
+        
+        Testing:
+        ```python
+        from adpushup_adstxt.utils import encode_uri_component
+        import time
+        import hmac
+        import hashlib
+        import requests
+        
+        user_id = 'your user id'
+        key = 'your key'
+        
+        req_time = int(time.time())
+        hash_params = "email={}&ts={}".format(
+            encode_uri_component(user_id.encode("UTF-8")), req_time)
+        hash = hmac.new(key, hash_params, hashlib.sha256).hexdigest()
+        
+        res = requests.post(
+            'http://localhost:8000/adsTxtManagementApiByAdpushup.php',
+            dict(
+                data='test content',
+                ts=req_time,
+                hash=hash))
+        
+        print res.status_code
+        print res.content
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown

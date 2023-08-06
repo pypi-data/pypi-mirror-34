@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: twitographer
+Version: 0.0.4
+Summary: A parallelized web crawler to traverse the Twitter graph
+Home-page: https://github.com/liveb33f/twitographer
+Author: liveb33f
+Author-email: livebeef@protonmail.com
+License: unlicense
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Description-Content-Type: text/markdown
+Requires-Dist: pyppeteer (>=0.0.19)
+Requires-Dist: redis (>=2.10.6)
+Requires-Dist: websockets (>=6.0)
+Requires-Dist: pyee (>=5.0.0)
+
+### twitographer -- a parallelized web crawler to traverse the twitter graph
+--------
+
+**this is a tiny script that uses [miyakogi's python port](https://github.com/miyakogi/pyppeteer) of [google's puppeteer headless browser](https://github.com/GoogleChrome/puppeteer) to traverse the twitter graph, logging the friends of each account.**
+
+i wrote this for a big data analysis project to infer twitter communities from aggregated social relationships.
+
+add your twitter username and password `creds.py` before running
+
+

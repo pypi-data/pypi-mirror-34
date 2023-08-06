@@ -1,0 +1,16 @@
+wikipedia
+PyUserInput
+tinydb
+youtube_dl
+spacy
+pyowm
+
+[optionals]
+egenix-mx-base
+lxml
+nltk
+pyaudio
+httplib2>=0.9.1
+imutils
+pyqtgraph
+PeakUtils

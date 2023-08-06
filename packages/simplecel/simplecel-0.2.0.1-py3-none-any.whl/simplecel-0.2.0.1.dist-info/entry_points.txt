@@ -1,0 +1,3 @@
+[console_scripts]
+simplecel=simplecel.__main__:load_excel
+

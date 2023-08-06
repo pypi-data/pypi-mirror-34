@@ -1,0 +1,3 @@
+[console_scripts]
+supervisor_elastic = supervisor_elastic:main
+

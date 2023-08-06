@@ -1,0 +1,12 @@
+mdspy/__init__.py,sha256=GtgNa7bfMGhM9v7ptfnUYIcQnPTA28cPAhusXgU-l98,145
+mdspy/analytics.py,sha256=B8D3kRbS0ZcY8uIwfSr3fNotMLjFXlKlAxrlDLI5Em4,10811
+mdspy/anomaly_detection.py,sha256=3vpTrMx8XxcXJ29rvgjAO189nWDbudL5AhvqeJF1kyk,8564
+mdspy/cache_queries.py,sha256=Ya99Z6GQTL0J3qIHnEbTr04ocK8Y6sVg6uO_7REckig,2133
+mdspy/data_creation.py,sha256=Y4_8gFTQj0okY4N2pncc6crGgjZoo9oeLe1a753a5Cs,497
+mdspy/features.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdspy/spark.py,sha256=lNtHA32JvZ5n6TBzUM7RiJuzUkoixIO1FIwLPqcKfQc,1617
+mdspy/ttt.py,sha256=hIm2n4Qv9odSJJP_M-iMzcg-1_BUxkShTe4C6nNpV2g,3856
+mdspy-1.0.6.dist-info/METADATA,sha256=2Xgi-_N24YeS5LlBgOasF8z9ENOV6NxZxvEH-1sTA6U,823
+mdspy-1.0.6.dist-info/RECORD,,
+mdspy-1.0.6.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+mdspy-1.0.6.dist-info/top_level.txt,sha256=lLDsVxO0ZRxeQoBCInJzZA4DtHZ0O5EhvDgqFA1otIA,6

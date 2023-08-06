@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: larson
+Version: 1.2.0
+Summary: Library for managing secrets
+Home-page: https://github.com/pbs/larson
+Author: PBS
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.3
+Provides-Extra: dev

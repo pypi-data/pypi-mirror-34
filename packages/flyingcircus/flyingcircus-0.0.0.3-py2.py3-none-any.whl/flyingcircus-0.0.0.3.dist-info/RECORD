@@ -1,0 +1,14 @@
+flyingcircus/__init__.py,sha256=I5ip3GU1WR3grS4UIjEp9mTf48fzQZ1f0oUpP8j-9Ho,11913
+flyingcircus/_version.py,sha256=KXFledUJrqGJMsJObnI0OZifwM0cR5CtRtWIuFU7T14,178
+flyingcircus/num.py,sha256=0Sk48crB56bJK6BDuIuFojphycrS4mtVaTH9UkJq7s8,116860
+flyingcircus/numpy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flyingcircus/scipy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flyingcircus/util.py,sha256=XjEq4696igC8ZUuL5FEmOuZn7PYJudqk4hgnlxWXrWs,123693
+flyingcircus/utils.py,sha256=mqDnfK8C7uGH_EiJVpX4I7-hc3eJQ6vl82j69krfRKs,238291
+flyingcircus-0.0.0.3.dist-info/DESCRIPTION.rst,sha256=UADvBoJE2mfJRcfawwMtTWWJvPetK1GA1TlU6HJsVtI,2965
+flyingcircus-0.0.0.3.dist-info/METADATA,sha256=p7IT4OBG-AjqcOrr4UchdDQwXtqd_C8IpiyN8kDMP4I,4578
+flyingcircus-0.0.0.3.dist-info/RECORD,,
+flyingcircus-0.0.0.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+flyingcircus-0.0.0.3.dist-info/entry_points.txt,sha256=mUNMmpYTR3SQX28bXHIajDqBXHktexsbcq1_r41xrys,36
+flyingcircus-0.0.0.3.dist-info/metadata.json,sha256=e0voabMKyFEd7sb3hMFwZ0LG02mEKuOqAfy92Y-JbR4,1756
+flyingcircus-0.0.0.3.dist-info/top_level.txt,sha256=b0ETS5aBPh7Q8i_kmWc8Yk5f0L245YHZeW5HiGXk2qc,13

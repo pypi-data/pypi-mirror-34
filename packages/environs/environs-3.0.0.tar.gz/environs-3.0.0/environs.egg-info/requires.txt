@@ -1,0 +1,6 @@
+marshmallow>=2.7.0
+read_env>=1.1.0
+
+[django]
+dj-database-url
+dj-email-url

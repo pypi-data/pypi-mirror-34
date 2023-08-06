@@ -1,0 +1,9 @@
+redfish_client/__init__.py,sha256=Np6Dp48Wi0YyrKJORcWp_SXkXn69aBiYBf3O7Kliwx4,934
+redfish_client/connector.py,sha256=_oUyNk4NOdpzziuKwvt3ss6hzHe4ahbR_0Fp-6Lg6mE,1834
+redfish_client/resource.py,sha256=XY2YvMH28yc0Nt5pLKkDeB4Dp3CYBzWPSZpuLB1D0cQ,2237
+redfish_client/root.py,sha256=33uLd9fHEl-32k1r2dliHudRWoJhjfmH3870XE7R7WY,1629
+redfish_client-0.1.0.dist-info/METADATA,sha256=JJLdU7wlR4alwTgdBnBNI_bJg4QnrxbR2h-S7M2Tokk,2479
+redfish_client-0.1.0.dist-info/RECORD,,
+redfish_client-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+redfish_client-0.1.0.dist-info/pbr.json,sha256=dgImpID_qsHxt02-wMx3D-11mD5GKY4vooAw58Xufrc,46
+redfish_client-0.1.0.dist-info/top_level.txt,sha256=ZrXAc1gtTfY_LOGHeaQihZVL0xzTqzFBPDUfOztCix0,15

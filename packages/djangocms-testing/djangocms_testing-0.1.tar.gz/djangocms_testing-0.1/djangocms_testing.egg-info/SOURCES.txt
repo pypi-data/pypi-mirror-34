@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+djangocms_testing/__init__.py
+djangocms_testing/conf.py
+djangocms_testing/integrity.py
+djangocms_testing/models.py
+djangocms_testing.egg-info/PKG-INFO
+djangocms_testing.egg-info/SOURCES.txt
+djangocms_testing.egg-info/dependency_links.txt
+djangocms_testing.egg-info/requires.txt
+djangocms_testing.egg-info/top_level.txt
+djangocms_testing/templates/djangocms_testing/generic_page.html

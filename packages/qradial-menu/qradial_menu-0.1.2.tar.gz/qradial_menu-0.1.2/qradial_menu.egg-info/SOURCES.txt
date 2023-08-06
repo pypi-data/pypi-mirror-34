@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+qradial_menu/__init__.py
+qradial_menu/qradial_menu.py
+qradial_menu.egg-info/PKG-INFO
+qradial_menu.egg-info/SOURCES.txt
+qradial_menu.egg-info/dependency_links.txt
+qradial_menu.egg-info/top_level.txt

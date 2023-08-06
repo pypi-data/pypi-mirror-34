@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: qradial_menu
+Version: 0.1.2
+Summary: A simple radial menu for PyQt
+Home-page: https://github.com/rubenhenares/qradial_menu
+Author: Ruben Henares
+Author-email: ruben@404fs.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: qt,pyqt,widgets,radial menu
+Platform: UNKNOWN

@@ -1,0 +1,3 @@
+[console_scripts]
+vb = vulcan.builder:main
+

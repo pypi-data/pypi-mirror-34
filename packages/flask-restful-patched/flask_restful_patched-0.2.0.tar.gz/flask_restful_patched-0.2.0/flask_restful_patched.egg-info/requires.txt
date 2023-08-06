@@ -1,0 +1,7 @@
+flask_restplus
+marshmallow
+flask_marshmallow
+flask_sqlalchemy
+webargs
+apispec
+flasgger

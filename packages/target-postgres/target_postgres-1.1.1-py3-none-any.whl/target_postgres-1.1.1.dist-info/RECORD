@@ -1,0 +1,7 @@
+target_postgres/__init__.py,sha256=sk04IKIfPgn68o0IAzZFPoeIaIE32LDSI4j7V2gD0_E,4620
+target_postgres/db_sync.py,sha256=bEWGJBwT-QEpfaGiH8kdQlwiAgrKhgSBbC3mbDYNpPs,11044
+target_postgres-1.1.1.dist-info/METADATA,sha256=vefAilgAibc8LoHd-Ojoq_uMBqm7vWvcx9l_MlGVmKM,379
+target_postgres-1.1.1.dist-info/RECORD,,
+target_postgres-1.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+target_postgres-1.1.1.dist-info/entry_points.txt,sha256=YBBjehQSlBThNm3cfnH5EB0Tg0U-2AoUcqnWa-W_Rrg,68
+target_postgres-1.1.1.dist-info/top_level.txt,sha256=wSA1A3RhgAoHWsf7Z9wEigw4lQA5mfGW5d_qmpU7Pg4,16

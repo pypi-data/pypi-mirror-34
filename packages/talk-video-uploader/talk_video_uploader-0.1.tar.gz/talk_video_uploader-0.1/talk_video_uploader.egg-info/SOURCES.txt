@@ -1,0 +1,13 @@
+README.rst
+client_id.json
+setup.py
+talk_video_uploader/__init__.py
+talk_video_uploader/__main__.py
+talk_video_uploader/dumper.py
+talk_video_uploader/upload_video.py
+talk_video_uploader.egg-info/PKG-INFO
+talk_video_uploader.egg-info/SOURCES.txt
+talk_video_uploader.egg-info/dependency_links.txt
+talk_video_uploader.egg-info/entry_points.txt
+talk_video_uploader.egg-info/requires.txt
+talk_video_uploader.egg-info/top_level.txt

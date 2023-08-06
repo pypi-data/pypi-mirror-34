@@ -1,0 +1,8 @@
+gemma_zds_client-0.1.1.dist-info/METADATA,sha256=MP8kF-gb6GsATTmocD9lpPQQcPQonV6ziKcZrb56R84,3632
+gemma_zds_client-0.1.1.dist-info/RECORD,,
+gemma_zds_client-0.1.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+gemma_zds_client-0.1.1.dist-info/top_level.txt,sha256=gdG14tHTftVav8gYkytwG-d-wJmIX-L1BQV_g0lcOQ0,11
+zds_client/__init__.py,sha256=yDKG27Eg45tviEKL2q9TlIJ-dqZrk_3vhhXoWPf2MQ8,153
+zds_client/client.py,sha256=XqQYaoSN9xsVjETA_24QVJ7FbXKrur_ljd_WFkmqVGs,6548
+zds_client/log.py,sha256=Zy34OYoYWR7ViTyypflrSh1CDdctfnCwFLxgXjkH-5w,960
+zds_client/schema.py,sha256=3u1bIqXTa51WPxrO_P-hEZm2y73qj8FKuMr_PQrv7Yw,763

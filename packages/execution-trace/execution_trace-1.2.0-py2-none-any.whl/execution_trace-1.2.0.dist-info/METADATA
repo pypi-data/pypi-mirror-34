@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: execution-trace
+Version: 1.2.0
+Summary: Trace the local context of a Python function's execution with just a decorator
+Home-page: http://github.com/mihneadb/python-execution-trace
+Author: Mihnea Dobrescu-Balaur
+Author-email: mihnea@linux.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: voluptuous (==0.8.10)
+Requires-Dist: Flask (==0.10.1)
+
+UNKNOWN
+
+

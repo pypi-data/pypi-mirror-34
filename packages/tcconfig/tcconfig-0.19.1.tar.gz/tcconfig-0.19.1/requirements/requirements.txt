@@ -1,0 +1,15 @@
+colorama>=0.3.9
+DataProperty>=0.31.1
+enum34;python_version<"3.4"
+ipaddress;python_version<"3.3"
+logbook
+msgfy>=0.0.2
+path.py
+Pygments>=2.2.0
+pyparsing>=2.2.0
+simplejson>=3.16.0
+SimpleSQLite>=0.28.1
+six
+subprocrunner>=0.14.1
+typepy>=0.1.1
+voluptuous

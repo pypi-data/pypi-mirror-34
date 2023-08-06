@@ -1,0 +1,9 @@
+baguette-messaging
+baguette-olite
+
+[doc]
+Sphinx
+
+[testing]
+baguette-messaging[testing]
+pycrypto==2.6.1

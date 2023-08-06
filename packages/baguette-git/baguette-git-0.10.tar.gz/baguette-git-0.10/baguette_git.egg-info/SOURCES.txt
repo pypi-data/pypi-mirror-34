@@ -1,0 +1,15 @@
+README.rst
+setup.py
+baguette_git.egg-info/PKG-INFO
+baguette_git.egg-info/SOURCES.txt
+baguette_git.egg-info/dependency_links.txt
+baguette_git.egg-info/requires.txt
+baguette_git.egg-info/top_level.txt
+frasage/__init__.py
+frasage/service.py
+frasage/tests/__init__.py
+frasage/tests/conftest.py
+frasage/tests/farine.ini
+frasage/tests/fixtures.py
+frasage/tests/pytest.ini
+frasage/tests/test_service.py

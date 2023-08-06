@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+src/crimp/__init__.py
+src/crimp/__main__.py
+src/crimp/runtime.py
+src/crimp.egg-info/PKG-INFO
+src/crimp.egg-info/SOURCES.txt
+src/crimp.egg-info/dependency_links.txt
+src/crimp.egg-info/entry_points.txt
+src/crimp.egg-info/not-zip-safe
+src/crimp.egg-info/requires.txt
+src/crimp.egg-info/top_level.txt
+src/crimp/tests/__init__.py
+src/crimp/tests/test_runtime.py

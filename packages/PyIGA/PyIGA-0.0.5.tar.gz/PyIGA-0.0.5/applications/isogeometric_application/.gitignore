@@ -1,0 +1,8 @@
+zdeprecated
+zmisc
+*.cpp.*
+*.h.*
+*.pyc
+doc
+*.bak
+test_examples/*.m

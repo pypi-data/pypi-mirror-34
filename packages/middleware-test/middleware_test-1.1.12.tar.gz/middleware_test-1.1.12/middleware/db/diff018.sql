@@ -1,0 +1,1 @@
+DELETE FROM `system` WHERE `system_id`='4';

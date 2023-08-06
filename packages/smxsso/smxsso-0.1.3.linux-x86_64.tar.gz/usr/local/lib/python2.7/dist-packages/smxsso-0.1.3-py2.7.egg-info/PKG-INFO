@@ -1,0 +1,61 @@
+Metadata-Version: 1.1
+Name: smxsso
+Version: 0.1.3
+Summary: Command Line Environment for Smartronix SSO solution.
+Home-page: https://github.com/changli3/smx-sso
+Author: Anthony Vultaggio
+Author-email: UNKNOWN
+License: Apache License 2.0
+Description: =======
+        smx-sso
+        =======
+        
+        This package provides a unified command line interface to use Smartronix SSO for internal developer and customers.
+        
+        The smx-sso package requires Python to be installed first. It works with Python versions:
+        
+        * 2.6.5 and greater
+        * 2.7.x and greater
+        * 3.3.x and greater
+        * 3.4.x and greater
+        * 3.5.x and greater
+        * 3.6.x and greater
+        
+        ------------
+        Installation
+        ------------
+        
+        The easiest way to install smx-sso is to use `pip`_ in a ``virtualenv``::
+        
+            $ pip install smxsso
+        
+        or, if you are not installing in a ``virtualenv``, to install globally::
+        
+            $ sudo pip install smxsso
+        
+        or for your user::
+        
+            $ pip install --user smxsso
+        
+        If you have the smx-sso installed and want to upgrade to the latest version
+        you can run::
+        
+            $ pip install --upgrade smxsso
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

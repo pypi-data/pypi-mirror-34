@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytheline
+Version: 0.0.3
+Summary: A Python wrapper using the undocumented 'De Lijn' API
+Home-page: https://gitlab.com/tjorim/pytheline
+Author: Jorim Tielemans
+Author-email: tielemans.jorim@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.0)
+
+# pyTheLine
+
+A Python wrapper using the undocumented 'De Lijn' API
+
+Shoutout to the De Mey brothers to start reverse-engineering the API:
+https://demey.io/reverse-engineering-belgium-de-lijn/
+And creating some very nice documentation:
+http://docs.delijn.apiary.io/
+

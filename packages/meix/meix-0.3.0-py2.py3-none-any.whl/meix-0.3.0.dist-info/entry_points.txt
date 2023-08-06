@@ -1,0 +1,3 @@
+[console_scripts]
+meix = meix.cli:main
+

@@ -1,0 +1,4 @@
+[console_scripts]
+version-manager = application:launch
+vm = application:launch
+

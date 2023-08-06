@@ -1,0 +1,1 @@
+{"description_content_type": "UNKNOWN", "extensions": {"python.details": {"contacts": [{"email": "scott.hajek@alumni.unc.edu", "name": "Scott Hajek", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}}}, "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "pyspark-uploader", "summary": "UNKNOWN", "version": "0.1.0"}

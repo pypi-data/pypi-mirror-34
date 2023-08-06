@@ -1,0 +1,17 @@
+dplus/Amplitudes.py,sha256=zofNt5YnKSyqsy1ZfdYau6BChLYT1NO30ZVE7_fCovs,14051
+dplus/CalculationInput.py,sha256=WPZylPjXP1Ejyxr03PjtVLMhDz-hGyCT93_1aaGbau8,8641
+dplus/CalculationResult.py,sha256=VdkeAeRF9e4b74WOXJIliToqtkwU3XKXST1g7ticqVk,8178
+dplus/CalculationRunner.py,sha256=MEa_Nw47KQRmLGzJyKqGyTYt7tDRwJEy3Yiy6R8YJHk,23688
+dplus/DataModels.py,sha256=MLPm7dSphtHqZPlZElfx4H-QUrRYbiJgL5fdn_9DbYE,31474
+dplus/FileReaders.py,sha256=sEbUm3UdgsBj7R2Lffadb6Di0aiUIGPMpURlCU6ev14,2065
+dplus/State.py,sha256=_6Hcyfny4iSqv6RET1b22m4U-Lvu6apRwMMqcqjx3b4,32364
+dplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dplus/metadata.py,sha256=nycUphcxtAO7sztlz03Kcb3j_ULgAqnwXiptEN_pjUQ,82611
+dplus/old_fit.py,sha256=VdL3ZMR1pDfEEs7l0FsPMcnlDRgnzYbzoo1jay-WwgU,7665
+dplus/scratch.py,sha256=g-ng5bSfR8xAdefgq0jg7ReKJGPzU3ipEhtwFtlmLLA,1878
+dplus_api-3.1.4.dist-info/DESCRIPTION.rst,sha256=ah78Xn4ZrWk4FGvD-F-AfRGVgK8QZuVDruDVOL_Tczs,30718
+dplus_api-3.1.4.dist-info/METADATA,sha256=6uA0V-bMbfHgu9ka7bC0-dUvoqbzEROFp_p5HCNhNAw,31464
+dplus_api-3.1.4.dist-info/RECORD,,
+dplus_api-3.1.4.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+dplus_api-3.1.4.dist-info/metadata.json,sha256=TIMC6HGmt23ga3BrYubFiRBllJ0Tm8Vs77h8s-4tWb4,872
+dplus_api-3.1.4.dist-info/top_level.txt,sha256=2IEnxxypNKKU2gM6lCcw91_EKKEfVJGMoyADKAS5-WQ,6

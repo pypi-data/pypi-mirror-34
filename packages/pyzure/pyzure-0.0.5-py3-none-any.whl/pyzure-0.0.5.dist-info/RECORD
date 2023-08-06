@@ -1,0 +1,10 @@
+pyzure/__init__.py,sha256=Pf95YZKrqCPfu3L4Zv6tSm7yOg9loBcagVdVC87_ogs,67
+pyzure/azure_credentials.py,sha256=itLzhwH2tb312_Ohqg3km1Rh9fXIMTT3WR1t2E80Nm0,431
+pyzure/connection.py,sha256=miwYX0SuG6EXBawaT94-miwQdVHddtvMgstl8NxY9Rk,550
+pyzure/create.py,sha256=lAi-Fm5YXH7rB8QPnf7tQYebh4SPOZrm4AXfl7zYCs4,5667
+pyzure/execute.py,sha256=18w5EKrlN3pfB73712oAWIw9-utDD36sSTuyfJpQH6w,553
+pyzure/send.py,sha256=RyHganV02POv4XHmWdsHvxzUlobwegzsrFxo0jvzy7I,2436
+pyzure-0.0.5.dist-info/METADATA,sha256=VMYqnhtmEfiSn4XbDv_0o7iGv7nJknaD7gqcwdWuXaY,4860
+pyzure-0.0.5.dist-info/RECORD,,
+pyzure-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pyzure-0.0.5.dist-info/top_level.txt,sha256=02yMbMTocWRdZVHB-nG7QLnvskKa6Svy6gDEtJ873zw,7

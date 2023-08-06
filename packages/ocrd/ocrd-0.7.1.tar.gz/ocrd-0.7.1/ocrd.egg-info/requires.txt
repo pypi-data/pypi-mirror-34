@@ -1,0 +1,9 @@
+Flask
+Pillow
+click
+jsonschema
+lxml
+numpy
+opencv-python
+pyyaml
+requests

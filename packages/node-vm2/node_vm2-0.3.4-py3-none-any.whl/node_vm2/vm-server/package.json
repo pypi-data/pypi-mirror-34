@@ -1,0 +1,13 @@
+{
+  "name": "vm-server",
+  "main": "index.js",
+  "dependencies": {
+    "vm2": "^3.6.3"
+  },
+  "scripts": {
+    "test": "eslint **/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  }
+}

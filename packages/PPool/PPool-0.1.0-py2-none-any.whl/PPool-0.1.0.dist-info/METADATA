@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: PPool
+Version: 0.1.0
+Summary: A Pool for Processes in Python with locks
+Home-page: https://github.com/oeg-upm/PPool
+Author: Ahmad Alobaid
+Author-email: aalobaid@fi.upm.es
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Operating System
+Description-Content-Type: text/markdown
+
+# PPool
+PPool is a Pool for Processes in Python with locks. The main advantage is the ability to use `Lock`s from  `multiprocessing`
+
+
+# Example
+```
+from PPool.Pool import Pool
+params = [('A', 2),('B', 3),('C', 4), ('D', 5)]
+
+def foo(name, num):
+    print(name+str(num))
+
+pool = Pool(max_num_of_processes=3, func=foo, params_list=params)
+
+pool.run()
+```
+
+

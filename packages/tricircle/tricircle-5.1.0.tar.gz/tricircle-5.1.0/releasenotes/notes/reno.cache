@@ -1,0 +1,332 @@
+---
+file-contents:
+  releasenotes/notes/add-lbaas-ebb1009abd3da0dd.yaml:
+    features: ['Support LBaaS in multi-region scenario. To enable adding instances
+        as
+
+        members with VIP, amphora routes the traffic sent from VIP to its
+
+        gateway. However, in Tricircle, the gateway obtained from central neutron
+
+        is not the real gateway in local neutron. As a result, only subnet
+
+        without gateway is supported as member subnet. We will remove the
+
+        limitation in the future, and LBaaS working together with Nova Cells V2
+
+        multi-cells will also be supported in the future.']
+  releasenotes/notes/add-qos-policy-rule-f8f1529d7ad5d888.yaml:
+    features: ['Provide central Neutron QoS plugin and implement QoS driver. Support
+        QoS policy creation, update and delete, QoS policy binding with network or
+        port.']
+  releasenotes/notes/add-service-function-chaining-fc2cf9a2e8610b91.yaml:
+    features: ['Support service function chaining creation and deletion based on networking-sfc,
+
+        currently all the ports in the port chain need to be in the same network and
+        the
+
+        network type must be VxLAN.
+
+        ']
+  releasenotes/notes/add-vlan-aware-vms-afa8c5a906f2ab49.yaml:
+    features: [Support VLAN aware VMs]
+  releasenotes/notes/asynchronous-job-management-api-c16acb43b495af7c.yaml:
+    features: ['Asynchronous job management API allows administrator
+
+        to perform CRUD operations on a job. For jobs in job
+
+        log, only list and show operations are allowed.
+
+
+        * Create a job
+
+        * List jobs
+
+        * Show job details
+
+        * Delete a job
+
+        * Redo a job
+
+        ']
+  releasenotes/notes/combine-bridge-network-c137a03f067c49a7.yaml:
+    features: [North-south bridge network and east-west bridge network are combined
+        into one to bring better DVR and shared VxLAN network support.]
+  releasenotes/notes/enable-allowed-address-pairs-bca659413012b06c.yaml:
+    features: ['Enable allowed-address-pairs in the central plugin.
+
+        ']
+  releasenotes/notes/enable-router-az-and-simplify-net-topology-5ac8739b167e3e4a.yaml:
+    features: ["Router\n\n* Support availability zone for router\n* Local router,\
+        \ which will reside only inside one region, can be\n  attached with external\
+        \ network directly, no additional intermediate\n  router is needed.\n"]
+  releasenotes/notes/enable-update-default-securitygroup-9bb426021926d3e8.yaml:
+    features: [Support updating default security group using asynchronous methods.]
+  releasenotes/notes/flat-network-8634686c1fede7b2.yaml:
+    features: ['Support flat type of tenant network or external network
+
+        ']
+  releasenotes/notes/initial-release-notes-bd28a4a4bf1f84d2.yaml:
+    features: ['Network
+
+
+        * List networks
+
+        * Create network
+
+        * Show network details
+
+        * Delete network
+
+        ', 'Subnet
+
+
+        * List subnets
+
+        * Create subnet
+
+        * Show subnet details
+
+        * Delete subnet
+
+        ', 'Port
+
+
+        * List ports
+
+        * Create port
+
+        * Show port details
+
+        * Delete port
+
+        ', 'Router
+
+
+        * List routers
+
+        * Create router
+
+        * Show router details
+
+        * Delete router
+
+        * Add interface to router
+
+        * Delete interface from router
+
+        * List floating IPs
+
+        * Create floating IP
+
+        * Show floating IP details
+
+        * Update floating IP
+
+        * Delete floating IP
+
+        ', 'Security Group
+
+
+        * List security groups
+
+        * Create security group
+
+        * Show security group details
+
+        * List security group rules
+
+        * Create security group rule
+
+        * Delete security group rule
+
+        ', "Note for Networking\n\n* Only Local Network and VLAN network supported.\n\
+        \  Local Network means the network will only present in one region,\n  it\
+        \ could be VxLAN or VLAN network.\n  VLAN is the only L2 network type which\
+        \ supports cross\n  Neutron L2 networking and the bridge network for L3 networking.\n\
+        * Pagination and sort are not supported at the same time for list\n  operation.\n\
+        * For security group rule, remote group is not supported yet. Use IP\n  prefix\
+        \ to create security group rule.\n* One availability zone can include more\
+        \ than one region through\n  Tricircle pod management.\n* Availability zone\
+        \ or region name for availability zone hint can be\n  specified during network\
+        \ creation, that means this network will be\n  presented in the specified\
+        \ list of availability zone or region. If no\n  availability zone hint is\
+        \ specified and the network is not Local\n  Network, then the network can\
+        \ be spread into all regions. For Local\n  Network without availability zone\
+        \ hint specified in creation, then\n  the network will only be presented in\
+        \ the first region where the\n  resource(VM, baremetal or container) is booted\
+        \ and plugged into this\n  network.\n* Need to specify one region name as\
+        \ the availability zone hint for\n  external network creation, that means\
+        \ the external network will\n  be located in the specified region.\n"]
+    issues: ['refer to https://bugs.launchpad.net/tricircle']
+    prelude: 'The Tricircle is to provide networking automation across Neutron in
+      OpenStack multi-region deployment.
+
+      '
+  releasenotes/notes/multi-gateway-ns-networking-fbd876c7659a55a9.yaml:
+    features: [Support network topology that each OpenStack cloud provides external
+        network for tenant's north-south traffic and at the same time east-west networking
+        of tenant networks among OpenStack clouds is also enabled]
+  releasenotes/notes/network-subnet-update-baed5ded548f7269.yaml:
+    features: ["Network\n\n* Update networks\n\n  * qos-policy not supported\n", 'Subnet
+
+
+        * Update subnets
+
+        ']
+    issues: ['Update network or subnet may not lead to the expected result if an
+
+        instance is being booted at the same time. You can redo the update
+
+        operation later to make it execute correctly.
+
+        ']
+  releasenotes/notes/port-base-update-6668b76c2346633c.yaml:
+    features: ["Port\n\n* Update port\n\n  * name, description, admin_state_up, extra_dhcp_opts,\
+        \ device_owner,\n    device_id, mac_address, security group attribute updates\
+        \ supported\n"]
+    issues: ['Update port may not lead to the expected result if an instance is being
+
+        booted at the same time. You can redo the update operation later to make
+
+        it execute correctly.']
+  releasenotes/notes/resource-routing-operation-649eb810911312ec.yaml:
+    features: ['Resource routing APIs add operations on resource routing
+
+        table. This makes it possible to create, show, delete
+
+        and update the resource routing entry in the resource
+
+        routing by cloud administrator for the maintenance and
+
+        emergency fix need. But the update and delete operations
+
+        on the entry generated by the Tricircle itself is not
+
+        proposed, because central Neutron may make wrong
+
+        judgement on whether the resource exists or not
+
+        without this routing entry. Moreover, related request
+
+        can not be forwarded to the proper local Neutron
+
+        either. So even though the update and delete operations
+
+        are provided, they are better not to be used in case of
+
+        causing unexpected problems.
+
+
+        * List resource routings
+
+        * Create resource routing
+
+        * Show resource routing details
+
+        * Delete resource routing
+
+        * Update resource routing
+
+        ']
+  releasenotes/notes/support-pagination-for-async-job-81728e9cb7aef731.yaml:
+    features: ['Support pagination for asynchronous job list operation. Jobs in job
+        table
+
+        will be shown ahead of those in job log table. If page size is not specified
+
+        from client, then maximum pagination limit from configuration will be used.
+
+        ']
+  releasenotes/notes/support-pagination-for-resource-routing-list-13bcb0f1897dedf8.yaml:
+    features: ['Support pagination for resource routing list operation. If page size
+        is
+
+        not specified from client, then maximum pagination limit from
+
+        configuration will be used.
+
+        ']
+  releasenotes/notes/support-wsgi-deployment-21eb19bcb04932f0.yaml: {prelude: 'Tricircle
+      Admin API now supports WSGI deployment. The endpoint of Tricircle Admin API
+      could be accessed via the format of http://host/tricircle, and no need to expose
+      special port, thus reduce the risk of port management.
+
+      '}
+  releasenotes/notes/vxlan-network-2a21433b4b691f72.yaml:
+    features: ['Support VxLAN network type for tenant network and bridge network to
+        be
+
+        stretched into multiple OpenStack clouds
+
+        ']
+notes:
+- files:
+  - - releasenotes/notes/add-lbaas-ebb1009abd3da0dd.yaml
+    - !!binary |
+      MjcyODYyNGE0Njk5OGQ4MjllOWM0MmY0ODRlZGM1NzNlOWUyM2UxOQ==
+  - - releasenotes/notes/add-qos-policy-rule-f8f1529d7ad5d888.yaml
+    - !!binary |
+      ZGI2NzllZjdjYjE0NWZiZWRlM2RkNTE0OTU5YmFlYTgxYWFkMjNhMQ==
+  - - releasenotes/notes/enable-update-default-securitygroup-9bb426021926d3e8.yaml
+    - !!binary |
+      MjVhZGEwNjAyZWY5YzI1M2NlZjdiZTEwZDVhMjhlOWNlOWE2NzA2ZQ==
+  version: 4.2.0
+- files:
+  - - releasenotes/notes/add-service-function-chaining-fc2cf9a2e8610b91.yaml
+    - !!binary |
+      MmQyMmJiMThiZjljY2U3MmM1ODQ3MDBmMmU0NGExNmIyYzkxOTVkNA==
+  - - releasenotes/notes/support-pagination-for-async-job-81728e9cb7aef731.yaml
+    - !!binary |
+      YmM2YTQ1ZTRmNDU4MzViOWUyYTkzMTI3ZTc5YWFjYmE2YjZkMmMyYQ==
+  - - releasenotes/notes/support-pagination-for-resource-routing-list-13bcb0f1897dedf8.yaml
+    - !!binary |
+      NzFlMGMyMWIyZTI3MmU3ZDU2NTdkMjNjYjQ4Y2Y2ZWE5ZmRmYzRiMw==
+  version: 3.4.0
+- files:
+  - - releasenotes/notes/add-vlan-aware-vms-afa8c5a906f2ab49.yaml
+    - !!binary |
+      YjBjNjFkNjBiZTUzYTMxN2ZmZjRiMmRlZGYyYTBjZjE5YThjYjFjNw==
+  - - releasenotes/notes/asynchronous-job-management-api-c16acb43b495af7c.yaml
+    - !!binary |
+      M2Y1YjBlOGNjMjQzMzE5MGRkOTNlYmMwNWZjZjAwNmM0NjY0NDQ4Ng==
+  version: 3.3.0
+- files:
+  - - releasenotes/notes/flat-network-8634686c1fede7b2.yaml
+    - !!binary |
+      ZWUwMDhjYWU2YjhmYzY1NzE3ZjQ2OTljNTYzNGZjM2UwNzFjMzkxYg==
+  - - releasenotes/notes/multi-gateway-ns-networking-fbd876c7659a55a9.yaml
+    - !!binary |
+      MjJmOTMzNGI3N2ZmYjc3Zjc4YWYzMTE3NmExMjZkM2RkNGQ1N2MxYw==
+  version: 3.2.0
+- files:
+  - - releasenotes/notes/enable-allowed-address-pairs-bca659413012b06c.yaml
+    - !!binary |
+      MGJlZWI4MjE5NzhhMWEwMDM5M2YxN2IwOWE1NTkwM2RlZjVkMDEzMA==
+  - - releasenotes/notes/enable-router-az-and-simplify-net-topology-5ac8739b167e3e4a.yaml
+    - !!binary |
+      ZGE0NDMxMTBlOTBmZWZkMmRlYjg5ZDE1YzY4MzhmMWMyM2YyOTUyZg==
+  - - releasenotes/notes/support-wsgi-deployment-21eb19bcb04932f0.yaml
+    - !!binary |
+      NmViOTNlODQ0ZDU2MzQyODVmM2FjODZhMGUwMDAxMWI5OGNlYjJjNw==
+  - - releasenotes/notes/vxlan-network-2a21433b4b691f72.yaml
+    - !!binary |
+      Y2M3NzAwOTBjMDNhN2M1OWMyNTlhNTI3ZTRlM2IyMjQ4OTFiZjUyZQ==
+  version: 3.1.0
+- files:
+  - - releasenotes/notes/combine-bridge-network-c137a03f067c49a7.yaml
+    - !!binary |
+      YjYwYmE1NzBiYjFlOTQxY2VlMzFmOGJmMGNlN2UzZjg5ODE1MjgyMw==
+  - - releasenotes/notes/initial-release-notes-bd28a4a4bf1f84d2.yaml
+    - !!binary |
+      NDczNzZiZDA4N2MzMWUyZGEwMWU4OTFhZTM0ODc1OGIzYThmYjQ3NA==
+  - - releasenotes/notes/network-subnet-update-baed5ded548f7269.yaml
+    - !!binary |
+      NjU0ZmQ2MjBlY2MyOTI1MzhjMzljZTFmZjFlMDg5NTUxZjYxY2RmZA==
+  - - releasenotes/notes/port-base-update-6668b76c2346633c.yaml
+    - !!binary |
+      YWM2NWJjMzgzMjEwMzM0M2JjMDU3NmU0MzIwNWRhNTE4OTJjZTZmOA==
+  - - releasenotes/notes/resource-routing-operation-649eb810911312ec.yaml
+    - !!binary |
+      N2NhMzJiYjNlOGU5NmE5M2E4ZGJiOWUxZWYyZjMxMmMzOWQ4YjhmMg==
+  version: 3.0.0

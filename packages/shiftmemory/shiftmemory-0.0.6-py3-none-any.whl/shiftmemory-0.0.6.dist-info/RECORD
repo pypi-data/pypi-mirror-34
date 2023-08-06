@@ -1,0 +1,14 @@
+shiftmemory/__init__.py,sha256=uExq0W5S5IcGZCEyEjv_1rD0LJ1szRmLUSrOWAC6Q_g,88
+shiftmemory/exceptions.py,sha256=qHM3GKE5b4KLDH7QkTEIODcmsuDwhGIx7MCvRr9v2R4,926
+shiftmemory/memory.py,sha256=hXtu7mnaugeAxSKM_CvPLuAQhbsZ4ZvyF1jz7Up9_uE,4190
+shiftmemory/times.py,sha256=Nilk-uPAb3wvrfR4r1QOy94QuhhPBju7eKpaQcx7zG4,3829
+shiftmemory/adapter/__init__.py,sha256=fg3xgjVRDJ0cCN30-lgXu1evjUm8zfxlVI74Dum5O-w,50
+shiftmemory/adapter/dummy.py,sha256=gTcj_OERC_61xTl5uqv_R6UwnyACdd0-d1kS_dDZZUw,303
+shiftmemory/adapter/redis.py,sha256=SHqyJegycZEoIKEP9qeCxj2shwGnoYTgNLbSPW53B3c,13602
+shiftmemory/cli/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+shiftmemory/cli/console.py,sha256=RgVcunw5fTCSEGq1aDwk6cvByIgJR1-Dw9UTmaoflRA,3264
+shiftmemory-0.0.6.dist-info/METADATA,sha256=D9qkytCSBFe2l59XWB1Nq-cBXULGS7UryU6V_gtsD0k,908
+shiftmemory-0.0.6.dist-info/RECORD,,
+shiftmemory-0.0.6.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+shiftmemory-0.0.6.dist-info/entry_points.txt,sha256=h5o28a8VGgt-4FYxnabqO0hKbxgl_EuqZ15MSNRDSPQ,61
+shiftmemory-0.0.6.dist-info/top_level.txt,sha256=cjqDp9ir650Yhps2WWtAlUqQk4krkSozEQb29mQCDpc,12

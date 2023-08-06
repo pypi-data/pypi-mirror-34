@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Python-buildtest-config
+Version: 0.2.2
+Summary: Python tests for buildtest-framework
+Home-page: https://github.com/HPC-buildtest/Python-buildtest-config
+Author: Shahzeb Siddiqui
+Author-email: shahzebmsiddiqui@gmail.com
+License: GPLv2
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: Linux

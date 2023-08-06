@@ -1,0 +1,11 @@
+moclo/kits/__init__.py,sha256=xSQogfowtiMsjGiPPI2yAjwXLc0a4QoZ_jQ7Uh7Jlw0,156
+moclo/kits/cidar.py,sha256=gN7fvjmGewyg7UEPTCdbGKTR6wRfKW_ZgK2qJ2Lk2LI,5446
+moclo/kits/cidar.version,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+moclo/registry/__init__.py,sha256=okmcDmnuXdUrhIUmpnWzOp8FmVEjaywP065wxKitsrc,150
+moclo/registry/cidar.json.bz2,sha256=bRYIeMWdF12DAKvRGBdfilWxbg4xMAWN1CIfZfFjwLA,46360
+moclo/registry/cidar.py,sha256=1olIIJ7XFXyl6whT0M_CflEmH0UuM9RTMenlYd6obAg,3532
+moclo_cidar-0.2.0.dist-info/LICENSE.txt,sha256=e9aZ_eBw-3HkolQMzdfX6kQbSkAopOlUYb73bbuBP2o,1072
+moclo_cidar-0.2.0.dist-info/METADATA,sha256=xAPo6WrXYsVMRiGqQ8mzw3p_YcnprmVBKVgoNc0UYjs,5101
+moclo_cidar-0.2.0.dist-info/RECORD,,
+moclo_cidar-0.2.0.dist-info/WHEEL,sha256=CTh2E6mCxEx9ZlqUOZVJtYBKxTlr7zOwLtikkFWqEZU,104
+moclo_cidar-0.2.0.dist-info/top_level.txt,sha256=Gbcv_0ZIUzFgxk3ZyvJgh-mXjiAO8DKHxC1xe505uRI,12

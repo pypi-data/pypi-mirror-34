@@ -1,0 +1,14 @@
+[console_scripts]
+bel_to_cx = pybel_cx.cli:bel_to_cx
+cx_to_bel = pybel_cx.cli:cx_to_bel
+
+[pybel.converter]
+from_cx = pybel_cx:from_cx
+from_cx_file = pybel_cx:from_cx_file
+from_cx_jsons = pybel_cx:from_cx_jsons
+from_ndex = pybel_cx:from_ndex
+to_cx = pybel_cx:to_cx
+to_cx_file = pybel_cx:to_cx_file
+to_cx_jsons = pybel_cx:to_cx_jsons
+to_ndex = pybel_cx:to_ndex
+

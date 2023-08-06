@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyIGA
+Version: 0.0.2
+Summary: Isogeometric analysis in Python. Built upon KratosMultiphysics Kernel
+Home-page: https://github.com/vryy/isogeometric_application
+Author: Hoang-Giang Bui
+Author-email: giang.bui@rub.de
+License: UNKNOWN
+Description: # PyIGA Package
+        
+        This is a package for isogeometric analysis built upon [Kratos](https://github.com/KratosMultiphysics/Kratos) 
+         
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

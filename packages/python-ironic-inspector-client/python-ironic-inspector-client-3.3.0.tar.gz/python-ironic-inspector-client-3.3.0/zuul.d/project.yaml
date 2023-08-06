@@ -1,0 +1,11 @@
+- project:
+    check:
+      jobs:
+        - openstack-tox-functional
+        - python-ironic-inspector-client-tempest-dsvm
+        - openstack-tox-lower-constraints
+    gate:
+      jobs:
+        - openstack-tox-functional
+        - python-ironic-inspector-client-tempest-dsvm
+        - openstack-tox-lower-constraints

@@ -1,0 +1,12 @@
+dask
+distributed
+bottleneck
+netCDF4
+xarray
+cartopy
+esmpy
+pyviz
+hvplot
+geoviews
+xgcm
+xesmf

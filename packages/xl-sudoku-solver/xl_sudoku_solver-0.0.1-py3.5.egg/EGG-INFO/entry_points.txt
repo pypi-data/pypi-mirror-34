@@ -1,0 +1,3 @@
+[console_scripts]
+xl-soduku-solver = xl_sudoku_solver.__main__:main
+

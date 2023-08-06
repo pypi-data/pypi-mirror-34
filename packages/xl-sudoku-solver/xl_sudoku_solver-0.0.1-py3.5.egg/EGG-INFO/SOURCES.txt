@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+tests/__init__.py
+tests/test_Cell.py
+tests/test_Solver.py
+xl_sudoku_solver/__init__.py
+xl_sudoku_solver/__main__.py
+xl_sudoku_solver/cell.py
+xl_sudoku_solver/exceptions.py
+xl_sudoku_solver/solver.py
+xl_sudoku_solver.egg-info/PKG-INFO
+xl_sudoku_solver.egg-info/SOURCES.txt
+xl_sudoku_solver.egg-info/dependency_links.txt
+xl_sudoku_solver.egg-info/entry_points.txt
+xl_sudoku_solver.egg-info/top_level.txt

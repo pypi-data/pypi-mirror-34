@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: radical-rpc
+Version: 0.1
+Summary: Multi-transport RPC with asyncio & Django support.
+Home-page: https://github.com/and3rson/radical
+Author: Andrew Dunai
+Author-email: andrew@dun.ai
+License: GPLv3
+Description: UNKNOWN
+Keywords: rpc,python2,python3,python,asyncio,aio,redis,django
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Software Development :: Libraries

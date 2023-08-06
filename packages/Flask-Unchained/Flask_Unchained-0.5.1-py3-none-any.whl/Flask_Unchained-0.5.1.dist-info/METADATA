@@ -1,0 +1,105 @@
+Metadata-Version: 2.0
+Name: Flask-Unchained
+Version: 0.5.1
+Summary: The better way to build large Flask applications
+Home-page: https://github.com/briancappello/flask-unchained
+Author: Brian Cappello
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Provides-Extra: session
+Provides-Extra: admin
+Provides-Extra: api
+Provides-Extra: sqlalchemy
+Provides-Extra: celery
+Provides-Extra: mail
+Provides-Extra: dev
+Requires-Dist: blinker (>=1.4)
+Requires-Dist: flask (>=0.12.2)
+Requires-Dist: flask-babelex (>=0.9.3)
+Requires-Dist: networkx (>=2.1)
+Provides-Extra: admin
+Requires-Dist: flask-admin; extra == 'admin'
+Provides-Extra: api
+Requires-Dist: apispec (>=0.39.0); extra == 'api'
+Requires-Dist: flask-marshmallow (>=0.8.0); extra == 'api'
+Requires-Dist: marshmallow (>=2.13.6); extra == 'api'
+Requires-Dist: marshmallow-sqlalchemy (>=0.13.1); extra == 'api'
+Provides-Extra: celery
+Requires-Dist: celery; extra == 'celery'
+Requires-Dist: dill; extra == 'celery'
+Requires-Dist: redis; extra == 'celery'
+Provides-Extra: dev
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: factory-boy; extra == 'dev'
+Requires-Dist: m2r; extra == 'dev'
+Requires-Dist: mock; extra == 'dev'
+Requires-Dist: psycopg2; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-flask; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-autobuild; extra == 'dev'
+Requires-Dist: tox; extra == 'dev'
+Provides-Extra: mail
+Requires-Dist: beautifulsoup4 (>=4.6.0); extra == 'mail'
+Requires-Dist: lxml (>=4.2.1); extra == 'mail'
+Provides-Extra: session
+Requires-Dist: flask-session; extra == 'session'
+Provides-Extra: sqlalchemy
+Requires-Dist: flask-migrate (>=2.1.1); extra == 'sqlalchemy'
+Requires-Dist: flask-sqlalchemy (>=2.3); extra == 'sqlalchemy'
+Requires-Dist: py-yaml-fixtures (>=0.1.1); extra == 'sqlalchemy'
+
+
+# Flask Unchained
+
+## The better way to build large Flask applications.
+
+Flask Unchained is an extension that implements the Application Factory Pattern. It provides a standardized (by convention) way to organize "bundles" of code, such that they become easily distributable, reusable, and customizable across multiple independent Flask Unchained projects (similar to Django's "apps", with an architecture inspired by [Symfony](https://symfony.com/). The ultimate goal is to provide an integrated, optional-batteries-included web application framework built on top of Flask.
+
+Currently Flask Unchained includes the following bundles:
+
+* **Admin Bundle**
+   - integrates [Flask-Admin](https://flask-admin.readthedocs.io/en/latest/)
+
+* **API Bundle**
+    - extends the Controller Bundle with support for ModelResource controllers integrated with SQLAlchemy and Marshmallow
+    - includes optional support generating API docs via APISpec/OpenAPI (using ReDoc as the frontend)
+
+* **Babel Bundle**
+   - integrates support for translations via [Flask-BabelEx](https://pythonhosted.org/Flask-BabelEx/)
+
+* **Celery Bundle**
+   - integrates [Celery](http://www.celeryproject.org/)
+   - auto-discovers tasks across bundles
+
+* **Controller Bundle**
+    - auto-discovers blueprints, controllers, and views across bundles
+    - support for declarative routing (similar to Django's `urls.py`)
+    - (think of it as the best ideas from Flask-RESTful, Flask-Classful, Flask's MethodView, and Flask-Via - all combined into one coherent solution)
+
+* **Mail Bundle**
+   - integrates [Flask-Mail](https://pythonhosted.org/flask-mail/)
+
+* **Security Bundle**
+   - integrates a heavily cleaned up [Flask-Security](https://pythonhosted.org/Flask-Security/index.html) (just about everything except for the core session and encryption logic has been rewritten for your sanity)
+
+* **Session Bundle**
+   - integrates support for server-side sessions via [Flask-Session](https://pythonhosted.org/Flask-Session/)
+
+* **SQLAlchemy Bundle**
+   - integrates Flask-SQLAlchemy and Flask-Migrate
+   - auto-discovers models across bundles
+   - adds support for performing validation on models (including integration with Flask-WTF and Marshmallow, so that validation rules can be as DRY as possible)
+
+* **Webpack Bundle**
+   - integrates Webpack
+
+

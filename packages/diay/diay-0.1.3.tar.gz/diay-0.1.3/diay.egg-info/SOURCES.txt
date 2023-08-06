@@ -1,0 +1,8 @@
+README.md
+setup.py
+diay/__init__.py
+diay/pylint_plugin.py
+diay.egg-info/PKG-INFO
+diay.egg-info/SOURCES.txt
+diay.egg-info/dependency_links.txt
+diay.egg-info/top_level.txt

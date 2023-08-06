@@ -1,0 +1,11 @@
+sqliteschema/__init__.py,sha256=kUK4MfOvxXNjf7ROedBq20Cu2miIjZUV8tpf9XQg_as,423
+sqliteschema/__version__.py,sha256=XH-PB5XVA1SzQYwMeEFZ4PONST8asMUeAq2ZlVv5bFk,280
+sqliteschema/_const.py,sha256=wNILN3qMyHYBEXTqL68k4GwG8FoZEh_FaHVSnf1q1WM,508
+sqliteschema/_error.py,sha256=U3qXHlDtlnk4OM6WCVguO6l_lSK-5v00dUGS4mJvG1o,562
+sqliteschema/_extractor.py,sha256=vsasjcBC5Eupz0bxV2Z9wRmPz-2RUqzI6KalZKMnY5Q,11214
+sqliteschema/_logger.py,sha256=DuvCv6YI3hoGP6phC1Vov7zQXv8bW5j55agywlbxj-M,1439
+sqliteschema/_schema.py,sha256=CUbWDEHRHc-BLygGrtfF-WxUhpYf6AP0EP764ul8Jbc,4646
+sqliteschema-0.11.3.dist-info/METADATA,sha256=om1pGjh0OBLRD3KdvKtRyDVlS-ukk8L3i_RdE4FF8FQ,13937
+sqliteschema-0.11.3.dist-info/RECORD,,
+sqliteschema-0.11.3.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+sqliteschema-0.11.3.dist-info/top_level.txt,sha256=MHB2NNpM42Om-bvj7Vz-fQOrgaLB7AD3whxptdZSOg4,13

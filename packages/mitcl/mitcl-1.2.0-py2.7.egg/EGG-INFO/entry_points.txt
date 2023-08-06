@@ -1,0 +1,3 @@
+[console_scripts]
+mitcl = mitcl.mitcl:main
+

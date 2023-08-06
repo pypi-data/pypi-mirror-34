@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+mitcl/__init__.py
+mitcl/mitcl.py
+mitcl.egg-info/PKG-INFO
+mitcl.egg-info/SOURCES.txt
+mitcl.egg-info/dependency_links.txt
+mitcl.egg-info/entry_points.txt
+mitcl.egg-info/not-zip-safe
+mitcl.egg-info/top_level.txt
+mitcl/data/__init__.py
+mitcl/data/mitcl.dat

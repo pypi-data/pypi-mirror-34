@@ -1,0 +1,11 @@
+README.md
+setup.py
+flippy/__init__.py
+flippy/__main__.py
+flippy/lapse.py
+flippy.egg-info/PKG-INFO
+flippy.egg-info/SOURCES.txt
+flippy.egg-info/dependency_links.txt
+flippy.egg-info/entry_points.txt
+flippy.egg-info/requires.txt
+flippy.egg-info/top_level.txt

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pbas
+Version: 0.0.1
+Summary: Simple web server with basic authentication
+Home-page: https://github.com/beloglazof/pbs
+Author: Slava Beloglazov
+Author-email: beloglazov.v.d@gmail.com
+License: MIT
+Description: # Python Basic Auth Server
+        
+        ## Description
+        
+        Simple web server on Python 3.5 with:
+        * GET
+        * CGI
+        * Basic Authentication
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown

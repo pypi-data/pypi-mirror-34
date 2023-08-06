@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: scrapy-calaccess-crawler
+Version: 0.0.1
+Summary: A Scrapy app to scrape campaign-finance data from the California Secretary of State’s CAL-ACCESS website
+Home-page: https://github.com/california-civic-data-coalition/scrapy-calaccess
+Author: California Civic Data Coalition
+Author-email: cacivicdata@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

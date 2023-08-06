@@ -1,0 +1,4 @@
+[console_scripts]
+fileMaker = pythonFiles.createFile:main
+graphGen = pythonFiles.xeqt:main
+

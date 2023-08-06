@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lasotuvi
+Version: 0.1.2
+Summary: Chương trình an sao tử vi mã nguồn mở
+Home-page: https://github.com/doanguyen/lasotuvi
+Author: doanguyen
+Author-email: dungnv2410@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: attrs (==17.4.0)
+Requires-Dist: more-itertools (==4.1.0)
+Requires-Dist: mypy (==0.580)
+Requires-Dist: pluggy (==0.6.0)
+Requires-Dist: py (==1.5.3)
+Requires-Dist: pytest (==3.5.0)
+Requires-Dist: six (==1.11.0)
+Requires-Dist: typed-ast (==1.1.0)
+Requires-Dist: ephem (==3.7.6.0); sys_platform == "linux"
+
+UNKNOWN
+
+

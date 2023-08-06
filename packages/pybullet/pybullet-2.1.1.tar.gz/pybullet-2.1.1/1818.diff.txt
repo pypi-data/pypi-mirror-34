@@ -1,0 +1,1754 @@
+diff --git a/examples/ExampleBrowser/CMakeLists.txt b/examples/ExampleBrowser/CMakeLists.txt
+index 2677f2fe3..1bc44203d 100644
+--- a/examples/ExampleBrowser/CMakeLists.txt
++++ b/examples/ExampleBrowser/CMakeLists.txt
+@@ -326,6 +326,7 @@ SET(BulletExampleBrowser_SRCS
+   ../MultiBody/InvertedPendulumPDControl.cpp
+   ../MultiBody/InvertedPendulumPDControl.h
+  ../MultiBody/MultiBodyConstraintFeedback.cpp
++  ../MultiBody/SerialChains.cpp
+   ../MultiBody/MultiDofDemo.cpp
+   ../MultiBody/MultiDofDemo.h
+   ../RigidBody/RigidBodySoftContact.cpp
+diff --git a/examples/ExampleBrowser/ExampleEntries.cpp b/examples/ExampleBrowser/ExampleEntries.cpp
+index f7f2f9b63..f3973c565 100644
+--- a/examples/ExampleBrowser/ExampleEntries.cpp
++++ b/examples/ExampleBrowser/ExampleEntries.cpp
+@@ -29,6 +29,7 @@
+ #include "../MultiBody/MultiBodyConstraintFeedback.h"
+ #include "../MultiBody/MultiDofDemo.h"
+ #include "../MultiBody/InvertedPendulumPDControl.h"
++#include "../MultiBody/SerialChains.h"
+ #include "../RigidBody/RigidBodySoftContact.h"
+ #include "../VoronoiFracture/VoronoiFractureDemo.h"
+ #include "../SoftDemo/SoftDemo.h"
+@@ -137,6 +138,7 @@ static ExampleEntry gDefaultExamples[]=
+ 	ExampleEntry(1,"Constraint Feedback", "The example shows how to receive joint reaction forces in a btMultiBody. Also the applied impulse is available for a btMultiBodyJointMotor", MultiBodyConstraintFeedbackCreateFunc),
+ 	ExampleEntry(1,"Inverted Pendulum PD","Keep an inverted pendulum up using open loop PD control", InvertedPendulumPDControlCreateFunc),
+ 	ExampleEntry(1,"MultiBody Soft Contact", "Using the error correction parameter (ERP) and constraint force mixing (CFM) values for contacts to simulate compliant contact.",MultiBodySoftContactCreateFunc,0),
++	ExampleEntry(1,"Serial Chains", "Show colliding two serial chains using different constraint solvers.", SerialChainsCreateFunc,0),
+ 
+ 	ExampleEntry(0,"Physics Client-Server"),
+ 	ExampleEntry(1,"Physics Server", "Create a physics server that communicates with a physics client over shared memory. You can connect to the server using pybullet, a PhysicsClient or a UDP/TCP Bridge.",
+diff --git a/examples/MultiBody/MultiDofDemo.cpp b/examples/MultiBody/MultiDofDemo.cpp
+index 86d893f73..e4e3ba66f 100644
+--- a/examples/MultiBody/MultiDofDemo.cpp
++++ b/examples/MultiBody/MultiDofDemo.cpp
+@@ -2,8 +2,13 @@
+ #include "../OpenGLWindow/SimpleOpenGL3App.h"
+ #include "btBulletDynamicsCommon.h"
+ 
++#include "BulletDynamics/MLCPSolvers/btDantzigSolver.h"
++#include "BulletDynamics/MLCPSolvers/btLemkeSolver.h"
++#include "BulletDynamics/MLCPSolvers/btSolveProjectedGaussSeidel.h"
++
+ #include "BulletDynamics/Featherstone/btMultiBody.h"
+ #include "BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h"
++#include "BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.h"
+ #include "BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.h"
+ #include "BulletDynamics/Featherstone/btMultiBodyLinkCollider.h"
+ #include "BulletDynamics/Featherstone/btMultiBodyLink.h"
+@@ -40,7 +45,6 @@ class MultiDofDemo : public CommonMultiBodyBase
+ 		m_guiHelper->resetCamera(dist,yaw,pitch,targetPos[0],targetPos[1],targetPos[2]);
+ 	}
+ 
+-
+ 	btMultiBody* createFeatherstoneMultiBody_testMultiDof(class btMultiBodyDynamicsWorld* world, int numLinks, const btVector3& basePosition, const btVector3 &baseHalfExtents, const btVector3 &linkHalfExtents, bool spherical = false, bool floating = false);
+ 	void addColliders_testMultiDof(btMultiBody *pMultiBody, btMultiBodyDynamicsWorld *pWorld, const btVector3 &baseHalfExtents, const btVector3 &linkHalfExtents);
+ 	void addBoxes_testMultiDof();
+@@ -52,6 +56,7 @@ static bool g_floatingBase = false;
+ static bool g_firstInit = true;
+ static float scaling = 0.4f;
+ static float friction = 1.;
++static int g_constraintSolverType = 0;
+ #define ARRAY_SIZE_X 5
+ #define ARRAY_SIZE_Y 5
+ #define ARRAY_SIZE_Z 5
+@@ -104,8 +109,37 @@ void	MultiDofDemo::initPhysics()
+ 
+ 	m_broadphase = new btDbvtBroadphase();
+ 
+-	//Use the btMultiBodyConstraintSolver for Featherstone btMultiBody support
+-	btMultiBodyConstraintSolver* sol = new btMultiBodyConstraintSolver;
++	if (g_constraintSolverType == 4)
++	{
++		g_constraintSolverType = 0;
++		g_floatingBase = !g_floatingBase;
++	}
++
++	btMultiBodyConstraintSolver* sol;
++	btMLCPSolverInterface* mlcp;
++	switch (g_constraintSolverType++)
++	{
++		case 0:
++			sol = new btMultiBodyConstraintSolver;
++			b3Printf("Constraint Solver: Sequential Impulse");
++			break;
++		case 1:
++			mlcp = new btSolveProjectedGaussSeidel();
++			sol = new btMultiBodyMLCPConstraintSolver(mlcp);
++			b3Printf("Constraint Solver: MLCP + PGS");
++			break;
++		case 2:
++			mlcp = new btDantzigSolver();
++			sol = new btMultiBodyMLCPConstraintSolver(mlcp);
++			b3Printf("Constraint Solver: MLCP + Dantzig");
++			break;
++		default:
++			mlcp = new btLemkeSolver();
++			sol = new btMultiBodyMLCPConstraintSolver(mlcp);
++			b3Printf("Constraint Solver: MLCP + Lemke");
++			break;
++	}
++
+ 	m_solver = sol;
+ 
+ 	//use btMultiBodyDynamicsWorld for Featherstone btMultiBody support
+@@ -144,7 +178,6 @@ void	MultiDofDemo::initPhysics()
+ 	btMultiBody* mbC = createFeatherstoneMultiBody_testMultiDof(world, numLinks, btVector3(-0.4f, 3.f, 0.f), linkHalfExtents, baseHalfExtents, spherical, g_floatingBase);	
+ 	//mbC->forceMultiDof();							//if !spherical, you can comment this line to check the 1DoF algorithm		
+ 
+-	g_floatingBase = ! g_floatingBase;
+ 	mbC->setCanSleep(canSleep);	
+ 	mbC->setHasSelfCollision(selfCollide);
+ 	mbC->setUseGyroTerm(gyro);
+diff --git a/examples/MultiBody/SerialChains.cpp b/examples/MultiBody/SerialChains.cpp
+new file mode 100644
+index 000000000..c4c3d0565
+--- /dev/null
++++ b/examples/MultiBody/SerialChains.cpp
+@@ -0,0 +1,405 @@
++#include "SerialChains.h"
++#include "../OpenGLWindow/SimpleOpenGL3App.h"
++#include "btBulletDynamicsCommon.h"
++
++#include "BulletDynamics/MLCPSolvers/btDantzigSolver.h"
++#include "BulletDynamics/MLCPSolvers/btLemkeSolver.h"
++#include "BulletDynamics/MLCPSolvers/btSolveProjectedGaussSeidel.h"
++
++#include "BulletDynamics/Featherstone/btMultiBody.h"
++#include "BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h"
++#include "BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.h"
++#include "BulletDynamics/Featherstone/btMultiBodyDynamicsWorld.h"
++#include "BulletDynamics/Featherstone/btMultiBodyLinkCollider.h"
++#include "BulletDynamics/Featherstone/btMultiBodyLink.h"
++#include "BulletDynamics/Featherstone/btMultiBodyJointLimitConstraint.h"
++#include "BulletDynamics/Featherstone/btMultiBodyJointMotor.h"
++#include "BulletDynamics/Featherstone/btMultiBodyPoint2Point.h"
++#include "BulletDynamics/Featherstone/btMultiBodyFixedConstraint.h"
++#include "BulletDynamics/Featherstone/btMultiBodySliderConstraint.h"
++
++#include "../OpenGLWindow/GLInstancingRenderer.h"
++#include "BulletCollision/CollisionShapes/btShapeHull.h"
++
++#include "../CommonInterfaces/CommonMultiBodyBase.h"
++
++class SerialChains : public CommonMultiBodyBase
++{
++public:
++	SerialChains(GUIHelperInterface* helper);
++	virtual ~SerialChains();
++
++	virtual void initPhysics();
++
++	virtual void stepSimulation(float deltaTime);
++
++	virtual void resetCamera()
++	{
++		float dist = 1;
++		float pitch = -35;
++		float yaw = 50;
++		float targetPos[3] = {-3, 2.8, -2.5};
++		m_guiHelper->resetCamera(dist, yaw, pitch, targetPos[0], targetPos[1], targetPos[2]);
++	}
++
++	btMultiBody* createFeatherstoneMultiBody_testMultiDof(class btMultiBodyDynamicsWorld* world, int numLinks, const btVector3& basePosition, const btVector3& baseHalfExtents, const btVector3& linkHalfExtents, bool spherical = false, bool floating = false);
++	void addColliders_testMultiDof(btMultiBody* pMultiBody, btMultiBodyDynamicsWorld* pWorld, const btVector3& baseHalfExtents, const btVector3& linkHalfExtents);
++};
++
++static bool g_fixedBase = true;
++static bool g_firstInit = true;
++static float scaling = 0.4f;
++static float friction = 1.;
++static int g_constraintSolverType = 0;
++
++SerialChains::SerialChains(GUIHelperInterface* helper)
++	: CommonMultiBodyBase(helper)
++{
++	m_guiHelper->setUpAxis(1);
++}
++
++SerialChains::~SerialChains()
++{
++	// Do nothing
++}
++
++void SerialChains::stepSimulation(float deltaTime)
++{
++	//use a smaller internal timestep, there are stability issues
++	float internalTimeStep = 1. / 240.f;
++	m_dynamicsWorld->stepSimulation(deltaTime, 10, internalTimeStep);
++}
++
++void SerialChains::initPhysics()
++{
++	m_guiHelper->setUpAxis(1);
++
++	if (g_firstInit)
++	{
++		m_guiHelper->getRenderInterface()->getActiveCamera()->setCameraDistance(btScalar(10. * scaling));
++		m_guiHelper->getRenderInterface()->getActiveCamera()->setCameraPitch(50);
++		g_firstInit = false;
++	}
++	///collision configuration contains default setup for memory, collision setup
++	m_collisionConfiguration = new btDefaultCollisionConfiguration();
++
++	///use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/BulletMultiThreaded)
++	m_dispatcher = new btCollisionDispatcher(m_collisionConfiguration);
++
++	m_broadphase = new btDbvtBroadphase();
++
++	if (g_constraintSolverType == 4)
++	{
++		g_constraintSolverType = 0;
++		g_fixedBase = !g_fixedBase;
++	}
++
++	btMultiBodyConstraintSolver* sol;
++	btMLCPSolverInterface* mlcp;
++	switch (g_constraintSolverType++)
++	{
++		case 0:
++			m_solver = new btMultiBodyConstraintSolver;
++			b3Printf("Constraint Solver: Sequential Impulse");
++			break;
++		case 1:
++			mlcp = new btSolveProjectedGaussSeidel();
++			m_solver = new btMultiBodyMLCPConstraintSolver(mlcp);
++			b3Printf("Constraint Solver: MLCP + PGS");
++			break;
++		case 2:
++			mlcp = new btDantzigSolver();
++			m_solver = new btMultiBodyMLCPConstraintSolver(mlcp);
++			b3Printf("Constraint Solver: MLCP + Dantzig");
++			break;
++		default:
++			mlcp = new btLemkeSolver();
++			m_solver = new btMultiBodyMLCPConstraintSolver(mlcp);
++			b3Printf("Constraint Solver: MLCP + Lemke");
++			break;
++	}
++
++	btMultiBodyDynamicsWorld* world = new btMultiBodyDynamicsWorld(m_dispatcher, m_broadphase, m_solver, m_collisionConfiguration);
++	m_dynamicsWorld = world;
++	m_guiHelper->createPhysicsDebugDrawer(m_dynamicsWorld);
++	m_dynamicsWorld->setGravity(btVector3(0, -10, 0));
++
++	///create a few basic rigid bodies
++	btVector3 groundHalfExtents(50, 50, 50);
++	btCollisionShape* groundShape = new btBoxShape(groundHalfExtents);
++
++	m_collisionShapes.push_back(groundShape);
++
++	btTransform groundTransform;
++	groundTransform.setIdentity();
++	groundTransform.setOrigin(btVector3(0, -50, 00));
++
++	/////////////////////////////////////////////////////////////////
++	/////////////////////////////////////////////////////////////////
++
++	bool damping = true;
++	bool gyro = true;
++	int numLinks = 5;
++	bool spherical = true;      //set it ot false -to use 1DoF hinges instead of 3DoF sphericals
++	bool multibodyOnly = true;  //false
++	bool canSleep = true;
++	bool selfCollide = true;
++	btVector3 linkHalfExtents(0.05, 0.37, 0.1);
++	btVector3 baseHalfExtents(0.05, 0.37, 0.1);
++
++	btMultiBody* mbC1 = createFeatherstoneMultiBody_testMultiDof(world, numLinks, btVector3(-0.4f, 3.f, 0.f), linkHalfExtents, baseHalfExtents, spherical, g_fixedBase);
++	btMultiBody* mbC2 = createFeatherstoneMultiBody_testMultiDof(world, numLinks, btVector3(-0.4f, 3.0f, 0.5f), linkHalfExtents, baseHalfExtents, spherical, g_fixedBase);
++
++	mbC1->setCanSleep(canSleep);
++	mbC1->setHasSelfCollision(selfCollide);
++	mbC1->setUseGyroTerm(gyro);
++
++	if (!damping)
++	{
++		mbC1->setLinearDamping(0.f);
++		mbC1->setAngularDamping(0.f);
++	}
++	else
++	{
++		mbC1->setLinearDamping(0.1f);
++		mbC1->setAngularDamping(0.9f);
++	}
++	//
++	m_dynamicsWorld->setGravity(btVector3(0, -9.81, 0));
++	//////////////////////////////////////////////
++	if (numLinks > 0)
++	{
++		btScalar q0 = 45.f * SIMD_PI / 180.f;
++		if (!spherical)
++		{
++			mbC1->setJointPosMultiDof(0, &q0);
++		}
++		else
++		{
++			btQuaternion quat0(btVector3(1, 1, 0).normalized(), q0);
++			quat0.normalize();
++			mbC1->setJointPosMultiDof(0, quat0);
++		}
++	}
++	///
++	addColliders_testMultiDof(mbC1, world, baseHalfExtents, linkHalfExtents);
++
++	mbC2->setCanSleep(canSleep);
++	mbC2->setHasSelfCollision(selfCollide);
++	mbC2->setUseGyroTerm(gyro);
++	//
++	if (!damping)
++	{
++		mbC2->setLinearDamping(0.f);
++		mbC2->setAngularDamping(0.f);
++	}
++	else
++	{
++		mbC2->setLinearDamping(0.1f);
++		mbC2->setAngularDamping(0.9f);
++	}
++	//
++	m_dynamicsWorld->setGravity(btVector3(0, -9.81, 0));
++	//////////////////////////////////////////////
++	if (numLinks > 0)
++	{
++		btScalar q0 = -45.f * SIMD_PI / 180.f;
++		if (!spherical)
++		{
++			mbC2->setJointPosMultiDof(0, &q0);
++		}
++		else
++		{
++			btQuaternion quat0(btVector3(1, 1, 0).normalized(), q0);
++			quat0.normalize();
++			mbC2->setJointPosMultiDof(0, quat0);
++		}
++	}
++	///
++	addColliders_testMultiDof(mbC2, world, baseHalfExtents, linkHalfExtents);
++
++	/////////////////////////////////////////////////////////////////
++	btScalar groundHeight = -51.55;
++	if (!multibodyOnly)
++	{
++		btScalar mass(0.);
++
++		//rigidbody is dynamic if and only if mass is non zero, otherwise static
++		bool isDynamic = (mass != 0.f);
++
++		btVector3 localInertia(0, 0, 0);
++		if (isDynamic)
++			groundShape->calculateLocalInertia(mass, localInertia);
++
++		//using motionstate is recommended, it provides interpolation capabilities, and only synchronizes 'active' objects
++		groundTransform.setIdentity();
++		groundTransform.setOrigin(btVector3(0, groundHeight, 0));
++		btDefaultMotionState* myMotionState = new btDefaultMotionState(groundTransform);
++		btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, myMotionState, groundShape, localInertia);
++		btRigidBody* body = new btRigidBody(rbInfo);
++
++		//add the body to the dynamics world
++		m_dynamicsWorld->addRigidBody(body, 1, 1 + 2);  //,1,1+2);
++	}
++	/////////////////////////////////////////////////////////////////
++	if (!multibodyOnly)
++	{
++		btVector3 halfExtents(.5, .5, .5);
++		btBoxShape* colShape = new btBoxShape(halfExtents);
++		m_collisionShapes.push_back(colShape);
++
++		/// Create Dynamic Objects
++		btTransform startTransform;
++		startTransform.setIdentity();
++
++		btScalar mass(1.f);
++
++		//rigidbody is dynamic if and only if mass is non zero, otherwise static
++		bool isDynamic = (mass != 0.f);
++
++		btVector3 localInertia(0, 0, 0);
++		if (isDynamic)
++			colShape->calculateLocalInertia(mass, localInertia);
++
++		startTransform.setOrigin(btVector3(
++			btScalar(0.0),
++			0.0,
++			btScalar(0.0)));
++
++		//using motionstate is recommended, it provides interpolation capabilities, and only synchronizes 'active' objects
++		btDefaultMotionState* myMotionState = new btDefaultMotionState(startTransform);
++		btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, myMotionState, colShape, localInertia);
++		btRigidBody* body = new btRigidBody(rbInfo);
++
++		m_dynamicsWorld->addRigidBody(body);  //,1,1+2);
++	}
++
++	m_guiHelper->autogenerateGraphicsObjects(m_dynamicsWorld);
++
++	/////////////////////////////////////////////////////////////////
++}
++
++btMultiBody* SerialChains::createFeatherstoneMultiBody_testMultiDof(btMultiBodyDynamicsWorld* pWorld, int numLinks, const btVector3& basePosition, const btVector3& baseHalfExtents, const btVector3& linkHalfExtents, bool spherical, bool fixedBase)
++{
++	//init the base
++	btVector3 baseInertiaDiag(0.f, 0.f, 0.f);
++	float baseMass = 1.f;
++
++	if (baseMass)
++	{
++		btCollisionShape* pTempBox = new btBoxShape(btVector3(baseHalfExtents[0], baseHalfExtents[1], baseHalfExtents[2]));
++		pTempBox->calculateLocalInertia(baseMass, baseInertiaDiag);
++		delete pTempBox;
++	}
++
++	bool canSleep = false;
++
++	btMultiBody* pMultiBody = new btMultiBody(numLinks, baseMass, baseInertiaDiag, fixedBase, canSleep);
++
++	btQuaternion baseOriQuat(0.f, 0.f, 0.f, 1.f);
++	pMultiBody->setBasePos(basePosition);
++	pMultiBody->setWorldToBaseRot(baseOriQuat);
++	btVector3 vel(0, 0, 0);
++
++	//init the links
++	btVector3 hingeJointAxis(1, 0, 0);
++	float linkMass = 1.f;
++	btVector3 linkInertiaDiag(0.f, 0.f, 0.f);
++
++	btCollisionShape* pTempBox = new btBoxShape(btVector3(linkHalfExtents[0], linkHalfExtents[1], linkHalfExtents[2]));
++	pTempBox->calculateLocalInertia(linkMass, linkInertiaDiag);
++	delete pTempBox;
++
++	//y-axis assumed up
++	btVector3 parentComToCurrentCom(0, -linkHalfExtents[1] * 2.f, 0);                      //par body's COM to cur body's COM offset
++	btVector3 currentPivotToCurrentCom(0, -linkHalfExtents[1], 0);                         //cur body's COM to cur body's PIV offset
++	btVector3 parentComToCurrentPivot = parentComToCurrentCom - currentPivotToCurrentCom;  //par body's COM to cur body's PIV offset
++
++	//////
++	btScalar q0 = 0.f * SIMD_PI / 180.f;
++	btQuaternion quat0(btVector3(0, 1, 0).normalized(), q0);
++	quat0.normalize();
++	/////
++
++	for (int i = 0; i < numLinks; ++i)
++	{
++		if (!spherical)
++			pMultiBody->setupRevolute(i, linkMass, linkInertiaDiag, i - 1, btQuaternion(0.f, 0.f, 0.f, 1.f), hingeJointAxis, parentComToCurrentPivot, currentPivotToCurrentCom, true);
++		else
++			//pMultiBody->setupPlanar(i, linkMass, linkInertiaDiag, i - 1, btQuaternion(0.f, 0.f, 0.f, 1.f)/*quat0*/, btVector3(1, 0, 0), parentComToCurrentPivot*2, false);
++			pMultiBody->setupSpherical(i, linkMass, linkInertiaDiag, i - 1, btQuaternion(0.f, 0.f, 0.f, 1.f), parentComToCurrentPivot, currentPivotToCurrentCom, true);
++	}
++
++	pMultiBody->finalizeMultiDof();
++
++	///
++	pWorld->addMultiBody(pMultiBody);
++	///
++	return pMultiBody;
++}
++
++void SerialChains::addColliders_testMultiDof(btMultiBody* pMultiBody, btMultiBodyDynamicsWorld* pWorld, const btVector3& baseHalfExtents, const btVector3& linkHalfExtents)
++{
++	btAlignedObjectArray<btQuaternion> world_to_local;
++	world_to_local.resize(pMultiBody->getNumLinks() + 1);
++
++	btAlignedObjectArray<btVector3> local_origin;
++	local_origin.resize(pMultiBody->getNumLinks() + 1);
++	world_to_local[0] = pMultiBody->getWorldToBaseRot();
++	local_origin[0] = pMultiBody->getBasePos();
++
++	{
++		btScalar quat[4] = {-world_to_local[0].x(), -world_to_local[0].y(), -world_to_local[0].z(), world_to_local[0].w()};
++
++		if (1)
++		{
++			btCollisionShape* box = new btBoxShape(baseHalfExtents);
++			btMultiBodyLinkCollider* col = new btMultiBodyLinkCollider(pMultiBody, -1);
++			col->setCollisionShape(box);
++
++			btTransform tr;
++			tr.setIdentity();
++			tr.setOrigin(local_origin[0]);
++			tr.setRotation(btQuaternion(quat[0], quat[1], quat[2], quat[3]));
++			col->setWorldTransform(tr);
++
++			pWorld->addCollisionObject(col, 2, 1 + 2);
++
++			col->setFriction(friction);
++			pMultiBody->setBaseCollider(col);
++		}
++	}
++
++	for (int i = 0; i < pMultiBody->getNumLinks(); ++i)
++	{
++		const int parent = pMultiBody->getParent(i);
++		world_to_local[i + 1] = pMultiBody->getParentToLocalRot(i) * world_to_local[parent + 1];
++		local_origin[i + 1] = local_origin[parent + 1] + (quatRotate(world_to_local[i + 1].inverse(), pMultiBody->getRVector(i)));
++	}
++
++	for (int i = 0; i < pMultiBody->getNumLinks(); ++i)
++	{
++		btVector3 posr = local_origin[i + 1];
++
++		btScalar quat[4] = {-world_to_local[i + 1].x(), -world_to_local[i + 1].y(), -world_to_local[i + 1].z(), world_to_local[i + 1].w()};
++
++		btCollisionShape* box = new btBoxShape(linkHalfExtents);
++		btMultiBodyLinkCollider* col = new btMultiBodyLinkCollider(pMultiBody, i);
++
++		col->setCollisionShape(box);
++		btTransform tr;
++		tr.setIdentity();
++		tr.setOrigin(posr);
++		tr.setRotation(btQuaternion(quat[0], quat[1], quat[2], quat[3]));
++		col->setWorldTransform(tr);
++		col->setFriction(friction);
++		pWorld->addCollisionObject(col, 2, 1 + 2);
++
++		pMultiBody->getLink(i).m_collider = col;
++	}
++}
++
++CommonExampleInterface* SerialChainsCreateFunc(CommonExampleOptions& options)
++{
++	return new SerialChains(options.m_guiHelper);
++}
+diff --git a/examples/MultiBody/SerialChains.h b/examples/MultiBody/SerialChains.h
+new file mode 100644
+index 000000000..aa7d75ece
+--- /dev/null
++++ b/examples/MultiBody/SerialChains.h
+@@ -0,0 +1,7 @@
++
++#ifndef MULTI_BODY_CONSTRAINT_SOLVERS_DEMO_H
++#define MULTI_BODY_CONSTRAINT_SOLVERS_DEMO_H
++
++class CommonExampleInterface* SerialChainsCreateFunc(struct CommonExampleOptions& options);
++
++#endif  //MULTI_BODY_CONSTRAINT_SOLVERS_DEMO_H
+diff --git a/src/BulletDynamics/CMakeLists.txt b/src/BulletDynamics/CMakeLists.txt
+index 2eb03c39a..d416d7d5f 100644
+--- a/src/BulletDynamics/CMakeLists.txt
++++ b/src/BulletDynamics/CMakeLists.txt
+@@ -31,15 +31,16 @@ SET(BulletDynamics_SRCS
+ 	Vehicle/btRaycastVehicle.cpp
+ 	Vehicle/btWheelInfo.cpp
+ 	Featherstone/btMultiBody.cpp
++	Featherstone/btMultiBodyConstraint.cpp
+ 	Featherstone/btMultiBodyConstraintSolver.cpp
+ 	Featherstone/btMultiBodyDynamicsWorld.cpp
++	Featherstone/btMultiBodyFixedConstraint.cpp
++	Featherstone/btMultiBodyGearConstraint.cpp
+ 	Featherstone/btMultiBodyJointLimitConstraint.cpp
+-	Featherstone/btMultiBodyConstraint.cpp
++	Featherstone/btMultiBodyJointMotor.cpp
++	Featherstone/btMultiBodyMLCPConstraintSolver.cpp
+ 	Featherstone/btMultiBodyPoint2Point.cpp
+-	Featherstone/btMultiBodyFixedConstraint.cpp
+ 	Featherstone/btMultiBodySliderConstraint.cpp
+-	Featherstone/btMultiBodyJointMotor.cpp
+-	Featherstone/btMultiBodyGearConstraint.cpp
+ 	MLCPSolvers/btDantzigLCP.cpp
+ 	MLCPSolvers/btMLCPSolver.cpp
+ 	MLCPSolvers/btLemkeAlgorithm.cpp
+@@ -90,19 +91,19 @@ SET(Vehicle_HDRS
+ 
+ SET(Featherstone_HDRS
+ 	Featherstone/btMultiBody.h
++	Featherstone/btMultiBodyConstraint.h
+ 	Featherstone/btMultiBodyConstraintSolver.h
+ 	Featherstone/btMultiBodyDynamicsWorld.h
++	Featherstone/btMultiBodyFixedConstraint.h
++	Featherstone/btMultiBodyGearConstraint.h
++	Featherstone/btMultiBodyJointLimitConstraint.h
++	Featherstone/btMultiBodyJointMotor.h
+ 	Featherstone/btMultiBodyLink.h
+ 	Featherstone/btMultiBodyLinkCollider.h
+-	Featherstone/btMultiBodySolverConstraint.h
+-	Featherstone/btMultiBodyConstraint.h
+-	Featherstone/btMultiBodyJointLimitConstraint.h
+-	Featherstone/btMultiBodyConstraint.h
++	Featherstone/btMultiBodyMLCPConstraintSolver.h
+ 	Featherstone/btMultiBodyPoint2Point.h
+-	Featherstone/btMultiBodyFixedConstraint.h
+ 	Featherstone/btMultiBodySliderConstraint.h
+-	Featherstone/btMultiBodyJointMotor.h
+-	Featherstone/btMultiBodyGearConstraint.h	
++	Featherstone/btMultiBodySolverConstraint.h
+ )
+ 
+ SET(MLCPSolvers_HDRS
+diff --git a/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.cpp b/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.cpp
+new file mode 100644
+index 000000000..8242b7b27
+--- /dev/null
++++ b/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.cpp
+@@ -0,0 +1,965 @@
++/*
++Bullet Continuous Collision Detection and Physics Library
++Copyright (c) 2018 Google Inc. http://bulletphysics.org
++
++This software is provided 'as-is', without any express or implied warranty.
++In no event will the authors be held liable for any damages arising from the use of this software.
++Permission is granted to anyone to use this software for any purpose,
++including commercial applications, and to alter it and redistribute it freely,
++subject to the following restrictions:
++
++1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
++2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
++3. This notice may not be removed or altered from any source distribution.
++*/
++
++#include "BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.h"
++
++#include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
++#include "BulletDynamics/Featherstone/btMultiBodyLinkCollider.h"
++#include "BulletDynamics/Featherstone/btMultiBodyConstraint.h"
++#include "BulletDynamics/MLCPSolvers/btMLCPSolverInterface.h"
++
++#define DIRECTLY_UPDATE_VELOCITY_DURING_SOLVER_ITERATIONS
++
++static bool interleaveContactAndFriction = false;
++
++struct btJointNode
++{
++	int jointIndex;          // pointer to enclosing dxJoint object
++	int otherBodyIndex;      // *other* body this joint is connected to
++	int nextJointNodeIndex;  //-1 for null
++	int constraintRowIndex;
++};
++
++// Helper function to compute a delta velocity in the constraint space.
++static btScalar computeDeltaVelocityInConstraintSpace(
++	const btVector3& angularDeltaVelocity,
++	const btVector3& contactNormal,
++	btScalar invMass,
++	const btVector3& angularJacobian,
++	const btVector3& linearJacobian)
++{
++	return angularDeltaVelocity.dot(angularJacobian) + contactNormal.dot(linearJacobian) * invMass;
++}
++
++// Faster version of computeDeltaVelocityInConstraintSpace that can be used when contactNormal and linearJacobian are
++// identical.
++static btScalar computeDeltaVelocityInConstraintSpace(
++	const btVector3& angularDeltaVelocity,
++	btScalar invMass,
++	const btVector3& angularJacobian)
++{
++	return angularDeltaVelocity.dot(angularJacobian) + invMass;
++}
++
++// Helper function to compute a delta velocity in the constraint space.
++static btScalar computeDeltaVelocityInConstraintSpace(const btScalar* deltaVelocity, const btScalar* jacobian, int size)
++{
++	btScalar result = 0;
++	for (int i = 0; i < size; ++i)
++		result += deltaVelocity[i] * jacobian[i];
++
++	return result;
++}
++
++static btScalar computeConstraintMatrixDiagElementMultiBody(
++	const btAlignedObjectArray<btSolverBody>& solverBodyPool,
++	const btMultiBodyJacobianData& data,
++	const btMultiBodySolverConstraint& constraint)
++{
++	btScalar ret = 0;
++
++	const btMultiBody* multiBodyA = constraint.m_multiBodyA;
++	const btMultiBody* multiBodyB = constraint.m_multiBodyB;
++
++	if (multiBodyA)
++	{
++		const btScalar* jacA = &data.m_jacobians[constraint.m_jacAindex];
++		const btScalar* deltaA = &data.m_deltaVelocitiesUnitImpulse[constraint.m_jacAindex];
++		const int ndofA = multiBodyA->getNumDofs() + 6;
++		ret += computeDeltaVelocityInConstraintSpace(deltaA, jacA, ndofA);
++	}
++	else
++	{
++		const int solverBodyIdA = constraint.m_solverBodyIdA;
++		btAssert(solverBodyIdA != -1);
++		const btSolverBody* solverBodyA = &solverBodyPool[solverBodyIdA];
++		const btScalar invMassA = solverBodyA->m_originalBody ? solverBodyA->m_originalBody->getInvMass() : 0.0;
++		ret += computeDeltaVelocityInConstraintSpace(
++			constraint.m_relpos1CrossNormal,
++			invMassA,
++			constraint.m_angularComponentA);
++	}
++
++	if (multiBodyB)
++	{
++		const btScalar* jacB = &data.m_jacobians[constraint.m_jacBindex];
++		const btScalar* deltaB = &data.m_deltaVelocitiesUnitImpulse[constraint.m_jacBindex];
++		const int ndofB = multiBodyB->getNumDofs() + 6;
++		ret += computeDeltaVelocityInConstraintSpace(deltaB, jacB, ndofB);
++	}
++	else
++	{
++		const int solverBodyIdB = constraint.m_solverBodyIdB;
++		btAssert(solverBodyIdB != -1);
++		const btSolverBody* solverBodyB = &solverBodyPool[solverBodyIdB];
++		const btScalar invMassB = solverBodyB->m_originalBody ? solverBodyB->m_originalBody->getInvMass() : 0.0;
++		ret += computeDeltaVelocityInConstraintSpace(
++			constraint.m_relpos1CrossNormal, invMassB,
++			constraint.m_angularComponentA);
++	}
++
++	return ret;
++}
++
++static btScalar computeConstraintMatrixOffDiagElementMultiBody(
++	const btAlignedObjectArray<btSolverBody>& solverBodyPool,
++	const btMultiBodyJacobianData& data,
++	const btMultiBodySolverConstraint& constraint,
++	const btMultiBodySolverConstraint& offDiagConstraint)
++{
++	btScalar offDiagA = btScalar(0);
++
++	const btMultiBody* multiBodyA = constraint.m_multiBodyA;
++	const btMultiBody* multiBodyB = constraint.m_multiBodyB;
++	const btMultiBody* offDiagMultiBodyA = offDiagConstraint.m_multiBodyA;
++	const btMultiBody* offDiagMultiBodyB = offDiagConstraint.m_multiBodyB;
++
++	// Assumed at least one system is multibody
++	btAssert(multiBodyA || multiBodyB);
++	btAssert(offDiagMultiBodyA || offDiagMultiBodyB);
++
++	if (offDiagMultiBodyA)
++	{
++		const btScalar* offDiagJacA = &data.m_jacobians[offDiagConstraint.m_jacAindex];
++
++		if (offDiagMultiBodyA == multiBodyA)
++		{
++			const int ndofA = multiBodyA->getNumDofs() + 6;
++			const btScalar* deltaA = &data.m_deltaVelocitiesUnitImpulse[constraint.m_jacAindex];
++			offDiagA += computeDeltaVelocityInConstraintSpace(deltaA, offDiagJacA, ndofA);
++		}
++		else if (offDiagMultiBodyA == multiBodyB)
++		{
++			const int ndofB = multiBodyB->getNumDofs() + 6;
++			const btScalar* deltaB = &data.m_deltaVelocitiesUnitImpulse[constraint.m_jacBindex];
++			offDiagA += computeDeltaVelocityInConstraintSpace(deltaB, offDiagJacA, ndofB);
++		}
++	}
++	else
++	{
++		const int solverBodyIdA = constraint.m_solverBodyIdA;
++		const int solverBodyIdB = constraint.m_solverBodyIdB;
++
++		const int offDiagSolverBodyIdA = offDiagConstraint.m_solverBodyIdA;
++		btAssert(offDiagSolverBodyIdA != -1);
++
++		if (offDiagSolverBodyIdA == solverBodyIdA)
++		{
++			btAssert(solverBodyIdA != -1);
++			const btSolverBody* solverBodyA = &solverBodyPool[solverBodyIdA];
++			const btScalar invMassA = solverBodyA->m_originalBody ? solverBodyA->m_originalBody->getInvMass() : 0.0;
++			offDiagA += computeDeltaVelocityInConstraintSpace(
++				offDiagConstraint.m_relpos1CrossNormal,
++				offDiagConstraint.m_contactNormal1,
++				invMassA, constraint.m_angularComponentA,
++				constraint.m_contactNormal1);
++		}
++		else if (offDiagSolverBodyIdA == solverBodyIdB)
++		{
++			btAssert(solverBodyIdB != -1);
++			const btSolverBody* solverBodyB = &solverBodyPool[solverBodyIdB];
++			const btScalar invMassB = solverBodyB->m_originalBody ? solverBodyB->m_originalBody->getInvMass() : 0.0;
++			offDiagA += computeDeltaVelocityInConstraintSpace(
++				offDiagConstraint.m_relpos1CrossNormal,
++				offDiagConstraint.m_contactNormal1,
++				invMassB,
++				constraint.m_angularComponentB,
++				constraint.m_contactNormal2);
++		}
++	}
++
++	if (offDiagMultiBodyB)
++	{
++		const btScalar* offDiagJacB = &data.m_jacobians[offDiagConstraint.m_jacBindex];
++
++		if (offDiagMultiBodyB == multiBodyA)
++		{
++			const int ndofA = multiBodyA->getNumDofs() + 6;
++			const btScalar* deltaA = &data.m_deltaVelocitiesUnitImpulse[constraint.m_jacAindex];
++			offDiagA += computeDeltaVelocityInConstraintSpace(deltaA, offDiagJacB, ndofA);
++		}
++		else if (offDiagMultiBodyB == multiBodyB)
++		{
++			const int ndofB = multiBodyB->getNumDofs() + 6;
++			const btScalar* deltaB = &data.m_deltaVelocitiesUnitImpulse[constraint.m_jacBindex];
++			offDiagA += computeDeltaVelocityInConstraintSpace(deltaB, offDiagJacB, ndofB);
++		}
++	}
++	else
++	{
++		const int solverBodyIdA = constraint.m_solverBodyIdA;
++		const int solverBodyIdB = constraint.m_solverBodyIdB;
++
++		const int offDiagSolverBodyIdB = offDiagConstraint.m_solverBodyIdB;
++		btAssert(offDiagSolverBodyIdB != -1);
++
++		if (offDiagSolverBodyIdB == solverBodyIdA)
++		{
++			btAssert(solverBodyIdA != -1);
++			const btSolverBody* solverBodyA = &solverBodyPool[solverBodyIdA];
++			const btScalar invMassA = solverBodyA->m_originalBody ? solverBodyA->m_originalBody->getInvMass() : 0.0;
++			offDiagA += computeDeltaVelocityInConstraintSpace(
++				offDiagConstraint.m_relpos2CrossNormal,
++				offDiagConstraint.m_contactNormal2,
++				invMassA, constraint.m_angularComponentA,
++				constraint.m_contactNormal1);
++		}
++		else if (offDiagSolverBodyIdB == solverBodyIdB)
++		{
++			btAssert(solverBodyIdB != -1);
++			const btSolverBody* solverBodyB = &solverBodyPool[solverBodyIdB];
++			const btScalar invMassB = solverBodyB->m_originalBody ? solverBodyB->m_originalBody->getInvMass() : 0.0;
++			offDiagA += computeDeltaVelocityInConstraintSpace(
++				offDiagConstraint.m_relpos2CrossNormal,
++				offDiagConstraint.m_contactNormal2,
++				invMassB, constraint.m_angularComponentB,
++				constraint.m_contactNormal2);
++		}
++	}
++
++	return offDiagA;
++}
++
++void btMultiBodyMLCPConstraintSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
++{
++	createMLCPFastRigidBody(infoGlobal);
++	createMLCPFastMultiBody(infoGlobal);
++}
++
++void btMultiBodyMLCPConstraintSolver::createMLCPFastRigidBody(const btContactSolverInfo& infoGlobal)
++{
++	int numContactRows = interleaveContactAndFriction ? 3 : 1;
++
++	int numConstraintRows = m_allConstraintPtrArray.size();
++
++	if (numConstraintRows == 0)
++		return;
++
++	int n = numConstraintRows;
++	{
++		BT_PROFILE("init b (rhs)");
++		m_b.resize(numConstraintRows);
++		m_bSplit.resize(numConstraintRows);
++		m_b.setZero();
++		m_bSplit.setZero();
++		for (int i = 0; i < numConstraintRows; i++)
++		{
++			btScalar jacDiag = m_allConstraintPtrArray[i]->m_jacDiagABInv;
++			if (!btFuzzyZero(jacDiag))
++			{
++				btScalar rhs = m_allConstraintPtrArray[i]->m_rhs;
++				btScalar rhsPenetration = m_allConstraintPtrArray[i]->m_rhsPenetration;
++				m_b[i] = rhs / jacDiag;
++				m_bSplit[i] = rhsPenetration / jacDiag;
++			}
++		}
++	}
++
++	//	btScalar* w = 0;
++	//	int nub = 0;
++
++	m_lo.resize(numConstraintRows);
++	m_hi.resize(numConstraintRows);
++
++	{
++		BT_PROFILE("init lo/ho");
++
++		for (int i = 0; i < numConstraintRows; i++)
++		{
++			if (0)  //m_limitDependencies[i]>=0)
++			{
++				m_lo[i] = -BT_INFINITY;
++				m_hi[i] = BT_INFINITY;
++			}
++			else
++			{
++				m_lo[i] = m_allConstraintPtrArray[i]->m_lowerLimit;
++				m_hi[i] = m_allConstraintPtrArray[i]->m_upperLimit;
++			}
++		}
++	}
++
++	//
++	int m = m_allConstraintPtrArray.size();
++
++	int numBodies = m_tmpSolverBodyPool.size();
++	btAlignedObjectArray<int> bodyJointNodeArray;
++	{
++		BT_PROFILE("bodyJointNodeArray.resize");
++		bodyJointNodeArray.resize(numBodies, -1);
++	}
++	btAlignedObjectArray<btJointNode> jointNodeArray;
++	{
++		BT_PROFILE("jointNodeArray.reserve");
++		jointNodeArray.reserve(2 * m_allConstraintPtrArray.size());
++	}
++
++	btMatrixXu& J3 = m_scratchJ3;
++	{
++		BT_PROFILE("J3.resize");
++		J3.resize(2 * m, 8);
++	}
++	btMatrixXu& JinvM3 = m_scratchJInvM3;
++	{
++		BT_PROFILE("JinvM3.resize/setZero");
++
++		JinvM3.resize(2 * m, 8);
++		JinvM3.setZero();
++		J3.setZero();
++	}
++	int cur = 0;
++	int rowOffset = 0;
++	btAlignedObjectArray<int>& ofs = m_scratchOfs;
++	{
++		BT_PROFILE("ofs resize");
++		ofs.resize(0);
++		ofs.resizeNoInitialize(m_allConstraintPtrArray.size());
++	}
++	{
++		BT_PROFILE("Compute J and JinvM");
++		int c = 0;
++
++		int numRows = 0;
++
++		for (int i = 0; i < m_allConstraintPtrArray.size(); i += numRows, c++)
++		{
++			ofs[c] = rowOffset;
++			int sbA = m_allConstraintPtrArray[i]->m_solverBodyIdA;
++			int sbB = m_allConstraintPtrArray[i]->m_solverBodyIdB;
++			btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
++			btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
++
++			numRows = i < m_tmpSolverNonContactConstraintPool.size() ? m_tmpConstraintSizesPool[c].m_numConstraintRows : numContactRows;
++			if (orgBodyA)
++			{
++				{
++					int slotA = -1;
++					//find free jointNode slot for sbA
++					slotA = jointNodeArray.size();
++					jointNodeArray.expand();  //NonInitializing();
++					int prevSlot = bodyJointNodeArray[sbA];
++					bodyJointNodeArray[sbA] = slotA;
++					jointNodeArray[slotA].nextJointNodeIndex = prevSlot;
++					jointNodeArray[slotA].jointIndex = c;
++					jointNodeArray[slotA].constraintRowIndex = i;
++					jointNodeArray[slotA].otherBodyIndex = orgBodyB ? sbB : -1;
++				}
++				for (int row = 0; row < numRows; row++, cur++)
++				{
++					btVector3 normalInvMass = m_allConstraintPtrArray[i + row]->m_contactNormal1 * orgBodyA->getInvMass();
++					btVector3 relPosCrossNormalInvInertia = m_allConstraintPtrArray[i + row]->m_relpos1CrossNormal * orgBodyA->getInvInertiaTensorWorld();
++
++					for (int r = 0; r < 3; r++)
++					{
++						J3.setElem(cur, r, m_allConstraintPtrArray[i + row]->m_contactNormal1[r]);
++						J3.setElem(cur, r + 4, m_allConstraintPtrArray[i + row]->m_relpos1CrossNormal[r]);
++						JinvM3.setElem(cur, r, normalInvMass[r]);
++						JinvM3.setElem(cur, r + 4, relPosCrossNormalInvInertia[r]);
++					}
++					J3.setElem(cur, 3, 0);
++					JinvM3.setElem(cur, 3, 0);
++					J3.setElem(cur, 7, 0);
++					JinvM3.setElem(cur, 7, 0);
++				}
++			}
++			else
++			{
++				cur += numRows;
++			}
++			if (orgBodyB)
++			{
++				{
++					int slotB = -1;
++					//find free jointNode slot for sbA
++					slotB = jointNodeArray.size();
++					jointNodeArray.expand();  //NonInitializing();
++					int prevSlot = bodyJointNodeArray[sbB];
++					bodyJointNodeArray[sbB] = slotB;
++					jointNodeArray[slotB].nextJointNodeIndex = prevSlot;
++					jointNodeArray[slotB].jointIndex = c;
++					jointNodeArray[slotB].otherBodyIndex = orgBodyA ? sbA : -1;
++					jointNodeArray[slotB].constraintRowIndex = i;
++				}
++
++				for (int row = 0; row < numRows; row++, cur++)
++				{
++					btVector3 normalInvMassB = m_allConstraintPtrArray[i + row]->m_contactNormal2 * orgBodyB->getInvMass();
++					btVector3 relPosInvInertiaB = m_allConstraintPtrArray[i + row]->m_relpos2CrossNormal * orgBodyB->getInvInertiaTensorWorld();
++
++					for (int r = 0; r < 3; r++)
++					{
++						J3.setElem(cur, r, m_allConstraintPtrArray[i + row]->m_contactNormal2[r]);
++						J3.setElem(cur, r + 4, m_allConstraintPtrArray[i + row]->m_relpos2CrossNormal[r]);
++						JinvM3.setElem(cur, r, normalInvMassB[r]);
++						JinvM3.setElem(cur, r + 4, relPosInvInertiaB[r]);
++					}
++					J3.setElem(cur, 3, 0);
++					JinvM3.setElem(cur, 3, 0);
++					J3.setElem(cur, 7, 0);
++					JinvM3.setElem(cur, 7, 0);
++				}
++			}
++			else
++			{
++				cur += numRows;
++			}
++			rowOffset += numRows;
++		}
++	}
++
++	//compute JinvM = J*invM.
++	const btScalar* JinvM = JinvM3.getBufferPointer();
++
++	const btScalar* Jptr = J3.getBufferPointer();
++	{
++		BT_PROFILE("m_A.resize");
++		m_A.resize(n, n);
++	}
++
++	{
++		BT_PROFILE("m_A.setZero");
++		m_A.setZero();
++	}
++	int c = 0;
++	{
++		int numRows = 0;
++		BT_PROFILE("Compute A");
++		for (int i = 0; i < m_allConstraintPtrArray.size(); i += numRows, c++)
++		{
++			int row__ = ofs[c];
++			int sbA = m_allConstraintPtrArray[i]->m_solverBodyIdA;
++			int sbB = m_allConstraintPtrArray[i]->m_solverBodyIdB;
++			//	btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
++			//	btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
++
++			numRows = i < m_tmpSolverNonContactConstraintPool.size() ? m_tmpConstraintSizesPool[c].m_numConstraintRows : numContactRows;
++
++			const btScalar* JinvMrow = JinvM + 2 * 8 * (size_t)row__;
++
++			{
++				int startJointNodeA = bodyJointNodeArray[sbA];
++				while (startJointNodeA >= 0)
++				{
++					int j0 = jointNodeArray[startJointNodeA].jointIndex;
++					int cr0 = jointNodeArray[startJointNodeA].constraintRowIndex;
++					if (j0 < c)
++					{
++						int numRowsOther = cr0 < m_tmpSolverNonContactConstraintPool.size() ? m_tmpConstraintSizesPool[j0].m_numConstraintRows : numContactRows;
++						size_t ofsother = (m_allConstraintPtrArray[cr0]->m_solverBodyIdB == sbA) ? 8 * numRowsOther : 0;
++						//printf("%d joint i %d and j0: %d: ",count++,i,j0);
++						m_A.multiplyAdd2_p8r(JinvMrow,
++											 Jptr + 2 * 8 * (size_t)ofs[j0] + ofsother, numRows, numRowsOther, row__, ofs[j0]);
++					}
++					startJointNodeA = jointNodeArray[startJointNodeA].nextJointNodeIndex;
++				}
++			}
++
++			{
++				int startJointNodeB = bodyJointNodeArray[sbB];
++				while (startJointNodeB >= 0)
++				{
++					int j1 = jointNodeArray[startJointNodeB].jointIndex;
++					int cj1 = jointNodeArray[startJointNodeB].constraintRowIndex;
++
++					if (j1 < c)
++					{
++						int numRowsOther = cj1 < m_tmpSolverNonContactConstraintPool.size() ? m_tmpConstraintSizesPool[j1].m_numConstraintRows : numContactRows;
++						size_t ofsother = (m_allConstraintPtrArray[cj1]->m_solverBodyIdB == sbB) ? 8 * numRowsOther : 0;
++						m_A.multiplyAdd2_p8r(JinvMrow + 8 * (size_t)numRows,
++											 Jptr + 2 * 8 * (size_t)ofs[j1] + ofsother, numRows, numRowsOther, row__, ofs[j1]);
++					}
++					startJointNodeB = jointNodeArray[startJointNodeB].nextJointNodeIndex;
++				}
++			}
++		}
++
++		{
++			BT_PROFILE("compute diagonal");
++			// compute diagonal blocks of m_A
++
++			int row__ = 0;
++			int numJointRows = m_allConstraintPtrArray.size();
++
++			int jj = 0;
++			for (; row__ < numJointRows;)
++			{
++				//int sbA = m_allConstraintPtrArray[row__]->m_solverBodyIdA;
++				int sbB = m_allConstraintPtrArray[row__]->m_solverBodyIdB;
++				//	btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
++				btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
++
++				const unsigned int infom = row__ < m_tmpSolverNonContactConstraintPool.size() ? m_tmpConstraintSizesPool[jj].m_numConstraintRows : numContactRows;
++
++				const btScalar* JinvMrow = JinvM + 2 * 8 * (size_t)row__;
++				const btScalar* Jrow = Jptr + 2 * 8 * (size_t)row__;
++				m_A.multiply2_p8r(JinvMrow, Jrow, infom, infom, row__, row__);
++				if (orgBodyB)
++				{
++					m_A.multiplyAdd2_p8r(JinvMrow + 8 * (size_t)infom, Jrow + 8 * (size_t)infom, infom, infom, row__, row__);
++				}
++				row__ += infom;
++				jj++;
++			}
++		}
++	}
++
++	if (1)
++	{
++		// add cfm to the diagonal of m_A
++		for (int i = 0; i < m_A.rows(); ++i)
++		{
++			m_A.setElem(i, i, m_A(i, i) + infoGlobal.m_globalCfm / infoGlobal.m_timeStep);
++		}
++	}
++
++	///fill the upper triangle of the matrix, to make it symmetric
++	{
++		BT_PROFILE("fill the upper triangle ");
++		m_A.copyLowerToUpperTriangle();
++	}
++
++	{
++		BT_PROFILE("resize/init x");
++		m_x.resize(numConstraintRows);
++		m_xSplit.resize(numConstraintRows);
++
++		if (infoGlobal.m_solverMode & SOLVER_USE_WARMSTARTING)
++		{
++			for (int i = 0; i < m_allConstraintPtrArray.size(); i++)
++			{
++				const btSolverConstraint& c = *m_allConstraintPtrArray[i];
++				m_x[i] = c.m_appliedImpulse;
++				m_xSplit[i] = c.m_appliedPushImpulse;
++			}
++		}
++		else
++		{
++			m_x.setZero();
++			m_xSplit.setZero();
++		}
++	}
++}
++
++void btMultiBodyMLCPConstraintSolver::createMLCPFastMultiBody(const btContactSolverInfo& infoGlobal)
++{
++	const int multiBodyNumConstraints = m_multiBodyAllConstraintPtrArray.size();
++
++	if (multiBodyNumConstraints == 0)
++		return;
++
++	// 1. Compute b
++	{
++		BT_PROFILE("init b (rhs)");
++
++		m_multiBodyB.resize(multiBodyNumConstraints);
++		m_multiBodyB.setZero();
++
++		for (int i = 0; i < multiBodyNumConstraints; ++i)
++		{
++			const btMultiBodySolverConstraint& constraint = *m_multiBodyAllConstraintPtrArray[i];
++			const btScalar jacDiag = constraint.m_jacDiagABInv;
++
++			if (!btFuzzyZero(jacDiag))
++			{
++				// Note that rhsPenetration is currently always zero because the split impulse hasn't been implemented for multibody yet.
++				const btScalar rhs = constraint.m_rhs;
++				m_multiBodyB[i] = rhs / jacDiag;
++			}
++		}
++	}
++
++	// 2. Compute lo and hi
++	{
++		BT_PROFILE("init lo/ho");
++
++		m_multiBodyLo.resize(multiBodyNumConstraints);
++		m_multiBodyHi.resize(multiBodyNumConstraints);
++
++		for (int i = 0; i < multiBodyNumConstraints; ++i)
++		{
++			const btMultiBodySolverConstraint& constraint = *m_multiBodyAllConstraintPtrArray[i];
++			m_multiBodyLo[i] = constraint.m_lowerLimit;
++			m_multiBodyHi[i] = constraint.m_upperLimit;
++		}
++	}
++
++	// 3. Construct A matrix by using the impulse testing
++	{
++		BT_PROFILE("Compute A");
++
++		{
++			BT_PROFILE("m_A.resize");
++			m_multiBodyA.resize(multiBodyNumConstraints, multiBodyNumConstraints);
++		}
++
++		for (int i = 0; i < multiBodyNumConstraints; ++i)
++		{
++			// Compute the diagonal of A, which is A(i, i)
++			const btMultiBodySolverConstraint& constraint = *m_multiBodyAllConstraintPtrArray[i];
++			const btScalar diagA = computeConstraintMatrixDiagElementMultiBody(m_tmpSolverBodyPool, m_data, constraint);
++			m_multiBodyA.setElem(i, i, diagA);
++
++			// Computes the off-diagonals of A:
++			//   a. The rest of i-th row of A, from A(i, i+1) to A(i, n)
++			//   b. The rest of i-th column of A, from A(i+1, i) to A(n, i)
++			for (int j = i + 1; j < multiBodyNumConstraints; ++j)
++			{
++				const btMultiBodySolverConstraint& offDiagConstraint = *m_multiBodyAllConstraintPtrArray[j];
++				const btScalar offDiagA = computeConstraintMatrixOffDiagElementMultiBody(m_tmpSolverBodyPool, m_data, constraint, offDiagConstraint);
++
++				// Set the off-diagonal values of A. Note that A is symmetric.
++				m_multiBodyA.setElem(i, j, offDiagA);
++				m_multiBodyA.setElem(j, i, offDiagA);
++			}
++		}
++	}
++
++	// Add CFM to the diagonal of m_A
++	for (int i = 0; i < m_multiBodyA.rows(); ++i)
++	{
++		m_multiBodyA.setElem(i, i, m_multiBodyA(i, i) + infoGlobal.m_globalCfm / infoGlobal.m_timeStep);
++	}
++
++	// 4. Initialize x
++	{
++		BT_PROFILE("resize/init x");
++
++		m_multiBodyX.resize(multiBodyNumConstraints);
++
++		if (infoGlobal.m_solverMode & SOLVER_USE_WARMSTARTING)
++		{
++			for (int i = 0; i < multiBodyNumConstraints; ++i)
++			{
++				const btMultiBodySolverConstraint& constraint = *m_multiBodyAllConstraintPtrArray[i];
++				m_multiBodyX[i] = constraint.m_appliedImpulse;
++			}
++		}
++		else
++		{
++			m_multiBodyX.setZero();
++		}
++	}
++}
++
++bool btMultiBodyMLCPConstraintSolver::solveMLCP(const btContactSolverInfo& infoGlobal)
++{
++	bool result = true;
++
++	if (m_A.rows() != 0)
++	{
++		// If using split impulse, we solve 2 separate (M)LCPs
++		if (infoGlobal.m_splitImpulse)
++		{
++			const btMatrixXu Acopy = m_A;
++			const btAlignedObjectArray<int> limitDependenciesCopy = m_limitDependencies;
++			// TODO(JS): Do we really need these copies when solveMLCP takes them as const?
++
++			result = m_solver->solveMLCP(m_A, m_b, m_x, m_lo, m_hi, m_limitDependencies, infoGlobal.m_numIterations);
++			if (result)
++				result = m_solver->solveMLCP(Acopy, m_bSplit, m_xSplit, m_lo, m_hi, limitDependenciesCopy, infoGlobal.m_numIterations);
++		}
++		else
++		{
++			result = m_solver->solveMLCP(m_A, m_b, m_x, m_lo, m_hi, m_limitDependencies, infoGlobal.m_numIterations);
++		}
++	}
++
++	if (!result)
++		return false;
++
++	if (m_multiBodyA.rows() != 0)
++	{
++		result = m_solver->solveMLCP(m_multiBodyA, m_multiBodyB, m_multiBodyX, m_multiBodyLo, m_multiBodyHi, m_multiBodyLimitDependencies, infoGlobal.m_numIterations);
++	}
++
++	return result;
++}
++
++btScalar btMultiBodyMLCPConstraintSolver::solveGroupCacheFriendlySetup(
++	btCollisionObject** bodies,
++	int numBodies,
++	btPersistentManifold** manifoldPtr,
++	int numManifolds,
++	btTypedConstraint** constraints,
++	int numConstraints,
++	const btContactSolverInfo& infoGlobal,
++	btIDebugDraw* debugDrawer)
++{
++	// 1. Setup for rigid-bodies
++	btMultiBodyConstraintSolver::solveGroupCacheFriendlySetup(
++		bodies, numBodies, manifoldPtr, numManifolds, constraints, numConstraints, infoGlobal, debugDrawer);
++
++	// 2. Setup for multi-bodies
++	//   a. Collect all different kinds of constraint as pointers into one array, m_allConstraintPtrArray
++	//   b. Set the index array for frictional contact constraints, m_limitDependencies
++	{
++		BT_PROFILE("gather constraint data");
++
++		int dindex = 0;
++
++		const int numRigidBodyConstraints = m_tmpSolverNonContactConstraintPool.size() + m_tmpSolverContactConstraintPool.size() + m_tmpSolverContactFrictionConstraintPool.size();
++		const int numMultiBodyConstraints = m_multiBodyNonContactConstraints.size() + m_multiBodyNormalContactConstraints.size() + m_multiBodyFrictionContactConstraints.size();
++
++		m_allConstraintPtrArray.resize(0);
++		m_multiBodyAllConstraintPtrArray.resize(0);
++
++		// i. Setup for rigid bodies
++
++		m_limitDependencies.resize(numRigidBodyConstraints);
++
++		for (int i = 0; i < m_tmpSolverNonContactConstraintPool.size(); ++i)
++		{
++			m_allConstraintPtrArray.push_back(&m_tmpSolverNonContactConstraintPool[i]);
++			m_limitDependencies[dindex++] = -1;
++		}
++
++		int firstContactConstraintOffset = dindex;
++
++		// The btSequentialImpulseConstraintSolver moves all friction constraints at the very end, we can also interleave them instead
++		if (interleaveContactAndFriction)
++		{
++			for (int i = 0; i < m_tmpSolverContactConstraintPool.size(); i++)
++			{
++				const int numFrictionPerContact = m_tmpSolverContactConstraintPool.size() == m_tmpSolverContactFrictionConstraintPool.size() ? 1 : 2;
++
++				m_allConstraintPtrArray.push_back(&m_tmpSolverContactConstraintPool[i]);
++				m_limitDependencies[dindex++] = -1;
++				m_allConstraintPtrArray.push_back(&m_tmpSolverContactFrictionConstraintPool[i * numFrictionPerContact]);
++				int findex = (m_tmpSolverContactFrictionConstraintPool[i * numFrictionPerContact].m_frictionIndex * (1 + numFrictionPerContact));
++				m_limitDependencies[dindex++] = findex + firstContactConstraintOffset;
++				if (numFrictionPerContact == 2)
++				{
++					m_allConstraintPtrArray.push_back(&m_tmpSolverContactFrictionConstraintPool[i * numFrictionPerContact + 1]);
++					m_limitDependencies[dindex++] = findex + firstContactConstraintOffset;
++				}
++			}
++		}
++		else
++		{
++			for (int i = 0; i < m_tmpSolverContactConstraintPool.size(); i++)
++			{
++				m_allConstraintPtrArray.push_back(&m_tmpSolverContactConstraintPool[i]);
++				m_limitDependencies[dindex++] = -1;
++			}
++			for (int i = 0; i < m_tmpSolverContactFrictionConstraintPool.size(); i++)
++			{
++				m_allConstraintPtrArray.push_back(&m_tmpSolverContactFrictionConstraintPool[i]);
++				m_limitDependencies[dindex++] = m_tmpSolverContactFrictionConstraintPool[i].m_frictionIndex + firstContactConstraintOffset;
++			}
++		}
++
++		if (!m_allConstraintPtrArray.size())
++		{
++			m_A.resize(0, 0);
++			m_b.resize(0);
++			m_x.resize(0);
++			m_lo.resize(0);
++			m_hi.resize(0);
++		}
++
++		// ii. Setup for multibodies
++
++		dindex = 0;
++
++		m_multiBodyLimitDependencies.resize(numMultiBodyConstraints);
++
++		for (int i = 0; i < m_multiBodyNonContactConstraints.size(); ++i)
++		{
++			m_multiBodyAllConstraintPtrArray.push_back(&m_multiBodyNonContactConstraints[i]);
++			m_multiBodyLimitDependencies[dindex++] = -1;
++		}
++
++		firstContactConstraintOffset = dindex;
++
++		// The btSequentialImpulseConstraintSolver moves all friction constraints at the very end, we can also interleave them instead
++		if (interleaveContactAndFriction)
++		{
++			for (int i = 0; i < m_multiBodyNormalContactConstraints.size(); ++i)
++			{
++				const int numtiBodyNumFrictionPerContact = m_multiBodyNormalContactConstraints.size() == m_multiBodyFrictionContactConstraints.size() ? 1 : 2;
++
++				m_multiBodyAllConstraintPtrArray.push_back(&m_multiBodyNormalContactConstraints[i]);
++				m_multiBodyLimitDependencies[dindex++] = -1;
++
++				btMultiBodySolverConstraint& frictionContactConstraint1 = m_multiBodyFrictionContactConstraints[i * numtiBodyNumFrictionPerContact];
++				m_multiBodyAllConstraintPtrArray.push_back(&frictionContactConstraint1);
++
++				const int findex = (frictionContactConstraint1.m_frictionIndex * (1 + numtiBodyNumFrictionPerContact)) + firstContactConstraintOffset;
++
++				m_multiBodyLimitDependencies[dindex++] = findex;
++
++				if (numtiBodyNumFrictionPerContact == 2)
++				{
++					btMultiBodySolverConstraint& frictionContactConstraint2 = m_multiBodyFrictionContactConstraints[i * numtiBodyNumFrictionPerContact + 1];
++					m_multiBodyAllConstraintPtrArray.push_back(&frictionContactConstraint2);
++
++					m_multiBodyLimitDependencies[dindex++] = findex;
++				}
++			}
++		}
++		else
++		{
++			for (int i = 0; i < m_multiBodyNormalContactConstraints.size(); ++i)
++			{
++				m_multiBodyAllConstraintPtrArray.push_back(&m_multiBodyNormalContactConstraints[i]);
++				m_multiBodyLimitDependencies[dindex++] = -1;
++			}
++			for (int i = 0; i < m_multiBodyFrictionContactConstraints.size(); ++i)
++			{
++				m_multiBodyAllConstraintPtrArray.push_back(&m_multiBodyFrictionContactConstraints[i]);
++				m_multiBodyLimitDependencies[dindex++] = m_multiBodyFrictionContactConstraints[i].m_frictionIndex + firstContactConstraintOffset;
++			}
++		}
++
++		if (!m_multiBodyAllConstraintPtrArray.size())
++		{
++			m_multiBodyA.resize(0, 0);
++			m_multiBodyB.resize(0);
++			m_multiBodyX.resize(0);
++			m_multiBodyLo.resize(0);
++			m_multiBodyHi.resize(0);
++		}
++	}
++
++	// Construct MLCP terms
++	{
++		BT_PROFILE("createMLCPFast");
++		createMLCPFast(infoGlobal);
++	}
++
++	return btScalar(0);
++}
++
++btScalar btMultiBodyMLCPConstraintSolver::solveGroupCacheFriendlyIterations(btCollisionObject** bodies, int numBodies, btPersistentManifold** manifoldPtr, int numManifolds, btTypedConstraint** constraints, int numConstraints, const btContactSolverInfo& infoGlobal, btIDebugDraw* debugDrawer)
++{
++	bool result = true;
++	{
++		BT_PROFILE("solveMLCP");
++		result = solveMLCP(infoGlobal);
++	}
++
++	// Fallback to btSequentialImpulseConstraintSolver::solveGroupCacheFriendlyIterations if the solution isn't valid.
++	if (!result)
++	{
++		m_fallback++;
++		return btMultiBodyConstraintSolver::solveGroupCacheFriendlyIterations(bodies, numBodies, manifoldPtr, numManifolds, constraints, numConstraints, infoGlobal, debugDrawer);
++	}
++
++	{
++		BT_PROFILE("process MLCP results");
++
++		for (int i = 0; i < m_allConstraintPtrArray.size(); ++i)
++		{
++			const btSolverConstraint& c = *m_allConstraintPtrArray[i];
++
++			const btScalar deltaImpulse = m_x[i] - c.m_appliedImpulse;
++			c.m_appliedImpulse = m_x[i];
++
++			int sbA = c.m_solverBodyIdA;
++			int sbB = c.m_solverBodyIdB;
++
++			btSolverBody& solverBodyA = m_tmpSolverBodyPool[sbA];
++			btSolverBody& solverBodyB = m_tmpSolverBodyPool[sbB];
++
++			solverBodyA.internalApplyImpulse(c.m_contactNormal1 * solverBodyA.internalGetInvMass(), c.m_angularComponentA, deltaImpulse);
++			solverBodyB.internalApplyImpulse(c.m_contactNormal2 * solverBodyB.internalGetInvMass(), c.m_angularComponentB, deltaImpulse);
++
++			if (infoGlobal.m_splitImpulse)
++			{
++				const btScalar deltaPushImpulse = m_xSplit[i] - c.m_appliedPushImpulse;
++				solverBodyA.internalApplyPushImpulse(c.m_contactNormal1 * solverBodyA.internalGetInvMass(), c.m_angularComponentA, deltaPushImpulse);
++				solverBodyB.internalApplyPushImpulse(c.m_contactNormal2 * solverBodyB.internalGetInvMass(), c.m_angularComponentB, deltaPushImpulse);
++				c.m_appliedPushImpulse = m_xSplit[i];
++			}
++		}
++
++		for (int i = 0; i < m_multiBodyAllConstraintPtrArray.size(); ++i)
++		{
++			btMultiBodySolverConstraint& c = *m_multiBodyAllConstraintPtrArray[i];
++
++			const btScalar deltaImpulse = m_multiBodyX[i] - c.m_appliedImpulse;
++			c.m_appliedImpulse = m_multiBodyX[i];
++
++			btMultiBody* multiBodyA = c.m_multiBodyA;
++			if (multiBodyA)
++			{
++				const int ndofA = multiBodyA->getNumDofs() + 6;
++				applyDeltaVee(&m_data.m_deltaVelocitiesUnitImpulse[c.m_jacAindex], deltaImpulse, c.m_deltaVelAindex, ndofA);
++#ifdef DIRECTLY_UPDATE_VELOCITY_DURING_SOLVER_ITERATIONS
++				//note: update of the actual velocities (below) in the multibody does not have to happen now since m_deltaVelocities can be applied after all iterations
++				//it would make the multibody solver more like the regular one with m_deltaVelocities being equivalent to btSolverBody::m_deltaLinearVelocity/m_deltaAngularVelocity
++				multiBodyA->applyDeltaVeeMultiDof2(&m_data.m_deltaVelocitiesUnitImpulse[c.m_jacAindex], deltaImpulse);
++#endif  // DIRECTLY_UPDATE_VELOCITY_DURING_SOLVER_ITERATIONS
++			}
++			else
++			{
++				const int sbA = c.m_solverBodyIdA;
++				btSolverBody& solverBodyA = m_tmpSolverBodyPool[sbA];
++				solverBodyA.internalApplyImpulse(c.m_contactNormal1 * solverBodyA.internalGetInvMass(), c.m_angularComponentA, deltaImpulse);
++			}
++
++			btMultiBody* multiBodyB = c.m_multiBodyB;
++			if (multiBodyB)
++			{
++				const int ndofB = multiBodyB->getNumDofs() + 6;
++				applyDeltaVee(&m_data.m_deltaVelocitiesUnitImpulse[c.m_jacBindex], deltaImpulse, c.m_deltaVelBindex, ndofB);
++#ifdef DIRECTLY_UPDATE_VELOCITY_DURING_SOLVER_ITERATIONS
++				//note: update of the actual velocities (below) in the multibody does not have to happen now since m_deltaVelocities can be applied after all iterations
++				//it would make the multibody solver more like the regular one with m_deltaVelocities being equivalent to btSolverBody::m_deltaLinearVelocity/m_deltaAngularVelocity
++				multiBodyB->applyDeltaVeeMultiDof2(&m_data.m_deltaVelocitiesUnitImpulse[c.m_jacBindex], deltaImpulse);
++#endif  // DIRECTLY_UPDATE_VELOCITY_DURING_SOLVER_ITERATIONS
++			}
++			else
++			{
++				const int sbB = c.m_solverBodyIdB;
++				btSolverBody& solverBodyB = m_tmpSolverBodyPool[sbB];
++				solverBodyB.internalApplyImpulse(c.m_contactNormal2 * solverBodyB.internalGetInvMass(), c.m_angularComponentB, deltaImpulse);
++			}
++		}
++	}
++
++	return btScalar(0);
++}
++
++btMultiBodyMLCPConstraintSolver::btMultiBodyMLCPConstraintSolver(btMLCPSolverInterface* solver)
++	: m_solver(solver), m_fallback(0)
++{
++	// Do nothing
++}
++
++btMultiBodyMLCPConstraintSolver::~btMultiBodyMLCPConstraintSolver()
++{
++	// Do nothing
++}
++
++void btMultiBodyMLCPConstraintSolver::setMLCPSolver(btMLCPSolverInterface* solver)
++{
++	m_solver = solver;
++}
++
++int btMultiBodyMLCPConstraintSolver::getNumFallbacks() const
++{
++	return m_fallback;
++}
++
++void btMultiBodyMLCPConstraintSolver::setNumFallbacks(int num)
++{
++	m_fallback = num;
++}
++
++btConstraintSolverType btMultiBodyMLCPConstraintSolver::getSolverType() const
++{
++	return BT_MLCP_SOLVER;
++}
+diff --git a/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.h b/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.h
+new file mode 100644
+index 000000000..6be36ba14
+--- /dev/null
++++ b/src/BulletDynamics/Featherstone/btMultiBodyMLCPConstraintSolver.h
+@@ -0,0 +1,187 @@
++/*
++Bullet Continuous Collision Detection and Physics Library
++Copyright (c) 2018 Google Inc. http://bulletphysics.org
++
++This software is provided 'as-is', without any express or implied warranty.
++In no event will the authors be held liable for any damages arising from the use of this software.
++Permission is granted to anyone to use this software for any purpose,
++including commercial applications, and to alter it and redistribute it freely,
++subject to the following restrictions:
++
++1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
++2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
++3. This notice may not be removed or altered from any source distribution.
++*/
++
++#ifndef BT_MULTIBODY_MLCP_CONSTRAINT_SOLVER_H
++#define BT_MULTIBODY_MLCP_CONSTRAINT_SOLVER_H
++
++#include "LinearMath/btMatrixX.h"
++#include "LinearMath/btThreads.h"
++#include "BulletDynamics/Featherstone/btMultiBodyConstraintSolver.h"
++
++class btMLCPSolverInterface;
++class btMultiBody;
++
++class btMultiBodyMLCPConstraintSolver : public btMultiBodyConstraintSolver
++{
++protected:
++	/// \name MLCP Formulation for Rigid Bodies
++	/// \{
++
++	/// A matrix in the MLCP formulation
++	btMatrixXu m_A;
++
++	/// b vector in the MLCP formulation.
++	btVectorXu m_b;
++
++	/// Constraint impulse, which is an output of MLCP solving.
++	btVectorXu m_x;
++
++	/// Lower bound of constraint impulse, \c m_x.
++	btVectorXu m_lo;
++
++	/// Upper bound of constraint impulse, \c m_x.
++	btVectorXu m_hi;
++
++	/// \}
++
++	/// \name Cache Variables for Split Impulse for Rigid Bodies
++	/// When using 'split impulse' we solve two separate (M)LCPs
++	/// \{
++
++	/// Split impulse Cache vector corresponding to \c m_b.
++	btVectorXu m_bSplit;
++
++	/// Split impulse cache vector corresponding to \c m_x.
++	btVectorXu m_xSplit;
++
++	/// \}
++
++	/// \name MLCP Formulation for Multibodies
++	/// \{
++
++	/// A matrix in the MLCP formulation
++	btMatrixXu m_multiBodyA;
++
++	/// b vector in the MLCP formulation.
++	btVectorXu m_multiBodyB;
++
++	/// Constraint impulse, which is an output of MLCP solving.
++	btVectorXu m_multiBodyX;
++
++	/// Lower bound of constraint impulse, \c m_x.
++	btVectorXu m_multiBodyLo;
++
++	/// Upper bound of constraint impulse, \c m_x.
++	btVectorXu m_multiBodyHi;
++
++	/// \}
++
++	/// Indices of normal contact constraint associated with frictional contact constraint for rigid bodies.
++	///
++	/// This is used by the MLCP solver to update the upper bounds of frictional contact impulse given intermediate
++	/// normal contact impulse. For example, i-th element represents the index of a normal constraint that is
++	/// accosiated with i-th frictional contact constraint if i-th constraint is a frictional contact constraint.
++	/// Otherwise, -1.
++	btAlignedObjectArray<int> m_limitDependencies;
++
++	/// Indices of normal contact constraint associated with frictional contact constraint for multibodies.
++	///
++	/// This is used by the MLCP solver to update the upper bounds of frictional contact impulse given intermediate
++	/// normal contact impulse. For example, i-th element represents the index of a normal constraint that is
++	/// accosiated with i-th frictional contact constraint if i-th constraint is a frictional contact constraint.
++	/// Otherwise, -1.
++	btAlignedObjectArray<int> m_multiBodyLimitDependencies;
++
++	/// Array of all the rigid body constraints
++	btAlignedObjectArray<btSolverConstraint*> m_allConstraintPtrArray;
++
++	/// Array of all the multibody constraints
++	btAlignedObjectArray<btMultiBodySolverConstraint*> m_multiBodyAllConstraintPtrArray;
++
++	/// MLCP solver
++	btMLCPSolverInterface* m_solver;
++
++	/// Count of fallbacks of using btSequentialImpulseConstraintSolver, which happens when the MLCP solver fails.
++	int m_fallback;
++
++	/// \name MLCP Scratch Variables
++	/// The following scratch variables are not stateful -- contents are cleared prior to each use.
++	/// They are only cached here to avoid extra memory allocations and deallocations and to ensure
++	/// that multiple instances of the solver can be run in parallel.
++	///
++	/// \{
++
++	/// Cache variable for constraint Jacobian matrix.
++	btMatrixXu m_scratchJ3;
++
++	/// Cache variable for constraint Jacobian times inverse mass matrix.
++	btMatrixXu m_scratchJInvM3;
++
++	/// Cache variable for offsets.
++	btAlignedObjectArray<int> m_scratchOfs;
++
++	/// \}
++
++	/// Constructs MLCP terms, which are \c m_A, \c m_b, \c m_lo, and \c m_hi.
++	virtual void createMLCPFast(const btContactSolverInfo& infoGlobal);
++
++	/// Constructs MLCP terms for constraints of two rigid bodies
++	void createMLCPFastRigidBody(const btContactSolverInfo& infoGlobal);
++
++	/// Constructs MLCP terms for constraints of two multi-bodies or one rigid body and one multibody
++	void createMLCPFastMultiBody(const btContactSolverInfo& infoGlobal);
++
++	/// Solves MLCP and returns the success
++	virtual bool solveMLCP(const btContactSolverInfo& infoGlobal);
++
++	// Documentation inherited
++	btScalar solveGroupCacheFriendlySetup(
++		btCollisionObject** bodies,
++		int numBodies,
++		btPersistentManifold** manifoldPtr,
++		int numManifolds,
++		btTypedConstraint** constraints,
++		int numConstraints,
++		const btContactSolverInfo& infoGlobal,
++		btIDebugDraw* debugDrawer) BT_OVERRIDE;
++
++	// Documentation inherited
++	btScalar solveGroupCacheFriendlyIterations(
++		btCollisionObject** bodies,
++		int numBodies,
++		btPersistentManifold** manifoldPtr,
++		int numManifolds,
++		btTypedConstraint** constraints,
++		int numConstraints,
++		const btContactSolverInfo& infoGlobal,
++		btIDebugDraw* debugDrawer) BT_OVERRIDE;
++
++public:
++	BT_DECLARE_ALIGNED_ALLOCATOR()
++
++	/// Constructor
++	///
++	/// \param[in] solver MLCP solver. Assumed it's not null.
++	/// \param[in] maxLCPSize Maximum size of LCP to solve using MLCP solver. If the MLCP size exceeds this number, sequaltial impulse method will be used.
++	explicit btMultiBodyMLCPConstraintSolver(btMLCPSolverInterface* solver);
++
++	/// Destructor
++	virtual ~btMultiBodyMLCPConstraintSolver();
++
++	/// Sets MLCP solver. Assumed it's not null.
++	void setMLCPSolver(btMLCPSolverInterface* solver);
++
++	/// Returns the number of fallbacks of using btSequentialImpulseConstraintSolver, which happens when the MLCP
++	/// solver fails.
++	int getNumFallbacks() const;
++
++	/// Sets the number of fallbacks. This function may be used to reset the number to zero.
++	void setNumFallbacks(int num);
++
++	/// Returns the constraint solver type.
++	virtual btConstraintSolverType getSolverType() const;
++};
++
++#endif  // BT_MULTIBODY_MLCP_CONSTRAINT_SOLVER_H

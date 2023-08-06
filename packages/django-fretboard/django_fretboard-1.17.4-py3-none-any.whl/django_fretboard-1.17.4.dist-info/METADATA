@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: django-fretboard
+Version: 1.17.4
+Summary: Responsive, powerful, simple Django forums.
+Home-page: http://github.com/tBaxter/django-fretboard
+Author: Tim Baxter
+Author-email: mail.baxter@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: tango-shared-core (>=0.8)
+Requires-Dist: tango-voting (>=0.4)
+Requires-Dist: django (>=2.0)
+Requires-Dist: jinja2
+Requires-Dist: django-typogrify
+
+django-fretboard
+================
+
+[![Build Status](https://travis-ci.org/tBaxter/django-fretboard.svg?branch=master)](https://travis-ci.org/tBaxter/django-fretboard)
+
+Django-Fretboard is a fork of the forums used on gretschpages.com/forum/
+
+It is currently built for Django 2.0+, and is not compatible with older versions of Django. It has also been updated to use Python 3, because seriously, why wouldn't you at this point?
+
+### Settings
+There are a few settings you may wish to override in your project settings.py
+
+* PAGINATE_BY: defaults to 25 
+* FORUM_BASE_NAME: defaults to site name
+* COMMENT_PLACEHOLDER: placeholder text for post box.
+
+
+### Requirements:
+
+[Tango Shared Core](https://github.com/tBaxter/tango-shared-core) is used for standardizing images and allows for voting.
+
+

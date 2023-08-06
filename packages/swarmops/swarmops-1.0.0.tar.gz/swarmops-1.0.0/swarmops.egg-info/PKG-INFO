@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: swarmops
+Version: 1.0.0
+Summary: Heuristic Optimization for Python
+Home-page: https://github.com/Hvass-Labs/swarmops
+Author: Magnus Erik Hvass Pedersen
+Author-email: my-first-name@hvass-labs.org
+License: BSD
+Description: UNKNOWN
+Keywords: heuristic optimization,particle swarm optimization,differential evolution,meta-optimization
+Platform: UNKNOWN

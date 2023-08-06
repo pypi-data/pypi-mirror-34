@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: ngs_toolkit
+Version: 0.1.3.6
+Summary: A toolkit for NGS analysis with Python.
+Home-page: https://github.com/afrendeiro/toolkit
+Author: Andre Rendeiro
+Author-email: afrendeiro@gmail.com
+License: GPL3
+Description-Content-Type: UNKNOWN
+Description: [![Documentation Status](https://readthedocs.org/projects/ngs-toolkit/badge/?version=latest)](http://ngs-toolkit.readthedocs.io/en/latest/?badge=latest) [![PyPI version](https://badge.fury.io/py/ngs-toolkit.svg)](https://badge.fury.io/py/ngs-toolkit) [![Documentation Status](https://landscape.io/github/afrendeiro/toolkit/master/landscape.png)](https://landscape.io/github/afrendeiro/toolkit/master)
+        
+        
+        
+        ## toolkit
+        
+        This is my NGS analysis toolkit: ``ngs_toolkit``.
+        
+        It contains most code I've been using in the last ~2-3 years in various projects and hopefully is of interest to someone.
+        
+        Head to the [documentation](http://ngs-toolkit.readthedocs.io/) to see how to install and use the toolkit, and have a look at the catalogue of available functions.
+        
+        Install with:
+        
+        ```
+        pip install ngs-toolkit
+        ```
+        You might need to add a ``--user`` flag to the above command.
+        
+Keywords: bioinformatics,sequencing,ngs,ngs analysis,ATAC-Seq,ChIP-seq,RNA-seq,project management
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics

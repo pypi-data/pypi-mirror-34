@@ -1,0 +1,12 @@
+awsparams/__init__.py,sha256=Wd-TFTEIMboUNZvhW30zo0M2DTfqOkCxtO9f95qe1yk,7746
+awsparams/cli.py,sha256=fv8_26oCksmjiZUJF3aYAVxQCTiSRl1XCmIKp99An24,6895
+awsparams-1.0.1.dist-info/METADATA,sha256=2op547LmPkBYeKw5E2y7DS9NOysbt9uLW4GZJ5hSZ7U,4805
+awsparams-1.0.1.dist-info/RECORD,,
+awsparams-1.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+awsparams-1.0.1.dist-info/entry_points.txt,sha256=_LOuP4UTN8PRKaqMLP5tHeIsxp7cY1WSWl-K07rByn8,50
+awsparams-1.0.1.dist-info/top_level.txt,sha256=56ma9OYVR4mFMH3V8f4qTETbx4ZZoAEn79CSERoAZa8,15
+awsparams-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/awsparams/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/awsparams/test_awsparams.py,sha256=k6tlevZ5EQbedDgIaSiLK6Wu4qERlS13o1GdekpFG6A,4243
+test/awsparams/test_cli.py,sha256=K3Zobzlyy-SbJsht55eBJgNa42n4603XCax5zeZp4UI,9989

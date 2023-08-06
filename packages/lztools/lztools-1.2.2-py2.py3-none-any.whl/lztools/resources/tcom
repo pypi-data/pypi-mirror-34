@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm dist/*
+python setup.py bdist_wheel
+rm -rf build
+rm -rf *.egg-info
+twine upload dist/* -u zanzes -p eaniko16
+rm -rf dist

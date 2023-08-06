@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="Content-Type" content="text/html">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Mobile Industrial Robots ApS">
+<meta name="owner" content="Mobile Industrial Robots ApS">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="/static/mir.min.js?v=2&period;0&period;19"></script>
+<script type="text/javascript" src="/lang/2.0.19/en_US.js"></script>
+<script type="text/javascript" src="/static/login.min.js?v=2&period;0&period;19"></script>
+<link rel="icon" type="image/png" href="/graphics/logo-192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/graphics/logo-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/graphics/logo-16.png" sizes="16x16">
+<link rel="manifest" href="/?mode=get-manifest&time=1529525879.2359">
+<link rel="stylesheet" type="text/css" href="/static/mir.min.css?v=2&period;0&period;19">
+<link rel="stylesheet" type="text/css" href="/static/login.min.css?v=2&period;0&period;19">
+<script type="text/javascript">
+var robot_map_id = "mirconst-guid-0000-0001-maps00000000";
+var robot_battery_percentage = 99;
+var robot_battery_percentage_rounded = 100;
+var robot_state_id = 4;
+var robot_mode_id = 7;
+var user_group_id = "";
+var robot_name = "MiR_noname";
+var robot_model = "Unknown";
+var robot_serial = "";
+var robot_uptime = 12495;
+var robot_battery_time = 53970;
+var robot_moved_distance = 0;
+var user_guid = "";
+var pageviewid = "5b2ab67739961";
+var features = null;
+var unloaded_map_changes = false;
+
+	(function (){
+		$.ajaxSetup({
+		    beforeSend: function (xhr) {
+		       xhr.setRequestHeader("Mir-Page-Id", "33ca26d");
+		       
+		    }
+		});
+	})();
+</script>
+<title>Log in &vert; MiR&lowbar;noname</title>
+</head>
+<body data-menu-desktop="false" data-state-id="4" data-mode-id="7" data-show-joystick="false" data-error="false" data-connection="true" data-mobile-status="false" data-current-language="en_US" data-battery="100" data-unloaded-map-changes="false" data-hook-version-mismatch="false" data-emergency-stop="false" data-single-dashboard="false" data-module="login" data-current-item="" data-robot-model="Unknown" data-mobile-dialogue="false">
+<div class="loginwrapper" id="loginwrapper" data-type="regular" data-logging-in="false">
+<div class="login_header">
+<h1>MiR&lowbar;noname</h1>
+<ul>
+<li class="info"><div>Please choose a way to log in&colon;</div></li>
+<li class="tab" data-active="true" id="logintypeselector_regular"><div onclick="login_toggle_type('regular',event);"><span>Username and password</span></div></li>
+<li class="tab" data-active="false" id="logintypeselector_pincode"><div onclick="login_toggle_type('pincode',event);"><span>PIN code</span></div></li>
+</ul>
+</div>
+<div class="login_regular" id="login_regular">
+<div class="column">
+<h5>Log in by username and password</h5>
+<p>Enter your username and password to log in to the robot&period;<br /><br />Your username and password should be given to you by either the robot administrator or found in the robot manual&period;<br /><br />If you don't have a username and password&comma; please contact the robot administrator&period;</p>
+</div>
+<div class="column">
+<form action="/" method="post" onsubmit="return do_login();" autocomplete="off">
+<label for="login_username">Username:</label>
+<input type="text" name="login_username" id="login_username" value="" maxlength="250" autocomplete="off" placeholder="Enter your username&period;&period;&period;">
+<label for="login_password">Password:</label>
+<input type="password" name="login_password" id="login_password" value="" maxlength="50" autocomplete="off" placeholder="Enter your password&period;&period;&period;">
+<input type="submit" name="submit" id="submit" value="Log in" maxlength="50" autocomplete="off" placeholder="Enter your password&period;&period;&period;">
+</form>
+</div>
+<div class="clear"></div>
+</div>
+<div class="login_pincode" id="login_pincode">
+<div class="column">
+<h5>Log in by PIN code</h5>
+<p>If you are registered in the robot as a PIN code-enabled user&comma; you can use your PIN code to log in to the robot&period;<br /><br />If you don't have a PIN code but would like to be able to log in with a 4-digit PIN&comma; please contact your robot administrator&period;</p>
+<form action="/" method="post" onsubmit="return do_login();">
+<input type="password" name="login_pincode_a" id="login_pincode_a" value="" maxlength="1" readonly="readonly">
+<input type="password" name="login_pincode_b" id="login_pincode_b" value="" maxlength="1" readonly="readonly">
+<input type="password" name="login_pincode_c" id="login_pincode_c" value="" maxlength="1" readonly="readonly">
+<input type="password" name="login_pincode_d" id="login_pincode_d" value="" maxlength="1" readonly="readonly">
+</form>
+</div>
+<div class="column">
+<ul class="keypad">
+<li><div onclick="login_pincode_keystroke('1',event);">1</div></li>
+<li><div onclick="login_pincode_keystroke('2',event);">2</div></li>
+<li><div onclick="login_pincode_keystroke('3',event);">3</div></li>
+<li><div onclick="login_pincode_keystroke('4',event);">4</div></li>
+<li><div onclick="login_pincode_keystroke('5',event);">5</div></li>
+<li><div onclick="login_pincode_keystroke('6',event);">6</div></li>
+<li><div onclick="login_pincode_keystroke('7',event);">7</div></li>
+<li><div onclick="login_pincode_keystroke('8',event);">8</div></li>
+<li><div onclick="login_pincode_keystroke('9',event);">9</div></li>
+<li><div onclick="login_pincode_keystroke('0',event);">0</div></li>
+<li><div onclick="login_pincode_reset();"><span>Reset</span></div></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">
+var login_pincode = "";
+</script>
+<script type="text/javascript">
+var lang_main_not_permitted_to_set_permissions_for_any_usergroups = "You are not allowed to edit permissions for any user groups&period;";
+var lang_main_loading_permissions = "Loading permissions&period;&period;&period;";
+var lang_main_set_permissions_for_element = "Set permissions for element";
+var lang_main_set_permissions_for_element_txt = "Use the checkboxes below to decide which user groups will have read- and&sol;or write-access to this element&period;";
+var lang_main_set_permissions_for_element_usergroup = "User group";
+var lang_main_set_permissions_for_element_read = "Read";
+var lang_main_set_permissions_for_element_write = "Write";
+var lang_main_set_permissions_for_element_notallowed = "You are not allowed to change this permission&period;";
+var lang_main_joystick_unsuccessfull = "The joystick cannot be activated right now&period;";
+var lang_main_datatable_export = "Export";
+var lang_main_datatable_itempermissions = "Permissions for this item";
+var lang_main_datatable_play = "Play";
+var lang_main_datatable_listen = "Listen";
+var lang_main_datatable_watch = "Watch";
+var lang_main_datatable_permissions = "Permissions";
+var lang_main_datatable_activate = "Activate";
+var lang_main_datatable_draw = "Draw";
+var lang_main_datatable_edit = "Edit";
+var lang_main_datatable_delete = "Delete";
+var lang_main_datatable_download = "Download";
+var lang_main_datatable_reallydelete = "Delete this item&quest;";
+var lang_main_datatable_reallydeletedescription = "Are you sure&comma; you want to delete this item&quest;";
+var lang_main_datatable_noitemsavailable = "No items available";
+var lang_main_datatable_noitemswasfound = "No items were found&period;&period;&period;";
+var lang_main_missionsgroupseditor_deletewithcontent_headline = "Mission group containing missions";
+var lang_main_missionsgroupseditor_deletewithcontent_text = "If you delete this mission group&comma; the contained missions will also be deleted&period;";
+var lang_main_missionsgroupseditor_deletewithcontent_delete = "Delete";
+var lang_main_missionsgroupseditor_deletewithcontent_cancel = "Cancel";
+var lang_main_siteseditor_deletewithcontent_headline = "Site containing maps";
+var lang_main_siteseditor_deletewithcontent_text = "If you delete this site&comma; the contained maps will also be deleted&period;";
+var lang_main_siteseditor_deletewithcontent_delete = "Delete";
+var lang_main_siteseditor_deletewithcontent_cancel = "Cancel";
+var lang_main_missiongroupeditor_text = "You can edit group names&comma; delete groups or create new groups&period;";
+var lang_main_missiongroupeditor_create_text = "If you don't want to use any of the default group names&comma; you can create your own group&lpar;s&rpar; and save missions here&period; New groups will be shown in the top bar next to the default groups and contain any mission&lpar;s&rpar; you want to add to it";
+var lang_main_missiongroupeditor_ok = "OK";
+var lang_main_missiongroupeditor_cancel = "Cancel";
+var lang_main_missiongroupeditor_missiongroups = "Mission groups";
+var lang_main_missiongroupeditor_loading = "Loading mission groups&period;&period;&period;";
+var lang_main_missiongroupeditor_creategroup = "Create group";
+var lang_main_missiongroupeditor_createeditgroups = "Create / Edit groups";
+var lang_main_missiongroupeditor_createmissiongroup = "Create mission group";
+var lang_main_missiongroupeditor_editmissiongroup = "Edit mission group";
+var lang_main_missions_deletemission = "Delete mission&quest;";
+var lang_main_missions_deletemission_text = "Are you sure&comma; you want to delete this mission&quest;";
+var lang_main_missions_deletemission_btn_delete = "Delete";
+var lang_main_missions_deletemission_btn_cancel = "Cancel";
+var lang_main_missions_nomissionsingroup = "No missions were found in this group&period;";
+var lang_main_missions_queue = "Queue";
+var lang_main_missions_edit = "Edit";
+var lang_main_missions_delete = "Delete";
+var lang_main_missions_cancel = "Cancel";
+var lang_main_missions_move = "Move";
+var lang_main_missions_pleasewait = "Please wait&period;&period;&period;";
+var lang_main_missions_savingmission = "Saving mission&period;&period;&period;";
+var lang_main_missions_errorsoccured = "Error&lpar;s&rpar; occured&excl;";
+var lang_main_missions_errorsoccured_text = "One or more errors occured in the actions&period; Therefore the mission could not be saved&period;";
+var lang_main_missions_errors_ok = "OK";
+var lang_settings_failedtolocateftdi = "Failed to locate FTDI adapter&period; Reconnect the serial device and try again";
+var lang_settings_morethanoneftdi = "More than one FTDI adapter was detected&period; Make sure the laser scanners are configured and only one FTDI serial adapter is connected";
+var lang_settings_failedlistserialdevices = "Failed to get list of connected serial devices";
+var lang_settings_failedreadlaserserials = "Failed to read serial numbers used by laser scanners";
+var lang_settings_command = "Command&colon;";
+var lang_settings_response = "Response&colon;";
+var lang_settings_sendcommand = "Send command";
+var lang_settings_return = "Return";
+var lang_settings_testserialcommands = "Test serial commands";
+var lang_settings_testserialcommands_text = "You can test the communication from an external device by entering a command in the Command field&period; The robot will return an answer in the Response field&comma; either OK or Error&period;&lbrace;lb&rcub;&lbrace;lb&rcub;Example Command&colon; &quest;R12&comma; Response&colon; OK&colon; R012&num;5&period;";
+var lang_settings_no_modified_defaults = "No modified defaults &lpar;Empty table&rpar;";
+var lang_setup_serial = "Serial&colon;";
+var lang_setup_updatemirserial = "Update MiR serial number";
+var lang_setup_updatemirserial_text = "Shows the 15-digit serial number of the robot&period;&lbrace;lb&rcub;The serial number is also found in the Help section under Robot information and on the product label on the MiRHook&period;";
+var lang_setup_name = "Name&colon;";
+var lang_setup_updatemirname = "Update name";
+var lang_setup_updatemirname_text = "Enter a new name if you do not want to use the original name&period; The name is shown in the top bar of the user interface&period;";
+var lang_setup_lessthantwoserial = "Less than two serial adapters was detected&period; Please connect both laser scanners and try again";
+var lang_setup_morethantwoserial = "More than two serial adapters was detected&period; Please disconnect all other serial device except the two laser scanners";
+var lang_setup_nocameras = "No cameras attached to the robot";
+var lang_setup_cameraalreadyconfigured = "The connected camera is already configured for a different type";
+var lang_setup_cameratwoconnected = "Two cameras connected&period; Please unplug one camera and try again";
+var lang_setup_success = "Success";
+var lang_setup_serialalreadyconfigured = "The serial adapter is already configured";
+var lang_setup_serialalreadyconfiguredothertype = "The connected serial adapter is already configured for a different type&period;";
+var lang_setup_serialmorethanone = "More than one unknown serial adapters connected&period; Please unplug all other serial adapters and try again&period;";
+var lang_hookmanual_setheight_text = "Set the height to which you want to lower or hoist the hook arm to find the entry&comma; lock and drive heights for the cart&period; Note down the height values and use them when you create a new cart in the system&period;";
+var lang_hookmanual_setheight_heightabovefloor = "Height above floor &lbrack;mm&rsqb;&colon;";
+</script>
+</body>
+</html>

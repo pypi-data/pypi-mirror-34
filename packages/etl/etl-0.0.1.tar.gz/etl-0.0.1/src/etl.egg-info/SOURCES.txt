@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/etl/__init__.py
+src/etl.egg-info/PKG-INFO
+src/etl.egg-info/SOURCES.txt
+src/etl.egg-info/dependency_links.txt
+src/etl.egg-info/entry_points.txt
+src/etl.egg-info/top_level.txt

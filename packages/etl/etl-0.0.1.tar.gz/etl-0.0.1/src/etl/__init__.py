@@ -1,0 +1,10 @@
+__author__ = """Ian Maurer"""
+__email__ = "ian@genomoncology.com"
+__version__ = "0.0.1"
+
+__uri__ = "http://www.github.com/genomoncology/etl"
+__copyright__ = "Copyright (c) 2018 genomoncology.com"
+__description__ = "etl"
+__doc__ = __description__ + " <" + __uri__ + ">"
+__license__ = "MIT"
+__title__ = "etl"

@@ -1,0 +1,9 @@
+geteventstore/__init__.py,sha256=RDTh5aPSwt19q4FebXDEFBc3CwBX9fwyL41NtdE9lew,116
+geteventstore/client.py,sha256=O0_0mZoRDyvIc-I02-vxGi-Lb50xRA0pRhz5ho9tcI0,844
+geteventstore/event.py,sha256=uLnwvMMcOR-5_D1N-sWtEHopH0Uuv8I69ANC-rdjoDo,470
+geteventstore/read_stream.py,sha256=-_3kGSlQeEU6IELzxzCKEcEzsD_Nece4EygxhsQyEE0,2646
+geteventstore/write_stream.py,sha256=-Os4DI9aehZrK1hsXBCK4NxGVE1I-9FRN0_27LKZC90,944
+geteventstore-0.0.4.dist-info/METADATA,sha256=G-_ViYSjtJ87N47XWkcQJ9dxfXyUvXycSMiwxONrcg0,5123
+geteventstore-0.0.4.dist-info/RECORD,,
+geteventstore-0.0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+geteventstore-0.0.4.dist-info/top_level.txt,sha256=aV7EtdbYxZKVm29H9oCywV8zBGqe1oy0Hy3shwJpWxg,14

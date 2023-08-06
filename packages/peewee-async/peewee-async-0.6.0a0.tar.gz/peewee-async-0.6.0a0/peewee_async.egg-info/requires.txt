@@ -1,0 +1,5 @@
+peewee>=3.5.0
+
+[dev]
+pylint
+wheel

@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: avantpy
+Version: 0.0.1
+Summary: Python with training wheels: executable pseudocode in any language.
+Home-page: https://github.com/aroberge/avantpy
+Author: André Roberge
+Author-email: Andre.Roberge@gmail.com
+License: MIT
+Description: avantpy
+        =======
+        
+        Python with training wheels: executable pseudocode in any language
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education

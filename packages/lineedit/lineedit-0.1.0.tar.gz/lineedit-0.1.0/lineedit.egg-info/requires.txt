@@ -1,0 +1,9 @@
+pygments
+six
+wcwidth
+
+[test]
+pytest
+pyte
+pexpect
+ptyprocess

@@ -1,0 +1,9 @@
+README.md
+setup.py
+findthetail/__init__.py
+findthetail/ftt.py
+findthetail/teststatistics.py
+findthetail.egg-info/PKG-INFO
+findthetail.egg-info/SOURCES.txt
+findthetail.egg-info/dependency_links.txt
+findthetail.egg-info/top_level.txt

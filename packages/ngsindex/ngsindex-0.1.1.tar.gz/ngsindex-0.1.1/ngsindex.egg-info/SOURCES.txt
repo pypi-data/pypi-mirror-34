@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+ngsindex/__init__.py
+ngsindex/_version.py
+ngsindex/utils.py
+ngsindex.egg-info/PKG-INFO
+ngsindex.egg-info/SOURCES.txt
+ngsindex.egg-info/dependency_links.txt
+ngsindex.egg-info/requires.txt
+ngsindex.egg-info/top_level.txt
+tests/test_index.py
+tests/test_utils.py

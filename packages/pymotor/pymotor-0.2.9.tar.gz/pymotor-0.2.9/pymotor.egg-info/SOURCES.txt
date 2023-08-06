@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymotor/__init__.py
+pymotor/profiles.py
+pymotor.egg-info/PKG-INFO
+pymotor.egg-info/SOURCES.txt
+pymotor.egg-info/dependency_links.txt
+pymotor.egg-info/requires.txt
+pymotor.egg-info/top_level.txt

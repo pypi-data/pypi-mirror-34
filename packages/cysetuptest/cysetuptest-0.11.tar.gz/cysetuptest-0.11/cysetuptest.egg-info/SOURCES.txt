@@ -1,0 +1,8 @@
+setup.py
+cysetuptest/__init__.py
+cysetuptest/onecode.py
+cysetuptest.egg-info/PKG-INFO
+cysetuptest.egg-info/SOURCES.txt
+cysetuptest.egg-info/dependency_links.txt
+cysetuptest.egg-info/not-zip-safe
+cysetuptest.egg-info/top_level.txt

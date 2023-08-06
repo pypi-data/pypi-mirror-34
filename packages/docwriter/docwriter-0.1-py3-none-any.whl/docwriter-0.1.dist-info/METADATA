@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: docwriter
+Version: 0.1
+Summary: API reference documentation generator for FreeType.
+Home-page: https://github.com/freetype/docwriter
+Author: Nikhil Ramakrishnan
+Author-email: freetype-devel@nongnu.org
+License: FreeType License
+Keywords: freetype docwriter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing
+Requires-Dist: mistune (==0.8.3)
+Requires-Dist: mkdocs (<=0.17.5,>=0.17.3)
+Requires-Dist: mkdocs-material (<=2.9.1,>=2.9.0)
+Requires-Dist: pymdown-extensions (<=4.11,>=4.10.2)
+Requires-Dist: PyYAML (>=3.10)
+
+Docwriter is an API documentation generator for FreeeType that extracts and builds Markdown docs from the FreeType header files.
+
+

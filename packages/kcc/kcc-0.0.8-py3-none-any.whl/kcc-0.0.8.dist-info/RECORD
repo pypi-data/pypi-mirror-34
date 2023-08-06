@@ -1,0 +1,11 @@
+kcc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kcc/cli.py,sha256=bYiJO8jUE3-977H8EiDzfuquRSJwHUdWXD0UaNUAnuI,1215
+kcc/defaults.py,sha256=YNDw-v574sUTBpt6d1Y0M0jaPCO7a4EvT4dUUKTtj5M,3871
+kcc/kconfig.py,sha256=1XvFiZb9pcIDr7OflPtQFDn7QuqtWMZgA9Hl-sPpwLI,2705
+kcc/query.py,sha256=hEFPXQE4_6muF5iRPSFUiUB6aKnFb5QnBrwehqNjYUE,2206
+kcc/version.py,sha256=hzdmNZ7lh8Hgfj-e-SmR_mAQZfnu82ehqplTusd1eWc,131
+kcc-0.0.8.dist-info/METADATA,sha256=fpM9-1StmDd63NoI2Ex5EvKOep6SLRO42G3CdOaPkNo,1542
+kcc-0.0.8.dist-info/RECORD,,
+kcc-0.0.8.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+kcc-0.0.8.dist-info/entry_points.txt,sha256=HV_Z6Ip_oZs6vbhERH0_y5nrBdz-D9-yd7H4QJDlk68,37
+kcc-0.0.8.dist-info/top_level.txt,sha256=mrKIOfRfJtXbD6DiCxcN30JPkZniNV4DBfzq_4Gd5WE,4

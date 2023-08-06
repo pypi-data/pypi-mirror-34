@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sphinx-hwt
+Version: 0.7
+Summary: Sphinx extension to produce interactive schematic for hardware writen in HWT
+Home-page: https://github.com/Nic30/sphinx-hwt
+Author: Michal Orsak
+Author-email: michal.o.socials@gmail.com
+License: BSD-3-Clause
+Description: # sphinx-hwt
+        
+        [![Travis-ci Build Status](https://travis-ci.org/Nic30/sphinx-hwt.png?branch=master)](https://travis-ci.org/Nic30/sphinx-hwt)[![PyPI version](https://badge.fury.io/py/sphinx-hwt.svg)](http://badge.fury.io/py/sphinx-hwt)[![Coverage Status](https://coveralls.io/repos/github/Nic30/sphinx-hwt/badge.svg?branch=master)](https://coveralls.io/github/Nic30/sphinx-hwt?branch=master)[![Documentation Status](https://readthedocs.org/projects/sphinx-hwt/badge/?version=latest)](http://sphinx-hwt.readthedocs.io/en/latest/?badge=latest)
+        [![Python version](https://img.shields.io/pypi/pyversions/sphinx-hwt.svg)](https://img.shields.io/pypi/pyversions/sphinx-hwt.svg)
+        
+        Extension for Sphinx document generator. Add automatically generated schemes and other visual documentation of hardware.
+        Currently mainly for [HWT library](https://github.com/Nic30/hwt.git) (but VHDL,Verilog -> HWT is possible).
+        
+        
+        ## Feature list (will add in 2018-7-xx)
+        * generate interactive schematic for Unit instances (= module in verilog, entity + architecutere in VHDL).
+          * zoom, pan, dynamic colapsing, net-select, searching and filtering
+          * schematic rendered by [d3-hwschematic library](https://github.com/Nic30/d3-hwschematic)
+          * Unit instances to graph conversion by [hwtGraph library](https://github.com/Nic30/hwtGraph)
+        * signal waves by [d3-wave library](https://github.com/Nic30/d3-wave)
+Keywords: sphinx documentation HWT FPGA hardware VHDL System Verilog schematic wave
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

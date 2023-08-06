@@ -1,0 +1,92 @@
+Aioagi
+======
+
+Async agi client/server framework.
+The project based on "aiohttp" framework.
+
+Key Features
+============
+
+- Supports both client and server side of AGI protocol.
+- AGI-server has middlewares and pluggable routing.
+
+Getting started
+===============
+
+
+Server
+------
+
+Simple AGI server:
+
+.. code-block:: python
+
+    from aiohttp import web
+
+    from aioagi import runner
+    from aioagi.app import AGIApplication
+    from aioagi.log import agi_server_logger
+
+    async def handle(request):
+        name = request.match_info.get('name', 'Anonymous')
+        last_name = request.match_info.get('last_name', 'Suomynona')
+        text = "Hello, {} {}".format(name, last_name)
+        await request.agi.verbose(text)
+
+
+    app = AGIApplication()
+    app.router.add_route('SIP', '/', hello)
+    web.run_app(app)
+
+Client
+------
+
+To set AGI connection as Asterisk:
+
+.. code-block:: python
+
+    import asyncio
+    import logging.config
+
+    from aiohttp.log import client_logger
+
+    from aioagi.client import AGIClientSession
+    from aioagi.parser import AGIMessage, AGICode
+
+
+    async def test_request(loop):
+        headers = {
+            'agi_network': 'yes',
+            'agi_network_script': 'agi/',
+            'agi_request': 'agi://localhost:8080/agi/',
+            'agi_channel': 'SIP/100-00000001',
+            'agi_language': 'ru',
+            'agi_type': 'SIP',
+            'agi_uniqueid': '1532375920.8',
+            'agi_version': '14.0.1',
+            'agi_callerid': '100',
+            'agi_calleridname': 'test',
+            'agi_callingpres': '0',
+            'agi_callingani2': '0',
+            'agi_callington': '0',
+            'agi_callingtns': '0',
+            'agi_dnid': '101',
+            'agi_rdnis': 'unknown',
+            'agi_context': 'from-internal',
+            'agi_extension': '101',
+            'agi_priority': '1',
+            'agi_enhanced': '0.0',
+            'agi_accountcode': '',
+            'agi_threadid': '139689736754944',
+        }
+        async with AGIClientSession(headers=headers, loop=loop) as session:
+            async with session.sip('agi://localhost:8080/?a=test1&b=test2') as response:
+                async for message in response:
+                    client_logger.debug(message)
+                    await response.send(AGIMessage(AGICode.OK, '0', {}))
+
+
+Install
+=======
+
+``pip install aioagi``

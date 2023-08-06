@@ -1,0 +1,5 @@
+aiohttp>=3.3.0
+
+[dev]
+ipdb
+ipython

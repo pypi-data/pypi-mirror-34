@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+ocutils/CM_coeffs.txt
+ocutils/__init__.py
+ocutils/calc_SSP.py
+ocutils/calc_pressure.py
+ocutils/get_path.py
+ocutils/load_CM_coeffs.py
+ocutils/pol2cart.py
+ocutils.egg-info/PKG-INFO
+ocutils.egg-info/SOURCES.txt
+ocutils.egg-info/dependency_links.txt
+ocutils.egg-info/requires.txt
+ocutils.egg-info/top_level.txt
+ocutils/Tests/Test_calc_SSP.py
+ocutils/Tests/Test_pol2cart.py
+ocutils/Tests/__init__.py

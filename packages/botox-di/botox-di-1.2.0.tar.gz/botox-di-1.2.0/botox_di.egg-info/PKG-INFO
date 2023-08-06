@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: botox-di
+Version: 1.2.0
+Summary: The Botox is a lightweight dependency injection pattern implementation for Python.
+Home-page: UNKNOWN
+Author: Ilya Lebedev
+Author-email: lebedev.games.mail@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

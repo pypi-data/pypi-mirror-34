@@ -1,0 +1,8 @@
+superoffice_python_sdk-0.1.6.data/data/partner.wsdl,sha256=7EJHmNA9kfAjnW9YP30CTnOPFWPp6SnOn1vV3m1F37Y,9322
+superoffice_python_sdk-0.1.6.dist-info/METADATA,sha256=NmgM7fx1Dv06SEU8ZqvvJaQnLPDFAiOF9RMyVc38ya4,291
+superoffice_python_sdk-0.1.6.dist-info/RECORD,,
+superoffice_python_sdk-0.1.6.dist-info/WHEEL,sha256=oGGm_O4g839AJOrCbXq_ZxGrWdwSrjduga8Rn8cINEs,97
+superoffice_python_sdk-0.1.6.dist-info/top_level.txt,sha256=n9vD4Mzi11-N1TuQZy_sF6JExfF_luqmxim2dbB2XZs,15
+superofficesdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+superofficesdk/login.py,sha256=yiBjsS7LM1-NVhVGesCgrvw7ln_JC35aI7Ywa4gUcU8,2402
+superofficesdk/rest.py,sha256=MpjWR14EttrEy8G5vIv1u8DrfQ56c6s_2wtBfhwAexo,2509

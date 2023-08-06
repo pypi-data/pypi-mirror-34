@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: semaphorePY
+Version: 0.1.4
+Summary: SemaphoreCI python wrapper
+Home-page: UNKNOWN
+Author: Michael Yusko
+Author-email: mikeiceman1221@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License

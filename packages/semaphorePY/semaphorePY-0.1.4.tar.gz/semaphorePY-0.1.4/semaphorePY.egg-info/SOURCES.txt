@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+semaphore/__init__.py
+semaphore/client.py
+semaphorePY.egg-info/PKG-INFO
+semaphorePY.egg-info/SOURCES.txt
+semaphorePY.egg-info/dependency_links.txt
+semaphorePY.egg-info/requires.txt
+semaphorePY.egg-info/top_level.txt

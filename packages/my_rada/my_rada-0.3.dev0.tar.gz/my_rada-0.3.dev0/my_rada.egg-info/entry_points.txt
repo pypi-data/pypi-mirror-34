@@ -1,0 +1,3 @@
+[console_scripts]
+rada = my_rada.verh_rada:main
+

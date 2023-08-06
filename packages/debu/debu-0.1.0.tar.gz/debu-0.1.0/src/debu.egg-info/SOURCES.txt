@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/debu/__init__.py
+src/debu/cp.py
+src/debu/execute.py
+src/debu/interpreter.py
+src/debu/ssh.py
+src/debu.egg-info/PKG-INFO
+src/debu.egg-info/SOURCES.txt
+src/debu.egg-info/dependency_links.txt
+src/debu.egg-info/entry_points.txt
+src/debu.egg-info/requires.txt
+src/debu.egg-info/top_level.txt

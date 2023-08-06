@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: debu
+Version: 0.1.0
+Summary: Automatic Deployment and Build tool
+Home-page: https://github.com/SiLeader/debu
+Author: SiLeader
+Author-email: 
+License: Apache License 2.0
+Description: debu
+        ===========
+        
+        &copy; 2018 SiLeader.
+        
+        ## Overview
+        Automatic deployment and build tool.
+        
+        You can use this package as normal python package and interpreter.
+        
+        ## Features
+        + execute commands
+        + copy files
+        + execute debu script
+        
+        ## debu script
+        ### Features
+        + display data (print and echo)
+        + execute commands
+        + copy files
+        + variables
+        + comments
+        
+        ### data types
+        | name | expr | meaning |
+        |:----:|:----:|:--------|
+        | str | "str" | string type |
+        | int(hex) | 0xbeef | hexadecimal integer |
+        | int(dec) | 129 | decimal integer |
+        | int(oct) | 0o127 | octal integer |
+        | int(bin) | 0b101 | binary integer |
+        | host | user@host:port, user@host | SSH host name |
+        
+        ### script syntax
+        #### print and echo
+        ```text
+        print "data"
+        echo "data"
+        ```
+        
+        #### comments
+        ```text
+        # comment
+        print "data" # comment
+        ```
+        
+        #### copy files
+        ```text
+        host_source >> host_destination: copy /path/to/source /path/to/destination
+        ```
+        
+        #### execute command
+        ```text
+        # execute ls command in host
+        host: ls
+        ```
+        
+        #### variables
+        ```text
+        # assign
+        var1 = "data"
+        
+        # copy variable
+        var2 = var1
+        
+        # use in host name
+        host = user@example.com
+        host: ls
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: System
+Classifier: Topic :: System :: Installation/Setup
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

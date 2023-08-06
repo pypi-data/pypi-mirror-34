@@ -1,0 +1,3 @@
+[console_scripts]
+helper = autodel_helper.config:write_parameter
+

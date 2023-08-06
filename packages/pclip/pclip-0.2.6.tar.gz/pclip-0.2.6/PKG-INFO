@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pclip
+Version: 0.2.6
+Summary: Planet Clip Tools CLI
+Home-page: https://github.com/samapriya/Clip-Ship-Planet-CLI
+Author: Samapriya Roy
+Author-email: samapriya.roy@gmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: GIS

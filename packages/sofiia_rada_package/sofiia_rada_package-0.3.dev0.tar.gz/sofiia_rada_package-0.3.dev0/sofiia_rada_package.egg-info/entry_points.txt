@@ -1,0 +1,3 @@
+[console_scripts]
+rada = sofiia_rada_package.varh_rada:main
+

@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+fancytable/__init__.py
+fancytable.egg-info/PKG-INFO
+fancytable.egg-info/SOURCES.txt
+fancytable.egg-info/dependency_links.txt
+fancytable.egg-info/top_level.txt

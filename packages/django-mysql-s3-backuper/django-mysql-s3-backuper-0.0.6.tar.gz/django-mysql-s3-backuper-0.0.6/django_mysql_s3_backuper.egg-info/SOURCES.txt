@@ -1,0 +1,10 @@
+README.md
+setup.py
+backuper/__init__.py
+backuper/core.py
+django_mysql_s3_backuper.egg-info/PKG-INFO
+django_mysql_s3_backuper.egg-info/SOURCES.txt
+django_mysql_s3_backuper.egg-info/dependency_links.txt
+django_mysql_s3_backuper.egg-info/not-zip-safe
+django_mysql_s3_backuper.egg-info/requires.txt
+django_mysql_s3_backuper.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+uptool = project.user_provision:main
+

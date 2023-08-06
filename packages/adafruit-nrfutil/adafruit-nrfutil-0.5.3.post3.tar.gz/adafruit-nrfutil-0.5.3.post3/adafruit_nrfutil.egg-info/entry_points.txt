@@ -1,0 +1,4 @@
+
+      [console_scripts]
+      adafruit_nrfutil = nordicsemi.__main__:cli
+    

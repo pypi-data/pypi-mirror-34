@@ -1,0 +1,3 @@
+[console_scripts]
+num-radix = num_radix:_main
+

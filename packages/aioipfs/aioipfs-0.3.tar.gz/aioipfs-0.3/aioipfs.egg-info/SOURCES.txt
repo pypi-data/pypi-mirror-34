@@ -1,0 +1,15 @@
+README.rst
+setup.py
+aioipfs/__init__.py
+aioipfs/api.py
+aioipfs/multi.py
+aioipfs.egg-info/PKG-INFO
+aioipfs.egg-info/SOURCES.txt
+aioipfs.egg-info/dependency_links.txt
+aioipfs.egg-info/entry_points.txt
+aioipfs.egg-info/requires.txt
+aioipfs.egg-info/top_level.txt
+scripts/__init__.py
+scripts/asyncipfs.py
+scripts/ipfsfind.py
+test/test_client.py

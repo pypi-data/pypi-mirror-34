@@ -1,0 +1,4 @@
+[console_scripts]
+asyncipfs = scripts.asyncipfs:start
+ipfs-find = scripts.ipfsfind:start
+

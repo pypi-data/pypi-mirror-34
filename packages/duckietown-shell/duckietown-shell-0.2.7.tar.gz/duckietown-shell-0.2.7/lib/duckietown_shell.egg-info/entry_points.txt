@@ -1,0 +1,6 @@
+[console_scripts]
+dt = dt_shell:cli_main
+
+[paste.app_factory]
+app = mcdp_web:app_factory
+

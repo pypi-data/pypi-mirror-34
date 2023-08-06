@@ -1,0 +1,14 @@
+requests
+Pillow
+simpleeval
+pyshp
+folium
+ipyleaflet
+traitlets
+pygal
+
+[dev]
+
+[docs]
+
+[testing]

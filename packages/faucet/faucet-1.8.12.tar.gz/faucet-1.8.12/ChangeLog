@@ -1,0 +1,160 @@
+CHANGES
+=======
+
+1.8.12
+------
+
+* Rollback stack topology calculation
+* Disable live changes to stack topology
+* Need to merge masks where mask present overrides always
+* LINK\_LOCAL for v4
+* Bump version for release
+* Add link local VIPs to FaucetUntaggedIPv6InterVLANRouteTest
+* Do not inter-VLAN route IPv6 link local subnets
+* More thorough check that a dst\_ip is not a VIP on any VLAN
+* Add comment re future eth\_type table
+* JSON files gone
+* Move TFM table size configuration in to DP. Remove obsolete per-Valve JSON
+* Update ryu from 4.26 to 4.27
+* Update ryu from 4.26 to 4.27
+* Make eth\_dst exact match
+* eth\_dst is now exact match
+* Simplify MAC learning
+* Configure miss flow for eth\_dst to flood
+* coverage for get\_config\_dict()
+* Remove unused all\_valve\_tables()
+* Delete unused TFM parser
+* All TFM properties now dynamically generated
+* Remove more OFPTFPT\_APPLY\_ACTIONS
+* Simplify verify\_flowmod()
+* Fix priority 0 flowmod check
+* pylint
+* OFPTFPT\_APPLY\_ACTIONS automatically generated
+* ACLs can enable meter TFM
+* Handle TypeError from ofctl
+* Run time check for exact match tables
+* Move coverage file location
+* Clean up by IPV helpers, remove unnecessary dyn attributes
+* Conf objects make more attributes immutable
+* Use metrics helper
+* Use readlink -f
+* Move LLDP code out of valve.py
+* Type check FAUCET LLDP TLVs
+* Test for stack islands
+* pylint
+* Port ACL table could unnecessarily require VLAN VID match
+* Incorrect set\_fields set for VLAN ACL table
+* allow: 1 should work with output: ACL actions
+* update unit test
+* Mininet test for the correctness of stack loop prevention
+* extend string of stack topo to support ring topo
+* update unit tests
+* Remove "has\_changed" state
+* Do not update stack-graph on dp connect/disconnect events
+* Test on stack graph update on topology changes
+* Add port option to rcv\_lldp
+* Update stack graph upon link-state events
+* Call Valves to update stack graph
+* Add methods to update stack graph
+* Need a method to add/remove stack link to/from the stack graph
+* Explicitly drop ECTP (eth type 0x9000). q.v. https://mail.openvswitch.org/pipermail/ovs-dev/2016-June/316970.html
+* Don't delete flows for ports in the same LACP controlled LAG
+* remove duplicate VID VLANs
+* Revert "Revert "Prevent duplicate VLAN VID.""
+* Fix missing ACL log message
+* Fix compatibility with sphinx 1.7.6+
+* Reduce min coverage to 92
+* Preversion 1.8.12
+
+1.8.11
+------
+
+* Use copy of generated tables
+* Use copy of FAUCET\_PIPELINE
+* Bump README version
+* Revert "Prevent duplicate VLAN VID."
+* fib table fix
+* Prevent duplicate VLAN VID
+* Fix unit test wrapper to run from base dir for PBR. Increase coverage back to 93%
+* dp.dp -> dp
+* Simpifiy use of ValveTableConfig
+* More generic detection of pipeline change
+* Duplicate acls.append(self.acls[acl])
+* Update sphinx\_rtd\_theme from 0.4.0 to 0.4.1
+* Update sphinx from 1.7.5 to 1.7.6
+* Break/fix
+* Break/fix
+* Pylint
+* Pylint
+* Use override table config pattern
+* Clean up table\_config
+* OFPTFPT\_APPLY\_SETFIELD dynamically generated
+* OFPTFPT\_APPLY\_SETFIELD is now dynamically generated
+* Test coverage
+* Simply ACL reload test
+* test coverage for DP ACLs
+* vlan\_match\_tables not used
+* Test coverage
+* Break/fix
+* Expand ValveTableConfig
+* pylint
+* Prime another reload test for TFM switches
+* Prime TFM based switches for ACL tests
+* pylint
+* Use frozenset for dynamic attributes
+* More tuple references
+* Make tagged\_vlans() a tuple
+* Unnecessary lists for tagged/untagged ports
+* Make more DP attributes immutable
+* Make more VLAN attributes immutable
+* Missed reference to dyn\_running
+* Make some more attributes immutable
+* TODO for mutable attrs on Confs
+* Enforce not setting attribures on finalized Conf objects
+* Avoid DP attributes for pipeline
+* All tables now get TFM matches
+* TupleTest should require no wild cards
+* Add exact\_match attribute to table
+* Add note that matches are automatically configured
+* Disable METER
+* pytype
+* Re enable test\_flow\_stats
+* Fix IPv4 tuple test fields
+* pylint
+* pylint
+* tuple test primes pipeline
+* pylint
+* missing TFM wildcards
+* Non TFM pipelines have no TFM flows
+* Temporarily disable test\_flow\_stats
+* Log pipeline changes
+* Log VIP IPs and pipeline matches
+* Only build raspbian image on git tag
+* ofctl port stats/desc should actually use port no
+* host port stats returns stats for all ports
+* Avoid batching of port status change by ofctl
+* Retry set port status. Rename tests to SameVlan/DiffVlan
+* max\_loadavg() must be int
+* Log include file inclusions
+* Increase parallel test over subscription
+* IPv6 verify\_invalid\_bgp\_route() REs
+* verify\_bgp\_invalid\_route() REs
+* More log REs
+* Fix REs for log lines
+* Stage name changes, cd simplify & image version number
+* Faucet raspbian image with gitlab CI
+* Add tests for new vlan route format
+* configuration inconsistency fix #1836
+* Preversion 1.8.11
+
+1.8.10
+------
+
+* Enable barriers for OVS
+* Revert "Make VIP priority depend on VLAN VID."
+* Revert "Avoid arp\_tpa."
+* Avoid arp\_tpa
+* Make VIP priority depend on VLAN VID
+* FAUCET VIPs added before flood
+* Revert "Disable stack edge optimization."
+* mac\_addr\_is\_unicast() incorrect for 34 prefix

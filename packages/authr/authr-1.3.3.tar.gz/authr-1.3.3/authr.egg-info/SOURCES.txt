@@ -1,0 +1,12 @@
+README.md
+setup.py
+Authr/__init__.py
+Authr/auth_scrape_functions.py
+Authr/authr.py
+Authr/authr_tests.py
+Authr/map_functions.py
+Authr/shodan_functions.py
+authr.egg-info/PKG-INFO
+authr.egg-info/SOURCES.txt
+authr.egg-info/dependency_links.txt
+authr.egg-info/top_level.txt

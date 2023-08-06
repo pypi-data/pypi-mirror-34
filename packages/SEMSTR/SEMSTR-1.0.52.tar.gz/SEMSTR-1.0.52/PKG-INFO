@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SEMSTR
+Version: 1.0.52
+Summary: Scheme Evaluation and Mapping for Structural Text Representation
+Home-page: https://github.com/huji-nlp/semstr
+Author: Daniel Hershcovich
+Author-email: danielh@cs.huji.ac.il
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
+Provides-Extra: amr
+Provides-Extra: ud

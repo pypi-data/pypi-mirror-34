@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pDiffusionMap
+Version: 0.2.2
+Summary: This package aims to do Diffusion Map in a parallel way. 
+Home-page: https://github.com/haoyuanli93/DiffusionMap
+Author: Haoyuan Li
+Author-email: hyli16@stanford.edu
+Maintainer: Haoyuan Li
+Maintainer-email: hyli16@stanford.edu
+License: BSD License
+Description: This package calculate the diffusion map in a parallel manner.Please check the github repo at https://github.com/haoyuanli93/DiffusionMapfor more detailed description.
+Platform: Linux

@@ -1,0 +1,76 @@
+{% load static wagtailuserbar wagtailadmin_tags %}
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            {% block title %}
+                {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
+            {% endblock %}
+            {% block title_suffix %}
+                {% with self.get_site.site_name as site_name %}
+                    {% if site_name %}- {{ site_name }}{% endif %}
+                {% endwith %}
+            {% endblock %}
+        </title>
+        <meta name="description" content="" />
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        {# Global stylesheets #}
+        <link rel="stylesheet" type="text/css" href="{% static 'wagtail_materializecss/css/custom.css' %}">
+
+        {% block extra_css %}
+            {# Override this in templates to add extra stylesheets #}
+        {% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+        {% wagtailuserbar %}
+
+        {% block nav %}
+        <nav class="{{ page.color }}" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" class="brand-logo center" href="{{ page.get_site.root_url }}">{{ page.get_site.site_name }}</a>
+                <ul class="right hide-on-med-and-down">
+                    {% if request.user.is_authenticated %}
+                    <li style="height: 64px;"><a class="link-with-img"><img src="{% avatar_url request.user size=32 %}"><span>{{ request.user.first_name|default:request.user.get_username }}</span></a></li>
+                    {% endif %}
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    {% if request.user.is_authenticated %}
+                    <li style="height: 24px;"><a class="link-with-img"><img src="{% avatar_url request.user size=24 %}"><span>{{ request.user.first_name|default:request.user.get_username }}</span></a></li>
+                    {% endif %}
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        {% endblock nav %}
+
+        {% block before_content %}{% endblock %}
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="{% static 'materialize/js/materialize.min.js' %}"></script>
+
+        {# Global javascript #}
+        <script type="text/javascript" src="{% static 'js/mysite.js' %}"></script>
+
+        {% block extra_js %}
+            {# Override this in templates to add extra javascript #}
+        {% endblock %}
+
+        <script type="text/javascript">
+            M.AutoInit();
+        </script>
+    </body>
+</html>

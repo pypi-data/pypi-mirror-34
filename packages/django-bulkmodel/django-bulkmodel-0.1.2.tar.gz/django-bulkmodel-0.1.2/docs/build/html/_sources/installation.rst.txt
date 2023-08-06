@@ -1,0 +1,22 @@
+Installation and Getting Started
+---------------------------------------------------------------
+
+Install the package from pypi::
+
+    pip install django-bulkmodel
+
+Add `bulkmodel` app to your `INSTALLED_APPS` list in settings.py::
+
+    INSTALLED_APPS = [
+        ...
+        'bulkmodel',
+    ]
+
+And change all your models to inherit from `bulkmodel.models.BulkModel`::
+
+
+    from django.db import models
+    from bulkmodel.models import BulkModel
+
+    class MyModel(BulkModel):
+        ...

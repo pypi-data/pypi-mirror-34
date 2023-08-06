@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Connection Management &mdash; django-bulkmodel 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Copy TO / FROM support" href="copy-to-from.html" />
+    <link rel="prev" title="3. Concurrent writes" href="concurrent-writes.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django-bulkmodel
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation and Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview-all-features.html">Overview of All Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">In-Depth Guides</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="bulk-create.html">1. Bulk Create</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bulk-update.html">2. Bulk Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concurrent-writes.html">3. Concurrent writes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Connection Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example">4.1. Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="copy-to-from.html">5. Copy TO / FROM support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">6. Signals</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/queryset.html">QuerySet API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/signals.html">Signals API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/concurrency-executor.html">Concurrency Executor</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django-bulkmodel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>4. Connection Management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ailling/django-bulkmodel/blob/masterpages/connection-management.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="connection-management">
+<h1>4. Connection Management<a class="headerlink" href="#connection-management" title="Permalink to this headline">¶</a></h1>
+<p>By default Django manages the connection within a request / response cycle.</p>
+<p>Django-bulkmodel enables offline connection management, so that you won’t lose your connection outside of this cycle.</p>
+<p>To check or refresh your connection (if necessary), call <code class="docutils literal notranslate"><span class="pre">ensure_connected()</span></code> on your queryset.</p>
+<p>Django-bulkmodel internally calls this method as appropriate.</p>
+<div class="section" id="example">
+<h2>4.1. Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foos</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># some queryset</span>
+<span class="n">foos</span><span class="o">.</span><span class="n">ensure_connected</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;alice&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>See <a class="reference internal" href="../reference/queryset.html"><span class="doc">Queryset API Reference</span></a> for more details.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="copy-to-from.html" class="btn btn-neutral float-right" title="5. Copy TO / FROM support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="concurrent-writes.html" class="btn btn-neutral" title="3. Concurrent writes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Alan Illing.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

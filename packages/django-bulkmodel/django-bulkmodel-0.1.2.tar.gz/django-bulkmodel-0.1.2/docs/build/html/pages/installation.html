@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation and Getting Started &mdash; django-bulkmodel 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Overview of All Features" href="overview-all-features.html" />
+    <link rel="prev" title="Django Bulkmodel" href="../index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django-bulkmodel
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation and Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#full-installation">Full Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#partial-installation">Partial Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-settings">Optional Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="overview-all-features.html">Overview of All Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">In-Depth Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates.html">1. Bulk Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concurrent-writes.html">2. Concurrent writes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connection-management.html">3. Connection Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copy-to-from.html">4. Copy TO / FROM support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">5. Signals</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/queryset.html">QuerySet API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/signals.html">Signals API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/concurrency-executor.html">Concurrency Executor</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django-bulkmodel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation and Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ailling/django-bulkmodel/blob/masterpages/installation.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation-and-getting-started">
+<h1>Installation and Getting Started<a class="headerlink" href="#installation-and-getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Install the package from pypi:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">django</span><span class="o">-</span><span class="n">bulkmodel</span>
+</pre></div>
+</div>
+<p>Add <cite>bulkmodel</cite> app to your <cite>INSTALLED_APPS</cite> list in settings.py:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;bulkmodel&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="full-installation">
+<h2>Full Installation<a class="headerlink" href="#full-installation" title="Permalink to this headline">¶</a></h2>
+<p>Fully installing BulkModel requires inheriting your models from <code class="docutils literal notranslate"><span class="pre">bulkmodel.models.BulkModel</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.db</span> <span class="k">import</span> <span class="n">models</span>
+<span class="kn">from</span> <span class="nn">bulkmodel.models</span> <span class="k">import</span> <span class="n">BulkModel</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">BulkModel</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>And migrate the database.</p>
+<p><strong>Create migrations</strong></p>
+<p>If you’re creating a new app from scratch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigrations</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">your</span><span class="o">-</span><span class="n">app</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Do this for each new app you create that have BulkModels.</p>
+<p>Otherwise, if this app already exists and has migrations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigrations</span>
+</pre></div>
+</div>
+<p><strong>Apply migrations</strong></p>
+<p>And apply the migrations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="partial-installation">
+<h2>Partial Installation<a class="headerlink" href="#partial-installation" title="Permalink to this headline">¶</a></h2>
+<p>If you don’t want to migrate your database schema for whatever reason you can skip that step
+and <code class="docutils literal notranslate"><span class="pre">BulkModel</span></code> will degrade gracefully. With this route you’ll lose the ability
+to retrieve a queryset after bulk creating data, and some signals will lose functionality.</p>
+<p>With this route you’ll need to point your <code class="docutils literal notranslate"><span class="pre">objects</span></code> reference on each <code class="docutils literal notranslate"><span class="pre">BulkModel</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+<span class="kn">from</span> <span class="nn">bulkmodel.models</span> <span class="kn">import</span> <span class="n">BulkModel</span>
+<span class="kn">from</span> <span class="nn">bulkmodel.managers</span> <span class="kn">import</span> <span class="n">BulkModelManager</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">BulkModel</span><span class="p">):</span>
+    <span class="o">...</span>
+
+    <span class="n">objects</span> <span class="o">=</span> <span class="n">BulkModelManager</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="optional-settings">
+<h2>Optional Settings<a class="headerlink" href="#optional-settings" title="Permalink to this headline">¶</a></h2>
+<p>Place the following in your <code class="docutils literal notranslate"><span class="pre">settings.py</span></code> to set global behavior of your bulkmodels:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">MAX_CONCURRENT_BATCH_WRITES</span></code></li>
+</ul>
+<p>When set, this is the maximum number of concurrent workers that will be available to any concurrent write across your entire project.
+The default leaves this value unset.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">ALWAYS_USE_CONCURRENT_BATCH_WRITES</span></code></li>
+</ul>
+<p>If True, django-bulkmodel will always use concurrent writes. The default is False.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="overview-all-features.html" class="btn btn-neutral float-right" title="Overview of All Features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Django Bulkmodel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Alan Illing.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

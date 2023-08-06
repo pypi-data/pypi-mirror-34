@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>QuerySet API Reference &mdash; django-bulkmodel 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Signals API Reference" href="signals.html" />
+    <link rel="prev" title="5. Signals" href="../pages/signals.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django-bulkmodel
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation and Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/overview-all-features.html">Overview of All Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">In-Depth Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/updates.html">1. Bulk Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/concurrent-writes.html">2. Concurrent writes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/connection-management.html">3. Connection Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/copy-to-from.html">4. Copy TO / FROM support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/signals.html">5. Signals</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">QuerySet API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#queryset">QuerySet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#model-manager">Model Manager</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">Signals API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concurrency-executor.html">Concurrency Executor</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django-bulkmodel</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>QuerySet API Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/ailling/django-bulkmodel/blob/masterreference/queryset.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="queryset-api-reference">
+<h1>QuerySet API Reference<a class="headerlink" href="#queryset-api-reference" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="queryset">
+<h2>QuerySet<a class="headerlink" href="#queryset" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="bulkmodel.queryset.BulkModelQuerySet">
+<em class="property">class </em><code class="descclassname">bulkmodel.queryset.</code><code class="descname">BulkModelQuerySet</code><span class="sig-paren">(</span><em>model=None</em>, <em>query=None</em>, <em>using=None</em>, <em>hints=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="bulkmodel.queryset.BulkModelQuerySet.bulk_create">
+<code class="descname">bulk_create</code><span class="sig-paren">(</span><em>objs</em>, <em>bm_create_uuid=None</em>, <em>batch_size=None</em>, <em>send_signal=True</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>return_queryset=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet.bulk_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>A signal-enabled override of django’s bulk_create</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objs</strong> – </li>
+<li><strong>bm_create_uuid</strong> (<em>UUID</em>) – a uuid to use as the bm_create_uuid in the model</li>
+<li><strong>batch_size</strong> – </li>
+<li><strong>send_signal</strong> (<em>bool</em>) – </li>
+<li><strong>concurrent</strong> (<em>bool</em>) – </li>
+<li><strong>max_concurrent_workers</strong> (<em>bool</em>) – </li>
+<li><strong>return_queryset</strong> (<em>bool</em>) – whether to return instances; if false, returns the default from django’s method</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.queryset.BulkModelQuerySet.copy_from_objects">
+<code class="descname">copy_from_objects</code><span class="sig-paren">(</span><em>objs</em>, <em>bm_create_uuid=None</em>, <em>exclude_id=True</em>, <em>signal=True</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>fieldnames=None</em>, <em>batch_size=None</em>, <em>return_queryset=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet.copy_from_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates data in the databse using the COPY FROM operaiton, if supported by the database being used</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objs</strong> – </li>
+<li><strong>bm_create_uuid</strong> – </li>
+<li><strong>exclude_id</strong> – </li>
+<li><strong>signal</strong> – </li>
+<li><strong>concurrent</strong> – </li>
+<li><strong>max_concurrent_workers</strong> – </li>
+<li><strong>fieldnames</strong> – </li>
+<li><strong>batch_size</strong> – </li>
+<li><strong>return_queryset</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.queryset.BulkModelQuerySet.get_chunks">
+<code class="descname">get_chunks</code><span class="sig-paren">(</span><em>chunk_size</em>, <em>max_chunks=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet.get_chunks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Splits the queryset results into chunks</p>
+<p>WARNING this method is destructive: it returns a list of lists,
+not a queryset. The queryset object will be lost</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>chunk_size</strong> – </li>
+<li><strong>max_chunks</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.queryset.BulkModelQuerySet.populate_values">
+<code class="descname">populate_values</code><span class="sig-paren">(</span><em>objects</em>, <em>*fieldnames</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet.populate_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets values on objects in the existing queryset from a given set of objects and optional set of fieldnames</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objects</strong> (<em>collections.Iterable</em>) – a list of objects with data to use as a source for updates to apply within the queryset</li>
+<li><strong>fieldnames</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – a list of field names to apply updates to. If blank all fields will be updated</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.queryset.BulkModelQuerySet.update">
+<code class="descname">update</code><span class="sig-paren">(</span><em>batch_size=None</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>send_signals=True</em>, <em>_use_super=False</em>, <em>return_queryset=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a homogeneous update of data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>batch_size</strong> – </li>
+<li><strong>concurrent</strong> – </li>
+<li><strong>max_concurrent_workers</strong> – </li>
+<li><strong>send_signals</strong> – </li>
+<li><strong>_use_super</strong> – </li>
+<li><strong>return_queryset</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.queryset.BulkModelQuerySet.update_fields">
+<code class="descname">update_fields</code><span class="sig-paren">(</span><em>*fieldnames</em>, <em>objects=None</em>, <em>batch_size=None</em>, <em>send_signal=True</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>return_queryset=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.queryset.BulkModelQuerySet.update_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a hetergeneous update</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fieldnames</strong> – </li>
+<li><strong>objects</strong> – </li>
+<li><strong>batch_size</strong> – </li>
+<li><strong>send_signal</strong> – </li>
+<li><strong>concurrent</strong> – </li>
+<li><strong>max_concurrent_workers</strong> – </li>
+<li><strong>return_queryset</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="model-manager">
+<h2>Model Manager<a class="headerlink" href="#model-manager" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="bulkmodel.managers.BulkModelManager">
+<em class="property">class </em><code class="descclassname">bulkmodel.managers.</code><code class="descname">BulkModelManager</code><a class="headerlink" href="#bulkmodel.managers.BulkModelManager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.bulk_create">
+<code class="descname">bulk_create</code><span class="sig-paren">(</span><em>objs</em>, <em>bm_create_uuid=None</em>, <em>batch_size=None</em>, <em>send_signal=True</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>return_queryset=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.bulk_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>A signal-enabled override of django’s bulk_create</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objs</strong> – </li>
+<li><strong>bm_create_uuid</strong> (<em>UUID</em>) – a uuid to use as the bm_create_uuid in the model</li>
+<li><strong>batch_size</strong> – </li>
+<li><strong>send_signal</strong> (<em>bool</em>) – </li>
+<li><strong>concurrent</strong> (<em>bool</em>) – </li>
+<li><strong>max_concurrent_workers</strong> (<em>bool</em>) – </li>
+<li><strong>return_queryset</strong> (<em>bool</em>) – whether to return instances; if false, returns the default from django’s method</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.copy_from_objects">
+<code class="descname">copy_from_objects</code><span class="sig-paren">(</span><em>objs</em>, <em>bm_create_uuid=None</em>, <em>exclude_id=True</em>, <em>signal=True</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>fieldnames=None</em>, <em>batch_size=None</em>, <em>return_queryset=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.copy_from_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates data in the databse using the COPY FROM operaiton, if supported by the database being used</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objs</strong> – </li>
+<li><strong>bm_create_uuid</strong> – </li>
+<li><strong>exclude_id</strong> – </li>
+<li><strong>signal</strong> – </li>
+<li><strong>concurrent</strong> – </li>
+<li><strong>max_concurrent_workers</strong> – </li>
+<li><strong>fieldnames</strong> – </li>
+<li><strong>batch_size</strong> – </li>
+<li><strong>return_queryset</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.copy_to_instances">
+<code class="descname">copy_to_instances</code><span class="sig-paren">(</span><em>columns=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.copy_to_instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Populates data in instances of the queryset using the COPY TO function, if supported by the
+database being used</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>columns</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.create_queryset">
+<code class="descname">create_queryset</code><span class="sig-paren">(</span><em>objects</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.create_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds a queryset from a set of objects.
+For objects with a property called “id” or “pk” will be fetching from the database
+and populated with provided values.</p>
+<p>Objects missing these propertie will be created in bulk and re-fetched from the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>objects</strong> (<em>collections.Iterable</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.ensure_connected">
+<code class="descname">ensure_connected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.ensure_connected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes sure the connection is established by running a select 1 against the cursor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.get_queryset">
+<code class="descname">get_queryset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.get_queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves a queryset that refreshes the database connection when dropped
+The retry only happens once, and errors raised beyond this single retry attempt will be re-raised</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.populate_values">
+<code class="descname">populate_values</code><span class="sig-paren">(</span><em>objects</em>, <em>*fieldnames</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.populate_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets values on objects in the existing queryset from a given set of objects and optional set of fieldnames</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>objects</strong> (<em>collections.Iterable</em>) – a list of objects with data to use as a source for updates to apply within the queryset</li>
+<li><strong>fieldnames</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – a list of field names to apply updates to. If blank all fields will be updated</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.reset_connection">
+<code class="descname">reset_connection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.reset_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Refreshes the connection by closing the existing one
+The next chained call in the queryset will open a new connection</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bulkmodel.managers.BulkModelManager.update_fields">
+<code class="descname">update_fields</code><span class="sig-paren">(</span><em>*fieldnames</em>, <em>objects=None</em>, <em>batch_size=None</em>, <em>send_signal=True</em>, <em>concurrent=False</em>, <em>max_concurrent_workers=None</em>, <em>return_queryset=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bulkmodel.managers.BulkModelManager.update_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a hetergeneous update</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fieldnames</strong> – </li>
+<li><strong>objects</strong> – </li>
+<li><strong>batch_size</strong> – </li>
+<li><strong>send_signal</strong> – </li>
+<li><strong>concurrent</strong> – </li>
+<li><strong>max_concurrent_workers</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="signals.html" class="btn btn-neutral float-right" title="Signals API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../pages/signals.html" class="btn btn-neutral" title="5. Signals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Alan Illing.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

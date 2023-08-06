@@ -1,0 +1,3 @@
+[console_scripts]
+bnl = app.bupt_net_login:enter
+

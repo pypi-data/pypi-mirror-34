@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: dj-pysher
+Version: 0.3
+Summary: Simple client for pusher in Django
+Home-page: https://github.com/mrlucascardoso/dj-pysher
+Author: Lucas Cardoso
+Author-email: mr.lucascardoso@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content

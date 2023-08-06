@@ -1,0 +1,13 @@
+README.md
+setup.py
+django_polymorphic_queryset.egg-info/PKG-INFO
+django_polymorphic_queryset.egg-info/SOURCES.txt
+django_polymorphic_queryset.egg-info/dependency_links.txt
+django_polymorphic_queryset.egg-info/requires.txt
+django_polymorphic_queryset.egg-info/top_level.txt
+polymorphic_queryset/__init__.py
+polymorphic_queryset/tests/__init__.py
+polymorphic_queryset/tests/models.py
+polymorphic_queryset/tests/test_queries.py
+polymorphic_queryset/tests/migrations/0001_initial.py
+polymorphic_queryset/tests/migrations/__init__.py

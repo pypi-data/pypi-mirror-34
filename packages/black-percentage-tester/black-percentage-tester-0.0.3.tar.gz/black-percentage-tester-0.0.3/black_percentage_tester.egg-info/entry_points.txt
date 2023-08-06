@@ -1,0 +1,3 @@
+[console_scripts]
+black-percentage-test = black_percentage_tester.__main__:main
+

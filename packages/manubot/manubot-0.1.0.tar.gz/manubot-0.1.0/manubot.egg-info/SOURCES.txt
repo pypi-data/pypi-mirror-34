@@ -1,0 +1,15 @@
+README.md
+setup.py
+manubot/__init__.py
+manubot/arxiv.py
+manubot/citations.py
+manubot/manubot.py
+manubot/manuscript.py
+manubot/metadata.py
+manubot/pubmed.py
+manubot.egg-info/PKG-INFO
+manubot.egg-info/SOURCES.txt
+manubot.egg-info/dependency_links.txt
+manubot.egg-info/entry_points.txt
+manubot.egg-info/requires.txt
+manubot.egg-info/top_level.txt

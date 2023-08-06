@@ -1,0 +1,4 @@
+requests>=2.19.1
+PyYAML>=3.12
+PySocks>=1.6.8
+parameterized

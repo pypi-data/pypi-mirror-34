@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quick Start &mdash; pychemia 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="pychemia 0.1.2 documentation" href="index.html"/>
+        <link rel="next" title="Global Minimization with Metaheuristics" href="4.GlobalMinimization.html"/>
+        <link rel="prev" title="Installation" href="2.Installation.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pychemia
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1.Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.Installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#element">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#composition">Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#structure">Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lattice">Lattice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4.GlobalMinimization.html">Global Minimization with Metaheuristics</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pychemia</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quick Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/3.First_steps.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<p>PyChemia is built from several layers of code, the foundations being the ability to manipulate conglomerates of atoms,
+either molecules or crystals. Before doing more complex operations such execute tasks on various electronic structure
+codes or running structural searches we need to understand how the fundamental blocks work and that is the purpose of
+this quick start section.</p>
+<p>For the examples presented here you can use the official python terminal, however, the IPython terminal or a Jupyter
+notebook offers you more power to go across the examples and explore what PyChemia can do for you. At least, installing
+IPython is very simple on many operating systems.</p>
+<p>For example on machines running a debian derivative (Ubuntu, Mint and several others) you can use the following command
+to install the IPython terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">ipython</span>
+</pre></div>
+</div>
+<p>or for python 3.x:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">python</span>
+</pre></div>
+</div>
+<p>On MacOS using macports:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">py27</span><span class="o">-</span><span class="n">ipython</span>
+</pre></div>
+</div>
+<p>or for python 3.x:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">py35</span><span class="o">-</span><span class="n">ipython</span>
+</pre></div>
+</div>
+<div class="section" id="element">
+<h2>Element<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h2>
+<p>PyChemia is about materials, molecules, cluster and crystals. A class for elements can become handy to serve as a
+periodic table and inquire for the properties of a given specie. Alchemy was all about transmuting materials into gold.
+Lets explore what PyChemia can tell us about that element:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">pychemia</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">ele</span><span class="o">=</span><span class="n">pychemia</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;Au&#39;</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">atomic_number</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="mi">79</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">name</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="s1">&#39;Gold&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">electronegativity</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="mf">2.54</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">group</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="mi">11</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">period</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="mi">6</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">block</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="s1">&#39;d&#39;</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">mass</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="mf">196.96654</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">electronic_configuration</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="p">[</span><span class="s1">&#39;Xe&#39;</span><span class="p">,</span> <span class="s1">&#39;6s1&#39;</span><span class="p">,</span> <span class="s1">&#39;4f14&#39;</span><span class="p">,</span> <span class="s1">&#39;5d10&#39;</span><span class="p">]</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">is_madelung_exception</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="kc">True</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">oxidation_states</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">oxidation_states_common</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="p">(</span><span class="mi">3</span><span class="p">,)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">ele</span><span class="o">.</span><span class="n">covalent_radius</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="mf">1.36</span>
+</pre></div>
+</div>
+<p>The Element class provide a set of useful properties about all elements in the periodic table. The chapter about Element
+will explain the several properties that can be accessed on the Element class.</p>
+</div>
+<div class="section" id="composition">
+<h2>Composition<a class="headerlink" href="#composition" title="Permalink to this headline">¶</a></h2>
+<p>Now, atoms group themselves into molecules, clusters or crystals. Without entering into the geometry, we can think only
+about the composition, the list of atoms contained in the molecule or cluster or the list of atoms in the cell that
+builds the crystal. The Composition class offers a set of routines to manipulate lists of atoms. Lets consider for
+example Gold(III) oxide (Au2O3):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">pychemia</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">comp</span><span class="o">=</span><span class="n">pychemia</span><span class="o">.</span><span class="n">Composition</span><span class="p">(</span><span class="s1">&#39;Au2O3&#39;</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">comp</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">Composition</span><span class="p">({</span><span class="s1">&#39;Au&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">comp</span><span class="p">[</span><span class="s1">&#39;Au&#39;</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="mi">2</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">comp</span><span class="o">.</span><span class="n">nspecies</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="mi">2</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">comp</span><span class="o">.</span><span class="n">symbols</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="p">[</span><span class="s1">&#39;Au&#39;</span><span class="p">,</span> <span class="s1">&#39;Au&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Compositions can be created from the formula and also from a python dictionary and after you can use the composition
+object to ask for the number of atoms of each specie.</p>
+</div>
+<div class="section" id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<p>In most cases, pychemia uses Structures. A PyChemia Structure stores atomic positions and cell
+parameters for periodic structures. Lets start with a very simple structure, the FCC structure of gold. One way of
+creating and structure is by directly specifying atomic positions and cell parameters, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">pychemia</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">a</span><span class="o">=</span><span class="mf">4.05</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">fcc</span> <span class="o">=</span> <span class="n">pychemia</span><span class="o">.</span><span class="n">Structure</span><span class="p">(</span><span class="n">symbols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Au&#39;</span><span class="p">],</span> <span class="n">cell</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">],</span> <span class="p">[</span><span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="p">],</span> <span class="p">[</span><span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span> <span class="n">periodicity</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">fcc</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">Structure</span><span class="p">(</span><span class="n">symbols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Au&#39;</span><span class="p">],</span> <span class="n">cell</span><span class="o">=</span><span class="p">[[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.025</span><span class="p">,</span> <span class="mf">2.025</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.025</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.025</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.025</span><span class="p">,</span> <span class="mf">2.025</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]],</span>
+<span class="n">reduced</span><span class="o">=</span><span class="p">[[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]],</span> <span class="n">periodicity</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You have created your first structure on PyChemia. The structure contains one atom of Gold and the cell is the
+primitive cell of a FCC structure with one atom. You can ‘see’ the structure using the ‘print’ function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">fcc</span><span class="p">)</span>
+<span class="mi">1</span>
+
+ <span class="n">Symb</span>  <span class="p">(</span>             <span class="n">Positions</span>            <span class="p">)</span> <span class="p">[</span>     <span class="n">Cell</span><span class="o">-</span><span class="n">reduced</span> <span class="n">coordinates</span>     <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+
+<span class="n">Periodicity</span><span class="p">:</span>  <span class="n">X</span> <span class="n">Y</span> <span class="n">Z</span>
+
+<span class="n">Lattice</span> <span class="n">vectors</span><span class="p">:</span>
+     <span class="mf">0.0000</span>     <span class="mf">2.0250</span>     <span class="mf">2.0250</span>
+     <span class="mf">2.0250</span>     <span class="mf">0.0000</span>     <span class="mf">2.0250</span>
+     <span class="mf">2.0250</span>     <span class="mf">2.0250</span>     <span class="mf">0.0000</span>
+</pre></div>
+</div>
+<p>We can now be interested in see the spacegroup of the structure just created. A pychemia.crystal.CrystalSymmetry
+object allow us to get access to symmetry calculations provided by the <code class="docutils literal notranslate"><span class="pre">spglib</span></code> library:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">cs</span><span class="o">=</span><span class="n">pychemia</span><span class="o">.</span><span class="n">crystal</span><span class="o">.</span><span class="n">CrystalSymmetry</span><span class="p">(</span><span class="n">fcc</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">cs</span><span class="o">.</span><span class="n">number</span><span class="p">()</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="mi">225</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="n">cs</span><span class="o">.</span><span class="n">symbol</span><span class="p">()</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="s1">&#39;Fm-3m&#39;</span>
+</pre></div>
+</div>
+<p>Both the space group number and the International symbol are accessible from the CrystalSymmetry object. Now we can
+use the CrystalSymmetry object to recreate the convenctional FCC cell:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">fcc_conv</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">refine_cell</span><span class="p">()</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">fcc</span>
+<span class="n">fcc</span>       <span class="n">fcc_conv</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="n">fcc_conv</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="n">Structure</span><span class="p">(</span><span class="n">symbols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Au&#39;</span><span class="p">,</span> <span class="s1">&#39;Au&#39;</span><span class="p">,</span> <span class="s1">&#39;Au&#39;</span><span class="p">,</span> <span class="s1">&#39;Au&#39;</span><span class="p">],</span> <span class="n">cell</span><span class="o">=</span><span class="mf">4.05</span><span class="p">,</span> <span class="n">reduced</span><span class="o">=</span><span class="p">[[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span>
+<span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]],</span> <span class="n">periodicity</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">fcc_conv</span><span class="p">)</span>
+<span class="mi">4</span>
+
+ <span class="n">Symb</span>  <span class="p">(</span>             <span class="n">Positions</span>            <span class="p">)</span> <span class="p">[</span>     <span class="n">Cell</span><span class="o">-</span><span class="n">reduced</span> <span class="n">coordinates</span>     <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">2.0250</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.5000</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">2.0250</span>     <span class="mf">0.0000</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.5000</span>     <span class="mf">0.0000</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">2.0250</span>     <span class="mf">2.0250</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.5000</span>     <span class="mf">0.5000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+
+<span class="n">Periodicity</span><span class="p">:</span>  <span class="n">X</span> <span class="n">Y</span> <span class="n">Z</span>
+
+<span class="n">Lattice</span> <span class="n">vectors</span><span class="p">:</span>
+     <span class="mf">4.0500</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>
+     <span class="mf">0.0000</span>     <span class="mf">4.0500</span>     <span class="mf">0.0000</span>
+     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">4.0500</span>
+</pre></div>
+</div>
+<p>The lattice vectors are now making a cube, and the structure is made of 4 gold atoms. Now we can want to create a
+supercell, 2x2x1 using the supercell method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">fcc221</span><span class="o">=</span><span class="n">fcc_conv</span><span class="o">.</span><span class="n">supercell</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">fcc221</span><span class="p">)</span>
+<span class="mi">16</span>
+
+ <span class="n">Symb</span>  <span class="p">(</span>             <span class="n">Positions</span>            <span class="p">)</span> <span class="p">[</span>     <span class="n">Cell</span><span class="o">-</span><span class="n">reduced</span> <span class="n">coordinates</span>     <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">2.0250</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.2500</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">2.0250</span>     <span class="mf">0.0000</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.2500</span>     <span class="mf">0.0000</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">2.0250</span>     <span class="mf">2.0250</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.2500</span>     <span class="mf">0.2500</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">4.0500</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.5000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">0.0000</span>     <span class="mf">6.0750</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.0000</span>     <span class="mf">0.7500</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">2.0250</span>     <span class="mf">4.0500</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.2500</span>     <span class="mf">0.5000</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">2.0250</span>     <span class="mf">6.0750</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.2500</span>     <span class="mf">0.7500</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">4.0500</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.5000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">4.0500</span>     <span class="mf">2.0250</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.5000</span>     <span class="mf">0.2500</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">6.0750</span>     <span class="mf">0.0000</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.7500</span>     <span class="mf">0.0000</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">6.0750</span>     <span class="mf">2.0250</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.7500</span>     <span class="mf">0.2500</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">4.0500</span>     <span class="mf">4.0500</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.5000</span>     <span class="mf">0.5000</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">4.0500</span>     <span class="mf">6.0750</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.5000</span>     <span class="mf">0.7500</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">6.0750</span>     <span class="mf">4.0500</span>     <span class="mf">2.0250</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.7500</span>     <span class="mf">0.5000</span>     <span class="mf">0.5000</span> <span class="p">]</span>
+   <span class="n">Au</span>  <span class="p">(</span>     <span class="mf">6.0750</span>     <span class="mf">6.0750</span>     <span class="mf">0.0000</span> <span class="p">)</span> <span class="p">[</span>     <span class="mf">0.7500</span>     <span class="mf">0.7500</span>     <span class="mf">0.0000</span> <span class="p">]</span>
+
+<span class="n">Periodicity</span><span class="p">:</span>  <span class="n">X</span> <span class="n">Y</span> <span class="n">Z</span>
+
+<span class="n">Lattice</span> <span class="n">vectors</span><span class="p">:</span>
+     <span class="mf">8.1000</span>     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>
+     <span class="mf">0.0000</span>     <span class="mf">8.1000</span>     <span class="mf">0.0000</span>
+     <span class="mf">0.0000</span>     <span class="mf">0.0000</span>     <span class="mf">4.0500</span>
+</pre></div>
+</div>
+<p>PyChemia is much more than just elements, compositions and structures. For the purpose of this introduction, those are
+the most basic building blocks for most of the of higher level operations such as populations and global searches.</p>
+</div>
+<div class="section" id="lattice">
+<h2>Lattice<a class="headerlink" href="#lattice" title="Permalink to this headline">¶</a></h2>
+<p>For periodic structures, the lattice is fundamental to describe how the geometry of the atoms is repeated. PyChemia
+offers a class Lattice for manipulate cell parameters both for the real space lattice and the reciprocal one. For
+example from the example before:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">pychemia</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">a</span><span class="o">=</span><span class="mf">4.05</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">b</span><span class="o">=</span><span class="n">a</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">fcc</span> <span class="o">=</span> <span class="n">pychemia</span><span class="o">.</span><span class="n">Structure</span><span class="p">(</span><span class="n">symbols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Au&#39;</span><span class="p">],</span> <span class="n">cell</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">],</span> <span class="p">[</span><span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="p">],</span> <span class="p">[</span><span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span> <span class="n">periodicity</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">lat</span><span class="o">=</span><span class="n">fcc</span><span class="o">.</span><span class="n">lattice</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">lat</span><span class="p">)</span>
+<span class="n">Cell</span><span class="o">=</span>       <span class="mf">0.000</span>        <span class="mf">2.025</span>        <span class="mf">2.025</span>
+            <span class="mf">2.025</span>        <span class="mf">0.000</span>        <span class="mf">2.025</span>
+            <span class="mf">2.025</span>        <span class="mf">2.025</span>        <span class="mf">0.000</span>
+
+<span class="n">Angles</span><span class="p">:</span> <span class="n">alpha</span> <span class="o">=</span>       <span class="mf">60.000</span>
+         <span class="n">beta</span> <span class="o">=</span>       <span class="mf">60.000</span>
+        <span class="n">gamma</span> <span class="o">=</span>       <span class="mf">60.000</span>
+
+<span class="n">Lengths</span><span class="p">:</span>    <span class="n">a</span> <span class="o">=</span>        <span class="mf">2.864</span>
+            <span class="n">b</span> <span class="o">=</span>        <span class="mf">2.864</span>
+            <span class="n">c</span> <span class="o">=</span>        <span class="mf">2.864</span>
+
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">rlat</span> <span class="o">=</span> <span class="n">lat</span><span class="o">.</span><span class="n">reciprocal</span><span class="p">()</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="nb">print</span><span class="p">(</span><span class="n">rlat</span><span class="p">)</span>
+<span class="n">Cell</span><span class="o">=</span>      <span class="o">-</span><span class="mf">0.247</span>        <span class="mf">0.247</span>        <span class="mf">0.247</span>
+            <span class="mf">0.247</span>       <span class="o">-</span><span class="mf">0.247</span>        <span class="mf">0.247</span>
+            <span class="mf">0.247</span>        <span class="mf">0.247</span>       <span class="o">-</span><span class="mf">0.247</span>
+
+<span class="n">Angles</span><span class="p">:</span> <span class="n">alpha</span> <span class="o">=</span>      <span class="mf">109.471</span>
+         <span class="n">beta</span> <span class="o">=</span>      <span class="mf">109.471</span>
+        <span class="n">gamma</span> <span class="o">=</span>      <span class="mf">109.471</span>
+
+<span class="n">Lengths</span><span class="p">:</span>    <span class="n">a</span> <span class="o">=</span>        <span class="mf">0.428</span>
+            <span class="n">b</span> <span class="o">=</span>        <span class="mf">0.428</span>
+            <span class="n">c</span> <span class="o">=</span>        <span class="mf">0.428</span>
+</pre></div>
+</div>
+<p>As you can see from the example above, the reciprocal lattice can be obtained from the real space lattice. The class is
+useful to obtain the Brillouin zone via computing the Wigner Seitz from the reciprocal lattice. Those and several other
+functionality can be accessed from the class as described on the corresponding chapter.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="4.GlobalMinimization.html" class="btn btn-neutral float-right" title="Global Minimization with Metaheuristics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2.Installation.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Guillermo Avendano-Franco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

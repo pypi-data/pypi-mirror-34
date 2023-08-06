@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: cnhd
+Version: 1.4
+Summary: A List of china stock exchange holidays
+Home-page: https://github.com/Asnebula/cn_stock_holidays.git
+Author: Asnebula
+Author-email: Asenbula@sina.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: china stock holiday exchange Shanghai,Shenzhen and HongKong
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: requests
+
+UNKNOWN
+
+

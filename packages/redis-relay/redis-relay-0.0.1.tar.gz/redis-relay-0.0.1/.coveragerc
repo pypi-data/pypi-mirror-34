@@ -1,0 +1,7 @@
+[run]
+source = redis_relay
+
+[report]
+include =
+    redis_relay.py
+    tests/*.py

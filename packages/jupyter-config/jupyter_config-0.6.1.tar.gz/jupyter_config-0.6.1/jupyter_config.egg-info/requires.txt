@@ -1,0 +1,8 @@
+jupyter_core
+
+[dev]
+check_manifest
+pytest
+
+[test]
+pytest

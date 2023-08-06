@@ -1,0 +1,17 @@
+flywheel_bids/__init__.py,sha256=nPHPW-XlgnU26sFYd2PovkPtzy0O6jX_6y8Yi9wGB-g,77
+flywheel_bids/curate_bids.py,sha256=vq3ymi170Hj-WrpA8ccuDD3yfnYheofZvg0hNSo9GLQ,9898
+flywheel_bids/export_bids.py,sha256=-SVPATFmsKZ130-A3IZMV2GdkLg53ZBpyCrAlNoGCUM,18212
+flywheel_bids/upload_bids.py,sha256=lOmFXm-maxzQ5iWnzsDwHCxh9x99LBe3gih_B88kq8s,39679
+flywheel_bids/supporting_files/__init__.py,sha256=nPHPW-XlgnU26sFYd2PovkPtzy0O6jX_6y8Yi9wGB-g,77
+flywheel_bids/supporting_files/bidsify_flywheel.py,sha256=Bd8OjGTGpLCs9z-e8m5CNcJRtkg49nbYaYUA49l_Ifs,7902
+flywheel_bids/supporting_files/classifications.py,sha256=NnWxuaiK8R1JLpJ8Oq3bXoUenc1zphQWMtXT2gnbSv8,2357
+flywheel_bids/supporting_files/project_tree.py,sha256=cPKg7CzMIUOjC-UZVaii2CxzbgRbhmZY847kt1GbUIw,6854
+flywheel_bids/supporting_files/resolver.py,sha256=Jj-Ufj2MwrJMGoiCRxb1A0LSEC40fgwwHQvxmvY6FE4,4099
+flywheel_bids/supporting_files/templates.py,sha256=xm5nYYb8LWZ3oZOAjYProNMhPUUTW0tw8K17AcpCtz0,15433
+flywheel_bids/supporting_files/utils.py,sha256=l2yqc9EAEdcI1HfFv_islIr6SCKBNz5B5Zd8tDpx2nM,8900
+flywheel_bids/templates/bids-v1.json,sha256=u79IDPo2QTor9_kpJoASQXCEMfModwcb14XqDWsEtYg,20541
+flywheel_bids-0.6.8.dist-info/METADATA,sha256=g4ILsAtXTIGrOzvvmOvXQnEVsNf3lLYbmgFY71i8_l0,472
+flywheel_bids-0.6.8.dist-info/RECORD,,
+flywheel_bids-0.6.8.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+flywheel_bids-0.6.8.dist-info/entry_points.txt,sha256=lzOE8nQq85mdzVJW8KwSZOI2PHiIQ6339KfrtrXaHNo,154
+flywheel_bids-0.6.8.dist-info/top_level.txt,sha256=saBvp1Aj5DLGxem4hKeOWIPmxTKFtlkpdLwX7TrVU-c,14

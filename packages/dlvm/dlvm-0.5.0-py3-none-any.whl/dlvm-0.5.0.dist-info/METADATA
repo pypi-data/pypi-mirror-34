@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dlvm
+Version: 0.5.0
+Summary: a distribute storage system base on lvm and iscsi
+Home-page: https://github.com/dlvm/dlvm
+Author: yupeng
+Author-email: yupeng0921@gmail.com
+License: MIT
+Keywords: dlvm storage
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: Flask
+Requires-Dist: marshmallow (>=3.0.0b1)
+Requires-Dist: SQLAlchemy
+Requires-Dist: celery
+
+a distribute storage system base on lvm and iscsi
+document:
+http://dlvm.readthedocs.io/en/latest/
+
+

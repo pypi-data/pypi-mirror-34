@@ -1,0 +1,14 @@
+KratosMultiphysics/IsogeometricApplication.py,sha256=PqGokuhd80WmVdpr2boiGVSpEoZzS6h0RsTa2_ybUug,498
+KratosMultiphysics/KratosLoader.py,sha256=iivhNJgnZQViRhqhagyNk3att0PgwLmZFYAIcqL2_9U,400
+KratosMultiphysics/KratosUnittest.py,sha256=TIo94g9hs3p_mr9j0m8dzlFnFC-bnFjpxTCe6HQ2ee4,3655
+KratosMultiphysics/__init__.py,sha256=E-lGZ7rytgwztx1rFqw267Qen-F-IehdKhlfJ1iNQxg,2065
+KratosMultiphysics/application_importer.py,sha256=pvZYdcuO77tXEf9K1jnroUWZvBEzS3kn2j1TBbAlhYI,1989
+KratosMultiphysics/kratos_globals.py,sha256=4F9mXXzl7H4CxbnkbIfwT5itbr7w-lDhTQo62KaFdj8,2510
+KratosMultiphysics/kratos_utilities.py,sha256=kkJZG3_dHOOXdrYzT8SSMJZOWebNxr7H8hSvb6FdU0c,391
+KratosMultiphysics/setup.py,sha256=xYNJmiMEKPH6shYf51jQPdAoP_oGzw-sOsi4_PbHOPk,666
+PyIGA-0.0.2.dist-info/DESCRIPTION.rst,sha256=J358FlDEFW2xJI-l31xFzJkch9D7yQNRk7AwqUaJkxg,131
+PyIGA-0.0.2.dist-info/METADATA,sha256=jY7KzKln5FmtGi14aIK6JumZFJERi9XAEn9UEgnqEEk,596
+PyIGA-0.0.2.dist-info/RECORD,,
+PyIGA-0.0.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+PyIGA-0.0.2.dist-info/metadata.json,sha256=06qnPtorqJ5za47q7BGVAB0tvqdPU4yN6eSo7bnyLZM,624
+PyIGA-0.0.2.dist-info/top_level.txt,sha256=8Ov--opRCptLbHStjyiZUVpzN1OUU_F7c7fGmsR5cMc,19

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: loggendra-server
+Version: 0.0.1
+Summary: Centralised server for storing server logs
+Home-page: https://github.com/Backalla/loggendra-server
+Author: Tushar Pawar
+Author-email: gmail@tusharpawar.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Centralised logging server for application/server logs
+
+

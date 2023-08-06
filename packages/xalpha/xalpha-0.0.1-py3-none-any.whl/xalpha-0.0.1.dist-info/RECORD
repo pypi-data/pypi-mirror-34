@@ -1,0 +1,15 @@
+xalpha/__init__.py,sha256=UoTXuHenJRpWxbnTdjzR2I3bEGzvsjqSoH-IvDOi29s,292
+xalpha/cons.py,sha256=acFdz3RtryHBo0OZNOuciMTCPd4Kb2KTkbtYUKNSwsw,2983
+xalpha/indicator.py,sha256=wPAfL01ddr23kQIrlNVi7u9bsOnBwCJHpV-JmS68wEA,6642
+xalpha/info.py,sha256=rS27WFJR7Xd9yxabee_uSPXTGGggLRzf_rzFqPJ5uhU,11416
+xalpha/multiple.py,sha256=-dw-e8gYu7iKtz7SBuDVBvNC3n2Nc6HRmUrz0vjM1Vg,5750
+xalpha/policy.py,sha256=_j8HMY8JKGd2_GsZ1vlsB1zosqgQtAl0NKNokTSEop0,2714
+xalpha/record.py,sha256=FvObFFfndeNq-UGcspfEvyIlcHR2iyXMg7n6qJlflh8,1372
+xalpha/remain.py,sha256=AI3KodjscRHSIOC5EUoMwQ38FfrHkpw2522erTP07qY,3072
+xalpha/trade.py,sha256=RH1_atQCZL15X2oU7dkCgGvgjAnhf5cg1ksWwnFMPSc,9216
+xalpha-0.0.1.dist-info/DESCRIPTION.rst,sha256=9LUb8-A8DpaSJ9x1eAovSO8u-t1Rq-z1X9BaZXjsrD0,175
+xalpha-0.0.1.dist-info/METADATA,sha256=ZYGIVvm3hQFonlj7P-dCc6f5vlT8a-QnpWZfGhOqht0,601
+xalpha-0.0.1.dist-info/RECORD,,
+xalpha-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+xalpha-0.0.1.dist-info/metadata.json,sha256=ZPQPqzS7hOBwzcaTUNI2_l_OmMdQ2dcx6tJYZxKJl9s,585
+xalpha-0.0.1.dist-info/top_level.txt,sha256=5o8USbq0DdsvD4z9cVC1IGN_dyZRr6ShoPZ9M18q1yY,7

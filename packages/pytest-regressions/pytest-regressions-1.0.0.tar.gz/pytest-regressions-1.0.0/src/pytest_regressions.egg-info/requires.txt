@@ -1,0 +1,16 @@
+pre-commit
+pytest-datadir>=1.2.0
+pytest>=3.5.0
+pyyaml
+six
+matplotlib
+pillow
+
+[:python_version < "3.0"]
+pathlib2
+
+[dev]
+pre-commit
+restructuredtext-lint
+numpy
+pandas

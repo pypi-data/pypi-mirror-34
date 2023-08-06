@@ -1,0 +1,13 @@
+phonetic2bengali/__init__.py,sha256=WpBDKhIUHx6GFJlhhKKZSgqjlhwASkNm3MbR5itVrso,192
+phonetic2bengali/phonetic2bengalifunc.py,sha256=vBNfyROoDAAOQ_Cl7cKJB0D5KS9tR0yh42bmw_HKe3c,3032
+phonetic2bengali/pyavrophonetic/__init__.py,sha256=-0MGyMufTmBDK3Oy3uY8WcQFFzYB_G4LYPoZg8cJRhw,955
+phonetic2bengali/pyavrophonetic/avro.py,sha256=zHIHWy8__4u_jWRBlMTreHZbmV2KbNqHpPXcMXRe25w,9317
+phonetic2bengali/pyavrophonetic/config.py,sha256=y4VAlMi5cE6eXsROc7iq8texsoD5pbzh6fVdZ8ND4PQ,1612
+phonetic2bengali/pyavrophonetic/resources/avrodict.json,sha256=ZPi0f7Rh3xGyEcxual4J2oA6hnBU7RAarfIyNKW-x5E,49575
+phonetic2bengali/pyavrophonetic/utils/__init__.py,sha256=3XjGbKC6XT3dyY52OjlaSIry3U5LsUBn12H2c0gJiAU,1168
+phonetic2bengali/pyavrophonetic/utils/count.py,sha256=O4lDVnwQA-wzsf6xwGXsUwzOBukYarq0wbEwdClhncA,1357
+phonetic2bengali/pyavrophonetic/utils/validate.py,sha256=ad3WWfac9ZawqLVYAodgmHmLATrd4cYXtu6sWU3hX0I,2352
+phonetic2bengali-1.0.0.dist-info/METADATA,sha256=VZ_JmwZw821EZCQxrnyJZ6kxBgdyzqRhhvmtfXTdWOM,1519
+phonetic2bengali-1.0.0.dist-info/RECORD,,
+phonetic2bengali-1.0.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+phonetic2bengali-1.0.0.dist-info/top_level.txt,sha256=4CI4cMJoxKNI1WVcD-3Tzytnc9d2YCfmEowl1GHWFvU,17

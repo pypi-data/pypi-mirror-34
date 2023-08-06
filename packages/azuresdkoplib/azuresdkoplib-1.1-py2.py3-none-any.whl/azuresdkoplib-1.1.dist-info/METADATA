@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: azuresdkoplib
+Version: 1.1
+Summary: azure python sdk op lib.
+Home-page: https://adc.github.trendmicro.com/sam-rui/azure-sdk-op-lib.git
+Author: Sam Rui
+Author-email: samrui0129@gmail.com
+License: Apache License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=2.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: azure
+Requires-Dist: msrestazure
+
+
+# azure-sdk-op-lib
+## install azure python sdk
+- git clone https://github.com/Azure/azure-sdk-for-python.git
+
+## install azure-sdk-op-lib
+python setup.py install
+

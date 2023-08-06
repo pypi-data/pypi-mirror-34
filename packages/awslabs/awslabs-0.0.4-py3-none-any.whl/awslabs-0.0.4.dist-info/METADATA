@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: awslabs
+Version: 0.0.4
+Summary: This cli contains aws labs to try.
+Home-page: https://github.com/binxio/awslabs
+Author: Martijn van Dongen
+Author-email: martijnvandongen@binx.io
+License: UNKNOWN
+Platform: any
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: configparser
+Requires-Dist: click
+Requires-Dist: cfn-flip
+Requires-Dist: pylint
+
+UNKNOWN
+
+

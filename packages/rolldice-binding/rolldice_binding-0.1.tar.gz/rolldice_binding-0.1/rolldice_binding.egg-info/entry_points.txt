@@ -1,0 +1,3 @@
+[console_scripts]
+rolldice = rolldice_binding.__main__:main
+

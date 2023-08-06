@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: rolldice_binding
+Version: 0.1
+Summary: Command line bindings for the py-rolldice library
+Home-page: https://github.com/bsmaldon/rolldice-binding
+Author: Berin Smaldon
+Author-email: noodels555@gmail.com
+License: UNKNOWN
+Description: # rolldice-binding
+        A python module that binds the very useful py-rolldice commands into
+        a simple command line application which can be called from the comand
+        line.
+        
+        ## Usage:
+        Install the module.
+        ```
+        python -m pip install rolldice-binding
+        ```
+        
+        Now you should be able to call this from the command line.
+        ```
+        $ rolldice 2d10+4
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

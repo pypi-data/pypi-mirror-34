@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: asmjit
+Version: 0.1.2
+Summary: A Benchmark Toolkit for Assembly Instructions Using the LLVM JIT
+Home-page: UNKNOWN
+Author: Julian Hammer
+Author-email: julian.hammer@u-sys.org
+License: AGPLv3
+Description: # pyasmjit
+        
+        A instruction latency and throughput benchmarking framework for out-of-order architectures.
+        
+        ## Usage
+        
+        
+Platform: UNKNOWN
